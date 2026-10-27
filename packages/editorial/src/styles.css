@@ -161,20 +161,21 @@
    *
    * Not pure `#000`. A page at zero makes light type halate and every surface
    * above it has to be invented from nothing; a couple of points up gives the
-   * hover tint and the sunken cell somewhere to stand. Every ink still clears
-   * AA by a distance: 16.5:1 at `--ink`, 11.3 at `--ink-2`, 6.7 at `--ink-3`,
-   * 8.5 for the brass and 6.5 for the accent. */
-  --paper: #131312;
-  --paper-2: #1a1a18;
-  --paper-3: #212120;
+   * hover tint and the sunken cell somewhere to stand. Lifted a step further
+   * to a charcoal (user decision): at #131312 the page read as black. Every ink
+   * still clears AA: 15.1:1 at `--ink`, 10.3 at `--ink-2`, 6.2 at `--ink-3`,
+   * 4.9 at `--ink-mute`, 7.8 for the brass and 6.0 for the accent. */
+  --paper: #1c1c1a;
+  --paper-2: #232321;
+  --paper-3: #2b2b28;
 
-  --rule: #262624;
-  --rule-soft: #1d1d1b;
+  --rule: #353532;
+  --rule-soft: #292926;
 
   --ink: #f4f1e9;
   --ink-2: #cfc9bb;
   --ink-3: #a29b8c;
-  --ink-mute: #837c6e;
+  --ink-mute: #8f887a;
   --ink-display: #6f6859;
 
   /* Lifted, because the crimson at #8a2418 only reaches 2.3:1 on a dark
@@ -185,9 +186,9 @@
   --brass-line: rgba(211, 169, 95, 0.34);
 
   /* The band under the page, and the step above it — the same neutral. */
-  --ground: #0c0c0b;
-  --ground-2: #161615;
-  --panel-bg: #1b1813;
+  --ground: #151514;
+  --ground-2: #20201e;
+  --panel-bg: #26231e;
   --panel-fg: #f4f1e9;
 }
 
@@ -1586,6 +1587,46 @@
 }
 
 /* ============================================================
+   Skeletons
+
+   The grey of what is still loading (see `skeleton.tsx`). A wash of
+   the ink rather than a paper token, so the same block reads on the
+   paper, on a tinted band and in dark mode; a lighter band sweeps
+   across it so a wait looks like a wait and not like an empty page.
+   ============================================================ */
+
+.bb-skeleton {
+  display: block;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ink) 7%, transparent) 25%,
+    color-mix(in srgb, var(--ink) 3%, transparent) 50%,
+    color-mix(in srgb, var(--ink) 7%, transparent) 75%
+  );
+  background-size: 200% 100%;
+  animation: bb-skeleton 1.6s ease-in-out infinite;
+}
+
+/* A bar inside a line of text (`SkeletonLine`): inline, so it follows the line's text-align, and the height of
+   the letters, centred in the line. After `.bb-skeleton`, so its display wins. */
+.bb-skeleton-line {
+  display: inline-block;
+  height: 0.7em;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+@keyframes bb-skeleton {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+/* ============================================================
    Reduced motion
 
    Everything above is decoration on content that is already there.
@@ -1597,7 +1638,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .bb-drift img,
-  .bb-cue {
+  .bb-cue,
+  .bb-skeleton {
     animation: none;
   }
 

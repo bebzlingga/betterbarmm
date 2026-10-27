@@ -2,7 +2,7 @@
 
 import { MagnifyingGlassIcon } from '@phosphor-icons/react'
 import { AnimatePresence, motion } from 'motion/react'
-import { EASE } from '@betterbarmm/editorial'
+import { EASE, RowsSkeleton } from '@betterbarmm/editorial'
 import { useRouter } from 'next/navigation'
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { SearchHit } from '../api/search/route'
@@ -180,6 +180,19 @@ export function RegistryFinder({ children }: { children: React.ReactNode }) {
 											</button>
 										))
 									: null}
+
+								{typed && loading && hits.length === 0 ? (
+									<div role='status'>
+										<span className='sr-only'>Searching…</span>
+										{/* A hit's own row: `.finder-hit`'s padding and rule, the title, the meta line, the kind. */}
+										<RowsSkeleton
+											rows={4}
+											row='finder-hit'
+											lines={['text-[0.9375rem] leading-tight', { className: 'mt-1 font-mono text-[0.59375rem] uppercase tracking-[0.14em]', scale: 0.4 }]}
+											figure={[{ className: 'text-[0.71875rem]', width: '3rem' }]}
+										/>
+									</div>
+								) : null}
 
 								{typed && !loading && hits.length === 0 ? (
 									<p className='px-5 py-8 text-center text-[0.84375rem] leading-6 text-[var(--ink-3)]'>

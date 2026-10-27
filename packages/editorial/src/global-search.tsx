@@ -2,6 +2,7 @@
 
 import { MagnifyingGlassIcon } from '@phosphor-icons/react'
 import { useEffect, useRef, useState } from 'react'
+import { RowsSkeleton } from './skeleton'
 
 /* ============================================================
    Search, from anywhere in the estate
@@ -17,7 +18,7 @@ type Hit = { kind: string; title: string; detail: string; href: string }
 export function GlobalSearch({ base = '' }: { base?: string }) {
 	const dialog = useRef<HTMLDialogElement>(null)
 	const [q, setQ] = useState('')
-	const [data, setData] = useState<{ hits: Hit[]; total: number } | null>(null)
+	const [data, setData] = useState<{ hits: Hit[]; total: number; for: string } | null>(null)
 	const [active, setActive] = useState(0)
 
 	const open = () => {
@@ -44,7 +45,7 @@ export function GlobalSearch({ base = '' }: { base?: string }) {
 		const timer = setTimeout(() => {
 			fetch(`${api}/api/search?q=${encodeURIComponent(q)}`, { signal: controller.signal })
 				.then((r) => r.json())
-				.then((d: { hits: Hit[]; total: number }) => setData({ hits: d.hits.slice(0, 8), total: d.total }))
+				.then((d: { hits: Hit[]; total: number }) => setData({ hits: d.hits.slice(0, 8), total: d.total, for: q }))
 				.catch(() => {})
 		}, 180)
 		return () => {
@@ -54,6 +55,8 @@ export function GlobalSearch({ base = '' }: { base?: string }) {
 	}, [q, base])
 
 	const hits = data?.hits ?? []
+	// Asked and not yet answered: whatever is listed is for an older query.
+	const pending = !!q.trim() && data?.for !== q
 	const all = `${base}/search?q=${encodeURIComponent(q)}`
 
 	const onKeyDown = (e: React.KeyboardEvent) => {
@@ -101,7 +104,18 @@ export function GlobalSearch({ base = '' }: { base?: string }) {
 					<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 text-[0.625rem] text-[var(--ink-mute)] sm:inline'>Esc</kbd>
 				</label>
 
-				{hits.length ? (
+				{pending && !hits.length ? (
+					<div role='status' className='p-1'>
+						<span className='sr-only'>Searching…</span>
+						{/* The results' rows exactly: their padding, the title and detail, the kind on the right. */}
+						<RowsSkeleton
+							rows={5}
+							row='flex items-baseline justify-between gap-4 px-3 py-2.5'
+							lines={['text-[0.875rem]', { className: 'text-[0.75rem]', scale: 0.6 }]}
+							figure={[{ className: 'text-[0.625rem]', width: '3.5rem' }]}
+						/>
+					</div>
+				) : hits.length ? (
 					<ul className='max-h-[55vh] overflow-y-auto p-1'>
 						{hits.map((h, i) => (
 							<li key={h.href + h.title}>

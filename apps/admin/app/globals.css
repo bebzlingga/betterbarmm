@@ -363,3 +363,20 @@ body {
 .prose-admin blockquote { border-left: 3px solid var(--rule-strong); padding-left: 1rem; color: var(--ink-2); }
 .prose-admin a { color: var(--accent); text-decoration: underline; }
 .prose-admin code { background: var(--surface-2); padding: 0 0.25rem; border-radius: 0.25rem; }
+
+/* What is still loading (see `(dashboard)/loading.tsx`): a block of the surface tone with a lighter band sweeping
+   across it. Still under a reduced-motion preference. */
+.skeleton {
+  display: block;
+  border-radius: 0.375rem;
+  background: linear-gradient(90deg, var(--surface-3) 25%, var(--surface-2) 50%, var(--surface-3) 75%);
+  background-size: 200% 100%;
+  animation: skeleton 1.6s ease-in-out infinite;
+}
+@keyframes skeleton {
+  from { background-position: 100% 0; }
+  to { background-position: -100% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+}

@@ -831,7 +831,7 @@ function travel(): Entry[] {
 		kind: 'Place',
 		title: place.name,
 		note: `${place.summary} In ${place.municipality}.`,
-		href: `${SITE.travel}/places#${place.slug}`,
+		href: `${SITE.travel}/places/${place.slug}`,
 		photo: shown(place.slug),
 		text: [place.name, place.alsoKnownAs?.join(' '), place.kind, place.municipality, place.area, place.summary, place.detail.join(' '), place.beforeYouGo.join(' ')]
 			.filter(Boolean)
@@ -844,7 +844,8 @@ function travel(): Entry[] {
 		kind: 'Food',
 		title: dish.name,
 		note: dish.summary,
-		href: `${SITE.travel}/food#${dish.slug}`,
+		// The guide's food page is hidden for now (travel app, GUIDE_PAGES); the front page stands in.
+		href: SITE.travel,
 		photo: shown(dish.slug),
 		text: [dish.name, dish.tradition, dish.summary, dish.detail, dish.whereToFind].join(' ').toLowerCase(),
 	}))
@@ -866,7 +867,8 @@ function travel(): Entry[] {
 		kind: 'Route',
 		title: route.name,
 		note: `${route.nights} out of ${route.base}. ${route.forWhom}`,
-		href: `${SITE.travel}/routes#${route.slug}`,
+		// The routes page is hidden for now (travel app, GUIDE_PAGES); a route links to the first area it covers.
+		href: `${SITE.travel}/${route.areas[0]}`,
 		text: [route.name, route.base, route.forWhom, route.nights, route.days.map((day) => `${day.where} ${day.what}`).join(' '), route.watchFor]
 			.join(' ')
 			.toLowerCase(),

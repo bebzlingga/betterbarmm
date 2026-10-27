@@ -1,4 +1,4 @@
-import { BrainIcon, BuildingsIcon, LifebuoyIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
+import { BrainIcon, BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DatabaseIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -45,7 +45,7 @@ const WORKSPACES = [
 	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget', icon: CoinsIcon },
 	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government', icon: BuildingsIcon },
 	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement', icon: ShoppingCartIcon },
-	{ key: 'services', href: 'https://betterbarmm.com/services', label: 'Programs & services', icon: LifebuoyIcon },
+	{ key: 'travel', href: 'https://travel.betterbarmm.com', label: 'Travel & Places', icon: MapPinAreaIcon },
 ] as const
 
 export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
@@ -56,7 +56,7 @@ const PROJECTS = [
 	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
 	{ key: 'preparedness', href: 'https://betterbarmm.com/preparedness', label: 'Preparedness', icon: UmbrellaIcon },
 	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon },
-	{ key: 'places', href: 'https://betterbarmm.com/places', label: 'Places', icon: MapPinAreaIcon },
+	{ key: 'data', href: 'https://betterbarmm.com/data', label: 'Open data', icon: DatabaseIcon },
 	// A dialog, not a page: the landing site opens it over whatever page is open.
 	{ key: 'brain', href: 'https://betterbarmm.com/#brain', label: 'Brain', icon: BrainIcon },
 ] as const

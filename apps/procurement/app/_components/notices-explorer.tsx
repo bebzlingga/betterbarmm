@@ -4,7 +4,7 @@ import { CaretLeftIcon, CaretRightIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import type { NoticeRow, Totals } from '../_lib/philgeps'
-import { SearchField, Select } from '@betterbarmm/editorial'
+import { SearchField, Select, RowsSkeleton, SkeletonLine } from '@betterbarmm/editorial'
 import { longDate } from './parts'
 
 /* Bid notices, newest first, fetched a page at a time from /api/notices. */
@@ -62,6 +62,11 @@ export function NoticesExplorer({
 		return () => clearTimeout(timer)
 	}, [typed])
 
+	// Which query the rows on screen answer. Until the newest one comes back, the list is grey rather than stale.
+	const key = JSON.stringify([entity, query, year, group, stage, mode, fund, supplier, page])
+	const [answered, setAnswered] = useState('')
+	const pending = answered !== key
+
 	useEffect(() => {
 		const params = new URLSearchParams()
 		if (entity) params.set('entity', entity)
@@ -76,10 +81,13 @@ export function NoticesExplorer({
 		const controller = new AbortController()
 		fetch(`/api/notices?${params}`, { signal: controller.signal })
 			.then((r) => r.json())
-			.then(setData)
+			.then((d) => {
+				setData(d)
+				setAnswered(key)
+			})
 			.catch(() => {})
 		return () => controller.abort()
-	}, [entity, query, year, group, stage, mode, fund, supplier, page])
+	}, [entity, query, year, group, stage, mode, fund, supplier, page, key])
 
 	// The download carries the same filters as the list, every page of it.
 	const csvParams = new URLSearchParams(
@@ -121,7 +129,7 @@ export function NoticesExplorer({
 					Download CSV
 				</a>
 			<p className='text-right'>
-				{data ? (
+				{data && !pending ? (
 					<>
 						<span className='num font-semibold text-[var(--ink)]'>{data.totals.notices.toLocaleString('en-PH')}</span> notices ·{' '}
 						<span className='num font-semibold text-[var(--ink)]'>{peso(data.totals.abc)}</span> approved budget ·{' '}
@@ -129,12 +137,25 @@ export function NoticesExplorer({
 						<span className='num font-semibold text-[var(--ink)]'>{peso(data.totals.contracts)}</span>
 					</>
 				) : (
-					'Loading…'
+					<SkeletonLine width='18rem' />
 				)}
 			</p>
 			</div>
 
-			<ul className={data ? '' : 'opacity-50'}>
+			{/* While the newest query is out, the list's shape in grey (user decision: skeletons). */}
+			{data && !pending ? null : (
+				<div role='status'>
+					<span className='sr-only'>Loading…</span>
+					{/* Each row as the real one is built: its grid, padding and rule, the label, name and detail lines, the amount. */}
+					<RowsSkeleton
+						rows={10}
+						row='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-28'
+						lines={[{ className: 'font-[family-name:var(--font-display)] text-[0.59375rem] uppercase tracking-[0.14em]', scale: 0.25 }, 'mt-1 text-[0.90625rem] leading-6', { className: 'mt-1 text-[0.75rem] leading-5', scale: 0.55 }]}
+						figure={['text-[1rem]', { className: 'mt-1 text-[0.71875rem]', width: '4.5rem' }]}
+					/>
+				</div>
+			)}
+			<ul className={data && !pending ? '' : 'hidden'}>
 				{data?.rows.map((n) => (
 					<li key={`${n.ref}-${n.date}`} className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-28'>
 						<div className='min-w-0'>

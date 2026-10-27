@@ -27,6 +27,7 @@ import placesFile from '../../../datasets/places/places.json'
 import staysFile from '../../../datasets/places/stays.json'
 import type { Entry } from './corpus'
 
+const TRAVEL = 'https://travel.betterbarmm.com'
 const WWW = 'https://betterbarmm.com'
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -217,7 +218,7 @@ export function catalogue(): Entry[] {
 			p.getting_there ? `Getting there: ${trim(p.getting_there, 220)}` : '',
 			p.best_time ? `When to go: ${trim(p.best_time, 160)}` : '',
 		]),
-		href: `${WWW}/places/${p.slug}`,
+		href: `${TRAVEL}/places/${p.slug}`,
 		text: joined([p.name, ...(p.also_known_as ?? []), p.kind, p.municipality, AREA[p.area], p.summary, ...(p.do ?? []).map((d) => d.title)]).toLowerCase(),
 	}))
 }
@@ -229,7 +230,8 @@ function stays(): Entry[] {
 		kind: 'Place to stay',
 		title: s.name,
 		note: joined([`A ${s.kind} in ${s.municipality}.`, s.address ? `Address: ${s.address}.` : '', `${s.note}.`, `Named in ${s.as_of.slice(0, 4)}; confirm before booking.`]),
-		href: `${WWW}/places`,
+		// The guide's lodging page is hidden for now (travel app, GUIDE_PAGES).
+		href: TRAVEL,
 		text: `${s.name} ${s.kind} ${s.municipality} ${s.address ?? ''}`.toLowerCase(),
 	}))
 }

@@ -155,22 +155,22 @@
 :root[data-theme="dark"] {
   color-scheme: dark;
 
-  --paper: #121211;
+  --paper: #1c1c1a;
   /* The same near-invisible step, measured from the dark ground up. */
-  --paper-2: #171716;
-  --paper-3: #242421;
+  --paper-2: #232321;
+  --paper-3: #2b2b28;
 
-  --rule: #2c2c29;
-  --rule-soft: #212120;
+  --rule: #353532;
+  --rule-soft: #292926;
 
   --ink: #f1f1ee;
   --ink-2: #cfcfc8;
   --ink-3: #a3a39a;
-  --ink-mute: #85857c;
+  --ink-mute: #919188;
   --ink-display: #7d7d7d;
 
   /* Lifted off the page rather than inverted to white. */
-  --panel-bg: #1e1e1c;
+  --panel-bg: #262624;
   --panel-fg: #f1f1ee;
 
   --accent: #e8796a;

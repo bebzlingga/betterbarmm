@@ -1,5 +1,6 @@
 'use client'
 
+import { RowsSkeleton, SkeletonLine } from '@betterbarmm/editorial'
 import { CaretLeftIcon, CaretRightIcon } from '@phosphor-icons/react'
 import { useEffect, useState } from 'react'
 import type { Work } from '../_lib/works'
@@ -48,11 +49,19 @@ export function WorksExplorer({
 		Object.entries({ q, year, area, kind, notice, sort }).filter((e): e is [string, string] => Boolean(e[1])),
 	)
 
+	// Which query the rows on screen answer. Until the newest one comes back, the list is grey rather than stale.
+	const key = `${params}&page=${page}`
+	const [answered, setAnswered] = useState('')
+	const pending = answered !== key
+
 	useEffect(() => {
 		const controller = new AbortController()
-		fetch(`/api/works?${params}&page=${page}`, { signal: controller.signal })
+		fetch(`/api/works?${key}`, { signal: controller.signal })
 			.then((r) => r.json())
-			.then(setData)
+			.then((d) => {
+				setData(d)
+				setAnswered(key)
+			})
 			.catch(() => {})
 		return () => controller.abort()
 		// eslint-disable-next-line react-hooks/exhaustive-deps
@@ -81,19 +90,32 @@ export function WorksExplorer({
 					Download CSV
 				</a>
 				<p className='text-right'>
-					{data ? (
+					{data && !pending ? (
 						<>
 							<span className='num font-semibold text-[var(--ink)]'>{data.count.toLocaleString('en-PH')}</span> projects ·{' '}
 							<span className='num font-semibold text-[var(--ink)]'>{peso(data.total)}</span> appropriated ·{' '}
 							<span className='num font-semibold text-[var(--ink)]'>{data.withNotice.toLocaleString('en-PH')}</span> with a likely bid notice
 						</>
 					) : (
-						'Loading…'
+						<SkeletonLine width='18rem' />
 					)}
 				</p>
 			</div>
 
-			<ul className={data ? '' : 'opacity-50'}>
+			{/* While the newest query is out, the list's shape in grey (user decision: skeletons). */}
+			{data && !pending ? null : (
+				<div role='status'>
+					<span className='sr-only'>Loading…</span>
+					{/* Each row as the real one is built: its grid, padding and rule, the label, name and detail lines, the amount. */}
+					<RowsSkeleton
+						rows={10}
+						row='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-16'
+						lines={[{ className: 'font-[family-name:var(--font-display)] text-[0.59375rem] uppercase tracking-[0.14em]', scale: 0.25 }, 'mt-1 text-[0.90625rem] leading-6', { className: 'mt-1 text-[0.75rem] leading-5', scale: 0.55 }]}
+						figure={['text-[1rem]']}
+					/>
+				</div>
+			)}
+			<ul className={data && !pending ? '' : 'hidden'}>
 				{data?.rows.map((w) => (
 					<li key={w.id} className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-16'>
 						<div className='min-w-0'>
