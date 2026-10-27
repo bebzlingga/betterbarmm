@@ -61,6 +61,8 @@ export type Committee = {
 	url: string
 	/** The committee's own statement of what it covers. */
 	jurisdiction: string
+	/** The same statement in ordinary words, or empty for a committee not yet written up. */
+	inShort: string
 	chairperson?: CommitteeSeat
 	viceChairpersons: CommitteeSeat[]
 	/** Everyone seated, officers first, then members, then ex-officio. */
@@ -100,6 +102,65 @@ const STATUTORY = new Set([
 	'bangsamoro-justice-system',
 	'committee-on-women-youth-children-and-persons-with-disabilities',
 ])
+
+/**
+ * Each committee's jurisdiction in ordinary words, by its slug in the registry.
+ *
+ * The registry carries the Rules' own sentence — "It shall have jurisdiction on
+ * all matters relating to…" — which is exact and hard to read. These say the
+ * same thing and nothing more: every subject named here is named in that
+ * sentence, and the sentence stays on the page beside it.
+ */
+const IN_SHORT: Record<string, string> = {
+	'committee-on-rules1':
+		'How the Parliament itself runs: its procedures, the calendar and order of its business, and the setting up of its other committees.',
+	'committee-on-amendments':
+		'Proposals to amend or revise the Bangsamoro Organic Law or the Parliament’s own Rules, and the gathering of laws into codes.',
+	'committee-on-accounts':
+		'Where the Parliament’s and the ministries’ money comes from and where it goes: their income, their spending plans, and the audit of both.',
+	'blue-ribbon-committee':
+		'Investigates officials and employees of the Bangsamoro Government and its local governments accused of doing wrong in office, doing their job wrongly, or failing to do it.',
+	'committee-on-ethics-and-privileges':
+		'The conduct, rights and privileges of the Parliament’s own Members, and complaints filed against them.',
+	'committee-on-ways-and-means':
+		'How the Bangsamoro Government raises money: taxes and fees, loans and other borrowing, and every other source of revenue.',
+	'special-committee-on-marawi':
+		'Gathers information on what has been planned and done to recover, rebuild and rehabilitate Marawi City.',
+	'committee-on-finance-budget-and-management':
+		'The budget: how the Bangsamoro Government’s money is set aside and spent, including its debts, claims against it and revenue shared with local governments. It also scrutinises the Parliament’s own budget.',
+	'committee-on-trade-investment-and-tourism':
+		'Business and the economy: industry and investment, domestic and foreign trade, trademarks and standards, consumer protection and prices, and tourism.',
+	'committee-on-agriculture-fisheries-and-agrarian-reform':
+		'Farming, fishing and food production, from irrigation and livestock to farm credit and insurance, and carrying out agrarian reform in the region.',
+	'committee-on-labor-and-employment':
+		'Workers and jobs: workers’ rights and welfare, labour standards, peace between employers and workers, and training and placement.',
+	'committee-on-basic-higher-and-technical-education':
+		'Schools, colleges, universities and madaris, the welfare of teachers and students, and alternative, non-formal and technical learning.',
+	'committee-on-social-services':
+		'Basic social services and the welfare of people and communities, including persons with disabilities and special needs.',
+	'committee-on-indigenous-peoples-and-affairs':
+		'Putting into effect the rights the Organic Law gives indigenous peoples, and the development of their communities.',
+	'committee-on-public-order-and-safety':
+		'Policing, fire and jail services, and crime — illegal gambling, organised crime, terrorism, illegal drugs — along with firearms, firecrackers, private security agencies, and rescue and emergency medical services.',
+	'committee-on-health':
+		'Public health and hygiene, hospitals and medical services, and quarantine.',
+	'committee-on-human-settlements-and-developments':
+		'Planning for towns and the countryside, housing, and resettlement.',
+	'committee-on-transportation-and-communication':
+		'Land, sea and air transport, with ports, airports and lighthouses, and the post, radio, television, telephone and other communications.',
+	'committee-on-science-and-technology':
+		'Research and development in science and technology, and climate and weather forecasting.',
+	'committee-on-public-works-and-highways':
+		'Building, maintaining and repairing public works: roads, bridges, harbours, parks, drainage, flood control and water systems.',
+	'committee-on-local-government':
+		'The region’s provinces, cities, municipalities and barangays, including their revenues and spending.',
+	'committee-on-environmental-natural-resources-and-energy':
+		'Land, forests, mines, wildlife and marine resources, their use and protection, pollution control, and the region’s power and energy, renewables included.',
+	'bangsamoro-justice-system':
+		'Muslim personal, family and property law under Presidential Decree No. 1083, and the other civil and criminal matters the Organic Law lets the Parliament legislate on.',
+	'committee-on-women-youth-children-and-persons-with-disabilities':
+		'The representation, participation, welfare and development of women, youth, children and persons with disabilities.',
+}
 
 export type CommitteesDataset = {
 	committees: Committee[]
@@ -320,6 +381,7 @@ const committees: Committee[] = (file?.committees ?? [])
 			shortName: name.replace(/^(Special )?Committee on (the )?/i, '').trim() || name,
 			url: toStringValue(raw.url),
 			jurisdiction: toStringValue(raw.jurisdiction),
+			inShort: IN_SHORT[slug] ?? '',
 			chairperson,
 			viceChairpersons,
 			seats,
