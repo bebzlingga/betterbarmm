@@ -11784,7 +11784,7 @@
    "note": "The chart shows all staff. Sections are left without heads, because the chart marks no section chief (the 'Senior CDS' staff are the most senior in the CDD sections). The focal-person groups (Lanao del Sur, Marawi City, Maguindanao del Sur and del Norte, SGA, Basilan, Tawi-Tawi focal persons) stand in for field offices. The Legal Section's Attorney III post is blank on the 2026-04 chart, but the 2026-03 Key Officials page names Atty. Abdulgaffar Abaton Abdullah. On Key Officials, Pangandaman is titled 'Chief Community Dev't. Officer'. The citizen's charter is an image of frontline services only."
   },
   "bangsamoro-information-office": {
-   "as_of": "2026-09",
+   "as_of": "2026-10",
    "sources": [
     {
      "label": "Bangsamoro Administrative Code (BAA 13), Book IV Title III, Sec. 34",
@@ -11793,6 +11793,10 @@
     {
      "label": "BARMM Official Website news releases, 2026",
      "url": "https://bangsamoro.gov.ph/news/latest-news/"
+    },
+    {
+     "label": "BIO Internal Staffing Pattern, \"List of Staff (Updated)\", undated Google Doc linked from BIO’s Facebook page; read 2026-10-26",
+     "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/"
     }
    ],
    "units": [
@@ -11817,7 +11821,14 @@
       {
        "name": "Deputy Executive Director",
        "kind": "office",
-       "head": null,
+       "head": {
+        "name": "Ali G. Macabalang",
+        "title": "Director I (Deputy Executive Director)",
+        "source": {
+         "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+         "date": null
+        }
+       },
        "source": {
         "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
         "page": 49,
@@ -11832,11 +11843,11 @@
      "name": "Administrative Section",
      "kind": "section",
      "head": {
-      "name": "Prince Nor-Anzarrih Matalam",
-      "title": "BIO Chief Administrative Officer",
+      "name": "Fahad G. Hadji Yasser",
+      "title": "Administrative Officer V (Administrative Officer III), Section Head",
       "source": {
-       "url": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-documentary-highlights-journey-to-peace-self-governance/",
-       "date": "2026-01-26"
+       "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+       "date": null
       }
      },
      "source": {
@@ -11850,7 +11861,14 @@
     {
      "name": "Operations Division",
      "kind": "division",
-     "head": null,
+     "head": {
+      "name": "Prince Nor-Anzarrih M. Matalam",
+      "title": "Chief Administrative Officer (Information Officer V), Division Chief",
+      "source": {
+       "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+       "date": null
+      }
+     },
      "source": {
       "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
       "page": 50,
@@ -11861,7 +11879,14 @@
       {
        "name": "Print Section",
        "kind": "section",
-       "head": null,
+       "head": {
+        "name": "Aisah S. Abas",
+        "title": "Administrative Officer V (Information Officer III), Section Head",
+        "source": {
+         "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+         "date": null
+        }
+       },
        "source": {
         "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
         "page": 50,
@@ -11873,7 +11898,14 @@
       {
        "name": "Broadcast Section",
        "kind": "section",
-       "head": null,
+       "head": {
+        "name": "Lore Mae L. Andong",
+        "title": "Administrative Officer V (Information Officer III), Section Head",
+        "source": {
+         "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+         "date": null
+        }
+       },
        "source": {
         "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
         "page": 50,
@@ -11885,7 +11917,14 @@
       {
        "name": "Research, Planning, and Monitoring Section",
        "kind": "section",
-       "head": null,
+       "head": {
+        "name": "Ahmad A. Amer",
+        "title": "Planning Officer III, Section Head",
+        "source": {
+         "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+         "date": null
+        }
+       },
        "source": {
         "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
         "page": 50,
@@ -11897,7 +11936,14 @@
       {
        "name": "Media Relations Section",
        "kind": "section",
-       "head": null,
+       "head": {
+        "name": "Alirahman B. Pangandaman",
+        "title": "Administrative Officer V (Public Relations Officer III), Section Head",
+        "source": {
+         "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+         "date": null
+        }
+       },
        "source": {
         "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
         "page": 50,
@@ -11909,7 +11955,14 @@
       {
        "name": "Provincial Field Section",
        "kind": "section",
-       "head": null,
+       "head": {
+        "name": "Johanie Mae U. Kusain",
+        "title": "Administrative Officer V (Information Officer III), Section Head",
+        "source": {
+         "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+         "date": null
+        }
+       },
        "source": {
         "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
         "page": 50,
@@ -11921,7 +11974,14 @@
       {
        "name": "New Media Section",
        "kind": "section",
-       "head": null,
+       "head": {
+        "name": "Zhulfa Febraida A. Ayob",
+        "title": "Media Production Specialist III, Section Head",
+        "source": {
+         "url": "https://docs.google.com/document/d/1agZwqqm5Gf9v3_bCxV1xqewEHDUoOB-H/",
+         "date": null
+        }
+       },
        "source": {
         "url": "https://bicto.bangsamoro.gov.ph/files/BAA-13.pdf",
         "page": 50,
