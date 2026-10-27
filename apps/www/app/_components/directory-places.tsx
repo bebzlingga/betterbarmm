@@ -93,7 +93,8 @@ export function PlaceHeader({ label, province, town, name }: { label: string; pr
 			label={label}
 			name={name}
 			photo={photo ? { src: photo.src, alt: tp?.caption || name, credit: photo.credit } : null}
-			logo={seal ? { src: seal.src, alt: `The seal of ${name}`, title: `Seal: ${seal.credit}` } : null}
+			// A seal fills its whole square where an office's wordmark does not, so it runs a size down to look the same.
+			logo={seal ? { src: seal.src, alt: `The seal of ${name}`, title: `Seal: ${seal.credit}`, className: 'size-14 md:size-[5.5rem]' } : null}
 		/>
 	)
 }
@@ -169,9 +170,10 @@ export function DirectoryPlaces() {
 											{tp ? (
 												<Picture photo={tp} name={u.name} size={500} />
 											) : placeSeal(g.slug, u.slug) ? (
-												// No photograph: the town's official seal, on the card's ground.
+												// No photograph: the town's official seal, on the card's ground. The tile is a photograph's height, so
+												// the seal takes more padding to come out the size of an office's logo on the ministries' cards.
 												// eslint-disable-next-line @next/next/no-img-element
-												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-2 sm:p-5' />
+												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-3 sm:p-8' />
 											) : (
 												<TownMap province={g.slug} town={u.slug} name={u.name} />
 											)}
