@@ -1,6 +1,7 @@
 'use client'
 
-import { CubeIcon } from '@phosphor-icons/react'
+import { Skeleton } from '@betterbarmm/editorial'
+import { CubeIcon, ImagesIcon } from '@phosphor-icons/react'
 import dynamic from 'next/dynamic'
 import { useEffect, useRef, useState } from 'react'
 import { commonsThumb, contentAspect, cropStyle } from '../_lib/commons'
@@ -14,10 +15,10 @@ import type { CraftImage, CraftModel } from '../_lib/crafts'
 
 const Scene = dynamic(() => import('./craft-scene'), {
 	ssr: false,
-	loading: () => <p className='absolute inset-0 grid place-items-center text-[0.78125rem] text-[#8a6d5c]'>Shaping it…</p>,
+	loading: () => <Skeleton className='absolute inset-0 rounded-none' />,
 })
 
-export function CraftStage({ name, model, images, colors = [], className = '' }: { name: string; model: CraftModel | null; images: CraftImage[]; colors?: string[]; className?: string }) {
+export function CraftStage({ name, model, images, className = '' }: { name: string; model: CraftModel | null; images: CraftImage[]; className?: string }) {
 	// -1 is the model; 0… are the photos.
 	const [at, setAt] = useState(model ? -1 : 0)
 	const photo = at >= 0 ? images[at] : undefined
@@ -67,12 +68,10 @@ export function CraftStage({ name, model, images, colors = [], className = '' }:
 					) : model ? (
 						<Scene model={model} label={name} />
 					) : (
-						// No free photo yet: the craft's colours, and its name, rather than an empty frame.
-						<span
-							className='flex aspect-[4/3] w-full max-w-md items-end rounded-[4px] p-6'
-							style={{ background: `linear-gradient(135deg, ${colors.join(', ') || '#7b4a35, #c89b4a'})` }}
-						>
-							<span className='font-[family-name:var(--font-craft)] text-[1.75rem] font-bold text-white/90 [text-shadow:0_1px_12px_rgba(0,0,0,0.35)]'>{name}</span>
+						// No free photo yet: a placeholder (user decision), not a picture of something else.
+						<span className='flex aspect-[4/3] w-full max-w-md flex-col items-center justify-center gap-3 rounded-[4px] bg-[#efe6dc] text-[#a8907f]'>
+							<ImagesIcon size={40} weight='duotone' aria-hidden='true' />
+							<span className='text-[0.875rem]'>No free photo of {name} yet</span>
 						</span>
 					)}
 				</div>

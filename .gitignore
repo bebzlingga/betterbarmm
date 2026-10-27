@@ -60,3 +60,7 @@ __pycache__/
 
 # /brag launch-video renders
 /brag-output*/
+
+# open data: tables built from datasets/ before every dev and build
+apps/www/public/data/files/
+apps/www/app/_generated/open-data.json

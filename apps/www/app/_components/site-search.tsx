@@ -1,6 +1,7 @@
 'use client'
 
 import { MagnifyingGlassIcon } from '@phosphor-icons/react'
+import { RowsSkeleton, SkeletonLine } from '@betterbarmm/editorial'
 import { useEffect, useState } from 'react'
 import type { SearchHit } from '../_lib/search-index'
 
@@ -8,7 +9,7 @@ import type { SearchHit } from '../_lib/search-index'
 
 export function SiteSearch({ initial = '' }: { initial?: string }) {
 	const [q, setQ] = useState(initial)
-	const [data, setData] = useState<{ hits: SearchHit[]; total: number } | null>(null)
+	const [data, setData] = useState<{ hits: SearchHit[]; total: number; for: string } | null>(null)
 
 	useEffect(() => {
 		const url = new URL(window.location.href)
@@ -20,7 +21,7 @@ export function SiteSearch({ initial = '' }: { initial?: string }) {
 		const timer = setTimeout(() => {
 			fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal: controller.signal })
 				.then((r) => r.json())
-				.then(setData)
+				.then((d: { hits: SearchHit[]; total: number }) => setData({ ...d, for: q }))
 				.catch(() => {})
 		}, 200)
 		return () => {
@@ -29,6 +30,8 @@ export function SiteSearch({ initial = '' }: { initial?: string }) {
 		}
 	}, [q])
 
+	// Asked and not yet answered: the results on screen, if any, are for an older query.
+	const pending = !!q.trim() && data?.for !== q
 	const groups = new Map<string, SearchHit[]>()
 	for (const h of data?.hits ?? []) groups.set(h.kind, [...(groups.get(h.kind) ?? []), h])
 
@@ -46,12 +49,36 @@ export function SiteSearch({ initial = '' }: { initial?: string }) {
 					autoFocus
 				/>
 			</label>
-			{data ? (
+			{pending ? (
+				/* The results' own measures: the count line, then two groups of rows (user decision: skeletons that
+				   match the spacing). */
+				<div role='status'>
+					<span className='sr-only'>Searching…</span>
+					<SkeletonLine className='mt-4 text-[0.8125rem]' width='12rem' />
+					<div className='mt-10 grid gap-x-16 gap-y-12 lg:grid-cols-2'>
+						{[0, 1].map((i) => (
+							<div key={i}>
+								{/* The group's `.bb-label` is inline-flex, so it sits in a full line of body text, 6px down. */}
+								<div className='h-[1lh] pt-[0.4rem]'>
+									<SkeletonLine className='text-[0.625rem]' width='6rem' />
+								</div>
+								<RowsSkeleton
+									rows={4}
+									row='border-t border-[var(--rule)] py-3'
+									lines={['text-[0.9375rem] leading-6', { className: 'mt-0.5 text-[0.78125rem]', scale: 0.6 }]}
+									figure={false}
+									className='mt-3'
+								/>
+							</div>
+						))}
+					</div>
+				</div>
+			) : data ? (
 				<p className='mt-4 text-[0.8125rem] text-[var(--ink-3)]'>
 					{data.total ? `${data.total.toLocaleString('en-PH')} found${data.total > data.hits.length ? `, the best ${data.hits.length} shown` : ''}` : 'Nothing by that name.'}
 				</p>
 			) : null}
-			<div className='mt-10 grid gap-x-16 gap-y-12 lg:grid-cols-2'>
+			<div className={`mt-10 grid gap-x-16 gap-y-12 lg:grid-cols-2 ${pending ? 'hidden' : ''}`}>
 				{[...groups].map(([kind, hits]) => (
 					<section key={kind}>
 						<h2 className='bb-label'>{kind}</h2>

@@ -1,9 +1,10 @@
+import { ImagesIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { cropStyle } from '../_lib/commons'
 import { GROUP, PROVINCE, commonsThumb, creditOf, type Craft } from '../_lib/crafts'
 import { PhotoCredit } from './discover-figure'
 
-/** A craft as a card: its first photo, or a wash of its colours where there is none.
+/** A craft as a card: its first photo, or a placeholder where there is none.
  *  replace: inside the dialog, so moving between crafts keeps one history entry.
  *  plain: no card, the photo and its words on the ground, square-cornered.
  *  bb-frame is only for the credit to slide out on hover; its own ground is overridden.
@@ -20,7 +21,11 @@ export function CraftCard({ c, replace = false, plain = false }: { c: Craft; rep
 						// eslint-disable-next-line @next/next/no-img-element
 						<img src={commonsThumb(img.url, 960, img.width)} alt='' loading='lazy' style={cropStyle(img, 4 / 3) ?? { objectPosition: img.focus }} className='size-full object-cover transition duration-500 group-hover:scale-[1.03]' />
 					) : (
-						<span className='block size-full' style={{ background: `linear-gradient(135deg, ${c.colors.join(', ')})` }} />
+						// No photo of the craft yet: a placeholder (user decision), not a picture of something else.
+						<span className='flex size-full flex-col items-center justify-center gap-2 text-[#a8907f]'>
+							<ImagesIcon size={32} weight='duotone' aria-hidden='true' />
+							<span className='text-[0.75rem]'>No photo yet</span>
+						</span>
 					)}
 				</span>
 				<span className={`block ${plain ? 'pt-4' : 'p-5'}`}>

@@ -57,21 +57,15 @@ export const workspaces: Workspace[] = [
 		state: 'live',
 	},
 	{
-		label: 'Travel',
-		href: '/soon',
+		label: 'Travel & Places',
+		href: 'https://travel.betterbarmm.com',
 		blurb:
-			'A written guide to the seven areas — what there is to see, what to eat, where lodging actually exists, and an honest account of the security picture in each.',
-		measure: 'Seven areas',
-		// The only workspace here that is written rather than captured, and the
-		// blurb says so: everything else on this index promises a record traced
-		// to the body that published it, and this one cannot make that promise.
-		state: 'soon',
-	},
-	{
-		label: 'Source layer',
-		blurb: 'The documents and datasets underneath every workspace, openable on their own.',
-		measure: 'PDFs and JSON',
-		state: 'planned',
+			'Beaches, islands, lakes, mosques and heritage sites to browse like stays, with what to do and eat, where to sleep, how to get there and an honest account of the security picture in each area.',
+		measure: '104 places, seven areas',
+		// The only workspace here that is written rather than captured, and its
+		// pages say so: everything else on this index promises a record traced to
+		// the body that published it, and this one cannot make that promise.
+		state: 'live',
 	},
 ]
 
@@ -89,7 +83,7 @@ export const projects: Project[] = [
 		key: 'preparedness',
 		label: 'Preparedness',
 		href: '/preparedness',
-		measure: 'Project NOAH hazards',
+		measure: 'Project NOAH Hazards',
 		blurb: 'Flood, landslide and storm surge hazard for every barangay, with the evacuation sites, hospitals and offices nearest each.',
 		state: 'live',
 	},
@@ -97,21 +91,21 @@ export const projects: Project[] = [
 		key: 'crafts',
 		label: 'Crafts',
 		href: '/crafts',
-		measure: 'Weaves, brass, gongs',
+		measure: 'Weaves, Brass, Gongs',
 		blurb: 'The weaves, mats, brass and gongs of the region: where each is made, who makes it, and where to see it.',
 		state: 'live',
 	},
 	{
-		key: 'places',
-		label: 'Places',
-		href: '/places',
-		measure: 'Islands, lakes, mosques',
-		blurb: 'Beaches, islands, lakes, mosques and heritage sites across the region: what is there, how to get there, what to know first.',
+		key: 'data',
+		label: 'Open Data',
+		href: '/data',
+		measure: 'CSV and JSON',
+		blurb: 'The records underneath every workspace as tables anyone can download, each with its source and every column described.',
 		state: 'live',
 	},
 	{
 		key: 'services',
-		label: 'Programs & services',
+		label: 'Programs & Services',
 		measure: 'Citizen’s Charters',
 		blurb: 'What each office offers, who it is for, and what to bring, from its own Citizen’s Charter.',
 		state: 'soon',

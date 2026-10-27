@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowUpRightIcon, CaretDownIcon, CrosshairIcon, MagnifyingGlassIcon, XIcon } from '@phosphor-icons/react'
-import { Select } from '@betterbarmm/editorial'
+import { Select, Skeleton } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { type CSSProperties, type ReactNode, useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
 import type { Barangay } from '../_lib/preparedness'
@@ -28,7 +28,7 @@ import type { FacilityFeatures, HeatFeatures, View } from './preparedness-map-ca
 
 const Canvas = dynamic(() => import('./preparedness-map-canvas'), {
 	ssr: false,
-	loading: () => <div className='h-full w-full animate-pulse bg-[var(--paper-2)]' aria-hidden='true' />,
+	loading: () => <Skeleton className='h-full w-full rounded-none' />,
 })
 
 export type Facility = { id: string; kind: string; name: string; lon: number; lat: number; town: string | null; prov: string | null; detail?: string | null; source: { label: string; url: string } }

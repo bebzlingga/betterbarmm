@@ -12,7 +12,7 @@ import {
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { EASE } from '@betterbarmm/editorial'
+import { EASE, RowsSkeleton, Skeleton, SkeletonLine } from '@betterbarmm/editorial'
 import type { MapArea, MapBarangay, MapMeasure, MapRegion, MapUnit, MapUnitDetail } from '../_lib/map-data'
 import type { SceneBarangay, SceneFocus, SceneStyle } from './map-scene'
 
@@ -35,7 +35,7 @@ import type { SceneBarangay, SceneFocus, SceneStyle } from './map-scene'
 
 const MapScene = dynamic(() => import('./map-scene'), {
 	ssr: false,
-	loading: () => <p className='absolute inset-0 grid place-items-center text-[0.8125rem] text-[var(--ink-3)]'>Drawing the region…</p>,
+	loading: () => <Skeleton className='absolute inset-0 rounded-none' />,
 })
 
 type Level =
@@ -494,7 +494,18 @@ export function MapApp({ data }: { data: MapRegion }) {
 						) : failed ? (
 							<p className='text-[0.875rem] text-[var(--ink-3)]'>This town could not be loaded. Zoom out and try again.</p>
 						) : !ready ? (
-							<p className='text-[0.875rem] text-[var(--ink-3)]'>Loading…</p>
+							/* The town panel's measures: kicker, heading, its tab row, then rows. */
+							<div role='status'>
+								<span className='sr-only'>Loading…</span>
+								<SkeletonLine className='text-[0.625rem]' width='7rem' />
+								<SkeletonLine className='mt-4 text-[2rem] leading-[1.05]' width='70%' />
+								<div className='mt-6 flex gap-4 border-b border-[var(--rule)] pb-3 text-[0.8125rem]'>
+									{['4rem', '3.5rem', '3rem', '4.5rem'].map((width) => (
+										<SkeletonLine key={width} width={width} />
+									))}
+								</div>
+								<RowsSkeleton rows={5} className='mt-4' />
+							</div>
 						) : level.kind === 'unit' ? (
 							<UnitPanel
 								detail={detail}

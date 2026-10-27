@@ -1,12 +1,13 @@
 'use client'
 
 import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, WavesIcon, XIcon, type Icon } from '@phosphor-icons/react'
-import { SearchField, Select } from '@betterbarmm/editorial'
+import { SearchField, Select, Skeleton } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ACCIDENT_TYPES, accidentDate, MAX_ZOOM, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
 import lake from '../../../../datasets/accidents/lake-lanao.json'
 import outline from '../../../../datasets/accidents/barmm-outline.json'
+import { AccidentChart } from './accident-chart'
 import type { AccidentFeatures, Focus } from './accident-map-canvas'
 
 /* ============================================================
@@ -27,7 +28,7 @@ import type { AccidentFeatures, Focus } from './accident-map-canvas'
 
 const Canvas = dynamic(() => import('./accident-map-canvas'), {
 	ssr: false,
-	loading: () => <div className='h-full w-full animate-pulse bg-[var(--paper-2)]' aria-hidden='true' />,
+	loading: () => <Skeleton className='h-full w-full rounded-none' />,
 })
 
 type Show = 'both' | 'heat' | 'points'
@@ -371,6 +372,9 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	return (
 		<div>
 			<div className='pb-6'>{filters(false)}</div>
+
+			{/* The same incidents over time, under the same filters; a year's bar opens that year. */}
+			<AccidentChart incidents={filtered} year={year} years={years} onYear={setYear} />
 
 			{/* The table view: every incident on the map, newest first, with its
 			    sources — drawn the way the registry's tables are drawn. */}

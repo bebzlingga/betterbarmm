@@ -40,9 +40,9 @@ export default async function NationalOfficePage({ params }: { params: Promise<{
 				logo={logo ? { src: logo.src, alt: `${o.agency} logo`, title: `Logo: ${logo.credit}` } : null}
 			/>
 
-			<section className='bb-container bb-section'>
-				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-24'>
-					<aside className='space-y-10'>
+			<section className='bb-container py-14 lg:py-20'>
+				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-20 xl:gap-24'>
+					<aside className='space-y-8'>
 						<div>
 							<p className={label}>What it is for</p>
 							<p className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{o.for}</p>
@@ -101,7 +101,7 @@ export default async function NationalOfficePage({ params }: { params: Promise<{
 						</div>
 					</aside>
 
-					<div className='min-w-0 space-y-10'>
+					<div className='min-w-0 space-y-8'>
 						{o.note ? (
 							<div className='border-l-2 border-[var(--accent)] pl-5'>
 								<p className={label}>Good to know</p>

@@ -53,7 +53,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				logo={logo ? { src: logo.src, alt: `${o.name} logo`, title: `Logo: ${logo.credit}` } : null}
 			/>
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-14 lg:py-20'>
 				{parent ? (
 					<p className='mb-8 text-[0.84375rem] text-[var(--ink-3)]'>
 						Attached to the{' '}
@@ -65,8 +65,8 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{/* Two columns from a laptop up: who heads it and how to reach it (35%), beside the right (65%):
 				    how it is organized, its offices in the provinces and its past heads. */}
-				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-24'>
-					<aside className='space-y-10'>
+				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-20 xl:gap-24'>
+					<aside className='space-y-8'>
 					<div>
 						<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Head of office</p>
 						{o.head ? (
@@ -164,7 +164,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				{org ? <OfficeStructure org={org} /> : null}
 
 				{field.length ? (
-					<section aria-labelledby='field' className='mt-14'>
+					<section aria-labelledby='field' className='mt-10'>
 						<h2 id='field' className='text-[1.25rem] font-extrabold'>
 							In the provinces <span className='text-[var(--ink-mute)]'>{field.length}</span>
 						</h2>
@@ -208,7 +208,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</section>
 				) : null}
 
-				<section aria-labelledby='heads' className='mt-14'>
+				<section aria-labelledby='heads' className='mt-10'>
 					<h2 id='heads' className='text-[1.25rem] font-extrabold'>
 						Who has headed it
 					</h2>
@@ -243,7 +243,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				</section>
 
 				{attached.length ? (
-					<section aria-labelledby='attached' className='mt-14'>
+					<section aria-labelledby='attached' className='mt-10'>
 						<h2 id='attached' className='text-[1.25rem] font-extrabold'>
 							Attached offices
 						</h2>
@@ -263,7 +263,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				</div>
 
 				{/* Where it all came from, as a section of its own under the two columns. */}
-				<section aria-labelledby='read' className='mt-16'>
+				<section aria-labelledby='read' className='mt-10'>
 					<h2 id='read' className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>
 						How this was read
 					</h2>

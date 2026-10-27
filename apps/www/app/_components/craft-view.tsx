@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, EnvelopeSimpleIcon, MapPinIcon, SealCheckIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, EnvelopeSimpleIcon, ImagesIcon, MapPinIcon, SealCheckIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { toneVars } from '../_lib/craft-tone'
 import { cropStyle } from '../_lib/commons'
@@ -101,7 +101,6 @@ export function CraftView({ c }: { c: Craft }) {
 					<CraftStage
 						key={c.slug}
 						name={c.name}
-						colors={c.colors}
 						// The three-dimensional studies are off for now; c.model turns them back on.
 						model={null}
 						images={c.images}
@@ -116,7 +115,9 @@ export function CraftView({ c }: { c: Craft }) {
 									<img src={commonsThumb(next.images[0].url, 250)} alt='' loading='lazy' style={cropStyle(next.images[0], 1) ?? undefined} className='size-full object-cover' />
 								</span>
 							) : (
-								<span className='size-16 shrink-0' style={{ background: `linear-gradient(135deg, ${next.colors.join(', ')})` }} />
+								<span className='grid size-16 shrink-0 place-items-center bg-[#efe6dc] text-[#a8907f]'>
+									<ImagesIcon size={22} weight='duotone' aria-hidden='true' />
+								</span>
 							)}
 							<span className='min-w-0'>
 								<span className={`${serif} block text-[0.9375rem] font-bold leading-snug group-hover:text-[#7b4a35]`}>{next.name}</span>
@@ -290,7 +291,7 @@ export function CraftView({ c }: { c: Craft }) {
 						<ul className='mt-2 space-y-1.5 text-[0.875rem]'>
 							{places.map((pl) => (
 								<li key={pl.slug}>
-									<Link href={`/places/${pl.slug}`} className='text-[#7b4a35] underline decoration-[#e4d8cb] underline-offset-4 hover:decoration-[#7b4a35]'>
+									<Link href={`https://travel.betterbarmm.com/places/${pl.slug}`} className='text-[#7b4a35] underline decoration-[#e4d8cb] underline-offset-4 hover:decoration-[#7b4a35]'>
 										{pl.name}
 									</Link>{' '}
 									<span className='text-[0.78125rem] text-[#8a6d5c]'>· {pl.municipality}</span>

@@ -35,12 +35,12 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 		<DirectoryDialog id={g.slug} name={g.name}>
 			<PlaceHeader label={g.kind} province={g.slug} name={g.name} />
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-14 lg:py-20'>
 				{/* Two columns, as an office's dialog: who governs it and how to reach it on the left; what it offers, its towns and its governors on the right. */}
-				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-24'>
-					<aside className='space-y-10'>
+				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-20 xl:gap-24'>
+					<aside className='space-y-8'>
 						{isProvince ? (
-							<div className='space-y-6'>
+							<div className='space-y-4'>
 								<div className='border-t border-[var(--ink)] pt-4'>
 									<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Governor</p>
 									<p className='mt-1 text-[1.375rem] font-extrabold tracking-[-0.02em]'>{g.governor ?? 'Not in the canvass'}</p>
@@ -66,7 +66,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 					<div className='min-w-0 [&>*:first-child]:mt-0'>
 						{lgu ? <DirectoryServices services={lguHasCharter(lgu) ? lgu.services : []} href={lguHref(lgu)} base='/services/lgu' note={lgu ? (lguHasCharter(lgu) ? 'From its Citizen’s Charter: what to bring, the fee and how long each takes.' : (lgu.charterNote ?? 'No Citizen’s Charter of its own was found online.')) : ''} /> : null}
 
-						<section aria-labelledby='towns' className='mt-14'>
+						<section aria-labelledby='towns' className='mt-10'>
 							<h2 id='towns' className='text-[1.25rem] font-extrabold'>
 								{g.units.length === 1 ? 'The city' : 'Towns and cities'} <span className='text-[var(--ink-mute)]'>{g.units.length}</span>
 							</h2>
@@ -96,7 +96,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						</section>
 
 						{lineage.length ? (
-							<section aria-labelledby='lineage' className='mt-14'>
+							<section aria-labelledby='lineage' className='mt-10'>
 								<h2 id='lineage' className='text-[1.25rem] font-extrabold'>
 									Governors since 2007
 								</h2>

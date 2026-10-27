@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { listExplainers } from './_lib/explainers'
 import { discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { crafts } from './_lib/crafts'
-import { places } from './_lib/places'
+import { datasets } from './_lib/open-data'
 import { SITE } from './_lib/seo'
 
 /* Every page a search engine should find, with the published explainers
@@ -28,8 +28,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		page('/directory', 0.8, 'monthly'),
 		page('/crafts', 0.8, 'monthly'),
 		...crafts.map((c) => page(`/crafts/${c.slug}`, 0.6, 'monthly')),
-		page('/places', 0.8, 'monthly'),
-		...places.map((p) => page(`/places/${p.slug}`, 0.6, 'monthly')),
+		page('/data', 0.8),
+		page('/data/licence', 0.5, 'monthly'),
+		...datasets.map((d) => page(`/data/${d.slug}`, 0.7)),
 		page('/explainers', 0.8),
 		...explainers.map((e) => ({ ...page(`/explainers/${e.slug}`, 0.7, 'monthly'), lastModified: new Date(e.updated_at ?? e.published_at ?? now) })),
 		page('/about', 0.6, 'monthly'),

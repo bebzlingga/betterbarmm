@@ -1,5 +1,6 @@
 'use client'
 
+import { Skeleton } from '@betterbarmm/editorial'
 import { MapPinIcon } from '@phosphor-icons/react'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
@@ -9,7 +10,7 @@ import type { MapPoint } from '../_lib/craft-places'
 /* Where the crafts are made: the map, and beside it the town picked on it, or every town
    when none is, each with its crafts. The map loads only in the browser. */
 
-const Canvas = dynamic(() => import('./crafts-map-canvas'), { ssr: false, loading: () => <div className='h-full w-full animate-pulse bg-[#e9dfd3]' aria-hidden='true' /> })
+const Canvas = dynamic(() => import('./crafts-map-canvas'), { ssr: false, loading: () => <Skeleton className='h-full w-full rounded-none' /> })
 
 export function CraftsMap({ points }: { points: MapPoint[] }) {
 	const [selected, setSelected] = useState<string | null>(null)

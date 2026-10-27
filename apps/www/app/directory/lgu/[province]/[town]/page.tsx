@@ -45,11 +45,11 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 		<DirectoryDialog id={`${g.slug}/${u.slug}`} name={u.name}>
 			<PlaceHeader label={`${u.isCity ? 'City' : 'Municipality'} · ${g.name}`} province={g.slug} town={u.slug} name={u.name} />
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-14 lg:py-20'>
 				{/* Two columns, as an office's dialog: who governs it and how to reach it on the left; what it offers, its barangays and its mayors on the right. */}
-				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-24'>
-					<aside className='space-y-10'>
-						<div className='space-y-6'>
+				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-20 xl:gap-24'>
+					<aside className='space-y-8'>
+						<div className='space-y-4'>
 							<div className='border-t border-[var(--ink)] pt-4'>
 								<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Mayor</p>
 								<p className='mt-1 text-[1.375rem] font-extrabold tracking-[-0.02em]'>{u.head ?? 'Not in the canvass'}</p>
@@ -74,7 +74,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 					<div className='min-w-0 [&>*:first-child]:mt-0'>
 						{lgu ? <DirectoryServices services={lguHasCharter(lgu) ? lgu.services : []} href={lguHref(lgu)} base='/services/lgu' note={lgu ? (lguHasCharter(lgu) ? 'From its Citizen’s Charter: what to bring, the fee and how long each takes.' : (lgu.charterNote ?? 'No Citizen’s Charter of its own was found online.')) : ''} /> : null}
 
-						<section aria-labelledby='barangays' className='mt-14'>
+						<section aria-labelledby='barangays' className='mt-10'>
 							<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
 								<h2 id='barangays' className='text-[1.25rem] font-extrabold'>
 									Barangays <span className='text-[var(--ink-mute)]'>{barangays.length}</span>
@@ -110,7 +110,7 @@ export default async function TownPage({ params }: { params: Promise<{ province:
 							</p>
 						</section>
 
-						<section aria-labelledby='lineage' className='mt-14'>
+						<section aria-labelledby='lineage' className='mt-10'>
 							<h2 id='lineage' className='text-[1.25rem] font-extrabold'>
 								Mayors since 2007
 							</h2>

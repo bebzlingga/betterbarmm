@@ -2,6 +2,7 @@
 
 import { ArrowRightIcon, BankIcon, BuildingsIcon, MagnifyingGlassIcon, MapTrifoldIcon, SirenIcon, UsersThreeIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
+import { RowsSkeleton, SkeletonLine } from '@betterbarmm/editorial'
 import { Emblem } from './emblem'
 import { useRouter } from 'next/navigation'
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
@@ -164,11 +165,35 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 
 			<div id='directory-results' aria-live='polite'>
 				{query.trim() ? (
-					<div className={`bb-container ${total ? 'py-16 lg:py-24' : 'py-32 lg:py-48'}`}>
-						{/* A count over the results; with none, the line stands alone in the middle. */}
-						<p className={`text-[0.84375rem] text-[var(--ink-3)] ${total ? '' : 'text-center'}`}>
+					<div className={`bb-container ${total || !entries ? 'py-16 lg:py-24' : 'py-32 lg:py-48'}`}>
+						{/* A count over the results; with none, the line stands alone in the middle. While the index is still
+						    on its way, the results' shape in grey (user decision: skeletons). */}
+						{!entries ? (
+							/* The results' own measures: the count, then each group's ruled head and its rows of portraits. */
+							<div role='status'>
+								<span className='sr-only'>Searching…</span>
+								<SkeletonLine className='text-[0.84375rem]' width='14rem' />
+								<div className='mt-6 grid gap-10 lg:grid-cols-2'>
+									{[0, 1].map((i) => (
+										<div key={i}>
+											<div className='border-b border-[var(--ink)] pb-2 text-[0.75rem]'>
+												<SkeletonLine width='8rem' />
+											</div>
+											<RowsSkeleton
+												rows={4}
+												row='flex items-center gap-4 border-b border-[var(--rule-soft)] px-2 py-3'
+												lead='size-10 rounded-full'
+												lines={['text-[0.9375rem]', { className: 'text-[0.8125rem]', scale: 0.6 }]}
+												figure={false}
+											/>
+										</div>
+									))}
+								</div>
+							</div>
+						) : null}
+						<p className={`text-[0.84375rem] text-[var(--ink-3)] ${total ? '' : 'text-center'} ${entries ? '' : 'hidden'}`}>
 							{!entries
-								? 'Searching…'
+								? ''
 								: total
 									? `${total.toLocaleString('en-PH')} ${total === 1 ? 'match' : 'matches'} for “${query.trim()}”`
 									: `Nothing matches “${query.trim()}”. Try a surname, a town or an acronym.`}

@@ -550,7 +550,8 @@ export function buildUnit(areaSlug: string, unitSlug: string): MapUnitDetail | n
 				stayNote: town.stayNote,
 				gettingThere: town.gettingThere,
 				caution: town.caution,
-				href: `https://travel.betterbarmm.com/${province.slug}/${unit.slug}`,
+				// Town pages are hidden for now (travel app, TOWN_PAGES); the area's page stands in.
+				href: `https://travel.betterbarmm.com/${province.slug}`,
 			}
 		: null
 

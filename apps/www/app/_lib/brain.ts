@@ -92,7 +92,7 @@ export function brain() {
 		{ id: 'w-directory', label: 'Directory', kind: 'workspace', note: 'Who heads each regional office, how to reach it, who led it before, every town’s emergency lines, and the first few services each office and town offers, each a link to it.', href: '/directory' },
 		{ id: 'w-incidents', label: 'Incident Watch', kind: 'workspace', note: 'Road crashes, shootings, drownings, fires and floods reported in the region, on a map.', href: '/accidents' },
 		{ id: 'w-preparedness', label: 'Preparedness', kind: 'workspace', note: 'Flood, landslide and storm surge hazard for every barangay, from Project NOAH, and the evacuation sites, hospitals and offices nearest each one.', href: '/preparedness' },
-		{ id: 'w-places', label: 'Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: '/places' },
+		{ id: 'w-places', label: 'Travel & Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: 'https://travel.betterbarmm.com' },
 		{ id: 'w-crafts', label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
 		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes, with each place’s head, numbers and email beside it.', href: '/services' },
 		{ id: 'w-discover', label: 'Discover', kind: 'workspace', note: 'How the Bangsamoro came to be, how its government works, and the explainers.', href: '/discover' },
@@ -256,7 +256,7 @@ export function brain() {
 				...(district ? [{ where: 'Election', what: `Votes in its province’s ${district} parliamentary district`, href: `${ELECTION}/results` }] : []),
 				...procurementLinks(own),
 				...(hits.length ? [{ where: 'Incident Watch', what: `${plural(hits.length, 'incident')} since 2019, ${n(dead)} dead`, href: '/accidents' }] : []),
-				...here.map((p) => ({ where: 'Places', what: p.name, href: `/places/${p.slug}` })),
+				...here.map((p) => ({ where: 'Travel & Places', what: p.name, href: `https://travel.betterbarmm.com/places/${p.slug}` })),
 			]
 			const lit = ['jo', 'w-directory', 'w-lgu', 'd-lgus', 'd-officials', 'd-lines', 'd-finances', ...(district ? ['w-election', 'd-election'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(hits.length ? ['w-incidents', 'd-incidents'] : []), ...(here.length ? ['w-places', 'd-places'] : []), ...(lgu ? ['w-services', ...(served ? ['d-lgu-charters'] : [])] : [])]
 			return {

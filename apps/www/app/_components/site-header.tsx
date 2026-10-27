@@ -10,7 +10,7 @@ import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo,
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
-	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'preparedness' | 'services' | 'directory' | 'crafts' | 'places' | 'explainers' | 'jo' | 'about' | 'contribute'
+	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'preparedness' | 'services' | 'data' | 'directory' | 'crafts' | 'places' | 'explainers' | 'jo' | 'about' | 'contribute'
 	/**
 	 * Sit over the page rather than on top of it.
 	 *
@@ -153,8 +153,8 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 			    Discover pages carry these links in the menu and the footer. */}
 			{overlay ? null : (
 				<UtilityBar
-					current={activeItem === 'services' ? 'services' : 'home'}
-					project={activeItem === 'accidents' || activeItem === 'preparedness' || activeItem === 'crafts' || activeItem === 'places' ? activeItem : undefined}
+					current='home'
+					project={activeItem === 'accidents' || activeItem === 'preparedness' || activeItem === 'crafts' || activeItem === 'data' ? activeItem : undefined}
 					className='bb-strip bg-[var(--paper-2)]'
 					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 					end={
@@ -345,7 +345,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
-								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'preparedness', href: '/preparedness', label: 'Preparedness' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const, { key: 'places', href: '/places', label: 'Places' } as const].map((item) => (
+								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'preparedness', href: '/preparedness', label: 'Preparedness' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const].map((item) => (
 									<Link
 										key={item.href}
 										href={item.href}

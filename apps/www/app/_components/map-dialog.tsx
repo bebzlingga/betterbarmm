@@ -1,6 +1,7 @@
 'use client'
 
 import { XIcon } from '@phosphor-icons/react'
+import { RowsSkeleton, Skeleton, SkeletonLine } from '@betterbarmm/editorial'
 import { useEffect, useRef, useState } from 'react'
 import type { MapRegion as MapData } from '../_lib/map-data'
 import { MapApp } from './map-app'
@@ -86,10 +87,30 @@ export function MapDialog({
 				<div className='min-h-0 flex-1'>
 					{data ? (
 						<MapApp data={data} />
+					) : failed ? (
+						<p className='py-24 text-center text-[0.875rem] text-[var(--ink-3)]'>The map could not be loaded. Close this and try again.</p>
 					) : (
-						<p className='py-24 text-center text-[0.875rem] text-[var(--ink-3)]'>
-							{failed ? 'The map could not be loaded. Close this and try again.' : 'Loading the map…'}
-						</p>
+						/* The map app's own shape while its data comes (user decision: skeletons): the map, and the panel
+						   beside it. */
+						<div role='status' className='grid h-full min-h-0 lg:grid-cols-[minmax(0,1fr)_26rem]'>
+							<span className='sr-only'>Loading the map…</span>
+							<Skeleton className='min-h-[50svh] rounded-none' />
+							{/* The region panel's measures: its padding, kicker, two-line heading, three lines of lead, the field. */}
+							<div className='border-t border-[var(--rule)] p-6 lg:border-l lg:border-t-0 lg:p-7'>
+								<SkeletonLine className='text-[0.625rem]' width='8rem' />
+								<div className='mt-4 text-[1.8rem] leading-[1.05]'>
+									<SkeletonLine width='85%' />
+									<SkeletonLine width='55%' />
+								</div>
+								<div className='mt-3 text-[0.875rem] leading-[1.7]'>
+									<SkeletonLine />
+									<SkeletonLine width='92%' />
+									<SkeletonLine width='60%' />
+								</div>
+								<Skeleton className='mt-6 h-[2.6rem] w-full' />
+								<RowsSkeleton rows={6} figure={false} className='mt-6' />
+							</div>
+						</div>
 					)}
 				</div>
 			</dialog>
