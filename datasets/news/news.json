@@ -1,9 +1,144 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-10-26T00:55:00.095Z",
+ "generatedAt": "2026-10-26T23:51:29.072Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "items": [
+  {
+   "url": "https://www.pids.gov.ph/details/news/press-releases/strong-institutions-human-capital-key-to-barmm-s-inclusive-development",
+   "title": "BARMM urged to turn development gains into better services, jobs",
+   "source": "PIDS - Philippine Institute for Development Studies",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T23:44:09.000Z",
+   "image": "https://pidswebs.pids.gov.ph/CDN/featured-image/1793021583_6adf568f3d743.png",
+   "via": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWV9sZTRpYzlzd3ZaR1E1Y1MxTGk4b016dmpmaDBkRlNxUVZsdjltVVR6V08tZWkwZWF0MzZlR1BlTlk5V3NNd1k4Z09TTndBOTNhbS1aTGZLbzVJOE01NDBrRGpLZTBWbXBYbnlZNWNOWUFYcHhRd2p3WlR0RXNlREprRHJ4aU00MXl5RnJXcTBKMG9ORzd1UFh0RnRMVmRfR3FOWGZBTXByQlZDczU5ZzdNR3FNc1hhU3ZmdmtoWQ?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://opinion.inquirer.net/195947/quo-vadis-barmm-1/",
+   "title": "Quo vadis, BARMM? (1)",
+   "source": "Inquirer",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T21:05:00.000Z",
+   "image": null,
+   "via": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JMmZsU21vTUpzVDhTVGNUV2N2al9EWDE5WWxvMU1FNUdrbEZYb1hYVUZwbUpnZ0pRTEVZaHVtdlRUU0NtdGxnclp0VmxFUHc0M3VvRHNPUkVEanlGYVp4YXRkSWTSAWhBVV95cUxQa19DRWFYbFhsRGIxU1JqdTRPVDNKbXVKN1Blbml0cDR0LUtvT0xnWE5ESWdjYVRjSUgxb2pxLVVDOFJEcUJhV2E3UGpGVU9YeGNuUnB2NjJneTg1V3NwS3FjZnlTc3NERQ?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://www.manilatimes.net/2026/10/27/news/national/barbers-seeks-stronger-ph-presence-in-basilan-strait/2454210",
+   "title": "Barbers seeks stronger PH presence in Basilan Strait",
+   "source": "The Manila Times",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T16:13:00.000Z",
+   "image": "https://manilatimes.net/manilatimes/uploads/images/2026/10/26/1277203.jpg",
+   "via": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdHdvM21KbGlfbTRydlh1V2NiSWdnVXVzMFhaQ0U3TWdWS2hnb2R0aFIzTVNFdkFPU2dTRlJScF9hXzY5aGdEUmdseEFwUjlmMUFfWjdId3VPRmJrcnVCeklUeTNUel9MLVhMVkVKWG9FLWpXb2dtOVFPdFRIRHZnTVVidzlvRVg2SWI3ZzZ1NWdTZDNFOWlKcnQ0ck9ZZHJUUGgtdFczOW5wOWxmY0xuVU1KWdIBuAFBVV95cUxNZ2ltckhNZWc0T3pDTG1nZUVsd1FtN3hIMEdkNVFuUnp5UDkteXZfbDdGempWajRpR1ZnZTJYNWY0YjYweE5HdDRlSFpISTRsQV9oeUlmY2hPYmFIRHlUQ3FUZlQtaE5fbUdRYU9TaGh1dXNjdGZudGtJekNSTi1kQ2ZGYmQyY1NRakhvbERGbng0enBSSVFWVlVoM1BscFJfZzFVTHBNU3YxcFRVQ3NhMUhKaXF6ekJY?oc=5",
+   "checked": "2026-10-27",
+   "pictured": true
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-to-advance-evidence-based-governance-streamline-service-delivery-in-barmm/?utm_source=rss&utm_medium=rss&utm_campaign=barmm-to-advance-evidence-based-governance-streamline-service-delivery-in-barmm",
+   "title": "BARMM to advance evidence-based governance; streamline service delivery in BARMM",
+   "source": "Bangsamoro Government",
+   "summary": "COTABATO CITY—Bangsamoro Planning and Development Authority (BPDA) convened on Oct. 15 development stakeholders, policymakers, and researchers here during the 3rd Bangsamoro Development Policy Research Forum (BDPRF) to foster evidence-based…",
+   "feed": "Bangsamoro Government",
+   "published_at": "2026-10-26T10:52:23.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/smc-e1793011874483-150x150.jpg",
+   "checked": "2026-10-26"
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/26/2565860/4-men-killed-maguindanao-del-sur-ambush",
+   "title": "4 men killed in Maguindanao del Sur ambush",
+   "source": "Philstar",
+   "summary": "Four men traveling together in a silver car were killed in an ambush on Monday afternoon, October 26, along a highway in an interior area of Barangay Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur.",
+   "feed": "Philstar",
+   "published_at": "2026-10-26T10:52:00.000Z",
+   "image": "https://media.philstar.com/photos/2026/10/26/datu-anggal_2026-10-26_18-52-40.jpg",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/26/2565856/5-killed-gun-attacks-across-barmm-towns-36-hours",
+   "title": "5 killed in gun attacks across BARMM towns in 36 hours",
+   "source": "Philstar",
+   "summary": "Gunmen killed a barangay councilor and four others in separate attacks across the adjoining provinces of Maguindanao del Sur and Maguindanao del Norte, as well as the Bangsamoro region&#39;s Special Geographic Area (SGA) within a span of…",
+   "feed": "Philstar",
+   "published_at": "2026-10-26T10:43:00.000Z",
+   "image": "https://media.philstar.com/photos/2026/10/26/maguindanao-gun-attack_2026-10-26_18-44-37.jpg",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://www.philstar.com/nation/2026/10/26/2565853/p704-m-worth-shabu-seized-3-pdea-9-operations",
+   "title": "P7.04-M worth of shabu seized in 3 PDEA-9 operations",
+   "source": "Philstar",
+   "summary": "Anti-narcotics agents seized a total of P7.04 million worth of shab in separate operations targeting three suspected peddlers, one of whom was from Tawi-Tawi in the Bangsamoro region and had reportedly eluded four attempts to entrap him in…",
+   "feed": "Philstar",
+   "published_at": "2026-10-26T10:19:00.000Z",
+   "image": "https://media.philstar.com/photos/2026/10/26/siay-drug-bust_2026-10-26_18-19-30.jpg",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://tribune.net.ph/2026/10/26/pending-ombudsman-cases-shadow-mangudadatus-barmm-chief-minister-bid",
+   "title": "Pending Ombudsman cases shadow Mangudadatu’s BARMM Chief Minister bid",
+   "source": "Daily Tribune",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T08:52:57.000Z",
+   "image": "https://images.assettype.com/tribune/2026-05-28/4dzbowhe/barmm-bangsamoro-pio.jpeg?w=415&auto=format&q=70&rect=0%2C14%2C415%2C233&h=233&fit=crop",
+   "via": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYWdCOFB2TnA1YzBtbDdfV096QW1MbTU3MWNRVHlhMnlGQ0l6UlJsWjU2dV9aSUxrWGQ2NzA0eUR3NjFNcXdQV3N1bXpvdlRhYWY2SVdEbXlTbVJxOFF3THRxWFJkSTVvSzMtd1o5UFpKY3NFODBPV2FJbEp3WGNOTlB0cjVqV0NqX0MxdWoxRF9NckwwVldnYzZ4dEpfTjRvSE1MTQ?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/mafar-distributes-75-solar-water-pump-sets-to-maguindanao-farmers-amid-el-nino/?utm_source=rss&utm_medium=rss&utm_campaign=mafar-distributes-75-solar-water-pump-sets-to-maguindanao-farmers-amid-el-nino",
+   "title": "MAFAR distributes 75 solar water pump sets to Maguindanao farmers amid El Niño",
+   "source": "Bangsamoro Government",
+   "summary": "COTABATO CITY – The Ministry of Agriculture, Fisheries, and Agrarian Reform (MAFAR) distributed 75 solar-powered water pump sets to farmers in Maguindanao del Sur (MDS) and Maguindanao del Norte (MDN) on Oct. 22, 2026, in Barangay Nuling,…",
+   "feed": "Bangsamoro Government",
+   "published_at": "2026-10-26T08:08:05.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/mafar-mag-150x150.jpeg",
+   "checked": "2026-10-26"
+  },
+  {
+   "url": "https://ptvnews.ph/suspect-in-brazen-rpg-attack-vs-maguindanao-sur-mayor-nabbed/",
+   "title": "Suspect in brazen RPG attack vs Maguindanao Sur mayor nabbed",
+   "source": "PTV News",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T07:40:04.000Z",
+   "image": "https://ptvnews.ph/wp-content/uploads/2026/10/865049179_1110988727976572_6789199492064590038_n.jpg",
+   "via": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPXzUyS1hCaVFFZmtzc0F5Zjd6UUt4Z1ozUk15SHhOZ3VCYTF4Q2NZNGZYb1FpYU9JZ3lOTS1lMm1tdUFwbEd0dlREN3F1MXU4cHFtS2hXMXJHalpwQmhxckh5eHdlN1VfTnJ3SC00WFFnN3FCa0tieXItX0JLVzVWbi1mTV84MnM?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-empowers-sulu-seaweed-growers-thru-baep-leap-capacity-building/?utm_source=rss&utm_medium=rss&utm_campaign=barmm-empowers-sulu-seaweed-growers-thru-baep-leap-capacity-building",
+   "title": "BARMM empowers Sulu seaweed growers thru BAEP-LEAP capacity building",
+   "source": "Bangsamoro Government",
+   "summary": "JOLO, Sulu — Forty seaweed growers from Barangays Bangas and Pagasinan in Hadji Panglima Tahil recently completed an intensive three-day training program on nursery management, record-keeping, and financial management for seaweed nursery.…",
+   "feed": "Bangsamoro Government",
+   "published_at": "2026-10-26T06:51:11.000Z",
+   "image": "https://bangsamoro.gov.ph/wp-content/uploads/2026/10/mafar-150x150.jpeg",
+   "checked": "2026-10-26"
+  },
+  {
+   "url": "https://opinion.inquirer.net/195941/barmms-parliamentary-experiment-can-autonomy-deliver",
+   "title": "BARMM’s Parliamentary Experiment: Can Autonomy Deliver?",
+   "source": "Inquirer",
+   "summary": "",
+   "feed": "Google News (international)",
+   "published_at": "2026-10-26T06:07:00.000Z",
+   "image": null,
+   "via": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQanRoN3F4YXVoZTVGc1pDWm5FcmdhMHhhMlZycmFRdU1iVFhNeHQxTXBSWGJrUlFBWFExbDFaWXZzZ3ZNR1EyOGhLWkd1MFZ2Uy1ySmtoM1h3dnJyNDdabGNQSEZmYWFVTmVxUWRCc1VOc0d5bFBJSzMxVHhjbDVYdFlVejhZcHNNRVlQWWFfUW1nUQ?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
   {
    "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid032MwfdZ9PEFMcN3Y76rg1SPfe8Mioww8AvNh4tM7SWBhwe3QQX9FyvxixKkTYFNZSl&id=100068735708353",
    "title": "APAT ang kumpirmadong patay nang paulanan ng bala ang isang sasakyan ngayong hapon sa Barangay Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur",
@@ -11,7 +146,32 @@
    "summary": "Ito ang kinumpirma ni Maguindanao del Sur Police Provincial Director Col. Michael John Mangahis sa Radyo Bida. Ayon kay Mangahis, hindi taga Datu Anggal ang apat na mga biktimang sakay ng silver na kotse.",
    "feed": "Facebook",
    "published_at": "2026-10-26T06:00:00.000Z",
-   "image": "/accident-photos/2026-10-26-tulunan-shooting.jpg"
+   "image": "/accident-photos/2026-10-26-tulunan-shooting.jpg",
+   "checked": "2026-10-26"
+  },
+  {
+   "url": "https://thechronicle.com.ph/top-wanted-suspect-arrested-in-rpg-attack-on-maguindanao-del-sur-mayor/",
+   "title": "Top wanted suspect arrested in RPG attack on Maguindanao del Sur mayor",
+   "source": "The Chronicle PH",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T04:30:54.000Z",
+   "image": "https://i0.wp.com/thechronicle.com.ph/wp-content/uploads/2026/10/867028849_1428713482088059_8311688128395146848_n.jpg?fit=1200%2C524&ssl=1",
+   "via": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWWc1Z3dIamp6anVuMmFGWXF6ZFo5Tk44d0kzQTZfQUV2OGFHUHJ4dEk3RFZnS2NRY0pYZ01hNy1fdC1iVElKeUtFRkFkWUtyZ0pTaGdwWVhqem1FWS1XQXp4U3Z2Nk04eXlFNWVsOHlDMHByQmRMU1haS09UN1hCMEI2Zy1wdlFIdzZNOHVOMFhxMHowTE5nWFJSVGdSMXlJ?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
+  },
+  {
+   "url": "https://tribune.net.ph/2026/10/26/suspect-in-rpg-attack-on-maguindanao-mayor-nabbed",
+   "title": "Suspect in RPG attack on Maguindanao mayor nabbed",
+   "source": "Daily Tribune",
+   "summary": "",
+   "feed": "Google News",
+   "published_at": "2026-10-26T02:28:57.000Z",
+   "image": "https://images.assettype.com/tribune/2025-06-27/t0ao8wb4/handcuff?w=1200&auto=format&q=70&rect=0%2C0%2C1366%2C768&h=675&fit=crop",
+   "via": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSlI1RHgyTjNpazV4QkpOVC1JTHAxbmZ1SUhlTGM2NXFHaFRxSlhaMlpSQ1NjaEI2R1htdlZHa01hTGlIM1gzclhtWGRxdDJ1THVTMGFwUkF2Ul9OLS1wcDF2TS1CYktuR2x4dzZBRDBNZU9ubXlCNGxMajJlMnlUNVdMY3VMWDBYbjlR?oc=5",
+   "checked": "2026-10-26",
+   "pictured": true
   },
   {
    "url": "https://www.panaynews.net/521-kilo-shabu-smuggling-plot-ex-barmm-lawmaker-denies-financing-laos-drug-shipment/",
@@ -1683,6 +1843,24 @@
    "via": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcWtZdWlOX2NrcU1JN2ZVZzRYcDFod3lOdlJFS2xjRGVnUzRuVEFPUnJTLTFQV0t1OHd3bkNwaUhQYWxsYW9YdmVnVjE4R2tjd0ZCc3hvR1RGS29nZWVaXzY4RVR6Y2lxc0J6R3pqUkRXOEhxaE8wSllBRTFoeEdmTmxhZnZUbURUcmN6UHBIc3hkX3gweTQwNVQ0bWRNWEZiby0ydnNWOWMtVXd1TncxVHUyYlI5dG8?oc=5",
    "title": "Marcos administration stands with Israel; BARMM says ‘Palestine is us’",
    "reason": "published 2023-10-18"
+  },
+  {
+   "url": "https://explained.ph/pnp-intensifies-security-in-barmm-poll-areas-of-concern/",
+   "via": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPN0JxS256S2duay1sZzdXRDBqc1hMdExtMW9jaHk4WEFuc0NjWmdnOFFHWnVNeFp4SEd4bUM5aE9kTjNGLXNaNVNLbUdpTjZ3N3ZTZGdkRXlxOE5TSjB3MHZVZFhIYTFlREFXVng1Z3pfdjZ0elpQa3lMREMtY0VUU2pXZw?oc=5",
+   "title": "PNP intensifies security in BARMM poll areas of concern",
+   "reason": "published 2026-08-15"
+  },
+  {
+   "url": "https://ptvnews.ph/barmm-sends-more-aid-to-covid-19-hit-lanao-sur-town/wao-v1/",
+   "via": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR0R6NzZ6Mlc5dVBtQ2x5VmFkOEpYbk1CWHJIbU4tWC14djRxc2FMbm5ZZ0hDOXRSekQ2MDJTMUFidTU0djdSMmhzUm5Oc3VQNWxLX2k3YnJ1bWZUdHk5bTFqSVN6Q1kyU0V3YzJoQzVZTzJKLV9PU0NiRV9GY2NkRHJnNXc?oc=5",
+   "title": "Google map of Wao, Lanao del Sur. (Photo from PNA)",
+   "reason": "published 2021-09-27"
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-to-advance-evidence-based-governance-streamline-service-delivery-in-barmm/",
+   "via": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOHNzWE5mb2lzOTQ3bmZQRGgtMFNOUEtPb01XVG1rY21qcHR3bGFUYXhWVWdyQWtxQmNVUzNGYzFEdU9DdUV4SDUxWnBCTG1LMlNqbmVxbjZLdmc3UjlkY3lXeVREc1ZSUUtEdmt0RzlEbW1kVjhxXzZhcVNHVHM5VktONU42dlBtOU1PUmJuNTJSaG5EQi1hbGlWN0JmS2ZfZFp0UVN1aXMzazdrMVA0dXFBWWVFVDBvaVlpeDJ0Y3g?oc=5",
+   "title": "BARMM to advance evidence-based governance; streamline service delivery",
+   "reason": "duplicate of the Bangsamoro Government feed copy, headline shortened"
   }
  ]
 }

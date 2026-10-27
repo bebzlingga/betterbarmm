@@ -587,6 +587,13 @@
    "lat": 7.0006,
    "lon": 124.3871,
    "matched": "Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur, Bangsamoro, 9622, Philippines"
+  },
+  "Dicalungan|Ampatuan|Maguindanao del Sur": null,
+  "Iganagampong|Datu Unsay|Maguindanao del Sur": null,
+  "Nabalawag|Nabalawag|Special Geographic Area": {
+   "lat": 7.1043,
+   "lon": 124.4915,
+   "matched": "Poblacion, Kadingilan, Nabalawag, Special Geographic Area, Bangsamoro, 9410, Philippines"
   }
  }
 }

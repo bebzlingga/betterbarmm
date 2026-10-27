@@ -14,8 +14,8 @@
    "date": "2026-10-26",
    "type": "shooting",
    "kind": "Shooting",
-   "title": "Four shot dead as gunmen riddle a silver car in Tulunan, Datu Anggal Midtimbang",
-   "summary": "Four people riding in a silver car were killed when gunmen sprayed the vehicle with bullets on the afternoon of Monday, 26 October 2026, in Barangay Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur. Col. Michael John Mangahis, the Maguindanao del Sur police provincial director, confirmed the four deaths to Radyo Bida and said the victims were not from Datu Anggal Midtimbang. They had not yet been identified.",
+   "title": "Four men shot dead in an ambush on their car in Tulunan, Datu Anggal Midtimbang",
+   "summary": "Four men travelling together in a silver car were killed in an ambush on the afternoon of Monday, 26 October 2026, along a highway in an interior part of Barangay Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur. All four died instantly from multiple gunshot wounds. Col. Michael John Mangahis, the Maguindanao del Sur police provincial director, and local officials said the victims were most likely not residents of the province; as of 4 pm they had not been identified. The Army’s 6th Infantry Division is helping police identify the victims and the attackers.",
    "province": "Maguindanao del Sur",
    "municipality": "Datu Anggal Midtimbang",
    "barangay": "Tulunan",
@@ -34,6 +34,12 @@
      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid032MwfdZ9PEFMcN3Y76rg1SPfe8Mioww8AvNh4tM7SWBhwe3QQX9FyvxixKkTYFNZSl&id=100068735708353",
      "title": "BREAKING NEWS: APAT ang kumpirmadong patay nang paulanan ng bala ang isang sasakyan ngayong hapon sa Barangay Tulunan, Datu Anggal Midtimbang, Maguindanao del Sur",
      "date": "2026-10-26"
+    },
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/10/26/2565860/4-men-killed-maguindanao-del-sur-ambush",
+     "title": "4 men killed in Maguindanao del Sur ambush",
+     "date": "2026-10-26"
     }
    ],
    "id": "2026-10-26-datu-anggal-midtimbang-shooting",
@@ -42,6 +48,110 @@
     "outlet": "DXMS Radyo Bida Cotabato City 882 (photo: Hamida Enggel Masukat)",
     "href": "https://www.facebook.com/permalink.php?story_fbid=pfbid032MwfdZ9PEFMcN3Y76rg1SPfe8Mioww8AvNh4tM7SWBhwe3QQX9FyvxixKkTYFNZSl&id=100068735708353"
    }
+  },
+  {
+   "date": "2026-10-26",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Tricycle driver shot dead by a motorcycle-riding gunman in Dicalungan, Ampatuan",
+   "summary": "Tricycle driver Hashim Buyogan Hadji Esmael was shot dead on the morning of Monday, 26 October 2026, in Barangay Dicalungan, Ampatuan, Maguindanao del Sur. Witnesses told police that one of two men riding a motorcycle shot him in the head as they came up to his tricycle, and the pair sped away.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Ampatuan",
+   "barangay": "Dicalungan",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8322,
+   "lon": 124.4571,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/10/26/2565856/5-killed-gun-attacks-across-barmm-towns-36-hours",
+     "title": "5 killed in gun attacks across BARMM towns in 36 hours",
+     "date": "2026-10-26"
+    }
+   ],
+   "id": "2026-10-26-ampatuan-shooting"
+  },
+  {
+   "date": "2026-10-25",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Two men on a motorcycle ambushed and killed on the highway in Iganagampong, Datu Unsay",
+   "summary": "Munsari Abpi and Usop Ugod, riding together on a motorcycle, were ambushed by gunmen on a highway in Barangay Iganagampong, Datu Unsay, Maguindanao del Sur, on the night of Sunday, 25 October 2026. Both died instantly; the attackers fled and left them beside the concrete road, according to Capt. Steffie Salanguit, spokesperson for the Police Regional Office-BAR.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Unsay",
+   "barangay": "Iganagampong",
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.8813,
+   "lon": 124.4356,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/10/26/2565856/5-killed-gun-attacks-across-barmm-towns-36-hours",
+     "title": "5 killed in gun attacks across BARMM towns in 36 hours",
+     "date": "2026-10-26"
+    }
+   ],
+   "id": "2026-10-25-datu-unsay-shooting"
+  },
+  {
+   "date": "2026-10-24",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Barangay councilor shot dead outside his store in Macabiso, Sultan Mastura",
+   "summary": "Saddam Barra, a member of the barangay council of Macabiso, Sultan Mastura, Maguindanao del Norte, was shot dead by two armed men in front of his roadside store on the morning of Saturday, 24 October 2026. The gunmen escaped on a motorcycle.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Mastura",
+   "barangay": "Macabiso",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2918,
+   "lon": 124.2901,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/10/26/2565856/5-killed-gun-attacks-across-barmm-towns-36-hours",
+     "title": "5 killed in gun attacks across BARMM towns in 36 hours",
+     "date": "2026-10-26"
+    }
+   ],
+   "id": "2026-10-24-sultan-mastura-shooting"
+  },
+  {
+   "date": "2026-10-24",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Motorcycle rider shot dead by gunmen in a minivan in Nabalawag",
+   "summary": "Alex Talungon was shot dead with pistols by gunmen aboard a minivan who came up behind him on a secluded stretch of highway in Barangay Nabalawag, Nabalawag, in the Special Geographic Area, on Saturday, 24 October 2026, as he rode his motorcycle toward the town centre. He died instantly from multiple gunshot wounds, according to local officials and the town police.",
+   "province": "Special Geographic Area",
+   "municipality": "Nabalawag",
+   "barangay": "Nabalawag",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.1043,
+   "lon": 124.4915,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/10/26/2565856/5-killed-gun-attacks-across-barmm-towns-36-hours",
+     "title": "5 killed in gun attacks across BARMM towns in 36 hours",
+     "date": "2026-10-26"
+    }
+   ],
+   "id": "2026-10-24-nabalawag-shooting"
   },
   {
    "date": "2026-10-23",
