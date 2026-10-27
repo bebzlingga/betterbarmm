@@ -448,6 +448,36 @@ price, for inaul, is from February 2018.
 
 ---
 
+## Jobs and scholarships — `datasets/opportunities/`
+
+Open calls for Bangsamoro residents, shown at `/opportunities`. Two files, two kinds of source.
+
+| | Path |
+| --- | --- |
+| Open government jobs | `jobs.json` |
+| Scholarships, grants and paid training | `scholarships.json` |
+| Build | `scripts/fetch_jobs.py`, `scripts/build_scholarships.py` |
+
+**Jobs** are every open position on the [Bangsamoro Job Portal](https://www.jobs.barmm.gov.ph), the
+regional government's own hiring site: title, office, assignment, salary grade and monthly pay, term,
+eligibility, education, training, experience, closing date, the duties and how to apply, as the portal
+gives them. It also records each office's open and total postings. The portal is a Laravel/Inertia app
+whose pages carry their data as JSON in a `<script data-page>` tag; its https answers automated reads
+with a Cloudflare challenge, so the fetch reads plain http, and links readers to the https address. It
+has no page per job, so a job links to the listing searched for its title. Rerun the fetch to refresh;
+a job past its closing date drops off the portal.
+
+**Scholarships** are the scholarship, training and student-work programs already in
+`datasets/services/offices.json`, each with the official page it was read from. A program carries an
+application status only where an official page states one (in October 2026, only the AHME scholarship:
+closed for school year 2026–2027). Offices announce most calls on Facebook, which no automated reader
+can open, so the rest say the window is not posted rather than guessing.
+
+Not here yet: the town PESOs' job fairs and local hiring (posted on Facebook), and national agencies'
+vacancies in the region (the Civil Service Commission's job portal refuses automated reads).
+
+---
+
 ## Travel — `packages/travel-data/` *(written, not a record)*
 
 21 places, 19 dishes, 7 areas, 7 festivals, 4 itineraries with 18 legs, 7

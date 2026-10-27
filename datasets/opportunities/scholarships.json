@@ -1,0 +1,226 @@
+{
+ "name": "Scholarships, grants and paid training in the Bangsamoro",
+ "generatedAt": "2026-10-25",
+ "note": "Programs the Bangsamoro Government runs for students, out-of-school youth and job-seekers, each traced to the official page it was read from. A status is given only where an official page states one.",
+ "programs": [
+  {
+   "name": "AHME College Assistance Program (AHME-CAP)",
+   "kind": "scholarship",
+   "office": "Ministry of Basic, Higher and Technical Education",
+   "officeSlug": "ministry-of-basic-higher-and-technical-education",
+   "summary": "Yearly grant for college students from low-income families to help with tuition and school costs; 1,540 students were covered for school year 2026-2027.",
+   "for": [
+    "students",
+    "families-in-need"
+   ],
+   "how": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/more-college-students-from-low-income-families-get-scholarship-grants-from-barmm/",
+   "website": "https://mbhte.bangsamoro.gov.ph/",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Access to Higher and Modern Education Scholarship Program (AHME-SP)",
+   "kind": "scholarship",
+   "office": "Ministry of Basic, Higher and Technical Education",
+   "officeSlug": "ministry-of-basic-higher-and-technical-education",
+   "summary": "College scholarship; for school year 2026-2027 each scholar gets PHP 40,000 per semester (PHP 80,000 a year). It prioritizes former combatants, their children, orphans and surviving spouses.",
+   "for": [
+    "students",
+    "former-combatants"
+   ],
+   "how": "Apply online through the AHME portal during the application window (the 7th cohort window, April 13 to May 13, 2026, is closed).",
+   "source": "https://bangsamoro.gov.ph/news/latest-news/over-1600-scholars-to-receive-p80k-cash-stipend-from-barmm-govt/",
+   "website": "https://mbhte.bangsamoro.gov.ph/",
+   "status": {
+    "state": "closed",
+    "note": "Applications for school year 2026–2027 (the 7th cohort) are closed; the online application form is marked not available.",
+    "source": "https://ahme-mbhte.bangsamoro.gov.ph/",
+    "checked": "2026-10-25"
+   }
+  },
+  {
+   "name": "Bangsamoro Medical Scholarship Program (BMSP-TDIF)",
+   "kind": "scholarship",
+   "office": "Ministry of Health",
+   "officeSlug": "ministry-of-health",
+   "summary": "Pays for students in medicine and other health courses at partner schools; scholars must return to serve their communities after graduating and passing the board exam.",
+   "for": [
+    "students"
+   ],
+   "how": null,
+   "source": "https://mcu.edu.ph/news/mcu-and-moh-barmm-forge-scholarship-partnership-to-expand-access-to-healthcare-education/",
+   "website": "https://moh.bangsamoro.gov.ph",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Bangsamoro Assistance for Science Education (BASE) and BASE-Merit",
+   "kind": "scholarship",
+   "office": "Ministry of Science and Technology",
+   "officeSlug": "ministry-of-science-and-technology",
+   "summary": "College scholarships in science, technology, engineering and math for graduating senior high school students from BARMM.",
+   "for": [
+    "students"
+   ],
+   "how": "Pass the MOST scholarship exam, then apply online or at a MOST provincial office.",
+   "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+   "website": "https://most.bangsamoro.gov.ph",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Bangsamoro International Graduate Study for Science and Technology (BIGAST)",
+   "kind": "scholarship",
+   "office": "Ministry of Science and Technology",
+   "officeSlug": "ministry-of-science-and-technology",
+   "summary": "Grants for Bangsamoro professionals to take graduate studies in advanced sciences abroad.",
+   "for": [
+    "workers"
+   ],
+   "how": null,
+   "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+   "website": "https://most.bangsamoro.gov.ph",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Bangsamoro Special Assistance for Science Education (BSASE)",
+   "kind": "scholarship",
+   "office": "Ministry of Science and Technology",
+   "officeSlug": "ministry-of-science-and-technology",
+   "summary": "Grants for enrolled college students in MOST priority science courses with at least 80% average, endorsed by a Member of Parliament.",
+   "for": [
+    "students"
+   ],
+   "how": "Submit the BSASE form with enrollment, grades, birth, indigency papers and an MP recommendation letter.",
+   "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+   "website": "https://most.bangsamoro.gov.ph",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Mujahidin Assistance for Science Education (MASE)",
+   "kind": "scholarship",
+   "office": "Ministry of Science and Technology",
+   "officeSlug": "ministry-of-science-and-technology",
+   "summary": "Educational grants for children of MILF/MNLF combatants taking science and technology courses, funded by Members of Parliament.",
+   "for": [
+    "students",
+    "former-combatants"
+   ],
+   "how": "Submit the MASE form with enrollment, birth, unit-base and indigency certificates.",
+   "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+   "website": "https://most.bangsamoro.gov.ph",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Professional Assistance for Science Education (PASE)",
+   "kind": "scholarship",
+   "office": "Ministry of Science and Technology",
+   "officeSlug": "ministry-of-science-and-technology",
+   "summary": "Graduate study grants in science and technology for BARMM professionals up to 50 years old.",
+   "for": [
+    "workers",
+    "students"
+   ],
+   "how": null,
+   "source": "https://most.bangsamoro.gov.ph/scholarships-grants-2/",
+   "website": "https://most.bangsamoro.gov.ph",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Bangsamoro Scholarship Program for Technical-Vocational Education and Training (BSP-TVET)",
+   "kind": "training",
+   "office": "Ministry of Basic, Higher and Technical Education",
+   "officeSlug": "ministry-of-basic-higher-and-technical-education",
+   "summary": "Free tech-voc training in courses such as Cookery NC II, Carpentry NC II, Driving NC II and Computer System Servicing NC II, run by MBHTE-TESD.",
+   "for": [
+    "out-of-school-youth",
+    "job-seekers",
+    "youth",
+    "workers"
+   ],
+   "how": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/over-1100-scholars-begin-training-under-barmm-tech-voc-program/",
+   "website": "https://mbhte.bangsamoro.gov.ph/",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Regional Manpower Development Center (RMDC) free skills training",
+   "kind": "training",
+   "office": "Ministry of Basic, Higher and Technical Education",
+   "officeSlug": "ministry-of-basic-higher-and-technical-education",
+   "summary": "Free tech-voc training for people aged 15 and up; trainees get a training certificate, a uniform, a PHP 180 daily allowance and referral to partner companies for on-the-job training.",
+   "for": [
+    "out-of-school-youth",
+    "persons-with-disability",
+    "job-seekers",
+    "workers"
+   ],
+   "how": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/free-tech-voc-training-empowers-bangsamoro-out-of-school-youth-pwds/",
+   "website": "https://mbhte.bangsamoro.gov.ph/",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Government Internship Program (GIP)",
+   "kind": "work",
+   "office": "Ministry of Labor and Employment",
+   "officeSlug": "ministry-of-labor-and-employment",
+   "summary": "Three months of work in government for fresh college graduates, with a monthly stipend of 75% of the minimum wage from MOLE and 25% from the partner office; there are also Hay-Atul Ulama and Kulliyah GIP versions.",
+   "for": [
+    "youth",
+    "job-seekers",
+    "ulama"
+   ],
+   "how": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mole-presents-2021-priority-programs-to-tawi-tawi-constituents/",
+   "website": "https://mole.bangsamoro.gov.ph/",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  },
+  {
+   "name": "Special Program for the Employment of Students (SPES)",
+   "kind": "work",
+   "office": "Ministry of Labor and Employment",
+   "officeSlug": "ministry-of-labor-and-employment",
+   "summary": "Summer jobs for high school students and out-of-school youth; MOLE pays 60% of the minimum wage as a stipend and the partner employer pays 40%.",
+   "for": [
+    "students",
+    "out-of-school-youth"
+   ],
+   "how": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mole-presents-2021-priority-programs-to-tawi-tawi-constituents/",
+   "website": "https://mole.bangsamoro.gov.ph/",
+   "status": {
+    "state": "unknown",
+    "note": "No open call on an official page we can read; the office announces calls on its own pages and Facebook."
+   }
+  }
+ ]
+}

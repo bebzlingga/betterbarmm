@@ -67,8 +67,10 @@ const measureEvents: MeasureEvent[] = (() => {
 
 /* ---- PhilGEPS ---- */
 const procurement = (() => {
-	const roots = [process.cwd(), path.join(process.cwd(), '..'), path.join(process.cwd(), '../..')]
-	const file = roots.map((r) => path.join(r, 'datasets/procurement/philgeps.json')).find((f) => fs.existsSync(f))
+	// turbopackIgnore: the build would otherwise trace every file under these roots; next.config includes philgeps.json.
+	const file = ['.', '..', '../..']
+		.map((up) => path.join(/* turbopackIgnore: true */ process.cwd(), up, 'datasets/procurement/philgeps.json'))
+		.find((f) => fs.existsSync(f))
 	if (!file) return { notices: [] as NoticeItem[], awards: [] as AwardItem[], open: [] as NoticeItem[] }
 	const raw = JSON.parse(fs.readFileSync(file, 'utf8')) as { columns: string[]; entities: { name: string }[]; categorys: string[]; awardees: string[]; notices: unknown[][] }
 	const c = (n: string) => raw.columns.indexOf(n)
