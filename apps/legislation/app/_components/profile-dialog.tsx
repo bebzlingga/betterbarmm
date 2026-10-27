@@ -1,11 +1,12 @@
 'use client'
 
 import { ArrowLeftIcon, ArrowRightIcon, XIcon } from '@phosphor-icons/react'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
-// The page under an open profile stays put.
-const lockScroll = (on: boolean) => {
-	document.documentElement.style.overflow = on ? 'hidden' : ''
+// The page under an open profile stays put. The lock follows whether a profile is open now, not which one
+// last opened or closed: `close` fires a task later, after the next profile has already opened.
+const syncScroll = () => {
+	document.documentElement.style.overflow = document.querySelector('dialog[open]') ? 'hidden' : ''
 }
 
 type Neighbour = { id: string; name: string; photo?: string }
@@ -17,7 +18,7 @@ function go(from: HTMLDialogElement | null, to: string) {
 	from?.close()
 	const next = document.getElementById(dialogId(to)) as HTMLDialogElement | null
 	next?.showModal()
-	lockScroll(true)
+	syncScroll()
 }
 
 function Face({ photo, name }: { photo?: string; name: string }) {
@@ -54,13 +55,22 @@ export function ProfileDialog({
 	children: React.ReactNode
 }) {
 	const dialog = useRef<HTMLDialogElement>(null)
+	// A link inside the profile ("Full record") leaves the page with the dialog still open, and an unmounted
+	// dialog never fires `close`: shut it here, or the next page cannot scroll.
+	useEffect(() => {
+		const el = dialog.current
+		return () => {
+			el?.close()
+			syncScroll()
+		}
+	}, [])
 	return (
 		<>
 			<button
 				type='button'
 				onClick={() => {
 					dialog.current?.showModal()
-					lockScroll(true)
+					syncScroll()
 				}}
 				aria-haspopup='dialog'
 				className='flex h-full w-full cursor-pointer flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 text-left transition hover:border-[var(--ink)]'
@@ -72,7 +82,7 @@ export function ProfileDialog({
 				id={dialogId(id)}
 				aria-label={label}
 				// Escape, the close button and the backdrop all end here.
-				onClose={() => lockScroll(false)}
+				onClose={syncScroll}
 				// A click on the backdrop lands on the dialog itself.
 				onClick={(e) => e.target === e.currentTarget && dialog.current?.close()}
 				className='m-auto h-[min(92vh,60rem)] max-h-none w-[min(76rem,calc(100vw-2rem))] max-w-none flex-col overflow-hidden border border-[var(--ink)] bg-[var(--paper)] p-0 text-[var(--ink)] shadow-[0_24px_60px_-20px_rgba(0,0,0,0.5)] backdrop:bg-black/50 open:flex'
