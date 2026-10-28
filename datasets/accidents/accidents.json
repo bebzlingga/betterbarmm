@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-10-27",
+ "generatedAt": "2026-10-28",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -3789,7 +3789,7 @@
    "type": "shooting",
    "kind": "Shooting",
    "title": "Shariff Aguak mayor's convoy ambushed with RPG and gunfire in Poblacion",
-   "summary": "Gunmen fired a rocket-propelled grenade and rifles at the two-vehicle convoy of Shariff Aguak Mayor Akmad 'Mitra' Ampatuan Sr., a Maguindanao massacre witness, in Barangay Poblacion, Shariff Aguak, Maguindanao del Sur, at about 6:30 a.m. on Sunday, January 25, 2026; the mayor was unharmed and two of his security escorts were wounded. The attackers fled in a minivan and three of them were killed by pursuing forces in Barangay Meta, Datu Unsay, the same day. President Marcos condemned the attack and the PNP formed a task group, eyeing hired gunmen, local politics and revenge as motives.",
+   "summary": "Gunmen fired a rocket-propelled grenade and rifles at the two-vehicle convoy of Shariff Aguak Mayor Akmad 'Mitra' Ampatuan Sr., a Maguindanao massacre witness, in Barangay Poblacion, Shariff Aguak, Maguindanao del Sur, at about 6:30 a.m. on Sunday, January 25, 2026; the mayor was unharmed and two of his security escorts were wounded. The attackers fled in a minivan and three of them were killed by pursuing forces in Barangay Meta, Datu Unsay, the same day. President Marcos condemned the attack and the PNP formed a task group, eyeing hired gunmen, local politics and revenge as motives. A Department of Justice resolution of 28 August 2026 found probable cause against 12 people, and in September the Iligan City Regional Trial Court issued warrants for them, among them Datu Unsay Mayor Datu Andal 'Xyril' Ampatuan V, on charges of frustrated murder and terrorism. On 24 October 2026 police arrested Toraipe Lusod, alias Aripi Adam, the alleged RPG gunman, in Barangay Meta, Datu Unsay, with an M4 rifle.",
    "province": "Maguindanao del Sur",
    "municipality": "Shariff Aguak",
    "barangay": "Poblacion",
@@ -4018,6 +4018,24 @@
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaXN5S0p4WGtvQzJwd3k1XzNKUkxaTy0tcjlqSjNma3A0YTc3SF9nMnZUYUdmeWRIUmczaXpUUC1UZHo5R05Vek9PTF9BWGo1Z2taamdVTGRRSDNsWmlMZ0VaXzB0bm9JZFpfOTU1a1A0c1RlblBKeEVBQTBlanVZWTJ5eGFHUzBQWG5tSUtYaURtZ2tsSF9Z?oc=5",
      "title": "Marcos condemns ambush on Maguindanao del Sur town mayor — Palace",
      "date": "2026-03-27"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://www.gmanetwork.com/news/topstories/regions/1003754/12-ordered-arrested-over-rpg-ambush-targeting-shariff-aguak-mayor/story/",
+     "title": "12 ordered arrested over RPG ambush targeting Shariff Aguak mayor",
+     "date": "2026-09-26"
+    },
+    {
+     "outlet": "Daily Tribune",
+     "url": "https://tribune.net.ph/2026/10/25/suspect-in-rpg-attack-on-shariff-aguak-mayor-arrested",
+     "title": "Suspect in RPG attack on Shariff Aguak mayor arrested",
+     "date": "2026-10-25"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2331599/maguindanao-del-sur-mayor-lauds-arrest-of-rpg-ambush-suspect",
+     "title": "Maguindanao del Sur mayor lauds arrest of RPG ambush suspect",
+     "date": "2026-10-28"
     }
    ],
    "id": "2026-01-25-shariff-aguak-shooting",
