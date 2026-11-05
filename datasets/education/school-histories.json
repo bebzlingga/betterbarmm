@@ -1,0 +1,314 @@
+{
+ "name": "Histories of schools in the region",
+ "note": "Short histories of schools in the region, each drawn from the sources listed under it: the laws that founded or renamed them, the schools’ own pages, and news reports. Where sources disagree, the history says so.",
+ "schools": [
+  {
+   "id": "osm-relation-20732445",
+   "name": "Mindanao State University (main campus)",
+   "history": [
+    "Mindanao State University (MSU) grew out of Republic Act 1387, approved on June 18, 1955. That law set up a \"University of Mindanao\" in Dansalan City, the old name of Marawi. MSU says the university was the idea of Senator Domocao A. Alonto, and that it was one of the government's answers to the so-called \"Mindanao Problem\". The charter was later amended by Republic Acts 1883, 3791 and 3868.",
+    "MSU was formally established in Marawi on September 1, 1961. Its first classes opened in 1962 with 282 students and 12 faculty members. Its charter gives it 3 aims: to educate the youth of Mindanao, Sulu and Palawan; to supply trained workers for the region's businesses and industries; and to bring Muslims and other cultural minorities into the mainstream of national life.",
+    "From that single campus in Marawi, MSU grew into a system of 8 autonomous campuses. These include MSU-Iligan Institute of Technology, MSU-Maguindanao and MSU-Tawi-Tawi College of Technology and Oceanography, plus 3 former CHED-supervised colleges that were later folded in. The main campus also runs a laboratory school, opened as an elementary school on September 9, 1964, and expanded into a high school (the Integrated Laboratory School) in 1978.",
+    "Classes stopped during the 2017 siege of Marawi, which began on May 23. They resumed on the main campus on August 22, 2017, while fighting continued about 2 kilometers away, and BenarNews reported that about 8,000 students came back. On December 3, 2023, a bomb exploded in the campus gymnasium during a Catholic Mass. Early reports said at least 3 people were killed and about 40 were injured. MSU resumed classes on December 11, 2023."
+   ],
+   "founded": "1961",
+   "sources": [
+    {
+     "title": "Republic Act No. 1387 (1955), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra1955/ra_1387_1955.html"
+    },
+    {
+     "title": "University Overview, MSU Main Campus",
+     "url": "https://www.msumain.edu.ph/university-overview"
+    },
+    {
+     "title": "Historical Background, MSU Integrated Laboratory School",
+     "url": "https://msumain.edu.ph/?p=17664"
+    },
+    {
+     "title": "Philippines: Marawi University Classes Begin as Clashes Continue, BenarNews (August 22, 2017)",
+     "url": "https://www.benarnews.org/english/news/philippine/classes-resume-08222017114419.html"
+    },
+    {
+     "title": "3 dead, 40 injured as blast rocks MSU in Marawi City, PTV News (December 3, 2023)",
+     "url": "https://ptvnews.ph/3-dead-40-injured-as-blast-rocks-msu-in-marawi-city/"
+    },
+    {
+     "title": "MSU-Marawi resumes classes on December 11, SunStar Davao (2023)",
+     "url": "https://www.sunstar.com.ph/davao/msu-marawi-resumes-classes-on-december-11"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-1540045180",
+   "name": "Mindanao State University - Maguindanao",
+   "history": [
+    "MSU-Maguindanao started as MSU Dinaig Agricultural and Technical College (MSU-DATC). The MSU Board of Regents created it on October 10, 1973, through Resolution No. 821. Dinaig was the old name of the town now called Datu Odin Sinsuat. The town was renamed in 1994 under Muslim Mindanao Autonomy Act No. 29.",
+    "The campus opened in 1973 with 7 faculty members, 15 administrative staff and 126 students. It offered only 3 courses: Agriculture, Forestry and Community Development. Classes were first held at the grandstand of the Dalican Pilot Elementary School.",
+    "In 1975 a fire destroyed all of the school's facilities. Datu Odin Sinsuat, then mayor of Dinaig, donated part of his 55-hectare property and sold the school another part, and that land is the present campus in Barangay Dalican. In 1982 the Board of Regents gave the campus fiscal autonomy and renamed it MSU-Maguindanao (Resolution No. 561). It is one of the autonomous campuses of the MSU System."
+   ],
+   "founded": "1973",
+   "sources": [
+    {
+     "title": "Mindanao State University–Maguindanao, Wikipedia (cites the university's own brief history)",
+     "url": "https://en.wikipedia.org/wiki/Mindanao_State_University%E2%80%93Maguindanao"
+    },
+    {
+     "title": "Datu Odin Sinsuat, Province of Maguindanao del Norte, PhilAtlas",
+     "url": "https://www.philatlas.com/mindanao/barmm/maguindanao/datu-odin-sinsuat.html"
+    },
+    {
+     "title": "University Overview, MSU Main Campus",
+     "url": "https://www.msumain.edu.ph/university-overview"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-435002436",
+   "name": "Mindanao State University - Tawi-Tawi College of Technology and Oceanography (MSU-TCTO)",
+   "history": [
+    "MSU-TCTO traces its roots to 1964, when the Mindanao State University Preparatory High School opened in Bongao as an extension of the MSU preparatory high school in Marawi. More of these secondary schools opened in the island towns of Tawi-Tawi between 1967 and 1977, and there were 20 by 1990.",
+    "The college itself was created by Republic Act 6060, approved on August 4, 1969, as the Sulu College of Technology and Oceanography, a unit of Mindanao State University. The law told it to build programs for using and conserving the fisheries of the Sulu Sea, and to do research on fish processing, fish culture and oceanography. It began with degree and diploma programs in fisheries technology.",
+    "Tawi-Tawi was split from Sulu as a separate province in 1973. Batas Pambansa Blg. 197, approved on March 16, 1982, renamed the school the Tawi-Tawi College of Technology and Oceanography. The college's own history places this renaming right after the 1973 province split, but the law that made it official dates from 1982. A science high school and a laboratory elementary school opened in 1984, and the college became an autonomous campus of the MSU System in 1990."
+   ],
+   "founded": "1969",
+   "sources": [
+    {
+     "title": "Republic Act No. 6060 (1969), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra1969/ra_6060_1969.html"
+    },
+    {
+     "title": "Batas Pambansa Blg. 197 (1982), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/bataspam/bp1982/bp_197_1982.html"
+    },
+    {
+     "title": "Our Legacy, MSU-TCTO",
+     "url": "https://msutcto.edu.ph/about/campus"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-557996522",
+   "name": "MSU Wao Community High School",
+   "history": [
+    "The school began as Wao Municipal High School. In 1966 Datu Tao Pagul, the barrio captain, proposed a public high school for Wao. Municipal Councilor Leonardo Lizada sponsored the resolution creating it, and the council under Mayor Silverio Eleazar approved it. Former Mayor Mamaco Saripada donated a 3.0887-hectare lot on J. Carumba Street, Barangay Eastern. The first classes opened in school year 1967-1968, run by the town, with Emma Eleazar as school head and 7 teachers.",
+    "Under an agreement signed on December 29, 1969 by Mayor Eleazar and Prof. Mauyag M. Tamano for MSU, the school became Mindanao State University - Wao Community High School, and MSU took on its 7 teachers. In 1970 it was still self-supporting and got no money from MSU. The MSU Board of Regents fully absorbed it into the MSU System on November 2, 1973.",
+    "In 2004 it was renamed MSU - Wao Community College when it began offering 2-year courses in agriculture and forestry as an extension of the MSU main campus. That college program later closed, and the school went back to its original name. It received a permit to offer senior high school in 2018. Today it is one of 13 external units of MSU-Marawi and teaches junior and senior high school."
+   ],
+   "founded": "1967",
+   "sources": [
+    {
+     "title": "The History of MSU Wao Community High School, MSU Main Campus",
+     "url": "https://www.msumain.edu.ph/?p=20854"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-981080458",
+   "name": "Cotabato State University",
+   "history": [
+    "Cotabato State University (CotSU) dates its founding to 1924, when it opened as Cotabato High School. It later became Cotabato City National High School, a name the Bangsamoro government's account gives for the years 1977 to 1983.",
+    "Batas Pambansa Blg. 484, approved on June 10, 1983, turned Cotabato City National High School into the Cotabato City State Polytechnic College (CCSPC). The college was to teach agriculture, fisheries, forestry and industrial technology, and to keep a high school program.",
+    "Republic Act 10585, approved on May 24, 2013, turned the polytechnic college into Cotabato State University, with its main campus in Cotabato City. Former Maguindanao Representative Bai Sandra Sema wrote the House bill. The conversion took effect in April 2021. At a later ceremony, CHED officials formally conferred university status and Dr. Sema G. Dilna was installed as its first university president.",
+    "CotSU marked its 100th anniversary in February 2024. Its alumni include the late Senator Salipada Pendatun, Simeon Datumanong and Zacaria Candao."
+   ],
+   "founded": "1924",
+   "sources": [
+    {
+     "title": "BARMM honors CotSU's century of educational commitment, excellence, Bangsamoro Information Office (February 2024)",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-honors-cotsus-century-of-educational-commitment-excellence/"
+    },
+    {
+     "title": "Batas Pambansa Blg. 484 (1983), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/bataspam/bp1983/bp_484_1983.html"
+    },
+    {
+     "title": "Republic Act No. 10585 (2013), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10585_2013.html"
+    },
+    {
+     "title": "Cotabato State U now a state university, The POST (July 23, 2021)",
+     "url": "https://thepost.net.ph/?p=27727"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-987677910",
+   "name": "Notre Dame University",
+   "history": [
+    "Notre Dame University (NDU) was founded in 1948 by the Missionary Oblates of Mary Immaculate as Notre Dame College. It was the first college in Cotabato City and in the old province of Cotabato. It was set up mainly to train teachers, and it offered courses in liberal arts, commerce and elementary education. Fr. Robert Sullivan, OMI was its first dean. (The university's own pages give his middle initial as both F. and E.)",
+    "The graduate school opened in school year 1962-1963. Notre Dame College became a university on March 11, 1969, and was formally inaugurated on September 9, 1969, with Fr. Joseph Milford, OMI as its first president. Fr. Orlando Quevedo, OMI became the first Filipino president in 1971.",
+    "In 1976 an earthquake struck Cotabato City, and the university had to rebuild. In 1980 three of its colleges received Level I accreditation from PAASCU. It opened the NDU Peace Center in December 1988 and later made peace education a core part of its programs, including master's and doctoral degrees in peace and development."
+   ],
+   "founded": "1948",
+   "sources": [
+    {
+     "title": "History, Purpose, Programs and Linkages, Notre Dame University",
+     "url": "https://www.ndu.edu.ph/articles/history-purpose-programs-and-linkages"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-547712483",
+   "name": "Dansalan College",
+   "history": [
+    "Dansalan College has roots in the work of Frank Laubach, an American Congregational missionary who developed the \"Each One Teach One\" literacy method among the Maranao around Lake Lanao. Laubach opened a Madrasah High School in Dansalan (now Marawi) in June 1941 with 23 students, but it closed when the Second World War reached the Philippines that December.",
+    "In 1950 Christians and Maranao leaders started Dansalan Junior College on land donated by the American Board of Commissioners for Foreign Missions. The college's own history says the founders were inspired by Laubach's work, while a 2023 Global Ministries note says Laubach founded it. It became a full college in 1968 and later added preschool and elementary classes. The Dansalan Research Center, founded in 1974 by Peter Gowing, became known for its collection on Muslim-Christian relations. On June 1, 1981 the school was reorganized as Dansalan College Foundation, Inc., a non-profit linked to the United Church of Christ in the Philippines. It was the only Christian school in Marawi, and about 99% of its roughly 2,000 students were Muslim.",
+    "During the 2017 siege of Marawi, gunmen burned Laubach Hall on the evening of May 23. The hall held the offices, library, science laboratory and chapel. They also burned 8 faculty housing units. Militants then used the campus as a stronghold, and after fire and airstrikes all 18 of its buildings and structures were destroyed. Since then the college has held classes at its annex near Iligan City, about 300 students in the first year, and has said it hopes to rebuild the Marawi campus one day."
+   ],
+   "founded": "1950",
+   "sources": [
+    {
+     "title": "Dansalan College Foundation, Inc: A Continuing Faith Journey, Part One: Historical Overview, Global Ministries",
+     "url": "https://www.globalministries.org/wp-content/uploads/nb/pages/13485/attachments/original/1510414805/dcfi.historical_overview.pdf"
+    },
+    {
+     "title": "Dansalan College Foundation, Part Two: The Marawi Siege, Global Ministries",
+     "url": "https://www.globalministries.org/wp-content/uploads/nb/pages/13485/attachments/original/1510414796/dcfi.marawi_siege.pdf"
+    },
+    {
+     "title": "Dansalan College Foundation Iligan Campus Building Project, Global Ministries",
+     "url": "https://globalministries.org/dansalan_college_foundation_iligan_campus_building_project"
+    },
+    {
+     "title": "Pray with the Philippines, May 21, 2023, Global Ministries",
+     "url": "https://www.globalministries.org/?p=50715"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-1050449891",
+   "name": "King Faisal Center for Islamic, Arabic and Asian Studies (MSU)",
+   "history": [
+    "The King Faisal Center for Islamic, Arabic and Asian Studies (KFCIAAS) is an academic unit of Mindanao State University in Marawi. It was set up to promote Arabic and Islamic studies in the southern Philippines, and MSU calls it the first government institution in the country to offer Islamic and Arabic studies. It was told to give priority to a Master of Arts in Islamic Studies.",
+    "The center was established with support from Saudi Arabia. In a 2016 interview with Arab News, MSU System President Habib W. Macaayong thanked the Saudi government for setting it up and said it had operated since 1974. He said it offered courses in Arabic, Islamic studies and international relations, as well as a master's degree in Shariah."
+   ],
+   "founded": null,
+   "sources": [
+    {
+     "title": "King Faisal Center for Islamic, Arabic and Asian Studies, MSU Main Campus",
+     "url": "https://www.msumain.edu.ph/?p=13181"
+    },
+    {
+     "title": "KSA praised for its Arabic and Islamic center in Philippines, Arab News (June 2016)",
+     "url": "https://www.arabnews.pk/node/942196"
+    }
+   ]
+  },
+  {
+   "id": "osm-node-6834179686",
+   "name": "Lanao Agricultural College",
+   "history": [
+    "The school in Lumbatan dates to the American period. A history published by MSU-Lanao del Norte Agricultural College says it began as the Lumbatan Farm School, with an American, S/Sgt. Ed F. Smith, as head teacher. It later became Lumbatan Agricultural High School and offered a full secondary agriculture course, taught in English by American teachers. A 2025 column in the Daily Tribune says the school was founded in 1902 by an American educator named Smith, after the Battle of Bayang.",
+    "Republic Act 3650, approved on June 22, 1963, turned the Lanao National Agricultural High School in Lumbatan into the Lanao Agricultural College.",
+    "The sources disagree on what happened to the original school. MSU-Lanao del Norte Agricultural College counts the Lumbatan Farm School as its own beginning, and says the school moved to Malabang in 1947 and then to Karomatan (now Sultan Naga Dimaporo, Lanao del Norte) in 1953. Yet the 1963 law still names an agricultural high school in Lumbatan, and a separate 1969 law (Republic Act 5507) made the Caromatan Agricultural School into Lanao del Norte Agricultural College. The Tribune column describes the Lumbatan college as still operating."
+   ],
+   "founded": null,
+   "sources": [
+    {
+     "title": "Republic Act No. 3650 (1963), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra1963/ra_3650_1963.html"
+    },
+    {
+     "title": "Republic Act No. 5507 (1969), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra1969/ra_5507_1969.html"
+    },
+    {
+     "title": "MSU-LNAC profile, NOMCAARRD",
+     "url": "https://nomcaarrd.cmu.edu.ph/msu-lnac"
+    },
+    {
+     "title": "Retracing my Lumbatan roots, Daily Tribune (April 5, 2025)",
+     "url": "https://tribune.net.ph/2025/04/05/retracing-my-lumbatan-roots"
+    }
+   ]
+  },
+  {
+   "id": "324301",
+   "name": "Upi Agricultural School",
+   "history": [
+    "DepEd's school records list 1919 as the founding year of Upi Agricultural School. Wikipedia's article on Upi says Captain Irving Bryant Edwards, an American army officer posted in Awang, founded it on August 19, 1919, as part of his effort to open schools in remote areas. We could not find a primary record of the founding.",
+    "After the Second World War, Republic Act 336, approved on July 20, 1948, let the President use government savings to rebuild and expand the Upi Agricultural School in Cotabato, including buying tractors, fuel, and draft and breeding animals.",
+    "The historian B. R. Rodil, who grew up in Upi, remembers it in the 1950s as Upi Agricultural High School, the only high school in the area. Its curriculum included farm work, such as plowing with cows or carabaos. DepEd now lists it as a public junior and senior high school. In 2013 Philstar described it as state-run and said the Maguindanao governor's office had more than 400 scholars there."
+   ],
+   "founded": "1919",
+   "sources": [
+    {
+     "title": "Republic Act No. 336 (1948), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra1948/ra_336_1948.html"
+    },
+    {
+     "title": "Upi, Maguindanao del Norte, Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Upi,_Maguindanao_del_Norte"
+    },
+    {
+     "title": "Remembering: From Cavite to Upi to greener pastures, CoverStory (B. R. Rodil)",
+     "url": "https://coverstory.ph/remembering-from-cavite-to-upi-to-greener-pastures"
+    },
+    {
+     "title": "Remembering: Growing up in 'Little Baguio' in Mindanao, CoverStory",
+     "url": "https://coverstory.ph/remembering-growing-up-in-little-baguio-in-mindanao/"
+    },
+    {
+     "title": "Maguindanao town to celebrate 58th founding anniversary, Philstar (June 7, 2013)",
+     "url": "https://www.philstar.com/nation/2013/06/07/951273/maguindanao-town-celebrate-58th-founding-anniversary"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-648178105",
+   "name": "Sultan Kudarat Islamic Academy Foundation College",
+   "history": [
+    "Sultan Kudarat Islamic Academy (SKIA) began as a family-run madrasah in Barrio Bulalo, in the old capital town of Sultan Kudarat, Maguindanao. It was registered under MECS Order No. 24, series of 1985. Lawyer Michael O. Mastura, engineer Darwish Al-Gobaishi and religious leader Salah Muhammad Ali Abdula planned it, inspired by the First World Conference on Muslim Education held in Mecca in 1977. The Mastura brothers bought land next to their grandmother's waqf (endowed) properties to form the permanent campus.",
+    "The madrasah was incorporated on September 2, 1991 as a non-stock educational foundation. Its first high school students enrolled on June 10, 1991. The school's history gives 2 figures for the first intake: 114 students in one place and 325 students in another. A special science class was added in its second year, with help from the Department of Science and Technology.",
+    "In 1992, donors from Abu Dhabi paid for campus improvements and new buildings. The school's history says a teachers' college opened in 1992 and that Mastura, as president, opened the 4-year college in 1993. The first college graduation was held in March 1996. A building for technical-vocational training was put up in 2011 with a Japanese government grassroots grant, and a renovated college building was finished in 2018."
+   ],
+   "founded": "1991",
+   "sources": [
+    {
+     "title": "History, SKIA College",
+     "url": "http://www.skia.edu.ph/history/"
+    }
+   ]
+  },
+  {
+   "id": "osm-way-315714442",
+   "name": "Basilan State College (Extension)",
+   "history": [
+    "Basilan State College began in 1966 as the UP Land Grant High School in Sta. Clara, Lamitan, on land from the University of the Philippines land grant. It opened with 2 first-year and 2 second-year classes, 120 students in all. In 1976 it became UP Sta. Clara Barangay High School, and in 1978 Presidential Decree 1303 renamed it Basilan National Agro-Industrial School.",
+    "Batas Pambansa Blg. 363 turned the school into Basilan National Agro-Industrial College in 1983. After former MNLF leader Gerry A. Salapuddin asked for a state college in Basilan, President Ferdinand Marcos issued Presidential Decree 1943, which renamed and converted it into Basilan State College. The college calls Salapuddin the \"Father of Basilan State College\". After the conversion it set up a main campus in Sumagdang, Isabela City, and extension sites in Maluso and Lamitan.",
+    "Republic Act 11554, approved on June 24, 2021, turned the college, including its extension campuses in Maluso, Tipo-Tipo, Lamitan and Isabela, into Basilan State University. Its main campus stays in Barangay Sumagdang, Isabela City. In October 2026 news outlets reported that the school had formally become a university."
+   ],
+   "founded": "1966",
+   "sources": [
+    {
+     "title": "History, Basilan State College",
+     "url": "https://bassc.edu.ph/basc/History.php"
+    },
+    {
+     "title": "Republic Act No. 11554 (2021), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra2021/ra_11554_2021.html"
+    },
+    {
+     "title": "Basilan now has a state university, Inquirer (October 4, 2026)",
+     "url": "https://newsinfo.inquirer.net/2316792/basilan-now-has-a-state-university"
+    }
+   ]
+  },
+  {
+   "id": "134861",
+   "name": "Panglima Hussin Arupin Elementary School",
+   "history": [
+    "DepEd's school records list 1911 as the founding year of this elementary school in Simunul, Tawi-Tawi.",
+    "It was first called Tungusung Elementary School. Republic Act 5111, approved on June 17, 1967, renamed it Panglima Hussin Arupin Elementary School. The law honors the late Panglima Hussin Arupin for his \"many benevolent acts\" for the education of his people on his home island of Simunul, which was then part of Sulu province."
+   ],
+   "founded": "1911",
+   "sources": [
+    {
+     "title": "Republic Act No. 5111 (1967), The LawPhil Project",
+     "url": "https://lawphil.net/statutes/repacts/ra1967/ra_5111_1967.html"
+    }
+   ]
+  }
+ ]
+}

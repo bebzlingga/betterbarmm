@@ -9,6 +9,7 @@ import {
   ClockCounterClockwiseIcon,
   CoinsIcon,
   FlagIcon,
+  GraduationCapIcon,
   MagnifyingGlassIcon,
   MapTrifoldIcon,
   MegaphoneIcon,
@@ -39,6 +40,7 @@ export function Sidebar({
   pending,
   reviewPosts,
   newReports,
+  newNeeds,
   workspaces,
   isAdmin,
   footer,
@@ -49,6 +51,8 @@ export function Sidebar({
   reviewPosts: number;
   /** Reader error reports not yet closed. */
   newReports: number;
+  /** School needs posted and waiting for review. */
+  newNeeds: number;
   workspaces: NavWorkspace[];
   isAdmin: boolean;
   /** The signed-in account and its sign-out, rendered on the server. */
@@ -74,6 +78,7 @@ export function Sidebar({
           {item("/updates", "Updates", ArrowsClockwiseIcon, pending)}
           {item("/social", "Social", MegaphoneIcon, reviewPosts)}
           {item("/reports", "Reports", FlagIcon, newReports)}
+          {item("/needs", "School needs", GraduationCapIcon, newNeeds)}
           {item("/news", "News", NewspaperIcon)}
           {item("/explainers", "Explainers", ArticleIcon)}
           {item("/activity", "Activity", ClockCounterClockwiseIcon)}

@@ -1,0 +1,1408 @@
+{
+ "name": "Health facilities in the region’s towns",
+ "types": [
+  "Ambulatory Surgical Clinic",
+  "Animal Bite Treatment Center",
+  "Barangay Health Station",
+  "Birthing Home",
+  "City Health Office",
+  "COVID-19 Testing Laboratory",
+  "DepEd Clinic",
+  "Dialysis Clinic",
+  "Drug Abuse Treatment and Rehabilitation Centers",
+  "Drug Testing Laboratory",
+  "General Clinic Laboratory",
+  "Hospital",
+  "Infirmary",
+  "Municipal Health Office",
+  "Provincial Health Office",
+  "Psychiatric Care Facility",
+  "Rural Health Unit",
+  "Social hygiene Clinic"
+ ],
+ "counts": {
+  "source": {
+   "title": "Number of health facilities by type and municipality, National Health Facility Registry",
+   "publisher": "Department of Health",
+   "asOf": "2021-01-27",
+   "url": "https://nhfr.doh.gov.ph/",
+   "via": "https://data.humdata.org/dataset/philippines-pre-disaster-indicators"
+  },
+  "towns": [
+   {
+    "area": "basilan",
+    "town": "akbar",
+    "townName": "Akbar",
+    "government": {
+     "Barangay Health Station": 9,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "al-barka",
+    "townName": "Al-Barka",
+    "government": {
+     "Barangay Health Station": 4,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "hadji-mohammad-ajul",
+    "townName": "Hadji Mohammad Ajul",
+    "government": {
+     "Barangay Health Station": 5,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "hadji-muhtamad",
+    "townName": "Hadji Muhtamad",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "lamitan",
+    "townName": "Lamitan",
+    "government": {
+     "Barangay Health Station": 15,
+     "Birthing Home": 4,
+     "Hospital": 1,
+     "Rural Health Unit": 3
+    },
+    "private": {
+     "Birthing Home": 1,
+     "Hospital": 1
+    }
+   },
+   {
+    "area": "basilan",
+    "town": "lantawan",
+    "townName": "Lantawan",
+    "government": {
+     "Barangay Health Station": 9,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "maluso",
+    "townName": "Maluso",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "sumisip",
+    "townName": "Sumisip",
+    "government": {
+     "Barangay Health Station": 16,
+     "Birthing Home": 1,
+     "Infirmary": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "tabuan-lasa",
+    "townName": "Tabuan-Lasa",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "tipo-tipo",
+    "townName": "Tipo-Tipo",
+    "government": {
+     "Barangay Health Station": 3,
+     "Rural Health Unit": 2
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "tuburan",
+    "townName": "Tuburan",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "basilan",
+    "town": "ungkaya-pukan",
+    "townName": "Ungkaya Pukan",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "government": {
+     "Barangay Health Station": 39,
+     "Birthing Home": 1,
+     "COVID-19 Testing Laboratory": 2,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 6,
+     "Hospital": 4,
+     "Infirmary": 1
+    }
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "amai-manabilang",
+    "townName": "Amai Manabilang",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "bacolod-kalawi",
+    "townName": "Bacolod-Kalawi",
+    "government": {
+     "Barangay Health Station": 5,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "balabagan",
+    "townName": "Balabagan",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "balindong",
+    "townName": "Balindong",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "bayang",
+    "townName": "Bayang",
+    "government": {
+     "Barangay Health Station": 3,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "binidayan",
+    "townName": "Binidayan",
+    "government": {
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "buadiposo-buntong",
+    "townName": "Buadiposo-Buntong",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "bubong",
+    "townName": "Bubong",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "butig",
+    "townName": "Butig",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "calanogas",
+    "townName": "Calanogas",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "ditsaan-ramain",
+    "townName": "Ditsaan-Ramain",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "ganassi",
+    "townName": "Ganassi",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "kapai",
+    "townName": "Kapai",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "kapatagan",
+    "townName": "Kapatagan",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "lumba-bayabao",
+    "townName": "Lumba-Bayabao",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "lumbaca-unayan",
+    "townName": "Lumbaca-Unayan",
+    "government": {
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "lumbatan",
+    "townName": "Lumbatan",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "lumbayanague",
+    "townName": "Lumbayanague",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "madalum",
+    "townName": "Madalum",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "madamba",
+    "townName": "Madamba",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "maguing",
+    "townName": "Maguing",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "malabang",
+    "townName": "Malabang",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1,
+     "Infirmary": 1
+    }
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "marantao",
+    "townName": "Marantao",
+    "government": {
+     "Barangay Health Station": 5,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "marawi",
+    "townName": "Marawi",
+    "government": {
+     "Barangay Health Station": 44,
+     "Birthing Home": 2,
+     "COVID-19 Testing Laboratory": 2,
+     "Hospital": 1,
+     "Rural Health Unit": 5
+    },
+    "private": {
+     "Birthing Home": 3,
+     "Hospital": 3,
+     "Infirmary": 6
+    }
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "marogong",
+    "townName": "Marogong",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "masiu",
+    "townName": "Masiu",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "mulondo",
+    "townName": "Mulondo",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "pagayawan",
+    "townName": "Pagayawan",
+    "government": {
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "piagapo",
+    "townName": "Piagapo",
+    "government": {
+     "Barangay Health Station": 4,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "picong",
+    "townName": "Picong",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "poona-bayabao",
+    "townName": "Poona Bayabao",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "pualas",
+    "townName": "Pualas",
+    "government": {
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "saguiaran",
+    "townName": "Saguiaran",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "sultan-dumalondong",
+    "townName": "Sultan Dumalondong",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "tagoloan-ii",
+    "townName": "Tagoloan II",
+    "government": {
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "tamparan",
+    "townName": "Tamparan",
+    "government": {
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Hospital": 1
+    }
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "taraka",
+    "townName": "Taraka",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "tubaran",
+    "townName": "Tubaran",
+    "government": {
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "tugaya",
+    "townName": "Tugaya",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "lanao-del-sur",
+    "town": "wao",
+    "townName": "Wao",
+    "government": {
+     "Barangay Health Station": 26,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "barira",
+    "townName": "Barira",
+    "government": {
+     "Barangay Health Station": 9,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "buldon",
+    "townName": "Buldon",
+    "government": {
+     "Barangay Health Station": 9,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "datu-blah-t-sinsuat",
+    "townName": "Datu Blah T. Sinsuat",
+    "government": {
+     "Barangay Health Station": 3,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "datu-odin-sinsuat",
+    "townName": "Datu Odin Sinsuat",
+    "government": {
+     "Barangay Health Station": 20,
+     "Birthing Home": 2,
+     "Hospital": 2,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 4
+    }
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "kabuntalan",
+    "townName": "Kabuntalan",
+    "government": {
+     "Barangay Health Station": 4,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "matanog",
+    "townName": "Matanog",
+    "government": {
+     "Barangay Health Station": 7,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "northern-kabuntalan",
+    "townName": "Northern Kabuntalan",
+    "government": {
+     "Barangay Health Station": 5,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "parang",
+    "townName": "Parang",
+    "government": {
+     "Barangay Health Station": 14,
+     "Birthing Home": 1,
+     "Infirmary": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 4
+    }
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "sultan-kudarat",
+    "townName": "Sultan Kudarat",
+    "government": {
+     "Barangay Health Station": 24,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 2
+    }
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "sultan-mastura",
+    "townName": "Sultan Mastura",
+    "government": {
+     "Barangay Health Station": 12,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "talitay",
+    "townName": "Talitay",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-norte",
+    "town": "upi",
+    "townName": "Upi",
+    "government": {
+     "Barangay Health Station": 17,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "ampatuan",
+    "townName": "Ampatuan",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "buluan",
+    "townName": "Buluan",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 2,
+     "Infirmary": 2
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-abdullah-sangki",
+    "townName": "Datu Abdullah Sangki",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-anggal-midtimbang",
+    "townName": "Datu Anggal Midtimbang",
+    "government": {
+     "Barangay Health Station": 5,
+     "Birthing Home": 3,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-hoffer-ampatuan",
+    "townName": "Datu Hoffer Ampatuan",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-paglas",
+    "townName": "Datu Paglas",
+    "government": {
+     "Barangay Health Station": 8,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 2,
+     "Infirmary": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-piang",
+    "townName": "Datu Piang",
+    "government": {
+     "Barangay Health Station": 5,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1,
+     "Infirmary": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-salibo",
+    "townName": "Datu Salibo",
+    "government": {
+     "Barangay Health Station": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-saudi-ampatuan",
+    "townName": "Datu Saudi-Ampatuan",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 2,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "datu-unsay",
+    "townName": "Datu Unsay",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "gen-s-k-pendatun",
+    "townName": "Gen. S. K. Pendatun",
+    "government": {
+     "Barangay Health Station": 7,
+     "Birthing Home": 3,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 3
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "guindulungan",
+    "townName": "Guindulungan",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 2,
+     "Infirmary": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "mamasapano",
+    "townName": "Mamasapano",
+    "government": {
+     "Ambulatory Surgical Clinic": 1,
+     "Barangay Health Station": 6,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "mangudadatu",
+    "townName": "Mangudadatu",
+    "government": {
+     "Barangay Health Station": 1,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "pagagawan",
+    "townName": "Pagagawan",
+    "government": {
+     "Barangay Health Station": 5,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "pagalungan",
+    "townName": "Pagalungan",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "paglat",
+    "townName": "Paglat",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 2,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "pandag",
+    "townName": "Pandag",
+    "government": {
+     "Barangay Health Station": 4,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "rajah-buayan",
+    "townName": "Rajah Buayan",
+    "government": {
+     "Barangay Health Station": 4,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "shariff-aguak",
+    "townName": "Shariff Aguak",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "shariff-saydona-mustapha",
+    "townName": "Shariff Saydona Mustapha",
+    "government": {
+     "Barangay Health Station": 2,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "south-upi",
+    "townName": "South Upi",
+    "government": {
+     "Barangay Health Station": 8,
+     "Birthing Home": 1,
+     "Infirmary": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "sultan-sa-barongis",
+    "townName": "Sultan Sa Barongis",
+    "government": {
+     "Barangay Health Station": 7,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "maguindanao-del-sur",
+    "town": "talayan",
+    "townName": "Talayan",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Birthing Home": 1
+    }
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "bongao",
+    "townName": "Bongao",
+    "government": {
+     "Barangay Health Station": 4,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {
+     "Hospital": 3
+    }
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "languyan",
+    "townName": "Languyan",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 1,
+     "Infirmary": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "mapun",
+    "townName": "Mapun",
+    "government": {
+     "Barangay Health Station": 13,
+     "Infirmary": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "panglima-sugala",
+    "townName": "Panglima Sugala",
+    "government": {
+     "Barangay Health Station": 11,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "sapa-sapa",
+    "townName": "Sapa-Sapa",
+    "government": {
+     "Barangay Health Station": 10,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "sibutu",
+    "townName": "Sibutu",
+    "government": {
+     "Barangay Health Station": 7,
+     "Birthing Home": 1,
+     "Hospital": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "simunul",
+    "townName": "Simunul",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "sitangkai",
+    "townName": "Sitangkai",
+    "government": {
+     "Barangay Health Station": 3,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "south-ubian",
+    "townName": "South Ubian",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 2,
+     "Rural Health Unit": 2
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "tandubas",
+    "townName": "Tandubas",
+    "government": {
+     "Barangay Health Station": 6,
+     "Birthing Home": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   },
+   {
+    "area": "tawi-tawi",
+    "town": "turtle-islands",
+    "townName": "Turtle Islands",
+    "government": {
+     "Barangay Health Station": 1,
+     "Rural Health Unit": 1
+    },
+    "private": {}
+   }
+  ]
+ },
+ "hospitals": {
+  "source": {
+   "title": "Health facilities of the Philippines (OpenStreetMap export)",
+   "publisher": "OpenStreetMap contributors, exported by the Humanitarian OpenStreetMap Team",
+   "license": "ODbL",
+   "url": "https://data.humdata.org/dataset/hotosm_phl_health_facilities"
+  },
+  "note": "Only what volunteers have mapped and named as a hospital. Not a complete list.",
+  "list": [
+   {
+    "osm": "way/497135622",
+    "name": "Datu Halun Sakilan Memorial Hospital",
+    "operator": null,
+    "area": "tawi-tawi",
+    "town": "bongao",
+    "townName": "Bongao",
+    "lat": 5.0263,
+    "lon": 119.77655
+   },
+   {
+    "osm": "way/156958688",
+    "name": "Buluan District Hospital",
+    "operator": "government",
+    "area": "maguindanao-del-sur",
+    "town": "buluan",
+    "townName": "Buluan",
+    "lat": 6.72362,
+    "lon": 124.79693
+   },
+   {
+    "osm": "way/139509683",
+    "name": "Cotabato Medical Specialist Hospital",
+    "operator": null,
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "lat": 7.22077,
+    "lon": 124.25031
+   },
+   {
+    "osm": "way/139509437",
+    "name": "Cotabato Puericulture Center & General Hospital",
+    "operator": null,
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "lat": 7.2245,
+    "lon": 124.24674
+   },
+   {
+    "osm": "way/139509881",
+    "name": "Cotabato Regional & Medical Center",
+    "operator": null,
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "lat": 7.19999,
+    "lon": 124.23659
+   },
+   {
+    "osm": "way/315836857",
+    "name": "Maguindanao Polyclinic",
+    "operator": null,
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "lat": 7.20013,
+    "lon": 124.23839
+   },
+   {
+    "osm": "way/139509883",
+    "name": "Notre Dame Hospital",
+    "operator": null,
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "lat": 7.19839,
+    "lon": 124.23756
+   },
+   {
+    "osm": "way/139509319",
+    "name": "Tanmiah Hospital",
+    "operator": null,
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "lat": 7.22693,
+    "lon": 124.24198
+   },
+   {
+    "osm": "node/6581661504",
+    "name": "United Doctors Hospital",
+    "operator": null,
+    "area": "cotabato-city",
+    "town": "cotabato-city",
+    "townName": "Cotabato City",
+    "lat": 7.219,
+    "lon": 124.24852
+   },
+   {
+    "osm": "way/1381594445",
+    "name": "Maguindanao Provincial Hospital",
+    "operator": "public",
+    "area": "maguindanao-del-sur",
+    "town": "datu-hoffer-ampatuan",
+    "townName": "Datu Hoffer Ampatuan",
+    "lat": 6.85089,
+    "lon": 124.42993
+   },
+   {
+    "osm": "node/7723929521",
+    "name": "Languyan Municipal Hospital",
+    "operator": null,
+    "area": "tawi-tawi",
+    "town": "languyan",
+    "townName": "Languyan",
+    "lat": 5.26985,
+    "lon": 120.07833
+   },
+   {
+    "osm": "way/1565686979",
+    "name": "Dr. Serapio Montañer, Jr. Al-Haj Memorial Hospital",
+    "operator": null,
+    "area": "lanao-del-sur",
+    "town": "malabang",
+    "townName": "Malabang",
+    "lat": 7.58116,
+    "lon": 124.08066
+   },
+   {
+    "osm": "way/289071302",
+    "name": "Amai Pakpak Medical Center",
+    "operator": "government",
+    "area": "lanao-del-sur",
+    "town": "marawi",
+    "townName": "Marawi",
+    "lat": 8.00494,
+    "lon": 124.28381
+   },
+   {
+    "osm": "way/500350798",
+    "name": "Doctor Abdullah Hospital",
+    "operator": null,
+    "area": "lanao-del-sur",
+    "town": "marawi",
+    "townName": "Marawi",
+    "lat": 8.01197,
+    "lon": 124.27854
+   },
+   {
+    "osm": "way/498000274",
+    "name": "MSU INFIRMARY",
+    "operator": null,
+    "area": "lanao-del-sur",
+    "town": "marawi",
+    "townName": "Marawi",
+    "lat": 8.0009,
+    "lon": 124.25758
+   },
+   {
+    "osm": "node/9654020223",
+    "name": "Salaam Hospital",
+    "operator": null,
+    "area": "lanao-del-sur",
+    "town": "marawi",
+    "townName": "Marawi",
+    "lat": 8.00362,
+    "lon": 124.2948
+   },
+   {
+    "osm": "way/664575313",
+    "name": "Datu Alawaddin Bandon Sr Memorial Hospital",
+    "operator": null,
+    "area": "tawi-tawi",
+    "town": "sibutu",
+    "townName": "Sibutu",
+    "lat": 4.84053,
+    "lon": 119.4593
+   },
+   {
+    "osm": "way/643557962",
+    "name": "Cotabato Sanitarium Hospital",
+    "operator": null,
+    "area": "maguindanao-del-norte",
+    "town": "sultan-kudarat",
+    "townName": "Sultan Kudarat",
+    "lat": 7.23611,
+    "lon": 124.26877
+   },
+   {
+    "osm": "way/555892682",
+    "name": "Tamparan Global Hospital",
+    "operator": null,
+    "area": "lanao-del-sur",
+    "town": "tamparan",
+    "townName": "Tamparan",
+    "lat": 7.87657,
+    "lon": 124.32797
+   },
+   {
+    "osm": "node/4664839489",
+    "name": "Datu Blah T. Sinsuat District Hospital",
+    "operator": null,
+    "area": "maguindanao-del-norte",
+    "town": "upi",
+    "townName": "Upi",
+    "lat": 7.01985,
+    "lon": 124.16469
+   },
+   {
+    "osm": "node/5456387421",
+    "name": "Wao District Hospital",
+    "operator": null,
+    "area": "lanao-del-sur",
+    "town": "wao",
+    "townName": "Wao",
+    "lat": 7.63817,
+    "lon": 124.72208
+   }
+  ]
+ }
+}

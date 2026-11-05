@@ -82,6 +82,9 @@ export type Report = {
 	created_at: string
 }
 
+export * from './needs'
+import { PUBLIC_NEED_COLUMNS, type SchoolNeed } from './needs'
+
 export type SocialStatus = 'draft' | 'in_review' | 'scheduled' | 'posted' | 'failed'
 
 export type SocialPost = {
@@ -170,4 +173,19 @@ export async function listNews(limit = 200): Promise<import('./news').NewsItem[]
 		.limit(limit)
 	if (error) throw new Error(`Could not load news: ${error.message}`)
 	return (data ?? []) as import('./news').NewsItem[]
+}
+
+/**
+ * Approved and met needs, newest first, for one school or all. Returns an
+ * empty list while the project's keys are not configured or the table has
+ * not been made yet, so a page can show its empty state instead of failing.
+ */
+export async function listSchoolNeeds(opts: { school?: string; limit?: number } = {}): Promise<SchoolNeed[]> {
+	const db = createPublicClient()
+	if (!db) return []
+	let query = db.from('school_needs').select(PUBLIC_NEED_COLUMNS).in('status', ['approved', 'met'])
+	if (opts.school) query = query.eq('school_id', opts.school)
+	const { data, error } = await query.order('created_at', { ascending: false }).limit(opts.limit ?? 500)
+	if (error) return []
+	return (data ?? []) as unknown as SchoolNeed[]
 }

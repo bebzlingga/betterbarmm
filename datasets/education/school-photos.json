@@ -1,0 +1,33 @@
+{
+ "name": "Photographs of schools, freely licensed, by the school’s id",
+ "note": "Each from Wikimedia Commons, with its author and licence as Commons states them; the width and height are the original’s.",
+ "photos": {
+  "osm-way-981080458": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cotabato_State_University_Main_Gate.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Cotabato_State_University_Main_Gate.jpg",
+   "author": "Francis 188",
+   "license": "CC BY-SA 4.0",
+   "width": 540,
+   "height": 960,
+   "caption": "The main gate of Cotabato State University"
+  },
+  "osm-relation-20732445": {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Mindanao_State_University_stadium_%28Marawi%2C_Lanao_Del_Sur%3B_10-14-2023%29.jpg/1280px-Mindanao_State_University_stadium_%28Marawi%2C_Lanao_Del_Sur%3B_10-14-2023%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Mindanao_State_University_stadium_(Marawi,_Lanao_Del_Sur;_10-14-2023).jpg",
+   "author": "Patrickroque01",
+   "license": "CC BY-SA 4.0",
+   "width": 3552,
+   "height": 2664,
+   "caption": "The university stadium on the main campus in Marawi"
+  },
+  "osm-way-987677910": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Burke_Building_NDU.jpg/1280px-Burke_Building_NDU.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Burke_Building_NDU.jpg",
+   "author": "MarkoDalisay",
+   "license": "CC BY-SA 4.0",
+   "width": 4160,
+   "height": 3120,
+   "caption": "The Burke Building, the main building of Notre Dame University, in 2018"
+  }
+ }
+}

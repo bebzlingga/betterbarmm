@@ -17,6 +17,10 @@ explainers on `www`.
   can count records edited since and say when a pull is due.
 - `proposals` — what the last fetch found at the sources, waiting for an
   editor in the admin's **Updates** page. See "Updates from the sources" below.
+- `school_needs` — what schools need, posted by teachers, students and parents
+  from the Education workspace. Editors approve, decline or mark each met in the
+  admin's **School needs** page; the public sees approved ones, never the
+  poster's contact detail.
 - `profiles` — one per signed-in account, with a role: `admin`, `editor` or
   `viewer`. Only admins and editors can write; only admins manage roles.
 
@@ -26,7 +30,7 @@ cannot write anything.
 ## Setup (once)
 
 1. Create a Supabase project.
-2. In the SQL editor, run `migrations/0001_cms.sql`, `0002_history.sql`, `0003_updates.sql`, `0004_social.sql` and `0005_reports.sql`, in that order.
+2. In the SQL editor, run `migrations/0001_cms.sql`, `0002_history.sql`, `0003_updates.sql`, `0004_social.sql`, `0005_reports.sql`, `0006_news.sql` and `0007_school_needs.sql`, in that order.
 3. Authentication → Sign In / Providers: turn **off** "Allow new users to sign up".
    Editors are invited instead (Authentication → Users → Invite).
 4. Copy `.env.example` at the repo root to `.env`, and add the same two

@@ -61,12 +61,48 @@
         "@types/geojson": "^7946.0.16",
       },
     },
+    "apps/education": {
+      "name": "@betterbarmm/education",
+      "version": "0.0.1",
+      "dependencies": {
+        "@betterbarmm/ai": "workspace:*",
+        "@betterbarmm/budget-data": "workspace:*",
+        "@betterbarmm/db": "workspace:*",
+        "@betterbarmm/editorial": "workspace:*",
+        "@betterbarmm/lgu-data": "workspace:*",
+        "@betterbarmm/ui": "workspace:*",
+        "@phosphor-icons/react": "^2.1.10",
+        "@vercel/analytics": "^2.0.1",
+        "maplibre-gl": "^6",
+        "motion": "^13.1.1",
+        "next": "16.2.6",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+      },
+    },
     "apps/election": {
       "name": "@betterbarmm/election",
       "version": "0.0.1",
       "dependencies": {
         "@betterbarmm/ai": "workspace:*",
         "@betterbarmm/editorial": "workspace:*",
+        "@betterbarmm/ui": "workspace:*",
+        "@phosphor-icons/react": "^2.1.10",
+        "@vercel/analytics": "^2.0.1",
+        "motion": "^13.1.1",
+        "next": "16.2.6",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+      },
+    },
+    "apps/health": {
+      "name": "@betterbarmm/health",
+      "version": "0.0.1",
+      "dependencies": {
+        "@betterbarmm/ai": "workspace:*",
+        "@betterbarmm/budget-data": "workspace:*",
+        "@betterbarmm/editorial": "workspace:*",
+        "@betterbarmm/lgu-data": "workspace:*",
         "@betterbarmm/ui": "workspace:*",
         "@phosphor-icons/react": "^2.1.10",
         "@vercel/analytics": "^2.0.1",
@@ -98,6 +134,21 @@
         "@betterbarmm/ai": "workspace:*",
         "@betterbarmm/editorial": "workspace:*",
         "@betterbarmm/lgu-data": "workspace:*",
+        "@betterbarmm/ui": "workspace:*",
+        "@phosphor-icons/react": "^2.1.10",
+        "@vercel/analytics": "^2.0.1",
+        "motion": "^13.1.1",
+        "next": "16.2.6",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
+      },
+    },
+    "apps/library": {
+      "name": "@betterbarmm/library",
+      "version": "0.0.1",
+      "dependencies": {
+        "@betterbarmm/ai": "workspace:*",
+        "@betterbarmm/editorial": "workspace:*",
         "@betterbarmm/ui": "workspace:*",
         "@phosphor-icons/react": "^2.1.10",
         "@vercel/analytics": "^2.0.1",
@@ -320,13 +371,19 @@
 
     "@betterbarmm/editorial": ["@betterbarmm/editorial@workspace:packages/editorial"],
 
+    "@betterbarmm/education": ["@betterbarmm/education@workspace:apps/education"],
+
     "@betterbarmm/election": ["@betterbarmm/election@workspace:apps/election"],
+
+    "@betterbarmm/health": ["@betterbarmm/health@workspace:apps/health"],
 
     "@betterbarmm/legislation": ["@betterbarmm/legislation@workspace:apps/legislation"],
 
     "@betterbarmm/lgu": ["@betterbarmm/lgu@workspace:apps/lgu"],
 
     "@betterbarmm/lgu-data": ["@betterbarmm/lgu-data@workspace:packages/lgu-data"],
+
+    "@betterbarmm/library": ["@betterbarmm/library@workspace:apps/library"],
 
     "@betterbarmm/pdf-tools": ["@betterbarmm/pdf-tools@workspace:packages/pdf-tools"],
 
