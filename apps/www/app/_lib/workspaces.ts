@@ -57,6 +57,13 @@ export const workspaces: Workspace[] = [
 		state: 'live',
 	},
 	{
+		label: 'Library',
+		blurb:
+			'The books written about the Bangsamoro and its peoples, who wrote and published them, where each can be bought, borrowed or read free, and the magazines the region’s own offices put out.',
+		measure: 'Books · Authors · Magazines',
+		state: 'soon',
+	},
+	{
 		label: 'Travel & Places',
 		href: 'https://travel.betterbarmm.com',
 		blurb:

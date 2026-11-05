@@ -1,6 +1,7 @@
 'use client'
 
 import {
+  BooksIcon,
   ArrowUpRightIcon,
   BuildingsIcon,
   ReceiptIcon,
@@ -28,6 +29,7 @@ const ICONS: Record<string, Icon> = {
   Procurement: ReceiptIcon,
   Travel: CompassIcon,
   'Public services': LifebuoyIcon,
+  Library: BooksIcon,
   'Source layer': DatabaseIcon,
 }
 

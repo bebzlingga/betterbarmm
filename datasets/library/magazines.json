@@ -1,0 +1,340 @@
+{
+	"note": "Magazines, newsletters, journals and reports of the Bangsamoro Government’s offices and the bodies around it, with every issue found on their websites; each link is the office’s own copy. Found 2026-10-28.",
+	"magazines": [
+		{
+			"slug": "merdeka",
+			"title": "Merdeka",
+			"office": "Bangsamoro Information Office, Office of the Chief Minister",
+			"acronym": "BIO",
+			"kind": "newsletter",
+			"frequency": "monthly",
+			"since": 2022,
+			"about": "The Bangsamoro Government’s own newsletter: the month’s news from the Chief Minister’s office and the ministries, laid out as a magazine and posted on the government’s website.",
+			"url": "https://bangsamoro.gov.ph/newsletter-2/",
+			"issues": [
+				{
+					"label": "December 2022",
+					"date": "2022-12",
+					"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/10/Merdeka_December_2022.pdf"
+				},
+				{
+					"label": "February 2023",
+					"date": "2023-02",
+					"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/07/Merdeka_FEB-2023.pdf"
+				},
+				{
+					"label": "Ramadhan issue, 2023",
+					"date": "2023-04",
+					"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/04/Ramadhan-Issue-1.pdf"
+				},
+				{
+					"label": "May 2023",
+					"date": "2023-05",
+					"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/08/Merdeka_MAY_2023.pdf"
+				},
+				{
+					"label": "November 2023",
+					"date": "2023-11",
+					"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/11/Merdeka_NOVEMBER_2023-copy.pdf"
+				},
+				{
+					"label": "December 2023",
+					"date": "2023-12",
+					"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/12/Merdeka_December_2023.pdf"
+				}
+			]
+		},
+		{
+			"slug": "al-mizaniyyah",
+			"title": "Al-Mizaniyyah",
+			"office": "Ministry of Finance, and Budget and Management",
+			"acronym": "MFBM",
+			"kind": "budget magazine",
+			"frequency": "yearly",
+			"since": 2021,
+			"about": "The finance ministry’s magazine of each year’s budget: where the money comes from, what each ministry gets and what it is for, in plain language and charts. Its name is Arabic for “the budget”.",
+			"url": "https://mfbm.bangsamoro.gov.ph/publications/al-mizaniyyah/",
+			"issues": [
+				{
+					"label": "Al-Mizaniyyah 2021",
+					"date": "2021",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/05/Al-Mizaniyyah-Magazine-2021.pdf"
+				},
+				{
+					"label": "Al-Mizaniyyah 2023",
+					"date": "2023",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/05/Al-Mizaniyyah-Magazine-2023.pdf"
+				},
+				{
+					"label": "Al-Mizaniyyah 2024",
+					"date": "2024",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/06/Al-Mizaniyyah-FY-2024-Budget-Magazine.pdf"
+				},
+				{
+					"label": "Al-Mizaniyyah 2025",
+					"date": "2025",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/07/Al-Mizaniyyah-Budget-Magazine-FY2025.pdf"
+				}
+			]
+		},
+		{
+			"slug": "barmm-economic-briefer",
+			"title": "BARMM Economic Briefer",
+			"office": "Ministry of Finance, and Budget and Management",
+			"acronym": "MFBM",
+			"kind": "briefer",
+			"frequency": "quarterly",
+			"since": 2023,
+			"about": "A short quarterly on the region’s economy from the finance ministry: growth, prices, jobs, revenue and the provinces, with the figures behind each.",
+			"url": "https://mfbm.bangsamoro.gov.ph/publications/barmm-economic-briefer/",
+			"issues": [
+				{
+					"label": "Issue No. 1, 2023: the BARMM economy in brief, 2022–2024",
+					"date": "2023",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2023/09/BARMM-Economy-in-Brief-2022-2024.pdf"
+				},
+				{
+					"label": "Issue No. 2, 2023",
+					"date": "2023",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2023/12/Economic-Brief-Issue-No.-2_orig-1.pdf"
+				},
+				{
+					"label": "Issue No. 1, 2024",
+					"date": "2024",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/03/Economic-Briefer-Issue-1-2024.pdf"
+				},
+				{
+					"label": "Issue No. 2, 2024",
+					"date": "2024",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/04/Economic-Brief-Issue-no.-2-2024.pdf"
+				},
+				{
+					"label": "Issue No. 3, 2024",
+					"date": "2024",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/09/Economic-Brief-_Issue-No.-3-Series-of-2024.pdf"
+				},
+				{
+					"label": "Issue No. 4, 2024",
+					"date": "2024",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2024/12/Economic-Briefer-Issue-no.-4-2024.pdf"
+				},
+				{
+					"label": "Issue No. 1, 2025: provincial economic trends",
+					"date": "2025",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/03/Briefer-1-2025-BARMM-Provincial-Economic-Trends.pdf"
+				},
+				{
+					"label": "Issue No. 2, 2025",
+					"date": "2025",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/07/Economic-Brief-Issue-No.-2-Series-of-2025.pdf"
+				},
+				{
+					"label": "Issue No. 3, 2025",
+					"date": "2025",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/11/Economic-Brief-Issue-No.-3-Series-of-2025.pdf"
+				},
+				{
+					"label": "Issue No. 4, 2025",
+					"date": "2025",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/12/Economic-Brief-Issue-No.-4-Series-of-2025.pdf"
+				},
+				{
+					"label": "Issue No. 1, 2026",
+					"date": "2026",
+					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2026/06/Econ-Briefer_S1-2026.pdf"
+				}
+			]
+		},
+		{
+			"slug": "mhsdelivers",
+			"title": "MHSDelivers Magazine",
+			"office": "Ministry of Human Settlements and Development",
+			"acronym": "MHSD",
+			"kind": "magazine",
+			"frequency": "twice a year",
+			"since": 2021,
+			"about": "The housing ministry’s magazine of its programmes and projects, read as a flipbook on its website.",
+			"url": "https://mhsd.bangsamoro.gov.ph/mhsdelivers-magazine-january-june-2021/",
+			"issues": [
+				{
+					"label": "January–June 2021",
+					"date": "2021",
+					"url": "https://mhsd.bangsamoro.gov.ph/mhsdelivers-magazine-january-june-2021/"
+				},
+				{
+					"label": "July–December 2021",
+					"date": "2021",
+					"url": "https://mhsd.bangsamoro.gov.ph/mhsdelivers-magazine-july-december-2021/"
+				},
+				{
+					"label": "January–March 2022",
+					"date": "2022",
+					"url": "https://mhsd.bangsamoro.gov.ph/mhsdelivers-magazine-january-march-2022-2/"
+				}
+			]
+		},
+		{
+			"slug": "techronicle",
+			"title": "Techronicle",
+			"office": "Bangsamoro Information and Communications Technology Office",
+			"acronym": "BICTO",
+			"kind": "magazine",
+			"frequency": "quarterly",
+			"since": 2025,
+			"about": "The ICT office’s quarterly, with two issues for 2025 on its publications page: a flipbook and a PDF.",
+			"url": "https://bicto.bangsamoro.gov.ph/pages/publications.html",
+			"issues": [
+				{
+					"label": "Techronicle 2025, flipbook",
+					"date": "2025",
+					"url": "https://heyzine.com/flip-book/2dd28db917.html"
+				},
+				{
+					"label": "Techronicle 2025, PDF",
+					"date": "2025",
+					"url": "https://cdnc.heyzine.com/files/uploaded/349446d06f0e16a07be0c8e9affcca460c5e4f6f.pdf"
+				}
+			]
+		},
+		{
+			"slug": "mafar-newsletter",
+			"title": "MAFAR Newsletter",
+			"office": "Ministry of Agriculture, Fisheries and Agrarian Reform",
+			"acronym": "MAFAR",
+			"kind": "newsletter",
+			"frequency": "monthly",
+			"since": 2020,
+			"about": "The agriculture ministry’s monthly, of which two 2021 issues are on its publications page.",
+			"url": "https://mafar.bangsamoro.gov.ph/publications/",
+			"issues": [
+				{
+					"label": "Volume 2, No. 1: January 2021",
+					"date": "2021-01",
+					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/MONTH-OF-January-2021.pdf"
+				},
+				{
+					"label": "Volume 2, No. 4: April 2021",
+					"date": "2021-04",
+					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/MONTH-OF-APRIL-2021-compressed.pdf"
+				}
+			]
+		},
+		{
+			"slug": "mafar-annual-report",
+			"title": "MAFAR Annual Report",
+			"office": "Ministry of Agriculture, Fisheries and Agrarian Reform",
+			"acronym": "MAFAR",
+			"kind": "annual report",
+			"frequency": "yearly",
+			"since": 2014,
+			"about": "The agriculture ministry’s yearly report of what it did, carried over from its predecessor under the old autonomous region.",
+			"url": "https://mafar.bangsamoro.gov.ph/mafar-annual-reports/",
+			"issues": [
+				{
+					"label": "Annual Report 2014",
+					"date": "2014",
+					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/Annual-Report-2014.pdf"
+				},
+				{
+					"label": "Annual Report 2015",
+					"date": "2015",
+					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/Annual-Report-2015.pdf"
+				},
+				{
+					"label": "Annual Report 2016",
+					"date": "2016",
+					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/Annual-Report-2016.pdf"
+				},
+				{
+					"label": "Annual Report 2017",
+					"date": "2017",
+					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/2017-Annual-Report.pdf"
+				},
+				{
+					"label": "Annual Report 2018",
+					"date": "2018",
+					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/Annual-Report-2018.pdf"
+				}
+			]
+		},
+		{
+			"slug": "parliament-journal",
+			"title": "Journal of the Bangsamoro Parliament",
+			"office": "Bangsamoro Parliament",
+			"acronym": null,
+			"kind": "journal of proceedings",
+			"frequency": "every session",
+			"since": 2019,
+			"about": "The official record of each sitting of the Parliament, what was taken up and how the members voted, posted session by session for the two Bangsamoro Transition Authority parliaments.",
+			"url": "https://parliament.bangsamoro.gov.ph/category/publications/",
+			"issues": [
+				{
+					"label": "Journals, first BTA Parliament, 2019–2022",
+					"date": "2019–2022",
+					"url": "https://parliament.bangsamoro.gov.ph/journal-19/"
+				},
+				{
+					"label": "Journals, second BTA Parliament, 2022–2025",
+					"date": "2022–2025",
+					"url": "https://parliament.bangsamoro.gov.ph/journals-22/"
+				}
+			]
+		},
+		{
+			"slug": "bangsamoro-times",
+			"title": "Bangsamoro Times",
+			"office": "Bangsamoro Development Agency",
+			"acronym": "BDA",
+			"kind": "newsletter",
+			"frequency": null,
+			"since": 2014,
+			"about": "The news magazine of the Bangsamoro Development Agency, the MILF’s development arm set up under the peace process, launched for the last quarter of 2014.",
+			"url": "https://bangsamorodevelopment.org/publication/",
+			"issues": [
+				{
+					"label": "First issue, fourth quarter 2014",
+					"date": "2014",
+					"url": "https://bangsamorodevelopment.org/wp-content/uploads/2015/12/BDA-newsletter_BANGSAMORO-TIMES-1000copies.pdf"
+				},
+				{
+					"label": "Mindanao Trust Fund partners’ magazine, 2015",
+					"date": "2015",
+					"url": "https://bangsamorodevelopment.org/wp-content/uploads/2015/12/BDA-MTF-PO-Magazine-2015-web.pdf"
+				},
+				{
+					"label": "Mindanao Trust Fund partners’ newsletter, 2015",
+					"date": "2015",
+					"url": "https://bangsamorodevelopment.org/wp-content/uploads/2015/12/BDA-MTF-PO-Newsletter-2015-web.pdf"
+				},
+				{
+					"label": "BDA Annual Report 2014",
+					"date": "2014",
+					"url": "https://bangsamorodevelopment.org/wp-content/uploads/2015/12/BDA-Annual-Report-2014_web.pdf"
+				},
+				{
+					"label": "BDA Accomplishments 2015",
+					"date": "2015",
+					"url": "https://bangsamorodevelopment.org/wp-content/uploads/2015/12/BDA-Accomplishments-2015_web.pdf"
+				}
+			]
+		},
+		{
+			"slug": "autonomy-and-peace-review",
+			"title": "Autonomy & Peace Review",
+			"office": "Institute for Autonomy and Governance",
+			"acronym": "IAG",
+			"kind": "journal",
+			"frequency": null,
+			"since": 2005,
+			"about": "The Cotabato City institute’s journal on autonomy, the peace process and the Bangsamoro, with issues going back to the ARMM years; the institute lists them on its own site.",
+			"url": "https://iag.org.ph/publications/autonomy-peace",
+			"issues": [
+				{
+					"label": "A Review of the BARMM Transition, July 2025",
+					"date": "2025-07",
+					"url": "https://iag.org.ph/images/IAG_REPORT_July_2025_Review_of_BARMM_Transition.pdf"
+				}
+			]
+		}
+	]
+}

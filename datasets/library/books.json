@@ -1,0 +1,6090 @@
+{
+	"name": "Books about the Bangsamoro",
+	"note": "Chosen by hand; records from Open Library and the publishers, covers from Open Library’s covers service, links as checked on the build date. Edit shelf.json, not this file.",
+	"built": "2026-11-05",
+	"books": [
+		{
+			"slug": "muslims-in-the-philippines",
+			"title": "Muslims in the Philippines",
+			"subtitle": null,
+			"authors": [
+				"cesar-adib-majul"
+			],
+			"role": "author",
+			"publisher": "up-press",
+			"year": 1973,
+			"edition": "Reissued 1999",
+			"pages": 392,
+			"isbn": "9789715421881",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "The standard history of the Muslim peoples of the Philippines: the coming of Islam, the sultanates of Sulu and Maguindanao, and three centuries of Spanish wars against them, told from the Moro side of the record. Reissued by the University of the Philippines Press in 1999.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "muslims-in-the-philippines.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from press.up.edu.ph",
+					"url": "https://press.up.edu.ph/?s=Muslims+in+the+Philippines"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715421881"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1784176W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715421881"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-contemporary-muslim-movement-in-the-philippines",
+			"title": "The Contemporary Muslim Movement in the Philippines",
+			"subtitle": null,
+			"authors": [
+				"cesar-adib-majul"
+			],
+			"role": "author",
+			"publisher": "mizan",
+			"year": 1985,
+			"edition": null,
+			"pages": 163,
+			"isbn": "9780933782174",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"conflict",
+				"religion"
+			],
+			"summary": "Majul’s short account of the Moro struggle of the 1970s and the rise of the Moro National Liberation Front, written for readers abroad.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1784171W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/contemporarymusl0000maju"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780933782174"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "studies-in-moro-history-law-and-religion",
+			"title": "Studies in Moro History, Law, and Religion",
+			"subtitle": null,
+			"authors": [
+				"najeeb-saleeby"
+			],
+			"role": "author",
+			"publisher": "bureau-of-printing",
+			"year": 1905,
+			"edition": null,
+			"pages": 107,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period",
+				"religion"
+			],
+			"summary": "The first English account of Maguindanao’s and Sulu’s genealogies, codes of law and Islam, translated from the tarsilas by an American colonial official who read them in the original. Out of copyright and free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "studies-in-moro-history-law-and-religion.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://archive.org/details/studiesinmorohi00salegoog"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3731097W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Studies%20in%20Moro%20History%2C%20Law%2C%20and%20Religion%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-history-of-sulu",
+			"title": "The History of Sulu",
+			"subtitle": null,
+			"authors": [
+				"najeeb-saleeby"
+			],
+			"role": "author",
+			"publisher": "bureau-of-printing",
+			"year": 1908,
+			"edition": null,
+			"pages": 283,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "Sulu from its earliest written genealogies to the American arrival, drawn from the sultanate’s own documents, Spanish records and the author’s years in Jolo. Out of copyright and free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "the-history-of-sulu.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://archive.org/details/historysulu00salegoog"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3731094W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20History%20of%20Sulu%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "mandate-in-moroland",
+			"title": "Mandate in Moroland",
+			"subtitle": "The American Government of Muslim Filipinos, 1899–1920",
+			"authors": [
+				"peter-gowing"
+			],
+			"role": "author",
+			"publisher": "up-pcas",
+			"year": 1977,
+			"edition": "New Day Publishers, 1983",
+			"pages": 411,
+			"isbn": "9789711001018",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "How the United States ruled the Moro Province and the Department of Mindanao and Sulu, from the Bates Treaty to the start of Filipinization, from the records of the men who governed. Reprinted by New Day in 1983.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "mandate-in-moroland.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL6385282W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711001018"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "muslim-filipinos-heritage-and-horizon",
+			"title": "Muslim Filipinos: Heritage and Horizon",
+			"subtitle": null,
+			"authors": [
+				"peter-gowing"
+			],
+			"role": "author",
+			"publisher": "new-day",
+			"year": 1979,
+			"edition": null,
+			"pages": 229,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"religion",
+				"anthropology"
+			],
+			"summary": "A general introduction to the Muslim peoples of the Philippines, their history, faith and institutions and their place in the republic, written for Filipino readers from the Dansalan Research Center in Marawi.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Muslim%20Filipinos%3A%20Heritage%20and%20Horizon%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "understanding-islam-and-muslims-in-the-philippines",
+			"title": "Understanding Islam and Muslims in the Philippines",
+			"subtitle": null,
+			"authors": [
+				"peter-gowing"
+			],
+			"role": "author",
+			"publisher": "new-day",
+			"year": 1988,
+			"edition": null,
+			"pages": 176,
+			"isbn": "9789711003869",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"religion"
+			],
+			"summary": "Gowing’s essays on Islam as it is lived in the Philippines, collected after his death.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19492835W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711003869"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-sulu-zone-1768-1898",
+			"title": "The Sulu Zone, 1768–1898",
+			"subtitle": "The Dynamics of External Trade, Slavery, and Ethnicity in the Transformation of a Southeast Asian Maritime State",
+			"authors": [
+				"james-francis-warren"
+			],
+			"role": "author",
+			"publisher": "nus-press",
+			"year": 1981,
+			"edition": "2nd edition 2007",
+			"pages": 390,
+			"isbn": "9789971693862",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"economy"
+			],
+			"summary": "The Sulu Sultanate at its height as a trading state: the China trade in sea produce, the slave raiding that fed it, and the peoples it drew in, from Spanish, British and Dutch archives. The book that made the Sulu Zone a field of study. Second edition 2007.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "the-sulu-zone-1768-1898.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from nuspress.nus.edu.sg",
+					"url": "https://nuspress.nus.edu.sg/search?q=Sulu+Zone"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9971693860"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL676535W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789971693862"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "iranun-and-balangingi",
+			"title": "Iranun and Balangingi",
+			"subtitle": "Globalization, Maritime Raiding and the Birth of Ethnicity",
+			"authors": [
+				"james-francis-warren"
+			],
+			"role": "author",
+			"publisher": "nus-press",
+			"year": 2002,
+			"edition": null,
+			"pages": 585,
+			"isbn": "9789971692421",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"anthropology"
+			],
+			"summary": "The Iranun and Balangingi raiders of the eighteenth and nineteenth centuries, the world economy that called their raiding into being, and how a way of life became an ethnic name.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "iranun-and-balangingi.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from nuspress.nus.edu.sg",
+					"url": "https://nuspress.nus.edu.sg/search?q=Iranun+and+Balangingi"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9971692422"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL676528W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789971692421"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "triumph-of-moro-diplomacy",
+			"title": "Triumph of Moro Diplomacy",
+			"subtitle": "The Maguindanao Sultanate in the 17th Century",
+			"authors": [
+				"ruurdje-laarhoven"
+			],
+			"role": "author",
+			"publisher": "new-day",
+			"year": 1989,
+			"edition": null,
+			"pages": 267,
+			"isbn": "9789711003906",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history"
+			],
+			"summary": "Sultan Kudarat’s Maguindanao as the Dutch and Spanish records show it: a sultanate that held its own between two empires by diplomacy as much as by war.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "triumph-of-moro-diplomacy.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4428865W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711003906"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "magindanao-1860-1888",
+			"title": "Magindanao, 1860–1888",
+			"subtitle": "The Career of Datu Uto of Buayan",
+			"authors": [
+				"reynaldo-ileto"
+			],
+			"role": "author",
+			"publisher": "cornell-seap",
+			"year": 1971,
+			"edition": "Anvil Publishing, 2007",
+			"pages": 143,
+			"isbn": "9789711110215",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "Datu Uto, who ruled the upper Pulangi against the Spaniards in the last decades of their rule, and what his rise and fall show of Maguindanao politics. Ileto’s first book, reissued by Anvil in 2007.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL2330439W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711110215"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-institutions-of-maguindanao",
+			"title": "The Institutions of Maguindanao",
+			"subtitle": null,
+			"authors": [
+				"ghislaine-loyre"
+			],
+			"role": "author",
+			"publisher": "historical-conservation-society",
+			"year": 1991,
+			"edition": null,
+			"pages": 83,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"anthropology"
+			],
+			"summary": "The sultanate, the datus, the law and the ranks of Maguindanao society, set out from Spanish sources and the author’s ethnographic fieldwork.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL42880554W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Institutions%20of%20Maguindanao%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "making-mindanao",
+			"title": "Making Mindanao",
+			"subtitle": "Cotabato and Davao in the Formation of the Philippine Nation-State",
+			"authors": [
+				"patricio-abinales"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2000,
+			"edition": null,
+			"pages": 235,
+			"isbn": "9789715503495",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"politics",
+				"colonial-period"
+			],
+			"summary": "How Cotabato and Davao were drawn into the Philippine state in the first half of the twentieth century, through the datus and settler elites who learned to work it, and what that made of Mindanao politics.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "making-mindanao.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Making+Mindanao"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715503497"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL950174W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/makingmindanaoco0000abin"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715503495"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "orthodoxy-and-history-in-the-muslim-mindanao-narrative",
+			"title": "Orthodoxy and History in the Muslim-Mindanao Narrative",
+			"subtitle": null,
+			"authors": [
+				"patricio-abinales"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2010,
+			"edition": null,
+			"pages": 278,
+			"isbn": "9789715506007",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"politics"
+			],
+			"summary": "Essays questioning the received story of the Moro struggle, the unbroken resistance from Spain to the present, and asking what the record shows instead.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "orthodoxy-and-history-in-the-muslim-mindanao-narrative.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/9715506003.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Orthodoxy+and+History"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715506003"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL21344067W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715506007"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "mindanao-ethnohistory-beyond-nations",
+			"title": "Mindanao Ethnohistory beyond Nations",
+			"subtitle": "Maguindanao, Sangir, and Bagobo Societies in East Maritime Southeast Asia",
+			"authors": [
+				"shinzo-hayase"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2007,
+			"edition": null,
+			"pages": 300,
+			"isbn": "9789715505116",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"anthropology"
+			],
+			"summary": "Maguindanao, Sangir and Bagobo as peoples of one sea rather than of two countries, in a history that crosses the border with Indonesia the way they did.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "mindanao-ethnohistory-beyond-nations.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/9715505112.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Mindanao+Ethnohistory"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715505112"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL21228409W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715505116"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-great-island",
+			"title": "The Great Island",
+			"subtitle": "Studies in the Exploration and Evaluation of Mindanao",
+			"authors": [
+				"miguel-bernad"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2004,
+			"edition": null,
+			"pages": 305,
+			"isbn": "9789715504690",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "Essays on how Mindanao was explored, described and valued from the sixteenth century on, by a Jesuit historian who spent his later life in Cagayan de Oro.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "the-great-island.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=The+Great+Island"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715504698"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1033974W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/greatislandstudi0000bern"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715504690"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "battle-of-marawi-1895",
+			"title": "Battle of Marawi, 1895",
+			"subtitle": null,
+			"authors": [
+				"mamitua-saber"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1986,
+			"edition": null,
+			"pages": 60,
+			"isbn": "9789711110321",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "The Spanish assault on the Maranao kotas at Marawi in 1895, from Spanish accounts and Maranao memory, by the Maranao sociologist who founded the university’s research centre.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "battle-of-marawi-1895.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL5048376W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711110321"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "aristocrats-of-the-malay-race",
+			"title": "Aristocrats of the Malay Race",
+			"subtitle": "A History of the Bangsa Moro in the Philippines",
+			"authors": [
+				"nasser-marohomsalic"
+			],
+			"role": "author",
+			"publisher": "the-author",
+			"year": 1995,
+			"edition": "Revised edition 2001",
+			"pages": 439,
+			"isbn": "9711111371",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"politics"
+			],
+			"summary": "A history of the Moro peoples written from within, from the sultanates to the MNLF, by a Maranao lawyer; printed by the author and much cited in the region. Revised 2001.",
+			"availability": "private",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9711111371"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL6242680W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9711111371"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-minoritization-of-the-indigenous-communities-of-mindanao-and-the-sulu-archipelago",
+			"title": "The Minoritization of the Indigenous Communities of Mindanao and the Sulu Archipelago",
+			"subtitle": null,
+			"authors": [
+				"rudy-rodil"
+			],
+			"role": "author",
+			"publisher": "afrim",
+			"year": 1994,
+			"edition": null,
+			"pages": 149,
+			"isbn": "9789719250722",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"politics",
+				"economy"
+			],
+			"summary": "How the Moro and Lumad peoples became minorities in their own homeland: the land laws, the resettlement programmes and the migration from Luzon and the Visayas, with the figures.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3226076W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719250722"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "a-story-of-mindanao-and-sulu-in-question-and-answer",
+			"title": "A Story of Mindanao and Sulu in Question and Answer",
+			"subtitle": null,
+			"authors": [
+				"rudy-rodil"
+			],
+			"role": "author",
+			"publisher": "mincode",
+			"year": 2003,
+			"edition": null,
+			"pages": 277,
+			"isbn": "9789719289500",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"reference"
+			],
+			"summary": "Mindanao’s history for the general reader, in questions and short answers: who was here first, how the settlers came, where the conflict began.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "a-story-of-mindanao-and-sulu-in-question-and-answer.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3226075W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719289500"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "kalinaw-mindanaw",
+			"title": "Kalinaw Mindanaw",
+			"subtitle": "The Story of the GRP-MNLF Peace Process, 1975–1996",
+			"authors": [
+				"rudy-rodil"
+			],
+			"role": "author",
+			"publisher": "afrim",
+			"year": 2000,
+			"edition": null,
+			"pages": 241,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process",
+				"history"
+			],
+			"summary": "The twenty-one years of talks between the government and the Moro National Liberation Front, from Jeddah to the 1996 Final Peace Agreement, by a historian who sat on the government panel.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18332266W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Kalinaw%20Mindanaw%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-lumad-and-moro-of-mindanao",
+			"title": "The Lumad and Moro of Mindanao",
+			"subtitle": null,
+			"authors": [
+				"rudy-rodil"
+			],
+			"role": "author",
+			"publisher": "minority-rights-group",
+			"year": 1993,
+			"edition": null,
+			"pages": 35,
+			"isbn": "9781897693056",
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"politics",
+				"anthropology"
+			],
+			"summary": "A short report for an international readership on the two peoples displaced by the settlement of Mindanao and the state of their claims in the early 1990s.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3226074W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781897693056"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "revolt-in-mindanao",
+			"title": "Revolt in Mindanao",
+			"subtitle": "The Rise of Islam in Philippine Politics",
+			"authors": [
+				"tjs-george"
+			],
+			"role": "author",
+			"publisher": "oup",
+			"year": 1980,
+			"edition": null,
+			"pages": 294,
+			"isbn": "9780195804607",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"politics"
+			],
+			"summary": "A journalist’s account of the Moro revolt of the 1970s, the MNLF and the Marcos government’s war, written as it happened.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "revolt-in-mindanao.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL351863W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780195804607"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "muslim-separatism",
+			"title": "Muslim Separatism",
+			"subtitle": "The Moros of Southern Philippines and the Malays of Southern Thailand",
+			"authors": [
+				"w-k-che-man"
+			],
+			"role": "author",
+			"publisher": "oup",
+			"year": 1990,
+			"edition": "Ateneo de Manila University Press edition, 1990",
+			"pages": 240,
+			"isbn": "9780195889246",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"conflict"
+			],
+			"summary": "The Moro and Patani Malay movements side by side: their histories, their organisations and what each state did about them, in the first full comparison of the two.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "muslim-separatism.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4799109W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780195889246"
+				}
+			],
+			"blurb": "This important comparative study views the separatist movements in the Philippines and Thailand as both political phenomena and springing from dissatisfied ethnic minorities. The author questions \"Modernization school\" and Marxist belief that ethnicity is a transitory phenomenon, arguing that that concept of \"national culture\" may result in minority groups remaining outside the culture. Examining the form and development of these resistance struggles, this study investigates their structure, leadership, and ideology, and highlights the role of Islam in shaping and sustaining the movements."
+		},
+		{
+			"slug": "swish-of-the-kris",
+			"title": "Swish of the Kris",
+			"subtitle": "The Story of the Moros",
+			"authors": [
+				"vic-hurley"
+			],
+			"role": "author",
+			"publisher": "dutton",
+			"year": 1936,
+			"edition": "Cerberus Books, 2010",
+			"pages": 312,
+			"isbn": "9780615382425",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "A popular history of the Moros and their wars with Spain and the United States, by an American who had lived in Zamboanga; vivid, partisan and long the only book of its kind in English. Reissued in 2010.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "swish-of-the-kris.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/0615382428"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL7086858W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780615382425"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "myself-and-a-few-moros",
+			"title": "Myself and a Few Moros",
+			"subtitle": null,
+			"authors": [
+				"sydney-cloman"
+			],
+			"role": "author",
+			"publisher": "doubleday",
+			"year": 1923,
+			"edition": null,
+			"pages": 180,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"memoir",
+				"colonial-period"
+			],
+			"summary": "The memoir of a US Army officer posted to Sulu at the start of American rule, and what he made of the datus and the people he was sent to govern. Out of copyright and free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "myself-and-a-few-moros.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://archive.org/details/ahz9224.0001.001.umich.edu"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL7762322W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Myself%20and%20a%20Few%20Moros%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "moroland-1899-1906",
+			"title": "Moroland, 1899–1906",
+			"subtitle": "America’s First Attempt to Transform an Islamic Society",
+			"authors": [
+				"robert-fulton"
+			],
+			"role": "author",
+			"publisher": "tumalo-creek",
+			"year": 2007,
+			"edition": null,
+			"pages": 423,
+			"isbn": "9780979517303",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period",
+				"conflict"
+			],
+			"summary": "The first years of the American occupation of the Moro country, from Bates’s treaty with the Sultan of Sulu to Bud Dajo, told campaign by campaign from the army’s records.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "moroland-1899-1906.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/0979517303"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL9775920W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780979517303"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-moro-war",
+			"title": "The Moro War",
+			"subtitle": "How America Battled a Muslim Insurgency in the Philippine Jungle, 1902–1913",
+			"authors": [
+				"james-arnold"
+			],
+			"role": "author",
+			"publisher": "bloomsbury",
+			"year": 2011,
+			"edition": null,
+			"pages": 306,
+			"isbn": "9781608190249",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period",
+				"conflict"
+			],
+			"summary": "The American campaigns against the Moros under Wood, Bliss and Pershing, from Bud Dajo to Bud Bagsak, as a military history for the general reader.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "the-moro-war.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1608190242"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL15415100W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/morowarhowameric0000arno"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781608190249"
+				}
+			],
+			"blurb": "Documents the early twentieth-century battle against Muslim insurgents in the southern Philippines, discussing the fierce debates between military supporters and peace advocates while offering insight into the challenges faced by U.S. forces and the contributions of future general John Pershing."
+		},
+		{
+			"slug": "making-moros",
+			"title": "Making Moros",
+			"subtitle": "Imperial Historicism and American Military Rule in the Philippines’ Muslim South",
+			"authors": [
+				"michael-hawkins"
+			],
+			"role": "author",
+			"publisher": "niu-press",
+			"year": 2013,
+			"edition": null,
+			"pages": 185,
+			"isbn": "9780875804590",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "How the American officers who ruled the Moro Province wrote its people into a story of savagery and progress, and used that story to govern.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "making-moros.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/0875804594.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from cornellpress.cornell.edu",
+					"url": "https://www.cornellpress.cornell.edu/book/9780875804590/making-moros/"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/0875804594"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19961645W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780875804590"
+				}
+			],
+			"blurb": "\"This book offers a unique look at the colonial creation of Muslim subjects during the early years of American rule in the southern Philippines. It examines the Islamic Philippines during its most formative period in modernity--a period indispensible to discussions of integration in the Filipino Islamic South\"--"
+		},
+		{
+			"slug": "american-datu",
+			"title": "American Datu",
+			"subtitle": "John J. Pershing and Counterinsurgency Warfare in the Muslim Philippines, 1899–1913",
+			"authors": [
+				"ronald-edgerton"
+			],
+			"role": "author",
+			"publisher": "up-kentucky",
+			"year": 2020,
+			"edition": null,
+			"pages": 376,
+			"isbn": "9780813178936",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period",
+				"conflict"
+			],
+			"summary": "Pershing’s years among the Maranao and in Sulu, as a captain at Lake Lanao and as governor of the Moro Province, and the mix of diplomacy and force he learned there.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "american-datu.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from kentuckypress.com",
+					"url": "https://www.kentuckypress.com/9780813178936/american-datu/"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/0813178932"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL20750332W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780813178936"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "civilizational-imperatives",
+			"title": "Civilizational Imperatives",
+			"subtitle": "Americans, Moros, and the Colonial World",
+			"authors": [
+				"oliver-charbonneau"
+			],
+			"role": "author",
+			"publisher": "cornell-press",
+			"year": 2020,
+			"edition": null,
+			"pages": 312,
+			"isbn": "9781501751899",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "The American project in the Moro South set against the other colonial empires of its day, and the Moros’ own uses of it, from the archives of three continents.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "civilizational-imperatives.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/1501751891.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from cornellpress.cornell.edu",
+					"url": "https://www.cornellpress.cornell.edu/book/9781501751899/civilizational-imperatives/"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1501751891"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781501751899"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "people-of-the-middle-ground",
+			"title": "People of the Middle Ground",
+			"subtitle": "A Century of Conflict and Accommodation in Central Mindanao, 1880s–1980s",
+			"authors": [
+				"ronald-edgerton"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2008,
+			"edition": null,
+			"pages": 439,
+			"isbn": "9789715505666",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"conflict"
+			],
+			"summary": "A hundred years in the Bukidnon–Lanao borderlands, where Maranao, Lumad, settlers and the state met and sometimes made terms.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "people-of-the-middle-ground.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/971550566X.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=People+of+the+Middle+Ground"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/971550566X"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL13722074W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715505666"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "moro-warrior",
+			"title": "Moro Warrior",
+			"subtitle": "A Philippine Chieftain, an American Schoolmaster, and the Untold Story of the Most Remarkable Resistance Fighters of World War II in the Pacific",
+			"authors": [
+				"thomas-mckenna"
+			],
+			"role": "author",
+			"publisher": "armin-lear",
+			"year": 2022,
+			"edition": null,
+			"pages": null,
+			"isbn": "9781956450095",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"memoir"
+			],
+			"summary": "The Moro guerrillas of Cotabato in the Second World War, led by Datu Gumbay Piang and the American teacher Edward Kuder, pieced together from their papers and the memories of those who fought.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1956450092"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL32490112W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781956450095"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-filipino-muslim-armed-struggle-1900-1972",
+			"title": "The Filipino Muslim Armed Struggle, 1900–1972",
+			"subtitle": null,
+			"authors": [
+				"samuel-k-tan"
+			],
+			"role": "author",
+			"publisher": "filipinas-foundation",
+			"year": 1977,
+			"edition": null,
+			"pages": 168,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"conflict"
+			],
+			"summary": "The Moro revolts from the American conquest to the eve of martial law, read as one continuous armed struggle, by the historian who would lead the National Historical Institute.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Filipino%20Muslim%20Armed%20Struggle%2C%201900%E2%80%931972%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "decolonization-and-filipino-muslim-identity",
+			"title": "Decolonization and Filipino Muslim Identity",
+			"subtitle": null,
+			"authors": [
+				"samuel-k-tan"
+			],
+			"role": "author",
+			"publisher": "up-press",
+			"year": 1989,
+			"edition": null,
+			"pages": 126,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"politics"
+			],
+			"summary": "What decolonisation meant for a people who did not see the republic as their own, and how a Filipino Muslim identity was argued over in the decades after independence.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Decolonization%20and%20Filipino%20Muslim%20Identity%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "internationalization-of-the-bangsamoro-struggle",
+			"title": "Internationalization of the Bangsamoro Struggle",
+			"subtitle": null,
+			"authors": [
+				"samuel-k-tan"
+			],
+			"role": "author",
+			"publisher": "up-cids",
+			"year": 1993,
+			"edition": "Revised edition 1995",
+			"pages": 176,
+			"isbn": "9789717420868",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"conflict"
+			],
+			"summary": "How the Moro cause reached the Organisation of the Islamic Conference and the Muslim world, and what the attention did to the movement at home. Revised 1995.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1783913W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789717420868"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "surat-sug",
+			"title": "Surat Sug",
+			"subtitle": "Letters of the Sultanate of Sulu",
+			"authors": [
+				"samuel-k-tan"
+			],
+			"role": "author",
+			"publisher": "nhcp",
+			"year": 2005,
+			"edition": null,
+			"pages": null,
+			"isbn": "9789715381925",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"reference",
+				"language"
+			],
+			"summary": "The Sulu Sultanate’s own correspondence in Jawi, transcribed and translated in two volumes: letters to Spain, Britain and its own datus from the last century of its independence.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "surat-sug.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18792557W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715381925"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-muslim-south-and-beyond",
+			"title": "The Muslim South and Beyond",
+			"subtitle": null,
+			"authors": [
+				"samuel-k-tan"
+			],
+			"role": "author",
+			"publisher": "up-press",
+			"year": 2010,
+			"edition": null,
+			"pages": 185,
+			"isbn": "9789715426329",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history"
+			],
+			"summary": "Tan’s later essays on the history and historiography of the Muslim South, collected at the end of his career.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "the-muslim-south-and-beyond.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/9715426328.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from press.up.edu.ph",
+					"url": "https://press.up.edu.ph/?s=Muslim+South+and+Beyond"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715426328"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19951139W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715426329"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-qur-an-and-islamic-manuscripts-of-mindanao",
+			"title": "The Qur’an and Islamic Manuscripts of Mindanao",
+			"subtitle": null,
+			"authors": [
+				"midori-kawashima",
+				"tirmizy-abdullah"
+			],
+			"role": "editor",
+			"publisher": "sophia-iac",
+			"year": 2012,
+			"edition": null,
+			"pages": 105,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"religion",
+				"reference",
+				"culture"
+			],
+			"summary": "A catalogue of handwritten Qur’ans, prayer books and kitabs kept in Maguindanao and Lanao, with what they show of how Islam was learned and copied in the region.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23141953W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Qur%E2%80%99an%20and%20Islamic%20Manuscripts%20of%20Mindanao%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "history-of-the-moro-and-indigenous-peoples-in-minsupala",
+			"title": "History of the Moro and Indigenous Peoples in MinSuPala",
+			"subtitle": null,
+			"authors": [
+				"ben-kadil"
+			],
+			"role": "author",
+			"publisher": "the-author",
+			"year": 2002,
+			"edition": null,
+			"pages": 228,
+			"isbn": "9789715480048",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"education"
+			],
+			"summary": "A Moro teacher’s history of the peoples of Mindanao, Sulu and Palawan, written as a textbook and printed by the author.",
+			"availability": "private",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715480047"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL16450042W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715480048"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "sultanate-of-sulu",
+			"title": "Sultanate of Sulu",
+			"subtitle": "The Unconquered Kingdom",
+			"authors": [
+				"clemencio-bascar"
+			],
+			"role": "author",
+			"publisher": "the-author",
+			"year": 2003,
+			"edition": null,
+			"pages": 114,
+			"isbn": "9789719255130",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history"
+			],
+			"summary": "A Zamboanga writer’s history of the Sulu Sultanate as a state that was never conquered, printed by the author.",
+			"availability": "private",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9719255137"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL5867302W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719255130"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "tausug-and-the-sulu-sultanate",
+			"title": "Tausug & the Sulu Sultanate",
+			"subtitle": null,
+			"authors": [
+				"asreemoro"
+			],
+			"role": "author",
+			"publisher": "saba-islamic-media",
+			"year": 2008,
+			"edition": null,
+			"pages": 222,
+			"isbn": "9789675068041",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history"
+			],
+			"summary": "The Tausug and their sultanate seen from Sabah, where many Tausug now live, by a Malaysian writer of Tausug descent; first published in Malay in 2007.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23337292W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789675068041"
+				}
+			],
+			"blurb": "History of the Tausug people and their role in Islamic civilization in Sulu Sultanate."
+		},
+		{
+			"slug": "under-the-crescent-moon",
+			"title": "Under the Crescent Moon",
+			"subtitle": "Rebellion in Mindanao",
+			"authors": [
+				"marites-vitug",
+				"glenda-gloria"
+			],
+			"role": "author",
+			"publisher": "acsppa",
+			"year": 2000,
+			"edition": null,
+			"pages": 327,
+			"isbn": "9789719167976",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"politics"
+			],
+			"summary": "Two journalists’ investigation of the MILF, the MNLF, the Abu Sayyaf and the Mindanao war at the turn of the century, from the camps and the back channels. The book most reporters on the region started with.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "under-the-crescent-moon.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL2330259W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719167976"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "rebels-warlords-and-ulama",
+			"title": "Rebels, Warlords, and Ulama",
+			"subtitle": "A Reader on Muslim Separatism and the War in Southern Philippines",
+			"authors": [
+				"eric-gutierrez",
+				"kristina-gaerlan",
+				"mara-stankovitch"
+			],
+			"role": "editor",
+			"publisher": "ipd",
+			"year": 2000,
+			"edition": null,
+			"pages": 366,
+			"isbn": "9789718841075",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"politics"
+			],
+			"summary": "A reader on the war in the South at the end of the 1990s: the rebel fronts, the clan armies and the religious leaders, with primary documents and the authors’ reporting.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18304142W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718841075"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-moro-conflict",
+			"title": "The Moro Conflict",
+			"subtitle": "Landlessness and Misdirected State Policies",
+			"authors": [
+				"eric-gutierrez",
+				"saturnino-borras"
+			],
+			"role": "author",
+			"publisher": "east-west-center",
+			"year": 2004,
+			"edition": null,
+			"pages": 68,
+			"isbn": "9781932728149",
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"conflict",
+				"economy",
+				"politics"
+			],
+			"summary": "The argument that land, not religion, is at the root of the Moro conflict: how colonial and Philippine land policy dispossessed the Moros and why the peace deals have not touched it. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "the-moro-conflict.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://www.eastwestcenter.org/publications/the-moro-conflict-landlessness-and-misdirected-state-policies"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3729890W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781932728149"
+				}
+			],
+			"blurb": "The conflict in the southern Philippines is becoming increasingly complex, and untangling the knots for a greater understanding of the problem is no easy task. Yet underlying all these manifestations of a complex conflict is a straightforward political-economic explanation. This study argues that the continuing war, the persistence of poverty and landlessness, and the emergence of “entrepreneurs in violence” are mere symptoms of something that has not yet been sufficiently addressed by a succession of Philippine governments or even by mainstream Moro revolutionary organizations: the highly skewed distribution of ownership and control over land resources in the southern Philippines."
+		},
+		{
+			"slug": "forging-sustainable-peace-in-mindanao",
+			"title": "Forging Sustainable Peace in Mindanao",
+			"subtitle": "The Role of Civil Society",
+			"authors": [
+				"steven-rood"
+			],
+			"role": "author",
+			"publisher": "east-west-center",
+			"year": 2005,
+			"edition": null,
+			"pages": 86,
+			"isbn": null,
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"peace-process"
+			],
+			"summary": "What civil society groups did and could do for peace in Mindanao, by the Asia Foundation’s long-serving Philippines representative. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://www.eastwestcenter.org/publications/forging-sustainable-peace-in-mindanao-the-role-of-civil-society"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Forging%20Sustainable%20Peace%20in%20Mindanao%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-moro-reader",
+			"title": "The Moro Reader",
+			"subtitle": "History and Contemporary Struggles of the Bangsamoro People",
+			"authors": [
+				"bobby-tuazon"
+			],
+			"role": "editor",
+			"publisher": "cenpeg",
+			"year": 2008,
+			"edition": null,
+			"pages": 278,
+			"isbn": "9789719365167",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"history"
+			],
+			"summary": "Essays by Moro and Filipino scholars on the Bangsamoro’s history, the right to self-determination and the peace talks, from the Center for People Empowerment in Governance.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18574957W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719365167"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "bangsamoro-sa-malapitan",
+			"title": "Bangsamoro sa Malapitan",
+			"subtitle": null,
+			"authors": [
+				"lualhati-abreu"
+			],
+			"role": "author",
+			"publisher": "cenpeg",
+			"year": 2011,
+			"edition": null,
+			"pages": 331,
+			"isbn": "9789719365181",
+			"language": "Filipino",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"history"
+			],
+			"summary": "The Bangsamoro struggle explained in Filipino for a national readership, from the sultanates to the MILF talks.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL22556473W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719365181"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "bangsamoro-a-nation-under-endless-tyranny",
+			"title": "Bangsamoro: A Nation under Endless Tyranny",
+			"subtitle": null,
+			"authors": [
+				"salah-jubair"
+			],
+			"role": "author",
+			"publisher": "iq-marin",
+			"year": 1984,
+			"edition": "3rd edition, IQ Marin, 1999",
+			"pages": 154,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"politics"
+			],
+			"summary": "The Moro Islamic Liberation Front’s own history of the Bangsamoro, from the sultanates through colonial rule to the MNLF and the MILF, written by its chief negotiator under a pen name. The third edition of 1999 is the one usually cited.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL5251788W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Bangsamoro%3A%20A%20Nation%20under%20Endless%20Tyranny%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-long-road-to-peace",
+			"title": "The Long Road to Peace",
+			"subtitle": "Inside the GRP-MILF Peace Process",
+			"authors": [
+				"salah-jubair"
+			],
+			"role": "author",
+			"publisher": "ibs",
+			"year": 2007,
+			"edition": null,
+			"pages": 289,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process"
+			],
+			"summary": "The talks between the government and the MILF from 1997 to the eve of the Memorandum of Agreement on Ancestral Domain, from inside the Front’s panel.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Long%20Road%20to%20Peace%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "bangsamoro-quest",
+			"title": "Bangsamoro Quest",
+			"subtitle": "The Birth of the Moro Islamic Liberation Front",
+			"authors": [
+				"michael-mastura"
+			],
+			"role": "author",
+			"publisher": "repusm",
+			"year": 2012,
+			"edition": null,
+			"pages": 243,
+			"isbn": "9789673940622",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"history"
+			],
+			"summary": "How the MILF came to be, from the split with the MNLF in the late 1970s to its emergence as a separate front, by a Maguindanaon historian and lawyer who later sat on its peace panel.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23211966W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789673940622"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "muslim-filipino-experience",
+			"title": "Muslim Filipino Experience",
+			"subtitle": "A Collection of Essays",
+			"authors": [
+				"michael-mastura"
+			],
+			"role": "author",
+			"publisher": "ministry-of-muslim-affairs",
+			"year": 1984,
+			"edition": null,
+			"pages": 289,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"politics"
+			],
+			"summary": "Mastura’s early essays on Moro history, law and politics, from his years as a congressman and scholar.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Muslim%20Filipino%20Experience%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-moro-armed-struggle-in-the-philippines",
+			"title": "The Moro Armed Struggle in the Philippines",
+			"subtitle": "The Nonviolent Autonomy Alternative",
+			"authors": [
+				"macapado-muslim"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1994,
+			"edition": null,
+			"pages": 211,
+			"isbn": "9789711111304",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"conflict"
+			],
+			"summary": "A Maranao political scientist’s case, made in the early 1990s, that autonomy won by politics could answer what the armed struggle had not.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "the-moro-armed-struggle-in-the-philippines.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3226154W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711111304"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-2018-bangsamoro-organic-law-in-the-philippines",
+			"title": "The 2018 Bangsamoro Organic Law in the Philippines",
+			"subtitle": null,
+			"authors": [
+				"macapado-muslim"
+			],
+			"role": "author",
+			"publisher": "saniata",
+			"year": 2019,
+			"edition": null,
+			"pages": 120,
+			"isbn": "9789719692324",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"reference"
+			],
+			"summary": "A reading of the Bangsamoro Organic Law and the government it creates, by a former president of Mindanao State University.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL43240276W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719692324"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-moro-islamic-challenge",
+			"title": "The Moro Islamic Challenge",
+			"subtitle": "Constitutional Rethinking for the Mindanao Peace Process",
+			"authors": [
+				"soliman-santos"
+			],
+			"role": "author",
+			"publisher": "up-press",
+			"year": 2001,
+			"edition": null,
+			"pages": 243,
+			"isbn": "9789715423021",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process",
+				"politics"
+			],
+			"summary": "Whether the Philippine Constitution can accommodate the Moro demand for self-rule, and what would have to change, by a human rights lawyer who worked the peace process for years.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from press.up.edu.ph",
+					"url": "https://press.up.edu.ph/?s=Moro+Islamic+Challenge"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715423027"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3225990W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715423021"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "dynamics-and-directions-of-the-grp-milf-peace-negotiations",
+			"title": "Dynamics and Directions of the GRP-MILF Peace Negotiations",
+			"subtitle": null,
+			"authors": [
+				"soliman-santos"
+			],
+			"role": "author",
+			"publisher": "afrim",
+			"year": 2005,
+			"edition": null,
+			"pages": 177,
+			"isbn": "9789719250760",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process"
+			],
+			"summary": "The government–MILF talks as they stood in 2005: the agreements so far, the sticking points and the roads open.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23959190W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719250760"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "muslim-perspective-on-the-mindanao-conflict",
+			"title": "The Road to Peace and Reconciliation",
+			"subtitle": "Muslim Perspective on the Mindanao Conflict",
+			"authors": [
+				"amina-rasul"
+			],
+			"role": "author",
+			"publisher": "aim",
+			"year": 2003,
+			"edition": null,
+			"pages": 272,
+			"isbn": "9789716790658",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process",
+				"politics"
+			],
+			"summary": "Moro voices on the conflict and what peace would take, gathered for the Asian Institute of Management by a Tausug former cabinet member.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "muslim-perspective-on-the-mindanao-conflict.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18287424W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/muslimperspectiv0000unse"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789716790658"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "broken-peace",
+			"title": "Broken Peace?",
+			"subtitle": "Assessing the 1996 GRP-MNLF Final Peace Agreement",
+			"authors": [
+				"amina-rasul"
+			],
+			"role": "editor",
+			"publisher": "pcid",
+			"year": 2007,
+			"edition": null,
+			"pages": 314,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process"
+			],
+			"summary": "Ten years after the agreement with the MNLF, what was delivered and what was not, in studies commissioned by the Philippine Council for Islam and Democracy.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL11878072W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Broken%20Peace%3F%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "costly-wars-elusive-peace",
+			"title": "Costly Wars, Elusive Peace",
+			"subtitle": "Collected Articles on the Peace Processes in the Philippines, 1990–2007",
+			"authors": [
+				"miriam-coronel-ferrer"
+			],
+			"role": "author",
+			"publisher": "up-press",
+			"year": 2013,
+			"edition": null,
+			"pages": 424,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process"
+			],
+			"summary": "Essays written across two decades of the Philippine peace processes, with the Moro fronts and with the communists, by the scholar who would chair the panel that signed the Comprehensive Agreement.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from press.up.edu.ph",
+					"url": "https://press.up.edu.ph/?s=Costly+Wars"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Costly%20Wars%2C%20Elusive%20Peace%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "region-nation-and-homeland",
+			"title": "Region, Nation and Homeland",
+			"subtitle": "Valorization and Adaptation in the Moro and Cordillera Resistance Discourses",
+			"authors": [
+				"miriam-coronel-ferrer"
+			],
+			"role": "author",
+			"publisher": "iseas",
+			"year": 2020,
+			"edition": null,
+			"pages": 355,
+			"isbn": "9789814843010",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics"
+			],
+			"summary": "How the Moro and Cordillera movements each made a homeland out of a region, and adapted their claims to the state they fought, compared.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "region-nation-and-homeland.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/9814843016.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9814843016"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789814843010"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "rido",
+			"title": "Rido",
+			"subtitle": "Clan Feuding and Conflict Management in Mindanao",
+			"authors": [
+				"wilfredo-torres"
+			],
+			"role": "editor",
+			"publisher": "asia-foundation",
+			"year": 2007,
+			"edition": "Expanded edition 2014",
+			"pages": 451,
+			"isbn": "9789715506465",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"anthropology"
+			],
+			"summary": "The first systematic study of rido, the clan feuds that take more lives in Muslim Mindanao than the rebellion, with case studies from Lanao, Maguindanao, Sulu and Basilan and the ways communities settle them. Expanded edition from Ateneo de Manila University Press in 2014; the original is free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "rido.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/9715506461.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://asiafoundation.org/publication/rido-clan-feuding-and-conflict-management-in-mindanao/"
+				},
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Rido"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL21279608W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715506465"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "insurgents-clans-and-states",
+			"title": "Insurgents, Clans, and States",
+			"subtitle": "Political Legitimacy and Resurgent Conflict in Muslim Mindanao, Philippines",
+			"authors": [
+				"francisco-lara"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2014,
+			"edition": null,
+			"pages": 340,
+			"isbn": "9789715506724",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"politics",
+				"economy"
+			],
+			"summary": "Why the conflict keeps returning: the clans, the rebel fronts and the state as rival sources of authority in Muslim Mindanao, and the shadow economy that sustains all three.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "insurgents-clans-and-states.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/9715506720.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Insurgents,+Clans,+and+States"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715506720"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL21276106W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715506724"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "out-of-the-shadows",
+			"title": "Out of the Shadows",
+			"subtitle": "Violent Conflict and the Real Economy of Mindanao",
+			"authors": [
+				"francisco-lara",
+				"steven-schoofs"
+			],
+			"role": "editor",
+			"publisher": "international-alert",
+			"year": 2013,
+			"edition": null,
+			"pages": 288,
+			"isbn": null,
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"economy",
+				"conflict"
+			],
+			"summary": "The shadow economies of Mindanao, from guns and drugs to the informal credit and trade that ordinary people live by, and how they feed and are fed by the conflict. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://www.international-alert.org/stories/out-of-the-shadows-violent-conflict/"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Out%20of%20the%20Shadows%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "breaking-the-links-between-economics-and-conflict-in-mindanao",
+			"title": "Breaking the Links between Economics and Conflict in Mindanao",
+			"subtitle": null,
+			"authors": [
+				"international-alert"
+			],
+			"role": "author",
+			"publisher": "international-alert",
+			"year": 2003,
+			"edition": null,
+			"pages": 60,
+			"isbn": "9781898702337",
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"economy",
+				"conflict"
+			],
+			"summary": "A discussion paper on the economic roots of the Mindanao conflict and what business and donors could do about them. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://www.international-alert.org/publications/breaking-links-between-economics-and-conflict-mindanao/"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18814094W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781898702337"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "primed-and-purposeful",
+			"title": "Primed and Purposeful",
+			"subtitle": "Armed Groups and Human Security Efforts in the Philippines",
+			"authors": [
+				"diana-rodriguez"
+			],
+			"role": "editor",
+			"publisher": "small-arms-survey",
+			"year": 2010,
+			"edition": null,
+			"pages": 464,
+			"isbn": null,
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"conflict",
+				"reference"
+			],
+			"summary": "Profiles of every armed group in the Philippines, the MILF, MNLF, Abu Sayyaf and the clan militias among them, with what is known of their arms and their effect on the people around them. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://www.smallarmssurvey.org/resource/primed-and-purposeful-armed-groups-and-human-security-efforts-philippines"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Primed%20and%20Purposeful%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "mindanao-the-long-journey-to-peace-and-prosperity",
+			"title": "Mindanao",
+			"subtitle": "The Long Journey to Peace and Prosperity",
+			"authors": [
+				"paul-hutchcroft"
+			],
+			"role": "editor",
+			"publisher": "anvil",
+			"year": 2016,
+			"edition": "World Scientific edition 2017",
+			"pages": 306,
+			"isbn": "9789813236363",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process",
+				"economy",
+				"politics"
+			],
+			"summary": "Scholars on the peace process as it stood after the Comprehensive Agreement on the Bangsamoro: the deal, the economy, the clans, the law, and what would be needed to make the Bangsamoro work.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "mindanao-the-long-journey-to-peace-and-prosperity.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from anvilpublishing.com",
+					"url": "https://www.anvilpublishing.com/?s=Mindanao+Long+Journey"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9813236361"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL25719761W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789813236363"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "voices-from-moro-land",
+			"title": "Voices from Moro Land",
+			"subtitle": "Perspectives from Stakeholders and Observers on the Conflict in the Southern Philippines",
+			"authors": [
+				"peter-kreuzer",
+				"rainer-werning"
+			],
+			"role": "editor",
+			"publisher": "sird",
+			"year": 2007,
+			"edition": null,
+			"pages": 218,
+			"isbn": "9789833782369",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"politics"
+			],
+			"summary": "Interviews and essays from the people in the conflict, rebels, officials, clergy and scholars, gathered by two German researchers.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "voices-from-moro-land.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18606483W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789833782369"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "political-clans-and-violence-in-the-southern-philippines",
+			"title": "Political Clans and Violence in the Southern Philippines",
+			"subtitle": null,
+			"authors": [
+				"peter-kreuzer"
+			],
+			"role": "author",
+			"publisher": "prif",
+			"year": 2005,
+			"edition": null,
+			"pages": 38,
+			"isbn": "9783937829159",
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"politics",
+				"conflict"
+			],
+			"summary": "How the clans of Muslim Mindanao hold power through violence, and why the state lets them, in a report from the Peace Research Institute Frankfurt. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "political-clans-and-violence-in-the-southern-philippines.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/3937829156.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://www.prif.org/en/publications/prif-reports"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23979801W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9783937829159"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "conflict-in-moro-land",
+			"title": "Conflict in Moro Land",
+			"subtitle": "Prospects for Peace?",
+			"authors": [
+				"arndt-graf",
+				"peter-kreuzer",
+				"rainer-werning"
+			],
+			"role": "editor",
+			"publisher": "usm-press",
+			"year": 2009,
+			"edition": null,
+			"pages": 229,
+			"isbn": "9789838614085",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"peace-process"
+			],
+			"summary": "Essays from a Penang conference on the Mindanao conflict after the collapse of the 2008 ancestral domain agreement.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL15589865W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789838614085"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-mindanao-conflict",
+			"title": "The Mindanao Conflict",
+			"subtitle": null,
+			"authors": [
+				"kamarulzaman-askandar",
+				"ayesah-abubakar"
+			],
+			"role": "editor",
+			"publisher": "seacsn",
+			"year": 2005,
+			"edition": null,
+			"pages": 203,
+			"isbn": "9789832514954",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"peace-process"
+			],
+			"summary": "Papers from the Southeast Asian Conflict Studies Network on the roots of the conflict and the peace process to 2005.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18672420W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789832514954"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "peace-for-mindanao",
+			"title": "Peace for Mindanao",
+			"subtitle": null,
+			"authors": [
+				"kamarulzaman-askandar",
+				"ayesah-abubakar"
+			],
+			"role": "editor",
+			"publisher": "repusm",
+			"year": 2009,
+			"edition": null,
+			"pages": 176,
+			"isbn": "9789833986477",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process"
+			],
+			"summary": "A second collection from the Penang peace programme, on the talks, the ceasefire and civil society’s part in them.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23212188W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789833986477"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "strategies-and-tactics-of-the-milf",
+			"title": "Strategies and Tactics of the Moro Islamic Liberation Front",
+			"subtitle": null,
+			"authors": [
+				"shamsuddin-taya"
+			],
+			"role": "author",
+			"publisher": "uum-press",
+			"year": 2009,
+			"edition": null,
+			"pages": 124,
+			"isbn": "9789675311154",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"politics"
+			],
+			"summary": "How the MILF fought and negotiated, read as strategy, by a Malaysian political scientist.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "strategies-and-tactics-of-the-milf.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL15589866W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789675311154"
+				}
+			],
+			"blurb": "This book reveals the strategies and tactics of the Moro Islamic Liberation Front (MILF) in the Southern Phillipines. It looks at the political, military and economic strategies and tactics of the MILF in its quest to liberate the Bangsamoro homeland and its people from the clutches of the Government of the Republic of the Phillipines (GRP) and its agents."
+		},
+		{
+			"slug": "the-sulu-arms-market",
+			"title": "The Sulu Arms Market",
+			"subtitle": "National Responses to a Regional Problem",
+			"authors": [
+				"lino-miani"
+			],
+			"role": "author",
+			"publisher": "iseas",
+			"year": 2011,
+			"edition": null,
+			"pages": 214,
+			"isbn": "9789814311120",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"economy"
+			],
+			"summary": "The trade in guns across the Sulu and Celebes seas, who sells, who buys and what the Philippines, Malaysia and Indonesia have done about it.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/981431112X"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL15937302W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789814311120"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "between-integration-and-secession",
+			"title": "Between Integration and Secession",
+			"subtitle": "The Muslim Communities of the Southern Philippines, Southern Thailand, and Western Burma/Myanmar",
+			"authors": [
+				"moshe-yegar"
+			],
+			"role": "author",
+			"publisher": "lexington",
+			"year": 2002,
+			"edition": null,
+			"pages": 480,
+			"isbn": "9780739103562",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"politics",
+				"history"
+			],
+			"summary": "The Moros set beside the Malays of Patani and the Rohingya of Arakan: three Muslim minorities on the edges of Buddhist and Christian states, and the roads each took.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "between-integration-and-secession.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from bloomsbury.com",
+					"url": "https://www.bloomsbury.com/us/9780739103562"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/0739103563"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1573441W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780739103562"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "nur-misuari",
+			"title": "Nur Misuari",
+			"subtitle": "An Authorized Biography",
+			"authors": [
+				"tom-stern"
+			],
+			"role": "author",
+			"publisher": "anvil",
+			"year": 2012,
+			"edition": null,
+			"pages": 229,
+			"isbn": "9789712726248",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"memoir",
+				"politics"
+			],
+			"summary": "The life of the founder of the Moro National Liberation Front, from Jolo and the University of the Philippines to Tripoli, Jeddah and the ARMM governorship, written with his cooperation.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from anvilpublishing.com",
+					"url": "https://www.anvilpublishing.com/?s=Nur+Misuari"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/971272624X"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL16475072W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789712726248"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "beyond-the-cult-of-dissidence",
+			"title": "Beyond the Cult of Dissidence in Southern Philippines and Wartorn Zones in the Global Village",
+			"subtitle": null,
+			"authors": [
+				"arnold-azurin"
+			],
+			"role": "author",
+			"publisher": "up-cids",
+			"year": 1996,
+			"edition": null,
+			"pages": 360,
+			"isbn": "9789717420080",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"politics"
+			],
+			"summary": "A Filipino anthropologist’s essays against the romance of rebellion, on the South and on war zones elsewhere.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "beyond-the-cult-of-dissidence.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1783897W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/beyondcultofdiss0000azur"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789717420080"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "understanding-mindanao-conflict",
+			"title": "Understanding Mindanao Conflict",
+			"subtitle": null,
+			"authors": [
+				"patricio-diaz"
+			],
+			"role": "author",
+			"publisher": "mindanews",
+			"year": 2003,
+			"edition": null,
+			"pages": 383,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"peace-process"
+			],
+			"summary": "A veteran Cotabato journalist’s columns on the conflict and the peace talks, collected: forty years of watching from close up.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL2611743W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Understanding%20Mindanao%20Conflict%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "state-of-local-democracy-in-the-armm",
+			"title": "State of Local Democracy in the Autonomous Region in Muslim Mindanao",
+			"subtitle": null,
+			"authors": [
+				"edna-co"
+			],
+			"role": "author",
+			"publisher": "up-ncpag",
+			"year": 2013,
+			"edition": null,
+			"pages": 249,
+			"isbn": "9789718567852",
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"politics"
+			],
+			"summary": "An assessment of how democracy works, and does not, in the ARMM’s provinces and towns, by the University of the Philippines’ public administration college with International IDEA and the Philippine Council for Islam and Democracy.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://www.pcid.com.ph/publication/state-of-local-democracy-in-the-autonomous-region-in-muslim-mindanao-sold-armm/"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23339552W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718567852"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "comprehensive-agreement-on-the-bangsamoro",
+			"title": "Comprehensive Agreement on the Bangsamoro",
+			"subtitle": null,
+			"authors": [
+				"government-of-the-philippines",
+				"milf"
+			],
+			"role": "author",
+			"publisher": "opapru",
+			"year": 2014,
+			"edition": null,
+			"pages": null,
+			"isbn": null,
+			"language": "English",
+			"kind": "agreement",
+			"subjects": [
+				"peace-process",
+				"reference"
+			],
+			"summary": "The peace agreement signed in Malacañang on 27 March 2014 between the Government of the Philippines and the Moro Islamic Liberation Front, with its annexes on transition, revenue, power sharing and normalisation. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://peace.gov.ph/2014/03/comprehensive-agreement-bangsamoro/"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL22886890W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Comprehensive%20Agreement%20on%20the%20Bangsamoro%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "bangsamoro-organic-law",
+			"title": "Republic Act No. 11054",
+			"subtitle": "The Bangsamoro Organic Law",
+			"authors": [
+				"congress-of-the-philippines"
+			],
+			"role": "author",
+			"publisher": "gov-ph",
+			"year": 2018,
+			"edition": null,
+			"pages": null,
+			"isbn": null,
+			"language": "English",
+			"kind": "law",
+			"subjects": [
+				"reference",
+				"politics"
+			],
+			"summary": "The law, signed on 26 July 2018 and ratified in January 2019, that created the Bangsamoro Autonomous Region and its parliamentary government. Free to read at the Lawphil Project.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://lawphil.net/statutes/repacts/ra2018/ra_11054_2018.html"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Republic%20Act%20No.%2011054%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "marawi-siege",
+			"title": "Marawi Siege",
+			"subtitle": "Stories from the Front Lines",
+			"authors": [
+				"carmela-fonbuena"
+			],
+			"role": "author",
+			"publisher": "jnb",
+			"year": 2020,
+			"edition": null,
+			"pages": 248,
+			"isbn": "9789719568919",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict",
+				"memoir"
+			],
+			"summary": "The five-month battle for Marawi in 2017, reported from the soldiers’ side by a defence journalist who covered it day by day.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "marawi-siege.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9719568917"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL31802829W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719568919"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-battle-of-marawi",
+			"title": "The Battle of Marawi",
+			"subtitle": null,
+			"authors": [
+				"criselda-yabes"
+			],
+			"role": "author",
+			"publisher": "pawikan",
+			"year": 2020,
+			"edition": null,
+			"pages": 243,
+			"isbn": "9786219630108",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict"
+			],
+			"summary": "The siege of Marawi as the people who fought it and lived through it remember it, by a journalist who has followed the military in Mindanao for thirty years.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/6219630106"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL32076919W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9786219630108"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-marawi-siege-and-its-aftermath",
+			"title": "The Marawi Siege and Its Aftermath",
+			"subtitle": "The Continuing Terrorist Threat",
+			"authors": [
+				"rommel-banlaoi"
+			],
+			"role": "author",
+			"publisher": "cambridge-scholars",
+			"year": 2020,
+			"edition": null,
+			"pages": 134,
+			"isbn": "9781527538931",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"conflict"
+			],
+			"summary": "The Islamic State-aligned groups that took Marawi, what became of them afterwards, and the threat they still pose, by a Philippine security analyst.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from cambridgescholars.com",
+					"url": "https://www.cambridgescholars.com/product/978-1-5275-3893-1"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1527538931"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL32559572W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781527538931"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "marawi-the-east-asia-wilayah-and-indonesia",
+			"title": "Marawi, the “East Asia Wilayah” and Indonesia",
+			"subtitle": null,
+			"authors": [
+				"ipac"
+			],
+			"role": "author",
+			"publisher": "ipac",
+			"year": 2017,
+			"edition": null,
+			"pages": 26,
+			"isbn": null,
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"conflict"
+			],
+			"summary": "A report, written while the siege was on, on who the Marawi fighters were, how Indonesians and Malaysians joined them, and what it meant for the region. Free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://understandingconflict.org/en/publications/Marawi-the-East-Asia-Wilayah-and-Indonesia"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL32397815W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Marawi%2C%20the%20%E2%80%9CEast%20Asia%20Wilayah%E2%80%9D%20and%20Indonesia%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "marawi-and-other-poems",
+			"title": "Marawi and Other Poems",
+			"subtitle": null,
+			"authors": [
+				"simeon-dumdum"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2019,
+			"edition": null,
+			"pages": 68,
+			"isbn": "9789715509121",
+			"language": "English",
+			"kind": "poetry",
+			"subjects": [
+				"literature",
+				"conflict"
+			],
+			"summary": "Poems on the siege and on the lives it broke, by a Cebuano poet and retired judge.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Marawi+and+Other+Poems"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715509126"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL44540653W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715509121"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "how-the-spaniards-won-in-marawi-but-lost-in-cavite",
+			"title": "How the Spaniards Won in Marawi but Lost in Cavite",
+			"subtitle": null,
+			"authors": [
+				"rey-montesclaros"
+			],
+			"role": "author",
+			"publisher": "new-day",
+			"year": 2018,
+			"edition": null,
+			"pages": 222,
+			"isbn": "9789711013622",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "The Spanish campaigns against the Maranao in the 1890s, set against the revolution that broke out in Luzon at the same time.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9711013622"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL32360476W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711013622"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "in-the-presence-of-my-enemies",
+			"title": "In the Presence of My Enemies",
+			"subtitle": null,
+			"authors": [
+				"gracia-burnham"
+			],
+			"role": "author",
+			"publisher": "tyndale",
+			"year": 2003,
+			"edition": null,
+			"pages": 307,
+			"isbn": "9780842381383",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"memoir",
+				"conflict"
+			],
+			"summary": "A year as a hostage of the Abu Sayyaf in the jungles of Basilan, by the American missionary whose husband was killed in the rescue that freed her.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "in-the-presence-of-my-enemies.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/0842381384"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL8627021W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780842381383"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "peace-warriors",
+			"title": "Peace Warriors",
+			"subtitle": "On the Trail with Filipino Soldiers",
+			"authors": [
+				"criselda-yabes"
+			],
+			"role": "author",
+			"publisher": "anvil",
+			"year": 2009,
+			"edition": null,
+			"pages": 304,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"memoir",
+				"conflict"
+			],
+			"summary": "Years on the road with the army in Mindanao and Sulu, and the soldiers who found themselves building schools as often as fighting.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from anvilpublishing.com",
+					"url": "https://www.anvilpublishing.com/?s=Peace+Warriors"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Peace%20Warriors%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "below-the-crying-mountain",
+			"title": "Below the Crying Mountain",
+			"subtitle": null,
+			"authors": [
+				"criselda-yabes"
+			],
+			"role": "author",
+			"publisher": "up-press",
+			"year": 2010,
+			"edition": null,
+			"pages": 168,
+			"isbn": "9789715426428",
+			"language": "English",
+			"kind": "novel",
+			"subjects": [
+				"literature",
+				"conflict"
+			],
+			"summary": "A novel of Sulu in the 1970s, of a Tausug family and the war that came to Jolo, shortlisted for the Man Asian Literary Prize.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from press.up.edu.ph",
+					"url": "https://press.up.edu.ph/?s=Below+the+Crying+Mountain"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715426425"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL21241162W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715426428"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "muslim-rulers-and-rebels",
+			"title": "Muslim Rulers and Rebels",
+			"subtitle": "Everyday Politics and Armed Separatism in the Southern Philippines",
+			"authors": [
+				"thomas-mckenna"
+			],
+			"role": "author",
+			"publisher": "uc-press",
+			"year": 1998,
+			"edition": null,
+			"pages": 364,
+			"isbn": "9780520210158",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology",
+				"politics",
+				"conflict"
+			],
+			"summary": "An anthropologist’s account, from years in Cotabato City, of how ordinary Maguindanaons lived the rebellion, the datus and the state, and why the separatist story and the everyday one do not match. Free to read in the University of California Press e-books collection.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "muslim-rulers-and-rebels.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://publishing.cdlib.org/ucpressebooks/view?docId=ft0199n64c"
+				},
+				{
+					"label": "Buy from ucpress.edu",
+					"url": "https://www.ucpress.edu/book/9780520210158/muslim-rulers-and-rebels"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL2749016W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780520210158"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-tausug",
+			"title": "The Tausug",
+			"subtitle": "Violence and Law in a Philippine Moslem Society",
+			"authors": [
+				"thomas-kiefer"
+			],
+			"role": "author",
+			"publisher": "holt",
+			"year": 1972,
+			"edition": "Waveland Press, 1986",
+			"pages": 145,
+			"isbn": "9780881332421",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology"
+			],
+			"summary": "The classic ethnography of the Tausug of Jolo: feud, friendship, law and honour as they were lived in the 1960s. Kept in print by Waveland Press.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "the-tausug.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/0881332429"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4753868W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/tausugviolencela0000kief"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780881332421"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-sea-people-of-sulu",
+			"title": "The Sea People of Sulu",
+			"subtitle": "A Study of Social Change in the Philippines",
+			"authors": [
+				"harry-nimmo"
+			],
+			"role": "author",
+			"publisher": "chandler",
+			"year": 1972,
+			"edition": null,
+			"pages": 104,
+			"isbn": "9780810204539",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology"
+			],
+			"summary": "The boat-dwelling Sama Dilaut of Tawi-Tawi in the 1960s and the changes already reaching them, from the anthropologist who lived among them.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "the-sea-people-of-sulu.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3954193W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/seapeopleofsulus0000nimm"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780810204539"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "magosaha",
+			"title": "Magosaha",
+			"subtitle": "An Ethnography of the Tawi-Tawi Sama Dilaut",
+			"authors": [
+				"harry-nimmo"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2001,
+			"edition": null,
+			"pages": 261,
+			"isbn": "9789715503693",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology"
+			],
+			"summary": "Nimmo’s return to the Sama Dilaut three decades on: the full ethnography of a people who had by then mostly come ashore.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "magosaha.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Magosaha"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715503691"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3954192W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/magosahaethnolog0000nimm"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715503693"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "zamboanga-and-sulu",
+			"title": "Zamboanga and Sulu",
+			"subtitle": "An Archaeological Approach to Ethnic Diversity",
+			"authors": [
+				"alexander-spoehr"
+			],
+			"role": "author",
+			"publisher": "u-pittsburgh",
+			"year": 1973,
+			"edition": null,
+			"pages": 298,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology",
+				"history"
+			],
+			"summary": "Excavations and surveys in Zamboanga and Sulu read for what they say of how the region’s peoples came to differ.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "zamboanga-and-sulu.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL5575217W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/zamboangasuluarc0000spoe"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Zamboanga%20and%20Sulu%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-maranao",
+			"title": "The Maranao",
+			"subtitle": null,
+			"authors": [
+				"mamitua-saber",
+				"abdullah-madale"
+			],
+			"role": "editor",
+			"publisher": "solidaridad",
+			"year": 1975,
+			"edition": null,
+			"pages": 141,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology",
+				"culture"
+			],
+			"summary": "Essays by Maranao scholars on their own people: the sultanates, the torogan, the darangen, marriage, law and the lake.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL22672358W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Maranao%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-maranaws",
+			"title": "The Maranaws",
+			"subtitle": "Dwellers of the Lake",
+			"authors": [
+				"abdullah-madale"
+			],
+			"role": "author",
+			"publisher": "rex",
+			"year": 1997,
+			"edition": null,
+			"pages": 310,
+			"isbn": "9789712321740",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology",
+				"culture"
+			],
+			"summary": "A general account of the Maranao for students and the curious: history, social ranks, arts, beliefs and daily life around Lake Lanao.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL45478356W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789712321740"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-maranaw-torogan",
+			"title": "The Maranaw Torogan",
+			"subtitle": null,
+			"authors": [
+				"abdullah-madale"
+			],
+			"role": "author",
+			"publisher": "rex",
+			"year": 1996,
+			"edition": null,
+			"pages": 183,
+			"isbn": "9789712320170",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "The torogan, the carved house of the Maranao datu, its building, its okir and the rank it proclaimed.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL2611955W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789712320170"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-meranao",
+			"title": "The Meranao",
+			"subtitle": "A Study of Their Practices and Beliefs",
+			"authors": [
+				"esmail-disoma"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1990,
+			"edition": null,
+			"pages": 199,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology"
+			],
+			"summary": "A Maranao sociologist’s survey of his people’s customs and beliefs, from birth to burial.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "the-meranao.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4267444W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Meranao%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "bangsamoro-society-and-culture",
+			"title": "Bangsamoro Society and Culture",
+			"subtitle": "A Book of Readings on Peace and Development in Southern Philippines",
+			"authors": [
+				"jamail-kamlian"
+			],
+			"role": "author",
+			"publisher": "msu-iit",
+			"year": 1999,
+			"edition": null,
+			"pages": 372,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology",
+				"history"
+			],
+			"summary": "Readings on the Moro peoples’ history, society and culture assembled for the peace studies programme at MSU-Iligan.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Bangsamoro%20Society%20and%20Culture%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-yakans-of-basilan-island",
+			"title": "The Yakans of Basilan Island",
+			"subtitle": "Another Unknown and Exotic Tribe of the Philippines",
+			"authors": [
+				"andrew-sherfan"
+			],
+			"role": "author",
+			"publisher": "fotomatic",
+			"year": 1976,
+			"edition": null,
+			"pages": 224,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology"
+			],
+			"summary": "One of the few book-length accounts of the Yakan of Basilan: their farming, weaving, rites and faith as they were in the 1970s.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL6350867W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Yakans%20of%20Basilan%20Island%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-kalibugans",
+			"title": "The Kalibugans",
+			"subtitle": "Moros of Zamboanga Peninsula",
+			"authors": [
+				"rolando-esteban"
+			],
+			"role": "author",
+			"publisher": "ust-press",
+			"year": 2002,
+			"edition": null,
+			"pages": 231,
+			"isbn": "9789715062152",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology"
+			],
+			"summary": "The Kalibugan, the Muslim Subanen of the Zamboanga peninsula, and how they stand between the Moro and Lumad worlds.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL5987687W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715062152"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "tunggal-hulah-duwa-sarah",
+			"title": "Tunggal Hulaĥ-Duwa Saraĥ",
+			"subtitle": "Adat and Sharee’ah Laws in the Life of the Tausug",
+			"authors": [
+				"mashur-jundam"
+			],
+			"role": "author",
+			"publisher": "the-author",
+			"year": 2006,
+			"edition": null,
+			"pages": 228,
+			"isbn": "9789710723980",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology",
+				"religion"
+			],
+			"summary": "How Tausug custom and Islamic law live together in one society, by a Tausug scholar of the University of the Philippines.",
+			"availability": "private",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9710723987"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL105850W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789710723980"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "mindanao-statecraft-and-ecology",
+			"title": "Mindanao Statecraft and Ecology",
+			"subtitle": "Moros, Lumads, and Settlers across the Lowland-Highland Continuum",
+			"authors": [
+				"eric-casino"
+			],
+			"role": "author",
+			"publisher": "notre-dame-university",
+			"year": 2000,
+			"edition": null,
+			"pages": 356,
+			"isbn": "9789715553544",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"anthropology",
+				"politics"
+			],
+			"summary": "Mindanao’s three peoples and their politics as shaped by the land they hold, lowland, upland and coast, by a Filipino anthropologist.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "mindanao-statecraft-and-ecology.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19753887W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715553544"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-food-and-culture-of-the-tausug",
+			"title": "The Food & Culture of the Tausug",
+			"subtitle": null,
+			"authors": [
+				"norma-abdulla"
+			],
+			"role": "author",
+			"publisher": "ceu",
+			"year": 1989,
+			"edition": null,
+			"pages": 215,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "Tausug cooking and what it says of Tausug life: the dishes, the occasions and the manners of the table, with recipes.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4266405W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Food%20%26%20Culture%20of%20the%20Tausug%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "tausug-cookbook",
+			"title": "Tausug Cookbook",
+			"subtitle": null,
+			"authors": [
+				"abdulaziz-hamsain"
+			],
+			"role": "author",
+			"publisher": "blurb",
+			"year": 2020,
+			"edition": null,
+			"pages": null,
+			"isbn": "9781714728596",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "Tausug dishes from a home cook, printed on demand: tiyula itum, pastil, satti and the rest.",
+			"availability": "private",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Buy from blurb.com",
+					"url": "https://www.blurb.com/search/site_search?search=Tausug+Cookbook"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1714728595"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL38303704W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781714728596"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "experiences-and-views-of-divorced-muslim-women-in-jolo-sulu",
+			"title": "Experiences and Views of Divorced Muslim Women in Jolo, Sulu",
+			"subtitle": null,
+			"authors": [
+				"jennifer-nandu"
+			],
+			"role": "author",
+			"publisher": "dlsu-press",
+			"year": 2003,
+			"edition": null,
+			"pages": 82,
+			"isbn": "9789715554602",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"women",
+				"anthropology"
+			],
+			"summary": "Interviews with divorced Tausug women on marriage, separation and what the law and the community allowed them.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23895130W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715554602"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "trafficking-in-women-and-children-in-zamboanga-basilan-sulu-and-tawi-tawi",
+			"title": "Trafficking in Women and Children in Zamboanga, Basilan, Sulu, and Tawi-Tawi",
+			"subtitle": null,
+			"authors": [
+				"amparita-sta-maria",
+				"nina-sison-arroyo",
+				"rhealeth-ramos"
+			],
+			"role": "author",
+			"publisher": "ateneo-hrc",
+			"year": 2012,
+			"edition": null,
+			"pages": 111,
+			"isbn": "9789718899199",
+			"language": "English",
+			"kind": "report",
+			"subjects": [
+				"women"
+			],
+			"summary": "A study of trafficking across the Zamboanga–Sulu corridor to Sabah and beyond, its routes and its victims, by the Ateneo Human Rights Center.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL22655472W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718899199"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "ukkil",
+			"title": "Ukkil",
+			"subtitle": "Visual Arts of the Sulu Archipelago",
+			"authors": [
+				"ligaya-amilbangsa"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2005,
+			"edition": null,
+			"pages": 296,
+			"isbn": "9789715504812",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "The carved, woven and worked ornament of Sulu, ukkil, in a large illustrated study by the dancer and scholar who spent her life recording the archipelago’s arts.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "ukkil.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Ukkil"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9715504817"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL10237447W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715504812"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "pangalay",
+			"title": "Pangalay",
+			"subtitle": "Traditional Dances and Related Folk Artistic Expressions",
+			"authors": [
+				"ligaya-amilbangsa"
+			],
+			"role": "author",
+			"publisher": "filipinas-foundation",
+			"year": 1983,
+			"edition": null,
+			"pages": 208,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "The pangalay dance of Sulu and the dances, music and dress around it, documented in the field by the woman who brought it to the national stage.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19693012W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Pangalay%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "space-and-identity",
+			"title": "Space and Identity",
+			"subtitle": "Expressions in the Culture, Arts and Society of the Muslims in the Philippines",
+			"authors": [
+				"abraham-sakili"
+			],
+			"role": "author",
+			"publisher": "up-asian-center",
+			"year": 2003,
+			"edition": null,
+			"pages": 275,
+			"isbn": "9789718992135",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "Moro art, architecture and ornament read for the ideas of space and self behind them, by a Tausug art historian.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL5768903W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718992135"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "selected-essays-on-mindanao-art-and-culture",
+			"title": "Selected Essays on Mindanao Art and Culture",
+			"subtitle": null,
+			"authors": [
+				"juan-francisco"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1988,
+			"edition": null,
+			"pages": 237,
+			"isbn": "9789711110406",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture",
+				"history"
+			],
+			"summary": "Essays on the Indian and Islamic strands in Mindanao’s arts and epics, by a scholar of Sanskrit in the Philippines.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "selected-essays-on-mindanao-art-and-culture.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3730987W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711110406"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "moro-swords",
+			"title": "Moro Swords",
+			"subtitle": null,
+			"authors": [
+				"robert-cato"
+			],
+			"role": "author",
+			"publisher": "graham-brash",
+			"year": 1996,
+			"edition": null,
+			"pages": 106,
+			"isbn": "9789812180599",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "The kris, barong, kampilan and the rest, their forms, their making and their meaning, in the standard illustrated guide for collectors.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "moro-swords.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1780634W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789812180599"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "weapons-of-moroland",
+			"title": "Weapons of Moroland",
+			"subtitle": null,
+			"authors": [
+				"bruce-jenkins"
+			],
+			"role": "author",
+			"publisher": "kdp",
+			"year": 2015,
+			"edition": null,
+			"pages": 70,
+			"isbn": "9781517306489",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "A collector’s illustrated catalogue of Moro blades and arms, printed on demand.",
+			"availability": "private",
+			"note": null,
+			"cover": {
+				"file": "weapons-of-moroland.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/1517306485.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1517306485"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL40633263W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781517306489"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "krises-of-moroland",
+			"title": "Krises of Moroland",
+			"subtitle": null,
+			"authors": [
+				"bruce-jenkins"
+			],
+			"role": "author",
+			"publisher": "kdp",
+			"year": 2015,
+			"edition": null,
+			"pages": 64,
+			"isbn": "9781515386308",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture"
+			],
+			"summary": "A companion catalogue devoted to the kris, printed on demand.",
+			"availability": "private",
+			"note": null,
+			"cover": {
+				"file": "krises-of-moroland.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/1515386309.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1515386309"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL41687212W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781515386308"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "darangen",
+			"title": "Darangen",
+			"subtitle": "In Original Maranao Verse, with English Translation",
+			"authors": [
+				"msu-folklore-division"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1986,
+			"edition": null,
+			"pages": null,
+			"isbn": "9789711110338",
+			"language": "Maranao and English",
+			"kind": "epic",
+			"subjects": [
+				"literature",
+				"culture"
+			],
+			"summary": "The Maranao epic of Bantugan and the kingdom of Bembaran, sung for centuries around Lake Lanao, transcribed and translated in eight volumes by Mindanao State University; inscribed by UNESCO in 2005 as a masterpiece of oral heritage.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "darangen.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19194799W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711110338"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "stories-from-the-darangen",
+			"title": "Stories from the Darangen",
+			"subtitle": null,
+			"authors": [
+				"howard-mckaughan"
+			],
+			"role": "editor",
+			"publisher": "dlsu-press",
+			"year": 1995,
+			"edition": "First published by MSU, 1983",
+			"pages": 194,
+			"isbn": "9789715551267",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Episodes of the Maranao epic retold in English prose, for readers who will not face the eight volumes.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "stories-from-the-darangen.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19039893W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715551267"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "thirteen-tausug-folktales",
+			"title": "Thirteen Tausug Folktales",
+			"subtitle": null,
+			"authors": [
+				"msu-research-center"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1980,
+			"edition": null,
+			"pages": 106,
+			"isbn": "9789711110383",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Tausug tales collected and translated by the university’s research centre.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "thirteen-tausug-folktales.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23524466W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711110383"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "voices-from-sulu",
+			"title": "Voices from Sulu",
+			"subtitle": "A Collection of Tausug Oral Traditions",
+			"authors": [
+				"gerard-rixhon"
+			],
+			"role": "editor",
+			"publisher": "ateneo-press",
+			"year": 2010,
+			"edition": null,
+			"pages": 436,
+			"isbn": "9789715506168",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"literature",
+				"culture"
+			],
+			"summary": "Tausug epics, tales, songs and sayings recorded over forty years in Sulu, with translations, from the founder of the journal Sulu Studies.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "voices-from-sulu.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/971550616X.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from ateneopress.org",
+					"url": "https://ateneopress.org/?s=Voices+from+Sulu"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/971550616X"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL15888983W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715506168"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "maranao-stories",
+			"title": "Maranao Stories",
+			"subtitle": null,
+			"authors": [
+				"howard-mckaughan"
+			],
+			"role": "author",
+			"publisher": "dlsu-press",
+			"year": 1995,
+			"edition": null,
+			"pages": 141,
+			"isbn": "9789715550765",
+			"language": "Maranao and English",
+			"kind": "book",
+			"subjects": [
+				"literature",
+				"language"
+			],
+			"summary": "Maranao folktales in the original with English translations, from the linguist who compiled the Maranao dictionary.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23641853W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715550765"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "mga-kuwentong-maranao",
+			"title": "Mga Kuwentong Maranao",
+			"subtitle": null,
+			"authors": [
+				"frank-rivera"
+			],
+			"role": "author",
+			"publisher": "ust-press",
+			"year": 2003,
+			"edition": null,
+			"pages": 172,
+			"isbn": "9789715062343",
+			"language": "Filipino",
+			"kind": "book",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Maranao tales retold in Filipino.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL5375433W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715062343"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "tales-from-lake-lanao-and-other-essays",
+			"title": "Tales from Lake Lanao and Other Essays",
+			"subtitle": null,
+			"authors": [
+				"nagasura-madale"
+			],
+			"role": "author",
+			"publisher": "ncca",
+			"year": 2001,
+			"edition": null,
+			"pages": 120,
+			"isbn": "9789718140062",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"literature",
+				"culture"
+			],
+			"summary": "Stories of the lake and essays on Maranao life by a Maranao anthropologist.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3890439W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718140062"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "children-of-the-ever-changing-moon",
+			"title": "Children of the Ever-Changing Moon",
+			"subtitle": "Young Moro Writers’ Anthology",
+			"authors": [
+				"gutierrez-mangansakan"
+			],
+			"role": "editor",
+			"publisher": "anvil",
+			"year": 2007,
+			"edition": null,
+			"pages": 168,
+			"isbn": null,
+			"language": "English",
+			"kind": "anthology",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Stories, essays and poems by young Moro writers from across the region, the first anthology of its kind, edited by a Maguindanaon filmmaker.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Children%20of%20the%20Ever-Changing%20Moon%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "panitikang-meranaw",
+			"title": "Panitikang Mëranaw",
+			"subtitle": null,
+			"authors": [
+				"sandor-abad"
+			],
+			"role": "author",
+			"publisher": "kwf",
+			"year": 2013,
+			"edition": null,
+			"pages": 147,
+			"isbn": "9789710197248",
+			"language": "Filipino",
+			"kind": "book",
+			"subjects": [
+				"literature",
+				"language"
+			],
+			"summary": "Maranao literature, oral and written, surveyed in Filipino for the Commission on the Filipino Language.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23234499W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789710197248"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "abduction-of-princess-lawanen",
+			"title": "Abduction of Princess Lawanen",
+			"subtitle": "Darangen",
+			"authors": [
+				"nosca-khalid"
+			],
+			"role": "author",
+			"publisher": "kdp",
+			"year": 2017,
+			"edition": null,
+			"pages": null,
+			"isbn": "9781520857084",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"literature"
+			],
+			"summary": "An episode of the Maranao epic retold in English by a Maranao author and published independently.",
+			"availability": "private",
+			"note": null,
+			"cover": {
+				"file": "abduction-of-princess-lawanen.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/152085708X.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/152085708X"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL29693777W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781520857084"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "a-maranao-dictionary",
+			"title": "A Maranao Dictionary",
+			"subtitle": null,
+			"authors": [
+				"howard-mckaughan",
+				"batua-macaraya"
+			],
+			"role": "author",
+			"publisher": "u-hawaii-press",
+			"year": 1967,
+			"edition": "Revised edition, SIL and DLSU, 1996",
+			"pages": 394,
+			"isbn": null,
+			"language": "Maranao and English",
+			"kind": "dictionary",
+			"subjects": [
+				"language",
+				"reference"
+			],
+			"summary": "The standard Maranao–English dictionary, compiled by an American linguist and a Maranao lexicographer; revised and much enlarged in the 1996 edition.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "a-maranao-dictionary.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Buy from uhpress.hawaii.edu",
+					"url": "https://uhpress.hawaii.edu/?s=Maranao+Dictionary"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL7243594W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/maranaodictionar0000mcka"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22A%20Maranao%20Dictionary%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "a-maguindanaon-dictionary",
+			"title": "A Maguindanaon Dictionary",
+			"subtitle": "Maguindanaon–English, English–Maguindanaon",
+			"authors": [
+				"robert-sullivan"
+			],
+			"role": "author",
+			"publisher": "notre-dame-university",
+			"year": 1986,
+			"edition": null,
+			"pages": 545,
+			"isbn": "9789711290009",
+			"language": "Maguindanaon and English",
+			"kind": "dictionary",
+			"subjects": [
+				"language",
+				"reference"
+			],
+			"summary": "The fullest Maguindanaon dictionary, by an Oblate missionary at Notre Dame University in Cotabato City.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4664652W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711290009"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "tausug-english-dictionary",
+			"title": "Tausug–English Dictionary",
+			"subtitle": "Kabtangan Iban Maana",
+			"authors": [
+				"irene-hassan",
+				"seymour-ashley",
+				"mary-ashley"
+			],
+			"role": "author",
+			"publisher": "sil-philippines",
+			"year": 1975,
+			"edition": "2nd edition 1994",
+			"pages": 688,
+			"isbn": "9789711802424",
+			"language": "Tausug and English",
+			"kind": "dictionary",
+			"subjects": [
+				"language",
+				"reference"
+			],
+			"summary": "The standard Tausug–English dictionary, from the Summer Institute of Linguistics; second edition 1994.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "tausug-english-dictionary.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23610191W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711802424"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "lexicon-of-classical-literary-maranao-words-and-phrases",
+			"title": "Lexicon of Classical Literary Maranao Words and Phrases",
+			"subtitle": null,
+			"authors": [
+				"batua-macaraya"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1993,
+			"edition": null,
+			"pages": 384,
+			"isbn": "9789711111182",
+			"language": "Maranao and English",
+			"kind": "dictionary",
+			"subjects": [
+				"language",
+				"literature"
+			],
+			"summary": "The old literary Maranao of the darangen and the bayok, glossed by the Maranao scholar who co-wrote the dictionary.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18640137W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711111182"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "bokabularyong-maranao-filipino-english",
+			"title": "Bokabularyong Maranao–Filipino–English",
+			"subtitle": null,
+			"authors": [
+				"kwf"
+			],
+			"role": "author",
+			"publisher": "kwf",
+			"year": 2003,
+			"edition": null,
+			"pages": 152,
+			"isbn": "9789718705766",
+			"language": "Maranao, Filipino and English",
+			"kind": "dictionary",
+			"subjects": [
+				"language",
+				"reference"
+			],
+			"summary": "A three-way wordlist from the Commission on the Filipino Language.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "bokabularyong-maranao-filipino-english.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL19025136W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718705766"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "intensive-tausug",
+			"title": "Intensive Tausug",
+			"subtitle": "A Pedagogical Grammar of the Language of Jolo, Philippines",
+			"authors": [
+				"carl-rubino"
+			],
+			"role": "author",
+			"publisher": "dunwoody",
+			"year": 2005,
+			"edition": null,
+			"pages": 419,
+			"isbn": "9781931546171",
+			"language": "Tausug and English",
+			"kind": "book",
+			"subjects": [
+				"language"
+			],
+			"summary": "A full course in Tausug grammar for the serious learner.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "intensive-tausug.jpg",
+				"source": "Amazon",
+				"url": "https://images-na.ssl-images-amazon.com/images/P/1931546177.01.LZZZZZZZ.jpg"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1931546177"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL544830W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781931546171"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "tausug-reader",
+			"title": "Tausug Reader",
+			"subtitle": null,
+			"authors": [
+				"wilma-amil"
+			],
+			"role": "author",
+			"publisher": "dunwoody",
+			"year": 2011,
+			"edition": null,
+			"pages": 252,
+			"isbn": "9781931546829",
+			"language": "Tausug and English",
+			"kind": "book",
+			"subjects": [
+				"language"
+			],
+			"summary": "Graded Tausug texts with glossaries, for learners who have the grammar.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1931546827"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL22632952W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781931546829"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "maranao-reader",
+			"title": "Maranao Reader",
+			"subtitle": null,
+			"authors": [
+				"jason-lobel"
+			],
+			"role": "author",
+			"publisher": "dunwoody",
+			"year": 2009,
+			"edition": null,
+			"pages": 136,
+			"isbn": "9781931546744",
+			"language": "Maranao and English",
+			"kind": "book",
+			"subjects": [
+				"language"
+			],
+			"summary": "Maranao texts, from news to folktales, with glossaries and notes for learners.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1931546746"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23234923W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781931546744"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "maranao-dialogs-and-drills",
+			"title": "Maranao Dialogs and Drills",
+			"subtitle": null,
+			"authors": [
+				"almahdi-alonto"
+			],
+			"role": "author",
+			"publisher": "dunwoody",
+			"year": 2009,
+			"edition": null,
+			"pages": 255,
+			"isbn": "9781931546652",
+			"language": "Maranao and English",
+			"kind": "book",
+			"subjects": [
+				"language"
+			],
+			"summary": "Conversational Maranao in dialogues and drills, with audio.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1931546657"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18604147W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781931546652"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "maguindanao-grammar-supplement",
+			"title": "Maguindanao Grammar Supplement",
+			"subtitle": null,
+			"authors": [
+				"ruth-stickney"
+			],
+			"role": "author",
+			"publisher": "dunwoody",
+			"year": 2009,
+			"edition": null,
+			"pages": 148,
+			"isbn": "9781931546614",
+			"language": "Maguindanaon and English",
+			"kind": "book",
+			"subjects": [
+				"language"
+			],
+			"summary": "A grammar sketch of Maguindanaon for learners.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1931546614"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL18735738W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781931546614"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "diccionario-moro-maguindanao-espanol",
+			"title": "Diccionario Moro-Maguindanao-Español",
+			"subtitle": null,
+			"authors": [
+				"jacinto-juanmarti"
+			],
+			"role": "author",
+			"publisher": "amigos-del-pais",
+			"year": 1892,
+			"edition": null,
+			"pages": null,
+			"isbn": null,
+			"language": "Maguindanaon and Spanish",
+			"kind": "dictionary",
+			"subjects": [
+				"language",
+				"colonial-period"
+			],
+			"summary": "The Jesuit mission’s Maguindanaon–Spanish dictionary, the first for the language, compiled at Tamontaka. Out of copyright and free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "diccionario-moro-maguindanao-espanol.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://archive.org/details/diccionariomoro00juangoog"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL13816995W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22Diccionario%20Moro-Maguindanao-Espa%C3%B1ol%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "a-grammar-of-the-maguindanao-tongue",
+			"title": "A Grammar of the Maguindanao Tongue",
+			"subtitle": "According to the Manner of Speaking It in the Interior and on the South Coast of the Island of Mindanao",
+			"authors": [
+				"jacinto-juanmarti"
+			],
+			"role": "author",
+			"publisher": "us-gpo",
+			"year": 1906,
+			"edition": null,
+			"pages": 80,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"language",
+				"colonial-period"
+			],
+			"summary": "Juanmartí’s 1892 grammar translated into English for the American army by Lieutenant C. C. Smith. Out of copyright and free to read.",
+			"availability": "open-access",
+			"note": null,
+			"cover": {
+				"file": "a-grammar-of-the-maguindanao-tongue.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Read it free",
+					"url": "https://archive.org/details/agrammarmaguind00smitgoog"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL10333963W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22A%20Grammar%20of%20the%20Maguindanao%20Tongue%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "islamic-identity-postcoloniality-and-educational-policy",
+			"title": "Islamic Identity, Postcoloniality, and Educational Policy",
+			"subtitle": "Schooling and Ethno-Religious Conflict in the Southern Philippines",
+			"authors": [
+				"jeffrey-milligan"
+			],
+			"role": "author",
+			"publisher": "palgrave",
+			"year": 2005,
+			"edition": "2nd edition 2020",
+			"pages": 278,
+			"isbn": "9781349527540",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"education",
+				"religion"
+			],
+			"summary": "Schools as a front in the Moro conflict: what public schooling meant to Muslim Filipinos, and what the madrasah offered instead. Second edition 2020.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "islamic-identity-postcoloniality-and-educational-policy.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/1349527548"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL9289891W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9781349527540"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "a-madrasah-general-education-program-for-muslim-mindanao",
+			"title": "A Madrasah General Education Program for Muslim Mindanao",
+			"subtitle": null,
+			"authors": [
+				"lolita-rodriguez"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 1992,
+			"edition": null,
+			"pages": 216,
+			"isbn": "9789711110536",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"education",
+				"religion"
+			],
+			"summary": "A proposal, from an MSU educator, for a madrasah curriculum that could be recognised by the state, decades before the ALIVE programme.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL16651373W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711110536"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "philippine-muslim-christian-dialogue",
+			"title": "Philippine Muslim-Christian Dialogue",
+			"subtitle": null,
+			"authors": [
+				"leonardo-mercado"
+			],
+			"role": "author",
+			"publisher": "divine-word",
+			"year": 1993,
+			"edition": null,
+			"pages": 65,
+			"isbn": "9789713100061",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"religion"
+			],
+			"summary": "A Filipino philosopher-priest on what dialogue between the two faiths in the Philippines has been and could be.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL23532594W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789713100061"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-moro-rebellion-and-the-search-for-peace",
+			"title": "The Moro Rebellion and the Search for Peace",
+			"subtitle": "A Study on Christian-Muslim Relations in the Philippines",
+			"authors": [
+				"hilario-gomez"
+			],
+			"role": "author",
+			"publisher": "silsilah",
+			"year": 1999,
+			"edition": null,
+			"pages": 172,
+			"isbn": "9789713100092",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"religion",
+				"conflict"
+			],
+			"summary": "The conflict read as a problem of relations between Christians and Muslims, from the Silsilah Dialogue Movement in Zamboanga.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL950165W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789713100092"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "liberalism-and-the-quest-for-islamic-identity-in-the-philippines",
+			"title": "Liberalism and the Quest for Islamic Identity in the Philippines",
+			"subtitle": null,
+			"authors": [
+				"kenneth-bauzon"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 1991,
+			"edition": null,
+			"pages": 219,
+			"isbn": "9780893860288",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"religion",
+				"politics"
+			],
+			"summary": "How the liberal state and the Moro search for an Islamic political identity have failed to meet, by a Filipino political scientist.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "liberalism-and-the-quest-for-islamic-identity-in-the-philippines.jpg",
+				"source": "Open Library",
+				"url": "https://openlibrary.org"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4340213W"
+				},
+				{
+					"label": "Borrow on the Internet Archive",
+					"url": "https://archive.org/details/liberalismquestf0000bauz"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780893860288"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "born-in-the-year-1900-and-other-stories",
+			"title": "Born in the Year 1900 and Other Stories",
+			"subtitle": null,
+			"authors": [
+				"aida-rivera-ford"
+			],
+			"role": "author",
+			"publisher": "up-press",
+			"year": 1997,
+			"edition": null,
+			"pages": 160,
+			"isbn": "9789715421447",
+			"language": "English",
+			"kind": "short stories",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Short stories by the Jolo-born writer best known for “The Chieftest Mourner”, still one of the most taught stories in Philippine classrooms, from the University of the Philippines Press.",
+			"availability": "for-sale",
+			"note": null,
+			"cover": {
+				"file": "born-in-the-year-1900-and-other-stories.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/3724921-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Buy from press.up.edu.ph",
+					"url": "https://press.up.edu.ph/product/born-in-the-year-1900-and-other-stories/"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/971542144X"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1783915W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715421447"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "aida-rivera-ford-collected-works",
+			"title": "Collected Works",
+			"subtitle": null,
+			"authors": [
+				"aida-rivera-ford"
+			],
+			"role": "author",
+			"publisher": "ce-publishing",
+			"year": 2012,
+			"edition": null,
+			"pages": 267,
+			"isbn": "9789719946168",
+			"language": "English",
+			"kind": "collection",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Aida Rivera-Ford’s stories, essays and other writing gathered in one volume late in her long life in Davao.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL22655517W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719946168"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "surveyors-of-the-liguasan-marsh",
+			"title": "Surveyors of the Liguasan Marsh",
+			"subtitle": null,
+			"authors": [
+				"antonio-enriquez"
+			],
+			"role": "author",
+			"publisher": "uq-press",
+			"year": 1981,
+			"edition": "Reissued as Green Sanctuary, Giraffe Books, 2003",
+			"pages": 124,
+			"isbn": "9780702215339",
+			"language": "English",
+			"kind": "novel",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Enriquez’s first novel, set among land surveyors in the Liguasan Marsh of Maguindanao, country he knew as a young man. First published in Australia, it was reissued in the Philippines in 2003 as Green Sanctuary.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "surveyors-of-the-liguasan-marsh.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/4213844-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1033020W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780702215339"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-unseen-war-and-other-tales-from-mindanao",
+			"title": "The Unseen War and Other Tales from Mindanao",
+			"subtitle": null,
+			"authors": [
+				"antonio-enriquez"
+			],
+			"role": "author",
+			"publisher": "giraffe",
+			"year": 1996,
+			"edition": null,
+			"pages": 244,
+			"isbn": "9789718967430",
+			"language": "English",
+			"kind": "short stories",
+			"subjects": [
+				"literature",
+				"conflict"
+			],
+			"summary": "Stories of Mindanao’s wars and the people who live through them, by the Zamboanga novelist.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "the-unseen-war-and-other-tales-from-mindanao.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/3776700-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1033018W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718967430"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-voice-from-sumisip",
+			"title": "The Voice from Sumisip & Four Short Stories",
+			"subtitle": null,
+			"authors": [
+				"antonio-enriquez"
+			],
+			"role": "author",
+			"publisher": "giraffe",
+			"year": 2003,
+			"edition": null,
+			"pages": 124,
+			"isbn": "9789718832905",
+			"language": "English",
+			"kind": "short stories",
+			"subjects": [
+				"literature"
+			],
+			"summary": "A novella named for the town of Sumisip in Basilan, with four short stories.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "the-voice-from-sumisip.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/4242915-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1033019W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789718832905"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-white-horse-of-alih-and-other-stories",
+			"title": "The White Horse of Alih and Other Stories",
+			"subtitle": null,
+			"authors": [
+				"mig-alvarez-enriquez"
+			],
+			"role": "author",
+			"publisher": "new-day",
+			"year": 1985,
+			"edition": null,
+			"pages": 112,
+			"isbn": "9789711002336",
+			"language": "English",
+			"kind": "short stories",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Stories by the Zamboanga writer. In the title story a Moro man, Alih, and his brother Omar plan to attack a crowd celebrating an American holiday, and Alih turns on his brother to stop him.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "the-white-horse-of-alih-and-other-stories.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/4113013-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4266748W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711002336"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "three-philippine-epic-plays",
+			"title": "Three Philippine Epic Plays",
+			"subtitle": "Lam-ang, Labaw Donggon and Bantugan",
+			"authors": [
+				"mig-alvarez-enriquez"
+			],
+			"role": "author",
+			"publisher": "new-day",
+			"year": 1983,
+			"edition": null,
+			"pages": 193,
+			"isbn": "9789711000509",
+			"language": "English",
+			"kind": "plays",
+			"subjects": [
+				"literature",
+				"culture"
+			],
+			"summary": "Three epic heroes put on stage, among them Bantugan, the hero of the Maranao Darangen.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "three-philippine-epic-plays.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/5530742-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL4266749W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789711000509"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "mindanao-harvest-4",
+			"title": "Mindanao Harvest 4",
+			"subtitle": "A 21st Century Literary Anthology",
+			"authors": [
+				"jaime-an-lim",
+				"christine-godinez-ortega",
+				"ricardo-de-ungria"
+			],
+			"role": "editor",
+			"publisher": "feu-publications",
+			"year": 2018,
+			"edition": null,
+			"pages": 346,
+			"isbn": "9789716780628",
+			"language": "English",
+			"kind": "anthology",
+			"subjects": [
+				"literature"
+			],
+			"summary": "An anthology of writing from Mindanao this century, edited at MSU-Iligan Institute of Technology, with Moro writers among its contributors, Calbi A. Asain’s story “Hegira” among them.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL32064675W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789716780628"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "panunggud-and-other-stories",
+			"title": "Panunggud and Other Stories",
+			"subtitle": null,
+			"authors": [
+				"calbi-asain"
+			],
+			"role": "author",
+			"publisher": "dlsu-press",
+			"year": 2001,
+			"edition": null,
+			"pages": 110,
+			"isbn": "9789715553926",
+			"language": "English",
+			"kind": "short stories",
+			"subjects": [
+				"literature"
+			],
+			"summary": "Stories of Tausug life in Sulu by a Tausug writer of fiction, from De La Salle University Press.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "panunggud-and-other-stories.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/4351963-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL6242663W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789715553926"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "with-the-bravest",
+			"title": "With the Bravest",
+			"subtitle": "The Untold Story of the Sulu Freedom Fighters of World War II",
+			"authors": [
+				"ernesto-espaldon"
+			],
+			"role": "author",
+			"publisher": "the-author",
+			"year": 1997,
+			"edition": null,
+			"pages": 193,
+			"isbn": "9789719183310",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"memoir",
+				"conflict"
+			],
+			"summary": "The Tausug guerrillas who fought the Japanese in Sulu, told by a physician who was the youngest commander in the Sulu Area Command in 1945.",
+			"availability": "private",
+			"note": null,
+			"cover": {
+				"file": "with-the-bravest.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/3725031-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/9719183314"
+				},
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL1783845W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789719183310"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-songs-of-salanda",
+			"title": "The Songs of Salanda and Other Stories of Sulu",
+			"subtitle": null,
+			"authors": [
+				"harry-nimmo"
+			],
+			"role": "author",
+			"publisher": "uw-press",
+			"year": 1994,
+			"edition": null,
+			"pages": 237,
+			"isbn": "9780295973340",
+			"language": "English",
+			"kind": "short stories",
+			"subjects": [
+				"literature",
+				"anthropology"
+			],
+			"summary": "Stories of the Sama Dilaut of Tawi-Tawi, written by the anthropologist who lived among them, from what he saw and was told.",
+			"availability": "library",
+			"note": null,
+			"cover": {
+				"file": "the-songs-of-salanda.jpg",
+				"source": "Open Library",
+				"url": "https://covers.openlibrary.org/b/id/7085370-L.jpg"
+			},
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3954189W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9780295973340"
+				}
+			],
+			"blurb": "In this engrossing collection of sixteen short stories, H. Arlo Nimmo tells of a young man coming of age while living among a remote cluster of islands in the southern Philippines with a people unlike any he had known. Nimmo combines an anthropologist's eye for the significant detail with a storyteller's gift for bringing his characters to life. His book is a vivid narrative of a people and their culture on the brink of momentous change. The Songs of Salanda is Nimmo's deeply personal exploration of his early anthropological field experiences in the Sulu archipelago. During two years in the mid-1960s, he researched the culture of the Bajau, a small group of nomadic boat-dwellers who plied the waters off the southernmost Philippine islands in small single-family houseboats. Nimmo's stories are based on the people, places, and events he encountered."
+		},
+		{
+			"slug": "the-battle-of-bayang",
+			"title": "The Battle of Bayang and Other Essays on Moroland",
+			"subtitle": null,
+			"authors": [
+				"federico-magdalena"
+			],
+			"role": "author",
+			"publisher": "msu",
+			"year": 2002,
+			"edition": null,
+			"pages": 68,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period"
+			],
+			"summary": "Essays on the history of the Moro South, the title essay on the 1902 battle in which American troops stormed the Maranao forts at Bayang, Lanao.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL6065753W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Battle%20of%20Bayang%20and%20Other%20Essays%20on%20Moroland%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "the-muslim-filipinos",
+			"title": "The Muslim Filipinos",
+			"subtitle": null,
+			"authors": [
+				"nagasura-madale"
+			],
+			"role": "editor",
+			"publisher": "alemar-phoenix",
+			"year": 1981,
+			"edition": null,
+			"pages": 376,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"anthropology",
+				"reference"
+			],
+			"summary": "A reader of essays on the history, faiths and cultures of the Muslim peoples of the Philippines, edited by the Maranao anthropologist.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL22697887W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/search?q=ti%3A%22The%20Muslim%20Filipinos%22"
+				}
+			],
+			"blurb": null
+		},
+		{
+			"slug": "possibilities-for-peace-in-southern-philippines",
+			"title": "Possibilities for Peace in Southern Philippines",
+			"subtitle": null,
+			"authors": [
+				"nagasura-madale"
+			],
+			"role": "author",
+			"publisher": "silsilah",
+			"year": 1991,
+			"edition": null,
+			"pages": 187,
+			"isbn": "9789713100016",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"peace-process",
+				"religion"
+			],
+			"summary": "A Maranao scholar’s reading of the conflict in the South and of what peace between its peoples would take, from the Silsilah Dialogue Movement.",
+			"availability": "library",
+			"note": null,
+			"cover": null,
+			"links": [
+				{
+					"label": "Open Library",
+					"url": "https://openlibrary.org/works/OL3890437W"
+				},
+				{
+					"label": "WorldCat",
+					"url": "https://search.worldcat.org/isbn/9789713100016"
+				}
+			],
+			"blurb": null
+		}
+	]
+}

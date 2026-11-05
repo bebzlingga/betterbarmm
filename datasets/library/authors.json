@@ -1,0 +1,1867 @@
+{
+	"note": "Lives in brief: from Wikipedia’s opening (CC BY-SA) where an article exists, else the shelf’s own line. Edit shelf.json, not this file.",
+	"built": "2026-11-05",
+	"authors": [
+		{
+			"slug": "cesar-adib-majul",
+			"name": "Cesar Adib Majul",
+			"sort": "Majul, Cesar Adib",
+			"bio": "Cesar Adib Majul was a Philippine historian best known for his work on the history of Islam in the Philippines, and on the life of Apolinario Mabini.",
+			"born": "1923",
+			"died": "2003",
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": [
+				{
+					"label": "Wikipedia",
+					"url": "https://en.wikipedia.org/wiki/Cesar_Adib_Majul"
+				}
+			],
+			"bioSource": "wikipedia"
+		},
+		{
+			"slug": "najeeb-saleeby",
+			"name": "Najeeb M. Saleeby",
+			"sort": "Saleeby, Najeeb M.",
+			"bio": "Lebanese-born American physician who served the Moro Province as superintendent of schools and agent for Moro affairs, and read the sultanates’ own tarsilas to write the first histories of them in English.",
+			"born": "1870",
+			"died": "1935",
+			"from": null,
+			"roles": [
+				"colonial official",
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "peter-gowing",
+			"name": "Peter G. Gowing",
+			"sort": "Gowing, Peter G.",
+			"bio": "American church historian who founded the Dansalan Research Center in Marawi City in 1971 and wrote the standard account of American rule over the Moros.",
+			"born": "1930",
+			"died": "1983",
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "james-francis-warren",
+			"name": "James Francis Warren",
+			"sort": "Warren, James Francis",
+			"bio": "Australian historian of Southeast Asia at Murdoch University, whose studies of the Sulu Zone made the sultanate’s trading and raiding world a field of its own.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "samuel-k-tan",
+			"name": "Samuel K. Tan",
+			"sort": "Tan, Samuel K.",
+			"bio": "Samuel Kong Tan was a Filipino historian, academic and author. He has headed various cultural institutions including the National Historical Institute and the National Commission for Culture and the Arts.",
+			"born": "1933",
+			"died": "2017",
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": "bangsamoro",
+			"links": [
+				{
+					"label": "Wikipedia",
+					"url": "https://en.wikipedia.org/wiki/Samuel_K._Tan"
+				}
+			],
+			"bioSource": "wikipedia"
+		},
+		{
+			"slug": "ruurdje-laarhoven",
+			"name": "Ruurdje Laarhoven",
+			"sort": "Laarhoven, Ruurdje",
+			"bio": "Dutch historian who worked the Dutch East India Company’s archives for the seventeenth-century Maguindanao sultanate.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "reynaldo-ileto",
+			"name": "Reynaldo C. Ileto",
+			"sort": "Ileto, Reynaldo C.",
+			"bio": "Reynaldo \"Rey\" Clemeña Ileto is a Filipino historian known for his seminal work Pasyon and Revolution: Popular Movements in the Philippines, 1840–1910, first published in 1979. Ileto specializes in Asian history, religion and society, postcolonial studies, and the government and politics of Asia and the Pacific. He is known for his interdisciplinary approach combining history, literature, anthropology, cultural studies, and politics.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": [
+				{
+					"label": "Wikipedia",
+					"url": "https://en.wikipedia.org/wiki/Reynaldo_Ileto"
+				}
+			],
+			"bioSource": "wikipedia"
+		},
+		{
+			"slug": "patricio-abinales",
+			"name": "Patricio N. Abinales",
+			"sort": "Abinales, Patricio N.",
+			"bio": "Filipino political scientist at the University of Hawaiʻi at Mānoa, from Ozamiz, who has written on Mindanao’s place in the Philippine state and on the Moro narrative.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "shinzo-hayase",
+			"name": "Shinzo Hayase",
+			"sort": "Hayase, Shinzo",
+			"bio": "Japanese historian of Mindanao and maritime Southeast Asia at Waseda University.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "miguel-bernad",
+			"name": "Miguel A. Bernad",
+			"sort": "Bernad, Miguel A.",
+			"bio": "Miguel Anselmo Azcona Bernad, S.J. was a Filipino Jesuit priest, educator, linguist, critic, academic, historian, author, journalist and editor. Son of Misamis Mayor and Misamis Occidental Governor Don Anselmo Bernad, he entered the Society of Jesus on June 7, 1932 and was ordained March 24, 1946 in the Fordham University Church. He was editor-in-chief of Philippine Studies from 1956 to 1959 and founder of Kinaadman Journal Research Office in 1979.",
+			"born": "1917",
+			"died": "2009",
+			"from": null,
+			"roles": [
+				"historian",
+				"Jesuit"
+			],
+			"local": null,
+			"links": [
+				{
+					"label": "Wikipedia",
+					"url": "https://en.wikipedia.org/wiki/Miguel_Bernad"
+				}
+			],
+			"bioSource": "wikipedia"
+		},
+		{
+			"slug": "mamitua-saber",
+			"name": "Mamitua Saber",
+			"sort": "Saber, Mamitua",
+			"bio": "Maranao sociologist who founded Mindanao State University’s University Research Center and the Aga Khan Museum of Islamic Arts in Marawi City, and wrote on Maranao history and art.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"sociologist"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "ghislaine-loyre",
+			"name": "Ghislaine Loyré",
+			"sort": "Loyré, Ghislaine",
+			"bio": "French ethnologist and historian of Maguindanao and of Islam in the Philippines.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"ethnologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "nasser-marohomsalic",
+			"name": "Nasser A. Marohomsalic",
+			"sort": "Marohomsalic, Nasser A.",
+			"bio": "Maranao lawyer and writer, later a commissioner of the Commission on Human Rights, whose self-published history of the Bangsamoro is widely read in the region.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"lawyer",
+				"historian"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "rudy-rodil",
+			"name": "B. R. (Rudy) Rodil",
+			"sort": "Rodil, Rudy",
+			"bio": "Mindanao historian, long of MSU-Iligan Institute of Technology, who sat on the government panels that negotiated with the MNLF and the MILF and has written the region’s history for the general reader.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "tjs-george",
+			"name": "T. J. S. George",
+			"sort": "George, T. J. S.",
+			"bio": "Thayil Jacob Sony George was an Indian writer and biographer who received a Padma Bhushan award in 2011 in the field of literature and education.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"journalist"
+			],
+			"local": null,
+			"links": [
+				{
+					"label": "Wikipedia",
+					"url": "https://en.wikipedia.org/wiki/T._J._S._George"
+				}
+			],
+			"bioSource": "wikipedia"
+		},
+		{
+			"slug": "w-k-che-man",
+			"name": "W. K. Che Man",
+			"sort": "Che Man, W. K.",
+			"bio": "Malaysian political scientist who compared the Moro and Patani Malay movements.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "vic-hurley",
+			"name": "Vic Hurley",
+			"sort": "Hurley, Vic",
+			"bio": "Gerald Victor Hurley (1898–1978) was a record-breaking athlete, adventurer, expert on the Philippine Islands, military officer, and prolific author. His published books include a non-fiction series relating to the Philippine Islands in the first third of the twentieth century, military histories, screenplays, articles and works of fiction.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"links": [
+				{
+					"label": "Wikipedia",
+					"url": "https://en.wikipedia.org/wiki/Vic_Hurley"
+				}
+			],
+			"bioSource": "wikipedia"
+		},
+		{
+			"slug": "sydney-cloman",
+			"name": "Sydney A. Cloman",
+			"sort": "Cloman, Sydney A.",
+			"bio": "United States Army officer posted to Sulu in the first years of American rule, who wrote a memoir of it two decades later.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"soldier"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "robert-fulton",
+			"name": "Robert A. Fulton",
+			"sort": "Fulton, Robert A.",
+			"bio": "American independent historian of the Moro Province, who publishes under his own imprint.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "james-arnold",
+			"name": "James R. Arnold",
+			"sort": "Arnold, James R.",
+			"bio": "American military historian and the author of many campaign histories.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"military historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "michael-hawkins",
+			"name": "Michael C. Hawkins",
+			"sort": "Hawkins, Michael C.",
+			"bio": "Historian at Creighton University who works on the American colonial Philippines and its Muslim South.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "ronald-edgerton",
+			"name": "Ronald K. Edgerton",
+			"sort": "Edgerton, Ronald K.",
+			"bio": "Historian, emeritus of the University of Northern Colorado, who has written on central Mindanao and on Pershing’s years among the Moros.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "oliver-charbonneau",
+			"name": "Oliver Charbonneau",
+			"sort": "Charbonneau, Oliver",
+			"bio": "Historian of American empire at the University of Glasgow.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "thomas-mckenna",
+			"name": "Thomas M. McKenna",
+			"sort": "McKenna, Thomas M.",
+			"bio": "American anthropologist whose fieldwork in Cotabato City in the 1980s produced the standard ethnography of Maguindanaon politics, and who later told the story of Cotabato’s wartime guerrillas.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "asreemoro",
+			"name": "Asreemoro",
+			"sort": "Asreemoro",
+			"bio": "Malaysian writer of Tausug descent in Sabah, who writes on the Tausug and the Sulu Sultanate.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "ben-kadil",
+			"name": "Ben J. Kadil",
+			"sort": "Kadil, Ben J.",
+			"bio": "Moro educator who wrote and published his own history textbook of the peoples of Mindanao, Sulu and Palawan.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"teacher",
+				"historian"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "clemencio-bascar",
+			"name": "Clemencio M. Bascar",
+			"sort": "Bascar, Clemencio M.",
+			"bio": "Zamboanga writer and advocate who self-published histories of the Sulu and Maguindanao sultanates.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "midori-kawashima",
+			"name": "Midori Kawashima",
+			"sort": "Kawashima, Midori",
+			"bio": "Japanese historian of Islam in the Philippines at Sophia University, Tokyo.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "tirmizy-abdullah",
+			"name": "Tirmizy E. Abdullah",
+			"sort": "Abdullah, Tirmizy E.",
+			"bio": "Maranao scholar of Islamic manuscripts who worked with Sophia University on the kitabs of Lanao.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "marites-vitug",
+			"name": "Marites Dañguilan Vitug",
+			"sort": "Vitug, Marites Dañguilan",
+			"bio": "Marites Javier Dañguilan Vitug is a Filipina journalist and author who co-founded the news magazine Newsbreak. She was a Nieman Fellow at Harvard University from 1986 to 1987.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"journalist"
+			],
+			"local": null,
+			"links": [
+				{
+					"label": "Wikipedia",
+					"url": "https://en.wikipedia.org/wiki/Marites_D._Vitug"
+				}
+			],
+			"bioSource": "wikipedia"
+		},
+		{
+			"slug": "glenda-gloria",
+			"name": "Glenda M. Gloria",
+			"sort": "Gloria, Glenda M.",
+			"bio": "Filipino journalist, a co-founder and the executive editor of Rappler, who covered the military and Mindanao for two decades.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"journalist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "eric-gutierrez",
+			"name": "Eric U. Gutierrez",
+			"sort": "Gutierrez, Eric U.",
+			"bio": "Filipino political researcher, formerly of the Institute for Popular Democracy, who has written on the clans, the rebel fronts and the land question in Mindanao.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "kristina-gaerlan",
+			"name": "Kristina Gaerlan",
+			"sort": "Gaerlan, Kristina",
+			"bio": "Editor at the Institute for Popular Democracy.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"editor"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "mara-stankovitch",
+			"name": "Mara Stankovitch",
+			"sort": "Stankovitch, Mara",
+			"bio": "Editor at the Institute for Popular Democracy.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"editor"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "saturnino-borras",
+			"name": "Saturnino M. Borras Jr.",
+			"sort": "Borras, Saturnino M.",
+			"bio": "Filipino scholar of agrarian politics at the International Institute of Social Studies in The Hague.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "steven-rood",
+			"name": "Steven Rood",
+			"sort": "Rood, Steven",
+			"bio": "American political scientist who was The Asia Foundation’s country representative in the Philippines from 1999 to 2017 and an adviser to the Mindanao peace process.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "bobby-tuazon",
+			"name": "Bobby M. Tuazon",
+			"sort": "Tuazon, Bobby M.",
+			"bio": "Director of policy studies at the Center for People Empowerment in Governance and a lecturer at the University of the Philippines.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political analyst"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "lualhati-abreu",
+			"name": "Lualhati M. Abreu",
+			"sort": "Abreu, Lualhati M.",
+			"bio": "Filipino writer and former activist, author of a memoir of the underground and of a Filipino-language account of the Bangsamoro.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "salah-jubair",
+			"name": "Salah Jubair (Mohagher Iqbal)",
+			"sort": "Jubair, Salah",
+			"bio": "Pen name of Mohagher Iqbal, the Moro Islamic Liberation Front’s chief negotiator in the talks that produced the Comprehensive Agreement on the Bangsamoro, and later the region’s first education minister.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"negotiator",
+				"historian"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "michael-mastura",
+			"name": "Michael O. Mastura",
+			"sort": "Mastura, Michael O.",
+			"bio": "Maguindanaon lawyer, historian and former congressman for Maguindanao, a member of the MILF peace panel and a descendant of the Maguindanao sultans.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"lawyer",
+				"historian"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "macapado-muslim",
+			"name": "Macapado A. Muslim",
+			"sort": "Muslim, Macapado A.",
+			"bio": "Maranao political scientist who served as president of Mindanao State University.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "soliman-santos",
+			"name": "Soliman M. Santos Jr.",
+			"sort": "Santos, Soliman M.",
+			"bio": "Human rights lawyer and peace advocate, long a writer on the Mindanao peace process, later a judge in Naga City.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"lawyer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "amina-rasul",
+			"name": "Amina Rasul-Bernardo",
+			"sort": "Rasul, Amina",
+			"bio": "Tausug advocate and president of the Philippine Council for Islam and Democracy, a cabinet member under President Ramos and the daughter of the Sulu lawmaker Santanina Rasul.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"advocate"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "miriam-coronel-ferrer",
+			"name": "Miriam Coronel-Ferrer",
+			"sort": "Coronel-Ferrer, Miriam",
+			"bio": "Political scientist at the University of the Philippines who chaired the government panel that signed the Comprehensive Agreement on the Bangsamoro in 2014, the first woman to sign a major peace accord as chief negotiator.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist",
+				"negotiator"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "wilfredo-torres",
+			"name": "Wilfredo Magno Torres III",
+			"sort": "Torres, Wilfredo Magno",
+			"bio": "Program director at The Asia Foundation in the Philippines, who led its study of rido.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "francisco-lara",
+			"name": "Francisco J. Lara Jr.",
+			"sort": "Lara, Francisco J.",
+			"bio": "Filipino sociologist, former country manager of International Alert Philippines, who has written on the shadow economies and the clans of Muslim Mindanao.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"sociologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "steven-schoofs",
+			"name": "Steven Schoofs",
+			"sort": "Schoofs, Steven",
+			"bio": "Researcher with International Alert on conflict economies in the Philippines.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "diana-rodriguez",
+			"name": "Diana Rodriguez",
+			"sort": "Rodriguez, Diana",
+			"bio": "Editor at the Small Arms Survey in Geneva.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"editor"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "international-alert",
+			"name": "International Alert",
+			"sort": "International Alert",
+			"bio": "The London peacebuilding organisation, with a long programme in Mindanao.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"organisation"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "paul-hutchcroft",
+			"name": "Paul D. Hutchcroft",
+			"sort": "Hutchcroft, Paul D.",
+			"bio": "American political scientist at the Australian National University who has written on Philippine politics for three decades.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "peter-kreuzer",
+			"name": "Peter Kreuzer",
+			"sort": "Kreuzer, Peter",
+			"bio": "Senior researcher at the Peace Research Institute Frankfurt who works on violence and politics in the Philippines.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "rainer-werning",
+			"name": "Rainer Werning",
+			"sort": "Werning, Rainer",
+			"bio": "German political scientist and journalist on Southeast Asia.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"journalist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "arndt-graf",
+			"name": "Arndt Graf",
+			"sort": "Graf, Arndt",
+			"bio": "Professor of Southeast Asian studies at Goethe University Frankfurt.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "kamarulzaman-askandar",
+			"name": "Kamarulzaman Askandar",
+			"sort": "Askandar, Kamarulzaman",
+			"bio": "Coordinator of the peace research programme at Universiti Sains Malaysia and of the Southeast Asian Conflict Studies Network.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "ayesah-abubakar",
+			"name": "Ayesah Abubakar",
+			"sort": "Abubakar, Ayesah",
+			"bio": "Bangsamoro researcher on peace and conflict, long with the peace programme at Universiti Sains Malaysia.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "shamsuddin-taya",
+			"name": "Shamsuddin L. Taya",
+			"sort": "Taya, Shamsuddin L.",
+			"bio": "Political scientist at Universiti Utara Malaysia.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "lino-miani",
+			"name": "Lino Miani",
+			"sort": "Miani, Lino",
+			"bio": "United States Army officer and security analyst.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"soldier",
+				"analyst"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "moshe-yegar",
+			"name": "Moshe Yegar",
+			"sort": "Yegar, Moshe",
+			"bio": "Israeli diplomat and historian of the Muslim communities of Southeast Asia.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"diplomat",
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "tom-stern",
+			"name": "Tom Stern",
+			"sort": "Stern, Tom",
+			"bio": "American writer who wrote the authorised life of Nur Misuari.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "arnold-azurin",
+			"name": "Arnold Molina Azurin",
+			"sort": "Azurin, Arnold Molina",
+			"bio": "Filipino anthropologist and essayist, a fellow of the UP Center for Integrative and Development Studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist",
+				"essayist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "patricio-diaz",
+			"name": "Patricio P. Diaz",
+			"sort": "Diaz, Patricio P.",
+			"bio": "Cotabato journalist who edited the Mindanao Cross and wrote on the peace process for MindaNews for decades.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"journalist"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "edna-co",
+			"name": "Edna E. A. Co",
+			"sort": "Co, Edna E. A.",
+			"bio": "Professor and former dean of the University of the Philippines’ National College of Public Administration and Governance.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "government-of-the-philippines",
+			"name": "Government of the Philippines",
+			"sort": "Government of the Philippines",
+			"bio": "A party to the Comprehensive Agreement on the Bangsamoro, through its peace panel.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"party"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "milf",
+			"name": "Moro Islamic Liberation Front",
+			"sort": "Moro Islamic Liberation Front",
+			"bio": "The Front that signed the Comprehensive Agreement on the Bangsamoro in 2014 and now leads the regional government.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"party"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "congress-of-the-philippines",
+			"name": "Congress of the Philippines",
+			"sort": "Congress of the Philippines",
+			"bio": "The national legislature that passed the Bangsamoro Organic Law.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"legislature"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "carmela-fonbuena",
+			"name": "Carmela Fonbuena",
+			"sort": "Fonbuena, Carmela",
+			"bio": "Filipino journalist who covered defence and the Marawi siege for Rappler.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"journalist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "criselda-yabes",
+			"name": "Criselda Yabes",
+			"sort": "Yabes, Criselda",
+			"bio": "Filipino journalist and novelist who has followed the military and Mindanao since the 1980s; her novel of Sulu was shortlisted for the Man Asian Literary Prize.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"journalist",
+				"novelist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "rommel-banlaoi",
+			"name": "Rommel C. Banlaoi",
+			"sort": "Banlaoi, Rommel C.",
+			"bio": "Philippine security analyst and chairman of the Philippine Institute for Peace, Violence and Terrorism Research.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"security analyst"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "ipac",
+			"name": "Institute for Policy Analysis of Conflict",
+			"sort": "Institute for Policy Analysis of Conflict",
+			"bio": "A Jakarta research institute on conflict in Southeast Asia, directed by Sidney Jones.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"institute"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "simeon-dumdum",
+			"name": "Simeon Dumdum Jr.",
+			"sort": "Dumdum, Simeon",
+			"bio": "Cebuano poet and retired regional trial court judge.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"poet",
+				"judge"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "rey-montesclaros",
+			"name": "Rey Luis Adeva Montesclaros",
+			"sort": "Montesclaros, Rey Luis Adeva",
+			"bio": "Filipino military historian.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "gracia-burnham",
+			"name": "Gracia Burnham",
+			"sort": "Burnham, Gracia",
+			"bio": "American missionary held hostage by the Abu Sayyaf for a year in 2001–2002, freed in the rescue in which her husband Martin was killed.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"missionary",
+				"writer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "thomas-kiefer",
+			"name": "Thomas M. Kiefer",
+			"sort": "Kiefer, Thomas M.",
+			"bio": "American anthropologist whose fieldwork in Jolo in the 1960s produced the classic ethnography of the Tausug.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "harry-nimmo",
+			"name": "H. Arlo Nimmo",
+			"sort": "Nimmo, H. Arlo",
+			"bio": "American anthropologist who lived with the Sama Dilaut of Tawi-Tawi in the 1960s and returned to write their full ethnography.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "alexander-spoehr",
+			"name": "Alexander Spoehr",
+			"sort": "Spoehr, Alexander",
+			"bio": "American anthropologist, director of the Bishop Museum in Honolulu and later professor at Pittsburgh.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "abdullah-madale",
+			"name": "Abdullah T. Madale",
+			"sort": "Madale, Abdullah T.",
+			"bio": "Maranao scholar and educator who wrote widely on his people.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "nagasura-madale",
+			"name": "Nagasura T. Madale",
+			"sort": "Madale, Nagasura T.",
+			"bio": "Maranao anthropologist at Mindanao State University and a writer on Maranao culture.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "esmail-disoma",
+			"name": "Esmail R. Disoma",
+			"sort": "Disoma, Esmail R.",
+			"bio": "Maranao sociologist at Mindanao State University.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"sociologist"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "jamail-kamlian",
+			"name": "Jamail A. Kamlian",
+			"sort": "Kamlian, Jamail A.",
+			"bio": "Historian at MSU-Iligan Institute of Technology and a writer on Bangsamoro history and peace studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"historian"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "andrew-sherfan",
+			"name": "Andrew Dib Sherfan",
+			"sort": "Sherfan, Andrew Dib",
+			"bio": "Author of the only book-length English account of the Yakan from the 1970s.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "rolando-esteban",
+			"name": "Rolando C. Esteban",
+			"sort": "Esteban, Rolando C.",
+			"bio": "Filipino anthropologist who studied the Kalibugan of the Zamboanga peninsula.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "mashur-jundam",
+			"name": "Mashur Bin-Ghalib Jundam",
+			"sort": "Jundam, Mashur Bin-Ghalib",
+			"bio": "Tausug scholar of the University of the Philippines’ Asian Center who wrote on Tausug and Sama society.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "eric-casino",
+			"name": "Eric S. Casiño",
+			"sort": "Casiño, Eric S.",
+			"bio": "Filipino anthropologist, formerly of the National Museum, who wrote on the Jama Mapun and on Mindanao’s peoples.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"anthropologist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "norma-abdulla",
+			"name": "Norma Abubakar Abdulla",
+			"sort": "Abdulla, Norma Abubakar",
+			"bio": "Tausug researcher who documented her people’s food and foodways.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "abdulaziz-hamsain",
+			"name": "Abdulaziz H. Hamsain",
+			"sort": "Hamsain, Abdulaziz H.",
+			"bio": "Tausug home cook who published his recipes on demand.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"cook",
+				"author"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "jennifer-nandu",
+			"name": "Jennifer Saipudin Nandu",
+			"sort": "Nandu, Jennifer Saipudin",
+			"bio": "Researcher on Tausug women, published by De La Salle University.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "amparita-sta-maria",
+			"name": "Amparita S. Sta. Maria",
+			"sort": "Sta. Maria, Amparita S.",
+			"bio": "Human rights lawyer at the Ateneo Human Rights Center.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"lawyer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "nina-sison-arroyo",
+			"name": "Nina Patricia Sison-Arroyo",
+			"sort": "Sison-Arroyo, Nina Patricia",
+			"bio": "Lawyer at the Ateneo Human Rights Center.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"lawyer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "rhealeth-ramos",
+			"name": "Rhealeth Krizelle Ramos",
+			"sort": "Ramos, Rhealeth Krizelle",
+			"bio": "Researcher at the Ateneo Human Rights Center.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "ligaya-amilbangsa",
+			"name": "Ligaya Fernando-Amilbangsa",
+			"sort": "Amilbangsa, Ligaya Fernando-",
+			"bio": "Dancer and scholar who recorded the pangalay and the visual arts of Sulu over forty years, and received the Ramon Magsaysay Award in 2015.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"dancer",
+				"scholar"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "abraham-sakili",
+			"name": "Abraham P. Sakili",
+			"sort": "Sakili, Abraham P.",
+			"bio": "Tausug art historian at the University of the Philippines’ Department of Art Studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"art historian"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "juan-francisco",
+			"name": "Juan R. Francisco",
+			"sort": "Francisco, Juan R.",
+			"bio": "Filipino Indologist and scholar of the Indian strands in Philippine culture.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "robert-cato",
+			"name": "Robert Cato",
+			"sort": "Cato, Robert",
+			"bio": "Collector and writer on Moro arms.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"collector"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "bruce-jenkins",
+			"name": "Bruce Jenkins",
+			"sort": "Jenkins, Bruce",
+			"bio": "American collector whose private Moroland Museum collection fills a series of print-on-demand catalogues.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"collector"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "msu-folklore-division",
+			"name": "Mindanao State University, Folklore Division",
+			"sort": "Mindanao State University, Folklore Division",
+			"bio": "The division of the university’s research centre that transcribed and translated the Darangen.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"institution"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "msu-research-center",
+			"name": "Mindanao State University, University Research Center",
+			"sort": "Mindanao State University, University Research Center",
+			"bio": "The research centre of the university in Marawi City, founded by Mamitua Saber.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"institution"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "howard-mckaughan",
+			"name": "Howard P. McKaughan",
+			"sort": "McKaughan, Howard P.",
+			"bio": "American linguist, with the Summer Institute of Linguistics and then the University of Hawaiʻi, who worked on Maranao from the 1950s.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "gerard-rixhon",
+			"name": "Gerard Rixhon",
+			"sort": "Rixhon, Gerard",
+			"bio": "Belgian-born scholar, formerly an Oblate missionary in Sulu, who founded the journal Sulu Studies at Notre Dame of Jolo College and recorded Tausug oral tradition for forty years.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "frank-rivera",
+			"name": "Frank G. Rivera",
+			"sort": "Rivera, Frank G.",
+			"bio": "Filipino playwright and writer.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"playwright"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "gutierrez-mangansakan",
+			"name": "Gutierrez Mangansakan II",
+			"sort": "Mangansakan, Gutierrez",
+			"bio": "Maguindanaon filmmaker and writer from Pagalungan, whose films and anthologies gave young Moro writers and filmmakers a platform.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"filmmaker",
+				"writer"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "sandor-abad",
+			"name": "Sandor B. Abad",
+			"sort": "Abad, Sandor B.",
+			"bio": "Scholar of Maranao literature.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "nosca-khalid",
+			"name": "Nosca Khalid",
+			"sort": "Khalid, Nosca",
+			"bio": "Maranao writer who publishes retellings of the Darangen independently.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "batua-macaraya",
+			"name": "Batua A. Macaraya",
+			"sort": "Macaraya, Batua A.",
+			"bio": "Maranao lexicographer at Mindanao State University, co-compiler of the Maranao dictionary.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"lexicographer"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "robert-sullivan",
+			"name": "Robert E. Sullivan, OMI",
+			"sort": "Sullivan, Robert E.",
+			"bio": "Oblate missionary at Notre Dame University, Cotabato City, who compiled the Maguindanaon dictionary.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"missionary",
+				"lexicographer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "irene-hassan",
+			"name": "Irene U. Hassan",
+			"sort": "Hassan, Irene U.",
+			"bio": "Tausug co-compiler of the Tausug–English dictionary.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"lexicographer"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "seymour-ashley",
+			"name": "Seymour A. Ashley",
+			"sort": "Ashley, Seymour A.",
+			"bio": "Summer Institute of Linguistics linguist who worked on Tausug.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "mary-ashley",
+			"name": "Mary L. Ashley",
+			"sort": "Ashley, Mary L.",
+			"bio": "Summer Institute of Linguistics linguist who worked on Tausug.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "kwf",
+			"name": "Komisyon sa Wikang Filipino",
+			"sort": "Komisyon sa Wikang Filipino",
+			"bio": "The Commission on the Filipino Language, the national language body.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"institution"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "carl-rubino",
+			"name": "Carl R. Galvez Rubino",
+			"sort": "Rubino, Carl R. Galvez",
+			"bio": "Linguist of Philippine languages who has written grammars and dictionaries of Ilocano, Tagalog and Tausug.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "wilma-amil",
+			"name": "Wilma A. Amil",
+			"sort": "Amil, Wilma A.",
+			"bio": "Tausug language teacher and author.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "jason-lobel",
+			"name": "Jason William Lobel",
+			"sort": "Lobel, Jason William",
+			"bio": "American linguist of Philippine languages.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "almahdi-alonto",
+			"name": "Almahdi G. Alonto",
+			"sort": "Alonto, Almahdi G.",
+			"bio": "Maranao language teacher and author.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "ruth-stickney",
+			"name": "Ruth Stickney",
+			"sort": "Stickney, Ruth",
+			"bio": "Linguist who worked on Maguindanaon.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"linguist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "jacinto-juanmarti",
+			"name": "Jacinto Juanmartí, SJ",
+			"sort": "Juanmartí, Jacinto",
+			"bio": "Catalan Jesuit who ran the Tamontaka mission near Cotabato in the late nineteenth century and wrote the first Maguindanaon grammar and dictionary.",
+			"born": "1833",
+			"died": "1897",
+			"from": null,
+			"roles": [
+				"missionary",
+				"linguist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "jeffrey-milligan",
+			"name": "Jeffrey Ayala Milligan",
+			"sort": "Milligan, Jeffrey Ayala",
+			"bio": "Professor of education at Florida State University who has studied schooling in Muslim Mindanao.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar of education"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "lolita-rodriguez",
+			"name": "Lolita Junio Damonsong Rodriguez",
+			"sort": "Rodriguez, Lolita Junio Damonsong",
+			"bio": "Educator at Mindanao State University.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"educator"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "leonardo-mercado",
+			"name": "Leonardo N. Mercado, SVD",
+			"sort": "Mercado, Leonardo N.",
+			"bio": "Filipino philosopher-priest of the Society of the Divine Word, a founder of Filipino philosophy as a field.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"philosopher",
+				"priest"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "hilario-gomez",
+			"name": "Hilario M. Gomez Jr.",
+			"sort": "Gomez, Hilario M.",
+			"bio": "Protestant pastor and writer with the Silsilah Dialogue Movement in Zamboanga City.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"pastor",
+				"writer"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "kenneth-bauzon",
+			"name": "Kenneth E. Bauzon",
+			"sort": "Bauzon, Kenneth E.",
+			"bio": "Filipino political scientist at St. Joseph’s College, New York.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"political scientist"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "aida-rivera-ford",
+			"name": "Aida Rivera-Ford",
+			"sort": "Rivera-Ford, Aida",
+			"bio": "Short story writer born in Jolo, Sulu, best known for “The Chieftest Mourner”. She studied at Silliman University, edited its literary magazine Sands and Coral, and made her life in Davao, where she founded the Ford Academy of the Arts, the first fine arts school in Mindanao. She died in January 2026, days before her hundredth birthday.",
+			"born": "1926",
+			"died": "2026",
+			"from": "Jolo, Sulu",
+			"roles": [
+				"short story writer",
+				"educator"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "antonio-enriquez",
+			"name": "Antonio R. Enriquez",
+			"sort": "Enriquez, Antonio R.",
+			"bio": "Novelist and short story writer born and raised in Zamboanga City and schooled by its Jesuits, whose fiction is set in the Mindanao he knew, from the Liguasan Marsh to Basilan. He later lived in Cagayan de Oro.",
+			"born": null,
+			"died": null,
+			"from": "Zamboanga City",
+			"roles": [
+				"novelist"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "mig-alvarez-enriquez",
+			"name": "Mig Alvarez Enriquez",
+			"sort": "Enriquez, Mig Alvarez",
+			"bio": "Emigdio Alvarez Enriquez, novelist, story writer and playwright from Zamboanga, who began writing under the Jesuits of Ateneo de Zamboanga.",
+			"born": "1925",
+			"died": null,
+			"from": "Zamboanga",
+			"roles": [
+				"playwright",
+				"novelist"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "jaime-an-lim",
+			"name": "Jaime An Lim",
+			"sort": "An Lim, Jaime",
+			"bio": "Poet, fiction writer and critic, born in Cagayan de Oro in 1946, long a professor of English at MSU-Iligan Institute of Technology and a co-editor of the Mindanao Harvest anthologies and the Iligan National Writers Workshop volumes.",
+			"born": "1946",
+			"died": null,
+			"from": "Cagayan de Oro",
+			"roles": [
+				"poet",
+				"critic",
+				"editor"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "christine-godinez-ortega",
+			"name": "Christine Godinez-Ortega",
+			"sort": "Godinez-Ortega, Christine",
+			"bio": "Poet and scholar of MSU-Iligan Institute of Technology, a co-editor of the Mindanao Harvest anthologies and of the Iligan National Writers Workshop volumes.",
+			"born": null,
+			"died": null,
+			"from": "Iligan City",
+			"roles": [
+				"poet",
+				"editor"
+			],
+			"local": "mindanao",
+			"links": []
+		},
+		{
+			"slug": "calbi-asain",
+			"name": "Calbi A. Asain",
+			"sort": "Asain, Calbi A.",
+			"bio": "Tausug writer of fiction from Sulu, whose stories appear in the Mindanao Harvest anthologies.",
+			"born": null,
+			"died": null,
+			"from": "Sulu",
+			"roles": [
+				"fiction writer"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "ricardo-de-ungria",
+			"name": "Ricardo M. de Ungria",
+			"sort": "de Ungria, Ricardo M.",
+			"bio": "Filipino poet who has edited anthologies of writing from Davao and Mindanao.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"poet",
+				"editor"
+			],
+			"local": null,
+			"links": []
+		},
+		{
+			"slug": "ernesto-espaldon",
+			"name": "Ernesto M. Espaldon",
+			"sort": "Espaldon, Ernesto M.",
+			"bio": "Physician who, by his own account, was the youngest commander in the guerrillas’ Sulu Area Command in 1945, and later a senator.",
+			"born": null,
+			"died": null,
+			"from": "Sulu",
+			"roles": [
+				"physician",
+				"veteran"
+			],
+			"local": "bangsamoro",
+			"links": []
+		},
+		{
+			"slug": "federico-magdalena",
+			"name": "Federico V. Magdalena",
+			"sort": "Magdalena, Federico V.",
+			"bio": "Filipino sociologist who taught at Mindanao State University and wrote on intergroup conflict in the South and the history of Moroland.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"sociologist"
+			],
+			"local": "mindanao",
+			"links": []
+		}
+	]
+}

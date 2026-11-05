@@ -1,0 +1,834 @@
+{
+	"note": "Edit shelf.json, not this file.",
+	"built": "2026-11-05",
+	"publishers": [
+		{
+			"slug": "up-press",
+			"name": "University of the Philippines Press",
+			"kind": "university press",
+			"based": "Quezon City",
+			"founded": 1965,
+			"about": "The press of the national university, and the Philippines’ main academic publisher.",
+			"url": "https://press.up.edu.ph"
+		},
+		{
+			"slug": "up-cids",
+			"name": "UP Center for Integrative and Development Studies",
+			"kind": "institute",
+			"based": "Quezon City",
+			"founded": 1985,
+			"about": "The University of the Philippines’ policy research centre, whose Mindanao studies programme published much of Samuel K. Tan’s work.",
+			"url": "https://cids.up.edu.ph"
+		},
+		{
+			"slug": "up-asian-center",
+			"name": "UP Asian Center",
+			"kind": "institute",
+			"based": "Quezon City",
+			"founded": null,
+			"about": "The University of the Philippines’ graduate school of Asian studies, which published Majul’s history and other work on the Muslim South.",
+			"url": "https://ac.upd.edu.ph"
+		},
+		{
+			"slug": "up-ncpag",
+			"name": "UP National College of Public Administration and Governance",
+			"kind": "institute",
+			"based": "Quezon City",
+			"founded": null,
+			"about": "The University of the Philippines’ college of public administration.",
+			"url": "https://ncpag.upd.edu.ph"
+		},
+		{
+			"slug": "up-pcas",
+			"name": "Philippine Center for Advanced Studies, University of the Philippines",
+			"kind": "institute",
+			"based": "Quezon City",
+			"founded": 1973,
+			"about": "A short-lived research centre of the University of the Philippines in the 1970s, which published Gowing’s Mandate in Moroland.",
+			"url": null
+		},
+		{
+			"slug": "ateneo-press",
+			"name": "Ateneo de Manila University Press",
+			"kind": "university press",
+			"based": "Quezon City",
+			"founded": 1972,
+			"about": "The Jesuit university’s press, the Philippines’ largest publisher of history and social science, with the deepest list on Mindanao and Sulu.",
+			"url": "https://ateneopress.org"
+		},
+		{
+			"slug": "ateneo-hrc",
+			"name": "Ateneo Human Rights Center",
+			"kind": "institute",
+			"based": "Makati",
+			"founded": 1986,
+			"about": "The human rights institute of the Ateneo Law School.",
+			"url": "https://ahrc.ateneo.edu"
+		},
+		{
+			"slug": "acsppa",
+			"name": "Ateneo Center for Social Policy and Public Affairs",
+			"kind": "institute",
+			"based": "Quezon City",
+			"founded": null,
+			"about": "A policy centre of the Ateneo de Manila University, which published Under the Crescent Moon with the Institute for Popular Democracy.",
+			"url": null
+		},
+		{
+			"slug": "dlsu-press",
+			"name": "De La Salle University Publishing House",
+			"kind": "university press",
+			"based": "Manila",
+			"founded": null,
+			"about": "The press of De La Salle University.",
+			"url": "https://www.dlsu.edu.ph/offices/publishing-house/"
+		},
+		{
+			"slug": "ust-press",
+			"name": "UST Publishing House",
+			"kind": "university press",
+			"based": "Manila",
+			"founded": null,
+			"about": "The press of the University of Santo Tomas.",
+			"url": null
+		},
+		{
+			"slug": "msu",
+			"name": "Mindanao State University",
+			"kind": "university",
+			"based": "Marawi City",
+			"founded": 1961,
+			"about": "The state university founded in 1961 to bring Muslim Mindanao into the national system; its University Research Center, Folklore Division and Mamitua Saber Research Center published the Darangen and much of the first scholarship by Maranao and Tausug writers.",
+			"url": "https://www.msumain.edu.ph"
+		},
+		{
+			"slug": "msu-iit",
+			"name": "MSU–Iligan Institute of Technology",
+			"kind": "university",
+			"based": "Iligan City",
+			"founded": 1968,
+			"about": "The Iligan campus of Mindanao State University, whose Institute for Peace and Development in Mindanao publishes on the Bangsamoro.",
+			"url": "https://www.msuiit.edu.ph"
+		},
+		{
+			"slug": "notre-dame-university",
+			"name": "Notre Dame University",
+			"kind": "university",
+			"based": "Cotabato City",
+			"founded": 1948,
+			"about": "The Oblate university in Cotabato City, which published the Maguindanaon dictionary and Casiño’s Mindanao Statecraft.",
+			"url": "https://ndu.edu.ph"
+		},
+		{
+			"slug": "ceu",
+			"name": "Centro Escolar University",
+			"kind": "university",
+			"based": "Manila",
+			"founded": 1907,
+			"about": "A private university in Manila whose research centre published a study of Tausug food.",
+			"url": "https://www.ceu.edu.ph"
+		},
+		{
+			"slug": "nus-press",
+			"name": "NUS Press",
+			"kind": "university press",
+			"based": "Singapore",
+			"founded": 1971,
+			"about": "The press of the National University of Singapore, formerly Singapore University Press, and the publisher of James Warren’s Sulu books.",
+			"url": "https://nuspress.nus.edu.sg"
+		},
+		{
+			"slug": "iseas",
+			"name": "ISEAS – Yusof Ishak Institute",
+			"kind": "institute",
+			"based": "Singapore",
+			"founded": 1968,
+			"about": "Singapore’s research institute on Southeast Asia, with its own publishing arm.",
+			"url": "https://www.iseas.edu.sg"
+		},
+		{
+			"slug": "repusm",
+			"name": "Research and Education for Peace, Universiti Sains Malaysia",
+			"kind": "institute",
+			"based": "Penang",
+			"founded": null,
+			"about": "The peace research programme of Universiti Sains Malaysia, which hosted the Southeast Asian Conflict Studies Network and published Moro writers in the 2000s.",
+			"url": null
+		},
+		{
+			"slug": "seacsn",
+			"name": "Southeast Asian Conflict Studies Network",
+			"kind": "institute",
+			"based": "Penang",
+			"founded": null,
+			"about": "A network of conflict researchers based at Universiti Sains Malaysia.",
+			"url": null
+		},
+		{
+			"slug": "usm-press",
+			"name": "Penerbit Universiti Sains Malaysia",
+			"kind": "university press",
+			"based": "Penang",
+			"founded": null,
+			"about": "The press of Universiti Sains Malaysia.",
+			"url": null
+		},
+		{
+			"slug": "uum-press",
+			"name": "Penerbit Universiti Utara Malaysia",
+			"kind": "university press",
+			"based": "Sintok, Kedah",
+			"founded": null,
+			"about": "The press of Universiti Utara Malaysia.",
+			"url": null
+		},
+		{
+			"slug": "sird",
+			"name": "Strategic Information and Research Development Centre",
+			"kind": "trade",
+			"based": "Petaling Jaya",
+			"founded": null,
+			"about": "A Malaysian publisher of books on Southeast Asian politics, associated with the Gerakbudaya bookshop.",
+			"url": null
+		},
+		{
+			"slug": "saba-islamic-media",
+			"name": "Saba Islamic Media",
+			"kind": "trade",
+			"based": "Kuala Lumpur",
+			"founded": null,
+			"about": "A Malaysian Islamic publisher.",
+			"url": null
+		},
+		{
+			"slug": "sophia-iac",
+			"name": "Institute of Asian Cultures, Sophia University",
+			"kind": "institute",
+			"based": "Tokyo",
+			"founded": null,
+			"about": "The Jesuit university’s institute of Asian cultures, which has a programme on Islamic manuscripts in the Philippines.",
+			"url": "https://dept.sophia.ac.jp/is/iac/"
+		},
+		{
+			"slug": "u-hawaii-press",
+			"name": "University of Hawaiʻi Press",
+			"kind": "university press",
+			"based": "Honolulu",
+			"founded": 1947,
+			"about": "The press of the University of Hawaiʻi, a major publisher on Asia and the Pacific.",
+			"url": "https://uhpress.hawaii.edu"
+		},
+		{
+			"slug": "u-pittsburgh",
+			"name": "University of Pittsburgh, Department of Anthropology",
+			"kind": "university",
+			"based": "Pittsburgh",
+			"founded": null,
+			"about": "The anthropology department’s monograph series.",
+			"url": null
+		},
+		{
+			"slug": "uc-press",
+			"name": "University of California Press",
+			"kind": "university press",
+			"based": "Oakland, California",
+			"founded": 1893,
+			"about": "The University of California’s press, which has put hundreds of its older titles online free.",
+			"url": "https://www.ucpress.edu"
+		},
+		{
+			"slug": "cornell-press",
+			"name": "Cornell University Press",
+			"kind": "university press",
+			"based": "Ithaca, New York",
+			"founded": 1869,
+			"about": "The oldest university press in the United States, and since 2020 the home of the Northern Illinois University Press list.",
+			"url": "https://www.cornellpress.cornell.edu"
+		},
+		{
+			"slug": "cornell-seap",
+			"name": "Cornell Southeast Asia Program Publications",
+			"kind": "institute",
+			"based": "Ithaca, New York",
+			"founded": null,
+			"about": "The publishing arm of Cornell’s Southeast Asia Program, which issued Ileto’s study of Datu Uto as a data paper.",
+			"url": "https://seap.einaudi.cornell.edu"
+		},
+		{
+			"slug": "niu-press",
+			"name": "Northern Illinois University Press",
+			"kind": "university press",
+			"based": "DeKalb, Illinois",
+			"founded": 1965,
+			"about": "A university press with a strong Southeast Asia list, now an imprint of Cornell University Press.",
+			"url": null
+		},
+		{
+			"slug": "up-kentucky",
+			"name": "University Press of Kentucky",
+			"kind": "university press",
+			"based": "Lexington, Kentucky",
+			"founded": 1943,
+			"about": "The press of Kentucky’s universities, with a large military history list.",
+			"url": "https://www.kentuckypress.com"
+		},
+		{
+			"slug": "oup",
+			"name": "Oxford University Press",
+			"kind": "university press",
+			"based": "Oxford",
+			"founded": null,
+			"about": "The world’s largest university press; its Singapore and Kuala Lumpur offices published much of the Southeast Asian scholarship of the 1980s.",
+			"url": "https://global.oup.com"
+		},
+		{
+			"slug": "bloomsbury",
+			"name": "Bloomsbury Publishing",
+			"kind": "trade",
+			"based": "London",
+			"founded": 1986,
+			"about": "A British trade and academic publisher.",
+			"url": "https://www.bloomsbury.com"
+		},
+		{
+			"slug": "lexington",
+			"name": "Lexington Books",
+			"kind": "trade",
+			"based": "Lanham, Maryland",
+			"founded": null,
+			"about": "The academic imprint of Rowman & Littlefield.",
+			"url": "https://rowman.com"
+		},
+		{
+			"slug": "palgrave",
+			"name": "Palgrave Macmillan",
+			"kind": "trade",
+			"based": "London",
+			"founded": 2000,
+			"about": "An academic imprint, now part of Springer Nature.",
+			"url": "https://link.springer.com"
+		},
+		{
+			"slug": "cambridge-scholars",
+			"name": "Cambridge Scholars Publishing",
+			"kind": "trade",
+			"based": "Newcastle upon Tyne",
+			"founded": 2001,
+			"about": "A British academic publisher.",
+			"url": "https://www.cambridgescholars.com"
+		},
+		{
+			"slug": "holt",
+			"name": "Holt, Rinehart and Winston",
+			"kind": "trade",
+			"based": "New York",
+			"founded": null,
+			"about": "An American publisher whose anthropology series of the 1960s and 1970s included The Tausug; the book is kept in print by Waveland Press.",
+			"url": null
+		},
+		{
+			"slug": "chandler",
+			"name": "Chandler Publishing",
+			"kind": "trade",
+			"based": "San Francisco",
+			"founded": null,
+			"about": "An American publisher of the 1960s and 1970s.",
+			"url": null
+		},
+		{
+			"slug": "dutton",
+			"name": "E. P. Dutton",
+			"kind": "trade",
+			"based": "New York",
+			"founded": 1852,
+			"about": "An American publishing house.",
+			"url": null
+		},
+		{
+			"slug": "doubleday",
+			"name": "Doubleday, Page & Company",
+			"kind": "trade",
+			"based": "New York",
+			"founded": 1897,
+			"about": "An American publishing house.",
+			"url": null
+		},
+		{
+			"slug": "tyndale",
+			"name": "Tyndale House Publishers",
+			"kind": "trade",
+			"based": "Carol Stream, Illinois",
+			"founded": 1962,
+			"about": "An American Christian publisher.",
+			"url": "https://www.tyndale.com"
+		},
+		{
+			"slug": "armin-lear",
+			"name": "Armin Lear Press",
+			"kind": "trade",
+			"based": "Boulder, Colorado",
+			"founded": null,
+			"about": "A small American press.",
+			"url": "https://arminlear.com"
+		},
+		{
+			"slug": "tumalo-creek",
+			"name": "Tumalo Creek Press",
+			"kind": "self",
+			"based": "Bend, Oregon",
+			"founded": null,
+			"about": "The imprint of the historian Robert A. Fulton.",
+			"url": null
+		},
+		{
+			"slug": "kdp",
+			"name": "Independently published",
+			"kind": "self",
+			"based": "Print on demand",
+			"founded": null,
+			"about": "Books the author printed through Amazon’s CreateSpace or Kindle Direct Publishing.",
+			"url": null
+		},
+		{
+			"slug": "blurb",
+			"name": "Blurb",
+			"kind": "self",
+			"based": "San Francisco",
+			"founded": 2005,
+			"about": "A print-on-demand platform for self-published books.",
+			"url": "https://www.blurb.com"
+		},
+		{
+			"slug": "the-author",
+			"name": "Published by the author",
+			"kind": "self",
+			"based": "Philippines",
+			"founded": null,
+			"about": "Books the author had printed and sold themselves.",
+			"url": null
+		},
+		{
+			"slug": "new-day",
+			"name": "New Day Publishers",
+			"kind": "trade",
+			"based": "Quezon City",
+			"founded": 1974,
+			"about": "A Philippine publisher founded by the Christian Literature Society, with a long list of Mindanao and Moro history.",
+			"url": null
+		},
+		{
+			"slug": "anvil",
+			"name": "Anvil Publishing",
+			"kind": "trade",
+			"based": "Mandaluyong",
+			"founded": 1990,
+			"about": "The publishing arm of National Book Store, the Philippines’ largest trade publisher.",
+			"url": "https://www.anvilpublishing.com"
+		},
+		{
+			"slug": "rex",
+			"name": "Rex Book Store",
+			"kind": "trade",
+			"based": "Manila",
+			"founded": 1950,
+			"about": "A Philippine educational publisher.",
+			"url": "https://www.rex.com.ph"
+		},
+		{
+			"slug": "solidaridad",
+			"name": "Solidaridad Publishing House",
+			"kind": "trade",
+			"based": "Manila",
+			"founded": 1965,
+			"about": "The publishing house and bookshop of the novelist F. Sionil José.",
+			"url": null
+		},
+		{
+			"slug": "mindanews",
+			"name": "MindaNews",
+			"kind": "trade",
+			"based": "Davao City",
+			"founded": 2001,
+			"about": "The Mindanao news cooperative, which publishes books by its writers.",
+			"url": "https://mindanews.com"
+		},
+		{
+			"slug": "jnb",
+			"name": "Journalism for Nation Building Foundation",
+			"kind": "institute",
+			"based": "Manila",
+			"founded": null,
+			"about": "A foundation supporting Philippine journalism, which published Marawi Siege.",
+			"url": null
+		},
+		{
+			"slug": "pawikan",
+			"name": "Pawikan Press",
+			"kind": "trade",
+			"based": "Quezon City",
+			"founded": null,
+			"about": "A small Philippine press.",
+			"url": null
+		},
+		{
+			"slug": "mizan",
+			"name": "Mizan Press",
+			"kind": "trade",
+			"based": "Berkeley, California",
+			"founded": null,
+			"about": "An American publisher of books on Islam and the Muslim world in the 1980s.",
+			"url": null
+		},
+		{
+			"slug": "filipinas-foundation",
+			"name": "Filipinas Foundation",
+			"kind": "institute",
+			"based": "Makati",
+			"founded": 1961,
+			"about": "The Ayala group’s foundation, now Ayala Foundation, which published studies of Philippine culture in the 1970s and 1980s.",
+			"url": null
+		},
+		{
+			"slug": "historical-conservation-society",
+			"name": "Historical Conservation Society",
+			"kind": "institute",
+			"based": "Manila",
+			"founded": null,
+			"about": "A Manila society that published monographs on Philippine history.",
+			"url": null
+		},
+		{
+			"slug": "nhcp",
+			"name": "National Historical Commission of the Philippines",
+			"kind": "government",
+			"based": "Manila",
+			"founded": 1972,
+			"about": "The national historical agency, the National Historical Institute until 2010.",
+			"url": "https://nhcp.gov.ph"
+		},
+		{
+			"slug": "ncca",
+			"name": "National Commission for Culture and the Arts",
+			"kind": "government",
+			"based": "Manila",
+			"founded": 1992,
+			"about": "The national cultural agency.",
+			"url": "https://ncca.gov.ph"
+		},
+		{
+			"slug": "kwf",
+			"name": "Komisyon sa Wikang Filipino",
+			"kind": "government",
+			"based": "Manila",
+			"founded": 1991,
+			"about": "The Commission on the Filipino Language.",
+			"url": "https://kwf.gov.ph"
+		},
+		{
+			"slug": "bureau-of-printing",
+			"name": "Bureau of Public Printing, Manila",
+			"kind": "government",
+			"based": "Manila",
+			"founded": null,
+			"about": "The American colonial government’s press, which printed the Ethnological Survey’s publications.",
+			"url": null
+		},
+		{
+			"slug": "us-gpo",
+			"name": "United States Government Printing Office",
+			"kind": "government",
+			"based": "Washington",
+			"founded": 1861,
+			"about": "The United States government’s printer.",
+			"url": null
+		},
+		{
+			"slug": "amigos-del-pais",
+			"name": "Tipografía Amigos del País",
+			"kind": "trade",
+			"based": "Manila",
+			"founded": null,
+			"about": "A Manila printing house of the late Spanish period.",
+			"url": null
+		},
+		{
+			"slug": "ministry-of-muslim-affairs",
+			"name": "Ministry of Muslim Affairs",
+			"kind": "government",
+			"based": "Manila",
+			"founded": 1981,
+			"about": "The Marcos-era ministry for Muslim Filipinos, which published studies in the 1980s.",
+			"url": null
+		},
+		{
+			"slug": "opapru",
+			"name": "Office of the Presidential Adviser on Peace, Reconciliation and Unity",
+			"kind": "government",
+			"based": "Pasig",
+			"founded": 1993,
+			"about": "The government’s peace office, the Office of the Presidential Adviser on the Peace Process until 2021.",
+			"url": "https://peace.gov.ph"
+		},
+		{
+			"slug": "gov-ph",
+			"name": "Official Gazette of the Republic of the Philippines",
+			"kind": "government",
+			"based": "Manila",
+			"founded": 1902,
+			"about": "The official journal of the Philippine government, which publishes every law.",
+			"url": "https://www.officialgazette.gov.ph"
+		},
+		{
+			"slug": "saniata",
+			"name": "Saniata Publications",
+			"kind": "trade",
+			"based": "Philippines",
+			"founded": null,
+			"about": "A small Philippine publisher.",
+			"url": null
+		},
+		{
+			"slug": "fotomatic",
+			"name": "Fotomatic",
+			"kind": "trade",
+			"based": "Manila",
+			"founded": null,
+			"about": "A Manila printer and publisher of the 1970s.",
+			"url": null
+		},
+		{
+			"slug": "cenpeg",
+			"name": "Center for People Empowerment in Governance",
+			"kind": "institute",
+			"based": "Quezon City",
+			"founded": 2004,
+			"about": "A policy institute at the University of the Philippines Diliman, which published The Moro Reader.",
+			"url": "https://cenpeg.org"
+		},
+		{
+			"slug": "ibs",
+			"name": "Institute of Bangsamoro Studies",
+			"kind": "institute",
+			"based": "Cotabato City",
+			"founded": null,
+			"about": "A Cotabato City research institute on the Bangsamoro question, long led by Abhoud Syed M. Lingga.",
+			"url": null
+		},
+		{
+			"slug": "ipd",
+			"name": "Institute for Popular Democracy",
+			"kind": "institute",
+			"based": "Quezon City",
+			"founded": 1986,
+			"about": "A Manila policy institute founded in 1986, whose researchers wrote on Mindanao’s clans and rebel fronts.",
+			"url": null
+		},
+		{
+			"slug": "afrim",
+			"name": "Alternate Forum for Research in Mindanao",
+			"kind": "institute",
+			"based": "Davao City",
+			"founded": 1980,
+			"about": "A Davao research institute on Mindanao development and peace, which published Rudy Rodil and Soliman Santos.",
+			"url": null
+		},
+		{
+			"slug": "mincode",
+			"name": "Mindanao Coalition of Development NGO Networks",
+			"kind": "institute",
+			"based": "Davao City",
+			"founded": null,
+			"about": "A coalition of Mindanao development organisations.",
+			"url": null
+		},
+		{
+			"slug": "aim",
+			"name": "Asian Institute of Management",
+			"kind": "institute",
+			"based": "Makati",
+			"founded": 1968,
+			"about": "The Manila business school, whose policy centre published Amina Rasul’s study.",
+			"url": "https://www.aim.edu"
+		},
+		{
+			"slug": "pcid",
+			"name": "Philippine Council for Islam and Democracy",
+			"kind": "institute",
+			"based": "Manila",
+			"founded": 2002,
+			"about": "A Muslim-led policy institute on Islam, democracy and the Bangsamoro.",
+			"url": "https://www.pcid.com.ph"
+		},
+		{
+			"slug": "silsilah",
+			"name": "Silsilah Dialogue Movement",
+			"kind": "institute",
+			"based": "Zamboanga City",
+			"founded": 1984,
+			"about": "The Muslim–Christian dialogue movement founded in Zamboanga by Sebastiano D’Ambra.",
+			"url": null
+		},
+		{
+			"slug": "divine-word",
+			"name": "Divine Word Publications",
+			"kind": "trade",
+			"based": "Manila",
+			"founded": null,
+			"about": "The publishing house of the Society of the Divine Word in the Philippines.",
+			"url": null
+		},
+		{
+			"slug": "iq-marin",
+			"name": "IQ Marin",
+			"kind": "trade",
+			"based": "Kuala Lumpur",
+			"founded": null,
+			"about": "A Malaysian publisher.",
+			"url": null
+		},
+		{
+			"slug": "east-west-center",
+			"name": "East-West Center",
+			"kind": "institute",
+			"based": "Honolulu and Washington",
+			"founded": 1960,
+			"about": "The United States’ research centre on Asia and the Pacific, whose Washington office publishes policy studies free online.",
+			"url": "https://www.eastwestcenter.org"
+		},
+		{
+			"slug": "asia-foundation",
+			"name": "The Asia Foundation",
+			"kind": "institute",
+			"based": "San Francisco",
+			"founded": 1954,
+			"about": "An American development organisation with a long programme in Mindanao.",
+			"url": "https://asiafoundation.org"
+		},
+		{
+			"slug": "international-alert",
+			"name": "International Alert",
+			"kind": "institute",
+			"based": "London",
+			"founded": 1986,
+			"about": "A peacebuilding organisation with a programme in Mindanao since the 2000s.",
+			"url": "https://www.international-alert.org"
+		},
+		{
+			"slug": "small-arms-survey",
+			"name": "Small Arms Survey",
+			"kind": "institute",
+			"based": "Geneva",
+			"founded": 1999,
+			"about": "The research project on small arms at the Graduate Institute in Geneva.",
+			"url": "https://www.smallarmssurvey.org"
+		},
+		{
+			"slug": "prif",
+			"name": "Peace Research Institute Frankfurt",
+			"kind": "institute",
+			"based": "Frankfurt",
+			"founded": 1970,
+			"about": "Germany’s largest peace research institute, which publishes its reports free.",
+			"url": "https://www.prif.org"
+		},
+		{
+			"slug": "ipac",
+			"name": "Institute for Policy Analysis of Conflict",
+			"kind": "institute",
+			"based": "Jakarta",
+			"founded": 2013,
+			"about": "A research institute on conflict in Southeast Asia, which publishes its reports free.",
+			"url": "https://understandingconflict.org"
+		},
+		{
+			"slug": "minority-rights-group",
+			"name": "Minority Rights Group",
+			"kind": "institute",
+			"based": "London",
+			"founded": 1969,
+			"about": "An international organisation for minority rights, which publishes country reports.",
+			"url": "https://minorityrights.org"
+		},
+		{
+			"slug": "sil-philippines",
+			"name": "Summer Institute of Linguistics, Philippines",
+			"kind": "institute",
+			"based": "Manila",
+			"founded": 1953,
+			"about": "The Philippine branch of SIL, which has published dictionaries and texts of the country’s languages since 1953.",
+			"url": "https://philippines.sil.org"
+		},
+		{
+			"slug": "dunwoody",
+			"name": "Dunwoody Press",
+			"kind": "trade",
+			"based": "Hyattsville, Maryland",
+			"founded": null,
+			"about": "An American publisher of courses and readers in less-taught languages.",
+			"url": "https://www.dunwoodypress.com"
+		},
+		{
+			"slug": "graham-brash",
+			"name": "Graham Brash",
+			"kind": "trade",
+			"based": "Singapore",
+			"founded": null,
+			"about": "A Singapore publisher of books on Asian art and history.",
+			"url": null
+		},
+		{
+			"slug": "giraffe",
+			"name": "Giraffe Books",
+			"kind": "trade",
+			"based": "Quezon City",
+			"founded": null,
+			"about": "A Philippine literary publisher that kept Antonio Enriquez’s Mindanao fiction in print.",
+			"url": null
+		},
+		{
+			"slug": "uq-press",
+			"name": "University of Queensland Press",
+			"kind": "university press",
+			"based": "Brisbane",
+			"founded": 1948,
+			"about": "The Australian university press whose Asian and Pacific writing series published Surveyors of the Liguasan Marsh.",
+			"url": "https://www.uqp.com.au"
+		},
+		{
+			"slug": "uw-press",
+			"name": "University of Washington Press",
+			"kind": "university press",
+			"based": "Seattle",
+			"founded": 1909,
+			"about": "The press of the University of Washington.",
+			"url": "https://uwpress.org"
+		},
+		{
+			"slug": "ce-publishing",
+			"name": "C & E Publishing",
+			"kind": "trade",
+			"based": "Quezon City",
+			"founded": null,
+			"about": "A Philippine educational and trade publisher.",
+			"url": null
+		},
+		{
+			"slug": "feu-publications",
+			"name": "Far Eastern University Publications",
+			"kind": "university press",
+			"based": "Manila",
+			"founded": null,
+			"about": "The publishing office of Far Eastern University, which published Mindanao Harvest 4.",
+			"url": null
+		},
+		{
+			"slug": "alemar-phoenix",
+			"name": "Alemar-Phoenix Publishing House",
+			"kind": "trade",
+			"based": "Quezon City",
+			"founded": null,
+			"about": "A Manila publisher of textbooks and Philippine studies.",
+			"url": null
+		}
+	]
+}
