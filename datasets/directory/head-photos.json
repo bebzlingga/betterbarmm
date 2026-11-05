@@ -7,48 +7,13 @@
    "page": "https://parliament.bangsamoro.gov.ph/member-parliament/macacua-abdulraof-a/",
    "credit": "Bangsamoro Parliament"
   },
-  "ministry-of-basic-higher-and-technical-education": {
-   "src": "/directory/heads/ministry-of-basic-higher-and-technical-education.jpg",
-   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/macacua-abdulraof-a/",
-   "credit": "Bangsamoro Parliament"
-  },
-  "ministry-of-social-services-and-development": {
-   "src": "/directory/heads/ministry-of-social-services-and-development.jpg",
-   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-jajurie-raissa-h/",
-   "credit": "Bangsamoro Parliament"
-  },
-  "ministry-of-agriculture-fisheries-and-agrarian-reform": {
-   "src": "/directory/heads/ministry-of-agriculture-fisheries-and-agrarian-reform.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
-  "ministry-of-public-works": {
-   "src": "/directory/heads/ministry-of-public-works.jpg",
-   "page": "https://parliament.bangsamoro.gov.ph/members/",
-   "credit": "Bangsamoro Parliament"
-  },
   "ministry-of-environment-natural-resources-and-energy": {
    "src": "/directory/heads/ministry-of-environment-natural-resources-and-energy.jpg",
    "page": "https://menre.bangsamoro.gov.ph/?page_id=6728",
    "credit": "MENRE, Minister’s Corner"
   },
-  "ministry-of-health": {
-   "src": "/directory/heads/ministry-of-health.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
   "ministry-of-the-interior-and-local-government": {
    "src": "/directory/heads/ministry-of-the-interior-and-local-government.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
-  "ministry-of-human-settlements-and-development": {
-   "src": "/directory/heads/ministry-of-human-settlements-and-development.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
-  "ministry-of-trade-investments-and-tourism": {
-   "src": "/directory/heads/ministry-of-trade-investments-and-tourism.jpg",
    "page": "https://bangsamoro.gov.ph/officials/key-officials/",
    "credit": "Bangsamoro Government, Key Officials"
   },
@@ -57,28 +22,8 @@
    "page": "https://bangsamoro.gov.ph/officials/key-officials/",
    "credit": "Bangsamoro Government, Key Officials"
   },
-  "ministry-of-science-and-technology": {
-   "src": "/directory/heads/ministry-of-science-and-technology.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
   "ministry-of-finance-and-budget-and-management": {
    "src": "/directory/heads/ministry-of-finance-and-budget-and-management.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
-  "ministry-of-labor-and-employment": {
-   "src": "/directory/heads/ministry-of-labor-and-employment.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
-  "ministry-of-public-order-and-safety": {
-   "src": "/directory/heads/ministry-of-public-order-and-safety.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
-  },
-  "ministry-of-indigenous-peoples-affairs": {
-   "src": "/directory/heads/ministry-of-indigenous-peoples-affairs.jpg",
    "page": "https://bangsamoro.gov.ph/officials/key-officials/",
    "credit": "Bangsamoro Government, Key Officials"
   },
@@ -106,11 +51,6 @@
    "src": "/directory/heads/bangsamoro-sports-commission.jpg",
    "page": "https://bsc.bangsamoro.gov.ph/chairpersons-corner/",
    "credit": "Bangsamoro Sports Commission"
-  },
-  "bangsamoro-attorney-general-s-office": {
-   "src": "/directory/heads/bangsamoro-attorney-general-s-office.jpg",
-   "page": "https://bangsamoro.gov.ph/officials/key-officials/",
-   "credit": "Bangsamoro Government, Key Officials"
   },
   "cooperatives-and-social-enterprise-authority": {
    "src": "/directory/heads/cooperatives-and-social-enterprise-authority.jpg",
@@ -140,6 +80,46 @@
   "special-geographic-area-development-authority": {
    "src": "/directory/heads/special-geographic-area-development-authority.jpg",
    "page": "https://parliament.bangsamoro.gov.ph/member-parliament/antao-mohammad-kelie-u/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-basic-higher-and-technical-education": {
+   "src": "/directory/heads/ministry-of-basic-higher-and-technical-education.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/sinarimbo-naguib-g/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-health": {
+   "src": "/directory/heads/ministry-of-health.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/salliman-jimael-salam-d/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-agriculture-fisheries-and-agrarian-reform": {
+   "src": "/directory/heads/ministry-of-agriculture-fisheries-and-agrarian-reform.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/mastura-ishak-v/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-labor-and-employment": {
+   "src": "/directory/heads/ministry-of-labor-and-employment.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/kadatuan-jr-atty-kitem-d/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-indigenous-peoples-affairs": {
+   "src": "/directory/heads/ministry-of-indigenous-peoples-affairs.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/jover-jo-genna-m/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-science-and-technology": {
+   "src": "/directory/heads/ministry-of-science-and-technology.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/bud-hanie-ain/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "ministry-of-human-settlements-and-development": {
+   "src": "/directory/heads/ministry-of-human-settlements-and-development.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/adiong-rashdi-t/",
+   "credit": "Bangsamoro Parliament"
+  },
+  "bangsamoro-planning-and-development-authority": {
+   "src": "/directory/heads/bangsamoro-planning-and-development-authority.jpg",
+   "page": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-alamia-laisa-m/",
    "credit": "Bangsamoro Parliament"
   }
  }
