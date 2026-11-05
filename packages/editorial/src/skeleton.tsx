@@ -100,11 +100,12 @@ export function RowsSkeleton({
  * A whole page while it loads, on the estate's own measures and grounds (user decision: match the spacing, the
  * alignment and the background). The masthead is drawn on the band the app's mastheads use — `brand-bg` or
  * `bb-crimson`, with the lattice and the woven foot — and the grey turns to a white wash on it by itself, since the
- * band re-points the ink. `center` is the centred hero some front pages open with: one column, a search field in it.
+ * band re-points the ink. `center` is the centred head some pages open with: one column, a search field in it where `field` says so.
  */
 export function PageSkeleton({
 	band = 'brand-bg',
 	center = false,
+	field = 'mt-8 h-14 max-w-2xl',
 	pad,
 	rows = 8,
 }: {
@@ -112,6 +113,8 @@ export function PageSkeleton({
 	band?: string
 	/** The centred hero: label, one headline line, standfirst and a search field, all on one axis. */
 	center?: boolean
+	/** The centred hero's search field, by its classes (margin, height, width); false where the head has none. */
+	field?: string | false
 	/** The band's vertical padding, where a page's own differs from the default for its kind. */
 	pad?: string
 	rows?: number
@@ -129,7 +132,7 @@ export function PageSkeleton({
 								<SkeletonLine width='95%' />
 								<SkeletonLine width='70%' />
 							</div>
-							<Skeleton className='mx-auto mt-8 h-14 w-full max-w-2xl' />
+							{field ? <Skeleton className={`mx-auto w-full ${field}`} /> : null}
 						</div>
 					</div>
 				) : (
