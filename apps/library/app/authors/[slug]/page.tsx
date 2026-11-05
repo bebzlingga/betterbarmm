@@ -20,7 +20,20 @@ export default async function AuthorPage({ params }: { params: Promise<{ slug: s
 	const life = [a.born ? `born ${a.born}` : '', a.died ? `died ${a.died}` : '', a.from ?? ''].filter(Boolean).join(' · ')
 	return (
 		<>
-			<Masthead kicker={`${a.local ? `${LOCAL_LABEL[a.local]} · ` : 'Author · '}${a.roles.join(' · ')}`} name={a.name} note={life || undefined} stacked>
+			<Masthead kicker={`${a.local ? `${LOCAL_LABEL[a.local]} · ` : 'Author · '}${a.roles.join(' · ')}`} name={a.name}
+				note={life || undefined}
+				stacked
+				aside={
+					a.links.length ? (
+						<p className='flex flex-wrap gap-2'>
+							{a.links.map((l) => (
+								<a key={l.url} href={l.url} target='_blank' rel='noreferrer' className={CHIP}>
+									{l.label}
+								</a>
+							))}
+						</p>
+					) : undefined
+				}>
 				<div className='mt-8 grid gap-8 md:grid-cols-[1fr_auto] md:items-start'>
 					<p className='max-w-[44rem] text-[1rem] leading-7 text-[var(--ink-2)]'>{a.bio}</p>
 					{a.photo ? (
@@ -38,15 +51,6 @@ export default async function AuthorPage({ params }: { params: Promise<{ slug: s
 						</figure>
 					) : null}
 				</div>
-				{a.links.length ? (
-					<p className='mt-6 flex flex-wrap gap-2'>
-						{a.links.map((l) => (
-							<a key={l.url} href={l.url} target='_blank' rel='noreferrer' className={CHIP}>
-								{l.label}
-							</a>
-						))}
-					</p>
-				) : null}
 			</Masthead>
 			<section className='bb-container bb-section'>
 				<h2 className={H2}>

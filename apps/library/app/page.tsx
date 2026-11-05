@@ -1,4 +1,4 @@
-import { ArrowRightIcon, MagnifyingGlassIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, BookOpenTextIcon, BooksIcon, BuildingsIcon, MagnifyingGlassIcon, PenNibIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { Shelf } from './_components/book-card'
 import { Figures, Masthead, SectionHead } from './_components/parts'
@@ -49,10 +49,10 @@ export default function LibraryHome() {
 			<section className='bg-[var(--paper-2)]'>
 				<Figures
 					items={[
-						{ value: books.length.toLocaleString('en-PH'), label: 'Books on the shelf' },
-						{ value: authors.length.toLocaleString('en-PH'), label: 'Authors, editors and translators' },
-						{ value: publishers.length.toLocaleString('en-PH'), label: 'Publishers, from university presses to the author’s own' },
-						{ value: free.length.toLocaleString('en-PH'), label: 'Free to read in full' },
+						{ value: books.length.toLocaleString('en-PH'), label: 'Books on the shelf', icon: BooksIcon },
+						{ value: authors.length.toLocaleString('en-PH'), label: 'Authors, editors and translators', icon: PenNibIcon },
+						{ value: publishers.length.toLocaleString('en-PH'), label: 'Publishers, from university presses to the author’s own', icon: BuildingsIcon },
+						{ value: free.length.toLocaleString('en-PH'), label: 'Free to read in full', icon: BookOpenTextIcon },
 					]}
 				/>
 			</section>
@@ -60,10 +60,10 @@ export default function LibraryHome() {
 			{/* ---- New on the shelf ---- */}
 			<section className='bb-container bb-section'>
 				<SectionHead title='Newest on the shelf' note='The most recent books, by year of first publication.' />
-				<div className='mt-8'>
+				<div className='mt-12'>
 					<Shelf books={byYear.slice(0, 12)} />
 				</div>
-				<Link href='/books' className='rule-link mt-8 inline-flex items-center gap-2 text-[0.875rem]'>
+				<Link href='/books' className='rule-link mt-8 ml-auto flex w-fit items-center gap-2 text-[0.875rem]'>
 					Every book, with filters <ArrowRightIcon size={14} aria-hidden='true' />
 				</Link>
 			</section>
@@ -75,10 +75,10 @@ export default function LibraryHome() {
 						title='Writers from home'
 						note={`Stories, poems, histories and studies of the Bangsamoro by ${localAuthors.length} writers born in the region or elsewhere in Mindanao.`}
 					/>
-					<div className='mt-8'>
+					<div className='mt-12'>
 						<Shelf books={withCover(books.filter(isLocal)).slice(0, 12)} />
 					</div>
-					<div className='mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[0.875rem]'>
+					<div className='mt-8 flex flex-wrap justify-end gap-x-6 gap-y-2 text-[0.875rem]'>
 						<Link href='/books?local=1' className='rule-link inline-flex items-center gap-2'>
 							All {books.filter(isLocal).length} of their books <ArrowRightIcon size={14} aria-hidden='true' />
 						</Link>
@@ -94,10 +94,10 @@ export default function LibraryHome() {
 				<section key={s.slug} className={i % 2 === 1 ? 'bg-[var(--paper-2)]' : ''}>
 					<div className='bb-container bb-section'>
 						<SectionHead title={subjectName(s.slug)} note={`${s.count} books on this shelf.`} />
-						<div className='mt-8'>
+						<div className='mt-12'>
 							<Shelf books={withCover(books.filter((b) => b.subjects.includes(s.slug))).slice(0, 6)} />
 						</div>
-						<Link href={`/books?subject=${s.slug}`} className='rule-link mt-8 inline-flex items-center gap-2 text-[0.875rem]'>
+						<Link href={`/books?subject=${s.slug}`} className='rule-link mt-8 ml-auto flex w-fit items-center gap-2 text-[0.875rem]'>
 							The whole shelf <ArrowRightIcon size={14} aria-hidden='true' />
 						</Link>
 					</div>
@@ -107,10 +107,10 @@ export default function LibraryHome() {
 			{/* ---- Free to read ---- */}
 			<section className='bb-container bb-section'>
 				<SectionHead title='Free to read' note='Published open: reports, studies and old histories whose publishers put the whole text online.' />
-				<div className='mt-8'>
+				<div className='mt-12'>
 					<Shelf books={withCover(free).slice(0, 12)} />
 				</div>
-				<Link href='/books?availability=open-access' className='rule-link mt-8 inline-flex items-center gap-2 text-[0.875rem]'>
+				<Link href='/books?availability=open-access' className='rule-link mt-8 ml-auto flex w-fit items-center gap-2 text-[0.875rem]'>
 					All {free.length} <ArrowRightIcon size={14} aria-hidden='true' />
 				</Link>
 			</section>
@@ -119,10 +119,10 @@ export default function LibraryHome() {
 			<section className='bg-[var(--paper-2)]'>
 				<div className='bb-container bb-section'>
 					<SectionHead title='In the shops' note='Still in print: each page links to a shop that sells it.' />
-					<div className='mt-8'>
+					<div className='mt-12'>
 						<Shelf books={withCover(inPrint).slice(0, 12)} />
 					</div>
-					<Link href='/books?availability=for-sale' className='rule-link mt-8 inline-flex items-center gap-2 text-[0.875rem]'>
+					<Link href='/books?availability=for-sale' className='rule-link mt-8 ml-auto flex w-fit items-center gap-2 text-[0.875rem]'>
 						All {inPrint.length} <ArrowRightIcon size={14} aria-hidden='true' />
 					</Link>
 				</div>
@@ -131,7 +131,7 @@ export default function LibraryHome() {
 			{/* ---- Magazines ---- */}
 			<section className='bb-container bb-section'>
 				<SectionHead title='From the offices' note='The newsletters, magazines and reports the Bangsamoro Government’s own ministries and offices publish, issue by issue.' />
-				<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+				<ul className='mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
 					{magazines.slice(0, 6).map((m) => (
 						<li key={m.slug} className='flex flex-col border border-[var(--rule)] p-5'>
 							<p className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
@@ -147,7 +147,7 @@ export default function LibraryHome() {
 						</li>
 					))}
 				</ul>
-				<Link href='/magazines' className='rule-link mt-8 inline-flex items-center gap-2 text-[0.875rem]'>
+				<Link href='/magazines' className='rule-link mt-8 ml-auto flex w-fit items-center gap-2 text-[0.875rem]'>
 					All {magazines.length} <ArrowRightIcon size={14} aria-hidden='true' />
 				</Link>
 			</section>

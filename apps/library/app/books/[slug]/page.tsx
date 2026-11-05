@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { ArrowSquareOutIcon } from '@phosphor-icons/react/ssr'
+import { ArrowSquareOutIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Cover, Shelf } from '../../_components/book-card'
@@ -108,15 +108,23 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 						{/* ---- Where to get it ---- */}
 						{first ? (
 							<div className='mt-8 flex flex-wrap items-center gap-3'>
-								<a href={first.url} target='_blank' rel='noreferrer' className='bb-btn bb-btn-accent'>
+								<a href={first.url} target='_blank' rel='noreferrer' className='bb-btn bb-btn-solid'>
 									{first.label}
 									<ArrowSquareOutIcon size={14} weight='bold' aria-hidden='true' />
 								</a>
-								{rest.map((l) => (
-									<a key={l.url} href={l.url} target='_blank' rel='noreferrer' className={CHIP}>
-										{l.label}
-									</a>
-								))}
+								{rest.length ? (
+									<span className='text-[0.875rem] font-semibold text-[var(--ink)]'>
+										{rest.map((l, i) => (
+											<span key={l.url}>
+												{i ? ', ' : ''}
+												<a href={l.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 underline-offset-4 hover:underline'>
+													{l.label}
+													<ArrowUpRightIcon size={12} weight='bold' aria-hidden='true' />
+												</a>
+											</span>
+										))}
+									</span>
+								) : null}
 							</div>
 						) : null}
 						<p className='mt-3 text-[0.8125rem] leading-snug text-[var(--ink-3)]'>{a.note}</p>
@@ -128,9 +136,30 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 			<div className='bb-container bb-section grid gap-12 lg:grid-cols-[1fr_minmax(0,20rem)] lg:gap-20'>
 				<div>
 					<h2 className={H2}>About the book</h2>
-					<p className='mt-4 max-w-[46rem] text-[1rem] leading-7 text-[var(--ink-2)]'>{book.summary}</p>
+					<p className='mt-4 max-w-[60rem] text-[1rem] leading-7 text-[var(--ink-2)]'>{book.summary}</p>
+					{book.overview ? (
+						<div className='mt-5 max-w-[60rem] space-y-4 text-[1rem] leading-7 text-[var(--ink-2)]'>
+							{book.overview.split(/\n\s*\n/).map((para, i) => (
+								<p key={i}>{para}</p>
+							))}
+							{book.overviewSources?.length ? (
+								<p className='text-[0.75rem] leading-5 text-[var(--ink-3)]'>
+									From{' '}
+									{book.overviewSources.map((u, i) => (
+										<span key={u}>
+											{i ? ', ' : ''}
+											<a href={u} className='rule-link' target='_blank' rel='noreferrer'>
+												{new URL(u).hostname.replace(/^www\./, '')}
+											</a>
+										</span>
+									))}
+									.
+								</p>
+							) : null}
+						</div>
+					) : null}
 					{book.blurb ? (
-						<figure className='mt-6 max-w-[46rem] border-l-2 border-[var(--rule)] pl-5'>
+						<figure className='mt-6 max-w-[60rem] border-l-2 border-[var(--rule)] pl-5'>
 							<blockquote className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{book.blurb}</blockquote>
 							<figcaption className='mt-2 text-[0.75rem] text-[var(--ink-3)]'>
 								The publisher’s description, as{' '}
@@ -141,7 +170,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 							</figcaption>
 						</figure>
 					) : null}
-					{book.note ? <p className='mt-4 max-w-[46rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>{book.note}</p> : null}
+					{book.note ? <p className='mt-4 max-w-[60rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>{book.note}</p> : null}
 					<p className='mt-6 flex flex-wrap gap-2'>
 						{book.subjects.map((s) => (
 							<Link key={s} href={`/books?subject=${s}`} className={CHIP}>

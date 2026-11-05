@@ -42,6 +42,9 @@ export type Book = {
 	summary: string
 	/** The publisher's or a reader's longer description, from Open Library, where it has one. */
 	blurb?: string | null
+	/** A longer account of the book, in paragraphs split by a blank line, from the sources it lists. */
+	overview?: string | null
+	overviewSources?: string[] | null
 	cover?: { file: string; source: string; url: string } | null
 	availability: Availability
 	/** Where to get it: the first link is the one the shelf shows. */
@@ -73,6 +76,8 @@ export type Publisher = {
 	founded?: number | null
 	about: string
 	url?: string | null
+	/** A logo from the press's own site, or null for a lettered mark. */
+	logo?: string | null
 }
 
 export type Issue = { label: string; date?: string | null; url: string }
@@ -108,7 +113,7 @@ export const booksFrom = (publisher: string) => books.filter((b) => b.publisher 
 /** "Cesar Adib Majul, Samuel K. Tan" or "ed. Wilfredo Magno Torres III". */
 export const byline = (book: Book) => {
 	const names = book.authors.map((s) => authorBySlug.get(s)?.name ?? s)
-	const list = names.length > 3 ? `${names.slice(0, 3).join(', ')} and others` : names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names.at(-1)}` : names[0] ?? ''
+	const list = names.length > 3 ? `${names.slice(0, 3).join(', ')} and others` : names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names.at(-1)}` : names[0] ?? publisherBySlug.get(book.publisher)?.name ?? ''
 	const role = book.role === 'editor' ? (names.length > 1 ? 'eds. ' : 'ed. ') : book.role === 'translator' ? 'tr. ' : book.role === 'compiler' ? 'comp. ' : ''
 	return role + list
 }
@@ -116,7 +121,7 @@ export const byline = (book: Book) => {
 export const AVAILABILITY: Record<Availability, { label: string; short: string; note: string }> = {
 	'for-sale': { label: 'In print', short: 'Buy', note: 'Still in print: the link goes to a shop that sells it.' },
 	'open-access': { label: 'Free to read', short: 'Read free', note: 'Published free: the link opens the whole book.' },
-	library: { label: 'Out of print', short: 'Find a copy', note: 'No longer sold new: the link shows which libraries hold it, and where used copies turn up.' },
+	library: { label: 'Out of print', short: 'Find a copy', note: 'No longer sold new: look for it in a library, or for a used copy.' },
 	private: { label: 'Self-published', short: 'From the author', note: 'Printed by the author or a very small press, sold direct or on demand: the link goes to where they offer it.' },
 }
 

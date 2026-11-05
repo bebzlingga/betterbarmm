@@ -37,7 +37,7 @@ export function BookCard({ book, showPublisher = false }: { book: Book; showPubl
 					<span className='num'>{book.year}</span>
 					<span className={book.availability === 'for-sale' ? 'text-[var(--accent)]' : book.availability === 'open-access' ? 'text-[#2f6b4f] dark:text-[#7fc9a1]' : ''}>{a.label}</span>
 				</p>
-				<Link href={`/books/${book.slug}`} className='mt-1.5 font-[family-name:var(--font-display)] text-[0.9375rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)] hover:text-[var(--accent)]'>
+				<Link href={`/books/${book.slug}`} className='mt-2 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold leading-snug lg:text-[1.125rem] tracking-[-0.02em] text-[var(--ink)] hover:text-[var(--accent)]'>
 					{book.title}
 				</Link>
 				<p className='mt-1 text-[0.8125rem] leading-snug text-[var(--ink-2)]'>{byline(book)}</p>
@@ -52,7 +52,7 @@ export function BookCard({ book, showPublisher = false }: { book: Book; showPubl
 /** A shelf: a row of cards, six across on a wide screen. */
 export function Shelf({ books, showPublisher = false }: { books: Book[]; showPublisher?: boolean }) {
 	return (
-		<ul className='grid grid-cols-2 gap-x-5 gap-y-9 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6'>
+		<ul className='grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-8 xl:grid-cols-6 xl:gap-x-10 xl:gap-y-14'>
 			{books.map((b) => (
 				<BookCard key={b.slug} book={b} showPublisher={showPublisher} />
 			))}

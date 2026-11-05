@@ -42,7 +42,12 @@
 					"date": "2023-12",
 					"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/12/Merdeka_December_2023.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "merdeka.jpg",
+				"source": "December 2023",
+				"url": "https://bangsamoro.gov.ph/wp-content/uploads/2023/12/Merdeka_December_2023.pdf"
+			}
 		},
 		{
 			"slug": "al-mizaniyyah",
@@ -75,7 +80,12 @@
 					"date": "2025",
 					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/07/Al-Mizaniyyah-Budget-Magazine-FY2025.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "al-mizaniyyah.jpg",
+				"source": "Al-Mizaniyyah 2025",
+				"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2025/07/Al-Mizaniyyah-Budget-Magazine-FY2025.pdf"
+			}
 		},
 		{
 			"slug": "barmm-economic-briefer",
@@ -143,7 +153,12 @@
 					"date": "2026",
 					"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2026/06/Econ-Briefer_S1-2026.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "barmm-economic-briefer.jpg",
+				"source": "Issue No. 1, 2026",
+				"url": "https://mfbm.bangsamoro.gov.ph/wp-content/uploads/2026/06/Econ-Briefer_S1-2026.pdf"
+			}
 		},
 		{
 			"slug": "mhsdelivers",
@@ -171,7 +186,12 @@
 					"date": "2022",
 					"url": "https://mhsd.bangsamoro.gov.ph/mhsdelivers-magazine-january-march-2022-2/"
 				}
-			]
+			],
+			"cover": {
+				"file": "mhsdelivers.jpg",
+				"source": "January–March 2022",
+				"url": "https://mhsd.bangsamoro.gov.ph/wp-content/uploads/2025/07/MHSDelivers-Magazine-January-March-2022.pdf"
+			}
 		},
 		{
 			"slug": "techronicle",
@@ -194,7 +214,12 @@
 					"date": "2025",
 					"url": "https://cdnc.heyzine.com/files/uploaded/349446d06f0e16a07be0c8e9affcca460c5e4f6f.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "techronicle.jpg",
+				"source": "Techronicle 2025, PDF",
+				"url": "https://cdnc.heyzine.com/files/uploaded/349446d06f0e16a07be0c8e9affcca460c5e4f6f.pdf"
+			}
 		},
 		{
 			"slug": "mafar-newsletter",
@@ -217,7 +242,12 @@
 					"date": "2021-04",
 					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/MONTH-OF-APRIL-2021-compressed.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "mafar-newsletter.jpg",
+				"source": "Volume 2, No. 4: April 2021",
+				"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/MONTH-OF-APRIL-2021-compressed.pdf"
+			}
 		},
 		{
 			"slug": "mafar-annual-report",
@@ -255,7 +285,12 @@
 					"date": "2018",
 					"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/Annual-Report-2018.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "mafar-annual-report.jpg",
+				"source": "Annual Report 2018",
+				"url": "https://mafar.bangsamoro.gov.ph/wp-content/uploads/2024/07/Annual-Report-2018.pdf"
+			}
 		},
 		{
 			"slug": "parliament-journal",
@@ -316,7 +351,12 @@
 					"date": "2015",
 					"url": "https://bangsamorodevelopment.org/wp-content/uploads/2015/12/BDA-Accomplishments-2015_web.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "bangsamoro-times.jpg",
+				"source": "Mindanao Trust Fund partners’ magazine, 2015",
+				"url": "https://bangsamorodevelopment.org/wp-content/uploads/2015/12/BDA-MTF-PO-Magazine-2015-web.pdf"
+			}
 		},
 		{
 			"slug": "autonomy-and-peace-review",
@@ -334,7 +374,12 @@
 					"date": "2025-07",
 					"url": "https://iag.org.ph/images/IAG_REPORT_July_2025_Review_of_BARMM_Transition.pdf"
 				}
-			]
+			],
+			"cover": {
+				"file": "autonomy-and-peace-review.jpg",
+				"source": "A Review of the BARMM Transition, July 2025",
+				"url": "https://iag.org.ph/images/IAG_REPORT_July_2025_Review_of_BARMM_Transition.pdf"
+			}
 		}
 	]
 }

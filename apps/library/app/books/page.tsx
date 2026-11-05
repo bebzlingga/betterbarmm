@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Shelf } from '../_components/book-card'
-import { CHIP, Masthead } from '../_components/parts'
+import { AutoSelect } from '../_components/auto-select'
+import { Masthead } from '../_components/parts'
 import { AVAILABILITY, books, isLocal, matches, subjectName, subjects, type Availability } from '../_lib/library'
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 type Params = { q?: string; subject?: string; availability?: string; sort?: string; language?: string; local?: string }
 
 const SORTS = { newest: 'Newest first', oldest: 'Oldest first', title: 'By title' } as const
-const ON = `${CHIP} aria-[current]:border-[var(--ink)] aria-[current]:bg-[var(--ink)] aria-[current]:text-[var(--paper)]`
+const FIELD = 'h-10 cursor-pointer border border-[var(--rule)] bg-[var(--paper)] px-3 text-[0.875rem] text-[var(--ink)]'
 
 export default async function BooksPage({ searchParams }: { searchParams: Promise<Params> }) {
 	const sp = await searchParams
@@ -39,46 +40,65 @@ export default async function BooksPage({ searchParams }: { searchParams: Promis
 
 	return (
 		<>
-			<Masthead kicker='Library · Bangsamoro' name='The books' note={`${books.length} books about the Bangsamoro and its peoples, with where each can be bought, borrowed or read free.`}>
-				<form method='get' action='/books' className='mt-10 flex h-12 max-w-[36rem] items-center bg-white pl-4 text-[#191713] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)]'>
-					{Object.entries(current)
-						.filter(([k, v]) => v && k !== 'q' && !(k === 'sort' && v === 'newest'))
-						.map(([k, v]) => (
-							<input key={k} type='hidden' name={k} value={v} />
-						))}
-					<label htmlFor='q' className='sr-only'>
-						Find a book
-					</label>
-					<input id='q' name='q' type='search' defaultValue={q} autoComplete='off' placeholder='Title, author, publisher or year' className='h-full min-w-0 flex-1 bg-transparent text-[0.9375rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden' />
-					<button type='submit' className='h-full shrink-0 cursor-pointer bg-[#191713] px-5 font-[family-name:var(--font-display)] text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-[#3a3530]'>
-						Find
-					</button>
-				</form>
-			</Masthead>
+			<Masthead kicker='Library · Bangsamoro' name='The books' note={`${books.length} books about the Bangsamoro and its peoples, with where each can be bought, borrowed or read free.`} />
 
 			<div className='bb-container bb-section'>
-				{/* ---- Filters: plain links, so every view is an address ---- */}
+				{/* ---- Filters: a GET form and plain links, so every view is an address ---- */}
 				<div className='grid gap-5 border-b border-[var(--rule)] pb-6'>
-					<div className='flex flex-wrap gap-2'>
-						<Link href={href({ subject: '' })} aria-current={!subject ? 'true' : undefined} className={ON}>
-							Every subject
-						</Link>
-						{subjects.map((s) => (
-							<Link key={s.slug} href={href({ subject: s.slug })} aria-current={subject === s.slug ? 'true' : undefined} className={ON}>
-								{s.name} <span className='num opacity-60'>{s.count}</span>
-							</Link>
-						))}
-					</div>
-					<div className='flex flex-wrap gap-2'>
-						<Link href={href({ local: local ? '' : '1' })} aria-current={local ? 'true' : undefined} className={`${CHIP} aria-[current]:border-[var(--accent)] aria-[current]:bg-[var(--accent)] aria-[current]:text-white`}>
-							By writers from Mindanao and the Bangsamoro
-						</Link>
-						{(Object.keys(AVAILABILITY) as Availability[]).map((a) => (
-							<Link key={a} href={href({ availability: availability === a ? '' : a })} aria-current={availability === a ? 'true' : undefined} className={`${CHIP} aria-[current]:border-[var(--accent)] aria-[current]:bg-[var(--accent)] aria-[current]:text-white`}>
-								{AVAILABILITY[a].label}
-							</Link>
-						))}
-					</div>
+					<form method='get' action='/books' className='flex flex-wrap items-center justify-between gap-3'>
+						{sort !== 'newest' ? <input type='hidden' name='sort' value={sort} /> : null}
+						<div className='flex h-10 min-w-[16rem] flex-1 items-center border border-[var(--rule)] bg-[var(--paper)] pl-3 sm:max-w-[28rem]'>
+							<label htmlFor='q' className='sr-only'>
+								Find a book
+							</label>
+							<input id='q' name='q' type='search' defaultValue={q} autoComplete='off' placeholder='Title, author, publisher or year' className='h-full min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-3)] [&::-webkit-search-cancel-button]:hidden' />
+							<button type='submit' className='h-full shrink-0 cursor-pointer bg-[var(--ink)] px-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--paper)] transition hover:bg-[var(--accent)]'>
+								Find
+							</button>
+						</div>
+						<div className='flex flex-wrap gap-3'>
+							<label className='sr-only' htmlFor='subject'>
+								Subject
+							</label>
+							<AutoSelect id='subject' name='subject' defaultValue={subject} className={FIELD}>
+								<option value=''>Every subject</option>
+								{subjects.map((s) => (
+									<option key={s.slug} value={s.slug}>
+										{s.name} ({s.count})
+									</option>
+								))}
+							</AutoSelect>
+							<label className='sr-only' htmlFor='language'>
+								Language
+							</label>
+							<AutoSelect id='language' name='language' defaultValue={language} className={FIELD}>
+								<option value=''>Every language</option>
+								{languages.map((l) => (
+									<option key={l} value={l}>
+										{l}
+									</option>
+								))}
+							</AutoSelect>
+							<label className='sr-only' htmlFor='availability'>
+								Availability
+							</label>
+							<AutoSelect id='availability' name='availability' defaultValue={availability} className={FIELD}>
+								<option value=''>Any availability</option>
+								{(Object.keys(AVAILABILITY) as Availability[]).map((a) => (
+									<option key={a} value={a}>
+										{AVAILABILITY[a].label}
+									</option>
+								))}
+							</AutoSelect>
+							<label className='sr-only' htmlFor='local'>
+								Writers
+							</label>
+							<AutoSelect id='local' name='local' defaultValue={local} className={FIELD}>
+								<option value=''>Every writer</option>
+								<option value='1'>Writers from the region</option>
+							</AutoSelect>
+						</div>
+					</form>
 				</div>
 
 				<div className='mt-5 flex flex-wrap items-center justify-between gap-3 text-[0.8125rem] text-[var(--ink-3)]'>
@@ -106,19 +126,10 @@ export default async function BooksPage({ searchParams }: { searchParams: Promis
 								</Link>
 							))}
 						</span>
-						{languages.length > 1 ? (
-							<span className='flex gap-2'>
-								{languages.map((l) => (
-									<Link key={l} href={href({ language: language === l ? '' : l })} aria-current={language === l ? 'true' : undefined} className='aria-[current]:font-semibold aria-[current]:text-[var(--ink)] hover:text-[var(--ink)]'>
-										{l}
-									</Link>
-								))}
-							</span>
-						) : null}
 					</div>
 				</div>
 
-				<div className='mt-8'>
+				<div className='mt-16 lg:mt-20'>
 					{list.length ? (
 						<Shelf books={list} showPublisher />
 					) : (

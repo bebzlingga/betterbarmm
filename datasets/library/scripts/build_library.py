@@ -6,7 +6,7 @@ Reads datasets/library/shelf.json (books, authors, publishers, as editors keep t
 and writes books.json, authors.json and publishers.json beside it:
 
   · each book gets its links (a free copy, a shop, Amazon, Open Library, the
-    Internet Archive, WorldCat, as the book has them) and a cover from Open
+    Internet Archive, as the book has them) and a cover from Open
     Library's covers service, or failing that Amazon's image for the ISBN,
     saved to apps/library/public/covers with a .json note of where it came from;
   · a book Open Library describes gets that description as its blurb, credited;
@@ -51,6 +51,9 @@ def host(url):
 # ---- covers -------------------------------------------------------------------
 def cover_for(b):
     path = COVERS / f"{b['slug']}.jpg"
+    # `noCover` says why a catalogue's cover is wrong for this book (a selfie, a placeholder); the page draws a board instead.
+    if b.get('noCover'):
+        return None
     tries = []
     if b.get('cover'):
         tries.append(('cover id', f"https://covers.openlibrary.org/b/id/{b['cover']}-L.jpg?default=false"))
@@ -90,10 +93,7 @@ def links_for(b):
         out.append({'label': 'Open Library', 'url': f"https://openlibrary.org{b['ol']}"})
     if b.get('ia') and not (b.get('pdf') or '').startswith('https://archive.org'):
         out.append({'label': 'Borrow on the Internet Archive' if b['availability'] != 'open-access' else 'Internet Archive', 'url': f"https://archive.org/details/{b['ia']}"})
-    if b.get('isbn'):
-        out.append({'label': 'WorldCat', 'url': f"https://search.worldcat.org/isbn/{b['isbn']}"})
-    else:
-        out.append({'label': 'WorldCat', 'url': 'https://search.worldcat.org/search?q=' + urllib.parse.quote(f'ti:"{b["title"]}"')})
+    # No WorldCat button (user decision): Open Library's record already lists the libraries that hold a book.
     return out
 
 # ---- Wikipedia -----------------------------------------------------------------
@@ -139,7 +139,7 @@ def blurb_for(b):
 # ---- build ---------------------------------------------------------------------
 books = []
 for b in shelf['books']:
-    rec = {k: b.get(k) for k in ('slug', 'title', 'subtitle', 'authors', 'role', 'publisher', 'year', 'edition', 'pages', 'isbn', 'language', 'kind', 'subjects', 'summary', 'availability', 'note')}
+    rec = {k: b.get(k) for k in ('slug', 'title', 'subtitle', 'authors', 'role', 'publisher', 'year', 'edition', 'pages', 'isbn', 'language', 'kind', 'subjects', 'summary', 'overview', 'overviewSources', 'availability', 'note')}
     rec['cover'] = cover_for(b)
     rec['links'] = links_for(b)
     rec['blurb'] = blurb_for(b)
@@ -147,7 +147,7 @@ for b in shelf['books']:
 
 authors = []
 for a in shelf['authors']:
-    rec = {k: a.get(k) for k in ('slug', 'name', 'sort', 'bio', 'born', 'died', 'from', 'roles', 'local')}
+    rec = {k: a.get(k) for k in ('slug', 'name', 'sort', 'bio', 'born', 'died', 'from', 'roles', 'local', 'photo')}
     rec['links'] = []
     if a.get('wikipedia'):
         w = wiki(a['wikipedia'])
@@ -157,7 +157,10 @@ for a in shelf['authors']:
             rec['bioSource'] = 'wikipedia'
     authors.append(rec)
 
-publishers = [{k: p.get(k) for k in ('slug', 'name', 'kind', 'based', 'founded', 'about', 'url')} for p in shelf['publishers']]
+# A logo is a file in apps/library/public/publishers, taken from the press's own site
+# (publisher-logos.json says where); a press without one gets a lettered mark on the page.
+LOGOS = ROOT / 'apps/library/public/publishers'
+publishers = [{**{k: p.get(k) for k in ('slug', 'name', 'kind', 'based', 'founded', 'about', 'url')}, 'logo': f"/publishers/{p['slug']}.png" if (LOGOS / f"{p['slug']}.png").exists() else None} for p in shelf['publishers']]
 
 today = date.today().isoformat()
 (LIB / 'books.json').write_text(json.dumps({

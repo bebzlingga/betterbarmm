@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { Shelf } from '../../_components/book-card'
-import { CHIP, H2, Masthead } from '../../_components/parts'
+import { CHIP, H2, Masthead, PublisherMark } from '../../_components/parts'
 import { booksFrom, publisherBySlug, publishers } from '../../_lib/library'
 
 export function generateStaticParams() {
@@ -28,7 +28,10 @@ export default async function PublisherPage({ params }: { params: Promise<{ slug
 	return (
 		<>
 			<Masthead kicker={`Publisher · ${p.kind}`} name={p.name} note={`${p.based}${p.founded ? ` · since ${p.founded}` : ''}`} stacked>
-				<p className='mt-8 max-w-[44rem] text-[1rem] leading-7 text-[var(--ink-2)]'>{p.about}</p>
+				<div className='mt-8 flex items-start gap-5'>
+					<PublisherMark name={p.name} logo={p.logo} className='size-20' />
+					<p className='max-w-[44rem] text-[1rem] leading-7 text-[var(--ink-2)]'>{p.about}</p>
+				</div>
 				{p.url ? (
 					<p className='mt-6'>
 						<a href={p.url} target='_blank' rel='noreferrer' className={CHIP}>

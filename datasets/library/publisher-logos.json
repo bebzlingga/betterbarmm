@@ -1,0 +1,158 @@
+{
+	"up-press": {
+		"src": "https://press.up.edu.ph/wp-content/uploads/2022/09/cropped-favicon-180x180.png",
+		"page": "https://press.up.edu.ph"
+	},
+	"up-cids": {
+		"src": "https://cids.up.edu.ph/wp-content/uploads/2021/11/1200px-University_of_The_Philippines_seal.svg.png",
+		"page": "https://cids.up.edu.ph"
+	},
+	"up-asian-center": {
+		"src": "https://www.google.com/s2/favicons?domain=ac.upd.edu.ph&sz=256",
+		"page": "https://ac.upd.edu.ph"
+	},
+	"up-ncpag": {
+		"src": "https://ncpag.upd.edu.ph/wp-content/uploads/2024/10/cropped-ncpaglogo-300x300.jpg",
+		"page": "https://ncpag.upd.edu.ph"
+	},
+	"dlsu-press": {
+		"src": "https://www.google.com/s2/favicons?domain=www.dlsu.edu.ph&sz=256",
+		"page": "https://www.dlsu.edu.ph/offices/publishing-house/"
+	},
+	"msu": {
+		"src": "https://www.google.com/s2/favicons?domain=www.msumain.edu.ph&sz=256",
+		"page": "https://www.msumain.edu.ph"
+	},
+	"msu-iit": {
+		"src": "https://www.google.com/s2/favicons?domain=www.msuiit.edu.ph&sz=256",
+		"page": "https://www.msuiit.edu.ph"
+	},
+	"notre-dame-university": {
+		"src": "https://www.ndu.edu.ph/wp-content/uploads/2022/03/NDU_SEAL2_darker-green-300x300.png",
+		"page": "https://ndu.edu.ph"
+	},
+	"ceu": {
+		"src": "https://www.ceu.edu.ph/static/favicons/custom/apple-touch-icon.png",
+		"page": "https://www.ceu.edu.ph"
+	},
+	"nus-press": {
+		"src": "https://nuspress.nus.edu.sg/cdn/shop/t/4/assets/logo.png?v=151691899089308735281485163437",
+		"page": "https://nuspress.nus.edu.sg"
+	},
+	"iseas": {
+		"src": "https://www.iseas.edu.sg/wp-content/themes/iseas/assets/img/logo.png",
+		"page": "https://www.iseas.edu.sg"
+	},
+	"sophia-iac": {
+		"src": "https://dept.sophia.ac.jp/is/iac/img/toplogo.gif",
+		"page": "https://dept.sophia.ac.jp/is/iac/"
+	},
+	"u-hawaii-press": {
+		"src": "https://uhpress.hawaii.edu/wp-content/uploads/2018/05/uhp-logo-1.png",
+		"page": "https://uhpress.hawaii.edu"
+	},
+	"uc-press": {
+		"src": "https://www.ucpress.edu/apple-touch-icon.png",
+		"page": "https://www.ucpress.edu"
+	},
+	"cornell-press": {
+		"src": "https://i0.wp.com/dhjhkxawhe8q4.cloudfront.net/cornell-university-press-wp/wp-content/uploads/2019/06/27142457/cropped-CUP-favicon.png?fit=180%2C180&#038;ssl=1",
+		"page": "https://www.cornellpress.cornell.edu"
+	},
+	"cornell-seap": {
+		"src": "https://einaudi.cornell.edu/themes/custom/cwd_einaudi/images/cornell/bold_cornell_logo_simple_b31b1b.svg",
+		"page": "https://seap.einaudi.cornell.edu"
+	},
+	"up-kentucky": {
+		"src": "https://dhjhkxawhe8q4.cloudfront.net/kentucky-press-wp/wp-content/uploads/2022/08/02181740/cropped-Green-Yellow-Simple-Graphic-Email-Signature-Instagram-Post-Square-2-180x180.png",
+		"page": "https://www.kentuckypress.com"
+	},
+	"oup": {
+		"src": "https://www.google.com/s2/favicons?domain=global.oup.com&sz=256",
+		"page": "https://global.oup.com"
+	},
+	"cambridge-scholars": {
+		"src": "https://www.google.com/s2/favicons?domain=www.cambridgescholars.com&sz=256",
+		"page": "https://www.cambridgescholars.com"
+	},
+	"armin-lear": {
+		"src": "https://arminlear.com/wp-content/uploads/2024/05/ms-icon-310x310-1-300x300.png",
+		"page": "https://arminlear.com"
+	},
+	"blurb": {
+		"src": "https://assets.blurb.com/_astro/favicon.D83MDGd3.svg",
+		"page": "https://www.blurb.com"
+	},
+	"rex": {
+		"src": "https://www.google.com/s2/favicons?domain=www.rex.com.ph&sz=256",
+		"page": "https://www.rex.com.ph"
+	},
+	"mindanews": {
+		"src": "https://www.google.com/s2/favicons?domain=mindanews.com&sz=256",
+		"page": "https://mindanews.com"
+	},
+	"ncca": {
+		"src": "https://www.google.com/s2/favicons?domain=ncca.gov.ph&sz=256",
+		"page": "https://ncca.gov.ph"
+	},
+	"opapru": {
+		"src": "https://peace.gov.ph/wp-content/uploads/2022/10/OPAPRULOGO.png",
+		"page": "https://peace.gov.ph"
+	},
+	"cenpeg": {
+		"src": "https://static.wixstatic.com/media/ae9bcc_6713aee1c4334258845d5491ff106393~mv2.png/v1/fill/w_109,h_137,al_c,lg_1,q_85,enc_avif,quality_auto/cenpeg-logo.png",
+		"page": "https://cenpeg.org"
+	},
+	"aim": {
+		"src": "https://aim.edu/wp-content/uploads/2024/03/site-logo.webp",
+		"page": "https://www.aim.edu"
+	},
+	"pcid": {
+		"src": "https://www.google.com/s2/favicons?domain=www.pcid.com.ph&sz=256",
+		"page": "https://www.pcid.com.ph"
+	},
+	"east-west-center": {
+		"src": "https://www.google.com/s2/favicons?domain=www.eastwestcenter.org&sz=256",
+		"page": "https://www.eastwestcenter.org"
+	},
+	"asia-foundation": {
+		"src": "https://www.google.com/s2/favicons?domain=asiafoundation.org&sz=256",
+		"page": "https://asiafoundation.org"
+	},
+	"international-alert": {
+		"src": "https://www.google.com/s2/favicons?domain=www.international-alert.org&sz=256",
+		"page": "https://www.international-alert.org"
+	},
+	"small-arms-survey": {
+		"src": "https://www.google.com/s2/favicons?domain=www.smallarmssurvey.org&sz=256",
+		"page": "https://www.smallarmssurvey.org"
+	},
+	"prif": {
+		"src": "https://www.prif.org/apple-touch-icon.png",
+		"page": "https://www.prif.org"
+	},
+	"ipac": {
+		"src": "https://www.google.com/s2/favicons?domain=understandingconflict.org&sz=256",
+		"page": "https://understandingconflict.org"
+	},
+	"minority-rights-group": {
+		"src": "https://www.google.com/s2/favicons?domain=minorityrights.org&sz=256",
+		"page": "https://minorityrights.org"
+	},
+	"sil-philippines": {
+		"src": "https://philippines.sil.org/sites/phil/files/sil_glyph_logo_taiheritagepro_philippines.png",
+		"page": "https://philippines.sil.org"
+	},
+	"uq-press": {
+		"src": "https://www.google.com/s2/favicons?domain=www.uqp.com.au&sz=256",
+		"page": "https://www.uqp.com.au"
+	},
+	"uw-press": {
+		"src": "https://www.uwpress.org/local/img/journal_logo.gif",
+		"page": "https://uwpress.org"
+	},
+	"cpcs": {
+		"src": "https://www.centrepeaceconflictstudies.org/wp-content/uploads/cropped-CPCS-Logo-Update-2-192x192.png",
+		"page": "https://www.centrepeaceconflictstudies.org"
+	}
+}

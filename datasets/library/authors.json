@@ -1,6 +1,6 @@
 {
 	"note": "Lives in brief: from Wikipedia’s opening (CC BY-SA) where an article exists, else the shelf’s own line. Edit shelf.json, not this file.",
-	"built": "2026-11-05",
+	"built": "2026-11-06",
 	"authors": [
 		{
 			"slug": "cesar-adib-majul",
@@ -14,6 +14,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": [
 				{
 					"label": "Wikipedia",
@@ -35,6 +36,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -49,6 +51,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -63,6 +66,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -77,6 +81,7 @@
 				"historian"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": [
 				{
 					"label": "Wikipedia",
@@ -97,6 +102,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -111,6 +117,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": [
 				{
 					"label": "Wikipedia",
@@ -131,6 +138,7 @@
 				"political scientist"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -145,6 +153,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -160,6 +169,7 @@
 				"Jesuit"
 			],
 			"local": null,
+			"photo": null,
 			"links": [
 				{
 					"label": "Wikipedia",
@@ -180,6 +190,7 @@
 				"sociologist"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -194,6 +205,7 @@
 				"ethnologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -209,6 +221,7 @@
 				"historian"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -223,6 +236,7 @@
 				"historian"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -237,6 +251,7 @@
 				"journalist"
 			],
 			"local": null,
+			"photo": null,
 			"links": [
 				{
 					"label": "Wikipedia",
@@ -257,6 +272,7 @@
 				"political scientist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -271,6 +287,7 @@
 				"writer"
 			],
 			"local": null,
+			"photo": null,
 			"links": [
 				{
 					"label": "Wikipedia",
@@ -291,6 +308,7 @@
 				"soldier"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -305,6 +323,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -319,6 +338,13 @@
 				"military historian"
 			],
 			"local": null,
+			"photo": {
+				"file": "james-arnold.jpg",
+				"source": "Wikimedia Commons",
+				"url": "https://commons.wikimedia.org/wiki/File:James_R._Arnold.jpg",
+				"author": "User:Kcrca",
+				"license": "Public domain"
+			},
 			"links": []
 		},
 		{
@@ -333,6 +359,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -347,6 +374,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -361,6 +389,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -375,6 +404,7 @@
 				"anthropologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -389,6 +419,7 @@
 				"writer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -404,6 +435,7 @@
 				"historian"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -418,6 +450,7 @@
 				"writer"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -432,6 +465,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -446,6 +480,7 @@
 				"scholar"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -460,6 +495,7 @@
 				"journalist"
 			],
 			"local": null,
+			"photo": null,
 			"links": [
 				{
 					"label": "Wikipedia",
@@ -480,6 +516,7 @@
 				"journalist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -494,6 +531,7 @@
 				"researcher"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -508,6 +546,7 @@
 				"editor"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -522,6 +561,7 @@
 				"editor"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -536,6 +576,7 @@
 				"scholar"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -550,6 +591,7 @@
 				"political scientist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -564,6 +606,7 @@
 				"political analyst"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -578,6 +621,7 @@
 				"writer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -593,6 +637,13 @@
 				"historian"
 			],
 			"local": "bangsamoro",
+			"photo": {
+				"file": "salah-jubair.jpg",
+				"source": "Wikimedia Commons",
+				"url": "https://commons.wikimedia.org/wiki/File:Mohagher_Iqbal_portrait.jpg",
+				"author": "Joseph Vidal / Malacanang Photo",
+				"license": "Public domain"
+			},
 			"links": []
 		},
 		{
@@ -608,6 +659,13 @@
 				"historian"
 			],
 			"local": "bangsamoro",
+			"photo": {
+				"file": "michael-mastura.jpg",
+				"source": "Wikimedia Commons",
+				"url": "https://commons.wikimedia.org/wiki/File:Rep._Michael_O._Mastura_(8th_Congress).jpg",
+				"author": "House of Representatives of the Philippines",
+				"license": "Public domain"
+			},
 			"links": []
 		},
 		{
@@ -622,6 +680,7 @@
 				"political scientist"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -636,6 +695,7 @@
 				"lawyer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -650,6 +710,7 @@
 				"advocate"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -665,6 +726,13 @@
 				"negotiator"
 			],
 			"local": null,
+			"photo": {
+				"file": "miriam-coronel-ferrer.jpg",
+				"source": "Wikimedia Commons",
+				"url": "https://commons.wikimedia.org/wiki/File:Miriam_Coronel-Ferrer_(2016).jpg",
+				"author": "Malacañang Photo Bureau",
+				"license": "Public domain"
+			},
 			"links": []
 		},
 		{
@@ -679,6 +747,7 @@
 				"researcher"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -693,6 +762,7 @@
 				"sociologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -707,20 +777,7 @@
 				"researcher"
 			],
 			"local": null,
-			"links": []
-		},
-		{
-			"slug": "diana-rodriguez",
-			"name": "Diana Rodriguez",
-			"sort": "Rodriguez, Diana",
-			"bio": "Editor at the Small Arms Survey in Geneva.",
-			"born": null,
-			"died": null,
-			"from": null,
-			"roles": [
-				"editor"
-			],
-			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -735,6 +792,7 @@
 				"organisation"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -749,6 +807,7 @@
 				"political scientist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -763,6 +822,7 @@
 				"political scientist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -777,6 +837,7 @@
 				"journalist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -791,6 +852,7 @@
 				"scholar"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -805,6 +867,7 @@
 				"political scientist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -819,6 +882,7 @@
 				"researcher"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -833,6 +897,7 @@
 				"political scientist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -848,6 +913,7 @@
 				"analyst"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -863,6 +929,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -877,6 +944,7 @@
 				"writer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -892,6 +960,7 @@
 				"essayist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -906,6 +975,7 @@
 				"journalist"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -920,6 +990,7 @@
 				"scholar"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -934,6 +1005,7 @@
 				"party"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -948,6 +1020,7 @@
 				"party"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -962,6 +1035,7 @@
 				"legislature"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -976,6 +1050,7 @@
 				"journalist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -991,6 +1066,7 @@
 				"novelist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1005,6 +1081,7 @@
 				"security analyst"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1019,6 +1096,7 @@
 				"institute"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1034,6 +1112,7 @@
 				"judge"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1048,6 +1127,7 @@
 				"historian"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1063,6 +1143,7 @@
 				"writer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1077,6 +1158,7 @@
 				"anthropologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1091,6 +1173,7 @@
 				"anthropologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1105,6 +1188,7 @@
 				"anthropologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1119,6 +1203,7 @@
 				"scholar"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1133,6 +1218,7 @@
 				"anthropologist"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1147,6 +1233,7 @@
 				"sociologist"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1161,6 +1248,7 @@
 				"historian"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1175,6 +1263,7 @@
 				"writer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1189,6 +1278,7 @@
 				"anthropologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1203,6 +1293,7 @@
 				"scholar"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1217,6 +1308,7 @@
 				"anthropologist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1231,6 +1323,7 @@
 				"researcher"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1246,6 +1339,7 @@
 				"author"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1260,6 +1354,7 @@
 				"researcher"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1274,6 +1369,7 @@
 				"lawyer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1288,6 +1384,7 @@
 				"lawyer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1302,6 +1399,7 @@
 				"researcher"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1317,6 +1415,13 @@
 				"scholar"
 			],
 			"local": null,
+			"photo": {
+				"file": "ligaya-amilbangsa.jpg",
+				"source": "Wikimedia Commons",
+				"url": "https://commons.wikimedia.org/wiki/File:Ligaya_Fernando-Amilbangsa_-_2017_(cropped).jpg",
+				"author": "IPOPHIL",
+				"license": "Public domain"
+			},
 			"links": []
 		},
 		{
@@ -1331,6 +1436,7 @@
 				"art historian"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1345,6 +1451,7 @@
 				"scholar"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1359,6 +1466,7 @@
 				"collector"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1373,6 +1481,7 @@
 				"collector"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1387,6 +1496,7 @@
 				"institution"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1401,6 +1511,7 @@
 				"institution"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1415,6 +1526,7 @@
 				"linguist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1429,6 +1541,7 @@
 				"scholar"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1443,6 +1556,7 @@
 				"playwright"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1458,6 +1572,7 @@
 				"writer"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1472,6 +1587,7 @@
 				"scholar"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1486,6 +1602,7 @@
 				"writer"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1500,6 +1617,7 @@
 				"lexicographer"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1515,6 +1633,7 @@
 				"lexicographer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1529,6 +1648,7 @@
 				"lexicographer"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1543,6 +1663,7 @@
 				"linguist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1557,6 +1678,7 @@
 				"linguist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1571,6 +1693,7 @@
 				"institution"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1585,6 +1708,7 @@
 				"linguist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1599,6 +1723,7 @@
 				"linguist"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1613,6 +1738,7 @@
 				"linguist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1627,6 +1753,7 @@
 				"linguist"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1641,6 +1768,7 @@
 				"linguist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1656,6 +1784,7 @@
 				"linguist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1670,6 +1799,7 @@
 				"scholar of education"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1684,6 +1814,7 @@
 				"educator"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1699,6 +1830,7 @@
 				"priest"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1714,6 +1846,7 @@
 				"writer"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1728,6 +1861,7 @@
 				"political scientist"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1743,6 +1877,7 @@
 				"educator"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1757,6 +1892,7 @@
 				"novelist"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1772,6 +1908,7 @@
 				"novelist"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1788,6 +1925,7 @@
 				"editor"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1803,6 +1941,7 @@
 				"editor"
 			],
 			"local": "mindanao",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1817,6 +1956,7 @@
 				"fiction writer"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1832,6 +1972,7 @@
 				"editor"
 			],
 			"local": null,
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1847,6 +1988,7 @@
 				"veteran"
 			],
 			"local": "bangsamoro",
+			"photo": null,
 			"links": []
 		},
 		{
@@ -1861,6 +2003,697 @@
 				"sociologist"
 			],
 			"local": "mindanao",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "abhoud-syed-lingga",
+			"name": "Abhoud Syed M. Lingga",
+			"sort": "Lingga, Abhoud Syed M.",
+			"bio": "Founder and executive director of the Institute of Bangsamoro Studies in Cotabato City, and a long-time writer on Bangsamoro self-determination and the MILF peace process.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": "bangsamoro",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "tengku-abdul-ghafar",
+			"name": "Tengku Abdul Ghafar",
+			"sort": "Ghafar, Tengku Abdul",
+			"bio": "Malaysian diplomat and former director general of Malaysia’s National Security Council, who facilitated the government–MILF talks in 2000–2003 and again from 2011 to the 2014 agreement.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"diplomat"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "tengku-shahpur",
+			"name": "Tengku Shahpur",
+			"sort": "Shahpur, Tengku",
+			"bio": "Writer and editor of the Centre for Peace and Conflict Studies’ listening report on Marawi.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "alfredo-ferrariz-lubang",
+			"name": "Alfredo Ferrariz Lubang",
+			"sort": "Lubang, Alfredo Ferrariz",
+			"bio": "A Mindanaoan peacebuilder, national coordinator of the Philippine Campaign to Ban Landmines and Nonviolence International’s representative in Asia, who started peace-education work in south Thailand and the Bangsamoro.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"peace educator"
+			],
+			"local": "mindanao",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "elizabeth-padilla",
+			"name": "Elizabeth M. Padilla",
+			"sort": "Padilla, Elizabeth M.",
+			"bio": "Researcher at the Centre for Peace and Conflict Studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "abubakar-datumanong",
+			"name": "Abubakar Datumanong",
+			"sort": "Datumanong, Abubakar",
+			"bio": "Researcher on Moro customary law for the Institute of Bangsamoro Studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": "bangsamoro",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "parido-rahman-pigkaulan",
+			"name": "Parido Rahman Pigkaulan",
+			"sort": "Pigkaulan, Parido Rahman",
+			"bio": "Researcher on Moro customary law for the Institute of Bangsamoro Studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": "bangsamoro",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "maguid-makalingkang",
+			"name": "Maguid Makalingkang",
+			"sort": "Makalingkang, Maguid",
+			"bio": "Researcher on Moro customary law for the Institute of Bangsamoro Studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": "bangsamoro",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "juwairiya-lingga",
+			"name": "Juwairiya U. Lingga",
+			"sort": "Lingga, Juwairiya U.",
+			"bio": "Nurse and assistant professor at Cotabato City State Polytechnic College, and researcher with the Institute of Bangsamoro Studies.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"researcher"
+			],
+			"local": "bangsamoro",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "ebrahim-ampuan",
+			"name": "Ebrahim F. Ampuan",
+			"sort": "Ampuan, Ebrahim F.",
+			"bio": "Assistant professor at Mindanao State University in Zamboanga Sibugay.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": "bangsamoro",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "benedicto-r-bacani",
+			"name": "Benedicto R. Bacani",
+			"sort": "Bacani, Benedicto R.",
+			"bio": "Lawyer and founder of the Institute for Autonomy and Governance; former dean of law at Notre Dame University, Cotabato City, and a fellow of the United States Institute of Peace.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": "mindanao",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "starjoan-villanueva",
+			"name": "Starjoan Villanueva",
+			"sort": "Villanueva, Starjoan",
+			"bio": "Mindanao researcher who wrote IAG's 2020 civil-society study and IID's 2020 Civilian Policy Agenda for the Bangsamoro, and was on the research team of The Contested Corners of Asia.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "norma-tillo-gomez",
+			"name": "Norma Tillo-Gomez",
+			"sort": "Tillo-Gomez, Norma",
+			"bio": "IAG senior researcher; former executive director of the Notre Dame University Research Center (2003–2012) who has studied power relations in the ARMM, displacement and youth extremism.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": "mindanao",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "ofelia-durante",
+			"name": "Ofelia Durante",
+			"sort": "Durante, Ofelia",
+			"bio": "Former director of the Ateneo de Zamboanga Research Center (2003–2010) and of the Peace Education Center at Notre Dame University.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "cesar-bacani",
+			"name": "Cesar Bacani",
+			"sort": "Bacani, Cesar",
+			"bio": "Author of Research on the Implementation of the National Action Plan on Preventing and Countering Violent Extremism (NAP P/CVE) in the Bangsamoro Autonomous Region in Muslim Mindanao, published in 2023.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "abraham-iribani",
+			"name": "Abraham Iribani",
+			"sort": "Iribani, Abraham",
+			"bio": "Author of Give Peace a Chance, published in 2006.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "liezl-pg-bugtay",
+			"name": "Liezl PG. Bugtay",
+			"sort": "Bugtay, Liezl PG.",
+			"bio": "Co-editor of International Alert's Conflict Alert 2019 report.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "nikki-philline-c-de-la-rosa",
+			"name": "Nikki Philline C. de la Rosa",
+			"sort": "Rosa, Nikki Philline C. de la",
+			"bio": "Programme manager at International Alert Philippines and co-editor of Conflict Alert 2019.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "judy-t-gulane",
+			"name": "Judy T. Gulane",
+			"sort": "Gulane, Judy T.",
+			"bio": "Editor of War Makes States, published in 2019.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "teresa-j-ho",
+			"name": "Teresa J. Ho",
+			"sort": "Ho, Teresa J.",
+			"bio": "Author of Human Development for Peace and Prosperity in the Autonomous Region in Muslim Mindanao, published in 2003.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "fermin-adriano",
+			"name": "Fermin Adriano",
+			"sort": "Adriano, Fermin",
+			"bio": "Author of The Contested Corners of Asia, published in 2013.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "thomas-parks",
+			"name": "Thomas Parks",
+			"sort": "Parks, Thomas",
+			"bio": "Author of The Contested Corners of Asia, published in 2013.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "jeremy-simons",
+			"name": "Jeremy Simons",
+			"sort": "Simons, Jeremy",
+			"bio": "Author of Transitional Justice and Reconciliation in and beyond the Bangsamoro, published in 2019.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "radzini-oledan",
+			"name": "Radzini Oledan",
+			"sort": "Oledan, Radzini",
+			"bio": "Author of Transitional Justice and Reconciliation in and beyond the Bangsamoro, published in 2019.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "roberto-c-layson",
+			"name": "Roberto C. Layson",
+			"sort": "Layson, Roberto C.",
+			"bio": "Oblate (OMI) priest who served as parish priest of Pikit, Cotabato, through the 2000 and 2003 wars and promoted interfaith 'spaces for peace'.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": "mindanao",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "venus-betita",
+			"name": "Venus Betita",
+			"sort": "Betita, Venus",
+			"bio": "Editor of Moving Beyond, published in 2014.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "karl-m-gaspar",
+			"name": "Karl M. Gaspar",
+			"sort": "Gaspar, Karl M.",
+			"bio": "Author of Mapagpakamalinawon, published in 2002.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": "mindanao",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "elpidio-a-lapad",
+			"name": "Elpidio A. Lapad",
+			"sort": "Lapad, Elpidio A.",
+			"bio": "Author of Mapagpakamalinawon, published in 2002.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "ailynne-j-maravillas",
+			"name": "Ailynne J. Maravillas",
+			"sort": "Maravillas, Ailynne J.",
+			"bio": "Author of Mapagpakamalinawon, published in 2002.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "eddie-ll-quitoriano",
+			"name": "Eddie Ll. Quitoriano",
+			"sort": "Quitoriano, Eddie Ll.",
+			"bio": "Author of Their War, Our Struggle, published in 2004.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "theofeliz-marie-p-francisco",
+			"name": "Theofeliz Marie P. Francisco",
+			"sort": "Francisco, Theofeliz Marie P.",
+			"bio": "Author of Their War, Our Struggle, published in 2004.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "pressia-arifin-cabo",
+			"name": "Pressia Arifin-Cabo",
+			"sort": "Arifin-Cabo, Pressia",
+			"bio": "Author of Dar-ul Salam, published in 2008.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "joel-dizon",
+			"name": "Joel Dizon",
+			"sort": "Dizon, Joel",
+			"bio": "Author of Dar-ul Salam, published in 2008.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "khomenie-mantawel",
+			"name": "Khomenie Mantawel",
+			"sort": "Mantawel, Khomenie",
+			"bio": "Author of Dar-ul Salam, published in 2008.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "malcolm-cook",
+			"name": "Malcolm Cook",
+			"sort": "Cook, Malcolm",
+			"bio": "Analyst of Southeast Asian politics who co-wrote the 2006 Lowy Institute Paper on Mindanao with Kit Collier.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "kit-collier",
+			"name": "Kit Collier",
+			"sort": "Collier, Kit",
+			"bio": "Author of Mindanao, published in 2006.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "somsri-hananuntasuk",
+			"name": "Somsri Hananuntasuk",
+			"sort": "Hananuntasuk, Somsri",
+			"bio": "Author of Autonomous Region in Muslim Mindanao, the Philippines, published in 2008.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "ichal-supriadi",
+			"name": "Ichal Supriadi",
+			"sort": "Supriadi, Ichal",
+			"bio": "Author of Autonomous Region in Muslim Mindanao, the Philippines, published in 2008.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "madonna-t-virola",
+			"name": "Madonna T. Virola",
+			"sort": "Virola, Madonna T.",
+			"bio": "Author of Living Peace, published in 2009.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "marides-v-virola",
+			"name": "Marides V. Virola",
+			"sort": "Virola, Marides V.",
+			"bio": "Author of Living Peace, published in 2009.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "salamat-hashim",
+			"name": "Salamat Hashim",
+			"sort": "Hashim, Salamat",
+			"bio": "Founding chairman of the Moro Islamic Liberation Front (died 2003).",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": "bangsamoro",
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "erlinda-m-burton",
+			"name": "Erlinda M. Burton",
+			"sort": "Burton, Erlinda M.",
+			"bio": "Author of The Three Faces of Mindanao, published in 2004.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "cecilia-macabuac",
+			"name": "Cecilia Macabuac",
+			"sort": "Macabuac, Cecilia",
+			"bio": "Author of The Three Faces of Mindanao, published in 2004.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "lourdes-a-wong",
+			"name": "Lourdes A. Wong",
+			"sort": "Wong, Lourdes A.",
+			"bio": "Author of The Three Faces of Mindanao, published in 2004.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "mary-fe-b-arquiza",
+			"name": "Mary Fe B. Arquiza",
+			"sort": "Arquiza, Mary Fe B.",
+			"bio": "Author of Women and Conflict, published in 2011.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"writer"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "paz-verdades-santos",
+			"name": "Paz Verdades M. Santos",
+			"sort": "Santos, Paz Verdades M.",
+			"bio": "Writer and teacher, co-author with Soliman M. Santos Jr. of the Small Arms Survey’s study of armed groups in the Philippines.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"scholar"
+			],
+			"local": null,
+			"photo": null,
 			"links": []
 		}
 	]

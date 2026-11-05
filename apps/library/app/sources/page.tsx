@@ -45,8 +45,8 @@ export default function SourcesPage() {
 						Each book is marked in print, free to read, out of print, or self-published, from its publisher’s page and the booksellers’
 						listings as of the date the shelf was last checked. {free} are free to read in full, from publishers who put the text online or
 						from the Internet Archive’s scans of books out of copyright. A book marked in print links first to a shop that sells it, usually its
-						publisher’s; an out-of-print book links to its library record on Open Library and WorldCat, which show the libraries holding it
-						and, often, where used copies turn up. Prices change and shops sell out, so the links are a start, not a promise.
+						publisher’s; an out-of-print book links to its record on Open Library, which shows
+						the libraries holding it and, often, where used copies turn up. Prices change and shops sell out, so the links are a start, not a promise.
 					</p>
 				</section>
 				<section>
