@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-10-28",
+ "generatedAt": "2026-11-05",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,82 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-11-03",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Two unidentified men found shot dead with wire around their necks beside the highway in Taviran, Datu Odin Sinsuat",
+   "summary": "A passer-by reported two dead men beside the highway in Barangay Taviran, Datu Odin Sinsuat, Maguindanao del Norte, at about 5:50 am on Tuesday, 3 November 2026. Both had been shot and had tie wire wound tightly around their necks; police believe they were killed elsewhere and dumped there. Neither carried identification and residents did not know them, according to Capt. Steffi Salanguit, spokesperson for the Police Regional Office-BAR, who asked families missing a relative to come forward.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Datu Odin Sinsuat",
+   "barangay": "Taviran",
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.1188,
+   "lon": 124.3139,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Bombo Radyo Cotabato",
+     "url": "https://cotabato.bomboradyo.com/dalawang-lalaki-natagpuang-patay-sa-tabi-ng-kalsada-sa-datu-odin-sinsuat-magnorte/",
+     "title": "Dalawang lalaki, natagpuang patay sa tabi ng kalsada sa Datu Odin Sinsuat, MagNorte",
+     "date": "2026-11-03"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2335646/3-killed-in-separate-shooting-incidents-in-barmm",
+     "title": "3 killed in separate shooting incidents in BARMM",
+     "date": "2026-11-03"
+    },
+    {
+     "outlet": "Abante Tonite",
+     "url": "https://tonite.abante.com.ph/2-bangkay-na-may-alambre-sa-leeg-bumalandra/vismin/",
+     "title": "2 bangkay na may alambre sa leeg bumalandra",
+     "date": "2026-11-03"
+    },
+    {
+     "outlet": "The Manila Times",
+     "url": "https://www.manilatimes.net/2026/11/05/regions/2-arrested-in-fatal-marawi-shooting/2462080",
+     "title": "2 arrested in fatal Marawi shooting",
+     "date": "2026-11-05"
+    }
+   ],
+   "id": "2026-11-03-datu-odin-sinsuat-shooting"
+  },
+  {
+   "date": "2026-11-03",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Businessman shot dead in his pickup over a land dispute in Gadongan, Marawi; two suspects caught",
+   "summary": "Businessman Daud Ayo Ali was shot dead in his black Toyota Hilux as he tried to drive away from a confrontation over a long-running land dispute, at Haifa Palace in Barangay Gadongan, Marawi City, Lanao del Sur, on the morning of Tuesday, 3 November 2026. His companion, Ali Ansary, escaped unhurt. The shooting was caught on video and shared online; Police Regional Office-BAR operatives arrested the suspected gunman, Yahya Tomawis, and an alleged accomplice, Jalil Hadji Malic, in a hot-pursuit operation.",
+   "province": "Lanao del Sur",
+   "municipality": "Marawi",
+   "barangay": "Gadongan",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2335646/3-killed-in-separate-shooting-incidents-in-barmm",
+     "title": "3 killed in separate shooting incidents in BARMM",
+     "date": "2026-11-03"
+    },
+    {
+     "outlet": "The Manila Times",
+     "url": "https://www.manilatimes.net/2026/11/05/regions/2-arrested-in-fatal-marawi-shooting/2462080",
+     "title": "2 arrested in fatal Marawi shooting",
+     "date": "2026-11-05"
+    }
+   ],
+   "id": "2026-11-03-marawi-shooting"
+  },
   {
    "date": "2026-10-26",
    "type": "shooting",
@@ -1275,6 +1351,44 @@
     }
    ],
    "id": "2026-09-07-paglat-shooting"
+  },
+  {
+   "date": "2026-08-29",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Two DI-Maute suspects and a baby girl killed as an arrest raid turns to gunfire and a grenade blast in Tampilong, Marawi",
+   "summary": "Police and soldiers serving anti-terrorism arrest warrants in Barangay Tampilong, Marawi City, Lanao del Sur, on Saturday, 29 August 2026, were fired on as they closed in on Khadafi Mimbisa, alias Engineer, wanted over the December 2023 bombing of a Catholic Mass at the Mindanao State University gym. Mohaimen Hadji Ali Darimbang, alias Ibn Sali, a Dawlah Islamiya-Maute member, and his wife Nesren Camar Solaiman were killed in the exchange of fire at their house. A six-month-old girl inside was hit by shrapnel from a grenade police say Mimbisa set off as he fled, and died in hospital. Mimbisa escaped; an M16 rifle, a .45-calibre pistol and bomb components were recovered. DZRH re-reported the deaths on 2 November as a young family killed by a grenade the suspect left behind.",
+   "province": "Lanao del Sur",
+   "municipality": "Marawi",
+   "barangay": "Tampilong",
+   "deaths": 3,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "The Star (Philippine Daily Inquirer/ANN)",
+     "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/08/31/suspect-in-msu-marawi-catholic-mass-bombing-killed-says-philippine-military",
+     "title": "Suspect in MSU-Marawi Catholic mass bombing killed, says Philippine military",
+     "date": "2026-08-31"
+    },
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/09/01/2553320/cops-hunt-elusive-target-marawi-anti-terror-operation",
+     "title": "Cops hunt elusive target of Marawi anti-terror operation",
+     "date": "2026-09-01"
+    },
+    {
+     "outlet": "DZRH",
+     "url": "https://www.dzrh.com.ph/post/young-family-killed-in-grenade-explosion-left-by-evasive-suspect-in-marawi-city",
+     "title": "Young family killed in grenade explosion left by evasive suspect in Marawi City",
+     "date": "2026-11-02"
+    }
+   ],
+   "id": "2026-08-29-marawi-shooting"
   },
   {
    "date": "2026-08-25",
