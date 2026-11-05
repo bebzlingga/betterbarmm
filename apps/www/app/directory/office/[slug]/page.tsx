@@ -86,7 +86,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 								</div>
 							</div>
 						) : (
-							<p className='mt-1 text-[0.9375rem] text-[var(--ink-3)]'>Not named in an official source we could read.</p>
+							<p className='mt-1 max-w-xl text-[0.9375rem] leading-relaxed text-[var(--ink-3)]'>{o.head_note ?? 'Not named in an official source we could read.'}</p>
 						)}
 						{service?.mandate ? <p className='mt-6 max-w-xl text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>{service.mandate}</p> : null}
 					</div>

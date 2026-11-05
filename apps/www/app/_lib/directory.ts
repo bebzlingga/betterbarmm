@@ -32,6 +32,8 @@ export type DirectoryOffice = {
 	name: string
 	acronym: string | null
 	head: { name: string; title: string; as_of: string | null; source: string } | null
+	/** Why there is no head: an office waiting on an appointment, with the last head on record. */
+	head_note?: string
 	address: string | null
 	phones: string[]
 	emails: string[]

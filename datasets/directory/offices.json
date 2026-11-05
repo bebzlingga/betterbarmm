@@ -813,12 +813,7 @@
    "slug": "bangsamoro-pilgrimage-authority",
    "name": "Bangsamoro Pilgrimage Authority",
    "acronym": "BPA",
-   "head": {
-    "name": "Sheikh Ibrahim Ali",
-    "title": "Executive Director",
-    "as_of": "2026-08-25",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-ncmf-strengthen-partnership-to-upgrade-hajj-services/"
-   },
+   "head": null,
    "address": null,
    "phones": [],
    "emails": [
@@ -844,7 +839,8 @@
      "url": "https://www.facebook.com/bpabarmm/"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Sheikh Ibrahim Ali, Executive Director, as of August 2026."
   },
   {
    "slug": "bangsamoro-darul-ifta",
@@ -998,12 +994,7 @@
    "slug": "bangsamoro-youth-commission",
    "name": "Bangsamoro Youth Commission",
    "acronym": "BYC",
-   "head": {
-    "name": "Nasserudin D. Dunding, MA",
-    "title": "Chairperson",
-    "as_of": "2026-08-18",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/youth-gains-development-priorities-outlined-in-7th-sobya/"
-   },
+   "head": null,
    "address": "#003 Albert Einstein Road, Rosary Heights 7, Cotabato City, Philippines, 9600",
    "phones": [
     "(064) 421-7776"
@@ -1027,7 +1018,8 @@
      "url": "https://bangsamoro.gov.ph/news/latest-news/youth-gains-development-priorities-outlined-in-7th-sobya/"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Nasserudin D. Dunding, MA, Chairperson, as of August 2026."
   },
   {
    "slug": "bangsamoro-sports-commission",
@@ -1126,12 +1118,7 @@
    "slug": "cooperatives-and-social-enterprise-authority",
    "name": "Cooperatives and Social Enterprise Authority",
    "acronym": "CSEA",
-   "head": {
-    "name": "Samcia Ibrahim",
-    "title": "Executive Director",
-    "as_of": "2026-10-08",
-    "source": "https://csea.bangsamoro.gov.ph/strengthening-governance-and-accountability-for-a-more-sustainable-barmm/"
-   },
+   "head": null,
    "address": "JICA Building, BCG, Gov. Gutierrez Ave., Brgy. RH XII, Cotabato City 9600",
    "phones": [],
    "emails": [
@@ -1149,18 +1136,14 @@
      "url": "https://csea.bangsamoro.gov.ph/strengthening-governance-and-accountability-for-a-more-sustainable-barmm/"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Samcia Ibrahim, Executive Director, as of October 2026."
   },
   {
    "slug": "bangsamoro-information-office",
    "name": "Bangsamoro Information Office",
    "acronym": "BIO",
-   "head": {
-    "name": "Ameen Andrew Alonto",
-    "title": "Executive Director",
-    "as_of": "2026-07-01",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/lakbay-aral-introduces-lanao-del-sur-youth-to-bangsamoro-governance-peace-journey/"
-   },
+   "head": null,
    "address": "SKCC, Bangsamoro Government Center, Gov. Gutierrez Avenue, Cotabato City, Philippines, 9600",
    "phones": [],
    "emails": [
@@ -1186,18 +1169,14 @@
      "url": "https://www.facebook.com/biobarmm/"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Ameen Andrew Alonto, Executive Director, as of July 2026."
   },
   {
    "slug": "development-academy-of-the-bangsamoro",
    "name": "Development Academy of the Bangsamoro",
    "acronym": "DAB",
-   "head": {
-    "name": "Nasrudin Yusof",
-    "title": "Executive Director",
-    "as_of": "2026-01-26",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/partnerships-seek-to-widen-public-understanding-of-islamic-finance-in-barmm/"
-   },
+   "head": null,
    "address": null,
    "phones": [
     "552-01-73"
@@ -1221,18 +1200,14 @@
      "url": "https://dab.bangsamoro.gov.ph/wp-json/wp/v2/pages?search=contact"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Nasrudin Yusof, Executive Director, as of January 2026."
   },
   {
    "slug": "bangsamoro-information-and-communications-technology-office",
    "name": "Bangsamoro Information and Communications Technology Office",
    "acronym": "BICTO",
-   "head": {
-    "name": "Jonathan M. Mantikayan, Ph.D.IT",
-    "title": "Executive Director II",
-    "as_of": "2026-06-14",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/bicto-showcases-research-innovation-to-advance-digital-transformation-in-barmm/"
-   },
+   "head": null,
    "address": "Bangsamoro Government Center, Gov. Gutierrez Ave., Cotabato City, Philippines",
    "phones": [],
    "emails": [
@@ -1258,18 +1233,14 @@
      "url": "https://bicto.bangsamoro.gov.ph/"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Jonathan M. Mantikayan, Ph.D.IT, Executive Director II, as of June 2026."
   },
   {
    "slug": "bangsamoro-board-of-investments",
    "name": "Bangsamoro Board of Investments",
    "acronym": "BBOI",
-   "head": {
-    "name": "Mohamad Omar Pasigan",
-    "title": "Chairperson",
-    "as_of": "2026-07-13",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-expands-global-investment-push-brunei-agency-eyes-partnership/"
-   },
+   "head": null,
    "address": "Bangsamoro Government Center, Gov. Gutierrez Avenue, Rosary Heights VII, Cotabato City",
    "phones": [
     "(064) 421-1591"
@@ -1297,18 +1268,14 @@
      "url": "https://www.facebook.com/bboibarmm/"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Mohamad Omar Pasigan, Chairperson, as of July 2026."
   },
   {
    "slug": "office-for-settler-communities",
    "name": "Office for Settler Communities",
    "acronym": "OSC",
-   "head": {
-    "name": "Dr. Susana Salvador-Anayatin",
-    "title": "Executive Director",
-    "as_of": "2026-05-12",
-    "source": "https://bangsamoro.gov.ph/news/latest-news/settler-entrepreneurs-benefit-from-barmms-livelihood-assistance-program/"
-   },
+   "head": null,
    "address": "Ground Floor, CNX 2 Building, Bishop Mongeau Avenue, Notre Dame Village, Barangay Rosary Heights 8, Cotabato City, Philippines",
    "phones": [
     "+63 977 045 5600"
@@ -1332,7 +1299,8 @@
      "url": "https://bangsamoro.gov.ph/news/latest-news/settler-entrepreneurs-benefit-from-barmms-livelihood-assistance-program/"
     }
    ],
-   "checked": null
+   "checked": null,
+   "head_note": "The new government has not yet named this office’s head. The last on record was Dr. Susana Salvador-Anayatin, Executive Director, as of May 2026."
   },
   {
    "slug": "bangsamoro-science-high-school",
