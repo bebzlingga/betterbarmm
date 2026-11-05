@@ -58,10 +58,11 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Library',
+		href: 'https://library.betterbarmm.com',
 		blurb:
 			'The books written about the Bangsamoro and its peoples, who wrote and published them, where each can be bought, borrowed or read free, and the magazines the region’s own offices put out.',
 		measure: 'Books · Authors · Magazines',
-		state: 'soon',
+		state: 'live',
 	},
 	{
 		label: 'Travel & Places',

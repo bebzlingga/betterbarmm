@@ -27,7 +27,7 @@ const ICONS: Record<string, Icon> = {
   'Public works': HardHatIcon,
   'Local government': BuildingsIcon,
   Procurement: ReceiptIcon,
-  Travel: CompassIcon,
+  'Travel & Places': CompassIcon,
   'Public services': LifebuoyIcon,
   Library: BooksIcon,
   'Source layer': DatabaseIcon,
