@@ -24,42 +24,6 @@
    than a page, and it wants a measure and a rhythm of its own.
    ============================================================ */
 
-/* ---- The reading column ----
-
-   A record page is read rather than scanned, so its prose takes a real
-   measure rather than the full width of the grid it sits in. Kept as a
-   name of its own so the record pages read as asking for a measure
-   rather than for a utility.
-
-   Wider than the chapters on the landing site, and deliberately. A
-   chapter is continuous prose; a record is a stack of short labeled
-   answers — what it does, who runs it, what it costs — where each one
-   is a paragraph or two under its own heading. At 34em those broke into
-   narrow ragged blocks with a third of the column standing empty beside
-   them, which reads as a page that failed to fill rather than as a set
-   measure. */
-
-.reg-measure {
-  max-width: 38em;
-}
-
-/* The width steps with the window rather than holding one number. A record
-   page puts this column beside a sidebar of about 19rem, so at 1440 and below
-   a 46em measure leaves the two crowded against each other with no gutter left
-   to speak of — the room for the full measure only exists on a screen wider
-   than that. */
-@media (min-width: 80rem) {
-  .reg-measure {
-    max-width: 42em;
-  }
-}
-
-@media (min-width: 100rem) {
-  .reg-measure {
-    max-width: 46em;
-  }
-}
-
 /* ---- The record's own rule ----
 
    A section break inside a record, as against a break between sections

@@ -302,15 +302,9 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 
 			<div className='bb-container pb-24 pt-12 lg:pb-32'>
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(14.5rem,18.7rem)] lg:gap-32 xl:gap-40'>
-					{/* Main column.
-
-					    `reg-measure` is what turns this from a page into a document. The
-					    column is about 970px at desktop width, which runs the summaries
-					    of the longer autonomy acts past a hundred characters a line —
-					    comfortably readable for a table row and punishing for six
-					    paragraphs of statute. The sidebar keeps the full track; only the
-					    prose is held to a measure. */}
-					<div className='reg-measure space-y-9'>
+					{/* Main column. The prose fills its track (user decision): the sidebar gap
+					    is margin enough, and a narrower measure left a third of the page empty. */}
+					<div className='space-y-9'>
 						{/* What the stage on the rail above actually means for the
 						    measure — the first thing to read once you know where it
 						    stands, so it leads the column. */}
