@@ -1,7 +1,7 @@
 {
  "name": "Places of the Bangsamoro",
  "generatedAt": "2026-10-17",
- "note": "Places worth the journey in BARMM: the travel guide’s own 21, and more each traced to its sources. Photos are Wikimedia Commons files, or English Wikipedia files where a building cannot go to Commons, under free licences.",
+ "note": "Places worth the journey in BARMM: the travel guide’s own 21, and more each traced to its sources. Photos are Wikimedia Commons files, or English Wikipedia files where a building cannot go to Commons, under free licences; Philippine government works; and, where neither exists, a photographer's or publisher's own photograph used with credit and a link to its source (licence 'All rights reserved').",
  "items": [
   {
    "slug": "grand-mosque-cotabato",
@@ -2155,12 +2155,46 @@
    ],
    "getting_there": null,
    "best_time": null,
-   "colors": [],
+   "colors": [
+    "#515151",
+    "#878380",
+    "#a19d95",
+    "#737673"
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Kawayan_Torogan",
     "https://en.wikipedia.org/wiki/Torogan"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/kawayan-torogan__1.jpg",
+     "page": "https://www.proudmindanaoan.com/2019/08/kawayan-torogan-in-marantao-lanao-del.html",
+     "author": "Nanardx Navarro (Proud Mindanaoan)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1500,
+     "height": 1042,
+     "caption": "The Kawayan Torogan in Bubung Malanding, raised on whole tree-trunk posts under its tall roof, carved panolong at the beam-ends.",
+     "tone": [
+      194,
+      0.32
+     ]
+    },
+    {
+     "url": "/places/kawayan-torogan__2.jpg",
+     "page": "https://www.proudmindanaoan.com/2019/08/kawayan-torogan-in-marantao-lanao-del.html",
+     "author": "Nanardx Navarro (Proud Mindanaoan)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1500,
+     "height": 997,
+     "caption": "The carved panolong of the Kawayan Torogan, okir scrolls curling out from the beam-ends.",
+     "tone": [
+      225,
+      0.21
+     ]
+    }
+   ],
    "from_guide": true,
    "do": [
     {
@@ -2560,12 +2594,32 @@
    ],
    "getting_there": "In Barangays Guimba and Papandayan, Marawi City.",
    "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
-   "colors": [],
+   "colors": [
+    "#69736b",
+    "#e9e9e5",
+    "#484736",
+    "#919b71"
+   ],
    "sources": [
     "https://en.wikipedia.org/wiki/Sacred_Mountain_National_Park",
     "https://en.wikipedia.org/wiki/Marawi"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/sacred-mountain__1.jpg",
+     "page": "https://langyaw.com/2023/07/17/10-marawi-city-tourist-spots-to-visit/",
+     "author": "Estan Cabigas (Langyaw)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1000,
+     "height": 667,
+     "caption": "Mount Mupo, the forested cone of Sacred Mountain National Park, rising behind the houses of Marawi.",
+     "tone": [
+      65,
+      0.5
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -4684,7 +4738,22 @@
      "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/silisad-beach__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+     "author": "Ali-Mouktar Mohammad Tilka (MTIT 2021 photo contest)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1432,
+     "height": 1080,
+     "caption": "A green sea turtle over the coral off Silisad Beach, with the forest of Bud Bongao above the waterline.",
+     "tone": [
+      233,
+      0.29
+     ]
+    }
+   ],
    "slug": "silisad-beach",
    "name": "Silisad Beach",
    "kind": "beach",
@@ -4696,9 +4765,10 @@
     "The ministry describes snorkelling or diving here with turtles swimming alongside."
    ],
    "colors": [
-    "#1d7f86",
-    "#5aa05a",
-    "#f1ead8"
+    "#3d4f4f",
+    "#a9aec1",
+    "#5d6c6f",
+    "#232f34"
    ],
    "sources": [
     "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
@@ -5148,7 +5218,22 @@
      "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/mount-matampor__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+     "author": "Al-Arief Plawan Mangata (MTIT 2021 photo contest)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1600,
+     "height": 722,
+     "caption": "Dawn from the campsite on Mount Matampor, a sea of cloud below and the ranges beyond.",
+     "tone": [
+      34,
+      0.36
+     ]
+    }
+   ],
    "slug": "mount-matampor",
    "name": "Mount Matampor",
    "kind": "mountain",
@@ -5160,9 +5245,10 @@
     "From the campsite the view takes in Lake Lanao, Mount Ragang, and the Kitanglad Range and Mount Kalatungan in Bukidnon."
    ],
    "colors": [
-    "#3f6e4e",
-    "#9cb7a1",
-    "#e3e6dc"
+    "#9a8882",
+    "#100d0b",
+    "#c3b29a",
+    "#625b5f"
    ],
    "sources": [
     "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
@@ -5320,7 +5406,36 @@
    "getting_there": "In Marawi, on 30,697 square metres cut from the Camp Amai Pakpak reservation, between 2 national highways and next to Marawi City National High School.",
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/lanao-peoples-park__1.jpg",
+     "page": "https://nhcphistoricsites.blogspot.com/2024/08/labanan-sa-marawi-1891.html",
+     "author": "National Historical Commission of the Philippines",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "The NHCP marker Labanan sa Marawi 1891 in Lanao People's Park, unveiled on 18 August 2024 on the site of Kota Marawi.",
+     "tone": [
+      45,
+      0.25
+     ]
+    },
+    {
+     "url": "/places/lanao-peoples-park__2.jpg",
+     "page": "https://nhcphistoricsites.blogspot.com/2024/08/pagtatanggol-sa-marawi.html",
+     "author": "National Historical Commission of the Philippines",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1066,
+     "caption": "Its companion marker, Pagtatanggol sa Marawi, on Amai Pakpak's defence of the kota against the Spanish in 1891 and 1895.",
+     "tone": [
+      36,
+      0.26
+     ]
+    }
+   ],
    "slug": "lanao-peoples-park",
    "name": "Lanao People's Park",
    "kind": "heritage",
@@ -5333,9 +5448,10 @@
     "The Bangsamoro heritage commission plans further archaeological work at Kota Marawi, now Barangay Camp Amai Pakpak."
    ],
    "colors": [
-    "#3e6b48",
-    "#b88b4a",
-    "#ece5d3"
+    "#b6b7b3",
+    "#5a5e4b",
+    "#2d2f29",
+    "#2a302c"
    ],
    "sources": [
     "https://lawphil.net/executive/proc/proc1992/proc_922_1992.html",
@@ -5428,7 +5544,22 @@
    "getting_there": null,
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/kota-kalawi__1.jpg",
+     "page": "https://bcpch.bangsamoro.gov.ph/bcpch-conducts-site-identification-and-validation-process-in-the-province-of-lanao-del-sur/",
+     "author": "Bangsamoro Commission for the Preservation of Cultural Heritage",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1600,
+     "height": 1067,
+     "caption": "The forest path at Kota Kalawi, walked by the heritage commission's team on its 2023 site validation.",
+     "tone": [
+      166,
+      0.25
+     ]
+    }
+   ],
    "slug": "kota-kalawi",
    "name": "Kota Kalawi",
    "kind": "heritage",
@@ -5440,9 +5571,10 @@
     "Archaeologists from the University of the Philippines and Mindanao State University excavated the site, the first such dig in Lanao del Sur and BARMM, and presented their findings in May 2026. They traced occupation back to the Neolithic and found little evidence of the heavy fighting described in American reports."
    ],
    "colors": [
-    "#7b5e3b",
-    "#4f7a5a",
-    "#e6dcc8"
+    "#5a574f",
+    "#798175",
+    "#9cb0a2",
+    "#282e26"
    ],
    "sources": [
     "https://bcpch.bangsamoro.gov.ph/?p=2418",
@@ -5576,7 +5708,36 @@
      "source": "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/bubuludtua-falls__1.jpg",
+     "page": "https://www.dvidshub.net/image/8429189/acdc-1-7-philippine-armed-forces-visit-bubuludtua-falls-cultural-event",
+     "author": "Sgt. Shaina Jupiter, U.S. Marine Corps",
+     "license": "Public domain",
+     "license_url": null,
+     "width": 1067,
+     "height": 1600,
+     "caption": "Bubuludtua Falls in Barira, a single long drop down a cliff of moss and fern.",
+     "tone": [
+      95,
+      0.26
+     ]
+    },
+    {
+     "url": "/places/bubuludtua-falls__2.jpg",
+     "page": "https://www.bomboradyo.com/20-anyos-patay-nang-madulas-at-nalunod-sa-falls-sa-maguindanao",
+     "author": "Bombo Radyo Philippines",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 800,
+     "height": 481,
+     "caption": "Bubuludtua Falls over its boulders, the plunge-pool water breaking white below.",
+     "tone": [
+      85,
+      0.41
+     ]
+    }
+   ],
    "slug": "bubuludtua-falls",
    "name": "Bubuludtua Falls",
    "kind": "falls",
@@ -5588,9 +5749,10 @@
     "The Ambal River nearby is free for swimming. The Bangsamoro tourism bureau named the development of Bubuludtua Falls among the region's potential tourism projects in 2023, and regional officials visited it in 2022."
    ],
    "colors": [
-    "#2f7f6f",
-    "#7cbf9e",
-    "#e8f0e8"
+    "#31372f",
+    "#4c4f46",
+    "#222822",
+    "#3b3c37"
    ],
    "sources": [
     "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/",
@@ -5608,7 +5770,22 @@
    "getting_there": null,
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/masjid-alqudra__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+     "author": "Abdullah Mahmod (MTIT 2021 photo contest)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1600,
+     "height": 1081,
+     "caption": "Masjid Alqudra in Bulalo, its arcade and gold domes lit by the late sun, a stone path across the garden.",
+     "tone": [
+      196,
+      0.48
+     ]
+    }
+   ],
    "slug": "masjid-alqudra",
    "name": "Masjid Alqudra",
    "kind": "mosque",
@@ -5620,9 +5797,10 @@
     "The ministry describes it as a place of learning and moral guidance for the Maguindanaon community as well as of prayer."
    ],
    "colors": [
-    "#e7e2d4",
-    "#2c7a6b",
-    "#c4a35a"
+    "#556f6d",
+    "#514623",
+    "#8a978d",
+    "#1c2c28"
    ],
    "sources": [
     "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
@@ -5819,7 +5997,36 @@
      "source": "https://bangsamoro.gov.ph/news/latest-news/never-get-lost-again-a-guide-to-cotabato-citys-barangays-and-landmarks/"
     }
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/timako-hill__1.jpg",
+     "page": "https://www.soxph.com/2016/03/timako-hill.html",
+     "author": "Nanardx Navarro (SOXph)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1000,
+     "height": 603,
+     "caption": "Timako Hill, wooded from end to end, across a still pond in Kalanganan.",
+     "tone": [
+      205,
+      0.45
+     ]
+    },
+    {
+     "url": "/places/timako-hill__2.jpg",
+     "page": "https://meanttogo.com/three-day-cotabato-city-vacation-places-we-visited/",
+     "author": "Meant To Go",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1600,
+     "height": 1200,
+     "caption": "The mangroves below Timako Hill from the road at its foot, the Grand Mosque white in the distance.",
+     "tone": [
+      206,
+      0.4
+     ]
+    }
+   ],
    "slug": "timako-hill",
    "name": "Timako Hill",
    "kind": "nature",
@@ -5832,9 +6039,10 @@
     "A bridge on the hill gives a wide view over Kalanganan with the Grand Mosque behind. A new seaport was being built at its foot in 2018."
    ],
    "colors": [
-    "#3f7a4d",
-    "#2f6f8f",
-    "#d9d3b8"
+    "#c8d4d8",
+    "#243213",
+    "#7ca4c2",
+    "#89c8f1"
    ],
    "sources": [
     "https://bangsamoro.gov.ph/news/latest-news/never-get-lost-again-a-guide-to-cotabato-citys-barangays-and-landmarks/",
@@ -6245,7 +6453,22 @@
    "getting_there": null,
    "best_time": null,
    "do": [],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/cojangan-lagoon__1.jpg",
+     "page": "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+     "author": "Abdurahim Abubakar (MTIT 2021 photo contest)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1600,
+     "height": 900,
+     "caption": "Cojangan from the air: a ring of white sand and trees closing round a lagoon, among the islets of Hadji Muhtamad.",
+     "tone": [
+      206,
+      0.49
+     ]
+    }
+   ],
    "slug": "cojangan-lagoon",
    "name": "Cojangan",
    "kind": "nature",
@@ -6257,9 +6480,10 @@
     "A photo of Cojangan took the Basilan first prize in the 2021 regional photo contest of the Ministry of Trade, Investments and Tourism."
    ],
    "colors": [
-    "#2aa3b8",
-    "#0f5e7a",
-    "#e9e3cf"
+    "#c9dbe9",
+    "#1d5579",
+    "#488eb0",
+    "#9dc8dd"
    ],
    "sources": [
     "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
@@ -6935,15 +7159,73 @@
    "getting_there": "A brisk 10-minute walk from the trailhead.",
    "best_time": null,
    "colors": [
-    "#2f5d3a",
-    "#a9cbb7",
-    "#6e5b45"
+    "#4a5234",
+    "#605d4f",
+    "#2b2c1d",
+    "#0f0f0e"
    ],
    "sources": [
     "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
     "https://www.philatlas.com/lists/physical/waterfalls-barmm.html"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/ranao-pilayan-falls__1.jpg",
+     "page": "https://www.proudmindanaoan.com/2018/04/the-breathtaking-ranao-pilayan-falls-in-upi-maguindanao.html",
+     "author": "Nanardx Navarro (Proud Mindanaoan)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1500,
+     "height": 1125,
+     "caption": "Ranao Pilayan Falls dropping off a basalt cliff into a green pool, the trail's wooden rail in the foreground.",
+     "tone": [
+      85,
+      0.54
+     ]
+    },
+    {
+     "url": "/places/ranao-pilayan-falls__2.jpg",
+     "page": "https://www.proudmindanaoan.com/2018/04/the-breathtaking-ranao-pilayan-falls-in-upi-maguindanao.html",
+     "author": "Nanardx Navarro (Proud Mindanaoan)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1500,
+     "height": 1100,
+     "caption": "The stream below Ranao Pilayan Falls, running white over boulders.",
+     "tone": [
+      35,
+      0.36
+     ]
+    },
+    {
+     "url": "/places/ranao-pilayan-falls__3.jpg",
+     "page": "https://www.proudmindanaoan.com/2018/04/the-breathtaking-ranao-pilayan-falls-in-upi-maguindanao.html",
+     "author": "Nanardx Navarro (Proud Mindanaoan)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1066,
+     "height": 1600,
+     "caption": "Ranao Pilayan Falls close up, about 50 to 60 feet of water against columns of dark rock.",
+     "tone": [
+      34,
+      0.42
+     ]
+    },
+    {
+     "url": "/places/ranao-pilayan-falls__4.jpg",
+     "page": "https://www.proudmindanaoan.com/2018/04/the-breathtaking-ranao-pilayan-falls-in-upi-maguindanao.html",
+     "author": "Nanardx Navarro (Proud Mindanaoan)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1500,
+     "height": 1000,
+     "caption": "Ranao Pilayan Falls seen down the boulder-strewn stream, the cliff hung with ferns.",
+     "tone": [
+      34,
+      0.32
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Walk the short trail to the falls",
@@ -7575,15 +7857,45 @@
    "getting_there": null,
    "best_time": null,
    "colors": [
-    "#c1442e",
-    "#f0c75e",
-    "#2b7a99"
+    "#787351",
+    "#96857e",
+    "#40384e",
+    "#5a5232"
    ],
    "sources": [
     "https://nomadicexperiences.com/2018/04/places-to-visit-in-tawi-tawi.html",
     "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/bongao-bajau-village__1.jpg",
+     "page": "https://thesmartlocal.ph/tawi-tawi/",
+     "author": "@raphcocson (via TheSmartLocal)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "A plank footbridge between the stilt houses of the Bajau village in Bongao, the sea showing through the boards.",
+     "tone": [
+      36,
+      0.59
+     ]
+    },
+    {
+     "url": "/places/bongao-bajau-village__2.jpg",
+     "page": "https://thesmartlocal.ph/tawi-tawi/",
+     "author": "@cesbenitez (via TheSmartLocal)",
+     "license": "All rights reserved",
+     "license_url": null,
+     "width": 1080,
+     "height": 1314,
+     "caption": "A weaver at work on a mat of dyed pandan strips in the Bajau village in Bongao.",
+     "tone": [
+      355,
+      0.58
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Watch banig mats being woven",
@@ -7842,5 +8154,5 @@
    "eat": []
   }
  ],
- "notes": "44 places: the 21 from places.ts (summary, detail and before_you_go copied verbatim; kind, sources, images, getting_there and best_time added) and 23 new ones. Sulu is excluded throughout.\n\nSecurity: the UK FCDO advice (gov.uk, updated 15 July 2026) advises against all travel to western and central Mindanao and the Sulu archipelago, which covers all of BARMM. Every new entry carries that line in before_you_go. The 21 guide entries keep places.ts's before_you_go unchanged, so they do not carry it; the site may want to add it. The US State Department advisory page refused plain fetches (HTTP 403) and is not used.\n\nDoubts in places.ts worth checking: it calls the Cotabato Grand Mosque the largest in the Philippines, but Wikipedia now gives that title to the rebuilt Marawi Grand Mosque (20,000 capacity against 15,000). It puts Kawayan Torogan in Marantao; the 2018 PRECUP registry puts it in Pompongan-a-Marantao, a barangay of Marawi City, and the matter is unsettled. It calls Bud Bongao 314 m; Wikipedia gives 317 m for the view deck on Tambisan Peak. It dates Tamontaka Church to the 1870s; Wikipedia says 1872, moved to its present site in 1879, and rebuilt after the 1976 earthquake.\n\nMunicipality notes: Malamawi Island is in Isabela City (Region IX), as places.ts itself says. Basilan National Park is listed under Lamitan, but the park spans Isabela City, Lamitan, Tipo-Tipo and Sumisip. Fort Pikit is listed under Malidegao (SGA, created 2024).\n\nNo usable photo, so the entry has none: Aga Khan Museum, Tugaya, Kawayan Torogan, Ligawasan Marsh, Balobok Rock Shelter, Lake Butig, Sacred Mountain, Mount Minandar, Kusiong Beach, Masjid Taviran, Bongo Island, Maliga Walay, Kuhan Falls, Datu Kalun Shrine, Monte Santo Shrine.\n\nPhotos rejected: the Tugaya craft photos on Commons were taken at a trade fair at SM Megamall, not in Tugaya, and have no author. Liguasan Marsh from Mt. Akir Akir is 600px wide and taken from Cotabato province. Mount Makaturing's only photo has a named person as its subject. Sitangkai from Tumindao Channel has a navy machine gun filling the foreground. The Sitangkai water-taxi photo has a boatload of passengers as its subject. The Amaya Beach Resort photo shows a resort house, not Kusiong beach. Kutawato Cave 1 and 2 are small and uncategorised, so it cannot be confirmed they show Kutawato. Sights of Marawi (01) shows a smoke plume, not the ruins its caption describes. Nangi Upi 1 shows only a concrete road. Satellite images were left out. The Fort Pikit photos are public domain on Commons (NHCP) but carry an NHCP copyright watermark in the image.\n\nPlaces dropped for want of a text source beyond a Commons caption or a bare list entry: Biraddali Falls in Languyan (a Commons photo exists), Bongao public market and the Chinese Pier, Pahut beach, Sangay Siapo off Simunul (one blog only; it says the island is privately owned and being quarried for sand), Masjid Bacolod in Bacolod-Kalawi (its photo is used on Lake Lanao instead), the Marawi School of Living Traditions, the Balabagan spring, Rungkunan National Park, Mount Makaturing as its own entry, and the falls PhilAtlas lists by name only (Busay, Kanapnapan, Sifaran, Sumpitan, Rainbow). Kilantan and Bual springs, Boboguiron Falls and Mango Grove in Maguindanao del Sur are named in one Manila Times piece only. The SGA has only Fort Pikit; no other site there could be sourced.\n\nSources: MindaNews, the Tourism Promotions Board World Expo pages and travel.state.gov returned 403 to plain fetches and were not used. Mount Minandar's entry therefore rests only on Wikipedia. The Manila Times feature on Maguindanao del Sur (August 2026) was read through its Newswav copy. Colours are approximate dominant tones from 250px thumbnails of the first 1-2 photos."
+ "notes": "44 places: the 21 from places.ts (summary, detail and before_you_go copied verbatim; kind, sources, images, getting_there and best_time added) and 23 new ones. Sulu is excluded throughout.\n\nSecurity: the UK FCDO advice (gov.uk, updated 15 July 2026) advises against all travel to western and central Mindanao and the Sulu archipelago, which covers all of BARMM. Every new entry carries that line in before_you_go. The 21 guide entries keep places.ts's before_you_go unchanged, so they do not carry it; the site may want to add it. The US State Department advisory page refused plain fetches (HTTP 403) and is not used.\n\nDoubts in places.ts worth checking: it calls the Cotabato Grand Mosque the largest in the Philippines, but Wikipedia now gives that title to the rebuilt Marawi Grand Mosque (20,000 capacity against 15,000). It puts Kawayan Torogan in Marantao; the 2018 PRECUP registry puts it in Pompongan-a-Marantao, a barangay of Marawi City, and the matter is unsettled. It calls Bud Bongao 314 m; Wikipedia gives 317 m for the view deck on Tambisan Peak. It dates Tamontaka Church to the 1870s; Wikipedia says 1872, moved to its present site in 1879, and rebuilt after the 1976 earthquake.\n\nMunicipality notes: Malamawi Island is in Isabela City (Region IX), as places.ts itself says. Basilan National Park is listed under Lamitan, but the park spans Isabela City, Lamitan, Tipo-Tipo and Sumisip. Fort Pikit is listed under Malidegao (SGA, created 2024).\n\nNo usable photo yet, so the entry has none: Lake Butig, Pantuwaraya Lake National Park, Maradugao River, José Abad Santos execution site, Hashim and Mimbantas burial site, Maluso River, Bual Spring, Mado Hot Spring National Park, Kumalarang River, Punta Matangal, Takumi Butai Memorial Shrine, Salikata National Park, Rungkunan National Park. Photos rejected in the October 2026 pass: a TV frame of Bubuludtua with news banners over it (a cleaner frame was used instead); a waterfall on the Upi trails whose caption does not name it; the Maranao Collectibles founder weaving at an event venue rather than the centre; rafting photos not shown to be on the Maradugao; and the Commons photos of José Abad Santos markers, which are all in San Fernando, Pampanga, not Malabang.\n\nPhotos rejected: the Tugaya craft photos on Commons were taken at a trade fair at SM Megamall, not in Tugaya, and have no author. Liguasan Marsh from Mt. Akir Akir is 600px wide and taken from Cotabato province. Mount Makaturing's only photo has a named person as its subject. Sitangkai from Tumindao Channel has a navy machine gun filling the foreground. The Sitangkai water-taxi photo has a boatload of passengers as its subject. The Amaya Beach Resort photo shows a resort house, not Kusiong beach. Kutawato Cave 1 and 2 are small and uncategorised, so it cannot be confirmed they show Kutawato. Sights of Marawi (01) shows a smoke plume, not the ruins its caption describes. Nangi Upi 1 shows only a concrete road. Satellite images were left out. The Fort Pikit photos are public domain on Commons (NHCP) but carry an NHCP copyright watermark in the image.\n\nPlaces dropped for want of a text source beyond a Commons caption or a bare list entry: Biraddali Falls in Languyan (a Commons photo exists), Bongao public market and the Chinese Pier, Pahut beach, Sangay Siapo off Simunul (one blog only; it says the island is privately owned and being quarried for sand), Masjid Bacolod in Bacolod-Kalawi (its photo is used on Lake Lanao instead), the Marawi School of Living Traditions, the Balabagan spring, Rungkunan National Park, Mount Makaturing as its own entry, and the falls PhilAtlas lists by name only (Busay, Kanapnapan, Sifaran, Sumpitan, Rainbow). Kilantan and Bual springs, Boboguiron Falls and Mango Grove in Maguindanao del Sur are named in one Manila Times piece only. The SGA has only Fort Pikit; no other site there could be sourced.\n\nSources: MindaNews, the Tourism Promotions Board World Expo pages and travel.state.gov returned 403 to plain fetches and were not used. Mount Minandar's entry therefore rests only on Wikipedia. The Manila Times feature on Maguindanao del Sur (August 2026) was read through its Newswav copy. Colours are approximate dominant tones from 250px thumbnails of the first 1-2 photos."
 }
