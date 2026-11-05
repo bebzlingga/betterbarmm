@@ -11,7 +11,8 @@ import { type Explainer, type ExplainerCategory, getPublishedExplainer, listPubl
    one set, newest first, and a slug is looked up in the files first.
 
    An article's front matter: title, summary, category, tags (comma
-   separated), date (YYYY-MM-DD) and author.
+   separated), date (YYYY-MM-DD) and author; `status: draft` keeps it
+   off the site until it is ready.
    ============================================================ */
 
 export type Article = Explainer & { author?: string }
@@ -38,7 +39,7 @@ function parse(file: string): Article {
 		body: match[2]!.trim(),
 		category: (meta.category ?? 'general') as ExplainerCategory,
 		tags: (meta.tags ?? '').split(',').map((tag) => tag.trim()).filter(Boolean),
-		status: 'published',
+		status: meta.status === 'draft' ? 'draft' : 'published',
 		published_at: date,
 		created_at: date,
 		updated_at: date,
@@ -48,7 +49,7 @@ function parse(file: string): Article {
 
 function fileArticles(): Article[] {
 	try {
-		return fs.readdirSync(DIR).filter((file) => file.endsWith('.md')).map(parse)
+		return fs.readdirSync(DIR).filter((file) => file.endsWith('.md')).map(parse).filter((article) => article.status === 'published')
 	} catch {
 		return []
 	}
