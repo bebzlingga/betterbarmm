@@ -37,8 +37,7 @@ export default function LatestPage() {
 				align='left'
 				size='compact'
 				eyebrow={changes[0] ? `Newest step on record: ${LONG.format(at(changes[0].date))}` : 'Nothing recorded yet'}
-				title='What changed'
-				titleMuted='in Parliament.'
+				title='What changed in Parliament.'
 				description='Every step a bill or resolution took, and every act ratified, newest first. Follow it in a feed reader to hear of each new step.'
 			/>
 			<section className='bb-container py-[clamp(3rem,6vw,5rem)]'>
