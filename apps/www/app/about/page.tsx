@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { Masthead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
+import { projects, workspaces } from '../_lib/workspaces'
 
 export const metadata: Metadata = pageMeta({
 	title: 'About',
@@ -24,32 +25,11 @@ export const metadata: Metadata = pageMeta({
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 const LEAD = 'mt-3 max-w-[46rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'
 
-const workspaces = [
-	{
-		name: 'Election',
-		href: 'https://election.betterbarmm.com',
-		body: 'The Bangsamoro parliamentary election: the parties, the candidates in each district, the reserved seats, and the count.',
-	},
-	{
-		name: 'Legislation',
-		href: 'https://legislation.betterbarmm.com',
-		body: 'Every bill, autonomy act and resolution of the Bangsamoro Parliament, the stage each has reached, and the members who filed it.',
-	},
-	{
-		name: 'Budget',
-		href: 'https://budget.betterbarmm.com',
-		body: 'Each year’s Bangsamoro budget by sector, office, program and project, traced to the page of the act it was printed on.',
-	},
-	{
-		name: 'Local government',
-		href: 'https://lgu.betterbarmm.com',
-		body: 'Every province, city, town and barangay: who was elected, the money each receives, and what each has disclosed.',
-	},
-	{
-		name: 'Procurement',
-		href: 'https://procurement.betterbarmm.com',
-		body: 'Every bid notice a Bangsamoro office has posted on PhilGEPS, what it set out to buy and for how much, and who won the contract.',
-	},
+// The front page's lists, so a workspace or project added there is covered here too. Live ones only: a
+// page that is not open yet is not something the site covers.
+const covered = [
+	{ title: 'Workspaces', items: workspaces.filter((w) => w.state === 'live' && w.href) },
+	{ title: 'Projects', items: projects.filter((p) => p.state === 'live' && p.href) },
 ]
 
 const principles = [
@@ -122,23 +102,31 @@ export default function AboutPage() {
 			<section className='bg-[var(--paper-2)]'>
 				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 					<h2 className={H2}>What it covers</h2>
-					<p className={LEAD}>Five workspaces, each built around one part of the public record.</p>
-					<div className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
-						{workspaces.map((w) => (
-							<a
-								key={w.name}
-								href={w.href}
-								className='group flex flex-col bg-[var(--paper)] p-7 transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)]'
-							>
-								<h3 className='text-[1.15rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{w.name}</h3>
-								<p className='mt-3 flex-1 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{w.body}</p>
-								<span className='mt-6 inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--accent)]'>
-									Open
-									<ArrowUpRightIcon className='size-3.5 transition group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
-								</span>
-							</a>
-						))}
-					</div>
+					<p className={LEAD}>
+						{covered[0]!.items.length} workspaces, each built around one part of the public record, and{' '}
+						{covered[1]!.items.length} projects that each gather one kind of record into a page.
+					</p>
+					{covered.map((group) => (
+						<div key={group.title}>
+							<h3 className='bb-label mt-12'>{group.title}</h3>
+							<div className='mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
+								{group.items.map((w) => (
+									<a
+										key={w.label}
+										href={w.href}
+										className='group flex flex-col bg-[var(--paper)] p-7 transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)]'
+									>
+										<h4 className='text-[1.15rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{w.label}</h4>
+										<p className='mt-3 flex-1 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{w.blurb}</p>
+										<span className='mt-6 inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--accent)]'>
+											Open
+											<ArrowUpRightIcon className='size-3.5 transition group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
+										</span>
+									</a>
+								))}
+							</div>
+						</div>
+					))}
 				</div>
 			</section>
 
