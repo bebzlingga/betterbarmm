@@ -7,7 +7,7 @@ import { pageMeta } from '../_lib/seo'
 export const metadata: Metadata = pageMeta({
 	title: 'Development plan scorecard',
 	description:
-		'The targets of the 2nd Bangsamoro Development Plan 2023–2028 — poverty, jobs, the economy, schools, health, water, roads and peace — each beside the latest published figure and its source.',
+		'The targets of the 2nd Bangsamoro Development Plan 2023–2028 — poverty, jobs, farms, tourism, schools, health, housing, roads, forests and peace — each beside the latest published figure and its source.',
 	path: '/development-plan',
 })
 
@@ -39,7 +39,7 @@ function ProgressTrack({ indicator, status }: { indicator: Indicator; status: St
 	const p = progress(indicator)
 	const { baseline, target, unit, latest } = indicator
 	if (!p) {
-		const why = !target ? 'No target published, so there is nothing to measure progress toward.' : !indicator.comparable ? 'The target and the latest figure measure different things, so progress is not measured.' : 'No starting figure was published, so progress cannot be measured; the verdict on the left compares the latest figure with its target.'
+		const why = !target ? 'No target published.' : !indicator.comparable ? 'Target and figure measure different things.' : 'No starting figure published, so no progress to measure.'
 		return <p className='text-[0.8125rem] leading-[1.6] text-[var(--ink-3)]'>{why}</p>
 	}
 	const years = Array.from({ length: p.end.year - PLAN_START + 1 }, (_, i) => PLAN_START + i)
@@ -79,17 +79,18 @@ function ProgressTrack({ indicator, status }: { indicator: Indicator; status: St
 				))}
 			</div>
 
-			<dl className='mt-3 flex justify-between gap-4 text-[0.78125rem] leading-[1.45]'>
-				<div>
-					<dt className='text-[var(--ink-3)]'>Start</dt>
-					<dd className='font-semibold text-[var(--ink)]'>
-						{formatValue(baseline!.value, unit)} <span className='font-normal text-[var(--ink-3)]'>in {baseline!.year}</span>
+			{/* Each on one line (user decision): "Start: 7.9% in 2021", "Target: 10–12% by 2028". */}
+			<dl className='mt-3 flex flex-wrap justify-between gap-x-4 gap-y-1 text-[0.78125rem] leading-[1.45]'>
+				<div className='flex gap-1'>
+					<dt className='text-[var(--ink-3)]'>Start:</dt>
+					<dd className='text-[var(--ink-3)]'>
+						<span className='font-semibold text-[var(--ink)]'>{formatValue(baseline!.value, unit)}</span> in {baseline!.year}
 					</dd>
 				</div>
-				<div className='text-right'>
-					<dt className='text-[var(--ink-3)]'>Target</dt>
-					<dd className='font-semibold text-[var(--ink)]'>
-						{formatGoal(p.end, unit)} <span className='font-normal text-[var(--ink-3)]'>by {p.end.year}</span>
+				<div className='flex gap-1'>
+					<dt className='text-[var(--ink-3)]'>Target:</dt>
+					<dd className='text-[var(--ink-3)]'>
+						<span className='font-semibold text-[var(--ink)]'>{formatGoal(p.end, unit)}</span> by {p.end.year}
 					</dd>
 				</div>
 			</dl>
@@ -200,8 +201,8 @@ export default function DevelopmentPlanPage() {
 							<a href={plan.url} target='_blank' rel='noreferrer' className={linkClass}>
 								2nd Bangsamoro Development Plan 2023–2028
 							</a>{' '}
-							sets targets for poverty, jobs, the economy, schools, health, water, roads and peace. Each is set here beside the
-							latest figure published for it, with both sources a click away.
+							sets targets for every part of regional life: poverty and jobs, farms and tourism, schools and health, homes, roads,
+							forests and peace. Each is set here beside the latest figure published for it, with both sources a click away.
 						</p>
 					</div>
 

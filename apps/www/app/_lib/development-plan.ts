@@ -41,7 +41,24 @@ export const scorecardGaps = data.gaps
 export const indicators = data.indicators
 
 /** The areas in the order a resident reads them: money in the house first, then the economy around it. */
-export const AREAS = ['Poverty and income', 'Jobs', 'Economy', 'Education', 'Health', 'Water, sanitation and electricity', 'Roads', 'Peace and security', 'Governance'] as const
+export const AREAS = [
+	'Poverty and income',
+	'Jobs',
+	'Economy',
+	'Agriculture and food',
+	'Trade, industry and tourism',
+	'Education',
+	'Health',
+	'Social protection',
+	'Water, sanitation and electricity',
+	'Housing',
+	'Roads',
+	'Energy and connectivity',
+	'Environment and climate',
+	'Women, youth and culture',
+	'Peace and security',
+	'Government and finance',
+] as const
 
 export type Status = 'met' | 'short' | 'no-target' | 'not-compared'
 

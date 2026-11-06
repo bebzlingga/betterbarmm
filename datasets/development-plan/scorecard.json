@@ -1,6 +1,6 @@
 {
  "name": "Bangsamoro Development Plan scorecard",
- "note": "The targets the 2nd Bangsamoro Development Plan 2023–2028 sets, each beside the latest published figure. End-of-plan (2028) targets exist only for the economy, jobs and poverty; the plan’s sector targets sit in a Results Matrix BPDA has not published, so for those the latest annual target it reprinted (2024 or 2025) is used. Researched November 2026.",
+ "note": "The targets the 2nd Bangsamoro Development Plan 2023–2028 sets, each beside the latest published figure. End-of-plan (2028) targets exist only for the economy, jobs and poverty; the plan’s sector targets sit in a Results Matrix BPDA has not published, so for those the latest annual target it reprinted (2024 or 2025) is used. No sector has a published 2028 target. Researched November 2026.",
  "plan": {
   "title": "2nd Bangsamoro Development Plan (BDP) 2023-2028",
   "period": "2023–2028",
@@ -1305,7 +1305,7 @@
   },
   {
    "id": "sglg-lgus",
-   "area": "Governance",
+   "area": "Government and finance",
    "name": "LGUs awarded the Seal of Good Local Governance",
    "unit": "LGUs",
    "direction": "up",
@@ -1321,6 +1321,1134 @@
    "comparable": true,
    "note": "BDR 2024 Table 21 lists 'Number of LGUs conferred with SGLG' with a lone value of 27 whose column (target or actual) cannot be read from the layout.",
    "explain": "Provinces, cities and towns that won the national Seal of Good Local Governance."
+  },
+  {
+   "id": "agri-fishery-productivity-growth",
+   "area": "Agriculture and food",
+   "name": "Growth in farm and fishery productivity",
+   "explain": "How fast farms and fishponds are getting more output from the same land and effort, which decides whether farming families earn more each year.",
+   "unit": "%",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 3.51,
+    "high": 3.51,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.26; agency MAFAR)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 3.31,
+     "high": 3.31
+    },
+    {
+     "year": 2024,
+     "low": 3.41,
+     "high": 3.41
+    },
+    {
+     "year": 2025,
+     "low": 3.51,
+     "high": 3.51
+    }
+   ],
+   "latest": {
+    "value": 3.32,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.26; agency MAFAR)",
+    "note": "MAFAR. 2023: 3.93%.",
+    "elsewhere": "The 2024 progress report’s own text speaks of growth from 3.21% in 2023 to 3.93% in 2025, which its table contradicts; the table’s 2024 figure is shown."
+   },
+   "comparable": true,
+   "note": "Baseline printed as 3.21% with no year. The report's own text on the same page says productivity rose 'from 3.21 percent in 2023 to an impressive 3.93 percent in 2025', which contradicts its table (3.93% is in the 2023 accomplishment column, 3.32% in 2024). 2028 target unpublished."
+  },
+  {
+   "id": "seaweed-production",
+   "area": "Agriculture and food",
+   "name": "Seaweed production",
+   "explain": "How much seaweed the region harvests in a year; BARMM is the country's biggest producer and seaweed is the main income of many island families.",
+   "unit": "thousand tonnes",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 1500,
+    "high": 1500,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.27; agency MAFAR)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 1300,
+     "high": 1300
+    },
+    {
+     "year": 2024,
+     "low": 1400,
+     "high": 1400
+    },
+    {
+     "year": 2025,
+     "low": 1500,
+     "high": 1500
+    }
+   ],
+   "latest": {
+    "value": 933.837,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.27; agency MAFAR)",
+    "note": "MAFAR. 2023: 1,116."
+   },
+   "comparable": true,
+   "note": "Row printed as \"Seaweed ('000)\" under 'Production of Major Fisheries Commodities (MT)', so figures are thousand metric tonnes per year. Baseline printed as 1,200 with no year. Most seaweed comes from Tawi-Tawi and Sulu; the report does not say whether the 2024 figure still counts Sulu, which left BARMM after the September 2024 Supreme Court ruling. Annual production, not cumulative."
+  },
+  {
+   "id": "landless-farmers-made-landowners",
+   "area": "Agriculture and food",
+   "name": "Landless farmers who became small landowners",
+   "explain": "How many farmers who worked land they did not own were given their own land in the year, which gives them security and a reason to invest in it.",
+   "unit": "farmers",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 250,
+    "high": 250,
+    "text": "0.38% (250)",
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.27; agency MAFAR)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 165,
+     "high": 165
+    },
+    {
+     "year": 2024,
+     "low": 145,
+     "high": 145
+    },
+    {
+     "year": 2025,
+     "low": 250,
+     "high": 250
+    }
+   ],
+   "latest": {
+    "value": 300,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.27; agency MAFAR)",
+    "note": "MAFAR. Printed '0.46% (300)'. 2023: 0.25% (165)."
+   },
+   "comparable": true,
+   "note": "Indicator is printed as a percentage of a baseline of 65,710 landless farmers (2022), with the head-count in brackets: targets 0.25% (165), 0.22% (145), 0.38% (250). The counts are used here. Counts are per year, not cumulative."
+  },
+  {
+   "id": "farmers-adopting-new-technology",
+   "area": "Agriculture and food",
+   "name": "Trained farmers and fisherfolk who adopt new technology",
+   "explain": "Of the farmers and fishers trained in new methods, the share who actually use them afterwards, which shows whether the training changes how they work.",
+   "unit": "%",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 12,
+    "high": 12,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.27; agency MAFAR)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 10,
+     "high": 10
+    },
+    {
+     "year": 2024,
+     "low": 10,
+     "high": 10
+    },
+    {
+     "year": 2025,
+     "low": 12,
+     "high": 12
+    }
+   ],
+   "latest": {
+    "value": 20.41,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Agri-Fishery Productivity and Tenurial Security Improved)', p.27; agency MAFAR)",
+    "note": "MAFAR. 2023 printed as '18.56' with no % sign."
+   },
+   "comparable": true,
+   "note": "Share of farmers trained, not of all farmers. Baseline printed as 5% with no year."
+  },
+  {
+   "id": "tourist-arrivals",
+   "area": "Trade, industry and tourism",
+   "name": "Tourist arrivals",
+   "explain": "How many visitors came to the region in the year, which brings money to hotels, restaurants, transport and the people they employ.",
+   "unit": "tourists",
+   "direction": "up",
+   "baseline": {
+    "value": 394528,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.32; agency MTIT)"
+   },
+   "target": {
+    "low": 1070951,
+    "high": 1070951,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.32; agency MTIT)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 885084,
+     "high": 885084
+    },
+    {
+     "year": 2024,
+     "low": 973592,
+     "high": 973592
+    },
+    {
+     "year": 2025,
+     "low": 1070951,
+     "high": 1070951
+    }
+   ],
+   "latest": {
+    "value": 1268697,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.32; agency MTIT)",
+    "note": "MTIT. Same 2024 figure in the Midterm Update, printed p.129.",
+    "elsewhere": "The 2023 figure is printed as exactly that year’s target; the Midterm Update gives 857,621 for 2023. The 2024 figure shown is not in question."
+   },
+   "comparable": true,
+   "note": "Annual arrivals. The 2023 accomplishment is printed as 885,084, exactly the 2023 target; the Midterm Update (printed p.129, Figure 7.15) gives 857,621 for 2023. 2028 target unpublished."
+  },
+  {
+   "id": "tourist-receipts",
+   "area": "Trade, industry and tourism",
+   "name": "Money spent by tourists",
+   "explain": "How much visitors spent in the region in the year, the income that tourism actually brings to local businesses.",
+   "unit": "PHP",
+   "direction": "up",
+   "baseline": {
+    "value": 4927568000,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.32; agency MTIT)"
+   },
+   "target": {
+    "low": 13378765000,
+    "high": 13378765000,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.32; agency MTIT)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 11056836000,
+     "high": 11056836000
+    },
+    {
+     "year": 2024,
+     "low": 12162515500,
+     "high": 12162515500
+    },
+    {
+     "year": 2025,
+     "low": 13378765000,
+     "high": 13378765000
+    }
+   ],
+   "latest": {
+    "value": 22171748772,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.32; agency MTIT)",
+    "note": "MTIT. Midterm Update printed p.132 (Figure 7.18) gives the same 22,171,748,772."
+   },
+   "comparable": true,
+   "note": "Annual gross receipts in current pesos (not adjusted for inflation). The cells wrap across two lines in the PDF (e.g. '11,056,836,00' / '0'). The 2023 accomplishment (11,056,836,000) is identical to the 2023 target; the Midterm Update also gives Php 11.06 billion for 2023."
+  },
+  {
+   "id": "business-names-registered",
+   "area": "Trade, industry and tourism",
+   "name": "New business names registered",
+   "explain": "How many new businesses registered a name in the year, a rough count of people starting small enterprises.",
+   "unit": "businesses",
+   "direction": "up",
+   "baseline": {
+    "value": 10000,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.31; agency MTIT)"
+   },
+   "target": {
+    "low": 10000,
+    "high": 10000,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.31; agency MTIT)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 11000,
+     "high": 11000
+    },
+    {
+     "year": 2024,
+     "low": 11000,
+     "high": 11000
+    },
+    {
+     "year": 2025,
+     "low": 10000,
+     "high": 10000
+    }
+   ],
+   "latest": {
+    "value": 8150,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 3 'Results Matrices to Equitable, Competitive, and Robust Economy (Trade and Industry, Investments and Tourism in the BARMM increased and sustained)', p.31; agency MTIT)",
+    "note": "MTIT. 2023: 10,013."
+   },
+   "comparable": true,
+   "note": "Annual registrations. The 2025 target (10,000) is lower than the 2023 and 2024 targets (11,000) as printed."
+  },
+  {
+   "id": "jobs-from-investments",
+   "area": "Trade, industry and tourism",
+   "name": "Jobs generated by investments",
+   "explain": "How many jobs came from investments the Bangsamoro Board of Investments handled in the year, the work that new and growing businesses create.",
+   "unit": "jobs",
+   "direction": "up",
+   "baseline": {
+    "value": 2287,
+    "year": 2021,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency OCM-BBOI)"
+   },
+   "target": {
+    "low": 2300,
+    "high": 2300,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency OCM-BBOI)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 2300,
+     "high": 2300
+    },
+    {
+     "year": 2024,
+     "low": 2300,
+     "high": 2300
+    },
+    {
+     "year": 2025,
+     "low": 2300,
+     "high": 2300
+    }
+   ],
+   "latest": {
+    "value": 1865,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency OCM-BBOI)",
+    "note": "OCM-BBOI. 2023: 1,927."
+   },
+   "comparable": true,
+   "note": "Annual. The indicator 'Number of jobs/employments generated' has a second row for the Ministry of Labor and Employment (MOLE): baseline 5,600 (2021), targets 6,200 / 6,620 / 7,082 (2023-25), actual 5,842 (2023) and 5,707 (2024), also below target. The two rows are not added together here."
+  },
+  {
+   "id": "cooperatives-registered",
+   "area": "Trade, industry and tourism",
+   "name": "New cooperatives registered",
+   "explain": "How many new cooperatives were registered in the year; co-ops let farmers, vendors and workers pool money and sell together.",
+   "unit": "cooperatives",
+   "direction": "up",
+   "baseline": {
+    "value": 435,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency CSEA)"
+   },
+   "target": {
+    "low": 500,
+    "high": 500,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency CSEA)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 500,
+     "high": 500
+    },
+    {
+     "year": 2024,
+     "low": 500,
+     "high": 500
+    },
+    {
+     "year": 2025,
+     "low": 500,
+     "high": 500
+    }
+   ],
+   "latest": {
+    "value": 533,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/190uqy6GwZqXsyg0cq7zjSEOLM-65830g/view (2nd BDP Midterm Update, printed p.134 / PDF p.154; Figure 7.19 'Number of Cooperatives, by type, BARMM, 2023-2025', 'Registered, 2025'; source CSEA)",
+    "note": "CSEA. BDR 2024 Table 6 p.38: 669 (2023), 799 (2024)."
+   },
+   "comparable": true,
+   "note": "Annual new registrations: 669 + 799 + 533 = 2,001, matching the Midterm Update's '2,001 cooperatives registered between 2023 and 2025'. Only 1,390 (69.47%) of these held an active certificate of compliance (Midterm p.134). Above target every year."
+  },
+  {
+   "id": "ship-calls",
+   "area": "Energy and connectivity",
+   "name": "Ship calls at the region's ports",
+   "explain": "How many times ships docked at BARMM ports in the year, a sign of how well the islands and coast are linked for trade and travel.",
+   "unit": "ship calls",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 3188,
+    "high": 3188,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 8 'Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure', p.51; agency MOTC)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 3006,
+     "high": 3006
+    },
+    {
+     "year": 2024,
+     "low": 3106,
+     "high": 3106
+    },
+    {
+     "year": 2025,
+     "low": 3188,
+     "high": 3188
+    }
+   ],
+   "latest": {
+    "value": 3578,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 8 'Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure', p.51; agency MOTC)",
+    "note": "MOTC. 2023: 3,868."
+   },
+   "comparable": true,
+   "note": "Row 'No. of vessels/ ship calls increased'. Baseline printed as 2,892 with no year. Annual. The cargo-volume and passenger-traffic rows on p.50 were left out: their labels and numbers are misaligned in the printed table, so it is unclear which figures belong to which."
+  },
+  {
+   "id": "forestland-reforested",
+   "area": "Environment and climate",
+   "name": "Bare forestland replanted",
+   "explain": "How many hectares of cleared or bare forest land were replanted in the year; forests hold soil and water and reduce floods and landslides.",
+   "unit": "hectares",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 2642,
+    "high": 2642,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 19 '[untitled; environment and natural resources]', p.102; agency MENRE)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 2410,
+     "high": 2410
+    },
+    {
+     "year": 2024,
+     "low": 2642,
+     "high": 2642
+    },
+    {
+     "year": 2025,
+     "low": 2642,
+     "high": 2642
+    }
+   ],
+   "latest": {
+    "value": 2642,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 19 '[untitled; environment and natural resources]', p.102; agency MENRE)",
+    "note": "MENRE (no agency column in this table; 'Successful execution of IBGP'). 2023: 1,818.46.",
+    "elsewhere": "The plan’s Midterm Update gives 4,007 hectares replanted in 2024; its 2024 progress report prints 2,642, exactly the target, shown here."
+   },
+   "comparable": true,
+   "note": "The printed baseline (159,159 ha, 2015) is all the bare forestland there was, not a year’s planting, so it is left out. Baseline (159,159 ha, 2015) is the total area of open and denuded forestland, a stock; targets and actuals are hectares per year. The 2024 accomplishment is printed as exactly the target. The Midterm Update (printed p.318) gives different figures: 4,007 ha rehabilitated in 2024 and 2,431.44 ha in 2023 against an annual target of 3,183.18 ha."
+  },
+  {
+   "id": "protected-areas-managed",
+   "area": "Environment and climate",
+   "name": "Protected areas managed and maintained",
+   "explain": "How many of the region's protected nature areas were actively looked after in the year, keeping wildlife, watersheds and fishing grounds safe.",
+   "unit": "protected areas",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 7,
+    "high": 7,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 19 '[untitled; environment and natural resources]', p.102; agency MENRE)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 1,
+     "high": 1
+    },
+    {
+     "year": 2024,
+     "low": 7,
+     "high": 7
+    },
+    {
+     "year": 2025,
+     "low": 7,
+     "high": 7
+    }
+   ],
+   "latest": {
+    "value": 7,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 19 '[untitled; environment and natural resources]', p.102; agency MENRE)",
+    "note": "MENRE. 2023: 2."
+   },
+   "comparable": true,
+   "note": "The printed baseline (17, 2021) is how many protected areas exist, not how many were managed in a year, so it is left out. The baseline (17 protected areas, 2021) is the number that exist; targets and actuals appear to be how many were managed in each year, so the 2025 target is lower than the baseline. Not cumulative as far as the table shows."
+  },
+  {
+   "id": "lgus-sanitary-landfill",
+   "area": "Environment and climate",
+   "name": "Towns and cities with a working sanitary landfill",
+   "explain": "The share of local governments that dispose of garbage in a proper landfill instead of an open dump, which protects water and health.",
+   "unit": "%",
+   "direction": "up",
+   "baseline": {
+    "value": 1.68,
+    "year": 2021,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 19 '[untitled; environment and natural resources]', p.103; agency MENRE)"
+   },
+   "target": {
+    "low": 8.4,
+    "high": 8.4,
+    "text": "8.4% (10 LGUs)",
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 19 '[untitled; environment and natural resources]', p.103; agency MENRE)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 8.4,
+     "high": 8.4
+    },
+    {
+     "year": 2024,
+     "low": 25.21,
+     "high": 25.21
+    },
+    {
+     "year": 2025,
+     "low": 8.4,
+     "high": 8.4
+    }
+   ],
+   "latest": {
+    "value": 8.4,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 19 '[untitled; environment and natural resources]', p.103; agency MENRE)",
+    "note": "MENRE. Printed '8.4% (10 LGUs)'. 2023: 9.24% (11 LGUs)."
+   },
+   "comparable": true,
+   "note": "Baseline printed '1.68% (2 LGUs)'; targets '8.4% (10 LGUs)', '25.21% (30 LGUs)', '8.4% (10 LGUs)' (the 2025 target falls back below 2024's as printed). The percentages imply 119 LGUs; Sulu's 19 LGUs left BARMM after the September 2024 Supreme Court ruling, which changes the denominator from 2025."
+  },
+  {
+   "id": "flood-control-structures",
+   "area": "Environment and climate",
+   "name": "Flood-control structures built or repaired",
+   "explain": "How many dikes, floodwalls and drainage works were built or rehabilitated in the year to protect homes and farms from floods.",
+   "unit": "structures",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 97,
+    "high": 97,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 9 'Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure', p.53; agency MPW)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 89,
+     "high": 89
+    },
+    {
+     "year": 2024,
+     "low": 90,
+     "high": 90
+    },
+    {
+     "year": 2025,
+     "low": 97,
+     "high": 97
+    }
+   ],
+   "latest": {
+    "value": 87,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 9 'Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure', p.53; agency MPW)",
+    "note": "MPW (table has no agency column; Natural Disaster Management Program). 2023: 22. Risk column: 'Unpredictable weather conditions had delayed the implementation of projects'."
+   },
+   "comparable": true,
+   "note": "The printed baseline (378, 2022) counts every structure standing, not a year’s building, so it is left out. Baseline (378, 2022) is the existing stock; targets and actuals are per year. Slope/shore protection in the same table: targets 49 / 19 / 22, actual 14 (2023) and 34 (2024)."
+  },
+  {
+   "id": "crisis-individuals-assisted",
+   "area": "Social protection",
+   "name": "People in crisis given emergency assistance",
+   "explain": "How many people facing a sudden crisis, such as illness, death in the family or displacement, got help from the social services ministry in the year.",
+   "unit": "people",
+   "direction": "up",
+   "baseline": {
+    "value": 14000,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.83; agency MSSD-BARMM)"
+   },
+   "target": {
+    "low": 33800,
+    "high": 33800,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.83; agency MSSD-BARMM)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 20000,
+     "high": 20000
+    },
+    {
+     "year": 2024,
+     "low": 26000,
+     "high": 26000
+    },
+    {
+     "year": 2025,
+     "low": 33800,
+     "high": 33800
+    }
+   ],
+   "latest": {
+    "value": 34482,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.83; agency MSSD-BARMM)",
+    "note": "MSSD. 2023: 30,887."
+   },
+   "comparable": true,
+   "note": "Annual count of individuals. Above target both years."
+  },
+  {
+   "id": "marginalized-individuals-assisted",
+   "area": "Social protection",
+   "name": "Vulnerable people, including the displaced, given assistance",
+   "explain": "How many women, children, older people, people with disabilities, indigenous people and displaced people got help for their immediate needs in the year.",
+   "unit": "people",
+   "direction": "up",
+   "baseline": {
+    "value": 2840,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM)"
+   },
+   "target": {
+    "low": 126750,
+    "high": 126750,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 75000,
+     "high": 75000
+    },
+    {
+     "year": 2024,
+     "low": 97500,
+     "high": 97500
+    },
+    {
+     "year": 2025,
+     "low": 126750,
+     "high": 126750
+    }
+   ],
+   "latest": {
+    "value": 44591,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM)",
+    "note": "MSSD. 2023: 44,597."
+   },
+   "comparable": true,
+   "note": "Annual count of individuals. This is the plan's row that covers internally displaced persons; it does not report families separately. Targets rise 30% a year from a much lower baseline; the actual stayed flat at about 44,600, under half the target."
+  },
+  {
+   "id": "families-livelihood-support",
+   "area": "Social protection",
+   "name": "Poor families given help to improve their income",
+   "explain": "How many poor and vulnerable families got seed capital, livelihood or skills training and similar support in the year to raise their income.",
+   "unit": "families",
+   "direction": "up",
+   "baseline": {
+    "value": 21432,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM)"
+   },
+   "target": {
+    "low": 40658,
+    "high": 40658,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 28432,
+     "high": 28432
+    },
+    {
+     "year": 2024,
+     "low": 31275,
+     "high": 31275
+    },
+    {
+     "year": 2025,
+     "low": 40658,
+     "high": 40658
+    }
+   ],
+   "latest": {
+    "value": 50668,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM, MOLE-BARMM)",
+    "note": "MSSD and MOLE. 2023: 42,374."
+   },
+   "comparable": true,
+   "note": "Annual. The Midterm Update (printed p.227) gives a much broader count, 256,266 families receiving 'various social service interventions' in 2023-2024, which includes rice subsidies and family development sessions and is not the same measure."
+  },
+  {
+   "id": "housing-units-built",
+   "area": "Housing",
+   "name": "Housing units built",
+   "explain": "How many homes the Bangsamoro government's housing ministry finished in the year for families who lack decent shelter.",
+   "unit": "housing units",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 550,
+    "high": 550,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 1 [sic; housing table, numbered 1 in the report] 'Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure', p.61; agency MHSD)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 350,
+     "high": 350
+    },
+    {
+     "year": 2024,
+     "low": 1500,
+     "high": 1500
+    },
+    {
+     "year": 2025,
+     "low": 550,
+     "high": 550
+    }
+   ],
+   "latest": {
+    "value": 1250,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/190uqy6GwZqXsyg0cq7zjSEOLM-65830g/view (2nd BDP Midterm Update, printed p.289 / PDF p.309; '1,750 households received affordable housing'; MHSD)",
+    "note": "MHSD. The BDR 2024 table (p.61) prints 50 for 2023 and 50 for 2024.",
+    "elsewhere": "The plan’s 2024 progress report prints 50 units built in 2024; its Midterm Update reports 1,250 completed that year, shown here."
+   },
+   "comparable": true,
+   "note": "The two sources disagree. BDR 2024 prints accomplishments of 50 (2023) and 50 (2024). The Midterm Update says 207 units were awarded in 2023, 1,250 completed in 2024 and 450 more by November 2025: 1,907 completed, 1,750 awarded. The Midterm figure is used as the later report. Baseline printed as 257 with no year. Annual counts. MSSD separately turned over 274 shelters by October 2025 (Midterm p.227); MILF camp transformation plans 600 units in six camps (Midterm p.23)."
+  },
+  {
+   "id": "youth-work-opportunities",
+   "area": "Women, youth and culture",
+   "name": "Young people given access to work",
+   "explain": "How many in-school and out-of-school youth were connected to jobs, work programmes or employment in the year.",
+   "unit": "young people",
+   "direction": "up",
+   "baseline": {
+    "value": 1500,
+    "year": 2021,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency MOLE)"
+   },
+   "target": {
+    "low": 2395,
+    "high": 2395,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency MOLE)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 1980,
+     "high": 1980
+    },
+    {
+     "year": 2024,
+     "low": 2178,
+     "high": 2178
+    },
+    {
+     "year": 2025,
+     "low": 2395,
+     "high": 2395
+    }
+   ],
+   "latest": {
+    "value": 2000,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 6 'Results Matrices to Equitable, Competitive, and Robust Economy (Access to decent employment improved)', p.38; agency MOLE)",
+    "note": "MOLE. 2023: 4,000."
+   },
+   "comparable": true,
+   "note": "Annual. Both accomplishments are round numbers (4,000 and 2,000)."
+  },
+  {
+   "id": "women-early-warning",
+   "area": "Women, youth and culture",
+   "name": "Women active in community early-warning networks",
+   "explain": "How many women took part in local early-warning-and-response groups that spot and calm conflict before it turns violent.",
+   "unit": "women",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 160,
+    "high": 160,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.117; agency BWC)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 186,
+     "high": 186
+    },
+    {
+     "year": 2024,
+     "low": 150,
+     "high": 150
+    },
+    {
+     "year": 2025,
+     "low": 160,
+     "high": 160
+    }
+   ],
+   "latest": {
+    "value": 220,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.117; agency BWC)",
+    "note": "Bangsamoro Women Commission. 2023: 186."
+   },
+   "comparable": true,
+   "note": "No baseline printed. Annual. The 2024 and 2025 targets are lower than the 2023 target as printed."
+  },
+  {
+   "id": "women-orgs-capacitated",
+   "area": "Women, youth and culture",
+   "name": "Women's rights groups trained and taking part in development",
+   "explain": "How many women's rights organisations were trained and took part in community development work in the year.",
+   "unit": "organisations",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 209,
+    "high": 209,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 150,
+     "high": 150
+    },
+    {
+     "year": 2024,
+     "low": 195,
+     "high": 195
+    },
+    {
+     "year": 2025,
+     "low": 209,
+     "high": 209
+    }
+   ],
+   "latest": {
+    "value": 63,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 16 'Results Matrices to Inclusive, Responsive, and Quality Social Services', p.84; agency MSSD-BARMM, Bangsamoro Women Commission)",
+    "note": "MSSD and BWC. 2023: '-' (none reported)."
+   },
+   "comparable": true,
+   "note": "Baseline printed as 1,235 (2021), the same figure as the row above it (vulnerable individuals empowered), so it looks copied and is left out. Annual."
+  },
+  {
+   "id": "hajj-pilgrims-assisted",
+   "area": "Women, youth and culture",
+   "name": "Pilgrims helped to perform the Hajj",
+   "explain": "How many Bangsamoro pilgrims the regional government helped travel to and perform the Hajj in Mecca.",
+   "unit": "pilgrims",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 1000,
+    "high": 1000,
+    "text": null,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 18 '[untitled; culture and identity]', p.91; agency BPA)"
+   },
+   "interim": [
+    {
+     "year": 2024,
+     "low": 1000,
+     "high": 1000
+    }
+   ],
+   "latest": {
+    "value": 2200,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 18 '[untitled; culture and identity]', p.91; agency BPA)",
+    "note": "Bangsamoro Pilgrimage Authority (BPA), with MOTC. Text on the same page: 'supported over 2,200 pilgrims'."
+   },
+   "comparable": true,
+   "note": "Only a 2024 target is printed (no baseline, no 2023 or 2025 target). The Bangsamoro government takes over full Hajj administration from the 2026 season (Midterm Update, printed p.81)."
+  },
+  {
+   "id": "cultural-bearers-protected",
+   "area": "Women, youth and culture",
+   "name": "Traditional artists and culture bearers recognised and protected",
+   "explain": "How many keepers of Bangsamoro traditional arts, crafts and knowledge were formally recognised and supported in the year.",
+   "unit": "culture bearers",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 5,
+    "high": 5,
+    "text": null,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 18 '[untitled; culture and identity]', p.91; agency BCPCH)"
+   },
+   "interim": [
+    {
+     "year": 2024,
+     "low": 5,
+     "high": 5
+    }
+   ],
+   "latest": {
+    "value": 7,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 18 '[untitled; culture and identity]', p.91; agency BCPCH)",
+    "note": "BCPCH. Text: 'recognizing seven Bangsamoro cultural artists and artisans'."
+   },
+   "comparable": true,
+   "note": "Row 'No of cultural workers and bearers protected'. Baseline cells print '-' and '0'. Only a 2024 target. In the same table, cultural-heritage policies promulgated: target 10, actual 35 (2024)."
+  },
+  {
+   "id": "bills-enacted-share",
+   "area": "Government and finance",
+   "name": "Share of bills filed in Parliament that became law",
+   "explain": "Of the bills filed in the Bangsamoro Parliament, the share passed into law, a rough measure of how productive the legislature is.",
+   "unit": "%",
+   "direction": "up",
+   "baseline": null,
+   "target": {
+    "low": 15,
+    "high": 15,
+    "text": null,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 21 'Results Matrix to Stable, Just, and Accountable Bangsamoro Government', p.132)"
+   },
+   "interim": [
+    {
+     "year": 2024,
+     "low": 15,
+     "high": 15
+    }
+   ],
+   "latest": {
+    "value": 36.7,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 21 'Results Matrix to Stable, Just, and Accountable Bangsamoro Government', p.132)",
+    "note": "No implementing agency printed (Bangsamoro Transition Authority Parliament). Printed '36.70%'. 2023: 19.1%."
+   },
+   "comparable": true,
+   "note": "Only a 2024 target is printed. The table does not say whether the ratio is for the year or cumulative since filing. The matrix has no targets for own-source revenue or budget utilisation; the Midterm Update reports them (Table 5.2 local revenue 2020-2025, printed p.78; utilisation rates p.76) without plan targets."
+  },
+  {
+   "id": "vulnerable-combatants-supported",
+   "area": "Peace and security",
+   "name": "Former and vulnerable combatants helped to live peacefully",
+   "explain": "How many combatants and others at risk of joining armed groups got training, livelihood and other support in the year to settle into peaceful lives.",
+   "unit": "combatants",
+   "direction": "up",
+   "baseline": {
+    "value": 381,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.116; agency MPOS)"
+   },
+   "target": {
+    "low": 500,
+    "high": 500,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.116; agency MPOS)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 200,
+     "high": 200
+    },
+    {
+     "year": 2024,
+     "low": 400,
+     "high": 400
+    },
+    {
+     "year": 2025,
+     "low": 500,
+     "high": 500
+    }
+   ],
+   "latest": {
+    "value": 433,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.116; agency MPOS)",
+    "note": "Ministry of Public Order and Safety. 2023: 202."
+   },
+   "comparable": true,
+   "note": "Baseline column is headed 'Value (for the past 3 years) ** 2022'. A near-duplicate row on p.117 ('Former combatants, marginalized and vulnerable persons and communities transformed and empowered') has baseline 380, targets 200 each year, actual 203 and 433. Annual. MILF decommissioning is not in the matrix: 26,145 of the 40,000 combatants were decommissioned by 2024 (Midterm Update, printed p.262), a national-government process."
+  },
+  {
+   "id": "ewer-volunteers",
+   "area": "Peace and security",
+   "name": "Early-warning and response volunteers trained",
+   "explain": "How many community volunteers were trained to warn of and respond to brewing conflict or disaster in their area in the year.",
+   "unit": "volunteers",
+   "direction": "up",
+   "baseline": {
+    "value": 740,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.116; agency MPOS)"
+   },
+   "target": {
+    "low": 720,
+    "high": 720,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.116; agency MPOS)"
+   },
+   "interim": [
+    {
+     "year": 2024,
+     "low": 720,
+     "high": 720
+    },
+    {
+     "year": 2025,
+     "low": 720,
+     "high": 720
+    }
+   ],
+   "latest": {
+    "value": 619,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.116; agency MPOS)",
+    "note": "MPOS. 2023 printed as 24 against a target of '24 Activities'."
+   },
+   "comparable": true,
+   "note": "The 2023 target and actual are counted in activities, not volunteers, so 2023 is left out of the interim targets. The Midterm Update (printed p.262) says 3,101 EWER volunteers were trained in 2023-2025 in total."
+  },
+  {
+   "id": "hr-victims-legal-assistance",
+   "area": "Peace and security",
+   "name": "Human-rights victims given legal assistance",
+   "explain": "How many victims of human-rights violations got free legal help from the Bangsamoro Human Rights Commission in the year.",
+   "unit": "victims",
+   "direction": "up",
+   "baseline": {
+    "value": 441,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.117; agency BHRC)"
+   },
+   "target": {
+    "low": 2800,
+    "high": 2800,
+    "text": null,
+    "year": 2025,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.117; agency BHRC)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 1460,
+     "high": 1460
+    },
+    {
+     "year": 2024,
+     "low": 2100,
+     "high": 2100
+    },
+    {
+     "year": 2025,
+     "low": 2800,
+     "high": 2800
+    }
+   ],
+   "latest": {
+    "value": 1753,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Bangsamoro Development Report 2024, Table 20 'Result Matrix to Peaceful, Safe, and Resilient Bangsamoro Communities', p.117; agency BHRC)",
+    "note": "Bangsamoro Human Rights Commission. 2023: 2,445."
+   },
+   "comparable": true,
+   "note": "Annual. Baseline column is headed 'Value (for the past 3 years) ** 2022'."
   }
  ],
  "gaps": [
