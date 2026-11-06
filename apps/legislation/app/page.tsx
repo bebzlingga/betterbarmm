@@ -47,7 +47,7 @@ export default function HomePage() {
 	const countBillsWhere = (predicate: (status: string) => boolean) =>
 		bills.records.filter((record) => predicate(record.status.toLowerCase())).length
 
-	/* Mutually exclusive, in the order a bill travels them — a ring only tells
+	/* Mutually exclusive, in the order a bill travels them — the chart only tells
 	   the truth if the parts are exclusive and sum to the whole, so anything the
 	   registry records under a status we have not named lands in the last slice
 	   rather than quietly shrinking the total. */
@@ -102,7 +102,6 @@ export default function HomePage() {
 			: []),
 	]
 
-	const approvedShare = Math.round((approved / totalBills) * 100)
 
 	return (
 		<>
@@ -179,8 +178,6 @@ export default function HomePage() {
 						<BillFunnel
 							slices={funnel}
 							total={totalBills}
-							heroValue={`${approvedShare}%`}
-							heroLabel='approved on third reading'
 						/>
 					</div>
 				</Reveal>
