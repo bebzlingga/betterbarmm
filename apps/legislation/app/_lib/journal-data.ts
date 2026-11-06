@@ -109,3 +109,144 @@ export function measureLabel(measure: JournalMeasure | null): string {
 	if (measure.becameAct && measure.category === 'bills') parts.push(`→ BAA ${measure.becameAct}`)
 	return parts.join(' ') || 'Other business'
 }
+
+/* ============================================================
+   A measure's floor record
+
+   Every sitting that touched a measure, from the journals: what the plenary
+   did with it, the points raised on it, and the tally where one was stated.
+   Keyed by the measure's page on this site (measureHref), so a bill that
+   became an act is read on the act's page too.
+   ============================================================ */
+
+export type FloorEntry = {
+	journalKey: string
+	journalTitle: string
+	date: string
+	dates: string
+	kind: 'action' | 'point' | 'tally'
+	text: string
+	tally?: { yes: number; no: number; abstain: number }
+}
+
+export type NamedVote = {
+	date: string
+	stage: string
+	result: string
+	tally: { favor: number; against: number; abstained: number }
+	inFavor: string[]
+	against: string[]
+	abstained: string[]
+	journalTitle: string
+	journalUrl: string
+}
+
+const floorIndex = (() => {
+	const index = new Map<string, FloorEntry[]>()
+	const add = (href: string | undefined, entry: FloorEntry) => {
+		if (!href) return
+		const list = index.get(href) ?? []
+		if (!list.some((e) => e.journalKey === entry.journalKey && e.text === entry.text)) list.push(entry)
+		index.set(href, list)
+	}
+	for (const journal of journals) {
+		const base = { journalKey: journal.key, journalTitle: `Journal No. ${journal.number}`, date: journal.dates[0] ?? '', dates: journalDates(journal) }
+		for (const item of journal.items) add(measureHref(item.measure, journal.parliament), { ...base, kind: 'action', text: item.text })
+		for (const point of journal.points) add(measureHref(point.measure, journal.parliament), { ...base, kind: 'point', text: point.point })
+		for (const call of journal.rollCalls)
+			add(measureHref(call.measure, journal.parliament), {
+				...base,
+				kind: 'tally',
+				text: call.note ?? 'Nominal voting (roll call).',
+				tally: { yes: call.yes, no: call.no, abstain: call.abstain },
+			})
+	}
+	for (const list of index.values()) list.sort((a, b) => a.date.localeCompare(b.date))
+	return index
+})()
+
+/** Everything the published journals record about the measure at this page. */
+export const floorRecordFor = (href: string | undefined): FloorEntry[] => (href ? floorIndex.get(href) ?? [] : [])
+
+const namedVotes = (() => {
+	const file = FILE.replace(/sessions\.json$/, 'votes.json')
+	try {
+		type Raw = { measure: { became_act?: number | null }; vote: { date: string; stage: string; result: string; tally_as_stated: NamedVote['tally']; in_favor?: string[]; against?: string[]; abstained?: string[] }; journal?: { journal_title?: string; journal_url?: string } }
+		const raw = JSON.parse(fs.readFileSync(file, 'utf8')) as { votes: Raw[] }
+		const index = new Map<number, NamedVote[]>()
+		for (const v of raw.votes) {
+			if (!v.measure.became_act) continue
+			index.set(v.measure.became_act, [
+				...(index.get(v.measure.became_act) ?? []),
+				{
+					date: v.vote.date,
+					stage: v.vote.stage,
+					result: v.vote.result,
+					tally: v.vote.tally_as_stated,
+					inFavor: v.vote.in_favor ?? [],
+					against: v.vote.against ?? [],
+					abstained: v.vote.abstained ?? [],
+					journalTitle: v.journal?.journal_title ?? '',
+					journalUrl: v.journal?.journal_url ?? '',
+				},
+			])
+		}
+		return index
+	} catch {
+		return new Map<number, NamedVote[]>()
+	}
+})()
+
+/** The roll calls recorded by name on the bill that became this act. */
+export const namedVotesForAct = (act: number): NamedVote[] => namedVotes.get(act) ?? []
+
+/* ============================================================
+   Committee reports, by measure
+
+   datasets/bills/committee-reports.json: each report Parliament published,
+   read for the measure it covers, what the committee recommended, and what
+   it found or changed. Fills the years the journals don't reach.
+   ============================================================ */
+
+export type CommitteeReport = {
+	number: number
+	url: string
+	pdfUrl?: string
+	date?: string
+	committees: string[]
+	recommendation?: string
+	substituteBill?: number
+	points: string[]
+}
+
+const committeeReports = (() => {
+	const file = FILE.replace(/bangsamoro_registry\/journal\/sessions\.json$/, 'committee-reports.json')
+	const index = new Map<string, CommitteeReport[]>()
+	try {
+		type Raw = { number: number; url: string; pdf_url?: string | null; date_submitted?: string | null; committees?: string[]; measures?: { category: string; number: number }[]; recommendation?: string | null; substitute_bill?: number | null; points?: string[] }
+		const raw = JSON.parse(fs.readFileSync(file, 'utf8')) as { reports: Raw[] }
+		for (const r of raw.reports) {
+			const report: CommitteeReport = {
+				number: r.number,
+				url: r.url,
+				pdfUrl: r.pdf_url ?? undefined,
+				date: r.date_submitted ?? undefined,
+				committees: r.committees ?? [],
+				recommendation: r.recommendation ?? undefined,
+				substituteBill: r.substitute_bill ?? undefined,
+				points: r.points ?? [],
+			}
+			for (const m of r.measures ?? []) {
+				const key = `${m.category}-${m.number}`
+				index.set(key, [...(index.get(key) ?? []), report])
+			}
+		}
+	} catch {
+		// No reports read yet: the section simply doesn't appear.
+	}
+	return index
+})()
+
+/** The committee reports filed on a measure, oldest first. */
+export const committeeReportsFor = (category: string, number: number): CommitteeReport[] =>
+	[...(committeeReports.get(`${category}-${number}`) ?? [])].sort((a, b) => (a.date ?? '').localeCompare(b.date ?? ''))

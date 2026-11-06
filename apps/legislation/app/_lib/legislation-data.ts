@@ -1114,6 +1114,20 @@ function loadIndexedBills(
 		})
 }
 
+/** Sectors for each resolution (datasets/bills/resolution-subjects.json), tagged from its title and reading in the
+    bills' own vocabulary, so the sector filter works on resolutions too. Keyed "proposed-12", "adopted-34". */
+const resolutionSubjects = (() => {
+	const raw = readJson<{ resolutions?: { list?: string; number?: number; sectors?: unknown }[] }>(path.join(DATASET_ROOT, 'resolution-subjects.json'))
+	const index = new Map<string, Tag[]>()
+	for (const entry of raw?.resolutions ?? []) {
+		const tags = cleanArray(entry.sectors)
+			.filter((value) => classifyTag(value) === 'sector')
+			.map((value) => ({ value, label: sectorLabel(value) }))
+		if (tags.length && entry.list && typeof entry.number === 'number') index.set(`${entry.list}-${entry.number}`, tags)
+	}
+	return index
+})()
+
 function loadAdoptedResolutions(): LegislationRecord[] {
 	return readCollection<RegistryRecord>('resolutions/adopted', 'RES-')
 		.map((raw) => {
@@ -1127,7 +1141,8 @@ function loadAdoptedResolutions(): LegislationRecord[] {
 				clean(basic.official_title),
 			)
 			const status = describeStatus(clean(basic.current_status, 'Adopted'))
-			const { sectors, types } = splitTags(raw.impact?.impact_tags)
+			const split = splitTags(raw.impact?.impact_tags)
+			const types = split.types
 
 			// No captured resolution file names its authors — every one of them
 			// says the names are on the measure's own page, which hasn't been
@@ -1160,7 +1175,7 @@ function loadAdoptedResolutions(): LegislationRecord[] {
 				dateDisplay: formatDate(dateIso),
 				dateLabel: 'Adopted',
 				year: dateIso?.slice(0, 4) ?? 'Undated',
-				sectors,
+				sectors: split.sectors.length ? split.sectors : (resolutionSubjects.get(`adopted-${number}`) ?? []),
 				types,
 				authors,
 				principalAuthors,
@@ -1253,7 +1268,7 @@ function loadIndexedAdoptedResolutions(captured: Set<number>): LegislationRecord
 				dateLabel: 'Adopted',
 				year: measure.dateIso ? measure.dateIso.slice(0, 4) : 'Undated',
 				session: sessionLabel(measure.session) || undefined,
-				sectors: [],
+				sectors: resolutionSubjects.get(`adopted-${measure.number}`) ?? [],
 				types: [],
 				authors,
 				principalAuthors: measure.principalAuthors,
@@ -1282,7 +1297,11 @@ function loadIndexedAdoptedResolutions(captured: Set<number>): LegislationRecord
  */
 function loadProposedResolutions(): LegislationRecord[] {
 	return getOfficialMeasuresByCategory('proposed-resolutions').map((measure) => {
-		const status = describeStatus(measure.status)
+		// A few rows print a kind where the stage should be ("Simple Resolution"); the latest line of the
+		// measure's own history ("Deferred – 10/20/2026 (Resumption)") then says where it stands.
+		const listed = describeStatus(measure.status)
+		const latest = measure.history.at(-1)?.split(/\s+[–-]\s+/)[0]
+		const status = listed.short === 'Not captured' && latest ? describeStatus(latest) : listed
 		const officialTitle = clean(measure.title)
 
 		return withSearchText({
@@ -1304,7 +1323,7 @@ function loadProposedResolutions(): LegislationRecord[] {
 			dateLabel: 'Status as of',
 			year: measure.dateIso ? measure.dateIso.slice(0, 4) : 'Undated',
 			session: sessionLabel(measure.session) || undefined,
-			sectors: [],
+			sectors: resolutionSubjects.get(`proposed-${measure.number}`) ?? [],
 			types: [],
 			// The index keeps the two apart, unlike the adopted list.
 			authors: [...measure.principalAuthors, ...measure.coAuthors],

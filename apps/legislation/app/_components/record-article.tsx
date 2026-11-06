@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { statusToneClass, toPersonName } from '../_lib/labels'
 import type { LegislationRecord, MeasureReading } from '../_lib/legislation-data'
 import { JourneyList } from './journey'
+import { committeeReportsFor, floorRecordFor, namedVotesForAct, type CommitteeReport, type FloorEntry, type NamedVote } from '../_lib/journal-data'
+import { recordHref } from '../_lib/categories'
 
 type RecordArticleProps = {
 	record: LegislationRecord
@@ -90,7 +92,28 @@ function ReadingList({ label, items }: { label: string; items: string[] }) {
  * changes — and it names the documents it was read from, because an analysis
  * that doesn't show its sources is just an assertion.
  */
-function Reading({ reading }: { reading: MeasureReading }) {
+/** Dated journal entries, each linked to its journal page. */
+function FloorList({ entries }: { entries: FloorEntry[] }) {
+	return (
+		<ol className='grid gap-4'>
+			{entries.map((entry, index) => (
+				<li key={index} className='grid gap-1 sm:grid-cols-[9.5rem_minmax(0,1fr)] sm:gap-4'>
+					<Link href={`/journal/${entry.journalKey}`} className='text-[0.78125rem] font-semibold leading-5 text-[var(--ink-3)] hover:text-[var(--accent)]'>
+						{entry.dates}
+						<span className='block font-normal'>{entry.journalTitle}</span>
+					</Link>
+					<p className='copy text-[var(--ink-2)]'>{entry.text}</p>
+				</li>
+			))}
+		</ol>
+	)
+}
+
+function Reading({ reading, floor = [], named = [], reports = [] }: { reading: MeasureReading; floor?: FloorEntry[]; named?: NamedVote[]; reports?: CommitteeReport[] }) {
+	// Debate points from the journals, unless the reading already carries them (it was read from the same journals).
+	const said = reading.deliberation.length ? [] : floor.filter((entry) => entry.kind === 'point')
+	const actions = floor.filter((entry) => entry.kind === 'action')
+	const tallies = floor.filter((entry) => entry.kind === 'tally')
 	return (
 		<div className='space-y-9'>
 			<Section label='What this measure does'>
@@ -121,8 +144,39 @@ function Reading({ reading }: { reading: MeasureReading }) {
 
 			{/* Stated as an absence rather than left out: "no record" is itself a
 			    finding about how much of Parliament's debate is published. */}
+			{reports.length > 0 ? (
+				<Section label='In committee'>
+					<ol className='grid gap-6'>
+						{reports.map((report) => (
+							<li key={report.number}>
+								<p className='copy text-[var(--ink-2)]'>
+									<a href={report.pdfUrl ?? report.url} target='_blank' rel='noreferrer' className='font-medium text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+										Committee Report No. {report.number}
+									</a>
+									{report.committees.length ? `, ${report.committees.join(' and ')}` : ''}
+									{report.date ? `, ${new Date(`${report.date}T00:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}` : ''}
+									{report.recommendation ? `: recommended ${report.recommendation}${report.substituteBill ? ` (Bill ${report.substituteBill})` : ''}.` : '.'}
+								</p>
+								{report.points.length ? (
+									<ul className='mt-2 grid gap-1.5'>
+										{report.points.map((point, index) => (
+											<li key={index} className='flex gap-3 copy text-[var(--ink-2)]'>
+												<span aria-hidden='true' className='mt-[0.5rem] size-1 shrink-0 rounded-full bg-[var(--ink-mute)]' />
+												{point}
+											</li>
+										))}
+									</ul>
+								) : null}
+							</li>
+						))}
+					</ol>
+				</Section>
+			) : null}
+
 			<Section label='Raised during deliberations'>
-				{reading.deliberation.length > 0 ? (
+				{reading.deliberation.length > 0 || said.length > 0 ? (
+					<>
+					{reading.deliberation.length > 0 ? (
 					<ul className='grid gap-2'>
 						{reading.deliberation.map((point, index) => (
 							<li key={index} className='flex gap-3 copy text-[var(--ink-2)]'>
@@ -134,6 +188,14 @@ function Reading({ reading }: { reading: MeasureReading }) {
 							</li>
 						))}
 					</ul>
+					) : null}
+					{said.length > 0 ? <FloorList entries={said} /> : null}
+					</>
+				) : reports.length > 0 ? (
+					<p className='copy text-[var(--ink-3)]'>
+						No published record of the floor debate on this measure; what the committee found is above. Parliament&rsquo;s
+						journals cover sittings up to March 2023 only.
+					</p>
 				) : (
 					<p className='copy text-[var(--ink-3)]'>
 						No published record of the debate on this measure. Parliament&rsquo;s journals cover
@@ -141,6 +203,51 @@ function Reading({ reading }: { reading: MeasureReading }) {
 					</p>
 				)}
 			</Section>
+
+			{actions.length > 0 ? (
+				<Section label='On the floor'>
+					<FloorList entries={actions} />
+				</Section>
+			) : null}
+
+			{named.length > 0 || tallies.length > 0 ? (
+				<Section label='How it was voted'>
+					<div className='grid gap-5'>
+						{named.map((vote, index) => (
+							<div key={index}>
+								<p className='copy text-[var(--ink-2)]'>
+									<span className='font-medium text-[var(--ink)]'>{vote.stage}, {new Date(`${vote.date}T00:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}:</span>{' '}
+									{vote.result} by roll call, {vote.tally.favor} in favour, {vote.tally.against} against, {vote.tally.abstained} abstaining.
+								</p>
+								<details className='mt-2 text-[0.875rem] text-[var(--ink-2)]'>
+									<summary className='cursor-pointer font-medium text-[var(--accent)]'>Who voted how</summary>
+									{([['In favour', vote.inFavor], ['Against', vote.against], ['Abstained', vote.abstained]] as const)
+										.filter(([, names]) => names.length)
+										.map(([label, names]) => (
+											<p key={label} className='mt-2 leading-6'>
+												<span className='font-semibold text-[var(--ink)]'>{label} ({names.length}):</span> {names.join(', ')}
+											</p>
+										))}
+									<p className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>
+										From{' '}
+										<a href={vote.journalUrl} target='_blank' rel='noreferrer' className='rule-link'>
+											{vote.journalTitle || 'the journal'}
+										</a>
+										.
+									</p>
+								</details>
+							</div>
+						))}
+						{named.length === 0
+							? tallies.map((entry, index) => (
+									<p key={index} className='copy text-[var(--ink-2)]'>
+										<span className='font-medium text-[var(--ink)]'>{entry.dates}:</span> {entry.tally!.yes} in favour, {entry.tally!.no} against, {entry.tally!.abstain} abstaining. {entry.text}
+									</p>
+								))
+							: null}
+					</div>
+				</Section>
+			) : null}
 
 			{reading.insight ? (
 				<Section label='What to notice'>
@@ -310,7 +417,14 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 						    stands, so it leads the column. */}
 						<p className='copy text-[var(--ink-3)]'>{record.statusMeaning}</p>
 
-						{record.reading ? <Reading reading={record.reading} /> : null}
+						{record.reading ? (
+							<Reading
+								reading={record.reading}
+								floor={floorRecordFor(recordHref(record))}
+								named={record.category === 'acts' ? namedVotesForAct(record.number) : []}
+								reports={committeeReportsFor(record.category, record.number)}
+							/>
+						) : null}
 
 						{!hasReading && record.gist && lead !== record.gist ? (
 							<Section label='Plain-language analysis'>

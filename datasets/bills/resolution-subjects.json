@@ -1,0 +1,8455 @@
+{
+ "meta": {
+  "tagged": "2026-11-06",
+  "method": "Each resolution was tagged with 1 to 3 sectors from the bills' sector vocabulary by reading its official title and its plain-English reading in readings.json; commendations, condolences and congratulations are tagged by who or what is recognised, and [] means no sector fits. Statuses were checked against each resolution's own Parliament page where the index status renders as not captured.",
+  "statuses_checked": 2
+ },
+ "resolutions": [
+  {
+   "list": "proposed",
+   "number": 1,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 2,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 3,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 4,
+   "sectors": ["governance_civil_service", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 5,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 6,
+   "sectors": ["governance_civil_service", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 7,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 8,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 9,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 10,
+   "sectors": ["economy_trade_investment", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 11,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 12,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 13,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 14,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 15,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 16,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 17,
+   "sectors": ["governance_civil_service", "local_government", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 18,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 19,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 20,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 21,
+   "sectors": ["local_government", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 22,
+   "sectors": ["education", "women_children_social_welfare", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 23,
+   "sectors": ["infrastructure_transport", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 24,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 25,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 26,
+   "sectors": ["economy_trade_investment", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 27,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 28,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 29,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 30,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 31,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 32,
+   "sectors": ["elections_districting", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 33,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 34,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 35,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 36,
+   "sectors": ["indigenous_settlers", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 37,
+   "sectors": ["peace_security_justice", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 38,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 39,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 40,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 41,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 42,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 43,
+   "sectors": ["governance_civil_service", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 44,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 45,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 46,
+   "sectors": ["disaster_resilience", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 47,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 48,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 49,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 50,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 51,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 52,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 53,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 54,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 55,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 56,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 57,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 58,
+   "sectors": ["women_children_social_welfare", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 59,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 60,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 61,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 62,
+   "sectors": ["disaster_resilience", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 63,
+   "sectors": ["indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 64,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 65,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 66,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 67,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 68,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 69,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 70,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 71,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 72,
+   "sectors": ["health", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 73,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 74,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 75,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 76,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 77,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 78,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 79,
+   "sectors": ["women_children_social_welfare", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 80,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 81,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 82,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 83,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 84,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 85,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 86,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 87,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 88,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 89,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 90,
+   "sectors": ["disaster_resilience", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 91,
+   "sectors": ["environment_agriculture_fisheries", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 92,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 93,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 94,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 95,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 96,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 97,
+   "sectors": ["disaster_resilience", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 98,
+   "sectors": ["environment_agriculture_fisheries", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 99,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 100,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 101,
+   "sectors": ["disaster_resilience", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 102,
+   "sectors": ["disaster_resilience", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 103,
+   "sectors": ["islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 104,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 105,
+   "sectors": ["governance_civil_service", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 106,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 107,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 108,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 109,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 110,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 111,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 112,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 113,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 114,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 115,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 116,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 117,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 118,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 119,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 120,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 121,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 122,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 123,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 124,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 125,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 126,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 127,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 128,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 129,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 130,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 131,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 132,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 133,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 134,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 135,
+   "sectors": ["local_government", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 136,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 137,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 138,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 139,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 140,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 141,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 142,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 143,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 144,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 145,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 146,
+   "sectors": ["sports_youth", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 147,
+   "sectors": ["economy_trade_investment", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 148,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 149,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 150,
+   "sectors": ["indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 151,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 152,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 153,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 154,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 155,
+   "sectors": ["women_children_social_welfare", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 156,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 157,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 158,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 159,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 160,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 161,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 162,
+   "sectors": ["islamic_culture_heritage", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 163,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 164,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 165,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 166,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 167,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 168,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 169,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 170,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 171,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 172,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 173,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 174,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 175,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 176,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 177,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 178,
+   "sectors": ["local_government", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 179,
+   "sectors": ["health", "women_children_social_welfare", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 180,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 181,
+   "sectors": ["economy_trade_investment", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 182,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 183,
+   "sectors": ["health", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 184,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 185,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 186,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 187,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 188,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 189,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 190,
+   "sectors": ["islamic_culture_heritage", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 191,
+   "sectors": ["economy_trade_investment", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 192,
+   "sectors": ["islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 193,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 194,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 195,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 196,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 197,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 198,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 199,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 200,
+   "sectors": ["education", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 201,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 202,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 203,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 204,
+   "sectors": ["disaster_resilience", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 205,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 206,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 207,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 208,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 209,
+   "sectors": ["infrastructure_transport", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 210,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 211,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 212,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 213,
+   "sectors": ["infrastructure_transport", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 214,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 215,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 216,
+   "sectors": ["infrastructure_transport", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 217,
+   "sectors": ["infrastructure_transport", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 218,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 219,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 220,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 221,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 222,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 223,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 224,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 225,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 226,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 227,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 228,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 229,
+   "sectors": ["islamic_culture_heritage", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 230,
+   "sectors": ["peace_security_justice", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 231,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 232,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 233,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 234,
+   "sectors": ["local_government", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 235,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 236,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 237,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 238,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 239,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 240,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 241,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 242,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 243,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 244,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 245,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 246,
+   "sectors": ["islamic_culture_heritage", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 247,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 248,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 249,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 250,
+   "sectors": ["governance_civil_service", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 251,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 252,
+   "sectors": ["infrastructure_transport", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 253,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 254,
+   "sectors": ["infrastructure_transport", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 255,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 256,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 257,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 258,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 259,
+   "sectors": ["women_children_social_welfare", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 260,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 261,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 262,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 263,
+   "sectors": ["women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 264,
+   "sectors": ["infrastructure_transport", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 265,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 266,
+   "sectors": ["infrastructure_transport", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 267,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 268,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 269,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 270,
+   "sectors": ["islamic_culture_heritage", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 271,
+   "sectors": ["islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 272,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 273,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 274,
+   "sectors": ["local_government", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 275,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 276,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 277,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 278,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 279,
+   "sectors": ["disaster_resilience", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 280,
+   "sectors": ["health", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 281,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 282,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 283,
+   "sectors": ["environment_agriculture_fisheries", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 284,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 285,
+   "sectors": ["sports_youth", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 286,
+   "sectors": ["sports_youth", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 287,
+   "sectors": ["sports_youth", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 288,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 289,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 290,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 291,
+   "sectors": ["indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 292,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 293,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 294,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 295,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 296,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 297,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 298,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 299,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 300,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 301,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 302,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 303,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 304,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 305,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 306,
+   "sectors": ["indigenous_settlers", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 307,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 308,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 309,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 310,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 311,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 312,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 313,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 314,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 315,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 316,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 317,
+   "sectors": ["governance_civil_service", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 318,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 319,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 320,
+   "sectors": ["islamic_culture_heritage", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 321,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 322,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 323,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 324,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 325,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 326,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 327,
+   "sectors": ["governance_civil_service", "indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 328,
+   "sectors": ["education", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 329,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 330,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 331,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 332,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 333,
+   "sectors": ["education", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 334,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 335,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 336,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 337,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 338,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 339,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 340,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 341,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 342,
+   "sectors": ["environment_agriculture_fisheries", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 343,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 344,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 345,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 346,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 347,
+   "sectors": ["governance_civil_service", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 348,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 349,
+   "sectors": ["environment_agriculture_fisheries", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 350,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 351,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 352,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 353,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 354,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 355,
+   "sectors": ["environment_agriculture_fisheries", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 356,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 357,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 358,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 359,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 360,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 361,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 362,
+   "sectors": ["governance_civil_service", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 363,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 364,
+   "sectors": ["health", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 365,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 366,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 367,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 368,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 369,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 370,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 371,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 372,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 373,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 374,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 375,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 376,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 377,
+   "sectors": ["peace_security_justice", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 378,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 379,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 380,
+   "sectors": ["environment_agriculture_fisheries", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 381,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 382,
+   "sectors": ["infrastructure_transport", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 383,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 384,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 385,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 386,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 387,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 388,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 389,
+   "sectors": ["health", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 390,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 391,
+   "sectors": ["sports_youth", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 392,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 393,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 394,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 395,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 396,
+   "sectors": ["local_government", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 397,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 398,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 399,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 400,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 401,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 402,
+   "sectors": ["economy_trade_investment", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 403,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 404,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 405,
+   "sectors": ["environment_agriculture_fisheries", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 406,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 407,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 408,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 409,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 410,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 411,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 412,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 413,
+   "sectors": ["women_children_social_welfare", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 414,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 415,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 416,
+   "sectors": ["environment_agriculture_fisheries", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 417,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 418,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 419,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 420,
+   "sectors": ["local_government", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 421,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 422,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 423,
+   "sectors": ["health", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 424,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 425,
+   "sectors": ["women_children_social_welfare", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 426,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 427,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 428,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 429,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 430,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 431,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 432,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 433,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 434,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 435,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 436,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 437,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 438,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 439,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 440,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 441,
+   "sectors": ["disaster_resilience", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 442,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 443,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 444,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 445,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 446,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 447,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 448,
+   "sectors": ["infrastructure_transport", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 449,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 450,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 451,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 452,
+   "sectors": ["economy_trade_investment", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 453,
+   "sectors": ["education", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 454,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 455,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 456,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 457,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 458,
+   "sectors": ["education", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 459,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 460,
+   "sectors": ["education", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 461,
+   "sectors": ["education", "indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 462,
+   "sectors": ["education", "indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 463,
+   "sectors": ["indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 464,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 465,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 466,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 467,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 468,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 469,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 470,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 471,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 472,
+   "sectors": ["islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 473,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 474,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 475,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 476,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 477,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 478,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 479,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 480,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 481,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 482,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 483,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 484,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 485,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 486,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 487,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 488,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 489,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 490,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 491,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 492,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 493,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 494,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 495,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 496,
+   "sectors": ["economy_trade_investment", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 497,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 498,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 499,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 500,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 501,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 502,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 503,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 504,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 505,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 506,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 507,
+   "sectors": ["peace_security_justice", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 508,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 509,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 510,
+   "sectors": ["islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 511,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 512,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 513,
+   "sectors": ["peace_security_justice", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 514,
+   "sectors": ["peace_security_justice", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 515,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 516,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 517,
+   "sectors": ["peace_security_justice", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 518,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 519,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 520,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 521,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 522,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 523,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 524,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 525,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 526,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 527,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 528,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 529,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 530,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 531,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 532,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 533,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 534,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 535,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 536,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 537,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 538,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 539,
+   "sectors": ["islamic_culture_heritage", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 540,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 541,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 542,
+   "sectors": ["budget_appropriations", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 543,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 544,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 545,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 546,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 547,
+   "sectors": ["infrastructure_transport", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 548,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 549,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 550,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 551,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 552,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 553,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 554,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 555,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 556,
+   "sectors": ["elections_districting", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 557,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 558,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 559,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 560,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 561,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 562,
+   "sectors": ["economy_trade_investment", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 563,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 564,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 565,
+   "sectors": ["governance_civil_service", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 566,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 567,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 568,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 569,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 570,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 571,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 572,
+   "sectors": ["infrastructure_transport", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 573,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 574,
+   "sectors": ["women_children_social_welfare", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 575,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 576,
+   "sectors": ["disaster_resilience", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 577,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 578,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 579,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 580,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 581,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 582,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 583,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 584,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 585,
+   "sectors": ["women_children_social_welfare", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 586,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 587,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 588,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 589,
+   "sectors": ["health", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 590,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 591,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 592,
+   "sectors": ["governance_civil_service", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 593,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 594,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 595,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 596,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 597,
+   "sectors": ["economy_trade_investment", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 598,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 599,
+   "sectors": ["economy_trade_investment", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 600,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 601,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 602,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 603,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 604,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 605,
+   "sectors": ["women_children_social_welfare", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 606,
+   "sectors": ["women_children_social_welfare", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 607,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 608,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 609,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 610,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 611,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 612,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 613,
+   "sectors": ["sports_youth", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 614,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 615,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 616,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 617,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 618,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 619,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 620,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 621,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 622,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 623,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 624,
+   "sectors": ["education", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 625,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 626,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 627,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 628,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 629,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 630,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 631,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 632,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 633,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 634,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 635,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 636,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 637,
+   "sectors": ["local_government", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 638,
+   "sectors": ["budget_appropriations", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 639,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 640,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 641,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 642,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 643,
+   "sectors": ["indigenous_settlers", "islamic_culture_heritage", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 644,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 645,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 646,
+   "sectors": ["local_government", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 647,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 648,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 649,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 650,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 651,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 652,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 653,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 654,
+   "sectors": ["disaster_resilience", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 655,
+   "sectors": ["governance_civil_service", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 656,
+   "sectors": ["infrastructure_transport", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 657,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 658,
+   "sectors": ["indigenous_settlers", "women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 659,
+   "sectors": ["women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 660,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 661,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 662,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 663,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 664,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 665,
+   "sectors": ["disaster_resilience", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 666,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 667,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 668,
+   "sectors": ["peace_security_justice", "indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 669,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 670,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 671,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 672,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 673,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 674,
+   "sectors": ["disaster_resilience", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 675,
+   "sectors": ["islamic_culture_heritage", "indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 676,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 677,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 678,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 679,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 680,
+   "sectors": ["sports_youth", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 681,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 682,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 683,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 684,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 685,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 686,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 687,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 688,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 689,
+   "sectors": ["disaster_resilience", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 690,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 691,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 692,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 693,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 694,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 695,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 696,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 697,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 698,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 699,
+   "sectors": ["education", "sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 700,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 701,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 702,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 703,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 704,
+   "sectors": ["budget_appropriations", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 705,
+   "sectors": ["governance_civil_service", "health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 706,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 707,
+   "sectors": ["budget_appropriations", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 708,
+   "sectors": ["local_government", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 709,
+   "sectors": ["budget_appropriations", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 710,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 711,
+   "sectors": ["indigenous_settlers", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 712,
+   "sectors": ["indigenous_settlers", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 713,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 714,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 715,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 716,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 717,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 718,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 719,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 720,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 721,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 722,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 723,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 724,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 725,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 726,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 727,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 728,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 729,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 730,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 731,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 732,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 733,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 734,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 735,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 736,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 737,
+   "sectors": ["health", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 738,
+   "sectors": ["local_government", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 739,
+   "sectors": ["women_children_social_welfare", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 740,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 741,
+   "sectors": ["governance_civil_service", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 742,
+   "sectors": ["health", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 743,
+   "sectors": ["indigenous_settlers", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 744,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 745,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 746,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 747,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 748,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 749,
+   "sectors": ["local_government", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 750,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 751,
+   "sectors": ["economy_trade_investment", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 752,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 753,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 754,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 755,
+   "sectors": ["local_government", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 756,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 757,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 758,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 759,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 760,
+   "sectors": ["indigenous_settlers", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 761,
+   "sectors": ["indigenous_settlers", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 762,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 763,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 764,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 765,
+   "sectors": ["islamic_culture_heritage", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 766,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 767,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 768,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 769,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 770,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 771,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 772,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 773,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 774,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 775,
+   "sectors": ["governance_civil_service", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 776,
+   "sectors": ["islamic_culture_heritage", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 777,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 778,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 779,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 780,
+   "sectors": ["economy_trade_investment", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 785,
+   "sectors": ["women_children_social_welfare", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 786,
+   "sectors": ["women_children_social_welfare", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 787,
+   "sectors": ["infrastructure_transport", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 788,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 789,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 790,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 791,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 794,
+   "sectors": ["economy_trade_investment", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 795,
+   "sectors": ["economy_trade_investment", "education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 796,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 797,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 798,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 799,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 800,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 801,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 802,
+   "sectors": ["governance_civil_service", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 803,
+   "sectors": ["education", "women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 804,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 805,
+   "sectors": ["governance_civil_service", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 806,
+   "sectors": ["governance_civil_service", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 807,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 808,
+   "sectors": ["islamic_culture_heritage", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 809,
+   "sectors": ["islamic_culture_heritage", "women_children_social_welfare", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 810,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 811,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 812,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 813,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 814,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 815,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 816,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 817,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 818,
+   "sectors": ["infrastructure_transport", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 819,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 820,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 821,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 822,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 823,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 824,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 825,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 826,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 827,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 828,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 829,
+   "sectors": ["economy_trade_investment", "infrastructure_transport"],
+   "status": {
+    "label": "Simple Resolution",
+    "as_of": "2026-10-05",
+    "source": "https://parliament.bangsamoro.gov.ph/proposes-reso-22/a-resolution-urging-chief-minister-abdulraof-a-macacua-of-the-bangsamoro-autonomous-region-in-muslim-mindanao-to-undertake-immediate-fuel-supply-and-consumer-relief-measures-to-mitigate-the-impact-o-2/"
+   }
+  },
+  {
+   "list": "proposed",
+   "number": 830,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "proposed",
+   "number": 831,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 1,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 2,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 3,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 4,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 5,
+   "sectors": ["budget_appropriations", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 6,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 7,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 8,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 9,
+   "sectors": ["budget_appropriations", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 10,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 11,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 12,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 13,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 14,
+   "sectors": ["peace_security_justice", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 15,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 16,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 17,
+   "sectors": ["budget_appropriations", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 18,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 19,
+   "sectors": ["sports_youth", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 20,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 21,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 22,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 23,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 24,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 25,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 26,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 27,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 28,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 29,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 30,
+   "sectors": ["budget_appropriations", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 31,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 32,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 33,
+   "sectors": ["peace_security_justice", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 34,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 35,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 36,
+   "sectors": ["local_government", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 37,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 38,
+   "sectors": ["indigenous_settlers"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 39,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 40,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 41,
+   "sectors": ["disaster_resilience", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 42,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 43,
+   "sectors": ["women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 44,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 45,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 46,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 47,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 48,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 49,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 50,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 51,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 52,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 53,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 54,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 55,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 56,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 57,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 58,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 59,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 60,
+   "sectors": ["health", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 61,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 62,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 63,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 64,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 65,
+   "sectors": ["governance_civil_service", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 66,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 67,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 68,
+   "sectors": ["islamic_culture_heritage", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 69,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 70,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 71,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 72,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 73,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 74,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 75,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 76,
+   "sectors": ["health", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 77,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 78,
+   "sectors": ["economy_trade_investment", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 79,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 80,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 81,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 82,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 83,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 84,
+   "sectors": ["peace_security_justice", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 85,
+   "sectors": ["local_government", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 86,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 87,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 88,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 89,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 90,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 91,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 92,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 93,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 94,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 95,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 96,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 97,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 98,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 99,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 100,
+   "sectors": ["budget_appropriations", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 101,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 102,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 103,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 104,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 105,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 106,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 107,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 108,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 109,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 110,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 111,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 112,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 113,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 114,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 115,
+   "sectors": ["economy_trade_investment", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 116,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 117,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 118,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 119,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 120,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 121,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 122,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 123,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 124,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 125,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 126,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 127,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 128,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 129,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 130,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 131,
+   "sectors": ["islamic_culture_heritage", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 132,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 133,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 134,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 135,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 136,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 137,
+   "sectors": ["local_government", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 138,
+   "sectors": ["local_government", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 139,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 140,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 141,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 142,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 143,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 144,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 145,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 146,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 147,
+   "sectors": ["health", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 148,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 149,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 150,
+   "sectors": ["elections_districting", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 151,
+   "sectors": ["peace_security_justice", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 152,
+   "sectors": ["governance_civil_service", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 153,
+   "sectors": ["governance_civil_service", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 154,
+   "sectors": ["elections_districting", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 155,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 156,
+   "sectors": ["peace_security_justice", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 157,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 158,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 159,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 160,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 161,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 162,
+   "sectors": ["elections_districting", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 163,
+   "sectors": ["elections_districting", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 164,
+   "sectors": ["budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 165,
+   "sectors": ["islamic_culture_heritage", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 166,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 167,
+   "sectors": ["elections_districting", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 168,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 169,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 170,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 171,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 172,
+   "sectors": ["governance_civil_service", "sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 173,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 174,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 175,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 176,
+   "sectors": ["women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 177,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 178,
+   "sectors": ["health", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 179,
+   "sectors": ["disaster_resilience", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 180,
+   "sectors": ["indigenous_settlers", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 181,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 182,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 183,
+   "sectors": ["environment_agriculture_fisheries", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 184,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 185,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 186,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 187,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 188,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 189,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 190,
+   "sectors": ["islamic_culture_heritage", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 191,
+   "sectors": ["local_government", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 192,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 193,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 194,
+   "sectors": ["education", "sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 195,
+   "sectors": ["health", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 196,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 197,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 198,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 199,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 200,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 201,
+   "sectors": ["health", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 202,
+   "sectors": ["women_children_social_welfare", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 203,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 204,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 205,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 206,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 207,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 208,
+   "sectors": ["health", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 209,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 210,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 211,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 212,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 213,
+   "sectors": ["disaster_resilience", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 214,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 215,
+   "sectors": ["local_government", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 216,
+   "sectors": ["peace_security_justice", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 217,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 218,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 219,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 220,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 221,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 222,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 223,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 224,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 225,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 226,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 227,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 228,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 229,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 230,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 231,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 232,
+   "sectors": ["women_children_social_welfare", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 233,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 234,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 235,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 236,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 237,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 238,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 239,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 240,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 241,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 242,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 243,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 244,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 245,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 246,
+   "sectors": ["governance_civil_service", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 247,
+   "sectors": ["local_government", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 248,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 249,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 250,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 251,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 252,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 253,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 254,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 255,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 256,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 257,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 258,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 259,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 260,
+   "sectors": ["islamic_culture_heritage", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 261,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 262,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 263,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 264,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 265,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 266,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 267,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 268,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 269,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 270,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 271,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 272,
+   "sectors": ["elections_districting", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 273,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 274,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 275,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 276,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 277,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 278,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 279,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 280,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 281,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 282,
+   "sectors": ["disaster_resilience", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 283,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 284,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 285,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 286,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 287,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 288,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 289,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 290,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 291,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 292,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 293,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 294,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 295,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 296,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 297,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 298,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 299,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 300,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 301,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 302,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 303,
+   "sectors": ["economy_trade_investment", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 304,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 305,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 306,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 307,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 308,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 309,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 310,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 311,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 312,
+   "sectors": ["sports_youth", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 313,
+   "sectors": ["islamic_culture_heritage", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 314,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 315,
+   "sectors": ["islamic_culture_heritage", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 316,
+   "sectors": ["disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 317,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 318,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 319,
+   "sectors": ["economy_trade_investment", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 320,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 321,
+   "sectors": ["economy_trade_investment", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 322,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 323,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 324,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 325,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 326,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 327,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 328,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 329,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 330,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 331,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 332,
+   "sectors": ["infrastructure_transport", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 333,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 334,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 335,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 336,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 337,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 338,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 339,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 340,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 341,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 342,
+   "sectors": ["sports_youth", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 343,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 344,
+   "sectors": ["indigenous_settlers", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 345,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 346,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 347,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 348,
+   "sectors": ["sports_youth", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 349,
+   "sectors": ["sports_youth", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 350,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 351,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 352,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 353,
+   "sectors": ["economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 354,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 355,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 356,
+   "sectors": ["disaster_resilience", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 357,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 358,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 359,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 360,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 361,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 362,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 363,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 364,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 365,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 366,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 367,
+   "sectors": ["environment_agriculture_fisheries", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 368,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 369,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 370,
+   "sectors": ["environment_agriculture_fisheries", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 371,
+   "sectors": ["health", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 372,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 373,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 374,
+   "sectors": ["disaster_resilience", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 375,
+   "sectors": ["islamic_culture_heritage", "health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 376,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 377,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 378,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 379,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 380,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 381,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 382,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 383,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 384,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 385,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 386,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 387,
+   "sectors": ["peace_security_justice", "health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 388,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 389,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 390,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 391,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 392,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 393,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 394,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 395,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 396,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 397,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 398,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 399,
+   "sectors": ["environment_agriculture_fisheries", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 400,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 401,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 402,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 403,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 404,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 405,
+   "sectors": ["infrastructure_transport", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 406,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 407,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 408,
+   "sectors": ["health", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 409,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 410,
+   "sectors": [],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 411,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 412,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 413,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 414,
+   "sectors": ["economy_trade_investment", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 415,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 416,
+   "sectors": ["education", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 417,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 418,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 419,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 420,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 421,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 422,
+   "sectors": ["islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 423,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 424,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 425,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 426,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 427,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 428,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 429,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 430,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 431,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 432,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 433,
+   "sectors": ["peace_security_justice", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 434,
+   "sectors": ["peace_security_justice", "health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 435,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 436,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 437,
+   "sectors": ["islamic_culture_heritage", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 438,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 439,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 440,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 441,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 442,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 443,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 444,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 445,
+   "sectors": ["governance_civil_service", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 446,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 447,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 448,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 449,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 450,
+   "sectors": ["peace_security_justice", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 451,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 452,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 453,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 454,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 455,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 456,
+   "sectors": ["islamic_culture_heritage", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 457,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 458,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 459,
+   "sectors": ["health", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 460,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 461,
+   "sectors": ["islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 462,
+   "sectors": ["elections_districting", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 463,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 464,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 465,
+   "sectors": ["infrastructure_transport", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 466,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 467,
+   "sectors": ["women_children_social_welfare", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 468,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 469,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 470,
+   "sectors": ["economy_trade_investment", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 471,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 472,
+   "sectors": ["peace_security_justice", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 473,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 474,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 475,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 476,
+   "sectors": ["disaster_resilience", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 477,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 478,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 479,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 480,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 481,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 482,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 483,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 484,
+   "sectors": ["peace_security_justice", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 485,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 486,
+   "sectors": ["sports_youth"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 487,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 488,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 489,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 490,
+   "sectors": ["governance_civil_service", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 491,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 492,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 493,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 494,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 495,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 496,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 497,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 498,
+   "sectors": ["women_children_social_welfare", "health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 499,
+   "sectors": ["local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 500,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 501,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 502,
+   "sectors": ["education", "women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 503,
+   "sectors": ["education", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 504,
+   "sectors": ["infrastructure_transport", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 505,
+   "sectors": ["governance_civil_service", "elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 506,
+   "sectors": ["education", "women_children_social_welfare", "health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 507,
+   "sectors": ["local_government", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 508,
+   "sectors": ["elections_districting"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 509,
+   "sectors": ["environment_agriculture_fisheries", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 510,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 511,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 512,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 513,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 514,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 515,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 516,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 517,
+   "sectors": ["education", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 518,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 519,
+   "sectors": ["infrastructure_transport", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 520,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 521,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 522,
+   "sectors": ["sports_youth", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 523,
+   "sectors": ["governance_civil_service", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 524,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 525,
+   "sectors": ["environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 526,
+   "sectors": ["infrastructure_transport", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 527,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 528,
+   "sectors": ["peace_security_justice", "islamic_culture_heritage"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 529,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 530,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 531,
+   "sectors": ["peace_security_justice", "education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 532,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 533,
+   "sectors": ["education", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 534,
+   "sectors": ["education"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 535,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 536,
+   "sectors": ["women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 537,
+   "sectors": ["governance_civil_service", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 538,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 539,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 540,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 541,
+   "sectors": ["islamic_culture_heritage", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 542,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 543,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 544,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 545,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 546,
+   "sectors": ["budget_appropriations", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 547,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 548,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 549,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 550,
+   "sectors": ["health", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 551,
+   "sectors": ["health"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 552,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 553,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 554,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 555,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 556,
+   "sectors": ["women_children_social_welfare", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 557,
+   "sectors": ["women_children_social_welfare"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 558,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 559,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 560,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 561,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 562,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 563,
+   "sectors": ["elections_districting", "peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 564,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 565,
+   "sectors": ["economy_trade_investment", "environment_agriculture_fisheries"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 566,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 567,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 568,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 569,
+   "sectors": ["governance_civil_service", "budget_appropriations"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 570,
+   "sectors": ["governance_civil_service", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 571,
+   "sectors": ["local_government", "disaster_resilience"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 572,
+   "sectors": ["environment_agriculture_fisheries", "infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 573,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 574,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 575,
+   "sectors": ["islamic_culture_heritage", "women_children_social_welfare", "economy_trade_investment"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 576,
+   "sectors": ["education", "governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 577,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 578,
+   "sectors": ["governance_civil_service"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 579,
+   "sectors": ["peace_security_justice"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 580,
+   "sectors": ["infrastructure_transport"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 581,
+   "sectors": ["health", "local_government"],
+   "status": null
+  },
+  {
+   "list": "adopted",
+   "number": 582,
+   "sectors": ["elections_districting"],
+   "status": null
+  }
+ ]
+}
