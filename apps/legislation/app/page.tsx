@@ -6,11 +6,10 @@ import { DidYouKnow } from './_components/did-you-know'
 import { MemberPayFigures } from './_components/member-pay'
 import { PageHeader } from './_components/page-header'
 import { Reveal } from './_components/reveal'
-import { StatBand } from './_components/stat-band'
 import { getChanges, stageTone } from './_lib/changes'
 import { statusToneClass } from './_lib/labels'
 import { getCategoryCounts, getDataset } from './_lib/legislation-data'
-import { getOfficialMeasuresByCategory, getOfficialMeasuresMeta, type OfficialMeasure } from './_lib/official-measures'
+import { getOfficialMeasuresByCategory, type OfficialMeasure } from './_lib/official-measures'
 
 /** The seat-cost section, held back until it is ready to run again. */
 const SHOW_SEAT_COST = false
@@ -22,10 +21,6 @@ export default function HomePage() {
 	const counts = getCategoryCounts()
 	const bills = getDataset('bills')
 
-	// The four measure indexes Parliament counts. `resolutions` is adopted and
-	// proposed together, and journals are not measures, so neither is added in.
-	const totalRecords =
-		counts.acts + counts.bills + counts['adopted-resolutions'] + counts['proposed-resolutions']
 	const codes = getDataset('acts').records.filter((record) => record.types.some((type) => type.value === 'priority_code'))
 	const priorityCodes = codes.length
 	// "Bangsamoro Civil Service Code of 2021" → "Civil Service", "Indigenous Peoples' Act of 2024" → "Indigenous Peoples", oldest first.
@@ -122,15 +117,9 @@ export default function HomePage() {
 				title='Every law the region has made,'
 				titleMuted='in words you already know.'
 				description='The Bangsamoro Parliament publishes its record across six separate archives. This puts them in one place — searchable, filterable, and written in language you do not need a law degree to read.'
-				meta={`${totalRecords.toLocaleString()} records / checked against Parliament ${getOfficialMeasuresMeta().generatedAt}`}
-			/>
-
-			<LatestUpdates />
-
-			<StatBand
 				// The same five figures, in the same order, as Parliament's own
 				// homepage, so the two can be read against each other.
-				stats={[
+				figures={[
 					{
 						label: 'Bangsamoro Autonomy Acts',
 						value: counts.acts.toLocaleString(),
@@ -164,6 +153,8 @@ export default function HomePage() {
 					},
 				]}
 			/>
+
+			<LatestUpdates />
 
 			{/* ---- Where the bills are ----
 			     The claim centerd over the picture, the legend wrapped around it, and
@@ -298,14 +289,19 @@ function LatestUpdates() {
 	if (!changes.length) return null
 	const date = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
 	return (
-		<section className='bb-container pt-10'>
-			<div className='flex items-baseline justify-between gap-4'>
-				<h2 className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>Latest updates</h2>
-				<Link href='/latest' className='text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
-					See all →
-				</Link>
-			</div>
-			<ol className='mt-3 divide-y divide-[var(--rule)] border-y border-[var(--rule)]'>
+		<section>
+		<div className='bb-container py-[clamp(3rem,6vw,5rem)]'>
+			<SectionHead
+				eyebrow='Latest updates'
+				title='What changed in Parliament.'
+				size='sm'
+				aside={
+					<Link href='/latest' className='text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+						See all →
+					</Link>
+				}
+			/>
+			<ol className='mt-8 divide-y divide-[var(--rule)] border-y border-[var(--rule)]'>
 				{changes.map((change, i) => (
 					<li key={i} className='grid gap-1 py-3 sm:grid-cols-[9.5rem_minmax(0,18rem)_minmax(0,1fr)] sm:items-center sm:gap-5'>
 						<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{date.format(new Date(`${change.date}T00:00:00Z`))}</span>
@@ -326,6 +322,7 @@ function LatestUpdates() {
 					</li>
 				))}
 			</ol>
+		</div>
 		</section>
 	)
 }

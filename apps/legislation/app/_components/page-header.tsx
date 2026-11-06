@@ -18,7 +18,7 @@ type PageHeaderProps = {
 	 * Headline figures, set inside the masthead under the sentence that
 	 * introduces them rather than in a band of their own below it. A page whose
 	 * whole subject is a set of counts wants them read as part of the opening
-	 * claim; a page that merely has counts is better served by `StatBand`.
+	 * claim.
 	 */
 	figures?: Stat[]
 	meta?: string
@@ -163,7 +163,7 @@ export function PageHeader({
 					    they read as a summary of something that has already finished. */}
 					{figures?.length ? (
 						<Rise delay={0.4} distance={14}>
-							<div className='mt-12 border-t border-[var(--brass-line)] pt-9'>
+							<div className='mt-12'>
 								<StatFigures stats={figures} />
 							</div>
 						</Rise>

@@ -88,21 +88,3 @@ export function StatFigures({ stats }: { stats: Stat[] }) {
 		</Stagger>
 	)
 }
-
-/**
- * The figures as a band of their own, between a masthead and the page.
- */
-export function StatBand({ stats }: { stats: Stat[] }) {
-	return (
-		// The band carries the page's own section rhythm above it, and now closes
-		// on a rule (user decision). The padding under the figures is its own
-		// rather than the next section's: a hairline needs clearance from the
-		// caption above it, and a rule drawn at the old zero-padding edge would
-		// have sat on the descenders. It is a step short of the rhythm above so
-		// the band still reads as one block with its heading rather than as two
-		// evenly spaced rows.
-		<section className='bb-container py-10'>
-			<StatFigures stats={stats} />
-		</section>
-	)
-}
