@@ -189,53 +189,48 @@ export default function DevelopmentPlanPage() {
 					)
 				})}
 
-				<div className='mt-16 grid gap-4 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)] lg:grid-cols-2 lg:gap-12'>
-					<div>
-						<p className='font-semibold text-[var(--ink-2)]'>How this is judged</p>
-						<p className='mt-1'>
-							{scorecardNote} A figure is judged against the target for its own year where the plan set one, and against the end target
-							otherwise; “met” means it has reached the target, not that it will stay there. Figures are as published, with their own
-							definitions: several changed during the plan, and Sulu left the region in 2024, so a later figure may cover fewer
-							provinces than the start.
-						</p>
-					</div>
-					<div>
-						<p className='font-semibold text-[var(--ink-2)]'>The documents</p>
-						<ul className='mt-1 space-y-1'>
-							<li>
-								<a href={plan.url} target='_blank' rel='noreferrer' className={linkClass}>
-									{plan.title}
+				{/* One column, full width (user decision); the documents as a grid of cards. */}
+				<div className='mt-16 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
+					<p className='font-semibold text-[var(--ink-2)]'>How this is judged</p>
+					<p className='mt-1'>
+						{scorecardNote} A figure is judged against the target for its own year where the plan set one, and against the end target
+						otherwise; “met” means it has reached the target, not that it will stay there. Figures are as published, with their own
+						definitions: several changed during the plan, and Sulu left the region in 2024, so a later figure may cover fewer
+						provinces than the start.
+					</p>
+
+					<p className='mt-10 font-semibold text-[var(--ink-2)]'>The documents</p>
+					<ul className='mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+						{[
+							{ kind: 'The plan', title: plan.title, url: plan.url },
+							{ kind: 'Midterm update', title: plan.midterm_update.title, url: plan.midterm_update.url },
+							...plan.progress_reports.map((report) => ({ kind: 'Progress report', title: report.title, url: report.url })),
+						].map((doc) => (
+							<li key={doc.url}>
+								<a href={doc.url} target='_blank' rel='noreferrer' className='group flex h-full flex-col border border-[var(--rule)] p-4 transition hover:border-[var(--accent)]'>
+									<span className='font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>{doc.kind}</span>
+									<span className='mt-2 flex-1 text-[0.875rem] font-semibold leading-snug text-[var(--ink)] group-hover:text-[var(--accent)]'>{doc.title}</span>
+									<span className='mt-3 text-[0.75rem] font-semibold text-[var(--ink-3)] group-hover:text-[var(--accent)]'>Open ↗</span>
 								</a>
 							</li>
-							<li>
-								<a href={plan.midterm_update.url} target='_blank' rel='noreferrer' className={linkClass}>
-									{plan.midterm_update.title}
-								</a>
-							</li>
-							{plan.progress_reports.map((report) => (
-								<li key={report.url}>
-									<a href={report.url} target='_blank' rel='noreferrer' className={linkClass}>
-										{report.title}
-									</a>
-								</li>
+						))}
+					</ul>
+					<p className='mt-3'>
+						All listed on BPDA’s{' '}
+						<a href={plan.listing_url} target='_blank' rel='noreferrer' className={linkClass}>
+							Knowledge Portal
+						</a>
+						.
+					</p>
+
+					<details className='mt-6'>
+						<summary className='cursor-pointer font-semibold text-[var(--ink-2)] hover:text-[var(--accent)]'>What is missing</summary>
+						<ul className='mt-2 list-disc space-y-1 pl-5'>
+							{scorecardGaps.map((gap) => (
+								<li key={gap.slice(0, 40)}>{gap}</li>
 							))}
-							<li>
-								Listed on BPDA’s{' '}
-								<a href={plan.listing_url} target='_blank' rel='noreferrer' className={linkClass}>
-									Knowledge Portal
-								</a>
-								.
-							</li>
 						</ul>
-						<details className='mt-3'>
-							<summary className='cursor-pointer font-semibold text-[var(--ink-2)] hover:text-[var(--accent)]'>What is missing</summary>
-							<ul className='mt-2 list-disc space-y-1 pl-5'>
-								{scorecardGaps.map((gap) => (
-									<li key={gap.slice(0, 40)}>{gap}</li>
-								))}
-							</ul>
-						</details>
-					</div>
+					</details>
 				</div>
 			</section>
 			<GetInvolved />
