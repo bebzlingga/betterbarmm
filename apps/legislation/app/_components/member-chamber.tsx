@@ -21,7 +21,7 @@ export function MemberChamber({ record, name }: { record: ChamberRecord; name: s
 	return (
 		<section className='mt-16 border-t border-[var(--rule)] pt-12'>
 			<h2 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>In the chamber</h2>
-			<p className='mt-2 max-w-[46rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
+			<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-3)]'>
 				From the plenary journals Parliament has published, which stop in March 2023. A sitting counts as present when the journal&rsquo;s roll call does not
 				list {name} as absent or on leave. Members who also run a ministry are often away on its business; the journals list that as absent unless the
 				member asked to be excused.
