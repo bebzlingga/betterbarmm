@@ -103,7 +103,7 @@ function Row({ indicator }: { indicator: Indicator }) {
 	const { latest, baseline, target, unit } = indicator
 	const gap = gapText(indicator, status, against)
 	return (
-		<li className='grid gap-6 border-b border-[var(--rule)] py-7 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-14'>
+		<li className='grid gap-6 border-b border-[var(--rule)] py-7 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-24 xl:gap-32'>
 			<div>
 				<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
 					<h3 className='text-[1.0625rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{indicator.name}</h3>
