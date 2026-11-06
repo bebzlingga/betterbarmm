@@ -10,12 +10,11 @@ import { photo } from './_components/discover-media'
 import { lguCounts, lguData, lguProvinces } from '@betterbarmm/lgu-data'
 import { SectionHead } from './_components/masthead'
 import { SiteHeader } from './_components/site-header'
-import { WorkspaceList } from './_components/workspace-index'
-import { ExplainerCard } from './_components/explainer-card'
+import { Directory } from './_components/directory'
+import { ExplainerFeature } from './_components/explainer-card'
 import { GetInvolved } from './_components/get-involved'
 import { listExplainers } from './_lib/explainers'
 import { projects, workspaces } from './_lib/workspaces'
-import { ProjectList } from './_components/project-list'
 
 export const metadata: Metadata = {
 	alternates: { canonical: '/' },
@@ -190,59 +189,40 @@ export default async function HomePage() {
 			{/* ---- The names ---- */}
 			<DiscoverMarquee items={principlesBand} duration={50} />
 
-			{/* ---- The workspaces ----
+			{/* ---- The directory ----
 
-			    Compact: the live ones as slim rows and the rest as a line of names. The
-			    full cards took a screen and a half to say five things. */}
-			<section id='workspaces' className='bb-container scroll-mt-20 py-20 lg:py-24'>
-				<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
-					<h2 className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
-						The workspaces <span className='text-[var(--ink-mute)]'>· {live} live</span>
-					</h2>
-					<p className='max-w-xl text-[0.84375rem] leading-6 text-[var(--ink-3)]'>Public records you can read, question, and trace back to the source.</p>
-				</div>
-				<div className='mt-6'>
-					<WorkspaceList workspaces={workspaces} />
-				</div>
-			</section>
-
-			{/* ---- The projects ----
-
-			    The same grid as the workspaces, each with a picture of what it holds. */}
-			<section aria-labelledby='projects-title' className='border-t border-[var(--rule)]'>
-				<div className='bb-container py-20 lg:py-24'>
-					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
-						<h2 id='projects-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
-							Projects <span className='text-[var(--ink-mute)]'>· {projects.filter((p) => p.state === 'live').length} live</span>
-						</h2>
-						<p className='max-w-xl text-[0.84375rem] leading-6 text-[var(--ink-3)]'>Records of another kind, each on a page of its own.</p>
-					</div>
-					<div className='mt-6'>
-						{/* Programs & services is hidden for now; only the live projects show. */}
-						<ProjectList projects={projects.filter((p) => p.state === 'live')} />
-					</div>
+			    Every workspace and project in one place, grouped by what a reader is
+			    looking for (user decision). */}
+			<section id='workspaces' className='bb-container scroll-mt-20 py-[clamp(5rem,9vw,8.5rem)]'>
+				<SectionHead
+					index='01'
+					eyebrow='Find a record'
+					title='What are you'
+					titleMuted='looking for?'
+					lead={`${live} workspaces and ${projects.filter((p) => p.state === 'live').length} projects, grouped by what they hold. Every record is traced back to its source.`}
+				/>
+				<div className='mt-10'>
+					<Directory workspaces={workspaces} projects={projects} />
 				</div>
 			</section>
 
 			{/* ---- Explainers ---- */}
 			{explainers.length ? (
-				<section aria-labelledby='explainers-title' className='border-t border-[var(--rule)]'>
-					<div className='bb-container py-20 lg:py-24'>
-						<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
-							<h2 id='explainers-title' className='text-[1.6rem] font-extrabold tracking-[-0.03em]'>
-								Explainers
-							</h2>
-							<p className='flex flex-wrap items-baseline gap-x-5 gap-y-1 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
-								How government works, in plain words.
-								<Link href='/explainers' className='inline-flex items-center gap-1.5 font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>
+				<section className='bg-[var(--paper-2)]'>
+					<div className='bb-container py-[clamp(5rem,9vw,8.5rem)]'>
+						<SectionHead
+							index='02'
+							eyebrow='Explainers'
+							title='How it works,'
+							titleMuted='in plain words.'
+							aside={
+								<Link href='/explainers' className='inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
 									All explainers <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
 								</Link>
-							</p>
-						</div>
-						<div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-							{explainers.slice(0, 3).map((e) => (
-								<ExplainerCard key={e.id} e={e} heading='h3' />
-							))}
+							}
+						/>
+						<div className='mt-10'>
+							<ExplainerFeature explainers={explainers.slice(0, 4)} />
 						</div>
 					</div>
 				</section>
@@ -255,10 +235,10 @@ export default async function HomePage() {
 			    this is about. */}
 			<section className='bb-ground bb-grain bb-lattice relative isolate overflow-hidden border-y border-[var(--rule)]'>
 
-				<div className='bb-container relative z-2 bb-section'>
+				<div className='bb-container relative z-2 py-[clamp(5rem,9vw,8.5rem)]'>
 					<Rise distance={14}>
 						<div className='bb-kicker'>
-							<span>02</span>
+							<span>03</span>
 							<span>What is being governed</span>
 						</div>
 					</Rise>
@@ -355,7 +335,7 @@ export default async function HomePage() {
 					cards={chapters}
 					heading={
 						<SectionHead
-							index='03'
+							index='04'
 							eyebrow='Discover BARMM'
 							title='Get to know'
 							titleMuted='the Bangsamoro.'

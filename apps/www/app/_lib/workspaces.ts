@@ -1,10 +1,38 @@
-import type { Project } from '../_components/project-list'
 import type { Workspace } from '../_components/workspace-index'
+
+/**
+ * What a reader is looking for, in the order the front page groups them.
+ *
+ * Every workspace and project names one, so a new one lands in a group the
+ * day it is added. A reader does not know or care which is a workspace and
+ * which a project; they know whether they are after a law, a peso or a place.
+ */
+export const TOPICS = [
+	{ key: 'government', title: 'Laws & elections', lead: 'Who governs, and what they decided' },
+	{ key: 'money', title: 'Public money', lead: 'What is spent, bought and promised' },
+	{ key: 'services', title: 'Services & safety', lead: 'What offices offer, and what is risky' },
+	{ key: 'places', title: 'Places & culture', lead: 'Where to go, what to read, what is made here' },
+	{ key: 'data', title: 'Data', lead: 'The records underneath, to download' },
+] as const
+
+export type Topic = (typeof TOPICS)[number]['key']
+
+/** A record of a different kind: a page on this site rather than a workspace of its own. */
+export type Project = {
+	key: 'accidents' | 'preparedness' | 'plan' | 'crafts' | 'data' | 'services'
+	label: string
+	topic: Topic
+	href?: string
+	measure: string
+	blurb: string
+	state: 'live' | 'soon'
+}
 
 /** Every workspace, in the order the front page shows them. */
 export const workspaces: Workspace[] = [
 	{
 		label: 'Budget',
+		topic: 'money',
 		href: 'https://budget.betterbarmm.com',
 		blurb:
 			'Every enacted appropriation by sector, office, program and project, traced to the page of the Act it was printed on.',
@@ -13,6 +41,7 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Local government',
+		topic: 'government',
 		href: 'https://lgu.betterbarmm.com',
 		blurb:
 			'Every province, city, municipality and barangay in the region — population, land area, and the officials elected to each.',
@@ -21,6 +50,7 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Legislation',
+		topic: 'government',
 		href: 'https://legislation.betterbarmm.com',
 		blurb:
 			'Bills, autonomy acts, resolutions, committees, and the members who filed them — with the stage each measure has reached.',
@@ -29,6 +59,7 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Election',
+		topic: 'government',
 		href: 'https://election.betterbarmm.com',
 		blurb:
 			'Parties, candidates, districts, and sectoral seats for the 2026 Parliamentary Elections, with the source record behind each one.',
@@ -37,12 +68,14 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Public works',
+		topic: 'money',
 		blurb: 'Infrastructure projects, their cost, their contractor, and whether they were finished.',
 		measure: 'Infrastructure',
 		state: 'planned',
 	},
 	{
 		label: 'Procurement',
+		topic: 'money',
 		href: 'https://procurement.betterbarmm.com',
 		blurb:
 			'Every bid notice a BARMM government office has posted on PhilGEPS since 2019, its approved budget, and who won the contract.',
@@ -51,6 +84,7 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Public services',
+		topic: 'services',
 		href: '/services',
 		blurb: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes.',
 		measure: 'Citizen’s Charters',
@@ -58,6 +92,7 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Library',
+		topic: 'places',
 		href: 'https://library.betterbarmm.com',
 		blurb:
 			'The books written about the Bangsamoro and its peoples, who wrote and published them, where each can be bought, borrowed or read free, and the magazines the region’s own offices put out.',
@@ -66,6 +101,7 @@ export const workspaces: Workspace[] = [
 	},
 	{
 		label: 'Travel & Places',
+		topic: 'places',
 		href: 'https://travel.betterbarmm.com',
 		blurb:
 			'Beaches, islands, lakes, mosques and heritage sites to browse like stays, with what to do and eat, where to sleep, how to get there and an honest account of the security picture in each area.',
@@ -82,6 +118,7 @@ export const projects: Project[] = [
 	{
 		key: 'accidents',
 		label: 'Incident Watch',
+		topic: 'services',
 		href: '/accidents',
 		measure: 'Since 2019',
 		blurb: 'Road crashes, sea mishaps, fires, floods and shootings across the region, mapped from the news, every report linked.',
@@ -90,6 +127,7 @@ export const projects: Project[] = [
 	{
 		key: 'preparedness',
 		label: 'Preparedness',
+		topic: 'services',
 		href: '/preparedness',
 		measure: 'Project NOAH Hazards',
 		blurb: 'Flood, landslide and storm surge hazard for every barangay, with the evacuation sites, hospitals and offices nearest each.',
@@ -98,6 +136,7 @@ export const projects: Project[] = [
 	{
 		key: 'plan',
 		label: 'Development Plan Scorecard',
+		topic: 'money',
 		href: '/development-plan',
 		measure: 'BDP 2023–2028',
 		blurb: 'The regional plan’s targets for poverty, jobs, farms, tourism, schools, health, housing, forests and peace, each beside the latest published figure.',
@@ -106,6 +145,7 @@ export const projects: Project[] = [
 	{
 		key: 'crafts',
 		label: 'Crafts',
+		topic: 'places',
 		href: '/crafts',
 		measure: 'Weaves, Brass, Gongs',
 		blurb: 'The weaves, mats, brass and gongs of the region: where each is made, who makes it, and where to see it.',
@@ -114,6 +154,7 @@ export const projects: Project[] = [
 	{
 		key: 'data',
 		label: 'Open Data',
+		topic: 'data',
 		href: '/data',
 		measure: 'CSV and JSON',
 		blurb: 'The records underneath every workspace as tables anyone can download, each with its source and every column described.',
@@ -122,6 +163,7 @@ export const projects: Project[] = [
 	{
 		key: 'services',
 		label: 'Programs & Services',
+		topic: 'services',
 		measure: 'Citizen’s Charters',
 		blurb: 'What each office offers, who it is for, and what to bring, from its own Citizen’s Charter.',
 		state: 'soon',

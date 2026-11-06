@@ -16,6 +16,7 @@ import {
 } from '@phosphor-icons/react'
 import { motion } from 'motion/react'
 import { Stagger, StaggerItem } from '@betterbarmm/editorial'
+import type { Topic } from '../_lib/workspaces'
 
 export type WorkspaceState = 'live' | 'soon' | 'planned'
 
@@ -35,6 +36,7 @@ const ICONS: Record<string, Icon> = {
 
 export type Workspace = {
   label: string
+  topic: Topic
   /** Absent while a workspace is still only planned — the row is then inert. */
   href?: string
   blurb: string
@@ -207,50 +209,4 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 			</Stagger>
 		</div>
 	)
-}
-
-/**
- * The same workspaces, compact: the live ones as slim rows — glyph, name, what it
- * covers, two lines of what it holds — and the rest as one cell of names. The
- * front page's index, where the full cards took a screen and a half to say
- * five things.
- */
-// Whole class names, so the build sees them.
-const SM_SPAN: Record<number, string> = { 1: 'sm:col-span-1', 2: 'sm:col-span-2' }
-const LG_SPAN: Record<number, string> = { 1: 'lg:col-span-1', 2: 'lg:col-span-2', 3: 'lg:col-span-3' }
-
-export function WorkspaceList({ workspaces }: { workspaces: Workspace[] }) {
-  const live = workspaces.filter((w) => w.state === 'live' && w.href)
-  const coming = workspaces.filter((w) => !(w.state === 'live' && w.href))
-  return (
-    <div>
-      <ul className='grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 lg:grid-cols-3'>
-        {live.map((w) => {
-          const Glyph = ICONS[w.label]
-          return (
-            <li key={w.label} className='bg-[var(--paper)]'>
-              <a href={w.href} className='group flex h-full gap-4 p-6 transition duration-200 hover:bg-[var(--paper-2)]'>
-                {Glyph ? <Glyph size={22} weight='duotone' aria-hidden='true' className='mt-0.5 shrink-0 text-[var(--accent)]' /> : null}
-                <span className='min-w-0 flex-1'>
-                  <span className='flex items-baseline justify-between gap-3'>
-                    <span className='text-[1rem] font-extrabold tracking-[-0.02em] group-hover:text-[var(--accent)]'>{w.label}</span>
-                    <ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-200 group-hover:text-[var(--accent)]' aria-hidden='true' />
-                  </span>
-                  <span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{w.measure}</span>
-                  <span className='mt-1.5 line-clamp-2 text-[0.84375rem] leading-[1.55] text-[var(--ink-2)]'>{w.blurb}</span>
-                </span>
-              </a>
-            </li>
-          )
-        })}
-        {/* What is not built yet, in the grid's own last cell, stretched across what is left of its row at two columns or three. */}
-        {coming.length ? (
-          <li className={`bg-[var(--paper-2)] p-6 ${SM_SPAN[2 - (live.length % 2)]} ${LG_SPAN[3 - (live.length % 3)]}`}>
-            <span className='block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming next</span>
-            <span className='mt-1.5 block text-[0.84375rem] leading-[1.6] text-[var(--ink-2)]'>{coming.map((w) => w.label).join(' · ')}</span>
-          </li>
-        ) : null}
-      </ul>
-    </div>
-  )
 }
