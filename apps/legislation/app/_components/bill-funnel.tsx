@@ -30,7 +30,7 @@ export function BillFunnel({ slices, total }: { slices: FunnelSlice[]; total: nu
 	return (
 		<figure className='mx-auto max-w-5xl text-left'>
 			<div
-				className='flex h-11 gap-[2px] overflow-hidden rounded-[4px]'
+				className='flex h-14 gap-[2px] overflow-hidden rounded-[4px]'
 				role='img'
 				aria-label={`Distribution of ${total.toLocaleString()} bills across stages. ${slices
 					.map((slice) => `${slice.label}, ${slice.count}`)
