@@ -174,7 +174,7 @@ export function SiteNav() {
 					<nav className='hidden items-center justify-end gap-1 text-sm text-[var(--ink-3)] md:flex'>
 						{/* What changed first: the one tab that is new every time a reader comes back. */}
 						<Link href='/latest' data-active={isActive('/latest')} className='nav-item'>
-							Latest
+							Latest updates
 						</Link>
 
 						{/* The six Parliament record classes live behind one menu so the
@@ -358,7 +358,7 @@ export function SiteNav() {
 							data-active={isActive('/latest')}
 							className='mb-7 block border-b border-[var(--rule-soft)] py-2.5 font-semibold data-[active=true]:text-[var(--accent)]'
 						>
-							Latest
+							Latest updates
 						</Link>
 						<p className='bb-label'>Registry</p>
 						<div className='mt-3 grid'>

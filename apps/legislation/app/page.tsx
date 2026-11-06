@@ -7,6 +7,8 @@ import { MemberPayFigures } from './_components/member-pay'
 import { PageHeader } from './_components/page-header'
 import { Reveal } from './_components/reveal'
 import { StatBand } from './_components/stat-band'
+import { getChanges, stageTone } from './_lib/changes'
+import { statusToneClass } from './_lib/labels'
 import { getCategoryCounts, getDataset } from './_lib/legislation-data'
 import { getOfficialMeasuresByCategory, getOfficialMeasuresMeta, type OfficialMeasure } from './_lib/official-measures'
 
@@ -123,6 +125,8 @@ export default function HomePage() {
 				meta={`${totalRecords.toLocaleString()} records / checked against Parliament ${getOfficialMeasuresMeta().generatedAt}`}
 			/>
 
+			<LatestUpdates />
+
 			<StatBand
 				// The same five figures, in the same order, as Parliament's own
 				// homepage, so the two can be read against each other.
@@ -137,7 +141,7 @@ export default function HomePage() {
 						label: 'Priority codes',
 						// The Organic Law mandates seven; the Revenue Code is the one the transition did not pass.
 						value: `${priorityCodes} of 7`,
-						detail: 'The codes the Organic Law asked Parliament to pass during the transition. The Revenue Code is still pending.',
+						detail: 'The Revenue Code is still pending.',
 						marks: codeNames,
 					},
 					{
@@ -276,5 +280,52 @@ export default function HomePage() {
 			) : null}
 
 		</>
+	)
+}
+
+/** The newest steps on record, under the masthead: the reason to come back. */
+function LatestUpdates() {
+	// One row a measure: a resolution deferred four days running would otherwise fill the list.
+	const seen = new Set<string>()
+	const changes = getChanges()
+		.filter((c) => {
+			const key = c.href ?? c.label
+			if (seen.has(key)) return false
+			seen.add(key)
+			return true
+		})
+		.slice(0, 5)
+	if (!changes.length) return null
+	const date = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+	return (
+		<section className='bb-container pt-10'>
+			<div className='flex items-baseline justify-between gap-4'>
+				<h2 className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>Latest updates</h2>
+				<Link href='/latest' className='text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+					See all →
+				</Link>
+			</div>
+			<ol className='mt-3 divide-y divide-[var(--rule)] border-y border-[var(--rule)]'>
+				{changes.map((change, i) => (
+					<li key={i} className='grid gap-1 py-3 sm:grid-cols-[9.5rem_minmax(0,18rem)_minmax(0,1fr)] sm:items-center sm:gap-5'>
+						<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{date.format(new Date(`${change.date}T00:00:00Z`))}</span>
+						<span className='flex min-w-0 flex-wrap items-center gap-1'>
+							<span className={`${statusToneClass[stageTone(change.stage)]} max-w-full !whitespace-normal !rounded-[0.625rem] text-left`}>{change.stage}</span>
+							{change.note ? <span className='badge badge-plain badge-idle'>{change.note}</span> : null}
+						</span>
+						<span className='min-w-0 text-[0.875rem] text-[var(--ink-2)]'>
+							{change.href ? (
+								<Link href={change.href} className='font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+									{change.label}
+								</Link>
+							) : (
+								<span className='font-semibold text-[var(--ink)]'>{change.label}</span>
+							)}{' '}
+							<span className='line-clamp-1'>{change.title}</span>
+						</span>
+					</li>
+				))}
+			</ol>
+		</section>
 	)
 }

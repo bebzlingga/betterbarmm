@@ -10,7 +10,7 @@ export type Stat = {
 	marks?: string[]
 }
 
-/** How many a year, as a line: the latest year dashed while it is not over. */
+/** How many a year, as a small line beside the figure: the latest year dashed while it is not over. */
 function Spark({ series }: { series: { year: number; value: number }[] }) {
 	const top = Math.max(...series.map((s) => s.value), 1)
 	const current = new Date().getFullYear()
@@ -21,38 +21,14 @@ function Spark({ series }: { series: { year: number; value: number }[] }) {
 	const pts = series.map((s, i) => `${x(i).toFixed(2)},${y(s.value).toFixed(2)}`)
 	const open = series.at(-1)?.year === current && series.length > 1
 	const solid = open ? pts.slice(0, -1) : pts
-	const last = series.length - 1
 	return (
-		<div className='mt-5 max-w-[16rem]' aria-hidden='true'>
-			<svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' className='h-10 w-full overflow-visible'>
-				<polyline points={solid.join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeLinejoin='round' strokeLinecap='round' vectorEffect='non-scaling-stroke' />
-				{open ? (
-					<polyline points={pts.slice(-2).join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeDasharray='3 3' strokeLinecap='round' vectorEffect='non-scaling-stroke' opacity='0.6' />
-				) : null}
-				{series.map((s, i) => (
-					<circle key={s.year} cx={x(i)} cy={y(s.value)} r='5' fill='transparent' vectorEffect='non-scaling-stroke'>
-						<title>{`${s.year}: ${s.value.toLocaleString()}`}</title>
-					</circle>
-				))}
-			</svg>
-			<div className='mt-1 flex justify-between text-[0.65625rem] text-[var(--ink-mute)]'>
-				<span>{series[0]?.year}</span>
-				<span>{series[last]?.year}</span>
-			</div>
-		</div>
-	)
-}
-
-/** One mark per thing counted, each named. */
-function Marks({ marks }: { marks: string[] }) {
-	return (
-		<ul className='mt-5 flex max-w-[16rem] flex-wrap gap-1.5'>
-			{marks.map((m) => (
-				<li key={m} title={m} className='rounded-[3px] bg-[var(--accent)] px-2 py-1 text-[0.65625rem] font-semibold leading-none text-white'>
-					{m}
-				</li>
-			))}
-		</ul>
+		<svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' className='h-7 w-16 shrink-0 overflow-visible' aria-hidden='true'>
+			<title>{`${series[0]?.year}–${series.at(-1)?.year}`}</title>
+			<polyline points={solid.join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeLinejoin='round' strokeLinecap='round' vectorEffect='non-scaling-stroke' />
+			{open ? (
+				<polyline points={pts.slice(-2).join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeDasharray='3 3' strokeLinecap='round' vectorEffect='non-scaling-stroke' opacity='0.6' />
+			) : null}
+		</svg>
 	)
 }
 
@@ -91,47 +67,20 @@ function Figure({ value }: { value: string | number }) {
  * its counting are the same object in both.
  */
 export function StatFigures({ stats }: { stats: Stat[] }) {
-	// Two up from 380px rather than 560px: four figures stacked one per line
-	// turn a summary into a screen of its own, and every phone wider than the
-	// small ones has the room for a pair. Below that they stack, because a
-	// detail line in a 150px column is four words to a row.
-	//
-	// The gutters widen with the breakpoint rather than holding one value: at
-	// full width four figures set close together read as a single run, and it
-	// is the space between them that says these are four answers to four
-	// different questions.
-	//
-	// No rules around them. Wherever they sit they follow a masthead that
-	// already ends on an edge of its own, and a brass hairline a few points
-	// under it read as a mistake rather than as a frame — boxing four figures
-	// into a strip when they are simply the first thing the page says.
-	// The row takes its column count from what it is given. Four figures go
-	// four across; five go three across and two under them, which keeps every
-	// cell wide enough for its caption — five in a row left each one a column
-	// narrower than the sentence under it needs, and five in a four-track grid
-	// stranded the last figure on a line of its own. Both class names are
-	// written out because Tailwind reads the source, not the string.
-	const columns = stats.length === 5 ? 'lg:grid-cols-3 lg:gap-x-16' : 'lg:grid-cols-4 lg:gap-x-20'
-
+	// One strip (user decision: the three-across grid took a screen of its own): every figure in a row on a wide
+	// screen, a hairline between them, the trend drawn small beside the number and the caption held to a line.
 	return (
-		<Stagger
-			gap={0.08}
-			className={`grid gap-x-8 gap-y-9 min-[380px]:grid-cols-2 sm:gap-x-12 sm:gap-y-10 ${columns}`}
-		>
+		<Stagger gap={0.06} className='grid grid-cols-2 border-y border-[var(--rule)] sm:grid-cols-3 lg:grid-cols-5'>
 			{stats.map((stat) => (
-				<StaggerItem key={stat.label}>
-					<p className='bb-label'>{stat.label}</p>
-					<p className='bb-figure-sm mt-4 text-[var(--ink)]'>
-						<Figure value={stat.value} />
-					</p>
-					{stat.series?.length ? <Spark series={stat.series} /> : stat.marks?.length ? <Marks marks={stat.marks} /> : null}
-					{/* A step under the reading size, and held to a measure of its
-					    own. The detail is a caption for the figure above it rather
-					    than prose — at body size in a five-track row it runs to four
-					    and five lines and the figures stop reading as a row at all.
-					    Not `.bb-body` with a size beside it: that class is unlayered
-					    and would win against the utility. */}
-					<p className='mt-3 max-w-[16rem] text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>
+				<StaggerItem key={stat.label} className='border-[var(--rule)] px-4 py-5 max-sm:odd:border-r sm:border-r sm:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n)]:border-r lg:last:border-r-0 lg:px-6'>
+					<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>{stat.label}</p>
+					<div className='mt-2 flex items-end justify-between gap-3'>
+						<p className='text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
+							<Figure value={stat.value} />
+						</p>
+						{stat.series?.length ? <Spark series={stat.series} /> : null}
+					</div>
+					<p className='mt-2 line-clamp-2 text-[0.75rem] leading-[1.45] text-[var(--ink-3)]' title={stat.marks?.join(', ')}>
 						{stat.detail}
 					</p>
 				</StaggerItem>
@@ -152,7 +101,7 @@ export function StatBand({ stats }: { stats: Stat[] }) {
 		// have sat on the descenders. It is a step short of the rhythm above so
 		// the band still reads as one block with its heading rather than as two
 		// evenly spaced rows.
-		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+		<section className='bb-container py-10'>
 			<StatFigures stats={stats} />
 		</section>
 	)
