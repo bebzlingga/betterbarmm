@@ -164,8 +164,7 @@ export default function HomePage() {
 				<SectionHead
 					index='01'
 					eyebrow='Where the bills are'
-					title='Most bills'
-					titleMuted='never make it.'
+					title='Most bills never make it.'
 					/* The space after the count is explicit: the text node that follows it
 					   runs onto a second line, and JSX trims each line of a multi-line
 					   node — which ate the space and printed "52have". */
