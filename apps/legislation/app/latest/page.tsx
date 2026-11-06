@@ -54,7 +54,7 @@ export default function LatestPage() {
 									<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{DAY.format(at(change.date))}</span>
 									<span className='flex flex-wrap items-baseline gap-x-2 gap-y-1 text-[0.875rem]'>
 										<span className={`${statusToneClass[stageTone(change.stage)]} whitespace-normal text-left`}>{change.stage}</span>
-										{change.note ? <span className='text-[0.8125rem] text-[var(--ink-3)]'>{change.note}</span> : null}
+										{change.note ? <span className='badge badge-plain badge-idle'>{change.note}</span> : null}
 									</span>
 									<span className='min-w-0 text-[0.875rem] text-[var(--ink-2)]'>
 										{change.href ? (
