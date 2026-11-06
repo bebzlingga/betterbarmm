@@ -223,14 +223,13 @@ export default function DevelopmentPlanPage() {
 						.
 					</p>
 
-					<details className='mt-6'>
-						<summary className='cursor-pointer font-semibold text-[var(--ink-2)] hover:text-[var(--accent)]'>What is missing</summary>
-						<ul className='mt-2 list-disc space-y-1 pl-5'>
-							{scorecardGaps.map((gap) => (
-								<li key={gap.slice(0, 40)}>{gap}</li>
-							))}
-						</ul>
-					</details>
+					{/* Always open (user decision). */}
+					<p className='mt-10 font-semibold text-[var(--ink-2)]'>What is missing</p>
+					<ul className='mt-2 list-disc space-y-1 pl-5'>
+						{scorecardGaps.map((gap) => (
+							<li key={gap.slice(0, 40)}>{gap}</li>
+						))}
+					</ul>
 				</div>
 			</section>
 			<GetInvolved />
