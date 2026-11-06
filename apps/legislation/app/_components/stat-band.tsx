@@ -66,25 +66,34 @@ function Figure({ value }: { value: string | number }) {
  * is a section wrapper and nothing else. The row itself, its breakpoints and
  * its counting are the same object in both.
  */
+/** Every figure on one row at `lg`, however many there are. Literal, so Tailwind sees each class. */
+const LG_COLUMNS: Record<number, string> = { 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5: 'lg:grid-cols-5', 6: 'lg:grid-cols-6' }
+
 export function StatFigures({ stats }: { stats: Stat[] }) {
 	// One strip (user decision: the three-across grid took a screen of its own): every figure in a row on a wide
 	// screen, a hairline between them, the trend drawn small beside the number and the caption held to a line.
+	//
+	// Each cell draws its own right and bottom rule, and the grid runs a pixel past a clipping frame on both
+	// sides, so the last column's right rule and the last row's bottom rule fall outside it. That holds at every
+	// column count, where per-breakpoint `nth-child` resets left a rule hanging off the end of a row.
 	return (
-		<Stagger gap={0.06} className='grid grid-cols-2 border-y border-[color-mix(in_oklab,var(--rule)_45%,transparent)] sm:grid-cols-3 lg:grid-cols-5'>
-			{stats.map((stat) => (
-				<StaggerItem key={stat.label} className='border-[color-mix(in_oklab,var(--rule)_45%,transparent)] px-4 py-5 max-sm:odd:border-r sm:border-r sm:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n)]:border-r lg:last:border-r-0 lg:px-6'>
-					<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>{stat.label}</p>
-					<div className='mt-2 flex items-end justify-between gap-3'>
-						<p className='text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-							<Figure value={stat.value} />
+		<div className='overflow-hidden border-y border-[color-mix(in_oklab,var(--rule)_45%,transparent)]'>
+			<Stagger gap={0.06} className={`-mb-px -mr-px grid grid-cols-2 sm:grid-cols-3 ${LG_COLUMNS[stats.length] ?? 'lg:grid-cols-5'}`}>
+				{stats.map((stat) => (
+					<StaggerItem key={stat.label} className='border-b border-r border-[color-mix(in_oklab,var(--rule)_45%,transparent)] px-4 py-5 lg:px-6'>
+						<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>{stat.label}</p>
+						<div className='mt-2 flex items-end justify-between gap-3'>
+							<p className='text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
+								<Figure value={stat.value} />
+							</p>
+							{stat.series?.length ? <Spark series={stat.series} /> : null}
+						</div>
+						<p className='mt-2 line-clamp-2 text-[0.75rem] leading-[1.45] text-[var(--ink-3)]' title={stat.marks?.join(', ')}>
+							{stat.detail}
 						</p>
-						{stat.series?.length ? <Spark series={stat.series} /> : null}
-					</div>
-					<p className='mt-2 line-clamp-2 text-[0.75rem] leading-[1.45] text-[var(--ink-3)]' title={stat.marks?.join(', ')}>
-						{stat.detail}
-					</p>
-				</StaggerItem>
-			))}
-		</Stagger>
+					</StaggerItem>
+				))}
+			</Stagger>
+		</div>
 	)
 }
