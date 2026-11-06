@@ -889,7 +889,7 @@
 			"slug": "shamsuddin-taya",
 			"name": "Shamsuddin L. Taya",
 			"sort": "Taya, Shamsuddin L.",
-			"bio": "Political scientist at Universiti Utara Malaysia.",
+			"bio": "Scholar of the MILF whose 2006 doctoral thesis at the International Islamic University Malaysia became this book; a visiting scholar at Universiti Utara Malaysia from 2007 to 2019, and later head of research at the Development Academy of the Bangsamoro.",
 			"born": null,
 			"died": null,
 			"from": null,
@@ -2691,6 +2691,21 @@
 			"from": null,
 			"roles": [
 				"scholar"
+			],
+			"local": null,
+			"photo": null,
+			"links": []
+		},
+		{
+			"slug": "maxwell-felicilda",
+			"name": "Maxwell Felicilda",
+			"sort": "Felicilda, Maxwell",
+			"bio": "Co-editor with Leonardo Mercado of a 1993 collection on Muslim–Christian dialogue in the Philippines.",
+			"born": null,
+			"died": null,
+			"from": null,
+			"roles": [
+				"editor"
 			],
 			"local": null,
 			"photo": null,
