@@ -11,6 +11,8 @@ export const metadata: Metadata = pageMeta({
 	path: '/development-plan',
 })
 
+const PLAN_YEARS = [2023, 2024, 2025, 2026, 2027, 2028]
+
 const TONE: Record<Status, string> = { met: 'badge-done', short: 'badge-move', 'no-target': 'badge-idle', 'not-compared': 'badge-idle' }
 
 const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)] hover:decoration-[var(--accent)]'
@@ -132,19 +134,29 @@ function Card({ indicator }: { indicator: Indicator }) {
 export default function DevelopmentPlanPage() {
 	const judged = indicators.map((indicator) => judge(indicator).status)
 	const count = (status: Status) => judged.filter((s) => s === status).length
+	const parts = [
+		{ label: 'Target met', n: count('met'), tone: 'bg-[#a8e0b8]' },
+		{ label: 'Short of target', n: count('short'), tone: 'bg-[var(--brass)]' },
+		{ label: 'No target to judge', n: count('no-target') + count('not-compared'), tone: 'bg-white/30' },
+	]
+	const latestYear = Math.max(...indicators.map((indicator) => indicator.latest.year))
+	const thisYear = new Date().getFullYear()
+	const planYear = thisYear - 2022
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
 			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<div className='bb-container relative w-full py-14 md:py-20'>
-					<div className='max-w-[52rem]'>
+				{/* Two columns (user decision: the right half stood empty and the counts read as a table): the claim on the
+				    left, and on the right the whole scorecard as one divided bar, with where the plan is in its six years. */}
+				<div className='bb-container relative grid w-full gap-10 py-14 md:py-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center lg:gap-16'>
+					<div>
 						<p className='bb-label'>Development plan scorecard</p>
-						<h1 className='mt-2 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>
+						<h1 className='mt-3 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>
 							The plan’s targets, and where the region stands.
 						</h1>
-						<p className='mt-3 text-[0.96875rem] leading-[1.65] text-[var(--ink-2)]'>
+						<p className='mt-5 max-w-[40rem] text-[0.96875rem] leading-[1.7] text-[var(--ink-2)]'>
 							The{' '}
 							<a href={plan.url} target='_blank' rel='noreferrer' className={linkClass}>
 								2nd Bangsamoro Development Plan 2023–2028
@@ -154,21 +166,45 @@ export default function DevelopmentPlanPage() {
 						</p>
 					</div>
 
-					<dl className='mt-10 grid max-w-[52rem] grid-cols-2 gap-px border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-4'>
-						{(
-							[
-								['Indicators', indicators.length],
-								['Target met', count('met')],
-								['Short of target', count('short')],
-								['No target to judge', count('no-target') + count('not-compared')],
-							] as const
-						).map(([label, value]) => (
-							<div key={label} className='brand-bg px-4 py-4'>
-								<dd className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-none text-[var(--ink)]'>{value}</dd>
-								<dt className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>{label}</dt>
+					<div className='border border-[var(--rule)] bg-[var(--paper-2)] p-6 md:p-7'>
+						<p className='flex items-baseline justify-between gap-4'>
+							<span className='font-[family-name:var(--font-display)] text-[2.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
+								{indicators.length}
+							</span>
+							<span className='text-right text-[0.8125rem] text-[var(--ink-3)]'>targets tracked, latest figures to {latestYear}</span>
+						</p>
+						<div className='mt-5 flex h-3 gap-[2px] overflow-hidden rounded-[2px]' aria-hidden='true'>
+							{parts.map((part) => (
+								<span key={part.label} className={part.tone} style={{ flexGrow: part.n }} />
+							))}
+						</div>
+						<dl className='mt-4 grid grid-cols-3 gap-3'>
+							{parts.map((part) => (
+								<div key={part.label}>
+									<dd className='font-[family-name:var(--font-display)] text-[1.5rem] font-extrabold leading-none text-[var(--ink)]'>{part.n}</dd>
+									<dt className='mt-1.5 flex items-center gap-1.5 text-[0.75rem] text-[var(--ink-3)]'>
+										<span className={`size-2 shrink-0 rounded-full ${part.tone}`} />
+										{part.label}
+									</dt>
+								</div>
+							))}
+						</dl>
+
+						<div className='mt-6 border-t border-[var(--rule)] pt-5'>
+							<p className='flex items-baseline justify-between text-[0.75rem] text-[var(--ink-3)]'>
+								<span>The plan’s six years</span>
+								<span>{planYear <= 6 ? `Year ${planYear} of 6` : 'Ended 2028'}</span>
+							</p>
+							<div className='mt-2 grid grid-cols-6 gap-[3px]' aria-hidden='true'>
+								{PLAN_YEARS.map((year) => (
+									<span key={year} className='flex flex-col gap-1'>
+										<span className={`h-1.5 rounded-[1px] ${year < thisYear ? 'bg-[var(--brass)]' : year === thisYear ? 'bg-[color-mix(in_oklab,var(--brass)_55%,transparent)]' : 'bg-white/15'}`} />
+										<span className={`text-[0.625rem] tabular-nums ${year === thisYear ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-mute)]'}`}>{year}</span>
+									</span>
+								))}
 							</div>
-						))}
-					</dl>
+						</div>
+					</div>
 				</div>
 				<div className='bb-weave' aria-hidden='true' />
 			</section>
