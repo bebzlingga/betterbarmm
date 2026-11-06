@@ -340,7 +340,7 @@ export default function CommitteesPage() {
 					<div className='mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
 						{functions.map(({ verb, detail, Icon }, index) => (
 							<Reveal key={verb} delay={index * 50}>
-								<div className='flex h-full gap-4 border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+								<div className='flex h-full gap-4 bg-[var(--paper)] p-5 sm:p-6'>
 									<span className='grid size-11 shrink-0 place-items-center bg-[var(--accent-soft)] text-[var(--accent)]'>
 										<Icon size={22} weight='duotone' aria-hidden='true' />
 									</span>
