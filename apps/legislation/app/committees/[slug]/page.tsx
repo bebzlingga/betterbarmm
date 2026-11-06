@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { getFirstParliament, type FirstParliamentPerson } from '../../_lib/members-data'
 import { MemberAvatar } from '../../_components/member-avatar'
 import { toDisplayTitle } from '../../_lib/labels'
 import { Reveal } from '../../_components/reveal'
@@ -66,6 +67,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 	if (!committee) notFound()
 
 	const { generatedAt } = getCommitteesDataset()
+	const current = getFirstParliament().committees.find((c) => c.slug === slug)
 
 	// The committee pages cite a referral by title alone, so each one is looked
 	// up in the registry and the row opens that record rather than sending the
@@ -104,7 +106,9 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 							{committee.statutory ? (
 								<span className='badge badge-plain badge-committee'>Statutory</span>
 							) : null}
-							<span className='badge badge-plain badge-idle'>{committee.memberCount} seated</span>
+							{current && current.members.length > 0 ? (
+								<span className='badge badge-plain badge-idle'>{current.members.length + current.viceChairs.length + 1} seated</span>
+							) : null}
 							{committee.reports.length > 0 ? (
 								<span className='badge badge-plain badge-done'>
 									{committee.reports.length} reports filed
@@ -147,14 +151,72 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 							<a href={committee.url} target='_blank' rel='noreferrer' className='rule-link'>
 								the committee&rsquo;s official page
 							</a>
-							, captured {generatedAt}. The page lists current membership only.
+							, captured {generatedAt}. The Transition Authority roster below is the last one that page listed before the First Parliament.
 						</p>
 					</div>
 				</Reveal>
 
 				<Reveal delay={80}>
 					<div>
-						{/* ---- Who sits on it ---- */}
+						{/* ---- Who sits on it now ---- */}
+						{current ? (
+							<div className='mb-14'>
+								<p className='eyebrow'>First Parliament · from 30 October 2026</p>
+								{current.chair ? (
+									<div className='mt-4 flex items-center gap-4'>
+										<MemberAvatar name={current.chair.member?.displayName ?? current.chair.name} src={current.chair.member?.photoUrl} />
+										<div>
+											<p className='label label-strong'>Chair</p>
+											{current.chair.member ? (
+												<Link href={`/members/${current.chair.member.slug}`} className='mt-1 block text-[1.0625rem] font-bold text-[var(--ink)] hover:text-[var(--accent)]'>
+													{current.chair.member.displayName}
+												</Link>
+											) : (
+												<p className='mt-1 text-[1.0625rem] font-bold text-[var(--ink)]'>{current.chair.name}</p>
+											)}
+										</div>
+									</div>
+								) : null}
+								{current.viceChairs.length > 0 || current.members.length > 0 ? (
+									<div className='mt-6 grid gap-4'>
+										{([['Vice-chairs', current.viceChairs], ['Members', current.members]] as const)
+											.filter(([, people]) => people.length)
+											.map(([label, people]) => (
+												<div key={label}>
+													<p className='label label-strong'>{label} ({people.length})</p>
+													<ul className='mt-2 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
+														{people.map((p: FirstParliamentPerson) => (
+															<li key={p.name} className='text-[0.875rem] text-[var(--ink-2)]'>
+																{p.member ? (
+																	<Link href={`/members/${p.member.slug}`} className='hover:text-[var(--accent)]'>
+																		{p.member.displayName}
+																	</Link>
+																) : (
+																	p.name
+																)}
+															</li>
+														))}
+													</ul>
+												</div>
+											))}
+									</div>
+								) : (
+									<p className='mt-5 text-[0.875rem] leading-6 text-[var(--ink-3)]'>
+										Parliament has named the chair; the vice-chairs and members appear here once it posts them.
+									</p>
+								)}
+							</div>
+						) : null}
+
+						{/* ---- Who sat on it before ---- */}
+						{officers.length > 0 || members.length > 0 ? (
+							<div className='mb-6 border-t border-[var(--rule)] pt-8'>
+								<p className='eyebrow'>In the Transition Authority</p>
+								<p className='mt-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
+									The committee’s last roster before the First Parliament, as Parliament’s page listed it on {generatedAt}.
+								</p>
+							</div>
+						) : null}
 						{officers.length > 0 ? (
 							<div>
 								<p className='label label-strong'>Chair and vice-chairs</p>
