@@ -208,49 +208,57 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 							</div>
 						) : null}
 
-						{/* ---- Who sat on it before ---- */}
-						{officers.length > 0 || members.length > 0 ? (
-							<div className='mb-6 border-t border-[var(--rule)] pt-8'>
-								<p className='eyebrow'>In the Transition Authority</p>
-								<p className='mt-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
-									The committee’s last roster before the First Parliament, as Parliament’s page listed it on {generatedAt}.
-								</p>
-							</div>
-						) : null}
-						{officers.length > 0 ? (
-							<div>
-								<p className='label label-strong'>Chair and vice-chairs</p>
-								<div className='mt-3 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
-									{officers.map((seat) => (
-										<Seat key={`${seat.rosterName}-${seat.role}`} seat={seat} />
-									))}
+						{/* ---- Who sat on it before: history, folded away so the current committee leads ---- */}
+						{officers.length + members.length + exOfficio.length > 0 ? (
+							<details className='group mb-10 border-y border-[var(--rule)]'>
+								<summary className='flex cursor-pointer list-none items-center justify-between gap-4 py-5 [&::-webkit-details-marker]:hidden'>
+									<span>
+										<span className='eyebrow block'>In the Transition Authority</span>
+										<span className='mt-1.5 block text-[0.8125rem] text-[var(--ink-3)]'>
+											The last roster before the First Parliament: {officers.length + members.length + exOfficio.length} seats, as of {generatedAt}
+										</span>
+									</span>
+									<span aria-hidden='true' className='text-[1.25rem] leading-none text-[var(--ink-3)] transition group-open:rotate-45'>+</span>
+								</summary>
+								<div className='pb-8 pt-2'>
+							{officers.length > 0 ? (
+								<div>
+									<p className='label label-strong'>Chair and vice-chairs</p>
+									<div className='mt-3 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
+										{officers.map((seat) => (
+											<Seat key={`${seat.rosterName}-${seat.role}`} seat={seat} />
+										))}
+									</div>
 								</div>
-							</div>
-						) : null}
+							) : null}
 
-						{members.length > 0 ? (
-							<div className='mt-8'>
-								<p className='label label-strong'>Members ({members.length})</p>
-								<div className='mt-3 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
-									{members.map((seat) => (
-										<Seat key={seat.rosterName} seat={seat} />
-									))}
+							{members.length > 0 ? (
+								<div className='mt-8'>
+									<p className='label label-strong'>Members ({members.length})</p>
+									<div className='mt-3 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
+										{members.map((seat) => (
+											<Seat key={seat.rosterName} seat={seat} />
+										))}
+									</div>
 								</div>
-							</div>
-						) : null}
+							) : null}
 
-						{exOfficio.length > 0 ? (
-							<div className='mt-8'>
-								<p className='label label-strong'>Ex-officio members ({exOfficio.length})</p>
-								<p className='meta-sm mt-2 max-w-2xl'>
-									Seated by virtue of another office they hold, rather than by assignment.
-								</p>
-								<div className='mt-3 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
-									{exOfficio.map((seat) => (
-										<Seat key={seat.rosterName} seat={seat} />
-									))}
+							{exOfficio.length > 0 ? (
+								<div className='mt-8'>
+									<p className='label label-strong'>Ex-officio members ({exOfficio.length})</p>
+									<p className='meta-sm mt-2 max-w-2xl'>
+										Seated by virtue of another office they hold, rather than by assignment.
+									</p>
+									<div className='mt-3 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
+										{exOfficio.map((seat) => (
+											<Seat key={seat.rosterName} seat={seat} />
+										))}
+									</div>
 								</div>
-							</div>
+							) : null}
+
+								</div>
+							</details>
 						) : null}
 
 						{/* ---- Reports ---- */}
