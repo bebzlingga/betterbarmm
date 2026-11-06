@@ -82,3 +82,23 @@ export function formatGoal(goal: Goal, unit: string) {
 	if (goal.low === goal.high) return formatValue(goal.low, unit)
 	return unit === '%' ? `${num(goal.low)}–${num(goal.high)}%` : `${formatValue(goal.low, unit)} to ${formatValue(goal.high, unit)}`
 }
+
+/** The verdict as a sentence a reader does not have to work out: how far from the target, and which way. */
+export function gapText(indicator: Indicator, status: Status, against: Goal | null): string | null {
+	if (!against) return null
+	const { value } = indicator.latest
+	const up = indicator.direction === 'up'
+	const goal = `the ${against.year} target of ${formatGoal(against, indicator.unit)}`
+	const by = (d: number) => {
+		// One decimal reads as a gap; two only where one would round a real gap (0.04) to nothing.
+		const r = d < 0.1 ? Math.round(d * 100) / 100 : Math.round(d * 10) / 10
+		return indicator.unit === '%' ? `${num(r)} ${r === 1 ? 'point' : 'points'}` : formatValue(r, indicator.unit)
+	}
+	if (against.low !== against.high && value >= against.low && value <= against.high) return `Within ${goal}`
+	if (status === 'met') {
+		const d = up ? value - against.low : against.high - value
+		return d === 0 ? `On ${goal}` : `${by(d)} better than ${goal}`
+	}
+	return `${by(up ? against.low - value : value - against.high)} ${up ? 'below' : 'above'} ${goal}`
+}
+
