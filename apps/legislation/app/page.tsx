@@ -290,7 +290,7 @@ function LatestUpdates() {
 	const date = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
 	return (
 		<section>
-		<div className='bb-container py-[clamp(3rem,6vw,5rem)]'>
+		<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 			<SectionHead
 				eyebrow='Latest updates'
 				title='What changed in Parliament.'

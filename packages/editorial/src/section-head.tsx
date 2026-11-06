@@ -52,17 +52,23 @@ export function SectionHead({
   return (
     <div className={`bb-head-gap ${centerd ? 'text-center' : ''} ${className}`}>
       <Rise distance={14}>
-        <div className='flex items-baseline justify-between gap-6'>
+        {/* With an aside the rule is drawn on the row rather than the kicker, so
+            it runs on over the link instead of stopping short of it. */}
+        <div
+          className={`flex items-baseline justify-between gap-6${
+            aside && !centerd ? ' border-t border-[var(--brass-line)] pt-[0.85rem]' : ''
+          }`}
+        >
           {/* Centerd, the kicker loses its rule as well as its ranging. The
               brass line hangs a section off the left edge of the grid; over
               centerd type it is a full-width bar with two words floating under
               the middle of it, saying the block starts at a corner the type has
               already left. */}
-          <div className={`bb-kicker flex-1 ${centerd ? 'bb-kicker-plain justify-center' : ''}`}>
+          <div className={`bb-kicker flex-1 ${centerd ? 'bb-kicker-plain justify-center' : aside ? 'bb-kicker-plain' : ''}`}>
             {index ? <span>{index}</span> : null}
             {eyebrow ? <span>{eyebrow}</span> : null}
           </div>
-          {aside ? <div className='shrink-0 pt-3'>{aside}</div> : null}
+          {aside ? <div className='shrink-0'>{aside}</div> : null}
         </div>
       </Rise>
 
