@@ -12,7 +12,16 @@
    "accredited": false,
    "source": "https://bangsamoro.gov.ph/news/latest-news/travel-fair-opens-new-business-opportunities-for-barmm-tourism-players/",
    "as_of": "2026-08",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-alnor-hotel-and-convention-center.jpg",
+    "page": "https://www.facebook.com/alnorhotelandconventioncenter/",
+    "author": "Alnor Hotel and Convention Center (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 852,
+    "caption": "Alnor Hotel and Convention Center, Cotabato City: the hotel’s name on its lobby wall"
+   }
   },
   {
    "name": "Alnor Suite Hotel",
@@ -45,7 +54,16 @@
    "accredited": false,
    "source": "https://bangsamoro.gov.ph/news/latest-news/mpw-upgrades-e-barmm-system-to-strengthen-infra-monitoring/",
    "as_of": "2026-05",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-em-manor.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=449301503871938&set=a.449301463871942",
+    "author": "EM Manor Hotel and Convention Center (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 853,
+    "caption": "Em Manor Hotel and Convention Center, Cotabato City: the hotel, lit at night"
+   }
   },
   {
    "name": "KDT Manor Hotel and Convention Center",
@@ -69,7 +87,16 @@
    "accredited": false,
    "source": "https://bangsamoro.gov.ph/news/latest-news/standardized-digital-governance-pushed-in-barmm/",
    "as_of": "2025-11",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-paragon.jpg",
+    "page": "https://www.facebook.com/TheParagonHotelandRestaurant/",
+    "author": "The Paragon Hotel & Restaurant (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 960,
+    "caption": "Paragon Hotel and Restaurant, Cotabato City: the lounge"
+   }
   },
   {
    "name": "Grand Pagana Hotel",
@@ -93,7 +120,16 @@
    "accredited": false,
    "source": "https://mssd.barmm.gov.ph/mssd-strengthens-parasocial-workers-capacity-on-disaster-preparedness-and-response/",
    "as_of": "2025-11",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-precious-cabana.jpg",
+    "page": "https://www.facebook.com/p/Precious-Cabana-Ynna-Resort-Hotels-100068745136793/",
+    "author": "Precious Cabana Ynna Resort & Hotel (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 853,
+    "caption": "Precious Cabana Resort and Hotel, Datu Odin Sinsuat: the pool, on the shore of Illana Bay"
+   }
   },
   {
    "name": "Illana Bay Beach Resort",
@@ -105,7 +141,16 @@
    "accredited": false,
    "source": "https://bangsamoro.gov.ph/news/latest-news/barmms-3rd-quarter-investment-skyrockets-to-over-p3-1b-mark/",
    "as_of": "2023-08",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-illana-bay.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1116097757950414&set=pb.100086506011334.-2207520000",
+    "author": "Illana Bay Resort (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 1280,
+    "caption": "Illana Bay Beach Resort, Datu Odin Sinsuat: the shore at the resort"
+   }
   },
   {
    "name": "Amaya Beach Resort",
@@ -138,7 +183,16 @@
    "accredited": false,
    "source": "https://mssd.barmm.gov.ph/financial-inclusion-caravan-in-lanao-del-sur-launches-bangsamoro-card/",
    "as_of": "2026-10",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-ranaw-business-hotel.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122152753658921513&set=a.122125098368921513",
+    "author": "Ranaw Business Hotel (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 853,
+    "caption": "Ranaw Business Hotel, Marawi: the lobby"
+   }
   },
   {
    "name": "Samsara Palace Hotel and Event",
@@ -150,7 +204,16 @@
    "accredited": false,
    "source": "https://parliament.bangsamoro.gov.ph/venue/samsara-palace-hotel-and-event-mapandi-bridge-lilod-saduc-marawi-city/",
    "as_of": "2026-07",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-samsara-palace.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1638212854760156&set=pb.100057143722919.-2207520000",
+    "author": "Samsara Palace (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 853,
+    "caption": "Samsara Palace Hotel and Event, Marawi: the function hall, set for an event"
+   }
   },
   {
    "name": "Santorini Hotel, Garden Cafe and Events Place",
@@ -162,7 +225,16 @@
    "accredited": false,
    "source": "https://parliament.bangsamoro.gov.ph/venue/santorini-hotel-garden-cafe-and-events-place-heaven-road-marawi-city/",
    "as_of": "2024-11",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-santorini.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122355619004032072&set=pb.61550962184648.-2207520000",
+    "author": "Santorini Hotel, Garden Café and Events Place (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 1045,
+    "caption": "Santorini Hotel, Garden Cafe and Events Place, Marawi: the events hall"
+   }
   },
   {
    "name": "Lake View Resort",
@@ -174,7 +246,16 @@
    "accredited": false,
    "source": "https://mpos.bangsamoro.gov.ph/mpos-peacebuilding-intervention-drives-socio-economic-empowerment-and-sustainable-livelihood-opportunities-in-conflict-affected-community-in-lds/",
    "as_of": "2024-05",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-lake-view-resort.jpg",
+    "page": "https://www.facebook.com/marawilakeviewresort",
+    "author": "Marawi Lake View Hotel and Resort (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 731,
+    "caption": "Lake View Resort, Marawi: the pool and the hotel wings"
+   }
   },
   {
    "name": "Sitti Auna Riverland Resort",
@@ -216,7 +297,16 @@
    "accredited": false,
    "source": "https://www.lamitancity.gov.ph/lcw/tourism/hotels-and-restaurants/",
    "as_of": "2024-05",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-lamitan-city-hostel.jpg",
+    "page": "https://www.facebook.com/p/Lamitan-City-Hostel-100070366954526/",
+    "author": "Lamitan City Hostel (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 598,
+    "caption": "Lamitan City Terminal & Hostel, Lamitan: the city transport terminal, with the hostel upstairs"
+   }
   },
   {
    "name": "Bihing Tahik Resort",
@@ -273,7 +363,16 @@
    "accredited": false,
    "source": "https://parliament.bangsamoro.gov.ph/venue/mayan-hotel-lomboy-nalil-bongao-tawi-tawi/",
    "as_of": "2024-05",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-mayan-hotel.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=135494582573172&set=a.135494585906505",
+    "author": "MAYAN HOTEL (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 960,
+    "caption": "Mayan Hotel, Bongao: the lobby"
+   }
   },
   {
    "name": "Dahuwan Tampeh Resort",
@@ -285,7 +384,16 @@
    "accredited": false,
    "source": "https://parliament.bangsamoro.gov.ph/venue/dahuwan-tampeh-resort-brgy-pahut-bongao-tawi-tawi/",
    "as_of": "2025-10",
-   "image": null
+   "image": {
+    "url": "/places/stays/stay-dahuwan-tampeh.jpg",
+    "page": "https://www.facebook.com/p/Dahuwan-Tampeh-Resort-61580840392613/",
+    "author": "Dahuwan Tampeh Resort (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1280,
+    "height": 853,
+    "caption": "Dahuwan Tampeh Resort, Bongao: the resort at night, from the water"
+   }
   },
   {
    "name": "Beachside Inn and Restaurant",
