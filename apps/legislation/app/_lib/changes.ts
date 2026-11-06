@@ -1,4 +1,5 @@
 import { recordHref } from './categories'
+import { describeStatus, type StatusTone } from './labels'
 import { getAllRecords, type LegislationRecord } from './legislation-data'
 import { getOfficialMeasuresByCategory } from './official-measures'
 
@@ -64,4 +65,16 @@ export function mondayOf(iso: string): string {
 	const d = new Date(`${iso}T00:00:00Z`)
 	d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7))
 	return d.toISOString().slice(0, 10)
+}
+
+/**
+ * The colour a step takes, on the registry's own status scale. Parliament's history uses a few words the status
+ * reader doesn't: a committee report adopted moves a bill on rather than enacting it, "Enhanced" is a reworked text
+ * moving forward, and a bare committee name is a referral.
+ */
+export function stageTone(stage: string): StatusTone {
+	if (/^Ratified/i.test(stage)) return 'enacted'
+	if (/^Committee Report/i.test(stage) || /^Enhanced/i.test(stage)) return 'advancing'
+	if (/^(Referred to )?(the )?Committee on|^Special Committee|^Blue Ribbon/i.test(stage)) return 'committee'
+	return describeStatus(stage).tone
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '../_components/page-header'
-import { getChanges, mondayOf, type Change } from '../_lib/changes'
+import { getChanges, mondayOf, stageTone, type Change } from '../_lib/changes'
+import { statusToneClass } from '../_lib/labels'
 
 export const metadata: Metadata = {
 	title: 'What changed',
@@ -51,9 +52,9 @@ export default function LatestPage() {
 							{list.map((change, i) => (
 								<li key={i} className='grid gap-1 py-3 sm:grid-cols-[11rem_24rem_minmax(0,1fr)] sm:gap-5'>
 									<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{DAY.format(at(change.date))}</span>
-									<span className='text-[0.875rem] font-semibold text-[var(--ink)]'>
-										{change.stage}
-										{change.note ? <span className='font-normal text-[var(--ink-3)]'> ({change.note})</span> : null}
+									<span className='flex flex-wrap items-baseline gap-x-2 gap-y-1 text-[0.875rem]'>
+										<span className={`${statusToneClass[stageTone(change.stage)]} whitespace-normal text-left`}>{change.stage}</span>
+										{change.note ? <span className='text-[0.8125rem] text-[var(--ink-3)]'>{change.note}</span> : null}
 									</span>
 									<span className='min-w-0 text-[0.875rem] text-[var(--ink-2)]'>
 										{change.href ? (

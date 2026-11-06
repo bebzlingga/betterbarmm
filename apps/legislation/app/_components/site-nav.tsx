@@ -29,10 +29,7 @@ const peopleLinks = [
    what its own masthead says; in a row of one-word tabs — Registry, People,
    Stats — a three-word label with an ampersand in it reads as a sentence
    someone left in the navigation. */
-const secondaryLinks = [
-	{ href: '/latest', label: 'Latest' },
-	{ href: '/about', label: 'Data' },
-]
+const secondaryLinks = [{ href: '/about', label: 'Data' }]
 
 /** Marks a category whose route exists but whose records aren't compiled yet. */
 function SoonBadge() {
@@ -175,6 +172,11 @@ export function SiteNav() {
 					    blur stays on the bar so content scrolling underneath doesn't
 					    collide with them. */}
 					<nav className='hidden items-center justify-end gap-1 text-sm text-[var(--ink-3)] md:flex'>
+						{/* What changed first: the one tab that is new every time a reader comes back. */}
+						<Link href='/latest' data-active={isActive('/latest')} className='nav-item'>
+							Latest
+						</Link>
+
 						{/* The six Parliament record classes live behind one menu so the
 						    header stays a single quiet row. */}
 						<div ref={registryRef} className='relative'>
@@ -350,6 +352,14 @@ export function SiteNav() {
 								: 'overflow-hidden'
 						}`}
 					>
+						<Link
+							href='/latest'
+							onClick={closeMenu}
+							data-active={isActive('/latest')}
+							className='mb-7 block border-b border-[var(--rule-soft)] py-2.5 font-semibold data-[active=true]:text-[var(--accent)]'
+						>
+							Latest
+						</Link>
 						<p className='bb-label'>Registry</p>
 						<div className='mt-3 grid'>
 							{categories.map((category) => (
