@@ -52,6 +52,13 @@
      never the only thing saying which way a year went. */
   --step-up: var(--positive);
   --step-down: #a32d1e;
+
+  /* Where the money comes from: three hues apart from the expense classes, so a
+     source is never read as a kind of spending. Checked as a set for color
+     blindness on each ground, and every bar carries its figures in text. */
+  --src-grant: #2e7d4f;
+  --src-sdf: #6a4fb8;
+  --src-tax: #c0397f;
 }
 
 :root[data-theme="dark"] {
@@ -62,6 +69,10 @@
   /* Lifted off the dark ground, for the reason the chart colors are. */
   --step-up: #93b071;
   --step-down: #e8836f;
+
+  --src-grant: #4c9768;
+  --src-sdf: #8279d8;
+  --src-tax: #e0607e;
 }
 
 /* The stacked share bar. One rule rather than a component's worth of utility

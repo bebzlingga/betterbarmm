@@ -42,6 +42,8 @@ const sections = [
 	{ href: '/offices', label: 'Offices', note: 'Who holds it' },
 	{ href: '/programs', label: 'Programs', note: 'What it pays for' },
 	{ href: '/projects', label: 'Projects', note: 'What is being built' },
+	/* Not a cut of the Act but the other side of it: what pays for it. Here because a reader asks it next. */
+	{ href: '/revenue', label: 'Revenue', note: 'Where it comes from' },
 ] as const
 
 /* How the Act is made and what its words mean: read once, not used to find a figure, so one menu between them. */

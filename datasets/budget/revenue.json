@@ -1,0 +1,12 @@
+{
+	"note": "What the national General Appropriations Act sets aside for the Bangsamoro Government each year, read from the special provisions of its 'Allocations to Local Government Units' chapter. The annual block grant is automatically appropriated there and printed only in the special provisions; the Special Development Fund and the share in national taxes are the chapter's own appropriation. FY 2020 and FY 2021 were read from DBM's technical GAA, the later years from Volume I.",
+	"years": [
+		{ "year": 2020, "blockGrant": 63634076000, "specialDevelopmentFund": 5000000000, "taxShare": 2000000000, "source": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2020/TechGAA2020/ALGU/G.pdf" },
+		{ "year": 2021, "blockGrant": 71669833000, "specialDevelopmentFund": 5000000000, "taxShare": 3613514000, "source": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2021/TechGAA2021/ALGU/F.pdf" },
+		{ "year": 2022, "blockGrant": 66963635000, "specialDevelopmentFund": 5000000000, "taxShare": 2788032000, "source": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2022/VolumeI/ALGU/F.pdf" },
+		{ "year": 2023, "blockGrant": 64755501000, "specialDevelopmentFund": 5000000000, "taxShare": 4594982000, "source": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2023/VolumeI/ALGU/F.pdf" },
+		{ "year": 2024, "blockGrant": 70513225000, "specialDevelopmentFund": 5000000000, "taxShare": 5082959000, "source": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2024/VolumeI/ALGU/F.pdf" },
+		{ "year": 2025, "blockGrant": 83421790000, "specialDevelopmentFund": 5000000000, "taxShare": 5989878000, "source": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2025/VolumeIB/ALGU/F.pdf" },
+		{ "year": 2026, "blockGrant": 93982398000, "specialDevelopmentFund": 5000000000, "taxShare": 5590087000, "source": "https://www.dbm.gov.ph/wp-content/uploads/GAA/GAA2026/VolumeIB/ALGU/E.pdf" }
+	]
+}

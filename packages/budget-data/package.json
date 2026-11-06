@@ -6,6 +6,7 @@
 	"exports": {
 		".": "./src/index.ts",
 		"./years": "./src/years.ts",
-		"./trends": "./src/trends.ts"
+		"./trends": "./src/trends.ts",
+		"./revenue": "./src/revenue.ts"
 	}
 }
