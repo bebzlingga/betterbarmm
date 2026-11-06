@@ -70,9 +70,9 @@ export function StatFigures({ stats }: { stats: Stat[] }) {
 	// One strip (user decision: the three-across grid took a screen of its own): every figure in a row on a wide
 	// screen, a hairline between them, the trend drawn small beside the number and the caption held to a line.
 	return (
-		<Stagger gap={0.06} className='grid grid-cols-2 border-y border-[var(--rule)] sm:grid-cols-3 lg:grid-cols-5'>
+		<Stagger gap={0.06} className='grid grid-cols-2 border-y border-[color-mix(in_oklab,var(--rule)_45%,transparent)] sm:grid-cols-3 lg:grid-cols-5'>
 			{stats.map((stat) => (
-				<StaggerItem key={stat.label} className='border-[var(--rule)] px-4 py-5 max-sm:odd:border-r sm:border-r sm:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n)]:border-r lg:last:border-r-0 lg:px-6'>
+				<StaggerItem key={stat.label} className='border-[color-mix(in_oklab,var(--rule)_45%,transparent)] px-4 py-5 max-sm:odd:border-r sm:border-r sm:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n)]:border-r lg:last:border-r-0 lg:px-6'>
 					<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>{stat.label}</p>
 					<div className='mt-2 flex items-end justify-between gap-3'>
 						<p className='text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
