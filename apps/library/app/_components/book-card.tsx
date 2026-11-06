@@ -34,7 +34,7 @@ export function BookCard({ book, showPublisher = false }: { book: Book; showPubl
 			</Link>
 			<div className='flex flex-1 flex-col pt-3.5'>
 				<p className='flex flex-wrap items-center gap-x-2 text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
-					<span className='num'>{book.year}</span>
+					<span className='tabular-nums'>{book.year}</span>
 					<span className={book.availability === 'for-sale' ? 'text-[var(--accent)]' : book.availability === 'open-access' ? 'text-[#2f6b4f] dark:text-[#7fc9a1]' : ''}>{a.label}</span>
 				</p>
 				<Link href={`/books/${book.slug}`} className='mt-2 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold leading-snug lg:text-[1.125rem] tracking-[-0.02em] text-[var(--ink)] hover:text-[var(--accent)]'>
