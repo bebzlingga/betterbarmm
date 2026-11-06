@@ -1,4 +1,4 @@
-"""Give each story in datasets/news/news.json its picture: the one the outlet sets for sharing (og:image, else
+"""Give each story in the news (datasets/news/weeks) its picture: the one the outlet sets for sharing (og:image, else
 twitter:image), read from the outlet's own page; for Inquirer, whose pages refuse automated reads, from its feeds.
 A feed that carries a picture has already set it at the fetch.
 A story is asked once: one whose page has no picture, or refuses automated reads, keeps `image: null`.
@@ -9,7 +9,8 @@ Run after check_dates.py. The pictures stay the outlets'; the page shows them sm
 """
 import html, json, os, re, sys, time, urllib.parse, urllib.request
 
-PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'news.json')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import store  # noqa: E402  the news, a week to a file
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
 META = [re.compile(p, re.I) for p in (
     r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]*content=["\']([^"\']+)',
@@ -64,7 +65,7 @@ def inquirer_picture(url):
     return _inquirer.get(url)
 
 
-data = json.load(open(PATH))
+data = store.load()
 # A story is asked once (`pictured`): the fetch sets `image` from the feed, so null there only means the feed had none.
 todo = [i for i in data['items'] if not i.get('image') and not i.get('pictured') and 'news.google.com' not in i['url']]
 found = 0
@@ -74,7 +75,7 @@ for n, item in enumerate(todo):
     found += bool(item['image'])
     time.sleep(0.4)
     if n % 20 == 19:
-        json.dump(data, open(PATH, 'w'), indent=1, ensure_ascii=False); open(PATH, 'a').write('\n')
-json.dump(data, open(PATH, 'w'), indent=1, ensure_ascii=False); open(PATH, 'a').write('\n')
+        store.save(data)
+store.save(data)
 have = sum(bool(i.get('image')) for i in data['items'])
 print(f'pictures: {found} found of {len(todo)} asked; {have} of {len(data["items"])} stories have one')

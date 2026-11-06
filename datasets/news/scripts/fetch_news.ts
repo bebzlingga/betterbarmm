@@ -1,7 +1,7 @@
 import { NEWS_FEEDS, readFeed, type FetchedItem } from '../../../packages/db/src/news'
 
 /* `bun datasets/news/scripts/fetch_news.ts [YYYY-MM-DD]` — read the news feeds and add
-   what is new to datasets/news/news.json, from the given day (default: this week's
+   what is new to the news (a week to a file in datasets/news/weeks, see store.py), from the given day (default: this week's
    Monday, Manila time). Then resolve the Google News links to the outlets' own
    addresses: `python3 -I datasets/news/scripts/resolve_links.py`, check each story's own
    date: `python3 -I datasets/news/scripts/check_dates.py`, and give each its picture:
@@ -11,10 +11,39 @@ import { NEWS_FEEDS, readFeed, type FetchedItem } from '../../../packages/db/src
    (packages/db/src/news.ts); the database is gone, so the headlines live in a file
    like every other dataset, and the page reads it at build. */
 
-const FILE = new URL('../news.json', import.meta.url)
 type Item = FetchedItem & { via?: string }
 type Struck = { url: string; via?: string | null; title: string; reason: string }
 type Dataset = { name: string; generatedAt: string; since: string; note: string; items: Item[]; dropped?: Struck[] }
+
+// The news is kept a week to a file (user decision), Monday to Sunday in Manila: weeks/<Monday>.json, and index.json
+// for what is about all of them. Nothing is deleted; the page shows the newest week. The same split as store.py.
+const WEEKS = new URL('../weeks/', import.meta.url)
+const INDEX = new URL('../index.json', import.meta.url)
+const weekOf = (iso: string) => {
+	const d = new Date(new Date(iso).getTime() + 8 * 3600_000)
+	d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7))
+	return d.toISOString().slice(0, 10)
+}
+async function load(): Promise<Dataset> {
+	const data = (await Bun.file(INDEX).json()) as Dataset
+	const files = [...new Bun.Glob('*.json').scanSync(WEEKS.pathname)].sort()
+	data.items = (await Promise.all(files.map(async (f) => ((await Bun.file(new URL(f, WEEKS)).json()) as { items: Item[] }).items))).flat()
+	return data
+}
+async function save(data: Dataset) {
+	const weeks = new Map<string, Item[]>()
+	for (const item of data.items) {
+		const w = weekOf(item.published_at!)
+		weeks.set(w, [...(weeks.get(w) ?? []), item])
+	}
+	for (const [week, items] of weeks) {
+		const file = Bun.file(new URL(`${week}.json`, WEEKS))
+		const text = JSON.stringify({ week, items }, null, 1) + '\n'
+		if (!(await file.exists()) || (await file.text()) !== text) await Bun.write(file, text)
+	}
+	const { items: _, ...index } = data
+	await Bun.write(INDEX, JSON.stringify({ ...index, weeks: [...weeks.keys()].sort().reverse() }, null, 1) + '\n')
+}
 
 const manila = (d: Date) => new Date(d.getTime() + 8 * 3600_000)
 const monday = () => {
@@ -26,7 +55,7 @@ const since = process.argv[2] ?? monday()
 
 let data: Dataset
 try {
-	data = await Bun.file(FILE).json()
+	data = await load()
 } catch {
 	data = { name: 'Latest news', generatedAt: '', since, note: '', items: [] }
 }
@@ -46,7 +75,15 @@ const SWEEP = [
 	'MILF OR MNLF OR "Bangsamoro Parliament"',
 	'"Special Geographic Area" OR "Chief Minister" Bangsamoro',
 ].map(week)
-const FEEDS = [...NEWS_FEEDS, ...SWEEP]
+// The Bangsamoro Government's latest news, read page by page (user decision: a source of its own): its feeds give 5 posts a
+// page, so a week between runs loses most of them off the end of the first.
+const BIO_PAGES = [1, 2, 3, 4, 5, 6].map((n) => ({
+	name: 'Bangsamoro Government',
+	url: `https://bangsamoro.gov.ph/category/latest-news/feed/${n > 1 ? `?paged=${n}` : ''}`,
+	source: 'Bangsamoro Government',
+	regional: true,
+}))
+const FEEDS = [...NEWS_FEEDS, ...BIO_PAGES, ...SWEEP]
 
 const key = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
 const errors: string[] = []
@@ -76,5 +113,5 @@ for (const item of read) {
 }
 data.items.sort((a, b) => (b.published_at ?? '').localeCompare(a.published_at ?? ''))
 data.generatedAt = new Date().toISOString()
-await Bun.write(FILE, JSON.stringify(data, null, 1) + '\n')
+await save(data)
 console.log(`news: ${added} new of ${read.length} read, since ${since}; ${data.items.length} in all${errors.length ? `\n  feed errors: ${errors.join(' | ')}` : ''}`)

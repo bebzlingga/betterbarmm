@@ -887,7 +887,10 @@ const datasets = [
 					['url', 'url', 'The story'],
 				],
 				rows: () =>
-					read('news/news.json').items.map((n) => ({ published_at: n.published_at, outlet: n.source, headline: n.title, url: n.url })),
+					// Every week's file, not only the week the page shows: the data keeps them all.
+					read('news/index.json')
+						.weeks.flatMap((w) => read(`news/weeks/${w}.json`).items)
+						.map((n) => ({ published_at: n.published_at, outlet: n.source, headline: n.title, url: n.url })),
 			},
 		],
 	},

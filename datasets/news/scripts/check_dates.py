@@ -16,7 +16,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', 'accidents', 'scripts'))
 from gnews_decode import decode  # the decoder resolve_links.py uses
 
-PATH = os.path.join(HERE, '..', 'news.json')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import store  # noqa: E402  the news, a week to a file
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
 # Not news reports, whatever the index calls them.
 NOT_NEWS = ('volcanodiscovery.com',)
@@ -24,7 +25,7 @@ STAMP = re.compile(r'(?:article:published_time|datePublished|"pubdate"|name="dat
 OWN = re.compile(r'property="article:published_time"[^>]*content="(20\d\d-\d\d-\d\d[^"]*)"|content="(20\d\d-\d\d-\d\d[^"]*)"[^>]*property="article:published_time"')
 MANILA = timezone(timedelta(hours=8))
 
-data = json.load(open(PATH))
+data = store.load()
 data.setdefault('dropped', [])
 since = date.fromisoformat(data['since'])
 today = date.today().isoformat()
@@ -111,5 +112,5 @@ for item in data['items']:
     kept.append(item)
 kept.sort(key=lambda i: i.get('published_at') or '', reverse=True)
 data['items'] = kept
-json.dump(data, open(PATH, 'w'), indent=1, ensure_ascii=False); open(PATH, 'a').write('\n')
+store.save(data)
 print(f'checked the dates; struck {struck}, re-dated {moved}, {len(kept)} remain')

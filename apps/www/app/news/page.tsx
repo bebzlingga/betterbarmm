@@ -1,5 +1,7 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import type { Metadata } from 'next'
-import dataset from '../../../../datasets/news/news.json'
+import dataset from '../../../../datasets/news/index.json'
 import { NewsList } from '../_components/news-list'
 import { SiteHeader } from '../_components/site-header'
 import { pageMeta } from '../_lib/seo'
@@ -19,14 +21,27 @@ const day = (iso: string) =>
 	new Date(iso).toLocaleDateString('en-PH', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Manila' })
 const time = (iso: string) => new Date(iso).toLocaleTimeString('en-PH', { hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Manila' })
 
+/* The news is kept a week to a file (datasets/news/weeks/<Monday>.json) and none of it is deleted (user decision);
+   the page shows the 7 days up to the newest story and keeps the older weeks out of sight. Read from the two newest
+   files, since 7 days back from a Monday reaches into the week before. */
+const WEEKS = path.join(process.cwd(), '../../datasets/news/weeks')
+function latest(): Item[] {
+	const files = (dataset.weeks as string[]).slice(0, 2).map((w) => path.join(WEEKS, `${w}.json`))
+	const items = files.flatMap((f) => (JSON.parse(fs.readFileSync(f, 'utf8')) as { items: Item[] }).items)
+	const newest = Math.max(...items.map((i) => (i.published_at ? Date.parse(i.published_at) : 0)))
+	return items.filter((i) => i.published_at && Date.parse(i.published_at) > newest - 7 * 86_400_000)
+}
+
 /* One story, many outlets. Two headlines are the same story when, within two days of each other, they share at
    least three words and a quarter of their words, leaving out places and filler: every story here is about
-   Maguindanao or Marawi, so a shared place says nothing. Tried on a week of headlines, this joined 13 stories
+   Maguindanao or Marawi, so a shared place says nothing, and since October nearly every one names the Chief Minister,
+   so his title says nothing either: left in, it chained his election, the search for a cabinet and the cabinet itself into
+   one story. Tried on a week of headlines, this joined 13 stories
    and no two different ones; lower, it began joining a killing with the alert that followed it. */
 const FILLER = new Set(
 	('the of in on at to for and with from by as is are was were be after over into its his her their new says said amid will not than ' +
 		'this that about out barmm bangsamoro philippines region regional gov govt government del norte sur city maguindanao cotabato ' +
-		'lanao marawi basilan tawi sulu mindanao province town').split(' '),
+		'lanao marawi basilan tawi sulu mindanao province town chief minister ministers cm').split(' '),
 )
 const NUMBER: Record<string, string> = { one: '1', two: '2', three: '3', four: '4', five: '5', six: '6', seven: '7', eight: '8', nine: '9', ten: '10' }
 function words(title: string) {
@@ -79,7 +94,7 @@ function stories(items: Item[]) {
 }
 
 export default function NewsPage() {
-	const items = dataset.items as Item[]
+	const items = latest()
 	const sources = [...new Set(items.map((item) => item.source))]
 
 	return (

@@ -1,0 +1,128 @@
+{
+ "name": "Latest news",
+ "generatedAt": "2026-11-06T00:04:40.889Z",
+ "since": "2026-10-19",
+ "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
+ "dropped": [
+  {
+   "url": "https://www.rappler.com/philippines/elections/toto-mangudadatu-congressional-race-results-maguindanao-del-sur-2025/",
+   "via": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUDU3ZmhBZ1RBUEl4NjF4ZG1BS2gyVEF3SjFxV2ZTSTRJZC00a1NGRWtvY0QxeExQT2ZYclNVb2pBcFBhTnpDQl9ZTkdGZUF0OTZkdFdHM01PajVycUIxR2F5aURZQ0xiS2ltS2hBZzV4YTg0dnotWnlKcWY5bGg1bmZFRldaUTdRVU5HTmhlMTBqcEU1N1p2aUoxeWQ0RHFBY0czNDVOaDNOb0FlSngteDJTZl9wZw?oc=5",
+   "title": "Toto Mangudadatu edges out rival in tight Maguindanao del Sur House race",
+   "reason": "published 2025-05-14"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/pnp-ramp-crackdown-barmm-killings-2023/",
+   "via": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV1l2ZUVxYnB0NDlNS21PSVdiaVZTWWtjQzVHWEpIdDFaRmNpbTJZY1JDN2dDc3N3cW9ZX3l4M0dDR2lFRW8tTmc0VzhkZ19aT3puaHdsamVXcmxkbjJwWnZIaldOaEhWTUJfRlh4anduRDBOS2dmcVRPVEpRWUJfRGltTl9RWVVTSG8xdg?oc=5",
+   "title": "Police ramp up crime crackdown as BARMM sees over 300 killings in 7 months",
+   "reason": "published 2023-08-09"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/indigenous-people-oppose-mineral-reservation-south-upi-maguindanao-del-sur/",
+   "via": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOWDU5Znl0VjFPamJjQkdEcEZ5eVcwcmYxS2tiRGVVUWptNWJFcjhvd1dCTHdrTTk4eXVSbGMxRS1Jbm44Zm9sZzRkUmZja2Y3dDYxTm9UWVNYaFBpa2RBR2p3czhVeV9mY0d1ZUdRaHNKazlka3I4OXc0SU1ubFpRVUliU04xS09aM1NFUFhJQ2I3VjJCakNHRl9vcDRzaDJVT05vTldhb3NYQWNVOVhheDNVS1F5YXZwRGJqMA?oc=5",
+   "title": "IPs oppose proposed mineral reservation in Maguindanao del Sur",
+   "reason": "published 2023-12-07"
+  },
+  {
+   "url": "https://www.volcanodiscovery.com/place/4755/earthquakes/marawi-city.html",
+   "via": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44aDBmeHJNdHZFMGVpSS1Qcm5sSTZPMS1oQlhQM0NEdS1FNkpUczZuc1p1TTBIMjdOS0x0bzZaZFdpUVpqWENTODZ4NWsyOFdCdDRIVHBqUTR3ODFkM3NJcmNBZFVTcFMwYURFdFh1cmJVUHY3Nzg0U1VMTjc?oc=5",
+   "title": "Marawi City, Autonomous Region in Muslim Mindanao, Philippines, Earthquakes: Latest Quakes",
+   "reason": "not a news report"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/barmm-accounts-most-barangay-election-hotspots/",
+   "via": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNX0ktemFrTXJoUHA3UGdUcHlFUEFFb05MSWZxSTNnVFBCV1Q2UWpra0x3WHh4RjJtTTlLYXAzbk9TWmNVenFhX3Fqb2loNVhQajNOdF9PQk9qVVdpcUVvU2UybUNmTjIyN2VYQ1luX051ellEa0xLRHNlMU1hcEgwU0FaZDFuVlpoekZtODMxQXpwNno1QXRZ?oc=5",
+   "title": "BARMM accounts for 70% of election hot spots",
+   "reason": "published 2023-10-29"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/elections/ubjp-endorsement-robredo-test-milf-clout-barmm/",
+   "via": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRkEtbHJnTzJySGIwZGdSRUJKSGYwbW83ejlyVzVBVTBGcTNPRzZFYkNZb2JYNVVsOXBLbS1jWUF5Um5TdW9WLXIwR3E2dUNZUXFENzA0UktVcjU2RkxWejltQXJIb3drRTRveUpRRW1JYTZmajMwcUtDTWF0UmJqbV9Ca0cxM2tfYnBQWEd1Ry1aenFBMVFPZw?oc=5",
+   "title": "UBJP endorsement of Robredo to test MILF’s clout in BARMM",
+   "reason": "published 2022-04-24"
+  },
+  {
+   "url": "https://edcom2.gov.ph/edcom-2-and-msu-iit-forge-research-partnership-to-drive-education-reform-in-barmm/",
+   "via": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOWNfenZlb3U3c1VKY1NnbDZpblNlcVJBSy1nQ2ZOSldhbWFyc0h0QlhzMFlONlJCcG5YNTZpdU04TWs1NVhjRldmVVRkRGFHbnZFRXlVeGRpQ1JPV2pLdWhsdUgzV3Z6OEtzMkpXZ1c0M3F1ZTNHZU9SYnItc0ZRdnRxdWNzWGN6dERnM2FCNU93RmVSQ0E2ZkhTSEktZ2tEZXdqc25PMA?oc=5",
+   "title": "EDCOM 2 and MSU-IIT forge research partnership to drive education reform in BARMM",
+   "reason": "published 2026-08-20"
+  },
+  {
+   "url": "https://www.volcanodiscovery.com/earthquakes/quake-info/23464032/mag2quake-Oct-25-2026-Philippines-005-km-S-24-W-of-Datu-Hoffer-Ampatuan-Maguindanao-Del-Sur.html",
+   "via": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPR3ZSWFJsaUVhZkprOHQzNjNEVF9sSVlyY3JpTmsyM0NOdVpIbTFDQjJtU01GNU1VTmdaTWhMSDlEM3hBNHR6NUxoYnliUVhqYXdILS1KcGZWUXNkU3RvcmtLalNhbWJZOEZGV292eWZHZ1F4cWIwN2JZX3Y0SUx1ejZsMnFTTUN4eFF1RU1vYk9tdDhSVklFM2ZJbkJ5Zm9XU1p5MDN3cGhSSHNhVHU1aHpEZlNLRHVQMldwdmpYNlhVNi1udnFlX2ctMHp3LUduZW1WS0xINF9EY0doTHk3dDVuQmZDenRoU2tqWDlrWmJBTzA?oc=5",
+   "title": "Weak mag. 2.2 earthquake - Province of Maguindanao, 6.1 km southwest of Maganoy, Philippines, on Sunday, Oct 25, 2026, at 11:26 pm (GMT +8)",
+   "reason": "not a news report"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/marcos-jr-administration-stands-with-israel-barmm-says-palestine-is-us/",
+   "via": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcWtZdWlOX2NrcU1JN2ZVZzRYcDFod3lOdlJFS2xjRGVnUzRuVEFPUnJTLTFQV0t1OHd3bkNwaUhQYWxsYW9YdmVnVjE4R2tjd0ZCc3hvR1RGS29nZWVaXzY4RVR6Y2lxc0J6R3pqUkRXOEhxaE8wSllBRTFoeEdmTmxhZnZUbURUcmN6UHBIc3hkX3gweTQwNVQ0bWRNWEZiby0ydnNWOWMtVXd1TncxVHUyYlI5dG8?oc=5",
+   "title": "Marcos administration stands with Israel; BARMM says ‘Palestine is us’",
+   "reason": "published 2023-10-18"
+  },
+  {
+   "url": "https://explained.ph/pnp-intensifies-security-in-barmm-poll-areas-of-concern/",
+   "via": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPN0JxS256S2duay1sZzdXRDBqc1hMdExtMW9jaHk4WEFuc0NjWmdnOFFHWnVNeFp4SEd4bUM5aE9kTjNGLXNaNVNLbUdpTjZ3N3ZTZGdkRXlxOE5TSjB3MHZVZFhIYTFlREFXVng1Z3pfdjZ0elpQa3lMREMtY0VUU2pXZw?oc=5",
+   "title": "PNP intensifies security in BARMM poll areas of concern",
+   "reason": "published 2026-08-15"
+  },
+  {
+   "url": "https://ptvnews.ph/barmm-sends-more-aid-to-covid-19-hit-lanao-sur-town/wao-v1/",
+   "via": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR0R6NzZ6Mlc5dVBtQ2x5VmFkOEpYbk1CWHJIbU4tWC14djRxc2FMbm5ZZ0hDOXRSekQ2MDJTMUFidTU0djdSMmhzUm5Oc3VQNWxLX2k3YnJ1bWZUdHk5bTFqSVN6Q1kyU0V3YzJoQzVZTzJKLV9PU0NiRV9GY2NkRHJnNXc?oc=5",
+   "title": "Google map of Wao, Lanao del Sur. (Photo from PNA)",
+   "reason": "published 2021-09-27"
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/barmm-to-advance-evidence-based-governance-streamline-service-delivery-in-barmm/",
+   "via": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOHNzWE5mb2lzOTQ3bmZQRGgtMFNOUEtPb01XVG1rY21qcHR3bGFUYXhWVWdyQWtxQmNVUzNGYzFEdU9DdUV4SDUxWnBCTG1LMlNqbmVxbjZLdmc3UjlkY3lXeVREc1ZSUUtEdmt0RzlEbW1kVjhxXzZhcVNHVHM5VktONU42dlBtOU1PUmJuNTJSaG5EQi1hbGlWN0JmS2ZfZFp0UVN1aXMzazdrMVA0dXFBWWVFVDBvaVlpeDJ0Y3g?oc=5",
+   "title": "BARMM to advance evidence-based governance; streamline service delivery",
+   "reason": "duplicate of the Bangsamoro Government feed copy, headline shortened"
+  },
+  {
+   "url": "https://news.ssbcrack.com/chinese-aircraft-carrier-liaoning-transits-basilan-strait-with-escort-destroyers/",
+   "via": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdUZkMlhyYmp0STV4MnJwN2JBSHdhR1VzckdCWGxELXljUHJhYUNuQnJyMG16YTlfbWlVZ2xXLTVZdFlRaDJra3ZLLV9iaDg2NWxjWjNfYU51U0xBSTU0QTdlQ25FSGlEWmNBZFFxa2hObEtjUVpLQ09IVU9sU1JrbGZVYnBYanlkRk9sNnhpOEZlZExDMUtvc2VmQlhoQnpWVFpCaHB1a0tiajQ?oc=5",
+   "title": "Chinese Aircraft Carrier Liaoning Transits Basilan Strait with Escort Destroyers",
+   "reason": "aggregator rewrite, not the outlet that reported it"
+  },
+  {
+   "url": "https://bangsamoro.gov.ph/news/latest-news/nhcp-recognizes-bcpch-as-key-national-partner-on-93rd-founding-anniversary/?utm_source=rss&utm_medium=rss&utm_campaign=nhcp-recognizes-bcpch-as-key-national-partner-on-93rd-founding-anniversary",
+   "via": null,
+   "title": "NHCP recognizes BCPCH as key national partner on 93rd founding anniversary",
+   "reason": "duplicate: the Bangsamoro Government posted the story twice; this copy shortened the headline"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/ip-families-evacuate-tensions-escalate-bugawas-datu-odin-sinsuat-maguindanao-del-norte/",
+   "via": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRk81Z3BTRWRNcnRSQXFMY1FrQkswTlFRVUFkVWpZMTV3MXp5WUhEaVpPdm42QURZQjNpSzNsQWJ5RTFLSXB6NmJ4dGw0cElMWkFxUU9pQl90WWFhdjlSRFpoa3o5R25WSEloZDVjcl8zWm10ajltWmpRRDVPbTdMXzFYTFlxOXBOc2ZBTXB4RXUtd3E3MmtuVktJV053TGtGa25VY2xaSm5uUUpTbDc3STlmZTRvdWxONURnWjVycXE5Vm1xUFBTRGk1R1o?oc=5",
+   "title": "IP families evacuate as tensions escalate in Maguindanao del Norte village",
+   "reason": "published 2023-11-09"
+  },
+  {
+   "url": "https://saba.ye/en/news3820749.htm",
+   "via": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBITTN0dEFSOVpXNWtWeG1JZEFNUkRDTVAwNW9yaU44VFdMNGZaUDEyekdLc0hoa0N4SElXLVRDVVNRQmk4N1VlRVB3?oc=5",
+   "title": "Visits, distribution of in-kind gifts to martyrs' families in Al-Marawi'ah District, Hodeidah",
+   "reason": "Not about the Bangsamoro: Al-Marawi’ah is a district of Hodeidah, Yemen"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWFVwam9ndXIySVJfNmREOTFPblVta19hRS1fd253cmJMcW85UDU4bkhkN2RqZWlUWHJFOEx2VjJOcWtYaHV1Y3IzOVBPVDRuTVduZjIyYTUwYUdyMERoWGY5eURkdVlOUGJ0WlpWZG5qeXJKOW5ZLUFEdTlRckg0NHBoWjBxLWtvc282amp3VDZZVkV4SGR1Z1VSZ1FLZGQ1SXNNQ2RWbm5hVDlqaEtNWFBR?oc=5",
+   "via": null,
+   "title": "Weak mag. 2.1 earthquake - Cotabato City, 5.3 km west of Cotabato, Philippines, on Saturday, Oct 31, 2026, at 05:32 am (GMT +8)",
+   "reason": "Not a news report: an automated earthquake listing"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOb0c3c09DcEw5WUQ1XzJNbDgySTYxRE1YSlJNdnFkVWR0ekVDLVE1SmRvSnhISlF4NnlUcWVoMzUyN01QbXhEWnFRZ05QVHpxUXNvUFRvQ3FBYjR1Qi02bHM2dk9IMG01bmVuWHBrUzVtRUdyeTBYX2V4ZEVSVjhrWF92T2lLZ2RXbEZBWWNiRnViSWtVR0E?oc=5",
+   "via": null,
+   "title": "Google map of Guindulungan, Maguindanao. (Photo from PNA)",
+   "reason": "Not a story: the caption of a PTV News map, indexed as a headline"
+  },
+  {
+   "url": "https://outoftownblog.com/kulintang-foundry-in-cotabato-city/",
+   "via": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBUT0x4S2xOWUlmd3Zwc3oxQ0pUYXZ3NTNvQWZBOTRuSUNRbExfX0FObXF3aHRxOER3aUZtbHBQbTNsSHlQdUdPbnR4WFYySTROQkg1U1dMa01UblBJSVZlRjFUYjR0akV5Qkt5S25B0gFuQVVfeXFMUFRPTHhLbE5ZSWZ3dnBzejFDSlRhdnc1M29BZkE5NG5JQ1FsTF9fQU5tcXdodHE4RHdpRm1scFBtM2xIeVB1R09udHhYVjJJNE5CSDVTV0xrTVRuUElJVmVGMVRiNHRqRXlCS3lLbkE?oc=5",
+   "title": "Forged in Fire and Memory: Inside a Kulintang Foundry in Cotabato City",
+   "reason": "published 2026-04-20"
+  }
+ ],
+ "weeks": [
+  "2026-11-02",
+  "2026-10-26",
+  "2026-10-19",
+  "2026-10-12"
+ ]
+}

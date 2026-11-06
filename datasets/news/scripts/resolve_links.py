@@ -1,4 +1,4 @@
-"""Swap each Google News link in datasets/news/news.json for the outlet's own address, so a reader lands
+"""Swap each Google News link in the news (datasets/news/weeks) for the outlet's own address, so a reader lands
 on the outlet. The Google link stays as `via`, which the fetch uses to know the story is already here.
 
     python3 -I datasets/news/scripts/resolve_links.py
@@ -8,8 +8,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', 'accidents', 'scripts'))
 from gnews_decode import decode  # the decoder the incident sweeps use
 
-PATH = os.path.join(HERE, '..', 'news.json')
-data = json.load(open(PATH))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import store  # noqa: E402  the news, a week to a file
+data = store.load()
 todo = [i for i in data['items'] if 'news.google.com' in i['url']]
 done = 0
 for n, item in enumerate(todo):
@@ -20,7 +21,7 @@ for n, item in enumerate(todo):
     if url:
         item['via'], item['url'] = item['url'], url; done += 1
     if n % 10 == 9:
-        json.dump(data, open(PATH, 'w'), indent=1, ensure_ascii=False); open(PATH, 'a').write('\n')
+        store.save(data)
     time.sleep(1.2)  # Google answers 429 when asked too often
-json.dump(data, open(PATH, 'w'), indent=1, ensure_ascii=False); open(PATH, 'a').write('\n')
+store.save(data)
 print(f'resolved {done} of {len(todo)} Google News links; {len(todo) - done} still go through Google')
