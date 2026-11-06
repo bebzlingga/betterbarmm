@@ -25,23 +25,52 @@ const sourceName = (url: string) =>
 			: (plan.progress_reports.find((r) => url.includes(r.url.split('/view')[0]))?.title ?? new URL(url.split(' ')[0]).hostname.replace(/^www\./, ''))
 const href = (url: string) => url.split(' ')[0]
 
-/** Where the latest figure sits between zero and the largest value in play, with the target as a band and the start
-    as a tick. Direction is told by the words beside it, not by the bar. */
-function Gauge({ indicator, against }: { indicator: Indicator; against: { low: number; high: number } | null }) {
-	const values = [indicator.latest.value, indicator.baseline?.value ?? 0, against?.high ?? 0, indicator.target?.high ?? 0]
-	// A share runs on its own 0–100 scale, so 42% reads as under half; other units run to the largest value in play.
-	const top = indicator.unit === '%' && Math.max(...values) <= 100 ? 100 : Math.max(...values) * 1.12 || 1
-	const at = (v: number) => `${Math.min(100, (v / top) * 100)}%`
+/** Latest beside target beside start, as bars on one scale (user decision: a dot against a band was hard to read). The
+    latest bar takes the verdict's colour; a target range is solid to its near end and paler to its far one. */
+const BAR_TONE: Record<Status, string> = {
+	met: 'bg-[var(--tone-done-fg)]',
+	short: 'bg-[var(--tone-move-fg)]',
+	'no-target': 'bg-[var(--ink-3)]',
+	'not-compared': 'bg-[var(--ink-3)]',
+}
+
+function Bars({ indicator, status, goals }: { indicator: Indicator; status: Status; goals: { low: number; high: number; year: number }[] }) {
+	const { latest, baseline, unit } = indicator
+	const values = [latest.value, baseline?.value ?? 0, ...goals.map((goal) => goal.high)]
+	// A large share runs on 0–100, so 42% reads as under half; a small one (3.9% unemployment) and every other unit run
+	// to the largest value in play, or the bars are too short to compare.
+	const most = Math.max(...values)
+	const top = unit === '%' && most > 50 && most <= 100 ? 100 : most * 1.1 || 1
+	const width = (v: number) => `max(2px, ${Math.min(100, (v / top) * 100)}%)`
+	const row = (key: string, label: string, year: number, text: string, bar: React.ReactNode, strong = false) => (
+		<div key={key} className='grid grid-cols-[3.75rem_minmax(0,1fr)_5.5rem] items-center gap-3'>
+			<span className='text-[0.75rem] leading-tight text-[var(--ink-3)]'>
+				{label}
+				<span className='block tabular-nums text-[var(--ink-mute)]'>{year}</span>
+			</span>
+			<span className='relative h-2.5 bg-[var(--paper-2)]'>{bar}</span>
+			<span className={`text-right text-[0.8125rem] tabular-nums ${strong ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}>{text}</span>
+		</div>
+	)
 	return (
-		<div className='relative mt-5 h-2 bg-[var(--paper-3)]' aria-hidden='true'>
-			{against ? (
-				<span
-					className='absolute inset-y-0 bg-[color-mix(in_oklab,var(--accent)_30%,transparent)]'
-					style={{ left: at(against.low), width: `max(3px, calc(${at(against.high)} - ${at(against.low)}))` }}
-				/>
-			) : null}
-			{indicator.baseline ? <span className='absolute -top-1 h-4 w-px bg-[var(--ink-3)]' style={{ left: at(indicator.baseline.value) }} /> : null}
-			<span className='absolute top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[var(--paper)] bg-[var(--accent)]' style={{ left: at(indicator.latest.value) }} />
+		<div className='mt-5 grid gap-2.5'>
+			{row('latest', 'Latest', latest.year, formatValue(latest.value, unit), <span className={`absolute inset-y-0 left-0 ${BAR_TONE[status]}`} style={{ width: width(latest.value) }} />, true)}
+			{goals.map((goal) =>
+				row(
+					`target-${goal.year}`,
+					'Target',
+					goal.year,
+					formatGoal(goal, unit),
+					<>
+						<span className='absolute inset-y-0 left-0 bg-[var(--accent)]' style={{ width: width(goal.low) }} />
+						{goal.high > goal.low ? (
+							<span className='absolute inset-y-0 left-0 bg-[color-mix(in_oklab,var(--accent)_35%,transparent)]' style={{ width: width(goal.high) }} />
+						) : null}
+					</>,
+				),
+			)}
+			{baseline ? row('start', 'Start', baseline.year, formatValue(baseline.value, unit), <span className='absolute inset-y-0 left-0 bg-[var(--rule)]' style={{ width: width(baseline.value) }} />) : null}
+			<p className='text-right text-[0.75rem] text-[var(--ink-3)]'>{indicator.direction === 'up' ? 'Higher is better' : 'Lower is better'}</p>
 		</div>
 	)
 }
@@ -64,34 +93,7 @@ function Card({ indicator }: { indicator: Indicator }) {
 				<span className='text-[0.8125rem] text-[var(--ink-3)]'>in {latest.year}</span>
 			</p>
 
-			<Gauge indicator={indicator} against={against ?? (target && indicator.comparable ? target : null)} />
-
-			<dl className='mt-4 grid gap-1 text-[0.8125rem] leading-[1.5] text-[var(--ink-2)]'>
-				{against ? (
-					<div className='flex justify-between gap-3'>
-						<dt className='text-[var(--ink-3)]'>Target for {against.year}</dt>
-						<dd className='text-right font-semibold'>{formatGoal(against, unit)}</dd>
-					</div>
-				) : null}
-				{target && (endDiffers || !against) ? (
-					<div className='flex justify-between gap-3'>
-						<dt className='text-[var(--ink-3)]'>Target for {target.year}</dt>
-						<dd className='text-right font-semibold'>{formatGoal(target, unit)}</dd>
-					</div>
-				) : null}
-				{baseline ? (
-					<div className='flex justify-between gap-3'>
-						<dt className='text-[var(--ink-3)]'>Where it started</dt>
-						<dd className='text-right'>
-							{formatValue(baseline.value, unit)} in {baseline.year}
-						</dd>
-					</div>
-				) : null}
-				<div className='flex justify-between gap-3'>
-					<dt className='text-[var(--ink-3)]'>Better is</dt>
-					<dd className='text-right'>{indicator.direction === 'up' ? 'higher' : 'lower'}</dd>
-				</div>
-			</dl>
+			<Bars indicator={indicator} status={status} goals={[...(against ? [against] : []), ...(target && (endDiffers || !against) ? [target] : [])]} />
 
 			<details className='group mt-auto pt-4'>
 				<summary className='cursor-pointer list-none text-[0.75rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
