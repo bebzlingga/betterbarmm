@@ -15,6 +15,8 @@ import Link from 'next/link'
 import { PageHeader } from '../_components/page-header'
 import { Reveal } from '../_components/reveal'
 import { getCommitteesDataset, type Committee } from '../_lib/committees-data'
+import { getFirstParliament } from '../_lib/members-data'
+import { MemberAvatar } from '../_components/member-avatar'
 import { toDisplayTitle } from '../_lib/labels'
 
 export const metadata: Metadata = {
@@ -202,6 +204,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 export default function CommitteesPage() {
 	const dataset = getCommitteesDataset()
 	const { committees, stats } = dataset
+	const first = getFirstParliament()
 
 	// Two kinds of committee, and a reader looking for "who handles hospitals" wants the first.
 	const groups = [
@@ -284,6 +287,65 @@ export default function CommitteesPage() {
 				titleMuted='before anyone votes on it.'
 				description={`A committee takes charge of one subject — health, public works, the budget — and does the detailed work on every measure under it; most of a bill’s life happens here, not on the floor. ${stats.statutory} of these ${stats.total} are permanent, and together they hold ${stats.referrals.toLocaleString()} referred measures and ${stats.reports} reports.`}
 			/>
+
+			{/* ---- The First Parliament's committees ----
+
+			    Parliament has named a chair for each; vice chairs and members are added here as it posts them. */}
+			<section aria-labelledby='first-parliament' className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<div className='mb-8 flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between lg:gap-10'>
+					<div>
+						<p className='bb-label'>First Parliament · from 30 October 2026</p>
+						<h2 id='first-parliament' className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
+							The committees and their chairs
+						</h2>
+					</div>
+					<p className='max-w-[34rem] text-[0.875rem] leading-6 text-[var(--ink-3)] lg:text-right'>
+						{first.committees.some((c) => c.members.length)
+							? 'As Parliament’s committees page lists them.'
+							: 'Parliament has named a chair for each committee. Vice chairs and members appear here once it posts them.'}
+					</p>
+				</div>
+				<ul className='grid gap-px overflow-hidden border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-2 xl:grid-cols-3'>
+					{first.committees.map((c) => {
+						const known = committees.some((old) => old.slug === c.slug)
+						const chair = c.chair?.member?.displayName ?? c.chair?.name
+						return (
+							<li key={c.slug} className='flex flex-col gap-4 bg-[var(--paper)] p-5'>
+								{known ? (
+									<Link href={`/committees/${c.slug}`} className='text-[0.9375rem] font-bold leading-snug text-[var(--ink)] hover:text-[var(--accent)]'>
+										{c.name}
+									</Link>
+								) : (
+									<a href={c.url} target='_blank' rel='noreferrer' className='text-[0.9375rem] font-bold leading-snug text-[var(--ink)] hover:text-[var(--accent)]'>
+										{c.name}
+									</a>
+								)}
+								{chair ? (
+									<div className='mt-auto flex items-center gap-3'>
+										<MemberAvatar name={chair} src={c.chair?.member?.photoUrl} />
+										<div className='min-w-0'>
+											<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Chair</p>
+											{c.chair?.member ? (
+												<Link href={`/members/${c.chair.member.slug}`} className='text-[0.875rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+													{chair}
+												</Link>
+											) : (
+												<p className='text-[0.875rem] font-semibold text-[var(--ink)]'>{chair}</p>
+											)}
+										</div>
+									</div>
+								) : null}
+							</li>
+						)
+					})}
+				</ul>
+				<h2 className='mt-[clamp(3.75rem,7vw,6.5rem)] border-t border-[var(--rule)] pt-8 text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+					In the Transition Authority, 2019 to 2025
+				</h2>
+				<p className='mt-2 max-w-[44rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
+					The committees as they last stood under the Bangsamoro Transition Authority, with every measure referred to them and every report they filed.
+				</p>
+			</section>
 
 			{/* ---- The committees, by kind ----
 

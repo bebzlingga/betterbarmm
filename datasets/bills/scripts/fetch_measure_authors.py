@@ -231,6 +231,14 @@ def capture(name: str, limit: int = 0) -> None:
 
     print(f"index {config['index']}")
     rows = listing_rows(fetch(config["index"]))
+    # Since 30 October 2026 Parliament's listings show the First Parliament only, so the Transition Authority's
+    # measures are gone from them. Never trade an index already held for a shorter one.
+    held_file: Path = config["out"]
+    if held_file.exists() and not limit:
+        held = json.loads(held_file.read_text())
+        held_rows = next((v for v in held.values() if isinstance(v, list)), [])
+        if len(rows) < len(held_rows):
+            raise SystemExit(f"{name}: the listing has {len(rows)} and the index holds {len(held_rows)}; not overwriting it")
     if limit:
         rows = rows[:limit]
     print(f"      {len(rows)} {name}")

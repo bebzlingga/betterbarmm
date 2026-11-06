@@ -5,7 +5,7 @@ import { Reveal } from '../_components/reveal'
 import { getRosterDataset } from '../_lib/members-data'
 
 export const metadata: Metadata = {
-	title: 'Members',
+	title: 'Bangsamoro Transition Authority',
 	description:
 		'Everyone who has served in the Bangsamoro Transition Authority — their term, the parliaments they sat in, the role they held, and the measures they are credited on.',
 }
@@ -23,7 +23,7 @@ export default function MembersPage() {
 				emphasis='brand'
 				align='left'
 				size='compact'
-				eyebrow={`${stats.total.toLocaleString()} members on record`}
+				eyebrow={`Bangsamoro Transition Authority, 2019 to 2025 · ${stats.total.toLocaleString()} members on record`}
 				title='The people who write'
 				titleMuted='the region’s laws.'
 			/>

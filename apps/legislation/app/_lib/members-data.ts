@@ -122,6 +122,8 @@ export type ElectedSeat = {
 	/** Where the portrait was published, when it came from outside Parliament's roster. */
 	photoSource?: { label: string; url: string }
 	sources: { label: string; url: string }[]
+	/** Offices held now, in the chamber or the cabinet: "Deputy Speaker", "Minister of Health". */
+	roles: string[]
 }
 
 export type ElectedRelative = {
@@ -705,6 +707,7 @@ for (const raw of electedFile?.members ?? []) {
 		})),
 		photoSource: raw.photo ? raw.photo.source : undefined,
 		sources: raw.sources ?? [],
+		roles: [],
 	}
 	const photo = raw.photo && electedPortraits.has(raw.photo.file) ? `/images/members/elected/${raw.photo.file}` : undefined
 	if (!photo) elected.photoSource = undefined
@@ -760,6 +763,151 @@ for (const raw of electedFile?.members ?? []) {
 	})
 }
 allMembers.sort((left, right) => left.rosterName.localeCompare(right.rosterName))
+
+/* ============================================================
+   The First Parliament as its own site lists it
+
+   members/first-parliament.json (datasets/bills/scripts/fetch_first_parliament.py):
+   the official portrait, each Member's page, and the office each holds in the
+   chamber, its officers and Secretariat, and the chairs of its committees. The
+   cabinet posts Members took on 5 November 2026 come from the Directory, which
+   names each office's head.
+   ============================================================ */
+
+type RawFirstMember = { rosterName: string; roles?: string[]; photo?: string | null; url?: string | null }
+type RawFirstCommittee = { slug: string; name: string; url: string; chairperson?: string | null; vice_chairpersons?: string[]; members?: string[]; jurisdiction?: string }
+type RawFirst = {
+	captured?: string
+	officers?: { speaker?: string | null; deputy_speakers?: string[]; floor_leader?: string | null; deputy_floor_leaders?: string[]; secretary_general?: string | null; sergeant_at_arms?: string | null; source?: string }
+	members?: RawFirstMember[]
+	committees?: RawFirstCommittee[]
+}
+
+const firstFile = readJson<RawFirst>(path.join(DATASET_ROOT, 'bangsamoro_registry/members/first-parliament.json'))
+
+/** A roster name for matching: no nickname in quotes, "JR." wherever it was put. */
+const rosterKey = (name: string) =>
+	name.toUpperCase().replace(/["“][^"”]*["”]/g, '').replace(/,?\s*JR\.?/g, ' JR').replace(/\s+/g, ' ').trim().replace(/[ ,]+$/, '')
+
+const electedByKey = new Map(allMembers.filter((member) => member.elected).map((member) => [rosterKey(member.rosterName), member]))
+
+/*
+ * The election result names Members as the ballot did ("ABU, JOHARI", "MATOLO, TINA"); Parliament's site in
+ * full ("ABU, JOHARI "BUTCH" C.", "MATOLO-DE ASIS, RHOSATINA S."). An exact match is taken first; otherwise the
+ * surname has to agree (ignoring spaces, hyphens and one letter) and a given name has to be shared, or the
+ * surname has to be the only one of its kind. Two Members who still tie are left unmatched rather than guessed.
+ */
+function nameParts(name: string): [string, string[]] {
+	const n = name.toUpperCase().replace(/["“][^"”]*["”]/g, '').replace(/,?\s*\bJR\b\.?/g, '').replace(/\b(III|II|IV)\b/g, '')
+	const [surname, given = ''] = n.split(/,(.*)/s)
+	return [surname!.replace(/[^A-Z]/g, ''), (given.match(/[A-Z]+/g) ?? []).filter((w) => w.length > 1)]
+}
+function oneEdit(a: string, b: string) {
+	if (Math.abs(a.length - b.length) > 1) return false
+	let i = 0
+	while (i < a.length && a[i] === b[i]) i++
+	return a.slice(i + 1) === b.slice(i + 1) || a.slice(i) === b.slice(i + 1) || a.slice(i + 1) === b.slice(i)
+}
+function nameScore(a: string, b: string) {
+	const [sa, ga] = nameParts(a)
+	const [sb, gb] = nameParts(b)
+	const surname = sa === sb ? 3 : sa.startsWith(sb) || sb.startsWith(sa) || oneEdit(sa, sb) ? 2 : 0
+	if (!surname) return 0
+	const shared = ga.some((x) => gb.some((y) => x === y || (x.length >= 3 && y.length >= 3 && (x.includes(y) || y.includes(x)))))
+	return surname + (shared ? 2 : 0)
+}
+function matchAmong(name: string, pool: Member[]): Member | undefined {
+	const exact = pool.find((m) => rosterKey(m.rosterName) === rosterKey(name))
+	if (exact) return exact
+	const scored = pool.map((m) => [nameScore(name, m.rosterName), m] as const).filter(([s]) => s > 0).sort((a, b) => b[0] - a[0])
+	if (!scored.length) return undefined
+	const [best, second] = scored
+	if (scored.length === 1 || best![0] > second![0]) return best![0] >= 3 || scored.length === 1 ? best![1] : undefined
+	return undefined
+}
+const findElected = (name?: string | null) => (name ? matchAmong(name, [...electedByKey.values()]) : undefined)
+
+/** Cabinet posts held by Members, from the Directory's heads of office ("MP Atty. Naguib G. Sinarimbo"). */
+const cabinetRoles = (() => {
+	const directory = readJson<{ offices?: { name: string; head?: { name?: string; title?: string } | null }[] }>(
+		path.join(DATASET_ROOT, '../directory/offices.json'),
+	)
+	const roles = new Map<Member, string>()
+	// "MP Atty. Jimael Salam D. Salliman" → "SALLIMAN, JIMAEL SALAM D.", then the same matcher as the roster.
+	for (const office of directory?.offices ?? []) {
+		const head = office.head?.name
+		if (!head || !/^MP\b/.test(head)) continue
+		const words = head.replace(/^MP\s+/, '').replace(/\b(Atty|Engr|Dr|Hon)\.?\s+/g, '').trim().split(/\s+/)
+		const jr = /^jr\.?$/i.test(words.at(-1)!) ? words.pop() : undefined
+		const member = findElected(`${words.pop()}${jr ? ' JR' : ''}, ${words.join(' ')}`)
+		if (!member) continue
+		const title = office.head?.title ?? ''
+		roles.set(member, /^minister$/i.test(title) ? office.name.replace(/^Ministry/, 'Minister') : `${title}, ${office.name}`)
+	}
+	return roles
+})()
+
+// Exact names first, so a fuzzy match can't take a Member whose own name is on the list.
+const unclaimed = new Set(electedByKey.values())
+const firstRows = [...(firstFile?.members ?? [])]
+const claim = (raw: RawFirstMember) => {
+	const member = matchAmong(raw.rosterName, [...unclaimed])
+	if (member) unclaimed.delete(member)
+	return member
+}
+const firstMatches = new Map<RawFirstMember, Member | undefined>()
+for (const raw of firstRows) if ([...unclaimed].some((m) => rosterKey(m.rosterName) === rosterKey(raw.rosterName))) firstMatches.set(raw, claim(raw))
+for (const raw of firstRows) if (!firstMatches.has(raw)) firstMatches.set(raw, claim(raw))
+
+for (const raw of firstRows) {
+	const member = firstMatches.get(raw)
+	if (!member?.elected) continue
+	if (raw.photo) {
+		member.photoUrl = raw.photo
+		member.elected.photoSource = raw.url ? { label: 'Bangsamoro Parliament', url: raw.url } : undefined
+	}
+	member.profileUrl = raw.url ?? member.profileUrl
+	member.elected.roles = [...(raw.roles ?? [])]
+}
+for (const [member, role] of cabinetRoles) {
+	if (member.elected && !member.elected.roles.some((r) => r.toLowerCase() === role.toLowerCase())) member.elected.roles.push(role)
+}
+for (const member of electedByKey.values()) {
+	if (member.elected?.roles.length) member.searchText += ` ${member.elected.roles.join(' ').toLowerCase()}`
+}
+
+export type FirstParliamentPerson = { name: string; member?: Member }
+export type FirstParliamentCommittee = { slug: string; name: string; url: string; chair?: FirstParliamentPerson; viceChairs: FirstParliamentPerson[]; members: FirstParliamentPerson[]; jurisdiction?: string }
+
+const person = (name?: string | null): FirstParliamentPerson | undefined => (name ? { name, member: findElected(name) } : undefined)
+
+/** The First Parliament's officers, Secretariat heads and committees, each Member linked to their record. */
+export function getFirstParliament() {
+	const o = firstFile?.officers ?? {}
+	return {
+		captured: firstFile?.captured,
+		source: o.source,
+		speaker: person(o.speaker),
+		deputySpeakers: (o.deputy_speakers ?? []).map((n) => person(n)!),
+		floorLeader: person(o.floor_leader),
+		deputyFloorLeaders: (o.deputy_floor_leaders ?? []).map((n) => person(n)!),
+		secretaryGeneral: o.secretary_general ?? undefined,
+		sergeantAtArms: o.sergeant_at_arms ?? undefined,
+		cabinet: [...electedByKey.values()]
+			.filter((m) => m.elected?.roles.some((r) => /chief minister|minister|director general|attorney general/i.test(r)))
+			.map((m) => ({ member: m, roles: m.elected!.roles.filter((r) => /chief minister|minister|director general|attorney general/i.test(r)) }))
+			.sort((a, b) => (/^BARMM Chief Minister/i.test(b.roles[0]!) ? 1 : 0) - (/^BARMM Chief Minister/i.test(a.roles[0]!) ? 1 : 0) || a.roles[0]!.localeCompare(b.roles[0]!)),
+		committees: (firstFile?.committees ?? []).map((c): FirstParliamentCommittee => ({
+			slug: c.slug,
+			name: c.name,
+			url: c.url,
+			chair: person(c.chairperson),
+			viceChairs: (c.vice_chairpersons ?? []).map((n) => person(n)!),
+			members: (c.members ?? []).map((n) => person(n)!),
+			jurisdiction: c.jurisdiction || undefined,
+		})),
+	}
+}
 
 /* ============================================================
    Authors who are not people

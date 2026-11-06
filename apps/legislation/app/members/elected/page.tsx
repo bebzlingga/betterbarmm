@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { MemberAvatar } from '../../_components/member-avatar'
 import { PageHeader } from '../../_components/page-header'
 import { ProfileDialog } from '../../_components/profile-dialog'
-import { getElectedMembers, type ElectedSeat, type Member } from '../../_lib/members-data'
+import { getElectedMembers, getFirstParliament, type ElectedSeat, type FirstParliamentPerson, type Member } from '../../_lib/members-data'
 
 export const metadata: Metadata = {
-	title: 'Elected Parliament',
+	title: 'First Parliament',
 	description:
 		'The 80 Members elected to the first Bangsamoro Parliament on 14 September 2026: who they are, the seat they won, what they did before, and their relatives in public life — each from a cited source.',
 }
@@ -101,6 +101,7 @@ function CardFace({ member }: { member: Elected }) {
 				<MemberAvatar name={member.displayName} src={member.photoUrl} />
 				<div className='min-w-0'>
 					<h3 className='text-[1rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{member.displayName}</h3>
+					{elected.roles.length ? <p className='mt-1 text-[0.75rem] font-semibold leading-snug text-[var(--accent)]'>{elected.roles.join(' · ')}</p> : null}
 					<p className='mt-1 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{[elected.where, elected.party].filter(Boolean).join(' · ')}</p>
 					{elected.votes != null ? <p className='num mt-1 text-[0.75rem] text-[var(--ink-mute)]'>{elected.votes.toLocaleString('en-PH')} votes</p> : null}
 				</div>
@@ -154,6 +155,12 @@ function Profile({ member }: { member: Elected }) {
 					</p>
 				) : null}
 				<dl className='mt-6 grid gap-4 text-[0.8125rem]'>
+					{elected.roles.length ? (
+						<div>
+							<dt className={LABEL}>Office</dt>
+							<dd className='mt-1 text-[var(--ink)]'>{elected.roles.join(' · ')}</dd>
+						</div>
+					) : null}
 					<div>
 						<dt className={LABEL}>Seat</dt>
 						<dd className='mt-1 text-[var(--ink)]'>{[elected.seat, elected.where].filter(Boolean).join(' · ')}</dd>
@@ -323,6 +330,85 @@ function Card({ member, prev, next }: { member: Elected; prev?: Neighbour; next?
 	)
 }
 
+/** One person in an office: the portrait and name, linked to their record where they are a Member. */
+function Holder({ p, role }: { p: FirstParliamentPerson | { name: string; member?: Member }; role?: string }) {
+	const name = p.member?.displayName ?? p.name
+	const body = (
+		<>
+			<MemberAvatar name={name} src={p.member?.photoUrl} />
+			<span className='min-w-0'>
+				<span className='block text-[0.9375rem] font-bold leading-snug text-[var(--ink)] group-hover:text-[var(--accent)]'>{name}</span>
+				{role ? <span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{role}</span> : null}
+			</span>
+		</>
+	)
+	return p.member ? (
+		<Link href={`/members/${p.member.slug}`} className='group flex items-center gap-3.5'>
+			{body}
+		</Link>
+	) : (
+		<div className='flex items-center gap-3.5'>{body}</div>
+	)
+}
+
+/** The chamber's officers, the cabinet seats Members hold, and the Secretariat, as Parliament's site lists them. */
+function Officers() {
+	const fp = getFirstParliament()
+	if (!fp.speaker) return null
+	const titleCase = (s: string) => s.toLowerCase().replace(/(^|[\s.-])([a-z])/g, (m) => m.toUpperCase())
+	const groups: { title: string; people: { p: FirstParliamentPerson; role?: string }[] }[] = [
+		{ title: 'Speaker', people: [{ p: fp.speaker }] },
+		{ title: 'Deputy Speakers', people: fp.deputySpeakers.map((p) => ({ p })) },
+		{ title: 'Majority Floor Leader', people: fp.floorLeader ? [{ p: fp.floorLeader }] : [] },
+		{ title: 'Deputy Majority Floor Leaders', people: fp.deputyFloorLeaders.map((p) => ({ p })) },
+		{ title: 'In the cabinet', people: fp.cabinet.map((c) => ({ p: { name: c.member.displayName, member: c.member }, role: c.roles.join(' · ') })) },
+	]
+	return (
+		<section id='officers' className='scroll-mt-24 border-b border-[var(--rule)]'>
+			<div className='bb-container bb-section'>
+				<p className='bb-label'>Officers and offices</p>
+				<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Who presides, and who runs the House</h2>
+				<div className='mt-10 grid gap-x-16 gap-y-12 lg:grid-cols-2'>
+					{groups.filter((g) => g.people.length).map((g) => (
+						<div key={g.title} className={g.people.length > 4 ? 'lg:col-span-2' : ''}>
+							<h3 className={LABEL}>{g.title}</h3>
+							<div className={`mt-4 grid gap-5 ${g.people.length > 4 ? 'sm:grid-cols-2 xl:grid-cols-3' : ''}`}>
+								{g.people.map(({ p, role }) => (
+									<Holder key={p.name} p={p} role={role} />
+								))}
+							</div>
+						</div>
+					))}
+					<div>
+						<h3 className={LABEL}>Secretariat</h3>
+						<dl className='mt-4 grid gap-3 text-[0.9375rem]'>
+							{fp.secretaryGeneral ? (
+								<div>
+									<dt className='text-[0.75rem] text-[var(--ink-3)]'>Secretary General</dt>
+									<dd className='font-bold text-[var(--ink)]'>{titleCase(fp.secretaryGeneral.split(', ').reverse().join(' '))}</dd>
+								</div>
+							) : null}
+							{fp.sergeantAtArms ? (
+								<div>
+									<dt className='text-[0.75rem] text-[var(--ink-3)]'>Sergeant-at-Arms</dt>
+									<dd className='font-bold text-[var(--ink)]'>{titleCase(fp.sergeantAtArms)}</dd>
+								</div>
+							) : null}
+						</dl>
+					</div>
+				</div>
+				<p className='mt-10 text-[0.78125rem] text-[var(--ink-3)]'>
+					From Parliament’s{' '}
+					<a href={fp.source ?? 'https://parliament.bangsamoro.gov.ph/parliament-officers/'} target='_blank' rel='noreferrer' className='rule-link'>
+						officers page
+					</a>
+					{fp.captured ? `, as of ${new Date(fp.captured).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })}` : ''}; cabinet posts from the BetterBARMM Directory.
+				</p>
+			</div>
+		</section>
+	)
+}
+
 export default function ElectedPage() {
 	const members = getElectedMembers()
 	const sections = SEATS.map((s) => groupsFor(s.id, members.filter((m) => m.elected.seat === s.seat)))
@@ -338,8 +424,8 @@ export default function ElectedPage() {
 				emphasis='brand'
 				align='left'
 				size='compact'
-				eyebrow={`${members.length} Members · elected 14 September 2026`}
-				title='The first elected'
+				eyebrow={`${members.length} Members · elected 14 September 2026 · sitting from 30 October 2026`}
+				title='The First'
 				titleMuted='Parliament.'
 			/>
 
@@ -360,6 +446,8 @@ export default function ElectedPage() {
 					})}
 				</ol>
 			</nav>
+
+			<Officers />
 
 			{SEATS.map((s, i) => {
 				const groups = sections[i]!

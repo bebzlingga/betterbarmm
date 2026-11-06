@@ -162,6 +162,12 @@ def main() -> None:
     if args.limit:
         rows = rows[: args.limit]
     print(f"      {len(rows)} bills")
+    # Since 30 October 2026 /bills/ lists the First Parliament's bills only; the Transition Authority's are no
+    # longer on it. Never trade the index already held for a shorter one.
+    if OUT.exists() and not args.limit:
+        held = len(json.loads(OUT.read_text()).get("bills", []))
+        if len(rows) < held:
+            raise SystemExit(f"the listing has {len(rows)} bills and the index holds {held}; not overwriting it")
 
     bills = []
     for position, row in enumerate(rows, 1):

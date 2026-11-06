@@ -18,9 +18,10 @@ import { ThemeToggle } from './theme-toggle'
  * these people, so the two belong behind one label rather than sitting as
  * separate top-level links.
  */
+// Parliament's own split: the First Parliament sitting now, and the Transition Authority before it.
 const peopleLinks = [
-	{ href: '/members/elected', label: 'Elected 2026' },
-	{ href: '/members', label: 'Members' },
+	{ href: '/members/elected', label: 'First Parliament' },
+	{ href: '/members', label: 'Bangsamoro Transition Authority' },
 	{ href: '/committees', label: 'Committees' },
 ]
 
@@ -28,7 +29,10 @@ const peopleLinks = [
    what its own masthead says; in a row of one-word tabs — Registry, People,
    Stats — a three-word label with an ampersand in it reads as a sentence
    someone left in the navigation. */
-const secondaryLinks = [{ href: '/about', label: 'Data' }]
+const secondaryLinks = [
+	{ href: '/latest', label: 'Latest' },
+	{ href: '/about', label: 'Data' },
+]
 
 /** Marks a category whose route exists but whose records aren't compiled yet. */
 function SoonBadge() {
@@ -240,7 +244,7 @@ export function SiteNav() {
 
 							<div
 								id='people-menu'
-								className={`absolute right-0 top-full z-40 mt-1 w-[13rem]  border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] transition duration-200 ${
+								className={`absolute right-0 top-full z-40 mt-1 w-[17rem]  border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] transition duration-200 ${
 									isPeopleOpen
 										? 'visible translate-y-0 opacity-100'
 										: 'invisible -translate-y-1 opacity-0'

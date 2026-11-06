@@ -1,0 +1,1213 @@
+{
+ "parliament": "First Bangsamoro Parliament",
+ "captured": "2026-11-06",
+ "sources": [
+  "https://parliament.bangsamoro.gov.ph/first-parliament-mp/",
+  "https://parliament.bangsamoro.gov.ph/parliament-officers/",
+  "https://parliament.bangsamoro.gov.ph/committees/"
+ ],
+ "note": "The First Parliament as its own site lists it. Committee vice chairs and members appear as Parliament publishes them; a committee with only a chair has not posted the rest yet.",
+ "officers": {
+  "speaker": "RAKIM, AMER ZAAKARIA A.",
+  "deputy_speakers": [
+   "MATOLO-DE ASIS, RHOSATINA S.",
+   "MIDTIMBANG, TAWAKAL B.",
+   "MAWALLIL, AMILBAHAR S.",
+   "PANDI, LAMPA I.",
+   "BALINDONG, AHMAD AMIR A.",
+   "ORANON, SUWAIB L.",
+   "IBAY, IBRAHIM P.",
+   "MACAPODI, HOSNI B.",
+   "LORENA, JOSE I.",
+   "HATAMAN, ABRAR J."
+  ],
+  "floor_leader": "ABU, JOHARI C.",
+  "deputy_floor_leaders": [
+   "AMIN, ABDEL RAZI A.",
+   "SINARIMBO, NAGUIB G.",
+   "MASTURA, ISHAK V.",
+   "PAGAYAO, ALINDATU K.",
+   "SALLIMAN, JIMAEL SALAM D.",
+   "QUE, JULBERT S.",
+   "ANTOK, TOMANDA D.",
+   "MATALAM, JAAFAR APOLLO MIKHAIL L."
+  ],
+  "secretary_general": "LUCMAN, BANTUAS M.",
+  "sergeant_at_arms": "ABDULGANI CALUDTIAG",
+  "source": "https://parliament.bangsamoro.gov.ph/parliament-officers/"
+ },
+ "members": [
+  {
+   "slug": "abas-abdulnasser-m",
+   "rosterName": "ABAS, ABDULNASSER M.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "4th District Maguindanao Del Norte",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Abas-Abdulnasser.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abas-abdulnasser-m/",
+   "photo": "/members/first-parliament/abas-abdulnasser-m.jpg"
+  },
+  {
+   "slug": "abas-sheriff-m",
+   "rosterName": "ABAS, SHERIFF M.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "1st District Cotabato City",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/ABAS-AKMAD-I.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abas-sheriff-m/",
+   "photo": "/members/first-parliament/abas-sheriff-m.jpg"
+  },
+  {
+   "slug": "abbas-sulffy-v",
+   "rosterName": "ABBAS, SULFFY V.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Youth",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Abbas-Sulffy.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abbas-sulffy-v/",
+   "photo": "/members/first-parliament/abbas-sulffy-v.jpg"
+  },
+  {
+   "slug": "abu-johari-butch-c",
+   "rosterName": "ABU, JOHARI \"BUTCH\" C.",
+   "position": "Member of Parliament/Majority Floor Leader",
+   "roles": [
+    "Majority Floor Leader"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Abu-Johari.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abu-johari-c/",
+   "photo": "/members/first-parliament/abu-johari-butch-c.jpg"
+  },
+  {
+   "slug": "adiong-abdul-rauf-a",
+   "rosterName": "ADIONG, ABDUL RAUF A.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "3rd District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Adiong-Abdul-Rauf.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/adiong-abdul-rauf-a/",
+   "photo": "/members/first-parliament/adiong-abdul-rauf-a.jpg"
+  },
+  {
+   "slug": "adiong-mamintal-raki-in-iii",
+   "rosterName": "ADIONG, MAMINTAL RAKI-IN III",
+   "position": "Member of Parliament/Deputy Chief Minister - North Central Mindanao Subregion",
+   "roles": [
+    "Deputy Chief Minister - North Central Mindanao Subregion"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Adiong-III-Mamintal-Raki-In.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/adiong-iii-mamintal-raki-in/",
+   "photo": "/members/first-parliament/adiong-mamintal-raki-in-iii.jpg"
+  },
+  {
+   "slug": "adiong-rashdi-t",
+   "rosterName": "ADIONG, RASHDI T.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "9th District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Adiong-Rashdi.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/adiong-rashdi-t/",
+   "photo": "/members/first-parliament/adiong-rashdi-t.jpg"
+  },
+  {
+   "slug": "ahaja-nur-mahadil-k",
+   "rosterName": "AHAJA, NUR-MAHADIL K.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "4th District Tawi-Tawi",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Ahaja-Nur-Mahadil.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ahaja-nur-mahadil-k/",
+   "photo": "/members/first-parliament/ahaja-nur-mahadil-k.jpg"
+  },
+  {
+   "slug": "ali-ibrahim-d",
+   "rosterName": "ALI, IBRAHIM D.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Ibrahim-Ali.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ali-ibrahim-d/",
+   "photo": "/members/first-parliament/ali-ibrahim-d.jpg"
+  },
+  {
+   "slug": "ali-rafsanjani-p",
+   "rosterName": "ALI, RAFSANJANI P.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "5th District Maguindanao Del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Ali-Rafsanjani.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ali-rafsanjani-p/",
+   "photo": "/members/first-parliament/ali-rafsanjani-p.jpg"
+  },
+  {
+   "slug": "amin-abdel-razi-a",
+   "rosterName": "AMIN, ABDEL RAZI A.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Amin-Abdel-Razi.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/amin-abdel-razi-a-first-parl/",
+   "photo": "/members/first-parliament/amin-abdel-razi-a.jpg"
+  },
+  {
+   "slug": "ampatuan-sadjid-andre-s",
+   "rosterName": "AMPATUAN, SADJID ANDRE S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "2nd District Maguindanao Del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Ampatuan-Sajid-Andre.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ampatuan-sadjid-andre-s/",
+   "photo": "/members/first-parliament/ampatuan-sadjid-andre-s.jpg"
+  },
+  {
+   "slug": "antok-tomanda-d",
+   "rosterName": "ANTOK, TOMANDA D.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "District Representative",
+   "group": "3rd District Cotabato City",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Antok-Tomanda.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/antok-tomanda-d/",
+   "photo": "/members/first-parliament/antok-tomanda-d.jpg"
+  },
+  {
+   "slug": "arnado-mary-ann-m",
+   "rosterName": "ARNADO, MARY ANN M.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Settler Communities",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Arnado-Mary-Ann.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/arnado-mary-ann-m/",
+   "photo": "/members/first-parliament/arnado-mary-ann-m.jpg"
+  },
+  {
+   "slug": "asarul-haber-a",
+   "rosterName": "ASARUL, HABER A.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Asarul-Haber.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/asarul-haber-a/",
+   "photo": "/members/first-parliament/asarul-haber-a.jpg"
+  },
+  {
+   "slug": "asnawie-dan-s",
+   "rosterName": "ASNAWIE, DAN S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Asnawie-Dan.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/asnawie-dan-s/",
+   "photo": "/members/first-parliament/asnawie-dan-s.jpg"
+  },
+  {
+   "slug": "asum-arimao-s",
+   "rosterName": "ASUM, ARIMAO S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "5th District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Asum-Arimao.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/asum-arimao-s/",
+   "photo": "/members/first-parliament/asum-arimao-s.jpg"
+  },
+  {
+   "slug": "balindong-ahmad-amir-a",
+   "rosterName": "BALINDONG, AHMAD AMIR A.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Balindong-Ahmad-Amir.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/balindong-ahmad-amir-a/",
+   "photo": "/members/first-parliament/balindong-ahmad-amir-a.jpg"
+  },
+  {
+   "slug": "balindong-amir-gary-a",
+   "rosterName": "BALINDONG, AMIR \"GARY\" A.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "8th District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Balindong-Amir.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/balindong-amir/",
+   "photo": "/members/first-parliament/balindong-amir-gary-a.jpg"
+  },
+  {
+   "slug": "bayam-zulfikar-ali-s",
+   "rosterName": "BAYAM, ZULFIKAR-ALI S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Bayam-Zulfikar-Ali.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/bayam-zulfikar-ali-s/",
+   "photo": "/members/first-parliament/bayam-zulfikar-ali-s.jpg"
+  },
+  {
+   "slug": "brahim-akmad-a",
+   "rosterName": "BRAHIM, AKMAD A.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Brahim-Akmad.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/brahim-akmad-a/",
+   "photo": "/members/first-parliament/brahim-akmad-a.jpg"
+  },
+  {
+   "slug": "bud-hanie-ain",
+   "rosterName": "BUD, HANIE AIN",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Bud-Hanie-Ain.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/bud-hanie-ain/",
+   "photo": "/members/first-parliament/bud-hanie-ain.jpg"
+  },
+  {
+   "slug": "candao-ma-arouph-b",
+   "rosterName": "CANDAO, MA-AROUPH B.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Candao-Ma-Arouph.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/candao-ma-arouph-b/",
+   "photo": "/members/first-parliament/candao-ma-arouph-b.jpg"
+  },
+  {
+   "slug": "datuwata-leticio-l",
+   "rosterName": "DATUWATA, LETICIO L.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Non-Moro Indigenous Peoples - Lambangian Tribe",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Datuwata-Leticio.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/datuwata-leticio-l/",
+   "photo": "/members/first-parliament/datuwata-leticio-l.jpg"
+  },
+  {
+   "slug": "dipatuan-ducol-nordjiana-l",
+   "rosterName": "DIPATUAN-DUCOL, NORDJIANA L.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Dipatuan-Ducol-Nordjiana.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/dipatuan-ducol-nordjiana-l/",
+   "photo": "/members/first-parliament/dipatuan-ducol-nordjiana-l.jpg"
+  },
+  {
+   "slug": "dumama-alba-sha-elijah-b",
+   "rosterName": "DUMAMA-ALBA, SHA ELIJAH B.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Dumama-Alba-Sha-Elijah.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/dumama-alba-sha-elijah-b/",
+   "photo": "/members/first-parliament/dumama-alba-sha-elijah-b.jpg"
+  },
+  {
+   "slug": "ebil-muhammad-nadzir-s",
+   "rosterName": "EBIL, MUHAMMAD NADZIR S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Ulama",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Ebil-Muhammad-Nadzir.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ebil-muhammad-nadzir-s/",
+   "photo": "/members/first-parliament/ebil-muhammad-nadzir-s.jpg"
+  },
+  {
+   "slug": "ebrahim-ahod-b",
+   "rosterName": "EBRAHIM, AHOD B.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Ebrahim-Ahod.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ebrahim-ahod-balawag/",
+   "photo": "/members/first-parliament/ebrahim-ahod-b.jpg"
+  },
+  {
+   "slug": "ebrahim-mansor-b",
+   "rosterName": "EBRAHIM, MANSOR B.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "1st District Special Geographic Area",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Ebrahim-Mansor.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ebrahim-mansor-b/",
+   "photo": "/members/first-parliament/ebrahim-mansor-b.jpg"
+  },
+  {
+   "slug": "enalang-elaysa",
+   "rosterName": "ENALANG, ELAYSA",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "2nd District Special Geographic Area",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Enalang-Elaysa.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/enalang-elaysa/",
+   "photo": "/members/first-parliament/enalang-elaysa.jpg"
+  },
+  {
+   "slug": "gandamra-jr-camid-u",
+   "rosterName": "GANDAMRA JR., CAMID U.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Gandamra-Jr.-Camid.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/gandamra-jr-camid-u/",
+   "photo": "/members/first-parliament/gandamra-jr-camid-u.jpg"
+  },
+  {
+   "slug": "gandamra-princess-pala-amera",
+   "rosterName": "GANDAMRA, PRINCESS PALA AMERA",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "1st District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Gandamra-Princess-Pala.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/gandamra-princess-pala-amera/",
+   "photo": "/members/first-parliament/gandamra-princess-pala-amera.jpg"
+  },
+  {
+   "slug": "gauraki-hamza-e",
+   "rosterName": "GAURAKI, HAMZA E.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "2nd District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Guaraki-Hamza.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/gauraki-hamza-e/",
+   "photo": "/members/first-parliament/gauraki-hamza-e.jpg"
+  },
+  {
+   "slug": "guerra-eduard-u",
+   "rosterName": "GUERRA, EDUARD U.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Guerra-Eduard.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/archt-guerra-eduard-u/",
+   "photo": "/members/first-parliament/guerra-eduard-u.jpg"
+  },
+  {
+   "slug": "halil-abdulwahid-p",
+   "rosterName": "HALIL, ABDULWAHID P.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Halil-Abdulwahid.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/halil-abdulwahid-p/",
+   "photo": "/members/first-parliament/halil-abdulwahid-p.jpg"
+  },
+  {
+   "slug": "hamjani-karwin-h",
+   "rosterName": "HAMJANI, KARWIN H.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Hamjani-Karwin.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/hamjani-karwin-h/",
+   "photo": "/members/first-parliament/hamjani-karwin-h.jpg"
+  },
+  {
+   "slug": "hasan-rima-h",
+   "rosterName": "HASAN, RIMA H.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "1st District Basilan",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Hasan-Rima.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/hasan-rima-h/",
+   "photo": "/members/first-parliament/hasan-rima-h.jpg"
+  },
+  {
+   "slug": "hataman-abrar-j",
+   "rosterName": "HATAMAN, ABRAR J.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "District Representative",
+   "group": "3rd District Basilan",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Hataman-Abrar.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/hataman-abrar-j/",
+   "photo": "/members/first-parliament/hataman-abrar-j.jpg"
+  },
+  {
+   "slug": "hataman-suraija-reina-s",
+   "rosterName": "HATAMAN, SURAIJA REINA S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Hataman-Suraija-Reina.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/hataman-suraija-reina-s/",
+   "photo": "/members/first-parliament/hataman-suraija-reina-s.jpg"
+  },
+  {
+   "slug": "ibay-ibrahim-p",
+   "rosterName": "IBAY, IBRAHIM P.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "District Representative",
+   "group": "2nd District Maguindanao Del Norte",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Ibay-IbrahimIbay-IbrahimIbay-IbrahimIbay-Ibrahim.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ibay-dr-ibrahim-p/",
+   "photo": "/members/first-parliament/ibay-ibrahim-p.jpg"
+  },
+  {
+   "slug": "iqbal-mohagher-m",
+   "rosterName": "IQBAL, MOHAGHER M.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Iqbal-Mohagher.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/iqbal-mohagher-m/",
+   "photo": "/members/first-parliament/iqbal-mohagher-m.jpg"
+  },
+  {
+   "slug": "jajurie-raissa-h",
+   "rosterName": "JAJURIE, RAISSA H.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Jajurie-Raissa.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-jajurie-raissa-h/",
+   "photo": "/members/first-parliament/jajurie-raissa-h.jpg"
+  },
+  {
+   "slug": "jover-jo-genna-m",
+   "rosterName": "JOVER, JO GENNA M.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Non-Moro Indigenous Peoples - Teduray Tribe",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Jover-Jo-Genna.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/jover-jo-genna-m/",
+   "photo": "/members/first-parliament/jover-jo-genna-m.jpg"
+  },
+  {
+   "slug": "kadatuan-kitem-d-jr",
+   "rosterName": "KADATUAN, KITEM D., JR.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Kadatuan-Jr.-Kitem.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/kadatuan-jr-atty-kitem-d/",
+   "photo": "/members/first-parliament/kadatuan-kitem-d-jr.jpg"
+  },
+  {
+   "slug": "lim-john-anthony-l",
+   "rosterName": "LIM, JOHN ANTHONY L.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Lim-John-Anthony.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/lim-john-anthony-l/",
+   "photo": "/members/first-parliament/lim-john-anthony-l.jpg"
+  },
+  {
+   "slug": "lorena-jose-i",
+   "rosterName": "LORENA, JOSE I.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Lorena-Jose.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-lorena-jose-i/",
+   "photo": "/members/first-parliament/lorena-jose-i.jpg"
+  },
+  {
+   "slug": "macacua-abdulraof-a",
+   "rosterName": "MACACUA, ABDULRAOF A.",
+   "position": "Member of Parliament/BARMM Chief Minister",
+   "roles": [
+    "BARMM Chief Minister"
+   ],
+   "representation": "District Representative",
+   "group": "3rd District Maguindanao Del Norte",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Macacua-Abdulraof.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/macacua-abdulraof-a/",
+   "photo": "/members/first-parliament/macacua-abdulraof-a.jpg"
+  },
+  {
+   "slug": "macapodi-hosni-b",
+   "rosterName": "MACAPODI, HOSNI B.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "District Representative",
+   "group": "6th District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Macapodi-Hosni.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/macapodi-hosni-b/",
+   "photo": "/members/first-parliament/macapodi-hosni-b.jpg"
+  },
+  {
+   "slug": "macasalong-marjanie-s",
+   "rosterName": "MACASALONG, MARJANIE S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Traditional Leaders",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Marjanie-Macasalong.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/macasalong-marjanie-s/",
+   "photo": "/members/first-parliament/macasalong-marjanie-s.jpg"
+  },
+  {
+   "slug": "mangudadatu-abdulrahman-rubbil-s",
+   "rosterName": "MANGUDADATU, ABDULRAHMAN RUBBIL S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Mangudadatu-Abdulrahman-Rubbil.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mangudadatu-abdulrahman-rubbil-s/",
+   "photo": "/members/first-parliament/mangudadatu-abdulrahman-rubbil-s.jpg"
+  },
+  {
+   "slug": "mangudadatu-dj-parok-d",
+   "rosterName": "MANGUDADATU, DJ PAROK D.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "4th District Maguindanao Del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Mangudadatu-Parok.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mangudadatu-dj-parok-d/",
+   "photo": "/members/first-parliament/mangudadatu-dj-parok-d.jpg"
+  },
+  {
+   "slug": "maslamama-abunawas-l",
+   "rosterName": "MASLAMAMA, ABUNAWAS L.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Maslamama-Abunawas.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/maslamama-abunawas-l/",
+   "photo": "/members/first-parliament/maslamama-abunawas-l.jpg"
+  },
+  {
+   "slug": "mastura-ishak-v",
+   "rosterName": "MASTURA, ISHAK V.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "District Representative",
+   "group": "5th District Maguindanao Del Norte",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Mastura-Ishak.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mastura-ishak-v/",
+   "photo": "/members/first-parliament/mastura-ishak-v.jpg"
+  },
+  {
+   "slug": "matalam-jaafar-apollo-mikhail-l",
+   "rosterName": "MATALAM, JAAFAR APOLLO MIKHAIL L.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Matalam-Jaafar.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/matalam-jaafar-apollo-mikhail-l/",
+   "photo": "/members/first-parliament/matalam-jaafar-apollo-mikhail-l.jpg"
+  },
+  {
+   "slug": "matba-hadjimar-s",
+   "rosterName": "MATBA, HADJIMAR S.",
+   "position": "Member of Parliament/Deputy Chief Minister - Southwestern Mindanao Subregion",
+   "roles": [
+    "Deputy Chief Minister - Southwestern Mindanao Subregion"
+   ],
+   "representation": "District Representative",
+   "group": "2nd District Tawi-Tawi",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Matba-Hadjimar.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/matba-hadjimar-s/",
+   "photo": "/members/first-parliament/matba-hadjimar-s.jpg"
+  },
+  {
+   "slug": "matolo-de-asis-rhosatina-s",
+   "rosterName": "MATOLO-DE ASIS, RHOSATINA S.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "District Representative",
+   "group": "3rd District Tawi-Tawi",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Matolo-De-Asis-Rhosatina.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/matolo-de-asis-rhosatina-sulayman/",
+   "photo": "/members/first-parliament/matolo-de-asis-rhosatina-s.jpg"
+  },
+  {
+   "slug": "mawallil-amilbahar-s",
+   "rosterName": "MAWALLIL, AMILBAHAR S.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Mawallil-Amilbahar.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mawallil-amilbahar-s/",
+   "photo": "/members/first-parliament/mawallil-amilbahar-s.jpg"
+  },
+  {
+   "slug": "midtimbang-michael-e",
+   "rosterName": "MIDTIMBANG, MICHAEL E.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Midtimbang-Michael.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/midtimbang-michael-e/",
+   "photo": "/members/first-parliament/midtimbang-michael-e.jpg"
+  },
+  {
+   "slug": "midtimbang-tawakal-b",
+   "rosterName": "MIDTIMBANG, TAWAKAL B.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "District Representative",
+   "group": "1st District Maguindanao Del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Midtimbang-Tawakal.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/midtimbang-tawakal-b/",
+   "photo": "/members/first-parliament/midtimbang-tawakal-b.jpg"
+  },
+  {
+   "slug": "mindalano-ali-usman-s",
+   "rosterName": "MINDALANO, ALI-USMAN S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "7th District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Mindalano-Rayyan.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mindalano-ali-usman-s/",
+   "photo": "/members/first-parliament/mindalano-ali-usman-s.jpg"
+  },
+  {
+   "slug": "olaya-yul-adelfo-d",
+   "rosterName": "OLAYA, YUL ADELFO D.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Settler Communities",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Olaya-Yul-Adelfo.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/olaya-yul-adelfo-d/",
+   "photo": "/members/first-parliament/olaya-yul-adelfo-d.jpg"
+  },
+  {
+   "slug": "oranon-suwaib-l",
+   "rosterName": "ORANON, SUWAIB L.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Oranon-Suwaib.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/oranon-suwaib-l/",
+   "photo": "/members/first-parliament/oranon-suwaib-l.jpg"
+  },
+  {
+   "slug": "pagayao-alindatu-k",
+   "rosterName": "PAGAYAO, ALINDATU K.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Pagayao-Alindatu.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/pagayao-alindatu-k/",
+   "photo": "/members/first-parliament/pagayao-alindatu-k.jpg"
+  },
+  {
+   "slug": "pandi-lampa-i",
+   "rosterName": "PANDI, LAMPA I.",
+   "position": "Member of Parliament/Deputy Speaker",
+   "roles": [
+    "Deputy Speaker"
+   ],
+   "representation": "District Representative",
+   "group": "4th District Lanao del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Pandi-Lampa.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/pandi-lampa-i/",
+   "photo": "/members/first-parliament/pandi-lampa-i.jpg"
+  },
+  {
+   "slug": "pansar-sittie-aisah-l",
+   "rosterName": "PANSAR, SITTIE AISAH L.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Pansar-Sittie-Aisah.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/pansar-sittie-aisah-l/",
+   "photo": "/members/first-parliament/pansar-sittie-aisah-l.jpg"
+  },
+  {
+   "slug": "que-julbert-s",
+   "rosterName": "QUE, JULBERT S.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "District Representative",
+   "group": "1st District Tawi-Tawi",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Que-Julbert.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/que-julbert-s/",
+   "photo": "/members/first-parliament/que-julbert-s.jpg"
+  },
+  {
+   "slug": "rakim-amer-zaakaria-a",
+   "rosterName": "RAKIM, AMER ZAAKARIA A.",
+   "position": "Member of Parliament/Parliament Speaker",
+   "roles": [
+    "Parliament Speaker"
+   ],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Rakim-Amer-Zaakaria.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/rakim-atty-amer-zaakaria-a/",
+   "photo": "/members/first-parliament/rakim-amer-zaakaria-a.jpg"
+  },
+  {
+   "slug": "salendab-said-z",
+   "rosterName": "SALENDAB, SAID Z.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Salendab-Said.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/salendab-said-z/",
+   "photo": "/members/first-parliament/salendab-said-z.jpg"
+  },
+  {
+   "slug": "sali-paisal-a",
+   "rosterName": "SALI, PAISAL A.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "2nd District Basilan",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Sali-Pai.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sali-paisal-a/",
+   "photo": "/members/first-parliament/sali-paisal-a.jpg"
+  },
+  {
+   "slug": "salik-ali-o",
+   "rosterName": "SALIK, ALI O.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Salik-Ali.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/salik-ali-o/",
+   "photo": "/members/first-parliament/salik-ali-o.jpg"
+  },
+  {
+   "slug": "salliman-jimael-salam-d",
+   "rosterName": "SALLIMAN, JIMAEL SALAM D.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "District Representative",
+   "group": "4th District Basilan",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Salliman-Jay.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/salliman-jimael-salam-d/",
+   "photo": "/members/first-parliament/salliman-jimael-salam-d.jpg"
+  },
+  {
+   "slug": "sangki-ali-b",
+   "rosterName": "SANGKI, ALI B.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "3rd District Maguindanao Del Sur",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Sangki-Ali.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sangki-ali-b/",
+   "photo": "/members/first-parliament/sangki-ali-b.jpg"
+  },
+  {
+   "slug": "shiek-said-m",
+   "rosterName": "SHIEK, SAID M.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Shiek-Said.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/shiek-said-m/",
+   "photo": "/members/first-parliament/shiek-said-m.jpg"
+  },
+  {
+   "slug": "silongan-aida-m",
+   "rosterName": "SILONGAN, AIDA M.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Sectoral Representative",
+   "group": "Women",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Silongan-Aida.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/engr-silongan-aida-m/",
+   "photo": "/members/first-parliament/silongan-aida-m.jpg"
+  },
+  {
+   "slug": "sinarimbo-naguib-g",
+   "rosterName": "SINARIMBO, NAGUIB G.",
+   "position": "Member of Parliament/Deputy Majority Floor Leader",
+   "roles": [
+    "Deputy Majority Floor Leader"
+   ],
+   "representation": "District Representative",
+   "group": "2nd District Cotabato City",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/11/Sinarimbo-Naguib.png",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sinarimbo-naguib-g/",
+   "photo": "/members/first-parliament/sinarimbo-naguib-g.jpg"
+  },
+  {
+   "slug": "sinsuat-datu-bimbo-q-sr",
+   "rosterName": "SINSUAT, DATU BIMBO Q., SR.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Sinsuat-Datu-Bimbo.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sinsuat-datu-bimbo-q/",
+   "photo": "/members/first-parliament/sinsuat-datu-bimbo-q-sr.jpg"
+  },
+  {
+   "slug": "solaiman-ali-b",
+   "rosterName": "SOLAIMAN, ALI B.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Solaiman-Ali.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/solaiman-ali-b/",
+   "photo": "/members/first-parliament/solaiman-ali-b.jpg"
+  },
+  {
+   "slug": "sumlay-junalyn-g",
+   "rosterName": "SUMLAY, JUNALYN G.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Sumlay-Junalyn.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sumlay-junalyn-g/",
+   "photo": "/members/first-parliament/sumlay-junalyn-g.jpg"
+  },
+  {
+   "slug": "tomawis-prince-khalid-p",
+   "rosterName": "TOMAWIS, PRINCE KHALID P.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "District Representative",
+   "group": "1st District Maguindanao Del Norte",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/TOMAWIS-PRINCE-KHALID-P.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/tomawis-prince-khalid-p/",
+   "photo": "/members/first-parliament/tomawis-prince-khalid-p.jpg"
+  },
+  {
+   "slug": "yacob-mohammad-s",
+   "rosterName": "YACOB, MOHAMMAD S.",
+   "position": "Member of Parliament",
+   "roles": [],
+   "representation": "Party Representative",
+   "group": "BARMM",
+   "photo_source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/10/Yacob-Mohammad.jpg",
+   "url": "https://parliament.bangsamoro.gov.ph/member-parliament/yacob-mohammad-s-ph-d/",
+   "photo": "/members/first-parliament/yacob-mohammad-s.jpg"
+  }
+ ],
+ "committees": [
+  {
+   "slug": "committee-on-rules1",
+   "name": "Committee on Rules",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-rules1/",
+   "chairperson": "ABU, JOHARI C.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters affecting the parliamentary procedures and practices of the BTA, the calendar, order and manner of conducting business, and the creation of the parliamentary committees, ad hoc, joint ad hoc, special, sub-committees and all other committees that may hereinafter be created."
+  },
+  {
+   "slug": "committee-on-amendments",
+   "name": "Committee on Amendments",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-amendments/",
+   "chairperson": "SINARIMBO, NAGUIB G.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "The Committee on Amendments, Revision, and Codification of Laws shall exercise jurisdiction on all matters relating to the proposal to amend or revise the Organic Law of the Bangsamoro Autonomous Region in Muslim Mindanao, and the codification of codes and laws, including proposal to amend or revise these Rules or any provision thereof."
+  },
+  {
+   "slug": "committee-on-accounts",
+   "name": "Committee on Accounts",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-accounts/",
+   "chairperson": "IBAY, IBRAHIM P.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction over all matters relating to the income, revenues and internal auditing of the funds for all the expenditures and activities of the BTA, and the other ministries, agencies and offices of the Bangsamoro Government. The Committee on Accounts and Audit shall also have jurisdiction to examine and scrutinize the income, revenues, and the expenditure plans of all government ministries, bureaus and agencies of the Bangsamoro Government, including the audit thereof."
+  },
+  {
+   "slug": "blue-ribbon-committee",
+   "name": "Blue Ribbon Committee",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/blue-ribbon-committee/",
+   "chairperson": "BAYAM, ZULFIKAR-ALI S.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "The Blue Ribbon Committee exercises jurisdiction over all matters including, but not limited to, investigation of malfeasance, misfeasance and nonfeasance in office committed by officers and employees of the Bangsamoro Government, the local government units and other instrumentalities thereof."
+  },
+  {
+   "slug": "committee-on-ethics-and-privileges",
+   "name": "Committee on Ethics and Privileges",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-ethics-and-privileges/",
+   "chairperson": "MINDALANO, ALI-USMAN S.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "The Committee on Ethics and Privileges exercises jurisdiction over all matters relating to the duties, conduct, rights, privileges, immunities, integrity, and reputation of the BTA and its Members. It carries out independent, objective, and impartial investigations into complaints against the Members of the BTA."
+  },
+  {
+   "slug": "committee-on-ways-and-means",
+   "name": "Committee on Ways and Means",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-ways-and-means/",
+   "chairperson": "PANSAR, SITTIE AISAH L.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "The Committee on Ways and Means shall have jurisdiction on all matters relating to income, revenues, taxes and fees, loans and borrowings, credit and bonded indebtedness, and there sources and forms of revenues."
+  },
+  {
+   "slug": "special-committee-on-marawi",
+   "name": "Special Committee on the Marawi Recovery, Reconstruction, and Rehabilitation",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/special-committee-on-marawi/",
+   "chairperson": "GANDAMRA JR., CAMID U.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "The Special Committee on Marawi Recovery, Reconstruction, and Rehabilitation, otherwise known as the Special Committee on Marawi, shall be the BTA's mechanism for gathering information on the recovery, reconstruction, and rehabilitation efforts planned and/or implemented for Marawi City/"
+  },
+  {
+   "slug": "committee-on-finance-budget-and-management",
+   "name": "Committee on Finance, Budget, and Management",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-finance-budget-and-management/",
+   "chairperson": "KADATUAN JR., KITEM D.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to the finance, preparation and management of budget and the appropriation of funds for the operations of the Bangsamoro Government including its expenditures, payment of public indebtedness, claims against the Bangsamoro Government, inter-governmental revenue sharing, and in general, all matters relating to public expenditures. The work of the Committee on Budget and Appropriations includes the scrutiny of the internal budget of the BTA, its budget preparation, submission, approval, and execution."
+  },
+  {
+   "slug": "committee-on-trade-investment-and-tourism",
+   "name": "Committee on Trade, Investment, and Tourism",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-trade-investment-and-tourism/",
+   "chairperson": "HASAN, RIMA H.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall exercise jurisdiction on all matters relating to the planning and programming of general economic development, including the regulation and diversification of industry and investments, and those which involve public indebtedness, either domestic or local.It shall exercise jurisdiction over private corporations, domestic and foreign trade, handicraft and cottage industries, intellectual property rights, patents, trade names and trademarks, standards, weights, measures and designs, quality control, consumer protection, and stabilization of prices of commodities. It shall also exercise jurisdiction on all matters relating to the development and promotion of tourism and the tourist industry, both local and international."
+  },
+  {
+   "slug": "committee-on-agriculture-fisheries-and-agrarian-reform",
+   "name": "Committee on Agriculture, Fisheries, and Agrarian Reform",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-agriculture-fisheries-and-agrarian-reform/",
+   "chairperson": "CANDAO, MA-AROUPH B.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to agriculture, food and agricultural production, agri-business, agricultural research and technology, agricultural education, including extension services, agricultural experimental and nursery stations, soil survey and conservation, irrigation, animal husbandry and quarantine, crop and livestock production, farm credit and farm security, insurance and guarantee programs, agricultural support prices, fisheries and aquatic resources, fresh water and fisheries culture, research and technology, and fisheries education and training. It shall exercise jurisdiction on all matters relating to the implementation of the agrarian reform law, either passed by the Congress or the BTA and which are applicable in the Bangsamoro including support for agrarian reform beneficiaries."
+  },
+  {
+   "slug": "committee-on-labor-and-employment",
+   "name": "Committee on Labor and Employment",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-labor-and-employment/",
+   "chairperson": "ADIONG, RASHDI T.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to labor, employment and human resource development, advancement and protection of the rights and welfare of workers, maintenance of industrial peace and promotion of employer-employee cooperation, labor education and labor standards, and promotion of labor market including recruitment, training, and placement of manpower."
+  },
+  {
+   "slug": "committee-on-basic-higher-and-technical-education",
+   "name": "Committee on Basic, Higher, and Technical Education",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-basic-higher-and-technical-education/",
+   "chairperson": "ANTOK, TOMANDA D.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction over all matters relating to education, schools, universities, colleges, Madrasah, welfare of teachers and students, and alternative learning system including special, non-formal and technical education and trainings."
+  },
+  {
+   "slug": "committee-on-social-services",
+   "name": "Committee on Social Services and Development",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-social-services/",
+   "chairperson": "MACAPODI, HOSNI B.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to delivery of basic social services and social development which develop and enhance the individual and community life, including the welfare of persons with disabilities and special needs."
+  },
+  {
+   "slug": "committee-on-indigenous-peoples-and-affairs",
+   "name": "Committee on Indigenous Peoples’ Affairs",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-indigenous-peoples-and-affairs/",
+   "chairperson": "DATUWATA, LETICIO L.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to the implementation of the provisions of the indigenous peoples rights embodied in the Organic Law of the Bangsamoro Autonomous Region in Muslim Mindanao and the development of their communities."
+  },
+  {
+   "slug": "committee-on-public-order-and-safety",
+   "name": "Committee on Public Order and Safety",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-public-order-and-safety/",
+   "chairperson": "ALI, RAFSANJANI P.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "The Committee on Public Order and Safety shall have seventeen (17) Members. It shall exercise jurisdiction on all matters relating to public order and safety, policing, fire and jail management, suppression of criminalities such as, but not limited to, illegal gambling, organized crimes, terrorism, illegal drugs, regulation of the private security agencies, firearms, firecrackers, pyrotechnics, destructive fires, rescue, emergency medical services and research and development in the internal security and safety aspects within the BARMM."
+  },
+  {
+   "slug": "committee-on-health",
+   "name": "Committee on Health",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-health/",
+   "chairperson": "GANDAMRA, PRINCESS PALA AMERA",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to public health and hygiene, medical, hospital and quarantine services and facilities for the promotion of health services and awareness to the public."
+  },
+  {
+   "slug": "committee-on-human-settlements-and-developments",
+   "name": "Committee on Human Settlements and Development",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-human-settlements-and-developments/",
+   "chairperson": "ASUM, ARIMAO S.",
+   "vice_chairpersons": [
+    "ABAS, AKMAD I."
+   ],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to urban, and rural planning and development, housing and shelter service delivery, resettlements, and other related activities which help uplift the conditions of the inhabitants therein."
+  },
+  {
+   "slug": "committee-on-transportation-and-communication",
+   "name": "Committee on Transportation and Communications",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-transportation-and-communication/",
+   "chairperson": "MATBA, HADJIMAR S.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to land, sea, and air transportations, including seaports, airports, and other systems of transportation, all lighthouses, postal, telegraph, radio, cable, television, telephone and other communication services."
+  },
+  {
+   "slug": "committee-on-science-and-technology",
+   "name": "Committee on Science and Technology",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-science-and-technology/",
+   "chairperson": "ADIONG, ABDUL RAUF A.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall exercise jurisdiction on all matters relating to science and technology, including scientific and technological research, development and advancement, and climate and weather forecasting."
+  },
+  {
+   "slug": "committee-on-public-works-and-highways",
+   "name": "Committee on Public Works",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-public-works-and-highways/",
+   "chairperson": "HAMJANI, KARWIN H.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall exercise parliamentary jurisdiction on all matters relating to planning, construction, maintenance, improvement and repair of public infrastructures including roads, bridges, harbors, parks, drainage, flood control and protection, water utilities and the utilization of waters."
+  },
+  {
+   "slug": "committee-on-local-government",
+   "name": "Committee on Local Government",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-local-government/",
+   "chairperson": "PAGAYAO, ALINDATU K.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to local administration and local government units such as the provinces, cities, municipalities, and barangays within the Bangsamoro Autonomous Region in Muslim Mindanao, including their revenues and expenditures."
+  },
+  {
+   "slug": "committee-on-environmental-natural-resources-and-energy",
+   "name": "Committee on Environment, Natural Resources, and Energy",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-environmental-natural-resources-and-energy/",
+   "chairperson": "MIDTIMBANG, MICHAEL E.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [
+    "AMBOLODTO, SUHARTO M."
+   ],
+   "jurisdiction": "It shall have jurisdiction on all matters relating to natural resources including their exploration, development, management, conservation, and utilization; and lands of the public domain, mines and minerals, forests, parks and wildlife, marine resources, and ecosystem management and pollution control. It shall also exercise jurisdiction on all matters relating to the provisions on power and energy as provided in the Organic Law of the Bangsamoro Autonomous Region in Muslim Mindanao, including the exploration, development, utilization or conservation of energy resources, alternative and renewable energy resources."
+  },
+  {
+   "slug": "bangsamoro-justice-system",
+   "name": "Committee on Bangsamoro Justice System",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/bangsamoro-justice-system/",
+   "chairperson": "LORENA, JOSE I.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "It shall exercise jurisdiction on all matters relating to Muslim personal, family, and property relations provided for under Presidential Decree no. 1083, concluding commercial, other civil actions and criminal jurisdiction which the Parliament has power to legislate on as provided under Republic Act. no. 11054 (as amended by BTA Resolution No. 50)"
+  },
+  {
+   "slug": "committee-on-women-youth-children-and-persons-with-disabilities",
+   "name": "Committee on Women, Youth, Children, and Persons with Disabilities",
+   "url": "https://parliament.bangsamoro.gov.ph/committees/committee-on-women-youth-children-and-persons-with-disabilities/",
+   "chairperson": "HATAMAN, SURAIJA REINA S.",
+   "vice_chairpersons": [],
+   "members": [],
+   "ex_officio": [],
+   "jurisdiction": "The Committee on Women, Youth, Children, and Persons with Disabilities shall have twentyfive (25) Members. It shall have jurisdiction on all matters relating to the representation, participation, welfare, and development of women, youth, children, and persons with disabilities."
+  }
+ ]
+}
