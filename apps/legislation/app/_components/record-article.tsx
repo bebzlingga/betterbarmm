@@ -4,6 +4,7 @@ import type { LegislationRecord, MeasureReading } from '../_lib/legislation-data
 import { JourneyList } from './journey'
 import { committeeReportsFor, floorRecordFor, namedVotesForAct, type CommitteeReport, type FloorEntry, type NamedVote } from '../_lib/journal-data'
 import { recordHref } from '../_lib/categories'
+import { getOfficialBillForAct } from '../_lib/official-measures'
 
 type RecordArticleProps = {
 	record: LegislationRecord
@@ -422,7 +423,11 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 								reading={record.reading}
 								floor={floorRecordFor(recordHref(record))}
 								named={record.category === 'acts' ? namedVotesForAct(record.number) : []}
-								reports={committeeReportsFor(record.category, record.number)}
+								reports={
+									record.category === 'acts'
+										? committeeReportsFor('bills', getOfficialBillForAct(record.number)?.number ?? -1)
+										: committeeReportsFor(record.category, record.number)
+								}
 							/>
 						) : null}
 
