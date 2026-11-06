@@ -1072,7 +1072,7 @@
   },
   {
    "id": "roads-constructed",
-   "area": "Roads",
+   "area": "Roads and ports",
    "name": "Length of road constructed in the year",
    "unit": "km",
    "direction": "up",
@@ -1715,7 +1715,7 @@
   },
   {
    "id": "ship-calls",
-   "area": "Energy and connectivity",
+   "area": "Roads and ports",
    "name": "Ship calls at the region's ports",
    "explain": "How many times ships docked at BARMM ports in the year, a sign of how well the islands and coast are linked for trade and travel.",
    "unit": "ship calls",
@@ -2449,6 +2449,129 @@
    },
    "comparable": true,
    "note": "Annual. Baseline column is headed 'Value (for the past 3 years) ** 2022'."
+  },
+  {
+   "id": "households-home-internet",
+   "area": "Digital government and connectivity",
+   "name": "Households with home internet",
+   "explain": "Households with an internet connection at home, the door to online classes, government services and work.",
+   "unit": "%",
+   "direction": "up",
+   "baseline": null,
+   "target": null,
+   "interim": [],
+   "latest": {
+    "value": 27.7,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/190uqy6GwZqXsyg0cq7zjSEOLM-65830g/view (Midterm Update, printed p.26, citing the 2024 National ICT Household Survey)",
+    "note": "One of the lowest rates in the country, against nearly half of households nationally. The 2019 National ICT Survey had found 95.5% of BARMM households without digital access, a different measure."
+   },
+   "comparable": true,
+   "note": "The plan sets no target for home internet. The Bangsamoro Broadband Plan and BICTO’s region-wide Internet Connectivity Project (2025) aim to raise it; the national fibre backbone is expected to reach BARMM in 2026–2028."
+  },
+  {
+   "id": "internet-users",
+   "area": "Digital government and connectivity",
+   "name": "People who use the internet",
+   "explain": "People aged 10 and over who used the internet, anywhere and on any device.",
+   "unit": "%",
+   "direction": "up",
+   "baseline": null,
+   "target": null,
+   "interim": [],
+   "latest": {
+    "value": 40.0,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/190uqy6GwZqXsyg0cq7zjSEOLM-65830g/view (Midterm Update, printed p.26, citing the 2024 National ICT Household Survey)",
+    "note": "The lowest of any region."
+   },
+   "comparable": true,
+   "note": "The plan sets no target for internet use."
+  },
+  {
+   "id": "e-government-master-plan",
+   "area": "Digital government and connectivity",
+   "name": "Bangsamoro E-Government Master Plan",
+   "explain": "The plan for putting the regional government’s services and records online, which the ministries’ systems are built to.",
+   "unit": "plan",
+   "direction": "up",
+   "baseline": {
+    "value": 0,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (BDR 2024, Table 11 ‘Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure’, Digital Transformation Program, p.57; agency BICTO)"
+   },
+   "target": {
+    "low": 1,
+    "high": 1,
+    "text": null,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (BDR 2024, Table 11 ‘Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure’, Digital Transformation Program, p.57; agency BICTO)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 1,
+     "high": 1
+    },
+    {
+     "year": 2024,
+     "low": 1,
+     "high": 1
+    }
+   ],
+   "latest": {
+    "value": 1,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (BDR 2024, Table 11 ‘Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure’, Digital Transformation Program, p.57; agency BICTO)",
+    "note": "Printed as 1 in both 2023 and 2024. The progress report says the master plan was submitted; it does not say it was adopted."
+   },
+   "comparable": true,
+   "note": "Baseline printed as 0 with no year; 2022 is the year before the plan began. The 2025 target is printed as 0, since the plan is a one-off."
+  },
+  {
+   "id": "ict-policies",
+   "area": "Digital government and connectivity",
+   "name": "ICT policies, procedures, standards and guidelines issued",
+   "explain": "The rules the regional government sets for its own computers, data and online services, such as security and data standards.",
+   "unit": "policies",
+   "direction": "up",
+   "baseline": {
+    "value": 0,
+    "year": 2022,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (BDR 2024, Table 11 ‘Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure’, Digital Transformation Program, p.57; agency BICTO)"
+   },
+   "target": {
+    "low": 7,
+    "high": 7,
+    "text": null,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (BDR 2024, Table 11 ‘Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure’, Digital Transformation Program, p.57; agency BICTO)"
+   },
+   "interim": [
+    {
+     "year": 2023,
+     "low": 7,
+     "high": 7
+    },
+    {
+     "year": 2024,
+     "low": 7,
+     "high": 7
+    },
+    {
+     "year": 2025,
+     "low": 1,
+     "high": 1
+    }
+   ],
+   "latest": {
+    "value": 7,
+    "year": 2024,
+    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (BDR 2024, Table 11 ‘Results Matrices to Strategic, Adequate, and Climate-Resilient Infrastructure’, Digital Transformation Program, p.57; agency BICTO)",
+    "note": "7 in 2023 and 7 in 2024, each year’s target exactly."
+   },
+   "comparable": true,
+   "note": "Annual. Baseline printed as 0 with no year. The 2025 target falls to 1."
   }
  ],
  "gaps": [
@@ -2457,7 +2580,8 @@
   "Actuals with no published target: basic and functional literacy (FLEMMS 2024), household electrification, basic sanitation, index crime volume, SGLG awards, poverty incidence among population (also no 2025 BARMM figure found), displaced families (MSSD: 243,157 families displaced in 2025, Midterm p.220).",
   "Targets with no usable actual: GRDP per capita, industry and services growth for 2025 (PSA 2025 regional release not retrievable); annual average inflation for 2025; gross capital formation (dropped: BDR 2024 gives 8.1% for 2024 while the Midterm Update gives 21.4%); poverty gap and severity ('downward trend', no figures).",
   "Health outcome targets that would matter most to residents (facility-based births, skilled birth attendance, modern contraceptive use) are not in the published RM rows; NDHS 2022 values were not collected.",
-  "Mortality and stunting in the plan's own tracker come from MOH facility reporting, not surveys; a survey-based 2028 target for these was not found."
+  "Mortality and stunting in the plan's own tracker come from MOH facility reporting, not surveys; a survey-based 2028 target for these was not found.",
+  "Free public Wi-Fi: the plan’s 2025 target is 15 sites, but its 2024 progress report prints the 2024 result as “37% (Intranet)”, a different measure, so it is not scored."
  ],
  "doubts": [
   "PSA websites (psa.gov.ph, rssobarmm.psa.gov.ph, openstat) block automated fetches (Cloudflare 403). PSA figures came from the PSA FLEMMS PDF hosted by ABS-CBN, Bangsamoro Information Office articles quoting PSA releases, and search-engine extracts of the PSA BARMM LFS release (https://rssobarmm.psa.gov.ph/content/number-unemployed-barmm-increased-93-thousand-bangsamoros-aged-15-years-and-over-2025). Each should be checked against the PSA page in a browser.",
