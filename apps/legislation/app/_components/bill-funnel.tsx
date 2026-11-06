@@ -60,7 +60,7 @@ export function BillFunnel({ slices, total }: { slices: FunnelSlice[]; total: nu
 								<span className='num text-[1.375rem] font-semibold leading-none text-[var(--ink)]'>{slice.count.toLocaleString()}</span>
 								<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{pct < 1 ? '<1' : Math.round(pct)}%</span>
 							</p>
-							<p className='mt-2 bb-body text-[var(--ink-3)]'>{slice.note}</p>
+							<p className='mt-2 text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>{slice.note}</p>
 						</div>
 					)
 				})}
