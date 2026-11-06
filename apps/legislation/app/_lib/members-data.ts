@@ -1023,12 +1023,37 @@ function roleBucket(member: Member): string[] {
 export function getRosterDataset(): RosterDataset {
 	const dataset = getMembersDataset()
 
+	// The Transition Authority's roster only. The elected Parliament has its own
+	// page, /members/elected, and listed here as well it was the same eighty
+	// seats twice: so a newcomer stays off this roster, and a Member re-elected
+	// from the Authority is listed under the last sitting they held in it.
+	const members = dataset.members
+		.filter((member) => member.phases.some((phase) => phase !== 'PARL1') || member.parliamentKey === INSTITUTION_KEY)
+		.map(({ measures, bio: _bio, ...member }) => ({
+			...member,
+			parliamentKey:
+				member.parliamentKey === 'PARL1'
+					? member.phases
+							.filter((phase) => phase !== 'PARL1')
+							.sort((a, b) => (PARLIAMENT_ORDER.get(a) ?? -1) - (PARLIAMENT_ORDER.get(b) ?? -1))
+							.at(-1)!
+					: member.parliamentKey,
+			measureCount: measures.length,
+		}))
+
 	return {
 		...dataset,
-		members: dataset.members.map(({ measures, bio: _bio, ...member }) => ({
-			...member,
-			measureCount: measures.length,
-		})),
+		members,
+		parliaments: dataset.parliaments
+			.filter((parliament) => parliament.key !== 'PARL1')
+			.map((parliament) => ({
+				...parliament,
+				count: members.filter((member) => member.parliamentKey === parliament.key).length,
+			})),
+		stats: {
+			...dataset.stats,
+			total: members.filter((member) => member.parliamentKey !== INSTITUTION_KEY).length,
+		},
 	}
 }
 
