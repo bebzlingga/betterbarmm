@@ -17,6 +17,8 @@ export type Indicator = {
 	id: string
 	area: string
 	name: string
+	/** What it measures, in a sentence a resident needs no glossary for. */
+	explain: string
 	unit: string
 	direction: 'up' | 'down'
 	baseline: Sourced | null
@@ -100,5 +102,37 @@ export function gapText(indicator: Indicator, status: Status, against: Goal | nu
 		return d === 0 ? `On ${goal}` : `${by(d)} better than ${goal}`
 	}
 	return `${by(up ? against.low - value : value - against.high)} ${up ? 'below' : 'above'} ${goal}`
+}
+
+/** The plan begins in 2023; its baselines are the years just before. Progress is set against the years since. */
+export const PLAN_START = 2023
+
+export type Progress = {
+	/** The furthest target the plan published: 2028 where it printed one, else its last annual target. */
+	end: Goal
+	/** How far from the start toward that target: 0 at the start, 1 on it; below 0 means further away than at the start. */
+	share: number
+	/** How much of the time to that target had passed by the latest figure's year. */
+	elapsed: number
+	/** The start already met the target, so the task was to stay there: share is then 1 (still there) or -1 (slipped). */
+	hold: boolean
+}
+
+/** The way come from the start toward the furthest target, beside the time gone. Null where there is no start, no target,
+    or the two measure different things. */
+export function progress(indicator: Indicator): Progress | null {
+	const end = indicator.target
+	if (!end || !indicator.baseline || !indicator.comparable) return null
+	const up = indicator.direction === 'up'
+	const aim = up ? end.low : end.high
+	const start = indicator.baseline.value
+	const meets = (v: number) => (up ? v >= aim : v <= aim)
+	const hold = meets(start)
+	return {
+		end,
+		hold,
+		share: hold ? (meets(indicator.latest.value) ? 1 : -1) : (indicator.latest.value - start) / (aim - start),
+		elapsed: Math.min(1, Math.max(0, (indicator.latest.year - (PLAN_START - 1)) / (end.year - (PLAN_START - 1)))),
+	}
 }
 

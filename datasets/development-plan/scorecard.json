@@ -66,7 +66,8 @@
     "note": "PSA 2025 Full-Year Official Poverty Statistics (released 26 Aug 2026), from the 2025 FIES, as reported by the Bangsamoro Information Office. The same release puts 2023 at 26 percent; the province list (Basilan, Tawi-Tawi, Lanao del Sur, Maguindanao del Norte/Sur, Cotabato City) has no Sulu."
    },
    "comparable": true,
-   "note": "The plan's 2021 baseline (29.80%) includes Sulu. PSA first published 2023 as 23.5% (with Sulu, Aug 2024; used in BDR 2023/2024 and the Midterm Update); the 2025 release restates 2023 as 26% for the region without Sulu. The Midterm Update keeps the 20–25% target but restates the baseline as 28.0% (2021). The 2028 target was already beaten in 2025. Sulu was excluded from BARMM by the Supreme Court ruling of 9 September 2024; series published after that date may drop Sulu while the 2021/2022 baselines include it."
+   "note": "The plan's 2021 baseline (29.80%) includes Sulu. PSA first published 2023 as 23.5% (with Sulu, Aug 2024; used in BDR 2023/2024 and the Midterm Update); the 2025 release restates 2023 as 26% for the region without Sulu. The Midterm Update keeps the 20–25% target but restates the baseline as 28.0% (2021). The 2028 target was already beaten in 2025. Sulu was excluded from BARMM by the Supreme Court ruling of 9 September 2024; series published after that date may drop Sulu while the 2021/2022 baselines include it.",
+   "explain": "Families whose income falls below the poverty line, the cost of the food and other basic needs a family cannot do without."
   },
   {
    "id": "grdp-growth",
@@ -125,7 +126,8 @@
     "note": "PSA regional accounts released 23 Apr 2026, as reported by the Bangsamoro Information Office; P266.59 billion at constant 2018 prices. PSA restated 2024 growth as 3.4% (first published as 2.7%)."
    },
    "comparable": true,
-   "note": "Plan baseline 7.5% (2020-2021) is in the plan table; the Midterm Update restates the baseline as 6.6% (2022) and keeps 8–9%. PSA's 2023–2025 regional accounts move Sulu to Zamboanga Peninsula, so 2025 growth is for BARMM without Sulu and is not directly comparable with the 2021 baseline. Earlier actuals: 4.3% (2023, BDR 2023 p.8), 2.7% (2024, BDR 2024 Table 2)."
+   "note": "Plan baseline 7.5% (2020-2021) is in the plan table; the Midterm Update restates the baseline as 6.6% (2022) and keeps 8–9%. PSA's 2023–2025 regional accounts move Sulu to Zamboanga Peninsula, so 2025 growth is for BARMM without Sulu and is not directly comparable with the 2021 baseline. Earlier actuals: 4.3% (2023, BDR 2023 p.8), 2.7% (2024, BDR 2024 Table 2).",
+   "explain": "How fast the region’s economy grew in a year, with price increases taken out."
   },
   {
    "id": "grdp-per-capita-growth",
@@ -184,7 +186,8 @@
     "note": "With Sulu. No 2025 per-capita figure found; PSA pages could not be fetched."
    },
    "comparable": true,
-   "note": "The Midterm Update gives a revised target of 8–12%, but its table and text disagree; the original target is shown. Midterm Update text (Target 2) says 8.0–12.0%, its Table 4.1 says 10–12%, and gives baseline 4.5% (2022). 2023 actual 2.2% (BDR 2023) / 2.4% (BDR 2024)."
+   "note": "The Midterm Update gives a revised target of 8–12%, but its table and text disagree; the original target is shown. Midterm Update text (Target 2) says 8.0–12.0%, its Table 4.1 says 10–12%, and gives baseline 4.5% (2022). 2023 actual 2.2% (BDR 2023) / 2.4% (BDR 2024).",
+   "explain": "Economic growth per person: whether the economy grew faster than the population did."
   },
   {
    "id": "industry-growth",
@@ -243,7 +246,8 @@
     "note": "With Sulu. 2025 industry growth not found."
    },
    "comparable": true,
-   "note": "Midterm Update baseline 6.1% (2022), same 10–12% target, 2024 status 8.7%."
+   "note": "Midterm Update baseline 6.1% (2022), same 10–12% target, 2024 status 8.7%.",
+   "explain": "Growth of manufacturing, construction, mining, and power and water supply."
   },
   {
    "id": "services-growth",
@@ -303,7 +307,8 @@
     "elsewhere": "The plan’s Midterm Update prints 6.1% for 2024; its 2024 progress report gives 5.1%, shown here. BPDA has not said which is right."
    },
    "comparable": true,
-   "note": "Two BPDA documents disagree on 2024 (5.1% vs 6.1%)."
+   "note": "Two BPDA documents disagree on 2024 (5.1% vs 6.1%).",
+   "explain": "Growth of trade, transport, finance, government and the other services."
   },
   {
    "id": "agriculture-growth",
@@ -331,7 +336,8 @@
     "note": "PSA 2025 regional accounts as reported by the Bangsamoro Information Office; BARMM without Sulu. 2024 was -4.4% (Midterm Update Table 4.1)."
    },
    "comparable": true,
-   "note": "The plan gives this target as 6–8% in its text and 10–12% in Table 4.1; the lower is shown. Not in the original 2023 plan; added by the Midterm Update. The update's own table and text give different target ranges."
+   "note": "The plan gives this target as 6–8% in its text and 10–12% in Table 4.1; the lower is shown. Not in the original 2023 plan; added by the Midterm Update. The update's own table and text give different target ranges.",
+   "explain": "Growth of farming, fishing and forestry, where most of the region’s workers earn their living."
   },
   {
    "id": "inflation",
@@ -391,7 +397,8 @@
     "elsewhere": "The plan’s Midterm Update prints 3.9% for 2024; its 2024 progress report gives 3.7%, shown here."
    },
    "comparable": true,
-   "note": "Direction is 'stay inside 2–4%', not simply down; 2023 was 6.3% (BDR 2023). BARMM was in deflation for much of 2025."
+   "note": "Direction is 'stay inside 2–4%', not simply down; 2023 was 6.3% (BDR 2023). BARMM was in deflation for much of 2025.",
+   "explain": "How fast prices rose on average. The plan aims to keep it between 2% and 4% a year."
   },
   {
    "id": "unemployment-rate",
@@ -450,7 +457,8 @@
     "note": "PSA 2025 annual Labor Force Survey, BARMM regional release (2024: 3.0%). The provincial breakdown in that release still lists Sulu (1.2%), so the 2025 regional figure appears to include Sulu."
    },
    "comparable": true,
-   "note": "The plan table gives baseline 3.80% (2021); BDR 2023/2024 Table 1 give 3.0% (2021); the Midterm Update gives 5.8% (2022). Target is a band, already met."
+   "note": "The plan table gives baseline 3.80% (2021); BDR 2023/2024 Table 1 give 3.0% (2021); the Midterm Update gives 5.8% (2022). Target is a band, already met.",
+   "explain": "People who want work and are looking for it but have none, as a share of everyone working or looking."
   },
   {
    "id": "underemployment-rate",
@@ -509,7 +517,8 @@
     "note": "PSA 2025 annual LFS (2024: 11.7%). Appears to include Sulu (see unemployment)."
    },
    "comparable": true,
-   "note": "The Midterm Update (August 2026) loosened the 2028 target from 4–7% to 7–9%; the revised target is shown. The Midterm Update loosened the target from 4–7% to 7–9% and restated the baseline as 10.2% (2022). Moving away from both targets."
+   "note": "The Midterm Update (August 2026) loosened the 2028 target from 4–7% to 7–9%; the revised target is shown. The Midterm Update loosened the target from 4–7% to 7–9% and restated the baseline as 10.2% (2022). Moving away from both targets.",
+   "explain": "People who have work but want more hours or a second job, as a share of everyone working."
   },
   {
    "id": "labor-force-participation",
@@ -537,7 +546,8 @@
     "note": "PSA 2025 annual LFS; highest LFPR among regions in 2025. Appears to include Sulu."
    },
    "comparable": true,
-   "note": "Not a target in the original 2023 plan (it dropped LFPR as a headline indicator); re-added by the Midterm Update."
+   "note": "Not a target in the original 2023 plan (it dropped LFPR as a headline indicator); re-added by the Midterm Update.",
+   "explain": "People aged 15 and over who are working or looking for work."
   },
   {
    "id": "basic-literacy",
@@ -560,7 +570,8 @@
     "elsewhere": "The plan’s Midterm Update prints 84.2% for 2024. PSA’s final release gives 81.0%, the lowest of any region, and is the figure shown."
    },
    "comparable": true,
-   "note": "No target published: the plan's sector targets sit in a separate Results Matrix that BPDA has not posted. The Midterm Update's Table 9.1 gives 84.2% for 2024, which differs from PSA's final 81.0%. 2024 FLEMMS uses a revised definition; not comparable with 2019."
+   "note": "No target published: the plan's sector targets sit in a separate Results Matrix that BPDA has not posted. The Midterm Update's Table 9.1 gives 84.2% for 2024, which differs from PSA's final 81.0%. 2024 FLEMMS uses a revised definition; not comparable with 2019.",
+   "explain": "People aged 5 and over who can read and write a simple message and do basic arithmetic."
   },
   {
    "id": "functional-literacy",
@@ -582,7 +593,8 @@
     "note": "PSA's final release (Ref. 2025-227) shows 64.7 as the last bar in its regional chart but does not label it in text."
    },
    "comparable": true,
-   "note": "No target published. The fall from 71.6% is mostly the 2024 definition change (now includes inference/comprehension), per the Midterm Update."
+   "note": "No target published. The fall from 71.6% is mostly the 2024 definition change (now includes inference/comprehension), per the Midterm Update.",
+   "explain": "People aged 10 to 64 who can also understand what they read and draw conclusions from it."
   },
   {
    "id": "net-enrolment-elementary",
@@ -626,7 +638,8 @@
     "note": "School year 2024-2025."
    },
    "comparable": true,
-   "note": "Target shown is the latest published annual target (2025); the 2028 end-of-plan value is in the unpublished Results Matrix. BDR 2024 reports 63.10 (2023) and 63.84 (2024) while the Midterm Update gives 68.04 (SY 2022-23) and 66.89 (SY 2023-24) - the two BPDA documents disagree."
+   "note": "Target shown is the latest published annual target (2025); the 2028 end-of-plan value is in the unpublished Results Matrix. BDR 2024 reports 63.10 (2023) and 63.84 (2024) while the Midterm Update gives 68.04 (SY 2022-23) and 66.89 (SY 2023-24) - the two BPDA documents disagree.",
+   "explain": "Children of elementary-school age (6 to 11) who are enrolled in elementary school."
   },
   {
    "id": "cohort-survival-elementary",
@@ -670,7 +683,8 @@
     "note": "School year 2024-2025 (SY 2023-24: 62.62; SY 2022-23: 90.24)."
    },
    "comparable": true,
-   "note": "2028 target unpublished. Junior high 80.49 and senior high 71.85 in SY 2024-25 (same table)."
+   "note": "2028 target unpublished. Junior high 80.49 and senior high 71.85 in SY 2024-25 (same table).",
+   "explain": "Pupils who start Grade 1 and are still in school by Grade 6."
   },
   {
    "id": "completion-rate-elementary",
@@ -714,7 +728,8 @@
     "note": "School year 2024-2025 (SY 2023-24: 61.89)."
    },
    "comparable": true,
-   "note": "2028 target unpublished. The SY 2022-23 value (90.24) is identical to cohort survival that year in both BPDA documents, which looks like a copy error."
+   "note": "2028 target unpublished. The SY 2022-23 value (90.24) is identical to cohort survival that year in both BPDA documents, which looks like a copy error.",
+   "explain": "Pupils who start Grade 1 and finish elementary school."
   },
   {
    "id": "unserved-barangays-schools",
@@ -754,7 +769,8 @@
     "note": "'As of 2025, 160 barangays have been established and provided with learning facilitators' (ADM-AKAP). MBHTE aims to close the remaining 50 by 2028."
    },
    "comparable": true,
-   "note": "Baseline is the count of unserved barangays; targets and actuals count barangays reached. 2023 actual 115 (BDR 2023) / 106 (BDR 2024); 2024 actual 131."
+   "note": "Baseline is the count of unserved barangays; targets and actuals count barangays reached. 2023 actual 115 (BDR 2023) / 106 (BDR 2024); 2024 actual 131.",
+   "explain": "Barangays with no school where learning centres and facilitators now give children classes."
   },
   {
    "id": "maternal-mortality",
@@ -798,7 +814,8 @@
     "note": "MOH facility reporting (FHSIS), not a survey. 2023: 63.11 (Midterm) / 63 (BDR 2024) / 41 (BDR 2023)."
    },
    "comparable": true,
-   "note": "Published as '41.06%' etc. under a 'per 100,000 LB' heading; targets sit above the baseline. FHSIS counts only reported deaths, so these are far below survey-based estimates. Treat with caution."
+   "note": "Published as '41.06%' etc. under a 'per 100,000 LB' heading; targets sit above the baseline. FHSIS counts only reported deaths, so these are far below survey-based estimates. Treat with caution.",
+   "explain": "Mothers who die from pregnancy or childbirth, for every 100,000 babies born alive, as reported by health offices."
   },
   {
    "id": "infant-mortality",
@@ -838,7 +855,8 @@
     "note": "MOH-BARMM (FHSIS). 2023: 4.65."
    },
    "comparable": true,
-   "note": "The plan’s printed baseline (2.21 and 2.34) sits below its own targets, so it is left out as a different measure. Targets are above the stated baseline, so the baseline is probably a different measure; the Midterm Update (p.210) says IMR rose 2020–2024 but stays below the national average."
+   "note": "The plan’s printed baseline (2.21 and 2.34) sits below its own targets, so it is left out as a different measure. Targets are above the stated baseline, so the baseline is probably a different measure; the Midterm Update (p.210) says IMR rose 2020–2024 but stays below the national average.",
+   "explain": "Babies who die before their first birthday, for every 1,000 born alive, as reported by health offices."
   },
   {
    "id": "under5-mortality",
@@ -878,7 +896,8 @@
     "note": "MOH-BARMM (FHSIS). 2023: 7.43."
    },
    "comparable": true,
-   "note": "The plan’s printed baseline (2.21 and 2.34) sits below its own targets, so it is left out as a different measure. Same baseline problem as infant mortality."
+   "note": "The plan’s printed baseline (2.21 and 2.34) sits below its own targets, so it is left out as a different measure. Same baseline problem as infant mortality.",
+   "explain": "Children who die before age five, for every 1,000 born alive, as reported by health offices."
   },
   {
    "id": "fully-immunized-children",
@@ -917,7 +936,8 @@
     "note": "2023: 43.78. BDR 2024 prints 51.6 and says the desired target was 81.0% and that national vaccine stock-outs hurt coverage."
    },
    "comparable": true,
-   "note": "The 2025 annual target is printed as '10%'; BDR 2023 shows a different baseline (43.78, 2023)."
+   "note": "The 2025 annual target is printed as '10%'; BDR 2023 shows a different baseline (43.78, 2023).",
+   "explain": "Infants who received every basic vaccine before their first birthday."
   },
   {
    "id": "stunting-under5",
@@ -957,7 +977,8 @@
     "note": "Survey-based (DOST-FNRI Expanded National Nutrition Survey 2023); national 23.6%."
    },
    "comparable": false,
-   "note": "The target comes from health-office weighing records and the latest figure from a national survey, so the two are not compared. The plan's own tracker (BDR 2024) reports 21% for 2023 and 7.1% for 2024 from MOH/Operation Timbang data, which conflicts with the 34.3% survey figure in the Midterm Update; the scorecard uses the survey value. The FNRI report itself could not be downloaded to confirm."
+   "note": "The target comes from health-office weighing records and the latest figure from a national survey, so the two are not compared. The plan's own tracker (BDR 2024) reports 21% for 2023 and 7.1% for 2024 from MOH/Operation Timbang data, which conflicts with the 34.3% survey figure in the Midterm Update; the scorecard uses the survey value. The FNRI report itself could not be downloaded to confirm.",
+   "explain": "Children under five who are too short for their age, the mark of long-term undernourishment."
   },
   {
    "id": "safe-water-households",
@@ -1001,7 +1022,8 @@
     "note": "2023: 66.56. BDR 2024 RM gives 64% (2023) and 68% (2024)."
    },
    "comparable": true,
-   "note": "Annual targets already exceeded. A separate table (Midterm Table 11.1, p.283) puts families with basic drinking water at 73.4% in 2024, labelled 'Source: DOE'."
+   "note": "Annual targets already exceeded. A separate table (Midterm Table 11.1, p.283) puts families with basic drinking water at 73.4% in 2024, labelled 'Source: DOE'.",
+   "explain": "Households with at least a basic safe source of drinking water."
   },
   {
    "id": "severe-food-insecurity",
@@ -1045,7 +1067,8 @@
     "note": "48.2% matches DOST-FNRI's ENNS 2023 figure for MODERATE-to-severe household food insecurity in BARMM (highest region), so the year and definition may not match the indicator."
    },
    "comparable": true,
-   "note": "Moving the wrong way if the figures are comparable; definitions look inconsistent."
+   "note": "Moving the wrong way if the figures are comparable; definitions look inconsistent.",
+   "explain": "Households that ran out of food or went a whole day without eating in the past year."
   },
   {
    "id": "roads-constructed",
@@ -1085,7 +1108,8 @@
     "note": "2023: 102.20 km."
    },
    "comparable": true,
-   "note": "The printed baseline (3,643 km) is the road network, not a year’s construction, so it is left out. Output indicator from the Ministry of Public Works. 2028 target unpublished. Bridges constructed: targets 29/16/12 (2023-25), actual 1 (2023) and 7 (2024), same table."
+   "note": "The printed baseline (3,643 km) is the road network, not a year’s construction, so it is left out. Output indicator from the Ministry of Public Works. 2028 target unpublished. Bridges constructed: targets 29/16/12 (2023-25), actual 1 (2023) and 7 (2024), same table.",
+   "explain": "Kilometres of road the Ministry of Public Works built in the year."
   },
   {
    "id": "rido-settled",
@@ -1093,11 +1117,7 @@
    "name": "Rido (clan feud) cases settled",
    "unit": "cases per year",
    "direction": "up",
-   "baseline": {
-    "value": 303,
-    "year": 2022,
-    "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (BDR 2024, Table 20, p.116; baseline is 'for the past 3 years')"
-   },
+   "baseline": null,
    "target": {
     "low": 72,
     "high": 72,
@@ -1129,7 +1149,8 @@
     "note": "2024: 99; 2023: 109 (p.260) or 113 (Midterm printed p.23 and BDR 2024)."
    },
    "comparable": true,
-   "note": "Meets the annual target every year so far. Profiled rido cases: 459 (2023), 106 (2024), 225 (2025), Midterm p.254 (the text calls this a 'steady decline')."
+   "note": "The plan’s printed baseline (303, 2022) counts rido cases on record rather than cases settled in a year, so it is left out. Meets the annual target every year so far. Profiled rido cases: 459 (2023), 106 (2024), 225 (2025), Midterm p.254 (the text calls this a 'steady decline').",
+   "explain": "Clan feuds (rido) settled through mediation in the year."
   },
   {
    "id": "drug-cleared-barangays",
@@ -1169,7 +1190,8 @@
     "note": "2023: 25. Midterm Update p.256: 1,043 of 2,185 barangays (46.7%) declared drug-cleared from 2023 to 2025."
    },
    "comparable": true,
-   "note": "No baseline value printed."
+   "note": "No baseline value printed.",
+   "explain": "Barangays newly declared drug-cleared in the year."
   },
   {
    "id": "investments-approved",
@@ -1213,7 +1235,8 @@
     "note": "'record peak of Php5.0 billion in 2025' (figure label shows 5.06). 2024: 4.7 B; 2023: 3.1 B."
    },
    "comparable": true,
-   "note": "Approved/registered investments, not realised investment."
+   "note": "Approved/registered investments, not realised investment.",
+   "explain": "Business investments registered with the Bangsamoro Board of Investments, in pesos. Registered, not yet spent."
   },
   {
    "id": "household-electrification",
@@ -1231,7 +1254,8 @@
     "note": "251,003 of 602,942 potential connections (2023 Census basis); lowest of any region. Includes Sulu (126,565 unelectrified households listed). 2,444 of 2,450 target barangays energised as of Dec 2024."
    },
    "comparable": true,
-   "note": "No household-electrification target is published; the only energy rows in the published Results Matrix are outputs (e.g. households energised with renewables: 300 in 2024, 500 in 2025 targets)."
+   "note": "No household-electrification target is published; the only energy rows in the published Results Matrix are outputs (e.g. households energised with renewables: 300 in 2024, 500 in 2025 targets).",
+   "explain": "Households connected to electricity."
   },
   {
    "id": "basic-sanitation-households",
@@ -1253,7 +1277,8 @@
     "note": null
    },
    "comparable": true,
-   "note": "No target published. Zero Open Defecation: 25.43% of municipalities/cities (2023, Table 9.8)."
+   "note": "No target published. Zero Open Defecation: 25.43% of municipalities/cities (2023, Table 9.8).",
+   "explain": "Households with at least a basic toilet of their own."
   },
   {
    "id": "index-crimes",
@@ -1275,7 +1300,8 @@
     "note": "2024: 824. Page 266 instead gives 635 for 1 Jan–11 Nov 2025."
    },
    "comparable": true,
-   "note": "The plan's tracker uses an unexplained 'Crime Rate Percentage (Index Crimes)' (baseline 100; targets 110/115/110; actual 119.68 in 2023, 112.31 in 2024) that cannot be read as a crime rate. Total crime volume, Table 10.2: 2,638 (2023), 2,662 (2024), 2,898 (2025)."
+   "note": "The plan's tracker uses an unexplained 'Crime Rate Percentage (Index Crimes)' (baseline 100; targets 110/115/110; actual 119.68 in 2023, 112.31 in 2024) that cannot be read as a crime rate. Total crime volume, Table 10.2: 2,638 (2023), 2,662 (2024), 2,898 (2025).",
+   "explain": "Serious crimes reported to police, such as murder, physical injury, robbery and theft."
   },
   {
    "id": "sglg-lgus",
@@ -1293,7 +1319,8 @@
     "note": "Plus 92 barangays passed the SGLG for Barangays."
    },
    "comparable": true,
-   "note": "BDR 2024 Table 21 lists 'Number of LGUs conferred with SGLG' with a lone value of 27 whose column (target or actual) cannot be read from the layout."
+   "note": "BDR 2024 Table 21 lists 'Number of LGUs conferred with SGLG' with a lone value of 27 whose column (target or actual) cannot be read from the layout.",
+   "explain": "Provinces, cities and towns that won the national Seal of Good Local Governance."
   }
  ],
  "gaps": [

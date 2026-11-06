@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { GetInvolved } from '../_components/get-involved'
 import { SiteHeader } from '../_components/site-header'
-import { AREAS, formatBare, formatGoalBare, formatValue, gapText, indicators, judge, plan, scorecardGaps, scorecardNote, STATUS_LABEL, type Indicator, type Status } from '../_lib/development-plan'
+import { AREAS, formatGoal, formatValue, gapText, PLAN_START, progress, indicators, judge, plan, scorecardGaps, scorecardNote, STATUS_LABEL, type Indicator, type Status } from '../_lib/development-plan'
 import { pageMeta } from '../_lib/seo'
 
 export const metadata: Metadata = pageMeta({
@@ -25,152 +25,145 @@ const sourceName = (url: string) =>
 			: (plan.progress_reports.find((r) => url.includes(r.url.split('/view')[0]))?.title ?? new URL(url.split(' ')[0]).hostname.replace(/^www\./, ''))
 const href = (url: string) => url.split(' ')[0]
 
-/** The plan through time (user decision: bars were hard to read): years left to right, where it started, where it is now
-    in the verdict's colour, and each target as a crimson mark at its year — a solid line for the way come, a dashed one
-    for the way still to go. */
-const POINT_TONE: Record<Status, string> = {
+const FILL: Record<Status, string> = {
 	met: 'var(--tone-done-fg)',
 	short: 'var(--tone-move-fg)',
 	'no-target': 'var(--ink-3)',
 	'not-compared': 'var(--ink-3)',
 }
 
-function Timeline({ indicator, status, goals }: { indicator: Indicator; status: Status; goals: { low: number; high: number; year: number }[] }) {
-	const { latest, baseline, unit } = indicator
-	const W = 320
-	const H = 132
-	const [left, right, top, bottom] = [14, 58, 20, 24]
-	const years = [baseline?.year, latest.year, ...goals.map((goal) => goal.year)].filter((y): y is number => y != null)
-	const y0 = Math.min(...years)
-	const y1 = Math.max(...years) === y0 ? y0 + 1 : Math.max(...years)
-	const values = [latest.value, ...(baseline ? [baseline.value] : []), ...goals.flatMap((goal) => [goal.low, goal.high])]
-	const lo = Math.min(...values)
-	const hi = Math.max(...values)
-	const pad = (hi - lo) * 0.3 || Math.abs(hi) * 0.25 || 1
-	const d0 = lo >= 0 ? Math.max(0, lo - pad) : lo - pad
-	const d1 = hi + pad
-	const x = (year: number) => left + ((year - y0) / (y1 - y0)) * (W - left - right)
-	const y = (value: number) => top + (1 - (value - d0) / (d1 - d0)) * (H - top - bottom)
-	const end = goals.reduce<(typeof goals)[number] | null>((last, goal) => (!last || goal.year >= last.year ? goal : last), null)
-	const tone = POINT_TONE[status]
-	const shared = goals.some((goal) => goal.year === latest.year)
-	const label = { fontSize: 10.5, fontFamily: 'var(--font-display)' }
-
+/** The right half of a row (user decision: a progress bar toward the target, marked with the plan's years): how far from
+    the start toward the furthest target, filled in the verdict's colour, over a track whose ticks are the plan's years —
+    so a fill that has passed the latest figure's year is ahead of a steady pace, and one short of it behind. */
+function ProgressTrack({ indicator, status }: { indicator: Indicator; status: Status }) {
+	const p = progress(indicator)
+	const { baseline, target, unit, latest } = indicator
+	if (!p) {
+		const why = !target ? 'No target published, so there is nothing to measure progress toward.' : !indicator.comparable ? 'The target and the latest figure measure different things, so progress is not measured.' : 'No starting figure was published, so progress cannot be measured; the verdict on the left compares the latest figure with its target.'
+		return <p className='text-[0.8125rem] leading-[1.6] text-[var(--ink-3)]'>{why}</p>
+	}
+	const years = Array.from({ length: p.end.year - PLAN_START + 1 }, (_, i) => PLAN_START + i)
+	const at = (year: number) => ((year - (PLAN_START - 1)) / (p.end.year - (PLAN_START - 1))) * 100
+	const fill = Math.min(1, Math.max(0, p.share))
+	const headline = p.hold
+		? p.share >= 1
+			? `Started within the ${p.end.year} target and is still there`
+			: `Started within the ${p.end.year} target and has slipped out of it`
+		: p.share >= 1
+			? `Reached the ${p.end.year} target`
+			: p.share < 0
+				? 'Further from the target than at the start'
+				: `${Math.round(p.share * 100)}% of the way to the ${p.end.year} target`
+	const pace = p.share >= 1 || p.share < 0 ? null : p.share >= p.elapsed ? 'ahead of a steady pace' : 'behind a steady pace'
 	return (
-		<svg viewBox={`0 0 ${W} ${H}`} className='mt-3 block h-auto w-full overflow-visible' role='img' aria-label={`${indicator.name}: ${formatValue(latest.value, unit)} in ${latest.year}`}>
-			<line x1={left} x2={W - right} y1={H - bottom} y2={H - bottom} stroke='var(--rule)' />
-			{[...new Set(years)].map((year) => (
-				<text key={year} x={x(year)} y={H - 7} textAnchor='middle' fill='var(--ink-3)' style={label}>
-					{year}
-				</text>
-			))}
+		<div>
+			<p className='text-[0.9375rem] font-semibold leading-snug' style={{ color: p.share >= 1 ? FILL.met : FILL.short }}>
+				{headline}
+				{pace ? <span className='font-normal text-[var(--ink-3)]'>, {pace}</span> : null}
+			</p>
 
-			{goals.map((goal) => (
-				<g key={goal.year}>
-					<rect
-						x={x(goal.year) - 6}
-						y={y(goal.high) - (goal.high === goal.low ? 1.5 : 0)}
-						width={12}
-						height={Math.max(3, y(goal.low) - y(goal.high))}
-						fill='color-mix(in oklab, var(--accent) 22%, transparent)'
-						stroke='var(--accent)'
-						strokeWidth={1.2}
-					/>
-					<text x={x(goal.year) + 10} y={y((goal.low + goal.high) / 2) + 3.5} fill='var(--accent)' style={{ ...label, fontWeight: 700 }}>
-						{formatGoalBare(goal, unit)}
-					</text>
-				</g>
-			))}
+			<div className='relative mt-4 h-3 bg-[var(--paper-3)]'>
+				<div className='absolute inset-y-0 left-0' style={{ width: `${fill * 100}%`, background: p.share >= 1 ? FILL.met : FILL.short }} />
+				{/* Where a steady pace would have it by the latest figure's year. */}
+				{p.share > 0 && p.share < 1 ? <div className='absolute -inset-y-1 w-0.5 bg-[var(--ink)]' style={{ left: `${p.elapsed * 100}%` }} title={`A steady pace would be here by ${latest.year}`} /> : null}
+			</div>
+			<div className='relative mt-1.5 h-4'>
+				{years.map((year) => (
+					<span
+						key={year}
+						className={`absolute -translate-x-full text-[0.6875rem] tabular-nums ${year === latest.year ? 'font-semibold text-[var(--ink)]' : 'text-[var(--ink-mute)]'}`}
+						style={{ left: `${at(year)}%` }}
+					>
+						{year}
+					</span>
+				))}
+			</div>
 
-			{baseline ? <line x1={x(baseline.year)} y1={y(baseline.value)} x2={x(latest.year)} y2={y(latest.value)} stroke='var(--ink-3)' strokeWidth={1.5} /> : null}
-			{end && status === 'short' ? (
-				<line x1={x(latest.year)} y1={y(latest.value)} x2={x(end.year) - 6} y2={y((end.low + end.high) / 2)} stroke='var(--accent)' strokeWidth={1.5} strokeDasharray='3 3' />
-			) : null}
-
-			{baseline ? (
-				<g>
-					<circle cx={x(baseline.year)} cy={y(baseline.value)} r={3.5} fill='var(--paper)' stroke='var(--ink-3)' strokeWidth={1.5} />
-					<text x={x(baseline.year)} y={y(baseline.value) + 15} textAnchor='middle' fill='var(--ink-3)' style={label}>
-						{formatBare(baseline.value, unit)}
-					</text>
-				</g>
-			) : null}
-			<circle cx={x(latest.year)} cy={y(latest.value)} r={5} fill={tone} stroke='var(--paper)' strokeWidth={2} />
-			{/* Beside the point, not above it, where a target stands in the same year and its band would take the label. */}
-			<text
-				x={shared ? x(latest.year) - 8 : x(latest.year)}
-				y={y(latest.value) - (shared ? 8 : 10)}
-				textAnchor={shared ? 'end' : 'middle'}
-				fill={tone}
-				style={{ ...label, fontWeight: 800 }}
-			>
-				{formatBare(latest.value, unit)}
-			</text>
-		</svg>
+			<dl className='mt-3 flex justify-between gap-4 text-[0.78125rem] leading-[1.45]'>
+				<div>
+					<dt className='text-[var(--ink-3)]'>Start</dt>
+					<dd className='font-semibold text-[var(--ink)]'>
+						{formatValue(baseline!.value, unit)} <span className='font-normal text-[var(--ink-3)]'>in {baseline!.year}</span>
+					</dd>
+				</div>
+				<div className='text-right'>
+					<dt className='text-[var(--ink-3)]'>Target</dt>
+					<dd className='font-semibold text-[var(--ink)]'>
+						{formatGoal(p.end, unit)} <span className='font-normal text-[var(--ink-3)]'>by {p.end.year}</span>
+					</dd>
+				</div>
+			</dl>
+		</div>
 	)
 }
 
-function Card({ indicator }: { indicator: Indicator }) {
+/** One indicator a row (user decision): what it is and where it stands on the left, its progress on the right. */
+function Row({ indicator }: { indicator: Indicator }) {
 	const { status, against } = judge(indicator)
 	const { latest, baseline, target, unit } = indicator
-	const endDiffers = target && against && (against.year !== target.year || against.low !== target.low || against.high !== target.high)
 	const gap = gapText(indicator, status, against)
 	return (
-		<article className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5'>
-			<div className='flex items-start justify-between gap-3'>
-				<h3 className='text-[0.9375rem] font-semibold leading-snug text-[var(--ink)]'>{indicator.name}</h3>
-				<span className={`badge ${TONE[status]} shrink-0`}>{STATUS_LABEL[status]}</span>
+		<li className='grid gap-6 border-b border-[var(--rule)] py-7 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-14'>
+			<div>
+				<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
+					<h3 className='text-[1.0625rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{indicator.name}</h3>
+					<span className={`badge ${TONE[status]}`}>{STATUS_LABEL[status]}</span>
+				</div>
+				<p className='mt-1.5 text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>{indicator.explain}</p>
+
+				<p className='mt-4 flex flex-wrap items-baseline gap-x-2'>
+					<span className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
+						{formatValue(latest.value, unit)}
+					</span>
+					<span className='text-[0.8125rem] text-[var(--ink-3)]'>
+						in {latest.year} · {indicator.direction === 'up' ? 'higher is better' : 'lower is better'}
+					</span>
+				</p>
+				{gap ? <p className='mt-2 text-[0.8125rem] font-semibold leading-snug' style={{ color: FILL[status] }}>{gap}</p> : null}
+
+				{/* Shown, not folded (user decision): a reader holding the plan's own report sees a different number. */}
+				{latest.elsewhere ? (
+					<p className='mt-3 border-l-2 border-[var(--brass)] pl-3 text-[0.75rem] leading-[1.55] text-[var(--ink-3)]'>{latest.elsewhere}</p>
+				) : null}
+
+				<details className='group mt-3'>
+					<summary className='cursor-pointer list-none text-[0.75rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
+						<span className='group-open:hidden'>About this figure and its sources</span>
+						<span className='hidden group-open:inline'>Hide</span>
+					</summary>
+					<div className='mt-3 space-y-2 text-[0.78125rem] leading-[1.6] text-[var(--ink-3)]'>
+						{indicator.note ? <p>{indicator.note}</p> : null}
+						{latest.note ? <p>{latest.note}</p> : null}
+						<p>
+							Latest:{' '}
+							<a href={href(latest.source)} target='_blank' rel='noreferrer' className={linkClass}>
+								{sourceName(latest.source)}
+							</a>
+							{target ? (
+								<>
+									{' '}· Target:{' '}
+									<a href={href(target.source)} target='_blank' rel='noreferrer' className={linkClass}>
+										{sourceName(target.source)}
+									</a>
+								</>
+							) : null}
+							{baseline ? (
+								<>
+									{' '}· Start:{' '}
+									<a href={href(baseline.source)} target='_blank' rel='noreferrer' className={linkClass}>
+										{sourceName(baseline.source)}
+									</a>
+								</>
+							) : null}
+						</p>
+					</div>
+				</details>
 			</div>
 
-			<p className='mt-4 flex items-baseline gap-2'>
-				<span className='font-[family-name:var(--font-display)] text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-					{formatValue(latest.value, unit)}
-				</span>
-				<span className='text-[0.8125rem] text-[var(--ink-3)]'>in {latest.year}</span>
-			</p>
-
-			{gap ? <p className={`mt-3 text-[0.8125rem] font-semibold leading-snug ${status === 'met' ? 'text-[var(--tone-done-fg)]' : status === 'short' ? 'text-[var(--tone-move-fg)]' : 'text-[var(--ink-3)]'}`}>{gap}</p> : null}
-			<Timeline indicator={indicator} status={status} goals={[...(against ? [against] : []), ...(target && (endDiffers || !against) ? [target] : [])]} />
-			<p className='mt-1 text-right text-[0.75rem] text-[var(--ink-3)]'>{indicator.direction === 'up' ? 'Higher is better' : 'Lower is better'}</p>
-
-			{/* Shown, not folded (user decision): a reader holding the plan's own report sees a different number. */}
-			{latest.elsewhere ? (
-				<p className='mt-4 border-l-2 border-[var(--brass)] pl-3 text-[0.75rem] leading-[1.55] text-[var(--ink-3)]'>{latest.elsewhere}</p>
-			) : null}
-
-			<details className='group mt-auto pt-4'>
-				<summary className='cursor-pointer list-none text-[0.75rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
-					<span className='group-open:hidden'>About this figure and its sources</span>
-					<span className='hidden group-open:inline'>Hide</span>
-				</summary>
-				<div className='mt-3 space-y-2 text-[0.78125rem] leading-[1.6] text-[var(--ink-3)]'>
-					{indicator.note ? <p>{indicator.note}</p> : null}
-					{latest.note ? <p>{latest.note}</p> : null}
-					<p>
-						Latest:{' '}
-						<a href={href(latest.source)} target='_blank' rel='noreferrer' className={linkClass}>
-							{sourceName(latest.source)}
-						</a>
-						{target ? (
-							<>
-								{' '}· Target:{' '}
-								<a href={href(target.source)} target='_blank' rel='noreferrer' className={linkClass}>
-									{sourceName(target.source)}
-								</a>
-							</>
-						) : null}
-						{baseline ? (
-							<>
-								{' '}· Start:{' '}
-								<a href={href(baseline.source)} target='_blank' rel='noreferrer' className={linkClass}>
-									{sourceName(baseline.source)}
-								</a>
-							</>
-						) : null}
-					</p>
-				</div>
-			</details>
-		</article>
+			<div className='lg:pt-1'>
+				<ProgressTrack indicator={indicator} status={status} />
+			</div>
+		</li>
 	)
 }
 
@@ -261,11 +254,11 @@ export default function DevelopmentPlanPage() {
 					return (
 						<div key={area} className='mb-14 last:mb-0'>
 							<h2 className='border-b border-[var(--ink)] pb-3 text-[1.5rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>{area}</h2>
-							<div className='mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
+							<ul>
 								{here.map((indicator) => (
-									<Card key={indicator.id} indicator={indicator} />
+									<Row key={indicator.id} indicator={indicator} />
 								))}
-							</div>
+							</ul>
 						</div>
 					)
 				})}
