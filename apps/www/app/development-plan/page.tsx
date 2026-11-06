@@ -36,12 +36,12 @@ function Gauge({ indicator, against }: { indicator: Indicator; against: { low: n
 		<div className='relative mt-5 h-2 bg-[var(--paper-3)]' aria-hidden='true'>
 			{against ? (
 				<span
-					className='absolute inset-y-0 bg-[color-mix(in_oklab,var(--brass)_45%,transparent)]'
+					className='absolute inset-y-0 bg-[color-mix(in_oklab,var(--accent)_30%,transparent)]'
 					style={{ left: at(against.low), width: `max(3px, calc(${at(against.high)} - ${at(against.low)}))` }}
 				/>
 			) : null}
 			{indicator.baseline ? <span className='absolute -top-1 h-4 w-px bg-[var(--ink-3)]' style={{ left: at(indicator.baseline.value) }} /> : null}
-			<span className='absolute top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[var(--paper)] bg-[var(--ink)]' style={{ left: at(indicator.latest.value) }} />
+			<span className='absolute top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-[var(--paper)] bg-[var(--accent)]' style={{ left: at(indicator.latest.value) }} />
 		</div>
 	)
 }
