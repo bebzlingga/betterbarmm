@@ -48,8 +48,12 @@ import resultsFile from '../../../datasets/election/election-results.json'
 import { more, MORE_ASKED } from './more'
 import { catalogue, directory, DIRECTORY_ASKED } from './directory'
 import { services, SERVICES_ASKED, SERVICES_ASKED_ONLY } from './services'
+import libraryBooks from '../../../datasets/library/books.json'
+import libraryAuthors from '../../../datasets/library/authors.json'
+import libraryPublishers from '../../../datasets/library/publishers.json'
+import libraryMagazines from '../../../datasets/library/magazines.json'
 
-export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer' | 'directory' | 'incidents' | 'services'
+export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer' | 'directory' | 'incidents' | 'services' | 'library'
 
 /** One thing a reader can be sent to. `text` is the haystack; everything else is shown. */
 export type Entry = {
@@ -150,6 +154,7 @@ const SITE: Record<Space, string> = {
 	directory: 'https://betterbarmm.com/directory',
 	incidents: 'https://betterbarmm.com/accidents',
 	services: 'https://betterbarmm.com/services',
+	library: 'https://library.betterbarmm.com',
 }
 
 type Measure = {
@@ -1041,6 +1046,11 @@ const ASKED_FOR: Record<string, string> = {
 	'Reserved seat': 'sector sectoral reserved seat seats women youth ulama traditional leaders settler indigenous nominee nominees',
 	Place: 'place visit see go attraction destination travel',
 	Food: 'food dish eat cuisine',
+	Book: 'book books read reading written wrote author novel study history literature where buy borrow free pdf',
+	Author: 'author authors writer writers wrote written who scholar historian poet novelist',
+	Publisher: 'publisher publishers published press institute',
+	Magazine: 'magazine magazines newsletter newsletters journal issue issues publication office ministry',
+	Library: 'library books how many authors publishers magazines shelf catalogue',
 	Background: 'history historical background explain explanation why how came to be origin story past struggle peace process autonomy region government institutions people culture',
 	Area: 'area place visit go travel destination province',
 	Route: 'route trip itinerary travel days',
@@ -1163,6 +1173,55 @@ function primer(): Entry[] {
 	return rows
 }
 
+type LibBook = { slug: string; title: string; subtitle?: string | null; authors: string[]; role: string; publisher: string; year: number; subjects: string[]; summary: string; overview?: string | null; availability: string; language: string }
+type LibAuthor = { slug: string; name: string; bio: string; roles: string[]; local?: string | null }
+type LibPublisher = { slug: string; name: string; about: string; based: string }
+type LibMagazine = { slug: string; title: string; office: string; acronym?: string | null; kind: string; about: string; issues: unknown[] }
+
+/** The library: books about the Bangsamoro, who wrote and published them, and the offices' own magazines. */
+function library(): Entry[] {
+	const books = (libraryBooks as unknown as { books: LibBook[] }).books
+	const authors = (libraryAuthors as unknown as { authors: LibAuthor[] }).authors
+	const publishers = (libraryPublishers as unknown as { publishers: LibPublisher[] }).publishers
+	const mags = libraryMagazines as unknown as LibMagazine[] | { magazines: LibMagazine[] }
+	const magazines = Array.isArray(mags) ? mags : mags.magazines
+	const who = new Map(authors.map((a) => [a.slug, a.name]))
+	const press = new Map(publishers.map((p) => [p.slug, p.name]))
+	const AVAIL: Record<string, string> = { 'for-sale': 'in print', 'open-access': 'free to read', library: 'out of print', private: 'self-published' }
+	const rows: Entry[] = books.map((b) => {
+		const names = b.authors.map((s) => who.get(s) ?? s).join(', ') || press.get(b.publisher) || ''
+		return {
+			space: 'library',
+			kind: 'Book',
+			title: b.subtitle ? `${b.title}: ${b.subtitle}` : b.title,
+			note: `${names}, ${b.year}, ${AVAIL[b.availability] ?? b.availability}. ${b.summary}`,
+			href: `${SITE.library}/books/${b.slug}`,
+			text: [b.title, b.subtitle, names, press.get(b.publisher), b.year, b.language, b.subjects.join(' '), b.summary, b.overview, AVAIL[b.availability]].filter(Boolean).join(' ').toLowerCase(),
+		}
+	})
+	for (const a of authors) {
+		const n = books.filter((b) => b.authors.includes(a.slug)).length
+		rows.push({ space: 'library', kind: 'Author', title: a.name, note: `${a.bio} ${n} ${n === 1 ? 'book' : 'books'} on the shelf.`, href: `${SITE.library}/authors/${a.slug}`, text: [a.name, a.roles.join(' '), a.bio, a.local ? `from the ${a.local}` : ''].join(' ').toLowerCase() })
+	}
+	for (const p of publishers) {
+		const n = books.filter((b) => b.publisher === p.slug).length
+		rows.push({ space: 'library', kind: 'Publisher', title: p.name, note: `${p.about} ${n} ${n === 1 ? 'book' : 'books'} on the shelf.`, href: `${SITE.library}/publishers/${p.slug}`, text: [p.name, p.based, p.about].join(' ').toLowerCase() })
+	}
+	for (const m of magazines) {
+		rows.push({ space: 'library', kind: 'Magazine', title: m.title, note: `${m.kind} of the ${m.office}. ${m.about}`, href: `${SITE.library}/magazines#${m.slug}`, text: [m.title, m.office, m.acronym, m.kind, m.about].filter(Boolean).join(' ').toLowerCase() })
+	}
+	rows.push({
+		space: 'library',
+		kind: 'Library',
+		title: 'The Library',
+		note: `${books.length} books about the Bangsamoro, by ${authors.length} authors from ${publishers.length} publishers, ${books.filter((b) => b.availability === 'open-access').length} of them free to read, and ${magazines.length} magazines of the region’s offices.`,
+		href: SITE.library,
+		text: 'library books authors publishers magazines shelf catalogue reading',
+		rollup: true,
+	})
+	return rows
+}
+
 export function corpus(): Entry[] {
 	if (!built) {
 		built = [
@@ -1179,6 +1238,7 @@ export function corpus(): Entry[] {
 			...more(),
 			...directory(),
 			...services(),
+			...library(),
 		]
 		// Hung on the row rather than written into each builder: it is one rule
 		// about how questions are worded, not a fact about any of the four

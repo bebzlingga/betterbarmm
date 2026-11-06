@@ -69,6 +69,10 @@ export function brain() {
 	const emails = read<{ generatedAt: string; towns: Record<string, unknown> }>('directory/lgu-emails.json')
 	const places = read<{ generatedAt: string; items: { slug: string; name: string; municipality: string; area: string }[] }>('places/places.json')
 	const stays = read<{ stays: unknown[] }>('places/stays.json').stays.length
+	const shelf = read<{ built: string; books: { availability: string }[] }>('library/books.json')
+	const libAuthors = read<{ authors: unknown[] }>('library/authors.json').authors.length
+	const libPublishers = read<{ publishers: unknown[] }>('library/publishers.json').publishers.length
+	const libMagazines = read<{ magazines: { issues: unknown[] }[] }>('library/magazines.json').magazines
 	const crafts = read<{ generatedAt: string; items: unknown[] }>('crafts/crafts.json')
 	const exposure = read<{ generatedAt: string; barangays: unknown[] }>('preparedness/exposure.json')
 	const facilitiesFile = read<{ generatedAt: string; facilities: unknown[] }>('preparedness/facilities.json')
@@ -93,6 +97,7 @@ export function brain() {
 		{ id: 'w-incidents', label: 'Incident Watch', kind: 'workspace', note: 'Road crashes, shootings, drownings, fires and floods reported in the region, on a map.', href: '/accidents' },
 		{ id: 'w-preparedness', label: 'Preparedness', kind: 'workspace', note: 'Flood, landslide and storm surge hazard for every barangay, from Project NOAH, and the evacuation sites, hospitals and offices nearest each one.', href: '/preparedness' },
 		{ id: 'w-places', label: 'Travel & Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: 'https://travel.betterbarmm.com' },
+		{ id: 'w-library', label: 'Library', kind: 'workspace', note: 'Books about the Bangsamoro and its peoples, who wrote and published them, where each can be bought, borrowed or read free, and the magazines of the region’s own offices.', href: 'https://library.betterbarmm.com' },
 		{ id: 'w-crafts', label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
 		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes, with each place’s head, numbers and email beside it.', href: '/services' },
 		{ id: 'w-discover', label: 'Discover', kind: 'workspace', note: 'How the Bangsamoro came to be, how its government works, and the explainers.', href: '/discover' },
@@ -111,6 +116,8 @@ export function brain() {
 		{ id: 'd-field', label: 'Provincial offices', kind: 'dataset', count: field.offices.length, unit: 'offices', date: field.generatedAt, note: 'The ministries’ offices in the provinces, with their heads and contacts where published.' },
 		{ id: 'd-lines', label: 'Emergency lines & emails', kind: 'dataset', count: emergency.towns.length, unit: 'towns', date: emails.generatedAt, note: 'Each town’s police, fire, health and town hall numbers, and its official email.' },
 		{ id: 'd-places', label: 'Places & stays', kind: 'dataset', count: places.items.length + stays, unit: 'places', date: places.generatedAt, note: `${places.items.length} places and ${stays} places to stay, each traced to its sources.` },
+		{ id: 'd-books', label: 'Books, authors & publishers', kind: 'dataset', count: shelf.books.length, unit: 'books', date: shelf.built, note: `${shelf.books.length} books, ${shelf.books.filter((b) => b.availability === 'open-access').length} of them free to read, by ${libAuthors} authors from ${libPublishers} publishers, each with an overview from its sources.` },
+		{ id: 'd-magazines', label: 'Office magazines', kind: 'dataset', count: libMagazines.reduce((n, m) => n + m.issues.length, 0), unit: 'issues', note: `${libMagazines.length} magazines, newsletters and journals of the region’s ministries and offices, each issue linked on the office’s own site.` },
 		{ id: 'd-crafts', label: 'Crafts', kind: 'dataset', count: crafts.items.length, unit: 'crafts', date: crafts.generatedAt, note: 'Textiles, mats, brass, wood and gongs, with their makers and where to see them.' },
 		{ id: 'd-incidents', label: 'Incident reports', kind: 'dataset', count: accidents.incidents.length, unit: 'incidents', date: accidents.generatedAt, note: 'One record per incident since 2019, every report linked, placed on its barangay where named.' },
 		{ id: 'd-hazards', label: 'Hazard exposure', kind: 'dataset', count: exposure.barangays.length, unit: 'barangays', date: exposure.generatedAt, note: 'Each barangay’s land in each of NOAH’s flood, landslide and storm surge hazard classes, with its 2020 population.' },
@@ -141,6 +148,8 @@ export function brain() {
 		{ id: 's-noah', label: 'Project NOAH', kind: 'source', note: 'The University of the Philippines’ flood, landslide and storm surge hazard maps, open under the ODbL.' },
 		{ id: 's-osm', label: 'OpenStreetMap', kind: 'source', note: 'Volunteer-mapped facilities, used where the official registers are not open.' },
 		{ id: 's-commons', label: 'Wikimedia Commons', kind: 'source', note: 'Freely licensed photographs, each credited to its author.' },
+		{ id: 's-openlibrary', label: 'Open Library', kind: 'source', note: 'The Internet Archive’s open catalogue: book records, covers and publishers’ descriptions.' },
+		{ id: 's-publishers', label: 'Publishers & institutes', kind: 'source', note: 'University presses, research institutes and NGOs: their catalogues, and the free PDFs many of them publish.' },
 		{ id: 's-scholars', label: 'Histories & laws', kind: 'source', note: 'The Organic Law, peace agreements and published histories behind the primer.' },
 	]
 
@@ -161,7 +170,7 @@ export function brain() {
 		['s-gppb', ['d-blacklist']],
 		['s-dti', ['d-lines', 'd-finances']],
 		['s-bio', ['d-offices', 'd-field', 'd-places', 'd-crafts']],
-		['s-ministries', ['d-offices', 'd-field', 'd-lines', 'd-charters', 'd-lgu-charters']],
+		['s-ministries', ['d-offices', 'd-field', 'd-lines', 'd-charters', 'd-lgu-charters', 'd-magazines']],
 		['s-news', ['d-incidents']],
 		['s-bcpch', ['d-crafts', 'd-places']],
 		['s-mtit', ['d-places', 'd-field']],
@@ -170,7 +179,9 @@ export function brain() {
 		['s-pna', ['d-incidents']],
 		['s-dot', ['d-places']],
 		['s-museum', ['d-places']],
-		['s-commons', ['d-places', 'd-crafts']],
+		['s-commons', ['d-places', 'd-crafts', 'd-books']],
+		['s-openlibrary', ['d-books']],
+		['s-publishers', ['d-books']],
 		['s-scholars', ['d-primer']],
 	]
 	const publishes: [string, string[]][] = [
@@ -191,6 +202,8 @@ export function brain() {
 		['d-lines', ['w-directory', 'w-services']],
 		['d-places', ['w-places']],
 		['d-crafts', ['w-crafts']],
+		['d-books', ['w-library']],
+		['d-magazines', ['w-library']],
 		['d-incidents', ['w-incidents']],
 		['d-hazards', ['w-preparedness']],
 		['d-facilities', ['w-preparedness']],

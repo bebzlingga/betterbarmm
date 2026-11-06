@@ -1,4 +1,4 @@
-import { BrainIcon, BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DatabaseIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
+import { BooksIcon, BrainIcon, BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DatabaseIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -45,6 +45,7 @@ const WORKSPACES = [
 	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget', icon: CoinsIcon },
 	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government', icon: BuildingsIcon },
 	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement', icon: ShoppingCartIcon },
+	{ key: 'library', href: 'https://library.betterbarmm.com', label: 'Library', icon: BooksIcon },
 	{ key: 'travel', href: 'https://travel.betterbarmm.com', label: 'Travel & Places', icon: MapPinAreaIcon },
 ] as const
 

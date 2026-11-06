@@ -28,6 +28,7 @@ export const WORKSPACES = [
 	{ value: 'election', label: 'Election' },
 	{ value: 'lgu', label: 'Local government' },
 	{ value: 'travel', label: 'Travel' },
+	{ value: 'library', label: 'Library' },
 	{ value: 'accidents', label: 'Incident Watch' },
 	{ value: 'directory', label: 'Directory' },
 ] as const
@@ -236,6 +237,42 @@ export const COLLECTIONS: CollectionDef[] = [
 		source: array('travel/towns.json', null),
 		key: (r) => s(r.slug),
 		title: (r) => `${s(r.name)} (${s(r.area)})`,
+	},
+
+	// ---- Library ----
+	// books.json, authors.json and publishers.json are built from shelf.json (scripts/build_library.py, which also
+	// fetches covers and links), so an editor works on shelf.json; the pages change when the build is next run.
+	{
+		workspace: 'library',
+		collection: 'books',
+		label: 'Books',
+		source: array('library/shelf.json', 'books'),
+		key: (r) => s(r.slug),
+		title: (r) => `${s(r.title)} (${s(r.year)})`,
+	},
+	{
+		workspace: 'library',
+		collection: 'authors',
+		label: 'Authors',
+		source: array('library/shelf.json', 'authors'),
+		key: (r) => s(r.slug),
+		title: (r) => s(r.name),
+	},
+	{
+		workspace: 'library',
+		collection: 'publishers',
+		label: 'Publishers',
+		source: array('library/shelf.json', 'publishers'),
+		key: (r) => s(r.slug),
+		title: (r) => s(r.name),
+	},
+	{
+		workspace: 'library',
+		collection: 'magazines',
+		label: 'Office magazines',
+		source: array('library/magazines.json', 'magazines'),
+		key: (r) => s(r.slug),
+		title: (r) => `${s(r.title)} (${s(r.acronym ?? r.office)})`,
 	},
 
 	// ---- Incident Watch ----
