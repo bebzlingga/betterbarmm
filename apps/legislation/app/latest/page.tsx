@@ -5,7 +5,7 @@ import { getChanges, mondayOf, type Change } from '../_lib/changes'
 
 export const metadata: Metadata = {
 	title: 'What changed',
-	description: 'Every step a bill or resolution took in the Bangsamoro Parliament, and every act ratified, newest first, week by week, with a feed to follow.',
+	description: 'Every step a bill or resolution took in the Bangsamoro Parliament, and every act ratified, newest first, week by week.',
 }
 
 /* ============================================================
@@ -38,15 +38,9 @@ export default function LatestPage() {
 				size='compact'
 				eyebrow={changes[0] ? `Newest step on record: ${LONG.format(at(changes[0].date))}` : 'Nothing recorded yet'}
 				title='What changed in Parliament.'
-				description='Every step a bill or resolution took, and every act ratified, newest first. Follow it in a feed reader to hear of each new step.'
+				description='Every step a bill or resolution took, and every act ratified, newest first.'
 			/>
 			<section className='bb-container py-[clamp(3rem,6vw,5rem)]'>
-				<p className='mb-10 text-[0.875rem] text-[var(--ink-3)]'>
-					<a href='/latest/feed.xml' className='rule-link'>
-						Subscribe to the feed
-					</a>{' '}
-					· steps come from each measure’s history on Parliament’s site, as of the last capture.
-				</p>
 				{[...weeks].map(([week, list]) => (
 					<section key={week} className='mb-14'>
 						<h2 className='flex items-baseline gap-3 border-b border-[var(--rule)] pb-3 text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
@@ -55,7 +49,7 @@ export default function LatestPage() {
 						</h2>
 						<ol className='mt-2 divide-y divide-[var(--rule)]'>
 							{list.map((change, i) => (
-								<li key={i} className='grid gap-1 py-3 sm:grid-cols-[7rem_13rem_minmax(0,1fr)] sm:gap-5'>
+								<li key={i} className='grid gap-1 py-3 sm:grid-cols-[7rem_18rem_minmax(0,1fr)] sm:gap-5'>
 									<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{DAY.format(at(change.date))}</span>
 									<span className='text-[0.875rem] font-semibold text-[var(--ink)]'>
 										{change.stage}

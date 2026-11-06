@@ -52,7 +52,7 @@ type PageHeaderProps = {
  * should not feel they have changed sites, and for a while this was the only
  * one opening on paper.
  *
- * `bb-crimson` re-points every token — ink, brass, rules, the accent — so the
+ * `brand-bg`, the band the landing site's mastheads use (user decision), re-points every token — ink, brass, rules, the accent — so the
  * eyebrow, the headline, the description and the figures under it all restyle
  * themselves without one inverted variant written here.
  *
@@ -117,7 +117,7 @@ export function PageHeader({
 			// column stacks them again, and the content takes `my-auto` below to
 			// hold the middle of the screen the way the row was holding it.
 			<section
-				className={`bb-crimson bb-lattice relative isolate overflow-hidden${
+				className={`brand-bg bb-lattice relative isolate overflow-hidden${
 					size === 'hero' ? ' flex flex-col' : ''
 				}`}
 			>
@@ -186,7 +186,7 @@ export function PageHeader({
 	// the medallion goes. A masthead this size on a page of four hundred rows is
 	// furniture in the way of the thing the reader came for.
 	return (
-		<section className='bb-crimson bb-lattice relative isolate overflow-hidden'>
+		<section className='brand-bg bb-lattice relative isolate overflow-hidden'>
 			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
 				<Rise distance={12}>
 					<p className='bb-label'>{eyebrow}</p>
