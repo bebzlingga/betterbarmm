@@ -124,7 +124,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 			   from the edge and the line got shorter on the screen with the least room
 			   for it. From `sm`, where two cards share a row and a card needs its own
 			   edges, the padding comes back. */
-			className='row-in relative flex h-full flex-col border-l border-t border-[var(--rule)] py-6 transition hover:bg-[var(--paper-2)] sm:p-8 lg:p-10'
+			className='row-in relative flex h-full flex-col border-b border-[var(--rule)] py-6 transition hover:bg-[var(--paper-2)] sm:border-r sm:p-8 lg:p-10'
 		>
 			<h3 className='text-[1.35rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 				<Link href={`/committees/${committee.slug}`} className='after:absolute after:inset-0 after:content-[""]'>
@@ -133,7 +133,12 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 			</h3>
 
 			{committee.chairperson ? (
-				<p className='meta mt-1.5'>
+				<p className='meta mt-2.5 flex items-center gap-2.5'>
+					{committee.chairperson.photoUrl ? (
+						// eslint-disable-next-line @next/next/no-img-element -- a local portrait, sized here
+						<img src={committee.chairperson.photoUrl} alt='' className='size-8 shrink-0 rounded-full border border-[var(--rule)] object-cover' />
+					) : null}
+					<span>
 					Chaired by{' '}
 					{committee.chairperson.slug ? (
 						<Link
@@ -145,6 +150,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 					) : (
 						committee.chairperson.displayName
 					)}
+					</span>
 				</p>
 			) : null}
 
@@ -178,7 +184,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 			{/* Pinned to the bottom so the badges line up across a row regardless of
 			    how long each card runs. */}
 			<div className='mt-auto flex flex-wrap gap-1.5 pt-5'>
-				<span className='badge badge-plain badge-idle'>{committee.memberCount} seated</span>
+				{committee.memberCount > 0 ? <span className='badge badge-plain badge-idle'>{committee.memberCount} seated</span> : null}
 				{committee.referredBills.length + committee.referredResolutions.length > 0 ? (
 					<span className='badge badge-plain badge-early'>
 						{committee.referredBills.length + committee.referredResolutions.length} referred
@@ -208,8 +214,10 @@ export default function CommitteesPage() {
 			...record,
 			name: c.name || record.name,
 			chairperson: chair
-				? { rosterName: chair.name, displayName: chair.member?.displayName ?? chair.name, slug: chair.member?.slug, initials: '', role: 'Chairperson' as Committee['seats'][number]['role'] }
+				? { rosterName: chair.name, displayName: chair.member?.displayName ?? chair.name, slug: chair.member?.slug, initials: '', role: 'Chairperson' as Committee['seats'][number]['role'], photoUrl: chair.member?.photoUrl }
 				: undefined,
+			// Seated means seated now: the Transition Authority's roster is on the committee's own page.
+			memberCount: c.members.length ? c.members.length + c.viceChairs.length + 1 : 0,
 		}]
 	})
 	const listed = current.length ? current : committees
@@ -294,8 +302,8 @@ export default function CommitteesPage() {
 						</h2>
 						<p className='max-w-xl bb-body text-[var(--ink-3)] lg:text-right'>{group.note}</p>
 					</div>
-					<div className='overflow-hidden border-t border-[var(--rule)]'>
-						<div className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-3'>
+					<div className='border-t border-[var(--rule)] sm:border-l'>
+						<div className='grid sm:grid-cols-2 lg:grid-cols-3'>
 							{group.committees.map((committee, index) => (
 								<CommitteeCard key={committee.slug} committee={committee} index={index} />
 							))}

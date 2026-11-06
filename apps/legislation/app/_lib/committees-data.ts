@@ -23,6 +23,8 @@ export type CommitteeSeat = {
 	slug?: string
 	initials: string
 	role: CommitteeRole
+	/** A portrait, where one is held for this person. */
+	photoUrl?: string
 }
 
 export type CommitteeReferral = {
