@@ -109,11 +109,6 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 							{current && current.members.length > 0 ? (
 								<span className='badge badge-plain badge-idle'>{current.members.length + current.viceChairs.length + 1} seated</span>
 							) : null}
-							{committee.reports.length > 0 ? (
-								<span className='badge badge-plain badge-done'>
-									{committee.reports.length} reports filed
-								</span>
-							) : null}
 						</div>
 
 						{/* Parliament's own words. Quoted rather than paraphrased — the
@@ -205,23 +200,30 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 										Parliament has named the chair; the vice-chairs and members appear here once it posts them.
 									</p>
 								)}
+								<p className='mt-4 text-[0.875rem] leading-6 text-[var(--ink-3)]'>
+									No measure has been referred to it and no report filed yet in the First Parliament.
+								</p>
 							</div>
 						) : null}
 
-						{/* ---- Who sat on it before: history, folded away so the current committee leads ---- */}
-						{officers.length + members.length + exOfficio.length > 0 ? (
-							<details className='group mb-10 border-y border-[var(--rule)]'>
-								<summary className='flex cursor-pointer list-none items-center justify-between gap-4 py-5 [&::-webkit-details-marker]:hidden'>
-									<span>
-										<span className='eyebrow block'>In the Transition Authority</span>
-										<span className='mt-1.5 block text-[0.8125rem] text-[var(--ink-3)]'>
-											The last roster before the First Parliament: {officers.length + members.length + exOfficio.length} seats, as of {generatedAt}
-										</span>
+						{/* ---- The Transition Authority: its roster, reports and referrals, folded away so the current
+						    committee leads ---- */}
+						<details className='group border-y border-[var(--rule)]'>
+							<summary className='flex cursor-pointer list-none items-center justify-between gap-4 py-5 [&::-webkit-details-marker]:hidden'>
+								<span>
+									<span className='eyebrow block'>In the Transition Authority · 2019 to 2025</span>
+									<span className='mt-1.5 block text-[0.8125rem] text-[var(--ink-3)]'>
+										{officers.length + members.length + exOfficio.length} seats on its last roster · {committee.reports.length} reports ·{' '}
+										{committee.referredBills.length + committee.referredResolutions.length} measures referred
 									</span>
-									<span aria-hidden='true' className='text-[1.25rem] leading-none text-[var(--ink-3)] transition group-open:rotate-45'>+</span>
-								</summary>
-								<div className='pb-8 pt-2'>
-							{officers.length > 0 ? (
+								</span>
+								<span aria-hidden='true' className='text-[1.25rem] leading-none text-[var(--ink-3)] transition group-open:rotate-45'>+</span>
+							</summary>
+							<div className='pb-10 pt-4'>
+								<p className='mb-6 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
+									The committee’s last roster, as Parliament’s page listed it on {generatedAt}, and what was referred to it and what it reported before the First Parliament.
+								</p>
+								{officers.length > 0 ? (
 								<div>
 									<p className='label label-strong'>Chair and vice-chairs</p>
 									<div className='mt-3 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
@@ -256,61 +258,58 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 									</div>
 								</div>
 							) : null}
+									{/* ---- Reports ---- */}
+									{committee.reports.length > 0 ? (
+										<div className='mt-12'>
+											<p className='label label-strong label-lg'>
+												Committee reports <span className='num'>({committee.reports.length})</span>
+											</p>
+											<p className='meta-sm mt-2 max-w-2xl'>
+												What the committee reported back to the plenary. Numbers and dates are as filed;
+												the text of each report sits on Parliament&rsquo;s site.
+											</p>
+											<div className='mt-4'>
+												<ShowAll noun='reports'>
+													{committee.reports.map((report) => (
+														<a
+															key={report.number}
+															href={report.url}
+															target='_blank'
+															rel='noreferrer'
+															className='row grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3.5'
+														>
+															<span className='num text-[0.8125rem] font-medium text-[var(--ink)]'>
+																{report.title}
+															</span>
+															<span className='meta-sm shrink-0'>{report.dateDisplay}</span>
+														</a>
+													))}
+												</ShowAll>
+											</div>
+										</div>
+									) : null}
 
-								</div>
-							</details>
-						) : null}
-
-						{/* ---- Reports ---- */}
-						{committee.reports.length > 0 ? (
-							<div className='mt-12'>
-								<p className='label label-strong label-lg'>
-									Committee reports <span className='num'>({committee.reports.length})</span>
-								</p>
-								<p className='meta-sm mt-2 max-w-2xl'>
-									What the committee reported back to the plenary. Numbers and dates are as filed;
-									the text of each report sits on Parliament&rsquo;s site.
-								</p>
-								<div className='mt-4'>
-									<ShowAll noun='reports'>
-										{committee.reports.map((report) => (
-											<a
-												key={report.number}
-												href={report.url}
-												target='_blank'
-												rel='noreferrer'
-												className='row grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3.5'
-											>
-												<span className='num text-[0.8125rem] font-medium text-[var(--ink)]'>
-													{report.title}
-												</span>
-												<span className='meta-sm shrink-0'>{report.dateDisplay}</span>
-											</a>
-										))}
-									</ShowAll>
-								</div>
+									{/* ---- Referred measures ---- */}
+									{committee.referredBills.length + committee.referredResolutions.length > 0 ? (
+										<div className='mt-12 grid gap-10'>
+											<ReferralList
+												label='Referred bills'
+												noun='bills'
+												items={referredBills}
+											/>
+											<ReferralList
+												label='Referred resolutions'
+												noun='resolutions'
+												items={referredResolutions}
+											/>
+										</div>
+									) : (
+										<p className='mt-12 max-w-2xl bb-body text-[var(--ink-3)]'>
+											No measures are listed as referred to this committee on its official page.
+										</p>
+									)}
 							</div>
-						) : null}
-
-						{/* ---- Referred measures ---- */}
-						{committee.referredBills.length + committee.referredResolutions.length > 0 ? (
-							<div className='mt-12 grid gap-10'>
-								<ReferralList
-									label='Referred bills'
-									noun='bills'
-									items={referredBills}
-								/>
-								<ReferralList
-									label='Referred resolutions'
-									noun='resolutions'
-									items={referredResolutions}
-								/>
-							</div>
-						) : (
-							<p className='mt-12 max-w-2xl bb-body text-[var(--ink-3)]'>
-								No measures are listed as referred to this committee on its official page.
-							</p>
-						)}
+						</details>
 					</div>
 				</Reveal>
 			</div>
