@@ -103,7 +103,7 @@ function Row({ indicator }: { indicator: Indicator }) {
 	const { latest, baseline, target, unit } = indicator
 	const gap = gapText(indicator, status, against)
 	return (
-		<li className='grid gap-6 border-b border-[var(--rule)] py-7 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-24 xl:gap-32'>
+		<li className='grid gap-y-6 border-b border-[var(--rule)] py-7 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-x-24 lg:gap-y-4 xl:gap-x-32'>
 			<div>
 				<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
 					<h3 className='text-[1.0625rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{indicator.name}</h3>
@@ -126,43 +126,44 @@ function Row({ indicator }: { indicator: Indicator }) {
 					<p className='mt-3 border-l-2 border-[var(--brass)] pl-3 text-[0.75rem] leading-[1.55] text-[var(--ink-3)]'>{latest.elsewhere}</p>
 				) : null}
 
-				<details className='group mt-3'>
-					<summary className='cursor-pointer list-none text-[0.75rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
-						<span className='group-open:hidden'>About this figure and its sources</span>
-						<span className='hidden group-open:inline'>Hide</span>
-					</summary>
-					<div className='mt-3 space-y-2 text-[0.78125rem] leading-[1.6] text-[var(--ink-3)]'>
-						{indicator.note ? <p>{indicator.note}</p> : null}
-						{latest.note ? <p>{latest.note}</p> : null}
-						<p>
-							Latest:{' '}
-							<a href={href(latest.source)} target='_blank' rel='noreferrer' className={linkClass}>
-								{sourceName(latest.source)}
-							</a>
-							{target ? (
-								<>
-									{' '}· Target:{' '}
-									<a href={href(target.source)} target='_blank' rel='noreferrer' className={linkClass}>
-										{sourceName(target.source)}
-									</a>
-								</>
-							) : null}
-							{baseline ? (
-								<>
-									{' '}· Start:{' '}
-									<a href={href(baseline.source)} target='_blank' rel='noreferrer' className={linkClass}>
-										{sourceName(baseline.source)}
-									</a>
-								</>
-							) : null}
-						</p>
-					</div>
-				</details>
 			</div>
 
 			<div className='lg:pt-1'>
 				<ProgressTrack indicator={indicator} status={status} />
 			</div>
+			{/* Across the whole row, under both halves (user decision): the notes run long and read better at full width. */}
+			<details className='group lg:col-span-2'>
+				<summary className='cursor-pointer list-none text-[0.75rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
+					<span className='group-open:hidden'>About this figure and its sources</span>
+					<span className='hidden group-open:inline'>Hide</span>
+				</summary>
+				<div className='mt-3 space-y-2 text-[0.78125rem] leading-[1.6] text-[var(--ink-3)]'>
+					{indicator.note ? <p>{indicator.note}</p> : null}
+					{latest.note ? <p>{latest.note}</p> : null}
+					<p>
+						Latest:{' '}
+						<a href={href(latest.source)} target='_blank' rel='noreferrer' className={linkClass}>
+							{sourceName(latest.source)}
+						</a>
+						{target ? (
+							<>
+								{' '}· Target:{' '}
+								<a href={href(target.source)} target='_blank' rel='noreferrer' className={linkClass}>
+									{sourceName(target.source)}
+								</a>
+							</>
+						) : null}
+						{baseline ? (
+							<>
+								{' '}· Start:{' '}
+								<a href={href(baseline.source)} target='_blank' rel='noreferrer' className={linkClass}>
+									{sourceName(baseline.source)}
+								</a>
+							</>
+						) : null}
+					</p>
+				</div>
+			</details>
 		</li>
 	)
 }
