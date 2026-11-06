@@ -10,7 +10,7 @@ import file from '../../../../datasets/development-plan/scorecard.json'
    carries its source. See datasets/development-plan/scorecard.json.
    ============================================================ */
 
-type Sourced = { value: number; year: number; source: string; note?: string | null }
+type Sourced = { value: number; year: number; source: string; note?: string | null; /** Where another of the plan's own documents prints a different figure for the same year. */ elsewhere?: string }
 type Goal = { low: number; high: number; year: number }
 
 export type Indicator = {
@@ -68,6 +68,14 @@ export function formatValue(value: number, unit: string) {
 	if (unit === 'km') return `${Math.round(value).toLocaleString('en-PH')} km`
 	if (unit.startsWith('per ')) return `${num(value)} ${unit.replace(' live births', '')}`
 	return `${num(value)} ${unit.replace(/\s*\(.*\)/, '').replace(' per year', '')}`
+}
+
+/** The figure without its unit where the unit is words (per 1,000, barangays): for a row whose card already names it. */
+export const formatBare = (value: number, unit: string) => (unit === '%' || unit === 'PHP' || unit === 'km' ? formatValue(value, unit) : num(value))
+
+export function formatGoalBare(goal: Goal, unit: string) {
+	if (unit === '%' || unit === 'PHP' || unit === 'km') return formatGoal(goal, unit)
+	return goal.low === goal.high ? num(goal.low) : `${num(goal.low)}–${num(goal.high)}`
 }
 
 export function formatGoal(goal: Goal, unit: string) {

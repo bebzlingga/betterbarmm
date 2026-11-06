@@ -299,7 +299,8 @@
     "value": 5.1,
     "year": 2024,
     "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Table 2, p.14; MOV: PSA)",
-    "note": "The Midterm Update (Table 4.1, p.61) gives 6.1% for 2024 instead. 2025 services growth not found."
+    "note": "The Midterm Update (Table 4.1, p.61) gives 6.1% for 2024 instead. 2025 services growth not found.",
+    "elsewhere": "The plan’s Midterm Update prints 6.1% for 2024; its 2024 progress report gives 5.1%, shown here. BPDA has not said which is right."
    },
    "comparable": true,
    "note": "Two BPDA documents disagree on 2024 (5.1% vs 6.1%)."
@@ -386,7 +387,8 @@
     "value": 3.7,
     "year": 2024,
     "source": "https://drive.google.com/file/d/1XqRGwP4_mSTTAXg316Dmii29rYqvXTTD/view (Table 2, p.14; MOV: PSA)",
-    "note": "The Midterm Update (Table 4.1) gives 3.9% for 2024. No 2025 annual average found; PSA reported BARMM year-on-year inflation of -1.0% in December 2025 (https://bangsamoro.gov.ph/news/latest-news/barmm-inflation-eases-but-remains-negative-at-1-0-in-december-2025/)."
+    "note": "The Midterm Update (Table 4.1) gives 3.9% for 2024. No 2025 annual average found; PSA reported BARMM year-on-year inflation of -1.0% in December 2025 (https://bangsamoro.gov.ph/news/latest-news/barmm-inflation-eases-but-remains-negative-at-1-0-in-december-2025/).",
+    "elsewhere": "The plan’s Midterm Update prints 3.9% for 2024; its 2024 progress report gives 3.7%, shown here."
    },
    "comparable": true,
    "note": "Direction is 'stay inside 2–4%', not simply down; 2023 was 6.3% (BDR 2023). BARMM was in deflation for much of 2025."
@@ -554,7 +556,8 @@
     "value": 81.0,
     "year": 2024,
     "source": "https://od2-image-api.abs-cbn.com/prod/20250801060852/2024%20FLEMMS%20Press%20Release%20Final%20Results_signed_0.pdf",
-    "note": "PSA 2024 FLEMMS final results, Ref. No. 2025-227, released 30 June 2025 (copy hosted by ABS-CBN; PSA site blocks automated fetches). Lowest of all regions. Survey ran Sept–Oct 2024, so BARMM likely still includes Sulu."
+    "note": "PSA 2024 FLEMMS final results, Ref. No. 2025-227, released 30 June 2025 (copy hosted by ABS-CBN; PSA site blocks automated fetches). Lowest of all regions. Survey ran Sept–Oct 2024, so BARMM likely still includes Sulu.",
+    "elsewhere": "The plan’s Midterm Update prints 84.2% for 2024. PSA’s final release gives 81.0%, the lowest of any region, and is the figure shown."
    },
    "comparable": true,
    "note": "No target published: the plan's sector targets sit in a separate Results Matrix that BPDA has not posted. The Midterm Update's Table 9.1 gives 84.2% for 2024, which differs from PSA's final 81.0%. 2024 FLEMMS uses a revised definition; not comparable with 2019."

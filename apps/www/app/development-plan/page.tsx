@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { GetInvolved } from '../_components/get-involved'
 import { SiteHeader } from '../_components/site-header'
-import { AREAS, formatGoal, formatValue, indicators, judge, plan, scorecardGaps, scorecardNote, STATUS_LABEL, type Indicator, type Status } from '../_lib/development-plan'
+import { AREAS, formatBare, formatGoalBare, formatValue, indicators, judge, plan, scorecardGaps, scorecardNote, STATUS_LABEL, type Indicator, type Status } from '../_lib/development-plan'
 import { pageMeta } from '../_lib/seo'
 
 export const metadata: Metadata = pageMeta({
@@ -40,7 +40,9 @@ function Bars({ indicator, status, goals }: { indicator: Indicator; status: Stat
 	// A large share runs on 0–100, so 42% reads as under half; a small one (3.9% unemployment) and every other unit run
 	// to the largest value in play, or the bars are too short to compare.
 	const most = Math.max(...values)
-	const top = unit === '%' && most > 50 && most <= 100 ? 100 : most * 1.1 || 1
+	// A lone bar has nothing to compare against, so a share of it runs on 0–100 too.
+	const lone = !goals.length && !baseline
+	const top = unit === '%' && (most > 50 || lone) && most <= 100 ? 100 : most * 1.1 || 1
 	const width = (v: number) => `max(2px, ${Math.min(100, (v / top) * 100)}%)`
 	const row = (key: string, label: string, year: number, text: string, bar: React.ReactNode, strong = false) => (
 		<div key={key} className='grid grid-cols-[3.75rem_minmax(0,1fr)_5.5rem] items-center gap-3'>
@@ -54,13 +56,13 @@ function Bars({ indicator, status, goals }: { indicator: Indicator; status: Stat
 	)
 	return (
 		<div className='mt-5 grid gap-2.5'>
-			{row('latest', 'Latest', latest.year, formatValue(latest.value, unit), <span className={`absolute inset-y-0 left-0 ${BAR_TONE[status]}`} style={{ width: width(latest.value) }} />, true)}
+			{row('latest', 'Latest', latest.year, formatBare(latest.value, unit), <span className={`absolute inset-y-0 left-0 ${BAR_TONE[status]}`} style={{ width: width(latest.value) }} />, true)}
 			{goals.map((goal) =>
 				row(
 					`target-${goal.year}`,
 					'Target',
 					goal.year,
-					formatGoal(goal, unit),
+					formatGoalBare(goal, unit),
 					<>
 						<span className='absolute inset-y-0 left-0 bg-[var(--accent)]' style={{ width: width(goal.low) }} />
 						{goal.high > goal.low ? (
@@ -69,7 +71,7 @@ function Bars({ indicator, status, goals }: { indicator: Indicator; status: Stat
 					</>,
 				),
 			)}
-			{baseline ? row('start', 'Start', baseline.year, formatValue(baseline.value, unit), <span className='absolute inset-y-0 left-0 bg-[var(--rule)]' style={{ width: width(baseline.value) }} />) : null}
+			{baseline ? row('start', 'Start', baseline.year, formatBare(baseline.value, unit), <span className='absolute inset-y-0 left-0 bg-[var(--rule)]' style={{ width: width(baseline.value) }} />) : null}
 			<p className='text-right text-[0.75rem] text-[var(--ink-3)]'>{indicator.direction === 'up' ? 'Higher is better' : 'Lower is better'}</p>
 		</div>
 	)
@@ -94,6 +96,11 @@ function Card({ indicator }: { indicator: Indicator }) {
 			</p>
 
 			<Bars indicator={indicator} status={status} goals={[...(against ? [against] : []), ...(target && (endDiffers || !against) ? [target] : [])]} />
+
+			{/* Shown, not folded (user decision): a reader holding the plan's own report sees a different number. */}
+			{latest.elsewhere ? (
+				<p className='mt-4 border-l-2 border-[var(--brass)] pl-3 text-[0.75rem] leading-[1.55] text-[var(--ink-3)]'>{latest.elsewhere}</p>
+			) : null}
 
 			<details className='group mt-auto pt-4'>
 				<summary className='cursor-pointer list-none text-[0.75rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
