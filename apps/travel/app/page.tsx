@@ -36,6 +36,11 @@ const PLAN = [
 	{ href: '/plan', label: 'Plan a trip', note: 'Permits, dress, prayer times, festivals, safety', icon: CalendarCheckIcon },
 ]
 
+const GETTING_HERE = [
+	{ href: '/flights', label: 'Flights', note: 'Into Cotabato and Tawi-Tawi, or the cities next door, with a fare search for every route', icon: AirplaneTiltIcon },
+	{ href: '/ferries', label: 'Ferries & boats', note: 'Zamboanga to Basilan, Jolo and Bongao, between the islands, and across to Sabah', icon: BoatIcon },
+]
+
 /** The explorer's own shape while it hydrates: the band with its words (they are static), the field and the
     ways in in grey, the categories, the cards. */
 function ExplorerSkeleton({ head }: { head: React.ReactNode }) {
@@ -127,7 +132,24 @@ export default function TravelHome() {
 						</>
 					) : null}
 
-					<SectionHead title='Where to go,' titleMuted='area by area.' className={GUIDE_PAGES ? 'mt-16' : ''} />
+					{/* Getting here (user decision: a full travel site, flights included): the two ways in, each its own page. */}
+					<SectionHead title='Getting here' className={GUIDE_PAGES ? 'mt-16' : ''} />
+					<div className='mt-8 grid gap-6 sm:grid-cols-2'>
+						{GETTING_HERE.map(({ href, label, note, icon: Glyph }) => (
+							<Link key={href} href={href} className='tv-card group flex items-start gap-5'>
+								<Glyph size={30} weight='duotone' className='shrink-0 text-[var(--brass)]' aria-hidden='true' />
+								<span className='min-w-0 flex-1'>
+									<span className='block font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+										{label}
+									</span>
+									<span className='mt-1 block text-[0.84375rem] leading-snug text-[var(--ink-3)]'>{note}</span>
+								</span>
+								<ArrowRightIcon size={16} weight='bold' className='mt-1 shrink-0 text-[var(--ink-3)] transition group-hover:translate-x-1 group-hover:text-[var(--accent)]' aria-hidden='true' />
+							</Link>
+						))}
+					</div>
+
+					<SectionHead title='Where to go,' titleMuted='area by area.' className='mt-16' />
 					{/* A simple guide to the seven areas (user decision), improved: each row a picture to know it by, what it
 					    is and how much the guide holds there, how you get in (by plane, boat or road), and when to go. */}
 					<ul className='mt-8 border-t border-[var(--ink)]'>

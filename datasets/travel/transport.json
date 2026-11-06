@@ -1,0 +1,502 @@
+{
+ "name": "Flights and boats into the Bangsamoro",
+ "note": "Scheduled routes taken from airline, operator and government pages and dated reports, each with its source and the month it describes. Researched November 2026. Nothing here is a fare or a booking.",
+ "names": {
+  "MNL": "Manila",
+  "CEB": "Cebu",
+  "CRK": "Clark",
+  "ILO": "Iloilo"
+ },
+ "airports": [
+  {
+   "code": "CBO",
+   "name": "Awang Airport",
+   "city": "Datu Odin Sinsuat (for Cotabato City)",
+   "inBarmm": true,
+   "serves": [
+    "cotabato-city",
+    "maguindanao-del-norte",
+    "maguindanao-del-sur",
+    "special-geographic-area"
+   ],
+   "note": "Run by the Bangsamoro Airport Authority since 2023. Philippine Airlines is the only major airline with confirmed scheduled flights (Manila, Cebu, Tawi-Tawi).",
+   "source": "https://portcalls.com/barmm-airport-authority-assumes-landside-operation-of-6-airports",
+   "short": "Cotabato"
+  },
+  {
+   "code": "TWT",
+   "name": "Sanga-Sanga Airport",
+   "city": "Bongao, Tawi-Tawi",
+   "inBarmm": true,
+   "serves": [
+    "tawi-tawi"
+   ],
+   "note": "Jet service to Zamboanga on Philippine Airlines and Cebu Pacific, plus a PAL link to Cotabato. Run by the Bangsamoro Airport Authority.",
+   "source": "https://portcalls.com/barmm-airport-authority-assumes-landside-operation-of-6-airports",
+   "short": "Tawi-Tawi"
+  },
+  {
+   "code": "JOL",
+   "name": "Jolo Airport",
+   "city": "Jolo, Sulu",
+   "inBarmm": false,
+   "serves": [],
+   "note": "Just outside the region: Sulu left BARMM after the Supreme Court ruling of 2024. Only small carriers fly here (Bangsamoro Airways, Leading Edge); Philippine Airlines has suspended its flights.",
+   "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-airport-authority-pushes-stronger-air-connectivity-security-in-sulu-amid-regional-shift/",
+   "short": "Jolo"
+  },
+  {
+   "code": "ZAM",
+   "name": "Zamboanga International Airport",
+   "city": "Zamboanga City",
+   "inBarmm": false,
+   "serves": [
+    "basilan",
+    "tawi-tawi"
+   ],
+   "note": "Main gateway for the island provinces. Flights from Manila, Cebu, Davao and Iloilo, and the port next door has ferries to Basilan, Jolo and Bongao.",
+   "source": "https://flyteam.jp/en/airline_route/mnl_zam/flight_schedule",
+   "short": "Zamboanga"
+  },
+  {
+   "code": "CGY",
+   "name": "Laguindingan Airport",
+   "city": "Laguindingan, Misamis Oriental (for Cagayan de Oro and Iligan)",
+   "inBarmm": false,
+   "serves": [
+    "lanao-del-sur"
+   ],
+   "note": "Nearest jet airport to Marawi and Lanao del Sur, with onward travel by road. Flights from Manila on Philippine Airlines, Cebu Pacific and AirAsia.",
+   "source": "https://flyteam.jp/en/airline_route/mnl_cgy/flight_schedule",
+   "short": "Cagayan de Oro"
+  },
+  {
+   "code": "DVO",
+   "name": "Francisco Bangoy International Airport",
+   "city": "Davao City",
+   "inBarmm": false,
+   "serves": [
+    "maguindanao-del-sur",
+    "special-geographic-area"
+   ],
+   "note": "Large Mindanao hub with flights from Manila, Cebu and Clark. Buses run from Davao to Cotabato and Kabacan.",
+   "source": "https://flyteam.jp/en/airline_route/mnl_dvo/flight_schedule",
+   "short": "Davao"
+  },
+  {
+   "code": "GES",
+   "name": "General Santos International Airport",
+   "city": "General Santos City",
+   "inBarmm": false,
+   "serves": [
+    "maguindanao-del-sur"
+   ],
+   "note": "Closed to commercial flights after the magnitude 7.8 earthquake on 8 June 2026 and reopened on 15 June 2026.",
+   "source": "https://tribune.net.ph/2026/06/14/dotr-resumes-gensan-commercial-flights",
+   "short": "General Santos"
+  }
+ ],
+ "flights": [
+  {
+   "from": "MNL",
+   "to": "CBO",
+   "airlines": [
+    "Philippine Airlines"
+   ],
+   "duration": "About 1h 45m",
+   "frequency": "Twice daily",
+   "note": "Twice daily on Airbus A320s since October 2025, up from 11 a week.",
+   "source": "https://www.gmanetwork.com/news/money/companies/959585/pal-to-mount-additional-domestic-flights-starting-october/story/",
+   "asOf": "2025-12"
+  },
+  {
+   "from": "CEB",
+   "to": "CBO",
+   "airlines": [
+    "Philippine Airlines (PAL Express)"
+   ],
+   "duration": "About 1h 5m to 1h 10m",
+   "frequency": "Twice a week",
+   "note": "Dash 8 turboprop, Mondays and Thursdays.",
+   "source": "https://flyteam.jp/en/airline_route/cbo_ceb/flight_schedule",
+   "asOf": "2025-09"
+  },
+  {
+   "from": "CBO",
+   "to": "TWT",
+   "airlines": [
+    "Philippine Airlines (PAL Express)"
+   ],
+   "duration": null,
+   "frequency": "Twice a week (2024)",
+   "note": "The first air link inside BARMM, opened in June 2022. No 2026 timetable found; check with the airline.",
+   "source": "https://prod-cm.philippineairlines.com/en/newsevent-listingpage/travel-advisory/cotabato-flight-schedule-changes",
+   "asOf": "2024-04"
+  },
+  {
+   "from": "ZAM",
+   "to": "TWT",
+   "airlines": [
+    "Philippine Airlines",
+    "Cebu Pacific"
+   ],
+   "duration": "About 55m",
+   "frequency": "Daily",
+   "note": "Cebu Pacific daily and on four more days; Philippine Airlines about three days a week.",
+   "source": "https://flyteam.jp/en/airline_route/zam_sgs/flight_schedule",
+   "asOf": "2025-11"
+  },
+  {
+   "from": "MNL",
+   "to": "ZAM",
+   "airlines": [
+    "Philippine Airlines",
+    "Cebu Pacific"
+   ],
+   "duration": "About 1h 35m",
+   "frequency": "Several flights daily",
+   "note": "Philippine Airlines from NAIA Terminal 2, Cebu Pacific from Terminal 3.",
+   "source": "https://flyteam.jp/en/airline_route/mnl_zam/flight_schedule",
+   "asOf": "2026-01"
+  },
+  {
+   "from": "CEB",
+   "to": "ZAM",
+   "airlines": [
+    "Cebu Pacific",
+    "Philippine Airlines"
+   ],
+   "duration": "About 1h 10m to 1h 15m",
+   "frequency": null,
+   "note": "Several departures from early morning to mid-afternoon.",
+   "source": "https://flyteam.jp/en/airline_route/ceb_zam/flight_schedule",
+   "asOf": "2025-11"
+  },
+  {
+   "from": "DVO",
+   "to": "ZAM",
+   "airlines": [
+    "Cebu Pacific"
+   ],
+   "duration": "About 1h 5m",
+   "frequency": null,
+   "note": "On set days of the week.",
+   "source": "https://flyteam.jp/en/airline_route/dvo_zam/flight_schedule",
+   "asOf": "2025-12"
+  },
+  {
+   "from": "ILO",
+   "to": "ZAM",
+   "airlines": [
+    "Cebu Pacific"
+   ],
+   "duration": "About 1h 10m",
+   "frequency": null,
+   "note": "Early morning, on selected weekdays. Opened late 2024.",
+   "source": "https://flyteam.jp/en/airline_route/ilo_zam/flight_schedule",
+   "asOf": "2025-07"
+  },
+  {
+   "from": "CEB",
+   "to": "ZAM",
+   "airlines": [
+    "Leading Edge Air Services (LEASCOR)"
+   ],
+   "duration": null,
+   "frequency": null,
+   "note": "ATR 72 twice a week at launch in September 2024, continuing to Jolo. No 2026 timetable found.",
+   "source": "https://www.sunstar.com.ph/zamboanga/caap-new-air-service-serves-cebu-zambo-jolo-routes",
+   "asOf": "2024-09"
+  },
+  {
+   "from": "ZAM",
+   "to": "JOL",
+   "airlines": [
+    "Leading Edge Air Services (LEASCOR)",
+    "Bangsamoro Airways"
+   ],
+   "duration": null,
+   "frequency": null,
+   "note": "Light aircraft and an ATR 72. Philippine Airlines has suspended this route.",
+   "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-airport-authority-pushes-stronger-air-connectivity-security-in-sulu-amid-regional-shift/",
+   "asOf": "2025-08"
+  },
+  {
+   "from": "CBO",
+   "to": "ZAM",
+   "airlines": [
+    "Bangsamoro Airways"
+   ],
+   "duration": null,
+   "frequency": null,
+   "note": "The region’s own light-aircraft airline (6 to 10 seats), flying since April 2024. No published timetable; ask the airline.",
+   "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-airways-operates-maiden-flight-to-zamboanga-sulu/",
+   "asOf": "2024-04"
+  },
+  {
+   "from": "CBO",
+   "to": "JOL",
+   "airlines": [
+    "Bangsamoro Airways"
+   ],
+   "duration": null,
+   "frequency": null,
+   "note": "The region’s own light-aircraft airline (6 to 10 seats), flying since April 2024. No published timetable; ask the airline.",
+   "source": "https://bangsamoro.gov.ph/news/latest-news/bangsamoro-airways-operates-maiden-flight-to-zamboanga-sulu/",
+   "asOf": "2024-04"
+  },
+  {
+   "from": "MNL",
+   "to": "CGY",
+   "airlines": [
+    "Philippine Airlines",
+    "Cebu Pacific",
+    "AirAsia Philippines"
+   ],
+   "duration": "About 1h 35m to 1h 55m",
+   "frequency": "Several flights daily",
+   "note": "Then by road through Iligan to Marawi.",
+   "source": "https://flyteam.jp/en/airline_route/mnl_cgy/flight_schedule",
+   "asOf": "2025-12"
+  },
+  {
+   "from": "MNL",
+   "to": "DVO",
+   "airlines": [
+    "Philippine Airlines",
+    "Cebu Pacific"
+   ],
+   "duration": "About 1h 50m to 2h 10m",
+   "frequency": "Several flights daily",
+   "source": "https://flyteam.jp/en/airline_route/mnl_dvo/flight_schedule",
+   "asOf": "2025-10"
+  },
+  {
+   "from": "CEB",
+   "to": "DVO",
+   "airlines": [
+    "Cebu Pacific",
+    "Philippine Airlines",
+    "AirAsia Philippines"
+   ],
+   "duration": "About 1h 5m to 1h 20m",
+   "frequency": "Several flights daily",
+   "note": "AirAsia flies it 18 times a week since its Cebu hub relaunched in November 2025.",
+   "source": "https://flyteam.jp/en/airline_route/ceb_dvo/flight_schedule",
+   "asOf": "2025-11"
+  },
+  {
+   "from": "CRK",
+   "to": "DVO",
+   "airlines": [
+    "Cebu Pacific"
+   ],
+   "duration": "About 2h",
+   "frequency": null,
+   "source": "https://flyteam.jp/en/airline_route/crk_dvo/flight_schedule",
+   "asOf": "2026-02"
+  },
+  {
+   "from": "MNL",
+   "to": "GES",
+   "airlines": [
+    "Philippine Airlines",
+    "Cebu Pacific"
+   ],
+   "duration": "About 2h to 2h 15m",
+   "frequency": "Several flights daily",
+   "note": "The airport closed for a week after the June 2026 earthquake and has reopened.",
+   "source": "https://flyteam.jp/en/airline_route/mnl_ges/flight_schedule",
+   "asOf": "2025-11"
+  },
+  {
+   "from": "CEB",
+   "to": "GES",
+   "airlines": [
+    "Cebu Pacific",
+    "Philippine Airlines"
+   ],
+   "duration": "About 1h 20m to 1h 25m",
+   "frequency": null,
+   "source": "https://flyteam.jp/en/airline_route/ceb_ges",
+   "asOf": "2025-11"
+  }
+ ],
+ "ferries": [
+  {
+   "from": "Zamboanga City",
+   "to": "Isabela City (Basilan)",
+   "operators": [
+    "Weesam Express"
+   ],
+   "kind": "fast craft",
+   "duration": "About 1 hour",
+   "frequency": "Daily",
+   "note": "Three to six trips each way a day; more Friday to Monday. The timetable changes often.",
+   "source": "https://pamasahe.com/posts/weesam-express-announces-new-daily-ferry-schedules-for-zamboanga-and-isabela-starting-september-2026",
+   "asOf": "2026-09"
+  },
+  {
+   "from": "Zamboanga City",
+   "to": "Isabela City (Basilan)",
+   "operators": [
+    "FastCat",
+    "Montenegro Shipping Lines",
+    "Aleson Shipping Lines"
+   ],
+   "kind": "RORO",
+   "duration": "About 1h 30m",
+   "frequency": "Daily",
+   "note": "FastCat three trips each way a day; Montenegro daily; Aleson back on the route since September 2026 after its fleet was grounded in January.",
+   "source": "https://pamasahe.com/routes/zamboanga-basilan-fastcat-schedule-fares",
+   "asOf": "2026-10"
+  },
+  {
+   "from": "Zamboanga City",
+   "to": "Lamitan City (Basilan)",
+   "operators": [
+    "Montenegro Shipping Lines",
+    "Aleson Shipping Lines"
+   ],
+   "kind": "RORO",
+   "duration": "About 1h 30m to 2 hours",
+   "frequency": "Daily",
+   "note": "Montenegro since March 2026; Aleson back since August 2026.",
+   "source": "https://pamasahe.com/posts/montenegro-shipping-lines-assigns-mv-reina-justiya-zamboanga-lamitan",
+   "asOf": "2026-09"
+  },
+  {
+   "from": "Zamboanga City",
+   "to": "Jolo",
+   "operators": [
+    "Weesam Express"
+   ],
+   "kind": "fast craft",
+   "duration": "About 3h 30m",
+   "frequency": "3 times a week each way",
+   "note": "Leaves Zamboanga Sunday, Wednesday and Friday at 9 AM; Jolo Monday, Thursday and Saturday at 1 PM.",
+   "source": "https://pamasahe.com/routes/jolo-zamboanga-weesam-express-schedule-fares",
+   "asOf": "2026-09"
+  },
+  {
+   "from": "Zamboanga City",
+   "to": "Jolo",
+   "operators": [
+    "Montenegro Shipping Lines",
+    "Ibnerizam Shipping Lines",
+    "Aleson Shipping Lines"
+   ],
+   "kind": "RORO",
+   "duration": "About 6 to 9 hours",
+   "frequency": "Several sailings a week",
+   "note": "Montenegro Wednesday and Friday (about 9 hours); Ibnerizam Tuesday, Thursday and Saturday (about 6). Aleson’s nightly sailing is listed but not confirmed since its 2026 grounding.",
+   "source": "https://pamasahe.com/posts/montenegro-shipping-lines-launches-zamboanga-cityjolo-route-via",
+   "asOf": "2026-11"
+  },
+  {
+   "from": "Zamboanga City",
+   "to": "Siasi (Sulu)",
+   "operators": [
+    "Aleson Shipping Lines"
+   ],
+   "kind": "RORO",
+   "duration": "About 7 hours",
+   "frequency": "Weekly",
+   "note": "Leaves Zamboanga Tuesday at 7 PM. Not confirmed running since Aleson’s fleet was grounded in January 2026.",
+   "source": "https://pamasahe.com/routes/zamboanga-siasi-aleson-shipping-schedule-fares",
+   "asOf": "2026-10"
+  },
+  {
+   "from": "Zamboanga City",
+   "to": "Bongao",
+   "operators": [
+    "Montenegro Shipping Lines",
+    "Aleson Shipping Lines"
+   ],
+   "kind": "RORO",
+   "duration": "About 17 hours (overnight)",
+   "frequency": "Several sailings a week",
+   "note": "Montenegro leaves Zamboanga Monday and Friday at 6 PM, Bongao Wednesday and Sunday at noon. Aleson’s sailings are listed but not confirmed since its 2026 grounding.",
+   "source": "https://pamasahe.com/posts/montenegro-shipping-lines-launches-new-zamboanga-bongao-route-starting-april-2026",
+   "asOf": "2026-08"
+  },
+  {
+   "from": "Bongao",
+   "to": "Sitangkai (via Sibutu)",
+   "operators": [
+    "Wita Ferries"
+   ],
+   "kind": "fast craft",
+   "duration": "About 1h 45m",
+   "frequency": "3 times a week",
+   "note": "Leaves Bongao 8:30 AM Monday, Wednesday and Friday.",
+   "source": "https://pamasahe.com/routes/bongao-sitangkai-sibutu-wita-ferries-schedule-fares",
+   "asOf": "2026-10"
+  },
+  {
+   "from": "Bongao",
+   "to": "Sibutu",
+   "operators": [
+    "Wita Ferries"
+   ],
+   "kind": "fast craft",
+   "duration": "About 1 hour",
+   "frequency": "Weekdays",
+   "note": "Leaves Bongao 8:30 AM on weekdays.",
+   "source": "https://pamasahe.com/routes/bongao-sibutu-tawi-tawi-wita-ferries-schedule-fares",
+   "asOf": "2026-10"
+  },
+  {
+   "from": "Bongao",
+   "to": "Jolo",
+   "operators": [
+    "Wita Ferries"
+   ],
+   "kind": "fast craft",
+   "duration": "About 6 hours",
+   "frequency": "2 to 3 times a week",
+   "note": "Tuesday and Thursday from Bongao; Tuesday, Thursday and Saturday from Jolo.",
+   "source": "https://pamasahe.com/routes/bongao-tawi-tawi-jolo-sulu-wita-ferries-schedule-fares",
+   "asOf": "2026-10"
+  },
+  {
+   "from": "Zamboanga City",
+   "to": "Sandakan (Sabah, Malaysia)",
+   "operators": [
+    "Aleson Shipping Lines"
+   ],
+   "kind": "RORO",
+   "duration": null,
+   "frequency": "Weekly (subject to availability)",
+   "note": "Passport needed. Resumed in October 2026 after a stop that began in August 2025.",
+   "source": "https://pamasahe.com/posts/aleson-shipping-lines-announces-zamboanga-to-sandakan-ferry-schedule-for-september-2026",
+   "asOf": "2026-10"
+  },
+  {
+   "from": "Bongao",
+   "to": "Lahad Datu (Sabah, Malaysia)",
+   "operators": [
+    "Alfrazan Shipping Corporation"
+   ],
+   "kind": "fast craft",
+   "duration": "About 3 hours",
+   "frequency": "Twice a week each way",
+   "note": "Passport needed. Leaves Bongao Tuesday and Sunday at 10 PM, Lahad Datu Monday and Thursday at 10 AM.",
+   "source": "https://pamasahe.com/routes/bongao-tawi-tawi-lahad-datu-malaysia-alfrazan-shipping-corporation-schedule-fares",
+   "asOf": "2026-10"
+  }
+ ],
+ "unverified": [
+  "Cebu Pacific at Cotabato: Airportia lists 5J7286 Clark to Cotabato as weekly on Wednesdays, last seen 23 July 2026, but no airline or news source confirms it. FlyTeam's December 2025 Manila to Cotabato data lists only PAL. Cebu Pacific flew Manila to Cotabato (5J885 to 5J888) and Cebgo flew Zamboanga to Cotabato (DG6684/6685) in 2023. https://www.airportia.com/flights/5j7286/angeles-city/cotabato-city/",
+  "AirAsia Philippines at Zamboanga: a Malaya headline dated 16 September 2025, 'AirAsia expands operations in Zamboanga City', could not be opened (403) and may be an old 2022 story. A March 2026 Wikipedia snapshot lists Zamboanga as a terminated AirAsia destination (ended 2023). https://malaya.com.ph/business/corporate/airasia-expands-operations-in-zamboanga-city",
+  "PAL to Jolo: suspended 'in recent years', and the Bangsamoro Airport Authority said in August 2025 that it is working to restore the service. https://bangsamoro.gov.ph/news/latest-news/barmm-airport-authority-pushes-stronger-air-connectivity-security-in-sulu-amid-regional-shift/",
+  "Bangsamoro Airways expansion to Sibutu, Mapun, Basilan, General Santos and Kota Kinabalu was announced in April 2024. No evidence was found that any of these launched. https://bangsamoro.gov.ph/news/latest-news/new-airline-to-fly-across-barmm/",
+  "Other BARMM airports managed by the BAA (Wao and Malabang in Lanao del Sur, Mapun airstrip in Tawi-Tawi): no scheduled passenger service was found. https://portcalls.com/barmm-airport-authority-assumes-landside-operation-of-6-airports",
+  "International flights from Zamboanga or Tawi-Tawi: none confirmed operating in 2025 or 2026. Cebgo's 2017 Zamboanga to Sandakan flights and PAL's proposed Zamboanga to Kota Kinabalu service are historical, and a BIMP-EAGA item from November 2025 talks about reviving routes cut by the pandemic. https://www.pna.gov.ph/articles/1013002",
+  "Polloc Port (Parang, Maguindanao del Norte) to Lamitan RORO: MV Island Paradise, operated by SAFTI, launched daily service on 25 April 2023. No 2024 to 2026 confirmation was found that it still runs. The announced Lamitan to Jolo and Jolo to Bongao extensions are also unconfirmed. https://bangsamoro.gov.ph/news/latest-news/new-roro-route-to-ease-travel-between-cotabato-basilan/",
+  "A Polloc Port to Singapore shipping route was only at the discussion stage with RCL in February 2023 and is cargo-focused. https://motc.bangsamoro.gov.ph/motc-to-open-new-route-in-international-shipping",
+  "Adventurer Powercraft fast craft from Zamboanga to Jolo (about 2h 20m, ₱2,250) and Zamboanga to Isabela (45 minutes, ₱430): listed only on Pamasahe, with internally inconsistent times. No other source was found. https://pamasahe.com/routes/jolo-sulu-zamboanga-sug-adventurer-powercraft-schedule-fares",
+  "Aleson's Zamboanga to Jolo, Bongao and Siasi runs after the January 2026 fleet grounding: Pamasahe pages updated October 2026 still list them, but the only dated resumption notices (August and September 2026) cover Basilan, plus Sandakan in September 2026. https://pamasahe.com/posts/aleson-shipping-lines-resumes-daily-ferry-services-between-zamboanga-and-basilan",
+  "Daily Express (Sabah) story of 16 October 2026, 'Zamboanga-Sandakan ferry service resumes' (MV Antonia 1, Aleson): seen in search results only; the article URL could not be resolved. https://www.dailyexpress.com.my/local/?location=%27Sandakan%27"
+ ]
+}

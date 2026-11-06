@@ -186,6 +186,14 @@ export function SiteNav() {
 							}
 						</Menu>
 
+						{/* Getting here (user decision: a full travel site, flights included). */}
+						<Link href='/flights' data-active={pathname === '/flights'} className='nav-item'>
+							Flights
+						</Link>
+						<Link href='/ferries' data-active={pathname === '/ferries'} className='nav-item'>
+							Ferries
+						</Link>
+
 						{GUIDE_PAGES ? (
 						<Menu label='The guide' active={isGuideActive} width='w-[15rem]'>
 								{(close) =>
@@ -259,6 +267,12 @@ export function SiteNav() {
 							<div className='grid'>
 								<Link href='/' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
 									Explore places
+								</Link>
+								<Link href='/flights' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
+									Flights
+								</Link>
+								<Link href='/ferries' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
+									Ferries
 								</Link>
 								<Link href='/saved' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
 									Saved
