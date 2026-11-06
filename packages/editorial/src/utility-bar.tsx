@@ -1,4 +1,4 @@
-import { BooksIcon, BrainIcon, BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DatabaseIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
+import { BooksIcon, BrainIcon, BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DatabaseIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, TargetIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -56,6 +56,7 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
 const PROJECTS = [
 	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
 	{ key: 'preparedness', href: 'https://betterbarmm.com/preparedness', label: 'Preparedness', icon: UmbrellaIcon },
+	{ key: 'plan', href: 'https://betterbarmm.com/development-plan', label: 'Plan scorecard', icon: TargetIcon },
 	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon },
 	{ key: 'data', href: 'https://betterbarmm.com/data', label: 'Open data', icon: DatabaseIcon },
 	// A dialog, not a page: the landing site opens it over whatever page is open.

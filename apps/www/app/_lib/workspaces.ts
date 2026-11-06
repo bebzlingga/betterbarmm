@@ -96,6 +96,14 @@ export const projects: Project[] = [
 		state: 'live',
 	},
 	{
+		key: 'plan',
+		label: 'Development Plan Scorecard',
+		href: '/development-plan',
+		measure: 'BDP 2023–2028',
+		blurb: 'The regional plan’s targets for poverty, jobs, the economy, schools, health, water, roads and peace, each beside the latest published figure.',
+		state: 'live',
+	},
+	{
 		key: 'crafts',
 		label: 'Crafts',
 		href: '/crafts',

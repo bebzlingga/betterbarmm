@@ -1,8 +1,9 @@
-import { ArrowUpRightIcon, DropIcon, MountainsIcon, SirenIcon, WavesIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, DropIcon, MountainsIcon, SirenIcon, TargetIcon, WavesIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { accidents } from '../_lib/accidents'
 import { HAZARDS, officialBarangays, region } from '../_lib/preparedness'
 import { commonsThumb, craft, creditOf } from '../_lib/crafts'
+import { indicators, judge } from '../_lib/development-plan'
 import { PhotoCredit } from './discover-figure'
 
 /* ============================================================
@@ -16,7 +17,7 @@ import { PhotoCredit } from './discover-figure'
    ============================================================ */
 
 export type Project = {
-	key: 'accidents' | 'preparedness' | 'crafts' | 'data' | 'services'
+	key: 'accidents' | 'preparedness' | 'plan' | 'crafts' | 'data' | 'services'
 	label: string
 	href?: string
 	measure: string
@@ -161,7 +162,42 @@ function CraftPhoto() {
 	)
 }
 
-const PICTURE = { accidents: IncidentYears, preparedness: HazardBars, crafts: CraftPhoto, data: DataTable, services: Checklist } as const
+/** On a deep green: the plan's targets met, short and unjudged, as one bar. */
+function PlanScore() {
+	const statuses = indicators.map((indicator) => judge(indicator).status)
+	const parts = [
+		{ label: 'Met', n: statuses.filter((s) => s === 'met').length, tone: 'bg-[#a8e0b8]' },
+		{ label: 'Short', n: statuses.filter((s) => s === 'short').length, tone: 'bg-[#f0c98a]' },
+		{ label: 'No target', n: statuses.filter((s) => s === 'no-target' || s === 'not-compared').length, tone: 'bg-white/30' },
+	]
+	return (
+		<span className='flex h-full w-full items-stretch gap-4 bg-[linear-gradient(135deg,#1f6a43_0%,#17553a_50%,#0e3a27_100%)] px-6 py-5 text-white'>
+			<span className='flex w-[38%] shrink-0 flex-col justify-center gap-1.5'>
+				<TargetIcon size={20} weight='fill' className='text-[#a8e0b8]' aria-hidden='true' />
+				<span className='font-[family-name:var(--font-display)] text-[1.875rem] font-extrabold leading-none tracking-[-0.03em]'>{indicators.length}</span>
+				<span className='text-[0.75rem] font-semibold text-white/80'>Targets Tracked</span>
+			</span>
+			<span className='flex min-w-0 flex-1 flex-col justify-center gap-2.5'>
+				<span className='flex h-3 gap-[2px] overflow-hidden rounded-[2px]'>
+					{parts.map((part) => (
+						<span key={part.label} className={part.tone} style={{ flexGrow: part.n }} />
+					))}
+				</span>
+				{parts.map((part) => (
+					<span key={part.label} className='flex items-center justify-between gap-2 text-[0.6875rem] font-semibold'>
+						<span className='flex items-center gap-1.5'>
+							<span className={`size-2 rounded-full ${part.tone}`} />
+							{part.label}
+						</span>
+						<span className='tabular-nums'>{part.n}</span>
+					</span>
+				))}
+			</span>
+		</span>
+	)
+}
+
+const PICTURE = { accidents: IncidentYears, preparedness: HazardBars, plan: PlanScore, crafts: CraftPhoto, data: DataTable, services: Checklist } as const
 
 export function ProjectList({ projects }: { projects: Project[] }) {
 	return (
