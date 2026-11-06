@@ -539,8 +539,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Making+Mindanao"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Making+Mindanao"
 				},
 				{
 					"label": "Amazon",
@@ -591,8 +591,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Orthodoxy+and+History"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Orthodoxy+and+History"
 				},
 				{
 					"label": "Amazon",
@@ -640,8 +640,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Mindanao+Ethnohistory"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Mindanao+Ethnohistory"
 				},
 				{
 					"label": "Amazon",
@@ -687,8 +687,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=The+Great+Island"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=The+Great+Island"
 				},
 				{
 					"label": "Amazon",
@@ -1377,8 +1377,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=People+of+the+Middle+Ground"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=People+of+the+Middle+Ground"
 				},
 				{
 					"label": "Amazon",
@@ -2142,6 +2142,52 @@
 			"blurb": null
 		},
 		{
+			"slug": "the-rulers-of-magindanao-in-modern-history",
+			"title": "The Rulers of Magindanao in Modern History, 1515–1903",
+			"subtitle": "Continuity and Change in a Traditional Realm in the Southern Philippines",
+			"authors": [
+				"michael-mastura"
+			],
+			"role": "author",
+			"publisher": "ateneo-press",
+			"year": 2023,
+			"edition": null,
+			"pages": 409,
+			"isbn": "9786214482443",
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"history",
+				"colonial-period",
+				"politics"
+			],
+			"summary": "The Magindanao Sultanate across 388 years, rebuilt from its own law code and genealogies by a lawyer and historian descended from Sultan Kudarat.",
+			"overview": "Datu Michael Ong Mastura reconstructs the dynastic history of the Magindanao Sultanate from 1515 to 1903. The book opens with a question: how likely was it that the ancient Filipinos developed a concept of statehood at precolonial contact? To answer it, Mastura draws on the luwaran, the sultanate's code of law, and the tarsila, its genealogies, and combines ethnography with politics.\n\nThe press describes the book as a longue durée in the manner of Braudel, looking at the ecology, economy, politics and culture around each ruler. It traces the breaks in the sultanate's politics and the resilience of its traditional authority. It shows the sultanates as regimes that carried the war into Spanish colonial territory, and follows their trade and alliances with the neighbouring mandalas of Southeast Asia.\n\nPatricio N. Abinales, author of Making Mindanao, wrote the foreword and calls it \"an exceptional, much-awaited work\". The Ateneo de Manila University Press published it in 2023, with a cover by Cielo Castro.",
+			"overviewSources": [
+				"https://www.ateneo.edu/news/2023/04/03/new-press-rulers-magindanao-modern-history-1515-1903-continuity-change-traditional",
+				"https://web.archive.org/web/20251125083545/https://unipress.ateneo.edu/node/4417",
+				"https://www.lazada.com.ph/products/pdp-i3699216546.html"
+			],
+			"availability": "for-sale",
+			"note": "Also sold as an e-book, ISBN 9786214482450.",
+			"cover": {
+				"file": "the-rulers-of-magindanao-in-modern-history.jpg",
+				"source": "Ateneo de Manila University Press",
+				"url": "https://www.ateneo.edu/news/2023/04/03/new-press-rulers-magindanao-modern-history-1515-1903-continuity-change-traditional"
+			},
+			"links": [
+				{
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Rulers+of+Magindanao"
+				},
+				{
+					"label": "Amazon",
+					"url": "https://www.amazon.com/dp/6214482443"
+				}
+			],
+			"blurb": null
+		},
+		{
 			"slug": "the-moro-armed-struggle-in-the-philippines",
 			"title": "The Moro Armed Struggle in the Philippines",
 			"subtitle": "The Nonviolent Autonomy Alternative",
@@ -2493,8 +2539,8 @@
 					"url": "https://asiafoundation.org/publication/rido-clan-feuding-and-conflict-management-in-mindanao/"
 				},
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Rido"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Rido"
 				},
 				{
 					"label": "Open Library",
@@ -2534,13 +2580,13 @@
 			"note": null,
 			"cover": {
 				"file": "insurgents-clans-and-states.jpg",
-				"source": "Amazon",
-				"url": "https://images-na.ssl-images-amazon.com/images/P/9715506720.01.LZZZZZZZ.jpg"
+				"source": "the publisher’s Lazada store",
+				"url": "https://www.lazada.com.ph/products/pdp-i2404713563.html"
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Insurgents,+Clans,+and+States"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Insurgents,+Clans,+and+States"
 				},
 				{
 					"label": "Amazon",
@@ -3480,8 +3526,8 @@
 			"cover": null,
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Marawi+and+Other+Poems"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Marawi+and+Other+Poems"
 				},
 				{
 					"label": "Amazon",
@@ -3837,8 +3883,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Magosaha"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Magosaha"
 				},
 				{
 					"label": "Amazon",
@@ -4418,8 +4464,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Ukkil"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Ukkil"
 				},
 				{
 					"label": "Amazon",
@@ -4823,8 +4869,8 @@
 			},
 			"links": [
 				{
-					"label": "Buy from ateneopress.org",
-					"url": "https://ateneopress.org/?s=Voices+from+Sulu"
+					"label": "Buy from lazada.com.ph",
+					"url": "https://www.lazada.com.ph/ateneo-university-press/?q=Voices+from+Sulu"
 				},
 				{
 					"label": "Amazon",
@@ -4978,6 +5024,41 @@
 			"availability": "library",
 			"note": null,
 			"cover": null,
+			"links": [],
+			"blurb": null
+		},
+		{
+			"slug": "notes-on-bantugans-last-journey",
+			"title": "Notes on Bantugan’s Last Journey",
+			"subtitle": null,
+			"authors": [
+				"gutierrez-mangansakan"
+			],
+			"role": "author",
+			"publisher": "the-author",
+			"year": 2026,
+			"edition": null,
+			"pages": null,
+			"isbn": null,
+			"language": "English",
+			"kind": "book",
+			"subjects": [
+				"culture",
+				"anthropology",
+				"memoir"
+			],
+			"summary": "The kapagipat, the Maguindanaon crocodile ritual, and the Darangen as living memory: an ethnographic memoir from 25 years of fieldwork by a Maguindanaon filmmaker and writer.",
+			"overview": "Gutierrez Mangansakan II calls the book part ethnographic memoir, part field diary and part meditation. At its centre is the kapagipat, an old Maguindanaon ritual in which the crocodile, pagali or \"relative\", is a figure of passage between worlds. Around it are the music of the tagunggo, the tunung spirits of the unseen world, and the Darangen, which he treats not as an epic but as a living scripture of memory.\n\nThe book grew out of 25 years of research and fieldwork that began after the all-out war of 2000. It took him to the coastal villages of Maguindanao and the fishing communities of Cotabato, where the old stories survived displacement, religious intolerance and the erosion of memory. He writes that it is not about a culture preserved in amber but one that persists, changes, hides and resurfaces.\n\nIt is also, he says, a book about coming home to his identity as Maguindanaon and Moro. He announced it on his own site in August 2026.",
+			"overviewSources": [
+				"https://tengmangansakan.wordpress.com/2026/08/09/notes-on-bantugans-last-journey/"
+			],
+			"availability": "private",
+			"note": "The publisher, page count and ISBN have not been published yet.",
+			"cover": {
+				"file": "notes-on-bantugans-last-journey.jpg",
+				"source": "the author’s site",
+				"url": "https://tengmangansakan.wordpress.com/2026/08/09/notes-on-bantugans-last-journey/"
+			},
 			"links": [],
 			"blurb": null
 		},
