@@ -121,7 +121,11 @@ def main(extra_refs=()):
             for r in found:
                 if BARMM.search(r.get('Agency Name', '')):
                     listed.setdefault(r['id'], {**r, 'open': False})
-    refs = sorted(set(listed) | set(extra_refs), key=int)
+    # Every notice an earlier run found is read again, listed or not. The closed
+    # notices come from a search that can come back short (it returned 278 of
+    # 869 on 7 November 2026), and a notice it misses has not been withdrawn.
+    before = {n['ref']: n for n in json.loads(OUT.read_text())['notices']} if OUT.exists() else {}
+    refs = sorted(set(listed) | set(extra_refs) | set(before), key=int)
     with ThreadPoolExecutor(6) as ex:
         details = dict(zip(refs, ex.map(detail, refs)))
     notices = []
@@ -138,7 +142,6 @@ def main(extra_refs=()):
     # office). Whatever the last run knew stays: a field the page has gone
     # blank on is not a field that changed, and fetch_philgeps.py drops a
     # notice with no publish date.
-    before = {n['ref']: n for n in json.loads(OUT.read_text())['notices']} if OUT.exists() else {}
     for n in notices:
         old = before.get(n['ref'], {})
         for k, v in old.items():
