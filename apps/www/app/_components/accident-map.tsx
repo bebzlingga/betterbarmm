@@ -327,7 +327,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	const filters = (withShow: boolean, plain = false) => (
 		<div className='@container'>
 			<div className={`flex flex-wrap gap-3 ${plain ? 'items-center gap-x-5' : 'items-end justify-between'}`}>
-				<div className={plain ? 'w-full @xl:w-52' : 'w-full @xl:w-60'}>
+				<div className={plain ? 'w-full @xl:w-72' : 'w-full @xl:w-96'}>
 					<SearchField value={query} onChange={setQuery} placeholder='Title, place or kind' plain={plain} />
 				</div>
 				{/* In the dialog on a phone the controls keep to one line that scrolls sideways, so the map keeps the screen. */}
