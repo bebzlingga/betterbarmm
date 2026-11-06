@@ -17,7 +17,7 @@ export const metadata: Metadata = {
    ============================================================ */
 
 const WEEKS = 8
-const DAY = new Intl.DateTimeFormat('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' })
+const DAY = new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
 const LONG = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
 const at = (iso: string) => new Date(`${iso}T00:00:00Z`)
 
@@ -49,7 +49,7 @@ export default function LatestPage() {
 						</h2>
 						<ol className='mt-2 divide-y divide-[var(--rule)]'>
 							{list.map((change, i) => (
-								<li key={i} className='grid gap-1 py-3 sm:grid-cols-[7rem_18rem_minmax(0,1fr)] sm:gap-5'>
+								<li key={i} className='grid gap-1 py-3 sm:grid-cols-[15rem_18rem_minmax(0,1fr)] sm:gap-5'>
 									<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{DAY.format(at(change.date))}</span>
 									<span className='text-[0.875rem] font-semibold text-[var(--ink)]'>
 										{change.stage}
