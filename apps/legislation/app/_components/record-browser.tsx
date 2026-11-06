@@ -1,10 +1,10 @@
 'use client'
 
-import { FunnelIcon, XIcon } from '@phosphor-icons/react'
+import { DownloadSimpleIcon, FunnelIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'react'
-import { statusToneClass } from '../_lib/labels'
+import { statusToneClass, toPersonName } from '../_lib/labels'
 import { recordHref } from '../_lib/categories'
 import type { FilterOption, LegislationDataset, LegislationRecord } from '../_lib/legislation-data'
 
@@ -42,6 +42,8 @@ const emptyFilters = (): ActiveFilters => ({
 	sessions: new Set(),
 	years: new Set(),
 })
+
+const FILTER_GROUPS = ['kinds', 'statuses', 'sectors', 'types', 'sessions', 'years'] as const satisfies readonly FilterGroupKey[]
 
 function FilterGroup({
 	label,
@@ -88,6 +90,51 @@ function FilterGroup({
 	)
 }
 
+/**
+ * The list as the reader has narrowed it, saved as a spreadsheet: every row that
+ * matches, not only the page on screen, in the order chosen. A cell that opens
+ * with = + - or @ is prefixed with an apostrophe, so a spreadsheet reads a title
+ * as text rather than as a formula to run.
+ */
+export function listCsv(rows: LegislationRecord[]): string {
+	const cell = (value: unknown) => {
+		let s = value == null ? '' : String(value)
+		if (/^[=+\-@]/.test(s)) s = `'${s}`
+		return /[",\n\r]/.test(s) ? `"${s.replaceAll('"', '""')}"` : s
+	}
+	// As the record page lists them: each group A to Z, title-cased, and a co-author who is also a principal author once.
+	const names = (list: string[], principal: string[] = []) => {
+		const skip = new Set(principal.map((n) => n.toUpperCase()))
+		return [...new Set(list.map((n) => n.toUpperCase()))].filter((n) => !skip.has(n)).sort((a, b) => a.localeCompare(b, 'en')).map(toPersonName).join('; ')
+	}
+	// One registry dates every row the same way (Ratified, Status as of, Adopted), so that label heads the column.
+	const labels = [...new Set(rows.map((r) => r.dateLabel))]
+	const dateHead = labels.length === 1 ? labels[0] : 'Date'
+	const head = ['Number', 'Title', 'Short title', 'Status', dateHead, ...(labels.length > 1 ? ['What the date is'] : []), 'Session', 'Sector', 'Type', 'Principal authors', 'Co-authors', 'Cabinet measure', 'What this measure does', 'Became act', 'From bill', 'BetterBARMM page', 'Official source']
+	const lines = rows.map((r) => {
+		const href = recordHref(r)
+		return [
+			r.numberLabel, r.title, r.shortTitle, r.status, r.dateDisplay, ...(labels.length > 1 ? [r.dateLabel] : []), r.session,
+			r.sectors.map((tag) => tag.label).join(', '), r.types.map((tag) => tag.label).join(', '),
+			names(r.principalAuthors), names(r.coAuthors, r.principalAuthors), r.isCabinetMeasure ? 'Yes' : 'No',
+			r.reading?.whatItDoes ?? r.gist ?? '',
+			r.becameActNumber ? `BAA ${r.becameActNumber}` : '', r.originBillNumber ? `Bill ${r.originBillNumber}` : '',
+			href ? `https://legislation.betterbarmm.com${href}` : '', r.sourceUrl,
+		].map(cell).join(',')
+	})
+	return [head.join(','), ...lines].join('\r\n')
+}
+
+function downloadList(rows: LegislationRecord[], slug: string) {
+	// The byte-order mark tells Excel the file is UTF-8, so ñ and curly quotes survive.
+	const blob = new Blob(['\ufeff' + listCsv(rows)], { type: 'text/csv;charset=utf-8' })
+	const link = document.createElement('a')
+	link.href = URL.createObjectURL(blob)
+	link.download = `${slug}-${rows.length}-${new Date().toISOString().slice(0, 10)}.csv`
+	link.click()
+	URL.revokeObjectURL(link.href)
+}
+
 export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 	const { records, category } = dataset
 	const router = useRouter()
@@ -103,10 +150,23 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 	// through useSearchParams, which would make this static page dynamic.
 	const [page, setPage] = useState(1)
 
+	// The view lives in the address too (?q=…&sectors=health,education&sort=newest), so a narrowed list can
+	// be bookmarked or sent, and opening the link brings the same list back. Read once on arrival and on
+	// back/forward; written back with replaceState as the reader changes it, so typing doesn't fill history.
+	const [urlRead, setUrlRead] = useState(false)
 	useEffect(() => {
 		const read = () => {
-			const value = Number(new URLSearchParams(window.location.search).get('page'))
+			const params = new URLSearchParams(window.location.search)
+			const value = Number(params.get('page'))
 			setPage(Number.isInteger(value) && value > 1 ? value : 1)
+			setQuery(params.get('q') ?? '')
+			const wanted = params.get('sort')
+			setSort(SORT_OPTIONS.some((option) => option.value === wanted) ? (wanted as SortKey) : 'number-desc')
+			const next = emptyFilters()
+			for (const group of FILTER_GROUPS) for (const v of (params.get(group) ?? '').split(',').filter(Boolean)) next[group].add(v)
+			setFilters(next)
+			if (Object.values(next).some((set) => set.size)) setFiltersOpen(true)
+			setUrlRead(true)
 		}
 		read()
 		window.addEventListener('popstate', read)
@@ -124,6 +184,16 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 
 	// Deferring the query keeps typing responsive while the list re-filters.
 	const deferredQuery = useDeferredValue(query)
+
+	useEffect(() => {
+		if (!urlRead) return
+		const url = new URL(window.location.href)
+		const set = (key: string, value: string) => (value ? url.searchParams.set(key, value) : url.searchParams.delete(key))
+		set('q', deferredQuery.trim())
+		set('sort', sort === 'number-desc' ? '' : sort)
+		for (const group of FILTER_GROUPS) set(group, [...filters[group]].join(','))
+		if (url.href !== window.location.href) window.history.replaceState(null, '', url)
+	}, [urlRead, deferredQuery, filters, sort])
 
 	/* --- filtering --- */
 
@@ -459,6 +529,16 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 								) : null}
 							</p>
 
+							<div className='flex flex-wrap items-center gap-x-5 gap-y-1'>
+							<button
+								type='button'
+								onClick={() => downloadList(visibleRecords, category.slug)}
+								disabled={visibleRecords.length === 0}
+								className='inline-flex w-fit cursor-pointer items-center gap-1.5 text-[0.8125rem] font-medium text-[var(--ink)] transition hover:text-[var(--accent)] disabled:cursor-default disabled:opacity-40'
+							>
+								<DownloadSimpleIcon size={14} weight='bold' aria-hidden='true' />
+								Download {activeCount > 0 || query ? 'this list' : 'all'} (CSV)
+							</button>
 							{activeCount > 0 || query ? (
 								<button
 									type='button'
@@ -470,6 +550,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 							) : (
 								<p className='meta-sm'>Open a row for the full record</p>
 							)}
+							</div>
 						</div>
 
 						{/* ---- Rows ----
