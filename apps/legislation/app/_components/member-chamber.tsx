@@ -16,8 +16,8 @@ export function MemberChamber({ record, name }: { record: ChamberRecord; name: s
 	const missed = [...record.absent.map((j) => ({ j, leave: false })), ...record.onLeave.map((j) => ({ j, leave: true }))].sort((a, b) =>
 		(b.j.dates[0] ?? '').localeCompare(a.j.dates[0] ?? ''),
 	)
-	// Two columns (user decision: the five figures spread across the page and the missed sittings ran down
-	// beneath them, leaving most of the section empty): the counts beside the sittings behind them.
+	// Grids, one under the other (user decision): the five counts in a row of five, the missed sittings in
+	// cells of the same width rather than a row each.
 	return (
 		<section className='mt-16 border-t border-[var(--rule)] pt-12'>
 			<h2 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>In the chamber</h2>
@@ -26,35 +26,37 @@ export function MemberChamber({ record, name }: { record: ChamberRecord; name: s
 				list {name} as absent or on leave. Members who also run a ministry are often away on its business; the journals list that as absent unless the
 				member asked to be excused.
 			</p>
-			<div className='mt-6 grid gap-x-16 gap-y-8 lg:grid-cols-2'>
-				<div>
-					<p className='bb-label'>Roll calls</p>
-					<dl className='mt-3'>
-						{figures.map((f) => (
-							<div key={f.label} className='flex items-baseline justify-between gap-4 border-t border-[var(--rule)] py-2.5'>
-								<dt className='text-[0.84375rem] text-[var(--ink-2)]'>{f.label}</dt>
-								<dd className='num text-[1rem] font-extrabold text-[var(--ink)]'>{f.value}</dd>
-							</div>
-						))}
-					</dl>
-				</div>
+			{/* Each cell draws its right and bottom rule; the grid runs a pixel past a clipping frame so the
+			    last column's and last row's rules fall outside it, at any count. */}
+			<p className='mt-6 bb-label'>Roll calls</p>
+			<div className='mt-3 overflow-hidden border-y border-[var(--rule)]'>
+				<dl className='-mb-px -mr-px grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5'>
+					{figures.map((f) => (
+						<div key={f.label} className='border-b border-r border-[var(--rule)] px-4 py-4'>
+							<dd className='num text-[1.5rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{f.value}</dd>
+							<dt className='mt-1.5 text-[0.78125rem] leading-4 text-[var(--ink-3)]'>{f.label}</dt>
+						</div>
+					))}
+				</dl>
+			</div>
 
-				{missed.length ? (
-					<div>
-						<p className='bb-label'>Sittings missed</p>
-						<ul className='mt-3'>
+			{missed.length ? (
+				<>
+					<p className='mt-8 bb-label'>Sittings missed</p>
+					<div className='mt-3 overflow-hidden border-y border-[var(--rule)]'>
+						<ul className='-mb-px -mr-px grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5'>
 							{missed.map(({ j, leave }) => (
-								<li key={`${j.key}-${leave}`} className='flex items-baseline justify-between gap-4 border-t border-[var(--rule)] py-2.5 text-[0.84375rem]'>
-									<a href={`/journal/${j.key}`} className='text-[var(--ink)] hover:text-[var(--accent)]'>
+								<li key={`${j.key}-${leave}`} className='border-b border-r border-[var(--rule)] px-4 py-3'>
+									<a href={`/journal/${j.key}`} className='text-[0.84375rem] text-[var(--ink)] hover:text-[var(--accent)]'>
 										{journalDates(j)}
 									</a>
-									<span className='text-[0.78125rem] text-[var(--ink-3)]'>{leave ? 'On leave or official business' : 'Absent'}</span>
+									<p className='mt-0.5 text-[0.75rem] text-[var(--ink-3)]'>{leave ? 'On leave or official business' : 'Absent'}</p>
 								</li>
 							))}
 						</ul>
 					</div>
-				) : null}
-			</div>
+				</>
+			) : null}
 
 			{record.points.length ? (
 				<div className='mt-8'>
