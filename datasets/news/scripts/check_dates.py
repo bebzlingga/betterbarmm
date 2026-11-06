@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import store  # noqa: E402  the news, a week to a file
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
 # Not news reports, whatever the index calls them.
-NOT_NEWS = ('volcanodiscovery.com',)
+NOT_NEWS = ('volcanodiscovery.com', 'frontiersin.org')
 STAMP = re.compile(r'(?:article:published_time|datePublished|"pubdate"|name="date")[^0-9]{0,40}(20\d\d-\d\d-\d\d(?:[T ]\d\d:\d\d(?::\d\d)?(?:\.\d+)?(?:Z|[+-]\d\d:?\d\d)?)?)')
 OWN = re.compile(r'property="article:published_time"[^>]*content="(20\d\d-\d\d-\d\d[^"]*)"|content="(20\d\d-\d\d-\d\d[^"]*)"[^>]*property="article:published_time"')
 MANILA = timezone(timedelta(hours=8))
