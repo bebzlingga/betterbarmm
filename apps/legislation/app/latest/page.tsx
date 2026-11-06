@@ -52,8 +52,8 @@ export default function LatestPage() {
 							{list.map((change, i) => (
 								<li key={i} className='grid gap-1 py-3 sm:grid-cols-[11rem_24rem_minmax(0,1fr)] sm:items-center sm:gap-5'>
 									<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{DAY.format(at(change.date))}</span>
-									<span className='flex flex-wrap items-center gap-x-1 gap-y-1 text-[0.875rem]'>
-										<span className={`${statusToneClass[stageTone(change.stage)]} whitespace-normal text-left`}>{change.stage}</span>
+									<span className='flex min-w-0 flex-wrap items-center gap-x-1 gap-y-1 text-[0.875rem]'>
+										<span className={`${statusToneClass[stageTone(change.stage)]} max-w-full !whitespace-normal !rounded-[0.625rem] text-left`}>{change.stage}</span>
 										{change.note ? <span className='badge badge-plain badge-idle'>{change.note}</span> : null}
 									</span>
 									<span className='min-w-0 text-[0.875rem] text-[var(--ink-2)]'>
