@@ -16,7 +16,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
 					{
 						title: 'Public Works',
 						links: [
-							{ href: '/', label: 'Projects' },
+							{ href: '/', label: 'Regional projects' },
+							{ href: '/dpwh', label: 'DPWH projects' },
 							{ href: '/towns', label: 'By town' },
 							{ href: '/sources', label: 'Sources' },
 						],

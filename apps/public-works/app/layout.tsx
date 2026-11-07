@@ -42,7 +42,9 @@ export const metadata: Metadata = {
 	/* No canonical address here: anything the layout sets is inherited by
 	   every page under it, which would tell search engines every page is
 	   the home page. Each page is its own address. */
-	robots: { index: true, follow: true },
+	/* Hidden for now (user decision): built, but not linked from the estate and kept out of search
+	   until it opens. Flip to index: true, follow: true, and the www directory's state to 'live', together. */
+	robots: { index: false, follow: false },
 	authors: [{ name: 'BetterBARMM', url: 'https://betterbarmm.com' }],
 	creator: 'BetterBARMM',
 	publisher: 'BetterBARMM',

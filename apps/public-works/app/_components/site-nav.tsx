@@ -8,9 +8,10 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 
-/* The workspace's doors: every project, the same by town, and where it comes from. */
+/* The workspace's doors: the region's own projects, DPWH's in the region, both by town, and where they come from. */
 const pages = [
-	{ href: '/', label: 'Projects' },
+	{ href: '/', label: 'Regional projects' },
+	{ href: '/dpwh', label: 'DPWH projects' },
 	{ href: '/towns', label: 'By town' },
 	{ href: '/sources', label: 'Sources' },
 ] as const

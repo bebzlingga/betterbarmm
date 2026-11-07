@@ -47,7 +47,11 @@ export default async function PublicWorksHome({ searchParams }: { searchParams: 
 					A <strong className='font-semibold text-[var(--ink-2)]'>likely bid notice</strong> is a Ministry of Public Works
 					notice on PhilGEPS whose title shares the project&rsquo;s distinctive words, posted in its year or the next, for no
 					more than its amount. It is a lead to check, not a confirmed link. Sulu&rsquo;s projects are listed for the years it
-					was part of the region.
+					was part of the region. DPWH&rsquo;s own contracts inside the region are on{' '}
+					<a href='/dpwh' className='rule-link'>
+						DPWH projects
+					</a>
+					.
 				</p>
 			</section>
 		</>

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import { Masthead } from '../_components/parts'
+import { dpwh, nationalWorks, nationalYears } from '../_lib/dpwh'
 import { works, workYears } from '../_lib/works'
 
 export const metadata: Metadata = {
 	title: 'Sources',
-	description: 'Where the public works come from, how each is placed and typed, and how a likely bid notice is found.',
+	description: 'Where the public works come from — the Bangsamoro budget and DPWH’s Transparency Portal — how each is placed, and how a likely bid notice is found.',
 }
 
 const H2 = 'text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
@@ -16,11 +17,11 @@ export default function SourcesPage() {
 			<Masthead
 				kicker='Public works · Bangsamoro'
 				name='Sources'
-				note={`${works.length.toLocaleString('en-PH')} projects from ${workYears.length} General Appropriations Acts of the Bangsamoro, FY ${workYears[0]} to FY ${workYears.at(-1)}.`}
+				note={`${works.length.toLocaleString('en-PH')} projects from ${workYears.length} General Appropriations Acts of the Bangsamoro, FY ${workYears[0]} to FY ${workYears.at(-1)}, and ${nationalWorks.length.toLocaleString('en-PH')} DPWH contracts inside the region, ${nationalYears[0]} to ${nationalYears.at(-1)}.`}
 			/>
 			<div className='bb-container bb-section max-w-[52rem] [&>section+section]:mt-14'>
 				<section>
-					<h2 className={H2}>Where it comes from</h2>
+					<h2 className={H2}>The region&rsquo;s own projects</h2>
 					<p className={P}>
 						Each year&rsquo;s General Appropriations Act of the Bangsamoro lists, under the Ministry of Public Works, the
 						infrastructure projects it funds one by one, grouped by province or district, each with its amount. These are
@@ -62,6 +63,43 @@ export default function SourcesPage() {
 						its approved budget is between half and 110% of the project&rsquo;s amount. Only notices that reached an award,
 						or were posted on PhilGEPS&rsquo;s newer system, carry titles, so many projects that were bid out have no
 						match here. A match is a lead to check against the notice itself.
+					</p>
+				</section>
+				<section>
+					<h2 className={H2}>DPWH&rsquo;s projects in the region</h2>
+					<p className={P}>
+						Public works in the Bangsamoro are the Ministry of Public Works&rsquo;, and the Department of Public Works and
+						Highways has no regional office here. Its offices around the region still build inside it: Regions IX, X and XII,
+						and the Cotabato City and Isabela City district offices. Their contracts are from the{' '}
+						<a href={dpwh.source.href} className='rule-link'>
+							{dpwh.source.label}
+						</a>
+						, which publishes every DPWH project since 2016 with its contractor, bidders, budget, progress, map point and
+						papers. The portal blocks automated reading, so it is read through a{' '}
+						<a href={dpwh.source.viaHref} className='rule-link'>
+							public copy of it
+						</a>{' '}
+						({dpwh.source.via}). What the portal shows today may be newer.
+					</p>
+				</section>
+				<section>
+					<h2 className={H2}>How a DPWH project is placed</h2>
+					<p className={P}>
+						The portal&rsquo;s &ldquo;province&rdquo; is the office that built a project, not where it is. A project is placed
+						in the Bangsamoro town its description names; failing that, in the town whose PSGC outline its map point falls in.
+						Points near a border are not trusted alone: a contract let by an office outside the region counts only when its
+						description names a place inside it, and one that names a province outside and nothing inside is left out
+						({Object.entries(dpwh.dropped).map(([why, n]) => `${n} ${why}`).join('; ')}). Town names that also belong to
+						places outside the region (Parang, Kapatagan, Tagoloan, Tuburan, Sultan Kudarat) never place a project on their
+						own. Each project says which way it was placed.
+					</p>
+				</section>
+				<section>
+					<h2 className={H2}>What the DPWH record cannot tell you</h2>
+					<p className={P}>
+						A contract&rsquo;s cost is what it was let for, as the portal shows it now. What has actually been paid is empty in
+						the copy and is left out; progress is the portal&rsquo;s own figure. A project with no map point and no
+						Bangsamoro town in its description cannot be placed and is not here.
 					</p>
 				</section>
 			</div>
