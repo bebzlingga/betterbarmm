@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-06T19:21:42.428Z",
+ "generatedAt": "2026-11-07T16:57:19.138Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -135,6 +135,12 @@
    "via": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9NMWxVUnNlV1hLZzVzZFpENXhRQk5ibW8tWVZpSzRScHBZaHFfT0p2alNPQ0wwbGtnT1FrVWw4OWk2czRhOUxEUWlzbS1sbmEtLU5hNmU2ZVdCRk1SWWxpWlhUcG12TzgydkgyYkZQeFQ?oc=5",
    "title": "Parents’ perceptions of child labor in an indigenous community in Tawi-Tawi, Philippines: an interpretative phenomenological analysis",
    "reason": "not a news report"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/elections/nur-mahadil-ahaja-results-fourth-district-tawi-tawi-barmm-2026/0/",
+   "via": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVWVva09RNndDVkVyekszSnlBanZRdW1rdFpHaFZyd0RJQjd5SXJSYUpqVlRRaDNQaFMyMU1hajdjcm1YbWdhOWM4aUlYblIzMlJUUEx6OEt4d2liUGQxS3M2X2ttLTM3aGFQNWxpUEFhc1pwVWhwSFFOVS1uNWRmX1ZkQXBNZHhVNGktX0xfdkdaT1pwUGltTjN5NFlJZFdHTFUyNjVQb2VaYlZpbWsyYw?oc=5",
+   "title": "Ex-MP Ahaja beats own relative for Tawi-Tawi 4th District parliament seat",
+   "reason": "published 2026-09-15"
   }
  ],
  "weeks": [

@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-05",
+ "generatedAt": "2026-11-08",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,62 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-11-07",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Two militiamen and a civilian killed in a motorcycle ambush in Manungkaling, Mamasapano",
+   "summary": "CAFGU Active Auxiliary members Samsamin Kabagani and Danny Minandang and their civilian companion Esmael Manabilang were riding a motorcycle in Barangay Manungkaling, Mamasapano, Maguindanao del Sur, on the morning of Saturday, 7 November 2026, when unidentified armed men opened fire on them. All three died at the scene. A resident, Mohamidin Usman, was hit by a stray bullet and taken to hospital. The gunmen escaped on separate motorcycles; police had not determined a motive.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Mamasapano",
+   "barangay": "Manungkaling",
+   "deaths": 3,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [
+    "motorcycle"
+   ],
+   "lat": 6.8927,
+   "lon": 124.5009,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/11/08/2568589/mindanao-ambush-leaves-3-dead",
+     "title": "Mindanao ambush leaves 3 dead",
+     "date": "2026-11-08"
+    }
+   ],
+   "id": "2026-11-07-mamasapano-shooting"
+  },
+  {
+   "date": "2026-11-06",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Village councilman wounded in an ambush on his multicab in Balanaken, Datu Piang",
+   "summary": "Abdul Manab Guialodin, a councilor of Barangay Liong, Datu Piang, Maguindanao del Sur, was driving his multicab to the town center at about 11 a.m. on Friday, 6 November 2026, when a lone gunman hiding behind a coconut tree in Barangay Balanaken opened fire. He was hit in the arm and back, was taken to hospital by Datu Piang police, and was reported stable. The gunman fled; police recovered five empty shells.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Piang",
+   "barangay": "Balanaken",
+   "deaths": 0,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [
+    "multicab"
+   ],
+   "lat": 7.0288,
+   "lon": 124.4995,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2337477/maguindanao-del-sur-village-councilman-survives-ambush",
+     "title": "Maguindanao del Sur village councilman survives ambush",
+     "date": "2026-11-07"
+    }
+   ],
+   "id": "2026-11-06-datu-piang-shooting"
+  },
   {
    "date": "2026-11-03",
    "type": "shooting",
