@@ -1,7 +1,7 @@
 {
 	"name": "Books about the Bangsamoro",
 	"note": "Chosen by hand; records from Open Library and the publishers, covers from Open Library’s covers service, links as checked on the build date. Edit shelf.json, not this file.",
-	"built": "2026-11-06",
+	"built": "2026-11-07",
 	"books": [
 		{
 			"slug": "muslims-in-the-philippines",
@@ -81,7 +81,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-contemporary-muslim-movement-in-the-philippines.jpg",
+				"source": "Goodreads",
+				"url": "https://www.goodreads.com/book/show/1614502.The_Contemporary_Muslim_Movement_in_the_Philippines"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -249,7 +253,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "muslim-filipinos-heritage-and-horizon.jpg",
+				"source": "Amazon",
+				"url": "https://www.amazon.com/Muslim-Filipinos-Peter-Gordon-Gowing/dp/B002BQE0K2"
+			},
 			"links": [],
 			"blurb": null
 		},
@@ -280,7 +288,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "understanding-islam-and-muslims-in-the-philippines.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789711003869"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -455,7 +467,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "magindanao-1860-1888.jpg",
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=Magindanao+1860-1888+Ileto"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -1089,8 +1105,8 @@
 			"note": null,
 			"cover": {
 				"file": "myself-and-a-few-moros.jpg",
-				"source": "Open Library",
-				"url": "https://openlibrary.org"
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=Myself+and+a+Few+Moros+Cloman"
 			},
 			"links": [
 				{
@@ -1419,7 +1435,11 @@
 			],
 			"availability": "for-sale",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "moro-warrior.jpg",
+				"source": "Ateneo de Manila University Press",
+				"url": "https://unipress.ateneo.edu/node/4220"
+			},
 			"links": [
 				{
 					"label": "Amazon",
@@ -1460,7 +1480,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-filipino-muslim-armed-struggle-1900-1972.jpg",
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=The+Filipino+Muslim+Armed+Struggle+1900-1972+Tan"
+			},
 			"links": [],
 			"blurb": null
 		},
@@ -2626,7 +2650,11 @@
 			],
 			"availability": "open-access",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "out-of-the-shadows.jpg",
+				"source": "International Alert",
+				"url": "https://www.international-alert.org/stories/out-of-the-shadows-violent-conflict/"
+			},
 			"links": [
 				{
 					"label": "Read it free",
@@ -2662,7 +2690,11 @@
 			],
 			"availability": "open-access",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "breaking-the-links-between-economics-and-conflict-in-mindanao.jpg",
+				"source": "International Alert",
+				"url": "https://www.international-alert.org/publications/breaking-links-between-economics-and-conflict-mindanao/"
+			},
 			"links": [
 				{
 					"label": "Read it free",
@@ -2703,7 +2735,11 @@
 			],
 			"availability": "open-access",
 			"note": "Edited by Diana Rodriguez.",
-			"cover": null,
+			"cover": {
+				"file": "primed-and-purposeful.jpg",
+				"source": "Small Arms Survey",
+				"url": "https://www.smallarmssurvey.org/resource/primed-and-purposeful-armed-groups-and-human-security-efforts-philippines"
+			},
 			"links": [
 				{
 					"label": "Read it free",
@@ -3238,7 +3274,11 @@
 			],
 			"availability": "open-access",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "state-of-local-democracy-in-the-armm.jpg",
+				"source": "Philippine Center for Islam and Democracy",
+				"url": "https://www.pcid.com.ph/publication/state-of-local-democracy-in-the-autonomous-region-in-muslim-mindanao-sold-armm/"
+			},
 			"links": [
 				{
 					"label": "Read it free",
@@ -3400,7 +3440,11 @@
 			],
 			"availability": "for-sale",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-battle-of-marawi.jpg",
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=The+Battle+of+Marawi+Criselda+Yabes+2020"
+			},
 			"links": [
 				{
 					"label": "Amazon",
@@ -3439,7 +3483,11 @@
 			],
 			"availability": "for-sale",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-marawi-siege-and-its-aftermath.jpg",
+				"source": "Cambridge Scholars Publishing",
+				"url": "https://www.cambridgescholars.com/the-marawi-siege-and-its-aftermath"
+			},
 			"links": [
 				{
 					"label": "Buy from cambridgescholars.com",
@@ -3689,7 +3737,11 @@
 			],
 			"availability": "for-sale",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "below-the-crying-mountain.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789715426428"
+			},
 			"links": [
 				{
 					"label": "Buy from press.up.edu.ph",
@@ -4190,7 +4242,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-kalibugans.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789715062152"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -4342,7 +4398,11 @@
 			],
 			"availability": "private",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "tausug-cookbook.jpg",
+				"source": "Central Books",
+				"url": "https://central.com.ph/product/the-tausug-cookbook/"
+			},
 			"links": [
 				{
 					"label": "Buy from blurb.com",
@@ -4912,7 +4972,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "maranao-stories.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789715550765"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -4948,7 +5012,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "mga-kuwentong-maranao.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789715062343"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -4985,7 +5053,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "tales-from-lake-lanao-and-other-essays.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789718140062"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -5088,7 +5160,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "panitikang-meranaw.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789710197248"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -5704,7 +5780,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "a-madrasah-general-education-program-for-muslim-mindanao.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789711110536"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -5781,7 +5861,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-moro-rebellion-and-the-search-for-peace.jpg",
+				"source": "AbeBooks",
+				"url": "https://www.abebooks.com/servlet/SearchResults?isbn=9789713100092"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -6350,7 +6434,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-muslim-filipinos.jpg",
+				"source": "Bolerium Books",
+				"url": "https://www.bolerium.com"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -8629,7 +8717,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "bangsamoro-and-the-everyday.jpg",
+				"source": "MindaNews",
+				"url": "https://mindanews.com/booksmindanews/2026/06/peacetalk-the-premise-of-this-book-is-simple-to-tell-the-stories-that-can-finally-be-told/"
+			},
 			"links": [],
 			"blurb": null
 		},
