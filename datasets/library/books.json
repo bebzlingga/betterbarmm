@@ -2280,7 +2280,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "the-2018-bangsamoro-organic-law-in-the-philippines.jpg",
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=The+2018+Bangsamoro+Organic+Law+in+the+Philippines+Macapado+Muslim"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -3320,7 +3324,11 @@
 			],
 			"availability": "open-access",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "comprehensive-agreement-on-the-bangsamoro.jpg",
+				"source": "Bangsamoro Information Office",
+				"url": "https://bangsamoro.gov.ph"
+			},
 			"links": [
 				{
 					"label": "Read it free",
@@ -3359,7 +3367,11 @@
 			],
 			"availability": "open-access",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "bangsamoro-organic-law.jpg",
+				"source": "Office of the Presidential Adviser on Peace, Reconciliation and Unity",
+				"url": "https://peace.gov.ph"
+			},
 			"links": [
 				{
 					"label": "Read it free",
@@ -3530,7 +3542,11 @@
 			],
 			"availability": "open-access",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "marawi-the-east-asia-wilayah-and-indonesia.jpg",
+				"source": "Institute for Policy Analysis of Conflict",
+				"url": "https://understandingconflict.org/en/publications/Marawi-the-East-Asia-Wilayah-and-Indonesia"
+			},
 			"links": [
 				{
 					"label": "Read it free",
@@ -3571,7 +3587,11 @@
 			],
 			"availability": "for-sale",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "marawi-and-other-poems.jpg",
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=Marawi+and+Other+Poems+Simeon+Dumdum"
+			},
 			"links": [
 				{
 					"label": "Buy from lazada.com.ph",
@@ -3614,7 +3634,11 @@
 			],
 			"availability": "for-sale",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "how-the-spaniards-won-in-marawi-but-lost-in-cavite.jpg",
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=How+the+Spaniards+Won+in+Marawi+but+Lost+in+Cavite+Montesclaros"
+			},
 			"links": [
 				{
 					"label": "Amazon",
@@ -6232,7 +6256,11 @@
 			],
 			"availability": "library",
 			"note": null,
-			"cover": null,
+			"cover": {
+				"file": "mindanao-harvest-4.jpg",
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=Mindanao+Harvest+4+anthology"
+			},
 			"links": [
 				{
 					"label": "Open Library",
@@ -6669,8 +6697,8 @@
 			"note": null,
 			"cover": {
 				"file": "the-journey-of-the-milfs-first-ex-combatants.jpg",
-				"source": "the publisher’s PDF",
-				"url": "https://www.centrepeaceconflictstudies.org/wp-content/uploads/The-Journey-of-the-MILF-18.12.compressed.pdf"
+				"source": "Google Images",
+				"url": "https://www.google.com/search?tbm=isch&q=The+Journey+of+the+Moro+Islamic+Liberation+Front+First+Ex-Combatants"
 			},
 			"links": [
 				{
