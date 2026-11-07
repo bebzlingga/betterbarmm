@@ -48,12 +48,14 @@ import resultsFile from '../../../datasets/election/election-results.json'
 import { more, MORE_ASKED } from './more'
 import { catalogue, directory, DIRECTORY_ASKED } from './directory'
 import { services, SERVICES_ASKED, SERVICES_ASKED_ONLY } from './services'
+import { workspaces, WORKSPACES_ASKED, WORKSPACES_ASKED_ONLY } from './workspaces'
 import libraryBooks from '../../../datasets/library/books.json'
 import libraryAuthors from '../../../datasets/library/authors.json'
 import libraryPublishers from '../../../datasets/library/publishers.json'
 import libraryMagazines from '../../../datasets/library/magazines.json'
 
 export type Space = 'legislation' | 'budget' | 'election' | 'travel' | 'lgu' | 'primer' | 'directory' | 'incidents' | 'services' | 'library'
+	| 'audit' | 'plan' | 'education' | 'health' | 'news' | 'opportunities' | 'preparedness' | 'procurement' | 'works'
 
 /** One thing a reader can be sent to. `text` is the haystack; everything else is shown. */
 export type Entry = {
@@ -155,6 +157,15 @@ const SITE: Record<Space, string> = {
 	incidents: 'https://betterbarmm.com/accidents',
 	services: 'https://betterbarmm.com/services',
 	library: 'https://library.betterbarmm.com',
+	audit: 'https://betterbarmm.com',
+	plan: 'https://betterbarmm.com/development-plan',
+	education: 'https://education.betterbarmm.com',
+	health: 'https://health.betterbarmm.com',
+	news: 'https://betterbarmm.com/news',
+	opportunities: 'https://betterbarmm.com/opportunities',
+	preparedness: 'https://betterbarmm.com/preparedness',
+	procurement: 'https://procurement.betterbarmm.com',
+	works: 'https://transparency.dpwh.gov.ph',
 }
 
 type Measure = {
@@ -676,11 +687,13 @@ function election(): Entry[] {
 		(id && called.get(id)) || fallback
 	const number = (value: number) => value.toLocaleString('en-PH')
 
+	const full = new Map(ballot.regional_parties.map((party) => [party.party_id, party.full_name]))
 	const chamber = count.party_totals.reduce((sum, party) => sum + party.total_seats, 0)
 	const held = count.party_totals
 		.filter((party) => party.total_seats > 0)
 		.sort((a, b) => b.total_seats - a.total_seats)
-		.map((party) => `${party.label} ${party.total_seats}`)
+		// The full name beside the short one: given "BFP 31" alone, the model wrote "Bangsamoro Freedom Party".
+		.map((party) => `${party.label}${party.party_id && full.get(party.party_id) && full.get(party.party_id) !== party.label ? ` (${full.get(party.party_id)})` : ''} ${party.total_seats}`)
 		.join(', ')
 
 	// The whole result in one row, so "who won the election" has something to
@@ -940,7 +953,7 @@ function local(): Entry[] {
 		title: `The Bangsamoro region: ${areas.length} provinces, ${towns} cities and municipalities, ${barangays.toLocaleString('en-PH')} barangays`,
 		note: `BARMM has ${areas.length} provinces — ${areas.map((one) => one.name).join(', ')} — together with Cotabato City and the Special Geographic Area, ${lguProvinces.length} areas in all. Across them: ${towns} cities and municipalities, ${barangays.toLocaleString('en-PH')} barangays, population ${people.toLocaleString('en-PH')}.`,
 		href: `${SITE.lgu}/`,
-		text: 'how many provinces cities municipalities barangays are there in barmm bangsamoro region total number count areas local government units',
+		text: 'how many provinces cities municipalities barangays population people live are there in barmm bangsamoro region total number count areas local government units',
 	}
 
 	/* What each LGU collected, spent, borrowed and won — one row per LGU beside
@@ -1239,11 +1252,12 @@ export function corpus(): Entry[] {
 			...directory(),
 			...services(),
 			...library(),
+			...workspaces(),
 		]
 		// Hung on the row rather than written into each builder: it is one rule
 		// about how questions are worded, not a fact about any of the four
 		// datasets. Kept apart from `text` so it can be scored apart from it.
-		for (const row of built) row.asked = ASKED_FOR[row.kind] ?? MORE_ASKED[row.kind] ?? DIRECTORY_ASKED[row.kind] ?? SERVICES_ASKED[row.kind]
+		for (const row of built) row.asked = ASKED_FOR[row.kind] ?? MORE_ASKED[row.kind] ?? DIRECTORY_ASKED[row.kind] ?? SERVICES_ASKED[row.kind] ?? WORKSPACES_ASKED[row.kind]
 	}
 	return built
 }
@@ -1346,7 +1360,7 @@ const WHO = /\bwho\b|\bnominee|\bwinner|\bwho won\b|\bmembers of parliament\b|\b
    "Tell me about Basilan" is not asking for its incident count, its emergency
    numbers or a ministry's old heads, so these come up only when one of the
    question's words is one of their own. */
-const ASKED_ONLY = new Set(['Incident', 'Incident count', 'Emergency lines', 'Tenures', 'Field office', 'Place to stay'])
+const ASKED_ONLY = new Set(['Incident', 'Incident count', 'Emergency lines', 'Officers', 'Tenures', 'Field office', 'Place to stay'])
 
 export function search(query: string, space?: Space, limit = 8): Entry[] {
 	const asked = query.toLowerCase()
@@ -1362,13 +1376,21 @@ export function search(query: string, space?: Space, limit = 8): Entry[] {
 				.map(stem),
 		),
 	]
+	/* A question about the region itself: "what is BARMM", "the population of
+	   BARMM". Its name is a stop word, because it is in nearly every record, so
+	   the question either had nothing left to search for or found a literacy
+	   rate before the region's own counts. Its name is searched when nothing
+	   else is, and the region's roll-ups are lifted when it is named. */
+	const regional = /\b(?:barmm|bangsamoro|region|regional)\b/.test(asked)
+	// The name, not the word "region": "what is there in the region" is filler, "what is BARMM" is not.
+	if (terms.length === 0 && /\b(?:barmm|bangsamoro)\b/.test(asked)) terms.push('barmm')
 	if (terms.length === 0) return []
 
 	const scored: { entry: Entry; score: number }[] = []
 	for (const entry of corpus()) {
 		if (space && entry.space !== space) continue
 		// A service waits for a question about getting something, unless the search was narrowed to the services already.
-		const waits = ASKED_ONLY.has(entry.kind) || (space !== 'services' && SERVICES_ASKED_ONLY.includes(entry.kind))
+		const waits = ASKED_ONLY.has(entry.kind) || WORKSPACES_ASKED_ONLY.includes(entry.kind) || (space !== 'services' && SERVICES_ASKED_ONLY.includes(entry.kind))
 		if (waits && !terms.some((term) => entry.asked && times(entry.asked, term, 1))) continue
 		const title = entry.title.toLowerCase()
 		let score = 0
@@ -1396,11 +1418,12 @@ export function search(query: string, space?: Space, limit = 8): Entry[] {
 		const chapter = entry.kind === 'Background'
 		const lifted = whole && entry.rollup && (counting ? !chapter : subject && chapter)
 		const seated = who && whole && WHOLE_SEATS.has(entry.kind)
+		const region = regional && whole && entry.rollup
 		/* A question that is only a name wants the thing so named, not its
 		   history, its officials or its NTA, which all carry the name too. */
 		const exact = title === asked.trim().replace(/[?.!]+$/, '')
 		if (score > 0)
-			scored.push({ entry, score: score + (whole ? 3 : 0) + (lifted ? 4 : 0) + (seated ? 4 : 0) + (exact ? 2 : 0) })
+			scored.push({ entry, score: score + (whole ? 3 : 0) + (lifted ? 4 : 0) + (seated ? 4 : 0) + (region ? 6 : 0) + (exact ? 2 : 0) })
 	}
 
 	return scored

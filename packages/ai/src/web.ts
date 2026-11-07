@@ -134,9 +134,19 @@ const host = (href: string) => {
  * in the middle of a sentence, repeating what is already printed underneath.
  */
 function plain(text: string): string {
-	return text
-		.replace(/\s*\(\[[^\]]*\]\([^)]*\)(?:,\s*\[[^\]]*\]\([^)]*\))*\)/g, '')
-		.replace(/\s+([.,;:])/g, '$1')
-		.replace(/[ \t]{2,}/g, ' ')
-		.trim()
+	return (
+		text
+			.replace(/\s*\(\[[^\]]*\]\([^)]*\)(?:,\s*\[[^\]]*\]\([^)]*\))*\)/g, '')
+			.replace(/\s+([.,;:])/g, '$1')
+			.replace(/[ \t]{2,}/g, ' ')
+			.split('\n')
+			// The search model keeps none of the brief's shape rules: it sends rules,
+			// headings, "If you want, I can…" and a six-part guide to a barangay
+			// clearance. The shape is enforced here instead.
+			.filter((line) => !/^\s*(?:-{3,}|\*{3,}|#{1,6}\s)/.test(line) && !/^\s*if you(?:'d| would)? (?:like|want)/i.test(line))
+			.filter((line, at, all) => line.trim() !== '' || (all[at - 1] ?? '').trim() !== '')
+			.slice(0, 8)
+			.join('\n')
+			.trim()
+	)
 }

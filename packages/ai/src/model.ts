@@ -246,11 +246,11 @@ function spoken(said: string): string {
 /**
  * The same turn, asked of Claude.
  *
- * `claude-opus-5` unless AI_MODEL says otherwise, with the server-side
+ * `claude-opus-5-5` unless AI_MODEL says otherwise, with the server-side
  * fallbacks on so a declined request is re-run rather than coming back empty.
  */
 async function askClaude(messages: ModelMessage[], tools: ModelTool[], key: string): Promise<ModelReply> {
-	const model = process.env.AI_MODEL || 'claude-opus-5'
+	const model = process.env.AI_MODEL || 'claude-opus-5-5'
 	const client = new Anthropic({ apiKey: key })
 
 	let reply: Anthropic.Beta.BetaMessage

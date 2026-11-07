@@ -23,6 +23,7 @@ import fieldFile from '../../../datasets/directory/field-offices.json'
 import historyFile from '../../../datasets/directory/history.json'
 import emailsFile from '../../../datasets/directory/lgu-emails.json'
 import officesFile from '../../../datasets/directory/offices.json'
+import structureFile from '../../../datasets/directory/structure.json'
 import placesFile from '../../../datasets/places/places.json'
 import staysFile from '../../../datasets/places/stays.json'
 import type { Entry } from './corpus'
@@ -83,6 +84,36 @@ function regionalOffices(): Entry[] {
 			text: joined([o.name, o.acronym, o.head?.name, o.head?.title, o.address, parent?.name]).toLowerCase(),
 		} satisfies Entry
 	})
+}
+
+type Unit = { name: string; head?: { name: string; title: string } | null; units?: Unit[] }
+
+/** Every named head of an office's units — deputy ministers, directors-general, division chiefs. */
+function officers(): Entry[] {
+	const rows: Entry[] = []
+	for (const [slug, o] of Object.entries((structureFile as unknown as { offices: Record<string, { as_of?: string; units?: Unit[] }> }).offices)) {
+		const office = officeName(slug)
+		if (!office) continue
+		const named: string[] = []
+		const walk = (units: Unit[] = []) => {
+			for (const u of units) {
+				if (u.head?.name) named.push(`${u.head.title} ${u.head.name}`)
+				walk(u.units)
+			}
+		}
+		walk(o.units)
+		if (named.length < 2) continue
+		const name = office.acronym ? `${office.name} (${office.acronym})` : office.name
+		rows.push({
+			space: 'directory',
+			kind: 'Officers',
+			title: `${name}: its officers`,
+			note: `${named.join('; ')}${o.as_of ? `. As of ${month(o.as_of)}` : ''}.`,
+			href: `${WWW}/directory/office/${slug}`,
+			text: joined([office.name, office.acronym, ...named]).toLowerCase(),
+		})
+	}
+	return rows
 }
 
 /** Who led each office before, with the dates the sources support. */
@@ -273,9 +304,14 @@ function incidents(): Entry[] {
 	}))
 
 	const tally = (list: Incident[]) => {
-		const by = new Map<string, number>()
-		for (const i of list) by.set(i.kind, (by.get(i.kind) ?? 0) + 1)
-		const kinds = [...by].sort((a, b) => b[1] - a[1]).map(([k, n]) => `${n} ${k.toLowerCase()}`).join(', ')
+		// Dead and injured per kind as well as in all: given only the totals, the
+		// model answered "road crashes in Basilan" with every shooting's dead.
+		const by = new Map<string, Incident[]>()
+		for (const i of list) by.set(i.kind, [...(by.get(i.kind) ?? []), i])
+		const kinds = [...by]
+			.sort((a, b) => b[1].length - a[1].length)
+			.map(([k, l]) => `${l.length} ${k.toLowerCase()} (${l.reduce((n, i) => n + i.deaths, 0)} dead, ${l.reduce((n, i) => n + i.injured, 0)} injured)`)
+			.join(', ')
 		const dead = list.reduce((n, i) => n + i.deaths, 0)
 		const hurt = list.reduce((n, i) => n + i.injured, 0)
 		return `${list.length} incidents reported since ${since}: ${kinds}. ${dead} dead and ${hurt} injured in all. Counted from news reports, so an incident nobody reported is not here.`
@@ -296,7 +332,8 @@ function incidents(): Entry[] {
 			title: town ? `Incidents in ${town}, ${province}` : `Incidents in ${province}`,
 			note: tally(list),
 			href: `${WWW}/accidents`,
-			text: `${town ?? ''} ${province} incidents accidents crashes`.toLowerCase(),
+			// The kinds it counts, so "road crashes in Basilan" reaches the count and not one roadside shooting.
+			text: `${town ?? ''} ${province} incidents accidents crashes ${[...new Set(list.map((i) => i.kind))].join(' ')}`.toLowerCase(),
 			rollup: true,
 		})
 	}
@@ -305,13 +342,14 @@ function incidents(): Entry[] {
 }
 
 export function directory(): Entry[] {
-	return [...regionalOffices(), ...pastHeads(), ...fieldOffices(), ...hotlines(), ...localLines(), ...catalogue(), ...stays(), ...crafts(), ...incidents()]
+	return [...regionalOffices(), ...officers(), ...pastHeads(), ...fieldOffices(), ...hotlines(), ...localLines(), ...catalogue(), ...stays(), ...crafts(), ...incidents()]
 }
 
 /** The words a question uses for each kind of row here. */
 export const DIRECTORY_ASKED: Record<string, string> = {
 	'Office head':
 		'office ministry minister head heads headed leads chief director administrator secretary commissioner chairperson who contact phone number numbers hotline call email address reach located where',
+	Officers: 'officers officials officer key staff team people deputy director directors chief chiefs division bureau unit units structure management',
 	Tenures: 'previous former past before predecessor history earlier led tenure served until minister secretary administrator director',
 	'Field office': 'provincial field office district branch province contact phone address who heads',
 	Hotline: 'hotline emergency number call text complaint feedback',
@@ -319,6 +357,6 @@ export const DIRECTORY_ASKED: Record<string, string> = {
 	Place: 'place visit see go attraction destination travel tourist spot beach island mosque lake falls mountain',
 	'Place to stay': 'hotel hotels stay accommodation inn resort lodging room sleep',
 	Craft: 'craft crafts weaving woven textile cloth brass handicraft souvenir made artisan',
-	Incident: 'incident accident crash shooting drowning fire killed dead died injured',
-	'Incident count': 'how many incidents accidents crashes shootings deaths killed count total number',
+	Incident: 'incident accident crash shooting shot gunman ambush stabbed drowning drowned fire killed dead died injured wounded hurt',
+	'Incident count': 'how many incidents accidents crashes shootings deaths died dead people killed injured hurt count total number',
 }

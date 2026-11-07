@@ -53,12 +53,12 @@ export type Answer =
 	  }
 	| { ok: false; error: string }
 
-const SPACES: Space[] = ['legislation', 'budget', 'election', 'travel', 'lgu', 'primer', 'directory', 'incidents', 'services', 'library']
+const SPACES: Space[] = ['legislation', 'budget', 'election', 'travel', 'lgu', 'primer', 'directory', 'incidents', 'services', 'library', 'audit', 'plan', 'education', 'health', 'news', 'opportunities', 'preparedness', 'procurement', 'works']
 
 const SEARCH: ModelTool = {
 	name: 'search_records',
 	description:
-		'Search every record on BetterBARMM: the measures of the Bangsamoro Parliament (acts, bills, resolutions) and the Bangsamoro Local Governance Code of 2023 rule by rule together with its 2025 implementing rules (what a barangay may do, how many kagawad it elects and what they are paid, local taxes, the cedula and the real property tax, who may run and what disqualifies them, terms, recall and succession, the barangay justice system, how a barangay or a town is created, how the local budget is made and what must be set aside, and the municipalities of the Special Geographic Area), the enacted FY 2026 budget (what each office and program was appropriated, sorted into 38 sectors; the 207 special provisions — the conditions the Act puts on how money may be spent and what must be reported; and the 258 named roads, bridges and buildings being funded, each with the barangay it is in), the September 2026 parliamentary election (the 13 parties and how many seats each won, every one of the 80 elected members and which party and which seat they hold, all 32 district races with who stood and what they polled, and the reserved sectoral seats), the travel guide (places, food, areas, routes), the local government directory (provinces, cities, municipalities, barangay counts, population), the Directory of the Bangsamoro Government (who heads each ministry and office now and before, their phone numbers, emails, addresses and provincial offices, the hotlines, and each town’s police, fire, health and town hall numbers and email), Incident Watch (road crashes, shootings, drownings and other incidents reported since 2019, with counts per town and province), Programs & services (every service and program in the Citizen’s Charters of the regional offices and of the provinces, cities and towns that publish one — what you get, who it is for, what to bring, the fee, how long it takes and where to go), the Library (books about the Bangsamoro with what each covers and where to buy, borrow or read it free, their authors and publishers, and the magazines and newsletters of the region’s offices), the region’s crafts, and the region primer (how BARMM came to be, from the sultanates through the Moro Wars, the Jabidah incident, the MNLF and MILF, the Tripoli Agreement, the peace process and the Organic Law to the transition; how the government is structured; the peoples and communities; culture and places). Use it for every question about the Bangsamoro, and use it more than once when a question covers more than one subject.',
+		'Search every record on BetterBARMM: the measures of the Bangsamoro Parliament (acts, bills, resolutions) and the Bangsamoro Local Governance Code of 2023 rule by rule together with its 2025 implementing rules (what a barangay may do, how many kagawad it elects and what they are paid, local taxes, the cedula and the real property tax, who may run and what disqualifies them, terms, recall and succession, the barangay justice system, how a barangay or a town is created, how the local budget is made and what must be set aside, and the municipalities of the Special Geographic Area), the enacted FY 2026 budget (what each office and program was appropriated, sorted into 38 sectors; the 207 special provisions — the conditions the Act puts on how money may be spent and what must be reported; and the 258 named roads, bridges and buildings being funded, each with the barangay it is in), the September 2026 parliamentary election (the 13 parties and how many seats each won, every one of the 80 elected members and which party and which seat they hold, all 32 district races with who stood and what they polled, and the reserved sectoral seats), the travel guide (places, food, areas, routes), the local government directory (provinces, cities, municipalities, barangay counts, population), the Directory of the Bangsamoro Government (who heads each ministry and office now and before, their phone numbers, emails, addresses and provincial offices, the hotlines, and each town’s police, fire, health and town hall numbers and email), Incident Watch (road crashes, shootings, drownings and other incidents reported since 2019, with counts per town and province), Programs & services (every service and program in the Citizen’s Charters of the regional offices and of the provinces, cities and towns that publish one — what you get, who it is for, what to bring, the fee, how long it takes and where to go), the Library (books about the Bangsamoro with what each covers and where to buy, borrow or read it free, their authors and publishers, and the magazines and newsletters of the region’s offices), the region’s crafts, COA’s annual audit reports with their findings, the Bangsamoro Development Plan’s targets and how each stands, every school and the health facilities and hospitals of each town, the latest news about the region, scholarships and open government jobs, each town’s evacuation centers and emergency facilities and which barangays face high flood, landslide or storm-surge hazard, each agency’s procurement on PhilGEPS and the contractors the GPPB has blacklisted, DPWH’s own projects in the region, and the region primer (how BARMM came to be, from the sultanates through the Moro Wars, the Jabidah incident, the MNLF and MILF, the Tripoli Agreement, the peace process and the Organic Law to the transition; how the government is structured; the peoples and communities; culture and places). Use it for every question about the Bangsamoro, and use it more than once when a question covers more than one subject.',
 	parameters: {
 		type: 'object',
 		properties: {
@@ -70,7 +70,7 @@ const SEARCH: ModelTool = {
 				type: 'string',
 				enum: SPACES,
 				description:
-					'Narrow to one workspace: legislation for measures and for the rules of the Local Governance Code and its implementing rules, budget for money and for what is being built, election for parties, members of parliament and how the seats were won, travel for places, places to stay, crafts and food, lgu for towns and population, primer for history and for how the region and its government came to be, directory for who heads each regional office and how to reach it (phones, emails, addresses, past heads, provincial offices, hotlines, each town’s emergency numbers), incidents for road crashes, shootings, drownings and other incidents reported in the region, services for what an office or a town offers the public and how to get it (requirements, fees, processing time), library for books, authors, publishers and the offices’ magazines. Leave it out to search everything.',
+					'Narrow to one workspace: legislation for measures and for the rules of the Local Governance Code and its implementing rules, budget for money and for what is being built, election for parties, members of parliament and how the seats were won, travel for places, places to stay, crafts and food, lgu for towns and population, primer for history and for how the region and its government came to be, directory for who heads each regional office and how to reach it (phones, emails, addresses, past heads, provincial offices, hotlines, each town’s emergency numbers), incidents for road crashes, shootings, drownings and other incidents reported in the region, services for what an office or a town offers the public and how to get it (requirements, fees, processing time), library for books, authors, publishers and the offices’ magazines, audit for COA audit reports, plan for the development plan’s targets, education for schools, health for health facilities and hospitals, news for the latest news, opportunities for scholarships and jobs, preparedness for evacuation centers and hazards, procurement for bids, contracts and blacklisted contractors, works for DPWH’s projects. Leave it out to search everything.',
 			},
 		},
 		required: ['query'],
@@ -85,36 +85,40 @@ const LOOK = `${WHO}
 
 Your only job in this turn is to decide what to look up. Call search_records with the subject of the question. Call it once per subject: "bills and budget for health" is two calls, one on legislation and one on budget. Do not answer the question yourself and do not apologise — the search happens next, and you will be asked to write the answer then.
 
+Read the whole conversation. The subject already under discussion holds until the newest question names a different one, so a follow-up is searched with that subject by name: "who are the officers" after a question on MBHTE is "MBHTE officials", "who is the mayor there" after Marawi is "Marawi mayor".
+
+Leave the workspace out unless the question can only be answered from one. An office's programs are in both budget and services.
+
 Search for the subject, never for the name of a workspace. "budget", "bills", "acts" and "places" are not subjects; the subject in "what does the budget give to health" is health.
 
 Only if the question has nothing to do with the Bangsamoro or with this site, skip the tool and say in one sentence that it is not what you are for.`
 
 const WRITE = `${WHO}
 
-You are writing the answer now. What the search found is below. It is what you have in front of you, not the edge of what you know.
+Write the answer now, from the records the search found, below. They are the only facts you may use.
 
-- Never return nothing. Every rule below is about how to answer, not about whether to; where a question cannot be answered inside them, answer it as well as they allow and stop. An empty reply is the one failure with no excuse — asked who was elected, with all eighty members and every party's seat count in front of you, returning silence because the brief is short is worse than any answer you could have written.
-- Write as Jo, in the first person. Somebody is talking to you. "I don't have that in front of me", never "the records do not provide", "the records here focus on", "this site contains" or any other sentence that describes the project from outside it. You are not a catalogue describing its own contents, and the reader did not ask what is on the site — they asked a question.
-- Answer it first. Never open by saying what you do or do not hold; where that has to be said at all, it goes after the answer and in a clause.
-- Where what you found covers the question, it wins outright: quote it, never contradict it, and never offer your own recollection against it. It is the enacted text and you are not.
-- Where it does not cover the question, just answer. You know the Bangsamoro — how it came to be, the long peace process behind it, the Organic Law, its institutions and its politics — and a question about any of that gets a real answer in your own words. Do not hedge it, do not apologise for it, and do not turn it into a note about what this site holds. Where it matters that you are speaking from your own knowledge rather than from a document in front of you, say so in a few words and keep going.
-- One thing is absolute either way: never state a peso amount, a share of the budget, a seat count, a vote total, or the number, title or date of a measure unless it is in a record below. Those are the figures this project would be discredited for inventing, and background is not a licence for them.
-- One sentence wherever one will do, two at the most, never three.
-- Answer the question that was asked and stop. Do not restate it, do not open with "According to the records" or "Based on what I found", and do not add context nobody asked for — no caveat about the workspace, no offer to look further.
-- No lists, no headings, no tables, no links, and no addresses.
-- Nothing is printed under your answer — what you found is yours to read, not the reader's. So say the thing itself rather than pointing at a row: name what was asked for, give the figure that was asked for, and never write "listed below", "see the records", "as shown" or anything else that refers to something the reader cannot see. Do not write them out one by one either; say what they show taken together.
-- Where the question asks for a span of years the records do not hold exactly — "the last six years" against a row covering seven — give the total for the span the row does cover and say plainly which years that is. Never add years together or leave one out to build the span that was asked for: a figure you assembled yourself is not a figure anybody appropriated, and it will be struck before the reader sees it.
-- Quote amounts exactly as the record gives them. Every budget figure is fiscal year 2026, the year now being spent; there is no earlier year on the site, so do not offer a comparison to one. Never add figures together: the search returns some of the records, not all of them, so a total you work out is not the total. Where a total is wanted, the office's own row carries it.
-- A budget record is an appropriation — what Parliament authorised an office to spend. It is not what was spent, and a project record is money to build something, not a building that exists. Where the question asks what was spent or built, say the record shows what was budgeted and stop.
-- A Sector record's figure covers many offices and overlaps other sectors, so it is never added to anything and never presented as a share of the budget. A Rule record is a condition the Act attaches to money counted elsewhere; where it names a figure, that figure is part of its office's total and not money on top of it.
-- Election records are the proclaimed result of the vote of 14 September 2026. Member records are some of the members, never all of them, so never count them and never say a party has as many seats as there are rows here — the party's own row carries its real total. A vote figure belongs to the one race it is printed on and is never added to another.
-- When the question itself asks how many or how much, the answer is the figure and nothing else: "Marawi has 96 barangays." "The Ministry of Health was appropriated ₱5.2 billion." One short sentence carrying the figure from the record that holds it, with no second sentence explaining it. That is a rule about that one kind of question, and it never means an answer that happens to contain numbers must be cut down to a bare figure — "who was elected" is answered with the parties and their seat counts, not with one number. Never answer a question about a figure by pointing at the rows.
-- Where the question asks who, give the total from the record that carries it and name a few of them in the sentence — a few, not all of them, and never as a list. "Who was elected" is answered by how many seats each party won and two or three names, not by eighty. Never end a sentence on a colon; there is no list coming after it.
-- Only where a question is about a figure you have no record of — an amount, a share, a seat count — say you do not have that particular figure, in your own voice and in one clause, and give whatever you can say around it.
-- A Code section record is a rule of the Bangsamoro Local Governance Code of 2023 — the law as written, not what a particular town does or whether anyone follows it. It is the Bangsamoro code, which replaced the ARMM one and applies in BARMM, so do not cite the national Local Government Code or RA 7160 against it. Give the rule in the words of the record, with its figure, and give any date or condition the record attaches to it in the same sentence: a rule that does not start until a stated year is not a rule in force now.
-- A Code rule record is an article of the Implementing Rules and Regulations of that Code, promulgated 30 September 2025. The IRR says how the Code is carried out — who files what, within how many days, against which schedule of rates — so it is the record to give when the question is how something is done. Cite it as an IRR Article and never as a Section: its Article numbers are its own and are not the Code's section numbers, so IRR Article 45 and Code Section 424 can be the same subject. Where a record says the IRR and the Code give different figures, say so and give the Code's, which prevails.
-- Put the one name or figure that answers the question in **bold**, once, and nothing else; the rest of the sentence stays plain.
-- The registry is not complete and never claims to be: Parliament publishes more bills than have been read here. Say what the search found rather than a total.`
+- Always write an answer; an empty reply is never right.
+- Answer first, in one or two short sentences, then stop. Do not restate the question, do not open with "according to the records", and do not offer to look further.
+- Speak as Jo, in the first person, plainly.
+- The subject of the conversation holds until the reader names a different one. A follow-up ("all programs", "who are the officers", "what about their budget") is answered about that subject, never about the whole region.
+- Use only what the records say, and never fill a gap from memory. If they do not answer the question, say "I don't have that in front of me." and nothing else.
+- Never write a figure — an amount, a share, a count, a vote total, a date, the number of a measure — that is not in a record, and quote amounts exactly as written. Never add figures together or build a total: the records are some of the rows, not all of them. Where no single record carries the total asked for, say "There's no single figure for that" and give one or two examples with their own amounts.
+- A question asking how many or how much: one sentence carrying the figure from the record that holds it.
+- A question asking who: the total from the record that carries it, and two or three names — never all of them.
+- A question about getting something done (a permit, a certificate, a service): where to go and the two or three main things to bring, from its record.
+- Put the one name or figure that answers the question in **bold**, once.
+- No lists, headings, tables, links or addresses. The reader sees only your words, so never write "below", "listed", "as shown", "the records" or "see the records".
+- Never quote a line, a poem or anyone's words unless the record carries them, and never write a name in a longer form than the record gives it.
+- If the question has nothing to do with the Bangsamoro or this site (a poem, another country, a sum), say in one sentence that you answer questions about the Bangsamoro, and stop.
+
+What the records mean:
+- Budget: a figure is what Parliament appropriated for the year the record names — not what was spent, and a project is money to build, not a finished building. Asked what was spent or built, give what was budgeted and say so. A Sector figure overlaps other sectors and is never a share of the budget. A Rule is a condition on money counted elsewhere.
+- Election: the proclaimed result of the vote of 14 September 2026. A party's seats are on its Party row; never count Member rows. A vote figure belongs to its one race.
+- Code section: the Bangsamoro Local Governance Code of 2023, which applies in BARMM in place of RA 7160. Give the rule with its figure and any start date or condition it carries — a rule that starts in a later year is not in force now.
+- Code rule: an article of the Code's Implementing Rules (30 September 2025). Cite it as "IRR Article N", never as a Section. Where the IRR and the Code differ, give the Code's figure, which prevails.
+- Incidents are counted from news reports, so say "reported". An Incident count lists every kind it counted: a kind it does not list had none reported there, so say that, with what was reported instead.
+- Book: name one or two that fit, with whether each is in print, free to read or out of print.
+- The registry of measures is not complete: say what was found, never a total.`
 
 /* Added to the brief only when a timeline is going to be drawn, and added
    last, because it contradicts WRITE on purpose.
@@ -143,7 +147,7 @@ const RIGHT_NOW =
 	/\b(current|currently|now|nowadays|today|latest|newest|incumbent|so far|these days|at present|right now|this year|as of)\b/i
 
 /* Records that hold how things stand in the present term or year. */
-const CURRENT_KINDS = new Set(['Officials', 'Barangay captains', 'NTA allocation', 'Office head', 'Field office', 'Emergency lines', 'Hotline'])
+const CURRENT_KINDS = new Set(['Latest news', 'News', 'Job', 'Jobs count', 'Officers', 'Officials', 'Barangay captains', 'NTA allocation', 'Office head', 'Field office', 'Emergency lines', 'Hotline'])
 
 /* The shape of Jo saying she has nothing — her own words for it, from the
    brief, plus the couple of ways a model reaches for the same thing. */
@@ -158,7 +162,7 @@ const WANTS_NAMES =
    in a city, programs of an office. Written as one sentence they run on into
    a wall of commas, so these are answered as a list. */
 const WANTS_LIST =
-	/\blist\b|\bwhat are (?:the|some)\b|\bwhich (?:bills?|acts?|laws?|resolutions?|measures?|projects?|programs?|offices?|hotels?|places?|restaurants?|towns?|municipalities)\b|\b(?:bills?|acts?|laws?|resolutions?|measures?|projects?|programs?|hotels?|restaurants?)\b.*\b(?:related to|about|on|for|in)\b|\bexamples?\b|\ball (?:the )?(?:bills?|acts?|projects?|hotels?)\b/i
+	/\blist\b|\b(?:officers|officials|key officials|staff)\b|\bwhat are (?:the|some)\b|\bwhich (?:bills?|acts?|laws?|resolutions?|measures?|projects?|programs?|offices?|hotels?|places?|restaurants?|towns?|municipalities)\b|\b(?:bills?|acts?|laws?|resolutions?|measures?|projects?|programs?|hotels?|restaurants?)\b.*\b(?:related to|about|on|for|in)\b|\bexamples?\b|\ball (?:the )?(?:bills?|acts?|projects?|programs?|services?|hotels?)\b/i
 
 const SHOWING_LIST = `One thing changes for this question, and it overrides the rule against lists above. The reader asked for several things, so answer with a list. Open with one plain sentence saying what the list is. Then put each item on its own line starting with "- ", the name or number in **bold**, a dash, and a few words on what it is, taken from its record: for example "- **Bill 88** — dialysis units and free dialysis services". Up to twelve items, the ones the records match best, in a sensible order. Use only items in the records, and never cut an item off halfway.`
 
@@ -173,7 +177,7 @@ const SHOWING_ROSTER = `Every member is being listed under your answer, by name,
 
 const SHOWING_TIMELINE = `One thing changes for this question, and it overrides what was said above about nothing being printed under your answer. This time a dated timeline is: every era in order, each with its own paragraph. So if the reader asked for the history date by date, the timeline is that answer, it is not a list you have to write, and the rule against lists does not apply to it.
 
-All you write is the one sentence that opens it — what the whole arc amounts to, in your own voice. One sentence is required; returning nothing is a failure. Do not retell the eras and never write "below" or "as shown".`
+All you write is the one sentence that opens it — what the whole arc amounts to, in your own voice. Where the question asks when, that sentence gives the date from the records. One sentence is required; returning nothing is a failure. Do not retell the eras and never write "below" or "as shown".`
 
 /** The kinds of row that carry a total the rows under them are a slice of. */
 const WHOLES = new Set(['Office', 'Party'])
@@ -191,6 +195,17 @@ const THIN = 3
 export async function answer(turns: Turn[]): Promise<Answer> {
 	const said = turns.map((turn): ModelMessage => ({ role: turn.role, content: turn.text }))
 	const asked = turns[turns.length - 1]?.text ?? ''
+	/* Inside a conversation, the subject holds until the reader names another
+	   (user decision): "who are the officers" after "who leads mbhte?" is
+	   about MBHTE. Searched on its own words, a follow-up found every program or
+	   officer in the region and the answer started a new subject; pasting the
+	   earlier question on was worse ("minister" put the Chief Minister first).
+	   So every follow-up goes to the model, which reads the whole conversation
+	   and picks the search — about a second, and only after the first question. */
+	const before = turns.slice(0, -1).filter((turn) => turn.role === 'user').at(-1)?.text
+	const leans = Boolean(before)
+	// What the web is asked, which has no conversation of its own.
+	const topic = leans ? `${asked} (following on from: ${before})` : asked
 
 	// The reader's own words first. The search costs microseconds and the
 	// corpus knows which kind of record each question is asking for, so on an
@@ -198,8 +213,9 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 	// and asking the model to pick the words costs four to nine seconds of
 	// somebody's afternoon. The turn is spent only when the words alone come
 	// back thin, which is where it earns its keep.
-	let rows = gather([{ query: asked }])
+	let rows = leans ? [] : gather([{ query: asked }])
 	let aside = ''
+	let searched = false
 
 	if (rows.length < THIN) {
 		const looked = await askModel([{ role: 'system', content: LOOK }, ...said], [SEARCH])
@@ -210,7 +226,10 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 			.slice(0, MOST_SEARCHES)
 			.map((call) => ({
 				query: typeof call.args.query === 'string' ? call.args.query : '',
-				space: SPACES.find((one) => one === call.args.workspace),
+				// Not on a follow-up: the model narrows to the wrong one there ("Marawi
+				// mayor" to the directory, which holds no town officials), and the
+				// search ranks by kind well enough without it.
+				space: leans ? undefined : SPACES.find((one) => one === call.args.workspace),
 			}))
 
 		// What was typed stays in the search even here. A 7B model asked what
@@ -222,6 +241,7 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 		rows = gather([...picks, { query: asked, space: only }])
 		// Its own sentence, for a question the record has nothing to say about.
 		aside = looked.text
+		searched = picks.length > 0
 	}
 
 	/* Nothing in the records. Before this, that was the end of it — "I have
@@ -235,7 +255,10 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 	   in exchange for an answer and would not be in exchange for a better
 	   phrasing of one the records already gave. */
 	if (rows.length === 0) {
-		const web = await askWeb(asked)
+		// The model looked and called no search: the question is not one for Jo. Its
+		// own sentence says so, without ten seconds on the web for "capital of France".
+		if (aside && !searched) return { ok: true, say: aside, sources: [] }
+		const web = await askWeb(topic)
 		if (web.ok) return { ok: true, say: web.text, sources: [], web: web.links }
 
 		return {
@@ -350,7 +373,7 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 	   Those are the records, and the web would only be an older copy. */
 	const current = rows.some((row) => CURRENT_KINDS.has(row.kind))
 	if (!timeline?.length && !roster?.length && (EMPTY_HANDED.test(say) || (RIGHT_NOW.test(asked) && !current))) {
-		const web = await askWeb(asked)
+		const web = await askWeb(topic)
 		if (web.ok) return { ok: true, say: web.text, sources: [], web: web.links }
 	}
 
@@ -369,7 +392,7 @@ export async function answer(turns: Turn[]): Promise<Answer> {
 	}
 }
 
-const OPENER = 'Here is what I have on that.'
+const NO_FIGURE = "There's no single figure for that in what I have."
 
 /**
  * The answer as it is shown: what the model said about the records, then the
@@ -402,15 +425,12 @@ function written(say: string, rows: Entry[], shown?: boolean, listing?: boolean)
 	   where the figure would have come from, and it is the thing the reader
 	   asked about. A worse sentence than the model would have written, and a
 	   far better answer than none. */
-	if (!kept) {
-		if (shown) return 'Here is how it happened, in order.'
-		return rows[0]?.note?.trim() || OPENER
-	}
-	// Where a sentence was taken out, what is left can begin mid-thought —
-	// "This includes various initiatives…" with nothing before it. A written
-	// opener carries it, and says nothing the rows do not.
-	const opener = kept && invented(say, rows) ? OPENER : ''
-	return [opener, kept].filter(Boolean).join(' ').trim()
+	/* Not the top row's own line, which it used to be: asked what was spent on
+	   roads in Basilan, the model summed the projects, the sum was struck, and
+	   the Ministry of Public Works' whole appropriation was handed back as the
+	   answer. Saying there is no one figure is true; a neighbouring figure is not. */
+	if (!kept) return shown ? 'Here is how it happened, in order.' : NO_FIGURE
+	return kept
 }
 
 /** "cities", "municipalities", "acts" — enough plural for a count of records. */
@@ -521,18 +541,6 @@ const dated = (sentence: string, one: string) => YEAR.test(one) && !/[₱$%]/.te
 const carried = (rows: Entry[]) => new Set(figures(rows.map((row) => `${row.title} ${row.note}`).join(' ')))
 
 /**
- * Whether `say` states a figure the records do not.
- *
- * Asked of the figures rather than of the length before and after: `grounded`
- * rejoins sentences on single spaces, so a model that put a blank line
- * between two good sentences would otherwise read as having had one struck.
- */
-const invented = (say: string, rows: Entry[]) => {
-	const known = carried(rows)
-	return figures(say).some((one) => !known.has(one))
-}
-
-/**
  * The answer with any sentence that states a figure the records do not.
  *
  * The model is shown the rows and nothing else, so every number it writes
@@ -562,7 +570,9 @@ export function grounded(say: string, rows: Entry[]): string {
 			// a one-line answer that simply forgot its full stop is still an
 			// answer.
 			const last = sentences[sentences.length - 1]
-			if (sentences.length > 1 && last && !/[.!?][»”"')\]]?$/.test(last.trim())) sentences.pop()
+			// Never on a list line: "- **MP Atty. Naguib G. Sinarimbo** — Minister" ends
+			// without a stop, and splits on "Atty." and "G.", so it lost the surname.
+			if (sentences.length > 1 && last && !/^\s*[-*\u2022]/.test(line) && !/[.!?][»”"')\]]?$/.test(last.trim())) sentences.pop()
 			return sentences
 				.filter((sentence) => figures(sentence).every((one) => known.has(one) || dated(sentence, one)))
 				.join(' ')
@@ -583,9 +593,12 @@ export function grounded(say: string, rows: Entry[]): string {
  */
 function gather(picks: { query: string; space?: Space }[]): Entry[] {
 	const found = new Map<string, Entry>()
-	for (const pick of picks) {
-		if (!pick.query.trim()) continue
-		for (const row of search(pick.query, pick.space, MOST_ROWS)) found.set(`${row.kind}:${row.title}`, row)
+	const asked = picks.filter((pick) => pick.query.trim())
+	// A fair share each: "and in Tawi-Tawi?" searched Basilan and Tawi-Tawi, and
+	// Basilan's sixteen rows filled the cap before Tawi-Tawi's were reached.
+	const share = Math.ceil(MOST_ROWS / Math.max(1, asked.length))
+	for (const pick of asked) {
+		for (const row of search(pick.query, pick.space, share)) found.set(`${row.kind}:${row.title}`, row)
 	}
 
 	// Whatever holds the total goes in beside the parts. Eight health

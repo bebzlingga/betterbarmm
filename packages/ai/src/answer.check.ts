@@ -6,8 +6,8 @@
    This is the other half — whether the model, given those rows,
    writes the figure that is in them.
 
-   It needs a key and it spends money: ten questions, two model
-   turns each, twenty calls a run. So it is not part of any
+   It needs a key and it spends money: eighteen questions, one to
+   three model turns each, about forty calls a run. So it is not part of any
    pipeline and nothing imports it. Run it by hand when the model
    changes, which is the one time the answer can quietly get
    worse without a single test failing.
@@ -39,10 +39,10 @@
    host asks for it.
    ============================================================ */
 
-import { answer } from './answer'
+import { answer, type Turn } from './answer'
 
-/** A question, and what any correct answer to it has to carry. */
-const CASES: [question: string, wants: RegExp][] = [
+/** A question — or a conversation, the last turn the one answered — and what any correct answer to it has to carry. */
+const CASES: [question: string | string[], wants: RegExp][] = [
 	['how many kagawad does a barangay elect?', /\bseven\b|\b7\b/i],
 	['how much is the cedula?', /₱?20\b/],
 	['is the anti dynasty rule in effect yet?', /2028/],
@@ -53,6 +53,16 @@ const CASES: [question: string, wants: RegExp][] = [
 	['how many tanods can a barangay have?', /\b30\b/],
 	['when is the deadline to pay real property tax?', /march|31/i],
 	['what is the term of a mayor?', /three|3\b/i],
+	// Every workspace, and the ways a question goes wrong (November 2026).
+	['how many schools in marawi?', /\b107\b/],
+	['what is the population of barmm?', /4,545,486/],
+	['how many seats did bfp win?', /\b31\b/],
+	['how many road crashes in tawi-tawi?', /\bno\b|\bnone\b|\b0\b|\bzero\b/i],
+	['magkano ang budget ng ministry of health?', /8,615,776,937/],
+	['what is the capital of france?', /bangsamoro/i],
+	// A follow-up keeps the subject: the officers are MBHTE's, from the directory.
+	[['who leads mbhte?', 'who are the officers'], /Katambak/],
+	[['how many barangays in marawi', 'who is the mayor there'], /Gandamra/],
 ]
 
 const model = process.env.AI_MODEL || 'the configured model'
@@ -64,14 +74,21 @@ for (const [question, wants] of CASES) {
 	const started = Date.now()
 	let said = ''
 	try {
-		const reply = await answer([{ role: 'user', text: question }])
+		// A conversation is replayed turn by turn, each earlier answer fed back as Jo's.
+		const turns: Turn[] = []
+		for (const text of [question].flat()) {
+			turns.push({ role: 'user', text })
+			const said = await answer(turns)
+			turns.push({ role: 'assistant', text: (said as { say?: string }).say ?? '' })
+		}
+		const reply = { say: turns.at(-1)!.text }
 		said = (reply as { say?: string }).say ?? ''
 	} catch (error) {
 		said = `threw — ${String(error).slice(0, 60)}`
 	}
 	spent += Date.now() - started
 	if (wants.test(said)) right += 1
-	else missed.push(`  ${question}\n    → ${said.slice(0, 90) || '(said nothing)'}`)
+	else missed.push(`  ${[question].flat().join(' → ')}\n    → ${said.slice(0, 90) || '(said nothing)'}`)
 }
 
 console.log(`${model} — ${right}/${CASES.length} correct, ${Math.round(spent / CASES.length)}ms a question`)
