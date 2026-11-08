@@ -1,0 +1,41 @@
+[
+ {
+  "date": "2026-11-07",
+  "type": "shooting",
+  "title": "Three soldiers wounded as troops sent to stop a clan gunfight are fired on in Biasong, Picong",
+  "summary": "Soldiers of the Army's 64th Infantry Battalion and police were sent to Barangay Biasong, Picong, Lanao del Sur, at about 3 p.m. on Saturday, 7 November 2026, after residents reported a gunfight between the feuding Labao and Gaosil families. Gunmen on the slopes around the Picong Tunnel fired on them, including with .50-calibre machine guns. Privates Jude Deligero, Cupid Val Masibog Mosque and Reymond Padawan were wounded, one of them critically. The highway between Pagadian and Cotabato was closed for about six hours until troops cleared it at 8 p.m.; police said frustrated murder charges would be filed against the two families.",
+  "province": "Lanao del Sur",
+  "municipality": "Picong",
+  "barangay": "Biasong",
+  "deaths": 0,
+  "injured": 3,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {"outlet": "Daily Tribune", "url": "https://tribune.net.ph/story/22d9621a-26b2-4d5c-b812-154948c12efd/element/688c6df4-b9f8-4418-9f6e-8fb9417e0664", "title": "Three soldiers wounded in armed encounter linked to family feud in Lanao del Sur", "date": "2026-11-08"},
+   {"outlet": "Philstar", "url": "https://www.philstar.com/nation/2026/11/09/2568798/3-soldiers-wounded-lanao-del-sur-rido", "title": "3 soldiers wounded in Lanao del Sur ‘rido’", "date": "2026-11-09"},
+   {"outlet": "Inquirer.net", "url": "https://newsinfo.inquirer.net/2337995/clans-in-lanao-del-sur-rido-to-face-frustrated-murder-raps", "title": "Clans in Lanao del Sur rido to face frustrated murder raps", "date": "2026-11-08"},
+   {"outlet": "Inquirer.net", "url": "https://newsinfo.inquirer.net/2337894/3-soldiers-hurt-in-lanao-del-sur-clan-war", "title": "3 soldiers hurt in Lanao del Sur clan war", "date": "2026-11-08"}
+  ]
+ },
+ {
+  "date": "2026-11-08",
+  "type": "shooting",
+  "title": "Region's most wanted man and an associate killed resisting arrest in Kapinpilan, Ampatuan",
+  "summary": "Police and soldiers of the Army's 90th Infantry Battalion went to Sitio Bliss, Barangay Kapinpilan, Ampatuan, Maguindanao del Sur, at about 5:15 a.m. on Sunday, 8 November 2026, to serve arrest warrants on Amar Sansawi Usman (Philstar gives his name as Anwar), listed by police as the region's most wanted person and a member of the Dawlah Islamiyah-Hassan Group. Police said Usman and an associate known only as Syok opened fire instead of surrendering; both were wounded in the exchange and declared dead at the Bangsamoro Regional Hospital and Medical Center. A .45 pistol and an Uzi-type submachine gun were recovered.",
+  "province": "Maguindanao del Sur",
+  "municipality": "Ampatuan",
+  "barangay": "Kapinpilan",
+  "deaths": 2,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {"outlet": "Daily Tribune", "url": "https://tribune.net.ph/2026/11/08/barmms-no-1-mwp-neutralized-in-maguindanao-del-sur-clash", "title": "BARMM's No. 1 MWP neutralized in Maguindanao Del Sur clash", "date": "2026-11-08"},
+   {"outlet": "Daily Tribune", "url": "https://tribune.net.ph/2026/11/08/two-dawlah-islamiyah-hassan-group-members-killed-in-maguindanao-del-sur-operation", "title": "Two Dawlah Islamiyah-Hassan Group members killed in Maguindanao del Sur operation", "date": "2026-11-08"},
+   {"outlet": "Philstar", "url": "https://www.philstar.com/nation/2026/11/08/2568771/wanted-dawlah-islamiya-remnant-cohort-killed-maguindanao-clash", "title": "Wanted Dawlah Islamiya remnant, cohort killed in Maguindanao clash", "date": "2026-11-08"},
+   {"outlet": "Manila Bulletin", "url": "https://mb.com.ph/2026/11/08/two-di-hassan-group-militants-killed-in-maguindanao-del-sur-operation-military", "title": "Two DI-Hassan Group militants killed in Maguindanao del Sur operation – military", "date": "2026-11-08"},
+   {"outlet": "Inquirer.net", "url": "https://newsinfo.inquirer.net/2337906/most-wanted-dawlah-islamiyah-member-slain-in-maguindanao-del-sur", "title": "Most wanted Dawlah Islamiyah member slain in Maguindanao del Sur", "date": "2026-11-08"}
+  ]
+ }
+]

@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-07T16:57:19.138Z",
+ "generatedAt": "2026-11-08T22:53:35.959Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -144,6 +144,7 @@
   }
  ],
  "weeks": [
+  "2026-11-09",
   "2026-11-02",
   "2026-10-26",
   "2026-10-19",
