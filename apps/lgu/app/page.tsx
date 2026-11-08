@@ -7,10 +7,10 @@ import {
 	areaHref,
 	type LguProvince,
 } from '@betterbarmm/lgu-data'
+import Link from 'next/link'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { ntaShares } from '@betterbarmm/lgu-data/nta'
 import { RegionMap } from './_components/region-map'
-import { DataTable } from './_components/data-table'
 
 /** District seats in the Bangsamoro Parliament, joined on by slug. */
 function seatsFor(province: LguProvince): number | null {
@@ -21,44 +21,65 @@ function capitalOf(province: LguProvince): string | null {
 	return province.municipalities.find((unit) => unit.isCapital)?.name ?? null
 }
 
+/** One line or three on each area for its card; the dataset's notes are longer and uneven. */
+const ABOUT: Record<string, string> = {
+	basilan: 'An island province off Zamboanga. The City of Isabela sits on the island but belongs to Region IX, not BARMM.',
+	'lanao-del-sur': 'The province around Lake Lanao, the largest lake in Mindanao, with Marawi on its northern shore. The most populous area of the region.',
+	'maguindanao-del-norte': 'The northern half of the former Maguindanao, divided by plebiscite in 2022. PSGC still lists the old province, so the split is applied town by town.',
+	'maguindanao-del-sur': 'The southern half of the former Maguindanao, divided by plebiscite in 2022, along the upper Pulangi valley.',
+	'tawi-tawi': 'The southernmost province of the Philippines, a chain of islands reaching toward Sabah, with Bongao its capital.',
+	'cotabato-city': 'An independent component city that answers to no province, and the seat of the Bangsamoro Government. It voted to join BARMM in 2019.',
+	'special-geographic-area': '63 barangays of North Cotabato that voted to join BARMM in 2019, made into 8 municipalities and ratified by plebiscite in April 2024.',
+}
+
 /**
- * The seven areas BARMM contains, as a table: the same measures for each,
- * read down a column to compare.
+ * The seven areas BARMM contains, one card each: its name, a line about it, and
+ * the same five figures, so they still read across as a comparison.
  */
 function Areas() {
 	return (
-		<div className='mt-12'>
-			<DataTable
-				caption='The seven areas of the Bangsamoro region'
-				nameLabel='Area'
-				columns={[
-					{ key: 'units', label: 'Cities and municipalities', format: 'int', hideBelow: 'sm' },
-					{ key: 'barangays', label: 'Barangays', format: 'int' },
-					{ key: 'captains', label: 'Captains on record', format: 'int', hideBelow: 'lg' },
-					{ key: 'population', label: 'Population', format: 'int' },
-					{ key: 'seats', label: 'Parliament seats', format: 'int', hideBelow: 'md' },
-				]}
-				rows={lguProvinces.map((province) => {
-					const capital = capitalOf(province)
-					return {
-						key: province.slug,
-						href: areaHref(province),
-						name: province.name,
-						meta: [province.kind, capital && capital !== province.name ? `capital ${capital}` : null]
-							.filter(Boolean)
-							.join(' · '),
-						detail: province.note ?? undefined,
-						values: {
-							units: province.municipalities.length,
-							barangays: province.barangayCount,
-							captains: rosterCoverage(province.municipalities).listed,
-							population: province.population,
-							seats: seatsFor(province),
-						},
-					}
-				})}
-			/>
-		</div>
+		<ul className='mt-14 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-14 lg:gap-y-16'>
+			{lguProvinces.map((province) => {
+				const capital = capitalOf(province)
+				const figures = [
+					['Cities and municipalities', province.municipalities.length],
+					['Barangays', province.barangayCount],
+					['Population', province.population],
+					['Parliament seats', seatsFor(province)],
+				] as const
+				return (
+					<li key={province.slug} className='border-t border-[var(--rule)]'>
+						<Link href={areaHref(province)} className='group flex h-full flex-col px-5 pb-6 pt-7 transition-colors duration-300 hover:bg-[var(--paper-2)]'>
+							<p className='bb-label'>
+								{[province.kind, capital && capital !== province.name ? `capital ${capital}` : null].filter(Boolean).join(' · ')}
+							</p>
+							<h3 className='mt-3 flex items-baseline justify-between gap-4 text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]'>
+								{province.name}
+								<span aria-hidden='true' className='text-[1rem] text-[var(--ink-3)] transition duration-500 group-hover:translate-x-1 group-hover:text-[var(--accent)]'>
+									&rarr;
+								</span>
+							</h3>
+							<p className='mt-2 line-clamp-3 min-h-[4.5rem] text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
+								{ABOUT[province.slug] ?? province.note}
+							</p>
+							<dl className='mt-auto grid grid-cols-2 gap-x-6 gap-y-4 pt-6'>
+								{figures.map(([label, value]) => (
+									<div key={label} className='border-t border-[var(--rule-soft)] pt-3'>
+										<dt className='text-[0.71875rem] text-[var(--ink-3)]'>{label}</dt>
+										<dd className='num mt-1 text-[1.125rem] font-bold text-[var(--ink)]'>
+											{value != null ? value.toLocaleString('en-PH') : '—'}
+										</dd>
+									</div>
+								))}
+							</dl>
+							<p className='mt-4 text-[0.75rem] text-[var(--ink-mute)]'>
+								{rosterCoverage(province.municipalities).listed.toLocaleString('en-PH')} of {province.barangayCount.toLocaleString('en-PH')} barangay captains on record
+							</p>
+						</Link>
+					</li>
+				)
+			})}
+		</ul>
 	)
 }
 
@@ -168,7 +189,7 @@ export default function LguHomePage() {
 
 				{/* The numbers here and PSA's do not agree, and saying which is which
 				    is the whole job — so it is shown, not folded away (user decision). */}
-				<aside className='mt-10 bg-[var(--paper-2)] px-6 py-6 sm:px-8'>
+				<aside className='mt-20 bg-[var(--paper-2)] px-6 py-6 sm:px-8'>
 					<h3 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Why this total is smaller than PSA&rsquo;s</h3>
 					<div className='mt-3 space-y-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 						<p>{lguCounts.sulnote}</p>
