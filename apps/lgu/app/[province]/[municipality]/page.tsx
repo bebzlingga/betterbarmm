@@ -30,6 +30,10 @@ import { NtaChart } from '../../_components/nta-chart'
 import { LgsfReceived } from '../../_components/lgsf-received'
 import { LocatorMap } from '../../_components/locator-map'
 import { Official } from '../../_components/official'
+import { barangayCounts, barangayPopulation } from '@betterbarmm/lgu-data/barangay-population'
+import { ntaShares } from '@betterbarmm/lgu-data/nta'
+import { houseSeat, houseSeats } from '@betterbarmm/lgu-data/house-seats'
+import { AmongTowns, BarangayCards, CensusChart, ChartCard, FigureCards, NtaSplit, RankedBars, type FigureCard } from '../../_components/lgu-figures'
 export function generateStaticParams() {
 	return allUnitParams()
 }
@@ -78,6 +82,8 @@ function opening(unit: LguUnit, province: LguProvince): string {
 	return `${unit.name} is ${where}.`
 }
 
+const peso = (value: number) => (value >= 1e9 ? `₱${(value / 1e9).toFixed(2)}B` : `₱${(value / 1e6).toFixed(1)}M`)
+
 const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 
 export default async function UnitPage({
@@ -112,20 +118,41 @@ export default async function UnitPage({
 		province.municipalities.length > 1 && unit.population != null && province.population
 			? Math.round((unit.population / province.population) * 1000) / 10
 			: null
-	const stats = [
+	// The year's allotment: the latest DBM year that has begun, else the earliest.
+	const ntaYear = ntaShares.years.filter((year) => year <= new Date().getFullYear()).at(-1) ?? ntaShares.years[0]
+	const nta = ntaShares.units[key]
+	const ntaOwn = nta?.lgu?.[String(ntaYear)] ?? null
+	const ntaBarangays = nta?.barangays?.[String(ntaYear)] ?? null
+
+	const counts = barangayCounts(key)
+	const barangayRows = unit.barangays.map((barangay) => {
+		const id = barangay.psgc ?? barangay.name
+		const captain = rosters[id]?.punongBarangay?.name
+		return { key: id, name: barangay.name, captain: captain ? personName(captain) : null, population: counts[id] ?? null }
+	})
+	const largest = barangayRows
+		.filter((row) => row.population != null)
+		.sort((a, b) => b.population! - a.population!)
+	const towns = province.municipalities.flatMap((town) => (town.population != null ? [{ name: town.name, value: town.population }] : []))
+
+	const cards: FigureCard[] = [
 		{
 			label: 'Population (2024)',
 			value: formatNumber(unit.population),
-			detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census` : null,
+			detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census` : 'PSA census',
+			tone: 'accent',
 		},
-		{ label: 'Barangays', value: String(unit.barangays.length), detail: null },
+		...(unit.areaKm2 != null ? [{ label: 'Land area', value: formatArea(unit.areaKm2), detail: 'PSA' }] : []),
+		...(density(unit) != null ? [{ label: 'Density', value: `${formatNumber(density(unit))} / km²`, detail: 'People per km²' }] : []),
 		{
-			label: 'Land area',
-			value: formatArea(unit.areaKm2),
-			detail: density(unit) != null ? `${formatNumber(density(unit))} people per km²` : null,
+			label: 'Barangays',
+			value: String(unit.barangays.length),
+			detail: largest[0] ? `Largest: ${largest[0].name}` : null,
+			tone: 'accent',
 		},
-		...(share != null
-			? [{ label: `Share of ${province.name}’s people`, value: `${share}%`, detail: null }]
+		...(share != null ? [{ label: `Share of ${province.name}`, value: `${share}%`, detail: 'Of its people' }] : []),
+		...(ntaOwn != null
+			? [{ label: `FY ${ntaYear} tax allotment`, value: peso(ntaOwn), detail: 'DBM allocation', tone: 'brass' as const }]
 			: []),
 		{ label: 'PSGC code', value: unit.psgc ?? 'Not yet assigned', detail: null },
 	]
@@ -146,6 +173,7 @@ export default async function UnitPage({
 	})
 	const council = (current?.council ?? []).flatMap((contest) => winners(contest))
 	const councilName = unit.isCity ? 'Sangguniang Panlungsod' : 'Sangguniang Bayan'
+	const seat = houseSeat(key)
 
 	return (
 		<>
@@ -182,6 +210,67 @@ export default async function UnitPage({
 				)}
 			</LguMasthead>
 
+			{/* ---- The town in figures: the headline numbers, then a card per question ---- */}
+			<section className='bb-container pt-16 sm:pt-20'>
+				<h2 id='figures' className={H2}>
+					{unit.name} in figures
+				</h2>
+				<p className='mt-2 max-w-[46rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
+					PSA&rsquo;s census counts and land areas, and the tax allotment DBM sets for it. Each figure says where it is from.
+				</p>
+				<div className='mt-8'>
+					<FigureCards cards={cards} />
+				</div>
+				<div className='mt-14 grid gap-x-16 gap-y-14 lg:grid-cols-2'>
+					{unit.population != null && unit.population2020 != null ? (
+						<ChartCard title='Population, 2020 and 2024' note={`PSA census counts for ${unit.name}.`} source='PSA, 2020 and 2024 Census of Population'>
+							<CensusChart before={unit.population2020} now={unit.population} />
+						</ChartCard>
+					) : null}
+					{largest.length > 1 ? (
+						<ChartCard
+							title='Most populous barangays'
+							note={`The ${Math.min(10, largest.length)} largest of ${unit.barangays.length}, by the 2024 census.`}
+							source={
+								<>
+									<a href={barangayPopulation.source.href} target='_blank' rel='noreferrer' className='rule-link'>
+										{barangayPopulation.source.label}
+									</a>
+								</>
+							}
+						>
+							<RankedBars rows={largest.slice(0, 10).map((row) => ({ label: row.name, value: row.population! }))} />
+						</ChartCard>
+					) : null}
+					{towns.length > 1 && unit.population != null ? (
+						<ChartCard
+							title={`Among ${province.name}’s towns`}
+							note={`Every ${province.kind === 'Special area' ? 'town of the area' : 'city and town of the province'}, largest to smallest by the 2024 census. Hover a column for its name.`}
+							source='PSA, 2024 Census of Population'
+						>
+							<AmongTowns towns={towns} current={unit.name} />
+						</ChartCard>
+					) : null}
+					{ntaOwn != null ? (
+						<ChartCard
+							title={`National Tax Allotment, FY ${ntaYear}`}
+							note={`What DBM allocates to ${unit.name} and, separately, to its barangays.`}
+							source={
+								<a href={ntaShares.source[0]?.href} target='_blank' rel='noreferrer' className='rule-link'>
+									{ntaShares.source[0]?.label}
+								</a>
+							}
+						>
+							<NtaSplit own={ntaOwn} barangays={ntaBarangays} isCity={unit.isCity} />
+						</ChartCard>
+					) : null}
+					{/* The allotment year by year, in a card of its own. */}
+					<div className='border-t border-[var(--rule)] pt-6 empty:hidden lg:col-span-2 [&_figure]:mt-0 [&_h2]:font-[family-name:inherit] [&_h2]:text-[1.0625rem] [&_h2]:font-semibold [&_h2]:tracking-normal'>
+						<NtaChart unitKey={key} />
+					</div>
+				</div>
+			</section>
+
 			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-28'>
 				{/* ---- The town, read down: its barangays, then its own records ---- */}
 				<div className='min-w-0'>
@@ -190,32 +279,21 @@ export default async function UnitPage({
 							<span className='num text-[var(--ink-3)]'>{unit.barangays.length}</span>{' '}
 							{unit.barangays.length === 1 ? 'Barangay' : 'Barangays'}
 						</h2>
-						<ul className='mt-6 columns-2 gap-x-8 sm:columns-3 lg:columns-4'>
-							{[...unit.barangays]
-								.sort((x, y) => x.name.localeCompare(y.name))
-								.map((barangay) => {
-									const captain = rosters[barangay.psgc ?? barangay.name]?.punongBarangay?.name
-									return (
-										<li key={barangay.psgc ?? barangay.name} className='break-inside-avoid border-b border-[var(--rule-soft)] py-2.5'>
-											<span className='block text-[0.9375rem] font-semibold text-[var(--ink)]'>{barangay.name}</span>
-											{captain ? (
-												<span className='mt-0.5 block text-[0.75rem] text-[var(--ink-3)]'>{personName(captain)}</span>
-											) : null}
-										</li>
-									)
-								})}
-						</ul>
+						<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-3)]'>Ranked by people at the 2024 census, each with its punong barangay.</p>
+						<div className='mt-6'>
+							<BarangayCards rows={barangayRows} total={unit.population} whole={unit.isCity ? 'city' : 'town'} />
+						</div>
 						<p className='mt-4 text-[0.78125rem] leading-6 text-[var(--ink-mute)] transition-colors hover:text-[var(--ink-3)]'>
 							Punong barangay from DILG&rsquo;s directory, read {barangayOfficials.capturedAt}, where it lists one.{' '}
 							<a href={barangayOfficials.source.href} target='_blank' rel='noreferrer' className='rule-link'>
 								Source
 							</a>
+							. Population from{' '}
+							<a href={barangayPopulation.source.href} target='_blank' rel='noreferrer' className='rule-link'>
+								{barangayPopulation.source.label}
+							</a>
+							.
 						</p>
-					</section>
-
-					{/* The town's own NTA, year by year. */}
-					<section className='mt-20'>
-						<NtaChart unitKey={key} />
 					</section>
 
 					<section className='mt-20'>
@@ -253,22 +331,11 @@ export default async function UnitPage({
 					</section>
 				</div>
 
-				{/* ---- Beside it: the town in figures, then who governs it ---- */}
+				{/* ---- Beside it: where it is, then who governs it ---- */}
 				<aside className='order-first lg:order-none'>
 					<div className='mb-8'>
 						<LocatorMap areaSlug={province.slug} unit={{ psgc: unit.psgc ?? null, name: unit.name }} label={unit.name} />
 					</div>
-					<dl>
-						{stats.map((stat) => (
-							<div key={stat.label} className='border-b border-[var(--rule)] py-5 first:pt-0'>
-								<dt className='bb-label'>{stat.label}</dt>
-								<dd className='num mt-2 text-[1.6rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-									{stat.value}
-								</dd>
-								{stat.detail ? <dd className='mt-1.5 text-[0.78125rem] leading-5 text-[var(--ink-3)]'>{stat.detail}</dd> : null}
-							</div>
-						))}
-					</dl>
 
 					{officials.length > 0 || council.length > 0 ? (
 						<div className='mt-10'>
@@ -287,6 +354,25 @@ export default async function UnitPage({
 											<Official key={member.name} name={personName(member.name)} party={member.party ?? null} role='Council member' />
 										))}
 									</ul>
+								</div>
+							) : null}
+							{seat ? (
+								<div className='mt-8'>
+									<h3 className='text-[0.875rem] font-semibold text-[var(--ink)]'>House of Representatives</h3>
+									<ul className='mt-1'>
+										<Official
+											name={personName(seat.name)}
+											party={seat.party}
+											role={`Representative, ${seat.province}${seat.district === 'Lone district' ? '’s lone district' : `, ${seat.district}`}`}
+										/>
+									</ul>
+									<p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
+										Elected May 2025, from{' '}
+										<a href={houseSeats.source.href} target='_blank' rel='noreferrer' className='rule-link'>
+											{houseSeats.source.label}
+										</a>
+										.
+									</p>
 								</div>
 							) : null}
 							<Link href='/officials' className='rule-link mt-6 inline-block text-[0.8125rem]'>

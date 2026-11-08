@@ -8,6 +8,8 @@
 		"./history": "./src/officials-history.ts",
 		"./barangay-officials": "./src/barangay-officials.ts",
 		"./barangay-shapes": "./src/barangay-shapes.ts",
+		"./barangay-population": "./src/barangay-population.ts",
+		"./house-seats": "./src/house-seats.ts",
 		"./nta": "./src/nta.ts",
 		"./fiscal": "./src/fiscal.ts",
 		"./fdpp": "./src/fdpp.ts",

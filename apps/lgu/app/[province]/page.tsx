@@ -29,6 +29,7 @@ import { NtaChart } from '../_components/nta-chart'
 import { LgsfReceived } from '../_components/lgsf-received'
 import { LocatorMap } from '../_components/locator-map'
 import { Official } from '../_components/official'
+import { houseSeats, provinceSeats } from '@betterbarmm/lgu-data/house-seats'
 
 export function generateStaticParams() {
 	// Cotabato City's area page is a list of one thing named after the thing.
@@ -277,6 +278,29 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 										Seats per district from{' '}
 										<a href={boardSeatsSource.href} target='_blank' rel='noreferrer' className='rule-link'>
 											{boardSeatsSource.label}
+										</a>
+										.
+									</p>
+								</div>
+							) : null}
+
+							{provinceSeats(province.slug).length > 0 ? (
+								<div className='mt-8'>
+									<h3 className='text-[0.875rem] font-semibold text-[var(--ink)]'>House of Representatives</h3>
+									<ul className='mt-1'>
+										{provinceSeats(province.slug).map((seat) => (
+											<Official
+												key={seat.district}
+												name={personName(seat.name)}
+												party={seat.party}
+												role={`Representative, ${seat.district === 'Lone district' ? 'lone district' : seat.district}`}
+											/>
+										))}
+									</ul>
+									<p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
+										Elected May 2025, from{' '}
+										<a href={houseSeats.source.href} target='_blank' rel='noreferrer' className='rule-link'>
+											{houseSeats.source.label}
 										</a>
 										.
 									</p>
