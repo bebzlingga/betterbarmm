@@ -911,6 +911,106 @@
      "note": "Endorsed by the Parliament on 2024-05-13."
     }
    ]
+  },
+  {
+   "slug": "office-of-the-senior-minister",
+   "history": [
+    {
+     "name": "Abunawas L. Maslamama",
+     "title": "Senior Minister",
+     "from": "2023-04",
+     "to": "2026-05",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmm-senior-minister-maslamama-takes-oath-pledges-to-work-for-progressive-bangsamoro/",
+     "note": "Took the oath in April 2023; Said Salendab was sworn in as Senior Minister on 2026-05-18.",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-installs-new-barmm-execs-pushes-accountability-agenda/"
+    },
+    {
+     "name": "Said Z. Salendab",
+     "title": "Senior Minister",
+     "from": "2026-05",
+     "to": "2026-11",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-installs-new-barmm-execs-pushes-accountability-agenda/",
+     "note": "Sworn in on 2026-05-18; previously Executive Director of the Bangsamoro Pilgrimage Authority.",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/"
+    },
+    {
+     "name": "Abunawas L. Maslamama",
+     "title": "Senior Minister",
+     "from": "2026-11",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/",
+     "note": "Named to Chief Minister Macacua’s cabinet, the first of the elected Bangsamoro Government, on 2026-11-05."
+    }
+   ]
+  },
+  {
+   "slug": "office-of-the-cabinet-secretary",
+   "history": [
+    {
+     "name": "Mohd Asnin K. Pendatun",
+     "title": "Cabinet Secretary",
+     "from": null,
+     "to": "2026-11",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/humanitarian-organizations-renew-ties-with-barmm/",
+     "first_seen": "2019-04",
+     "last_seen": "2026-10",
+     "note": "Dates of tenure not found; BIO names him Cabinet Secretary from April 2019 to October 2026.",
+     "to_source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/"
+    },
+    {
+     "name": "Abdullah M. Cusain",
+     "title": "Cabinet Secretary",
+     "from": "2026-11",
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/",
+     "note": "Named to Chief Minister Macacua’s cabinet on 2026-11-05."
+    }
+   ]
+  },
+  {
+   "slug": "office-of-the-chief-of-staff",
+   "history": [
+    {
+     "name": "Jamel B. Macacua",
+     "title": "Chief of Staff",
+     "from": null,
+     "to": null,
+     "source": "https://bangsamoro.gov.ph/news/latest-news/mfbm-holds-annual-revenue-forum-recognizes-top-tax-and-non-tax-collectors/",
+     "first_seen": "2025-04",
+     "last_seen": "2026-08",
+     "note": "Dates of tenure not found."
+    }
+   ]
+  },
+  {
+   "slug": "office-of-the-deputy-chief-minister-island-provinces",
+   "history": [
+    {
+     "name": "Hatimil E. Hassan",
+     "title": "Deputy Chief Minister for the Island Provinces",
+     "from": null,
+     "to": "2026-10",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/ocm-sets-up-satellite-office-in-basilan-bringing-services-closer-to-residents/",
+     "first_seen": "2026-04",
+     "last_seen": "2026-06",
+     "note": "Dates of tenure not found. The interim government he served in ended when the elected Parliament convened on 2026-10-30."
+    }
+   ]
+  },
+  {
+   "slug": "office-of-the-deputy-chief-minister-mainland-provinces",
+   "history": [
+    {
+     "name": "Aleem Ali B. Solaiman",
+     "title": "Deputy Chief Minister for the Mainland Provinces",
+     "from": null,
+     "to": "2026-10",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/maranao-mps-highlight-plight-of-marawi-idps-on-siege-anniversary-vow-continued-efforts-despite-covid/",
+     "first_seen": "2020-05",
+     "last_seen": "2026-06",
+     "note": "Dates of tenure not found; BIO names him Deputy Chief Minister from May 2020 to May 2026, and the Key Officials page still did in June 2026. The interim government ended when the elected Parliament convened on 2026-10-30."
+    }
+   ]
   }
  ]
 }

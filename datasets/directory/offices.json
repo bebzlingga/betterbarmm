@@ -1,7 +1,7 @@
 {
  "name": "Directory of the Bangsamoro Government",
  "generatedAt": "2026-10-23",
- "note": "Heads, numbers and emails as the offices' own pages and documents published them, each with its source and date. An email is listed only where an official page shows it as text, including addresses a site hides from automated readers but shows every visitor; where an office's site is down, its official Facebook page's intro is the source. The elected Parliament takes office on 30 October 2026, and the Chief Minister and the cabinet may change with it. Confirm a number before you rely on it.",
+ "note": "Heads, numbers and emails as the offices' own pages and documents published them, each with its source and date. An email is listed only where an official page shows it as text, including addresses a site hides from automated readers but shows every visitor; where an office's site is down, its official Facebook page's intro is the source. The elected Parliament took office on 30 October 2026 and the Chief Minister named his cabinet on 5 November; offices whose new heads are not yet named say so. Confirm a number before you rely on it.",
  "hotlines": [
   {
    "name": "CM-ACTS, Office of the Chief Minister: text feedback and complaints",
@@ -52,6 +52,160 @@
     }
    ],
    "checked": null
+  },
+  {
+   "slug": "office-of-the-senior-minister",
+   "name": "Office of the Senior Minister",
+   "acronym": null,
+   "head": {
+    "name": "MP Abunawas L. Maslamama",
+    "title": "Senior Minister",
+    "as_of": "2026-11-05",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/"
+   },
+   "address": "Office of the Chief Minister Building, BARMM Compound, Gov. Gutierrez Avenue, Cotabato City 9600",
+   "phones": [],
+   "emails": [
+    "osm@bangsamoro.gov.ph"
+   ],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BIO, CM Macacua names new Bangsamoro Cabinet, 2026-11-05",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, read 2026-11-10 (still lists the interim government’s heads)",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    }
+   ],
+   "checked": null,
+   "kind": "office",
+   "parent": "office-of-the-chief-minister",
+   "budget_of": "office-of-the-chief-minister"
+  },
+  {
+   "slug": "office-of-the-cabinet-secretary",
+   "name": "Office of the Cabinet Secretary",
+   "acronym": null,
+   "head": {
+    "name": "Abdullah M. Cusain",
+    "title": "Cabinet Secretary",
+    "as_of": "2026-11-05",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/"
+   },
+   "address": "Office of the Chief Minister Building, BARMM Compound, Gov. Gutierrez Avenue, Cotabato City 9600",
+   "phones": [],
+   "emails": [
+    "cabsec@bangsamoro.gov.ph"
+   ],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BIO, CM Macacua names new Bangsamoro Cabinet, 2026-11-05",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/cm-macacua-names-new-bangsamoro-cabinet-vows-accountable-governance/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, read 2026-11-10 (still lists the interim government’s heads)",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    }
+   ],
+   "checked": null,
+   "kind": "office",
+   "parent": "office-of-the-chief-minister",
+   "budget_of": "office-of-the-chief-minister"
+  },
+  {
+   "slug": "office-of-the-chief-of-staff",
+   "name": "Office of the Chief of Staff",
+   "acronym": null,
+   "head": {
+    "name": "Jamel B. Macacua",
+    "title": "Chief of Staff",
+    "as_of": "2026-08-28",
+    "source": "https://bangsamoro.gov.ph/news/latest-news/ocm-advances-gender-responsive-planning-public-service/"
+   },
+   "address": "Office of the Chief Minister Building, BARMM Compound, Gov. Gutierrez Avenue, Cotabato City 9600",
+   "phones": [],
+   "emails": [
+    "ocos@bangsamoro.gov.ph"
+   ],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "BIO, OCM advances gender-responsive planning (OCM Chief of Staff Jamel Macacua), 2026-08-28",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/ocm-advances-gender-responsive-planning-public-service/"
+    },
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, read 2026-11-10 (still lists the interim government’s heads)",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    }
+   ],
+   "checked": null,
+   "kind": "office",
+   "parent": "office-of-the-chief-minister",
+   "budget_of": "office-of-the-chief-minister"
+  },
+  {
+   "slug": "office-of-the-deputy-chief-minister-island-provinces",
+   "name": "Office of the Deputy Chief Minister for the Island Provinces",
+   "acronym": null,
+   "head": null,
+   "address": "Office of the Chief Minister Building, BARMM Compound, Gov. Gutierrez Avenue, Cotabato City 9600",
+   "phones": [],
+   "emails": [],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, read 2026-11-10 (still lists the interim government’s heads)",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO, OCM sets up satellite office in Basilan (Deputy Chief Minister for Island Provinces Hatimil E. Hassan), 2026-04-23",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/ocm-sets-up-satellite-office-in-basilan-bringing-services-closer-to-residents/"
+    },
+    {
+     "label": "Manila Times, MNLF loses representation in new BARMM government (Hassan among the MNLF candidates who lost), 2026-11-07",
+     "url": "https://www.manilatimes.net/2026/11/07/regions/mnlf-loses-representation-in-new-barmm-government/2464287"
+    }
+   ],
+   "checked": null,
+   "kind": "office",
+   "parent": "office-of-the-chief-minister",
+   "budget_of": "office-of-the-chief-minister",
+   "head_note": "The new government has not yet named a Deputy Chief Minister for the Island Provinces. The last on record was Hatimil E. Hassan, as of June 2026; he did not win a seat in the September 2026 parliamentary election."
+  },
+  {
+   "slug": "office-of-the-deputy-chief-minister-mainland-provinces",
+   "name": "Office of the Deputy Chief Minister for the Mainland Provinces",
+   "acronym": null,
+   "head": null,
+   "address": "Office of the Chief Minister Building, BARMM Compound, Gov. Gutierrez Avenue, Cotabato City 9600",
+   "phones": [],
+   "emails": [
+    "ranawdeputycm@gmail.com"
+   ],
+   "website": null,
+   "facebook": null,
+   "sources": [
+    {
+     "label": "bangsamoro.gov.ph, BARMM Officials (Key Officials) page, read 2026-11-10 (still lists the interim government’s heads)",
+     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+    },
+    {
+     "label": "BIO, New 150 permanent housing units for displaced Marawi families (Deputy Chief Minister for Mainland BARMM Aleem Ali B. Solaiman), 2026-05-25",
+     "url": "https://bangsamoro.gov.ph/news/latest-news/new-150-permanent-housing-units-to-rise-for-displaced-marawi-families/"
+    }
+   ],
+   "checked": null,
+   "kind": "office",
+   "parent": "office-of-the-chief-minister",
+   "budget_of": "office-of-the-chief-minister",
+   "head_note": "The new government has not yet named a Deputy Chief Minister for the Mainland Provinces. The last on record was Aleem Ali B. Solaiman, as of June 2026."
   },
   {
    "slug": "ministry-of-basic-higher-and-technical-education",
