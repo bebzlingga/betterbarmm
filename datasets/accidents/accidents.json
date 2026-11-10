@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-09",
+ "generatedAt": "2026-11-10",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,32 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-11-09",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Islamic teacher shot dead at the public market in Mataya, Buldon",
+   "summary": "Alim Saad Casad Abdulhamid, 38, an Islamic teacher from Buldon, Maguindanao del Norte, was shot by an unidentified gunman at the public market in Barangay Mataya at about 5:10 a.m. on Monday, 9 November 2026, and died at the scene. The Buldon police had not identified the gunman or a motive.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Buldon",
+   "barangay": "Mataya",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.5144,
+   "lon": 124.3711,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Brigada News",
+     "url": "https://www.brigadanews.ph/271686-2/",
+     "title": "Islamic teacher shot dead at Maguindanao del Norte market",
+     "date": "2026-11-09"
+    }
+   ],
+   "id": "2026-11-09-buldon-shooting"
+  },
   {
    "date": "2026-11-08",
    "type": "shooting",
@@ -56,6 +82,12 @@
      "url": "https://newsinfo.inquirer.net/2337906/most-wanted-dawlah-islamiyah-member-slain-in-maguindanao-del-sur",
      "title": "Most wanted Dawlah Islamiyah member slain in Maguindanao del Sur",
      "date": "2026-11-08"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://www.gmanetwork.com/news/topstories/regions/1008973/afp-2-alleged-dawlah-islamiyah-members-killed-in-maguindanao-del-sur-operation/story/",
+     "title": "AFP: 2 alleged Dawlah Islamiyah members killed in Maguindanao del Sur operation",
+     "date": "2026-11-10"
     }
    ],
    "id": "2026-11-08-ampatuan-shooting"
@@ -65,7 +97,7 @@
    "type": "shooting",
    "kind": "Shooting",
    "title": "Two militiamen and a civilian killed in a motorcycle ambush in Manungkaling, Mamasapano",
-   "summary": "CAFGU Active Auxiliary members Samsamin Kabagani and Danny Minandang and their civilian companion Esmael Manabilang were riding a motorcycle in Barangay Manungkaling, Mamasapano, Maguindanao del Sur, on the morning of Saturday, 7 November 2026, when unidentified armed men opened fire on them. All three died at the scene. A resident, Mohamidin Usman, was hit by a stray bullet and taken to hospital. The gunmen escaped on separate motorcycles; police had not determined a motive.",
+   "summary": "CAFGU Active Auxiliary members Samsamin Labay Kabagani and Danny Minandang and their civilian companion Esmael Manabilang, a wood gatherer, were riding two motorcycles from Barangay Barurao, Sultan sa Barongis, towards the Army's Bud Wire detachment when gunmen waiting by the national highway opened fire on them at Sitio Philippine Trade, Barangay Manungkaling, Mamasapano, Maguindanao del Sur, at about 10:40 a.m. on Saturday, 7 November 2026. Kabagani and Minandang died at the scene; Manabilang was declared dead on arrival at the Bangsamoro Regional Hospital and Medical Center. Mohamidin Udal Usman, 18, was hit in the crossfire and was in stable condition. The gunmen fled on motorcycles; the Army said the attack may have been tied to the militiamen's work, and police named a person of interest from an armed group.",
    "province": "Maguindanao del Sur",
    "municipality": "Mamasapano",
    "barangay": "Manungkaling",
@@ -84,6 +116,18 @@
      "url": "https://www.philstar.com/nation/2026/11/08/2568589/mindanao-ambush-leaves-3-dead",
      "title": "Mindanao ambush leaves 3 dead",
      "date": "2026-11-08"
+    },
+    {
+     "outlet": "The Manila Times",
+     "url": "https://www.manilatimes.net/2026/11/10/regions/3-killed-1-hurt-in-mamasapano-highway-ambush/2465939",
+     "title": "3 killed, 1 hurt in Mamasapano highway ambush",
+     "date": "2026-11-10"
+    },
+    {
+     "outlet": "GMA Network",
+     "url": "https://www.gmanetwork.com/news/topstories/regions/1008983/3-including-2-cafgu-members-killed-1-wounded-in-maguindanao-del-sur-shooting/story/",
+     "title": "3 including 2 CAFGU members killed, 1 wounded in Maguindanao del Sur shooting",
+     "date": "2026-11-10"
     }
    ],
    "id": "2026-11-07-mamasapano-shooting"
@@ -128,9 +172,41 @@
      "url": "https://newsinfo.inquirer.net/2337894/3-soldiers-hurt-in-lanao-del-sur-clan-war",
      "title": "3 soldiers hurt in Lanao del Sur clan war",
      "date": "2026-11-08"
+    },
+    {
+     "outlet": "NewsLine Philippines",
+     "url": "https://newsline.ph/8-hour-firefight-in-lanao-del-sur-wounds-3-soldiers-strands-motorists/",
+     "title": "8-hour firefight in Lanao del Sur wounds 3 soldiers, strands motorists",
+     "date": "2026-11-10"
     }
    ],
    "id": "2026-11-07-picong-shooting"
+  },
+  {
+   "date": "2026-11-07",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Murder suspect on the region's most-wanted list killed serving a warrant in Pantaon, Calanogas",
+   "summary": "Police tracker teams went to Barangay Pantaon, Calanogas, Lanao del Sur, on the weekend of 7–8 November 2026 (the report does not give the day) to serve murder and robbery warrants from the Malabang Regional Trial Court on the brothers Dimao and Camalo Hadji Racman Cabugatan. Police said Dimao, seventh on the regional and provincial most-wanted lists, opened fire with an M14 rifle and hit a police ballistic shield; he was declared dead on arrival at the DSBMM Hospital. Camalo escaped through the back of the house, firing at the officers and hitting their lead vehicle. No police were reported hurt.",
+   "province": "Lanao del Sur",
+   "municipality": "Calanogas",
+   "barangay": "Pantaon",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.6772,
+   "lon": 124.0966,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Daily Tribune",
+     "url": "https://tribune.net.ph/2026/11/10/most-wanted-suspect-killed-in-lanao-del-sur-police-operation",
+     "title": "Most wanted suspect killed in Lanao del Sur police operation",
+     "date": "2026-11-10"
+    }
+   ],
+   "id": "2026-11-07-calanogas-shooting"
   },
   {
    "date": "2026-11-06",

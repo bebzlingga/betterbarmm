@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-09T13:16:50.798Z",
+ "generatedAt": "2026-11-10T13:44:57.716Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -141,6 +141,12 @@
    "via": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVWVva09RNndDVkVyekszSnlBanZRdW1rdFpHaFZyd0RJQjd5SXJSYUpqVlRRaDNQaFMyMU1hajdjcm1YbWdhOWM4aUlYblIzMlJUUEx6OEt4d2liUGQxS3M2X2ttLTM3aGFQNWxpUEFhc1pwVWhwSFFOVS1uNWRmX1ZkQXBNZHhVNGktX0xfdkdaT1pwUGltTjN5NFlJZFdHTFUyNjVQb2VaYlZpbWsyYw?oc=5",
    "title": "Ex-MP Ahaja beats own relative for Tawi-Tawi 4th District parliament seat",
    "reason": "published 2026-09-15"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/elections/tina-matolo-de-asis-results-third-district-tawi-tawi-barmm-2026/0/",
+   "via": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSFJYOFktaURSQnI3XzlZMkxlakJEV0Nqbm5NV2V1dnczVVduN3NQbTZSVTNqNFI1dUltMzZiSm40Mjh5OXhtNjhhNkNLTklOTVI0aDlVUWJrZHVNTTdTVUNaRS1kdzU0clc0T0p3ZDFXSXNKTVktVmxzY3dOZV9uM2JnQmphbElONjNGQUFwMnRheUhKX0ZnYkJ3NnlHOE5QbldESEc0U3ZKRks4MFNVTUZB?oc=5",
+   "title": "Tawi-Tawi governor’s sister-in-law tops 3rd District race for BARMM Parliament",
+   "reason": "published 2026-09-14"
   }
  ],
  "weeks": [

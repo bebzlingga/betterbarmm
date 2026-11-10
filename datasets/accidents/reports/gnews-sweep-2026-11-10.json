@@ -1,0 +1,44 @@
+[
+ {
+  "date": "2026-11-07",
+  "type": "shooting",
+  "title": "Murder suspect on the region's most-wanted list killed serving a warrant in Pantaon, Calanogas",
+  "summary": "Police tracker teams went to Barangay Pantaon, Calanogas, Lanao del Sur, on the weekend of 7–8 November 2026 (the report does not give the day) to serve murder and robbery warrants from the Malabang Regional Trial Court on the brothers Dimao and Camalo Hadji Racman Cabugatan. Police said Dimao, seventh on the regional and provincial most-wanted lists, opened fire with an M14 rifle and hit a police ballistic shield; he was declared dead on arrival at the DSBMM Hospital. Camalo escaped through the back of the house, firing at the officers and hitting their lead vehicle. No police were reported hurt.",
+  "province": "Lanao del Sur",
+  "municipality": "Calanogas",
+  "barangay": "Pantaon",
+  "deaths": 1,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Daily Tribune",
+    "url": "https://tribune.net.ph/2026/11/10/most-wanted-suspect-killed-in-lanao-del-sur-police-operation",
+    "title": "Most wanted suspect killed in Lanao del Sur police operation",
+    "date": "2026-11-10"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-09",
+  "type": "shooting",
+  "title": "Islamic teacher shot dead at the public market in Mataya, Buldon",
+  "summary": "Alim Saad Casad Abdulhamid, 38, an Islamic teacher from Buldon, Maguindanao del Norte, was shot by an unidentified gunman at the public market in Barangay Mataya at about 5:10 a.m. on Monday, 9 November 2026, and died at the scene. The Buldon police had not identified the gunman or a motive.",
+  "province": "Maguindanao del Norte",
+  "municipality": "Buldon",
+  "barangay": "Mataya",
+  "deaths": 1,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Brigada News",
+    "url": "https://www.brigadanews.ph/271686-2/",
+    "title": "Islamic teacher shot dead at Maguindanao del Norte market",
+    "date": "2026-11-09"
+   }
+  ]
+ }
+]

@@ -598,6 +598,12 @@
   "Tampilong|Marawi|Lanao del Sur": null,
   "Gadongan|Marawi|Lanao del Sur": null,
   "Balanaken|Datu Piang|Maguindanao del Sur": null,
-  "Biasong|Picong|Lanao del Sur": null
+  "Biasong|Picong|Lanao del Sur": null,
+  "Pantaon|Calanogas|Lanao del Sur": {
+   "lat": 7.6772,
+   "lon": 124.0966,
+   "matched": "Pantaon, Calanogas, Lanao del Sur, Bangsamoro, Philippines"
+  },
+  "Mataya|Buldon|Maguindanao del Norte": null
  }
 }
