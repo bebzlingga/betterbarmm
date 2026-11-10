@@ -17,6 +17,9 @@ const GROUPS = [
 	{ kinds: ['attached'], title: 'Attached offices, authorities and commissions' },
 ] as const
 
+/** The offices within an office, listed on its card rather than as cards of their own. */
+const units = (slug: string) => directoryOffices.filter((o) => o.kind === 'unit' && o.parent === slug)
+
 const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
 const eyebrow = 'font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em]'
 
@@ -112,6 +115,19 @@ export function DirectoryIndex() {
 																<span className='font-semibold tabular-nums'>{o.phones[0]}</span>
 																{o.phones.length > 1 ? <span className='text-[var(--ink-mute)]'>+{o.phones.length - 1}</span> : null}
 															</a>
+														</p>
+													) : null}
+													{units(o.slug).length ? (
+														<p className='mt-2 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>
+															Its offices:{' '}
+															{units(o.slug).map((u, i) => (
+																<span key={u.slug}>
+																	{i ? ' · ' : null}
+																	<Link scroll={false} href={`/directory/office/${u.slug}`} className='text-[var(--ink-2)] hover:text-[var(--accent)]'>
+																		{u.name.replace(/^Office of the /, '')}
+																	</Link>
+																</span>
+															))}
 														</p>
 													) : null}
 													{o.emails[0] ? (

@@ -293,7 +293,7 @@ export function brain() {
 	)
 
 	/* Each regional office across the Directory, the Budget and Procurement. */
-	const KIND_GROUP = { office: 'The Chief Minister’s office', ministry: 'Ministries', attached: 'Attached offices' } as const
+	const KIND_GROUP = { office: 'The Chief Minister’s office', ministry: 'Ministries', attached: 'Attached offices', unit: 'The Chief Minister’s office' } as const
 	const officeThreads: Thread[] = directoryOffices.map((o) => {
 		const field = fieldOffices(o.slug)
 		const past = officeHistory(o.slug).length

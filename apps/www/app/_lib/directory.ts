@@ -42,8 +42,9 @@ export type DirectoryOffice = {
 	sources: { label: string; url: string }[]
 	/** When an editor last confirmed the entry against its sources. */
 	checked?: string | null
-	/** For an office the programs-and-services list doesn't carry: its kind and the office it sits under. */
-	kind?: 'office' | 'ministry' | 'attached'
+	/** For an office the programs-and-services list doesn't carry: its kind and the office it sits under.
+	    A unit is an office within its parent (the Senior Minister's within the OCM), listed under it, not beside it. */
+	kind?: 'office' | 'ministry' | 'attached' | 'unit'
 	parent?: string | null
 	/** The office whose budget funds this one, where it has no budget line of its own. */
 	budget_of?: string

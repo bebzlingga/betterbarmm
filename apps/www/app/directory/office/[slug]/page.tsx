@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 	})
 }
 
-const KIND = { office: 'Office of the Chief Minister', ministry: 'Ministry', attached: 'Attached office' } as const
+const KIND = { office: 'Office of the Chief Minister', ministry: 'Ministry', attached: 'Attached office', unit: 'Office of the Chief Minister' } as const
 
 export default async function OfficeDirectoryPage({ params }: { params: Promise<{ slug: string }> }) {
 	const o = directoryOffice((await params).slug)
@@ -34,7 +34,8 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 	const history = officeHistory(o.slug)
 	const field = fieldOffices(o.slug)
 	const parent = o.parent ? directoryOffice(o.parent) : undefined
-	const attached = directoryOffices.filter((x) => x.parent === o.slug)
+	const within = directoryOffices.filter((x) => x.parent === o.slug && x.kind === 'unit')
+	const attached = directoryOffices.filter((x) => x.parent === o.slug && x.kind !== 'unit')
 	const service = officeBySlug(o.slug)
 	const portrait = headPhoto(o.slug)
 	const building = officePhoto(o.slug, o.address)
@@ -56,7 +57,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 			<section className='bb-container py-14 lg:py-20'>
 				{parent ? (
 					<p className='mb-8 text-[0.84375rem] text-[var(--ink-3)]'>
-						Attached to the{' '}
+						{o.kind === 'unit' ? 'Part of the' : 'Attached to the'}{' '}
 						<Link scroll={false} href={`/directory/office/${parent.slug}`} className={linkClass}>
 							{parent.name}
 						</Link>
@@ -241,6 +242,24 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 						, a tenure says who ran the office when its money was spent.
 					</p>
 				</section>
+
+				{within.length ? (
+					<section aria-labelledby='within' className='mt-10'>
+						<h2 id='within' className='text-[1.25rem] font-extrabold'>
+							Its offices
+						</h2>
+						<ul className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[0.875rem]'>
+							{within.map((a) => (
+								<li key={a.slug} className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5 py-2.5'>
+									<Link scroll={false} href={`/directory/office/${a.slug}`} className={`${linkClass} font-semibold`}>
+										{a.name}
+									</Link>
+									<span className='text-[var(--ink-3)]'>{a.head ? `${a.head.title.replace(/\s*\(.*\)$/, '')} ${a.head.name}` : 'Head not yet named'}</span>
+								</li>
+							))}
+						</ul>
+					</section>
+				) : null}
 
 				{attached.length ? (
 					<section aria-labelledby='attached' className='mt-10'>

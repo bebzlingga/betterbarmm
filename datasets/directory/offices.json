@@ -81,7 +81,7 @@
     }
    ],
    "checked": null,
-   "kind": "office",
+   "kind": "unit",
    "parent": "office-of-the-chief-minister",
    "budget_of": "office-of-the-chief-minister"
   },
@@ -113,7 +113,7 @@
     }
    ],
    "checked": null,
-   "kind": "office",
+   "kind": "unit",
    "parent": "office-of-the-chief-minister",
    "budget_of": "office-of-the-chief-minister"
   },
@@ -145,7 +145,7 @@
     }
    ],
    "checked": null,
-   "kind": "office",
+   "kind": "unit",
    "parent": "office-of-the-chief-minister",
    "budget_of": "office-of-the-chief-minister"
   },
@@ -174,7 +174,7 @@
     }
    ],
    "checked": null,
-   "kind": "office",
+   "kind": "unit",
    "parent": "office-of-the-chief-minister",
    "budget_of": "office-of-the-chief-minister",
    "head_note": "The new government has not yet named a Deputy Chief Minister for the Island Provinces. The last on record was Hatimil E. Hassan, as of June 2026; he did not win a seat in the September 2026 parliamentary election."
@@ -202,7 +202,7 @@
     }
    ],
    "checked": null,
-   "kind": "office",
+   "kind": "unit",
    "parent": "office-of-the-chief-minister",
    "budget_of": "office-of-the-chief-minister",
    "head_note": "The new government has not yet named a Deputy Chief Minister for the Mainland Provinces. The last on record was Aleem Ali B. Solaiman, as of June 2026."
