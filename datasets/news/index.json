@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-10T13:44:57.716Z",
+ "generatedAt": "2026-11-11T08:07:52.456Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -146,6 +146,18 @@
    "url": "https://www.rappler.com/philippines/elections/tina-matolo-de-asis-results-third-district-tawi-tawi-barmm-2026/0/",
    "via": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSFJYOFktaURSQnI3XzlZMkxlakJEV0Nqbm5NV2V1dnczVVduN3NQbTZSVTNqNFI1dUltMzZiSm40Mjh5OXhtNjhhNkNLTklOTVI0aDlVUWJrZHVNTTdTVUNaRS1kdzU0clc0T0p3ZDFXSXNKTVktVmxzY3dOZV9uM2JnQmphbElONjNGQUFwMnRheUhKX0ZnYkJ3NnlHOE5QbldESEc0U3ZKRks4MFNVTUZB?oc=5",
    "title": "Tawi-Tawi governor’s sister-in-law tops 3rd District race for BARMM Parliament",
+   "reason": "published 2026-09-14"
+  },
+  {
+   "url": "https://www.volcanodiscovery.com/earthquakes/quake-info/23627122/mag2quake-Nov-10-2026-Philippines-001-km-N-24-W-of-City-of-Marawi-Lanao-Del-Sur.html",
+   "via": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVmFCWXllZXA3ZGFSeUN6a2NtdFg4RVVTZVBQQXNFZmt6WXNLbzBvbENWaWpnM2Z5S3o3UGJMZFY4Z2ZzdTdvLVpYTzBYU0pZSDN2dkRiNDZrQXdqV0x0ak5KYjVETFJMNXBJTWp5b1hIQkwwZ2hfN1dGZ2dYZUdnYlJrVHI4WjF0NEFJRFM5cURYSmFzTTUtcmxpa2h6bTNZSWJlRVlDMzRJc2hjb2VVX043TTRNRTF4dnF4WjVQSFdSQW1yN1RVSzRGTmRuMDdaUEhCS09GMk0yVVB3S1c5RVZTWQ?oc=5",
+   "title": "Weak mag. 2.1 earthquake - 0.9 km northwest of Marawi City, Philippines, on Wednesday, Nov 11, 2026, at 02:02 am (Manila time)",
+   "reason": "not a news report"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/elections/hadjimar-matba-results-second-district-tawi-tawi-barmm-2026/0/",
+   "via": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNenU2amRJSHZxckZ4ZFBQWHNKLVBfUXUxaVI1ek8xdHRDQjNlRU1lcEZ1V2VtMGtjNXpQTmc4b3pHdE1pOFVQbFh2WDNZaWFhMzZWekN1LUYwUExlNU05UWRSUW1Yb29sLTIwQU5pWURjTHk3bFUtbmI5X3UtYnRmUEhjU3BIaG8zMS04Q3ZIMGNQbFBvQk5DTW85WDFId3BOSi1QeDd0QjdQNHJB?oc=5",
+   "title": "Ex-Languyan vice mayor wins Tawi-Tawi 2nd District seat in BARMM Parliament",
    "reason": "published 2026-09-14"
   }
  ],

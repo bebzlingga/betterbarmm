@@ -604,6 +604,11 @@
    "lon": 124.0966,
    "matched": "Pantaon, Calanogas, Lanao del Sur, Bangsamoro, Philippines"
   },
-  "Mataya|Buldon|Maguindanao del Norte": null
+  "Mataya|Buldon|Maguindanao del Norte": null,
+  "Poblacion|Datu Paglas|Maguindanao del Sur": {
+   "lat": 6.7446,
+   "lon": 124.8704,
+   "matched": "Poblacion, Alip, Datu Paglas, Maguindanao del Sur, Bangsamoro, 9617, Philippines"
+  }
  }
 }

@@ -1,0 +1,29 @@
+[
+ {
+  "date": "2026-11-09",
+  "type": "shooting",
+  "title": "Two men on a motorcycle killed in a highway ambush in Poblacion, Datu Paglas",
+  "summary": "Ali Madsid Mling and Akmad Matabalao Pendililang were riding a motorcycle together on the highway at Sitio Olongapo, Barangay Poblacion, Datu Paglas, Maguindanao del Sur, on the afternoon of Monday, 9 November 2026, when gunmen waiting there opened fire. Both died at the scene of multiple gunshot wounds. The gunmen fled on motorcycles; the Maguindanao del Sur police had not named them or a motive.",
+  "province": "Maguindanao del Sur",
+  "municipality": "Datu Paglas",
+  "barangay": "Poblacion",
+  "deaths": 2,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": ["motorcycle"],
+  "sources": [
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/11/11/2569397/child-4-others-dead-3-central-mindanao-gun-attacks",
+    "title": "Child, 4 others dead in 3 Central Mindanao gun attacks",
+    "date": "2026-11-11"
+   },
+   {
+    "outlet": "Philstar",
+    "url": "https://www.philstar.com/nation/2026/11/11/2569266/mindanao-gun-attacks-kill-5",
+    "title": "Mindanao gun attacks kill 5",
+    "date": "2026-11-11"
+   }
+  ]
+ }
+]
