@@ -1,0 +1,44 @@
+[
+ {
+  "date": "2026-11-12",
+  "type": "shooting",
+  "title": "Dawlah Islamiyah member killed and 2 wounded in a clash with troops and police in Kuloy, Shariff Aguak",
+  "summary": "A member of the Dawlah Islamiyah-Hassan Group was killed and 2 others were wounded in a clash with soldiers and police serving a law-enforcement operation in Barangay Kuloy, Shariff Aguak, Maguindanao del Sur, on the morning of Thursday, 12 November 2026, according to Lt. Col. Loqui Marco of the Army's 90th Infantry Battalion. It came 4 days after 2 members of the same group were killed in nearby Ampatuan. The report available does not name the dead man or say who the wounded were.",
+  "province": "Maguindanao del Sur",
+  "municipality": "Shariff Aguak",
+  "barangay": "Kuloy",
+  "deaths": 1,
+  "injured": 2,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "Inquirer",
+    "url": "https://newsinfo.inquirer.net/2340283/dawlah-islamiyah-member-killed-in-maguindanao-del-sur-clash",
+    "title": "Dawlah Islamiyah member killed in Maguindanao del Sur clash",
+    "date": "2026-11-12"
+   }
+  ]
+ },
+ {
+  "date": "2026-08-23",
+  "type": "shooting",
+  "title": "Murder suspect killed and his wife wounded as police serve a warrant in Kuloy, Shariff Aguak",
+  "summary": "Police serving a 2014 murder warrant on a man known as \"London\" in Barangay Kuloy, Shariff Aguak, Maguindanao del Sur, on Sunday, 23 August 2026, said he fired on them after they identified themselves and asked him to surrender. They returned fire; he was declared dead on arrival at hospital. His wife was wounded in the exchange and was being treated. A companion known as \"Cobra\" was arrested with a hand grenade. The PNP chief ordered a review of the operation, in particular the wife's injury.",
+  "province": "Maguindanao del Sur",
+  "municipality": "Shariff Aguak",
+  "barangay": "Kuloy",
+  "deaths": 1,
+  "injured": 1,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "GMA Regional TV",
+    "url": "https://www.gmanetwork.com/regionaltv/news/115279/murder-suspect-killed-wife-hurt-in-maguindanao-del-sur-operation/story/",
+    "title": "Murder suspect killed, wife hurt in Maguindanao del Sur operation",
+    "date": "2026-08-24"
+   }
+  ]
+ }
+]

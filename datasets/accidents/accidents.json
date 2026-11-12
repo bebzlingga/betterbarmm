@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-11",
+ "generatedAt": "2026-11-12",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,32 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-11-12",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Dawlah Islamiyah member killed and 2 wounded in a clash with troops and police in Kuloy, Shariff Aguak",
+   "summary": "A member of the Dawlah Islamiyah-Hassan Group was killed and 2 others were wounded in a clash with soldiers and police serving a law-enforcement operation in Barangay Kuloy, Shariff Aguak, Maguindanao del Sur, on the morning of Thursday, 12 November 2026, according to Lt. Col. Loqui Marco of the Army's 90th Infantry Battalion. It came 4 days after 2 members of the same group were killed in nearby Ampatuan. The report available does not name the dead man or say who the wounded were.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Shariff Aguak",
+   "barangay": "Kuloy",
+   "deaths": 1,
+   "injured": 2,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.861,
+   "lon": 124.4445,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2340283/dawlah-islamiyah-member-killed-in-maguindanao-del-sur-clash",
+     "title": "Dawlah Islamiyah member killed in Maguindanao del Sur clash",
+     "date": "2026-11-12"
+    }
+   ],
+   "id": "2026-11-12-shariff-aguak-shooting"
+  },
   {
    "date": "2026-11-09",
    "type": "shooting",
@@ -1737,6 +1763,32 @@
     }
    ],
    "id": "2026-08-25-sultan-kudarat-shooting"
+  },
+  {
+   "date": "2026-08-23",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Murder suspect killed and his wife wounded as police serve a warrant in Kuloy, Shariff Aguak",
+   "summary": "Police serving a 2014 murder warrant on a man known as \"London\" in Barangay Kuloy, Shariff Aguak, Maguindanao del Sur, on Sunday, 23 August 2026, said he fired on them after they identified themselves and asked him to surrender. They returned fire; he was declared dead on arrival at hospital. His wife was wounded in the exchange and was being treated. A companion known as \"Cobra\" was arrested with a hand grenade. The PNP chief ordered a review of the operation, in particular the wife's injury.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Shariff Aguak",
+   "barangay": "Kuloy",
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.861,
+   "lon": 124.4445,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "GMA Regional TV",
+     "url": "https://www.gmanetwork.com/regionaltv/news/115279/murder-suspect-killed-wife-hurt-in-maguindanao-del-sur-operation/story/",
+     "title": "Murder suspect killed, wife hurt in Maguindanao del Sur operation",
+     "date": "2026-08-24"
+    }
+   ],
+   "id": "2026-08-23-shariff-aguak-shooting"
   },
   {
    "date": "2026-08-22",
