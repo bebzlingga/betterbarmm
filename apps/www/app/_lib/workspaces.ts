@@ -10,6 +10,7 @@ import type { Workspace } from '../_components/workspace-index'
 export const TOPICS = [
 	{ key: 'government', title: 'Laws & elections', lead: 'Who governs, and what they decided' },
 	{ key: 'money', title: 'Public money', lead: 'What is spent, bought and promised' },
+	{ key: 'sectors', title: 'Sectors', lead: 'A whole field in one place' },
 	{ key: 'services', title: 'Services & safety', lead: 'What offices offer, and what is risky' },
 	{ key: 'places', title: 'Places & culture', lead: 'Where to go, what to read, what is made here' },
 	{ key: 'data', title: 'Data', lead: 'The records underneath, to download' },
@@ -88,6 +89,15 @@ export const workspaces: Workspace[] = [
 		href: '/services',
 		blurb: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes.',
 		measure: 'Citizen’s Charters',
+		state: 'live',
+	},
+	{
+		label: 'Education',
+		topic: 'sectors',
+		href: 'https://education.betterbarmm.com',
+		blurb:
+			'Every school in the region, public and private, on a map and town by town, with its learners each year; how learners do against the plan; the scholarships on offer; and what the budget gives education.',
+		measure: 'DepEd SY 2025–26 · MBHTE',
 		state: 'live',
 	},
 	{

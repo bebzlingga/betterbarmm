@@ -1,4 +1,4 @@
-import { BooksIcon, BrainIcon, BuildingsIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DatabaseIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, TargetIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
+import { BooksIcon, BrainIcon, BuildingsIcon, GraduationCapIcon, MapPinAreaIcon, CheckSquareOffsetIcon, CoinsIcon, DatabaseIcon, DiamondsFourIcon, FolderOpenIcon, HouseIcon, ScrollIcon, ShoppingCartIcon, SirenIcon, TargetIcon, UmbrellaIcon } from '@phosphor-icons/react/ssr'
 import { GlobalSearch } from './global-search'
 import { SwitchCloser } from './switch-closer'
 
@@ -35,18 +35,22 @@ export const ESTATE_LINKS: UtilityLink[] = [
 	{ href: 'https://www.facebook.com/betterbarmm', label: 'Follow us on Facebook' },
 ]
 
-type SwitchItem = { key: string; href: string; label: string; icon: typeof HouseIcon }
+type SwitchItem = { key: string; href: string; label: string; icon: typeof HouseIcon; group?: string; blurb?: string }
 
-/** The live workspaces, in the order the front page lists them. */
+/** The groups the workspaces fall in, as the front page groups them. */
+const GROUPS = ['Start here', 'Laws & elections', 'Public money', 'Sectors', 'Places & culture'] as const
+
+/** The live workspaces, each in its group and with a line on what it holds. */
 const WORKSPACES = [
-	{ key: 'home', href: 'https://betterbarmm.com', label: 'Discover BARMM', icon: HouseIcon },
-	{ key: 'election', href: 'https://election.betterbarmm.com', label: 'Election', icon: CheckSquareOffsetIcon },
-	{ key: 'legislation', href: 'https://legislation.betterbarmm.com', label: 'Legislation', icon: ScrollIcon },
-	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget', icon: CoinsIcon },
-	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government', icon: BuildingsIcon },
-	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement', icon: ShoppingCartIcon },
-	{ key: 'library', href: 'https://library.betterbarmm.com', label: 'Library', icon: BooksIcon },
-	{ key: 'travel', href: 'https://travel.betterbarmm.com', label: 'Travel & Places', icon: MapPinAreaIcon },
+	{ key: 'home', href: 'https://betterbarmm.com', label: 'Discover BARMM', icon: HouseIcon, group: 'Start here', blurb: 'The region, its government and every record' },
+	{ key: 'legislation', href: 'https://legislation.betterbarmm.com', label: 'Legislation', icon: ScrollIcon, group: 'Laws & elections', blurb: 'Bills, laws and the members who filed them' },
+	{ key: 'election', href: 'https://election.betterbarmm.com', label: 'Election', icon: CheckSquareOffsetIcon, group: 'Laws & elections', blurb: 'Parties, candidates and districts' },
+	{ key: 'lgu', href: 'https://lgu.betterbarmm.com', label: 'Local Government', icon: BuildingsIcon, group: 'Laws & elections', blurb: 'Every province, town and barangay' },
+	{ key: 'budget', href: 'https://budget.betterbarmm.com', label: 'Budget', icon: CoinsIcon, group: 'Public money', blurb: 'What each year’s Act sets aside' },
+	{ key: 'procurement', href: 'https://procurement.betterbarmm.com', label: 'Procurement', icon: ShoppingCartIcon, group: 'Public money', blurb: 'Bids, contracts and who won them' },
+	{ key: 'education', href: 'https://education.betterbarmm.com', label: 'Education', icon: GraduationCapIcon, group: 'Sectors', blurb: 'Every school, its learners and scholarships' },
+	{ key: 'library', href: 'https://library.betterbarmm.com', label: 'Library', icon: BooksIcon, group: 'Places & culture', blurb: 'Books on the Bangsamoro and where to find them' },
+	{ key: 'travel', href: 'https://travel.betterbarmm.com', label: 'Travel & Places', icon: MapPinAreaIcon, group: 'Places & culture', blurb: 'Beaches, islands, mosques and heritage' },
 ] as const
 
 export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
@@ -89,6 +93,28 @@ function Switch({
 	current?: string
 	className?: string
 }) {
+	const grouped = items.some((item) => item.group)
+	const row = (item: SwitchItem) => {
+		const on = item.key === current
+		const Icon = item.icon
+		return (
+			<li key={item.key}>
+				<a
+					href={item.href}
+					aria-current={on ? 'page' : undefined}
+					className={`group flex items-start gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)] shadow-[inset_2px_0_0_var(--accent)]' : 'hover:bg-[var(--paper-2)]'}`}
+				>
+					<span className={`grid size-5 shrink-0 place-items-center transition ${on ? 'text-[var(--accent)]' : 'text-[var(--ink-3)] group-hover:text-[var(--accent)]'}`}>
+						<Icon size={16} weight={on ? 'fill' : 'regular'} aria-hidden='true' />
+					</span>
+					<span className='min-w-0'>
+						<span className={`block text-[0.84375rem] font-semibold leading-5 ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>{item.label}</span>
+						{item.blurb ? <span className='block text-[0.71875rem] leading-4 text-[var(--ink-3)]'>{item.blurb}</span> : null}
+					</span>
+				</a>
+			</li>
+		)
+	}
 	return (
 		<details name='utility-bar-switch' className={`utility-bar-switch relative ${className}`}>
 			<summary className='utility-bar-link cursor-pointer list-none'>
@@ -100,35 +126,30 @@ function Switch({
 					<path d='M1 1l4 4 4-4' fill='none' stroke='currentColor' strokeWidth='1.5' />
 				</svg>
 			</summary>
-			{/* Every entry a row, its icon beside its name. */}
-			<div className='absolute left-0 top-full z-50 mt-1 w-[16rem] max-w-[calc(100vw-2rem)] border border-[var(--rule)] bg-[var(--paper)] p-2 normal-case tracking-normal shadow-lg'>
-				<p className='px-2 pb-2 pt-1 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{heading}</p>
-				<ul className='grid'>
-					{items.map((item) => {
-						const on = item.key === current
-						const Icon = item.icon
-						return (
-							<li key={item.key}>
-								<a
-									href={item.href}
-									aria-current={on ? 'page' : undefined}
-									className={`group flex items-center gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)]' : 'hover:bg-[var(--paper-2)]'}`}
-								>
-									<span
-										className={`grid size-5 shrink-0 place-items-center transition ${
-											on ? 'text-[var(--accent)]' : 'text-[var(--ink-3)] group-hover:text-[var(--accent)]'
-										}`}
-									>
-										<Icon size={16} weight={on ? 'fill' : 'regular'} aria-hidden='true' />
-									</span>
-									<span className={`text-[0.84375rem] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
-										{item.label}
-									</span>
-								</a>
-							</li>
-						)
-					})}
-				</ul>
+			{/* Every entry a row, its icon beside its name; grouped under headings when the entries carry a group, two columns from a tablet up. */}
+			<div
+				className={`absolute left-0 top-full z-50 mt-1 max-h-[calc(100dvh-5rem)] max-w-[calc(100vw-2rem)] overflow-y-auto border border-[var(--rule)] bg-[var(--paper)] normal-case tracking-normal shadow-lg ${
+					grouped ? 'w-[38rem] p-4' : 'w-[16rem] p-2'
+				}`}
+			>
+				{grouped ? (
+					<div className='gap-x-6 sm:columns-2'>
+						{GROUPS.map((g) => {
+							const here = items.filter((item) => item.group === g)
+							return here.length ? (
+								<section key={g} className='mb-4 break-inside-avoid last:mb-0'>
+									<p className='border-b border-[var(--rule)] px-2 pb-2 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{g}</p>
+									<ul className='mt-1 grid'>{here.map((item) => row(item))}</ul>
+								</section>
+							) : null
+						})}
+					</div>
+				) : (
+					<>
+						<p className='px-2 pb-2 pt-1 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{heading}</p>
+						<ul className='grid'>{items.map((item) => row(item))}</ul>
+					</>
+				)}
 			</div>
 		</details>
 	)
