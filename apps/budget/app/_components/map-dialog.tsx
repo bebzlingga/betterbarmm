@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowUpRightIcon, MapTrifoldIcon, XIcon } from '@phosphor-icons/react'
-import { Skeleton } from '@betterbarmm/editorial'
+import { MapList, MapListGroup, MapListHead, MapListRow, Skeleton } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Focus } from './project-map-canvas'
@@ -157,46 +157,39 @@ export function MapDialog({
 				</div>
 
 				<div className='grid min-h-0 flex-1 lg:grid-cols-[24rem_minmax(0,1fr)]'>
-					<aside className='order-2 min-h-0 overflow-y-auto border-t border-[var(--rule)] p-5 lg:order-1 lg:border-r lg:border-t-0'>
-						<p className='text-[0.78125rem] leading-[1.7] text-[var(--ink-2)]'>
-							<strong className='text-[var(--ink)]'>{count.placed}</strong> of the {count.all} projects are on the map: {count.atBarangay} on the
-							barangay the Act names, {count.placed - count.atBarangay} on their town’s centre, paler, where only the town is named.
-							{count.sulu ? ` ${count.sulu} in Sulu, which has left the region, are not drawn.` : ''}
-							{count.unread ? ` ${count.unread} name no place the map can read.` : ''}
-						</p>
-						<div className='mt-4 flex items-end gap-4' aria-hidden='true'>
-							{legend.map((step) => (
-								<span key={step.label} className='flex flex-col items-center gap-1.5'>
-									<svg width={36} height={36} viewBox='0 0 36 36'>
-										<circle cx={18} cy={18} r={3 + step.r * 13} fill='var(--accent)' fillOpacity={0.68} />
-									</svg>
-									<span className='font-mono text-[0.625rem] text-[var(--ink-3)]'>{step.label}</span>
-								</span>
-							))}
+					<MapList className='order-2 border-t border-[var(--rule)] lg:order-1 lg:border-r lg:border-t-0' head={<MapListHead count={places.length} noun='places' />}>
+						<div className='border-b border-[var(--rule-soft)] px-5 py-4'>
+							<p className='text-[0.75rem] leading-[1.7] text-[var(--ink-2)]'>
+								<strong className='text-[var(--ink)]'>{count.placed}</strong> of the {count.all} projects are on the map: {count.atBarangay} on the
+								barangay the Act names, {count.placed - count.atBarangay} on their town’s centre, paler, where only the town is named.
+								{count.sulu ? ` ${count.sulu} in Sulu, which has left the region, are not drawn.` : ''}
+								{count.unread ? ` ${count.unread} name no place the map can read.` : ''}
+							</p>
+							<div className='mt-3 flex items-end gap-4' aria-hidden='true'>
+								{legend.map((step) => (
+									<span key={step.label} className='flex flex-col items-center gap-1.5'>
+										<svg width={36} height={36} viewBox='0 0 36 36'>
+											<circle cx={18} cy={18} r={3 + step.r * 13} fill='var(--accent)' fillOpacity={0.68} />
+										</svg>
+										<span className='font-mono text-[0.625rem] text-[var(--ink-3)]'>{step.label}</span>
+									</span>
+								))}
+							</div>
 						</div>
-
-						<p className='bb-label mt-6'>{places.length} places, the most money first</p>
-						<ul className='mt-2'>
+						<MapListGroup title='The most money first'>
 							{places.map((p) => (
-								<li key={p.key} className='border-b border-[var(--rule-soft)] last:border-b-0'>
-									<button
-										type='button'
-										onClick={() => goTo(p)}
-										aria-current={p.key === selected ? 'true' : undefined}
-										className='grid w-full cursor-pointer grid-cols-[minmax(0,1fr)_auto] items-start gap-x-4 py-2.5 text-left transition hover:text-[var(--accent)] aria-[current=true]:text-[var(--accent)]'
-									>
-										<span className='min-w-0'>
-											<span className='block text-[0.8125rem] font-medium leading-snug'>{where(p)}</span>
-											<span className='block text-[0.6875rem] text-[var(--ink-3)]'>
-												{p.projects.length} {p.projects.length === 1 ? 'project' : 'projects'}
-											</span>
-										</span>
-										<span className='money whitespace-nowrap text-[0.75rem] font-bold'>{p.totalLabel}</span>
-									</button>
-								</li>
+								<MapListRow
+									key={p.key}
+									current={p.key === selected}
+									onClick={() => goTo(p)}
+									marker={<span className='size-2.5 rounded-full bg-[var(--accent)]' style={{ opacity: p.at === 'barangay' ? 0.9 : 0.4 }} aria-hidden='true' />}
+									title={where(p)}
+									meta={`${p.projects.length} ${p.projects.length === 1 ? 'project' : 'projects'}`}
+									figure={<span className='money'>{p.totalLabel}</span>}
+								/>
 							))}
-						</ul>
-					</aside>
+						</MapListGroup>
+					</MapList>
 
 					<div className='relative order-1 h-[55dvh] min-h-0 lg:order-2 lg:h-auto'>
 						{open ? <Canvas places={places} selected={selected} focus={focus} onSelect={onSelect} /> : null}

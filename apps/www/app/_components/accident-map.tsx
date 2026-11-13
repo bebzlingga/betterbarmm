@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, WavesIcon, XIcon, type Icon } from '@phosphor-icons/react'
-import { SearchField, Select, Skeleton } from '@betterbarmm/editorial'
+import { MapList, MapListGroup, MapListHead, MapListNote, MapListRow, SearchField, Select, Skeleton } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ACCIDENT_TYPES, accidentDate, MAX_ZOOM, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
@@ -269,6 +269,17 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	)
 
 	const selected = useMemo(() => incidents.find((a) => a.id === selectedId) ?? null, [incidents, selectedId])
+	// The dialog's list, a month to a group, newest first as the filtered list already runs.
+	const months = useMemo(() => {
+		const out: { key: string; title: string; items: Accident[] }[] = []
+		for (const a of filtered) {
+			const key = a.date.slice(0, 7)
+			const last = out.at(-1)
+			if (last && last.key === key) last.items.push(a)
+			else out.push({ key, title: new Date(`${key}-01T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' }), items: [a] })
+		}
+		return out
+	}, [filtered])
 	const onSelect = useCallback((id: string | null) => setSelectedId(id), [])
 
 	const openMap = useCallback(() => {
@@ -484,34 +495,31 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				</div>
 
 				<div className='grid min-h-0 flex-1 lg:grid-cols-[26rem_minmax(0,1fr)]'>
-					{/* The list on the left; the chosen incident floats over the map's corner. */}
-					<aside className='order-2 min-h-0 overflow-y-auto border-t border-[var(--rule)] p-5 lg:order-1 lg:border-r lg:border-t-0'>
-						<ul className='[&>li:first-child>button]:pt-0'>
-							{filtered.map((a) => (
-								<li key={a.id} className='border-b border-[var(--rule-soft)] last:border-b-0'>
-									<button
-										type='button'
+					{/* The list on the left, a month to a group; the chosen incident floats over the map's corner. */}
+					<MapList className='order-2 border-t border-[var(--rule)] lg:order-1 lg:border-r lg:border-t-0' head={<MapListHead count={filtered.length} of={incidents.length} noun='incidents' />}>
+						{months.map((m) => (
+							<MapListGroup key={m.key} title={m.title} count={m.items.length}>
+								{m.items.map((a) => (
+									<MapListRow
+										key={a.id}
+										current={a.id === selectedId}
 										onClick={() => goTo(a)}
-										aria-current={a.id === selectedId ? 'true' : undefined}
-										className='grid w-full cursor-pointer grid-cols-[auto_minmax(0,1fr)_auto] items-start gap-x-3 py-2.5 text-left transition hover:text-[var(--accent)] aria-[current=true]:text-[var(--accent)]'
-									>
-										<KindIcon type={a.type} size={20} />
-										<span className='min-w-0'>
-											<span className='block text-[0.8125rem] font-medium leading-snug'>{a.title}</span>
-											<span className='num block text-[0.6875rem] text-[var(--ink-3)]'>
-												{accidentDate(a.date)} · {a.municipality ?? a.province}
-											</span>
-										</span>
-										{a.deaths ? (
-											<span className='num ml-4 whitespace-nowrap text-[0.75rem] font-extrabold text-[var(--ink)]'>
-												{figure(a.deaths)} <span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>dead</span>
-											</span>
-										) : null}
-									</button>
-								</li>
-							))}
-						</ul>
-					</aside>
+										marker={<KindIcon type={a.type} size={16} />}
+										title={a.title}
+										meta={`${accidentDate(a.date)} · ${a.municipality ?? a.province}`}
+										figure={
+											a.deaths ? (
+												<>
+													{figure(a.deaths)} <span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>dead</span>
+												</>
+											) : null
+										}
+									/>
+								))}
+							</MapListGroup>
+						))}
+						{filtered.length === 0 ? <MapListNote>Nothing here matches these filters.</MapListNote> : null}
+					</MapList>
 					<div className='relative order-1 h-[55dvh] min-h-0 lg:order-2 lg:h-auto'>
 						{open ? <Canvas features={features} show={show} selectedId={selectedId} onSelect={onSelect} focus={focus} /> : null}
 						{selected ? (
