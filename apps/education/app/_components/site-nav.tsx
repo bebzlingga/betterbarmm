@@ -9,16 +9,17 @@ import { useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 
 /* The workspace's doors. */
+import { NEEDS_LIVE } from '../_lib/needs'
+
 const pages = [
 	{ href: '/', label: 'Overview' },
 	{ href: '/schools', label: 'Schools' },
-	{ href: '/map', label: 'Map' },
-	{ href: '/needs', label: 'Needs' },
+	...(NEEDS_LIVE ? [{ href: '/needs', label: 'Needs' }] : []),
 	{ href: '/districts', label: 'Districts' },
-	{ href: '/services', label: 'Services' },
+	{ href: '/services', label: 'Scholarships' },
 	{ href: '/budget', label: 'Budget' },
 	{ href: '/sources', label: 'Sources' },
-] as const
+]
 
 export function SiteNav() {
 	const pathname = usePathname()
@@ -36,6 +37,7 @@ export function SiteNav() {
 			    reader actually needs mid-page is the bar under it. */}
 			<UtilityBar
 				base='https://betterbarmm.com'
+				current='education'
 				className='bb-strip bg-[var(--paper-2)]'
 				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={

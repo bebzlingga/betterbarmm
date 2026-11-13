@@ -5,6 +5,9 @@ import { AskDock } from '@betterbarmm/ai/dock'
 import { MotionProvider } from '@betterbarmm/editorial'
 import { Shell } from './_components/shell'
 import { themeInitScript } from './_components/theme-toggle'
+import { NEEDS_LIVE } from './_lib/needs'
+
+const DESCRIPTION = `Every public school in the region on a map and in a list, ${NEEDS_LIVE ? 'what schools say they need, ' : ''}and what the budget gives education, with the record behind each figure.`
 import './globals.css'
 
 // DM Sans reads the body copy, Outfit sets headings, buttons and labels.
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
 		template: '%s / BetterBARMM Education',
 	},
 	description:
-		'Every public school in the region on a map and in a list, what schools say they need, and what the budget gives education, with the record behind each figure.',
+		DESCRIPTION,
 	/* Absolute, because everything below it is relative. Without a
 	   `metadataBase` the generated card resolves to a path rather than a URL,
 	   and a platform scraping the page has nothing to fetch — which is why a
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
 		locale: 'en_PH',
 		title: 'BetterBARMM Education',
 		description:
-			'Every public school in the region on a map and in a list, what schools say they need, and what the budget gives education, with the record behind each figure.',
+			DESCRIPTION,
 	},
 
 	/* No canonical address here: anything the layout sets is inherited by
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'BetterBARMM Education',
 		description:
-			'Every public school in the region on a map and in a list, what schools say they need, and what the budget gives education, with the record behind each figure.',
+			DESCRIPTION,
 	},
 }
 

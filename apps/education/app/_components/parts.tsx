@@ -61,7 +61,7 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 							{value >= 1e9 ? `${(value / 1e9).toFixed(1)}B` : `${Math.round(value / 1e6)}M`}
 						</span>
 						<div
-							className='w-full max-w-14'
+							className='w-full max-w-36'
 							style={{ height: `calc(${(value / top) * 100}% - 1.5rem)`, minHeight: '2px', background: 'linear-gradient(to top, transparent, var(--accent))' }}
 							title={`${year}: ₱${Math.round(value).toLocaleString('en-PH')}`}
 						/>

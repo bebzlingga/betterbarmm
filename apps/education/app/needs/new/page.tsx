@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+import { NEEDS_LIVE } from '../../_lib/needs'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Masthead } from '../../_components/parts'
@@ -17,6 +19,7 @@ const fold = (s: string) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerC
 const option = (s: { name: string; townName: string }) => `${s.name} · ${s.townName}`
 
 export default async function PostNeedPage({ searchParams }: { searchParams: Promise<{ school?: string; q?: string }> }) {
+	if (!NEEDS_LIVE) notFound()
 	const { school: id, q } = await searchParams
 	const words = fold(q ?? '').split(/\s+/).filter(Boolean)
 	const matches = words.length ? schools.filter((s) => words.every((w) => fold(`${s.name} ${s.townName} ${s.id}`).includes(w))).slice(0, 40) : []
@@ -80,7 +83,7 @@ export default async function PostNeedPage({ searchParams }: { searchParams: Pro
 								</ul>
 							) : (
 								<p className='mt-6 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-									No school matches. The list is DepEd&rsquo;s from 2019: a newer school, a madrasah or a private school will not be on it.
+									No school matches. The list is DepEd&rsquo;s latest: a madrasah outside the public schools or a learning centre may not be on it.
 									Email{' '}
 									<a href='mailto:support@betterbarmm.com' className='rule-link'>
 										support@betterbarmm.com

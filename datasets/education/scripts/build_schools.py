@@ -1,4 +1,9 @@
-"""The region's public schools on DepEd's 2019 masterlist, placed in the directory's towns.
+"""The region's schools, placed in the directory's towns.
+
+Which schools there are, their names, districts and learners: DepEd's Project Bukas files for the
+latest school year (datasets/education/deped, built by deped_subset.py), every sector. The 2019
+masterlist below gives what DepEd's files do not: where each school stands, the year it was founded
+and its pupils in 2012 and 2015, matched by school ID or, for a renumbered school, by name in its town.
 
 Source: OSMaPaaralan, the OpenStreetMap Philippines community's cleaned copy of the
 Department of Education's school masterlist (school ID, name, level, district, the
@@ -211,6 +216,127 @@ def osm_extra(geo: dict, schools: list[dict], by_name: dict, centres: dict) -> l
     return out
 
 
+# ---- DepEd's Project Bukas files (datasets/education/deped, see its README) ----
+
+DEPED = ROOT / 'datasets/education/deped'
+# The school years the files cover, oldest first; the last is the list the directory follows.
+YEARS = ['2023-24', '2024-25', '2025-26']
+
+# DepEd's curricular classification, as a level a reader knows, and the map's kind.
+OFFERING = {
+    'Purely ES': ('Elementary', 'Elementary'),
+    'Purely JHS': ('Junior high', 'High school'),
+    'Purely SHS': ('Senior high', 'High school'),
+    'JHS with SHS': ('Junior and senior high', 'High school'),
+    'ES and JHS': ('Elementary and junior high', 'High school'),
+    'ES with SHS': ('Elementary and senior high', 'High school'),
+    'All Offering': ('Elementary to senior high', 'High school'),
+}
+
+# DepEd's short forms, spelt out when they end a name or stand before "Annex".
+SHORT = {'ES': 'Elementary School', 'PS': 'Primary School', 'CES': 'Central Elementary School', 'NHS': 'National High School', 'HS': 'High School', 'SHS': 'Senior High School'}
+
+
+def spell_out(name: str) -> str:
+    name = re.sub(r'\s+', ' ', name).strip()
+    return re.sub(r'\b(ES|PS|CES|NHS|HS|SHS)\b(?=\s*(?:$|[-–(,]|Annex|Extension))', lambda m: SHORT[m.group(1)], name)
+
+
+def learners(r: dict) -> int:
+    return sum(int(float(v or 0)) for k, v in r.items() if k.endswith(('_male', '_female')))
+
+
+def district_of(r: dict) -> str | None:
+    d = re.sub(r'\s+', ' ', r['school_district']).strip()
+    if not d or d.lower().startswith('(no district'):
+        return None
+    return d if re.search(r'(?i)\bdistrict\b', d) else f'{d} District'
+
+
+def division_of(r: dict) -> str:
+    v = re.sub(r'\s+', ' ', r['division']).strip()
+    return v if 'division' in v.lower() else f'{v} Schools Division'
+
+
+def deped_current(old: list[dict], osm: dict, by_name: dict, sga: dict, centres: dict) -> tuple[list[dict], list[dict], Counter]:
+    """DepEd's latest school year, every sector, each school with its learners in each year the files cover.
+
+    A school on the 2019 list keeps what that list knew of it (its pin, the year it was founded, its pupils in
+    2012 and 2015), matched by its ID or, where DepEd has renumbered it, by its name in the same town. A school
+    new since 2019 is placed in its town from DepEd's own address, and pinned as the 2019 schools were."""
+    by_year = {}
+    for y in YEARS:
+        with open(DEPED / f'enrollment_{y}.csv', newline='', encoding='utf-8') as f:
+            by_year[y] = {r['school_id']: r for r in csv.DictReader(f)}
+    latest = by_year[YEARS[-1]]
+    old_by_id = {s['id']: s for s in old}
+    old_by_name = {(s['town'], name_key(s['name'])): s for s in old}
+    aliases = {fold(k): v for k, v in ALIASES.items()}
+    want = {'lanao del sur': 'lanao-del-sur', 'basilan': 'basilan', 'tawi-tawi': 'tawi-tawi', 'city of cotabato': 'cotabato-city'}
+
+    def town_of(r: dict):
+        if 'special geographic' in r['division'].lower():
+            hit = sga.get(fold(r['barangay'])) or sga.get(fold(named_after(spell_out(r['school_name']))))
+            return hit[0] if hit else None
+        town = aliases.get(fold(r['municipality']), r['municipality'])
+        hits = by_name.get(fold(town), [])
+        province = r['province'].strip().lower()
+        if province.startswith('maguindanao'):
+            hits = [h for h in hits if h[0].startswith('maguindanao') or h[0] in ('cotabato-city', 'special-geographic-area')]
+        else:
+            hits = [h for h in hits if h[0] == want.get(province)]
+        return hits[0] if len(hits) == 1 else None
+
+    out, used, unplaced = [], set(), Counter()
+    for sid, r in latest.items():
+        name = spell_out(r['school_name'])
+        was = old_by_id.get(sid)
+        place = (was['area'], was['town'], was['townName']) if was else town_of(r)
+        if not place:
+            unplaced[f"{r['division']} / {r['municipality']}"] += 1
+            continue
+        area, town, town_name = place
+        was = was or old_by_name.get((town, name_key(name)))
+        if was:
+            used.add(was['id'])
+        level, kind = OFFERING.get(r['Modified Curricular Offering Classification'].strip(), ('Other', 'Other school'))
+        enrolment = {y: learners(by_year[y][sid]) for y in YEARS if sid in by_year[y]}
+        sc = {
+            'id': sid,
+            'name': name,
+            'level': level,
+            'type': kind,
+            'management': 'Private' if r['sector'].strip() == 'Private' else 'Public',
+            'sector': 'State or local college' if r['sector'].strip().startswith('SUC') else r['sector'].strip(),
+            'source': 'deped',
+            'area': area,
+            'town': town,
+            'townName': town_name,
+            'district': district_of(r),
+            'division': division_of(r),
+            'founded': was['founded'] if was else None,
+            'pupils': enrolment.get(YEARS[-1]) or None,
+            'enrolment': enrolment,
+            'pupils2012': was['pupils2012'] if was else None,
+            'pupils2015': was['pupils2015'] if was else None,
+        }
+        if was and was.get('placed') in ('masterlist', 'openstreetmap'):
+            sc.update(lat=was['lat'], lon=was['lon'], placed=was['placed'])
+            if was.get('osm'):
+                sc['osm'] = was['osm']
+        else:
+            hits = osm.get((fold(town_name), name_key(name)), [])
+            if len(hits) == 1 and name_key(name):
+                sc.update(lat=round(hits[0]['lat'], 6), lon=round(hits[0]['lon'], 6), placed='openstreetmap', osm=hits[0]['id'])
+            elif town in centres:
+                sc.update(lat=centres[town]['lat'], lon=centres[town]['lon'], placed='town')
+            else:
+                sc.update(lat=None, lon=None, placed=None)
+        out.append(sc)
+    gone = [s for s in old if s['id'] not in used]
+    return out, gone, unplaced
+
+
 def main() -> None:
     lgu = json.loads((ROOT / 'datasets/lgu/barmm-lgu.json').read_text())
     towns: dict[tuple[str, str], tuple[str, str, str]] = {}
@@ -305,6 +431,10 @@ def main() -> None:
                 sc['placed'] = None
         placed[sc['placed']] += 1
 
+    # ---- DepEd's current list decides which schools there are ----
+    schools, gone, dep_unplaced = deped_current(schools, osm, by_name, sga, centres)
+    placed = Counter(s['placed'] for s in schools)
+
     extra = osm_extra(geo, schools, by_name, centres)
     schools += extra
 
@@ -346,27 +476,40 @@ def main() -> None:
     for sc in schools:
         if sc['id'] in PHOTOS:
             sc['image'] = PHOTOS[sc['id']]
+        # One shape for every school: what DepEd's files give, empty for the rest.
+        for k, v in (('sector', None), ('division', None), ('pupils', None), ('enrolment', {})):
+            sc.setdefault(k, v)
 
     schools.sort(key=lambda s: (s['area'], s['townName'], s['name']))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
-        'name': 'Schools in the region’s towns: the public schools on DepEd’s 2019 masterlist, the private schools, madaris, colleges and universities on OpenStreetMap, and the colleges Wikipedia lists',
+        'name': 'Schools in the region’s towns: every school on DepEd’s list for school year 2025–26, public and private, with the madaris, colleges and universities OpenStreetMap and Wikipedia add',
         'additions': added['source'],
         'source': {
+            'title': 'Department of Education, Project Bukas: school-level enrolment, SY 2023–24 to 2025–26',
+            'url': 'https://www.deped.gov.ph/machine-ready-files/',
+            'publisher': 'Department of Education',
+            'retrieved': '2026-11-13',
+            'licence': 'DepEd’s Terms of Use and Fair Use Policy: credit DepEd; no edits beyond editorial ones; work built on it under the same terms; no suggestion that DepEd made or backs this site',
+        },
+        'pins': {
             'title': 'OSMaPaaralan: DepEd school masterlist, cleaned by OpenStreetMap Philippines (2019 edition)',
             'url': 'https://github.com/OSMPH/deped_schools_db',
             'via': 'https://data.humdata.org/dataset/schools-mapping-in-the-philippines-by-openstreetmap',
             'publisher': 'Department of Education; OpenStreetMap Philippines',
+            'gives': 'where each school stands, the year it was founded, and its pupils in 2012–13 and 2015–16',
         },
-        'placed': {'masterlist': 'the masterlist’s own coordinates', 'openstreetmap': 'the school of the same name in the same town on OpenStreetMap (ODbL)', 'wikidata': 'the coordinates Wikidata records for it', 'town': 'its town’s centre, not the school'},
-        'note': 'The public schools are as listed in 2019; community learning centers and schools opened since are not on it, and Sulu is left out. Cotabato City’s and the Special Geographic Area’s public schools, which the list files under Region XII, are kept with the city and with the SGA town their barangay is now in.',
-        'unplaced': dict(unplaced.most_common()),
+        'years': YEARS,
+        'placed': {'masterlist': 'the 2019 masterlist’s own coordinates', 'openstreetmap': 'the school of the same name in the same town on OpenStreetMap (ODbL)', 'wikidata': 'the coordinates Wikidata records for it', 'town': 'its town’s centre, not the school'},
+        'note': 'The schools, their names, districts and learners are DepEd’s for school year 2025–26; learners count formal schooling, not the Alternative Learning System or community learning centres. Sulu, which has left the region, is not on it. Where a school stands comes from DepEd’s 2019 masterlist, so a school new since then is shown at its town’s centre until someone maps it.',
+        'notOnTheLatestList': [{'id': g['id'], 'name': g['name'], 'town': g['townName']} for g in gone],
+        'unplaced': dict((unplaced + dep_unplaced).most_common()),
         'schools': schools,
     }, ensure_ascii=False, indent=1) + '\n')
     print('masterlist coordinates not trusted:', distrusted)
     print(len(extra), 'added from OpenStreetMap', Counter(x['type'] for x in extra), Counter(x['management'] for x in extra))
     print(sum(1 for s in schools if s['source'] == 'wikipedia'), 'added by hand from Wikipedia')
-    print(len(schools), 'schools;', sum(unplaced.values()), 'unplaced', unplaced.most_common(15), dict(placed))
+    print(len(schools), 'schools;', len(gone), 'on the 2019 list but not the latest;', sum(dep_unplaced.values()), 'of DepEd\'s not placed', dep_unplaced.most_common(15), dict(placed))
 
 
 if __name__ == '__main__':

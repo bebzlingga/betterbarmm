@@ -46,6 +46,8 @@ export const AUDIENCE: Record<string, string> = {
 	researchers: 'Researchers',
 	travellers: 'Travellers',
 	patients: 'Patients',
+	women: 'Women',
+	'senior-citizens': 'Senior citizens',
 }
 
 /** Each office with something for learners, the education ministry first, with what it offers. */
@@ -63,6 +65,14 @@ export const offices = (dataset.offices as Office[])
 	}))
 	.filter((o) => o.offers.length)
 	.sort((a, b) => Number(b.slug === 'ministry-of-basic-higher-and-technical-education') - Number(a.slug === 'ministry-of-basic-higher-and-technical-education') || b.offers.length - a.offers.length)
+
+/** The item on its office's page on betterbarmm.com, by the anchor that page gives it (www's slugify). */
+export const offerHref = (office: string, x: Pick<Offer, 'kind' | 'name'>) =>
+	`https://betterbarmm.com/services/${office}#${x.kind}-${x.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60)}`
+
+/** Scholarships, study grants and cash help to stay in school: what a student comes for first. Read from the name, as the offices give none of them a kind of their own. */
+export const isScholarship = (x: Pick<Offer, 'name'>) =>
+	/scholar|assistance for science|college assistance|graduate study|\bgrants?\b|ABaKa|Tawid Pangarap|employment of students/i.test(x.name) && !/examination|clearance|application$|^awarding/i.test(x.name)
 
 export const offersTotal = offices.reduce((n, o) => n + o.offers.length, 0)
 export const servicesNote = dataset.note as string

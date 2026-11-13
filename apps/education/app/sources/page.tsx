@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Masthead } from '../_components/parts'
-import { BUDGET_URL, countBy, historyById, placedCounts, schoolsSource, years } from '../_lib/education'
+import { NEEDS_LIVE } from '../_lib/needs'
+import { BUDGET_URL, countBy, enrolmentYears, goneSince2019, historyById, pinsSource, placedCounts, schoolsSource, syLabel, years } from '../_lib/education'
 
 export const metadata: Metadata = {
 	title: 'Sources',
@@ -31,26 +32,35 @@ export default function SourcesPage() {
 				<section>
 					<h2 className={H2}>The schools</h2>
 					<p className={P}>
-						{countBy('source', 'deped').toLocaleString('en-PH')} public schools from the Department of Education&rsquo;s school masterlist,
-						2019 edition, as cleaned and published by the OpenStreetMap Philippines community as{' '}
+						{countBy('source', 'deped').toLocaleString('en-PH')} schools, public and private, from the Department of Education&rsquo;s{' '}
 						<a href={schoolsSource.url} className='rule-link'>
+							Project Bukas
+						</a>{' '}
+						files: its school-level enrolment for school years {enrolmentYears.map(syLabel).join(', ')}, downloaded on 13 November 2026.
+						The list is the latest year&rsquo;s; each school carries its learners for every year. Credit for the data is DepEd&rsquo;s,
+						under its terms of use; DepEd has no part in this site. Sulu&rsquo;s schools are left out, as the directory follows the region
+						since 2024. The Special Geographic Area&rsquo;s schools, which DepEd still files under their old North Cotabato towns, are
+						placed in the SGA town their barangay is now in.
+					</p>
+					<p className={P}>
+						Where each school stands, the year it was founded and its pupils in 2012–13 and 2015–16 come from DepEd&rsquo;s 2019 masterlist, as
+						cleaned and published by the OpenStreetMap Philippines community as{' '}
+						<a href={pinsSource.url} className='rule-link'>
 							OSMaPaaralan
 						</a>{' '}
 						(also on the{' '}
-						<a href={schoolsSource.via} className='rule-link'>
+						<a href={pinsSource.via} className='rule-link'>
 							Humanitarian Data Exchange
 						</a>
-						). Each is placed in the directory&rsquo;s town by the town the list names. Four of those names are matched by hand: two
-						old names (Sultan Gumander, now Picong; Bumbaran, now Amai Manabilang), one without its middle initial and one
-						misspelt. Sulu&rsquo;s schools are left out, as the directory follows the region since 2024. The list filed Cotabato
-						City&rsquo;s schools under Region XII; they are kept with the city. The Special Geographic Area&rsquo;s schools are the
-						ones the list files under the Cotabato-province towns its 63 barangays came from, picked out by barangay (or, where the
-						list leaves the barangay blank, by a school named after one) and placed in the SGA town the barangay is now in.
+						), matched by school ID, or by name in the same town for a school DepEd has since renumbered. A school new since 2019 is shown
+						at its town&rsquo;s centre until someone maps it. {goneSince2019.length.toLocaleString('en-PH')} schools on the 2019 list are
+						not on the latest one: closed, merged, or renumbered past matching.
 					</p>
 					<p className={P}>
-						What it cannot tell you: the list is from 2019, so schools opened since are missing and some may have closed or been
-						renamed. It holds public schools only, not madaris, community learning centers or private schools. The Ministry of
-						Basic, Higher and Technical Education keeps its own, newer records; we have not found them published.
+						What it cannot tell you: learners are formal schooling only, not the Alternative Learning System or community learning
+						centres, and madaris outside the public schools are only those OpenStreetMap names. The Ministry of Basic, Higher and
+						Technical Education publishes no list of its own; its figures, as it and the Parliament have stated them, are on the
+						overview.
 					</p>
 					<p className={P}>
 						The whole list, as this site holds it, is yours to take:{' '}
@@ -118,6 +128,7 @@ export default function SourcesPage() {
 						shown at their town&rsquo;s centre, drawn as a ring rather than a dot, and their pages say so. The base map is CARTO&rsquo;s.
 					</p>
 				</section>
+				{NEEDS_LIVE ? (
 				<section>
 					<h2 className={H2}>What schools need</h2>
 					<p className={P}>
@@ -127,16 +138,7 @@ export default function SourcesPage() {
 						filled. These are what people report, not an official inventory.
 					</p>
 				</section>
-				<section>
-					<h2 className={H2}>Who buys</h2>
-					<p className={P}>
-						The education offices&rsquo; bid notices on PhilGEPS since 2019, counted from the{' '}
-						<a href='https://procurement.betterbarmm.com' className='rule-link'>
-							Procurement workspace
-						</a>
-						&rsquo;s record. Each office links to its page there, where every notice is listed.
-					</p>
-				</section>
+				) : null}
 			</div>
 		</>
 	)

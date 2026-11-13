@@ -1,0 +1,122 @@
+{
+	"name": "What the education ministry says: MBHTE's published figures",
+	"note": "MBHTE publishes no dataset, and its website turns away automated visits, so these are the figures the ministry and the Bangsamoro Parliament have given in official releases and in statements reported by the press, each as stated and with where it was said. They count more than DepEd's school files do (government madaris, community learning centres, alternative learning, higher education) and do not always agree with one another; they are kept as said, not reconciled.",
+	"retrieved": "2026-11-13",
+	"figures": [
+		{
+			"topic": "enrolment",
+			"label": "Learners enrolled, SY 2023–24",
+			"value": 1258253,
+			"scope": "Public schools, government madaris, community learning centres and higher education",
+			"breakdown": { "primary": 1119391, "secondary": 63565, "madaris": 55172, "higher education": 20195, "schools and learning centres": 4635 },
+			"previous": { "label": "SY 2022–23", "value": 1038662 },
+			"saidBy": "Minister Mohagher Iqbal",
+			"source": { "outlet": "SunStar Zamboanga", "title": "BARMM marks 17% hike in enrollment for SY 2023-2024", "date": "2023-09-15", "url": "https://www.sunstar.com.ph/zamboanga/local-news/barmm-marks-17-hike-in-enrollment-for-sy-2023-2024" }
+		},
+		{
+			"topic": "enrolment",
+			"label": "Learners expected, SY 2024–25",
+			"value": 1100838,
+			"scope": "Public and private schools and local universities and colleges",
+			"previous": { "label": "SY 2023–24", "value": 1079253 },
+			"saidBy": "Basic Education Director Johnny Balawag",
+			"source": { "outlet": "Bangsamoro Information Office", "title": "Enrollment boom in BARMM: Education Ministry gears up for growing student population", "date": "2024-07-23", "url": "https://bangsamoro.gov.ph/news/latest-news/enrollment-boom-in-barmm-education-ministry-gears-up-for-growing-student-population" }
+		},
+		{
+			"topic": "enrolment",
+			"label": "K-12 and alternative learning students, SY 2023–24",
+			"value": 1102914,
+			"scope": "K-12 and the Alternative Learning System; 83% in public schools, 11.5% in private",
+			"saidBy": "Minister Mohagher Iqbal, 2nd Bangsamoro Education Summit",
+			"source": { "outlet": "Luwaran", "title": "Education Minister Iqbal Highlights MBHTE Achievements at the 2nd Bangsamoro Education Summit", "date": "2024-12-01", "url": "https://www.luwaran.com/news/article/2849/education-minister-iqbal-highlights-mbhte-achievements-at-the-2nd-bangsamoro-education-summit" }
+		},
+		{
+			"topic": "higher education",
+			"label": "Students in private higher education institutions",
+			"value": 82822,
+			"scope": "126 higher education institutions in the region",
+			"saidBy": "Minister Mohagher Iqbal, 2nd Bangsamoro Education Summit",
+			"source": { "outlet": "Luwaran", "title": "Education Minister Iqbal Highlights MBHTE Achievements at the 2nd Bangsamoro Education Summit", "date": "2024-12-01", "url": "https://www.luwaran.com/news/article/2849/education-minister-iqbal-highlights-mbhte-achievements-at-the-2nd-bangsamoro-education-summit" }
+		},
+		{
+			"topic": "teachers",
+			"label": "Permanent staff hired in 2024",
+			"value": 4962,
+			"breakdown": { "teachers": 4228, "non-teaching staff": 734 },
+			"saidBy": "Minister Mohagher Iqbal, 2nd Bangsamoro Education Summit",
+			"source": { "outlet": "Luwaran", "title": "Education Minister Iqbal Highlights MBHTE Achievements at the 2nd Bangsamoro Education Summit", "date": "2024-12-01", "url": "https://www.luwaran.com/news/article/2849/education-minister-iqbal-highlights-mbhte-achievements-at-the-2nd-bangsamoro-education-summit" }
+		},
+		{
+			"topic": "madaris",
+			"label": "Islamic studies and Arabic (ISAL) teachers hired in public schools",
+			"value": 5959,
+			"saidBy": "Minister Mohagher Iqbal, 2nd Bangsamoro Education Summit",
+			"source": { "outlet": "Luwaran", "title": "Education Minister Iqbal Highlights MBHTE Achievements at the 2nd Bangsamoro Education Summit", "date": "2024-12-01", "url": "https://www.luwaran.com/news/article/2849/education-minister-iqbal-highlights-mbhte-achievements-at-the-2nd-bangsamoro-education-summit" }
+		},
+		{
+			"topic": "learning centres",
+			"label": "Learners in AKAP learning centres, 2024",
+			"value": 7676,
+			"scope": "131 barangays with no school",
+			"saidBy": "Minister Mohagher Iqbal, 2nd Bangsamoro Education Summit",
+			"source": { "outlet": "Luwaran", "title": "Education Minister Iqbal Highlights MBHTE Achievements at the 2nd Bangsamoro Education Summit", "date": "2024-12-01", "url": "https://www.luwaran.com/news/article/2849/education-minister-iqbal-highlights-mbhte-achievements-at-the-2nd-bangsamoro-education-summit" }
+		},
+		{
+			"topic": "scholarships",
+			"label": "AHME scholars, FY 2023",
+			"value": 4200,
+			"scope": "PHP 60,000 a year each",
+			"saidBy": "Minister Mohagher Iqbal, 2nd Bangsamoro Education Summit",
+			"source": { "outlet": "Luwaran", "title": "Education Minister Iqbal Highlights MBHTE Achievements at the 2nd Bangsamoro Education Summit", "date": "2024-12-01", "url": "https://www.luwaran.com/news/article/2849/education-minister-iqbal-highlights-mbhte-achievements-at-the-2nd-bangsamoro-education-summit" }
+		},
+		{
+			"topic": "scholarships",
+			"label": "Tech-voc scholarship (BSP-TVET) enrollees, 2023",
+			"value": 13955,
+			"saidBy": "Minister Mohagher Iqbal, 2nd Bangsamoro Education Summit",
+			"source": { "outlet": "Luwaran", "title": "Education Minister Iqbal Highlights MBHTE Achievements at the 2nd Bangsamoro Education Summit", "date": "2024-12-01", "url": "https://www.luwaran.com/news/article/2849/education-minister-iqbal-highlights-mbhte-achievements-at-the-2nd-bangsamoro-education-summit" }
+		},
+		{
+			"topic": "classrooms",
+			"label": "Classroom construction projects completed",
+			"value": 1330,
+			"of": 2289,
+			"saidBy": "Bangsamoro Parliament, Committee on Finance, Budget and Management, review of the 2026 budget",
+			"source": { "outlet": "Daily Tribune", "title": "BARMM budget review exposes gaps in Bangsamoro education sector", "date": "2026-05-28", "url": "https://tribune.net.ph/2026/05/28/barmm-budget-review-exposes-gaps-in-bangsamoro-education-sector" }
+		},
+		{
+			"topic": "teachers",
+			"label": "Teaching positions vacant",
+			"value": 9599,
+			"scope": "Besides 36,773 positions from the former ARMM not yet moved over",
+			"saidBy": "Bangsamoro Parliament, Committee on Finance, Budget and Management, review of the 2026 budget",
+			"source": { "outlet": "Daily Tribune", "title": "BARMM budget review exposes gaps in Bangsamoro education sector", "date": "2026-05-28", "url": "https://tribune.net.ph/2026/05/28/barmm-budget-review-exposes-gaps-in-bangsamoro-education-sector" }
+		},
+		{
+			"topic": "supplies",
+			"label": "Learners without textbooks",
+			"value": 277817,
+			"scope": "Also 567,946 armchairs needed and 757,379 learners yet to receive learner kits",
+			"saidBy": "Bangsamoro Parliament, Committee on Finance, Budget and Management, review of the 2026 budget",
+			"source": { "outlet": "Newsline", "title": "Audit Exposes Deepening Education Crisis in BARMM", "date": "2026-05-29", "url": "https://newsline.ph/audit-exposes-deepening-education-crisis-in-barmm/" }
+		},
+		{
+			"topic": "budget",
+			"label": "Share of the 2026 budget disbursed by 31 August 2025",
+			"value": 44.04,
+			"unit": "%",
+			"scope": "Of PHP 26.49 billion; 75.21% allotted, 47.81% obligated",
+			"saidBy": "Bangsamoro Parliament, Committee on Finance, Budget and Management, review of the 2026 budget",
+			"source": { "outlet": "Daily Tribune", "title": "BARMM budget review exposes gaps in Bangsamoro education sector", "date": "2026-05-28", "url": "https://tribune.net.ph/2026/05/28/barmm-budget-review-exposes-gaps-in-bangsamoro-education-sector" }
+		},
+		{
+			"topic": "higher education",
+			"label": "College-age residents enrolled in higher education",
+			"value": 18.7,
+			"unit": "%",
+			"scope": "The lowest in the country",
+			"saidBy": "Bangsamoro Parliament, Committee on Finance, Budget and Management, review of the 2026 budget",
+			"source": { "outlet": "Daily Tribune", "title": "BARMM budget review exposes gaps in Bangsamoro education sector", "date": "2026-05-28", "url": "https://tribune.net.ph/2026/05/28/barmm-budget-review-exposes-gaps-in-bangsamoro-education-sector" }
+		}
+	]
+}

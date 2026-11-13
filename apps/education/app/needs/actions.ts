@@ -2,11 +2,13 @@
 
 import { NEED_KINDS, NEED_POSTERS, createPublicClient } from '@betterbarmm/db'
 import { schoolById } from '../_lib/education'
+import { NEEDS_LIVE } from '../_lib/needs'
 
 export type NeedState = { ok: boolean; error: string | null }
 
 /** Post what a school needs. The table takes new posts from anyone; an editor approves each before it shows. */
 export async function postNeed(_prev: NeedState, form: FormData): Promise<NeedState> {
+	if (!NEEDS_LIVE) return { ok: false, error: 'Posting needs is closed for now.' }
 	// A field people never see: bots fill it in.
 	if (String(form.get('website') ?? '')) return { ok: true, error: null }
 	// Faster than a person can read and type: a bot.

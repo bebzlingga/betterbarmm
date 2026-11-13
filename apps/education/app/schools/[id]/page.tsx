@@ -4,9 +4,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { NeedCard } from '../../_components/need-card'
+import { NEEDS_LIVE } from '../../_lib/needs'
 import { Masthead } from '../../_components/parts'
 import { SchoolMap } from '../../_components/school-map'
-import { areaNameOf, historyById, isExact, nearbySchools, schoolById, schools, sizeOf, toMapSchool } from '../../_lib/education'
+import { areaNameOf, districtLabel, enrolmentYears, historyById, isExact, latestSY, nearbySchools, schoolById, schools, sizeOf, syLabel, toMapSchool } from '../../_lib/education'
 
 // A need approved for the school shows within a minute.
 export const revalidate = 60
@@ -16,17 +17,28 @@ type Props = { params: Promise<{ id: string }> }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const school = schoolById.get((await params).id)
 	if (!school) return { title: 'School not found', robots: { index: false, follow: true } }
-	return { title: school.name, description: `${school.name}, a ${school.management === 'Private' ? 'private' : school.management === 'Public' ? 'public' : ''} ${school.level.toLowerCase()} school in ${school.townName}, ${areaNameOf(school.area)}: its school ID, district, size and what it needs.`.replace(/\s+/g, ' ') }
+	return { title: school.name, description: `${school.name}, a ${school.management === 'Private' ? 'private' : school.management === 'Public' ? 'public' : ''} ${school.level.toLowerCase()} school in ${school.townName}, ${areaNameOf(school.area)}: its school ID, district, size${NEEDS_LIVE ? ' and what it needs' : ''}.`.replace(/\s+/g, ' ') }
 }
 
 export default async function SchoolPage({ params }: Props) {
 	const school = schoolById.get((await params).id)
 	if (!school) notFound()
-	const needs = await listSchoolNeeds({ school: school.id })
+	const needs = NEEDS_LIVE ? await listSchoolNeeds({ school: school.id }) : []
 	const neighbours = schools.filter((s) => s.town === school.town && s.id !== school.id)
 	const nearby = nearbySchools(school)
 	const exact = isExact(school)
-	const change = school.pupils2012 && school.pupils2015 ? Math.round(((school.pupils2015 - school.pupils2012) / school.pupils2012) * 100) : null
+	// Every count the records hold for it, newest first: DepEd's school years, then the 2019 list's two.
+	const counts: [string, number][] = [
+		...enrolmentYears
+			.filter((y) => school.enrolment[y])
+			.reverse()
+			.map((y): [string, number] => [syLabel(y), school.enrolment[y]!]),
+		...(school.pupils2015 ? [['2015–16', school.pupils2015] as [string, number]] : []),
+		...(school.pupils2012 ? [['2012–13', school.pupils2012] as [string, number]] : []),
+	]
+	const year = (y: string) => counts.find(([k]) => k === syLabel(y))?.[1]
+	const prev = year(enrolmentYears.at(-2) ?? '')
+	const change = school.pupils && prev ? Math.round(((school.pupils - prev) / prev) * 100) : null
 
 	const deped = school.source === 'deped'
 	const history = historyById.get(school.id)
@@ -34,21 +46,32 @@ export default async function SchoolPage({ params }: Props) {
 		...(deped ? [['School ID', <span key='id' className='num'>{school.id}</span>] as [string, React.ReactNode]] : []),
 		['Kind', school.type],
 		...(school.level !== school.type ? [['Level', school.level] as [string, React.ReactNode]] : []),
-		['Run by', school.management === 'Not stated' ? 'Not stated in the source' : school.management],
-		...(school.district ? [['District', school.district.replace(/, Department of Education$/, '')] as [string, React.ReactNode]] : []),
+		['Run by', school.sector === 'State or local college' ? 'Public: a state or local college' : school.management === 'Not stated' ? 'Not stated in the source' : school.management],
+		...(school.district || school.division ? [['District', districtLabel(school)] as [string, React.ReactNode]] : []),
 		['Town', `${school.townName}, ${areaNameOf(school.area)}`],
 		...(school.founded || history?.founded ? [['Founded', school.founded ?? history?.founded] as [string, React.ReactNode]] : []),
 		...(deped ? [[
-			'Pupils',
-			school.pupils2015 ? (
+			'Learners',
+			counts.length ? (
 				<span key='p'>
-					<span className='num'>{school.pupils2015.toLocaleString('en-PH')}</span> in school year 2015–16
-					{school.pupils2012 ? (
-						<span className='block text-[0.8125rem] text-[var(--ink-3)]'>
-							{school.pupils2012.toLocaleString('en-PH')} in 2012–13
-							{change != null ? `, ${change >= 0 ? 'up' : 'down'} ${Math.abs(change)}%` : ''}
-						</span>
-					) : null}
+					{school.pupils ? (
+						<>
+							<span className='num'>{school.pupils.toLocaleString('en-PH')}</span> in school year {latestSY}
+							{change != null && change !== 0 ? (
+								<span className='text-[var(--ink-3)]'>
+									, {change > 0 ? 'up' : 'down'} {Math.abs(change)}% on the year before
+								</span>
+							) : null}
+						</>
+					) : (
+						`None recorded for ${latestSY}`
+					)}
+					<span className='mt-1 block text-[0.8125rem] text-[var(--ink-3)]'>
+						{counts
+							.filter(([k]) => k !== latestSY)
+							.map(([k, n]) => `${n.toLocaleString('en-PH')} in ${k}`)
+							.join(' · ')}
+					</span>
 				</span>
 			) : (
 				'Not recorded'
@@ -58,7 +81,7 @@ export default async function SchoolPage({ params }: Props) {
 
 	return (
 		<>
-			<Masthead kicker={`School · ${school.townName}, ${areaNameOf(school.area)}`} name={school.name} stacked note={sizeOf(school.pupils2015) ?? undefined} />
+			<Masthead kicker={`School · ${school.townName}, ${areaNameOf(school.area)}`} name={school.name} stacked note={sizeOf(school.pupils) ?? undefined} />
 
 			<section className='bb-container bb-section'>
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]'>
@@ -74,10 +97,10 @@ export default async function SchoolPage({ params }: Props) {
 						<p className='mt-5 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 							{school.note ? <span className='block pb-2 text-[var(--ink-2)]'>{school.note}</span> : null}
 							{deped
-								? 'From the Department of Education’s 2019 school masterlist. Its classrooms, teachers and toilets are not published, so how full it is cannot be read here; a school can tell us what it lacks below.'
+								? `On the Department of Education’s list for school year ${latestSY}, with its learners for each year DepEd publishes; the 2012–13 and 2015–16 counts and where it stands are from DepEd’s 2019 masterlist.`
 								: school.source === 'wikipedia'
-									? 'Not on the Department of Education’s 2019 list of public schools nor on OpenStreetMap: it is here as Wikipedia lists it, and placed where Wikidata puts it or at its town.'
-									: 'Not on the Department of Education’s 2019 list of public schools: it is here as OpenStreetMap names and maps it. Whether it is public or private is taken from OpenStreetMap or from its name.'}{' '}
+									? 'Not on the Department of Education’s list nor on OpenStreetMap: it is here as Wikipedia lists it, and placed where Wikidata puts it or at its town.'
+									: 'Not on the Department of Education’s list: it is here as OpenStreetMap names and maps it. Whether it is public or private is taken from OpenStreetMap or from its name.'}{' '}
 							{school.url ? (
 								<>
 									<a href={school.url} target='_blank' rel='noreferrer' className='rule-link'>
@@ -143,6 +166,7 @@ export default async function SchoolPage({ params }: Props) {
 				</section>
 			) : null}
 
+			{NEEDS_LIVE ? (
 			<section className='bg-[var(--paper-2)]'>
 				<div className='bb-container bb-section'>
 					<div className='flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between'>
@@ -170,19 +194,20 @@ export default async function SchoolPage({ params }: Props) {
 					)}
 				</div>
 			</section>
+			) : null}
 
 			{nearby.length ? (
 				<section className='bb-container pt-[clamp(3rem,6vw,5rem)]'>
 					<h2 className='text-[1.375rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Nearest schools</h2>
 					<p className='mt-2 text-[0.8125rem] text-[var(--ink-3)]'>As the crow flies, among the schools pinned where they stand.</p>
-					<ul className='mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3'>
+					<ul className='mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4'>
 						{nearby.map(({ school: s, km }) => (
 							<li key={s.id} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'>
 								<span>
 									<Link href={`/schools/${s.id}`} className='rule-link text-[0.875rem] font-semibold'>
 										{s.name}
 									</Link>
-									<span className='block text-[0.75rem] text-[var(--ink-3)]'>
+									<span className='mt-1.5 block text-[0.75rem] text-[var(--ink-3)]'>
 										{s.level}
 										{s.town !== school.town ? ` · ${s.townName}` : ''}
 									</span>
@@ -199,15 +224,15 @@ export default async function SchoolPage({ params }: Props) {
 					<h2 className='text-[1.375rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
 						Other schools in {school.townName} <span className='text-[0.875rem] font-semibold text-[var(--ink-3)]'>{neighbours.length}</span>
 					</h2>
-					<ul className='mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3'>
+					<ul className='mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4'>
 						{neighbours.map((s) => (
 							<li key={s.id} className='border-b border-[var(--rule-soft)] py-2.5'>
 								<Link href={`/schools/${s.id}`} className='rule-link text-[0.875rem] font-semibold'>
 									{s.name}
 								</Link>
-								<span className='block text-[0.75rem] text-[var(--ink-3)]'>
+								<span className='mt-1.5 block text-[0.75rem] text-[var(--ink-3)]'>
 									{s.level}
-									{s.pupils2015 ? ` · ${s.pupils2015.toLocaleString('en-PH')} pupils` : ''}
+									{s.pupils ? ` · ${s.pupils.toLocaleString('en-PH')} learners` : ''}
 								</span>
 							</li>
 						))}

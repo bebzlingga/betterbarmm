@@ -1,27 +1,30 @@
 'use client'
 
-import { ArrowLeftIcon, ArrowsOutIcon, ArrowUpRightIcon, MagnifyingGlassIcon, PlusIcon, XIcon } from '@phosphor-icons/react'
+import { MapList, MapListGroup, MapListHead, MapListNote, MapListRow, SearchField, Select } from '@betterbarmm/editorial'
+import { ArrowsOutIcon, ArrowUpRightIcon, PlusIcon, XIcon } from '@phosphor-icons/react'
 import { useRouter } from 'next/navigation'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { MANAGEMENT, SCHOOL_TYPES, typeColour, type MapSchool } from '../_lib/school-types'
 import { SchoolMap } from './school-map'
 import type { Fly } from './school-map-canvas'
+import { NEEDS_LIVE } from '../_lib/needs'
 
 /* ============================================================
    The map, opened full screen
 
    A preview on the page, and a button (or a dot) that opens the map
    as a dialog: a native <dialog> under showModal, so focus is held,
-   Escape closes it and the page behind is inert. Down the left side
-   sit the filters, then either the chosen school's card or the list
-   of what is on the map; the map fills the rest. On a phone the map
-   is on top and the panel under it.
+   Escape closes it and the page behind is inert. Laid out as Incident
+   Watch's map is: the filters across the top, the list down the left,
+   the map in the rest, and the chosen school's card floating over the
+   map's bottom-right corner. On a phone the map is on top, the list
+   under it.
    ============================================================ */
 
-const fold = (s: string) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
+/** Rows the list draws at most; the map shows them all. */
+const LIST_MAX = 200
 
-const CHIP =
-	'inline-flex cursor-pointer items-center gap-1.5 border px-2.5 py-1 text-[0.75rem] font-semibold transition data-[on=false]:border-[var(--rule)] data-[on=false]:text-[var(--ink-3)] data-[on=false]:opacity-70 data-[on=true]:border-[var(--ink)] data-[on=true]:text-[var(--ink)]'
+const fold = (s: string) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 export function SchoolExplorer({
 	schools,
@@ -29,6 +32,7 @@ export function SchoolExplorer({
 	startOpen = false,
 	closeHref,
 	previewClass = 'h-[30rem]',
+	year,
 }: {
 	schools: MapSchool[]
 	areas: { slug: string; name: string }[]
@@ -37,12 +41,15 @@ export function SchoolExplorer({
 	/** Where closing goes, for a page that is only the map. */
 	closeHref?: string
 	previewClass?: string
+	/** The school year the learner counts are for, "2025–26". */
+	year: string
 }) {
 	const router = useRouter()
 	const dialog = useRef<HTMLDialogElement>(null)
 	const [open, setOpen] = useState(startOpen)
-	const [types, setTypes] = useState<Set<string>>(() => new Set(SCHOOL_TYPES.map((t) => t.label)))
-	const [kinds, setKinds] = useState<Set<string>>(() => new Set(MANAGEMENT))
+	// One value each, '' for all.
+	const [type, setType] = useState('')
+	const [management, setManagement] = useState('')
 	const [area, setArea] = useState('')
 	const [q, setQ] = useState('')
 	const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -57,22 +64,42 @@ export function SchoolExplorer({
 		if (!open && d.open) d.close()
 	}, [open])
 
-	const words = fold(q).split(/\s+/).filter(Boolean)
-	const shown = useMemo(
-		() =>
-			schools.filter(
-				(s) =>
-					types.has(s.type) &&
-					kinds.has(s.management) &&
-					(!area || s.area === area) &&
-					words.every((w) => fold(`${s.name} ${s.townName} ${s.id}`).includes(w)),
-			),
-		// words is derived from q
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-		[schools, types, kinds, area, q],
+	// `except` leaves one filter open, so a dropdown's counts say what choosing each option would leave.
+	const matches = useCallback(
+		(s: MapSchool, except?: 'type' | 'management' | 'area') => {
+			const words = fold(q).split(/\s+/).filter(Boolean)
+			return (
+				(except === 'type' || !type || s.type === type) &&
+				(except === 'management' || !management || s.management === management) &&
+				(except === 'area' || !area || s.area === area) &&
+				words.every((w) => fold(`${s.name} ${s.townName} ${s.id}`).includes(w))
+			)
+		},
+		[q, type, management, area],
 	)
+	const shown = useMemo(() => schools.filter((s) => matches(s)), [schools, matches])
 	const selected = selectedId ? (schools.find((s) => s.id === selectedId) ?? null) : null
-	const counts = useMemo(() => Object.fromEntries(SCHOOL_TYPES.map((t) => [t.label, schools.filter((s) => s.type === t.label).length])), [schools])
+	// The list, a town to a group, in the order the record keeps them (area, then town); the count is the town's whole share of what is shown.
+	const groups = useMemo(() => {
+		const perTown = new Map<string, number>()
+		const town = (s: MapSchool) => `${s.area}/${s.townName}`
+		for (const s of shown) perTown.set(town(s), (perTown.get(town(s)) ?? 0) + 1)
+		const out: { key: string; title: string; total: number; items: MapSchool[] }[] = []
+		for (const s of shown.slice(0, LIST_MAX)) {
+			const last = out.at(-1)
+			if (last && last.key === town(s)) last.items.push(s)
+			else out.push({ key: town(s), title: s.townName === s.areaName ? s.townName : `${s.townName}, ${s.areaName}`, total: perTown.get(town(s)) ?? 0, items: [s] })
+		}
+		return out
+	}, [shown])
+	const counts = useMemo(() => {
+		const by = (key: (s: MapSchool) => string, except: 'type' | 'management' | 'area') => {
+			const c = new Map<string, number>()
+			for (const s of schools) if (matches(s, except)) c.set(key(s), (c.get(key(s)) ?? 0) + 1)
+			return c
+		}
+		return { type: by((s) => s.type, 'type'), management: by((s) => s.management, 'management'), area: by((s) => s.area, 'area') }
+	}, [schools, matches])
 
 	const choose = (id: string) => {
 		const s = schools.find((x) => x.id === id)
@@ -88,22 +115,19 @@ export function SchoolExplorer({
 		setOpen(false)
 		if (closeHref) router.push(closeHref)
 	}
-	const toggle = (set: Set<string>, value: string, update: (s: Set<string>) => void) => {
-		const next = new Set(set)
-		if (next.has(value) && next.size > 1) next.delete(value)
-		else next.add(value)
-		update(next)
-	}
 
 	return (
 		<>
 			{startOpen ? null : (
 				<div className={`relative ${previewClass}`}>
 					<SchoolMap schools={schools} onSelect={(id) => openWith(id)} className='!h-full' />
-					<button type='button' onClick={() => openWith()} className='bb-btn bb-btn-accent absolute bottom-4 left-4 z-10 shadow-[0_12px_30px_-14px_rgba(0,0,0,0.6)]'>
-						<ArrowsOutIcon size={14} weight='bold' aria-hidden='true' />
-						Open the map
-					</button>
+					{/* The wrapper takes the corner: .bb-btn sets its own position, outside the layers, and would win over `absolute`. */}
+					<div className='absolute bottom-4 right-4 z-10'>
+						<button type='button' onClick={() => openWith()} className='bb-btn bb-btn-accent shadow-[0_12px_30px_-14px_rgba(0,0,0,0.6)]'>
+							<ArrowsOutIcon size={14} weight='bold' aria-hidden='true' />
+							Open the map
+						</button>
+					</div>
 				</div>
 			)}
 
@@ -119,108 +143,90 @@ export function SchoolExplorer({
 				className='z-[60] bg-[var(--paper)] text-[var(--ink)] backdrop:bg-black/60 max-sm:[zoom:1.1112]'
 			>
 				{open ? (
-					<div className='flex h-full flex-col-reverse lg:flex-row'>
-						{/* ---- The panel ---- */}
-						<aside className='flex min-h-0 flex-1 flex-col border-[var(--rule)] lg:w-[24rem] lg:flex-none lg:border-r'>
-							<div className='flex items-start justify-between gap-3 border-b border-[var(--rule)] px-5 py-4'>
-								<div>
-									<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>Education · Bangsamoro</p>
-									<p className='mt-1 text-[1.125rem] font-extrabold tracking-[-0.02em]'>Schools on the map</p>
+					<div className='flex h-full flex-col'>
+						{/* The header is the filters, and the way out, on the dark ground, as Incident Watch's map has it. */}
+						<div className='bb-ground flex shrink-0 items-start justify-between gap-4 border-b border-[var(--rule)] px-4 py-2 [color-scheme:dark] lg:items-center lg:px-6'>
+							<div className='@container min-w-0 flex-1'>
+								<div className='flex flex-wrap items-center gap-3 gap-x-5'>
+									<div className='w-full @xl:w-72'>
+										<SearchField value={q} onChange={setQ} placeholder='Name, town or school ID' plain />
+									</div>
+									{/* On a phone the controls keep to one line that scrolls sideways, so the map keeps the screen. */}
+									<div className='flex w-full items-center gap-x-5 overflow-x-auto pr-8 [mask-image:linear-gradient(to_right,#000_calc(100%-2.5rem),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>*]:shrink-0 @xl:w-auto @xl:flex-wrap @xl:gap-y-2 @xl:overflow-visible @xl:pr-0 @xl:[mask-image:none]'>
+										<Select
+											label='Kind'
+											value={type}
+											onChange={setType}
+											plain
+											options={[['', 'All kinds'], ...SCHOOL_TYPES.filter((t) => counts.type.get(t.label)).map((t): [string, string] => [t.label, `${t.label} (${counts.type.get(t.label)})`])]}
+										/>
+										<Select label='Run by' value={management} onChange={setManagement} plain options={[['', 'Public & private'], ...MANAGEMENT.map((m): [string, string] => [m, `${m} (${counts.management.get(m) ?? 0})`])]} />
+										<Select label='Area' value={area} onChange={setArea} plain options={[['', 'All areas'], ...areas.map((a): [string, string] => [a.slug, `${a.name} (${counts.area.get(a.slug) ?? 0})`])]} />
+									</div>
 								</div>
-								<button type='button' onClick={close} aria-label='Close the map' className='grid size-9 shrink-0 cursor-pointer place-items-center border border-[var(--rule)] transition hover:border-[var(--ink)]'>
-									<XIcon size={16} weight='bold' aria-hidden='true' />
-								</button>
 							</div>
+							<button type='button' onClick={close} aria-label='Close the map' className='inline-flex h-10 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'>
+								<XIcon size={16} weight='bold' aria-hidden='true' />
+							</button>
+						</div>
 
-							<div className='min-h-0 flex-1 overflow-y-auto overscroll-contain'>
-								<div className='space-y-4 border-b border-[var(--rule)] px-5 py-4'>
-									<label className='flex h-10 items-center gap-2 border border-[var(--rule)] px-3 focus-within:border-[var(--accent)]'>
-										<MagnifyingGlassIcon size={15} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-										<span className='sr-only'>Find a school</span>
-										<input value={q} onChange={(e) => setQ(e.target.value)} placeholder='Name, town or school ID' className='min-w-0 flex-1 bg-transparent text-[0.875rem] outline-none' />
-									</label>
-									<div>
-										<p className='mb-2 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Kind of school</p>
-										<div className='flex flex-wrap gap-1.5'>
-											{SCHOOL_TYPES.filter((t) => counts[t.label]).map((t) => (
-												<button key={t.label} type='button' data-on={types.has(t.label)} aria-pressed={types.has(t.label)} onClick={() => toggle(types, t.label, setTypes)} className={CHIP}>
-													<span className='size-2.5 rounded-full' style={{ background: dark ? t.dark : t.light }} aria-hidden='true' />
-													{t.label}
-													<span className='font-normal text-[var(--ink-3)]'>{counts[t.label]}</span>
-												</button>
-											))}
-										</div>
-									</div>
-									<div className='flex flex-wrap items-end gap-4'>
-										<div>
-											<p className='mb-2 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Run by</p>
-											<div className='flex flex-wrap gap-1.5'>
-												{MANAGEMENT.map((m) => (
-													<button key={m} type='button' data-on={kinds.has(m)} aria-pressed={kinds.has(m)} onClick={() => toggle(kinds, m, setKinds)} className={CHIP}>
-														{m === 'Not stated' ? 'Not stated' : m}
-													</button>
-												))}
-											</div>
-										</div>
-										<label className='flex flex-col gap-2'>
-											<span className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Area</span>
-											<select value={area} onChange={(e) => setArea(e.target.value)} className='h-8 border border-[var(--rule)] bg-[var(--paper)] px-2 text-[0.8125rem]'>
-												<option value=''>All areas</option>
-												{areas.map((a) => (
-													<option key={a.slug} value={a.slug}>
-														{a.name}
-													</option>
-												))}
-											</select>
-										</label>
-									</div>
-									<div className='flex items-center justify-between text-[0.78125rem] text-[var(--ink-3)]'>
-										<span>
-											{shown.length.toLocaleString('en-PH')} of {schools.length.toLocaleString('en-PH')} schools
-										</span>
-										<button type='button' onClick={() => setFly({ lon: 0, lat: 0, zoom: -1, nonce: Date.now() })} className='cursor-pointer font-semibold text-[var(--ink-2)] hover:text-[var(--accent)]'>
-											All BARMM
-										</button>
-									</div>
-								</div>
-
-								{selected ? (
-									<SchoolCard school={selected} dark={dark} onBack={() => setSelectedId(null)} />
-								) : (
-									<ul className='divide-y divide-[var(--rule-soft)]'>
-										{shown.slice(0, 200).map((s) => (
-											<li key={s.id}>
-												<button type='button' onClick={() => choose(s.id)} className='flex w-full cursor-pointer items-start gap-3 px-5 py-2.5 text-left transition hover:bg-[var(--paper-2)]'>
+						<div className='grid min-h-0 flex-1 lg:grid-cols-[26rem_minmax(0,1fr)]'>
+							{/* The list on the left, a town to a group; the chosen school floats over the map's corner. */}
+							<MapList
+								className='order-2 border-t border-[var(--rule)] lg:order-1 lg:border-r lg:border-t-0'
+								head={
+									<MapListHead
+										count={shown.length}
+										of={schools.length}
+										noun='schools'
+										action={
+											<button type='button' onClick={() => setFly({ lon: 0, lat: 0, zoom: -1, nonce: Date.now() })} className='cursor-pointer text-[var(--ink-2)] hover:text-[var(--accent)]'>
+												All BARMM
+											</button>
+										}
+									/>
+								}
+							>
+								{groups.map((g) => (
+									<MapListGroup key={g.key} title={g.title} count={g.total}>
+										{g.items.map((s) => (
+											<MapListRow
+												key={s.id}
+												current={s.id === selectedId}
+												onClick={() => choose(s.id)}
+												marker={
 													<span
-														className='mt-1.5 size-2.5 shrink-0 rounded-full border-2'
+														className='size-2.5 rounded-full border-2'
 														style={{ borderColor: typeColour(s.type, dark), background: s.exact ? typeColour(s.type, dark) : 'transparent' }}
 														aria-hidden='true'
 													/>
-													<span className='min-w-0'>
-														<span className='block text-[0.84375rem] font-semibold leading-snug'>{s.name}</span>
-														<span className='block text-[0.71875rem] text-[var(--ink-3)]'>
-															{s.type} · {s.townName}
-														</span>
-													</span>
-												</button>
-											</li>
+												}
+												title={s.name}
+												meta={s.type}
+												figure={s.pupils ? s.pupils.toLocaleString('en-PH') : null}
+											/>
 										))}
-										{shown.length > 200 ? <li className='px-5 py-3 text-[0.75rem] text-[var(--ink-3)]'>And {(shown.length - 200).toLocaleString('en-PH')} more: narrow it down, or choose a dot.</li> : null}
-									</ul>
-								)}
-							</div>
-						</aside>
+									</MapListGroup>
+								))}
+								{shown.length > LIST_MAX ? <MapListNote>And {(shown.length - LIST_MAX).toLocaleString('en-PH')} more: narrow it down, or choose a dot.</MapListNote> : null}
+								{shown.length === 0 ? <MapListNote>No school matches these filters.</MapListNote> : null}
+							</MapList>
 
-						{/* ---- The map ---- */}
-						<div className='relative h-[48dvh] shrink-0 lg:h-full lg:flex-1'>
-							<SchoolMap schools={shown} selectedId={selectedId} onSelect={choose} fly={fly} className='!h-full border-0' />
-							<div className='pointer-events-none absolute bottom-3 left-3 hidden flex-wrap gap-x-4 gap-y-1 bg-[var(--paper)]/90 px-3 py-2 text-[0.6875rem] text-[var(--ink-2)] shadow-sm sm:flex'>
-								<span className='inline-flex items-center gap-1.5'>
-									<span className='size-2.5 rounded-full bg-[var(--ink-2)]' aria-hidden='true' /> Pinned where it stands
-								</span>
-								<span className='inline-flex items-center gap-1.5'>
-									<span className='size-2.5 rounded-full border-2 border-[var(--ink-2)]' aria-hidden='true' /> At its town&rsquo;s centre
-								</span>
+							<div className='relative order-1 h-[55dvh] min-h-0 lg:order-2 lg:h-auto'>
+								<SchoolMap schools={shown} selectedId={selectedId} onSelect={choose} fly={fly} className='!h-full border-0' />
+								<div className='pointer-events-none absolute bottom-3 left-3 hidden flex-wrap gap-x-4 gap-y-1 bg-[var(--paper)]/90 px-3 py-2 text-[0.6875rem] text-[var(--ink-2)] shadow-sm sm:flex'>
+									<span className='inline-flex items-center gap-1.5'>
+										<span className='size-2.5 rounded-full bg-[var(--ink-2)]' aria-hidden='true' /> Pinned where it stands
+									</span>
+									<span className='inline-flex items-center gap-1.5'>
+										<span className='size-2.5 rounded-full border-2 border-[var(--ink-2)]' aria-hidden='true' /> At its town&rsquo;s centre
+									</span>
+								</div>
+								{selected ? (
+									<div className='absolute bottom-4 right-4 z-10 w-[22rem] max-w-[calc(100%-2rem)] max-h-[calc(100%-2rem)] overflow-y-auto shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'>
+										<SchoolCard school={selected} dark={dark} year={year} onClose={() => setSelectedId(null)} />
+									</div>
+								) : null}
 							</div>
 						</div>
 					</div>
@@ -230,15 +236,22 @@ export function SchoolExplorer({
 	)
 }
 
-function SchoolCard({ school, dark, onBack }: { school: MapSchool; dark: boolean; onBack: () => void }) {
+function SchoolCard({ school, dark, year, onClose }: { school: MapSchool; dark: boolean; year: string; onClose: () => void }) {
 	return (
-		<div className='px-5 py-4'>
-			<button type='button' onClick={onBack} className='inline-flex cursor-pointer items-center gap-1.5 text-[0.78125rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
-				<ArrowLeftIcon size={13} weight='bold' aria-hidden='true' /> Back to the list
-			</button>
+		<article className='bg-[var(--paper)] p-4'>
+			<div className='flex items-start justify-between gap-3'>
+				<p className='inline-flex items-center gap-1.5 text-[0.71875rem] font-semibold uppercase tracking-[0.1em]' style={{ color: typeColour(school.type, dark) }}>
+					<span className='size-2.5 rounded-full' style={{ background: typeColour(school.type, dark) }} aria-hidden='true' />
+					{school.type}
+				</p>
+				<button type='button' onClick={onClose} aria-label='Close details' className='-mr-1.5 -mt-1.5 inline-flex size-7 shrink-0 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'>
+					<XIcon size={14} weight='bold' aria-hidden='true' />
+				</button>
+			</div>
+			<h2 className='mt-2 text-[1.0625rem] font-extrabold leading-snug tracking-[-0.01em]'>{school.name}</h2>
 			{school.image ? (
-				<figure className='mt-4'>
-					<img src={school.image.url} alt='' className='aspect-[4/3] w-full object-cover' />
+				<figure className='mt-3'>
+					<img src={school.image.url} alt='' className='aspect-[16/9] w-full object-cover' />
 					<figcaption className='mt-1 text-[0.6875rem] text-[var(--ink-3)]'>
 						<a href={school.image.page} target='_blank' rel='noreferrer' className='hover:text-[var(--accent)]'>
 							{school.image.author} · {school.image.license}
@@ -246,17 +259,12 @@ function SchoolCard({ school, dark, onBack }: { school: MapSchool; dark: boolean
 					</figcaption>
 				</figure>
 			) : null}
-			<p className='mt-4 inline-flex items-center gap-1.5 text-[0.71875rem] font-semibold uppercase tracking-[0.1em]' style={{ color: typeColour(school.type, dark) }}>
-				<span className='size-2.5 rounded-full' style={{ background: typeColour(school.type, dark) }} aria-hidden='true' />
-				{school.type}
-			</p>
-			<h2 className='mt-1 text-[1.25rem] font-extrabold leading-snug tracking-[-0.02em]'>{school.name}</h2>
-			<dl className='mt-4 space-y-2 text-[0.84375rem]'>
+			<dl className='mt-3 space-y-1.5 text-[0.8125rem]'>
 				{[
 					['Where', school.townName === school.areaName ? school.townName : `${school.townName}, ${school.areaName}`],
 					['Run by', school.management === 'Not stated' ? 'Not stated in the source' : school.management],
 					...(school.level !== school.type ? [['Level', school.level]] : []),
-					...(school.pupils ? [['Pupils', `${school.pupils.toLocaleString('en-PH')} (2015–16)`]] : []),
+					...(school.pupils ? [['Learners', `${school.pupils.toLocaleString('en-PH')} (SY ${year})`]] : []),
 					['ID', /^\d+$/.test(school.id) ? school.id : 'Not on DepEd’s list'],
 				].map(([k, v]) => (
 					<div key={k} className='grid grid-cols-[4.5rem_1fr] gap-3'>
@@ -266,14 +274,16 @@ function SchoolCard({ school, dark, onBack }: { school: MapSchool; dark: boolean
 				))}
 			</dl>
 			{school.exact ? null : <p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>Not mapped yet: its dot is the town&rsquo;s centre, not the school.</p>}
-			<div className='mt-5 flex flex-wrap gap-2'>
-				<a href={`/schools/${school.id}`} className='bb-btn bb-btn-accent'>
-					The school&rsquo;s page <ArrowUpRightIcon size={13} weight='bold' aria-hidden='true' />
+			<div className={`mt-4 grid gap-2 ${NEEDS_LIVE ? 'grid-cols-2' : ''}`}>
+				<a href={`/schools/${school.id}`} className='bb-btn bb-btn-accent justify-center !px-2'>
+					School page <ArrowUpRightIcon size={13} weight='bold' aria-hidden='true' />
 				</a>
-				<a href={`/needs/new?school=${school.id}`} className='bb-btn bb-btn-ghost'>
-					<PlusIcon size={13} weight='bold' aria-hidden='true' /> Post a need
-				</a>
+				{NEEDS_LIVE ? (
+					<a href={`/needs/new?school=${school.id}`} className='bb-btn bb-btn-ghost justify-center !px-2'>
+						<PlusIcon size={13} weight='bold' aria-hidden='true' /> Post a need
+					</a>
+				) : null}
 			</div>
-		</div>
+		</article>
 	)
 }

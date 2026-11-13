@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation'
+import { NEEDS_LIVE } from '../_lib/needs'
 import { NEED_KINDS, listSchoolNeeds } from '@betterbarmm/db'
 import { PlusIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
@@ -18,6 +20,7 @@ const CHIP =
 	'border border-[var(--rule)] px-3 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition hover:border-[var(--ink)] data-[active=true]:border-[var(--ink)] data-[active=true]:bg-[var(--ink)] data-[active=true]:text-[var(--paper)]'
 
 export default async function NeedsPage({ searchParams }: { searchParams: Promise<{ area?: string; kind?: string }> }) {
+	if (!NEEDS_LIVE) notFound()
 	const { area, kind } = await searchParams
 	const all = await listSchoolNeeds()
 	const shown = all.filter((n) => (!area || n.area === area) && (!kind || n.kind === kind))

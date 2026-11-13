@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Masthead } from '../_components/parts'
 import { SchoolExplorer } from '../_components/school-explorer'
-import { mapSchools, placedCounts, schoolAreas, schools } from '../_lib/education'
+import { latestSY, mapSchools, placedCounts, schoolAreas, schools } from '../_lib/education'
 
 export const metadata: Metadata = {
 	title: 'Map',
@@ -18,7 +18,7 @@ export default function MapPage() {
 				name='The schools on a map'
 				note={`${schools.length.toLocaleString('en-PH')} schools, coloured by kind. ${placedCounts.exact.toLocaleString('en-PH')} are pinned where they stand; the rest are shown at their town’s centre until someone maps them.`}
 			/>
-			<SchoolExplorer schools={mapSchools} areas={schoolAreas.filter((a) => a.total).map((a) => ({ slug: a.slug, name: a.name }))} startOpen closeHref='/' />
+			<SchoolExplorer year={latestSY} schools={mapSchools} areas={schoolAreas.filter((a) => a.total).map((a) => ({ slug: a.slug, name: a.name }))} startOpen closeHref='/' />
 		</>
 	)
 }
