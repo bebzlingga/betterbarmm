@@ -15,6 +15,8 @@
    ever counted, never listed.
    ============================================================ */
 
+import fs from 'node:fs'
+import path from 'node:path'
 import auditFile from '../../../datasets/coa/audit-reports.json'
 import planFile from '../../../datasets/development-plan/scorecard.json'
 import schoolsFile from '../../../datasets/education/schools.json'
@@ -184,6 +186,38 @@ function ministry(): Entry[] {
 		href: f.source.url,
 		text: joined([f.topic, f.label, f.scope, f.saidBy, 'mbhte ministry of basic higher and technical education']).toLowerCase(),
 	}))
+}
+
+/* ---- Explainers ----
+   The long pieces on betterbarmm.com/explainers, written as Markdown in the www app. This package cannot import
+   from an app, so the files are read from disk, from whichever app is asking; where they cannot be found (an app
+   deployed on its own) there are simply no explainer rows. One row per article, and one per section, so a
+   question about a detail lands on its paragraph. Drafts stay out. */
+function explainers(): Entry[] {
+	const dir = [
+		path.join(process.cwd(), 'app/explainers/articles'),
+		path.join(process.cwd(), '../www/app/explainers/articles'),
+		path.join(process.cwd(), 'apps/www/app/explainers/articles'),
+	].find((d) => fs.existsSync(d))
+	if (!dir) return []
+	const rows: Entry[] = []
+	for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.md'))) {
+		const m = fs.readFileSync(path.join(dir, file), 'utf8').match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/)
+		if (!m) continue
+		const meta = Object.fromEntries(m[1]!.split('\n').map((l) => [l.slice(0, l.indexOf(':')).trim(), l.slice(l.indexOf(':') + 1).trim()]))
+		if (meta.status === 'draft') continue
+		const href = `${WWW}/explainers/${file.replace(/\.md$/, '')}`
+		// The prose without its graphics' placeholders or Markdown links' addresses.
+		const plain = (t: string) => t.replace(/\{\{figure:[^}]+\}\}/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_#>]/g, '').replace(/\s+/g, ' ').trim()
+		rows.push({ space: 'primer', kind: 'Explainer', title: meta.title ?? file, note: meta.summary ?? '', href, text: joined([meta.title, meta.summary, meta.tags, plain(m[2]!)]).toLowerCase(), rollup: true })
+		for (const part of m[2]!.split(/\n## /).slice(1)) {
+			const [head, ...body] = part.split('\n')
+			if (/^sources$/i.test(head!.trim())) continue
+			const text = plain(body.join(' '))
+			rows.push({ space: 'primer', kind: 'Explainer section', title: `${meta.title} — ${head!.trim()}`, note: text.slice(0, 320) + (text.length > 320 ? '…' : ''), href, text: joined([head, text]).toLowerCase(), parent: meta.title })
+		}
+	}
+	return rows
 }
 
 /* ---- Health facilities ---- */
@@ -430,7 +464,7 @@ function works(): Entry[] {
 }
 
 export function workspaces(): Entry[] {
-	return [...audits(), ...plan(), ...schools(), ...ministry(), ...health(), ...news(), ...opportunities(), ...preparedness(), ...procurement(), ...works()]
+	return [...audits(), ...plan(), ...schools(), ...ministry(), ...explainers(), ...health(), ...news(), ...opportunities(), ...preparedness(), ...procurement(), ...works()]
 }
 
 /** The words a question uses for each kind of row here. */
@@ -439,6 +473,8 @@ export const WORKSPACES_ASKED: Record<string, string> = {
 	'Plan indicator': 'development plan bdp target targets goal indicator progress poverty growth rate',
 	School: 'school schools elementary high secondary college university pupils students founded',
 	'Schools count': 'how many schools number total count elementary high learners enrolment enrollment',
+	Explainer: 'explain explainer why how what means mean article guide',
+	'Explainer section': 'explain why how what means mean',
 	'Ministry figure': 'mbhte ministry education minister enrolment enrollment learners scholars scholarship ahme teachers classrooms textbooks vacant hired madaris',
 	'Health facilities': 'health facilities clinic clinics health station rural health unit birthing hospital how many',
 	Hospital: 'hospital hospitals medical center',

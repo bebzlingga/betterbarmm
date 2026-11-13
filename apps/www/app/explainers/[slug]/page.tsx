@@ -9,6 +9,7 @@ import { Markdown } from '@betterbarmm/ui'
 import { SiteHeader } from '../../_components/site-header'
 import { getExplainer } from '../../_lib/explainers'
 import { AI_READINESS_FIGURES } from '../figures/ai-readiness'
+import { DATA_PLANNING_FIGURES } from '../figures/data-planning'
 import { CADENA_FIGURES } from '../figures/cadena'
 import { HOW_FIGURES } from '../figures/how-betterbarmm'
 import { REVENUE_CODE_FIGURES } from '../figures/revenue-code'
@@ -23,6 +24,7 @@ const FIGURES: Record<string, Record<string, React.ReactNode>> = {
 	'how-betterbarmm-brings-records-together': HOW_FIGURES,
 	'bangsamoro-priority-codes': REVENUE_CODE_FIGURES,
 	'how-barmm-can-use-ai-in-service-delivery': AI_READINESS_FIGURES,
+	'why-data-matters-for-planning': DATA_PLANNING_FIGURES,
 }
 
 const longDate = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric' })
