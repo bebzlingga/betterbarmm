@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-12T09:18:20.679Z",
+ "generatedAt": "2026-11-13T10:47:58.556Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -159,6 +159,12 @@
    "via": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNenU2amRJSHZxckZ4ZFBQWHNKLVBfUXUxaVI1ek8xdHRDQjNlRU1lcEZ1V2VtMGtjNXpQTmc4b3pHdE1pOFVQbFh2WDNZaWFhMzZWekN1LUYwUExlNU05UWRSUW1Yb29sLTIwQU5pWURjTHk3bFUtbmI5X3UtYnRmUEhjU3BIaG8zMS04Q3ZIMGNQbFBvQk5DTW85WDFId3BOSi1QeDd0QjdQNHJB?oc=5",
    "title": "Ex-Languyan vice mayor wins Tawi-Tawi 2nd District seat in BARMM Parliament",
    "reason": "published 2026-09-14"
+  },
+  {
+   "url": "https://www.volcanodiscovery.com/earthquakes/quake-info/23631741/mag3quake-Nov-12-2026-Mindanao-Philippines.html",
+   "via": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc0V0cGNMT2FzajhNSHc2UmVsWEZOV3V3bjFpS25wTXJ6M0d3R0RsdUdkbFRxYkt5NHRXbldJVjJFbGhuc05PTkF3OFVtUUV0cTRHU2dfR1ZjQzdMYldhVjRmMFlxLU15ZnFmOXJzMk9FNVBENUZWUUdXQm1SRVJ6MzRrdDBBem9rdUNNVGRRVnNPQlNsbmwxNC0xc00wVDhTRlN1Z2ZLVHlDQXRvNHc4U1JR?oc=5",
+   "title": "Light mag. 3.2 earthquake - 37 km southeast of Marawi City, Philippines, on Thursday, Nov 12, 2026, at 03:25 pm (Manila time)",
+   "reason": "not a news report"
   }
  ],
  "weeks": [
