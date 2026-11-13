@@ -1,6 +1,6 @@
 ---
-title: Why data matters for planning, and how far the Bangsamoro has to catch up
-summary: Every plan, budget and program runs on numbers: how many families are poor, which barangays flood, which towns lack a clinic, whether last year's spending worked. In the Bangsamoro, those numbers come from years apart, on a map that has since changed, and many are hard to find or disagree with each other. Here is why that matters across every sector, what up-to-date looks like, and the five steps the region still has to climb.
+title: How data can shape the Bangsamoro's future
+summary: Data is how a government sees what is lacking, what needs adjusting and what to improve: which towns have no clinic, which programs are falling behind, where the money did the most good. In the Bangsamoro, many of those numbers are years old, years apart or in disagreement, on a map that has since changed. Here is why current data matters across every sector, what it already looks like where it exists, and the five steps the region still has to climb.
 category: transparency
 tags: data, planning, open data, development plan, transparency, audit, health, education, local government
 date: 2026-11-13
@@ -11,11 +11,23 @@ author: betterbarmm
 
 A government plans the way a family budgets: it needs to know what it has, what it needs, and what last month's spending bought. For a region of hundreds of towns, islands and barangays, that knowledge comes from data. How many families live below the poverty line, and where. Which barangays flood. Which towns have no health station. How many roads, classrooms and water systems were promised, and how many were built.
 
-When those numbers are current, money can follow need. When they are old, missing or contradict each other, a plan is built on guesses: a health station goes where the population was ten years ago, relief misses the barangays that flood most, and nobody can tell at the end of the year whether a program worked.
+The plans made on those numbers decide which towns get the next clinic, road, classroom or water system, and which do not. When the numbers are current, money can follow need. When they are old, missing or contradict each other, a plan is built on guesses: a health station goes where the population was ten years ago, relief misses the barangays that flood most, and nobody can tell at the end of the year whether a program worked.
 
 {{figure:cycle}}
 
 The [2nd Bangsamoro Development Plan 2023–2028](https://betterbarmm.com/development-plan) sets 62 targets across 16 areas, from poverty and jobs to farms, forests, health and peace. Each one can only be checked if someone counts the same thing again, the same way, and publishes it.
+
+## What the numbers show
+
+Data does three jobs for a plan, and each one shapes what the region becomes.
+
+- **It shows what is lacking.** Counted town by town, it points to the gaps: the barangays with no evacuation site, the towns with no health station, the schools with more learners than classrooms. A need that is not counted is a need that is not planned for.
+- **It shows what to adjust.** Counted again the next year, it shows whether a program is working, and where to move money and people: a target falling behind, a town whose enrolment jumped, a road paid for and not finished.
+- **It shows what to improve.** Compared across towns and years, it shows what worked where, so the next plan builds on what succeeded instead of repeating what did not.
+
+{{figure:shows}}
+
+Every one of those depends on the numbers being current, complete and comparable. The rest of this explainer is about how far the region's numbers are from that.
 
 ## What up-to-date looks like
 
@@ -45,7 +57,7 @@ A plan rarely uses a number on its own. It divides one by another: people per he
 
 {{figure:apart}}
 
-The region's map has also moved while the figures sat still. Maguindanao split into Maguindanao del Norte and del Sur in 2022. Sulu left the region in 2024, and the same year the Special Geographic Area's 8 towns were created from barangays that had belonged to North Cotabato. A 2020 census, a 2021 registry or a 2020 audit counts places by the old lines. To compare them with a 2025 figure, someone has to redraw each old count onto the new map, barangay by barangay, before the arithmetic can even start. Most planners do not have the time, so the numbers are used as they are, and the plan inherits the error.
+The region's map has also moved while the figures sat still. Maguindanao split into Maguindanao del Norte and del Sur in 2022. Sulu left the region in 2024, and the same year the Special Geographic Area's 8 towns were created from barangays that had belonged to North Cotabato. A 2020 census, a 2021 registry or a 2020 audit counts places by the old lines. To compare them with a 2025 figure, someone has to redraw each old count onto the new map, barangay by barangay, before the arithmetic can even start. Most planners do not have the time, so the numbers are used as they are, and the plan inherits the error: a gap that opened after 2020 does not show, and a program cannot be adjusted against a baseline from another map.
 
 The fix is not one new survey. It is counting the main things on the same cycle, so that each year's plan can draw its figures from the same year, on the same map.
 
@@ -71,29 +83,29 @@ Budget reviews tell the same story. In May 2026, the Bangsamoro Parliament's Com
 
 {{figure:gaps}}
 
-Each of those is a planning question, and every sector has its own version. How many health stations lack a midwife? Which barangays have no evacuation site? Which roads were paid for and not finished? With a register that counts them every year, place by place, the answer is a search away, and a shortfall is caught in March instead of a hearing in May.
+Each of those is a planning question, and every sector has its own version. How many health stations lack a midwife? Which barangays have no evacuation site? Which roads were paid for and not finished? With a register that counts them every year, place by place, the answer is a search away: what is lacking shows before the budget is drawn up, and a shortfall is caught in March, while it can still be adjusted, instead of at a hearing in May.
 
-## How far the region has to climb
+## Five steps to numbers the region can plan on
 
-Turning a number someone has into a number everyone can use takes five steps. The region has started on some, and not yet on others.
+Between a figure kept in an office and a figure a planner, a reporter or a resident can use, there are five steps: collect it, publish it, keep it current, join it to other records, and open it for reuse. The region is partway up. Three of the five are in place in part, two have not started, and none is complete.
 
 {{figure:ladder}}
 
-None of these needs new technology. They need decisions:
+None of the five needs new technology. Each needs a decision, and each one lets the region see more clearly what is lacking, what to adjust and what to improve:
 
-- **Count the same things every year,** with the same definitions, so this year can be compared with last.
-- **Publish what is counted,** in files people can download, not only in speeches, releases and posters.
-- **Date every figure,** and say what it covers: which year, which places, whether Sulu is in it.
-- **Use the codes that already exist,** the Philippine Statistics Authority's place codes and IDs like the school ID, so records from different offices line up.
-- **Say how the data may be reused,** with clear terms, so citizens, researchers and other offices can build on it.
+1. **Collect: count the same things every year,** with the same definitions. This is what shows whether a program is on track, in time to adjust it.
+2. **Publish: put what is counted where anyone can find it,** in files people can download, not only in Acts, speeches, releases and posters. This is what lets a gap be seen by more than the office that counted it.
+3. **Keep it current: update on a schedule, and date every figure,** with the year and places it covers, and whether Sulu is in it. This is what keeps a plan from being built on a picture that is years old.
+4. **Join it: use the codes that already exist,** the Philippine Statistics Authority's place codes and IDs like the school ID, so a town's schools, clinics, roads and budget line up. This is what turns separate counts into the ratios a plan needs, like learners per classroom or people per health station.
+5. **Open it: say how the data may be reused,** under clear terms, so researchers, citizens and other offices can build on it and point to what could be done better.
 
-National agencies have shown it can be done quickly. The Department of Education went from reports to downloadable school files in a single release, and every town's finances already reach the Bureau of Local Government Finance each year. The region can do the same for what only it holds: its ministries' programs and spending, its madaris and learning centres, its scholarships, its projects under construction, its own audits.
+National agencies have shown how quickly this can move. The Department of Education went from reports to downloadable school files in a single release, and every town's finances already reach the Bureau of Local Government Finance each year. The region can do the same for what only it holds: its ministries' programs and spending, its madaris and learning centres, its scholarships, its projects under construction, and its own audits.
 
 ## What BetterBARMM does, and does not do
 
 BetterBARMM gathers what the region's offices and the national government publish, puts it side by side, and links every figure back to its source. It does not make the figures: every number here is the source's own, shown as published, with its date. Where a record is old, missing or in disagreement, we say so, as this explainer does.
 
-The faster the region publishes, the more current this site can be. Every dataset an office opens is one more question a resident, a farmer, a teacher or a planner can answer for themselves.
+The faster the region publishes, the more current this site can be. Every dataset an office opens is one more question a resident, a farmer, a teacher or a planner can answer for themselves, and one more place where the next plan can be built on what is true now rather than on what was true years ago.
 
 ## Sources
 

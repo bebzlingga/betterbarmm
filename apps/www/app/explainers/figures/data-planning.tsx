@@ -1,7 +1,7 @@
 import { CheckIcon, MinusIcon, XIcon } from '@phosphor-icons/react/ssr'
 
 /* ============================================================
-   Graphics for "Why data matters for planning"
+   Graphics for "How data can shape the Bangsamoro's future"
 
    Plain HTML on the site's tokens, as the other explainers' graphics
    are, so they read in both themes and print. Every number is one a
@@ -46,6 +46,91 @@ export function Cycle() {
 				<span className='h-px flex-1 bg-[var(--rule)]' aria-hidden='true' />
 			</p>
 			<figcaption className={CAPTION}>A plan sets targets, the budget funds them, offices deliver, and measurement shows whether the targets were met. Each step reads numbers from the step before it.</figcaption>
+		</figure>
+	)
+}
+
+/* ---- 1b. What the numbers show: what is lacking, what to adjust, what to improve ----
+   Schematic, not data: the shapes show the idea, and the caption says so. */
+
+const INK = 'var(--ink-3)'
+const ACC = 'var(--accent)'
+
+function Lacking() {
+	// A grid of towns; the ones without a clinic stand out.
+	const gaps = new Set([3, 8, 9, 14, 20])
+	return (
+		<svg viewBox='0 0 160 96' className='h-24 w-full' aria-hidden='true'>
+			{Array.from({ length: 24 }, (_, i) => {
+				const x = 8 + (i % 8) * 19
+				const y = 8 + Math.floor(i / 8) * 28
+				return gaps.has(i) ? (
+					<rect key={i} x={x} y={y} width={13} height={13} fill='none' stroke={ACC} strokeWidth={2} strokeDasharray='3 2' />
+				) : (
+					<rect key={i} x={x} y={y} width={13} height={13} fill={INK} fillOpacity={0.35} />
+				)
+			})}
+		</svg>
+	)
+}
+
+function Adjust() {
+	// A target line, a result falling below it, and the correction.
+	return (
+		<svg viewBox='0 0 160 96' className='h-24 w-full' aria-hidden='true'>
+			<line x1={8} y1={22} x2={152} y2={22} stroke={INK} strokeWidth={1.5} strokeDasharray='4 3' />
+			<text x={152} y={15} textAnchor='end' fontSize={9} fill={INK}>target</text>
+			<polyline points='8,78 40,62 72,54 100,60' fill='none' stroke={INK} strokeWidth={2.5} strokeLinejoin='round' />
+			<polyline points='100,60 126,40 152,26' fill='none' stroke={ACC} strokeWidth={2.5} strokeDasharray='5 3' strokeLinejoin='round' />
+			<circle cx={100} cy={60} r={4.5} fill={ACC} />
+		</svg>
+	)
+}
+
+function Improve() {
+	// The same measure in two years, side by side, town by town.
+	const before = [30, 44, 26, 38]
+	const after = [46, 52, 48, 50]
+	return (
+		<svg viewBox='0 0 160 96' className='h-24 w-full' aria-hidden='true'>
+			<line x1={6} y1={88} x2={154} y2={88} stroke={INK} strokeOpacity={0.5} />
+			{before.map((b, i) => {
+				const x = 12 + i * 37
+				return (
+					<g key={i}>
+						<rect x={x} y={88 - b} width={13} height={b} fill={INK} fillOpacity={0.35} />
+						<rect x={x + 15} y={88 - after[i]!} width={13} height={after[i]!} fill={ACC} />
+					</g>
+				)
+			})}
+		</svg>
+	)
+}
+
+const SHOWS = [
+	{ job: 'What is lacking', Pic: Lacking, how: 'Counted town by town, the gaps stand out: the barangays with no evacuation site, the towns with no health station.' },
+	{ job: 'What to adjust', Pic: Adjust, how: 'Counted again next year, a program that is falling behind its target shows in time to move money and people.' },
+	{ job: 'What to improve', Pic: Improve, how: 'Compared across towns and years, what worked shows, so the next plan builds on it.' },
+]
+
+export function Shows() {
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>What the numbers show</p>
+			<p className={TITLE}>Three things a planner can only see with current data.</p>
+			<ol className='!mt-6 grid !list-none gap-3 !pl-0 sm:grid-cols-3 [&>li+li]:!mt-0'>
+				{SHOWS.map(({ job, Pic, how }, i) => (
+					<li key={job} className='flex flex-col border border-[var(--rule)] bg-[var(--paper-2)] p-4'>
+						<Pic />
+						<span className='mt-3 flex items-baseline gap-2'>
+							<span className='font-mono text-[0.6875rem] font-semibold tabular-nums text-[var(--accent)]'>{String(i + 1).padStart(2, '0')}</span>
+							<span className='text-[0.9375rem] font-bold text-[var(--ink)]'>{job}</span>
+						</span>
+						<span className='mt-1.5 text-[0.8125rem] leading-[1.65] text-[var(--ink-3)]'>{how}</span>
+					</li>
+				))}
+			</ol>
+			<figcaption className={CAPTION}>An illustration of the idea: the shapes are not real figures. Each of the three needs the same thing counted the same way, every year, place by place.</figcaption>
 		</figure>
 	)
 }
@@ -333,7 +418,7 @@ export function Ladder() {
 	return (
 		<figure className={FIG}>
 			<p className={KICKER}>How far to catch up</p>
-			<p className={TITLE}>Five rungs from a number someone has to a number everyone can use.</p>
+			<p className={TITLE}>Five steps from a figure kept in an office to a figure anyone can plan with.</p>
 			<ol className='!mt-6 !list-none !pl-0'>
 				{LADDER.map((r, i) => {
 					const m = MARK[r.mark]
@@ -353,13 +438,14 @@ export function Ladder() {
 					)
 				})}
 			</ol>
-			<figcaption className={CAPTION}>Where the region stands, from the records this site keeps. None of the five rungs is fully in place yet; the first three are where the work is.</figcaption>
+			<figcaption className={CAPTION}>Where the region stands, from the records this site keeps: 3 of the 5 steps in place in part, 2 not yet started, none complete.</figcaption>
 		</figure>
 	)
 }
 
 export const DATA_PLANNING_FIGURES = {
 	cycle: <Cycle />,
+	shows: <Shows />,
 	ages: <Ages />,
 	apart: <Apart />,
 	'three-counts': <ThreeCounts />,
