@@ -20,6 +20,7 @@ import {
 import type { Icon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { TOPICS, type Project } from '../_lib/workspaces'
+import { DirectoryGrid } from './directory-grid'
 import type { Workspace } from './workspace-index'
 
 /* ============================================================
@@ -56,50 +57,67 @@ const ICONS: Record<string, Icon> = {
 	'Open Data': DatabaseIcon,
 }
 
-type Entry = Pick<Workspace, 'label' | 'topic' | 'href' | 'blurb'> & { open: boolean }
+type Entry = Pick<Workspace, 'label' | 'topic' | 'href' | 'blurb' | 'measure'> & { open: boolean }
 
-function Row({ entry }: { entry: Entry }) {
+/** One workspace or project as a card. `feature` is the wide crimson one (the data underneath everything). */
+function Card({ entry, topic, feature = false }: { entry: Entry; topic: string; feature?: boolean }) {
 	const Glyph = ICONS[entry.label]
 	const external = entry.href?.startsWith('http')
 	const Arrow = external ? ArrowUpRightIcon : ArrowRightIcon
+	const tile = feature
+		? 'bg-white/12 text-white group-hover:bg-white group-hover:text-[var(--accent)]'
+		: entry.open
+			? 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover:bg-[var(--accent)] group-hover:text-white'
+			: 'bg-[var(--paper-2)] text-[var(--ink-mute)]'
 	const body = (
 		<>
-			{Glyph ? (
-				<Glyph
-					size={20}
-					weight='duotone'
-					aria-hidden='true'
-					className={`mt-0.5 shrink-0 ${entry.open ? 'text-[var(--accent)]' : 'text-[var(--ink-mute)]'}`}
-				/>
-			) : null}
-			<span className='min-w-0 flex-1'>
-				<span className='flex items-baseline justify-between gap-3'>
-					<span
-						className={`text-[0.96875rem] font-extrabold tracking-[-0.02em] ${entry.open ? 'text-[var(--ink)] group-hover:text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}
-					>
-						{entry.label}
-					</span>
-					{entry.open ? (
-						<Arrow
-							className='size-3.5 shrink-0 text-[var(--ink-3)] transition duration-200 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-							aria-hidden='true'
-						/>
-					) : (
-						<span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming</span>
-					)}
+			{/* A crimson rule that draws across the top on hover. */}
+			{feature ? null : (
+				<span aria-hidden='true' className='absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 bg-[var(--accent)] transition-transform duration-500 ease-out group-hover:scale-x-100' />
+			)}
+			<span className='flex items-start justify-between gap-4'>
+				<span className={`grid size-12 shrink-0 place-items-center transition duration-300 ${tile}`}>
+					{Glyph ? <Glyph size={24} weight='duotone' aria-hidden='true' /> : null}
 				</span>
-				<span className='mt-1 line-clamp-2 text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>{entry.blurb}</span>
+				{entry.open ? (
+					<span className={`text-[0.625rem] font-semibold uppercase tracking-[0.16em] ${feature ? 'text-white/70' : 'text-[var(--ink-mute)]'}`}>{topic}</span>
+				) : (
+					<span className='rounded-full bg-[var(--paper-2)] px-2.5 py-1 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Coming soon</span>
+				)}
+			</span>
+			<span className={feature ? 'mt-auto block pt-10 sm:max-w-[30rem]' : 'block'}>
+				<span className={`mt-6 block font-extrabold tracking-[-0.025em] ${feature ? 'text-[clamp(1.5rem,2.4vw,2rem)] leading-tight text-white' : `text-[1.125rem] ${entry.open ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}`}>
+					{entry.label}
+				</span>
+				<span className={`mt-2 line-clamp-3 text-[0.8125rem] leading-[1.6] ${feature ? 'text-white/80' : 'text-[var(--ink-3)]'}`}>{entry.blurb}</span>
+			</span>
+			<span className={`mt-auto flex items-center justify-between gap-3 pt-6`}>
+				<span className={`text-[0.6875rem] font-semibold uppercase tracking-[0.12em] ${feature ? 'text-white/70' : 'text-[var(--ink-mute)]'}`}>{entry.measure}</span>
+				{entry.open ? (
+					<span
+						className={`grid size-9 shrink-0 place-items-center rounded-full transition duration-300 ${
+							feature
+								? 'bg-white text-[var(--accent)]'
+								: 'border border-[var(--rule)] text-[var(--ink-3)] group-hover:border-[var(--accent)] group-hover:bg-[var(--accent)] group-hover:text-white'
+						}`}
+					>
+						<Arrow className='size-3.5 transition duration-300 group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
+					</span>
+				) : null}
 			</span>
 		</>
 	)
-	const className = 'group -mx-3 flex gap-3.5 px-3 py-4 transition duration-200'
-	if (!entry.open || !entry.href) return <div className={className}>{body}</div>
+	const base = `group relative flex h-full flex-col overflow-hidden p-6 transition duration-300 ${
+		feature ? 'bg-[var(--accent)] sm:min-h-[15rem]' : 'border border-[var(--rule)] bg-[var(--paper)] sm:min-h-[16.5rem]'
+	}`
+	if (!entry.open || !entry.href) return <div className={`${base} opacity-70`}>{body}</div>
+	const live = `${base} hover:-translate-y-1 hover:shadow-[0_24px_48px_-30px_rgba(25,23,19,0.5)] ${feature ? '' : 'hover:border-[var(--ink)]'}`
 	return external ? (
-		<a href={entry.href} className={`${className} hover:bg-[var(--paper-2)]`}>
+		<a href={entry.href} className={live}>
 			{body}
 		</a>
 	) : (
-		<Link href={entry.href} className={`${className} hover:bg-[var(--paper-2)]`}>
+		<Link href={entry.href} className={live}>
 			{body}
 		</Link>
 	)
@@ -111,42 +129,15 @@ export function Directory({ workspaces, projects }: { workspaces: Workspace[]; p
 		...workspaces.map((w) => ({ ...w, open: w.state === 'live' && Boolean(w.href) })),
 		...projects.filter((p) => p.state === 'live').map((p) => ({ ...p, open: Boolean(p.href) })),
 	]
-	const groups = TOPICS.map((topic) => ({ ...topic, entries: entries.filter((entry) => entry.topic === topic.key) })).filter(
-		(group) => group.entries.length,
-	)
-	const columns = groups.filter((group) => group.key !== 'data')
-	const data = groups.find((group) => group.key === 'data')
-
-	return (
-		<div>
-			<div className='grid gap-x-14 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-20'>
-				{columns.map((group) => (
-					<section key={group.key} aria-labelledby={`topic-${group.key}`} className='border-t-2 border-[var(--ink)] pt-5'>
-						<h3 id={`topic-${group.key}`} className='text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
-							{group.title}
-						</h3>
-						<p className='mt-1 text-[0.8125rem] text-[var(--ink-3)]'>{group.lead}</p>
-						<ul className='mt-3 divide-y divide-[var(--rule-soft)]'>
-							{group.entries.map((entry) => (
-								<li key={entry.label}>
-									<Row entry={entry} />
-								</li>
-							))}
-						</ul>
-					</section>
-				))}
-			</div>
-
-			{/* The data under every group, as one band across the foot rather than a column of one. */}
-			{data ? (
-				<ul className='mt-12 border-y border-[var(--rule)]'>
-					{data.entries.map((entry) => (
-						<li key={entry.label}>
-							<Row entry={entry} />
-						</li>
-					))}
-				</ul>
-			) : null}
-		</div>
-	)
+	// Topic order, then the data underneath last as the wide feature card.
+	const titles = Object.fromEntries(TOPICS.map((t) => [t.key, t.title]))
+	const ordered = TOPICS.flatMap((t) => entries.filter((e) => e.topic === t.key))
+	const items = ordered.map((e) => ({
+		key: e.label,
+		topic: e.topic,
+		wide: e.topic === 'data',
+		node: <Card entry={e} topic={titles[e.topic]} feature={e.topic === 'data'} />,
+	}))
+	const topics = TOPICS.map((t) => ({ key: t.key, title: t.title, count: entries.filter((e) => e.topic === t.key).length })).filter((t) => t.count)
+	return <DirectoryGrid topics={topics} items={items} />
 }
