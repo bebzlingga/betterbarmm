@@ -198,10 +198,23 @@ export default async function EducationHome() {
 									</span>
 									<span className='mt-2 text-[0.9375rem] font-semibold leading-snug text-[var(--ink)]'>{f.label}</span>
 									{f.scope ? <span className='mt-1.5 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>{f.scope}</span> : null}
+									{f.breakdown ? (
+										<dl className='mt-3 grid grid-cols-2 gap-x-6 gap-y-1 border-t border-[var(--rule-soft)] pt-3 text-[0.75rem] leading-5'>
+											{Object.entries(f.breakdown).map(([k, v]) => (
+												<div key={k} className='flex items-baseline justify-between gap-2'>
+													<dt className='min-w-0 truncate text-[var(--ink-3)]' title={k}>
+														{k}
+													</dt>
+													<dd className='num shrink-0 font-semibold text-[var(--ink)]'>{v.toLocaleString('en-PH')}</dd>
+												</div>
+											))}
+										</dl>
+									) : null}
 									<span className='mt-auto pt-3 text-[0.71875rem] leading-5 text-[var(--ink-3)]'>
 										{f.saidBy}.{' '}
 										<a href={f.source.url} target='_blank' rel='noreferrer' className='rule-link'>
-											{f.source.outlet}, {longDate(f.source.date)}
+											{f.source.outlet}
+											{f.source.date ? `, ${longDate(f.source.date)}` : ''}
 										</a>
 									</span>
 								</li>

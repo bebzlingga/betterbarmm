@@ -375,7 +375,10 @@ export type MinistryFigure = {
 	of?: number
 	scope?: string
 	saidBy: string
-	source: { outlet: string; title: string; date: string; url: string }
+	/** Its parts, as the source splits it: scholars by area, learners by level. */
+	breakdown?: Record<string, number>
+	/** `date` is the day it was published, when the source gives one. */
+	source: { outlet: string; title: string; date?: string; url: string }
 }
 
 export const ministryFigures: MinistryFigure[] = readJson<{ figures: MinistryFigure[] }>('datasets/education/mbhte-figures.json')?.figures ?? []

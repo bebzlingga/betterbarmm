@@ -19,6 +19,7 @@ import auditFile from '../../../datasets/coa/audit-reports.json'
 import planFile from '../../../datasets/development-plan/scorecard.json'
 import schoolsFile from '../../../datasets/education/schools.json'
 import historiesFile from '../../../datasets/education/school-histories.json'
+import ministryFile from '../../../datasets/education/mbhte-figures.json'
 import healthFile from '../../../datasets/health/facilities.json'
 import week1 from '../../../datasets/news/weeks/2026-10-12.json'
 import week2 from '../../../datasets/news/weeks/2026-10-19.json'
@@ -106,9 +107,12 @@ function plan(): Entry[] {
 }
 
 /* ---- Schools ---- */
-type School = { id: string; name: string; level: string; management: string; area: string; town: string; townName: string; district?: string; founded?: number; pupils2015?: number }
+type School = { id: string; name: string; level: string; management: string; area: string; town: string; townName: string; district?: string | null; division?: string | null; founded?: number; pupils?: number | null; enrolment?: Record<string, number>; pupils2015?: number }
 function schools(): Entry[] {
-	const all = (schoolsFile as unknown as { schools: School[] }).schools
+	const file = schoolsFile as unknown as { years: string[]; schools: School[] }
+	const all = file.schools
+	const sy = (y: string) => y.replace('-', '–')
+	const latest = file.years.at(-1)!
 	const histories = new Map((historiesFile as unknown as { schools: { id: string; history: string[] }[] }).schools.map((s) => [s.id, s.history[0]]))
 	const rows: Entry[] = all.map((s) => ({
 		space: 'education',
@@ -116,12 +120,16 @@ function schools(): Entry[] {
 		title: `${s.name}, ${s.townName}`,
 		note: joined([
 			`${s.management} ${s.level.toLowerCase()} school in ${s.townName}, ${area(s.area)}.`,
+			s.district && s.division ? `In ${s.district}, ${s.division}.` : '',
 			s.founded ? `Founded ${s.founded}.` : '',
-			s.pupils2015 ? `${s.pupils2015} pupils in 2015.` : '',
+			s.pupils ? `${s.pupils.toLocaleString('en-PH')} learners in school year ${sy(latest)}, by DepEd's count.` : '',
+			s.enrolment && Object.keys(s.enrolment).length > 1
+				? `Learners by year: ${file.years.filter((y) => s.enrolment![y]).map((y) => `${sy(y)} ${s.enrolment![y]!.toLocaleString('en-PH')}`).join(', ')}${s.pupils2015 ? `; 2015–16 ${s.pupils2015.toLocaleString('en-PH')}` : ''}.`
+				: s.pupils2015 ? `${s.pupils2015} pupils in 2015–16.` : '',
 			histories.get(s.id),
 		]),
 		href: `https://education.betterbarmm.com`,
-		text: joined([s.name, s.townName, area(s.area), s.level, s.management, s.district]).toLowerCase(),
+		text: joined([s.name, s.townName, area(s.area), s.level, s.management, s.district, s.division]).toLowerCase(),
 	}))
 	for (const [key, list] of groupBy(all, (s) => `${s.townName}|${s.area}`)) {
 		const [town, slug] = key.split('|')
@@ -129,7 +137,7 @@ function schools(): Entry[] {
 			space: 'education',
 			kind: 'Schools count',
 			title: `Schools in ${town}, ${area(slug!)}`,
-			note: `${list.length} schools: ${tally(count(list, (s) => `${s.management} ${s.level}`))}. From DepEd's masterlist and OpenStreetMap, so not every school may be here.`,
+			note: `${list.length} schools: ${tally(count(list, (s) => `${s.management} ${s.level}`))}; ${list.reduce((k, s) => k + (s.pupils ?? 0), 0).toLocaleString('en-PH')} learners in school year ${sy(latest)}. From DepEd's list for that year, with the madaris and colleges OpenStreetMap adds.`,
 			href: `https://education.betterbarmm.com`,
 			text: joined([town, area(slug!), 'schools']).toLowerCase(),
 
@@ -141,13 +149,41 @@ function schools(): Entry[] {
 			space: 'education',
 			kind: 'Schools count',
 			title: `Schools in ${area(slug)}`,
-			note: `${list.length} schools: ${tally(count(list, (s) => `${s.management} ${s.level}`))}.`,
+			note: `${list.length} schools: ${tally(count(list, (s) => `${s.management} ${s.level}`))}; ${list.reduce((k, s) => k + (s.pupils ?? 0), 0).toLocaleString('en-PH')} learners in school year ${sy(latest)}.`,
 			href: `https://education.betterbarmm.com`,
-			text: joined([area(slug), 'schools province']).toLowerCase(),
+			text: joined([area(slug), 'schools province learners enrolment']).toLowerCase(),
 			rollup: true,
 		})
 	}
+	rows.push({
+		space: 'education',
+		kind: 'Schools count',
+		title: 'Schools and learners in the region',
+		note: `${all.length.toLocaleString('en-PH')} schools: ${tally(count(all, (s) => `${s.management} ${s.level}`))}; ${all.reduce((k, s) => k + (s.pupils ?? 0), 0).toLocaleString('en-PH')} learners in school year ${sy(latest)}, by DepEd's count (formal schooling; not the Alternative Learning System or community learning centres). Sulu is not in it.`,
+		href: `https://education.betterbarmm.com`,
+		text: 'bangsamoro barmm region regional schools learners enrolment enrollment total deped',
+		rollup: true,
+	})
 	return rows
+}
+
+/* ---- What the education ministry says ----
+   MBHTE publishes no dataset: its figures as it and the Parliament stated them, each with where. */
+type MinistryFigure = { topic: string; label: string; value: number; unit?: string; of?: number; scope?: string; breakdown?: Record<string, number>; saidBy: string; source: { outlet: string; title: string; date?: string; url: string } }
+function ministry(): Entry[] {
+	return (ministryFile as unknown as { figures: MinistryFigure[] }).figures.map((f) => ({
+		space: 'education',
+		kind: 'Ministry figure',
+		title: f.label,
+		note: joined([
+			`${f.unit === '%' ? `${f.value}%` : f.value.toLocaleString('en-PH')}${f.of ? ` of ${f.of.toLocaleString('en-PH')}` : ''}.`,
+			f.scope ? `${f.scope}.` : '',
+			f.breakdown ? `By ${Object.entries(f.breakdown).map(([k, v]) => `${k} ${v.toLocaleString('en-PH')}`).join(', ')}.` : '',
+			`As stated by ${f.saidBy}; ${f.source.outlet}${f.source.date ? `, ${f.source.date}` : ''}.`,
+		]),
+		href: f.source.url,
+		text: joined([f.topic, f.label, f.scope, f.saidBy, 'mbhte ministry of basic higher and technical education']).toLowerCase(),
+	}))
 }
 
 /* ---- Health facilities ---- */
@@ -394,7 +430,7 @@ function works(): Entry[] {
 }
 
 export function workspaces(): Entry[] {
-	return [...audits(), ...plan(), ...schools(), ...health(), ...news(), ...opportunities(), ...preparedness(), ...procurement(), ...works()]
+	return [...audits(), ...plan(), ...schools(), ...ministry(), ...health(), ...news(), ...opportunities(), ...preparedness(), ...procurement(), ...works()]
 }
 
 /** The words a question uses for each kind of row here. */
@@ -402,7 +438,8 @@ export const WORKSPACES_ASKED: Record<string, string> = {
 	'Audit report': 'audit audited coa commission on audit opinion findings disallowance unqualified qualified adverse disclaimer',
 	'Plan indicator': 'development plan bdp target targets goal indicator progress poverty growth rate',
 	School: 'school schools elementary high secondary college university pupils students founded',
-	'Schools count': 'how many schools number total count elementary high',
+	'Schools count': 'how many schools number total count elementary high learners enrolment enrollment',
+	'Ministry figure': 'mbhte ministry education minister enrolment enrollment learners scholars scholarship ahme teachers classrooms textbooks vacant hired madaris',
 	'Health facilities': 'health facilities clinic clinics health station rural health unit birthing hospital how many',
 	Hospital: 'hospital hospitals medical center',
 	News: 'news latest recent headline headlines reported report announced happened week today',
@@ -420,4 +457,4 @@ export const WORKSPACES_ASKED: Record<string, string> = {
 }
 
 /** Rows that come up only when a question uses their own words: a town's name should not summon its schools, hazards, news or DPWH roads. */
-export const WORKSPACES_ASKED_ONLY = ['School', 'Schools count', 'Health facilities', 'Hospital', 'News', 'Job', 'Emergency facilities', 'Hazard exposure', 'Procurement', 'Blacklisted', 'DPWH project', 'DPWH projects', 'Audit report']
+export const WORKSPACES_ASKED_ONLY = ['School', 'Schools count', 'Ministry figure', 'Health facilities', 'Hospital', 'News', 'Job', 'Emergency facilities', 'Hazard exposure', 'Procurement', 'Blacklisted', 'DPWH project', 'DPWH projects', 'Audit report']
