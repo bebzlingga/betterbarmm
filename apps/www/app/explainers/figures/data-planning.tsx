@@ -143,8 +143,8 @@ const AGES: { what: string; year: number | null; note: string }[] = [
 	{ what: 'Learners in every school', year: 2026, note: 'DepEd’s school files, school year 2025–26' },
 	{ what: 'What each town collected and spent', year: 2025, note: 'Reported to the Bureau of Local Government Finance' },
 	{ what: 'The development plan’s targets', year: 2025, note: 'Newest readings: 14 of 62 in 2025, 47 in 2024, 1 in 2023' },
+	{ what: 'Population by barangay', year: 2024, note: 'The PSA’s 2024 census' },
 	{ what: 'Health facilities by town', year: 2021, note: 'The Department of Health’s registry, as of January 2021' },
-	{ what: 'Population by barangay', year: 2020, note: 'The 2020 census' },
 	{ what: 'Audits of the towns', year: 2020, note: 'FY 2020: the newest reports this site could read' },
 	{ what: 'Audits of the regional ministries', year: null, note: 'None this site could read, for any year' },
 	{ what: 'Road crashes, drownings and fires', year: null, note: 'No office keeps a public register; this site reads them from the news' },
@@ -196,9 +196,9 @@ export function Ages() {
 const Y0 = 2019
 const Y1 = 2026
 const RECORDS: { what: string; year: number }[] = [
-	{ what: 'Population by barangay', year: 2020 },
 	{ what: 'Town audits', year: 2020 },
 	{ what: 'Health facilities', year: 2021 },
+	{ what: 'Population by barangay', year: 2024 },
 	{ what: 'Plan readings', year: 2024 },
 	{ what: 'Town finances', year: 2025 },
 	{ what: 'Learners per school', year: 2026 },
@@ -263,7 +263,7 @@ export function Apart() {
 					))}
 			</ol>
 			<figcaption className={CAPTION}>
-				Six years separate the oldest figure from the newest. Learners per health facility, for example, divides a 2025–26 count by a 2021 one, and the people a clinic serves by a 2020 census taken before three of the region’s boundaries moved.
+				Six years separate the oldest figure from the newest. People per health station, for example, divides a 2024 census by a 2021 registry, and learners per health facility a 2025–26 count by the same 2021 one, taken before three changes to the region’s map.
 			</figcaption>
 		</figure>
 	)
@@ -403,7 +403,7 @@ type Mark = 'yes' | 'part' | 'no'
 const LADDER: { rung: string; what: string; mark: Mark; now: string }[] = [
 	{ rung: 'Collect', what: 'Count it, the same way every year.', mark: 'part', now: 'Budgets, contracts, town finances and the plan’s indicators are counted; incidents, school needs and many services are not.' },
 	{ rung: 'Publish', what: 'Put it where anyone can find it.', mark: 'no', now: 'The downloadable files this site uses are national (DepEd, DOH, BLGF, PhilGEPS, PSA); the region’s own figures come as Acts, releases and posts. 9 of 35 regional offices and 5 of 113 provinces, cities and towns publish a Citizen’s Charter.' },
-	{ rung: 'Keep it current', what: 'Update on a schedule, and date every figure.', mark: 'part', now: 'The plan’s newest readings are from 2024 and 2025; the health facility registry from 2021; barangay populations from 2020.' },
+	{ rung: 'Keep it current', what: 'Update on a schedule, and date every figure.', mark: 'part', now: 'The plan’s newest readings are from 2024 and 2025; the health facility registry from 2021; the town audits from 2020.' },
 	{ rung: 'Join it', what: 'Use the same codes, so records line up.', mark: 'part', now: 'The PSA’s place codes and IDs like DepEd’s school ID exist; the region’s own figures rarely carry them.' },
 	{ rung: 'Open it', what: 'In files people can reuse, under a clear licence.', mark: 'no', now: 'DepEd shows how, with downloadable files and terms of use; this site found no open-data portal of the region’s own.' },
 ]
@@ -443,6 +443,207 @@ export function Ladder() {
 	)
 }
 
+/* ---- Health, followed through ---- */
+
+const HEALTH = { asOf: 'January 27, 2021', facilities: 842, stations: 543, ruralUnits: 108, hospitals: 29, towns: 100 }
+const PEOPLE_2024 = 4516109
+const SGA = { towns: 8, people: 191235 }
+
+export function HealthList() {
+	const tiles = [
+		{ n: n(HEALTH.facilities), l: 'health facilities' },
+		{ n: n(HEALTH.stations), l: 'barangay health stations' },
+		{ n: n(HEALTH.ruralUnits), l: 'rural health units' },
+		{ n: n(HEALTH.hospitals), l: 'hospitals' },
+	]
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>One example: health</p>
+			<p className={TITLE}>The newest list of the region’s health facilities, town by town, and what has changed since.</p>
+			<div className='!mt-6 grid gap-3 sm:grid-cols-[13rem_minmax(0,1fr)]'>
+				<div className='flex flex-col justify-center border border-[var(--rule)] bg-[var(--paper-2)] p-4'>
+					<span className='text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>As of</span>
+					<span className='mt-1 text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>Jan 2021</span>
+					<span className='mt-2 text-[0.75rem] leading-snug text-[var(--ink-3)]'>Department of Health registry, {HEALTH.towns} towns</span>
+				</div>
+				<ul className='!m-0 grid !list-none grid-cols-2 gap-3 !pl-0 sm:grid-cols-4 [&>li+li]:!mt-0'>
+					{tiles.map((t) => (
+						<li key={t.l} className='border border-[var(--rule)] p-4'>
+							<span className='block text-[1.5rem] font-extrabold tabular-nums leading-none text-[var(--ink)]'>{t.n}</span>
+							<span className='mt-1.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{t.l}</span>
+						</li>
+					))}
+				</ul>
+			</div>
+			<div className='!mt-6 border-t border-[var(--rule)] pt-5'>
+				<p className='!m-0 text-[0.8125rem] font-semibold text-[var(--ink)]'>Since then, the map has moved</p>
+				<ol className='!mt-3 !list-none space-y-2 !pl-0 text-[0.8125rem] leading-[1.6] text-[var(--ink-2)] [&>li]:!mt-0'>
+					<li><span className='mr-2 font-semibold tabular-nums text-[var(--accent)]'>2022</span>Maguindanao splits into del Norte and del Sur.</li>
+					<li><span className='mr-2 font-semibold tabular-nums text-[var(--accent)]'>2024</span>Sulu leaves the region; the Special Geographic Area’s {SGA.towns} towns are created.</li>
+				</ol>
+				<div className='!mt-4 flex flex-wrap items-center gap-4'>
+					<span className='flex gap-1.5' aria-hidden='true'>
+						{Array.from({ length: SGA.towns }, (_, i) => (
+							<span key={i} className='size-5 border-2 border-dashed border-[var(--accent)]' />
+						))}
+					</span>
+					<span className='text-[0.8125rem] text-[var(--ink-2)]'>
+						<b className='tabular-nums text-[var(--ink)]'>{n(SGA.people)}</b> people in {SGA.towns} towns with no row in the 2021 list
+					</span>
+				</div>
+			</div>
+			<figcaption className={CAPTION}>
+				Department of Health, National Health Facility Registry, as of {HEALTH.asOf}, counted by type for the region’s {HEALTH.towns} towns of the time; the 8 towns’ people from the PSA’s 2024 census. Before 2024, their barangays belonged to towns of North Cotabato.
+			</figcaption>
+		</figure>
+	)
+}
+
+export function Ratio() {
+	const per = Math.round(PEOPLE_2024 / HEALTH.stations)
+	const cell = 'flex flex-col items-center text-center'
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>Two years, one number</p>
+			<p className={TITLE}>People per barangay health station, from the newest figure of each.</p>
+			<div className='!mt-6 flex flex-wrap items-start justify-center gap-x-6 gap-y-4'>
+				<span className={cell}>
+					<span className='text-[1.75rem] font-extrabold tabular-nums leading-none text-[var(--ink)]'>{n(PEOPLE_2024)}</span>
+					<span className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>people · <b className='text-[var(--accent)]'>2024</b></span>
+				</span>
+				<span className='text-[1.75rem] leading-none text-[var(--ink-3)]' aria-hidden='true'>÷</span>
+				<span className={cell}>
+					<span className='text-[1.75rem] font-extrabold tabular-nums leading-none text-[var(--ink)]'>{n(HEALTH.stations)}</span>
+					<span className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>stations · <b className='text-[var(--accent)]'>2021</b></span>
+				</span>
+				<span className='text-[1.75rem] leading-none text-[var(--ink-3)]' aria-hidden='true'>≈</span>
+				<span className={cell}>
+					<span className='text-[1.75rem] font-extrabold tabular-nums leading-none text-[var(--accent)]'>{n(per)}</span>
+					<span className='mt-1.5 text-[0.75rem] text-[var(--ink-3)]'>per station · no real year</span>
+				</span>
+			</div>
+			<figcaption className={CAPTION}>
+				The PSA’s 2024 census counts {n(PEOPLE_2024)} people in 2,174 of the region’s barangays; the 2021 registry counts {HEALTH.stations} barangay health stations, in a region of 100 towns rather than 108. The ratio mixes the two years and the two maps.
+			</figcaption>
+		</figure>
+	)
+}
+
+export function Stunting() {
+	const rows = [
+		{ v: 21, what: 'The plan’s own tracker', how: 'health offices’ weighing records (Operation Timbang), as reported in the 2024 Bangsamoro Development Report' },
+		{ v: 34.3, what: 'National survey', how: 'the 2023 Expanded National Nutrition Survey, as cited in the plan’s midterm update' },
+	]
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>When the numbers disagree</p>
+			<p className={TITLE}>Children under five who are stunted, 2023: two official answers.</p>
+			<ul className='!mt-6 !list-none space-y-5 !pl-0'>
+				{rows.map((r) => (
+					<li key={r.what} className='!mt-0'>
+						<span className='flex items-baseline justify-between gap-4'>
+							<span className='text-[0.8125rem] font-semibold text-[var(--ink)]'>{r.what}</span>
+							<span className='text-[1.375rem] font-extrabold tabular-nums text-[var(--ink)]'>{r.v}%</span>
+						</span>
+						<span className='mt-1.5 block h-3 bg-[var(--paper-2)]'>
+							<span className='block h-full bg-[var(--accent)] opacity-80' style={{ width: `${(r.v / 40) * 100}%` }} />
+						</span>
+						<span className='mt-1 block text-[0.71875rem] text-[var(--ink-3)]'>{r.how}</span>
+					</li>
+				))}
+			</ul>
+			<figcaption className={CAPTION}>13 points apart for the same year. The plan’s target of 23% by 2025 was set on the first kind of count; its latest reading is the second, so the two cannot be compared.</figcaption>
+		</figure>
+	)
+}
+
+export function Vaccines() {
+	const W = 640
+	const H = 240
+	const x = (y: number) => 50 + ((y - 2021) / 3) * (W - 100)
+	const y = (v: number) => H - 30 - (v / 100) * (H - 50)
+	const pts = [
+		{ yr: 2021, v: 60.7 },
+		{ yr: 2023, v: 43.8 },
+		{ yr: 2024, v: 51.6 },
+	]
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>Found late</p>
+			<p className={TITLE}>Infants fully vaccinated before their first birthday, against the plan’s target.</p>
+			<svg viewBox={`0 0 ${W} ${H}`} className='!mt-4 block h-auto w-full' role='img' aria-label='Fully immunized children: 60.7% in 2021, 43.8% in 2023, 51.6% in 2024, against a target of 75%.'>
+				<line x1={30} x2={W - 20} y1={y(75)} y2={y(75)} stroke='var(--accent)' strokeWidth={2} strokeDasharray='6 5' />
+				<text x={W - 20} y={y(75) - 8} textAnchor='end' fontSize={12} fontWeight={700} fill='var(--accent)'>
+					Target 75%
+				</text>
+				<line x1={30} x2={W - 20} y1={H - 30} y2={H - 30} stroke='var(--rule)' />
+				{[2021, 2022, 2023, 2024].map((yr) => (
+					<text key={yr} x={x(yr)} y={H - 10} textAnchor='middle' fontSize={12} fill='var(--ink-3)'>
+						{yr}
+					</text>
+				))}
+				<text x={x(2022)} y={y(52) + 18} textAnchor='middle' fontSize={11} fill='var(--ink-3)'>
+					no reading
+				</text>
+				<polyline points={pts.map((p) => `${x(p.yr)},${y(p.v)}`).join(' ')} fill='none' stroke='var(--ink)' strokeWidth={2.5} strokeLinejoin='round' />
+				{pts.map((p) => (
+					<g key={p.yr}>
+						<circle cx={x(p.yr)} cy={y(p.v)} r={5} fill='var(--ink)' />
+						<text x={x(p.yr)} y={y(p.v) - 12} textAnchor='middle' fontSize={13} fontWeight={700} fill='var(--ink)'>
+							{p.v}%
+						</text>
+					</g>
+				))}
+			</svg>
+			<figcaption className={CAPTION}>
+				2021 is the plan’s baseline; 2023 is as printed in the 2023 Bangsamoro Development Report, and 2024 in the plan’s midterm update, from the Ministry of Health’s records. The 2024 Bangsamoro Development Report names national vaccine stock-outs as a cause.
+			</figcaption>
+		</figure>
+	)
+}
+
+const OFFICES = ['Health', 'Schools', 'Social welfare', 'Planning']
+const SHARED = [
+	{ b: 'Counted once', d: 'A family is on one list, not four, and every office’s count matches.' },
+	{ b: 'Seen together', d: 'Each office sees what the others already know, like the barangays with the most young children.' },
+	{ b: 'Help sooner', d: 'No one starts a list from nothing when a need arises.' },
+	{ b: 'Collected once', d: 'No office pays to gather the same numbers twice.' },
+]
+
+export function Shared() {
+	return (
+		<figure className={FIG}>
+			<p className={KICKER}>Shared, data does more</p>
+			<p className={TITLE}>Four offices, one list on the same place codes.</p>
+			<div className='!mt-6 grid items-center gap-4 sm:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]'>
+				<ul className='!m-0 grid !list-none grid-cols-2 gap-2 !pl-0 [&>li+li]:!mt-0'>
+					{OFFICES.map((o) => (
+						<li key={o} className='border border-[var(--rule)] bg-[var(--paper-2)] px-3 py-2.5 text-center text-[0.8125rem] font-semibold text-[var(--ink)]'>
+							{o}
+						</li>
+					))}
+				</ul>
+				<span className='text-center text-[1.5rem] text-[var(--ink-3)]' aria-hidden='true'>
+					→
+				</span>
+				<span className='flex flex-col items-center justify-center border-2 border-[var(--accent)] px-4 py-5 text-center'>
+					<span className='text-[1rem] font-extrabold text-[var(--accent)]'>One list</span>
+					<span className='mt-1 text-[0.75rem] text-[var(--ink-3)]'>the PSA’s place codes, shared IDs</span>
+				</span>
+			</div>
+			<ul className='!mt-5 grid !list-none gap-3 !pl-0 sm:grid-cols-2 [&>li+li]:!mt-0'>
+				{SHARED.map((s) => (
+					<li key={s.b} className='border-l-2 border-[var(--accent)] pl-3'>
+						<span className='block text-[0.875rem] font-bold text-[var(--ink)]'>{s.b}</span>
+						<span className='block text-[0.78125rem] leading-[1.6] text-[var(--ink-3)]'>{s.d}</span>
+					</li>
+				))}
+			</ul>
+			<figcaption className={CAPTION}>An illustration of the idea, not a description of any one office’s system.</figcaption>
+		</figure>
+	)
+}
+
 export const DATA_PLANNING_FIGURES = {
 	cycle: <Cycle />,
 	shows: <Shows />,
@@ -452,4 +653,9 @@ export const DATA_PLANNING_FIGURES = {
 	gaps: <Gaps />,
 	audits: <Audits />,
 	ladder: <Ladder />,
+	'health-list': <HealthList />,
+	ratio: <Ratio />,
+	stunting: <Stunting />,
+	vaccines: <Vaccines />,
+	shared: <Shared />,
 }
