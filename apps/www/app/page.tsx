@@ -213,7 +213,7 @@ export default async function HomePage() {
 						<SectionHead
 							index='02'
 							eyebrow='Explainers'
-							title='How it works,'
+							title='Explainers,'
 							titleMuted='in plain words.'
 							aside={
 								<Link href='/explainers' className='inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>

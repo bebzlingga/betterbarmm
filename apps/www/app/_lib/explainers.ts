@@ -15,7 +15,8 @@ import { type Explainer, type ExplainerCategory, getPublishedExplainer, listPubl
    off the site until it is ready.
    ============================================================ */
 
-export type Article = Explainer & { author?: string }
+/** `cover`: the card's illustration, public/explainers/<slug>.jpg, where one has been made. */
+export type Article = Explainer & { author?: string; cover?: string }
 
 const DIR = path.join(process.cwd(), 'app/explainers/articles')
 
@@ -44,6 +45,7 @@ function parse(file: string): Article {
 		created_at: date,
 		updated_at: date,
 		author: meta.author,
+		cover: fs.existsSync(path.join(process.cwd(), 'public/explainers', `${slug}.jpg`)) ? `/explainers/${slug}.jpg` : undefined,
 	}
 }
 
