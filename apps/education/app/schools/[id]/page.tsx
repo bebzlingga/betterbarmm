@@ -196,6 +196,49 @@ export default async function SchoolPage({ params }: Props) {
 			</section>
 			) : null}
 
+			{/* ---- Learners, year by year: every count the records hold, oldest first ---- */}
+			{counts.length > 1 ? (
+				<section className='bg-[var(--paper-2)]'>
+					<div className='bb-container bb-section'>
+						<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
+							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Learners, year by year</h2>
+							<p className='max-w-[38rem] text-[0.875rem] leading-6 text-[var(--ink-3)] lg:text-right'>
+								As the Department of Education counted them: school years {enrolmentYears.map(syLabel).join(', ')} from its school data, and
+								the paler 2012–13 and 2015–16 from its 2019 masterlist. The years between are not held here.
+							</p>
+						</div>
+						{(() => {
+							const years = [...counts].reverse()
+							const top = Math.max(...years.map(([, n]) => n))
+							return (
+								<div className='mt-10 flex items-end gap-3 sm:gap-8'>
+									{years.map(([label, n], i) => {
+										const old = label === '2012–13' || label === '2015–16'
+										const gap = old && years[i + 1] && !(years[i + 1]![0] === '2012–13' || years[i + 1]![0] === '2015–16')
+										return (
+											<div key={label} className='contents'>
+												<div className='flex min-w-0 flex-1 flex-col items-stretch'>
+													<div className='flex h-64 flex-col justify-end'>
+														<span className='num mb-2 text-center text-[1.0625rem] font-extrabold text-[var(--ink)] sm:text-[1.25rem]'>{n.toLocaleString('en-PH')}</span>
+														<div
+															className={`bg-[var(--accent)] ${old ? 'opacity-40' : ''}`}
+															style={{ height: `${Math.max(2, (n / top) * 82)}%` }}
+															title={`${label}: ${n.toLocaleString('en-PH')} learners`}
+														/>
+													</div>
+													<span className='num border-t-2 border-[var(--ink)] pt-2 text-center text-[0.75rem] text-[var(--ink-3)] sm:text-[0.8125rem]'>{label}</span>
+												</div>
+												{gap ? <div aria-hidden='true' className='mb-8 h-40 w-px shrink-0 self-end border-l-2 border-dashed border-[var(--rule)]' /> : null}
+											</div>
+										)
+									})}
+								</div>
+							)
+						})()}
+					</div>
+				</section>
+			) : null}
+
 			{nearby.length ? (
 				<section className='bb-container pt-[clamp(3rem,6vw,5rem)]'>
 					<h2 className='text-[1.375rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Nearest schools</h2>
