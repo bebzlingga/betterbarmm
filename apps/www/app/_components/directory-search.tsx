@@ -43,7 +43,7 @@ const JUMP = [
 	{ href: '#regional', label: 'Regional offices', icon: BuildingsIcon },
 	{ href: '#national', label: 'National offices', icon: BankIcon },
 	{ href: '#local', label: 'Provinces and towns', icon: MapTrifoldIcon },
-	{ href: '/directory/parliament', label: 'Parliament', icon: UsersThreeIcon },
+	{ href: '#parliament', label: 'Parliament', icon: UsersThreeIcon },
 ]
 
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()

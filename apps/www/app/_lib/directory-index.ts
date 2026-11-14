@@ -74,7 +74,7 @@ export function searchIndex(): DirectoryEntry[] {
 			kind: 'Member of Parliament',
 			title: m.fullName,
 			sub: [m.district ?? m.sector ?? m.seatLabel, m.partyLabel].filter(Boolean).join(' · '),
-			href: `/directory/parliament#${memberId(m)}`,
+			href: `/directory/member/${memberId(m)}`,
 			image: memberPortrait(m)?.src,
 			terms: fold(m.fullName, m.district, m.sector, m.partyLabel, m.seatLabel),
 		})

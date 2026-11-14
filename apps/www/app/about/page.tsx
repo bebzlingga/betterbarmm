@@ -1,9 +1,11 @@
-import { ArrowRightIcon, ArrowUpRightIcon, BuildingsIcon, GraduationCapIcon, NewspaperIcon, UsersThreeIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, BuildingsIcon, EyeIcon, GraduationCapIcon, HandHeartIcon, NewspaperIcon, SealCheckIcon, TextAaIcon, UsersThreeIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
-import { Masthead } from '../_components/masthead'
+import { Directory } from '../_components/directory'
+import { Masthead, SectionHead } from '../_components/masthead'
+import { datasets } from '../_lib/open-data'
 import { SiteHeader } from '../_components/site-header'
 import { projects, workspaces } from '../_lib/workspaces'
 
@@ -23,29 +25,33 @@ export const metadata: Metadata = pageMeta({
    ============================================================ */
 
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
-const LEAD = 'mt-3 max-w-[46rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'
 
-// The front page's lists, so a workspace or project added there is covered here too. Live ones only: a
-// page that is not open yet is not something the site covers.
-const covered = [
-	{ title: 'Workspaces', items: workspaces.filter((w) => w.state === 'live' && w.href) },
-	{ title: 'Projects', items: projects.filter((p) => p.state === 'live' && p.href) },
+// Counted from the front page's lists and the open-data catalogue, so a page added there is counted here.
+const figures = [
+	{ value: workspaces.filter((w) => w.state === 'live' && w.href).length, label: 'Workspaces', note: 'each built around one part of the public record' },
+	{ value: projects.filter((p) => p.state === 'live' && p.href).length, label: 'Projects', note: 'each gathering one kind of record into a page' },
+	{ value: datasets.length, label: 'Open datasets', note: 'to download as tables, every column described' },
+	{ value: 0, label: 'Accounts needed', note: 'free to read, for anyone' },
 ]
 
 const principles = [
 	{
+		icon: SealCheckIcon,
 		title: 'Every figure has a source.',
 		body: 'A number, a name or a date on this site links to the document it came from, so anyone can check it rather than take our word for it.',
 	},
 	{
+		icon: TextAaIcon,
 		title: 'Plain words first.',
 		body: 'Records are explained for someone who has never read a bill or a budget, without changing what they say.',
 	},
 	{
+		icon: EyeIcon,
 		title: 'Gaps are shown, not hidden.',
 		body: 'Where a figure is provisional, a list is incomplete or a document could not be read, the page says so instead of rounding the doubt away.',
 	},
 	{
+		icon: HandHeartIcon,
 		title: 'Free and independent.',
 		body: 'Anyone can read it, without an account. It is not run by, and does not speak for, the Bangsamoro Government or any party.',
 	},
@@ -96,49 +102,41 @@ export default function AboutPage() {
 						</p>
 					</div>
 				</div>
-			</section>
 
-			{/* ---- What it covers ---- */}
-			<section className='bg-[var(--paper-2)]'>
-				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
-					<h2 className={H2}>What it covers</h2>
-					<p className={LEAD}>
-						{covered[0]!.items.length} workspaces, each built around one part of the public record, and{' '}
-						{covered[1]!.items.length} projects that each gather one kind of record into a page.
-					</p>
-					{covered.map((group) => (
-						<div key={group.title}>
-							<h3 className='bb-label mt-12'>{group.title}</h3>
-							<div className='mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
-								{group.items.map((w) => (
-									<a
-										key={w.label}
-										href={w.href}
-										className='group flex flex-col bg-[var(--paper)] p-7 transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)]'
-									>
-										<h4 className='text-[1.15rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>{w.label}</h4>
-										<p className='mt-3 flex-1 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{w.blurb}</p>
-										<span className='mt-6 inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--accent)]'>
-											Open
-											<ArrowUpRightIcon className='size-3.5 transition group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
-										</span>
-									</a>
-								))}
-							</div>
+				<dl className='mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-[3px] border border-[var(--rule)] bg-[var(--rule)] lg:mt-20 lg:grid-cols-4'>
+					{figures.map((f) => (
+						<div key={f.label} className='bg-[var(--paper)] p-6 lg:p-7'>
+							<dd className='bb-figure-sm text-[var(--ink)]'>{f.value}</dd>
+							<dt className='mt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>{f.label}</dt>
+							<p className='mt-2 text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>{f.note}</p>
 						</div>
 					))}
+				</dl>
+			</section>
+
+			{/* ---- What it covers: the front page's own grid, filters and all ---- */}
+			<section className='bg-[var(--paper-2)]'>
+				<div className='bb-container bb-section'>
+					<SectionHead index='01' eyebrow='What it covers' title='Every workspace,' titleMuted='and what it holds.' lead='Each built around one part of the public record, and every record traced back to its source.' />
+					<div className='mt-10'>
+						<Directory workspaces={workspaces} projects={projects} />
+					</div>
 				</div>
 			</section>
 
 			{/* ---- How it works ---- */}
 			<section className='bb-container bb-section'>
-				<h2 className={H2}>How it works</h2>
-				<p className={LEAD}>Four rules every page is held to.</p>
-				<div className='mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4'>
+				<SectionHead index='02' eyebrow='How it works' title='Four rules,' titleMuted='on every page.' />
+				<div className='mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 					{principles.map((p, i) => (
-						<div key={p.title} className='border-t border-[var(--rule)] pt-6'>
-							<p className='num text-[0.8125rem] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</p>
-							<h3 className='mt-3 text-[1.2rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{p.title}</h3>
+						<div key={p.title} className='flex flex-col rounded-[3px] border border-[var(--rule)] p-6 lg:p-7'>
+							<span className='flex items-center justify-between'>
+								<span className='grid size-11 place-items-center rounded-full bg-[var(--accent-soft)] text-[var(--accent)]'>
+									<p.icon size={22} weight='duotone' aria-hidden='true' />
+								</span>
+								<span className='num font-mono text-[0.6875rem] font-semibold text-[var(--ink-mute)]'>{String(i + 1).padStart(2, '0')}</span>
+							</span>
+							<h3 className='mt-6 text-[1.15rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{p.title}</h3>
 							<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{p.body}</p>
 						</div>
 					))}
@@ -147,7 +145,7 @@ export default function AboutPage() {
 
 			{/* ---- Who it is for ---- */}
 			<section className='bb-container bb-section-bottom'>
-				<h2 className={H2}>Who it is for</h2>
+				<SectionHead index='03' eyebrow='Who it is for' title='Anyone with' titleMuted='a question about the region.' />
 				<ul className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
 					{readers.map((r) => (
 						<li key={r.who} className='bg-[var(--paper-2)] p-6'>

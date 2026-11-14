@@ -1,8 +1,8 @@
-import { ArrowRightIcon, EnvelopeSimpleIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, ArrowUpRightIcon, BookOpenTextIcon, CheckIcon, CodeIcon, EnvelopeSimpleIcon, MagnifyingGlassIcon, PaperclipIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
-import { CtaAction, CtaPanel, Magnetic, OkirCorner, Rise, Stagger, StaggerItem, Tilt } from '@betterbarmm/editorial'
+import { CtaAction, CtaPanel, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { photo } from '../_components/discover-media'
 import { Masthead, SectionHead } from '../_components/masthead'
 import { QuoteBand } from '../_components/quote-band'
@@ -19,24 +19,32 @@ export const metadata: Metadata = pageMeta({
 const contributionPaths = [
 	{
 		label: 'Source leads',
+		icon: PaperclipIcon,
+		subject: 'Source lead',
 		title: 'Send records we should index',
 		description:
 			'Official documents, public datasets, archival links, or agency pages that strengthen the source coverage behind a workspace.',
 	},
 	{
 		label: 'Data review',
+		icon: MagnifyingGlassIcon,
+		subject: 'Correction',
 		title: 'Check labels, figures, and context',
 		description:
 			'Help verify names, categories, dates, amounts, offices, and summaries against official sources and local knowledge.',
 	},
 	{
 		label: 'Public context',
+		icon: BookOpenTextIcon,
+		subject: 'Context note',
 		title: 'Explain what records mean',
 		description:
 			'Plain-language notes that help people understand programs, places, institutions, and public decisions.',
 	},
 	{
 		label: 'Build support',
+		icon: CodeIcon,
+		subject: 'Help build',
 		title: 'Improve the public interface',
 		description:
 			'Design, accessibility, research workflows, code, documentation, or data pipelines that make the platform easier to use.',
@@ -51,6 +59,18 @@ const contributionPaths = [
  * process is invisible. Four steps is the whole of it, and saying so is the
  * strongest argument for sending the first one.
  */
+/** An email already addressed and titled, so the right person picks it up. */
+const mail = (subject: string) =>
+	`mailto:support@betterbarmm.com?subject=${encodeURIComponent(`[${subject}] `)}&body=${encodeURIComponent('The page or record:\n\nWhat it should say, or what to add:\n\nThe source (a link or a file):\n\nYour name, if you want to be credited:\n')}`
+
+/** What makes a contribution quick to check. */
+const include = [
+	'The page or record it is about: a link is best.',
+	'What it should say, or what is missing.',
+	'The source that shows it: an official document, a gazette, an agency page.',
+	'Your name, if you want the credit. Anonymous is fine.',
+]
+
 const whatHappens = [
 	{
 		title: 'You send it, with a source.',
@@ -85,11 +105,6 @@ export default function ContributePage() {
 				lines={['Help make public', 'records usable.']}
 				muted={[1]}
 				standfirst='BetterBARMM is a public transparency project. If you have source documents, corrections, local context, research notes, or skills that can make Bangsamoro public information clearer, we want to hear from you.'
-				facts={[
-					{ value: '4', label: 'Ways to help' },
-					{ value: '1', label: 'Email address' },
-					{ value: 'Open', label: 'To anyone' },
-				]}
 			>
 				<a href='mailto:support@betterbarmm.com' className='bb-btn bb-btn-solid'>
 					<EnvelopeSimpleIcon size={15} weight='fill' aria-hidden='true' />
@@ -110,32 +125,44 @@ export default function ContributePage() {
 					lead='Every useful correction, source link, and review note makes the portal more reliable for citizens, journalists, researchers, and public servants.'
 				/>
 
-				<Stagger gap={0.1} className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
-					{contributionPaths.map((item, index) => (
-						<StaggerItem key={item.label}>
-							<Tilt max={4} className='h-full'>
-								<article className='bb-plate relative flex h-full flex-col p-7 lg:p-8'>
-									<OkirCorner position='top-right' className='m-2 size-6 opacity-50' />
-
-									<span className='num text-[0.75rem] font-semibold text-[var(--brass)]'>
-										{String(index + 1).padStart(2, '0')}
+				<Stagger gap={0.1} className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+					{contributionPaths.map((item) => (
+						<StaggerItem key={item.label} className='h-full'>
+							<a
+								href={mail(item.subject)}
+								className='group flex h-full flex-col rounded-[3px] border border-[var(--rule)] bg-[var(--paper)] p-6 transition hover:border-[var(--ink-3)] lg:p-7'
+							>
+								<span className='flex items-center justify-between'>
+									<span className='grid size-11 place-items-center rounded-full bg-[var(--accent-soft)] text-[var(--accent)] transition group-hover:bg-[var(--accent)] group-hover:text-white'>
+										<item.icon size={22} weight='duotone' aria-hidden='true' />
 									</span>
-
-									<h3 className='mt-10 text-[1.05rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>
-										{item.title}
-									</h3>
-									<p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>
-										{item.description}
-									</p>
-
-									<p className='mt-8 border-t border-[var(--rule)] pt-4 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-										{item.label}
-									</p>
-								</article>
-							</Tilt>
+									<span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>{item.label}</span>
+								</span>
+								<h3 className='mt-6 text-[1.1rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{item.title}</h3>
+								<p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>{item.description}</p>
+								<span className='mt-6 inline-flex items-center gap-1.5 border-t border-[var(--rule)] pt-4 text-[0.8125rem] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>
+									<EnvelopeSimpleIcon size={15} aria-hidden='true' /> Email a {item.subject.toLowerCase()}
+									<ArrowUpRightIcon className='ml-auto size-3.5' weight='bold' aria-hidden='true' />
+								</span>
+							</a>
 						</StaggerItem>
 					))}
 				</Stagger>
+
+				{/* What to put in it. */}
+				<Rise delay={0.1} distance={14}>
+					<div className='mt-6 grid gap-6 rounded-[3px] bg-[var(--paper-2)] p-6 lg:grid-cols-[16rem_minmax(0,1fr)] lg:p-8'>
+						<p className='text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>What to include</p>
+						<ul className='grid gap-3 sm:grid-cols-2'>
+							{include.map((line) => (
+								<li key={line} className='flex gap-3 text-[0.9375rem] leading-[1.6] text-[var(--ink-2)]'>
+									<CheckIcon size={18} weight='bold' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
+									{line}
+								</li>
+							))}
+						</ul>
+					</div>
+				</Rise>
 			</section>
 
 			<QuoteBand
@@ -157,47 +184,6 @@ export default function ContributePage() {
 				<div className='pt-6 lg:pt-10'>
 					<StepList steps={whatHappens} layout='row' />
 				</div>
-			</section>
-
-			{/* ---- Contributor roll ---- */}
-			<section className='bb-container bb-section'>
-				<SectionHead
-					index='03'
-					eyebrow='Contributor roll'
-					title='Names will'
-					titleMuted='live here.'
-					lead='As verified contributions are accepted, this page will recognize the people and groups who helped improve the public record.'
-				/>
-
-				<Rise delay={0.1} distance={18}>
-					<div className='bb-plate relative mt-14 overflow-hidden p-9 lg:p-14'>
-						<OkirCorner position='top-left' className='m-4 opacity-60' />
-						<OkirCorner position='bottom-right' className='m-4 opacity-60' />
-
-						<div className='relative mx-auto max-w-2xl text-center'>
-							<span className='badge badge-plain badge-early'>Open slot</span>
-
-							<h3 className='mt-6 text-[1.6rem] font-extrabold leading-tight tracking-[-0.035em] text-[var(--ink)] sm:text-[2.1rem]'>
-								Your name could be listed here.
-							</h3>
-
-							<p className='mt-5 bb-body text-[var(--ink-2)]'>
-								Send a useful source, a correction, a review note, or an improvement. Once it has
-								been checked against the record, contributor names can appear here with the kind of
-								public record work they helped strengthen.
-							</p>
-
-							<div className='mt-9 flex justify-center'>
-								<Magnetic strength={0.24}>
-									<a href='mailto:support@betterbarmm.com' className='bb-btn bb-btn-solid'>
-										<EnvelopeSimpleIcon size={15} weight='fill' aria-hidden='true' />
-										Send a contribution
-									</a>
-								</Magnetic>
-							</div>
-						</div>
-					</div>
-				</Rise>
 			</section>
 
 			<CtaPanel

@@ -7,6 +7,7 @@ import { barmmBoundaries, lguProvinces, sameUnit } from '@betterbarmm/lgu-data'
 import { DirectoryHead } from './directory-bits'
 import { PhotoCredit } from './discover-figure'
 import { photo as discoverPhoto, type DiscoverPhotoKey } from './discover-media'
+import { Emblem } from './emblem'
 
 /* The directory's provinces and towns, laid out in full: each province under a
    photograph of it, with its governor and its own lines, then every town as a
@@ -101,13 +102,14 @@ export function PlaceHeader({ label, province, town, name }: { label: string; pr
 
 export function DirectoryPlaces() {
 	return (
-		<div className='mt-10 space-y-16'>
+		// Every area, one after another (user decision: no filter chips): its banner, its lines and its towns.
+		<div className='mt-8'>
 			{localGovernments.map((g) => {
 				const banner = bannerPhoto(g.slug)
 				const lines = provinceLines(g.slug)
 				const single = g.units.length === 1
 				return (
-					<section key={g.slug} id={`area-${g.slug}`} aria-labelledby={`area-${g.slug}-title`} className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+					<section key={g.slug} id={`area-${g.slug}`} aria-labelledby={`area-${g.slug}-title`} className='scroll-mt-[calc(var(--site-header-h)+1rem)] pt-10'>
 						{/* The province under its photograph. */}
 						<div className='bb-frame relative isolate h-56 overflow-hidden bg-[#3a1a14] sm:h-64'>
 							{banner ? (
@@ -160,71 +162,83 @@ export function DirectoryPlaces() {
 						</div>
 
 						{/* Every town. */}
-						<ul className='mt-6 grid border-t border-[var(--rule)] sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
+						<ul className='mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 							{g.units.map((u) => {
 								const tp = placePhoto(g.slug, u.slug)
 								const tl = topLines(townLines(g.slug, u.slug))
+								const seal = placeSeal(g.slug, u.slug)
+								const email = lguEmail(g.slug, u.slug)?.emails[0]
 								return (
-									<li key={u.slug} className='bb-frame relative flex gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
-										<span className='relative size-16 shrink-0 overflow-hidden sm:h-32 sm:w-full sm:rounded-none'>
+									<li
+										key={u.slug}
+										className='group relative flex flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+									>
+										{/* The town's picture: a photograph where there is one, else its seal, else where it is. */}
+										<span className='relative block h-40 overflow-hidden bg-[var(--paper-2)]'>
 											{tp ? (
 												<Picture photo={tp} name={u.name} size={500} />
-											) : placeSeal(g.slug, u.slug) ? (
-												// No photograph: the town's official seal, on the card's ground. The tile is a photograph's height, so
-												// the seal takes more padding to come out the size of an office's logo on the ministries' cards.
+											) : seal ? (
 												// eslint-disable-next-line @next/next/no-img-element
-												<img src={placeSeal(g.slug, u.slug)!.src} alt={`The seal of ${u.name}`} title={`Seal: ${placeSeal(g.slug, u.slug)!.credit}`} loading='lazy' className='size-full bg-[var(--paper-2)] object-contain! p-3 sm:p-8' />
+												<img src={seal.src} alt={`The seal of ${u.name}`} title={`Seal: ${seal.credit}`} loading='lazy' className='size-full object-contain! p-6' />
 											) : (
 												<TownMap province={g.slug} town={u.slug} name={u.name} />
 											)}
 											{tp ? (
-												<span className='hidden sm:contents'>
+												<span className='relative z-1 hidden sm:contents'>
 													<PhotoCredit photo={credit(tp)} />
 												</span>
 											) : null}
 										</span>
-										<div className='min-w-0 flex-1 sm:p-4'>
-											<p className='flex items-baseline gap-2'>
-												<Link scroll={false} href={u.href} className='truncate text-[0.96875rem] font-bold hover:text-[var(--accent)]'>
-													{u.name}
-												</Link>
-												{u.isCity ? <span className='font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>City</span> : null}
+
+										<div className='flex flex-1 flex-col px-4 pb-5 pt-4 text-center'>
+											{/* The name under the picture (user decision); the card's one link, stretched over it. */}
+											<Link scroll={false} href={u.href} className='text-[1.0625rem] font-extrabold leading-tight tracking-[-0.015em] text-[var(--ink)] after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
+												{u.name}
+											</Link>
+											{/* As the office cards: its kind as a badge under the name. */}
+											<p className='mt-2 flex justify-center'>
+												<span
+													className={`inline-block rounded-full px-2.5 py-0.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] ${
+														u.isCity ? 'bg-[var(--accent-soft)] font-bold text-[var(--accent)]' : 'bg-[var(--paper-2)] font-bold text-[var(--ink-2)]'
+													}`}
+												>
+													{u.isCity ? 'City' : 'Municipality'}
+												</span>
 											</p>
-											<p className='mt-0.5 truncate text-[0.8125rem] text-[var(--ink-2)]'>
-												{u.head ? (
-													<>
-														<span className='text-[var(--ink-3)]'>Mayor</span> <span className='font-semibold text-[var(--ink)]'>{u.head}</span>
-													</>
-												) : (
-													<span className='text-[var(--ink-3)]'>Mayor not in the canvass</span>
-												)}
-											</p>
-											{u.deputy ? (
-												<p className='hidden truncate text-[0.8125rem] text-[var(--ink-3)] sm:block'>
-													Vice mayor <span className='text-[var(--ink-2)]'>{u.deputy}</span>
-												</p>
-											) : null}
-											{tl.length ? (
-												<ul className='mt-2 space-y-0.5 text-[0.78125rem]'>
+
+											{tl.length || email ? (
+												<div className='relative z-1 mt-4 flex flex-wrap justify-center gap-2'>
 													{tl.map((l, i) => (
-														<li key={i} className='truncate'>
-															<a href={telHref(l.phones[0]!)} className='inline-flex items-center gap-1.5 hover:text-[var(--accent)]'>
-																<PhoneIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-																<span className='text-[var(--ink-3)]'>{LINE_LABEL[l.kind]}</span>
-																<span className='font-semibold tabular-nums'>{l.phones[0]}</span>
-															</a>
-														</li>
+														<a
+															key={i}
+															href={telHref(l.phones[0]!)}
+															title={`${LINE_LABEL[l.kind]}: ${l.phones[0]}`}
+															className='inline-flex items-center gap-1.5 rounded-full border border-[var(--rule)] px-3 py-1.5 text-[0.75rem] font-semibold transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'
+														>
+															<PhoneIcon size={13} weight='bold' className='shrink-0' aria-hidden='true' />
+															{/* The number itself (user decision); which line it is, on hover. */}
+															<span className='tabular-nums'>{l.phones[0]}</span>
+														</a>
 													))}
-												</ul>
+													{email ? (
+														<a href={`mailto:${email}`} title={email} className='inline-flex max-w-full min-w-0 items-center gap-1.5 rounded-full border border-[var(--rule)] px-3 py-1.5 text-[0.75rem] font-semibold transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'>
+															<EnvelopeSimpleIcon size={13} weight='bold' className='shrink-0' aria-hidden='true' />
+															<span className='truncate'>{email}</span>
+														</a>
+													) : null}
+												</div>
 											) : null}
-											{lguEmail(g.slug, u.slug) ? (
-												<p className='mt-0.5 truncate text-[0.78125rem]'>
-													<a href={`mailto:${lguEmail(g.slug, u.slug)!.emails[0]}`} className='inline-flex max-w-full items-center gap-1.5 hover:text-[var(--accent)]'>
-														<EnvelopeSimpleIcon size={12} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
-														<span className='truncate'>{lguEmail(g.slug, u.slug)!.emails[0]}</span>
-													</a>
-												</p>
-											) : null}
+										</div>
+
+										{/* Who runs it, at the foot of the card, as on the office cards: the heads line up across a row. */}
+										<div className='flex min-h-[4.25rem] items-center gap-3 border-t border-[var(--rule)] px-4 py-3'>
+											<Emblem image={null} name={u.head ?? u.name} portrait className='size-11 shrink-0 rounded-full text-[0.6875rem]' />
+											<span className='min-w-0'>
+												<span className='block truncate text-[0.875rem] font-bold leading-tight text-[var(--ink)]'>{u.head ?? 'Mayor not in the canvass'}</span>
+												<span className='mt-0.5 block truncate text-[0.6875rem] leading-tight text-[var(--ink-3)]'>
+													Mayor{u.deputy ? <> · Vice mayor <span className='text-[var(--ink-2)]'>{u.deputy}</span></> : null}
+												</span>
+											</span>
 										</div>
 									</li>
 								)

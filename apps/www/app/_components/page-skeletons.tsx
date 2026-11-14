@@ -326,18 +326,33 @@ export function DirectorySkeleton() {
 			<BandHead pad='py-16 lg:py-24' title='min(16rem, 55%)' chips={5} />
 			<div aria-hidden='true' className='bb-container py-14 lg:py-20'>
 				<Skeleton className='h-[5.5rem] w-full rounded-none!' />
-				<div className='mt-16 flex flex-wrap items-end justify-between gap-4'>
-					<SkeletonLine className='text-[1.625rem]' width='14rem' />
-					<SkeletonLine className='text-[0.84375rem]' width='min(28rem, 80%)' />
+				{/* The section tabs (switch-tabs.tsx), then the open section's line. */}
+				<div className='mt-14 flex gap-8 border-b border-[var(--rule)] py-4'>
+					{['11rem', '9rem', '10rem', '6rem'].map((w) => (
+						<SkeletonLine key={w} className='text-[1.0625rem]' width={w} />
+					))}
 				</div>
+				<SkeletonLine className='mt-8 text-[0.84375rem]' width='min(30rem, 80%)' />
 				<div className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 					{Array.from({ length: 8 }, (_, i) => (
-						<div key={i} className='border border-[var(--rule)]'>
-							<Skeleton className='h-24 w-full rounded-none!' />
-							<div className='p-4'>
-								<SkeletonLine className='text-[0.96875rem] leading-[1.2]' width={`${W[i % W.length]}%`} />
-								<SkeletonLine className='mt-1.5 text-[0.84375rem]' width='70%' />
-								<SkeletonLine className='mt-1 text-[0.84375rem]' width='45%' />
+						<div key={i} className='overflow-hidden border border-[var(--rule)]'>
+							{/* The office card (directory-index-view.tsx): the logo, name, the number and the email, its head at the foot. */}
+							<div className='grid h-28 place-items-center'>
+								<Skeleton className='size-[4.5rem] rounded-full' />
+							</div>
+							<div className='px-5 pb-5 text-center'>
+								<SkeletonLine className='text-[1rem] leading-snug' width={`${W[i % W.length]}%`} />
+								<div className='mt-6 flex justify-center gap-2'>
+									<Skeleton className='h-7 w-28 rounded-full' />
+									<Skeleton className='h-7 w-36 rounded-full' />
+								</div>
+							</div>
+							<div className='flex items-center gap-3 border-t border-[var(--rule)] px-4 py-3'>
+								<Skeleton className='size-11 shrink-0 rounded-full' />
+								<div className='flex-1'>
+									<SkeletonLine className='text-[0.875rem] leading-tight' width='70%' />
+									<SkeletonLine className='text-[0.6875rem] leading-tight' width='35%' />
+								</div>
 							</div>
 						</div>
 					))}

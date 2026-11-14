@@ -34,8 +34,8 @@ export type HeadPhoto = { src: string; page: string; credit: string }
 export const headPhoto = (slug: string) => (headPhotos.heads as Record<string, HeadPhoto | undefined>)[slug] ?? null
 
 /** A Member of Parliament's portrait, from the legislation workspace, which holds the Parliament's own. */
-const LEGISLATION = 'https://legislation.betterbarmm.com'
-export const memberPortrait = (m: { photo?: { file: string } | null }) => (m.photo ? { src: `${LEGISLATION}/images/members/elected/${m.photo.file}`, credit: 'Bangsamoro Parliament' } : null)
+/** A Member's portrait, served from this app (scripts/copy-portraits.mjs copies them from the legislation workspace). */
+export const memberPortrait = (m: { photo?: { file: string } | null }) => (m.photo ? { src: `/members/${m.photo.file}`, credit: 'Bangsamoro Parliament' } : null)
 
 /** A Commons photograph of a place, credited as its licence asks. */
 export type PlacePhoto = { url: string; page: string; author: string; license: string; caption: string; width: number; height: number }
