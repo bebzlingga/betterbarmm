@@ -5,21 +5,12 @@ import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/r
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import { EASE, Magnetic, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks, ESTATE_LINKS } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks, ESTATE_LINKS } from '@betterbarmm/editorial'
 // import { MapDialog } from './map-dialog'
 import { ThemeToggle } from './theme-toggle'
 
 type SiteHeaderProps = {
 	activeItem?: 'discover' | 'this-week' | 'news' | 'accidents' | 'preparedness' | 'services' | 'data' | 'directory' | 'crafts' | 'places' | 'explainers' | 'jo' | 'about' | 'contribute'
-	/**
-	 * Sit over the page rather than on top of it.
-	 *
-	 * Pages that open on a full-bleed photograph want the bar transparent until
-	 * the reader has scrolled past the picture — a solid strip across the top of
-	 * a masthead photograph cuts the sky off. Everywhere else the bar is opaque
-	 * from the first pixel, because there is nothing behind it worth seeing.
-	 */
-	overlay?: boolean
 }
 
 const discoverSections = [
@@ -132,27 +123,16 @@ function Menu({
 
 const menuItemClass = 'nav-menu-item'
 
-export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
+export function SiteHeader({ activeItem }: SiteHeaderProps) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const closeMenu = () => setIsMenuOpen(false)
 
-	// `past` is "the reader has left the top of the page", which is what decides
-	// whether an overlay bar has earned a background yet. Both it and the ducking
-	// live in the shared hook now, because five other workspaces want the same
-	// bar and were each going without.
-	const { past, hidden } = useHeaderScroll(isMenuOpen)
-
-	const solid = !overlay || past
+	// The ducking lives in the shared hook, because five other workspaces want the same bar.
+	const { hidden } = useHeaderScroll(isMenuOpen)
 
 	return (
 		<>
-			{/* Not on the overlay pages. The strip has a ground of its own, and the
-			    whole point of the overlay cut is that nothing opaque sits between
-			    the top of the document and the photograph — a 34px band above a
-			    full-bleed hero crops the sky exactly as a solid bar would. The two
-			    Discover pages carry these links in the menu and the footer. */}
-			{overlay ? null : (
-				<UtilityBar
+			<UtilityBar
 					current='home'
 					project={activeItem === 'accidents' || activeItem === 'preparedness' || activeItem === 'crafts' || activeItem === 'data' ? activeItem : undefined}
 					className='bb-strip bg-[var(--paper-2)]'
@@ -170,43 +150,13 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 						</>
 					}
 				/>
-			)}
 
 		<motion.header
 			animate={{ y: hidden ? '-100%' : '0%' }}
 			transition={{ duration: 0.42, ease: EASE }}
-			data-solid={solid}
-			// `fixed` on the overlay pages, `sticky` everywhere else. A sticky bar
-			// still occupies a row in the flow, so on a page that opens on a
-			// full-bleed photograph it pushes the picture down and sits above it
-			// rather than on it — the whole point of the overlay cut. Taking it out
-			// of the flow lets the hero start at the top of the document, which is
-			// where a masthead photograph has to start.
-			className={`z-30 border-b transition-colors duration-500 ${
-				overlay ? 'fixed inset-x-0 top-0' : 'sticky top-0'
-			} ${
-				solid
-					? 'border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
-					: 'border-transparent bg-transparent'
-			}`}
+			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl transition-colors duration-500'
 		>
-			{/* Over a photograph the bar has no ground of its own, so the links take
-			    the picture's scrim instead — set on a wrapper rather than on each
-			    link, so the whole row lifts or drops together.
-
-			    Full white with a shadow under it, not 85%. The heroes it sits over
-			    are not all dark: Culture & Places opens on a pale sandbar and the
-			    Discover index on the same picture, where a dimmed white lands within
-			    a few points of the sky behind it. The shadow is what makes one set
-			    of colors work over every crop — it costs nothing on a dark
-			    photograph and is the whole difference on a bright one. */}
-			<div
-				className={
-					overlay && !solid
-						? '[&_*:not(.nav-menu,.nav-menu_*)]:!text-white [&_*:not(.nav-menu,.nav-menu_*)]:[text-shadow:0_1px_14px_rgba(8,8,6,0.6)]'
-						: ''
-				}
-			>
+			<div>
 				<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
 					{/* Three tracks so the links sit on the true center of the header
 					    rather than wherever the mark and controls leave room.
@@ -222,9 +172,7 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 					<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_1fr] items-center gap-4 md:grid-cols-[auto_minmax(0,1fr)_auto] md:gap-2'>
 						<div className='flex items-center gap-3'>
 							<Link href='/' onClick={closeMenu} className='w-fit shrink-0'>
-								{/* Over a photograph the ground is dark whatever the theme is,
-								    so the name goes white there; otherwise it follows the ink. */}
-								<BrandLogo className={overlay && !solid ? 'text-white' : 'text-[var(--ink)]'} />
+								<BrandLogo className='text-[var(--ink)]' />
 							</Link>
 						</div>
 
@@ -253,14 +201,6 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 						</nav>
 
 						<div className='flex items-center justify-end gap-2 md:gap-1.5'>
-							{/* The theme switch and Contribute live in the strip; on the overlay
-							    pages, which have no strip, they stay in the bar. */}
-							{overlay ? (
-								<div className='hidden items-center md:flex'>
-									<ThemeToggle />
-									<span className='w-1.5' aria-hidden='true' />
-								</div>
-							) : null}
 
 							{/* Map hidden for now — restore with the imports above.
 							<MapDialog className='bb-btn bb-btn-ghost hidden cursor-pointer !px-4 !py-2.5 !text-[0.625rem] md:inline-flex'>
@@ -268,17 +208,6 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 								Map
 							</MapDialog> */}
 
-							{overlay ? (
-								<Magnetic strength={0.22} className='hidden sm:inline-flex'>
-									<Link
-										href='/contribute'
-										className='bb-btn bb-btn-accent !px-4 !py-2.5 !text-[0.625rem]'
-									>
-										<HandHeartIcon size={15} weight='fill' aria-hidden='true' />
-										Contribute
-									</Link>
-								</Magnetic>
-							) : null}
 
 							<button
 								type='button'
@@ -392,10 +321,8 @@ export function SiteHeader({ activeItem, overlay = false }: SiteHeaderProps) {
 				) : null}
 			</AnimatePresence>
 
-			{/* How far down the document the reader is. Only drawn once the bar has
-			    a ground under it — a progress hairline floating over a photograph
-			    with nothing behind it reads as a stray rule. */}
-			{solid ? <ScrollProgress /> : null}
+			{/* How far down the document the reader is. */}
+			<ScrollProgress />
 		</motion.header>
 		</>
 	)

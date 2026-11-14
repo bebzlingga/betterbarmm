@@ -3,24 +3,18 @@ import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { CtaAction, CtaPanel, LineReveal, Rise } from '@betterbarmm/editorial'
-import {
-	discoverBarmmTopics,
-	type DiscoverBarmmTopic,
-} from '@betterbarmm/primer-data'
+import { discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { PhotoFrame } from '../_components/discover-figure'
 import { DiscoverGallery } from '../_components/discover-gallery'
 import { DiscoverHero } from '../_components/discover-hero'
-import {
-	DiscoverIndexRows,
-	type DiscoverIndexRow,
-} from '../_components/discover-index-rows'
+import { DiscoverGrid } from '../_components/chapter-grid'
 import { DiscoverMarquee } from '../_components/discover-marquee'
 import { discoverPhotos, photo } from '../_components/discover-media'
-import { DiscoverRegionPanel } from '../_components/discover-region-panel'
+import { RegionBand } from '../_components/region-band'
 import { discoverIndexGallery } from '../_components/discover-topic-media'
-import { lguData } from '@betterbarmm/lgu-data'
 import { SectionHead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
+import { chapterCards } from '../_lib/chapters'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Discover BARMM: a guide to the Bangsamoro',
@@ -28,41 +22,6 @@ export const metadata: Metadata = pageMeta({
 		'A source-backed public guide to the Bangsamoro Autonomous Region in Muslim Mindanao: its history, its government, its local governments, its peoples, and the places that hold them.',
 	path: '/discover',
 })
-
-/**
- * What each chapter actually contains, in the reader's terms.
- *
- * Not a description of the page — a list of what they will find on it. "Six
- * centuries" tells someone whether to click; "explore the history of the
- * region" does not.
- */
-function chapterContains(topic: DiscoverBarmmTopic): string[] {
-	switch (topic.slug) {
-		case 'history':
-			return [`${topic.timeline?.length ?? 0} moments`, 'Sultanates', 'Peace process', 'Organic Law']
-		case 'governance':
-			return [
-				'Parliament',
-				'Chief Minister',
-				`${topic.detailCards?.length ?? 0} institutions`,
-				'Ministries',
-			]
-		case 'local-government':
-			// From the directory dataset, not the PSA totals that still count Sulu.
-			return [
-				`${lguData.totals.barangays.toLocaleString('en-US')} barangays`,
-				`${lguData.totals.lgus} cities and towns`,
-				'Demographics',
-				'Services',
-			]
-		case 'people': {
-			const moro = topic.peopleGroups?.[0]?.people.length ?? 0
-			return [`${moro} Moro groups`, 'Indigenous peoples', 'Settlers', 'Languages']
-		}
-		default:
-			return ['Mosques', 'Islands', 'Food', 'Textiles']
-	}
-}
 
 /** The names the region calls itself by. */
 const marqueeNames = [
@@ -96,55 +55,26 @@ const COUNT_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seve
 const CHAPTER_COUNT_WORD =
 	COUNT_WORDS[discoverBarmmTopics.length] ?? String(discoverBarmmTopics.length)
 
-/** Photographs that stand in for each chapter on the index. */
-const chapterPhoto = {
-	history: 'makhdumMosque',
-	governance: 'governmentCenter',
-	'local-government': 'cotabatoPlaza',
-	people: 'tausugAttire',
-	'culture-places': 'panampangan',
-} as const
-
 export default function DiscoverBarmmPage() {
-	const rows: DiscoverIndexRow[] = discoverBarmmTopics.map((topic) => ({
-		slug: topic.slug,
-		word: topic.navTitle ?? topic.label,
-		blurb: topic.description,
-		contains: chapterContains(topic),
-		photo: discoverPhotos[chapterPhoto[topic.slug as keyof typeof chapterPhoto]],
-	}))
-
-	// Counts for the figures panel are derived rather than written down, so a new
-	// timeline event or a new ministry updates the headline number by itself.
 	const peopleCount = discoverBarmmTopics
 		.flatMap((topic) => topic.peopleGroups ?? [])
 		.reduce((sum, group) => sum + group.people.length, 0)
-	const momentCount = discoverBarmmTopics.reduce(
-		(sum, topic) => sum + (topic.timeline?.length ?? 0),
-		0,
-	)
-	const institutionCount = discoverBarmmTopics
-		.filter((topic) => topic.slug === 'governance')
-		.reduce((sum, topic) => sum + (topic.detailCards?.length ?? 0), 0)
+	const momentCount = discoverBarmmTopics.reduce((sum, topic) => sum + (topic.timeline?.length ?? 0), 0)
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			{/* The bar rides over the photograph until the reader has scrolled past
-			    it — a solid strip across the top of a full-bleed masthead cuts the
-			    sky off exactly where the picture is doing its work. */}
-			<SiteHeader activeItem='discover' overlay />
+			{/* The same bar as every other page (user decision), the hero under it. */}
+			<SiteHeader activeItem='discover' />
 
 			<DiscoverHero
 				size='index'
 				kicker='A Bangsamoro primer'
 				lines={['Get to know', 'the Bangsamoro.']}
-				outline={[1]}
 				standfirst='Before the budgets, the bills, and the ballot papers — the region itself. Six centuries of history, thirteen Moro peoples, a parliament of eighty, and the islands, lakes and mosques in between. Sourced throughout, and free to check.'
-				photo={photo('panampangan')}
 				scrollTo='#chapters'
-				scrollLabel={`${discoverBarmmTopics.length} chapters`}
+				scrollLabel='See the chapters'
 				footnote={
-					<p className='num text-[0.78125rem] text-white/55'>
+					<p className='num text-[0.78125rem] text-[var(--ink-3)]'>
 						{discoverBarmmTopics.length} chapters · {momentCount} moments · {peopleCount} peoples
 					</p>
 				}
@@ -163,18 +93,13 @@ export default function DiscoverBarmmPage() {
 					lead='Each one is a plain-language guide with its sources attached — written for someone arriving with no background at all.'
 				/>
 
-				<div>
-					<DiscoverIndexRows rows={rows} />
+				<div className='mt-12'>
+					<DiscoverGrid cards={chapterCards} />
 				</div>
 			</section>
 
 			{/* ---- The region, in figures ---- */}
-			<DiscoverRegionPanel
-				topicCount={discoverBarmmTopics.length}
-				peopleCount={peopleCount}
-				momentCount={momentCount}
-				institutionCount={institutionCount}
-			/>
+			<RegionBand index='02' />
 
 			{/* ---- Two entry points, as pictures ----
 

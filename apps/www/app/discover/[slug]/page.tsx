@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
+import { ArrowLeftIcon, ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { pageMeta } from '../../_lib/seo'
 import Link from 'next/link'
@@ -7,7 +7,9 @@ import { CtaAction, CtaPanel, Rise } from '@betterbarmm/editorial'
 import { discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { DiscoverChapterHero } from '../../_components/discover-hero'
 import { photo } from '../../_components/discover-media'
-import { ChapterLinkCard, DiscoverTopicBody } from '../../_components/discover-topic'
+import { DiscoverTopicBody } from '../../_components/discover-topic'
+import { ChapterTabs, ChapterTile } from '../../_components/chapter-grid'
+import { chapterCards } from '../../_lib/chapters'
 import { discoverTopicMedia, topicMedia } from '../../_components/discover-topic-media'
 import { SiteHeader } from '../../_components/site-header'
 
@@ -34,15 +36,6 @@ export async function generateMetadata({
 	})
 }
 
-/** The photograph that stands in for a chapter when it is linked from another. */
-const chapterCardPhoto = {
-	history: 'makhdumMosque',
-	governance: 'parliamentBuilding',
-	'local-government': 'cotabatoPlaza',
-	people: 'singkil',
-	'culture-places': 'budBongao',
-} as const
-
 export default async function DiscoverTopicPage({
 	params,
 }: {
@@ -57,84 +50,62 @@ export default async function DiscoverTopicPage({
 
 	const topic = discoverBarmmTopics[index]
 	const media = discoverTopicMedia[topic.slug]
-	const previous = discoverBarmmTopics[index - 1]
-	const next = discoverBarmmTopics[index + 1]
+	const previous = chapterCards[index - 1]
+	const next = chapterCards[index + 1]
 
 	return (
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
-			{/* Transparent over the opening photograph, solid once the reader has
-			    scrolled into the text. The progress hairline under the bar is the
-			    chapter's own length — these run to three thousand words and a reader
-			    is entitled to know how much of one they are in. */}
-			<SiteHeader activeItem='discover' overlay />
+			{/* The same bar as every other page (user decision). Its progress hairline is the chapter's own length —
+			    these run to three thousand words and a reader is entitled to know how much of one they are in. */}
+			<SiteHeader activeItem='discover' />
 
 			<DiscoverChapterHero
 				chapter={`Chapter ${String(index + 1).padStart(2, '0')} of ${String(discoverBarmmTopics.length).padStart(2, '0')} · Discover BARMM`}
 				title={topic.title}
 				standfirst={media?.standfirst ?? topic.description}
-				photo={photo(media?.hero ?? 'panampangan')}
+				chips={chapterCards[index]?.contains}
 				scrollTo='#read'
 			/>
+
+			<ChapterTabs cards={chapterCards} current={topic.slug} />
 
 			<DiscoverTopicBody topic={topic} media={media} />
 
 			{/* ---- Where to go next ----
 
-			    Two photographs the size of doors rather than two text rows. At the
-			    foot of three thousand words, a hairline link is not a strong enough
-			    signal that there is another chapter. */}
-			<section>
-				<div className='bb-container pb-28 pt-24 lg:pb-36 lg:pt-32'>
-					<Rise distance={14}>
-						<div className='bb-kicker'>
-							<span>&mdash;</span>
-							<span>Keep reading</span>
-						</div>
-					</Rise>
-
-					<div className='mt-12 grid gap-5 sm:grid-cols-2'>
-						<Rise distance={18}>
-							{previous ? (
-								<Link href={`/discover/${previous.slug}`} className='group block'>
-									<ChapterLinkCard
-										label='← Previous chapter'
-										title={previous.navTitle ?? previous.label}
-										photoKey={chapterCardPhoto[previous.slug as keyof typeof chapterCardPhoto]}
-									/>
-								</Link>
-							) : (
-								<Link href='/discover' className='group block'>
-									<ChapterLinkCard
-										label='← Back to the start'
-										title={`All ${discoverBarmmTopics.length} chapters`}
-										photoKey='panampangan'
-									/>
-								</Link>
-							)}
-						</Rise>
-
-						<Rise delay={0.09} distance={18}>
-							{next ? (
-								<Link href={`/discover/${next.slug}`} className='group block'>
-									<ChapterLinkCard
-										label='Next chapter →'
-										title={next.navTitle ?? next.label}
-										photoKey={chapterCardPhoto[next.slug as keyof typeof chapterCardPhoto]}
-										align='right'
-									/>
-								</Link>
-							) : (
-								<Link href='https://election.betterbarmm.com' className='group block'>
-									<ChapterLinkCard
-										label='Next →'
-										title='The 2026 Election workspace'
-										photoKey='parliamentSession'
-										align='right'
-									/>
-								</Link>
-							)}
-						</Rise>
-					</div>
+			    The next chapter as a photograph the width of the page, with what it holds,
+			    so the end of three thousand words reads as a door. The last chapter opens
+			    on the region's election instead. The previous chapter is a quiet link. */}
+			<section className='bb-container pb-28 pt-24 lg:pb-36 lg:pt-32'>
+				<Rise distance={18}>
+					{next ? (
+						<ChapterTile card={next} index={index + 1} wide label={`Up next · Chapter ${String(index + 2).padStart(2, '0')}`} />
+					) : (
+						<ChapterTile
+							card={{
+								href: 'https://election.betterbarmm.com',
+								title: 'The 2026 Election workspace',
+								blurb: 'You have read every chapter. The region now votes for its parliament for the first time: the parties, candidates and districts.',
+								photo: photo('parliamentSession'),
+								contains: ['Parties', 'Candidates', 'Districts'],
+							}}
+							index={index + 1}
+							wide
+							label='Up next'
+						/>
+					)}
+				</Rise>
+				<div className='mt-6 flex flex-wrap items-center justify-between gap-4 text-[0.8125rem] font-semibold'>
+					{previous ? (
+						<Link href={previous.href} className='inline-flex items-center gap-1.5 text-[var(--ink-3)] hover:text-[var(--accent)]'>
+							<ArrowLeftIcon className='size-3.5' weight='bold' aria-hidden='true' /> Chapter {String(index).padStart(2, '0')}: {previous.title}
+						</Link>
+					) : (
+						<span />
+					)}
+					<Link href='/discover' className='inline-flex items-center gap-1.5 text-[var(--ink)] hover:text-[var(--accent)]'>
+						All {chapterCards.length} chapters <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+					</Link>
 				</div>
 			</section>
 

@@ -217,10 +217,10 @@ export const discoverBarmmTopics: DiscoverBarmmTopic[] = [
 		// with a Chief Minister and ministries under it — is what the modules below
 		// set out at length, each beside the record it is read from.
 		sections: [],
-		detailEyebrow: 'Government map',
-		detailTitle: 'Ministries, offices, and their public roles',
+		detailEyebrow: 'At the top',
+		detailTitle: 'The offices that lead',
 		detailDescription:
-			'A plain-language guide to the institutions readers will meet most often: ministries deliver public services, attached offices handle specialized functions, Parliament makes regional laws, and executive offices coordinate the work of government.',
+			'The legal basis the government stands on, the Parliament that makes the region’s laws, the Office of the Chief Minister, and the senior offices that run the Cabinet. The ministries and the offices beside them follow.',
 		detailCards: [
 			{
 				label: 'Government type',

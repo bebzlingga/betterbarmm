@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {
 	type DiscoverBarmmDetailCard,
 	type DiscoverBarmmPeopleGroup,
@@ -13,6 +12,7 @@ import { discoverPhotos, type DiscoverPhotoKey } from './discover-media'
 import { type DiscoverTopicMedia } from './discover-topic-media'
 import { LineReveal, OkirCorner, Rise, Stagger, StaggerItem, Tilt } from '@betterbarmm/editorial'
 import { Timeline } from './topic-timeline'
+import { GovernmentFlow, InstitutionList } from './discover-government'
 
 /**
  * A section heading with its kicker and standfirst, on a brass rule.
@@ -231,6 +231,22 @@ export function DiscoverTopicBody({
 			    last module on the page, and a full step under the cards on top of the
 			    padding "Keep reading" carries of its own put the two blocks a screen
 			    apart. */}
+			{/* Government: how the parts connect, before the parts. */}
+			{topic.slug === 'governance' && topic.detailCards ? (
+				<section className='border-t border-[var(--rule)]'>
+					<div className='bb-container bb-section'>
+						<ModuleHead
+							index={nextIndex()}
+							eyebrow='How it fits together'
+							title='Who chooses whom.'
+							split
+							description='The Bangsamoro is governed the way a parliament is: the voters elect the Parliament, the Parliament chooses the Chief Minister, and the Chief Minister leads a Cabinet of ministers who run the region’s offices.'
+						/>
+						<GovernmentFlow cards={topic.detailCards.filter((c) => !media?.cardPhotos?.[c.title])} />
+					</div>
+				</section>
+			) : null}
+
 			{topic.detailCards ? (
 				<section className='border-t border-[var(--rule)]'>
 					<div className='bb-container bb-section-top pb-14 lg:pb-16'>
@@ -244,7 +260,28 @@ export function DiscoverTopicBody({
 								'These cards point to recognizable entry points into BARMM: sacred landmarks, city sites, island landscapes, food traditions, and living craft.'
 							}
 						/>
-						<DetailCards cards={topic.detailCards} cardPhotos={media?.cardPhotos} />
+						<DetailCards
+							cards={
+								// On Government the photograph cards lead here; the rest are the list below.
+								topic.slug === 'governance' ? topic.detailCards.filter((c) => media?.cardPhotos?.[c.title]) : topic.detailCards
+							}
+							cardPhotos={media?.cardPhotos}
+						/>
+					</div>
+				</section>
+			) : null}
+
+			{topic.slug === 'governance' && topic.detailCards ? (
+				<section className='bg-[var(--paper-2)]'>
+					<div className='bb-container bb-section'>
+						<ModuleHead
+							index={nextIndex()}
+							eyebrow='The directory'
+							title='Every ministry and office.'
+							split
+							description='What each one is for, who heads it now, and the way to its contacts. Heads are as the directory last confirmed them against an official source.'
+						/>
+						<InstitutionList cards={topic.detailCards.filter((c) => !media?.cardPhotos?.[c.title])} />
 					</div>
 				</section>
 			) : null}
@@ -565,46 +602,3 @@ function PeopleGroups({
 	)
 }
 
-/**
- * A chapter link rendered as a photograph you walk into.
- *
- * Used for previous/next at the foot of a chapter. The image is dimmed until
- * hover, so the pair reads as navigation rather than as two more articles.
- */
-export function ChapterLinkCard({
-	label,
-	title,
-	photoKey,
-	align = 'left',
-}: {
-	label: string
-	title: string
-	photoKey: DiscoverPhotoKey
-	align?: 'left' | 'right'
-}) {
-	const photo = discoverPhotos[photoKey]
-
-	return (
-		<span className='bb-frame relative block aspect-[16/9] w-full sm:aspect-[2/1]'>
-			<Image
-				src={photo.src}
-				alt=''
-				sizes='(min-width: 640px) 50vw, 100vw'
-				placeholder='blur'
-				className='size-full object-cover brightness-[0.42] transition duration-700 group-hover:scale-105 group-hover:brightness-[0.6]'
-			/>
-			<span
-				className={`absolute inset-0 flex flex-col justify-end p-7 lg:p-9 ${
-					align === 'right' ? 'items-end text-right' : ''
-				}`}
-			>
-				<span className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-[var(--brass)]'>
-					{label}
-				</span>
-				<span className='mt-2.5 max-w-[16ch] text-2xl font-extrabold leading-tight tracking-[-0.035em] text-white sm:text-3xl'>
-					{title}
-				</span>
-			</span>
-		</span>
-	)
-}
