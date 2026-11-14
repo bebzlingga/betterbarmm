@@ -4,12 +4,14 @@
    stays put.
 
    A line is as tall as the text it stands for (`1lh` of the same type), with the bar where the letters would be. */
+import Skeleton from "react-loading-skeleton";
+
 const WIDTHS = [72, 58, 84, 64, 76, 52, 68, 80];
 
 function Line({ className = "", width }: { className?: string; width: string }) {
   return (
     <span className={`flex h-[1lh] items-center ${className}`}>
-      <span className="skeleton h-[0.7em]" style={{ width }} />
+      <Skeleton inline containerClassName="contents" className="h-[0.7em]" width={width} />
     </span>
   );
 }
@@ -30,7 +32,7 @@ export default function Loading() {
                 <Line className="text-[0.90625rem] leading-snug" width={`${w}%`} />
                 <Line className="mt-1 text-xs" width={`${w / 2}%`} />
               </div>
-              <span className="skeleton h-8 w-16 shrink-0 rounded-lg" />
+              <Skeleton inline containerClassName="contents" className="h-8 w-16 shrink-0 rounded-lg" />
             </div>
           ))}
         </div>

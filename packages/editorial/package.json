@@ -13,6 +13,7 @@
 		"react": "^19.0.0"
 	},
 	"dependencies": {
-		"@phosphor-icons/react": "^2.1.10"
+		"@phosphor-icons/react": "^2.1.10",
+		"react-loading-skeleton": "^3.5.0"
 	}
 }

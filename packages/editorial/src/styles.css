@@ -1595,34 +1595,63 @@
    across it so a wait looks like a wait and not like an empty page.
    ============================================================ */
 
-.bb-skeleton {
-  display: block;
-  border-radius: 2px;
-  background: linear-gradient(
-    90deg,
-    color-mix(in srgb, var(--ink) 7%, transparent) 25%,
-    color-mix(in srgb, var(--ink) 3%, transparent) 50%,
-    color-mix(in srgb, var(--ink) 7%, transparent) 75%
-  );
-  background-size: 200% 100%;
-  animation: bb-skeleton 1.6s ease-in-out infinite;
-}
-
-/* A bar inside a line of text (`SkeletonLine`): inline, so it follows the line's text-align, and the height of
-   the letters, centred in the line. After `.bb-skeleton`, so its display wins. */
-.bb-skeleton-line {
-  display: inline-block;
-  height: 0.7em;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-@keyframes bb-skeleton {
-  from {
-    background-position: 100% 0;
+/* The blocks are react-loading-skeleton's component (user decision); its stylesheet is not imported. Turbopack fails
+   on that import from inside this file ("Missing opening {"), and imported from a component it would sit outside the
+   layers and beat both the theme here and the size classes on each skeleton. So its rules are written out here, in
+   the components layer, themed: the same class, the same custom properties, the same sweep. */
+@keyframes react-loading-skeleton {
+  100% {
+    transform: translateX(100%);
   }
-  to {
-    background-position: -100% 0;
+}
+
+@layer components {
+  .react-loading-skeleton {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    line-height: 1;
+    user-select: none;
+    background-color: var(--base-color);
+    --animation-duration: 1.6s;
+    --pseudo-element-display: block;
+    --base-color: color-mix(in srgb, var(--ink) 7%, transparent);
+    /* The sweep is the paper showing through, not a second grey: a translucent highlight laid over a translucent
+       base can only darken it, and the wait should read as light passing over. */
+    --custom-highlight-background: linear-gradient(
+      90deg,
+      transparent 0%,
+      color-mix(in srgb, var(--paper) 55%, transparent) 50%,
+      transparent 100%
+    );
+    display: block;
+    border-radius: 2px;
+  }
+
+  .react-loading-skeleton::after {
+    content: ' ';
+    display: var(--pseudo-element-display);
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-image: var(--custom-highlight-background);
+    transform: translateX(-100%);
+    animation: react-loading-skeleton var(--animation-duration) ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .react-loading-skeleton {
+      --pseudo-element-display: none;
+    }
+  }
+
+  /* A bar inside a line of text (`SkeletonLine`): inline, so it follows the line's text-align, and the height of
+     the letters, centred in the line. */
+  .bb-skeleton-line {
+    display: inline-block;
+    height: 0.7em;
+    max-width: 100%;
+    vertical-align: middle;
   }
 }
 
@@ -1638,8 +1667,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .bb-drift img,
-  .bb-cue,
-  .bb-skeleton {
+  .bb-cue {
     animation: none;
   }
 

@@ -14,21 +14,26 @@
    classes for its padding, rules and grid. So a list in grey is the
    list's height, row for row, and nothing jumps when it arrives.
 
-   The shimmer is one CSS class, `.bb-skeleton`, in this package's
-   stylesheet, drawn in a wash of the ink so it reads on paper, on
-   the tinted bands and in dark mode alike, and still under a
-   reduced-motion preference.
-
-   No 'use client': nothing here holds state, so a server page and
-   a client component can both use it.
+   The blocks are react-loading-skeleton's (user decision), themed in
+   this package's stylesheet: a wash of the ink so they read on paper,
+   on the tinted bands and in dark mode alike, and still under a
+   reduced-motion preference. The library is a client component of its
+   own, so a server page and a client component can both use these.
    ============================================================ */
+
+import LoadingSkeleton from 'react-loading-skeleton'
 
 /** Varied, but fixed, so a row is the same width on every render and the server and browser agree. */
 const WIDTHS = [78, 62, 86, 70, 56, 82, 66, 74]
 
 /** One grey block. Size it with classes; a block is a field, a picture, a button. */
 export function Skeleton({ className = '', style }: { className?: string; style?: React.CSSProperties }) {
-	return <span aria-hidden='true' className={`bb-skeleton ${className}`} style={style} />
+	// `contents` on both wrappers, so the block itself sits in the parent's layout and takes the classes it is sized by.
+	return (
+		<span aria-hidden='true' className='contents'>
+			<LoadingSkeleton inline containerClassName='contents' className={className} style={style} />
+		</span>
+	)
 }
 
 /**
@@ -40,7 +45,7 @@ export function SkeletonLine({ className = '', width = '100%' }: { className?: s
 	// as the words it stands for would (user decision: match text centre).
 	return (
 		<span aria-hidden='true' className={`block h-[1lh] ${className}`}>
-			<span className='bb-skeleton bb-skeleton-line' style={{ width }} />
+			<LoadingSkeleton inline containerClassName='contents' className='bb-skeleton-line' width={width} />
 		</span>
 	)
 }
