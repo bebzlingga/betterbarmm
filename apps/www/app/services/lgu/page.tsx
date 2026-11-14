@@ -1,15 +1,14 @@
-import { ArrowUpRightIcon, FacebookLogoIcon, GlobeIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, ArrowUpRightIcon, FacebookLogoIcon, GlobeIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { GetInvolved } from '../../_components/get-involved'
 import { ServicesSearch, type ServiceEntry } from '../../_components/services-search'
-import { ServicesTabs } from '../../_components/services-tabs'
 import { SiteHeader } from '../../_components/site-header'
 import { lguSeal } from '../../_lib/images'
 import { Emblem } from '../../_components/emblem'
 import { LGU_GAPS, lguHasCharter, lguHref, lguMeta, lgus, PROVINCES, type Lgu } from '../../_lib/lgu-services'
 import { pageMeta } from '../../_lib/seo'
-import { AUDIENCES, CATEGORIES, offerings, slugify } from '../../_lib/services'
+import { AUDIENCES, CATEGORIES, slugify } from '../../_lib/services'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Programs & services of the provinces, cities and towns',
@@ -59,7 +58,6 @@ export default async function LguServicesPage({ searchParams }: { searchParams: 
 				audiences={audiences}
 				places={places}
 				initial={{ q, cat, for: audience, in: place }}
-				tabs={<ServicesTabs active='lgu' counts={{ regional: offerings.length, lgu: total }} />}
 				jump={[
 					...(entries.length ? [{ href: '#categories', label: 'Categories', icon: 'categories' as const }] : []),
 					{ href: '#lgus', label: 'With a charter', icon: 'charter' },
@@ -94,7 +92,13 @@ export default async function LguServicesPage({ searchParams }: { searchParams: 
 	)
 }
 
-/** The LGUs whose services are listed: cards with their seals, by province. */
+const badge = 'inline-block rounded-full px-2.5 py-0.5 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em]'
+const card =
+	'group relative flex min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+const pill = 'relative z-1 inline-flex items-center gap-1 rounded-full border border-[var(--rule)] px-2.5 py-1 text-[0.71875rem] font-semibold transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'
+
+/** The LGUs whose services are listed: cards, as the regional offices are drawn — the seal, the name, what kind of
+ *  government and where, the count, and the way in at the foot. */
 function WithCharter({ listed }: { listed: Lgu[] }) {
 	return (
 		<section id='lgus' aria-labelledby='lgus-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
@@ -105,25 +109,32 @@ function WithCharter({ listed }: { listed: Lgu[] }) {
 				<p className='text-[0.84375rem] text-[var(--ink-3)]'>Each page has every service: what to bring, the fee, the time and where to go.</p>
 			</div>
 			{listed.length ? (
-				<ul className='mt-6 grid border-t border-[var(--rule)] sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
+				<ul className='mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 					{listed.map((l) => (
-						<li key={l.key} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
-							<span className='relative size-16 shrink-0 overflow-hidden sm:h-28 sm:w-full'>
-								<Emblem image={lguSeal(l.key)} name={l.name} tile className='size-full text-[1rem]' />
-							</span>
-							<div className='flex min-w-0 flex-1 flex-col sm:p-4'>
-								<p className={`${eyebrow} text-[var(--ink-3)]`}>
-									{kindOf(l)} · {l.province}
-								</p>
-								<p className='mt-1 text-[0.96875rem] leading-[1.2]'>
-									<Link href={lguHref(l)} className='font-bold after:absolute after:inset-0 hover:text-[var(--accent)]'>
+						<li key={l.key} className={card}>
+							<div className='grid h-28 place-items-center pt-4'>
+								<Emblem image={lguSeal(l.key)} name={l.name} className='size-[4.5rem] rounded-full text-[0.75rem] transition duration-500 group-hover:scale-105' />
+							</div>
+							<div className='flex flex-1 flex-col px-5 pb-5 pt-4 text-center'>
+								<p className='text-[1rem] font-extrabold leading-snug tracking-[-0.015em]'>
+									<Link href={lguHref(l)} className='after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
 										{l.name}
 									</Link>
 								</p>
-								<p className='mt-2 text-[0.8125rem] text-[var(--ink-2)]'>
-									<span className='font-semibold tabular-nums text-[var(--ink)]'>{l.services.length}</span> {l.services.length === 1 ? 'service' : 'services'}
+								<p className='mt-2 flex flex-wrap justify-center gap-1.5'>
+									<span className={`${badge} bg-[var(--accent-soft)] text-[var(--accent)]`}>{kindOf(l)}</span>
+									<span className={`${badge} bg-[var(--paper-2)] text-[var(--ink-2)]`}>{l.province}</span>
 								</p>
+								<div className='mt-auto pt-5'>
+									<p className='border border-[var(--rule)] py-3'>
+										<span className='num block text-[1.5rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>{l.services.length}</span>
+										<span className='mt-1.5 block text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{l.services.length === 1 ? 'Service' : 'Services'}</span>
+									</p>
+								</div>
 							</div>
+							<p className='flex items-center justify-between border-t border-[var(--rule)] px-5 py-3 text-[0.8125rem] font-semibold text-[var(--ink-2)] group-hover:bg-[var(--accent)] group-hover:text-white'>
+								See its services <ArrowRightIcon size={13} weight='bold' aria-hidden='true' />
+							</p>
 						</li>
 					))}
 				</ul>
@@ -134,7 +145,8 @@ function WithCharter({ listed }: { listed: Lgu[] }) {
 	)
 }
 
-/** Every other LGU, by why it has no services listed, then by province: a compact list, each with its seal and its links. */
+/** Every other LGU, by why it has no services listed, then by province: small cards, each with its seal, what the
+ *  check found, and its links. */
 function WithoutCharter() {
 	const without = lgus.filter((l) => !lguHasCharter(l))
 	const groups = LGU_GAPS.map((g) => ({ g, list: without.filter((l) => g.status.includes(l.charterStatus)) })).filter(({ list }) => list.length)
@@ -148,66 +160,64 @@ function WithoutCharter() {
 			</div>
 
 			{/* A group is only named when there is another to tell it from; with one, the provinces follow the section's heading. */}
-			{groups.map(({ g, list }) => {
-				return (
-					<div key={g.title} className='mt-10'>
-						{groups.length > 1 ? (
-							<>
-								<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
-									{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
+			{groups.map(({ g, list }) => (
+				<div key={g.title} className='mt-10'>
+					{groups.length > 1 ? (
+						<>
+							<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
+								{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
+							</h3>
+							<p className='mt-1 text-[0.8125rem] text-[var(--ink-mute)]'>{g.lead}</p>
+						</>
+					) : null}
+					{PROVINCES.map((p) => {
+						const inP = list.filter((l) => l.provinceSlug === p.slug)
+						if (!inP.length) return null
+						return (
+							<div key={p.slug} className='mt-10 first:mt-6'>
+								<h3 className='text-[1.0625rem] font-extrabold tracking-[-0.01em]'>
+									{p.name} <span className='font-semibold text-[var(--ink-mute)]'>· {inP.length}</span>
 								</h3>
-								<p className='mt-1 text-[0.8125rem] text-[var(--ink-mute)]'>{g.lead}</p>
-							</>
-						) : null}
-						{PROVINCES.map((p) => {
-							const inP = list.filter((l) => l.provinceSlug === p.slug)
-							if (!inP.length) return null
-							return (
-								<div key={p.slug} className='mt-6'>
-									<p className='relative border-b border-[var(--ink)] pb-2 text-[0.8125rem] font-bold'>
-										{p.name} <span className='font-normal text-[var(--ink-mute)]'>· {inP.length}</span>
-									</p>
-									{/* Each row's rule is on its top, so the last row ends without one at any column count; the first row's tuck under the province's rule, which is positioned to paint over them. */}
-									<ul className='-mt-px grid gap-x-14 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-										{inP.map((l) => (
-											<li key={l.key} className='flex min-w-0 gap-3 border-t border-[var(--rule-soft)] py-5'>
-												<span className='size-9 shrink-0'>
-													<Emblem image={lguSeal(l.key)} name={l.name} className='size-full rounded-full text-[0.625rem]' />
-												</span>
-												<div className='min-w-0'>
-													<p className='text-[0.90625rem] font-semibold leading-snug'>
-														{l.name} <span className='text-[0.75rem] font-normal text-[var(--ink-mute)]'>{kindOf(l)}</span>
+								<ul className='mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+									{inP.map((l) => (
+										<li key={l.key} className='flex min-w-0 gap-3 border border-[var(--rule)] bg-[var(--paper)] p-4'>
+											<span className='size-11 shrink-0'>
+												<Emblem image={lguSeal(l.key)} name={l.name} className='size-full rounded-full text-[0.625rem]' />
+											</span>
+											<div className='min-w-0 flex-1'>
+												<p className='text-[0.9375rem] font-extrabold leading-snug tracking-[-0.01em]'>{l.name}</p>
+												<p className='mt-1'>
+													<span className={`${badge} bg-[var(--paper-2)] text-[var(--ink-2)]`}>{kindOf(l)}</span>
+												</p>
+												{l.charterNote ? <p className='mt-2 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>{l.charterNote}</p> : null}
+												{l.website || l.facebook || l.charter ? (
+													<p className='mt-3 flex flex-wrap gap-1.5'>
+														{l.charter ? (
+															<a href={l.charter.url} target='_blank' rel='noreferrer' className={pill}>
+																Charter <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
+															</a>
+														) : null}
+														{l.website ? (
+															<a href={l.website} target='_blank' rel='noreferrer' className={pill}>
+																<GlobeIcon size={12} aria-hidden='true' /> Website
+															</a>
+														) : null}
+														{l.facebook ? (
+															<a href={l.facebook} target='_blank' rel='noreferrer' className={pill}>
+																<FacebookLogoIcon size={12} aria-hidden='true' /> Facebook
+															</a>
+														) : null}
 													</p>
-													{l.charterNote ? <p className='mt-0.5 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>{l.charterNote}</p> : null}
-													{l.website || l.facebook || l.charter ? (
-														<p className='mt-1 flex flex-wrap gap-x-3 text-[0.78125rem]'>
-															{l.charter ? (
-																<a href={l.charter.url} target='_blank' rel='noreferrer' className={`inline-flex items-center gap-1 ${linkClass}`}>
-																	Charter <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
-																</a>
-															) : null}
-															{l.website ? (
-																<a href={l.website} target='_blank' rel='noreferrer' className={`inline-flex items-center gap-1 ${linkClass}`}>
-																	<GlobeIcon size={12} aria-hidden='true' /> Website
-																</a>
-															) : null}
-															{l.facebook ? (
-																<a href={l.facebook} target='_blank' rel='noreferrer' className={`inline-flex items-center gap-1 ${linkClass}`}>
-																	<FacebookLogoIcon size={12} aria-hidden='true' /> Facebook
-																</a>
-															) : null}
-														</p>
-													) : null}
-												</div>
-											</li>
-										))}
-									</ul>
-								</div>
-							)
-						})}
-					</div>
-				)
-			})}
+												) : null}
+											</div>
+										</li>
+									))}
+								</ul>
+							</div>
+						)
+					})}
+				</div>
+			))}
 		</section>
 	)
 }

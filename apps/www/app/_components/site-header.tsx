@@ -1,10 +1,11 @@
 'use client'
 
-import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
+import { ArrowRightIcon, BankIcon, BuildingOfficeIcon, CaretDownIcon, HandHeartIcon, MapPinAreaIcon, MosqueIcon, ScrollIcon, SquaresFourIcon, UsersThreeIcon, type Icon } from '@phosphor-icons/react'
 // import { MapTrifoldIcon } from '@phosphor-icons/react'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
-import { useEffect, useRef, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks, ESTATE_LINKS } from '@betterbarmm/editorial'
 // import { MapDialog } from './map-dialog'
 import { ThemeToggle } from './theme-toggle'
@@ -18,11 +19,11 @@ const discoverSections = [
 	   than a link — it opens the panel and goes nowhere — so without this entry
 	   there was no way into Discover's own front page from the bar at all. */
 	{ label: 'All chapters', href: '/discover' },
-	{ label: 'History', href: '/discover/history' },
-	{ label: 'Government', href: '/discover/governance' },
-	{ label: 'Local Government', href: '/discover/local-government' },
-	{ label: 'People', href: '/discover/people' },
-	{ label: 'Culture & Places', href: '/discover/culture-places' },
+	{ label: 'History', href: '/discover/history', icon: ScrollIcon, note: 'Sultanates, the peace process, the Organic Law' },
+	{ label: 'Government', href: '/discover/governance', icon: BankIcon, note: 'Parliament, the Chief Minister, the ministries' },
+	{ label: 'Local Government', href: '/discover/local-government', icon: MapPinAreaIcon, note: 'Provinces, cities, towns and barangays' },
+	{ label: 'People', href: '/discover/people', icon: UsersThreeIcon, note: 'Moro groups, indigenous peoples, languages' },
+	{ label: 'Culture & Places', href: '/discover/culture-places', icon: MosqueIcon, note: 'Mosques, islands, food, textiles' },
 ] as const
 
 const secondaryLinks = [
@@ -31,7 +32,11 @@ const secondaryLinks = [
 	{ key: 'news', href: '/news', label: 'Latest news' },
 	// Incident Watch and Crafts are reached through the strip's Projects switch, not the bar; phones get a row each in the menu below.
 	{ key: 'directory', href: '/directory', label: 'Directory' },
-	{ key: 'services', href: '/services', label: 'Services' },
+	// Its two halves open from the bar (user decision: a dropdown here, not tabs on the page).
+	{ key: 'services', href: '/services', label: 'Services', menu: [
+		{ label: 'Regional offices', href: '/services', icon: BuildingOfficeIcon, note: 'What the regional ministries and offices give' },
+		{ label: 'Local governments', href: '/services/lgu', icon: MapPinAreaIcon, note: 'What the provinces, cities and towns give' },
+	] },
 	{ key: 'explainers', href: '/explainers', label: 'Explainers' },
 	// The brain is reached through the strip's Projects switch, which opens its dialog over whatever page is open.
 	// About lives in the strip above, not the bar; phones get it in the menu's BetterBARMM links.
@@ -108,7 +113,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`nav-menu absolute right-0 top-full z-40 mt-1 border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
+						className={`nav-menu absolute right-0 top-full z-40 mt-2 overflow-hidden border border-[var(--rule)] border-t-2 border-t-[var(--accent)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
 					>
 						{/* The brass hairline at the head of the panel is the same mark the
 						    section kickers use, so a dropdown reads as part of the page's
@@ -121,7 +126,50 @@ function Menu({
 	)
 }
 
-const menuItemClass = 'nav-menu-item'
+/** A dropdown's contents: a heading, a row per page — its icon, its name and what it holds, the open page marked —
+ *  and, where there is one, a way to the section's own front page at the foot. */
+function MenuPanel({ title, items, foot, close }: { title: string; items: readonly { label: string; href: string; icon: Icon; note: string }[]; foot?: { label: string; href: string }; close: () => void }) {
+	const path = usePathname()
+	return (
+		<>
+			<p className='border-b border-[var(--rule-soft)] px-4 pb-2.5 pt-3.5 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{title}</p>
+			<div className='grid p-1.5'>
+				{items.map(({ label, href, icon: Glyph, note }) => {
+					const on = path === href
+					return (
+						<Link
+							key={href}
+							href={href}
+							onClick={close}
+							aria-current={on ? 'page' : undefined}
+							className='group/item flex items-center gap-3 px-2.5 py-2.5 transition-colors hover:bg-[var(--paper-2)]'
+						>
+							<span
+								className={`grid size-9 shrink-0 place-items-center transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover/item:bg-[var(--accent)] group-hover/item:text-white'}`}
+							>
+								<Glyph size={18} weight='duotone' aria-hidden='true' />
+							</span>
+							<span className='min-w-0 flex-1'>
+								<span className={`block text-[0.875rem] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>{label}</span>
+								<span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{note}</span>
+							</span>
+							<ArrowRightIcon size={13} weight='bold' aria-hidden='true' className='shrink-0 -translate-x-1 text-[var(--accent)] opacity-0 transition group-hover/item:translate-x-0 group-hover/item:opacity-100' />
+						</Link>
+					)
+				})}
+			</div>
+			{foot ? (
+				<Link
+					href={foot.href}
+					onClick={close}
+					className='flex items-center justify-between border-t border-[var(--rule-soft)] bg-[var(--paper-2)] px-4 py-3 text-[0.8125rem] font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]'
+				>
+					{foot.label} <ArrowRightIcon size={13} weight='bold' aria-hidden='true' />
+				</Link>
+			) : null}
+		</>
+	)
+}
 
 export function SiteHeader({ activeItem }: SiteHeaderProps) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -178,26 +226,28 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 						{/* No frame or fill — the links are grouped by proximity alone. */}
 						<nav className='hidden items-center justify-end gap-1 md:flex'>
-							<Menu label='Discover BARMM' active={activeItem === 'discover'} width='w-[15rem]'>
-								{(close) =>
-									discoverSections.map((item) => (
-										<Link key={item.href} href={item.href} onClick={close} className={menuItemClass}>
-											{item.label}
-										</Link>
-									))
-								}
+							<Menu label='Discover BARMM' active={activeItem === 'discover'} width='w-[23rem]'>
+								{(close) => (
+									<MenuPanel
+										title='Discover BARMM · the chapters'
+										items={discoverSections.filter((item) => 'icon' in item)}
+										foot={{ label: 'All chapters', href: '/discover' }}
+										close={close}
+									/>
+								)}
 							</Menu>
 
-							{secondaryLinks.map((item) => (
-								<Link
-									key={item.href}
-									href={item.href}
-									data-active={activeItem === item.key}
-									className='nav-item'
-								>
-									{item.label}
-								</Link>
-							))}
+							{secondaryLinks.map((item) =>
+								'menu' in item ? (
+									<Menu key={item.href} label={item.label} active={activeItem === item.key} width='w-[23rem]'>
+										{(close) => <MenuPanel title='Programs & services' items={item.menu} close={close} />}
+									</Menu>
+								) : (
+									<Link key={item.href} href={item.href} data-active={activeItem === item.key} className='nav-item'>
+										{item.label}
+									</Link>
+								),
+							)}
 						</nav>
 
 						<div className='flex items-center justify-end gap-2 md:gap-1.5'>
@@ -275,15 +325,24 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
 								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'preparedness', href: '/preparedness', label: 'Preparedness' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const].map((item) => (
-									<Link
-										key={item.href}
-										href={item.href}
-										onClick={closeMenu}
-										data-active={activeItem === item.key}
-										className='border-b border-[var(--rule-soft)] py-2.5 data-[active=true]:text-[var(--accent)]'
-									>
-										{item.label}
-									</Link>
+									<Fragment key={item.href}>
+										<Link
+											href={item.href}
+											onClick={closeMenu}
+											data-active={activeItem === item.key}
+											className='border-b border-[var(--rule-soft)] py-2.5 data-[active=true]:text-[var(--accent)]'
+										>
+											{item.label}
+										</Link>
+										{/* Services' two halves, each a row of its own under it. */}
+										{'menu' in item
+											? item.menu.map((sub) => (
+													<Link key={sub.href} href={sub.href} onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 pl-4 text-[var(--ink-3)]'>
+														{sub.label}
+													</Link>
+												))
+											: null}
+									</Fragment>
 								))}
 								{/* Map hidden for now.
 								<MapDialog

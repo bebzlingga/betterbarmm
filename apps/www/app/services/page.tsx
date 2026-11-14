@@ -3,8 +3,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SiteHeader } from '../_components/site-header'
 import { ServicesSearch, type ServiceEntry } from '../_components/services-search'
-import { ServicesTabs } from '../_components/services-tabs'
-import { lgus } from '../_lib/lgu-services'
 import { GetInvolved } from '../_components/get-involved'
 import { officeLogo } from '../_lib/images'
 import { Emblem } from '../_components/emblem'
@@ -61,7 +59,6 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 				categories={categories}
 				audiences={audiences}
 				initial={{ q, cat, for: audience }}
-				tabs={<ServicesTabs active='regional' counts={{ regional: offerings.length, lgu: lgus.reduce((n, l) => n + l.services.length, 0) }} />}
 				jump={[
 					{ href: '#categories', label: 'Categories', icon: 'categories' },
 					{ href: '#offices', label: 'Offices with a charter', icon: 'charter' },
@@ -96,7 +93,24 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 	)
 }
 
-/** The offices whose programs and services are listed: cards, as the Directory draws its offices. */
+const KIND: Record<Office['kind'], string> = { office: 'Office', ministry: 'Ministry', attached: 'Attached' }
+const badge = 'inline-block rounded-full px-2.5 py-0.5 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em]'
+const card =
+	'group relative flex min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+
+/** An office's acronym, what kind of office it is, and anything else said of it, as badges, as the Directory draws them. */
+function Badges({ o, extra }: { o: Office; extra?: React.ReactNode }) {
+	return (
+		<p className='mt-2 flex flex-wrap justify-center gap-1.5'>
+			{o.acronym ? <span className={`${badge} bg-[var(--accent-soft)] text-[var(--accent)]`}>{o.acronym}</span> : null}
+			<span className={`${badge} bg-[var(--paper-2)] text-[var(--ink-2)]`}>{KIND[o.kind]}</span>
+			{extra}
+		</p>
+	)
+}
+
+/** The offices whose programs and services are listed: cards, as the Directory draws its offices — the mark, the name
+ *  and badges, then the two counts side by side, and the way in at the foot. */
 function WithCharter() {
 	const listed = offices.filter(hasCharter)
 	return (
@@ -113,32 +127,42 @@ function WithCharter() {
 				return (
 					<div key={g.kind[0]} className={g.title ? 'mt-12' : 'mt-8'}>
 						{g.title ? (
-							<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
+							<h3 className={`${eyebrow} mb-4 text-[var(--ink-3)]`}>
 								{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
 							</h3>
 						) : null}
-						{/* A list on a phone, cards from a tablet up. */}
-						<ul className='mt-3 grid border-t border-[var(--rule)] sm:mt-4 sm:grid-cols-2 sm:gap-4 sm:border-t-0 lg:grid-cols-3 xl:grid-cols-4'>
+						<ul className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 							{list.map((o) => (
-								<li key={o.slug} className='bb-frame relative flex min-w-0 gap-4 border-b border-[var(--rule-soft)] bg-transparent! py-3 sm:flex-col sm:gap-0 sm:overflow-hidden sm:border sm:border-[var(--rule)] sm:py-0'>
-									<span className='relative size-16 shrink-0 overflow-hidden sm:h-28 sm:w-full'>
-										<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} tile className='size-full text-[0.6875rem] sm:text-[1rem]' />
-									</span>
-									<div className='flex min-w-0 flex-1 flex-col sm:p-4'>
-										<p className='text-[0.96875rem] leading-[1.2]'>
+								<li key={o.slug} className={card}>
+									<div className='grid h-28 place-items-center pt-4'>
+										<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} className='size-[4.5rem] text-[0.75rem] transition duration-500 group-hover:scale-105' />
+									</div>
+									<div className='flex flex-1 flex-col px-5 pb-5 pt-4 text-center'>
+										<p className='text-[1rem] font-extrabold leading-snug tracking-[-0.015em]'>
 											{/* The whole card is the link; the name carries it for readers of the link text. */}
-											<Link href={`/services/${o.slug}`} className='font-bold after:absolute after:inset-0 hover:text-[var(--accent)]'>
+											<Link href={`/services/${o.slug}`} className='after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
 												{o.name}
 											</Link>
 										</p>
-										<p className='mt-2 text-[0.8125rem] text-[var(--ink-2)]'>
-											<span className='font-semibold tabular-nums text-[var(--ink)]'>{o.services.length}</span> {o.services.length === 1 ? 'service' : 'services'} ·{' '}
-											<span className='font-semibold tabular-nums text-[var(--ink)]'>{o.programs.length}</span> {o.programs.length === 1 ? 'program' : 'programs'}
-										</p>
-										{o.charterStatus === 'draft' ? (
-											<p className={`${eyebrow} mt-2 text-[var(--brass)]`}>From a draft charter</p>
-										) : null}
+										<Badges o={o} extra={o.charterStatus === 'draft' ? <span className={`${badge} bg-[var(--paper-2)] text-[var(--brass)]`}>Draft charter</span> : null} />
+										{/* The two counts side by side, pushed to the card's foot so they line up across a row. */}
+										<div className='mt-auto pt-5'>
+										<dl className='grid grid-cols-2 divide-x divide-[var(--rule)] border border-[var(--rule)]'>
+											{[
+												['Services', o.services.length],
+												['Programs', o.programs.length],
+											].map(([label, n]) => (
+												<div key={label} className='flex flex-col-reverse py-3'>
+													<dt className='mt-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{label}</dt>
+													<dd className='num text-[1.5rem] font-extrabold leading-none tracking-[-0.02em] text-[var(--ink)]'>{n}</dd>
+												</div>
+											))}
+										</dl>
+										</div>
 									</div>
+									<p className='flex items-center justify-between border-t border-[var(--rule)] px-5 py-3 text-[0.8125rem] font-semibold text-[var(--ink-2)] group-hover:bg-[var(--accent)] group-hover:text-white'>
+										See its services <ArrowRightIcon size={13} weight='bold' aria-hidden='true' />
+									</p>
 								</li>
 							))}
 						</ul>
@@ -152,8 +176,9 @@ function WithCharter() {
 /**
  * The offices whose services are not listed, and why. Every office is bound
  * to publish a Citizen's Charter; where one has not, its 2026 appropriation
- * is the only public account of what it does, so its programs from the Act
- * stand in — named as the Act names them, and said to be that, not services.
+ * is the only public account of what it does. Each is a card: what the check
+ * found, and what the budget gives it; its page lists the programs the Act
+ * funds, named as the Act names them, and said to be that, not services.
  */
 function WithoutCharter() {
 	const without = offices.filter((o) => !hasCharter(o))
@@ -173,19 +198,19 @@ function WithoutCharter() {
 				const list = without.filter((o) => o.charterStatus === g.status || (g.status === 'none' && o.charterStatus === 'coming')).sort((a, b) => Number(b.charterStatus === 'coming') - Number(a.charterStatus === 'coming'))
 				if (!list.length) return null
 				return (
-					<div key={g.status} className='mt-10'>
+					<div key={g.status} className={g.status === 'none' ? 'mt-8' : 'mt-12'}>
 						{/* The offices with none follow the section's own lead, which already says so; only the others take a heading. */}
 						{g.status === 'none' ? null : (
-							<>
+							<div className='mb-4'>
 								<h3 className={`${eyebrow} text-[var(--ink-3)]`}>
 									{g.title} <span className='text-[var(--ink-mute)]'>· {list.length}</span>
 								</h3>
 								<p className='mt-1 text-[0.8125rem] text-[var(--ink-mute)]'>{g.lead}</p>
-							</>
+							</div>
 						)}
-						<ul className={`${g.status === 'none' ? '' : 'mt-4 '}border-t border-[var(--ink)]`}>
+						<ul className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 							{list.map((o) => (
-								<GapRow key={o.slug} o={o} />
+								<GapCard key={o.slug} o={o} />
 							))}
 						</ul>
 					</div>
@@ -195,60 +220,53 @@ function WithoutCharter() {
 	)
 }
 
-function GapRow({ o }: { o: Office }) {
+function GapCard({ o }: { o: Office }) {
 	const funded = fundedPrograms(o)
 	const total = funded.reduce((n, p) => n + p.amount, 0)
 	return (
-		<li className='grid gap-x-8 gap-y-3 border-b border-[var(--rule-soft)] py-5 md:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:gap-x-20'>
-			<div className='flex min-w-0 gap-4'>
-				<span className='size-12 shrink-0'>
-					<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} className='size-full rounded-full text-[0.5625rem]' />
+		<li className={card}>
+			<div className='flex flex-1 flex-col px-5 pb-5 pt-6 text-center'>
+				<span className='mx-auto size-14'>
+					<Emblem image={officeLogo(o.slug)} name={o.name} label={o.acronym} className='size-full rounded-full text-[0.625rem] transition duration-500 group-hover:scale-105' />
 				</span>
-				<div className='min-w-0'>
-				{o.acronym ? <p className={`${eyebrow} text-[var(--accent)]`}>{o.acronym}</p> : null}
-				<p className='mt-0.5 text-[0.96875rem] font-bold leading-snug'>
-					<Link href={`/services/${o.slug}`} className='hover:text-[var(--accent)]'>
+				<p className='mt-4 text-[0.96875rem] font-extrabold leading-snug tracking-[-0.015em]'>
+					<Link href={`/services/${o.slug}`} className='after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
 						{o.name}
 					</Link>
 				</p>
+				<Badges o={o} extra={o.charterStatus === 'coming' ? <span className={`${badge} bg-[var(--paper-2)] text-[var(--brass)]`}>Promised</span> : null} />
 				{o.charterNote ? (
-					<p className='mt-1.5 text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>
+					<p className='mt-3 text-[0.78125rem] leading-[1.55] text-[var(--ink-3)]'>
 						{o.charterNote}
 						{o.charterPage ? (
 							<>
 								{' '}
-								<a href={o.charterPage} target='_blank' rel='noreferrer' className={`inline-flex items-center gap-0.5 ${linkClass}`}>
+								<a href={o.charterPage} target='_blank' rel='noreferrer' className={`relative z-1 inline-flex items-center gap-0.5 ${linkClass}`}>
 									See it <ArrowUpRightIcon size={10} weight='bold' aria-hidden='true' />
 								</a>
 							</>
 						) : null}
 					</p>
 				) : null}
-				</div>
 			</div>
-			<div className='min-w-0'>
+			{/* What the 2026 budget gives it, at the foot, so the amounts line up across a row. */}
+			<div className='flex min-h-[4.25rem] items-center justify-between gap-3 border-t border-[var(--rule)] px-5 py-3'>
 				{funded.length ? (
 					<>
-						<p className='flex flex-wrap items-baseline justify-between gap-x-4 text-[0.78125rem] text-[var(--ink-3)]'>
-							<span className='inline-flex items-center gap-1.5'>
-								<CoinsIcon size={13} aria-hidden='true' /> Funded in 2026 for
+						<span className='min-w-0'>
+							<span className='flex items-center gap-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+								<CoinsIcon size={13} aria-hidden='true' /> Funded in 2026
 							</span>
-							<a href={budgetHref(o)} className={`inline-flex items-center gap-1 font-semibold text-[var(--ink)] ${linkClass}`}>
-								{peso(total)} in all <ArrowRightIcon size={11} weight='bold' aria-hidden='true' />
-							</a>
-						</p>
-						<ul className='mt-2'>
-							{funded.slice(0, 6).map((p) => (
-								<li key={p.name} className='flex items-baseline justify-between gap-3 border-b border-dotted border-[var(--rule)] py-1.5 text-[0.84375rem] leading-snug'>
-									<span className='min-w-0 text-[var(--ink-2)]'>{p.name}</span>
-									<span className='shrink-0 tabular-nums text-[var(--ink-3)]'>{peso(p.amount)}</span>
-								</li>
-							))}
-						</ul>
-						{funded.length > 6 ? <p className='mt-1.5 text-[0.78125rem] text-[var(--ink-mute)]'>and {funded.length - 6} more on its budget page</p> : null}
+							<span className='mt-0.5 block text-[0.8125rem] text-[var(--ink-3)]'>
+								{funded.length} {funded.length === 1 ? 'program' : 'programs'}
+							</span>
+						</span>
+						<a href={budgetHref(o)} className='relative z-1 inline-flex shrink-0 items-center gap-1 text-[1.125rem] font-extrabold tabular-nums tracking-[-0.01em] text-[var(--ink)] hover:text-[var(--accent)]'>
+							{peso(total)} <ArrowRightIcon size={12} weight='bold' aria-hidden='true' />
+						</a>
 					</>
 				) : (
-					<p className='text-[0.8125rem] italic text-[var(--ink-mute)]'>No programs of its own in the 2026 budget.</p>
+					<span className='text-[0.8125rem] italic text-[var(--ink-mute)]'>No programs of its own in the 2026 budget.</span>
 				)}
 			</div>
 		</li>

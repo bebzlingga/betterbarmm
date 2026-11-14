@@ -48,6 +48,9 @@ type Choice = { id: string; label: string; count: number }
 export type Jump = { href: string; label: string; icon: 'categories' | 'charter' | 'none' }
 const JUMP_ICONS: Record<Jump['icon'], Icon> = { categories: SquaresFourIcon, charter: FileTextIcon, none: ProhibitIcon }
 
+/** The filter row's columns from a laptop up, by how many dropdowns it holds; written out, so Tailwind sees each class. */
+const FILTER_COLS: Record<number, string> = { 2: 'lg:grid-cols-2', 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4' }
+
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 export function ServicesSearch({
@@ -57,7 +60,6 @@ export function ServicesSearch({
 	audiences,
 	places,
 	initial,
-	tabs,
 	jump,
 	children,
 }: {
@@ -69,7 +71,6 @@ export function ServicesSearch({
 	places?: Choice[]
 	initial: { q: string; cat: string; for: string; in?: string }
 	/** The tab bar between the regional offices and the local governments, drawn under the band. */
-	tabs?: React.ReactNode
 	jump: Jump[]
 	children: React.ReactNode
 }) {
@@ -174,12 +175,10 @@ export function ServicesSearch({
 				</div>
 			</section>
 
-			{tabs}
-
 			{/* The search on the left, the two filters on the right, always under the band, so a choice can be made or undone from the results as well as the sections. */}
-			<div id='filters' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-6 lg:pt-8'>
+			<div id='filters' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] pt-8 lg:pt-10'>
 				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between'>
-					<form role='search' action='/services' onSubmit={(e) => e.preventDefault()} className='flex min-w-0 flex-col gap-1 lg:w-[26rem]'>
+					<form role='search' action='/services' onSubmit={(e) => e.preventDefault()} className='flex min-w-0 flex-col gap-1 lg:w-[24rem] lg:shrink-0'>
 						<label htmlFor='services-search' className='text-[0.75rem] text-[var(--ink-3)]'>
 							Search
 						</label>
@@ -207,7 +206,8 @@ export function ServicesSearch({
 							)}
 						</span>
 					</form>
-					<div className={`grid gap-3 lg:shrink-0 ${places ? 'sm:grid-cols-3 lg:w-[48rem]' : 'sm:grid-cols-2 lg:w-[34rem]'}`}>
+					{/* The filters, each an equal share of what the search leaves. */}
+					<div className={`grid gap-3 sm:grid-cols-2 lg:min-w-0 lg:flex-1 ${FILTER_COLS[(places ? 1 : 0) + 2]} lg:max-w-[56rem]`}>
 						{places ? (
 							<Select label='Province' value={place} onChange={(v) => (setPlace(v), setAt(0))} options={[['', 'Every province'], ...places.map((c): [string, string] => [c.id, `${c.label} (${c.count})`])]} />
 						) : null}

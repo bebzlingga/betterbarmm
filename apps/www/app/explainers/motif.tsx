@@ -145,9 +145,9 @@ const DRAW: Record<Motif, React.ReactNode> = {
 	),
 }
 
-export function GuideMotif({ motif }: { motif: Motif }) {
+export function GuideMotif({ motif, className = 'block h-24 w-full' }: { motif: Motif; className?: string }) {
 	return (
-		<svg viewBox='0 0 240 96' aria-hidden='true' className='block h-24 w-full'>
+		<svg viewBox='0 0 240 96' aria-hidden='true' className={className}>
 			{DRAW[motif]}
 		</svg>
 	)

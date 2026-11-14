@@ -132,8 +132,15 @@ const WORKSPACE_ICON: Record<string, React.ComponentType<{ size?: number; weight
 	Procurement: ShoppingCartIcon,
 }
 
-/** The longer guides each workspace carries, as cards that say where they open. */
+/** The longer guides each workspace carries, grouped by the workspace that carries them: a panel each, headed by its
+ *  mark and a way into it, the guides as rows under it with the small picture of what each explains. */
 function Guides() {
+	const workspaces = [...new Set(GUIDES.map((g) => g.workspace))].map((name) => {
+		const guides = GUIDES.filter((g) => g.workspace === name)
+		return { name, guides, home: new URL(guides[0]!.href).origin }
+	})
+		// The workspace with the most guides last, so it takes a column of its own and the two columns come out level.
+		.sort((a, b) => a.guides.length - b.guides.length)
 	return (
 		<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
 			<div className='bb-container bb-section'>
@@ -147,33 +154,48 @@ function Guides() {
 						law, how a budget moves, what each level of local government does, how public bidding works.
 					</p>
 				</div>
-				<div className='mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-					{GUIDES.map((g) => {
-						const Icon = WORKSPACE_ICON[g.workspace] ?? ScrollIcon
+				{/* Columns rather than a grid, so a workspace with five guides doesn't stretch its neighbour with two. */}
+				<div className='mt-12 gap-5 md:columns-2'>
+					{workspaces.map(({ name, guides, home }) => {
+						const Icon = WORKSPACE_ICON[name] ?? ScrollIcon
 						return (
-							<a
-								key={g.href}
-								href={g.href}
-								className='group flex flex-col border border-[var(--rule)] bg-[var(--paper)] transition hover:border-[var(--ink)]'
-							>
-								<span className='block border-b border-[var(--rule)] bg-[var(--paper-2)] px-6 py-4 transition group-hover:bg-[var(--paper)]'>
-									<GuideMotif motif={g.motif} />
-								</span>
-								<span className='flex flex-1 flex-col p-6'>
-								<span className='flex items-center gap-2 text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>
-									<Icon size={15} weight='fill' aria-hidden='true' className='shrink-0' />
-									{g.workspace}
-								</span>
-								<span className='mt-4 text-[1.1rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
-									{g.title}
-								</span>
-								<span className='mt-2 flex-1 text-[0.84375rem] leading-[1.7] text-[var(--ink-2)]'>{g.summary}</span>
-								<span className='mt-5 inline-flex items-center gap-1.5 text-[0.78125rem] font-semibold text-[var(--ink-3)] group-hover:text-[var(--ink)]'>
-									Open in {g.workspace}
-									<ArrowUpRightIcon className='size-3.5 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5' weight='bold' aria-hidden='true' />
-								</span>
-								</span>
-							</a>
+							<article key={name} className='mb-5 break-inside-avoid border border-[var(--rule)] bg-[var(--paper)]'>
+								<header className='flex items-center gap-3 border-b border-[var(--rule)] px-5 py-4'>
+									<span className='grid size-10 shrink-0 place-items-center bg-[var(--accent)] text-white'>
+										<Icon size={20} weight='fill' aria-hidden='true' />
+									</span>
+									<span className='min-w-0 flex-1'>
+										<span className='block text-[1.0625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>{name}</span>
+										<span className='mt-0.5 block text-[0.75rem] text-[var(--ink-3)]'>
+											{guides.length} {guides.length === 1 ? 'guide' : 'guides'}
+										</span>
+									</span>
+									<a
+										href={home}
+										className='inline-flex shrink-0 items-center gap-1 rounded-full border border-[var(--rule)] px-3 py-1.5 text-[0.75rem] font-semibold text-[var(--ink-2)] transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'
+									>
+										Open workspace <ArrowUpRightIcon size={11} weight='bold' aria-hidden='true' />
+									</a>
+								</header>
+								<ul>
+									{guides.map((g) => (
+										<li key={g.href} className='border-b border-[var(--rule-soft)] last:border-b-0'>
+											<a href={g.href} className='group flex gap-4 px-5 py-4 transition-colors hover:bg-[var(--paper-2)]'>
+												<span className='grid h-16 w-24 shrink-0 place-items-center bg-[var(--paper-2)] transition-colors group-hover:bg-[var(--paper)]'>
+													<GuideMotif motif={g.motif} className='block h-12 w-full' />
+												</span>
+												<span className='min-w-0 flex-1'>
+													<span className='flex items-start justify-between gap-3'>
+														<span className='text-[0.96875rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)] group-hover:text-[var(--accent)]'>{g.title}</span>
+														<ArrowUpRightIcon className='mt-1 size-3.5 shrink-0 text-[var(--ink-mute)] transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]' weight='bold' aria-hidden='true' />
+													</span>
+													<span className='mt-1 block text-[0.8125rem] leading-[1.6] text-[var(--ink-3)]'>{g.summary}</span>
+												</span>
+											</a>
+										</li>
+									))}
+								</ul>
+							</article>
 						)
 					})}
 				</div>
