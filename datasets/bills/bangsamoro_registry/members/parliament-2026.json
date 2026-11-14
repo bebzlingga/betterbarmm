@@ -101,7 +101,7 @@
    "photo": {
     "file": "oranon-suwaib-l.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (ORANON, SUWAIB L.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/oranon-suwaib-l/"
     }
    },
@@ -180,8 +180,8 @@
    "photo": {
     "file": "halil-abdulwahid.jpg",
     "source": {
-     "label": "COMELEC, 2026 list of nominees (Bangsamoro Federalist Party), Certificate of Acceptance of Nomination, p. 5: ID photo; background added by BetterBARMM",
-     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025BARMMPE/260522_REDACTED_LISTNOM/REDACTED_RPPP/BANGSAMORO_FEDERALIST_PARTY.pdf#page=5"
+     "label": "Bangsamoro Parliament, member profile (HALIL, ABDULWAHID), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/halil-abdulwahid-p/"
     }
    }
   },
@@ -230,8 +230,8 @@
    "photo": {
     "file": "brahim-akmad.jpg",
     "source": {
-     "label": "Ministry of Environment, Natural Resources and Energy (BARMM), Minister's Corner; background added by BetterBARMM",
-     "url": "https://menre.bangsamoro.gov.ph/?page_id=6728"
+     "label": "Bangsamoro Parliament, member profile (BRAHIM, AKMAD), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/brahim-akmad-a/"
     }
    },
    "affiliations": [
@@ -292,7 +292,7 @@
    "photo": {
     "file": "asnawie-dan-s.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (ASNAWIE, DAN S.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/asnawie-dan-s/"
     }
    },
@@ -363,8 +363,8 @@
    "photo": {
     "file": "maslamama-abunawas.jpg",
     "source": {
-     "label": "Bangsamoro Government (bangsamoro.gov.ph), Key Officials: Ministry of Agriculture, Fisheries and Agrarian Reform; background added by BetterBARMM",
-     "url": "https://bangsamoro.gov.ph/officials/key-officials/"
+     "label": "Bangsamoro Parliament, member profile (MASLAMAMA, ABUNAWAS), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/maslamama-abunawas-l/"
     }
    },
    "career": [
@@ -460,7 +460,14 @@
     "2022 · Won Cotabato City vice mayor (UBJP), as Bruce Matabalao's running mate"
    ],
    "born": "4 June 1985",
-   "birthplace": "Cotabato City"
+   "birthplace": "Cotabato City",
+   "photo": {
+    "file": "abu-johari-c.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ABU, JOHARI), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abu-johari-c/"
+    }
+   }
   },
   {
    "ballotName": "Camid Gandamra Jr.",
@@ -505,7 +512,14 @@
     "2026 · Won a party seat as BFP 7th nominee"
    ],
    "born": "26 March 1977",
-   "birthplace": "Iligan City, Lanao del Norte"
+   "birthplace": "Iligan City, Lanao del Norte",
+   "photo": {
+    "file": "gandamra-jr-camid-u.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (GANDAMRA, CAMID JR.), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/gandamra-jr-camid-u/"
+    }
+   }
   },
   {
    "ballotName": "Karwin Hamjani",
@@ -560,8 +574,8 @@
    "photo": {
     "file": "hamjani-karwin.jpg",
     "source": {
-     "label": "COMELEC, 2026 list of nominees (Bangsamoro Federalist Party), Certificate of Acceptance of Nomination, p. 17: ID photo; background added by BetterBARMM",
-     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025BARMMPE/260522_REDACTED_LISTNOM/REDACTED_RPPP/BANGSAMORO_FEDERALIST_PARTY.pdf#page=17"
+     "label": "Bangsamoro Parliament, member profile (HAMJANI, KARWIN), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/hamjani-karwin-h/"
     }
    }
   },
@@ -620,7 +634,7 @@
    "photo": {
     "file": "kadatuan-kitem-d-jr.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (KADATUAN, KITEM D., JR.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/kadatuan-jr-atty-kitem-d/"
     }
    },
@@ -686,7 +700,7 @@
    "photo": {
     "file": "midtimbang-michael-e.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (MIDTIMBANG, MICHAEL E.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/midtimbang-michael-e/"
     }
    },
@@ -746,7 +760,14 @@
    ],
    "elections": [
     "2026 · Won a party seat as BFP 11th nominee"
-   ]
+   ],
+   "photo": {
+    "file": "hataman-suraija-reina-s.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (HATAMAN, SURAIJA REINA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/hataman-suraija-reina-s/"
+    }
+   }
   },
   {
    "ballotName": "Ma-arouph Candao",
@@ -803,7 +824,7 @@
    "photo": {
     "file": "candao-ma-arouph-b.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (CANDAO, MA-AROUPH B.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/candao-ma-arouph-b/"
     }
    },
@@ -879,7 +900,7 @@
    "photo": {
     "file": "pagayao-alindatu-k.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (PAGAYAO, ALINDATU K.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/pagayao-alindatu-k/"
     }
    },
@@ -956,7 +977,7 @@
    "photo": {
     "file": "bayam-zulfikar-ali-s.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (BAYAM, ZULFIKAR-ALI S.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/bayam-zulfikar-ali-s/"
     }
    },
@@ -1023,7 +1044,7 @@
    "photo": {
     "file": "matalam-jaafar-apollo-mikhail-l.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (MATALAM, JAAFAR APOLLO MIKHAIL L.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/matalam-jaafar-apollo-mikhail-l/"
     }
    },
@@ -1096,7 +1117,14 @@
     "2026 · Won a party seat as BFP 16th nominee"
    ],
    "born": "22 June 1977",
-   "birthplace": "Midsayap, Cotabato"
+   "birthplace": "Midsayap, Cotabato",
+   "photo": {
+    "file": "sumlay-junalyn-g.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (SUMLAY, JUNALYN), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sumlay-junalyn-g/"
+    }
+   }
   },
   {
    "ballotName": "Murad Ebrahim",
@@ -1196,7 +1224,7 @@
    "photo": {
     "file": "ebrahim-ahod-balawag.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, Member profile",
+     "label": "Bangsamoro Parliament, member profile (EBRAHIM, AHOD BALAWAG), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ebrahim-ahod-balawag/"
     }
    },
@@ -1313,7 +1341,7 @@
    "photo": {
     "file": "iqbal-mohagher-m.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, Member profile",
+     "label": "Bangsamoro Parliament, member profile (IQBAL, MOHAGHER M.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/iqbal-mohagher-m/"
     }
    },
@@ -1391,7 +1419,7 @@
    "photo": {
     "file": "solaiman-ali-b.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (SOLAIMAN, ALI B.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/solaiman-ali-b/"
     }
    },
@@ -1493,8 +1521,8 @@
    "photo": {
     "file": "guerra-eduard-u.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, Members of the Parliament",
-     "url": "https://parliament.bangsamoro.gov.ph/members/"
+     "label": "Bangsamoro Parliament, member profile (GUERRA, EDUARD U.), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/archt-guerra-eduard-u/"
     }
    },
    "affiliations": [
@@ -1555,7 +1583,7 @@
    "photo": {
     "file": "ali-ibrahim-d.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (ALI, IBRAHIM D.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ali-ibrahim-d/"
     }
    },
@@ -1628,7 +1656,7 @@
    "photo": {
     "file": "salendab-said-z.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (SALENDAB, SAID Z.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/salendab-said-z/"
     }
    },
@@ -1716,7 +1744,7 @@
    "photo": {
     "file": "yacob-mohammad-s.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (YACOB, MOHAMMAD S.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/yacob-mohammad-s-ph-d/"
     }
    },
@@ -1813,8 +1841,8 @@
    "photo": {
     "file": "balindong-amir.jpg",
     "source": {
-     "label": "COMELEC, 2026 list of nominees (United Bangsamoro Justice Party), Certificate of Acceptance of Nomination, p. 17: ID photo; background added by BetterBARMM",
-     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025BARMMPE/260522_REDACTED_LISTNOM/REDACTED_RPPP/UNITED_BANGSAMORO_JUSTICE_PARTY.pdf#page=17"
+     "label": "Bangsamoro Parliament, member profile (BALINDONG, AMIR), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/balindong-amir/"
     }
    }
   },
@@ -1897,7 +1925,7 @@
    "photo": {
     "file": "lim-john-anthony-l.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (LIM, JOHN ANTHONY L.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/lim-john-anthony-l/"
     }
    },
@@ -1989,7 +2017,7 @@
    "photo": {
     "file": "asarul-haber-a.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (ASARUL, HABER A.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/asarul-haber-a/"
     }
    },
@@ -2065,7 +2093,7 @@
    "photo": {
     "file": "dumama-alba-sha-elijah-b.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (DUMAMA-ALBA, SHA ELIJAH B.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/dumama-alba-sha-elijah-b/"
     }
    },
@@ -2169,7 +2197,14 @@
     }
    ],
    "born": "3 September 1975",
-   "birthplace": "Marawi City, Lanao del Sur"
+   "birthplace": "Marawi City, Lanao del Sur",
+   "photo": {
+    "file": "dipatuan-ducol-nordjiana-l.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (DIPATUAN-DUCOL, NORDJIANA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/dipatuan-ducol-nordjiana-l/"
+    }
+   }
   },
   {
    "ballotName": "Raissa Jajurie",
@@ -2217,7 +2252,7 @@
    "photo": {
     "file": "jajurie-raissa-h.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (JAJURIE, RAISSA H.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-jajurie-raissa-h/"
     }
    },
@@ -2301,7 +2336,7 @@
    "photo": {
     "file": "shiek-said-m.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (SHIEK, SAID M.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/shiek-said-m/"
     }
    },
@@ -2373,7 +2408,7 @@
    "photo": {
     "file": "salik-ali-o.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (SALIK, ALI O.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/salik-ali-o/"
     }
    },
@@ -2489,7 +2524,14 @@
     "2026 · Won a party seat as BGC 1st nominee"
    ],
    "born": "5 December 1991",
-   "birthplace": "Marawi City, Lanao del Sur"
+   "birthplace": "Marawi City, Lanao del Sur",
+   "photo": {
+    "file": "adiong-iii-mamintal-raki-in.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ADIONG, MAMINTAL III), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/adiong-iii-mamintal-raki-in/"
+    }
+   }
   },
   {
    "ballotName": "Amer Zaakaria Rakim",
@@ -2547,7 +2589,7 @@
    "photo": {
     "file": "rakim-amer-zaakaria-a.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (RAKIM, AMER ZAAKARIA A.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/rakim-atty-amer-zaakaria-a/"
     }
    },
@@ -2654,8 +2696,8 @@
    "photo": {
     "file": "mangudadatu-abdulrahman.jpg",
     "source": {
-     "label": "COMELEC, 2026 list of nominees (BARMM Grand Coalition), Certificate of Acceptance of Nomination, p. 7: ID photo; background added by BetterBARMM",
-     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025BARMMPE/260522_REDACTED_LISTNOM/REDACTED_RPPP/BARMM_GRAND_COALITION.pdf#page=7"
+     "label": "Bangsamoro Parliament, member profile (MANGUDADATU, ABDULRAHMAN), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mangudadatu-abdulrahman-rubbil-s/"
     }
    }
   },
@@ -2712,8 +2754,8 @@
    "photo": {
     "file": "sinsuat-datu-bimbo.jpg",
     "source": {
-     "label": "COMELEC, 2026 list of nominees (BARMM Grand Coalition), Certificate of Acceptance of Nomination, p. 9: ID photo; background added by BetterBARMM",
-     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025BARMMPE/260522_REDACTED_LISTNOM/REDACTED_RPPP/BARMM_GRAND_COALITION.pdf#page=9"
+     "label": "Bangsamoro Parliament, member profile (SINSUAT, DATU BIMBO), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sinsuat-datu-bimbo-q/"
     }
    }
   },
@@ -2806,8 +2848,8 @@
    "photo": {
     "file": "bud-hanie.jpg",
     "source": {
-     "label": "Wikimedia Commons, public domain, by the Philippine Information Agency (June 2023); background added by BetterBARMM",
-     "url": "https://commons.wikimedia.org/wiki/File:BARMM_Governors_unite_-_BARMM_Governors_Caucus_Maluso,_Basilan_Mayor_Hanie_Bud_(cropped).jpg"
+     "label": "Bangsamoro Parliament, member profile (BUD, HANIE), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/bud-hanie-ain/"
     }
    }
   },
@@ -2849,7 +2891,14 @@
    "birthplace": "Zamboanga City",
    "career": [
     "2024 · ICT officer (occupation on his BGC nomination acceptance)"
-   ]
+   ],
+   "photo": {
+    "file": "amin-abdel-razi-a.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (AMIN, ABDEL RAZI), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/amin-abdel-razi-a-first-parl/"
+    }
+   }
   },
   {
    "ballotName": "Sittie Aisah Pansar",
@@ -2912,8 +2961,8 @@
    "photo": {
     "file": "pansar-sittie-aisah.jpg",
     "source": {
-     "label": "COMELEC, 2026 list of nominees (BARMM Grand Coalition), Certificate of Acceptance of Nomination, p. 15: ID photo; background added by BetterBARMM",
-     "url": "https://www.comelec.gov.ph/php-tpls-attachments/2025BARMMPE/260522_REDACTED_LISTNOM/REDACTED_RPPP/BARMM_GRAND_COALITION.pdf#page=15"
+     "label": "Bangsamoro Parliament, member profile (PANSAR, SITTIE AISAH), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/pansar-sittie-aisah-l/"
     }
    }
   },
@@ -2974,7 +3023,7 @@
    "photo": {
     "file": "mawallil-amilbahar-s.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (MAWALLIL, AMILBAHAR S.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mawallil-amilbahar-s/"
     }
    },
@@ -3074,7 +3123,7 @@
    "photo": {
     "file": "lorena-jose-i.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile",
+     "label": "Bangsamoro Parliament, member profile (LORENA, JOSE I.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/atty-lorena-jose-i/"
     }
    },
@@ -3277,7 +3326,14 @@
     "2022 · Lost Basilan vice governor race to Yusop Alano (UBJP)",
     "2010 · Won Akbar vice mayor (Lakas–CMD)"
    ],
-   "birthplace": "Tuburan, Basilan"
+   "birthplace": "Tuburan, Basilan",
+   "photo": {
+    "file": "sali-paisal-a.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (SALI, PAI), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sali-paisal-a/"
+    }
+   }
   },
   {
    "ballotName": "Abrar Hataman",
@@ -3341,7 +3397,7 @@
    "photo": {
     "file": "hataman-abrar-j.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: HATAMAN, ABRAR J.",
+     "label": "Bangsamoro Parliament, member profile (HATAMAN, ABRAR J.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/hataman-abrar-j/"
     }
    },
@@ -3472,7 +3528,14 @@
     "2022 · Won Basilan provincial board, 2nd district (topped)"
    ],
    "born": "20 April 1997",
-   "birthplace": "Cotabato City"
+   "birthplace": "Cotabato City",
+   "photo": {
+    "file": "salliman-jimael-salam-d.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (SALLIMAN, JAY HATAMAN), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/salliman-jimael-salam-d/"
+    }
+   }
   },
   {
    "ballotName": "Sheriff Abas",
@@ -3568,7 +3631,14 @@
    "elections": [
     "2024 · Filed for Cotabato City 1st parliamentary district; 2025 polls reset to 2026"
    ],
-   "birthplace": "Cotabato City"
+   "birthplace": "Cotabato City",
+   "photo": {
+    "file": "abas-sheriff-m.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ABAS, SHERIFF), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abas-sheriff-m/"
+    }
+   }
   },
   {
    "ballotName": "Naguib Sinarimbo",
@@ -3655,7 +3725,7 @@
    "photo": {
     "file": "sinarimbo-naguib-g.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: SINARIMBO, NAGUIB G.",
+     "label": "Bangsamoro Parliament, member profile (SINARIMBO, NAGUIB G.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sinarimbo-naguib-g/"
     }
    },
@@ -3741,7 +3811,7 @@
    "photo": {
     "file": "antok-tomanda-d.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: ANTOK, TOMANDA D.",
+     "label": "Bangsamoro Parliament, member profile (ANTOK, TOMANDA D.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/antok-tomanda-d/"
     }
    },
@@ -3843,7 +3913,14 @@
     "2022 · Won Marawi City council, topping the race (PDP–Laban)"
    ],
    "born": "23 June 1978",
-   "birthplace": "Marawi, Lanao del Sur"
+   "birthplace": "Marawi, Lanao del Sur",
+   "photo": {
+    "file": "gandamra-princess-pala-amera.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (GANDAMRA, PALA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/gandamra-princess-pala-amera/"
+    }
+   }
   },
   {
    "ballotName": "Hamza Gauraki",
@@ -3914,7 +3991,14 @@
     "2022 · Won Kapai vice mayor, unopposed (Lakas–CMD)",
     "2016 · Won Kapai mayor (Liberal Party)"
    ],
-   "birthplace": "Marawi City, Lanao del Sur"
+   "birthplace": "Marawi City, Lanao del Sur",
+   "photo": {
+    "file": "gauraki-hamza-e.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (GAURAKI, HAMZA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/gauraki-hamza-e/"
+    }
+   }
   },
   {
    "ballotName": "Rauf Adiong",
@@ -3989,7 +4073,14 @@
    "elections": [
     "2025 · Filed for Lanao del Sur 3rd parliamentary district; polls reset to 2026"
    ],
-   "birthplace": "Iligan City, Lanao del Norte"
+   "birthplace": "Iligan City, Lanao del Norte",
+   "photo": {
+    "file": "adiong-abdul-rauf-a.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ADIONG, RAUF), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/adiong-abdul-rauf-a/"
+    }
+   }
   },
   {
    "ballotName": "Lampa Pandi",
@@ -4059,7 +4150,14 @@
     "2016 · Won Poona Bayabao vice mayor (Liberal Party)"
    ],
    "born": "13 October 1964",
-   "birthplace": "Marawi City, Lanao del Sur"
+   "birthplace": "Marawi City, Lanao del Sur",
+   "photo": {
+    "file": "pandi-lampa-i.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (PANDI, LAMPA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/pandi-lampa-i/"
+    }
+   }
   },
   {
    "ballotName": "Arimao Asum",
@@ -4135,7 +4233,14 @@
    "birthplace": "Lumbayanague, Lanao del Sur",
    "accomplishments": [
     "Won Lanao del Sur 5th district with 43,761 votes (58.24%), about 13,000 ahead of the UBJP's Khaledyassin Papandayan"
-   ]
+   ],
+   "photo": {
+    "file": "asum-arimao-s.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ASUM, ARIMAO), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/asum-arimao-s/"
+    }
+   }
   },
   {
    "ballotName": "Hosni Macapodi",
@@ -4202,7 +4307,14 @@
      "role": null,
      "source": 2
     }
-   ]
+   ],
+   "photo": {
+    "file": "macapodi-hosni-b.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (MACAPODI, HOSNI), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/macapodi-hosni-b/"
+    }
+   }
   },
   {
    "ballotName": "Rayyan Mindalano",
@@ -4251,7 +4363,14 @@
     "2026 · Won Lanao del Sur 7th district, defeating Nora Dipatuan (UBJP)"
    ],
    "born": "29 November 1998",
-   "birthplace": "Iligan City, Lanao del Norte"
+   "birthplace": "Iligan City, Lanao del Norte",
+   "photo": {
+    "file": "mindalano-ali-usman-s.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (MINDALANO, RAYYAN), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mindalano-ali-usman-s/"
+    }
+   }
   },
   {
    "ballotName": "Arrie Balindong",
@@ -4291,7 +4410,7 @@
    "photo": {
     "file": "balindong-ahmad-amir-a.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: BALINDONG, AHMAD AMIR A.",
+     "label": "Bangsamoro Parliament, member profile (BALINDONG, AHMAD AMIR A.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/balindong-ahmad-amir-a/"
     }
    },
@@ -4346,7 +4465,7 @@
    "photo": {
     "file": "adiong-rashdi-t.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: ADIONG, RASHDI T.",
+     "label": "Bangsamoro Parliament, member profile (ADIONG, RASHDI T.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/adiong-rashdi-t/"
     }
    },
@@ -4427,7 +4546,14 @@
    "elections": [
     "2026 · Won Maguindanao del Norte 1st district (BFP) with 41,137 votes, beating UBJP's Abdulkudos Balitok",
     "2024 · Filed as an independent for Maguindanao del Norte 1st district; polls reset to 2026"
-   ]
+   ],
+   "photo": {
+    "file": "tomawis-prince-khalid-p.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (TOMAWIS, PRINCE KHALID), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/tomawis-prince-khalid-p/"
+    }
+   }
   },
   {
    "ballotName": "Ibrahim Ibay",
@@ -4494,7 +4620,7 @@
    "photo": {
     "file": "ibay-ibrahim-p.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: IBAY, IBRAHIM P.",
+     "label": "Bangsamoro Parliament, member profile (IBAY, IBRAHIM P.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ibay-dr-ibrahim-p/"
     }
    },
@@ -4612,7 +4738,7 @@
    "photo": {
     "file": "macacua-abdulraof-a.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: MACACUA, ABDULRAOF A.",
+     "label": "Bangsamoro Parliament, member profile (MACACUA, ABDULRAOF A.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/macacua-abdulraof-a/"
     }
    },
@@ -4735,7 +4861,14 @@
     "2026 · Won Maguindanao del Norte 4th district, defeating ex-Rep. Bai Sandra Sema"
    ],
    "born": "1 January 1956",
-   "birthplace": "Cotabato City"
+   "birthplace": "Cotabato City",
+   "photo": {
+    "file": "abas-abdulnasser-m.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ABAS, ABDULNASSER), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abas-abdulnasser-m/"
+    }
+   }
   },
   {
    "ballotName": "Ishak Mastura",
@@ -4813,7 +4946,7 @@
    "photo": {
     "file": "mastura-ishak-v.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: MASTURA, ISHAK V.",
+     "label": "Bangsamoro Parliament, member profile (MASTURA, ISHAK V.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mastura-ishak-v/"
     }
    },
@@ -4914,7 +5047,7 @@
    "photo": {
     "file": "midtimbang-tawakal-b.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: MIDTIMBANG, TAWAKAL B.",
+     "label": "Bangsamoro Parliament, member profile (MIDTIMBANG, TAWAKAL B.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/midtimbang-tawakal-b/"
     }
    },
@@ -5027,7 +5160,14 @@
    "elections": [
     "2025 · Re-elected Shariff Saydona Mustapha mayor (Nacionalista)",
     "2022 · Won Shariff Saydona Mustapha mayor (Nacionalista)"
-   ]
+   ],
+   "photo": {
+    "file": "ampatuan-sadjid-andre-s.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (AMPATUAN, SAJID ANDRE), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ampatuan-sadjid-andre-s/"
+    }
+   }
   },
   {
    "ballotName": "Ali Sangki",
@@ -5095,7 +5235,7 @@
    "photo": {
     "file": "sangki-ali-b.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: SANGKI, ALI B.",
+     "label": "Bangsamoro Parliament, member profile (SANGKI, ALI B.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/sangki-ali-b/"
     }
    },
@@ -5201,7 +5341,14 @@
    "elections": [
     "2026 · Won Maguindanao del Sur 4th district (BFP), 64,054 votes (94.24%), over Aladen Katog Delna (Bangsamoro Party)",
     "2025 · Filed for Maguindanao del Sur 4th parliamentary district; polls reset to 2026"
-   ]
+   ],
+   "photo": {
+    "file": "mangudadatu-dj-parok-d.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (MANGUDADATU, DJ PAROK), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/mangudadatu-dj-parok-d/"
+    }
+   }
   },
   {
    "ballotName": "Rafsanjani Ali",
@@ -5262,7 +5409,14 @@
    "elections": [
     "2026 · Won Maguindanao del Sur 5th district (BFP) with 66,477 votes (63.14%); rivals withdrew or were disqualified",
     "2022 · Ran for General S. K. Pendatun mayor (Nacionalista), as 'Bimbo' Ali"
-   ]
+   ],
+   "photo": {
+    "file": "ali-rafsanjani-p.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ALI, RAFSANJANI), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ali-rafsanjani-p/"
+    }
+   }
   },
   {
    "ballotName": "Mansor Ebrahim",
@@ -5318,7 +5472,14 @@
    ],
    "elections": [
     "2026 · Won Special Geographic Area 1st district (UBJP), 29,061 votes (62.57%), over Butch Malang (BFP)"
-   ]
+   ],
+   "photo": {
+    "file": "ebrahim-mansor-b.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (EBRAHIM, MANSOR), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ebrahim-mansor-b/"
+    }
+   }
   },
   {
    "ballotName": "Elaysa Enalang",
@@ -5370,7 +5531,14 @@
    ],
    "elections": [
     "2026 · Won Special Geographic Area 2nd district (UBJP) by 755 votes over Health Minister Kadil Sinolinding Jr."
-   ]
+   ],
+   "photo": {
+    "file": "enalang-elaysa.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ENALANG, ELAYSA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/enalang-elaysa/"
+    }
+   }
   },
   {
    "ballotName": "Julbert Que",
@@ -5447,7 +5615,14 @@
    "elections": [
     "2026 · Won Tawi-Tawi 1st district (BFP), 54,496 votes (95.3%), over Shirmal Hajim Sabal",
     "2025 · Filed for Tawi-Tawi 1st parliamentary district; polls reset to 2026"
-   ]
+   ],
+   "photo": {
+    "file": "que-julbert-s.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (QUE, JULBERT), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/que-julbert-s/"
+    }
+   }
   },
   {
    "ballotName": "Hadjimar Matba",
@@ -5516,7 +5691,14 @@
    "elections": [
     "2026 · Won Tawi-Tawi 2nd district (PRO BM), 38,545 votes (69.41%), over Gamal Hayudini (BGC)",
     "2025 · Filed for Tawi-Tawi 2nd parliamentary district; polls reset to 2026"
-   ]
+   ],
+   "photo": {
+    "file": "matba-hadjimar-s.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (MATBA, HADJIMAR), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/matba-hadjimar-s/"
+    }
+   }
   },
   {
    "ballotName": "Tina Matolo",
@@ -5580,7 +5762,14 @@
    ],
    "elections": [
     "2026 · Won Tawi-Tawi 3rd district seat, defeating 3 rivals"
-   ]
+   ],
+   "photo": {
+    "file": "matolo-de-asis-rhosatina-sulayman.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (MATOLO, TINA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/matolo-de-asis-rhosatina-sulayman/"
+    }
+   }
   },
   {
    "ballotName": "Nur-Mahadil Ahaja",
@@ -5645,7 +5834,14 @@
     "2026 · Won Tawi-Tawi 4th district, beating relative and board member Michail Ahaja"
    ],
    "born": "17 April 1975",
-   "birthplace": "Sitangkai, Tawi-Tawi"
+   "birthplace": "Sitangkai, Tawi-Tawi",
+   "photo": {
+    "file": "ahaja-nur-mahadil-k.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (AHAJA, NUR-MAHADIL K.), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ahaja-nur-mahadil-k/"
+    }
+   }
   },
   {
    "ballotName": "Yul Adelfo Olaya",
@@ -5695,7 +5891,14 @@
    ],
    "elections": [
     "2026 · Won a settler communities sectoral seat (UBJP Settler Communities Sectoral Wing)"
-   ]
+   ],
+   "photo": {
+    "file": "olaya-yul-adelfo-d.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (OLAYA, YUL ADELFO), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/olaya-yul-adelfo-d/"
+    }
+   }
   },
   {
    "ballotName": "Mary Ann Arnado",
@@ -5768,7 +5971,7 @@
    "photo": {
     "file": "arnado-mary-ann-m.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: ARNADO, MARY ANN M.",
+     "label": "Bangsamoro Parliament, member profile (ARNADO, MARY ANN M.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/arnado-mary-ann-m/"
     }
    },
@@ -5880,7 +6083,7 @@
    "photo": {
     "file": "macasalong-marjanie-s.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: MACASALONG, MARJANIE S.",
+     "label": "Bangsamoro Parliament, member profile (MACASALONG, MARJANIE S.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/macasalong-marjanie-s/"
     }
    },
@@ -5969,7 +6172,7 @@
    "photo": {
     "file": "silongan-aida-m.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: SILONGAN, AIDA M.",
+     "label": "Bangsamoro Parliament, member profile (SILONGAN, AIDA M.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/engr-silongan-aida-m/"
     }
    },
@@ -6052,7 +6255,7 @@
    "photo": {
     "file": "ebil-muhammad-nadzir-s.jpg",
     "source": {
-     "label": "Bangsamoro Parliament, member profile: EBIL, MUHAMMAD NADZIR S.",
+     "label": "Bangsamoro Parliament, member profile (EBIL, MUHAMMAD NADZIR S.), official First Parliament portrait, read 2026-11-14",
      "url": "https://parliament.bangsamoro.gov.ph/member-parliament/ebil-muhammad-nadzir-s/"
     }
    },
@@ -6125,7 +6328,14 @@
    ],
    "elections": [
     "2026 · Won the youth sectoral seat for the UBJP Youth Sectoral Wing with 651,269 votes (40.56%)"
-   ]
+   ],
+   "photo": {
+    "file": "abbas-sulffy-v.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (ABBAS, SULFRY), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/abbas-sulffy-v/"
+    }
+   }
   },
   {
    "ballotName": "Leticio Datuwata",
@@ -6175,7 +6385,14 @@
    ],
    "elections": [
     "2026 · Selected Lambangian representative to the Bangsamoro Parliament at the Regional Inter-Tribal Convention (25 August); proclaimed with the sectoral winners in September"
-   ]
+   ],
+   "photo": {
+    "file": "datuwata-leticio-l.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (DATUWATA, LETICIO), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/datuwata-leticio-l/"
+    }
+   }
   },
   {
    "ballotName": "Joe Ganna Jover",
@@ -6238,7 +6455,14 @@
    "affiliations": [
     "Kutawato Council for Justice and Peace; member",
     "Institute for Autonomy and Governance; IP programme manager (as of 2024)"
-   ]
+   ],
+   "photo": {
+    "file": "jover-jo-genna-m.jpg",
+    "source": {
+     "label": "Bangsamoro Parliament, member profile (JOVER, JOE GANNA), official First Parliament portrait, read 2026-11-14",
+     "url": "https://parliament.bangsamoro.gov.ph/member-parliament/jover-jo-genna-m/"
+    }
+   }
   }
  ]
 }
