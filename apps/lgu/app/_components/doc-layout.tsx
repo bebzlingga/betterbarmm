@@ -18,7 +18,7 @@ export function DocLayout({
 	return (
 		<div className={`bb-container bb-section grid gap-12 ${toc ? 'lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16' : ''}`}>
 			{summary ? (
-				<p className={`bg-[var(--paper-2)] px-6 py-5 text-[0.9375rem] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 ${toc ? 'lg:col-span-2' : ''}`}>
+				<p className={`border border-[var(--rule)] bg-[var(--paper-2)] px-6 py-5 text-[0.9375rem] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 ${toc ? 'lg:col-span-2' : ''}`}>
 					{summary}
 				</p>
 			) : null}

@@ -1,4 +1,5 @@
-import { Counter, LineReveal, Rise } from '@betterbarmm/editorial'
+import { LineReveal, Rise } from '@betterbarmm/editorial'
+import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import {
 	lguAreas,
 	lguCounts,
@@ -10,6 +11,7 @@ import {
 import Link from 'next/link'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { ntaShares } from '@betterbarmm/lgu-data/nta'
+import { CARD, CARD_FOOT, LguFigures, SectionTitle } from './_components/lgu-parts'
 import { RegionMap } from './_components/region-map'
 
 /** District seats in the Bangsamoro Parliament, joined on by slug. */
@@ -38,7 +40,7 @@ const ABOUT: Record<string, string> = {
  */
 function Areas() {
 	return (
-		<ul className='mt-14 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-14 lg:gap-y-16'>
+		<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
 			{lguProvinces.map((province) => {
 				const capital = capitalOf(province)
 				const figures = [
@@ -47,34 +49,35 @@ function Areas() {
 					['Population', province.population],
 					['Parliament seats', seatsFor(province)],
 				] as const
+				const roster = rosterCoverage(province.municipalities).listed
 				return (
-					<li key={province.slug} className='border-t border-[var(--rule)]'>
-						<Link href={areaHref(province)} className='group flex h-full flex-col px-5 pb-6 pt-7 transition-colors duration-300 hover:bg-[var(--paper-2)]'>
-							<p className='bb-label'>
-								{[province.kind, capital && capital !== province.name ? `capital ${capital}` : null].filter(Boolean).join(' · ')}
-							</p>
-							<h3 className='mt-3 flex items-baseline justify-between gap-4 text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]'>
-								{province.name}
-								<span aria-hidden='true' className='text-[1rem] text-[var(--ink-3)] transition duration-500 group-hover:translate-x-1 group-hover:text-[var(--accent)]'>
-									&rarr;
+					<li key={province.slug} className='flex'>
+						<Link href={areaHref(province)} className={`${CARD} w-full`}>
+							<div className='flex flex-1 flex-col p-6'>
+								<p className='bb-label'>
+									{[province.kind, capital && capital !== province.name ? `capital ${capital}` : null].filter(Boolean).join(' · ')}
+								</p>
+								<h3 className='mt-3 text-[1.375rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]'>
+									{province.name}
+								</h3>
+								<p className='mt-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>{ABOUT[province.slug] ?? province.note}</p>
+								<dl className='mt-auto grid grid-cols-2 gap-px bg-[var(--rule-soft)] pt-px'>
+									{figures.map(([label, value]) => (
+										<div key={label} className='bg-[var(--paper)] pb-1 pt-4 [&:nth-child(even)]:pl-4'>
+											<dt className='font-mono text-[0.5625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{label}</dt>
+											<dd className='num mt-1.5 text-[1.25rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>
+												{value != null ? value.toLocaleString('en-PH') : '—'}
+											</dd>
+										</div>
+									))}
+								</dl>
+							</div>
+							<span className={CARD_FOOT}>
+								<span className='num font-medium'>
+									{roster.toLocaleString('en-PH')} of {province.barangayCount.toLocaleString('en-PH')} captains on record
 								</span>
-							</h3>
-							<p className='mt-2 line-clamp-3 min-h-[4.5rem] text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
-								{ABOUT[province.slug] ?? province.note}
-							</p>
-							<dl className='mt-auto grid grid-cols-2 gap-x-6 gap-y-4 pt-6'>
-								{figures.map(([label, value]) => (
-									<div key={label} className='border-t border-[var(--rule-soft)] pt-3'>
-										<dt className='text-[0.71875rem] text-[var(--ink-3)]'>{label}</dt>
-										<dd className='num mt-1 text-[1.125rem] font-bold text-[var(--ink)]'>
-											{value != null ? value.toLocaleString('en-PH') : '—'}
-										</dd>
-									</div>
-								))}
-							</dl>
-							<p className='mt-4 text-[0.75rem] text-[var(--ink-mute)]'>
-								{rosterCoverage(province.municipalities).listed.toLocaleString('en-PH')} of {province.barangayCount.toLocaleString('en-PH')} barangay captains on record
-							</p>
+								<ArrowRightIcon size={14} weight='bold' aria-hidden='true' className='transition-transform group-hover:translate-x-0.5' />
+							</span>
 						</Link>
 					</li>
 				)
@@ -95,10 +98,10 @@ export default function LguHomePage() {
 			<section className='bb-lattice brand-bg relative overflow-hidden'>
 				<span
 					aria-hidden='true'
-					className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]'
+					className='bb-glow absolute -left-[16rem] -top-[22rem] h-[40rem] w-[64rem] max-w-[160vw] bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
 				/>
 
-				<div className='bb-container relative grid items-center gap-12 py-[clamp(3.75rem,7vw,6.5rem)] lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]'>
+				<div className='bb-container relative grid items-center gap-10 py-16 lg:py-24 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]'>
 					<div>
 					<Rise distance={14}>
 						<p className='bb-label'>Local government in the Bangsamoro</p>
@@ -116,80 +119,35 @@ export default function LguHomePage() {
 						<RegionMap />
 					</Rise>
 
-					<Rise delay={0.55} distance={14} className='mt-6 lg:col-span-2 lg:mt-12'>
-						<dl className='grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-6'>
-							{/* Every figure here is the directory's own, summed from the units
-							    it can actually open. PSA's regional totals are larger and
-							    count different things; the note under the areas below says
-							    exactly how much larger and why, rather than the page picking
-							    one and hoping. */}
-							{[
-								{
-									// Cotabato City is counted with the cities, not here.
-									value: lguProvinces.filter((area) => area.kind !== 'City').length,
-									label: 'Provinces and special area',
-									group: false,
-								},
-								{
-									value: lguData.totals.lgus,
-									label: 'Cities and municipalities',
-									group: false,
-								},
-								{
-									value: lguData.totals.barangays,
-									label: 'Barangays',
-									group: true,
-								},
-								{
-									value: regionRoster.listed,
-									label: 'Barangay captains on record',
-									group: true,
-								},
-								{
-									value: lguData.totals.population,
-									label: 'People, 2024 census',
-									group: true,
-								},
-								{
-									value: Math.round(ntaTotal / 1e8) / 10,
-									label: `NTA to its LGUs, FY ${ntaYear}`,
-									group: false,
-									prefix: '₱',
-									suffix: 'B',
-									decimals: 1,
-								},
-							].map((fact) => (
-								<div key={fact.label} className='border-t border-[var(--brass-line)] pt-6'>
-									<dt className='sr-only'>{fact.label}</dt>
-									<dd className='bb-figure-sm text-[var(--ink)]'>
-										<Counter value={fact.value} group={fact.group} prefix={fact.prefix} suffix={fact.suffix} decimals={fact.decimals} />
-									</dd>
-									<p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-										{fact.label}
-									</p>
-								</div>
-							))}
-						</dl>
-					</Rise>
+					{/* Every figure here is the directory's own, summed from the units it can actually open. PSA's regional
+					    totals are larger and count different things; the note under the areas says how much and why. */}
+					<LguFigures
+						className='mt-2 lg:col-span-2'
+						figures={[
+							// Cotabato City is counted with the cities, not here.
+							{ label: 'Provinces and special area', value: '', count: lguProvinces.filter((area) => area.kind !== 'City').length, group: false },
+							{ label: 'Cities and municipalities', value: '', count: lguData.totals.lgus, group: false },
+							{ label: 'Barangays', value: '', count: lguData.totals.barangays },
+							{ label: 'Captains on record', value: '', count: regionRoster.listed },
+							{ label: 'People, 2024 census', value: '', count: lguData.totals.population },
+							{ label: `NTA to its LGUs, FY ${ntaYear}`, value: `₱${(ntaTotal / 1e9).toFixed(1)}B` },
+						]}
+					/>
 				</div>
 			</section>
 
 			{/* ---- The areas ---- */}
 			<section className='bb-container bb-section'>
-				<div className='grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-end lg:gap-16'>
-					<h2 className='bb-display-sm text-[var(--ink)]'>
-						{lguData.totals.provinces} provinces, a city and a special area
-					</h2>
-					<p className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-						Open an area to see its cities, municipalities, barangays and officials.
-					</p>
-				</div>
+				<SectionTitle
+					title={`${lguData.totals.provinces} provinces, a city and a special area`}
+					lead='Open an area to see its cities, municipalities, barangays and officials.'
+				/>
 
 				<Areas />
 
 				{/* The numbers here and PSA's do not agree, and saying which is which
 				    is the whole job — so it is shown, not folded away (user decision). */}
-				<aside className='mt-20 bg-[var(--paper-2)] px-6 py-6 sm:px-8'>
+				<aside className='mt-12 border border-[var(--rule)] bg-[var(--paper-2)] px-6 py-6 sm:px-8'>
 					<h3 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Why this total is smaller than PSA&rsquo;s</h3>
 					<div className='mt-3 space-y-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 						<p>{lguCounts.sulnote}</p>

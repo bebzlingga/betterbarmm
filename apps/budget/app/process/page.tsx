@@ -197,7 +197,7 @@ export default function ProcessPage() {
 
 						<div className='mt-4 bg-[#8f2328] p-6 text-white lg:p-8'>
 							<p className='font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[#f6cf7a]'>Why this phase matters</p>
-							<p className='mt-3 max-w-4xl text-[0.9375rem] leading-[1.75] text-white/90'>{phase.stakes}</p>
+							<p className='mt-3 text-[0.9375rem] leading-[1.75] text-white/90'>{phase.stakes}</p>
 							{'basis' in phase && phase.basis ? (
 								<p className='mt-5 border-t border-white/20 pt-3 font-mono text-[0.625rem] uppercase leading-5 tracking-[0.1em] text-white/65'>{phase.basis}</p>
 							) : null}

@@ -17,6 +17,7 @@ import {
 } from '@betterbarmm/lgu-data'
 import {
 	LguBreadcrumb,
+	LguFigures,
 	LguMasthead,
 	LguSourceNote,
 } from '../../_components/lgu-parts'
@@ -33,7 +34,7 @@ import { Official } from '../../_components/official'
 import { barangayCounts, barangayPopulation } from '@betterbarmm/lgu-data/barangay-population'
 import { ntaShares } from '@betterbarmm/lgu-data/nta'
 import { houseSeat, houseSeats } from '@betterbarmm/lgu-data/house-seats'
-import { AmongTowns, BarangayCards, CensusChart, ChartCard, FigureCards, NtaSplit, RankedBars, type FigureCard } from '../../_components/lgu-figures'
+import { AmongTowns, BarangayCards, CensusChart, ChartCard, NtaSplit, RankedBars, type FigureCard } from '../../_components/lgu-figures'
 export function generateStaticParams() {
 	return allUnitParams()
 }
@@ -84,7 +85,7 @@ function opening(unit: LguUnit, province: LguProvince): string {
 
 const peso = (value: number) => (value >= 1e9 ? `₱${(value / 1e9).toFixed(2)}B` : `₱${(value / 1e6).toFixed(1)}M`)
 
-const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
 
 export default async function UnitPage({
 	params,
@@ -143,7 +144,7 @@ export default async function UnitPage({
 			tone: 'accent',
 		},
 		...(unit.areaKm2 != null ? [{ label: 'Land area', value: formatArea(unit.areaKm2), detail: 'PSA' }] : []),
-		...(density(unit) != null ? [{ label: 'Density', value: `${formatNumber(density(unit))} / km²`, detail: 'People per km²' }] : []),
+		...(density(unit) != null ? [{ label: 'Density', value: formatNumber(density(unit)), detail: 'People per km²' }] : []),
 		{
 			label: 'Barangays',
 			value: String(unit.barangays.length),
@@ -184,19 +185,15 @@ export default async function UnitPage({
 					unitClass(unit),
 					unit.isCapital && province.kind === 'Province' ? 'provincial capital' : null,
 					province.name === unit.name ? 'Bangsamoro' : province.name,
+					unit.psgc ? `PSGC ${unit.psgc}` : null,
 				]
 					.filter(Boolean)
 					.join(' · ')}
 				name={unit.name}
+				note={history ? (history.summary ?? history.paragraphs.join(' ')) : lead}
 			>
-				{history ? (
-					<div className='mt-12 grid gap-6 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:grid-cols-2 lg:gap-20'>
-						<p>{history.summary ?? history.paragraphs.join(' ')}</p>
-						<p>{lead}</p>
-					</div>
-				) : (
-					<div className='mt-12 max-w-[58rem] space-y-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-						<p>{lead}</p>
+				{!history && (unit.nameNote || unit.populationNote || unit.formedFrom) ? (
+					<div className='mt-3 space-y-3 text-[0.875rem] leading-7 text-[var(--ink-2)] lg:max-w-[80%]'>
 						{[unit.nameNote, unit.populationNote].filter(Boolean).map((note) => (
 							<p key={note}>{note}</p>
 						))}
@@ -207,7 +204,9 @@ export default async function UnitPage({
 							</p>
 						) : null}
 					</div>
-				)}
+				) : null}
+				{/* The headline figures in the band, as the province pages set them; the PSGC code rides in the kicker. */}
+				<LguFigures figures={cards.filter((card) => card.label !== 'PSGC code').map((card) => ({ label: card.label, value: card.value, detail: card.detail ?? undefined }))} />
 			</LguMasthead>
 
 			{/* ---- The town in figures: the headline numbers, then a card per question ---- */}
@@ -216,12 +215,9 @@ export default async function UnitPage({
 					{unit.name} in figures
 				</h2>
 				<p className='mt-2 max-w-[46rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
-					PSA&rsquo;s census counts and land areas, and the tax allotment DBM sets for it. Each figure says where it is from.
+					PSA&rsquo;s census counts and land areas, and the tax allotment DBM sets for it. Each chart says where it is from.
 				</p>
-				<div className='mt-8'>
-					<FigureCards cards={cards} />
-				</div>
-				<div className='mt-14 grid gap-x-16 gap-y-14 lg:grid-cols-2'>
+				<div className='mt-8 grid gap-4 lg:grid-cols-2'>
 					{unit.population != null && unit.population2020 != null ? (
 						<ChartCard title='Population, 2020 and 2024' note={`PSA census counts for ${unit.name}.`} source='PSA, 2020 and 2024 Census of Population'>
 							<CensusChart before={unit.population2020} now={unit.population} />
@@ -265,7 +261,7 @@ export default async function UnitPage({
 						</ChartCard>
 					) : null}
 					{/* The allotment year by year, in a card of its own. */}
-					<div className='border-t border-[var(--rule)] pt-6 empty:hidden lg:col-span-2 [&_figure]:mt-0 [&_h2]:font-[family-name:inherit] [&_h2]:text-[1.0625rem] [&_h2]:font-semibold [&_h2]:tracking-normal'>
+					<div className='border border-[var(--rule)] p-6 empty:hidden sm:p-7 lg:col-span-2 [&_figure]:mt-0 [&_h2]:text-[1.125rem] [&_h2]:tracking-[-0.015em]'>
 						<NtaChart unitKey={key} />
 					</div>
 				</div>
@@ -276,8 +272,8 @@ export default async function UnitPage({
 				<div className='min-w-0'>
 					<section>
 						<h2 id='barangays' className={H2}>
-							<span className='num text-[var(--ink-3)]'>{unit.barangays.length}</span>{' '}
-							{unit.barangays.length === 1 ? 'Barangay' : 'Barangays'}
+							{unit.barangays.length === 1 ? 'Barangay' : 'Barangays'}{' '}
+							<span className='num text-[var(--ink-mute)]'>· {unit.barangays.length}</span>
 						</h2>
 						<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-3)]'>Ranked by people at the 2024 census, each with its punong barangay.</p>
 						<div className='mt-6'>
@@ -333,12 +329,12 @@ export default async function UnitPage({
 
 				{/* ---- Beside it: where it is, then who governs it ---- */}
 				<aside className='order-first lg:order-none'>
-					<div className='mb-8'>
+					<div className='mb-4 border border-[var(--rule)]'>
 						<LocatorMap areaSlug={province.slug} unit={{ psgc: unit.psgc ?? null, name: unit.name }} label={unit.name} />
 					</div>
 
 					{officials.length > 0 || council.length > 0 ? (
-						<div className='mt-10'>
+						<div className='border border-[var(--rule)] p-5'>
 							<h2 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Current officials</h2>
 							<p className='mt-1 text-[0.78125rem] text-[var(--ink-3)]'>{termLabel}</p>
 							<ul className='mt-4'>

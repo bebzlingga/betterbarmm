@@ -40,7 +40,7 @@ const STEPS = [
 	},
 ]
 
-const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
 const CITE = 'mt-2 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'
 
 export default function OrdinancesPage() {
@@ -49,8 +49,6 @@ export default function OrdinancesPage() {
 			<LguMasthead
 				kicker='Coming soon'
 				name='Ordinances'
-				noteBeside
-				noteEnd
 				note='The local laws your province, city, municipality and barangay pass. We are gathering them into one place you can search. Until then, here is how they work.'
 			/>
 
@@ -85,9 +83,9 @@ export default function OrdinancesPage() {
 					<h2 className={H2}>How one becomes law</h2>
 					<ol className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 						{STEPS.map((s, i) => (
-							<li key={s.step} className='bg-[var(--paper-2)] p-6'>
-								<p className='num font-mono text-[0.6875rem] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</p>
-								<h3 className='mt-2 text-[1rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{s.step}</h3>
+							<li key={s.step} className='border border-[var(--rule)] bg-[var(--paper)] p-6'>
+								<p className='num grid size-9 place-items-center bg-[var(--accent)] text-[0.8125rem] font-black text-white'>{i + 1}</p>
+								<h3 className='mt-4 text-[1rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{s.step}</h3>
 								<p className='mt-3 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{s.what}</p>
 								<p className={CITE}>{s.cite}</p>
 							</li>
@@ -96,7 +94,7 @@ export default function OrdinancesPage() {
 				</section>
 
 
-				<section className='mt-20 flex flex-col gap-6 bg-[var(--paper-2)] p-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
+				<section className='mt-20 flex flex-col gap-6 border border-[var(--rule)] bg-[var(--paper-2)] p-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
 					<div className='max-w-[44rem]'>
 						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Have an ordinance?</h2>
 						<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>

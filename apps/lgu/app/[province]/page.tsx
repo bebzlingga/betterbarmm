@@ -3,13 +3,14 @@ import Link from 'next/link'
 import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import { notFound, redirect } from 'next/navigation'
 import {
+	CARD,
+	LguFigures,
 	LguMasthead,
 	LguSourceNote,
 } from '../_components/lgu-parts'
 import {
 	density,
 	findProvince,
-	formatArea,
 	formatNumber,
 	growth,
 	areaHref,
@@ -56,7 +57,7 @@ export async function generateMetadata({
 	}
 }
 
-const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
 
 export default async function ProvincePage({ params }: { params: Promise<{ province: string }> }) {
 	const { province: slug } = await params
@@ -119,19 +120,34 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 	return (
 		<>
 			<LguMasthead
-				kicker={`${province.kind} · Bangsamoro`}
+				kicker={[province.kind, capital ? `capital ${capital.name}` : null, area?.seats ? `${area.seats} seats in Parliament` : null].filter(Boolean).join(' · ')}
 				name={province.name}
+				note={history ? (history.summary ?? history.paragraphs.join(' ')) : lead}
 			>
-				{history ? (
-					<div className='mt-12'>
-						<div className='grid gap-6 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:grid-cols-2 lg:gap-20'>
-							<p>{history.summary ?? history.paragraphs.join(' ')}</p>
-							<p>{lead}</p>
-						</div>
-					</div>
-				) : (
-					<p className='mt-12 max-w-[58rem] text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{lead}</p>
-				)}
+				<LguFigures
+					figures={[
+						{
+							label: 'Population (2024)',
+							value: formatNumber(province.population),
+							detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census` : undefined,
+						},
+						{
+							label: cities.length > 0 ? 'Cities and municipalities' : 'Municipalities',
+							value: String(province.municipalities.length),
+							detail: biggest.length > 0 && province.municipalities.length > 1 ? `Largest: ${biggest.map((unit) => unit.name).join(', ')}` : undefined,
+						},
+						{ label: 'Barangays', value: formatNumber(province.barangayCount) },
+						{
+							label: 'Land area',
+							// Whole square kilometres: the band's figures are large, and the decimals would not fit.
+							value: province.areaKm2 != null ? `${formatNumber(Math.round(province.areaKm2))} km²` : '—',
+							detail: density(province) != null ? `${formatNumber(density(province))} people per km²` : undefined,
+						},
+						...(regionShare != null
+							? [{ label: 'Share of BARMM’s people', value: `${regionShare}%`, detail: `Of the region’s ${formatNumber(lguData.totals.population)}` }]
+							: []),
+					]}
+				/>
 			</LguMasthead>
 
 			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-28'>
@@ -139,27 +155,27 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				<div className='min-w-0'>
 					<section>
 						<h2 id='units' className={H2}>
-							<span className='num text-[var(--ink-3)]'>{province.municipalities.length}</span>{' '}
-							{cities.length > 0 ? 'Cities and Municipalities' : 'Municipalities'}
+							{cities.length > 0 ? 'Cities and municipalities' : 'Municipalities'}{' '}
+							<span className='num text-[var(--ink-mute)]'>· {province.municipalities.length}</span>
 						</h2>
-						<ul className='mt-6 columns-2 gap-x-8 sm:columns-3 lg:columns-4'>
+						<ul className='mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3'>
 							{[...province.municipalities]
 								.sort((x, y) => x.name.localeCompare(y.name))
 								.map((unit) => (
-									<li key={unit.slug} className='break-inside-avoid border-b border-[var(--rule-soft)]'>
-										<Link
-											href={`/${province.slug}/${unit.slug}`}
-											className='group flex items-center justify-between gap-2 py-2.5 text-[0.9375rem] font-semibold text-[var(--ink)] transition hover:text-[var(--accent)]'
-										>
-											<span className='min-w-0'>
-												{unit.name}
-												{unit.isCapital ? <span className='ml-2 text-[0.75rem] font-normal text-[var(--ink-3)]'>Capital</span> : null}
+									<li key={unit.slug} className='flex'>
+										<Link href={`/${province.slug}/${unit.slug}`} className={`${CARD} w-full flex-row items-center gap-3 px-4 py-3.5`}>
+											<span className='min-w-0 flex-1'>
+												<span className='flex items-center gap-2'>
+													<span className='truncate text-[0.9375rem] font-bold tracking-[-0.01em] text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]'>{unit.name}</span>
+													{unit.isCapital ? <span className='shrink-0 rounded-full bg-[var(--accent-soft)] px-2 py-0.5 font-mono text-[0.5rem] font-bold uppercase tracking-[0.12em] text-[var(--accent)]'>Capital</span> : null}
+													{unit.isCity ? <span className='shrink-0 rounded-full bg-[var(--paper-2)] px-2 py-0.5 font-mono text-[0.5rem] font-bold uppercase tracking-[0.12em] text-[var(--ink-2)]'>City</span> : null}
+												</span>
+												<span className='num mt-0.5 block text-[0.75rem] text-[var(--ink-3)]'>
+													{unit.population != null ? `${formatNumber(unit.population)} people · ` : ''}
+													{unit.barangays.length} barangays
+												</span>
 											</span>
-											<ArrowRightIcon
-												size={13}
-												className='shrink-0 text-[var(--ink-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--accent)]'
-												aria-hidden='true'
-											/>
+											<ArrowRightIcon size={14} weight='bold' className='shrink-0 text-[var(--ink-mute)] transition group-hover:translate-x-0.5 group-hover:text-[var(--accent)]' aria-hidden='true' />
 										</Link>
 									</li>
 								))}
@@ -201,52 +217,12 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
 				{/* ---- Beside it: the province in figures, then who governs it ---- */}
 				<aside className='order-first lg:order-none'>
-					<div className='mb-8'>
+					<div className='mb-4 border border-[var(--rule)]'>
 						<LocatorMap areaSlug={province.slug} label={province.name} />
 					</div>
-					<dl>
-						{[
-							{
-								label: 'Population (2024)',
-								value: formatNumber(province.population),
-								detail: change != null ? `${change > 0 ? '+' : ''}${change}% since the 2020 census` : null,
-							},
-							{
-								label: cities.length > 0 ? 'Cities and municipalities' : 'Municipalities',
-								value: String(province.municipalities.length),
-								detail:
-									biggest.length > 0 && province.municipalities.length > 1
-										? `Largest: ${biggest.map((unit) => unit.name).join(', ')}`
-										: null,
-							},
-							{ label: 'Barangays', value: formatNumber(province.barangayCount), detail: null },
-							{
-								label: 'Land area',
-								value: formatArea(province.areaKm2),
-								detail: density(province) != null ? `${formatNumber(density(province))} people per km²` : null,
-							},
-							...(regionShare != null
-								? [
-										{
-											label: 'Share of BARMM’s people',
-											value: `${regionShare}%`,
-											detail: `${formatNumber(province.population)} of the region’s ${formatNumber(lguData.totals.population)}`,
-										},
-									]
-								: []),
-						].map((stat) => (
-							<div key={stat.label} className='border-b border-[var(--rule)] py-5 first:pt-0'>
-								<dt className='bb-label'>{stat.label}</dt>
-								<dd className='num mt-2 text-[1.6rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-									{stat.value}
-								</dd>
-								{stat.detail ? <dd className='mt-1.5 text-[0.78125rem] leading-5 text-[var(--ink-3)]'>{stat.detail}</dd> : null}
-							</div>
-						))}
-					</dl>
 
 					{officials.length > 0 ? (
-						<div className='mt-10'>
+						<div className='border border-[var(--rule)] p-5'>
 							<h2 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Current officials</h2>
 							<p className='mt-1 text-[0.78125rem] text-[var(--ink-3)]'>{termLabel}</p>
 							<ul className='mt-4'>

@@ -19,28 +19,6 @@ const track = 'bg-[color-mix(in_oklab,var(--brass)_16%,transparent)]'
 
 export type FigureCard = { label: string; value: string; detail?: string | null; tone?: 'accent' | 'brass' }
 
-export function FigureCards({ cards }: { cards: FigureCard[] }) {
-	return (
-		<dl className='grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-[repeat(auto-fit,minmax(9.5rem,1fr))] sm:gap-x-8'>
-			{cards.map((card) => (
-				<div key={card.label} className='border-t border-[var(--rule)] pt-4'>
-					<dt className='min-h-[1.9rem]'>
-						<span className='bb-label'>{card.label}</span>
-					</dt>
-					<dd
-						className={`num mt-3 break-words text-[1.45rem] font-extrabold leading-tight tracking-[-0.02em] ${
-							card.tone === 'accent' ? 'text-[var(--accent)]' : card.tone === 'brass' ? 'text-[var(--brass)]' : 'text-[var(--ink)]'
-						}`}
-					>
-						{card.value}
-					</dd>
-					{card.detail ? <dd className='mt-1 text-[0.71875rem] leading-5 text-[var(--ink-3)]'>{card.detail}</dd> : null}
-				</div>
-			))}
-		</dl>
-	)
-}
-
 export function ChartCard({
 	title,
 	note,
@@ -55,13 +33,13 @@ export function ChartCard({
 	children: React.ReactNode
 }) {
 	return (
-		<figure className={`m-0 flex flex-col border-t border-[var(--rule)] pt-6 ${wide ? 'lg:col-span-2' : ''}`}>
+		<figure className={`m-0 flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-7 ${wide ? 'lg:col-span-2' : ''}`}>
 			<figcaption>
-				<h3 className='text-[1.0625rem] font-semibold leading-snug text-[var(--ink)]'>{title}</h3>
+				<h3 className='text-[1.125rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)]'>{title}</h3>
 				{note ? <p className='mt-1 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>{note}</p> : null}
 			</figcaption>
 			<div className='mt-6 flex-1'>{children}</div>
-			{source ? <p className='mt-5 text-[0.71875rem] leading-5 text-[var(--ink-mute)]'>{source}</p> : null}
+			{source ? <p className='mt-6 border-t border-[var(--rule-soft)] pt-3 text-[0.71875rem] leading-5 text-[var(--ink-mute)]'>{source}</p> : null}
 		</figure>
 	)
 }
@@ -206,9 +184,9 @@ export function BarangayCards({
 	const rest = rows.filter((row) => row.population == null).sort((a, b) => a.name.localeCompare(b.name))
 	const top = counted[0]?.population ?? 1
 	return (
-		<ol className='grid gap-x-8 sm:grid-cols-2 xl:grid-cols-3'>
+		<ol className='grid gap-3 sm:grid-cols-2 xl:grid-cols-3'>
 			{[...counted, ...rest].map((row, i) => (
-				<li key={row.key} className='border-b border-[var(--rule-soft)] py-3'>
+				<li key={row.key} className='border border-[var(--rule)] bg-[var(--paper)] px-4 py-3.5'>
 					<div className='flex items-baseline justify-between gap-3'>
 						<span className='min-w-0 text-[0.875rem] font-semibold leading-snug text-[var(--ink)]'>
 							{row.population != null ? <span className='num mr-1 font-normal text-[var(--ink-mute)]'>{i + 1}.</span> : null}

@@ -157,8 +157,6 @@ export default async function OfficialsPage({ searchParams }: { searchParams: Pr
 			<LguMasthead
 				kicker='The people · Bangsamoro'
 				name='Local officials'
-				noteBeside
-				noteEnd
 				note='Every governor, vice-governor, provincial board member, mayor, vice-mayor and council member elected in BARMM, term by term from 2001. Pick a term, filter, then sort any column.'
 			/>
 

@@ -372,7 +372,7 @@ const TOC: TocItem[] = [
 	{ id: 'calendar', label: 'How the budget is passed', depth: 1 },
 ]
 
-const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
 
 function Section({ id, lead, children }: { id: string; lead: string; children: React.ReactNode }) {
 	return (

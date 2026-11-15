@@ -56,8 +56,6 @@ export default function LgsfPage() {
 			<LguMasthead
 				kicker='The money · Bangsamoro'
 				name='Support fund'
-				noteBeside
-				noteEnd
 				chart
 				note='On top of its NTA, a town or province can be given money from the national Local Government Support Fund for a named project: a rescue vehicle, a day care centre, food packs. This is every one DBM lists for BARMM. Allotted is what was approved; released is the cash sent so far.'
 			>

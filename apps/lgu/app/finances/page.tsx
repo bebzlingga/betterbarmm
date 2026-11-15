@@ -69,8 +69,6 @@ export default function StatsPage() {
 			<LguMasthead
 				kicker='The money · Bangsamoro'
 				name='Finances'
-				noteBeside
-				noteEnd
 				chart
 				note='Every province, city and municipality, ranked on what its treasurer reported to the Bureau of Local Government Finance. These are actual income and spending, not budgets. Filter, then sort any column.'
 			>

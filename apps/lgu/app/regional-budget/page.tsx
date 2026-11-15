@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Rise } from '@betterbarmm/editorial'
 import { areaSpending, pesoCell, spentIn, thinlyTagged } from '@betterbarmm/lgu-data'
-import { LguMasthead } from '../_components/lgu-parts'
+import { LguMasthead, SectionTitle } from '../_components/lgu-parts'
 
 export const metadata: Metadata = {
 	title: 'What the region spends where',
@@ -152,28 +152,28 @@ export default function SpendingPage() {
 			</section>
 
 			{/* ---- How to read the table ---- */}
-			<section className='bb-container border-t border-[var(--rule)] bb-section'>
+			<section className='bb-container bb-section-bottom'>
 				<Rise distance={14}>
 					<div className='grid gap-y-12'>
 						<div>
-							<h3 className='bb-label'>Two things to read the table with</h3>
-							<ul className='mt-5'>
-								<li className='border-b border-[var(--rule-soft)] py-3.5'>
-									<p className='text-[0.8125rem] font-semibold text-[var(--ink)]'>
+							<SectionTitle title='Two things to read the table with' />
+							<ul className='mt-6 grid gap-4 md:grid-cols-2'>
+								<li className='border border-[var(--rule)] bg-[var(--paper)] p-6'>
+									<p className='text-[1rem] font-bold tracking-[-0.01em] text-[var(--ink)]'>
 										FY {thin.join(' and FY ')} barely tagged anything
 									</p>
-									<p className='mt-1 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
+									<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										That Act names a province on{' '}
 										{areaSpending.areasTaggedPerYear[String(thin[0] ?? '')] ?? 0} areas where the
 										others name seven or eight. The column is thin because of what was printed,
 										not because of what was built.
 									</p>
 								</li>
-								<li className='border-b border-[var(--rule-soft)] py-3.5'>
-									<p className='text-[0.8125rem] font-semibold text-[var(--ink)]'>
+								<li className='border border-[var(--rule)] bg-[var(--paper)] p-6'>
+									<p className='text-[1rem] font-bold tracking-[-0.01em] text-[var(--ink)]'>
 										The region was redrawn inside the span
 									</p>
-									<p className='mt-1 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
+									<p className='mt-2 text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 										Maguindanao became Del Norte and Del Sur, Lanao del Sur is printed as one
 										province and as two districts in different years, and Sulu was removed by the
 										Supreme Court. Rows are reconciled to the present names with every printed

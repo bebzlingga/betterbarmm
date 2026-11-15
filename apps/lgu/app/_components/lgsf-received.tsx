@@ -17,7 +17,7 @@ export function LgsfReceived({ unitKey, name }: { unitKey: string; name: string 
 	return (
 		<>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-				<h2 className='font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
+				<h2 className='font-[family-name:var(--font-display)] text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					Support fund received
 				</h2>
 				<Link href='/lgsf' className='rule-link text-[0.78125rem] text-[var(--ink-3)]'>

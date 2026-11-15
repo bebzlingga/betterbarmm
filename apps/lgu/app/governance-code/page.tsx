@@ -320,7 +320,7 @@ const TOC: TocItem[] = OUTLINE.flatMap((section) => [
 	...section.topics.map((topic) => ({ id: slug(topic), label: topic, depth: 2 as const })),
 ])
 
-const H2 = 'scroll-mt-32 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
 const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
 const P = 'text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
