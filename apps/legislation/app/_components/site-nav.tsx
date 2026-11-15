@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretDownIcon, HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
+import { ArrowRightIcon, BankIcon, CaretDownIcon, FileTextIcon, GavelIcon, HandHeartIcon, ListChecksIcon, NotebookIcon, ScrollIcon, SquaresFourIcon, UsersFourIcon, UsersThreeIcon, type Icon } from '@phosphor-icons/react'
 import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { motion } from 'motion/react'
 import Link from 'next/link'
@@ -20,10 +20,15 @@ import { ThemeToggle } from './theme-toggle'
  */
 // Parliament's own split: the First Parliament sitting now, and the Transition Authority before it.
 const peopleLinks = [
-	{ href: '/members/elected', label: 'First Parliament' },
-	{ href: '/members', label: 'Bangsamoro Transition Authority' },
-	{ href: '/committees', label: 'Committees' },
+	{ href: '/members/elected', label: 'First Parliament', icon: UsersThreeIcon, note: 'The Members sitting now' },
+	{ href: '/members', label: 'Bangsamoro Transition Authority', icon: BankIcon, note: 'The interim Parliament before it' },
+	{ href: '/committees', label: 'Committees', icon: UsersFourIcon, note: 'Parliament’s committees and their Members' },
 ]
+
+/** Each list's mark in the Registry menu. */
+const CATEGORY_ICON: Record<string, Icon> = { acts: ScrollIcon, bills: FileTextIcon, resolutions: GavelIcon, journal: NotebookIcon, irr: ListChecksIcon }
+/** A list's blurb, up to its dash, as the menu's one line on it: "Proposed laws still moving through Parliament". */
+const shortBlurb = (blurb: string) => blurb.split(/\s+[–—]\s+/)[0]!.replace(/\.$/, '')
 
 /* One word in the bar. "Data & Methodology" is what the page is called and
    what its own masthead says; in a row of one-word tabs — Registry, People,
@@ -31,9 +36,29 @@ const peopleLinks = [
    someone left in the navigation. */
 const secondaryLinks = [{ href: '/about', label: 'Data' }]
 
-/** Marks a category whose route exists but whose records aren't compiled yet. */
-function SoonBadge() {
-	return <span className='badge badge-plain badge-idle shrink-0'>Soon</span>
+/** The dropdowns' look, as the landing site draws its own (user decision): a crimson line along the top, a heading,
+ *  and a row per page with its icon, its name and a line on what it holds, the open page marked. */
+const MENU_PANEL = 'absolute right-0 top-full z-40 mt-2 w-[23rem] overflow-hidden border border-[var(--rule)] border-t-2 border-t-[var(--accent)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] transition duration-200'
+
+function MenuHeading({ children }: { children: React.ReactNode }) {
+	return <p className='border-b border-[var(--rule-soft)] px-4 pb-2.5 pt-3.5 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{children}</p>
+}
+
+function MenuRow({ href, label, note, icon: Glyph, on, onClick, badge }: { href: string; label: string; note: string; icon: Icon; on: boolean; onClick: () => void; badge?: React.ReactNode }) {
+	return (
+		<Link href={href} onClick={onClick} aria-current={on ? 'page' : undefined} className='group/item flex items-center gap-3 px-2.5 py-2.5 transition-colors hover:bg-[var(--paper-2)]'>
+			<span className={`grid size-9 shrink-0 place-items-center transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover/item:bg-[var(--accent)] group-hover/item:text-white'}`}>
+				<Glyph size={18} weight='duotone' aria-hidden='true' />
+			</span>
+			<span className='min-w-0 flex-1'>
+				<span className={`flex items-center gap-2 text-[0.875rem] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>
+					{label} {badge}
+				</span>
+				<span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{note}</span>
+			</span>
+			<ArrowRightIcon size={13} weight='bold' aria-hidden='true' className='shrink-0 -translate-x-1 text-[var(--accent)] opacity-0 transition group-hover/item:translate-x-0 group-hover/item:opacity-100' />
+		</Link>
+	)
 }
 
 export function SiteNav() {
@@ -199,26 +224,21 @@ export function SiteNav() {
 								/>
 							</button>
 
-							<div
-								id='registry-menu'
-								className={`absolute right-0 top-full z-40 mt-1 w-[19rem]  border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] transition duration-200 ${
-									isRegistryOpen
-										? 'visible translate-y-0 opacity-100'
-										: 'invisible -translate-y-1 opacity-0'
-								}`}
-							>
-								{categories.map((category) => (
-									<Link
-										key={category.slug}
-										href={category.href}
-										onClick={closeMenu}
-										data-active={isActive(category.href)}
-										className='nav-menu-item data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
-									>
-										<span>{category.label}</span>
-										{category.status === 'pending' ? <SoonBadge /> : null}
-									</Link>
-								))}
+							<div id='registry-menu' className={`${MENU_PANEL} ${isRegistryOpen ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-1 opacity-0'}`}>
+								<MenuHeading>The registry · Parliament’s records</MenuHeading>
+								<div className='grid p-1.5'>
+									{categories.map((category) => (
+										<MenuRow
+											key={category.slug}
+											href={category.href}
+											label={category.label}
+											note={shortBlurb(category.blurb)}
+											icon={CATEGORY_ICON[category.slug] ?? FileTextIcon}
+											on={isActive(category.href)}
+											onClick={closeMenu}
+										/>
+									))}
+								</div>
 							</div>
 						</div>
 
@@ -244,25 +264,13 @@ export function SiteNav() {
 								/>
 							</button>
 
-							<div
-								id='people-menu'
-								className={`absolute right-0 top-full z-40 mt-1 w-[17rem]  border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] transition duration-200 ${
-									isPeopleOpen
-										? 'visible translate-y-0 opacity-100'
-										: 'invisible -translate-y-1 opacity-0'
-								}`}
-							>
-								{peopleLinks.map((item) => (
-									<Link
-										key={item.href}
-										href={item.href}
-										onClick={closeMenu}
-										data-active={isActive(item.href)}
-										className='nav-menu-item !block data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
-									>
-										{item.label}
-									</Link>
-								))}
+							<div id='people-menu' className={`${MENU_PANEL} ${isPeopleOpen ? 'visible translate-y-0 opacity-100' : 'invisible -translate-y-1 opacity-0'}`}>
+								<MenuHeading>People · who sits in Parliament</MenuHeading>
+								<div className='grid p-1.5'>
+									{peopleLinks.map((item) => (
+										<MenuRow key={item.href} href={item.href} label={item.label} note={item.note} icon={item.icon} on={isActive(item.href)} onClick={closeMenu} />
+									))}
+								</div>
 							</div>
 						</div>
 
@@ -371,7 +379,6 @@ export function SiteNav() {
 									className='flex items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5 data-[active=true]:font-semibold data-[active=true]:text-[var(--accent)]'
 								>
 									<span>{category.label}</span>
-									{category.status === 'pending' ? <SoonBadge /> : null}
 								</Link>
 							))}
 						</div>

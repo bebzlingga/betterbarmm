@@ -13,6 +13,8 @@ type RecordArticleProps = {
 	 * rather than here, so this stays a plain render of one record.
 	 */
 	memberSlugs?: Record<string, string>
+	/** Each author's portrait, keyed the same way, where one has been collected. */
+	memberPhotos?: Record<string, string>
 }
 
 /**
@@ -27,21 +29,22 @@ type RecordArticleProps = {
  */
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
 	return (
+		// Set as the landing site sets a Member's particulars (user decision): a small mono label, the value under it
+		// at the sidebar's own size.
 		<div>
-			<p className='label'>{label}</p>
-			<div className='mt-2.5 bb-body text-[var(--ink-2)]'>{children}</div>
+			<p className='font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)]'>{label}</p>
+			<div className='mt-1 text-[0.875rem] leading-[1.5] text-[var(--ink)]'>{children}</div>
 		</div>
 	)
 }
 
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
 	return (
+		// Headed as the landing site heads its sections (user decision): a bold title, with no tick beside it and no
+		// rule between sections; the space alone sets each off from the last.
 		<section>
-			{/* The heading is furniture: quiet in color, heavy in weight, and held
-			    well off what it introduces. At `mt-3` in the page's own ink it sat
-			    on top of its own block like a first line of it. */}
-			<p className='label label-section'>{label}</p>
-			<div className='mt-5'>{children}</div>
+			<h2 className='text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>{label}</h2>
+			<div className='mt-4'>{children}</div>
 		</section>
 	)
 }
@@ -290,7 +293,7 @@ function Reading({ reading, floor = [], named = [], reports = [] }: { reading: M
  * column and gutters — the same grid the category lists and member profiles
  * use — so a record reads as a document rather than as a panel over a list.
  */
-export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) {
+export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: RecordArticleProps) {
 	const hasRelations =
 		record.becameActNumber !== undefined ||
 		record.originBillNumber !== undefined ||
@@ -360,8 +363,13 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 			{/* The head on the brand ground: badges, the official title and the
 			    summary. `.brand-bg` re-points the ink tokens, so the parts below
 			    invert without restyling. */}
-			<div className='brand-bg'>
-				<div className='bb-container py-16 lg:py-24'>
+			<div className='brand-bg bb-lattice relative overflow-hidden'>
+				{/* The landing site's band (user decision): its lattice, and the warm glow off the top. */}
+				<span
+					aria-hidden='true'
+					className='bb-glow absolute -top-[22rem] left-1/2 h-[40rem] w-[64rem] max-w-[160vw] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
+				/>
+				<div className='bb-container relative py-16 lg:py-24'>
 					{/* Badges never break, so on a phone the row wraps rather than running
 					    off the edge — a measure can carry a status and a Cabinet mark at
 					    once. */}
@@ -395,6 +403,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 				{lead ? (
 					<p className='mt-5 max-w-4xl copy text-[var(--ink-2)]'>{lead}</p>
 				) : null}
+
 				</div>
 			</div>
 
@@ -513,27 +522,13 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 
 					{/* Side column */}
 					<aside className='grid content-start gap-8'>
-						{/* Straight to the source. Everything in this record is a reading
-					    of a document published elsewhere, so the way to the original
-					    heads the column that carries the record's particulars. */}
+						{/* Straight to the source. Everything in this record is a reading of a document published elsewhere, so
+						    the way to the original heads the column that carries the record's particulars (user decision: not
+						    in the head). */}
 						{sourceHref ? (
-							<a
-								href={sourceHref}
-								target='_blank'
-								rel='noreferrer'
-								className='bb-btn bb-btn-solid w-full'
-							>
+							<a href={sourceHref} target='_blank' rel='noreferrer' className='bb-btn bb-btn-solid w-full'>
 								Official page
-								<svg
-									className='size-3.5'
-									viewBox='0 0 24 24'
-									fill='none'
-									stroke='currentColor'
-									strokeWidth='2'
-									strokeLinecap='round'
-									strokeLinejoin='round'
-									aria-hidden='true'
-								>
+								<svg className='size-3.5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
 									<path d='M7 17 17 7M9 7h8v8' />
 								</svg>
 							</a>
@@ -596,7 +591,7 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 						{/* The record's own particulars — what it is, when, and under
 						    which sitting. They head the column: they answer the shortest
 						    questions, and the list of names below can run long. */}
-						<div className='grid gap-8 border-t border-[var(--rule)] pt-6 first:border-t-0 first:pt-0'>
+						<div className='grid gap-4 border border-[var(--rule)] bg-[var(--paper-2)] p-5'>
 							<Field label={record.dateLabel}>{record.dateDisplay}</Field>
 
 							{record.session ? <Field label='Session'>{record.session}</Field> : null}
@@ -627,28 +622,51 @@ export function RecordArticle({ record, memberSlugs = {} }: RecordArticleProps) 
 						</div>
 
 						{authors.length > 0 ? (
-							<Section label='Authors'>
+							<Section label={`Authors · ${authors.length}`}>
 								{/* Principal authors first, then co-authors, each block A–Z by
 								    surname. A name the roster knows opens that member's
 								    profile; one it doesn't is still shown, just not linked. */}
-								<ul className='grid gap-1.5 bb-body text-[var(--ink-2)]'>
+								<ul className='divide-y divide-[var(--rule-soft)]'>
 									{authors.map(({ name, displayName, isPrincipal }) => {
 										const slug = memberSlugs[name.toUpperCase()]
+										const photo = memberPhotos[name.toUpperCase()]
+										// Initials from the roster form, "Surname, Given M.": the given name's, then the surname's.
+										const [surname = '', given = ''] = displayName.split(',').map((part) => part.trim())
+										const initials = `${given[0] ?? ''}${surname[0] ?? ''}`.toUpperCase()
+										const both = record.coAuthors.length > 0 && record.principalAuthors.length > 0
+										const inner = (
+											<>
+												{/* The member's own portrait where one has been collected; their initials where not. The principal
+												    author's ringed in crimson. */}
+												{photo ? (
+													// eslint-disable-next-line @next/next/no-img-element -- portraits are local files of mixed sizes
+													<img
+														src={photo}
+														alt=''
+														className={`size-10 shrink-0 rounded-full object-cover object-top ${isPrincipal ? 'ring-2 ring-[var(--accent)] ring-offset-2 ring-offset-[var(--paper)]' : 'border border-[var(--rule)]'}`}
+													/>
+												) : (
+													<span className={`grid size-10 shrink-0 place-items-center rounded-full text-[0.6875rem] font-bold ${isPrincipal ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)]'}`}>
+														{initials}
+													</span>
+												)}
+												<span className='min-w-0'>
+													<span className='block truncate text-[0.875rem] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>{displayName}</span>
+													{both ? <span className='block text-[0.71875rem] text-[var(--ink-3)]'>{isPrincipal ? 'Principal author' : 'Co-author'}</span> : null}
+												</span>
+											</>
+										)
 
 										return (
-											<li key={name} className='flex flex-wrap items-baseline gap-x-2'>
+											<li key={name}>
+												{/* A name the roster knows opens that member's profile; one it doesn't is still shown. */}
 												{slug ? (
-													<Link href={`/members/${slug}`} className='rule-link rule-link-quiet'>
-														{displayName}
+													<Link href={`/members/${slug}`} className='group flex items-center gap-3 py-2.5'>
+														{inner}
 													</Link>
 												) : (
-													<span>{displayName}</span>
+													<span className='flex items-center gap-3 py-2.5'>{inner}</span>
 												)}
-												{record.coAuthors.length > 0 && record.principalAuthors.length > 0 ? (
-													<span className='meta-sm'>
-														{isPrincipal ? 'Principal Author' : 'Co-Author'}
-													</span>
-												) : null}
 											</li>
 										)
 									})}

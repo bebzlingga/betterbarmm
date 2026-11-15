@@ -1,10 +1,11 @@
-import { SectionHead } from '@betterbarmm/editorial'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { PageHeader } from '../_components/page-header'
+import { BandSectionTitle, RegistryBand } from '../_components/registry-band'
 import { Reveal } from '../_components/reveal'
 import { SectorBars } from '../_components/sector-bars'
 import { SubjectTreemap } from '../_components/subject-treemap'
+import { YearColumns } from '../_components/year-columns'
+import { getMembersDataset } from '../_lib/members-data'
 import { getDataset, registryGeneratedAt } from '../_lib/legislation-data'
 
 export const metadata: Metadata = {
@@ -62,130 +63,136 @@ export default function DataPage() {
 	const topBillSubject = bills.sectors[0]
 	const health = bills.sectors.find((sector) => sector.value === 'health')
 
+	// When each bill was filed: the date on its Filed stage, not the record's own year, which is its latest step.
+	const filedYears = new Map<string, number>()
+	for (const record of bills.records) {
+		const year = record.journey.find((stage) => /^filed$/i.test(stage.label))?.dateDisplay?.match(/\d{4}$/)?.[0]
+		if (year) filedYears.set(year, (filedYears.get(year) ?? 0) + 1)
+	}
+	const filedByYear = [...filedYears].sort(([a], [b]) => a.localeCompare(b)).map(([label, count]) => ({ label, count }))
+	const filedDated = filedByYear.reduce((sum, year) => sum + year.count, 0)
+	// Acts by the year they were ratified, oldest first.
+	const actsByYear = [...acts.years].sort((a, b) => a.value.localeCompare(b.value)).map((year) => ({ label: year.label, count: year.count }))
+
+	// Where the bills stand, in the order a bill moves: the short status the cards carry, not the index's long one.
+	const STAGES = ['Filed', 'First reading', 'In committee', 'Second reading', 'Approved', 'Archived']
+	const stageCounts = STAGES.map((stage) => ({ value: stage, label: stage, count: bills.records.filter((record) => record.statusShort === stage).length })).filter((stage) => stage.count)
+
+	// Who files them: the Government of the Day, or the Members.
+	const cabinet = bills.records.filter((record) => record.isCabinetMeasure).length
+	const filers = [
+		{ value: 'members', label: 'Filed by Members', count: bills.records.length - cabinet },
+		{ value: 'cabinet', label: 'Filed by the Government of the Day', count: cabinet },
+	]
+
+	// The Members who file the most, as principal author. The Government of the Day is counted above, not here.
+	const names = new Map(getMembersDataset().members.map((member) => [member.rosterName.toUpperCase(), member.displayName]))
+	const principal = new Map<string, number>()
+	for (const record of bills.records) for (const name of record.principalAuthors) if (!/government of the day/i.test(name)) principal.set(name, (principal.get(name) ?? 0) + 1)
+	const topAuthors = [...principal]
+		.sort((a, b) => b[1] - a[1])
+		.slice(0, 10)
+		.map(([name, count]) => ({ value: name, label: names.get(name.toUpperCase()) ?? name, count }))
+
 	return (
 		<>
-			<PageHeader
-				emphasis='brand'
-				align='left'
-				size='compact'
-				eyebrow='The registry, counted'
-				title='What Parliament works on.'
-				titleMuted='Counted by subject.'
-				description={`Parliament publishes its measures one at a time, never in aggregate. These are the registry’s subject tags, tallied across the ${billsCounted} bills and ${actsCounted} acts read in full.`}
-				figures={[
-					{
-						label: 'Bills counted',
-						value: billsCounted.toLocaleString(),
-						detail: `All ${bills.records.length.toLocaleString()} in Parliament's index accounted for: ${billsRead.toLocaleString()} read in full, ${billsFromTitle} written from their titles because Parliament published no readable document.`,
-					},
-					{
-						label: 'Acts counted',
-						value: actsCounted.toLocaleString(),
-						detail: 'Autonomy acts in force, tagged the same way.',
-					},
-					{
-						label: 'Subjects',
-						value: bills.sectors.length.toLocaleString(),
-						detail: 'Policy areas the bills fall under. A measure can sit in more than one.',
-					},
-					{
-						label: 'Largest subject',
-						value: topBillSubject ? topBillSubject.count.toLocaleString() : '—',
-						detail: topBillSubject
-							? `${topBillSubject.label} — more bills than any other area.`
-							: 'No subject tags in the read set yet.',
-					},
-				]}
+			<RegistryBand
+				label='The registry, counted'
+				title='Stats'
+				lead={`Parliament publishes its measures one at a time, never in aggregate. These are the registry’s own records counted: when bills were filed and laws passed, where the bills stand, who files them, and what they are about, across the ${billsCounted} bills and ${actsCounted} acts read in full.`}
 			/>
 
-			{/* ---- The two lists, side by side ----
+			{/* The headline figures, as cards under the band. */}
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<dl className='grid grid-cols-2 gap-4 lg:grid-cols-4'>
+					{[
+						{
+							label: 'Bills counted',
+							value: billsCounted.toLocaleString(),
+							detail: `All ${bills.records.length.toLocaleString()} in Parliament's index accounted for: ${billsRead.toLocaleString()} read in full, ${billsFromTitle} written from their titles.`,
+						},
+						{ label: 'Acts counted', value: actsCounted.toLocaleString(), detail: 'Autonomy acts in force, tagged the same way.' },
+						{ label: 'Subjects', value: bills.sectors.length.toLocaleString(), detail: 'Policy areas the bills fall under. A measure can sit in more than one.' },
+						{
+							label: 'Largest subject',
+							value: topBillSubject ? topBillSubject.count.toLocaleString() : '—',
+							detail: topBillSubject ? `${topBillSubject.label}: more bills than any other area.` : 'No subject tags in the read set yet.',
+						},
+					].map((figure) => (
+						<div key={figure.label} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+							<dt className='order-2 mt-3 font-mono text-[0.625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)]'>{figure.label}</dt>
+							<dd className='num order-1 text-[2.25rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{figure.value}</dd>
+							<dd className='order-3 mt-1.5 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{figure.detail}</dd>
+						</div>
+					))}
+				</dl>
+			</section>
 
-			     One section rather than two, and the same encoding in both columns:
-			     ranked bars, sorted, on their own scales. Set beside each other a
-			     reader can run an eye across a subject and see it high on one list
-			     and low on the other, which is the question the page exists to
-			     answer.
+			{/* ---- Over time: two charts, each on its own scale, never one axis for two measures. ---- */}
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<BandSectionTitle title='Year by year' lead='Bills by the year they were filed; acts by the year they were ratified. Two counts, each on its own scale.' />
+				<div className='mt-8 grid gap-4 lg:grid-cols-2'>
+					<ChartCard title='Bills filed' note={`${filedDated.toLocaleString()} with a filing date`}>
+						<YearColumns items={filedByYear} unit='bills filed' />
+					</ChartCard>
+					<ChartCard title='Acts ratified' note={`${acts.records.length.toLocaleString()} acts`}>
+						<YearColumns items={actsByYear} unit='acts ratified' />
+					</ChartCard>
+				</div>
+			</section>
 
-			     The scales are deliberately not shared and the axis is not drawn
-			     between them. The two lists are different sizes, tagged from
-			     different source vintages, and their subject vocabularies do not
-			     line up point for point — the caveat under the pair says so. Pairing
-			     them on one axis would draw a subtraction the register cannot
-			     support. */}
-			{/* The full rhythm, not just the closing half. The stat band above
-			    carries no padding under it — it hands that distance to whatever
-			    follows — so a section set to `bb-section-bottom` left the head
-			    sitting straight under the figures with nothing between them. */}
+			{/* ---- Where they stand, and who files them ---- */}
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<BandSectionTitle title='Where the bills stand' lead='Every bill in the index by its latest step, in the order a bill moves; and how many the Government of the Day filed itself.' />
+				<div className='mt-8 grid gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]'>
+					<ChartCard title='By stage' note={`${bills.records.length.toLocaleString()} bills`}>
+						<SectorBars items={stageCounts} />
+					</ChartCard>
+					<ChartCard title='By who filed' note={`${Math.round((cabinet / bills.records.length) * 100)}% from the cabinet`}>
+						<SectorBars items={filers} />
+					</ChartCard>
+				</div>
+			</section>
+
+			{/* ---- Who files the most ---- */}
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<BandSectionTitle title='The Members who file the most' lead='Bills each Member filed as a principal author. A bill can have several, so the counts overlap.' />
+				<div className='mt-8'>
+					<ChartCard title='Top 10, as principal author' note='bills'>
+						<SectorBars items={topAuthors} />
+					</ChartCard>
+				</div>
+			</section>
+
+			{/* ---- What they are about: the two lists side by side, each on its own scale. ---- */}
 			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
-				<SectionHead
-					index='01'
-					eyebrow='Subjects'
-					title='What gets filed,'
-					titleMuted='and what gets passed.'
-					size='sm'
+				<BandSectionTitle
+					title='What gets filed, and what gets passed'
 					lead={
 						health
 							? `Health leads the bills, ${health.count} of ${subjectTags} subject tags; among acts in force, governance and the budget lead. A measure can carry several subjects.`
 							: 'A measure can carry several subjects.'
 					}
 				/>
-
 				<Reveal delay={80}>
-					<div className='grid gap-14 lg:grid-cols-2 lg:gap-16'>
-						<div>
-							<div className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-[var(--brass-line)] pb-3'>
-								<h3 className='item-title item-title-lg item-title-strong text-[var(--ink)]'>
-									Filed as bills
-								</h3>
-								<p className='meta-sm'>
-									<span className='num text-[var(--ink)]'>{billsCounted}</span> read in full
-								</p>
-							</div>
-							<div className='mt-8'>
-								<SectorBars items={bills.sectors} />
-							</div>
-						</div>
-
-						<div>
-							<div className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-[var(--brass-line)] pb-3'>
-								<h3 className='item-title item-title-lg item-title-strong text-[var(--ink)]'>
-									Passed into law
-								</h3>
-								<p className='meta-sm'>
-									<span className='num text-[var(--ink)]'>{actsCounted}</span> acts in force
-								</p>
-							</div>
-							<div className='mt-8'>
-								<SectorBars items={acts.sectors} />
-							</div>
-						</div>
+					<div className='mt-8 grid gap-4 lg:grid-cols-2'>
+						<ChartCard title='Filed as bills' note={`${billsCounted} read in full`}>
+							<SectorBars items={bills.sectors} />
+						</ChartCard>
+						<ChartCard title='Passed into law' note={`${actsCounted} acts in force`}>
+							<SectorBars items={acts.sectors} />
+						</ChartCard>
 					</div>
 				</Reveal>
 
-				{/* ---- The same bills, as areas ----
-
-				     The columns rank; this one weighs. A bar chart answers "which
-				     subject is largest" and leaves "how much of the whole is health"
-				     to arithmetic across fifteen rows — the treemap is that answer as
-				     one picture. It is the bills only, because the areas tile a whole
-				     and two wholes side by side would invite the subtraction the
-				     columns above already refuse. */}
+				{/* The columns rank; this one weighs. Bills only: two wholes side by side invite a subtraction the lists refuse. */}
 				<Reveal delay={140}>
-					<div className='mt-20 hidden lg:block'>
-						<div className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-[var(--brass-line)] pb-3'>
-							<h3 className='item-title item-title-lg item-title-strong text-[var(--ink)]'>
-								The bills, by weight
-							</h3>
-							<p className='meta-sm'>
-								share of <span className='num text-[var(--ink)]'>{subjectTags}</span> tags applied
-							</p>
-						</div>
-						<div className='mt-8'>
+					<div className='mt-4 hidden lg:block'>
+						<ChartCard title='The bills, by weight' note={`share of ${subjectTags} tags applied`}>
 							<SubjectTreemap items={bills.sectors} />
-						</div>
+						</ChartCard>
 					</div>
 				</Reveal>
-
 			</section>
 
 			{/* ---- How to read the two columns ----
@@ -263,5 +270,18 @@ export default function DataPage() {
 				</Reveal>
 			</section>
 		</>
+	)
+}
+
+/** A chart in a card, as the landing site sets its panels: the title and what it counts on one line, the chart under. */
+function ChartCard({ title, note, children }: { title: string; note: string; children: React.ReactNode }) {
+	return (
+		<figure className='border border-[var(--rule)] bg-[var(--paper)] p-6'>
+			<figcaption className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-[var(--rule-soft)] pb-3'>
+				<span className='text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>{title}</span>
+				<span className='text-[0.78125rem] text-[var(--ink-3)]'>{note}</span>
+			</figcaption>
+			<div className='mt-6'>{children}</div>
+		</figure>
 	)
 }

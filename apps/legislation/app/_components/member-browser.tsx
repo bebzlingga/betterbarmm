@@ -4,7 +4,7 @@ import { FunnelIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useCallback, useDeferredValue, useMemo, useState } from 'react'
 import type { MemberFilterOption, RosterDataset, RosterMember } from '../_lib/members-data'
-import { MemberAvatar } from './member-avatar'
+import { MEMBER_CARD, MEMBER_CARD_FOOT, MemberPortrait } from './member-avatar'
 
 type SortKey = 'name' | 'measures' | 'phases'
 
@@ -402,79 +402,58 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 					{/* ---- Grouped grid ---- */}
 					<div>
 						{groups.map((group) => (
-							<section key={group.parliament.key} className='mt-10 first:mt-8'>
-								<div className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] pb-4'>
-									<div className='min-w-0'>
-										<h2 className='item-title text-[var(--ink)]'>{group.parliament.label}</h2>
-										<p className='meta-sm mt-0.5'>{group.parliament.description}</p>
-									</div>
-									<p className='meta-sm shrink-0'>
-										{group.members.length.toLocaleString()}{' '}
-										{group.members.length === 1 ? 'member' : 'members'}
-									</p>
+							<section key={group.parliament.key} className='mt-16 first:mt-8'>
+								<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
+									<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+										{group.parliament.label} <span className='text-[var(--ink-mute)]'>· {group.members.length.toLocaleString()}</span>
+									</h2>
+									<p className='text-[0.84375rem] text-[var(--ink-3)]'>{group.parliament.description}</p>
 								</div>
 
-								<div className={`mt-6 grid gap-2 ${cellGrid}`}>
+								<div className={`mt-6 grid gap-4 ${cellGrid}`}>
 									{group.members.map((member, index) => (
 										<Link
 											key={member.slug}
 											href={`/members/${member.slug}`}
 											style={{ '--row-index': index } as React.CSSProperties}
-											// One card to a row below 520px, where the page's own margin is
-											// the card's margin too; the padding returns with the second
-											// column.
-											className='cell row-in flex flex-col py-4 min-[520px]:p-4'
+											className={`row-in ${MEMBER_CARD}`}
 										>
-											{/* The sitting is the section heading, so it isn't repeated here. */}
-											<MemberAvatar name={member.displayName} src={member.photoUrl} />
-
-											<h2 className='item-title item-title-lg mt-3.5 text-[var(--ink)]'>
-												{member.displayName}
-											</h2>
-
-											{/* Office first, then the authorship split — the two things that set
-									    one member apart from the next, read as one row under the name.
-									    "as principal" rather than "principal author" because the number
-									    counts measures, not people. A position can name two offices
-									    ("MSSD Minister / Deputy Floor Leader"); each gets its own badge. */}
-											{member.roleTitle || member.measureCount > 0 ? (
-												<div className='mt-2 flex flex-wrap gap-1.5'>
-													{member.roleTitle
-														?.split('/')
-														.map((part) => part.trim())
-														.filter(Boolean)
-														.map((role) => (
-															<span key={role} className='badge badge-plain badge-role'>
-																{role}
-															</span>
-														))}
-													{member.principalCount > 0 ? (
-														<span className='badge badge-plain badge-done'>
-															{member.principalCount} as principal
-														</span>
-													) : null}
-													{member.coAuthorCount > 0 ? (
-														<span className='badge badge-plain badge-early'>
-															{member.coAuthorCount} as co-author
-														</span>
-													) : null}
-												</div>
-											) : null}
-
-											{/* Pinned to the bottom so cells line up regardless of role length. */}
-											{/* The place and the term are the card's footnote — where this
-											    member sits and for how long — not a second line of reading.
-											    At the body size the province was competing with the name for
-											    the eye, and the two lines under it read as a paragraph rather
-											    than as a caption. Off `.bb-body` to take a size at all: that
-											    class is unlayered and beats a utility. */}
-											<div className='mt-auto pt-4'>
-												{member.representation ? (
-													<p className='text-[0.8125rem] leading-[1.5] text-[var(--ink-3)]'>
-														{member.representation}
-													</p>
+											{/* The face, the name and what sets them apart, centred, as the landing site draws a Member; where they
+											    sit and for how long in the bar at the foot. The sitting is the section heading, so it isn't
+											    repeated here. */}
+											<div className='flex flex-1 flex-col items-center px-5 pb-5 pt-6'>
+												<MemberPortrait name={member.displayName} src={member.photoUrl} />
+												<h2 className='mt-4 text-[1rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+													{member.displayName}
+												</h2>
+												{/* Office first, then the authorship split. "as principal" because the number counts measures, not
+												    people. A position can name two offices; each gets its own badge. */}
+												{member.roleTitle || member.measureCount > 0 ? (
+													<div className='mt-2.5 flex flex-wrap justify-center gap-1.5'>
+														{member.roleTitle
+															?.split('/')
+															.map((part) => part.trim())
+															.filter(Boolean)
+															.map((role) => (
+																<span key={role} className='badge badge-plain badge-role'>
+																	{role}
+																</span>
+															))}
+														{member.principalCount > 0 ? <span className='badge badge-plain badge-done'>{member.principalCount} as principal</span> : null}
+														{member.coAuthorCount > 0 ? <span className='badge badge-plain badge-early'>{member.coAuthorCount} as co-author</span> : null}
+													</div>
 												) : null}
-												<p className='meta-sm mt-0.5'>{member.termOfOffice}</p>
+											</div>
+											<div className={MEMBER_CARD_FOOT}>
+												<span className='min-w-0'>
+													{member.representation ? (
+														<span className='block truncate font-semibold text-[var(--ink-2)] group-hover:text-white'>{member.representation}</span>
+													) : null}
+													<span className='block truncate text-[var(--ink-3)] group-hover:text-white/80'>{member.termOfOffice}</span>
+												</span>
+												<svg className='size-3.5 shrink-0' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
+													<path d='M5 12h14M13 6l6 6-6 6' />
+												</svg>
 											</div>
 										</Link>
 									))}

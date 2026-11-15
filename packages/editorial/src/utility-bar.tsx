@@ -58,13 +58,13 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
 /** The projects: records of a different kind, each a page on the landing
  *  site rather than a workspace of its own, listed from every workspace. */
 const PROJECTS = [
-	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon },
-	{ key: 'preparedness', href: 'https://betterbarmm.com/preparedness', label: 'Preparedness', icon: UmbrellaIcon },
-	{ key: 'plan', href: 'https://betterbarmm.com/development-plan', label: 'Plan scorecard', icon: TargetIcon },
-	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon },
-	{ key: 'data', href: 'https://betterbarmm.com/data', label: 'Open data', icon: DatabaseIcon },
+	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon, blurb: 'Crashes, fires, floods and shootings, mapped from the news' },
+	{ key: 'preparedness', href: 'https://betterbarmm.com/preparedness', label: 'Preparedness', icon: UmbrellaIcon, blurb: 'Hazards for every barangay and the evacuation sites near it' },
+	{ key: 'plan', href: 'https://betterbarmm.com/development-plan', label: 'Plan scorecard', icon: TargetIcon, blurb: 'The regional plan’s targets beside the latest figures' },
+	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon, blurb: 'Weaves, mats, brass and gongs, and where each is made' },
+	{ key: 'data', href: 'https://betterbarmm.com/data', label: 'Open data', icon: DatabaseIcon, blurb: 'Every workspace’s records as tables to download' },
 	// A dialog, not a page: the landing site opens it over whatever page is open.
-	{ key: 'brain', href: 'https://betterbarmm.com/#brain', label: 'Brain', icon: BrainIcon },
+	{ key: 'brain', href: 'https://betterbarmm.com/#brain', label: 'Brain', icon: BrainIcon, blurb: 'A map of every source, dataset and workspace on the site' },
 ] as const
 
 export type ProjectKey = (typeof PROJECTS)[number]['key']
@@ -99,24 +99,24 @@ function Switch({
 		const Icon = item.icon
 		return (
 			<li key={item.key}>
-				<a
-					href={item.href}
-					aria-current={on ? 'page' : undefined}
-					className={`group flex items-start gap-3 px-2 py-2 transition ${on ? 'bg-[var(--paper-2)] shadow-[inset_2px_0_0_var(--accent)]' : 'hover:bg-[var(--paper-2)]'}`}
-				>
-					<span className={`grid size-5 shrink-0 place-items-center transition ${on ? 'text-[var(--accent)]' : 'text-[var(--ink-3)] group-hover:text-[var(--accent)]'}`}>
-						<Icon size={16} weight={on ? 'fill' : 'regular'} aria-hidden='true' />
+				{/* No side padding and no bar or fill on the open one (user decision): the rows line up with their
+				    headings, and the open workspace is marked by its filled tile and its crimson name. */}
+				<a href={item.href} aria-current={on ? 'page' : undefined} className='group flex items-start gap-3 py-2.5'>
+					<span
+						className={`grid size-9 shrink-0 place-items-center transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover:bg-[var(--accent)] group-hover:text-white'}`}
+					>
+						<Icon size={18} weight={on ? 'fill' : 'duotone'} aria-hidden='true' />
 					</span>
-					<span className='min-w-0'>
-						<span className={`block text-[0.84375rem] font-semibold leading-5 ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>{item.label}</span>
-						{item.blurb ? <span className='block text-[0.71875rem] leading-4 text-[var(--ink-3)]'>{item.blurb}</span> : null}
+					<span className='min-w-0 pt-0.5'>
+						<span className={`block text-[0.875rem] font-semibold leading-5 transition-colors ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)] group-hover:text-[var(--accent)]'}`}>{item.label}</span>
+						{item.blurb ? <span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{item.blurb}</span> : null}
 					</span>
 				</a>
 			</li>
 		)
 	}
 	return (
-		<details name='utility-bar-switch' className={`utility-bar-switch relative ${className}`}>
+		<details name='utility-bar-switch' className={`utility-bar-switch ${className}`}>
 			<summary className='utility-bar-link cursor-pointer list-none'>
 				{icon}
 				{/* On the narrowest phones the value says enough; "Workspace:" would push the strip past the window. */}
@@ -126,30 +126,30 @@ function Switch({
 					<path d='M1 1l4 4 4-4' fill='none' stroke='currentColor' strokeWidth='1.5' />
 				</svg>
 			</summary>
-			{/* Every entry a row, its icon beside its name; grouped under headings when the entries carry a group, two columns from a tablet up. */}
-			<div
-				className={`absolute left-0 top-full z-50 mt-1 max-h-[calc(100dvh-5rem)] max-w-[calc(100vw-2rem)] overflow-y-auto border border-[var(--rule)] bg-[var(--paper)] normal-case tracking-normal shadow-lg ${
-					grouped ? 'w-[38rem] p-4' : 'w-[16rem] p-2'
-				}`}
-			>
-				{grouped ? (
-					<div className='gap-x-6 sm:columns-2'>
-						{GROUPS.map((g) => {
-							const here = items.filter((item) => item.group === g)
-							return here.length ? (
-								<section key={g} className='mb-4 break-inside-avoid last:mb-0'>
-									<p className='border-b border-[var(--rule)] px-2 pb-2 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{g}</p>
-									<ul className='mt-1 grid'>{here.map((item) => row(item))}</ul>
-								</section>
-							) : null
-						})}
-					</div>
-				) : (
-					<>
-						<p className='px-2 pb-2 pt-1 text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{heading}</p>
-						<ul className='grid'>{items.map((item) => row(item))}</ul>
-					</>
-				)}
+			{/* The full width of the window under the strip (user decision), its rows in the page's own container:
+			    the groups side by side from a laptop up, two to a row on a tablet, stacked on a phone. Placed against
+			    the strip itself, which is the positioned box, not against this switch. */}
+			<div className='absolute inset-x-0 top-full z-50 max-h-[calc(100dvh-5rem)] overflow-y-auto border-b border-[var(--rule)] border-t-2 border-t-[var(--accent)] bg-[var(--paper)] normal-case tracking-normal shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)]'>
+				<div className='mx-auto max-w-[var(--bb-page-width)] px-6 py-7 lg:px-8'>
+					{grouped ? (
+						<div className='grid gap-x-10 gap-y-7 sm:grid-cols-2 lg:grid-cols-5'>
+							{GROUPS.map((g) => {
+								const here = items.filter((item) => item.group === g)
+								return here.length ? (
+									<section key={g}>
+										<p className='border-b border-[var(--rule)] pb-2 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{g}</p>
+										<ul className='mt-2 grid'>{here.map((item) => row(item))}</ul>
+									</section>
+								) : null
+							})}
+						</div>
+					) : (
+						<>
+							<p className='border-b border-[var(--rule)] pb-2 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{heading}</p>
+							<ul className='mt-2 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-5'>{items.map((item) => row(item))}</ul>
+						</>
+					)}
+				</div>
 			</div>
 		</details>
 	)
@@ -183,7 +183,7 @@ export function UtilityBar({
 	// The project's own glyph when one is open, a folder when none is: the switch wears what it holds.
 	const ProjectIcon = currentProject?.icon ?? FolderOpenIcon
 	return (
-		<div className={`utility-bar ${className}`}>
+		<div className={`utility-bar relative ${className}`}>
 			<div className='mx-auto flex max-w-[var(--bb-page-width)] items-center justify-between gap-4 px-6 lg:px-8'>
 				<div className='flex items-center gap-4 sm:gap-5'>
 					<Switch

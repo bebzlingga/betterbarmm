@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import { PageHeader } from '../_components/page-header'
-import { getChanges, mondayOf, stageTone, type Change } from '../_lib/changes'
-import { statusToneClass } from '../_lib/labels'
+import { ChangeCard, groupByMeasure } from '../_components/change-card'
+import { BandSectionTitle, RegistryBand } from '../_components/registry-band'
+import { getChanges, mondayOf, type Change } from '../_lib/changes'
 
 export const metadata: Metadata = {
 	title: 'What changed',
@@ -18,7 +17,6 @@ export const metadata: Metadata = {
    ============================================================ */
 
 const WEEKS = 8
-const DAY = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
 const LONG = new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
 const at = (iso: string) => new Date(`${iso}T00:00:00Z`)
 
@@ -33,44 +31,29 @@ export default function LatestPage() {
 
 	return (
 		<>
-			<PageHeader
-				emphasis='brand'
-				align='left'
-				size='compact'
-				eyebrow={changes[0] ? `Newest step on record: ${LONG.format(at(changes[0].date))}` : 'Nothing recorded yet'}
-				title='What changed in Parliament.'
-				description='Every step a bill or resolution took, and every act ratified, newest first.'
+			<RegistryBand
+				label={changes[0] ? `Newest step on record: ${LONG.format(at(changes[0].date))}` : 'Nothing recorded yet'}
+				title='Latest updates'
+				lead='Every step a bill or resolution took, and every act ratified, newest first: one card a measure, with each step it took that week.'
 			/>
-			<section className='bb-container py-[clamp(3rem,6vw,5rem)]'>
-				{[...weeks].map(([week, list]) => (
-					<section key={week} className='mb-14'>
-						<h2 className='flex items-baseline gap-3 border-b border-[var(--rule)] pb-3 text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
-							Week of {LONG.format(at(week))}
-							<span className='num text-[0.8125rem] font-semibold text-[var(--ink-mute)]'>{list.length} {list.length === 1 ? 'step' : 'steps'}</span>
-						</h2>
-						<ol className='mt-2 divide-y divide-[var(--rule)]'>
-							{list.map((change, i) => (
-								<li key={i} className='grid gap-1 py-3 sm:grid-cols-[11rem_24rem_minmax(0,1fr)] sm:items-center sm:gap-5'>
-									<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{DAY.format(at(change.date))}</span>
-									<span className='flex min-w-0 flex-wrap items-center gap-x-1 gap-y-1 text-[0.875rem]'>
-										<span className={`${statusToneClass[stageTone(change.stage)]} max-w-full !whitespace-normal !rounded-[0.625rem] text-left`}>{change.stage}</span>
-										{change.note ? <span className='badge badge-plain badge-idle'>{change.note}</span> : null}
-									</span>
-									<span className='min-w-0 text-[0.875rem] text-[var(--ink-2)]'>
-										{change.href ? (
-											<Link href={change.href} className='font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
-												{change.label}
-											</Link>
-										) : (
-											<span className='font-semibold text-[var(--ink)]'>{change.label}</span>
-										)}{' '}
-										<span className='line-clamp-1'>{change.title}</span>
-									</span>
-								</li>
-							))}
-						</ol>
-					</section>
-				))}
+			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+				{[...weeks].map(([week, list]) => {
+					const measures = groupByMeasure(list)
+					return (
+						<section key={week} className='mt-16 first:mt-0'>
+							<BandSectionTitle
+								title={`Week of ${LONG.format(at(week))}`}
+								count={measures.length}
+								lead={`${list.length} ${list.length === 1 ? 'step' : 'steps'} across ${measures.length} ${measures.length === 1 ? 'measure' : 'measures'}`}
+							/>
+							<ul className='mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3'>
+								{measures.map((measure) => (
+									<ChangeCard key={measure.key} measure={measure} />
+								))}
+							</ul>
+						</section>
+					)
+				})}
 			</section>
 		</>
 	)

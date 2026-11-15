@@ -1,13 +1,13 @@
-import { OkirCorner, SectionHead } from '@betterbarmm/editorial'
 import Link from 'next/link'
 import { BillFunnel, type FunnelSlice } from './_components/bill-funnel'
-import { BillPathPreview } from './_components/bill-path-preview'
+import { BILL_PATH_STEPS } from './_components/bill-path-steps'
 import { DidYouKnow } from './_components/did-you-know'
 import { MemberPayFigures } from './_components/member-pay'
-import { PageHeader } from './_components/page-header'
+import { ChangeCard, groupByMeasure } from './_components/change-card'
+import { BandSectionTitle, RegistryBand } from './_components/registry-band'
+import { StatFigures } from './_components/stat-band'
 import { Reveal } from './_components/reveal'
-import { getChanges, stageTone } from './_lib/changes'
-import { statusToneClass } from './_lib/labels'
+import { getChanges } from './_lib/changes'
 import { getCategoryCounts, getDataset } from './_lib/legislation-data'
 import { getOfficialMeasuresByCategory, type OfficialMeasure } from './_lib/official-measures'
 
@@ -105,20 +105,16 @@ export default function HomePage() {
 
 	return (
 		<>
-			{/* The masthead the standing pages use — brand emphasis, the headline
-			    split across two tones. The home page is the one page whose heading
-			    is the point rather than a label over a list, so it is set the way
-			    Data & Methodology is. */}
-			<PageHeader
-				emphasis='brand'
-				size='hero'
-				eyebrow='Bangsamoro Legislative Registry'
-				title='Every law the region has made,'
-				titleMuted='in words you already know.'
-				description='The Bangsamoro Parliament publishes its record across six separate archives. This puts them in one place — searchable, filterable, and written in language you do not need a law degree to read.'
-				// The same five figures, in the same order, as Parliament's own
-				// homepage, so the two can be read against each other.
-				figures={[
+			{/* The band every page of the registry opens on (user decision), with Parliament's own five figures inside it, in
+			    the same order as Parliament's homepage so the two can be read against each other. */}
+			<RegistryBand
+				label='Bangsamoro Legislative Registry'
+				title='Every law the region has made'
+				lead='The Bangsamoro Parliament publishes its record across six separate archives. This puts them in one place — searchable, filterable, and written in language you do not need a law degree to read.'
+			>
+				<div className='mt-12'>
+					<StatFigures
+						stats={[
 					{
 						label: 'Bangsamoro Autonomy Acts',
 						value: counts.acts.toLocaleString(),
@@ -151,7 +147,9 @@ export default function HomePage() {
 						series: byYear('proposed-resolutions'),
 					},
 				]}
-			/>
+					/>
+				</div>
+			</RegistryBand>
 
 			<LatestUpdates />
 
@@ -161,37 +159,36 @@ export default function HomePage() {
 			     statement rather than a column of text beside a chart. */}
 			<section className='bg-[var(--paper-2)]'>
 			<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
-				<SectionHead
-					index='01'
-					eyebrow='Where the bills are'
-					title='Most bills never make it.'
-					/* The space after the count is explicit: the text node that follows it
-					   runs onto a second line, and JSX trims each line of a multi-line
-					   node — which ate the space and printed "52have". */
-					lead={`Of the ${totalBills.toLocaleString()} bills tracked here, ${approved} have been approved on third reading. The rest are still somewhere in the sequence — and nearly all of them are sitting in a committee, which is the one stage Parliament's own rules open to the public.`}
-					align='center'
+				<BandSectionTitle
+					title='Most bills never make it'
+					lead={`Of the ${totalBills.toLocaleString()} bills tracked here, ${approved} have been approved on third reading. Nearly all the rest are sitting in a committee, the one stage Parliament's own rules open to the public.`}
 				/>
 
+				{/* The headline count on the left, in the brand crimson, with the ways out; where every other bill is on the
+				    right, as the bar and a card a stage. */}
 				<Reveal delay={80}>
-					<div className='mt-16 lg:mt-20'>
-						<BillFunnel
-							slices={funnel}
-							total={totalBills}
-						/>
-					</div>
-				</Reveal>
-
-				<Reveal delay={160}>
-					{/* On the same axis as the claim and the chart above them. Ranged
-					    left under a centerd section, the two ways out read as the start
-					    of the next block rather than the end of this one. */}
-					<div className='mt-14 flex flex-wrap justify-center gap-3'>
-						<Link href='/bills' className='bb-btn bb-btn-solid'>
-							Browse all {totalBills.toLocaleString()} bills
-						</Link>
-						<Link href='/how-parliament-works#the-bill-path' className='bb-btn bb-btn-ghost'>
-							What each stage means
-						</Link>
+					<div className='mt-8 grid gap-4 lg:grid-cols-[minmax(0,19rem)_minmax(0,1fr)]'>
+						<div className='flex flex-col bg-[#8f2328] p-6 text-white lg:p-8'>
+							<p className='font-mono text-[0.625rem] font-bold uppercase tracking-[0.14em] text-[#f6cf7a]'>Approved on third reading</p>
+							<p className='mt-4 flex items-baseline gap-2'>
+								<span className='num text-[4rem] font-extrabold leading-none tracking-[-0.05em]'>{approved}</span>
+								<span className='num text-[1.125rem] font-semibold text-white/75'>of {totalBills.toLocaleString()}</span>
+							</p>
+							<p className='mt-3 text-[0.875rem] leading-[1.6] text-white/85'>
+								{Math.round((approved / totalBills) * 100)}% of the bills tracked here. The rest are still somewhere in the sequence.
+							</p>
+							<div className='mt-auto grid gap-2 pt-8'>
+								<Link href='/bills' className='inline-flex items-center justify-center bg-white px-4 py-3 text-[0.8125rem] font-bold text-[#8f2328] transition hover:bg-[#fff3cf]'>
+									Browse all {totalBills.toLocaleString()} bills
+								</Link>
+								<Link href='/how-parliament-works#the-bill-path' className='inline-flex items-center justify-center border border-white/40 px-4 py-3 text-[0.8125rem] font-bold text-white transition hover:border-white'>
+									What each stage means
+								</Link>
+							</div>
+						</div>
+						<div className='flex min-w-0 flex-col justify-center border border-[var(--rule)] bg-[var(--paper)] p-5 lg:p-6'>
+							<BillFunnel slices={funnel} total={totalBills} />
+						</div>
 					</div>
 				</Reveal>
 			</div>
@@ -208,28 +205,42 @@ export default function HomePage() {
 			     seven stages open, and running an abbreviated copy of it here only
 			     gave a reader two versions of the same thing to reconcile. */}
 			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
-				<SectionHead
-					index='02'
-					eyebrow='The process, simplified'
-					title='Seven steps,'
-					titleMuted='and one of them is yours.'
-					lead={`Parliament publishes the path a bill takes as thirteen steps of rules citations. It is the same path said plainly here — with what happens at each stage, and the one point where its own rules say a committee may ask the public in.`}
+				<BandSectionTitle
+					title='Seven steps, and one of them is yours'
+					lead='Parliament publishes the path a bill takes as thirteen steps of rules citations. Here it is said plainly, with the one point where its own rules say a committee may ask the public in.'
 				/>
 
+				{/* The seven stages as cards on one rail, numbered in the order a bill takes them. The one stage a member of the
+				    public can act at is filled in the brand crimson and says so, with the way in. */}
 				<Reveal>
-					{/* The plate marks the block off without boxing it: a brass hairline
-					    at the head and the paper's own second step, rather than four
-					    borders on a page already full of rules. */}
-					<div className='bb-plate relative mt-16 px-5 py-14 text-center sm:px-12 sm:py-16 lg:px-16 lg:py-20'>
-						<OkirCorner position='top-left' className='m-4 opacity-60' />
-						<OkirCorner position='bottom-right' className='m-4 opacity-60' />
-
-						<BillPathPreview />
-
-						<Link href='/how-parliament-works#the-bill-path' className='bb-btn bb-btn-solid mt-12'>
-							Follow a bill through Parliament
+					<ol className='relative mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7'>
+						{BILL_PATH_STEPS.map((step, index) => {
+							const yours = index === BILL_PATH_STEPS.findIndex((s) => s.publicAction?.href.startsWith('http'))
+							return (
+								<li
+									key={step.label}
+									className={`flex flex-col border p-5 ${yours ? 'border-[#8f2328] bg-[#8f2328] text-white shadow-[0_24px_48px_-28px_rgba(143,35,40,0.9)]' : 'border-[var(--rule)] bg-[var(--paper)]'}`}
+								>
+									<span className='flex items-center justify-between gap-2'>
+										<span className={`num text-[1.75rem] font-extrabold leading-none tracking-[-0.04em] ${yours ? 'text-[#f6cf7a]' : 'text-[var(--accent)]'}`}>{String(index + 1).padStart(2, '0')}</span>
+										{yours ? <span className='rounded-full bg-white/15 px-2 py-0.5 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em] text-white'>Your stage</span> : null}
+									</span>
+									<span className={`mt-4 text-[1rem] font-extrabold tracking-[-0.015em] ${yours ? 'text-white' : 'text-[var(--ink)]'}`}>{step.label}</span>
+									<span className={`mt-1.5 text-[0.8125rem] leading-[1.55] ${yours ? 'text-white/85' : 'text-[var(--ink-3)]'}`}>{step.summary}</span>
+									{yours && step.publicAction ? (
+										<a href={step.publicAction.href} target='_blank' rel='noreferrer' className='mt-auto inline-flex items-center gap-1 pt-4 text-[0.78125rem] font-bold text-white underline decoration-white/40 underline-offset-4 hover:decoration-white'>
+											{step.publicAction.label} ↗
+										</a>
+									) : null}
+								</li>
+							)
+						})}
+					</ol>
+					<p className='mt-6 text-right'>
+						<Link href='/how-parliament-works#the-bill-path' className='text-[0.875rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+							Follow a bill through Parliament →
 						</Link>
-					</div>
+					</p>
 				</Reveal>
 			</section>
 
@@ -246,11 +257,8 @@ export default function HomePage() {
 			     a diff to reconstruct. */}
 			{SHOW_SEAT_COST ? (
 			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
-				<SectionHead
-					index='03'
-					eyebrow='What a seat costs'
-					title='₱3,277,082 a year'
-					titleMuted={`for each member's post.`}
+				<BandSectionTitle
+					title={`₱3,277,082 a year for each member's post`}
 					lead='That is not a salary figure, and the difference matters. It is the whole annual provision the budget makes for the post — basic pay plus the bonuses, allowances and government contributions costed against it.'
 				/>
 
@@ -270,55 +278,24 @@ export default function HomePage() {
 	)
 }
 
-/** The newest steps on record, under the masthead: the reason to come back. */
+/** The newest steps on record, under the band: the reason to come back. One card a measure, the six most recently moved. */
 function LatestUpdates() {
-	// One row a measure: a resolution deferred four days running would otherwise fill the list.
-	const seen = new Set<string>()
-	const changes = getChanges()
-		.filter((c) => {
-			const key = c.href ?? c.label
-			if (seen.has(key)) return false
-			seen.add(key)
-			return true
-		})
-		.slice(0, 5)
-	if (!changes.length) return null
-	const date = new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+	const measures = groupByMeasure(getChanges()).slice(0, 6)
+	if (!measures.length) return null
 	return (
-		<section>
-		<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
-			<SectionHead
-				eyebrow='Latest updates'
-				title='What changed in Parliament.'
-				size='sm'
-				aside={
-					<Link href='/latest' className='text-[0.8125rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
-						See all →
-					</Link>
-				}
-			/>
-			<ol className='mt-8 divide-y divide-[var(--rule)] border-y border-[var(--rule)]'>
-				{changes.map((change, i) => (
-					<li key={i} className='grid gap-1 py-3 sm:grid-cols-[9.5rem_minmax(0,18rem)_minmax(0,1fr)] sm:items-center sm:gap-5'>
-						<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{date.format(new Date(`${change.date}T00:00:00Z`))}</span>
-						<span className='flex min-w-0 flex-wrap items-center gap-1'>
-							<span className={`${statusToneClass[stageTone(change.stage)]} max-w-full !whitespace-normal !rounded-[0.625rem] text-left`}>{change.stage}</span>
-							{change.note ? <span className='badge badge-plain badge-idle'>{change.note}</span> : null}
-						</span>
-						<span className='min-w-0 text-[0.875rem] text-[var(--ink-2)]'>
-							{change.href ? (
-								<Link href={change.href} className='font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
-									{change.label}
-								</Link>
-							) : (
-								<span className='font-semibold text-[var(--ink)]'>{change.label}</span>
-							)}{' '}
-							<span className='line-clamp-1'>{change.title}</span>
-						</span>
-					</li>
+		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<BandSectionTitle title='What changed in Parliament' lead='The measures that moved most recently, each with its latest steps.' />
+			<ul className='mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3'>
+				{measures.map((measure) => (
+					<ChangeCard key={measure.key} measure={measure} maxSteps={3} />
 				))}
-			</ol>
-		</div>
+			</ul>
+			{/* Section-end links sit on the right. */}
+			<p className='mt-6 text-right'>
+				<Link href='/latest' className='text-[0.875rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+					See every update →
+				</Link>
+			</p>
 		</section>
 	)
 }

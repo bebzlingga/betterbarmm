@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { MemberBrowser } from '../_components/member-browser'
-import { PageHeader } from '../_components/page-header'
+import { RegistryBand } from '../_components/registry-band'
 import { Reveal } from '../_components/reveal'
 import { getRosterDataset } from '../_lib/members-data'
 
@@ -16,16 +16,16 @@ export default function MembersPage() {
 
 	return (
 		<>
-			{/* The full display cut rather than the compact one: this masthead opens
-			    a roster of 157 faces, and at compact size it read as a caption over
-			    the grid rather than as the head of the page. */}
-			<PageHeader
-				emphasis='brand'
-				align='left'
-				size='compact'
-				eyebrow={`Bangsamoro Transition Authority, 2019 to 2025 · ${stats.total.toLocaleString()} members on record`}
-				title='The people who write'
-				titleMuted='the region’s laws.'
+			<RegistryBand
+				label='Bangsamoro Transition Authority, 2019 to 2025'
+				title='Bangsamoro Transition Authority'
+				lead={
+					<>
+						<span className='font-semibold text-[var(--ink)]'>{stats.total.toLocaleString()} members on record. </span>
+						The people who wrote the region’s laws before the First Parliament: their term, the parliaments they sat in, the role
+						they held, and the measures they are credited on.
+					</>
+				}
 			/>
 
 			<MemberBrowser dataset={dataset} />

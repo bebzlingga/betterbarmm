@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { MemberAvatar } from '../../_components/member-avatar'
-import { PageHeader } from '../../_components/page-header'
+import { MEMBER_CARD_FOOT, MemberAvatar, MemberPortrait } from '../../_components/member-avatar'
+import { BandSectionTitle, RegistryBand } from '../../_components/registry-band'
 import { ProfileDialog } from '../../_components/profile-dialog'
 import { getElectedMembers, getFirstParliament, type ElectedSeat, type FirstParliamentPerson, type Member } from '../../_lib/members-data'
 
@@ -91,34 +91,37 @@ function backgroundOf({ elected }: Elected) {
 	)
 }
 
-/** The card: who, where, and a taste of the rest. */
+/** The card, as the roster draws a Member: the face, the name, the posts they hold and where they won, centred; the
+ *  rest of the record at the foot. */
 function CardFace({ member }: { member: Elected }) {
 	const { elected } = member
-	const background = backgroundOf(member)
+	const relatives = publicRelatives(elected).length
 	return (
 		<>
-			<div className='flex items-start gap-4'>
-				<MemberAvatar name={member.displayName} src={member.photoUrl} />
-				<div className='min-w-0'>
-					<h3 className='text-[1rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{member.displayName}</h3>
-					{elected.roles.length ? <p className='mt-1 text-[0.75rem] font-semibold leading-snug text-[var(--accent)]'>{elected.roles.join(' · ')}</p> : null}
-					<p className='mt-1 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{[elected.where, elected.party].filter(Boolean).join(' · ')}</p>
-					{elected.votes != null ? <p className='num mt-1 text-[0.75rem] text-[var(--ink-mute)]'>{elected.votes.toLocaleString('en-PH')} votes</p> : null}
-				</div>
-			</div>
-			{elected.career.length || background.length || member.bio.length ? (
-				<p className='mt-4 line-clamp-3 text-[0.8125rem] leading-[1.6] text-[var(--ink-2)]'>{elected.career[0]?.replace(/^.*? · /, '') ?? background.find((line) => !/^(full name|also known)/i.test(line)) ?? background[0] ?? member.bio[0]}</p>
-			) : (
-				<p className='mt-4 text-[0.8125rem] text-[var(--ink-mute)]'>Nothing found and cited beyond the ballot yet.</p>
-			)}
-			<div className='mt-auto flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-5 text-[0.71875rem]'>
-				{member.phases.length > 1 ? <span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>Transition Authority</span> : null}
-				{publicRelatives(elected).length ? (
-					<span className='bg-[var(--paper-2)] px-2 py-0.5 font-semibold text-[var(--ink-2)]'>
-						{publicRelatives(elected).length} {publicRelatives(elected).length === 1 ? 'relative' : 'relatives'} in public life
-					</span>
+			<div className='flex flex-1 flex-col items-center px-5 pb-5 pt-6'>
+				<MemberPortrait name={member.displayName} src={member.photoUrl} />
+				<h3 className='mt-4 text-[1rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>{member.displayName}</h3>
+				{elected.roles.length ? <p className='mt-1 text-[0.75rem] font-semibold leading-snug text-[var(--accent)]'>{elected.roles.join(' · ')}</p> : null}
+				<p className='mt-1.5 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{[elected.where, elected.party].filter(Boolean).join(' · ')}</p>
+				{member.phases.length > 1 || relatives ? (
+					<p className='mt-3 flex flex-wrap justify-center gap-1.5'>
+						{member.phases.length > 1 ? <span className='badge badge-plain badge-role'>Transition Authority</span> : null}
+						{relatives ? (
+							<span className='badge badge-plain badge-idle'>
+								{relatives} {relatives === 1 ? 'relative' : 'relatives'} in public life
+							</span>
+						) : null}
+					</p>
 				) : null}
-				<span className='ml-auto font-semibold text-[var(--accent)]'>View profile</span>
+			</div>
+			<div className={MEMBER_CARD_FOOT}>
+				<span className='num text-[var(--ink-3)] group-hover:text-white/85'>{elected.votes != null ? `${elected.votes.toLocaleString('en-PH')} votes` : 'No vote count'}</span>
+				<span className='inline-flex items-center gap-1.5 font-semibold'>
+					View profile
+					<svg className='size-3.5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
+						<path d='M5 12h14M13 6l6 6-6 6' />
+					</svg>
+				</span>
 			</div>
 		</>
 	)
@@ -364,10 +367,9 @@ function Officers() {
 		{ title: 'In the cabinet', people: fp.cabinet.map((c) => ({ p: { name: c.member.displayName, member: c.member }, role: c.roles.join(' · ') })) },
 	]
 	return (
-		<section id='officers' className='scroll-mt-24 border-b border-[var(--rule)]'>
+		<section id='officers' className='scroll-mt-24'>
 			<div className='bb-container bb-section'>
-				<p className='bb-label'>Officers and offices</p>
-				<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Who presides, and who runs the House</h2>
+				<BandSectionTitle title='Who presides, and who runs the House' lead='The chamber’s officers, the cabinet seats Members hold, and the Secretariat.' />
 				<div className='mt-10 grid gap-x-16 gap-y-12 lg:grid-cols-2'>
 					{groups.filter((g) => g.people.length).map((g) => (
 						<div key={g.title} className={g.people.length > 4 ? 'lg:col-span-2' : ''}>
@@ -420,26 +422,31 @@ export default function ElectedPage() {
 
 	return (
 		<>
-			<PageHeader
-				emphasis='brand'
-				align='left'
-				size='compact'
-				eyebrow={`${members.length} Members · elected 14 September 2026 · sitting from 30 October 2026`}
-				title='The First'
-				titleMuted='Parliament.'
+			<RegistryBand
+				label='Elected 14 September 2026 · sitting from 30 October 2026'
+				title='The First Parliament'
+				lead={
+					<>
+						<span className='font-semibold text-[var(--ink)]'>{members.length} Members. </span>
+						The Bangsamoro’s first elected Parliament: who presides, who sits in the cabinet, and every Member by the seat they won.
+					</>
+				}
 			/>
 
-			{/* The make-up at a glance, and a way down to each kind of seat. */}
-			<nav aria-label='Seats' className='border-b border-[var(--rule)]'>
-				<ol className='bb-container grid grid-cols-2 lg:grid-cols-4'>
+			{/* The make-up at a glance, and a way down to each kind of seat, as cards. */}
+			<nav aria-label='Seats' className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<ol className='grid grid-cols-2 gap-4 lg:grid-cols-4'>
 					{SEATS.map((s) => {
 						const count = members.filter((m) => m.elected.seat === s.seat).length
 						return (
-							<li key={s.id} className='border-[var(--rule)] max-lg:border-b max-lg:odd:border-r lg:border-r lg:first:border-l'>
-								<a href={`#${s.id}`} className='group flex h-full flex-col px-5 py-6 transition hover:bg-[var(--paper-2)] sm:px-8'>
-									<span className='num text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--accent)]'>{count}</span>
-									<span className='mt-2 text-[0.875rem] font-bold text-[var(--ink)] group-hover:text-[var(--accent)]'>{s.title}</span>
-									<span className='mt-1 text-[0.75rem] leading-snug text-[var(--ink-3)]'>{s.note}</span>
+							<li key={s.id}>
+								<a
+									href={`#${s.id}`}
+									className='group flex h-full flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)] sm:p-6'
+								>
+									<span className='num text-[2.25rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{count}</span>
+									<span className='mt-3 text-[0.9375rem] font-extrabold text-[var(--ink)] group-hover:text-[var(--accent)]'>{s.title}</span>
+									<span className='mt-1 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{s.note}</span>
 								</a>
 							</li>
 						)
@@ -455,17 +462,15 @@ export default function ElectedPage() {
 				return (
 					<section key={s.id} id={s.id} className={`scroll-mt-24 ${i % 2 ? 'bg-[var(--paper-2)]' : ''}`}>
 						<div className='bb-container bb-section'>
-							<p className='bb-label'>{String(i + 1).padStart(2, '0')}</p>
-							<h2 className='mt-3 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{s.title}</h2>
+							<BandSectionTitle title={s.title} count={groups.reduce((n, [, list]) => n + list.length, 0)} lead={s.note} />
 							{groups.map(([name, list]) => (
 								<div key={name} className='mt-10'>
 									{name ? (
-										<h3 className='mb-4 flex items-baseline gap-3 text-[0.8125rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-2)]'>
-											{name}
-											<span className='num text-[var(--ink-mute)]'>{list.length}</span>
+										<h3 className='mb-4 text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+											{name} <span className='font-semibold text-[var(--ink-mute)]'>· {list.length}</span>
 										</h3>
 									) : null}
-									<div className='grid gap-4 sm:grid-cols-2 xl:grid-cols-3'>
+									<div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 										{list.map((m) => (
 											<Card
 												key={m.slug}

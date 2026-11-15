@@ -12,7 +12,7 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { PageHeader } from '../_components/page-header'
+import { BandSectionTitle, RegistryBand } from '../_components/registry-band'
 import { Reveal } from '../_components/reveal'
 import { getCommitteesDataset, type Committee } from '../_lib/committees-data'
 import { getFirstParliament } from '../_lib/members-data'
@@ -124,9 +124,10 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 			   from the edge and the line got shorter on the screen with the least room
 			   for it. From `sm`, where two cards share a row and a card needs its own
 			   edges, the padding comes back. */
-			className='row-in relative flex h-full flex-col border-b border-[var(--rule)] py-6 transition hover:bg-[var(--paper-2)] sm:border-r sm:p-8 lg:p-10'
+			className='row-in group relative flex h-full flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
 		>
-			<h3 className='text-[1.35rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+			<div className='flex flex-1 flex-col p-6'>
+			<h3 className='text-[1.1875rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 				<Link href={`/committees/${committee.slug}`} className='after:absolute after:inset-0 after:content-[""]'>
 					{committee.name}
 				</Link>
@@ -136,7 +137,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 				<p className='meta mt-2.5 flex items-center gap-2.5'>
 					{committee.chairperson.photoUrl ? (
 						// eslint-disable-next-line @next/next/no-img-element -- a local portrait, sized here
-						<img src={committee.chairperson.photoUrl} alt='' className='size-8 shrink-0 rounded-full border border-[var(--rule)] object-cover' />
+						<img src={committee.chairperson.photoUrl} alt='' className='size-10 shrink-0 rounded-full border border-[var(--rule)] object-cover object-top' />
 					) : null}
 					<span>
 					Chaired by{' '}
@@ -177,7 +178,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 						<span className='group-open:hidden'>In the Rules’ words</span>
 						<span className='hidden group-open:inline'>Hide the Rules’ words</span>
 					</summary>
-					<p className='mt-2 border-l-2 border-[var(--rule)] pl-3 meta'>{committee.jurisdiction}</p>
+					<p className='mt-2 bg-[var(--paper-2)] px-3 py-2 meta'>{committee.jurisdiction}</p>
 				</details>
 			) : null}
 
@@ -196,6 +197,14 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 					</span>
 				) : null}
 			</div>
+			</div>
+			{/* The way in, filling crimson with the card's hover. */}
+			<span className='flex items-center justify-between gap-3 border-t border-[var(--rule)] px-6 py-3 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'>
+				Open the committee
+				<svg className='size-3.5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
+					<path d='M5 12h14M13 6l6 6-6 6' />
+				</svg>
+			</span>
 		</div>
 	)
 }
@@ -269,19 +278,15 @@ export default function CommitteesPage() {
 
 	return (
 		<>
-			{/* The middle cut rather than the small one. `compact` is for a
-			    masthead that is a label over a register of hundreds of rows, where
-			    the headline should get out of the way; twenty-four committees is a
-			    page a reader arrives at rather than scrolls past, and the claim can
-			    be the size of a claim. */}
-			<PageHeader
-				emphasis='brand'
-				align='left'
-				size='compact'
-				eyebrow={`${first.committees.length || stats.total} committees · First Parliament`}
-				title='Where a bill is worked on,'
-				titleMuted='before anyone votes on it.'
-				description={`A committee takes charge of one subject — health, public works, the budget — and does the detailed work on every measure under it; most of a bill’s life happens here, not on the floor. ${stats.statutory} of these ${stats.total} are permanent, and together they hold ${stats.referrals.toLocaleString()} referred measures and ${stats.reports} reports.`}
+			<RegistryBand
+				label='Where a bill is worked on, before anyone votes on it'
+				title='Committees'
+				lead={
+					<>
+						<span className='font-semibold text-[var(--ink)]'>{first.committees.length || stats.total} committees of the First Parliament. </span>
+						{`A committee takes charge of one subject — health, public works, the budget — and does the detailed work on every measure under it; most of a bill’s life happens here, not on the floor. ${stats.statutory} of these ${stats.total} are permanent, and together they hold ${stats.referrals.toLocaleString()} referred measures and ${stats.reports} reports.`}
+					</>
+				}
 			/>
 
 			{/* ---- The committees, by kind ----
@@ -296,18 +301,11 @@ export default function CommitteesPage() {
 					aria-labelledby={`group-${group.key}`}
 					className={`bb-container ${groupIndex ? 'pb-[clamp(3.75rem,7vw,6.5rem)]' : 'py-[clamp(3.75rem,7vw,6.5rem)]'}`}
 				>
-					<div className='mb-8 flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between lg:gap-10'>
-						<h2 id={`group-${group.key}`} className='section-title'>
-							{group.title} <span className='text-[var(--ink-mute)]'>· {group.committees.length}</span>
-						</h2>
-						<p className='max-w-xl bb-body text-[var(--ink-3)] lg:text-right'>{group.note}</p>
-					</div>
-					<div className='border-t border-[var(--rule)] sm:border-l'>
-						<div className='grid sm:grid-cols-2 lg:grid-cols-3'>
-							{group.committees.map((committee, index) => (
-								<CommitteeCard key={committee.slug} committee={committee} index={index} />
-							))}
-						</div>
+					<BandSectionTitle title={group.title} count={group.committees.length} lead={group.note} />
+					<div className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+						{group.committees.map((committee, index) => (
+							<CommitteeCard key={committee.slug} committee={committee} index={index} />
+						))}
 					</div>
 				</section>
 			))}

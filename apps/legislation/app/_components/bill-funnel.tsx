@@ -28,9 +28,9 @@ export function BillFunnel({ slices, total }: { slices: FunnelSlice[]; total: nu
 	const share = (count: number) => (count / total) * 100
 
 	return (
-		<figure className='mx-auto max-w-5xl text-left'>
+		<figure className='text-left'>
 			<div
-				className='flex h-14 gap-[2px] overflow-hidden rounded-[4px]'
+				className='flex h-12 gap-[2px] overflow-hidden rounded-[4px]'
 				role='img'
 				aria-label={`Distribution of ${total.toLocaleString()} bills across stages. ${slices
 					.map((slice) => `${slice.label}, ${slice.count}`)
@@ -47,20 +47,21 @@ export function BillFunnel({ slices, total }: { slices: FunnelSlice[]; total: nu
 				))}
 			</div>
 
-			<figcaption className='mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-5'>
+			{/* Each stage as a card (user decision), its ramp colour along the top, so the bar above reads as their sum. */}
+			<figcaption className='mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5'>
 				{slices.map((slice) => {
 					const pct = share(slice.count)
 					return (
-						<div key={slice.label} className='border-t border-[var(--rule)] pt-4'>
-							<p className='flex items-center gap-2'>
-								<span aria-hidden='true' className='size-2.5 shrink-0 rounded-full' style={{ background: slice.color }} />
-								<span className='item-title text-[var(--ink)]'>{slice.label}</span>
-							</p>
-							<p className='mt-2 flex items-baseline gap-2'>
-								<span className='num text-[1.375rem] font-semibold leading-none text-[var(--ink)]'>{slice.count.toLocaleString()}</span>
-								<span className='num text-[0.8125rem] text-[var(--ink-3)]'>{pct < 1 ? '<1' : Math.round(pct)}%</span>
-							</p>
-							<p className='mt-2 text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>{slice.note}</p>
+						<div key={slice.label} className='flex flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)]'>
+							<span aria-hidden='true' className='block h-1' style={{ background: slice.color }} />
+							<div className='flex flex-1 flex-col p-4'>
+								<p className='text-[0.875rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{slice.label}</p>
+								<p className='mt-2 flex items-baseline gap-2'>
+									<span className='num text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{slice.count.toLocaleString()}</span>
+									<span className='num text-[0.8125rem] font-semibold text-[var(--ink-3)]'>{pct < 1 ? '<1' : Math.round(pct)}%</span>
+								</p>
+								<p className='mt-2 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>{slice.note}</p>
+							</div>
 						</div>
 					)
 				})}

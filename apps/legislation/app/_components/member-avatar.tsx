@@ -50,3 +50,26 @@ export function MemberAvatar({
 		</span>
 	)
 }
+
+/** A Member's face at the head of a card, as the landing site's Directory heads its own: round, centred, larger than
+ *  the list avatar. Without a photograph, the Transition Authority's seal sits in the circle instead. */
+export function MemberPortrait({ name, src }: { name: string; src?: string }) {
+	return (
+		<span className='grid size-24 shrink-0 place-items-center overflow-hidden rounded-full border border-[var(--rule)] bg-[var(--paper-2)] transition duration-500 group-hover:scale-105'>
+			{/* eslint-disable-next-line @next/next/no-img-element -- portraits are local files of mixed sizes */}
+			<img
+				src={src ?? '/images/members/BTA-logo.png'}
+				alt={src ? name : ''}
+				aria-hidden={src ? undefined : true}
+				className={src ? 'size-full object-cover object-top' : 'size-14 object-contain opacity-60'}
+			/>
+		</span>
+	)
+}
+
+/** The landing site's card (user decision): a hairline, lifting and turning crimson at the edge on hover. */
+export const MEMBER_CARD =
+	'group flex h-full min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] text-center transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+/** The bar at a card's foot, filling crimson with the card's hover. */
+export const MEMBER_CARD_FOOT =
+	'mt-auto flex items-center justify-between gap-3 border-t border-[var(--rule)] px-5 py-3 text-left text-[0.78125rem] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'

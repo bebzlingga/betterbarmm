@@ -66,13 +66,16 @@ export function RecordPage({ category, number }: { category: CategorySlug; numbe
 
 	// Authors are written in roster form on every measure, so a lookup keyed
 	// that way lets the article link each name to its profile.
-	const memberSlugs = Object.fromEntries(
-		getMembersDataset().members.map((member) => [member.rosterName.toUpperCase(), member.slug]),
+	const members = getMembersDataset().members
+	const memberSlugs = Object.fromEntries(members.map((member) => [member.rosterName.toUpperCase(), member.slug]))
+	// And their portraits, where one has been collected, so each author shows their face.
+	const memberPhotos = Object.fromEntries(
+		members.filter((member) => member.photoUrl).map((member) => [member.rosterName.toUpperCase(), member.photoUrl!]),
 	)
 
 	return (
 		<>
-			<RecordArticle record={record} memberSlugs={memberSlugs} />
+			<RecordArticle record={record} memberSlugs={memberSlugs} memberPhotos={memberPhotos} />
 			{category === 'bills' ? <FollowFeed href={`/bills/${record.number}/feed.xml`} what='this bill' /> : null}
 		</>
 	)

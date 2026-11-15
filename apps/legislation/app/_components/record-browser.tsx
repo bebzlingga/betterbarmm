@@ -548,7 +548,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									Clear search and filters
 								</button>
 							) : (
-								<p className='meta-sm'>Open a row for the full record</p>
+								<p className='meta-sm'>Open a card for the full record</p>
 							)}
 							</div>
 						</div>
@@ -559,6 +559,10 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 						    where it stands on one line, the name under it, the date down
 						    the right edge so a list reads as a chronology. */}
 						<div id='record-list' className='scroll-mt-32'>
+							{/* Cards, as the landing site's Directory and Programs & services draw them (user decision): the number and
+							    where it stands at the head, the full official name, what it is about, and the date and the way in at
+							    the foot. Two to a row once there is the width. */}
+							<div className='mt-6 grid gap-4 md:grid-cols-2'>
 							{pageRecords.map((record, index) => (
 								<Link
 									key={record.id}
@@ -569,11 +573,11 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									// has to wrap, and on a phone it took a third of the row and
 									// left the measure's name in a four-word gutter. Stacked, the
 									// title gets the width and the date follows it as a caption.
-									className='row row-in grid w-full cursor-pointer grid-cols-1 items-start gap-1.5 py-6 text-left sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-16 sm:py-8 lg:gap-24'
+									className='row-in group flex min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] text-left transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
 								>
-									<div className='min-w-0'>
+									<div className='flex min-w-0 flex-1 flex-col p-5'>
 										<div className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
-											<span className='num text-[0.8125rem] font-medium text-[var(--ink-3)]'>
+											<span className='num text-[0.8125rem] font-semibold text-[var(--ink-2)]'>
 												{record.numberLabel}
 												{/* A bill that passed is still the same measure under a new
 												    number, so the act rides in the bill's own designation
@@ -610,40 +614,39 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 											<span className={statusToneClass[record.statusTone]}>
 												{record.statusShort}
 											</span>
-											{/* What it is about, beside where it stands — both are labels
-											    on the measure, so they share the one line above the name. */}
-											{record.sectors.map((tag) => (
-												<span key={tag.value} className='badge badge-plain badge-idle'>
-													{tag.label}
-												</span>
-											))}
 										</div>
 
-										{/* The full official name is what identifies a measure, so the
-										    row carries that alone. The registry's short name for it is
-										    on the measure's own page. */}
-										<h2 className='item-title item-title-lg mt-2 text-[var(--ink)]'>
+										{/* The full official name is what identifies a measure, so the card carries that alone. The
+										    registry's short name for it is on the measure's own page. */}
+										<h2 className='mt-3 line-clamp-4 text-[1rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 											{record.title}
 										</h2>
+
+										{/* What it is about, under its name. */}
+										{record.sectors.length ? (
+											<div className='mt-auto flex flex-wrap gap-1.5 pt-4'>
+												{record.sectors.map((tag) => (
+													<span key={tag.value} className='badge badge-plain badge-idle'>
+														{tag.label}
+													</span>
+												))}
+											</div>
+										) : null}
 									</div>
 
-									<div className='flex items-center gap-3 sm:justify-end'>
-										<span className='meta-sm shrink-0'>{record.dateDisplay}</span>
-										<svg
-											className='row-arrow hidden size-4 sm:block'
-											viewBox='0 0 24 24'
-											fill='none'
-											stroke='currentColor'
-											strokeWidth='2'
-											strokeLinecap='round'
-											strokeLinejoin='round'
-											aria-hidden='true'
-										>
-											<path d='M5 12h14M13 6l6 6-6 6' />
-										</svg>
+									{/* The date and the way in, filling crimson with the card's hover. */}
+									<div className='flex items-center justify-between gap-3 border-t border-[var(--rule)] px-5 py-3 text-[0.8125rem] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'>
+										<span className='text-[var(--ink-3)] group-hover:text-white/85'>{record.dateDisplay}</span>
+										<span className='inline-flex items-center gap-1.5 font-semibold'>
+											Read it
+											<svg className='size-3.5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
+												<path d='M5 12h14M13 6l6 6-6 6' />
+											</svg>
+										</span>
 									</div>
 								</Link>
 							))}
+							</div>
 
 							{pageTotal > 1 ? (
 								<Pagination

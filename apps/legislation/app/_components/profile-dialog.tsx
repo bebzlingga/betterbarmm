@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowLeftIcon, ArrowRightIcon, XIcon } from '@phosphor-icons/react'
+import { MEMBER_CARD } from './member-avatar'
 import { useEffect, useRef } from 'react'
 
 // The page under an open profile stays put. The lock follows whether a profile is open now, not which one
@@ -73,7 +74,7 @@ export function ProfileDialog({
 					syncScroll()
 				}}
 				aria-haspopup='dialog'
-				className='flex h-full w-full cursor-pointer flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 text-left transition hover:border-[var(--ink)]'
+				className={`w-full cursor-pointer ${MEMBER_CARD}`}
 			>
 				{card}
 			</button>
