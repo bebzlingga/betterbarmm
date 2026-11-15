@@ -1,10 +1,10 @@
-import { ArrowRightIcon, BuildingsIcon, EyeIcon, GraduationCapIcon, HandHeartIcon, NewspaperIcon, SealCheckIcon, TextAaIcon, UsersThreeIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, BuildingsIcon, CompassIcon, EyeIcon, GraduationCapIcon, HandHeartIcon, NewspaperIcon, SealCheckIcon, SquaresFourIcon, TextAaIcon, UsersThreeIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { Directory } from '../_components/directory'
-import { Masthead, SectionHead } from '../_components/masthead'
+import { CARD, ICON_TILE, PageBand, SectionTitle } from '../_components/page-band'
 import { datasets } from '../_lib/open-data'
 import { SiteHeader } from '../_components/site-header'
 import { projects, workspaces } from '../_lib/workspaces'
@@ -23,8 +23,6 @@ export const metadata: Metadata = pageMeta({
    for, and what it is not — in that order, because that is the order
    the questions arrive in.
    ============================================================ */
-
-const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
 
 // Counted from the front page's lists and the open-data catalogue, so a page added there is counted here.
 const figures = [
@@ -69,107 +67,111 @@ export default function AboutPage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='about' />
 
-			<Masthead
-				brand
+			<PageBand
 				label='About BetterBARMM'
-				lines={['Public records,', 'made readable.']}
-				muted={[1]}
-				size='display'
-				scrollTo='#purpose'
-				scrollLabel='Our purpose'
+				title='Public records, made readable'
 				standfirst='BetterBARMM is an independent transparency project for the Bangsamoro. It takes the region’s own public record, puts it in one place, explains it in plain language, and keeps it one click from the document it came from.'
+				jumps={[
+					{ href: '#purpose', label: 'Our purpose', icon: CompassIcon },
+					{ href: '#covers', label: 'What it covers', icon: SquaresFourIcon },
+					{ href: '#rules', label: 'How it works', icon: SealCheckIcon },
+					{ href: '#readers', label: 'Who it is for', icon: UsersThreeIcon },
+				]}
 			/>
 
-			{/* ---- Purpose ---- */}
-			<section id='purpose' className='bb-container scroll-mt-24 bb-section'>
-				<div className='grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-20'>
+			{/* ---- Purpose: the argument on the left, the size of the thing beside it as figures. ---- */}
+			<section id='purpose' aria-labelledby='purpose-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+				<div className='grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-16'>
 					<div>
-						<p className='bb-label'>Our purpose</p>
-						<h2 className={`${H2} mt-4 lg:text-[2.25rem]`}>
+						<h2 id='purpose-title' className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] lg:text-[2.125rem]'>
 							So that anyone can check what their government does.
 						</h2>
-					</div>
-					<div className='space-y-5 text-[1rem] leading-8 text-[var(--ink-2)] lg:pt-9'>
-						<p>
-							What the Bangsamoro government decides, spends and promises is public in principle. In practice it
-							arrives as scanned PDFs spread across many agency websites, each with its own idea of an index. A record
-							that has been posted has been disclosed, but not yet opened.
-						</p>
-						<p>
-							BetterBARMM closes that gap. It gathers the records, dates and labels them, makes them searchable, and
-							explains them in plain words, so an ordinary question (what does this cost, who voted for it, which town
-							is this about) takes minutes instead of an afternoon.
-						</p>
-					</div>
-				</div>
-
-				<dl className='mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-[3px] border border-[var(--rule)] bg-[var(--rule)] lg:mt-20 lg:grid-cols-4'>
-					{figures.map((f) => (
-						<div key={f.label} className='bg-[var(--paper)] p-6 lg:p-7'>
-							<dd className='bb-figure-sm text-[var(--ink)]'>{f.value}</dd>
-							<dt className='mt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>{f.label}</dt>
-							<p className='mt-2 text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>{f.note}</p>
+						<div className='mt-6 space-y-5 text-[1rem] leading-8 text-[var(--ink-2)]'>
+							<p>
+								What the Bangsamoro government decides, spends and promises is public in principle. In practice it arrives as scanned
+								PDFs spread across many agency websites, each with its own idea of an index. A record that has been posted has been
+								disclosed, but not yet opened.
+							</p>
+							<p>
+								BetterBARMM closes that gap. It gathers the records, dates and labels them, makes them searchable, and explains them in
+								plain words, so an ordinary question (what does this cost, who voted for it, which town is this about) takes minutes
+								instead of an afternoon.
+							</p>
 						</div>
-					))}
-				</dl>
+					</div>
+					<dl className='grid grid-cols-2 content-start gap-4'>
+						{figures.map((f) => (
+							<div key={f.label} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 text-center'>
+								<dd className='num text-[2.75rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{f.value}</dd>
+								<dt className='mt-3 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink)]'>{f.label}</dt>
+								<p className='mt-1.5 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>{f.note}</p>
+							</div>
+						))}
+					</dl>
+				</div>
 			</section>
 
 			{/* ---- What it covers: the front page's own grid, filters and all ---- */}
-			<section className='bg-[var(--paper-2)]'>
+			<section id='covers' aria-labelledby='covers-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] bg-[var(--paper-2)]'>
 				<div className='bb-container bb-section'>
-					<SectionHead index='01' eyebrow='What it covers' title='Every workspace,' titleMuted='and what it holds.' lead='Each built around one part of the public record, and every record traced back to its source.' />
-					<div className='mt-10'>
+					<SectionTitle id='covers' title='Every workspace, and what it holds' lead='Each built around one part of the public record, and every record traced back to its source.' />
+					<div className='mt-8'>
 						<Directory workspaces={workspaces} projects={projects} />
 					</div>
 				</div>
 			</section>
 
 			{/* ---- How it works ---- */}
-			<section className='bb-container bb-section'>
-				<SectionHead index='02' eyebrow='How it works' title='Four rules,' titleMuted='on every page.' />
-				<div className='mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+			<section id='rules' aria-labelledby='rules-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+				<SectionTitle id='rules' title='Four rules, on every page' lead='What a reader can hold every page on this site to.' />
+				<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 					{principles.map((p, i) => (
-						<div key={p.title} className='flex flex-col rounded-[3px] border border-[var(--rule)] p-6 lg:p-7'>
-							<span className='flex items-center justify-between'>
-								<span className='grid size-11 place-items-center rounded-full bg-[var(--accent-soft)] text-[var(--accent)]'>
-									<p.icon size={22} weight='duotone' aria-hidden='true' />
+						<li key={p.title} className={CARD}>
+							<div className='flex flex-1 flex-col p-6'>
+								<span className='flex items-start justify-between'>
+									<span className={ICON_TILE}>
+										<p.icon size={24} weight='duotone' aria-hidden='true' />
+									</span>
+									<span className='num text-[1.75rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--rule)] transition-colors group-hover:text-[var(--accent)]'>
+										{String(i + 1).padStart(2, '0')}
+									</span>
 								</span>
-								<span className='num font-mono text-[0.6875rem] font-semibold text-[var(--ink-mute)]'>{String(i + 1).padStart(2, '0')}</span>
-							</span>
-							<h3 className='mt-6 text-[1.15rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{p.title}</h3>
-							<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{p.body}</p>
-						</div>
-					))}
-				</div>
-			</section>
-
-			{/* ---- Who it is for ---- */}
-			<section className='bb-container bb-section-bottom'>
-				<SectionHead index='03' eyebrow='Who it is for' title='Anyone with' titleMuted='a question about the region.' />
-				<ul className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
-					{readers.map((r) => (
-						<li key={r.who} className='bg-[var(--paper-2)] p-6'>
-							<span className='grid size-11 place-items-center rounded-full bg-[var(--accent)] text-white'>
-								<r.icon size={22} weight='fill' aria-hidden='true' />
-							</span>
-							<p className='mt-5 text-[1rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{r.who}</p>
-							<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-2)]'>{r.what}</p>
+								<h3 className='mt-6 text-[1.0625rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{p.title}</h3>
+								<p className='mt-2 text-[0.875rem] leading-[1.65] text-[var(--ink-2)]'>{p.body}</p>
+							</div>
 						</li>
 					))}
 				</ul>
 			</section>
 
-			{/* ---- What it is not ---- */}
-			<section className='bg-[var(--paper-2)]'>
-				<div className='bb-container grid gap-6 py-[clamp(3.75rem,7vw,6.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:gap-20'>
-					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] lg:text-[2.25rem]'>
-						Independent, not an official source.
-					</h2>
-					<p className='text-[1rem] leading-8 text-[var(--ink-2)]'>
-						BetterBARMM is not an official authority and does not speak for the Bangsamoro Government. Where it summarises
-						a document, reorganises a table or explains a record in its own words, the original is still what settles the
-						question, which is why the original is always linked.
-					</p>
+			{/* ---- Who it is for ---- */}
+			<section id='readers' aria-labelledby='readers-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section-bottom'>
+				<SectionTitle id='readers' title='Anyone with a question about the region' />
+				<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+					{readers.map((r) => (
+						<li key={r.who} className='flex gap-4 border border-[var(--rule)] bg-[var(--paper-2)] p-5'>
+							<span className='grid size-11 shrink-0 place-items-center rounded-full bg-[var(--accent)] text-white'>
+								<r.icon size={22} weight='fill' aria-hidden='true' />
+							</span>
+							<span className='min-w-0'>
+								<span className='block text-[1rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{r.who}</span>
+								<span className='mt-1 block text-[0.84375rem] leading-[1.6] text-[var(--ink-2)]'>{r.what}</span>
+							</span>
+						</li>
+					))}
+				</ul>
+
+				{/* ---- What it is not ---- */}
+				<div className='mt-10 flex flex-col gap-5 border-l-4 border-[var(--accent)] bg-[var(--accent-soft)] p-6 sm:flex-row lg:p-8'>
+					<WarningCircleIcon size={32} weight='duotone' className='shrink-0 text-[var(--accent)]' aria-hidden='true' />
+					<div>
+						<h2 className='text-[1.375rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>Independent, not an official source.</h2>
+						<p className='mt-2 max-w-4xl text-[0.9375rem] leading-[1.75] text-[var(--ink-2)]'>
+							BetterBARMM is not an official authority and does not speak for the Bangsamoro Government. Where it summarises a document,
+							reorganises a table or explains a record in its own words, the original is still what settles the question, which is why
+							the original is always linked.
+						</p>
+					</div>
 				</div>
 			</section>
 

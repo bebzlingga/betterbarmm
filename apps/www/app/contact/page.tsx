@@ -1,8 +1,7 @@
 import { ArrowRightIcon, ArrowUpRightIcon, BuildingsIcon, EnvelopeSimpleIcon, FacebookLogoIcon, FlagIcon, PhoneIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
-import { Masthead, SectionHead } from '../_components/masthead'
+import { BADGE, CARD, CARD_FOOT, ICON_TILE, PageBand, SectionTitle } from '../_components/page-band'
 import { SiteHeader } from '../_components/site-header'
 import { hotlines, telHref } from '../_lib/directory'
 import { pageMeta } from '../_lib/seo'
@@ -49,92 +48,91 @@ export default function ContactPage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
-			<Masthead
-				brand
+			<PageBand
 				label='Contact BetterBARMM'
-				lines={['Get in touch.', 'We read everything.']}
-				muted={[1]}
+				title='Get in touch'
 				standfirst='BetterBARMM is an independent project, not a government office. Write to us about the site and its records; for a ministry, a town hall or an emergency, the right numbers are below.'
+				jumps={[
+					{ href: '#reach', label: 'Reach the project', icon: EnvelopeSimpleIcon },
+					{ href: '#government', label: 'Reach the government', icon: BuildingsIcon },
+					{ href: '#emergency', label: 'Emergency', icon: SirenIcon },
+				]}
 			/>
 
 			{/* ---- The project ---- */}
-			<section className='bb-container bb-section'>
-				<SectionHead index='01' eyebrow='Reach the project' title='Three ways' titleMuted='to reach us.' />
-				<Stagger gap={0.08} className='mt-10 grid gap-4 md:grid-cols-3'>
+			<section id='reach' aria-labelledby='reach-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+				<SectionTitle id='reach' title='Three ways to reach us' lead='One team maintains every workspace on the site; any of these reaches it.' />
+				<ul className='mt-8 grid gap-4 md:grid-cols-3'>
 					{channels.map((c) => (
-						<StaggerItem key={c.label} className='h-full'>
-							<a
-								href={c.href}
-								{...(c.external ? { target: '_blank', rel: 'noreferrer' } : {})}
-								className='group flex h-full flex-col rounded-[3px] border border-[var(--rule)] p-6 transition hover:border-[var(--ink-3)] lg:p-7'
-							>
-								<span className='flex items-center justify-between'>
-									<span className='grid size-11 place-items-center rounded-full bg-[var(--accent-soft)] text-[var(--accent)] transition group-hover:bg-[var(--accent)] group-hover:text-white'>
-										<c.icon size={22} weight='duotone' aria-hidden='true' />
-									</span>
-									<span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>{c.label}</span>
+						<li key={c.label} className={CARD}>
+							<div className='flex flex-1 flex-col items-center px-6 pb-6 pt-8 text-center'>
+								<span className={ICON_TILE}>
+									<c.icon size={24} weight='duotone' aria-hidden='true' />
 								</span>
-								<p className='mt-6 break-words text-[1.15rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{c.title}</p>
-								<p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>{c.body}</p>
-								<span className='mt-6 inline-flex items-center gap-1.5 border-t border-[var(--rule)] pt-4 text-[0.8125rem] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>
-									{c.action}
-									{c.external ? (
-										<ArrowUpRightIcon className='ml-auto size-3.5' weight='bold' aria-hidden='true' />
-									) : (
-										<ArrowRightIcon className='ml-auto size-3.5' weight='bold' aria-hidden='true' />
-									)}
-								</span>
-							</a>
-						</StaggerItem>
+								<span className={`${BADGE} mt-4`}>{c.label}</span>
+								<p className='mt-3 break-words text-[1.125rem] font-extrabold leading-snug tracking-[-0.02em]'>
+									{/* The card's one link, stretched over it. */}
+									<a href={c.href} {...(c.external ? { target: '_blank', rel: 'noreferrer' } : {})} className='after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
+										{c.title}
+									</a>
+								</p>
+								<p className='mt-2 text-[0.875rem] leading-[1.65] text-[var(--ink-2)]'>{c.body}</p>
+							</div>
+							<p className={CARD_FOOT}>
+								{c.action}
+								{c.external ? <ArrowUpRightIcon size={13} weight='bold' aria-hidden='true' /> : <ArrowRightIcon size={13} weight='bold' aria-hidden='true' />}
+							</p>
+						</li>
 					))}
-				</Stagger>
-				<Rise delay={0.1} distance={12}>
-					<p className='mt-6 text-[0.875rem] text-[var(--ink-3)]'>
-						Sending a source or a correction?{' '}
-						<Link href='/contribute' className='font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
-							Here is what to include
-						</Link>
-						, so it can be checked quickly.
-					</p>
-				</Rise>
+				</ul>
+				<p className='mt-6 text-[0.875rem] text-[var(--ink-3)]'>
+					Sending a source or a correction?{' '}
+					<Link href='/contribute' className='font-semibold text-[var(--ink)] underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
+						Here is what to include
+					</Link>
+					, so it can be checked quickly.
+				</p>
 			</section>
 
 			{/* ---- The government ---- */}
-			<section className='bg-[var(--paper-2)]'>
+			<section id='government' aria-labelledby='government-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] bg-[var(--paper-2)]'>
 				<div className='bb-container bb-section'>
-					<SectionHead
-						index='02'
-						eyebrow='Not us'
-						title='Need the government?'
-						titleMuted='Go straight to it.'
+					<SectionTitle
+						id='government'
+						title='Need the government? Go straight to it'
 						lead='We cannot act on a request to a ministry, a permit or a complaint about a service. These reach the people who can.'
 					/>
-					<div className='mt-10 grid gap-4 lg:grid-cols-[1.2fr_1fr]'>
-						<Link
-							href='/directory'
-							className='group flex flex-col justify-between gap-8 rounded-[3px] bg-[var(--paper)] p-6 transition hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)] lg:p-8'
-						>
-							<span className='grid size-11 place-items-center rounded-full bg-[var(--accent-soft)] text-[var(--accent)]'>
-								<BuildingsIcon size={22} weight='duotone' aria-hidden='true' />
-							</span>
-							<span>
-								<span className='block text-[1.5rem] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>The Directory</span>
-								<span className='mt-3 block bb-body text-[var(--ink-2)]'>
-									Every regional office and its head, the national offices in the region, every governor and mayor, each town&rsquo;s
-									police, fire and health lines, and the 80 Members of Parliament.
+					<div className='mt-8 grid gap-4 lg:grid-cols-[1.2fr_1fr]'>
+						<div className={CARD}>
+							<div className='flex flex-1 gap-5 p-6 lg:p-8'>
+								<span className={`${ICON_TILE} shrink-0`}>
+									<BuildingsIcon size={24} weight='duotone' aria-hidden='true' />
 								</span>
-								<span className='mt-5 inline-flex items-center gap-1.5 text-[0.875rem] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>
-									Find an office <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
+								<span className='min-w-0'>
+									<Link href='/directory' className='text-[1.375rem] font-extrabold leading-tight tracking-[-0.025em] after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
+										The Directory
+									</Link>
+									<span className='mt-2 block text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
+										Every regional office and its head, the national offices in the region, every governor and mayor, each town&rsquo;s police,
+										fire and health lines, and the 80 Members of Parliament.
+									</span>
 								</span>
-							</span>
-						</Link>
+							</div>
+							<p className={CARD_FOOT}>
+								Find an office <ArrowRightIcon size={13} weight='bold' aria-hidden='true' />
+							</p>
+						</div>
 
-						<div className='flex flex-col rounded-[3px] bg-[#8f2328] p-6 text-white lg:p-8'>
+						<div id='emergency' className='flex scroll-mt-[calc(var(--site-header-h)+1rem)] flex-col bg-[#8f2328] p-6 text-white lg:p-8'>
 							<span className='flex items-center gap-3'>
-								<SirenIcon size={26} weight='fill' aria-hidden='true' />
-								<span className='text-[1.25rem] font-extrabold'>In an emergency, call 911</span>
+								<span className='grid size-12 shrink-0 place-items-center bg-white/15'>
+									<SirenIcon size={26} weight='fill' aria-hidden='true' />
+								</span>
+								<span>
+									<span className='block text-[1.375rem] font-extrabold leading-tight'>In an emergency, call 911</span>
+									<span className='mt-1 block text-[0.84375rem] text-white/80'>Each town&rsquo;s own police, fire and health lines are on its page in the Directory.</span>
+								</span>
 							</span>
-							<p className='mt-2 text-[0.875rem] text-white/80'>Each town&rsquo;s own police, fire and health lines are on its page in the Directory.</p>
 							{hotlines.length ? (
 								<ul className='mt-6 grid gap-3 border-t border-white/20 pt-5'>
 									{hotlines.map((h) => (

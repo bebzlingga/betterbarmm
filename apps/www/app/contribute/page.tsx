@@ -1,13 +1,12 @@
-import { ArrowRightIcon, ArrowUpRightIcon, BookOpenTextIcon, CheckIcon, CodeIcon, EnvelopeSimpleIcon, MagnifyingGlassIcon, PaperclipIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, ArrowUpRightIcon, BookOpenTextIcon, CheckIcon, CodeIcon, EnvelopeSimpleIcon, ListNumbersIcon, MagnifyingGlassIcon, PaperclipIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
-import { CtaAction, CtaPanel, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { photo } from '../_components/discover-media'
-import { Masthead, SectionHead } from '../_components/masthead'
+import { BADGE, CARD, CARD_FOOT, ICON_TILE, PageBand, SectionTitle } from '../_components/page-band'
 import { QuoteBand } from '../_components/quote-band'
 import { SiteHeader } from '../_components/site-header'
-import { StepList } from '../_components/step-list'
 
 export const metadata: Metadata = pageMeta({
 	title: 'Contribute',
@@ -99,70 +98,74 @@ export default function ContributePage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='contribute' />
 
-			<Masthead
-				brand
+			<PageBand
 				label='Contribute to BetterBARMM'
-				lines={['Help make public', 'records usable.']}
-				muted={[1]}
+				title='Help make public records usable'
 				standfirst='BetterBARMM is a public transparency project. If you have source documents, corrections, local context, research notes, or skills that can make Bangsamoro public information clearer, we want to hear from you.'
+				jumps={[
+					{ href: '#ways', label: 'Ways to help', icon: PaperclipIcon },
+					{ href: '#include', label: 'What to include', icon: CheckIcon },
+					{ href: '#next', label: 'What happens next', icon: ListNumbersIcon },
+				]}
 			>
-				<a href='mailto:support@betterbarmm.com' className='bb-btn bb-btn-solid'>
-					<EnvelopeSimpleIcon size={15} weight='fill' aria-hidden='true' />
+				{/* Fixed colours: inside the band, --paper and --ink point at its crimson ground. */}
+				<a href='mailto:support@betterbarmm.com' className='inline-flex items-center gap-2 bg-white px-5 py-3 text-[0.875rem] font-bold text-[#8f2328] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)] transition hover:bg-[#fff3cf]'>
+					<EnvelopeSimpleIcon size={16} weight='fill' aria-hidden='true' />
 					support@betterbarmm.com
 				</a>
-				<Link href='/about' className='bb-btn bb-btn-ghost'>
-					How this is built
-				</Link>
-			</Masthead>
+			</PageBand>
 
 			{/* ---- Ways to help ---- */}
-			<section className='bb-container bb-section'>
-				<SectionHead
-					index='01'
-					eyebrow='Ways to help'
-					title='Small contributions'
-					titleMuted='improve the record.'
+			<section id='ways' aria-labelledby='ways-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+				<SectionTitle
+					id='ways'
+					title='Small contributions improve the record'
 					lead='Every useful correction, source link, and review note makes the portal more reliable for citizens, journalists, researchers, and public servants.'
 				/>
 
-				<Stagger gap={0.1} className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+				<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 					{contributionPaths.map((item) => (
-						<StaggerItem key={item.label} className='h-full'>
-							<a
-								href={mail(item.subject)}
-								className='group flex h-full flex-col rounded-[3px] border border-[var(--rule)] bg-[var(--paper)] p-6 transition hover:border-[var(--ink-3)] lg:p-7'
-							>
-								<span className='flex items-center justify-between'>
-									<span className='grid size-11 place-items-center rounded-full bg-[var(--accent-soft)] text-[var(--accent)] transition group-hover:bg-[var(--accent)] group-hover:text-white'>
-										<item.icon size={22} weight='duotone' aria-hidden='true' />
-									</span>
-									<span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-mute)]'>{item.label}</span>
+						<li key={item.label} className={CARD}>
+							<div className='flex flex-1 flex-col items-center px-5 pb-6 pt-8 text-center'>
+								<span className={ICON_TILE}>
+									<item.icon size={24} weight='duotone' aria-hidden='true' />
 								</span>
-								<h3 className='mt-6 text-[1.1rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{item.title}</h3>
-								<p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>{item.description}</p>
-								<span className='mt-6 inline-flex items-center gap-1.5 border-t border-[var(--rule)] pt-4 text-[0.8125rem] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>
-									<EnvelopeSimpleIcon size={15} aria-hidden='true' /> Email a {item.subject.toLowerCase()}
-									<ArrowUpRightIcon className='ml-auto size-3.5' weight='bold' aria-hidden='true' />
+								<span className={`${BADGE} mt-4`}>{item.label}</span>
+								<h3 className='mt-3 text-[1.0625rem] font-extrabold leading-snug tracking-[-0.02em]'>
+									{/* An email already titled for this kind of help; the whole card opens it. */}
+									<a href={mail(item.subject)} className='after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
+										{item.title}
+									</a>
+								</h3>
+								<p className='mt-2 text-[0.84375rem] leading-[1.65] text-[var(--ink-2)]'>{item.description}</p>
+							</div>
+							<p className={CARD_FOOT}>
+								<span className='inline-flex items-center gap-1.5'>
+									<EnvelopeSimpleIcon size={14} aria-hidden='true' /> Email a {item.subject.toLowerCase()}
 								</span>
-							</a>
-						</StaggerItem>
+								<ArrowUpRightIcon size={13} weight='bold' aria-hidden='true' />
+							</p>
+						</li>
 					))}
-				</Stagger>
+				</ul>
 
 				{/* What to put in it. */}
-				<Rise delay={0.1} distance={14}>
-					<div className='mt-6 grid gap-6 rounded-[3px] bg-[var(--paper-2)] p-6 lg:grid-cols-[16rem_minmax(0,1fr)] lg:p-8'>
+				<div id='include' className='mt-6 grid scroll-mt-[calc(var(--site-header-h)+1rem)] gap-6 border border-[var(--rule)] bg-[var(--paper-2)] p-6 lg:grid-cols-[16rem_minmax(0,1fr)] lg:p-8'>
+					<div>
 						<p className='text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>What to include</p>
-						<ul className='grid gap-3 sm:grid-cols-2'>
-							{include.map((line) => (
-								<li key={line} className='flex gap-3 text-[0.9375rem] leading-[1.6] text-[var(--ink-2)]'>
-									<CheckIcon size={18} weight='bold' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
-									{line}
-								</li>
-							))}
-						</ul>
+						<p className='mt-1 text-[0.8125rem] leading-[1.6] text-[var(--ink-3)]'>Each email above opens with these as headings.</p>
 					</div>
-				</Rise>
+					<ul className='grid gap-3 sm:grid-cols-2'>
+						{include.map((line) => (
+							<li key={line} className='flex gap-3 bg-[var(--paper)] p-3.5 text-[0.90625rem] leading-[1.55] text-[var(--ink-2)]'>
+								<span className='grid size-6 shrink-0 place-items-center rounded-full bg-[var(--accent)] text-white'>
+									<CheckIcon size={13} weight='bold' aria-hidden='true' />
+								</span>
+								{line}
+							</li>
+						))}
+					</ul>
+				</div>
 			</section>
 
 			<QuoteBand
@@ -172,18 +175,23 @@ export default function ContributePage() {
 				height='short'
 			/>
 
-			{/* ---- What happens next ---- */}
-			<section className='bb-container bb-section'>
-				<SectionHead
-					index='02'
-					eyebrow='What happens next'
-					title='Four steps,'
-					titleMuted='and none of them hidden.'
-				/>
-
-				<div className='pt-6 lg:pt-10'>
-					<StepList steps={whatHappens} layout='row' />
-				</div>
+			{/* ---- What happens next: the four steps as numbered cards, joined by an arrow on a wide screen. ---- */}
+			<section id='next' aria-labelledby='next-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+				<SectionTitle id='next' title='Four steps, and none of them hidden' lead='Where what you send goes, from your email to the page.' />
+				<ol className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+					{whatHappens.map((step, i) => (
+						<li key={step.title} className='relative flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-6'>
+							<span className='num text-[2.5rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{String(i + 1).padStart(2, '0')}</span>
+							<h3 className='mt-4 text-[1.0625rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{step.title}</h3>
+							<p className='mt-2 text-[0.84375rem] leading-[1.65] text-[var(--ink-2)]'>{step.description}</p>
+							{i < whatHappens.length - 1 ? (
+								<span aria-hidden='true' className='absolute -right-[0.95rem] top-9 z-1 hidden size-7 place-items-center rounded-full border border-[var(--rule)] bg-[var(--paper)] text-[var(--accent)] lg:grid'>
+									<ArrowRightIcon size={13} weight='bold' />
+								</span>
+							) : null}
+						</li>
+					))}
+				</ol>
 			</section>
 
 			<CtaPanel
