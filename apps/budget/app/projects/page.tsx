@@ -8,7 +8,7 @@ import { ProjectBrowser } from '../_components/project-browser'
 import { ProjectCharts } from '../_components/project-charts'
 import { otherYearsFor, RepeatProjects } from '../_components/repeat-projects'
 import { ProjectMap } from '../_components/project-map'
-import { SectionHead } from '@betterbarmm/editorial'
+import { SectionTitle } from '../_components/page-figures'
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ fy?: string }> }): Promise<Metadata> {
 	const { budget, projects } = budgetFor((await searchParams).fy)
@@ -37,8 +37,8 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 			    `bb-crimson` has already re-pointed each one to the band. */}
 			<Masthead
 				kicker={`Fiscal year ${budget.fiscalYear} · Ministry of Public Works`}
-				title={`${projects.length} projects,`}
-				titleMuted='each with a place on it.'
+				title='Projects'
+				lead={`All ${projects.length} construction projects the Act itemises, each with a place on it: roads, bridges, flood control and buildings, by area and by kind.`}
 			>
 				<Rise delay={0.3} distance={14}>
 					<div className='mt-12'>
@@ -57,11 +57,8 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 			<section className='bg-[var(--paper-2)]'>
 				<div className='bb-container flex flex-wrap items-center justify-between gap-x-16 gap-y-6 py-12 lg:py-14'>
 					<div className='max-w-[46rem]'>
-						<p className='bb-label'>On the map</p>
-						<h2 className='bb-display-sm mt-3 text-[var(--ink)]'>
-							Where the money <span className='bb-mute'>is being built.</span>
-						</h2>
-						<p className='bb-body mt-4 text-[var(--ink-2)]'>
+						<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Where the money is being built</h2>
+						<p className='mt-2 text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
 							Every project whose name says where it is, on that barangay or town. Open the map to zoom in on a place and click a dot to see what is being built there.
 						</p>
 					</div>
@@ -70,6 +67,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 			</section>
 
 			<section id='browse' className='bb-container section-band-bottom pt-12 lg:pt-14 scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+				<SectionTitle title='Every project, largest first' lead='Search a barangay, a town or a kind of work, or narrow it by area.' className='mb-8' />
 				<Suspense
 					fallback={<BrowserSkeleton kind='projects' label={`Loading ${projects.length} projects…`} />}
 				>
@@ -91,13 +89,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 
 			{/* Across all seven Acts, whatever year is open above: a phase is only legible next to the others. */}
 			<section className='bb-container section-band'>
-				<SectionHead
-					eyebrow='Built in phases'
-					size='sm'
-					title='Funded in'
-					titleMuted='more than one Act.'
-					lead='The same road, bridge or flood wall, appropriated again in a later year. Each Act on its own shows one phase; together they show what the work costs.'
-				/>
+				<SectionTitle title='Funded in more than one Act' lead='The same road, bridge or flood wall, appropriated again in a later year. Each Act shows one phase; together they show what the work costs.' />
 				<div className='mt-8'>
 					<RepeatProjects />
 				</div>

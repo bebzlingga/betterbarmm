@@ -489,9 +489,9 @@ export default function FaqPage() {
 			<FaqSearchProvider entries={ENTRIES}>
 				<Masthead
 					center
-					kicker='FAQs'
-					title='Understand the words first,'
-					titleMuted='then the figures.'
+					kicker='Understand the words first, then the figures'
+					title='Questions about the budget'
+					lead='What the words in a budget mean, how one is made and passed, the special funds, and how to read the figures here. Search, or open a question.'
 				>
 					<FaqSearch />
 				</Masthead>

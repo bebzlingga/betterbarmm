@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Rise, SectionHead } from "@betterbarmm/editorial";
 import { budget, programs, projects, provisions } from "@betterbarmm/budget-data";
 import { Masthead } from "../_components/budget-parts";
 import { SourceFiles } from "../_components/source-files";
@@ -19,25 +18,45 @@ export const metadata: Metadata = {
  * change it, and what are you not telling me. So those are the headings.
  */
 export default function SourcesPage() {
+  const lines = (programs.length + provisions.length + projects.length).toLocaleString("en-PH");
+  // How the figures were got, a card each: where the document comes from, how it was read, and what was kept as printed.
+  const method = [
+    {
+      title: "The Act, as published",
+      body: (
+        <>
+          The Acts are published by the Bangsamoro Ministry of Finance, and Budget and Management at{" "}
+          <a href="https://mfbm.bangsamoro.gov.ph" target="_blank" rel="noreferrer" className="rule-link">
+            mfbm.bangsamoro.gov.ph
+          </a>
+          . That is the source of record; the PDFs here are those files as published.
+        </>
+      ),
+    },
+    {
+      title: "Read, not retyped",
+      body: "Every line was read from the text layer of the Act’s own PDF, not retyped and not re-totalled, and each carries the printed page it came from, so any figure can be checked against the page it was taken out of.",
+    },
+    {
+      title: "Subtotals as printed",
+      body: `Where the Act prints a subtotal, that subtotal is what appears here, including the places where the rows beneath it do not add up to it. Extracted ${budget.extractedOn}.`,
+    },
+  ];
+
   return (
     <>
       <Masthead
         kicker="Where this comes from"
-        title="Every figure traces"
-        titleMuted="back to a page."
-      >
-      </Masthead>
+        title="Sources"
+        lead={`Every figure traces back to a page. Seven fiscal years of the Act and the extraction FY ${budget.fiscalYear} was read out of: download the year you want, and the page numbers printed on this workspace take you to the line.`}
+      />
 
       {/* ---- The files ---- */}
       <section className="bb-container section-band">
-        <SectionHead
-          index="01"
-          eyebrow="Check it yourself"
-          size="sm"
-          title="Every file"
-          titleMuted="this was built from."
-          lead={`Seven fiscal years of the Act, and the extraction FY ${budget.fiscalYear} was read out of. Nothing on this workspace is a figure you have to take on trust — download the year you want and the page numbers printed on these pages will take you to the line.`}
-        />
+        <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+          <h2 className="text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]">Every file this was built from</h2>
+          <p className="max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]">Nothing here is a figure you have to take on trust.</p>
+        </div>
 
         <SourceFiles
           files={DOWNLOADS.map((file) => ({
@@ -48,96 +67,51 @@ export default function SourcesPage() {
           }))}
         />
 
-        <Rise distance={12}>
-          <div className="mt-10 border-t border-[var(--rule)] pt-6 text-[0.78125rem] leading-7 text-[var(--ink-3)]">
-            <p>
-              Page numbers printed on these pages are the Act&rsquo;s own, as it
-              numbers itself. In the PDF they sit {budget.pdfPageOffset} pages
-              later, because of the cover matter — so printed page 136 is PDF
-              page {136 + budget.pdfPageOffset}.
-            </p>
-            <p className="mt-3">
-              Extracted {budget.extractedOn}. Found an error?{" "}
-              <a href="mailto:support@betterbarmm.com" className="rule-link">
-                Tell us
-              </a>{" "}
-              — a figure that disagrees with the Act is a bug, and it will be
-              fixed and the change noted.
-            </p>
-          </div>
-        </Rise>
+        {/* How to find a printed page in the PDF, as a note card under the files. */}
+        <div className="mt-6 flex flex-col gap-2 bg-[var(--paper-2)] p-5 text-[0.84375rem] leading-[1.65] text-[var(--ink-2)] sm:flex-row sm:gap-6">
+          <p className="shrink-0 font-mono text-[0.625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)] sm:pt-1">Page numbers</p>
+          <p>
+            The page numbers on this workspace are the Act&rsquo;s own, as it numbers itself. In the PDF they sit {budget.pdfPageOffset} pages
+            later, because of the cover matter, so printed page 136 is PDF page {136 + budget.pdfPageOffset}.
+          </p>
+        </div>
       </section>
 
-      {/* How those figures were got, and how they could still be wrong. Under
-          the files rather than over them (user decision): a reader who came for
-          a download reaches it first, and the method is what they read once the
-          document is in front of them. On the light ground so it reads as a
-          statement about the page rather than as more of the page. */}
+      {/* ---- How the figures were got, and how they could still be wrong ---- */}
       <section className="bg-[var(--paper-2)]">
         <div className="bb-container section-band">
-          {/* One column at full width (user decision): how the figures were got,
-					    then, under a rule, how they could still be wrong. */}
-          <div className="grid gap-y-8 text-[0.9375rem] leading-8 text-[var(--ink-2)]">
-            <div>
-              {/* Where the document itself comes from, before anything about how
-                  it was read. The Ministry publishes the Acts; this workspace only
-                  transcribes what it publishes, and a reader who distrusts the
-                  transcription should be able to go straight past it. */}
-              <p>
-                The Acts are published by the Bangsamoro Ministry of Finance,
-                and Budget and Management at{" "}
-                <a
-                  href="https://mfbm.bangsamoro.gov.ph"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rule-link"
-                >
-                  mfbm.bangsamoro.gov.ph
-                </a>
-                . That is the source of record; the PDFs offered below are those
-                files as published.
-              </p>
-              <p className="mt-4">
-                Every one of those lines was read from the text layer of the
-                Act&rsquo;s own PDF, not retyped and not re-totalled, and each
-                carries the printed page it came from so any figure on this
-                workspace can be checked against the page it was taken out of.
-              </p>
-              <p className="mt-4">
-                Where the Act prints a subtotal, that subtotal is what appears
-                here — including the places where the rows beneath it do not add
-                up to it. Extracted {budget.extractedOn}.
-              </p>
-            </div>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+            <h2 className="text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]">How the figures were made</h2>
+            <p className="max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]">From the published Act to a line on this workspace.</p>
+          </div>
 
-            {/* The caveat belongs beside the claim, not in a footnote under it. A
-						    page that says its figures are checkable has to say in the same
-						    breath how they could still be wrong.
+          <ol className="mt-8 grid gap-4 md:grid-cols-3">
+            {method.map((step, index) => (
+              <li key={step.title} className="flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-6">
+                <span className="num text-[2rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]">{String(index + 1).padStart(2, "0")}</span>
+                <h3 className="mt-4 text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]">{step.title}</h3>
+                <p className="mt-2 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]">{step.body}</p>
+              </li>
+            ))}
+          </ol>
 
-						    The rule divides them only when they are stacked; side by side the
-						    gutter already does it. */}
-            <p className="border-t border-[var(--rule)] pt-5 text-[var(--ink-3)]">
-              <strong className="font-semibold text-[var(--ink)]">
-                These figures are machine-read, and some of them will be wrong.
-              </strong>{" "}
-              The Act is a PDF, and the{" "}
-              {(
-                programs.length +
-                provisions.length +
-                projects.length
-              ).toLocaleString("en-PH")}{" "}
-              lines on this workspace had to be pulled out of one — glyph by
-              glyph in places, where the file&rsquo;s own encoding had to be
-              normalised before a digit could be read at all. An extraction that
-              size misreads some of what it reads. Every line is being checked
-              against the printed page by hand, on a rolling basis, and
-              corrections go in as they are found. Where a figure here disagrees
-              with the Act, the Act is right —{" "}
-              <a href="mailto:support@betterbarmm.com" className="rule-link">
-                tell us
-              </a>{" "}
-              and it will be fixed.
+          {/* The caveat beside the claim, not in a footnote under it: a page that says its figures are checkable says in
+              the same breath how they could still be wrong. */}
+          <div className="mt-4 bg-[#8f2328] p-6 text-white lg:p-8">
+            <p className="font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[#f6cf7a]">Some of these will be wrong</p>
+            <p className="mt-3 max-w-4xl text-[0.9375rem] leading-[1.75] text-white/90">
+              <strong className="font-semibold text-white">These figures are machine-read.</strong> The Act is a PDF, and the {lines}{" "}lines on this
+              workspace had to be pulled out of one, glyph by glyph in places, where the file&rsquo;s own encoding had to be normalised before a
+              digit could be read at all. An extraction that size misreads some of what it reads. Every line is being checked against the printed
+              page by hand, on a rolling basis, and corrections go in as they are found. Where a figure here disagrees with the Act, the Act is
+              right.
             </p>
+            <a
+              href="mailto:support@betterbarmm.com"
+              className="mt-6 inline-flex items-center gap-2 bg-white px-5 py-3 text-[0.8125rem] font-bold text-[#8f2328] transition hover:bg-[#fff3cf]"
+            >
+              Tell us about an error
+            </a>
           </div>
         </div>
       </section>

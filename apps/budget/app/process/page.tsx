@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { TableOfContents } from '@betterbarmm/editorial'
 import { budget, formatNumber, budgetFor } from '@betterbarmm/budget-data'
 import { Masthead } from '../_components/budget-parts'
 
@@ -140,123 +139,72 @@ const PHASES = [
 const slug = (phase: string) => phase.toLowerCase()
 
 export default function ProcessPage() {
+	const steps = PHASES.reduce((n, phase) => n + phase.steps.length, 0)
 	return (
 		<>
-			{/* The claim no longer promises a second half. It said "and a different
-			    four in a town" over a comparison that has since been taken out. */}
 			<Masthead
 				kicker='How a budget is made'
-				title='From a budget call'
-				titleMuted='to an audited peso.'
+				title='The budget process'
+				lead={`From a budget call to an audited peso: the four phases a Bangsamoro budget moves through, ${steps} steps in all, checked against MFBM’s own budget cycle.`}
 			/>
 
-			{/* ---- The region ---- */}
-			{/* The reading column, with a standing index in the margin beside it
-			    (user decision). Four phases is a short list, but each one runs to a
-			    screen and a half, and without the index a reader deep in Execution
-			    has no way of knowing there is an Accountability phase under it.
-
-			    The pair ranges to the container's left edge, under a masthead that
-			    now does the same (user decision), so the column starts where the
-			    heading above it starts. Both were centerd together; they move
-			    together.
-
-			    62rem, not the 54rem it was: the index is 13rem and the gap 6rem, so
-			    against the container's 84rem of usable width the column can take
-			    that much and still clear the index. The cap on the prose inside each
-			    phase went up with it, 3xl to 4xl — widening only the column would
-			    have made the column wider and nothing in it, because every block in
-			    a phase was capped well inside it.
-
-			    Below `lg` the index goes rather than restacking: a set of jump links
-			    above the article would only delay the article. */}
-			<section className='bb-container section-band'>
-				<div className='gap-x-16 lg:grid lg:grid-cols-[minmax(0,62rem)_13rem] xl:gap-x-24'>
-				<div className='min-w-0 max-w-[62rem]'>
-					<ol>
-						{PHASES.map((phase) => (
-							<li
-								key={phase.phase}
-								id={slug(phase.phase)}
-								/* Matched to the offset the index pins at, so a jump lands the
-								   heading level with its own entry rather than under the bar. */
-								className='scroll-mt-32 border-t border-[var(--brass-line)] py-10 first:border-t-0 first:pt-0'
+			{/* The four phases as cards, numbered in the order a budget takes them; each opens its phase below (user
+			    decision: the index in the margin is gone, the cards are the way down). */}
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<ol className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+					{PHASES.map((phase, index) => (
+						<li key={phase.phase}>
+							<a
+								href={`#${slug(phase.phase)}`}
+								className='group flex h-full flex-col border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
 							>
-								<div>
-									<h3 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
-										{phase.phase}
-									</h3>
-									<p className='mt-2 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
-										{phase.who}
-									</p>
-
-									<p className='mt-5 max-w-4xl text-[1rem] leading-[1.7] text-[var(--ink-2)]'>
-										{phase.what}
-									</p>
-
-									{/* A rail rather than a list of rules.
-
-									    The steps inside a phase are a sequence in time — a budget
-									    call, then proposals against it, then the cutting back — and a
-									    stack of ruled rows says only that there are four of them. The
-									    line is drawn behind the nodes and stopped on the last one, so
-									    it connects the steps rather than trailing off under the phase
-									    that follows.
-
-									    Square nodes, not circles: every control on this estate is
-									    square, down to the chips that were pills until somebody
-									    squared them. */}
-									<ol className='mt-7 max-w-4xl'>
-										{phase.steps.map((step, at) => (
-											<li key={step} className='group relative flex gap-5 pb-7 last:pb-0'>
-												<span
-													aria-hidden='true'
-													className='absolute bottom-0 left-3 top-6 w-px bg-[var(--rule)] group-last:hidden'
-												/>
-												{/* Filled, and the number in white rather than black: on the
-												    crimson this sits on, black lands under 2:1 and is unreadable
-												    at 10px. `font-black` is the weight. */}
-												<span className='num relative z-10 flex size-6 shrink-0 items-center justify-center bg-[var(--accent)] font-mono text-[0.625rem] font-black text-white'>
-													{at + 1}
-												</span>
-												<span className='pt-0.5 text-[0.90625rem] leading-[1.65] text-[var(--ink-2)]'>
-													{step}
-												</span>
-											</li>
-										))}
-									</ol>
-
-									{/* Set apart from the steps rather than appended to them: it is
-									    not another thing that happens in the phase, it is what the
-									    phase means for somebody watching from outside it. */}
-									<div className='mt-8 max-w-4xl border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-6 py-5'>
-										<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
-											Why this phase matters
-										</p>
-										<p className='mt-3 text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>
-											{phase.stakes}
-										</p>
-										{'basis' in phase && phase.basis ? (
-											<p className='mt-4 border-t border-[var(--rule)] pt-3 font-mono text-[0.625rem] leading-5 uppercase tracking-[0.1em] text-[var(--ink-mute)]'>
-												{phase.basis}
-											</p>
-										) : null}
-									</div>
-								</div>
-							</li>
-						))}
-					</ol>
-				</div>
-
-					<aside className='hidden lg:block'>
-						<TableOfContents
-							label='The four phases'
-							items={PHASES.map((phase) => ({ id: slug(phase.phase), label: phase.phase }))}
-						/>
-					</aside>
-				</div>
+								<span className='flex flex-1 flex-col p-5 sm:p-6'>
+									<span className='num text-[2.25rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{String(index + 1).padStart(2, '0')}</span>
+									<span className='mt-4 text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>{phase.phase}</span>
+									<span className='mt-1.5 text-[0.8125rem] leading-[1.5] text-[var(--ink-3)]'>{phase.who}</span>
+								</span>
+								<span className='flex items-center justify-between border-t border-[var(--rule)] px-5 py-3 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white sm:px-6'>
+									{phase.steps.length} steps
+									<span aria-hidden='true'>↓</span>
+								</span>
+							</a>
+						</li>
+					))}
+				</ol>
 			</section>
 
+			{/* Each phase: its heading and who acts, what it is, its steps as numbered cards in order, and what it means
+			    for somebody watching from outside, set apart as a callout. */}
+			{PHASES.map((phase, index) => (
+				<section key={phase.phase} id={slug(phase.phase)} className={`scroll-mt-28 ${index % 2 ? 'bg-[var(--paper-2)]' : ''}`}>
+					<div className='bb-container bb-section'>
+						<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
+							<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+								<span className='text-[var(--accent)]'>{String(index + 1).padStart(2, '0')}</span> {phase.phase}
+							</h2>
+							<span className='inline-block rounded-full bg-[var(--accent-soft)] px-3 py-1 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em] text-[var(--accent)]'>{phase.who}</span>
+						</div>
+						<p className='mt-4 max-w-4xl text-[1rem] leading-[1.7] text-[var(--ink-2)]'>{phase.what}</p>
+
+						<ol className='mt-8 grid gap-3 md:grid-cols-2'>
+							{phase.steps.map((step, at) => (
+								<li key={step} className='flex gap-4 border border-[var(--rule)] bg-[var(--paper)] p-5'>
+									<span className='num grid size-8 shrink-0 place-items-center bg-[var(--accent)] text-[0.75rem] font-black text-white'>{at + 1}</span>
+									<span className='text-[0.90625rem] leading-[1.65] text-[var(--ink-2)]'>{step}</span>
+								</li>
+							))}
+						</ol>
+
+						<div className='mt-4 bg-[#8f2328] p-6 text-white lg:p-8'>
+							<p className='font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[#f6cf7a]'>Why this phase matters</p>
+							<p className='mt-3 max-w-4xl text-[0.9375rem] leading-[1.75] text-white/90'>{phase.stakes}</p>
+							{'basis' in phase && phase.basis ? (
+								<p className='mt-5 border-t border-white/20 pt-3 font-mono text-[0.625rem] uppercase leading-5 tracking-[0.1em] text-white/65'>{phase.basis}</p>
+							) : null}
+						</div>
+					</div>
+				</section>
+			))}
 		</>
 	)
 }

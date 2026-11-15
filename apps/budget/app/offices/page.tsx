@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
-import { budgetFor } from '@betterbarmm/budget-data'
+import { budgetFor, percent, pesoTight } from '@betterbarmm/budget-data'
 import { Masthead } from '../_components/budget-parts'
 import { OfficeList } from '../_components/office-list'
+import { FigureCards, SectionTitle, WholeActBar } from '../_components/page-figures'
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ fy?: string }> }): Promise<Metadata> {
 	const { budget, offices } = budgetFor((await searchParams).fy)
@@ -36,15 +37,33 @@ export default async function OfficesPage({ searchParams }: { searchParams: Prom
 			    and none of them findable without finishing the sentence. */}
 			<Masthead
 				kicker={`Fiscal year ${budget.fiscalYear}`}
-				title={`${toHalf} ${toHalf === 1 ? 'office holds' : 'offices hold'} half`}
-				titleMuted='of the whole budget.'
-			/>
+				title='Offices'
+				lead={`Every ministry, office, commission and special purpose fund the Act gives money to, largest first. ${toHalf} of them hold half the whole budget.`}
+			>
+				<WholeActBar
+					title='The whole Act, an office at a time'
+					total={budget.total}
+					parts={offices.map((office) => ({ name: office.name, amount: office.totals.total }))}
+					fmt={pesoTight}
+					pct={(share) => percent(share * 100, 1)}
+				/>
+
+				<FigureCards
+					band
+					items={[
+						{ label: 'In the Act', value: String(offices.length), note: 'Ministries, offices, commissions and funds' },
+						{ label: 'Hold half', value: String(toHalf), note: `The largest ${toHalf}: ${percent((running / budget.total) * 100, 1)} of the Act` },
+						{ label: 'Largest', value: pesoTight(offices[0]!.totals.total), note: offices[0]!.name },
+					]}
+				/>
+			</Masthead>
 
 			{/* The estate's section rhythm opens a block of reading. What opens here
 			    is a control, and at 9rem of air the search field a reader came for
 			    sits below the fold on a laptop. Held off the masthead, not spaced
 			    away from it. */}
 			<section className='bb-container section-band'>
+				<SectionTitle title='Every office, by what it holds' lead='How each splits its money between people, running costs and capital outlay.' className='mb-8' />
 				<OfficeList offices={offices} />
 			</section>
 		</>

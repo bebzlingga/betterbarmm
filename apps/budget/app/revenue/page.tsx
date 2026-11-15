@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Rise, SectionHead } from '@betterbarmm/editorial'
-import { budgetFor, percent, peso } from '@betterbarmm/budget-data'
+import { Rise } from '@betterbarmm/editorial'
+import { budgetFor, percent, peso, pesoTight } from '@betterbarmm/budget-data'
 import { revenueYears } from '@betterbarmm/budget-data/revenue'
-import { Masthead, StatRow } from '../_components/budget-parts'
+import { Masthead } from '../_components/budget-parts'
+import { FigureCards, SectionTitle } from '../_components/page-figures'
 import { Money } from '../_components/money'
 import { HEAD_ROW, ROW, TABLE, TD, TD_NUM, TH, TH_NUM } from '../_components/table'
 import { YearBands } from '../_components/year-bands'
@@ -39,9 +40,8 @@ export default function RevenuePage() {
 	return (
 		<>
 			<Masthead
-				kicker='Revenue'
-				title='Where the money'
-				titleMuted='comes from.'
+				kicker='Where the money comes from'
+				title='Revenue'
 				lead={
 					<p>
 						Most of it from Manila, by formula. The national budget sets aside three amounts for the region each
@@ -51,25 +51,19 @@ export default function RevenuePage() {
 					</p>
 				}
 			>
-				<StatRow
-					stats={[
-						{ value: latest.blockGrant, label: `Block grant, FY ${latest.year}`, money: true },
-						{ value: latest.national, label: 'All three amounts', money: true },
-						{ value: Math.round(grantShare(latest) * 10) / 10, decimals: 1, suffix: '%', label: 'Of the Act, from the grant' },
-					]}
-				/>
 			</Masthead>
+
+			<FigureCards
+				items={[
+					{ label: `Block grant, FY ${latest.year}`, value: pesoTight(latest.blockGrant), note: 'The largest of the three amounts' },
+					{ label: 'All three amounts', value: pesoTight(latest.national), note: `What Manila set aside for FY ${latest.year}` },
+					{ label: 'Of the Act, from the grant', value: percent(grantShare(latest)), note: `Up ${percent((latest.blockGrant / first.blockGrant - 1) * 100)} since FY ${first.year}` },
+				]}
+			/>
 
 			{/* ---- Year by year ---- */}
 			<section className='bb-container section-band'>
-				<SectionHead
-					index='01'
-					eyebrow='Year by year'
-					size='sm'
-					title='Seven years,'
-					titleMuted='three amounts.'
-					lead='What the national budget set aside for the region each year, split by kind. The grant is most of it every year; the other two are a tenth or less.'
-				/>
+				<SectionTitle title='Seven years, three amounts' lead='What the national budget set aside for the region each year, split by kind. The grant is most of it every year; the other two are a tenth or less.' />
 
 				<YearBands
 					legend={[...SOURCES]}
@@ -125,13 +119,7 @@ export default function RevenuePage() {
 			{/* ---- The three amounts ---- */}
 			<section className='bg-[var(--paper-2)]'>
 				<div className='bb-container section-band'>
-					<SectionHead
-						index='02'
-						eyebrow='What each one is'
-						size='sm'
-						title='A formula, a fund'
-						titleMuted='and a share.'
-					/>
+					<SectionTitle title='A formula, a fund and a share' />
 					<Rise distance={12}>
 						<dl className='mt-8 grid gap-x-14 gap-y-8 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:grid-cols-3'>
 							<div>

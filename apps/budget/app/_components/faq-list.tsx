@@ -65,9 +65,11 @@ export function FaqSearch() {
 	const found = useMemo(() => match(entries, query).length, [entries, query])
 
 	return (
-		<label className='mx-auto mt-9 flex max-w-[34rem] items-center gap-3 border border-[var(--rule)] bg-[var(--paper)]/10 px-4 py-3 text-left backdrop-blur-sm focus-within:border-[var(--ink)]'>
+		<>
+		{/* Fixed colours: inside the crimson band, --paper and --ink point at its ground. A white field, as the Directory's. */}
+		<label className='mx-auto mt-8 flex h-14 max-w-[40rem] items-center gap-3 bg-white px-5 text-left text-[#191713] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)]'>
 			<MagnifyingGlassIcon
-				className='size-4 shrink-0 text-[var(--ink-3)]'
+				className='size-5 shrink-0 text-[#5c574c]'
 				aria-hidden='true'
 				weight='bold'
 			/>
@@ -83,14 +85,27 @@ export function FaqSearch() {
 						? 'Maghanap — “ambulansya”, “bonus”…'
 						: 'Search — “ambulance”, “bonus”, “who approves”…'
 				}
-				className='min-w-0 flex-1 bg-transparent text-[0.90625rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+				className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
 			/>
-			<span className='num shrink-0 font-mono text-[0.6875rem] font-semibold text-[var(--ink-3)]'>
+			<span className='num shrink-0 font-mono text-[0.75rem] font-semibold text-[#5c574c]'>
 				{query ? `${found}/${entries.length}` : entries.length}
 			</span>
-			<LanguageToggle className='shrink-0' />
+			<LanguageToggle className='shrink-0 text-[#191713]' />
 		</label>
+		</>
 	)
+}
+
+/** Entries in their groups, in order. */
+function groupsOf(entries: FaqEntry[], lang: Parameters<typeof say>[1]) {
+	const out: { title: string; items: FaqEntry[] }[] = []
+	for (const entry of entries) {
+		const title = say(entry.group, lang)
+		const last = out[out.length - 1]
+		if (last?.title === title) last.items.push(entry)
+		else out.push({ title, items: [entry] })
+	}
+	return out
 }
 
 /** Both languages in the haystack, not just the one being read. */
@@ -147,50 +162,38 @@ export function FaqList() {
 
 	const shown = useMemo(() => match(entries, query), [entries, query])
 
-	const groups = useMemo(() => {
-		const out: { title: string; items: FaqEntry[] }[] = []
-		for (const entry of shown) {
-			const title = say(entry.group, lang)
-			const last = out[out.length - 1]
-			if (last?.title === title) last.items.push(entry)
-			else out.push({ title, items: [entry] })
-		}
-		return out
-	}, [shown, lang])
+	const groups = useMemo(() => groupsOf(shown, lang), [shown, lang])
+	// Numbered across the whole page, by place in the full list, so a question keeps its number while searching.
+	const number = useMemo(() => new Map(entries.map((entry, i) => [entry, String(i + 1).padStart(2, '0')])), [entries])
 
 	return (
-		<div className='mx-auto max-w-[54rem]'>
-			{groups.map((group) => (
-				<section key={group.title} className='mt-16 first:mt-2'>
-					{/* A heading, not a label — `bb-label` is the mark that sits over a
-					    column of figures and read as a caption on the first question
-					    rather than as the start of a group. Set at 18px rather than the
-					    display scale: it has to out-rank the questions under it, which
-					    are 15.5, and nothing more. */}
-					<h2 className='border-b-2 border-[var(--accent)] pb-3 text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+		/* One numbered list, full width, its groups set off by a divider (user decision): plain and fast to scan, every
+		   answer opening in place under its question. */
+		<div className='mx-auto max-w-[64rem]'>
+			{groups.map((group, index) => (
+				<section key={group.title} id={`faq-${index}`} className='scroll-mt-28'>
+					<h2 className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] bg-[var(--paper-2)] px-4 py-4 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)] sm:px-5'>
 						{group.title}
+						<span className='num text-[var(--ink-3)]'>{group.items.length}</span>
 					</h2>
 
-					<div className='mt-2'>
+					<div>
 						{group.items.map((entry) => (
 							<details
 								key={entry.q.en}
 								open={query.trim().length > 0}
-								className='group border-b border-[var(--rule-soft)]'
+								className='group border-b border-[var(--rule)]'
 							>
-								<summary className='flex cursor-pointer list-none items-start justify-between gap-5 py-7 transition-colors duration-150 hover:text-[var(--accent)]'>
-									<span className='text-[0.96875rem] font-semibold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+								<summary className='grid cursor-pointer list-none grid-cols-[2.75rem_minmax(0,1fr)_auto] items-center gap-3 px-4 py-6 transition-colors hover:bg-[var(--paper-2)] sm:grid-cols-[3.5rem_minmax(0,1fr)_auto] sm:px-5 [&::-webkit-details-marker]:hidden'>
+									<span className='num text-[1.125rem] font-extrabold tracking-[-0.03em] text-[var(--ink-mute)] transition-colors group-open:text-[var(--accent)]'>{number.get(entry)}</span>
+									<span className='text-[1rem] font-semibold leading-snug tracking-[-0.015em] text-[var(--ink)] group-open:text-[var(--accent)]'>
 										{say(entry.q, lang)}
 									</span>
-									<CaretDownIcon
-										aria-hidden='true'
-										weight='bold'
-										className='mt-1 size-3.5 shrink-0 text-[var(--ink-3)] transition-transform duration-300 group-open:rotate-180'
-									/>
+									<CaretDownIcon aria-hidden='true' weight='bold' className='size-4 shrink-0 text-[var(--ink-3)] transition-transform duration-300 group-open:rotate-180 group-open:text-[var(--accent)]' />
 								</summary>
 
-								<div className='pb-9'>
-									<p className='max-w-3xl text-[1rem] leading-[1.7] text-[var(--ink-2)]'>{say(entry.a, lang)}</p>
+								<div className='px-4 pb-9 pt-1 sm:pl-[5.25rem] sm:pr-5'>
+									<p className='text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>{say(entry.a, lang)}</p>
 
 									{entry.pays || entry.notPays ? (
 										/* One row an item, not two columns of pairs. The two lists are
@@ -237,7 +240,7 @@ export function FaqList() {
 									    example is doing the same job there and should not look like a
 									    different kind of thing here. */}
 									{entry.example ? (
-										<div className='mt-6 max-w-3xl border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-6 py-5'>
+										<div className='mt-5 bg-[var(--paper-2)] px-5 py-4'>
 											<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
 												{lang === 'fil' ? 'Halimbawa' : 'For example'}
 											</p>

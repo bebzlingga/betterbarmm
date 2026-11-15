@@ -8,7 +8,6 @@ import {
 	peso,
 	pesoTight,
 } from '@betterbarmm/budget-data'
-import { SectionHead } from '@betterbarmm/editorial'
 import { Masthead } from './_components/budget-parts'
 import { BudgetTabs } from './_components/budget-tabs'
 import {
@@ -70,6 +69,8 @@ const ACTS = YEARS.map((fy) => {
 })
 
 const SPAN = ACTS.reduce((sum, act) => sum + act.total, 0)
+const FIRST = ACTS[0]!
+const LATEST = ACTS[ACTS.length - 1]!
 const MOST_FUNDS = Math.max(...ACTS.map((act) => act.funds))
 const TALLEST = Math.max(...ACTS.map((act) => act.total))
 /* The tallest bar, in pixels. A height in pixels rather than a percentage of
@@ -141,7 +142,7 @@ function YearTable({
 			<p aria-hidden='true' className='mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
 				Swipe for every year &rarr;
 			</p>
-			<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
+			<div className='overflow-x-auto'>
 			<table className={`w-full border-collapse text-[0.90625rem] ${wide ? 'min-w-[50rem] lg:min-w-[58rem]' : 'min-w-[46rem] lg:min-w-[54rem]'}`}>
 				<caption className='sr-only'>{caption}</caption>
 				<thead>
@@ -283,11 +284,29 @@ export default function CompositionPage() {
 			    the data does not support. */}
 			<Masthead
 				kicker={`${YEARS.length} Acts · FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}`}
-				title='Every budget the region'
-				titleMuted='has ever passed.'
+				title='Every budget the region has passed'
+				lead={`${short(SPAN)} across ${YEARS.length} Acts, from the first Bangsamoro budget to this year's: what each one gave, to which office and sector, and how much sat in a fund no ministry holds.`}
 			>
 				<ActBars />
 			</Masthead>
+
+			{/* The span at a glance, as cards under the band. */}
+			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				<dl className='grid grid-cols-2 gap-4 lg:grid-cols-4'>
+					{[
+						{ label: 'All seven Acts', value: short(SPAN), note: `FY ${YEARS[0]} to FY ${YEARS[YEARS.length - 1]}, together` },
+						{ label: `FY ${LATEST.year}`, value: short(LATEST.total), note: LATEST.total === TALLEST ? 'The newest Act, and the largest' : 'The newest Act' },
+						{ label: 'Since the first', value: `+${percent(((LATEST.total - FIRST.total) / FIRST.total) * 100, 0)}`, note: `From ${short(FIRST.total)} in FY ${FIRST.year}` },
+						{ label: 'In special funds', value: percent((LATEST.funds / LATEST.total) * 100, 0), note: `Of FY ${LATEST.year}, held outside every ministry` },
+					].map((card) => (
+						<div key={card.label} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+							<dd className='num order-1 text-[2rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{card.value}</dd>
+							<dt className='order-2 mt-3 font-mono text-[0.625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)]'>{card.label}</dt>
+							<dd className='order-3 mt-1.5 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{card.note}</dd>
+						</div>
+					))}
+				</dl>
+			</section>
 
 			{/* Out of the header and onto the paper above the funds strip (user
 			    decision). The header keeps the claim and the chart — one picture of
@@ -295,14 +314,46 @@ export default function CompositionPage() {
 
 			    The strip below is a tinted band, and that change of ground is the
 			    separator: a rule as well read as a third line in a row of them. */}
-			<section className='bb-container section-band-top pb-20'>
-				<SectionHead
-					size='sm'
-					eyebrow='Each Act by expense class'
-					title='Wages, running costs,'
-					titleMuted='and things you can point at.'
-					lead='Three buckets, and every peso in the Act sits in one of them. The first pays the people. The second keeps the lights on and the fuel in the trucks. The third buys what is still there next year — a road, a health center, an ambulance.'
-				/>
+			<section className='bb-container section-band'>
+				<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
+					<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Wages, running costs, and things you can point at</h2>
+					<p className='max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>Three buckets, and every peso in the Act sits in one. The first pays the people, the second keeps the lights on, the third buys what is still there next year.</p>
+				</div>
+
+				{/* Each Act's split, as a share bar a year: the table under it has the pesos. */}
+				<div className='mt-8 border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+					<div className='flex flex-wrap gap-x-5 gap-y-2'>
+						{EXPENSE_CLASSES.map((one) => (
+							<span key={one.key} className='inline-flex items-center gap-2 text-[0.8125rem] text-[var(--ink-2)]'>
+								<span aria-hidden='true' className='size-2.5 rounded-[2px]' style={{ background: one.tone }} />
+								{one.label}
+							</span>
+						))}
+					</div>
+					<ol className='mt-5 grid gap-2.5'>
+						{ACTS.map((act) => (
+							<li key={act.year} className='grid grid-cols-[4.5rem_minmax(0,1fr)] items-center gap-3'>
+								<span className='num font-mono text-[0.6875rem] font-semibold text-[var(--ink-3)]'>FY {act.year}</span>
+								<span
+									className='flex h-5 gap-[2px] overflow-hidden rounded-[3px]'
+									role='img'
+									aria-label={`FY ${act.year}: ${EXPENSE_CLASSES.map((one) => `${one.label} ${percent((act.totals[one.key] / act.total) * 100, 0)}`).join(', ')}`}
+								>
+									{EXPENSE_CLASSES.map((one) => (
+										<span
+											key={one.key}
+											title={`${one.label}: ${peso(act.totals[one.key])}, ${percent((act.totals[one.key] / act.total) * 100, 1)}`}
+											className='h-full'
+											style={{ flexGrow: act.totals[one.key], flexBasis: 0, background: one.tone }}
+										/>
+									))}
+								</span>
+							</li>
+						))}
+					</ol>
+				</div>
+
+				<div className='mt-4 border border-[var(--rule)] bg-[var(--paper)] px-5 sm:px-6'>
 
 				<p aria-hidden='true' className='mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
 					Swipe for every year &rarr;
@@ -389,6 +440,7 @@ export default function CompositionPage() {
 						</tfoot>
 					</table>
 				</div>
+				</div>
 			</section>
 
 			{/* A fifth of an Act sitting outside every ministry qualifies every
@@ -396,16 +448,13 @@ export default function CompositionPage() {
 			    ministries rather than after. */}
 			<section className='bg-[var(--paper-2)]'>
 				<div className='bb-container section-band'>
-					<SectionHead
-						size='sm'
-						eyebrow='Held in a special purpose fund'
-						title='Money without'
-						titleMuted='a ministry.'
-						lead='Money kept aside for what nobody can put in a calendar — a typhoon, an outbreak, a bill that lands on every ministry at once. No office is given it to spend until the thing actually happens.'
-					/>
-					<dl className='mt-12 grid grid-cols-2 gap-x-6 gap-y-8 sm:mt-20 sm:grid-cols-4 sm:gap-x-8 lg:grid-cols-7'>
+					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
+						<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Money without a ministry</h2>
+						<p className='max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>Kept aside for what nobody can put in a calendar: a typhoon, an outbreak, a bill that lands on every ministry at once. No office is given it until the thing happens.</p>
+					</div>
+					<dl className='mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-7'>
 						{ACTS.map((act) => (
-							<div key={act.year}>
+							<div key={act.year} className={`border bg-[var(--paper)] p-4 ${act.funds === MOST_FUNDS ? 'border-[var(--accent)]' : 'border-[var(--rule)]'}`}>
 								<div
 									className='split-bar split-bar-xs'
 									role='img'
@@ -451,6 +500,11 @@ export default function CompositionPage() {
 			    it started a gutter's width left of the first tab and read as a line
 			    that had failed to line up with anything. */}
 			<section className='bb-container section-band'>
+				<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
+					<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Every office, sector and area, year by year</h2>
+					<p className='max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>Every ministry and office, every sector, and every area the Acts name for construction.</p>
+				</div>
+				<div className='mt-6'>
 				<BudgetTabs
 					label='The same span, cut three ways'
 					tabs={[
@@ -520,6 +574,7 @@ export default function CompositionPage() {
 						},
 					]}
 				/>
+				</div>
 			</section>
 
 		</>
