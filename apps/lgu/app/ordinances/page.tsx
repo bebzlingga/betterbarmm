@@ -1,20 +1,24 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
-import { LguMasthead } from '../_components/lgu-parts'
+import { ordinanceCategories, ordinanceMeta, ordinances } from '@betterbarmm/lgu-data/ordinances'
+import { LguFigures, LguMasthead, SectionTitle } from '../_components/lgu-parts'
+import { OrdinanceLibrary, type LibraryItem } from './library'
 
 export const metadata: Metadata = {
 	title: 'Ordinances — Local government directory',
 	description:
-		'The ordinances BARMM provinces, cities, municipalities and barangays pass: what they are, how one becomes law, and where they should be published. A searchable collection is coming soon.',
+		'A reference library of ordinances other Philippine provinces, cities and towns have enacted, in full and by category, for BARMM councils drafting their own, each one copyable as a starting draft. With how an ordinance becomes law under the Bangsamoro Local Governance Code.',
 }
 
 /* ============================================================
-   Ordinances, before the collection exists
+   Ordinances
 
-   What an ordinance is and how one becomes law under the
-   Bangsamoro Local Governance Code, every step cited, so the page
-   is useful now and says plainly what is coming.
+   BARMM's own LGUs publish almost none of theirs, so the library
+   is the other direction: ordinances enacted elsewhere in the
+   country, in full, sorted by what they are about, for a council
+   to read before it drafts. Under it, what an ordinance is and how
+   one becomes law under the Bangsamoro Local Governance Code.
    ============================================================ */
 
 const STEPS = [
@@ -44,16 +48,49 @@ const H2 = 'text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text
 const CITE = 'mt-2 font-mono text-[0.5625rem] uppercase tracking-[0.14em] text-[var(--ink-mute)]'
 
 export default function OrdinancesPage() {
+	const items: LibraryItem[] = ordinances.map((o) => ({
+		id: o.id,
+		category: o.category,
+		shortTitle: o.shortTitle,
+		lgu: o.lgu,
+		province: o.province,
+		level: o.level,
+		region: o.region,
+		year: o.year,
+		summary: o.summary,
+		pages: o.pages,
+		verdict: o.barmm?.verdict ?? null,
+		words: [o.shortTitle, o.title, o.lgu, o.province, o.region, o.number, o.year, o.category, o.summary, ...o.points, o.barmm?.verdict, o.barmm?.fits].join(' ').toLowerCase(),
+	}))
+	const lgus = new Set(ordinances.map((o) => o.lgu)).size
+	const regions = new Set(ordinances.map((o) => o.region)).size
+	const ready = ordinances.filter((o) => o.barmm?.verdict === 'Ready to adapt').length
+
 	return (
 		<>
 			<LguMasthead
-				kicker='Coming soon'
+				kicker='A reference library'
 				name='Ordinances'
-				note='The local laws your province, city, municipality and barangay pass. We are gathering them into one place you can search. Until then, here is how they work.'
-			/>
+				note='Ordinances other provinces, cities and towns have enacted, sorted by topic, for a BARMM council to read before drafting its own. Each one says what can be carried over and what has to change under the Bangsamoro Local Governance Code.'
+			>
+				<LguFigures
+					figures={[
+						{ label: 'Ordinances', value: '', count: ordinances.length },
+						{ label: 'Topics', value: '', count: ordinanceCategories.length },
+						{ label: 'From', value: '', count: lgus, detail: `LGUs in ${regions} regions` },
+						{ label: 'Ready to adapt', value: '', count: ready, detail: 'Usable in BARMM almost as drafted' },
+					]}
+				/>
+			</LguMasthead>
 
-			<div className='bb-container bb-section '>
-				<section>
+			<section className='bb-container bb-section'>
+				<OrdinanceLibrary items={items} categories={ordinanceCategories.map(({ name, slug, about }) => ({ name, slug, about }))} />
+				<p className='mt-12 border-t border-[var(--rule-soft)] pt-5 text-[0.75rem] leading-6 text-[var(--ink-3)]'>{ordinanceMeta.note}</p>
+			</section>
+
+			<div className='bb-container bb-section-bottom'>
+				<SectionTitle title='How ordinances work in BARMM' lead='Under the Bangsamoro Local Governance Code, every step cited.' />
+				<section className='mt-10'>
 					<h2 className={H2}>What an ordinance is</h2>
 					<div className='mt-5 gap-20 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:columns-2 [&>p+p]:mt-4'>
 						<p>
@@ -96,10 +133,11 @@ export default function OrdinancesPage() {
 
 				<section className='mt-20 flex flex-col gap-6 border border-[var(--rule)] bg-[var(--paper-2)] p-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
 					<div className='max-w-[44rem]'>
-						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Have an ordinance?</h2>
+						<h2 className='text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Have one of BARMM&rsquo;s?</h2>
 						<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-							If you have a copy of an ordinance from your town or province, a council secretary&rsquo;s file, a
-							posted notice or a link, send it to us and it will be among the first we publish.
+							The library holds ordinances from outside the region because BARMM&rsquo;s councils publish almost none of
+							theirs. If you have a copy of one from your town or province, a council secretary&rsquo;s file, a posted
+							notice or a link, send it and it will be among the first of the region&rsquo;s own we add.
 						</p>
 					</div>
 					<div className='flex shrink-0 flex-wrap gap-3'>

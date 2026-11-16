@@ -67,3 +67,6 @@ apps/www/app/_generated/open-data.json
 
 # portraits: copied from apps/legislation by apps/www/scripts/copy-portraits.mjs before every dev and build
 apps/www/public/members/
+
+# ordinance PDFs, the LGUs’ to serve
+datasets/ordinances/.pdf-cache/

@@ -34,6 +34,7 @@ import exposureFile from '../../../datasets/preparedness/exposure.json'
 import philgepsFile from '../../../datasets/procurement/philgeps.json'
 import blacklistFile from '../../../datasets/procurement/gppb-blacklist.json'
 import dpwhFile from '../../../datasets/public-works/dpwh.json'
+import { ordinanceCategories, ordinances as ordinanceList } from '@betterbarmm/lgu-data/ordinances'
 import type { Entry } from './corpus'
 
 const WWW = 'https://betterbarmm.com'
@@ -463,8 +464,42 @@ function works(): Entry[] {
 	return rows
 }
 
+/* ---- Ordinances from other LGUs, the LGU workspace's reference library ----
+   One row an ordinance, carrying its summary and the provisions a drafter
+   looks for, so "explain Davao's halal ordinance" is answered off the
+   reading rather than the title. Plus one row for the library itself. */
+function ordinances(): Entry[] {
+	const LGU = 'https://lgu.betterbarmm.com'
+	const rows: Entry[] = ordinanceList.map((o) => ({
+		space: 'lgu',
+		kind: 'Ordinance',
+		title: `${o.shortTitle} (${o.lgu}, ${o.year})`,
+		note: joined([
+			`${o.number} of ${o.lgu}${o.province && o.province !== o.lgu ? `, ${o.province}` : ''} (${o.region}), outside BARMM; kept as a reference for BARMM councils, with no force in the region.`,
+			o.summary,
+			`Provisions: ${o.points.join('; ')}.`,
+			o.penalties ? `Penalties: ${o.penalties}.` : '',
+			o.amends ? `Amends: ${o.amends}.` : '',
+			o.caveat ?? '',
+			o.barmm ? `For BARMM (${o.barmm.verdict}): ${o.barmm.why} Carry over: ${o.barmm.adopt.join('; ')}. Change: ${o.barmm.change.join('; ')}. Suits ${o.barmm.fits}` : '',
+		]),
+		href: `${LGU}/ordinances/${o.id}`,
+		text: joined(['ordinance', o.shortTitle, o.title, o.lgu, o.province, o.region, o.number, o.year, o.category, o.summary, ...o.points]).toLowerCase(),
+	}))
+	rows.push({
+		space: 'lgu',
+		kind: 'Ordinance library',
+		title: 'Ordinances from other LGUs, a reference library',
+		note: `${ordinanceList.length} ordinances enacted by provinces, cities and towns outside BARMM, kept in full so a BARMM council can see how others drafted one before writing its own; each can be copied or explained. By category: ${ordinanceCategories.map((c) => `${c.name} ${c.ordinances.length}`).join(', ')}. BARMM's own LGUs publish almost none of theirs.`,
+		href: `${LGU}/ordinances`,
+		text: joined(['ordinances ordinance library sample model template example other lgus draft', ...ordinanceCategories.map((c) => c.name)]).toLowerCase(),
+		rollup: true,
+	})
+	return rows
+}
+
 export function workspaces(): Entry[] {
-	return [...audits(), ...plan(), ...schools(), ...ministry(), ...explainers(), ...health(), ...news(), ...opportunities(), ...preparedness(), ...procurement(), ...works()]
+	return [...audits(), ...plan(), ...schools(), ...ministry(), ...explainers(), ...health(), ...news(), ...opportunities(), ...preparedness(), ...procurement(), ...works(), ...ordinances()]
 }
 
 /** The words a question uses for each kind of row here. */
@@ -490,7 +525,9 @@ export const WORKSPACES_ASKED: Record<string, string> = {
 	// Not "road" or "bridge": those summoned two thousand DPWH roads onto "road crashes in Tawi-Tawi".
 	'DPWH project': 'dpwh national contract contractor contractors',
 	'DPWH projects': 'dpwh national contracts contractors',
+	Ordinance: 'ordinance ordinances code local law sample model template example draft adopt copy explain',
+	'Ordinance library': 'ordinances ordinance library sample model template example draft other lgus',
 }
 
 /** Rows that come up only when a question uses their own words: a town's name should not summon its schools, hazards, news or DPWH roads. */
-export const WORKSPACES_ASKED_ONLY = ['School', 'Schools count', 'Ministry figure', 'Health facilities', 'Hospital', 'News', 'Job', 'Emergency facilities', 'Hazard exposure', 'Procurement', 'Blacklisted', 'DPWH project', 'DPWH projects', 'Audit report']
+export const WORKSPACES_ASKED_ONLY = ['School', 'Schools count', 'Ministry figure', 'Health facilities', 'Hospital', 'News', 'Job', 'Emergency facilities', 'Hazard exposure', 'Procurement', 'Blacklisted', 'DPWH project', 'DPWH projects', 'Audit report', 'Ordinance']

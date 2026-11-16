@@ -78,6 +78,7 @@ export function brain() {
 	const facilitiesFile = read<{ generatedAt: string; facilities: unknown[] }>('preparedness/facilities.json')
 	const accidents = read<{ generatedAt: string; incidents: { province: string; municipality: string | null; deaths: number }[] }>('accidents/accidents.json')
 	const audits = read<{ generatedAt: string; reports: unknown[] }>('coa/audit-reports.json')
+	const ordinanceFile = read<{ generatedAt: string; ordinances: { summary?: string }[] }>('ordinances/ordinances.json')
 	const finances = read<Record<string, unknown>>('lgu/finances.json')
 	const districts = read<{ towns: Record<string, { districts: string[] }> }>('election/district-towns.json').towns
 	const schoolsFile = read<{ years: string[]; source: { retrieved: string }; schools: { source: string; pupils: number | null }[] }>('education/schools.json')
@@ -114,6 +115,7 @@ export function brain() {
 		{ id: 'd-lgus', label: 'Provinces, towns & barangays', kind: 'dataset', count: barangays, unit: 'barangays', note: `${lguProvinces.length} provinces and areas, ${towns} towns and cities, each on its standard place code.` },
 		{ id: 'd-officials', label: 'Elected local officials', kind: 'dataset', count: towns, unit: 'towns', note: 'Governors, mayors, councils and punong barangays, from the COMELEC canvass and the DILG directory.' },
 		{ id: 'd-finances', label: 'LGU finances & NTA', kind: 'dataset', count: Object.keys((finances.units as Record<string, unknown>) ?? {}).length || undefined, unit: 'LGUs', date: dated(finances), note: 'What each town and province collects and spends, its national tax allotment and its income class.' },
+		{ id: 'd-ordinances', label: 'Ordinances from other LGUs', kind: 'dataset', count: ordinanceFile.ordinances.filter((o) => o.summary).length, unit: 'ordinances', date: ordinanceFile.generatedAt, note: 'Ordinances enacted by provinces, cities and towns outside BARMM, in full and by category, as references for the region’s councils.' },
 		{ id: 'd-audits', label: 'COA audit reports', kind: 'dataset', count: audits.reports.length, unit: 'reports', date: audits.generatedAt, note: 'The Commission on Audit’s annual reports on the region’s offices and local governments.' },
 		{ id: 'd-notices', label: 'PhilGEPS bid notices', kind: 'dataset', count: philgeps.notices.length, unit: 'notices', date: philgeps.generatedAt, note: `Every notice a BARMM office posted since 2019, and ${awards.toLocaleString('en-PH')} contracts awarded on them.` },
 		{ id: 'd-blacklist', label: 'Blacklisted suppliers', kind: 'dataset', count: blacklist.entities.length, unit: 'suppliers', date: blacklist.generatedAt, note: 'The national blacklist, matched to the region’s suppliers.' },
@@ -138,6 +140,7 @@ export function brain() {
 		{ id: 's-dilg', label: 'DILG', kind: 'source', note: 'Directories of local officials and barangays.' },
 		{ id: 's-psa', label: 'PSA', kind: 'source', note: 'The standard code for every province, town and barangay.' },
 		{ id: 's-dbm', label: 'DBM', kind: 'source', note: 'National tax allotments and local budget data.' },
+		{ id: 's-lgu-sites', label: 'LGU websites', kind: 'source', note: 'Ordinances that other LGUs publish on their own sites, and the Internet Archive’s copies of those taken down.' },
 		{ id: 's-coa', label: 'Commission on Audit', kind: 'source', note: 'Annual audit reports.' },
 		{ id: 's-philgeps', label: 'PhilGEPS', kind: 'source', note: 'The government’s procurement system: notices, bids and awards.' },
 		{ id: 's-gppb', label: 'GPPB', kind: 'source', note: 'The national blacklist of suppliers.' },
@@ -175,6 +178,7 @@ export function brain() {
 		['s-osm', ['d-facilities']],
 		['s-dbm', ['d-finances']],
 		['s-coa', ['d-audits', 'd-finances']],
+		['s-lgu-sites', ['d-ordinances']],
 		['s-philgeps', ['d-notices', 'd-field']],
 		['s-gppb', ['d-blacklist']],
 		['s-dti', ['d-lines', 'd-finances']],
@@ -210,6 +214,7 @@ export function brain() {
 		['d-officials', ['w-lgu', 'w-directory', 'w-services']],
 		['d-finances', ['w-lgu']],
 		['d-audits', ['w-lgu', 'w-budget']],
+		['d-ordinances', ['w-lgu']],
 		['d-notices', ['w-procurement']],
 		['d-blacklist', ['w-procurement']],
 		['d-offices', ['w-directory']],
