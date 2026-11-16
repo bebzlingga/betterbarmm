@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-15T14:39:48.447Z",
+ "generatedAt": "2026-11-16T08:53:02.217Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -165,9 +165,16 @@
    "via": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc0V0cGNMT2FzajhNSHc2UmVsWEZOV3V3bjFpS25wTXJ6M0d3R0RsdUdkbFRxYkt5NHRXbldJVjJFbGhuc05PTkF3OFVtUUV0cTRHU2dfR1ZjQzdMYldhVjRmMFlxLU15ZnFmOXJzMk9FNVBENUZWUUdXQm1SRVJ6MzRrdDBBem9rdUNNVGRRVnNPQlNsbmwxNC0xc00wVDhTRlN1Z2ZLVHlDQXRvNHc4U1JR?oc=5",
    "title": "Light mag. 3.2 earthquake - 37 km southeast of Marawi City, Philippines, on Thursday, Nov 12, 2026, at 03:25 pm (Manila time)",
    "reason": "not a news report"
+  },
+  {
+   "url": "https://www.volcanodiscovery.com/earthquakes/quake-info/23640292/mag2quake-Nov-15-2026-Philippines-002-km-N-50-W-of-Columbio-Sultan-Kudarat.html",
+   "via": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVUJPd29KbjVWQW5DVXdBT1RKNnBHTTZ1dHltRkJIbWYwM3JuSS1ybWZDZ1g1V1hOSVlVUWJDOWVDZmdna0t2aXFZazh0QkJTZ3JhdzlNUjREMnVJRmYzaEJLTE5ZNmlJTUpyX1ljM0wySk5IQUZVaW4yUTB3Tm4zcllKS3FBcXNfUmNKdkxHRWpFdEM1Y0NoNktoRVljZWswMW50cU50ZVJrOHZNUkp3ZWlmZTNYQWMwUmhfb1U2RldNa0R4VnAyWi1NUV9mNjFhQjFuQUd3UFcxSFFu?oc=5",
+   "title": "Weak mag. 2.0 earthquake - Province of Maguindanao, Autonomous Region in Muslim Mindanao, 25 km northeast of Koronadal, Philippines, on Sunday, Nov 15, 2026, at 03:48 pm (Manila time)",
+   "reason": "not a news report"
   }
  ],
  "weeks": [
+  "2026-11-16",
   "2026-11-09",
   "2026-11-02",
   "2026-10-26",

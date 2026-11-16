@@ -1,0 +1,35 @@
+[
+ {
+  "date": "2026-11-15",
+  "type": "shooting",
+  "title": "Malaysian and Filipino drug suspects killed and 2 women hit by stray bullets in a buy-bust shootout in Tubig Mampallam, Bongao",
+  "summary": "A Malaysian national, Janimal Bin Hajad, alias \"Ungod\", and a Filipino, Sansibar Amirul Amil, were killed when they opened fire on agents of the Philippine Drug Enforcement Agency, backed by police and Philippine Marines, during a buy-bust operation at about 4:50 p.m. on 15 November 2026 in Barangay Tubig Mampallam, Bongao, Tawi-Tawi, according to PDEA Tawi-Tawi provincial officer Abraham Solon Kalim. The 2 tried to escape on a motorized wooden boat while firing. 2 women, not named, were wounded by stray bullets and taken to hospital; no government personnel were hurt. About 2 kilograms of suspected shabu, worth P13.4 million, a pistol and the boat were seized. PNA's photo caption dates the operation to Saturday, 14 November, and a Manila Bulletin headline speaks of 2 cohorts killed; PNA's and The Chronicle's reports give 15 November and 2 dead.",
+  "province": "Tawi-Tawi",
+  "municipality": "Bongao",
+  "barangay": "Tubig Mampallam",
+  "deaths": 2,
+  "injured": 2,
+  "missing": 0,
+  "vehicles": [],
+  "sources": [
+   {
+    "outlet": "PNA",
+    "url": "https://www.pna.gov.ph/article/p134-m-shabu-seized-malaysian-cohort-killed-in-tawi-tawi-drug-bust",
+    "title": "P13.4-M shabu seized; Malaysian, cohort killed in Tawi-Tawi drug bust",
+    "date": "2026-11-16"
+   },
+   {
+    "outlet": "The Chronicle",
+    "url": "https://thechronicle.com.ph/p13-4-million-worth-of-shabu-seized-two-suspects-killed-in-tawi-tawi-drug-operation/",
+    "title": "P13.4 million worth of shabu seized, two suspects killed in Tawi-Tawi drug operation",
+    "date": "2026-11-16"
+   },
+   {
+    "outlet": "Manila Bulletin",
+    "url": "https://mb.com.ph/2026/11/16/pdea-malaysian-2-cohorts-killed-in-p136-m-barmm-shabu-bust",
+    "title": "PDEA: Malaysian, 2 cohorts killed in P13.6-M BARMM 'shabu' bust",
+    "date": "2026-11-16"
+   }
+  ]
+ }
+]
