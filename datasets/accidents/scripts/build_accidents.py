@@ -44,6 +44,8 @@ ALIASES = {'datu montawal': 'Pagagawan', 'sultan sumagka': 'Talitay', 'bumbaran'
            'cotabato': 'Cotabato City', 'kabuntalan': 'Kabuntalan', 'north upi': 'Upi', 'datu blah sinsuat': 'Datu Blah T. Sinsuat', 'datu blah t sinsuat': 'Datu Blah T. Sinsuat',
            'shariff saydona': 'Shariff Saydona Mustapha', 'datu saudi': 'Datu Saudi-Ampatuan', 'sultan sa barongis': 'Sultan Sa Barongis', 'tagoloan': 'Tagoloan II',
            'hadji mohammad ajul': 'Hadji Mohammad Ajul', 'buadipuso buntong': 'Buadiposo-Buntong', 'datu hoffer': 'Datu Hoffer Ampatuan', 'hadji muhtamad': 'Hadji Muhtamad', 'lumba bayabao': 'Lumba-Bayabao', 'ditsaan ramain': 'Ditsaan-Ramain'}
+# Facebook pages of outlets, by page id: a post from one is credited to the outlet, not to "Facebook".
+FB_PAGES = {'id=100068735708353': 'DXMS Radyo Bida (Facebook)'}
 # Towns of Cotabato province whose BARMM barangays became the Special Geographic Area's municipalities.
 SGA_HOST = {'pikit': 'Kadayangan', 'kabacan': 'Old Kaabakan', 'midsayap': 'Nabalawag', 'pigcawayan': 'Kapalawan', 'aleosan': 'Kapalawan', 'carmen': 'Malidegao', 'tulunan': 'Ligawasan'}
 
@@ -137,7 +139,7 @@ for path in sorted(glob.glob(os.path.join(ROOT, 'reports', '*.json'))):
             hit = geocode_barangay(re.sub(r'^(brgy\.?|barangay)\s*', '', barangay, flags=re.I), municipality, province, centre)
             if hit: lat, lon, placed = hit['lat'], hit['lon'], 'barangay'
         # A report found through Google News keeps Google's link until the outlet's own address is recovered into links.json.
-        sources = [{'outlet': s.get('outlet') or 'Source', 'url': LINKS.get(s['url'], s['url']), 'title': s.get('title') or '', 'date': s.get('date')} for s in raw.get('sources') or [] if s.get('url')]
+        sources = [{'outlet': FB_PAGES.get(next((k for k in FB_PAGES if k in s['url']), ''), s.get('outlet') or 'Source'), 'url': LINKS.get(s['url'], s['url']), 'title': s.get('title') or '', 'date': s.get('date')} for s in raw.get('sources') or [] if s.get('url')]
         seen_urls = set(); sources = [x for x in sources if not (x['url'] in seen_urls or seen_urls.add(x['url']))]
         if not sources: dropped.append((os.path.basename(path), raw.get('date'), municipality, 'no source', raw.get('title'))); continue
         records.append({'date': raw['date'], 'type': GROUP.get(fine, 'other'), 'kind': KIND.get(fine, 'Other'), 'title': (raw.get('title') or '').strip(), 'summary': (raw.get('summary') or '').strip(),
@@ -248,7 +250,7 @@ out = {
     'name': 'Accidents in BARMM, as reported',
     'generatedAt': date.today().isoformat(),
     'since': min(r['date'][:4] for r in merged) if merged else '2019',
-    'note': 'Compiled from news reports: the outlets’ own sites, Google News’s index of them, and public Facebook posts that index carried. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.',
+    'note': 'Compiled from news reports: the outlets’ own sites, Google News’s index of them, public Facebook posts that index carried, and the Facebook page of DXMS Radyo Bida, NDBC’s station in Cotabato City. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.',
     'sources': {'reports': 'datasets/accidents/reports/', 'enrichment': 'datasets/accidents/enrichment/', 'centres': 'datasets/accidents/municipality-centres.json', 'barangays': 'datasets/accidents/barangay-centres.json'},
     'incidents': merged,
 }

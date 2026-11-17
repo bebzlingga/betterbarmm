@@ -1,8 +1,8 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-16T08:53:02.217Z",
+ "generatedAt": "2026-11-17T08:17:40.531Z",
  "since": "2026-10-19",
- "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
+ "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
   {
    "url": "https://www.rappler.com/philippines/elections/toto-mangudadatu-congressional-race-results-maguindanao-del-sur-2025/",
@@ -171,6 +171,12 @@
    "via": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVUJPd29KbjVWQW5DVXdBT1RKNnBHTTZ1dHltRkJIbWYwM3JuSS1ybWZDZ1g1V1hOSVlVUWJDOWVDZmdna0t2aXFZazh0QkJTZ3JhdzlNUjREMnVJRmYzaEJLTE5ZNmlJTUpyX1ljM0wySk5IQUZVaW4yUTB3Tm4zcllKS3FBcXNfUmNKdkxHRWpFdEM1Y0NoNktoRVljZWswMW50cU50ZVJrOHZNUkp3ZWlmZTNYQWMwUmhfb1U2RldNa0R4VnAyWi1NUV9mNjFhQjFuQUd3UFcxSFFu?oc=5",
    "title": "Weak mag. 2.0 earthquake - Province of Maguindanao, Autonomous Region in Muslim Mindanao, 25 km northeast of Koronadal, Philippines, on Sunday, Nov 15, 2026, at 03:48 pm (Manila time)",
    "reason": "not a news report"
+  },
+  {
+   "url": "https://www.wboc.com/online_features/press_releases/cultural-diplomacy-in-cisnadie-queen-maria-s-royal-delegation-introduces-sultanate-of-maguindanao-and-we/article_41117c0a-fd6e-5f5f-8c8f-89e574c06ba9.html",
+   "via": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNUklzY3dVbW9ZWnpsa0xkNVFiY2I0MUNIc0t0SXJVdTAtSlQ5ZEkxd2YxaFRFZFdBOHpaNms0SzE5azlwRzZYZzlkNmVvYXVFWXVqZkJ3bDR3SHpkbUkydTVETldabE9FM0xxT1dJMnE3SXZHcFpIczNVbWdva3Ixd1pxV21ieTJoYXljMlhGU0VQWEt0amI2QndIQ1VibFBtOVFkMlVLblpnREo1eVhwZmRPbk1HdjE5Vk9LVW5MdFB0OEc3N0Iwb242NjNyemh0ZGNGcE1TR0dkRTEzYTlLV0lOUzFzVlgtc3JvVkF5dHJxUk1UQ1VscnYtLXJha2p0WVNfZ0dsSnlMeUt6aE9LR3I1UEpUSjk1WWo1OGNVMkZGSnBQZWhvcHo4UldKZzg?oc=5",
+   "title": "Cultural Diplomacy in Cisnadie: Queen Maria’s Royal Delegation Introduces Sultanate of Maguindanao and We Care for Humanity to Romania",
+   "reason": "not about the region: an event in Romania"
   }
  ],
  "weeks": [

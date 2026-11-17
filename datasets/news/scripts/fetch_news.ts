@@ -1,4 +1,5 @@
 import { NEWS_FEEDS, readFeed, type FetchedItem } from '../../../packages/db/src/news'
+import { FACEBOOK_PAGES, readFacebookPage } from './facebook'
 
 /* `bun datasets/news/scripts/fetch_news.ts [YYYY-MM-DD]` — read the news feeds and add
    what is new to the news (a week to a file in datasets/news/weeks, see store.py), from the given day (default: this week's
@@ -60,7 +61,7 @@ try {
 	data = { name: 'Latest news', generatedAt: '', since, note: '', items: [] }
 }
 data.since = data.since && data.since < since ? data.since : since
-data.note = 'Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds and Google News’s index of them. Each links to the outlet that reported it; the headline and teaser are the outlet’s.'
+data.note = 'Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.'
 
 // The shared feeds lean on front pages; this week's sweep also asks Google News place by place, past 7 days.
 // At most six OR terms a query: past ten, Google News drops the date filter.
@@ -90,6 +91,14 @@ const errors: string[] = []
 const read: FetchedItem[] = []
 const results = await Promise.allSettled(FEEDS.map(readFeed))
 results.forEach((r, i) => (r.status === 'fulfilled' ? read.push(...r.value) : errors.push(`${FEEDS[i]!.name}: ${r.reason?.message ?? r.reason}`)))
+// Outlets whose news lives on Facebook, read one at a time: each is a headless Chrome scrolling the page.
+for (const page of FACEBOOK_PAGES) {
+	try {
+		read.push(...(await readFacebookPage(page)))
+	} catch (e) {
+		errors.push(`Facebook ${page.name}: ${(e as Error).message}`)
+	}
+}
 // Inquirer's own feeds stamp Manila's clock as UTC ("15:24 +0000" for 3:24 pm in Manila), which put its stories
 // eight hours late, some after the fetch itself. Its stories through Google News carry Google's dates, which are right.
 for (const item of read)

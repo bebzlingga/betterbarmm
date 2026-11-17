@@ -615,6 +615,17 @@
    "lat": 5.0264,
    "lon": 119.7736,
    "matched": "Tubig-Mampallam, Sitio Kasanyangan, Tongsinah, Bongao, Tawi-Tawi, Bangsamoro, 7500, Philippines"
+  },
+  "Tumbras|Kadayangan|Special Geographic Area": {
+   "lat": 7.1417,
+   "lon": 124.4862,
+   "matched": "Tumbras, Kadayangan, Special Geographic Area, Bangsamoro, 9410, Philippines"
+  },
+  "Kurintem|Datu Odin Sinsuat|Maguindanao del Norte": null,
+  "Tamontaka|Cotabato City|Cotabato City": {
+   "lat": 7.1825,
+   "lon": 124.2238,
+   "matched": "Tamontaka, Cotabato City, Bangsamoro, 9600, Philippines"
   }
  }
 }
