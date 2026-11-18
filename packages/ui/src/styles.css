@@ -1520,3 +1520,15 @@ figcaption {
     transform: none;
   }
 }
+
+/* Tailwind v4 leaves buttons on the default arrow. Anything that can be clicked shows the hand, in every app. */
+@layer base {
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  summary,
+  select:not(:disabled),
+  input[type='checkbox']:not(:disabled),
+  input[type='radio']:not(:disabled) {
+    cursor: pointer;
+  }
+}

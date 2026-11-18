@@ -2,33 +2,32 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { ArrowUpRightIcon, CheckIcon, CopyIcon, DownloadSimpleIcon, FilePdfIcon, SparkleIcon, XIcon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, DownloadSimpleIcon, FilePdfIcon, SparkleIcon, XIcon } from '@phosphor-icons/react'
 import { JO } from '@betterbarmm/ai/dock'
 
 /**
- * What a council staffer does with an ordinance: read the PDF, copy its text to start a draft from, or have Jo explain it.
+ * What a council staffer does with an ordinance: read the PDF, or have Jo explain it.
  *
  * The PDF is the site's own copy (datasets/ordinances/scripts/publish_pdfs.py): several LGUs forbid their files being
- * framed elsewhere, and some have taken them down. The text is fetched only when Copy is pressed; a revenue code runs
- * to 600,000 characters, which no page should carry for a button most readers never press.
+ * framed elsewhere, and some have taken them down.
  */
 export function OrdinanceActions({
 	id,
 	title,
-	cite,
 	question,
 	source,
+	elsewhere = null,
 	stacked = false,
 }: {
 	id: string
 	title: string
-	cite: string
 	question: string
 	source: string
+	/** Where to read it when the site has no copy of its own: opened in a new tab instead of the dialog. */
+	elsewhere?: string | null
 	/** One button under another, full width: for the side panel rather than the masthead. */
 	stacked?: boolean
 }) {
-	const [copied, setCopied] = useState<'idle' | 'busy' | 'done'>('idle')
 	const [open, setOpen] = useState(false)
 	const dialog = useRef<HTMLDialogElement>(null)
 	const pdf = `/ordinances/${id}.pdf`
@@ -38,38 +37,20 @@ export function OrdinanceActions({
 		if (open && dialog.current && !dialog.current.open) dialog.current.showModal()
 	}, [open])
 
-	async function copy() {
-		setCopied('busy')
-		const text = fetch(`/ordinances/${id}/text`)
-			.then((r) => (r.ok ? r.text() : Promise.reject(new Error(String(r.status)))))
-			.then((t) => `${cite}\n\n${t}`)
-		try {
-			// Handed over as a promise so Safari still counts the click as the gesture that allowed it.
-			if (typeof ClipboardItem !== 'undefined' && navigator.clipboard?.write) {
-				await navigator.clipboard.write([new ClipboardItem({ 'text/plain': text.then((t) => new Blob([t], { type: 'text/plain' })) })])
-			} else {
-				await navigator.clipboard.writeText(await text)
-			}
-			setCopied('done')
-			window.setTimeout(() => setCopied('idle'), 2400)
-		} catch {
-			// No clipboard here: open the text so it can be copied by hand.
-			setCopied('idle')
-			window.open(`/ordinances/${id}/text`, '_blank', 'noopener')
-		}
-	}
-
 	return (
 		<>
 			<div className={stacked ? 'grid gap-2.5 [&>button]:w-full [&>button]:justify-center' : 'flex flex-wrap gap-3'}>
-				<button type='button' onClick={() => setOpen(true)} className='bb-btn bb-btn-solid'>
-					<FilePdfIcon size={15} aria-hidden='true' />
-					Read the ordinance
-				</button>
-				<button type='button' onClick={copy} disabled={copied === 'busy'} className='bb-btn bb-btn-ghost'>
-					{copied === 'done' ? <CheckIcon size={15} weight='bold' aria-hidden='true' /> : <CopyIcon size={15} aria-hidden='true' />}
-					{copied === 'done' ? 'Copied' : copied === 'busy' ? 'Copying…' : 'Copy the text'}
-				</button>
+				{elsewhere ? (
+					<a href={elsewhere} target='_blank' rel='noreferrer' className='bb-btn bb-btn-solid'>
+						<FilePdfIcon size={15} aria-hidden='true' />
+						Read the ordinance
+					</a>
+				) : (
+					<button type='button' onClick={() => setOpen(true)} className='bb-btn bb-btn-solid'>
+						<FilePdfIcon size={15} aria-hidden='true' />
+						Read the ordinance
+					</button>
+				)}
 				{/* Only while Jo is on the estate: with the dock switched off, the button would open nothing. */}
 				{JO ? (
 					<button type='button' onClick={() => window.dispatchEvent(new CustomEvent('betterbarmm:ask', { detail: question }))} className='bb-btn bb-btn-ghost'>
@@ -77,9 +58,6 @@ export function OrdinanceActions({
 						Ask Jo to explain it
 					</button>
 				) : null}
-				<span aria-live='polite' className='sr-only'>
-					{copied === 'done' ? 'The text is on your clipboard.' : ''}
-				</span>
 			</div>
 
 			{/* On <body>: inside the masthead the dialog would take the band's crimson tokens. */}

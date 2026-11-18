@@ -207,3 +207,8 @@
     padding-inline: 2rem;
   }
 }
+
+/* One step smaller than the browser's 16px: every rem-sized type, gap and box in the workspace scales down with it. */
+html {
+  font-size: 15px;
+}

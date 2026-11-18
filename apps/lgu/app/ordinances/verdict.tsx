@@ -9,9 +9,9 @@ export function VerdictTag({ verdict }: { verdict: string }) {
 	return <span className={`inline-flex shrink-0 items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-[0.71875rem] font-semibold ${style}`}>{verdict}</span>
 }
 
-/** What each verdict means, in a line. */
+/** What each verdict means, in a line, as a condition on the reader's LGU rather than a promise about it. */
 export const VERDICT_MEANS: Record<string, string> = {
-	'Ready to adapt': 'Works in BARMM almost as drafted: mostly re-citing the law and renaming offices.',
-	'Adapt with changes': 'A sound model, but its offices, rates, penalties or legal bases need real rework.',
-	'Take the idea, not the text': 'Too tied to its LGU, too old or incomplete to copy. Borrow the approach and draft afresh.',
+	'Ready to adapt': 'If your LGU has the offices it names, it needs little more than re-citing the law and renaming offices.',
+	'Adapt with changes': 'A sound model, but expect to rework its offices, rates, penalties or legal bases to fit your LGU.',
+	'Take the idea, not the text': 'Too tied to its LGU, too old or too incomplete to copy. Borrow the approach and draft afresh.',
 }

@@ -213,7 +213,10 @@ export function SiteNav() {
 							Officials
 						</Link>
 
-						{/* Ordinances (/ordinances) is hidden for now: the library is built, its link comes back when it opens. */}
+						<Link href='/ordinances' data-active={pathname.startsWith('/ordinances')} className='nav-item'>
+							Ordinances
+						</Link>
+
 						<Menu label='LGU profiles' active={isProvinceActive} width='w-[36rem]'>
 							{(close) => (
 								<>
@@ -322,6 +325,9 @@ export function SiteNav() {
 							<div className='mt-3 grid'>
 								<Link href='/officials' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
 									Local officials
+								</Link>
+								<Link href='/ordinances' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5'>
+									Ordinances
 								</Link>
 							</div>
 

@@ -8,13 +8,10 @@
    a BARMM council can read how someone else drafted a code before
    writing its own; none of them has force in the region.
 
-   The full text lives in datasets/ordinances/text/<id>.txt and is
-   read from disk at build, never imported: together the texts run to
-   megabytes, and only the one page that shows an ordinance needs it.
+   The full texts live in datasets/ordinances/text/<id>.txt, for
+   writing the readings and for Jo; the pages show the PDF instead.
    ============================================================ */
 
-import fs from 'node:fs'
-import path from 'node:path'
 import file from '../../../datasets/ordinances/ordinances.json'
 
 export type Ordinance = {
@@ -32,19 +29,40 @@ export type Ordinance = {
 	shortTitle: string
 	summary: string
 	points: string[]
+	/** The same in fuller form: a heading, what it says with its figures, and where it says it ("Sec. 5"). */
+	provisions?: { title: string; text: string; section: string | null }[]
 	penalties: string | null
 	amends: string | null
 	caveat: string | null
 	/** The LGU's own copy. */
 	pdf: string
+	/** The Internet Archive's copy, where the LGU has taken its own down. */
+	archived?: string
 	pages: number
 	/** "text" off the PDF's own text layer, "ocr" off a scan. */
 	read: 'text' | 'ocr'
-	/** What a BARMM LGU can take from it, read against the Bangsamoro Local Governance Code. */
+	/** Facts about the ordinance itself, read off its text; null or empty where the text does not say. */
+	details?: {
+		sponsors: string[]
+		approvedBy: string | null
+		/** YYYY-MM-DD, the chief executive's approval. */
+		approved: string | null
+		effect: string | null
+		covers: string | null
+		enforcers: string | null
+		creates: string[]
+		funding: string | null
+		structure: string | null
+	}
+	/** Its standout facts as a figure and what it counts: "₱3,000", "a month for each volunteer". */
+	highlights?: { value: string; label: string }[]
+	/** What a BARMM LGU could do with it, read against the Bangsamoro Local Governance Code. Written as conditions
+	    the reader checks against their own LGU, never as an assumption about it. */
 	barmm?: {
 		verdict: 'Ready to adapt' | 'Adapt with changes' | 'Take the idea, not the text'
 		why: string
-		adopt: string[]
+		/** "If your LGU has …", then "you can replicate this by …". */
+		apply: { if: string; then: string }[]
 		change: string[]
 		fits: string
 		laws: string[]
@@ -69,12 +87,4 @@ export const ordinanceCategories = raw.categories
 
 export function slug(name: string): string {
 	return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-}
-
-/** The full text, off disk. The app runs from its own folder or from the repo root. */
-export function ordinanceText(id: string): string {
-	const dir = [path.join(process.cwd(), '../../datasets/ordinances/text'), path.join(process.cwd(), 'datasets/ordinances/text')].find((d) => fs.existsSync(d))
-	if (!dir || !/^[a-z0-9-]+$/.test(id)) return ''
-	const at = path.join(dir, `${id}.txt`)
-	return fs.existsSync(at) ? fs.readFileSync(at, 'utf8') : ''
 }
