@@ -108,8 +108,8 @@ function Switch({
 						<Icon size={18} weight={on ? 'fill' : 'duotone'} aria-hidden='true' />
 					</span>
 					<span className='min-w-0 pt-0.5'>
-						<span className={`block text-[0.875rem] font-semibold leading-5 transition-colors ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)] group-hover:text-[var(--accent)]'}`}>{item.label}</span>
-						{item.blurb ? <span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{item.blurb}</span> : null}
+						<span className={`block text-[0.875rem] font-bold leading-5 transition-colors ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)] group-hover:text-[var(--accent)]'}`}>{item.label}</span>
+						{item.blurb ? <span className='mt-0.5 block text-[0.75rem] font-normal leading-snug text-[var(--ink-3)]'>{item.blurb}</span> : null}
 					</span>
 				</a>
 			</li>
