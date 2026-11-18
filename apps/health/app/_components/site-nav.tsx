@@ -11,8 +11,11 @@ import { ThemeToggle } from './theme-toggle'
 /* The workspace's doors. */
 const pages = [
 	{ href: '/', label: 'Overview' },
-	{ href: '/facilities', label: 'Facilities' },
+	{ href: '/towns', label: 'Towns' },
+	{ href: '/map', label: 'Map' },
 	{ href: '/hospitals', label: 'Hospitals' },
+	{ href: '/plan', label: 'Against the plan' },
+	{ href: '/services', label: 'Services' },
 	{ href: '/sources', label: 'Sources' },
 ] as const
 

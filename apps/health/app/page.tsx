@@ -2,6 +2,9 @@ import Link from 'next/link'
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import { Figures, Masthead, YearBars, peso } from './_components/parts'
 import { PROCUREMENT } from './_lib/bids'
+import { fmt, indicators } from './_lib/plan'
+import { offersTotal } from './_lib/services'
+import { mapPoints, regionStations, towns } from './_lib/towns'
 import { BUDGET_URL, KIND_LABELS, budgetHospitals, countsSource, facilityAreas, facilityTotal, healthBuyers, kindCount, latest, latestYear, lineSeries, programs, spending, years } from './_lib/health'
 
 const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
@@ -10,6 +13,15 @@ const TH = 'px-3 py-2.5 text-left font-mono text-[0.625rem] font-semibold upperc
 const TD = 'px-3 py-2.5 align-top'
 
 const asOf = new Date(`${countsSource.asOf}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
+
+/** The towns with the most people for each barangay health station. */
+const stretched = towns
+	.filter((t) => t.perStation)
+	.sort((a, b) => b.perStation! - a.perStation!)
+	.slice(0, 10)
+
+/** The towns the registry counted no station in at all. */
+const without = towns.filter((t) => t.onRegistry && !t.stations).sort((a, b) => b.barangays - a.barangays)
 
 export default function HealthHome() {
 	const share = spending.at(-1)!.share
@@ -23,7 +35,7 @@ export default function HealthHome() {
 				kicker='Health · Bangsamoro'
 				name='Care in the Bangsamoro'
 				chart
-				note={`What each year’s General Appropriations Act of the Bangsamoro gives the Ministry of Health, FY ${years[0]} to FY ${latestYear}, the hospitals it funds by name, and the facilities in every town.`}
+				note={`What each year’s General Appropriations Act of the Bangsamoro gives the Ministry of Health, FY ${years[0]} to FY ${latestYear}, and the hospitals it funds by name; the facilities in every town and on the map; how mothers and children fare against the regional plan; and what the government offers for health.`}
 			>
 				<YearBars bars={spending.map((s) => ({ year: s.year, value: s.total }))} caption='The ministry’s appropriation, each year' />
 			</Masthead>
@@ -39,6 +51,87 @@ export default function HealthHome() {
 					{ value: peso(bhw.at(-1)!), label: 'Barangay health workers', series: bhw },
 				]}
 			/>
+
+			{/* ---- Against the plan ---- */}
+			<section className='bb-container bb-section'>
+				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
+					<h2 className={H2}>Against the plan</h2>
+					<p className={NOTE}>
+						What the regional plan aims for, beside the latest figure published. Lower is better for deaths and stunting, higher for
+						immunisation.
+					</p>
+				</div>
+				<ul className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5'>
+					{indicators
+						.filter((i) => i.area === 'Health')
+						.map((i) => (
+							<li key={i.id} className='border-t-2 pt-4' style={{ borderColor: i.reading === 'short' ? 'var(--accent)' : 'var(--ink)' }}>
+								<p className='num font-[family-name:var(--font-display)] text-[1.75rem] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>
+									{i.latest ? fmt(i, i.latest.value) : '–'}
+								</p>
+								<p className='mt-2 text-[0.8125rem] font-semibold leading-snug text-[var(--ink)]'>{i.name}</p>
+								<p className='mt-1 text-[0.75rem] text-[var(--ink-3)]'>
+									{i.latest ? `${i.latest.year}` : ''}
+									{i.target ? ` · target ${fmt(i, i.direction === 'up' ? i.target.low : i.target.high)} by ${i.target.year}` : ''}
+								</p>
+								<p className={`mt-2 text-[0.75rem] font-semibold ${i.reading === 'short' ? 'text-[var(--accent)]' : 'text-[var(--ink-2)]'}`}>
+									{i.reading === 'short' ? 'Short of the target' : i.reading === 'past' ? 'Past the target' : 'No target'}
+								</p>
+							</li>
+						))}
+				</ul>
+				<Link href='/plan' className='rule-link mt-8 inline-block text-[0.875rem]'>
+					Every target, with water and sanitation, and its source
+				</Link>
+			</section>
+
+			{/* ---- The towns most stretched ---- */}
+			<section className='bg-[var(--paper-2)]'>
+				<div className='bb-container bb-section'>
+					<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
+						<h2 className={H2}>One health station for every {regionStations.perStation.toLocaleString('en-PH')} people</h2>
+						<p className={NOTE}>
+							Across the region, {regionStations.per10} barangay health stations for every 10 barangays. These towns have the most people
+							for each one.
+						</p>
+					</div>
+					<ol className='mt-10 grid gap-x-10 gap-y-0 sm:grid-cols-2'>
+						{stretched.map((t) => (
+							<li key={`${t.area}/${t.slug}`} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-3 text-[0.875rem]'>
+								<Link href={`/towns/${t.area}/${t.slug}`} className='rule-link font-semibold'>
+									{t.name}
+									<span className='ml-2 font-normal text-[var(--ink-3)]'>{t.areaName}</span>
+								</Link>
+								<span className='num shrink-0 text-right text-[var(--ink)]'>
+									{t.perStation!.toLocaleString('en-PH')} <span className='text-[var(--ink-3)]'>per station</span>
+								</span>
+							</li>
+						))}
+					</ol>
+					<p className='mt-8 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
+						<span className='font-semibold text-[var(--accent)]'>
+							{without.length} towns had no barangay health station on the registry at all
+						</span>
+						, together {without.reduce((n, t) => n + t.barangays, 0).toLocaleString('en-PH')} barangays:{' '}
+						{without.map((t, i) => (
+							<span key={`${t.area}/${t.slug}`}>
+								<Link href={`/towns/${t.area}/${t.slug}`} className='rule-link'>
+									{t.name}
+								</Link>
+								{i < without.length - 1 ? ', ' : '.'}
+							</span>
+						))}
+					</p>
+					<div className='mt-8 flex flex-wrap gap-x-8 gap-y-3 text-[0.875rem]'>
+						<Link href='/towns' className='rule-link'>
+							Every town
+						</Link>
+						<Link href='/services' className='rule-link'>
+							The {offersTotal} programs and services for health
+						</Link>
+					</div>
+				</div>
+			</section>
 
 			{/* ---- Where the money goes ---- */}
 			<section className='bb-container bb-section'>
@@ -108,7 +201,7 @@ export default function HealthHome() {
 									<tr key={a.slug}>
 										<td className={TD}>
 											{a.rows.length ? (
-												<Link href={`/facilities?area=${a.slug}`} className='rule-link font-semibold'>
+												<Link href={`/towns?area=${a.slug}`} className='rule-link font-semibold'>
 													{a.name}
 												</Link>
 											) : (
@@ -129,9 +222,14 @@ export default function HealthHome() {
 							</tbody>
 						</table>
 					</div>
-					<Link href='/facilities' className='rule-link mt-6 inline-block text-[0.875rem]'>
-						Every town
-					</Link>
+					<div className='mt-6 flex flex-wrap gap-x-8 gap-y-3 text-[0.875rem]'>
+						<Link href='/towns' className='rule-link'>
+							Every town, beside its people and barangays
+						</Link>
+						<Link href='/map' className='rule-link'>
+							The {mapPoints.length} facilities volunteers have mapped
+						</Link>
+					</div>
 				</div>
 			</section>
 

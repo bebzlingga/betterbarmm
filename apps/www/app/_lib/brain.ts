@@ -81,6 +81,8 @@ export function brain() {
 	const ordinanceFile = read<{ generatedAt: string; ordinances: { summary?: string }[] }>('ordinances/ordinances.json')
 	const finances = read<Record<string, unknown>>('lgu/finances.json')
 	const districts = read<{ towns: Record<string, { districts: string[] }> }>('election/district-towns.json').towns
+	const healthFile = read<{ counts: { source: { asOf: string }; towns: unknown[] } }>('health/facilities.json')
+	const planFile = read<{ indicators: unknown[] }>('development-plan/scorecard.json')
 	const schoolsFile = read<{ years: string[]; source: { retrieved: string }; schools: { source: string; pupils: number | null }[] }>('education/schools.json')
 	const ministry = read<{ retrieved: string; figures: unknown[] }>('education/mbhte-figures.json')
 	const learners = schoolsFile.schools.reduce((k, x) => k + (x.pupils ?? 0), 0)
@@ -103,6 +105,7 @@ export function brain() {
 		{ id: 'w-preparedness', label: 'Preparedness', kind: 'workspace', note: 'Flood, landslide and storm surge hazard for every barangay, from Project NOAH, and the evacuation sites, hospitals and offices nearest each one.', href: '/preparedness' },
 		{ id: 'w-places', label: 'Travel & Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: 'https://travel.betterbarmm.com' },
 		{ id: 'w-education', label: 'Education', kind: 'workspace', note: `Every school in the region on a map and town by town, with its learners each school year; how learners do against the plan; the scholarships on offer; and the education ministry’s own figures.`, href: 'https://education.betterbarmm.com' },
+		{ id: 'w-health', label: 'Health', kind: 'workspace', note: 'The health ministry’s budget and the hospitals it funds; every town’s facilities beside its people and barangays; the mapped facilities; mothers’ and children’s health against the plan; and the programs and services on offer.', href: 'https://health.betterbarmm.com' },
 		{ id: 'w-library', label: 'Library', kind: 'workspace', note: 'Books about the Bangsamoro and its peoples, who wrote and published them, where each can be bought, borrowed or read free, and the magazines of the region’s own offices.', href: 'https://library.betterbarmm.com' },
 		{ id: 'w-crafts', label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
 		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes, with each place’s head, numbers and email beside it.', href: '/services' },
@@ -131,6 +134,8 @@ export function brain() {
 		{ id: 'd-facilities', label: 'Emergency facilities', kind: 'dataset', count: facilitiesFile.facilities.length, unit: 'facilities', date: facilitiesFile.generatedAt, note: 'Evacuation sites, schools, hospitals, health centres, police, fire and disaster risk reduction offices, each placed in its barangay.' },
 		{ id: 'd-schools', label: 'Schools & learners', kind: 'dataset', count: schoolsFile.schools.length, unit: 'schools', date: schoolsFile.source.retrieved, note: `Every school on DepEd’s list for school year ${sy}, public and private, with its learners in each year from 2023–24 (${n(learners)} in ${sy}), placed in its town; the madaris and colleges OpenStreetMap and Wikipedia add.` },
 		{ id: 'd-ministry', label: 'Education ministry figures', kind: 'dataset', count: ministry.figures.length, unit: 'figures', date: ministry.retrieved, note: 'MBHTE publishes no dataset, so its figures as it and the Parliament stated them (enrolment, scholars, teachers, classrooms), each with who said it and where.' },
+		{ id: 'd-health', label: 'Health facilities', kind: 'dataset', count: healthFile.counts.towns.length, unit: 'towns', date: healthFile.counts.source.asOf, note: 'The Department of Health’s count of barangay health stations, health units, birthing homes, hospitals and infirmaries in each town, government and private.' },
+		{ id: 'd-plan', label: 'Development plan scorecard', kind: 'dataset', count: planFile.indicators.length, unit: 'indicators', note: 'The 2nd Bangsamoro Development Plan’s targets, each beside the latest published figure.' },
 		{ id: 'd-charters', label: 'Regional Citizen’s Charters', kind: 'dataset', count: offerings.length, unit: 'services & programs', note: `The services and programs of the ${new Set(offerings.map((o) => o.office.slug)).size} regional offices that publish a Citizen’s Charter, each with its requirements, fee and time.` },
 		{ id: 'd-lgu-charters', label: 'LGU Citizen’s Charters', kind: 'dataset', count: lgus.reduce((k, l) => k + (lguHasCharter(l) ? l.services.length : 0), 0), unit: 'services', note: `The services of the ${lgus.filter(lguHasCharter).length} provinces, cities and towns whose charters are online; the other ${lgus.filter((l) => !lguHasCharter(l)).length} have none.` },
 		{ id: 'd-primer', label: 'History primer', kind: 'dataset', count: discoverBarmmTopics.length, unit: 'chapters', note: 'The region’s story from the sultanates to the transition, with dated timelines.' },
@@ -163,6 +168,8 @@ export function brain() {
 		{ id: 's-publishers', label: 'Publishers & institutes', kind: 'source', note: 'University presses, research institutes and NGOs: their catalogues, and the free PDFs many of them publish.' },
 		{ id: 's-deped', label: 'Department of Education', kind: 'source', note: 'Project Bukas: school-level enrolment for every school year, and the school facilities and staff files; its 2019 masterlist, cleaned by OpenStreetMap Philippines, for where each school stands.' },
 		{ id: 's-mbhte', label: 'MBHTE', kind: 'source', note: 'The Ministry of Basic, Higher and Technical Education: its releases on its official Facebook page, and the scholarships it runs.' },
+		{ id: 's-doh', label: 'Department of Health', kind: 'source', note: 'The National Health Facility Registry: how many facilities of each type every town has.' },
+		{ id: 's-bpda', label: 'BPDA', kind: 'source', note: 'The Bangsamoro Planning and Development Authority: the development plan, its midterm update and the yearly development reports.' },
 		{ id: 's-scholars', label: 'Histories & laws', kind: 'source', note: 'The Organic Law, peace agreements and published histories behind the primer.' },
 	]
 
@@ -204,12 +211,14 @@ export function brain() {
 		['s-bio', ['d-ministry']],
 		['s-parliament', ['d-ministry']],
 		['s-news', ['d-ministry']],
+		['s-doh', ['d-health']],
+		['s-bpda', ['d-plan']],
 	]
 	const publishes: [string, string[]][] = [
 		['d-measures', ['w-legislation']],
 		['d-code', ['w-legislation', 'w-lgu']],
-		['d-appropriations', ['w-budget', 'w-services']],
-		['d-charters', ['w-services', 'w-directory']],
+		['d-appropriations', ['w-budget', 'w-services', 'w-health']],
+		['d-charters', ['w-services', 'w-directory', 'w-health']],
 		['d-lgu-charters', ['w-services', 'w-directory']],
 		['d-election', ['w-election']],
 		['d-lgus', ['w-lgu', 'w-directory']],
@@ -217,7 +226,7 @@ export function brain() {
 		['d-finances', ['w-lgu']],
 		['d-audits', ['w-lgu', 'w-budget']],
 		['d-ordinances', ['w-lgu']],
-		['d-notices', ['w-procurement']],
+		['d-notices', ['w-procurement', 'w-health']],
 		['d-blacklist', ['w-procurement']],
 		['d-offices', ['w-directory']],
 		['d-field', ['w-directory']],
@@ -228,7 +237,9 @@ export function brain() {
 		['d-magazines', ['w-library']],
 		['d-incidents', ['w-incidents']],
 		['d-hazards', ['w-preparedness']],
-		['d-facilities', ['w-preparedness']],
+		['d-facilities', ['w-preparedness', 'w-health']],
+		['d-health', ['w-health']],
+		['d-plan', ['w-health']],
 		['d-primer', ['w-discover']],
 		['d-schools', ['w-education']],
 		['d-ministry', ['w-education']],
@@ -248,6 +259,9 @@ export function brain() {
 		['w-services', 'w-lgu', 'Town code'],
 		['w-education', 'w-lgu', 'Town'],
 		['w-education', 'w-budget', 'Office ID'],
+		['w-health', 'w-lgu', 'Town code'],
+		['w-health', 'w-budget', 'Office ID'],
+		['w-health', 'w-procurement', 'Office'],
 	]
 	const edges: BrainEdge[] = [
 		...feeds.flatMap(([from, to]) => to.map((t): BrainEdge => ({ from, to: t, kind: 'feeds' }))),

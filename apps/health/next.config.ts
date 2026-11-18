@@ -8,7 +8,11 @@ const nextConfig: NextConfig = {
 	// The bid notices and the facilities are read from disk on the server rather than
 	// bundled, so the files are traced into the deployment by hand.
 	outputFileTracingIncludes: {
-		'/**': ['../../datasets/procurement/philgeps.json', '../../datasets/health/facilities.json'],
+		'/**': ['../../datasets/procurement/philgeps.json', '../../datasets/health/facilities.json', '../../datasets/preparedness/facilities.json'],
+	},
+	// The facility counts moved town by town, beside each town's people and barangays.
+	async redirects() {
+		return [{ source: '/facilities', destination: '/towns', permanent: true }]
 	},
 }
 

@@ -13,7 +13,7 @@ const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 export default function SourcesPage() {
 	return (
 		<>
-			<Masthead kicker='Health · Bangsamoro' name='Sources' note='Four public records, each kept as its publisher printed it.' />
+			<Masthead kicker='Health · Bangsamoro' name='Sources' note='The public records behind every page here, each kept as its publisher printed it.' />
 			<div className='bb-container bb-section max-w-[52rem] [&>section+section]:mt-14'>
 				<section>
 					<h2 className={H2}>The money</h2>
@@ -54,6 +54,52 @@ export default function SourcesPage() {
 						</a>{' '}
 						of the Philippines&rsquo; health facilities. Map data © OpenStreetMap contributors, available under the Open Database
 						License. Volunteers map what they know, so many hospitals are missing.
+					</p>
+				</section>
+				<section>
+					<h2 className={H2}>Town by town</h2>
+					<p className={P}>
+						Each town&rsquo;s people and barangays are the{' '}
+						<a href='https://lgu.betterbarmm.com' className='rule-link'>
+							Local Government workspace
+						</a>
+						&rsquo;s, from the Philippine Statistics Authority&rsquo;s latest census and its list of barangays. They are set beside the
+						2021 facility count, so a ratio such as people per health station mixes two years, and a station can serve more than one
+						barangay.
+					</p>
+				</section>
+				<section>
+					<h2 className={H2}>The map</h2>
+					<p className={P}>
+						Every hospital and health centre or clinic volunteers have placed on OpenStreetMap inside the region, each set in the barangay
+						that holds it, the same record as the{' '}
+						<a href='https://betterbarmm.com/preparedness' className='rule-link'>
+							Preparedness
+						</a>{' '}
+						map. Map data © OpenStreetMap contributors, under the Open Database License. It holds only what someone has mapped.
+					</p>
+				</section>
+				<section>
+					<h2 className={H2}>Against the plan</h2>
+					<p className={P}>
+						The targets of the 2nd Bangsamoro Development Plan 2023–2028 for health, water and sanitation, and the latest figure for
+						each, as gathered for{' '}
+						<a href='https://betterbarmm.com/plan' className='rule-link'>
+							the plan scorecard
+						</a>{' '}
+						from the plan, its midterm update and the Bangsamoro Development Reports. Each card links to the page its figure is printed
+						on. Most of the ministry&rsquo;s figures come from its facility reporting, not from surveys; stunting is from a national
+						survey.
+					</p>
+				</section>
+				<section>
+					<h2 className={H2}>Programs and services</h2>
+					<p className={P}>
+						What the Ministry of Health and other offices list for health in their citizen&rsquo;s charters and on their sites, from the{' '}
+						<a href='https://betterbarmm.com/services' className='rule-link'>
+							Programs &amp; services
+						</a>{' '}
+						record on betterbarmm.com, where each item&rsquo;s requirements, fee and source are.
 					</p>
 				</section>
 				<section>

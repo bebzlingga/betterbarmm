@@ -222,9 +222,9 @@ function explainers(): Entry[] {
 }
 
 /* ---- Health facilities ---- */
-type HealthTown = { area: string; townName: string; government: Record<string, number>; private: Record<string, number> }
+type HealthTown = { area: string; town: string; townName: string; government: Record<string, number>; private: Record<string, number> }
 function health(): Entry[] {
-	const file = healthFile as unknown as { counts: { source: { asOf: string }; towns: HealthTown[] }; hospitals: { list: { name: string; area: string; townName: string; operator: string | null }[] } }
+	const file = healthFile as unknown as { counts: { source: { asOf: string }; towns: HealthTown[] }; hospitals: { list: { name: string; area: string; town: string | null; townName: string; operator: string | null }[] } }
 	const asOf = file.counts.source.asOf.slice(0, 4)
 	const list = (r: Record<string, number>) => Object.entries(r).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${n} ${k}`).join(', ')
 	return [
@@ -238,7 +238,7 @@ function health(): Entry[] {
 				Object.keys(t.private).length ? `Private: ${list(t.private)}.` : '',
 				`DOH's National Health Facility Registry, ${asOf}.`,
 			]),
-			href: `https://health.betterbarmm.com`,
+			href: `https://health.betterbarmm.com/towns/${t.area}/${t.town}`,
 			text: joined([t.townName, area(t.area), ...Object.keys(t.government), ...Object.keys(t.private)]).toLowerCase(),
 	
 			rollup: true,
@@ -248,7 +248,7 @@ function health(): Entry[] {
 			kind: 'Hospital',
 			title: h.name,
 			note: joined([`A hospital in ${h.townName}, ${area(h.area)}.`, h.operator ? `Run by ${h.operator}.` : '', 'Mapped on OpenStreetMap; the list is not complete.']),
-			href: `https://health.betterbarmm.com`,
+			href: h.town ? `https://health.betterbarmm.com/towns/${h.area}/${h.town}` : `https://health.betterbarmm.com/map`,
 			text: joined([h.name, h.townName, area(h.area), 'hospital']).toLowerCase(),
 		})),
 	]
