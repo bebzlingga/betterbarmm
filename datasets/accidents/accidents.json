@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-18",
+ "generatedAt": "2026-11-19",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, public Facebook posts that index carried, and the Facebook page of DXMS Radyo Bida, NDBC’s station in Cotabato City. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -49,6 +49,34 @@
     }
    ],
    "id": "2026-11-18-datu-saudi-ampatuan-shooting"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Man shot dead at a store on a barangay road in Bulalo, Sultan Kudarat; a minor wounded",
+   "summary": "Akmad Adam Kasan, 44, a resident of Barangay Bulalo, Sultan Kudarat, Maguindanao del Norte, was eating at a store on a barangay road when men on a Kawasaki Bajaj motorcycle came up and shot him, at past 8 p.m. on Wednesday, 18 November 2026, according to the Bangsamoro police. He died on the spot. A minor caught in the shooting was wounded and taken to hospital. Five empty 9mm pistol shells were found at the scene, and the police are still investigating.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Kudarat",
+   "barangay": "Bulalo",
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [
+    "motorcycle"
+   ],
+   "lat": 7.2298,
+   "lon": 124.2564,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "DXMS Radyo Bida (Facebook)",
+     "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02nkFw4MVBDWca9zwteQseDY2eTuugZ9srDesKsjhMfSWoLtTYH47DM4sRNfXzmHU4l&id=100068735708353",
+     "title": "Lalaki patay sa pamamaril sa Sultan Kudarat, Maguindanao Norte",
+     "date": "2026-11-19"
+    }
+   ],
+   "id": "2026-11-18-sultan-kudarat-shooting"
   },
   {
    "date": "2026-11-17",

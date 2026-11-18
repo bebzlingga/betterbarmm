@@ -26,7 +26,7 @@ const READ = async (scrolls: number) => {
 		const close = document.querySelector<HTMLElement>('[role=dialog] [aria-label="Close"]')
 		if (close) close.click()
 		else if (document.querySelector('[role=dialog] [aria-label="Log in to Facebook"]')) break
-		for (const el of [...document.querySelectorAll<HTMLElement>('div[role=button]')].filter((e) => e.innerText.trim() === 'See more')) {
+		for (const el of [...document.querySelectorAll<HTMLElement>('[role=button]')].filter((e) => e.innerText.trim() === 'See more')) {
 			el.click()
 			await sleep(150)
 		}
@@ -105,7 +105,7 @@ export async function readFacebookPage(page: { name: string; url: string }, scro
 		for (const post of posts) {
 			// A live programme: "was live" or "is live" over it, or, once it ends, its listing ("Host: … Time: 4:00PM - 5:00PM").
 			if (/ (was|is) live\b/.test(post.head) || /^Host:/m.test(post.text) || !post.text) continue
-			const lines = post.text.replace(/‎/g, '').replace(/\s*See less$/, '').split('\n').map((l) => l.trim()).filter(Boolean)
+			const lines = post.text.replace(/‎/g, '').replace(/\s*See less$/, '').replace(/…?\s*See more$/, '').split('\n').map((l) => l.trim()).filter(Boolean)
 			const title = lines[0]!
 			const rest = lines.slice(1).join(' ')
 			// The first post link is the post's own (its time or its video); later ones are links in its text or comments.
