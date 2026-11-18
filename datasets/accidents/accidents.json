@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-17",
+ "generatedAt": "2026-11-18",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, public Facebook posts that index carried, and the Facebook page of DXMS Radyo Bida, NDBC’s station in Cotabato City. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,46 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-11-18",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "School principal shot dead in his minivan near his home in Salbu, Datu Saudi-Ampatuan",
+   "summary": "Dionel Villabito Mahusay, principal of Datu Pendililang Elementary School in neighbouring Datu Piang, was shot by armed men who blocked his minivan about 50 metres from his house in Barangay Salbu, Datu Saudi-Ampatuan, Maguindanao del Sur, at about 8:20 a.m. on Wednesday, 18 November 2026, according to the Police Regional Office-BAR. His family rushed him home, and he died. No shell casings were found and the motive was not known. Education Minister Naguib Sinarimbo condemned the killing and called for the gunmen to be caught.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Saudi-Ampatuan",
+   "barangay": "Salbu",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [
+    "minivan"
+   ],
+   "lat": 6.9391,
+   "lon": 124.4318,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "GMA News",
+     "url": "https://www.gmanetwork.com/news/topstories/regions/1009925/elementary-school-principal-shot-dead-in-maguindanao-del-sur/story/",
+     "title": "Elementary school principal shot dead in Maguindanao del Sur",
+     "date": "2026-11-18"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2343158/school-principal-shot-dead-in-maguindanao-del-sur",
+     "title": "School principal shot dead in Maguindanao del Sur",
+     "date": "2026-11-18"
+    },
+    {
+     "outlet": "DXMS Radyo Bida (Facebook)",
+     "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0GpN5QwEYNTLT5cHifVBGjZqsanqtoaqcPyqu7h3wKtNhEZdwFZfH7u6LXr6gGdY5l&id=100068735708353",
+     "title": "Kinondena ng MBHTE BARMM ang pagpatay kay Principal Dionel Villabito Mahusay",
+     "date": "2026-11-18"
+    }
+   ],
+   "id": "2026-11-18-datu-saudi-ampatuan-shooting"
+  },
   {
    "date": "2026-11-17",
    "type": "fire",
@@ -60,6 +100,12 @@
      "url": "https://newsinfo.inquirer.net/2342270/barangay-chief-2-others-hurt-in-barmm-ambush",
      "title": "Barangay chief, 2 others hurt in BARMM ambush",
      "date": "2026-11-16"
+    },
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/11/18/2570849/3-killed-4-wounded-barmm-ambuscades",
+     "title": "3 killed, 4 wounded in BARMM ambuscades",
+     "date": "2026-11-18"
     }
    ],
    "id": "2026-11-16-kadayangan-shooting"
@@ -106,6 +152,12 @@
      "url": "https://www.facebook.com/reel/1907201547107856/",
      "title": "WATCH: Kumakalat sa social media ang video ng umano’y pananambang sa isang sasakyan sa Sitio Gubat, Barangay Kurintem, Datu Odin Sinsuat",
      "date": "2026-11-16"
+    },
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/11/18/2570849/3-killed-4-wounded-barmm-ambuscades",
+     "title": "3 killed, 4 wounded in BARMM ambuscades",
+     "date": "2026-11-18"
     }
    ],
    "id": "2026-11-16-datu-odin-sinsuat-shooting"
@@ -138,6 +190,62 @@
     }
    ],
    "id": "2026-11-16-cotabato-shooting"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Businessman shot dead in his car in Malangit, Pandag",
+   "summary": "Businessman Muda Hussim was in a Suzuki sedan when a group of men opened fire on him in Barangay Malangit, Pandag, Maguindanao del Sur, on Monday, 16 November 2026, according to the Bangsamoro police. He was declared dead on arrival at a nearby hospital.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Pandag",
+   "barangay": "Malangit",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [
+    "car"
+   ],
+   "lat": 6.7412,
+   "lon": 124.7837,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/11/18/2570849/3-killed-4-wounded-barmm-ambuscades",
+     "title": "3 killed, 4 wounded in BARMM ambuscades",
+     "date": "2026-11-18"
+    }
+   ],
+   "id": "2026-11-16-pandag-shooting"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Lending-company collector shot dead and his companion wounded in an ambush in Kitulaan, Kapalawan",
+   "summary": "Jingle Pestanas, a collector for a Kidapawan lending company, was riding a motorcycle with a companion when a group of men ambushed them in Barangay Kitulaan, Kapalawan, in the Special Geographic Area, on Monday, 16 November 2026, according to the Bangsamoro police. Pestanas died of multiple gunshot wounds, and his companion was taken to hospital with gunshot wounds.",
+   "province": "Special Geographic Area",
+   "municipality": "Kapalawan",
+   "barangay": "Kitulaan",
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [
+    "motorcycle"
+   ],
+   "lat": 7.2603,
+   "lon": 124.7895,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "Philstar",
+     "url": "https://www.philstar.com/nation/2026/11/18/2570849/3-killed-4-wounded-barmm-ambuscades",
+     "title": "3 killed, 4 wounded in BARMM ambuscades",
+     "date": "2026-11-18"
+    }
+   ],
+   "id": "2026-11-16-kapalawan-shooting"
   },
   {
    "date": "2026-11-15",

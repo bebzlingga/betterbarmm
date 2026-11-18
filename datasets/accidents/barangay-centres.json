@@ -626,6 +626,11 @@
    "lat": 7.1825,
    "lon": 124.2238,
    "matched": "Tamontaka, Cotabato City, Bangsamoro, 9600, Philippines"
+  },
+  "Kitulaan|Kapalawan|Special Geographic Area": {
+   "lat": 7.2603,
+   "lon": 124.7895,
+   "matched": "Kitulaan, Kapalawan, Special Geographic Area, Bangsamoro, 9408, Philippines"
   }
  }
 }

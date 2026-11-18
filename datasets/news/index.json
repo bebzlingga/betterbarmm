@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-17T08:17:40.531Z",
+ "generatedAt": "2026-11-18T08:18:46.254Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -177,6 +177,18 @@
    "via": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNUklzY3dVbW9ZWnpsa0xkNVFiY2I0MUNIc0t0SXJVdTAtSlQ5ZEkxd2YxaFRFZFdBOHpaNms0SzE5azlwRzZYZzlkNmVvYXVFWXVqZkJ3bDR3SHpkbUkydTVETldabE9FM0xxT1dJMnE3SXZHcFpIczNVbWdva3Ixd1pxV21ieTJoYXljMlhGU0VQWEt0amI2QndIQ1VibFBtOVFkMlVLblpnREo1eVhwZmRPbk1HdjE5Vk9LVW5MdFB0OEc3N0Iwb242NjNyemh0ZGNGcE1TR0dkRTEzYTlLV0lOUzFzVlgtc3JvVkF5dHJxUk1UQ1VscnYtLXJha2p0WVNfZ0dsSnlMeUt6aE9LR3I1UEpUSjk1WWo1OGNVMkZGSnBQZWhvcHo4UldKZzg?oc=5",
    "title": "Cultural Diplomacy in Cisnadie: Queen Maria’s Royal Delegation Introduces Sultanate of Maguindanao and We Care for Humanity to Romania",
    "reason": "not about the region: an event in Romania"
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2343300/rescued-serpent-eagle-freed-in-cotabato-province",
+   "via": null,
+   "title": "Rescued serpent eagle freed in Cotabato province",
+   "reason": "not about the region: Cotabato province"
+  },
+  {
+   "url": "https://newsinfo.inquirer.net/2343177/kidapawan-mayor-bars-lgu-christmas-parties-outside-province",
+   "via": null,
+   "title": "Kidapawan mayor bars LGU Christmas parties outside province",
+   "reason": "not about the region: Kidapawan City, Cotabato province"
   }
  ],
  "weeks": [
