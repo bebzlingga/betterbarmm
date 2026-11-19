@@ -26,6 +26,7 @@ import officesFile from '../../../datasets/directory/offices.json'
 import structureFile from '../../../datasets/directory/structure.json'
 import placesFile from '../../../datasets/places/places.json'
 import staysFile from '../../../datasets/places/stays.json'
+import eatsFile from '../../../datasets/places/eats.json'
 import type { Entry } from './corpus'
 
 const TRAVEL = 'https://travel.betterbarmm.com'
@@ -267,6 +268,19 @@ function stays(): Entry[] {
 	}))
 }
 
+function eats(): Entry[] {
+	type Eat = { name: string; kind: string; municipality: string; address?: string | null; note: string; halal: 'certified' | 'halal' | null; as_of: string }
+	const halal = { certified: 'Halal-certified.', halal: 'Halal, its source says.' }
+	return (eatsFile as { eats: Eat[] }).eats.map((e) => ({
+		space: 'travel',
+		kind: 'Place to eat',
+		title: e.name,
+		note: joined([`A ${e.kind === 'cafe' ? 'café' : e.kind} in ${e.municipality}.`, e.address ? `Address: ${e.address}.` : '', e.halal ? halal[e.halal] : '', `${e.note}.`, `Seen open ${e.as_of}; confirm before you go.`]),
+		href: `${TRAVEL}/eat`,
+		text: `${e.name} ${e.kind} ${e.halal ? 'halal' : ''} restaurant food ${e.municipality} ${e.address ?? ''}`.toLowerCase(),
+	}))
+}
+
 function crafts(): Entry[] {
 	type Craft = { slug: string; name: string; local_name?: string; group: string; people?: string; province?: string; towns?: string[]; summary: string; materials?: string }
 	return (craftsFile as { items: Craft[] }).items.map((c) => ({
@@ -342,7 +356,7 @@ function incidents(): Entry[] {
 }
 
 export function directory(): Entry[] {
-	return [...regionalOffices(), ...officers(), ...pastHeads(), ...fieldOffices(), ...hotlines(), ...localLines(), ...catalogue(), ...stays(), ...crafts(), ...incidents()]
+	return [...regionalOffices(), ...officers(), ...pastHeads(), ...fieldOffices(), ...hotlines(), ...localLines(), ...catalogue(), ...stays(), ...eats(), ...crafts(), ...incidents()]
 }
 
 /** The words a question uses for each kind of row here. */

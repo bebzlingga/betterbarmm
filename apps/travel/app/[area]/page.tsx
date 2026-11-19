@@ -23,7 +23,7 @@ import {
 	townsInArea,
 	travelAreas,
 } from '@betterbarmm/travel-data'
-import { explorePlaces, staysInArea } from '@betterbarmm/travel-data/explore'
+import { eatsInArea, explorePlaces, staysInArea } from '@betterbarmm/travel-data/explore'
 import type { Icon } from '@phosphor-icons/react'
 import {
 	AirplaneTiltIcon,
@@ -101,6 +101,10 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 	const firstLeg = areaLegs[0]
 	const things = explorePlaces.filter((p) => p.area === area.slug).map(toCard)
 	const stays = staysInArea(area.slug)
+	const eats = eatsInArea(area.slug)
+	// The city guide's places to eat, less those already shown as cards.
+	const shownEats = new Set(eats.map((eat) => stayKey(eat.name)))
+	const moreEats = (guide?.eat ?? []).filter((place) => !shownEats.has(stayKey(place.name)))
 	const shownStays = new Set(stays.map((stay) => stayKey(stay.name)))
 	// The city guide's further places to stay: only those it found open — listed on a booking site or with an active page
 	// when it was compiled — since several of the others have closed (user decision). Names are compared loosely, so
@@ -260,10 +264,22 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 					</AreaSection>
 				) : null}
 
-				{/* ---- Where to eat: the city guide's dishes and places ---- */}
-				{guide?.eat.length ? (
-					<AreaSection id='where-to-eat' title='Where to eat' lede={`${guide.eat.length} places to eat in ${area.name}, and the dishes to look for.`}>
-						{guide.dishes.length ? (
+				{/* ---- Where to eat: the halal places to eat by name, then the city guide's dishes and places ---- */}
+				{eats.length || moreEats.length ? (
+					<AreaSection
+						id='where-to-eat'
+						title='Where to eat'
+						lede={guide?.dishes.length ? `${eats.length + moreEats.length} places to eat in ${area.name}, and the dishes to look for.` : `${eats.length} ${eats.length === 1 ? 'place' : 'places'} to eat in ${area.name}, each seen open in a recent post or report.`}
+					>
+						{eats.length ? (
+							<ul className='grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-[48px]'>
+								{eats.map((eat) => (
+									<StayCard key={eat.name} stay={eat} />
+								))}
+							</ul>
+						) : null}
+						{guide?.dishes.length ? (
+							<div className={eats.length ? 'mt-14' : ''}>
 							<div className='grid gap-x-12 gap-y-6 sm:grid-cols-2 lg:grid-cols-3'>
 								{guide.dishes.map((dish) => (
 									<div key={dish.name}>
@@ -276,11 +292,16 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 									</div>
 								))}
 							</div>
+							</div>
 						) : null}
-						<div className={guide.dishes.length ? 'mt-14' : ''}>
-							<h3 className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>Places to eat</h3>
-							<CityList items={guide.eat} />
-						</div>
+						{moreEats.length ? (
+							<div className={eats.length || guide?.dishes.length ? 'mt-14' : ''}>
+								<h3 className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+									{eats.length ? 'More places to eat' : 'Places to eat'}
+								</h3>
+								<CityList items={moreEats} />
+							</div>
+						) : null}
 					</AreaSection>
 				) : null}
 

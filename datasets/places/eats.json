@@ -1,0 +1,5294 @@
+{
+ "name": "Places to eat",
+ "note": "Restaurants, cafés, bakeries and eateries in BARMM, each seen operating in 2025–26 on its own Facebook page or in a Bangsamoro Government release, as of November 2026. Halal is marked only where a source says so (\"certified\" only with a named certifier); ask when you visit.",
+ "eats": [
+  {
+   "name": "Cheraf's Resto",
+   "kind": "restaurant",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "FDK Building, Pansacala Street",
+   "note": "Restaurant and caterer listing itself as a halal restaurant; dishes such as beef randang; a second branch opened at KCC Mall of Cotabato in January 2026",
+   "halal": "halal",
+   "source": "https://www.facebook.com/cherafs/",
+   "facebook": "https://www.facebook.com/cherafs",
+   "instagram": null,
+   "website": null,
+   "phone": "0917 708 2205",
+   "email": null,
+   "hours": null,
+   "about": "Cheraf's is a home-style restaurant on Pansacala Street that lists itself as a halal restaurant and cooks the dishes Cotabato families serve at home, such as beef randang, the Maranao and Maguindanaon cousin of Malaysian rendang, slow-cooked in spiced coconut. In January 2026 it opened a second counter, Cheraf's Kitchenette, on the second floor of KCC Mall of Cotabato. Much of its work is catering: weddings, aqiqah (the naming feast for a newborn), kanduli thanksgiving meals, corporate lunches and whole-day events, served buffet-style. It suits a quick local lunch in the city centre or anyone planning a halal spread for a gathering.",
+   "why_go": "For home-style Maguindanaon and Maranao dishes like beef randang from a kitchen that calls itself halal.",
+   "tips": [
+    "Takes catering for weddings, aqiqah, kanduli, birthdays and corporate events",
+    "Accepts credit card payments"
+   ],
+   "specialties": [
+    "Beef randang"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [
+    "Cheraf's Kitchenette, KCC Mall of Cotabato (2nd floor)"
+   ],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-cherafs-resto.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122098914267228961&set=pcb.122098916157228961",
+    "author": "Cherafs Kcc Branch (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Cheraf's branch at KCC Mall of Cotabato, Cotabato City: the entrance and dining room"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-cherafs-resto-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=973964431414362",
+     "author": "Cheraf's Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "A buffet line in chafing dishes set up by Cheraf's Resto, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-cherafs-resto-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=973964424747696",
+     "author": "Cheraf's Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "A function room laid out with long tables by Cheraf's Resto, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-cherafs-resto-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=973960458081426",
+     "author": "Cheraf's Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Round tables dressed for an event catered by Cheraf's Resto, Cotabato City"
+    }
+   ],
+   "lat": 7.20699,
+   "lon": 124.23919,
+   "placed": "street"
+  },
+  {
+   "name": "Coffee Spot",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Sinsuat Avenue, beside Husky Terminal",
+   "note": "Open-air coffee shop under string lights; Italian-style coffee, pastries and snacks",
+   "halal": null,
+   "source": "https://www.facebook.com/CoffeeSpotSinsuat/",
+   "facebook": "https://www.facebook.com/CoffeeSpotSinsuat",
+   "instagram": "https://www.instagram.com/coffeespot_official",
+   "website": null,
+   "phone": null,
+   "email": "smak.corp2022@gmail.com",
+   "hours": null,
+   "about": "Coffee Spot is a roadside coffee shop beside the Husky Terminal on Sinsuat Avenue that sets out to bring Italian-style coffee to Cotabato City. Tables sit under string lights in an open-air setting, with an indoor room behind the bar; the menu runs from espresso drinks and matcha to cheesecake slices, fries and pasta. It keeps long hours, staying open late into the night, and during the last days of Ramadan it opens from evening until 2 AM for the after-tarawih crowd. A car wash in the same compound means you can have your car cleaned while you drink.",
+   "why_go": "For a late-night coffee and cheesecake on Sinsuat Avenue after most cafés have closed.",
+   "tips": [
+    "Has run late hours (until 2 AM) on some nights and during Ramadan",
+    "A car wash operates in the same compound"
+   ],
+   "specialties": [
+    "Iced coffee",
+    "Matcha",
+    "Biscoff cheesecake",
+    "Blueberry cheesecake"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-coffee-spot.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122131376348213236&set=a.122093226314213236",
+    "author": "Coffee Spot - Sinsuat Ave., Cotabato City (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 900,
+    "caption": "Coffee Spot on Sinsuat Avenue, Cotabato City, its tables full at night"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-coffee-spot-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122222880728213236",
+     "author": "Coffee Spot - Sinsuat Ave., Cotabato City (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "The coffee bar and drinks fridge at Coffee Spot, Sinsuat Avenue, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-coffee-spot-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122222880620213236",
+     "author": "Coffee Spot - Sinsuat Ave., Cotabato City (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Blueberry cheesecake, iced coffee and fries at Coffee Spot, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-coffee-spot-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122222397188213236",
+     "author": "Coffee Spot - Sinsuat Ave., Cotabato City (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Spaghetti, fries and chicken bowls on a table at Coffee Spot, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-coffee-spot-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122222397242213236",
+     "author": "Coffee Spot - Sinsuat Ave., Cotabato City (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The indoor seating area of Coffee Spot, Cotabato City"
+    }
+   ],
+   "lat": 7.22046,
+   "lon": 124.24641,
+   "placed": "street"
+  },
+  {
+   "name": "Connie's Bakeshop & Restaurant",
+   "kind": "bakery",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Don Rufino Alonzo Street",
+   "note": "Bakeshop and restaurant (since 1985): cakes, breads and meals; also caters events",
+   "halal": null,
+   "source": "https://www.facebook.com/conniescotabato/",
+   "facebook": "https://www.facebook.com/conniescotabato",
+   "instagram": null,
+   "website": null,
+   "phone": "0965 978 0996",
+   "email": null,
+   "hours": null,
+   "about": "Connie's is a bakeshop on Don Rufino Alonzo Street with a restaurant attached. It is best known for celebration cakes: layered dedication cakes, Black Forest, ube and fondant cakes decorated to order for birthdays and graduations. The dining room also hosts set-table dinners, and the shop takes catering inquiries. Come here to order a cake for an occasion or to pick up bread and pastries.",
+   "why_go": "For a made-to-order celebration cake from a familiar Cotabato bakeshop.",
+   "tips": [
+    "Takes orders for dedication, graduation and wedding cakes"
+   ],
+   "specialties": [
+    "Dedication cakes",
+    "Black Forest cake",
+    "Ube cake"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-02",
+   "image": {
+    "url": "/places/eats/eat-connies-bakeshop-and-restaurant.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1409979910920733&set=a.516993736886026",
+    "author": "Connie’s Bakeshop & Restaurant (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 487,
+    "height": 487,
+    "caption": "Red-velvet Valentine's cakes topped with teddy bears at Connie's Bakeshop, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-connies-bakeshop-and-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=586386133280119",
+     "author": "Connie’s Bakeshop & Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1079,
+     "height": 1080,
+     "caption": "A cake covered in sugar flowers from Connie's Bakeshop, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-connies-bakeshop-and-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=831489985436398",
+     "author": "Connie’s Bakeshop & Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A long table set for a dinner at Connie's Bakeshop & Restaurant, Cotabato City"
+    }
+   ],
+   "lat": 7.22333,
+   "lon": 124.24958,
+   "placed": "place"
+  },
+  {
+   "name": "Datu's Brew",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Gov. Gutierrez Avenue",
+   "note": "Coffee shop that roasts and sells its own coffee and muscovado sugar",
+   "halal": null,
+   "source": "https://www.facebook.com/DatusBrew/",
+   "facebook": "https://www.facebook.com/DatusBrew",
+   "instagram": null,
+   "website": "http://datusbrew.wordpress.com",
+   "phone": "0927 254 2381",
+   "email": "datusbrewcoffeeshop@gmail.com",
+   "hours": null,
+   "about": "Datu's Brew in Rosary Heights X describes itself as a coffee shop that tells the story of its people: it displays fine handicrafts of Maguindanao and frames itself as a small part of peace-building in Mindanao. It sells its own freshly ground coffee and local muscovado sugar in packs, alongside brewed coffee, cakes and pastries such as blueberry cupcakes. After a quiet spell the page announced in 2026 that its coffee and muscovado were back, sold by message order in sizes and bundles. It suits visitors who want local coffee to take home and a café with a cultural angle.",
+   "why_go": "For locally packed ground coffee and muscovado sugar from a café rooted in Maguindanaon culture.",
+   "tips": [
+    "Coffee and muscovado sugar packs are ordered by message on its page"
+   ],
+   "specialties": [
+    "Ground coffee",
+    "Muscovado sugar",
+    "Hot chili mocha latte",
+    "Blueberry cupcake"
+   ],
+   "services": [
+    "Take-out",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-09",
+   "image": {
+    "url": "/places/eats/eat-datus-brew.jpg",
+    "page": "https://www.facebook.com/DatusBrew/",
+    "author": "Datu's Brew (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "A cup of hot chocolate at Datu's Brew, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-datus-brew-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=389555667816126",
+     "author": "Datu's Brew (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Yellow rice with grilled vegetables, coffee and chocolate cake at Datu's Brew, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-datus-brew-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=604793049625719",
+     "author": "Datu's Brew (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Baked desserts in ramekins on a Datu's Brew menu, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-datus-brew-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1599593801858118",
+     "author": "Datu's Brew (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 809,
+     "height": 1080,
+     "caption": "Packs of Datu's Brew ground coffee on a woven mat, Cotabato City"
+    }
+   ],
+   "lat": 7.2007,
+   "lon": 124.24023,
+   "placed": "place"
+  },
+  {
+   "name": "Golden Crust",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Door 1, Sabal Building, corner Pascual Street, Sinsuat Avenue",
+   "note": "Pastry café and restaurant (est. 2022): macarons, cakes, chicken wings and coffee; also runs baking classes",
+   "halal": null,
+   "source": "https://www.facebook.com/goldencrustcotabato/",
+   "facebook": "https://www.facebook.com/goldencrustcotabato",
+   "instagram": "https://www.instagram.com/goldencrustcotabato",
+   "website": null,
+   "phone": "0915 610 2998",
+   "email": "Goldencrustcotabato@gmail.com",
+   "hours": null,
+   "about": "Golden Crust is a pastry café and restaurant at the corner of Pascual Street and Sinsuat Avenue, opened in 2022 and marking its 4th anniversary in November 2026. Its counter is built around baked goods: macarons, cheesecakes such as Bento burnt cheesecake, cookies, churros and banana pudding, plus savoury chicken wings in several sauces and coffee topped with its homemade cream. It runs baking classes and workshops, and launches limited items like its cloud cake by comment reservation. It suits a dessert-and-coffee stop or a box of pastries to bring to a visit.",
+   "why_go": "For macarons, cheesecakes and baked treats made in-house, plus baking workshops.",
+   "tips": [
+    "Limited items are reserved by commenting MINE and the quantity on its posts",
+    "Runs baking class workshops"
+   ],
+   "specialties": [
+    "Macarons",
+    "Burnt cheesecake",
+    "Cloud cake",
+    "Chicken wings",
+    "Churros",
+    "Banana pudding"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": 2022,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-golden-crust.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1123333233777129",
+    "author": "Golden Crust (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Macarons in paper cups at Golden Crust, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-golden-crust-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1089036897206763&set=a.126528583457604",
+     "author": "Golden Crust (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 720,
+     "caption": "A dessert table of cakes and cheesecakes by Golden Crust, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-golden-crust-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1127821549994964",
+     "author": "Golden Crust (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 952,
+     "caption": "Glazed chicken wings with dipping sauce at Golden Crust, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-golden-crust-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1123333083777144",
+     "author": "Golden Crust (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Churros with chocolate dip at Golden Crust, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-golden-crust-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1131888309588288",
+     "author": "Golden Crust (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Banana pudding in a Golden Crust cup, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-golden-crust-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1123333170443802",
+     "author": "Golden Crust (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 720,
+     "caption": "Chocolate cookies cooling on a rack at Golden Crust, Cotabato City"
+    }
+   ],
+   "lat": 7.22046,
+   "lon": 124.24641,
+   "placed": "street"
+  },
+  {
+   "name": "Good Eats",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "2nd floor, Puyat Arcade Building, Gov. Gutierrez Avenue, Rosary Heights 9",
+   "note": "Coffee shop: espresso drinks, cold brews and desserts",
+   "halal": null,
+   "source": "https://www.facebook.com/goodeats.cbo",
+   "facebook": "https://www.facebook.com/goodeats.cbo",
+   "instagram": null,
+   "website": null,
+   "phone": "0926 095 9459",
+   "email": "goodeats1332@gmail.com",
+   "hours": null,
+   "about": "Good Eats is a second-floor coffee bar in the Puyat Arcade on Gov. Gutierrez Avenue, with a polished espresso setup turning out latte art, iced citrus coffees and butterfly-pea lemonades, plus burgers and desserts. It also runs a counter on the second floor of KCC Mall of Cotabato and a mobile coffee bar that it brings to birthdays, weddings, corporate events and grand openings. It suits a sit-down coffee in Rosary Heights or booking a coffee cart for an event.",
+   "why_go": "For carefully made espresso drinks and a coffee bar you can hire for events.",
+   "tips": [
+    "Its mobile coffee bar can be booked for weddings, birthdays and corporate events"
+   ],
+   "specialties": [
+    "Latte",
+    "Iced citrus coffee",
+    "Butterfly-pea lemonade",
+    "Burger"
+   ],
+   "services": [
+    "Dine-in",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [
+    "KCC Mall of Cotabato (2nd floor)"
+   ],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-good-eats.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1123486930206558",
+    "author": "Good Eats (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 972,
+    "height": 1080,
+    "caption": "Good Eats, Cotabato City: the coffee bar and pastry case"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-good-eats-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1060681529820432",
+     "author": "Good Eats (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1079,
+     "caption": "A latte with horse latte art at Good Eats, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-good-eats-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1062500432971875",
+     "author": "Good Eats (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 849,
+     "height": 1080,
+     "caption": "An iced citrus coffee at the espresso machine of Good Eats, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-good-eats-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1044819908073261",
+     "author": "Good Eats (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A burger with potato chips at Good Eats, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-good-eats-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1056390136916238",
+     "author": "Good Eats (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Drinks on the Good Eats coffee bar, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-good-eats-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1060681449820440",
+     "author": "Good Eats (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 720,
+     "height": 1080,
+     "caption": "Butterfly-pea lemonades at Good Eats, Cotabato City"
+    }
+   ],
+   "lat": 7.19966,
+   "lon": 124.24177,
+   "placed": "street"
+  },
+  {
+   "name": "Hala Bira Halal Food",
+   "kind": "eatery",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Jose Lim Sr. Street",
+   "note": "Halal eatery known for beef bulalo and papaitan",
+   "halal": "halal",
+   "source": "https://www.facebook.com/halabirahalalfoods",
+   "facebook": "https://www.facebook.com/halabirahalalfoods",
+   "instagram": null,
+   "website": null,
+   "phone": "0939 135 6215",
+   "email": null,
+   "hours": null,
+   "about": "Hala Bira Halal Food is a small eatery on Jose Lim Sr. Street that Cotabato City has known for years for two soups: beef bulalo, a clear broth of beef shank and marrow bone with corn and greens, and papaitan, a bitter, tangy beef tripe soup. It also serves fried dalag (mudfish) and home-style rice plates, and its name and page make a point of the food being halal. It opens early and closes mid-afternoon, so it is a breakfast and lunch place; delivery runs through local riders such as Maxim. A sister counter, HAB HUB, has opened on the De Mazenod side.",
+   "why_go": "For a steaming bowl of halal beef bulalo or papaitan, the dish locals send visitors to.",
+   "tips": [
+    "Regular hours posted after Eid 2026: 6:00 AM – 3:30 PM",
+    "Delivers through Maxim and local delivery services"
+   ],
+   "specialties": [
+    "Beef bulalo",
+    "Papaitan",
+    "Fried dalag"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [
+    "HAB HUB, De Mazenod"
+   ],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-hala-bira-halal-food.jpg",
+    "page": "https://www.facebook.com/halabirahalalfoods",
+    "author": "HALA BIRA HALAL FOOD (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 879,
+    "caption": "A bowl of beef bulalo with rice at Hala Bira Halal Food, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-hala-bira-halal-food-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=4256665911102699",
+     "author": "HALA BIRA HALAL FOOD (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Fried fish, scrambled egg, cucumber and a bowl of soup at Hala Bira Halal Food, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-hala-bira-halal-food-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=687085076770244",
+     "author": "HALA BIRA HALAL FOOD (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A bowl of beef bulalo with cabbage and pechay at Hala Bira Halal Food, Cotabato City"
+    }
+   ],
+   "lat": 7.22469,
+   "lon": 124.24807,
+   "placed": "place"
+  },
+  {
+   "name": "Hello Cafe",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "21C Sinsuat Avenue, Rosary Heights 9",
+   "note": "Café by the Cha Tuk Chak milk-tea brand: milk tea, coffee, burgers, pasta and group meals",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Hello-Cafe-61563008489975/",
+   "facebook": "https://www.facebook.com/profile.php?id=61563008489975",
+   "instagram": null,
+   "website": null,
+   "phone": "0967 165 3191",
+   "email": null,
+   "hours": null,
+   "about": "Hello Cafe is the café of Cha Tuk Chak Cotabato, a milk-tea shop with a glass front at 21C Sinsuat Avenue, with a ground floor and a second floor for walk-in guests. Drinks run from Biscoff and pistachio milk teas to seasonal specials, and the kitchen adds burgers, pasta and seafood plates meant to be paired with them. It hosts family events such as a Halloween party for children, and is open daily for dine-in and takeout. It suits families and groups of friends looking for a bright, casual spot.",
+   "why_go": "For trending milk-tea flavours with a full plate of pasta or a burger on Sinsuat Avenue.",
+   "tips": [
+    "Posted opening hours: daily, 9 AM – 10 PM"
+   ],
+   "specialties": [
+    "Biscoff milk tea",
+    "Pistachio milk tea",
+    "Chicken Bliss Burger",
+    "Seafood pasta"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-hello-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122204672414433616",
+    "author": "Hello Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 720,
+    "caption": "Pasta with scallops and garlic bread at Hello Cafe, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-hello-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122357279678231924&set=pcb.122357280398231924",
+     "author": "Hello Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The glass shopfront of Cha Tuk Chak, home of Hello Cafe, on Sinsuat Avenue, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-hello-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122357279756231924&set=pcb.122357280398231924",
+     "author": "Hello Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Milk-tea drinks on the order counter at Hello Cafe, Cotabato City"
+    }
+   ],
+   "lat": 7.22046,
+   "lon": 124.24641,
+   "placed": "street"
+  },
+  {
+   "name": "Hidden Cafe",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Gonzalo Javier Street, Compact Sema 2nd Road",
+   "note": "Neighbourhood café: iced drinks, waffles, chicken and rice meals; delivers by Maxim",
+   "halal": null,
+   "source": "https://www.facebook.com/HiddenCafeyourneighborhoodspot/",
+   "facebook": "https://www.facebook.com/HiddenCafeyourneighborhoodspot",
+   "instagram": "https://www.instagram.com/hiddencafecbo_",
+   "website": null,
+   "phone": "0975 781 4519 / 0954 234 2637",
+   "email": "Hiddencafecbo@gmail.com",
+   "hours": "Dine-in: 10 AM – 10 PM; delivery & pickup: until 1 AM",
+   "about": "Hidden Cafe calls itself a neighbourhood café, tucked away on Gonzalo Javier Street in Rosary Heights 7. It serves iced matcha, coffee and cream drinks with comfort food such as loaded fries, onion rings, waffles and chicken, in a bright room with a few tables. Its long delivery window, running until 1 AM through its page and the Maxim app, makes it a late-night option. It suits students and friends catching up, or anyone ordering in late.",
+   "why_go": "For late-night drinks and loaded fries delivered until 1 AM.",
+   "tips": [
+    "Dine-in 10 AM – 10 PM; delivery and pickup until 1 AM",
+    "Orders via its page or the Maxim app"
+   ],
+   "specialties": [
+    "Iced matcha",
+    "Loaded fries",
+    "Onion rings",
+    "Waffles"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-hidden-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122177990516723607&set=pcb.122177990708723607",
+    "author": "Hidden Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 862,
+    "height": 1080,
+    "caption": "Waffle, chicken and drinks on a table at Hidden Cafe, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-hidden-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122178726482723607",
+     "author": "Hidden Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 862,
+     "height": 1080,
+     "caption": "Loaded fries, onion rings and two iced drinks at Hidden Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-hidden-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122179102898723607",
+     "author": "Hidden Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 862,
+     "height": 1080,
+     "caption": "Iced matcha and coffee drinks at Hidden Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-hidden-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122179103066723607",
+     "author": "Hidden Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 862,
+     "height": 1080,
+     "caption": "Strawberry and cookies-and-cream drinks at Hidden Cafe, Cotabato City"
+    }
+   ],
+   "lat": 7.20144,
+   "lon": 124.24514,
+   "placed": "street"
+  },
+  {
+   "name": "Jamaica Le Cafe",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Rosary Heights 9, Sinsuat Avenue",
+   "note": "Café and restaurant (est. 2011): coffee, cakes, pasta and fried hito (catfish); a 2019 review called it halal-certified",
+   "halal": "halal",
+   "source": "https://www.facebook.com/jamaicalecafecotabato/",
+   "facebook": "https://www.facebook.com/jamaicalecafecotabato",
+   "instagram": "https://www.instagram.com/jamaicalecafe",
+   "website": null,
+   "phone": "0917 184 5120",
+   "email": "jamaicalecafeph@gmail.com",
+   "hours": null,
+   "about": "Jamaica Le Cafe is a café-restaurant on Level 2 of the Mall of Alnor on Sinsuat Avenue that travel writers were already recommending in 2018; a 2019 review in Edge Davao described it as halal-certified. Beyond cakes such as Mango Bravo and coffee, its kitchen serves Filipino and Asian plates, including fried hito (catfish) with spiced vinegar, crab rice and creamy shrimp pasta. The space also hosts community events such as a garage-sale weekend in November 2026. It suits a relaxed meal with dessert after shopping at the mall.",
+   "why_go": "For fried hito and a slice of Mango Bravo cake in one stop at the Mall of Alnor.",
+   "tips": [],
+   "specialties": [
+    "Fried hito",
+    "Mango Bravo cake",
+    "Crab rice",
+    "Shrimp pasta",
+    "Cookies-and-cream frappe"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-jamaica-le-cafe.jpg",
+    "page": "https://www.facebook.com/jamaicalecafecotabato/",
+    "author": "Jamaica Le Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 884,
+    "caption": "Jamaica Le Cafe, Cotabato City: the dining room and its name on the wall"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-jamaica-le-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1049049171520152",
+     "author": "Jamaica Le Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 864,
+     "height": 1080,
+     "caption": "Fried hito (catfish) with vinegar dip and salad at Jamaica Le Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-jamaica-le-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1023672484057821",
+     "author": "Jamaica Le Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Creamy shrimp penne at Jamaica Le Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-jamaica-le-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1065475033210899",
+     "author": "Jamaica Le Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "A mango-topped cake at Jamaica Le Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-jamaica-le-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1028438750247861",
+     "author": "Jamaica Le Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A cookies-and-cream frappe at Jamaica Le Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-jamaica-le-cafe-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1041967598894976",
+     "author": "Jamaica Le Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Slices of matcha cake and chocolate cake at Jamaica Le Cafe, Cotabato City"
+    }
+   ],
+   "lat": 7.19811,
+   "lon": 124.24111,
+   "placed": "barangay"
+  },
+  {
+   "name": "Katto Koffee",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Katto Shophouse, Notre Dame Avenue",
+   "note": "Small coffee bar serving matcha from Nishio and Uji, Japan, and espresso drinks",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Katto-Koffee/100090750040111/",
+   "facebook": "https://www.facebook.com/profile.php?id=100090750040111",
+   "instagram": null,
+   "website": null,
+   "phone": null,
+   "email": null,
+   "hours": null,
+   "about": "Katto Koffee is a small coffee bar at the Katto Shophouse on Notre Dame Avenue, beside the PSA building, that bills itself as \"good coffee only\". Its focus is matcha from Nishio and Uji, the two Japanese regions best known for growing tea for matcha; it sources from makers such as Marukyu Koyamaen and introduces named matcha like Matsukaze, describing their tasting notes (umami, seaweed, white chocolate, nuts). Drinks include matcha and strawberry matcha lattes and seasonal coffees such as a pumpkin spice latte, and the owners occasionally share matcha they bring back from their travels. It suits matcha lovers and anyone wanting a quiet weekday stop near Notre Dame.",
+   "why_go": "For matcha from Nishio and Uji, Japan's best-known matcha regions, rare this far south.",
+   "tips": [
+    "Posted hours: Monday–Saturday, 8:30 AM – 5:30 PM"
+   ],
+   "specialties": [
+    "Matcha latte",
+    "Strawberry matcha latte",
+    "Pumpkin spice latte"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-katto-koffee.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1069977506037241&set=pcb.1069977592703899",
+    "author": "Katto Koffee (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "An iced matcha latte at Katto Koffee, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-katto-koffee-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1069977449370580&set=pcb.1069977592703899",
+     "author": "Katto Koffee (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "An iced strawberry matcha latte held up at the Katto Koffee window, Cotabato City"
+    }
+   ],
+   "lat": 7.2185,
+   "lon": 124.24889,
+   "placed": "street"
+  },
+  {
+   "name": "La Hitopia",
+   "kind": "eatery",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Sinsuat Avenue, Rosary Heights 4 (fronting NDRVM); branch on T.V. Juliano Street, Bagua 3",
+   "note": "Hito (catfish) and tilapia house",
+   "halal": null,
+   "source": "https://www.facebook.com/LaHitopia/",
+   "facebook": "https://www.facebook.com/LaHitopia",
+   "instagram": null,
+   "website": null,
+   "phone": "0953 490 9951",
+   "email": null,
+   "hours": null,
+   "about": "La Hitopia is a grill and restaurant built around hito (catfish) and tilapia, its tagline a pun: \"Fish be with yah\". The main branch at the Tocao Residence on Sinsuat Avenue, fronting Notre Dame RVM, celebrated five years in September 2025, and a second branch faces Kutawato Cave on T.V. Juliano Street. Hito is usually fried crisp and eaten with spiced vinegar and rice, a favourite across Cotabato. The place is popular with teams and government offices for group meals and gives free cakes to graduates celebrating there.",
+   "why_go": "For fried hito and tilapia at a restaurant devoted to them.",
+   "tips": [],
+   "specialties": [
+    "Fried hito",
+    "Grilled tilapia"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": 2020,
+   "branches": [
+    "T.V. Juliano Street, Bagua 3 (fronting Kutawato Cave)"
+   ],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-la-hitopia.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=696436982497659&set=a.696436959164328",
+    "author": "La Hitopia (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 720,
+    "height": 960,
+    "caption": "Fried hito (catfish) on a banana leaf at La Hitopia, Cotabato City"
+   },
+   "gallery": [],
+   "lat": 7.22046,
+   "lon": 124.24641,
+   "placed": "street"
+  },
+  {
+   "name": "Manong's",
+   "kind": "eatery",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "173 Sinsuat Avenue",
+   "note": "Manong's Fruitti Foods and Bakeshop: a fruit stand, bakeshop and turo-turo counter of cooked dishes",
+   "halal": null,
+   "source": "https://www.facebook.com/ManongsFFB/",
+   "facebook": "https://www.facebook.com/ManongsFFB",
+   "instagram": null,
+   "website": null,
+   "phone": "0927 265 9151",
+   "email": "manongsffb@gmail.com",
+   "hours": null,
+   "about": "Manong's Fruitti Foods and Bakeshop at 173 Sinsuat Avenue is three things in one: a fruit stand stocked with imported and local fruit, a bakeshop, and a turo-turo counter where you point at trays of cooked dishes. It posts its updated fruit price lists regularly, from California strawberries to pineapples and watermelon. It suits a quick, inexpensive meal or a fruit basket to bring as pasalubong.",
+   "why_go": "For fresh fruit, bread and point-and-pick cooked dishes under one roof.",
+   "tips": [
+    "Its updated menus and FAQs are pinned on its Facebook profile"
+   ],
+   "specialties": [
+    "Fresh fruit",
+    "Bread and pastries"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-manongs.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1751443136987520",
+    "author": "Manong's (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Trays of cooked dishes at the counter of Manong's, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-manongs-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1751443203654180",
+     "author": "Manong's (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Customers at the bakeshop counter of Manong's, Sinsuat Avenue, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-manongs-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1751443403654160",
+     "author": "Manong's (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Imported apples and blueberries on the fruit shelves at Manong's, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-manongs-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1751442876987546",
+     "author": "Manong's (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Pineapples piled at the fruit stand of Manong's, Cotabato City"
+    }
+   ],
+   "lat": 7.20204,
+   "lon": 124.23949,
+   "placed": "place"
+  },
+  {
+   "name": "MB Butterfly Restaurant",
+   "kind": "restaurant",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Mabini Street, Bagua 3",
+   "note": "Restaurant and caterer offering halal food for weddings, aqeeqah and family events",
+   "halal": "halal",
+   "source": "https://www.facebook.com/mbbutterflyrestaurant/",
+   "facebook": "https://www.facebook.com/mbbutterflyrestaurant",
+   "instagram": null,
+   "website": null,
+   "phone": "0967 611 1633",
+   "email": "mbhotelrestaurant@gmail.com",
+   "hours": null,
+   "about": "MB Butterfly Restaurant on Mabini Street is mainly a halal caterer: it sets up on site for weddings, nikah ceremonies, aqeeqah and family gatherings, and its page says it caters any occasion that does not involve haram. It is registered with PhilGEPS, so it regularly supplies government offices and BARMM agencies with packed meals, snack boxes and themed food corners. Its spreads lean to yellow rice, chicken, fish, salads and fruit. It suits groups and offices that need halal food for an event in Cotabato City.",
+   "why_go": "For a dependable halal caterer that can feed an event or an office seminar.",
+   "tips": [
+    "Caters weddings, nikah, aqeeqah and corporate events in Cotabato City and nearby",
+    "PhilGEPS-registered for government orders"
+   ],
+   "specialties": [
+    "Packed meals",
+    "Snack boxes",
+    "Buffet catering"
+   ],
+   "services": [
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-08",
+   "image": {
+    "url": "/places/eats/eat-mb-butterfly-restaurant.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1021682116904961",
+    "author": "MB Butterfly Restaurant (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Plates of yellow rice with chicken and sides at MB Butterfly Restaurant, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-mb-butterfly-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1021682620238244",
+     "author": "MB Butterfly Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Packed meals of rice, fish and salad from MB Butterfly Restaurant, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-mb-butterfly-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1020772890329217",
+     "author": "MB Butterfly Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A boxed meal of chicken, vegetables and beef from MB Butterfly Restaurant, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-mb-butterfly-restaurant-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=873766531696521",
+     "author": "MB Butterfly Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Snack packs of cake and fruit from MB Butterfly Restaurant, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-mb-butterfly-restaurant-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=696812339391942",
+     "author": "MB Butterfly Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Rows of sandwich and chip packs catered by MB Butterfly Restaurant, Cotabato City"
+    }
+   ],
+   "lat": 7.2263,
+   "lon": 124.24616,
+   "placed": "street"
+  },
+  {
+   "name": "Moro Grounds Restaurant",
+   "kind": "restaurant",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Fronting Sultan Bolkiah Mosque, Kalanganan 2",
+   "note": "Tausug and Moro dishes such as satti, tiyula itum and beef sinina; halal-certified by Maslaha Halal Certification Board Inc., July 2026 to July 2027",
+   "halal": "certified",
+   "source": "https://www.facebook.com/photo/?fbid=122195552126401394&set=a.122108088686401394",
+   "facebook": "https://www.facebook.com/morogrounds",
+   "instagram": null,
+   "website": null,
+   "phone": "0905 520 5372",
+   "email": "morogrounds@gmail.com",
+   "hours": null,
+   "about": "Moro Grounds serves Moro cuisine, the cooking of the Tausug, Maguindanaon and Maranao, in Cotabato City, with a sister restaurant in Davao. In 2026 both branches were halal-certified by the Maslaha Halal Certification Board. Look for satti, Tausug grilled skewers served in a spicy, peanut-rich sauce with rice cakes, often eaten for breakfast; tiyula itum, a black beef soup coloured with burnt coconut; and beef sinina. It also hosts iftar during Ramadan and delivers large packed-meal orders around the region.",
+   "why_go": "For certified-halal satti and tiyula itum, the Tausug classics, in Cotabato City.",
+   "tips": [
+    "Takes bulk packed-meal orders"
+   ],
+   "specialties": [
+    "Satti",
+    "Tiyula itum",
+    "Beef sinina"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [
+    "Moro Grounds Restaurant, Coronet Building, Quimpo Boulevard, Davao City"
+   ],
+   "as_of": "2026-09",
+   "image": {
+    "url": "/places/eats/eat-moro-grounds-restaurant.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=822733307422238",
+    "author": "Moro Grounds Restaurant-Cotabato (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 828,
+    "height": 840,
+    "caption": "Satti, grilled skewers in a spiced sauce over rice, at Moro Grounds Restaurant, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-moro-grounds-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122113962225379767&set=pcb.122113962495379767",
+     "author": "Moro Grounds Restaurant-Cotabato (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A beef stew with carrots, potatoes and peppers at Moro Grounds Restaurant, Cotabato City"
+    }
+   ],
+   "lat": 7.20273,
+   "lon": 124.16617,
+   "placed": "place"
+  },
+  {
+   "name": "Padayon. Café",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Block 20, N.D. Village, beside the CNX Building",
+   "note": "Café: rice bowls, burgers, pasta and coffee",
+   "halal": null,
+   "source": "https://www.facebook.com/Padayon.CafeCotabatoCity/",
+   "facebook": "https://www.facebook.com/Padayon.CafeCotabatoCity",
+   "instagram": null,
+   "website": null,
+   "phone": "0995 642 1173",
+   "email": "padayon.cafecotabato@gmail.com",
+   "hours": null,
+   "about": "Padayon. Café, beside the CNX Building in N.D. Village, takes its name from the Bisaya word for \"keep going\" and calls itself a safe haven. The menu is affordable comfort food: rice bowls with egg, the Dark Knight Burger in a charcoal bun, pasta and iced coffees. It also brings a coffee cart to events. It suits students and young professionals looking for a calm café with a full meal.",
+   "why_go": "For a filling rice bowl or the black-bun Dark Knight Burger in a quiet café.",
+   "tips": [
+    "New posted hours (2026): 11:00 AM – 10:00 PM"
+   ],
+   "specialties": [
+    "Dark Knight Burger",
+    "Rice bowls",
+    "Iced coffee",
+    "Pasta"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-padayon-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1114906158062342",
+    "author": "Padayon. Café (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 720,
+    "caption": "A rice bowl with egg and mushroom gravy at Padayon. Café, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-padayon-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1121023424117282",
+     "author": "Padayon. Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 607,
+     "height": 1080,
+     "caption": "The Dark Knight Burger, a beef burger in a black bun, at Padayon. Café, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-padayon-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1114906094729015",
+     "author": "Padayon. Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 720,
+     "caption": "A rice bowl with egg and ground beef at Padayon. Café, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-padayon-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1092301866989438",
+     "author": "Padayon. Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 720,
+     "caption": "Pasta plates with garlic bread and iced drinks at Padayon. Café, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-padayon-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1077280635158228&set=a.111920751694226",
+     "author": "Padayon. Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 720,
+     "height": 1080,
+     "caption": "A row of iced coffees in Padayon cups, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-padayon-cafe-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1105599242326367",
+     "author": "Padayon. Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Padayon. Café's coffee cart set up at an event, Cotabato City"
+    }
+   ],
+   "lat": 7.1894,
+   "lon": 124.24241,
+   "placed": "barangay"
+  },
+  {
+   "name": "Pagana by the Bay",
+   "kind": "restaurant",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Timako, Kalanganan II",
+   "note": "Seafood restaurant on the water at Timako; opened in 2023 as Timako Bay Seafood Resto, a halal diner, and now run under the Pagana name",
+   "halal": "halal",
+   "source": "https://www.facebook.com/p/Timako-Bay-Seafood-Resto-100092281590213/",
+   "facebook": "https://www.facebook.com/profile.php?id=100092281590213",
+   "instagram": null,
+   "website": null,
+   "phone": "0917 710 6255",
+   "email": "paganaresto@yahoo.com",
+   "hours": null,
+   "about": "Pagana by the Bay sits on the water at Timako in Kalanganan II, the hill and mangrove shore at the mouth of the Rio Grande where Cotabato City meets Illana Bay. It opened in 2023 as Timako Bay Seafood Resto, which the Bangsamoro Board of Investments described as a halal diner, and is now run by the Pagana group behind Pagana Kutawato. Its open deck faces west over the bay, so sunset is the time to come; it also hosts gatherings such as sunset yoga. The kitchen focuses on seafood and Maguindanaon dishes.",
+   "why_go": "For seafood with a sunset over Illana Bay from an open deck on the water.",
+   "tips": [],
+   "specialties": [
+    "Seafood",
+    "Maguindanaon dishes"
+   ],
+   "services": [
+    "Dine-in",
+    "Outdoor seating"
+   ],
+   "opened": 2023,
+   "branches": [
+    "Pagana Kutawato Native Restaurant, Rosary Heights 11"
+   ],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-pagana-by-the-bay.jpg",
+    "page": "https://www.facebook.com/p/Timako-Bay-Seafood-Resto-100092281590213/",
+    "author": "Pagana by the Bay (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 607,
+    "caption": "Pagana by the Bay at Timako, Cotabato City: the restaurant over the water, with a mosque in the distance"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-pagana-by-the-bay-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=844917165260996",
+     "author": "Pagana by the Bay (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 720,
+     "caption": "The open deck over the water at Pagana by the Bay, Timako, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-pagana-by-the-bay-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=2626588871104755&set=pcb.2626593924437583",
+     "author": "Pagana by the Bay (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 720,
+     "caption": "Sunset over the bay from the railing of Pagana by the Bay, Timako, Cotabato City"
+    }
+   ],
+   "lat": 7.21115,
+   "lon": 124.1807,
+   "placed": "barangay"
+  },
+  {
+   "name": "Pagana Kutawato Native Restaurant",
+   "kind": "restaurant",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Rufo Mañara Street, Rosary Heights 11",
+   "note": "Maguindanaon native dishes and seafood on a pork-free menu, with function rooms for events; hosted a MAFAR activity in April 2026",
+   "halal": "halal",
+   "source": "https://www.facebook.com/paganakutawatonativerestaurant/",
+   "facebook": "https://www.facebook.com/paganakutawatonativerestaurant",
+   "instagram": null,
+   "website": "https://paganaresto.wixsite.com/officialwebsite",
+   "phone": "064-5520592 / 0917-710-6255 / 09171197839 / 09158059028",
+   "email": "paganaresto@yahoo.com",
+   "hours": null,
+   "about": "Pagana Kutawato, on Rufo Mañara Street in Rosary Heights 11, was established in 2011 and calls itself Cotabato City's first native restaurant; pagana is the Maguindanaon word for a feast laid out for guests. The menu is Maguindanaon cooking and fresh seafood without pork, served with brass bowls and gongs as part of the décor. It doubles as an events venue, with a VIP hall for about 20 people and the Sultan Hall for up to 80, and belongs to the same group as Cotabato Cubes Hotel and Pagana by the Bay. It suits visitors wanting a first taste of Maguindanaon food and groups needing a function room.",
+   "why_go": "For a sit-down Maguindanaon feast in the city's longest-running native restaurant.",
+   "tips": [
+    "VIP Hall for about 20 guests and Sultan Hall for up to 80, bookable for meetings and events",
+    "Posted daily hours for its halls: 6:00 AM – 9:30 PM"
+   ],
+   "specialties": [
+    "Maguindanaon dishes",
+    "Fresh seafood",
+    "Beef soup",
+    "Mango shake"
+   ],
+   "services": [
+    "Dine-in",
+    "Delivery",
+    "Catering",
+    "Function room"
+   ],
+   "opened": 2011,
+   "branches": [
+    "Pagana by the Bay, Timako"
+   ],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-pagana-kutawato-native-restaurant.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1574608591355203",
+    "author": "Pagana Kutawato Native Restaurant (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "A function room at Pagana Kutawato Native Restaurant, Cotabato City, set for an event"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-pagana-kutawato-native-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1573404458142283",
+     "author": "Pagana Kutawato Native Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 809,
+     "height": 1080,
+     "caption": "A bowl of beef soup with vegetables, served with brassware, at Pagana Kutawato Native Restaurant, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-pagana-kutawato-native-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1572394958243233",
+     "author": "Pagana Kutawato Native Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 809,
+     "height": 1080,
+     "caption": "A mango shake beside a gong and brass bowls at Pagana Kutawato Native Restaurant, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-pagana-kutawato-native-restaurant-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1567777355371660",
+     "author": "Pagana Kutawato Native Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "One of the function halls of Pagana Kutawato Native Restaurant, Cotabato City"
+    }
+   ],
+   "lat": 7.2037,
+   "lon": 124.23454,
+   "placed": "place"
+  },
+  {
+   "name": "San's Cafe",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Door 2, Espino Street, Mother Barangay Rosary Heights",
+   "note": "Family-owned cake shop and café (est. 2025): cakes, milk tea, smoothies and snacks",
+   "halal": null,
+   "source": "https://www.facebook.com/SanscafeCBO",
+   "facebook": "https://www.facebook.com/SanscafeCBO",
+   "instagram": null,
+   "website": null,
+   "phone": "0905 581 6976",
+   "email": "sanscafe2025@gmail.com",
+   "hours": null,
+   "about": "San's Cafe is a small family-owned cake shop and café on Espino Street in Mother Barangay Rosary Heights. It makes cakes, shakes such as its avocado delight, frappes and burgers, mostly for pick-up and delivery within the city. The page announced a menu revamp in 2025. It suits a sweet drink or a cake ordered ahead.",
+   "why_go": "For a family-run cake shop's avocado shakes and cakes made to order.",
+   "tips": [
+    "Takes advance orders for pick-up and delivery"
+   ],
+   "specialties": [
+    "Avocado delight",
+    "Strawberry frappe",
+    "Cakes",
+    "Burgers"
+   ],
+   "services": [
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2025-08",
+   "image": {
+    "url": "/places/eats/eat-sans-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122126586338774864",
+    "author": "San's Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 720,
+    "height": 960,
+    "caption": "An iced caramel drink in a San's Cafe cup, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-sans-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122122793456774864",
+     "author": "San's Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A cheeseburger on the counter at San's Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-sans-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122140287428774864",
+     "author": "San's Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 944,
+     "caption": "A row of avocado shakes at San's Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-sans-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122120370368774864",
+     "author": "San's Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A strawberry frappe at San's Cafe, Cotabato City"
+    }
+   ],
+   "lat": 7.21036,
+   "lon": 124.24369,
+   "placed": "barangay"
+  },
+  {
+   "name": "Sweet Bliss Cafe",
+   "kind": "cafe",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Gov. Gutierrez Street",
+   "note": "Café: rice meals, pasta, burgers and cakes; takes orders for packed meals",
+   "halal": null,
+   "source": "https://www.facebook.com/sweetblisscafecotabato/",
+   "facebook": "https://www.facebook.com/sweetblisscafecotabato",
+   "instagram": null,
+   "website": null,
+   "phone": "0915 611 3368",
+   "email": null,
+   "hours": null,
+   "about": "Sweet Bliss Cafe on Gov. Gutierrez Street mixes café sweets with hearty plates that show a Malay touch: nasi goreng with garlic chicken or shrimp in salted-egg sauce, beef tapa with garlic rice, creamy shrimp pasta and double-beef honey-mustard burgers. Most dishes come in food trays for gatherings, and it opens its tables for private luncheon meetings. It suits a casual lunch or ordering trays for a family event.",
+   "why_go": "For nasi goreng with shrimp in salted-egg sauce and trays for sharing.",
+   "tips": [
+    "Dishes are also available in food trays; order by calling the page's number"
+   ],
+   "specialties": [
+    "Nasi goreng",
+    "Shrimp in salted egg",
+    "Beef tapa",
+    "Creamy shrimp pasta",
+    "Buffalo chicken wrap"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-sweet-bliss-cafe.jpg",
+    "page": "https://www.facebook.com/sweetblisscafecotabato/",
+    "author": "Sweet Bliss Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 607,
+    "caption": "The dining room of Sweet Bliss Cafe, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-sweet-bliss-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1796317532501459",
+     "author": "Sweet Bliss Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Creamy shrimp pasta with garlic bread at Sweet Bliss Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-sweet-bliss-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1796317489168130",
+     "author": "Sweet Bliss Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Beef tapa with egg and rice at Sweet Bliss Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-sweet-bliss-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1796317419168137",
+     "author": "Sweet Bliss Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Shrimp in salted egg sauce with nasi goreng at Sweet Bliss Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-sweet-bliss-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1793539936112552",
+     "author": "Sweet Bliss Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Boxed burgers with potato wedges from Sweet Bliss Cafe, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-sweet-bliss-cafe-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1790658406400705",
+     "author": "Sweet Bliss Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A Buffalo chicken wrap with potato wedges at Sweet Bliss Cafe, Cotabato City"
+    }
+   ],
+   "lat": 7.19958,
+   "lon": 124.24171,
+   "placed": "street"
+  },
+  {
+   "name": "Tambayan sa Timako",
+   "kind": "restaurant",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": "Timako Hill, Kalanganan 2",
+   "note": "Hillside restaurant with a pool and a view over the Timako mangroves; seafood, grills and rice meals",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Tambayan-sa-Timako-61555745542301/",
+   "facebook": "https://www.facebook.com/profile.php?id=61555745542301",
+   "instagram": null,
+   "website": null,
+   "phone": "0936 312 3279",
+   "email": "kasimmama@gmail.com",
+   "hours": null,
+   "about": "Tambayan sa Timako (\"hangout on Timako\") is a restaurant on Timako Hill in Kalanganan 2, the green headland above the mangroves at Cotabato City's seaward edge. Terraced swimming pools look out over the mangrove forest toward the mountains, and the indoor lounge has sofas and a counter. It has a mini function hall for gatherings such as aqiqah. It suits families wanting a meal with a swim and a view.",
+   "why_go": "For a meal with a pool and a view over the Timako mangroves.",
+   "tips": [
+    "Has a mini function hall for gatherings such as aqiqah"
+   ],
+   "specialties": [],
+   "services": [
+    "Dine-in",
+    "Function room",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-09",
+   "image": {
+    "url": "/places/eats/eat-tambayan-sa-timako.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=917819324477867&set=pcb.917819357811197",
+    "author": "KCC Mall of Cotabato (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "Tambayan sa Timako on Timako Hill, Cotabato City, lit at dusk"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-tambayan-sa-timako-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122191472078191518&set=a.122093879312191518",
+     "author": "Tambayan sa Timako (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 608,
+     "height": 1080,
+     "caption": "Tambayan sa Timako lit up at night on Timako Hill, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-tambayan-sa-timako-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122302536962191518&set=pcb.122302537616191518",
+     "author": "Tambayan sa Timako (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The pool and the mangroves below, seen from Tambayan sa Timako, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-tambayan-sa-timako-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=917819321144534&set=pcb.917819357811197",
+     "author": "Tambayan sa Timako (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 608,
+     "caption": "The lounge and counter inside Tambayan sa Timako, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-tambayan-sa-timako-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122302537190191518",
+     "author": "Tambayan sa Timako (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The terraced pools and the view toward the mountains at Tambayan sa Timako, Cotabato City"
+    }
+   ],
+   "lat": 7.19821,
+   "lon": 124.20449,
+   "placed": "barangay"
+  },
+  {
+   "name": "The Avenue Bistro",
+   "kind": "restaurant",
+   "area": "cotabato-city",
+   "municipality": "Cotabato City",
+   "address": null,
+   "note": "Bistro serving steaks, grilled seafood and burgers",
+   "halal": null,
+   "source": "https://www.facebook.com/TAG064/",
+   "facebook": "https://www.facebook.com/TAG064",
+   "instagram": "https://www.instagram.com/savore.theavebistro",
+   "website": null,
+   "phone": "0905 680 1018",
+   "email": "theavenuegrill.064@gmail.com",
+   "hours": null,
+   "about": "The Avenue Bistro, known on Instagram as Savoré, is a bistro serving steak cuts such as a sliced steak with bone marrow, cast-iron rib-eye, grilled octopus and gourmet burgers, with matcha and other drinks. Its page has announced Savoré by The Avenue Bistro, a new dining room at the FDK Building in Tamontaka. Deliveries go through local riders. It suits a special dinner or a group wanting steak in Cotabato City.",
+   "why_go": "For a proper steak dinner, rare among Cotabato's cafés.",
+   "tips": [
+    "Posted hours: 11:00 AM – 8:30 PM",
+    "Delivers through BenXpress and Dexfoodpress"
+   ],
+   "specialties": [
+    "Steak with bone marrow",
+    "Rib-eye steak",
+    "Grilled octopus",
+    "Burgers"
+   ],
+   "services": [
+    "Dine-in",
+    "Delivery",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-04",
+   "image": {
+    "url": "/places/eats/eat-the-avenue-bistro.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1163291912486107",
+    "author": "The Avenue Bistro (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Sliced steak with grilled shrimp at The Avenue Bistro, Cotabato City"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-the-avenue-bistro-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1182142843934347",
+     "author": "The Avenue Bistro (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A sliced steak with bone marrow and fries at The Avenue Bistro, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-the-avenue-bistro-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1163291965819435",
+     "author": "The Avenue Bistro (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A steak in a cast-iron skillet with roasted garlic at The Avenue Bistro, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-the-avenue-bistro-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1160890832726215",
+     "author": "The Avenue Bistro (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Grilled octopus with potatoes and toast at The Avenue Bistro, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-the-avenue-bistro-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1152593176889314",
+     "author": "The Avenue Bistro (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 607,
+     "height": 1080,
+     "caption": "A sizzling rice bowl topped with a fried egg at The Avenue Bistro, Cotabato City"
+    },
+    {
+     "url": "/places/eats/eat-the-avenue-bistro-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1152591123556186",
+     "author": "The Avenue Bistro (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Burgers and fries under a table lamp at The Avenue Bistro, Cotabato City"
+    }
+   ],
+   "lat": 7.2238,
+   "lon": 124.2467,
+   "placed": "town"
+  },
+  {
+   "name": "3 O'Clock Cafe",
+   "kind": "cafe",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Awwal Street",
+   "note": "Coffee shop that also serves rice meals, calamares, lumpia and party trays",
+   "halal": null,
+   "source": "https://www.facebook.com/3oclockcafe/",
+   "facebook": "https://www.facebook.com/3oclockcafe",
+   "instagram": null,
+   "website": null,
+   "phone": "(068) 268 1172",
+   "email": null,
+   "hours": null,
+   "about": "3 O'Clock Cafe on Awwal Street in Bongao is a coffee shop that has grown into an all-day kitchen. It opens early for breakfast plates such as beef tapa with rice and egg (ready for pick-up from 5:30 AM), and serves chicken inasal with bam-i noodles, calamares, crispy tuna lumpia, crispy chicken skin and pizzas, with half trays for sharing. It suits travellers wanting an early breakfast in town or a tray to bring to a gathering.",
+   "why_go": "For an early breakfast of beef tapa and coffee in central Bongao.",
+   "tips": [
+    "Breakfast orders ready for pick-up from 5:30 AM",
+    "Sells half trays of calamares, tenderloin and pancit"
+   ],
+   "specialties": [
+    "Beef tapa",
+    "Calamares",
+    "Tuna lumpia",
+    "Chicken inasal",
+    "Bam-i"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-3-oclock-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1404455268518930",
+    "author": "3 O'Clock Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Fried calamares at 3 O'Clock Cafe, Bongao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-3-oclock-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1320981610199630",
+     "author": "3 O'Clock Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Sizzling sisig with rice and a fried egg at 3 O'Clock Cafe, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-3-oclock-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1404444655186658",
+     "author": "3 O'Clock Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Lumpia with sweet chili sauce at 3 O'Clock Cafe, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-3-oclock-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1347671824197275",
+     "author": "3 O'Clock Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A packed meal of grilled chicken, pancit and rice from 3 O'Clock Cafe, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-3-oclock-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=117738617190608&set=a.117738623857274",
+     "author": "3 O'Clock Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 607,
+     "height": 1080,
+     "caption": "A beef and mushroom pizza from 3 O'Clock Cafe, Bongao"
+    }
+   ],
+   "lat": 5.029,
+   "lon": 119.7713,
+   "placed": "town"
+  },
+  {
+   "name": "Cafe Farrah",
+   "kind": "cafe",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Pag-asa, Bongao Poblacion",
+   "note": "Coffee shop with bottled coffee, pastries and a platter of Tausug native sweets",
+   "halal": null,
+   "source": "https://www.facebook.com/carefarrah/",
+   "facebook": "https://www.facebook.com/carefarrah",
+   "instagram": null,
+   "website": null,
+   "phone": "0917 993 4128",
+   "email": null,
+   "hours": null,
+   "about": "Cafe Farrah in Pag-asa, Bongao, calls itself a coffee place with island charm, in a wood-panelled room with big windows. Its kahawa iban tupas offer pairs its own coffee in sleek bottles (refill and the bottle cost is deducted) with a bilao of bangbang sug, the Tausug native delicacies such as coconut rice cakes and rolled crepes. It also bakes muffins and pies and serves burgers. It suits a slow afternoon trying local sweets with coffee.",
+   "why_go": "For Tausug native sweets with its signature bottled coffee.",
+   "tips": [
+    "You can build your own bangbangsug bilao (tray of native sweets)",
+    "Bring back the bottle for a refill and the bottle cost is deducted"
+   ],
+   "specialties": [
+    "Bottled coffee",
+    "Bangbang sug (native delicacies)",
+    "Muffins",
+    "Pies"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2025-12",
+   "image": {
+    "url": "/places/eats/eat-cafe-farrah.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1165030715634231",
+    "author": "Cafe Farrah (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 834,
+    "height": 1080,
+    "caption": "Bottled coffee with a platter of native sweets at Cafe Farrah, Bongao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-cafe-farrah-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1201007752036527",
+     "author": "Cafe Farrah (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The wood-panelled dining room of Cafe Farrah, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-cafe-farrah-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1168264891977480",
+     "author": "Cafe Farrah (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 934,
+     "height": 1080,
+     "caption": "A custard pie with a cup of coffee at Cafe Farrah, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-cafe-farrah-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1033181252152512",
+     "author": "Cafe Farrah (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Rice cakes rolled in grated coconut at Cafe Farrah, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-cafe-farrah-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1161709972632972",
+     "author": "Cafe Farrah (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Rolled native crepes at Cafe Farrah, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-cafe-farrah-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1412539274216706",
+     "author": "Cafe Farrah (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Muffins with streusel tops at Cafe Farrah, Bongao"
+    }
+   ],
+   "lat": 5.02674,
+   "lon": 119.7696,
+   "placed": "place"
+  },
+  {
+   "name": "Inay Restaurant",
+   "kind": "restaurant",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Pag-asa Road, Bongao Poblacion",
+   "note": "Family restaurant; featured for manuk pyamapahan, Tausug fried chicken coated in dried coconut",
+   "halal": null,
+   "source": "https://www.facebook.com/inayrestaurant/",
+   "facebook": "https://www.facebook.com/inayrestaurant",
+   "instagram": null,
+   "website": null,
+   "phone": "0905 792 5878",
+   "email": null,
+   "hours": null,
+   "about": "Inay Restaurant (\"mother\") is a casual family restaurant on Pag-asa Road in Bongao, right beside the Bongao gasoline station, with a garden of lantern-lit cabanas at night. It is known for flavoured chicken recipes that tourists ask for, seafood bilao platters, native rice cakes and its own buko pie and egg pie. It caters seminars and meetings and takes pre-orders for party trays on Eid. It suits families and groups eating together, and visitors looking for a seafood spread.",
+   "why_go": "For a shared seafood bilao and its chicken in a garden setting in Bongao.",
+   "tips": [
+    "Takes pre-orders for bilao and party trays, especially for Eid",
+    "Caters seminars and meetings"
+   ],
+   "specialties": [
+    "Seafood bilao",
+    "Flavoured chicken",
+    "Buko pie",
+    "Egg pie"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-03",
+   "image": {
+    "url": "/places/eats/eat-inay-restaurant.jpg",
+    "page": "https://www.facebook.com/inayrestaurant/",
+    "author": "Inay Restaurant (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 607,
+    "caption": "Grilled fish, crab, chicken and other dishes on a table at Inay Restaurant, Bongao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-inay-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=448285443969908&set=a.448285447303241",
+     "author": "Inay Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "The garden and lantern-lit cabanas of Inay Restaurant at night, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-inay-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1207771901354588",
+     "author": "Inay Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 847,
+     "caption": "A seafood platter of grilled fish, crab, squid and rice on banana leaf at Inay Restaurant, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-inay-restaurant-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1218550403610071",
+     "author": "Inay Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Trays of native rice cakes at Inay Restaurant, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-inay-restaurant-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1218550400276738",
+     "author": "Inay Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A platter of native snacks, fritters and crepe rolls at Inay Restaurant, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-inay-restaurant-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1473052551493187",
+     "author": "Inay Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Fresh-baked pies at Inay Restaurant, Bongao"
+    }
+   ],
+   "lat": 5.0267,
+   "lon": 119.76964,
+   "placed": "place"
+  },
+  {
+   "name": "Mang Café Tawi-Tawi",
+   "kind": "cafe",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Level 1, NDCC Building, Ilmoh Street, Pag-asa",
+   "note": "Café and restaurant: coffee, milk tea, pasta, nachos and banana fritters",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Mang-Caf%C3%A8-Tawi-Tawi/61565036548483/",
+   "facebook": "https://www.facebook.com/profile.php?id=61565036548483",
+   "instagram": null,
+   "website": null,
+   "phone": "0916 611 7929",
+   "email": null,
+   "hours": null,
+   "about": "Mang Café sits on the ground floor of the NDCC Building on Ilmoh Street in Pag-asa, and describes itself as a community hub for locals. A 2025 travel blog called it a sleek, glass-fronted café with wooden tables, Edison bulbs and an espresso machine, unexpected this far south. The menu covers coffee, milk tea, matcha, burgers, pasta, nachos, waffles and banana fritters. It suits a modern coffee stop before catching a boat from Bongao.",
+   "why_go": "For a modern espresso-bar café in the heart of Bongao.",
+   "tips": [
+    "Posted hours: 9:00 AM – 11:00 PM"
+   ],
+   "specialties": [
+    "Iced matcha",
+    "Burger and fries",
+    "Banana fritters",
+    "Nachos",
+    "Belgian waffle"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": null,
+   "gallery": [],
+   "lat": 5.02931,
+   "lon": 119.77103,
+   "placed": "place"
+  },
+  {
+   "name": "MJane Cafe",
+   "kind": "cafe",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Pag-asa, Bongao Poblacion",
+   "note": "Café and restaurant: fried rice, lumpia, pizza and native snacks",
+   "halal": null,
+   "source": "https://www.facebook.com/people/MJane-Cafe/100068977218921/",
+   "facebook": "https://www.facebook.com/profile.php?id=100068977218921",
+   "instagram": null,
+   "website": null,
+   "phone": "0953 458 5224",
+   "email": null,
+   "hours": null,
+   "about": "MJane Cafe is a café-restaurant in Pag-asa, Bongao, serving fried rice, lumpia, pizza and native snacks, and recently chao pan and curry rice. It also lays out trays of snacks for events and offers food delivery. It closes on Fridays. It suits a simple meal or snacks in town.",
+   "why_go": "For fried rice, lumpia and pizza at an everyday Bongao café.",
+   "tips": [
+    "Closed on Fridays (posted November 2026)",
+    "Food delivery available"
+   ],
+   "specialties": [
+    "Fried rice",
+    "Lumpia",
+    "Pizza",
+    "Curry rice"
+   ],
+   "services": [
+    "Dine-in",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-mjane-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=916684677307431",
+    "author": "MJane Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 808,
+    "height": 1080,
+    "caption": "Fried rice with lumpia at MJane Cafe, Bongao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-mjane-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=685065637136004",
+     "author": "MJane Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A beef and mushroom pizza at MJane Cafe, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-mjane-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=678769124432322",
+     "author": "MJane Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Trays of spring rolls and chips laid out by MJane Cafe, Bongao"
+    }
+   ],
+   "lat": 5.02765,
+   "lon": 119.76804,
+   "placed": "barangay"
+  },
+  {
+   "name": "Pic-A-Pie Restaurant",
+   "kind": "restaurant",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Tubig-Boh (in front of the DPWH office)",
+   "note": "Family-owned restaurant since 1990: Filipino dishes, barbecue, pizza and native cakes",
+   "halal": null,
+   "source": "https://www.facebook.com/PicAPieRestaurant/",
+   "facebook": "https://www.facebook.com/PicAPieRestaurant",
+   "instagram": null,
+   "website": null,
+   "phone": "0976 340 0520",
+   "email": "picapieresto@gmail.com",
+   "hours": null,
+   "about": "Pic-A-Pie is a family-owned restaurant in Tubig-Boh, Bongao, in front of the Ministry of Public Works, established in 1990. It serves short orders and party trays: stone-baked 12-inch pizzas, chicken barbecue, calamares, lumpia, fried chicken and a halo-halo overload, plus trays of native cupcakes such as ube. It suits families and offices ordering for a gathering, or a sit-down pizza in Bongao.",
+   "why_go": "For stone-baked pizza and party trays from a Bongao family restaurant open since 1990.",
+   "tips": [
+    "Takes short orders and party-tray orders"
+   ],
+   "specialties": [
+    "Stone-baked pizza",
+    "Chicken barbecue",
+    "Halo-halo",
+    "Calamares",
+    "Ube cupcakes"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": 1990,
+   "branches": [],
+   "as_of": "2026-08",
+   "image": {
+    "url": "/places/eats/eat-pic-a-pie-restaurant.jpg",
+    "page": "https://www.facebook.com/PicAPieRestaurant/",
+    "author": "Pic-A-Pie Restaurant (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "A spread of rice dishes, soup and fried seafood at Pic-A-Pie Restaurant, Bongao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-pic-a-pie-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=363733710043619",
+     "author": "Pic-A-Pie Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Stone-baked pizzas from Pic-A-Pie Restaurant, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-pic-a-pie-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=383489758068014",
+     "author": "Pic-A-Pie Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 733,
+     "caption": "A party tray of lumpia from Pic-A-Pie Restaurant, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-pic-a-pie-restaurant-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=386483847768605",
+     "author": "Pic-A-Pie Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1046,
+     "height": 1080,
+     "caption": "Cupcakes stacked on a table at Pic-A-Pie Restaurant, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-pic-a-pie-restaurant-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=386482211102102",
+     "author": "Pic-A-Pie Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 808,
+     "caption": "Ube cupcakes at Pic-A-Pie Restaurant, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-pic-a-pie-restaurant-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=348687998214857",
+     "author": "Pic-A-Pie Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 668,
+     "caption": "A tray of fried chicken from Pic-A-Pie Restaurant, Bongao"
+    }
+   ],
+   "lat": 5.02251,
+   "lon": 119.76781,
+   "placed": "place"
+  },
+  {
+   "name": "Purple Yam",
+   "kind": "bakery",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Tubig-Boh",
+   "note": "Bake shop for ube cakes and ube leche flan; its page calls its cakes \"halal-friendly\"",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Purple-Yam-Bongao-Tawi-Tawi-100095119691246/",
+   "facebook": "https://www.facebook.com/profile.php?id=100095119691246",
+   "instagram": null,
+   "website": null,
+   "phone": "0936 831 6307",
+   "email": null,
+   "hours": null,
+   "about": "Purple Yam is a home bakery in Tubig-Boh, Bongao, beside AL Minimart and in front of Medilab, named for ube, the purple yam used across Filipino desserts. It makes ube cakes, ube leche flan cakes and ube halaya, and its page says its cakes are freshly baked, clean and \"halal-friendly\". Orders are best placed by phone. It suits anyone wanting a cake or ube jam to bring to a visit.",
+   "why_go": "For ube cakes and ube halaya made fresh in Bongao.",
+   "tips": [
+    "Call ahead for orders, reservations and cake availability"
+   ],
+   "specialties": [
+    "Ube cake",
+    "Ube leche flan cake",
+    "Ube halaya"
+   ],
+   "services": [
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-purple-yam.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=441583792355607",
+    "author": "Purple Yam Bongao Tawi Tawi (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 894,
+    "height": 960,
+    "caption": "Ube leche flan cakes lined up at Purple Yam, Bongao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-purple-yam-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=441583832355603",
+     "author": "Purple Yam Bongao Tawi Tawi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 558,
+     "caption": "Ube cakes on the display shelves at Purple Yam, Bongao"
+    },
+    {
+     "url": "/places/eats/eat-purple-yam-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=441583729022280",
+     "author": "Purple Yam Bongao Tawi Tawi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Ube halaya in tubs at Purple Yam, Bongao"
+    }
+   ],
+   "lat": 5.02138,
+   "lon": 119.76857,
+   "placed": "barangay"
+  },
+  {
+   "name": "Sameera Coffee Shop",
+   "kind": "cafe",
+   "area": "tawi-tawi",
+   "municipality": "Bongao",
+   "address": "Datu Halun Street, near the Bongao bridge",
+   "note": "Tausug coffee shop open about 20 years, for breakfast, native snacks and coffee; named an outstanding local MSME by MTIT Tawi-Tawi in September 2026",
+   "halal": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/mtit-tawi-tawi-recognizes-5-msmes-for-contributions-to-local-economy/",
+   "facebook": null,
+   "instagram": null,
+   "website": null,
+   "phone": null,
+   "email": null,
+   "hours": null,
+   "about": "Sameera is a Tausug kahawahan, a native coffee shop, on Datu Halun Street near the Bongao bridge. It began about 20 years ago when the owner's mother sold food to support the family, and MTIT Tawi-Tawi named it one of the province's outstanding MSMEs in September 2026. Breakfast is bang-bang sug, the Tausug native snacks, served by the tray with strong coffee. It suits an early, local breakfast in Bongao.",
+   "why_go": "For a Tausug breakfast of bang-bang sug and coffee at a 20-year-old local favourite.",
+   "tips": [],
+   "specialties": [
+    "Bang-bang sug (native snacks)",
+    "Coffee"
+   ],
+   "services": [
+    "Dine-in"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-09",
+   "image": {
+    "url": "/places/eats/eat-sameera-coffee-shop.jpg",
+    "page": "https://outoftownblog.com/tawi-tawi-delicacies-must-try-dishes-in-tawi-tawi-and-where-to-eat/",
+    "author": "Out of Town Blog",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 465,
+    "caption": "A tray of native breakfast snacks, many wrapped in leaves, at Sameera Coffee Shop, Bongao"
+   },
+   "gallery": [],
+   "lat": 5.03272,
+   "lon": 119.77299,
+   "placed": "place"
+  },
+  {
+   "name": "Altitude Café",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Ground floor, Rafiqah Building, Heaven Road",
+   "note": "Restaurant with a view terrace; satay, beef rendang, curries, pasta and sushi",
+   "halal": null,
+   "source": "https://www.facebook.com/altitudecafe22/",
+   "facebook": "https://www.facebook.com/altitudecafe22",
+   "instagram": "https://www.instagram.com/altitudecafe22",
+   "website": null,
+   "phone": "0985 639 9740",
+   "email": "altitudecafe22@gmail.com",
+   "hours": null,
+   "about": "Altitude Café is on the ground floor of the Rafiqah Building on Heaven Road, the ridge road above Marawi lined with view cafés. Its menu leans Malaysian: chicken satay, beef randang, buttermilk chicken with curry leaves, salted-egg chicken and laksa, alongside pasta and baked sushi. The terrace looks over the green hills. During Ramadan it opens for iftar and late-night meals.",
+   "why_go": "For Malaysian-style satay, randang and laksa with a view on Heaven Road.",
+   "tips": [
+    "Takes delivery orders and reservations by phone",
+    "Opens for iftar and late-night meals in Ramadan"
+   ],
+   "specialties": [
+    "Chicken satay",
+    "Beef randang",
+    "Buttermilk chicken",
+    "Laksa",
+    "Baked sushi"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-altitude-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1588311023321615",
+    "author": "Altitude Café (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 863,
+    "height": 1080,
+    "caption": "Rice dishes on the view terrace of Altitude Café, Heaven Road, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-altitude-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1543608931125158",
+     "author": "Altitude Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "Chicken satay skewers at Altitude Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-altitude-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1543603101125741",
+     "author": "Altitude Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 862,
+     "height": 1080,
+     "caption": "Beef rendang with rice at Altitude Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-altitude-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1543603137792404",
+     "author": "Altitude Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 862,
+     "height": 1080,
+     "caption": "Sweet-and-sour beef with cashews and rice at Altitude Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-altitude-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1543603144459070",
+     "author": "Altitude Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 862,
+     "height": 1080,
+     "caption": "Lemon chicken with rice at Altitude Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-altitude-cafe-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1526702816149103",
+     "author": "Altitude Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 862,
+     "height": 1080,
+     "caption": "Buttermilk chicken with curry leaves and rice at Altitude Café, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "Café Blooper",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "East Basak, Malutlut",
+   "note": "Coffee shop that also cooks packed meals and iftar packages",
+   "halal": null,
+   "source": "https://www.facebook.com/CafeBlooper/",
+   "facebook": "https://www.facebook.com/CafeBlooper",
+   "instagram": null,
+   "website": null,
+   "phone": "0921 223 9265",
+   "email": "cafeblooperph@gmail.com",
+   "hours": null,
+   "about": "Café Blooper in East Basak, Malutlut, has been around since 2013 and is a coffee shop that also cooks large orders of packed meals and iftar packages. Newer additions include a DIY spicy tteokbokki set and an upgraded children's play area, Omeya's Playhouse, on the second floor. It suits parents who want a coffee while the children play, and groups ordering meals.",
+   "why_go": "For coffee in peace while the children play upstairs.",
+   "tips": [
+    "Omeya's Playhouse (2nd floor) posted hours: daily 9:00 AM – 7:00 PM; Fridays 1:00 PM – 8:00 PM",
+    "Takes bulk packed-meal and iftar-package orders"
+   ],
+   "specialties": [
+    "DIY spicy tteokbokki",
+    "Iftar packed meals",
+    "Coffee"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery",
+    "Outdoor seating"
+   ],
+   "opened": 2013,
+   "branches": [],
+   "as_of": "2026-06",
+   "image": {
+    "url": "/places/eats/eat-cafe-blooper.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1482399617226929",
+    "author": "Café Blooper (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 813,
+    "height": 1080,
+    "caption": "Rows of packed meals under the Blooper sign, Café Blooper, Marawi"
+   },
+   "gallery": [],
+   "lat": 8.08341,
+   "lon": 124.25013,
+   "placed": "street"
+  },
+  {
+   "name": "Café Guest",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Wao",
+   "address": null,
+   "note": "Coffee shop: espresso drinks, frappes and matcha",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Caf%C3%A9-Guest-100094230892933/",
+   "facebook": "https://www.facebook.com/profile.php?id=100094230892933",
+   "instagram": null,
+   "website": null,
+   "phone": null,
+   "email": null,
+   "hours": null,
+   "about": "Café Guest is a cosy coffee shop in Wao, the farming town in southern Lanao del Sur. It serves espresso drinks, frappes and matcha, celebrated its 3rd anniversary in July 2026, and hosts small music events. It suits a coffee break or a working session with a laptop.",
+   "why_go": "For a cosy coffee in Wao.",
+   "tips": [],
+   "specialties": [
+    "Frappe",
+    "Iced matcha",
+    "Latte"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Outdoor seating"
+   ],
+   "opened": 2023,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-cafe-guest.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=923947834089571&set=pcb.923947987422889",
+    "author": "Café Guest (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 719,
+    "height": 960,
+    "caption": "A latte with leaf art at Café Guest, Wao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-cafe-guest-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=923947897422898",
+     "author": "Café Guest (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A chocolate frappe beside the coffee grinder at Café Guest, Wao"
+    },
+    {
+     "url": "/places/eats/eat-cafe-guest-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=923947840756237",
+     "author": "Café Guest (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "An iced matcha drink by a laptop at Café Guest, Wao"
+    }
+   ],
+   "lat": 7.6382,
+   "lon": 124.7242,
+   "placed": "town"
+  },
+  {
+   "name": "Cafe Sindaw",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Heaven Road",
+   "note": "Three-storey café and restaurant with a view deck, open since 2022; rooms for meetings and small events",
+   "halal": null,
+   "source": "https://www.facebook.com/CafeSindaw/",
+   "facebook": "https://www.facebook.com/CafeSindaw",
+   "instagram": null,
+   "website": null,
+   "phone": null,
+   "email": null,
+   "hours": null,
+   "about": "Cafe Sindaw is a three-storey café and restaurant on Heaven Road, open since February 2022; a 2023 Daily Tribune profile followed its lawyer-owner's bet on Marawi's recovery. It serves pasta, rice plates with Maranao sides and snacks from an espresso bar, and its upper floors catch sunsets over the hills. Conference rooms make it a regular venue for seminars and workshops, and it runs a 40-seat conference room at its Lakeside Resort. It closes for Ramadan.",
+   "why_go": "For a meal and a sunset on Heaven Road, with rooms for meetings.",
+   "tips": [
+    "Conference room for 40 at its Lakeside Resort, with projector and whiteboard",
+    "Closes for about a month during Ramadan"
+   ],
+   "specialties": [
+    "Spaghetti",
+    "Yellow rice with beef",
+    "Coffee"
+   ],
+   "services": [
+    "Dine-in",
+    "Function room"
+   ],
+   "opened": 2022,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-cafe-sindaw.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=379486724380768&set=a.379486727714101",
+    "author": "Cafe Sindaw (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 960,
+    "height": 720,
+    "caption": "Cafe Sindaw, a three-storey building on Heaven Road, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-cafe-sindaw-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=963134086016026",
+     "author": "Cafe Sindaw (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 928,
+     "height": 605,
+     "caption": "The espresso bar at Cafe Sindaw, Heaven Road, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-cafe-sindaw-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1240052974990801",
+     "author": "Cafe Sindaw (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Plates of spaghetti with toast at Cafe Sindaw, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-cafe-sindaw-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=754162900246480",
+     "author": "Cafe Sindaw (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Plates of yellow rice with beef, egg and macaroni salad at Cafe Sindaw, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-cafe-sindaw-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=739107521752018",
+     "author": "Cafe Sindaw (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 607,
+     "height": 1080,
+     "caption": "Sunset over the hills from Cafe Sindaw, Heaven Road, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-cafe-sindaw-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1331165845879513",
+     "author": "Cafe Sindaw (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 811,
+     "caption": "A conference room set up for a seminar at Cafe Sindaw, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "Café Skyview",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "ABM Compound, Heaven Road",
+   "note": "Hilltop café with an open terrace; coffee and rice meals",
+   "halal": null,
+   "source": "https://www.facebook.com/CafeSkyviewABM/",
+   "facebook": "https://www.facebook.com/CafeSkyviewABM",
+   "instagram": "https://www.instagram.com/CafeSkyview_",
+   "website": null,
+   "phone": "0906 570 7825",
+   "email": null,
+   "hours": null,
+   "about": "Café Skyview sits in the ABM Compound on Heaven Road and calls its food \"gourmet excellence, elevated by the view\". Terraces step down the slope with a white dome pavilion, and evenings bring sunsets over the valley; it shares the compound with The Dining Room and Kopi Lah Roti. It suits a sunset coffee or a dinner date in Marawi.",
+   "why_go": "For sunset views over the valley from Marawi's terraced hilltop café.",
+   "tips": [],
+   "specialties": [
+    "Coffee"
+   ],
+   "services": [
+    "Dine-in",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-cafe-skyview.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122125432232744315",
+    "author": "Café Skyview (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 1078,
+    "caption": "Café Skyview's terrace lit at night, Heaven Road, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-cafe-skyview-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122137351412744315",
+     "author": "Café Skyview (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 863,
+     "height": 1080,
+     "caption": "Sunset over the valley from the deck of Café Skyview, Heaven Road, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-cafe-skyview-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122137344944744315",
+     "author": "Café Skyview (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "The white dome on the terrace of Café Skyview, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-cafe-skyview-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122125432238744315",
+     "author": "Café Skyview (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "Café Skyview's tiered terraces lit at night, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "CafeÑero",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Wao",
+   "address": "Manila Group",
+   "note": "Café: coffee, silog breakfasts, ramen, pizza and burgers",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Cafe%C3%91ero/100070829050804/",
+   "facebook": "https://www.facebook.com/profile.php?id=100070829050804",
+   "instagram": null,
+   "website": null,
+   "phone": "0927 815 3865",
+   "email": "gatilogon@gmail.com",
+   "hours": null,
+   "about": "CafeÑero (est. 2021) is a café in the Manila Group area of Wao, with Lutong Bahay home cooking alongside. It is known for its tower burger, built to share among four people, plus pizzas such as beef and mushroom, silog breakfasts and chocolate cake, and it accepts take-out and pre-orders of pizza and chiffon cake. It suits families and groups in Wao.",
+   "why_go": "For its tower burger for four, built to share.",
+   "tips": [
+    "Takes pre-orders of pizza and chiffon cake"
+   ],
+   "specialties": [
+    "Tower burger",
+    "Beef and mushroom pizza",
+    "Silog breakfasts",
+    "Chocolate cake"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": 2021,
+   "branches": [],
+   "as_of": "2026-06",
+   "image": {
+    "url": "/places/eats/eat-cafenero.jpg",
+    "page": "https://www.facebook.com/people/Cafe%C3%91ero/100070829050804/",
+    "author": "CafeÑero (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "The counter of CafeÑero, Wao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-cafenero-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=923014406736186",
+     "author": "CafeÑero (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A pizza on a wooden board at CafeÑero, Wao"
+    },
+    {
+     "url": "/places/eats/eat-cafenero-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=923010376736589&set=pcb.923012426736384",
+     "author": "CafeÑero (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Chocolate cake slices in the display case at CafeÑero, Wao"
+    }
+   ],
+   "lat": 7.64238,
+   "lon": 124.72158,
+   "placed": "barangay"
+  },
+  {
+   "name": "Fahm Café",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Heaven Road, Cabingan (near MSU)",
+   "note": "Coffee shop with a view deck over the hills; coffee, fruit drinks and rice meals",
+   "halal": null,
+   "source": "https://www.facebook.com/fahmcafe",
+   "facebook": "https://www.facebook.com/fahmcafe",
+   "instagram": null,
+   "website": null,
+   "phone": "0907 451 0937",
+   "email": null,
+   "hours": null,
+   "about": "Fahm Café sits on Heaven Road in Cabingan near MSU, with a wooden ledge and windows that look straight over forested hills to the city. Alongside coffee, cream lattes and fruit teas, the kitchen serves beef rendang, laksa, truffle penne, fish fillet and rice bowls. It suits a long sit with a view or an evening coffee as the lights come on.",
+   "why_go": "For coffee and rendang on a ledge above Marawi's green hills.",
+   "tips": [],
+   "specialties": [
+    "Beef rendang",
+    "Laksa",
+    "Truffle penne",
+    "Cream latte",
+    "Fruit tea"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-fahm-cafe.jpg",
+    "page": "https://www.facebook.com/fahmcafe",
+    "author": "Fahm Café (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "The open view deck of Fahm Café, Heaven Road, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-fahm-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1527284106075084",
+     "author": "Fahm Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 809,
+     "caption": "An iced coffee on the ledge above the green hills at Fahm Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-fahm-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1527281659408662",
+     "author": "Fahm Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Beef rendang with rice and fried plantain, overlooking the hills at Fahm Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-fahm-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1475817564555072",
+     "author": "Fahm Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "A bowl of laksa with egg and tofu on the view ledge at Fahm Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-fahm-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1475817551221740",
+     "author": "Fahm Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Pasta, rice bowls and an iced drink by the window at Fahm Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-fahm-cafe-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1527284049408423",
+     "author": "Fahm Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Fruit teas and milk teas lined up inside Fahm Café at dusk, Marawi"
+    }
+   ],
+   "lat": 8.00041,
+   "lon": 124.25548,
+   "placed": "street"
+  },
+  {
+   "name": "Gratisco Café and Restaurant",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Commercial Center, MSU Campus",
+   "note": "Café and restaurant at the MSU commercial centre; desserts and fruit shakes",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Gratisco-Caf%C3%A9-and-Restaurant/100064182632426/",
+   "facebook": "https://www.facebook.com/profile.php?id=100064182632426",
+   "instagram": null,
+   "website": null,
+   "phone": "0929 368 3897",
+   "email": "gratiscocafe@gmail.com",
+   "hours": null,
+   "about": "Gratisco is a café and restaurant at the MSU Commercial Center, a regular student hangout on the Mindanao State University campus. Its dessert menu stands out: ube manna, yema tres leches, yema cake in tubs, custard tarts, coconut-dusted rice cakes and a Knickerbocker fruit salad, with strawberry shakes. It runs special Ramadan batches for iftar and suhoor. It suits students and anyone with a sweet tooth on campus.",
+   "why_go": "For campus desserts like ube manna and yema tres leches.",
+   "tips": [
+    "Takes orders for Ramadan dessert batches"
+   ],
+   "specialties": [
+    "Ube manna",
+    "Yema tres leches",
+    "Custard tarts",
+    "Knickerbocker fruit salad",
+    "Strawberry shake"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-03",
+   "image": {
+    "url": "/places/eats/eat-gratisco-cafe-and-restaurant.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1341639331318809",
+    "author": "Gratisco Café and Restaurant (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 1080,
+    "caption": "Purple dessert bars topped with cornflakes, from Gratisco Café and Restaurant, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-gratisco-cafe-and-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1338912508258158",
+     "author": "Gratisco Café and Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 604,
+     "height": 1080,
+     "caption": "Custard tarts with piped cream at Gratisco Café and Restaurant, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-gratisco-cafe-and-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1287603476722395",
+     "author": "Gratisco Café and Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 638,
+     "height": 1080,
+     "caption": "Coconut-dusted rice cakes in four colours from Gratisco Café and Restaurant, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-gratisco-cafe-and-restaurant-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122201963168315546&set=a.122193839714315546",
+     "author": "Gratisco Café and Restaurant (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 607,
+     "height": 1080,
+     "caption": "Strawberry shakes over fresh strawberries at Gratisco Café and Restaurant, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "HEAD Quarter Coffee",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "2nd floor, ABG Building, Bangon",
+   "note": "Coffee shop for espresso and manual brews, with rice meals, wings and cakes",
+   "halal": null,
+   "source": "https://www.facebook.com/HQCoffeeMarawi/",
+   "facebook": "https://www.facebook.com/HQCoffeeMarawi",
+   "instagram": "https://www.instagram.com/headquartercoffee",
+   "website": null,
+   "phone": "0985 425 8958",
+   "email": "headquartercoffee@gmail.com",
+   "hours": null,
+   "about": "HEAD Quarter Coffee serves espresso and manual brews from a second-floor café in the ABG Building in Bangon, along the highway between PMTC and City Hall, with a second branch beside the MSU gymnasium. The airy room has turquoise chairs, and the menu adds hojicha, burnt basque cheesecake, wings, rice meals and pizza. Deliveries go through Keri and Maxim. It suits coffee enthusiasts and groups wanting a full meal.",
+   "why_go": "For manual-brew coffee and hojicha in a bright café.",
+   "tips": [
+    "Posted hours: 8 AM – 8 PM (Sunday–Saturday); Fridays 1:30 PM – 7:30 PM",
+    "Delivers through Keri and Maxim"
+   ],
+   "specialties": [
+    "Manual brew coffee",
+    "Hojicha",
+    "Burnt basque cheesecake",
+    "Chicken wings",
+    "Biscoff cream latte"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [
+    "Beside the MSU Gymnasium (2nd floor), MSU Main Campus"
+   ],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-hq-coffee.jpg",
+    "page": "https://www.facebook.com/HQCoffeeMarawi/",
+    "author": "HEAD Quarter Coffee PH (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "The dining room of HEAD Quarter Coffee, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-hq-coffee-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1419485466967565",
+     "author": "HEAD Quarter Coffee PH (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "Pasta, sandwiches, cakes and wings on a table at HEAD Quarter Coffee, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hq-coffee-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1416771187238993",
+     "author": "HEAD Quarter Coffee PH (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "Rice meals with chicken wings and beef at HEAD Quarter Coffee, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hq-coffee-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1416687193914059",
+     "author": "HEAD Quarter Coffee PH (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "A cheese pizza at HEAD Quarter Coffee, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hq-coffee-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1399240645658714",
+     "author": "HEAD Quarter Coffee PH (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 870,
+     "height": 1080,
+     "caption": "An iced matcha latte at HEAD Quarter Coffee, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hq-coffee-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1417702700479175",
+     "author": "HEAD Quarter Coffee PH (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1079,
+     "height": 1080,
+     "caption": "Two iced lattes, one topped with brittle, at HEAD Quarter Coffee, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "Hillside Taste of Asia",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Sagonsongan Diversion Road",
+   "note": "Malaysian restaurant that says it is 100% halal: biryani, ayam merah, curry puffs and roti",
+   "halal": "halal",
+   "source": "https://www.facebook.com/hillsidetasteofasia/",
+   "facebook": "https://www.facebook.com/hillsidetasteofasia",
+   "instagram": null,
+   "website": null,
+   "phone": "0907 284 4461",
+   "email": null,
+   "hours": null,
+   "about": "Hillside Taste of Asia on the Sagonsongan diversion road brings Malaysian cooking to Marawi and states that it is 100% halal, \"from seasonings to serving\". Look for nasi biryani, ayam merah (chicken in sweet-spicy red sauce), curry puffs, roti canai and Malay snacks, plus local favourites like diatirasa (suman with sweet banana). It takes graduation, kanduli and iftar packages for groups. It suits anyone curious about Malaysian food in Lanao del Sur.",
+   "why_go": "For halal Malaysian dishes like ayam merah and biryani in Marawi.",
+   "tips": [
+    "Offers tray packages for graduations, kanduli and Ramadan iftar sponsorship",
+    "Posted closing time: 8 PM"
+   ],
+   "specialties": [
+    "Chicken biryani",
+    "Ayam merah",
+    "Curry puffs",
+    "Roti canai",
+    "Mee goreng"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-hillside-taste-of-asia.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=963344343124087",
+    "author": "Hillside Taste of Asia (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "Curry puffs at Hillside Taste of Asia, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-hillside-taste-of-asia-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=900581629400359",
+     "author": "Hillside Taste of Asia (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 763,
+     "height": 1080,
+     "caption": "The dining room of Hillside Taste of Asia, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hillside-taste-of-asia-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=911707171621138",
+     "author": "Hillside Taste of Asia (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A fish curry with vegetables from Hillside Taste of Asia, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hillside-taste-of-asia-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=900584722733383",
+     "author": "Hillside Taste of Asia (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 763,
+     "height": 1080,
+     "caption": "A tray of fried noodles from Hillside Taste of Asia, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hillside-taste-of-asia-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=900581682733687",
+     "author": "Hillside Taste of Asia (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 763,
+     "height": 1080,
+     "caption": "A packed meal of yellow rice, beef and pickles from Hillside Taste of Asia, Marawi"
+    }
+   ],
+   "lat": 8.00769,
+   "lon": 124.26378,
+   "placed": "street"
+  },
+  {
+   "name": "Hilltop Marawi",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Cabingan",
+   "note": "Hilltop restaurant with an open-air terrace and a view",
+   "halal": null,
+   "source": "https://www.facebook.com/HilltopMarawi/",
+   "facebook": "https://www.facebook.com/HilltopMarawi",
+   "instagram": null,
+   "website": null,
+   "phone": "0947 420 7245",
+   "email": "arimaoahlodine@gmail.com",
+   "hours": null,
+   "about": "Hilltop Marawi in Cabingan sits on the edge of a mountain and is built for the view: a covered terrace with string lights and a glass railing over the valley, sofas on artificial grass, and food stalls such as Le Reve Koffi's in its food bazaar. It also hosts weddings and events with a backdrop and rents pad-style rooms. It suits families and friends at sundown.",
+   "why_go": "For dinner at the edge of a mountain with the valley below.",
+   "tips": [
+    "Has parking inside the compound",
+    "Hosts weddings and events"
+   ],
+   "specialties": [
+    "Shawarma",
+    "Korean snacks",
+    "Coffee"
+   ],
+   "services": [
+    "Dine-in",
+    "Outdoor seating",
+    "Parking"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-hilltop-marawi.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1172573215284481",
+    "author": "Hilltop Marawi (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "The covered terrace of Hilltop Marawi at dusk"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-hilltop-marawi-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1172573225284480",
+     "author": "Hilltop Marawi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Diners on the open terrace of Hilltop Marawi at dusk, above the valley"
+    },
+    {
+     "url": "/places/eats/eat-hilltop-marawi-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1172573131951156",
+     "author": "Hilltop Marawi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "The lantern-lit covered terrace of Hilltop Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hilltop-marawi-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1172573061951163",
+     "author": "Hilltop Marawi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 766,
+     "caption": "Tables along the lit railing at the edge of Hilltop Marawi"
+    },
+    {
+     "url": "/places/eats/eat-hilltop-marawi-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1172573145284488",
+     "author": "Hilltop Marawi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "The lounge area with sofas under string lights at Hilltop Marawi"
+    }
+   ],
+   "lat": 8.00041,
+   "lon": 124.25548,
+   "placed": "street"
+  },
+  {
+   "name": "Inakholai's Kitchen",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": null,
+   "note": "Maranao and Filipino dishes; dine-in, delivery and buffet catering, by Hasmin Restaurant (est. 2013)",
+   "halal": null,
+   "source": "https://www.facebook.com/inakholais.kitchen/",
+   "facebook": "https://www.facebook.com/inakholais.kitchen",
+   "instagram": null,
+   "website": null,
+   "phone": "0917 716 0007",
+   "email": "inakholais.kitchen@gmail.com",
+   "hours": null,
+   "about": "Inakholai's Kitchen is a dine-in restaurant, delivery and catering business in Marawi run by Hasmin Restaurant, established in 2013, known for Maranao specialties. Dishes include tiakobong a bakas and pisasati a bakas (tuna dishes, bakas being Maranao for tuna), piyaparan a manok (chicken with turmeric and grated coconut) and yellow rice. It now offers dulang catering, the Maranao way of serving a feast on low brass trays. It suits visitors wanting real Maranao food or a traditional spread for an event.",
+   "why_go": "For Maranao specialties and dulang catering, served the traditional way.",
+   "tips": [
+    "Offers dulang (traditional tray) catering by request",
+    "Accepts debit and credit cards"
+   ],
+   "specialties": [
+    "Tiakobong a bakas",
+    "Pisasati a bakas",
+    "Piyaparan a manok",
+    "Yellow rice",
+    "Lumpia"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-inakholais-kitchen.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1062325716407507",
+    "author": "Inakholai's Kitchen (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "A Maranao spread of yellow rice topped with eggs and side dishes, by Inakholai's Kitchen, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-inakholais-kitchen-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=917857067521040",
+     "author": "Inakholai's Kitchen (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 607,
+     "height": 1080,
+     "caption": "Tiakobong a bakas, a Maranao tuna dish, in a tray from Inakholai's Kitchen, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-inakholais-kitchen-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=921596190480461",
+     "author": "Inakholai's Kitchen (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 782,
+     "height": 1080,
+     "caption": "A tub of lumpia from Inakholai's Kitchen, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-inakholais-kitchen-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=917110434262370",
+     "author": "Inakholai's Kitchen (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 607,
+     "height": 1080,
+     "caption": "Pisasati a bakas, Maranao tuna balls, from Inakholai's Kitchen, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "KalmaDoy",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Wao",
+   "address": null,
+   "note": "Coffee shop with a view: boba lattes, ring cakes and muffins",
+   "halal": null,
+   "source": "https://www.facebook.com/people/KalmaDoy/100064232763173/",
+   "facebook": "https://www.facebook.com/profile.php?id=100064232763173",
+   "instagram": null,
+   "website": null,
+   "phone": null,
+   "email": null,
+   "hours": null,
+   "about": "KalmaDoy is a small coffee shop in Wao with big windows facing the hills. It is known for its muscovado boba latte, a brown-sugar milk tea, and sells muffins and ring cakes that often sell out. Most orders are for pick-up and delivery. It suits a coffee run in Wao.",
+   "why_go": "For its muscovado boba latte.",
+   "tips": [
+    "Many items are for pick-up and delivery only; first come, first served"
+   ],
+   "specialties": [
+    "Muscovado boba latte",
+    "Muffins",
+    "Ring cakes"
+   ],
+   "services": [
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-kalmadoy.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1496271119190633",
+    "author": "KalmaDoy (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Muffins stacked by the windows of KalmaDoy, Wao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-kalmadoy-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1502122675272144",
+     "author": "KalmaDoy (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Muscovado boba lattes at KalmaDoy, Wao"
+    }
+   ],
+   "lat": 7.62409,
+   "lon": 124.72358,
+   "placed": "place"
+  },
+  {
+   "name": "LakeCity Café",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Near City Hall, Barangay Fort",
+   "note": "Mexican-style dishes such as tacos and burritos, Filipino rice meals and catering",
+   "halal": null,
+   "source": "https://www.facebook.com/people/LakeCity-Caf%C3%A9/61550929217575/",
+   "facebook": "https://www.facebook.com/profile.php?id=61550929217575",
+   "instagram": null,
+   "website": null,
+   "phone": "0962 476 5135",
+   "email": null,
+   "hours": null,
+   "about": "LakeCity Café near City Hall in Barangay Fort serves Mexican-style food in Marawi: tacos, burritos filled with yellow rice, Buffalo wings and pastas such as shrimp vongole. The dining room has a painted mural of a sunset over the lake, and the café's logo dates it to 2023. It also caters and posts Ramadan thuton promos. It suits groups wanting something different from the usual.",
+   "why_go": "For tacos and yellow-rice burritos, a Mexican twist in Marawi.",
+   "tips": [
+    "Offers catering"
+   ],
+   "specialties": [
+    "Tacos",
+    "Burrito",
+    "Buffalo wings",
+    "Shrimp pasta"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": 2023,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-lakecity-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1420590886749962&set=pcb.1420592673416450",
+    "author": "LAAG Mindanao (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "A seating corner under a painted mural at LakeCity Café, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-lakecity-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122145640994147832&set=pcb.122145651146147832",
+     "author": "LakeCity Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Glazed chicken wings with fries at LakeCity Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-lakecity-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122145640916147832&set=pcb.122145651146147832",
+     "author": "LakeCity Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Two loaded tacos at LakeCity Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-lakecity-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122145640910147832&set=pcb.122145651146147832",
+     "author": "LakeCity Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A burrito filled with yellow rice, with salsa and sour cream, at LakeCity Café, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-lakecity-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122145640856147832&set=pcb.122145651146147832",
+     "author": "LakeCity Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Shrimp pasta with garlic bread at LakeCity Café, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "Le Reve Koffi",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Main Street, MSU Main Campus",
+   "note": "Campus café: coffee, pasta, rice meals and churros",
+   "halal": null,
+   "source": "https://www.facebook.com/lerevekoffi/",
+   "facebook": "https://www.facebook.com/lerevekoffi",
+   "instagram": "https://www.instagram.com/lereve_koffi",
+   "website": null,
+   "phone": "0981 123 3737",
+   "email": "lerevekoffi2022@gmail.com",
+   "hours": null,
+   "about": "Le Reve Koffi is a campus café on Main Street at MSU, run as a family business. It serves iced lattes, pasta, rice meals with chicken and corn, and churros with chocolate, and it also runs a stall at Hilltop Marawi. It suits students and visitors on campus.",
+   "why_go": "For an iced latte and churros on the MSU campus.",
+   "tips": [],
+   "specialties": [
+    "Iced latte",
+    "Churros",
+    "Spaghetti",
+    "Chicken rice meals"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [
+    "Stall at Hilltop Marawi Food Bazaar, Heaven Road"
+   ],
+   "as_of": "2026-09",
+   "image": {
+    "url": "/places/eats/eat-le-reve-koffi.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=999693119477916",
+    "author": "Le Reve Koffi (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Spaghetti and iced coffee at Le Reve Koffi, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-le-reve-koffi-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=128309589949611&set=a.128309593282944",
+     "author": "Le Reve Koffi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "The front of Le Reve Koffi on the MSU campus, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-le-reve-koffi-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=989018567212038",
+     "author": "Le Reve Koffi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Churros with chocolate dip at Le Reve Koffi, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-le-reve-koffi-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=988159963964565",
+     "author": "Le Reve Koffi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "Glazed chicken with rice and corn at Le Reve Koffi, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-le-reve-koffi-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=989018647212030",
+     "author": "Le Reve Koffi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "A row of iced lattes at the bar of Le Reve Koffi, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-le-reve-koffi-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=989018757212019",
+     "author": "Le Reve Koffi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Chicken in cream sauce with rice and corn at Le Reve Koffi, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "Le Reve Place",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Barangay Cadayonan",
+   "note": "Coffee shop with a pizzeria menu",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Le-Reve-Place-100093083767497/",
+   "facebook": "https://www.facebook.com/profile.php?id=100093083767497",
+   "instagram": null,
+   "website": null,
+   "phone": "0985 345 2949",
+   "email": "lereveplace@gmail.com",
+   "hours": null,
+   "about": "Le Reve Place is a coffee shop in an A-frame building on the Diversion Road in Cadayonan, opened in 2023, with a pizzeria menu alongside the coffee. It extended its hours in 2026 and opens late after iftar during Ramadan. It suits a late coffee or pizza with friends.",
+   "why_go": "For coffee and pizza in a striking A-frame building on the Diversion Road.",
+   "tips": [
+    "Posted Friday hours: 1:30 PM – 10:00 PM",
+    "Opens late after iftar during Ramadan"
+   ],
+   "specialties": [
+    "Iced latte",
+    "Pizza"
+   ],
+   "services": [
+    "Dine-in",
+    "Delivery"
+   ],
+   "opened": 2023,
+   "branches": [],
+   "as_of": "2026-03",
+   "image": {
+    "url": "/places/eats/eat-le-reve-place.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=741419482304171",
+    "author": "Le Reve Place (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 679,
+    "caption": "Le Reve Place's A-frame building and a cup of coffee, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-le-reve-place-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=740624615716991",
+     "author": "Le Reve Place (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 720,
+     "height": 1080,
+     "caption": "Espresso poured over an iced latte at Le Reve Place, Marawi"
+    }
+   ],
+   "lat": 8.0047,
+   "lon": 124.2854,
+   "placed": "town"
+  },
+  {
+   "name": "Mangape 'ta",
+   "kind": "cafe",
+   "area": "lanao-del-sur",
+   "municipality": "Wao",
+   "address": null,
+   "note": "Small farm café: coffee, cheesecakes and pastries",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Mangape-ta/100094684054177/",
+   "facebook": "https://www.facebook.com/profile.php?id=100094684054177",
+   "instagram": null,
+   "website": null,
+   "phone": null,
+   "email": "Mangapetahyas@gmail.com",
+   "hours": null,
+   "about": "Mangape 'ta (\"let's have coffee\") is a small farm café in Wao with tables looking over the fields. The baker turns out cheesecakes in many flavours, burnt basque cheesecake, iceberg cheesecake, cookies, bento cakes and cheese pizza, with coffee such as White Rabbit java coffee and tiramisu coffee. It suits a slow afternoon in the countryside.",
+   "why_go": "For cheesecake and coffee overlooking the fields of Wao.",
+   "tips": [],
+   "specialties": [
+    "Burnt basque cheesecake",
+    "Iceberg cheesecake",
+    "White Rabbit coffee",
+    "Tiramisu coffee",
+    "Cookies"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-mangape-ta.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=102237116275757&set=a.102235679609234",
+    "author": "Mangape 'ta (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Coffee and a muffin overlooking the fields at Mangape 'ta, Wao"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-mangape-ta-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=913302361835891",
+     "author": "Mangape 'ta (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 640,
+     "caption": "A slice of cheesecake with fruit sauce at Mangape 'ta, Wao"
+    },
+    {
+     "url": "/places/eats/eat-mangape-ta-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=908490728983721",
+     "author": "Mangape 'ta (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "A burnt basque cheesecake at Mangape 'ta, Wao"
+    },
+    {
+     "url": "/places/eats/eat-mangape-ta-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=984224041410389",
+     "author": "Mangape 'ta (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Cookies, iceberg cheesecake and brownies at Mangape 'ta, Wao"
+    },
+    {
+     "url": "/places/eats/eat-mangape-ta-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=887407304425397",
+     "author": "Mangape 'ta (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 808,
+     "height": 1080,
+     "caption": "A cheese pizza in its box at Mangape 'ta, Wao"
+    }
+   ],
+   "lat": 7.65228,
+   "lon": 124.72337,
+   "placed": "place"
+  },
+  {
+   "name": "Ressan Midway Catering Services and Function Hall",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Malabang",
+   "address": "Barangay Cabasaran",
+   "note": "Restaurant, caterer and function hall; hosts weddings",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Ressan-Midway-RESTO/100057130342559/",
+   "facebook": "https://www.facebook.com/profile.php?id=100057130342559",
+   "instagram": null,
+   "website": null,
+   "phone": "0966 468 8603",
+   "email": "pangcogaabdurahman@gmail.com",
+   "hours": null,
+   "about": "Ressan Midway in Barangay Cabasaran, Malabang, is a restaurant, caterer and function hall known locally as a wedding venue. It hosts weddings and celebrations with photo booths and styled backdrops. It suits groups looking for a hall with food on the Malabang road.",
+   "why_go": "For a function hall with in-house catering in Malabang.",
+   "tips": [],
+   "specialties": [],
+   "services": [
+    "Dine-in",
+    "Catering",
+    "Function room",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": null,
+   "gallery": [],
+   "lat": 7.60049,
+   "lon": 124.07536,
+   "placed": "barangay"
+  },
+  {
+   "name": "TEAroti",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "1st Street, MSU Main Campus",
+   "note": "Malay restaurant: roti canai with curry, biryani and teh tarik",
+   "halal": null,
+   "source": "https://www.facebook.com/tearoti/",
+   "facebook": "https://www.facebook.com/tearoti",
+   "instagram": null,
+   "website": null,
+   "phone": "0935 007 4409",
+   "email": null,
+   "hours": null,
+   "about": "TEAroti is a Malay restaurant on 1st Street at the MSU main campus, named for teh tarik and roti, the Malaysian pulled tea and flatbread. Regulars come for biryani, roti canai with curries, curry laksa, mee goreng and halo-halo. In Ramadan it opens from 3 PM to 11 PM and takes iftar bookings. It suits anyone missing Malaysian food or curious to try it.",
+   "why_go": "For roti canai, biryani and teh tarik on the MSU campus.",
+   "tips": [
+    "In Ramadan: open daily 3:00 PM – 11:00 PM; iftar dine-ins and pick-ups can be booked from 2:00 PM; no deliveries"
+   ],
+   "specialties": [
+    "Biryani",
+    "Roti canai",
+    "Curry laksa",
+    "Mee goreng",
+    "Teh tarik"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-tearoti.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=754465553139740",
+    "author": "TEAroti (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 673,
+    "caption": "Roti with two curries at TEAroti, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-tearoti-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=754459539807008",
+     "author": "TEAroti (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 525,
+     "caption": "The TEAroti shopfront on the MSU campus, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-tearoti-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=754465483139747",
+     "author": "TEAroti (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 525,
+     "caption": "Beef biryani with egg and achar at TEAroti, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-tearoti-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=754465453139750",
+     "author": "TEAroti (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 637,
+     "caption": "A bowl of curry laksa with egg and lime at TEAroti, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-tearoti-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=754459809806981",
+     "author": "TEAroti (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1019,
+     "caption": "Mee goreng with a prawn and a fried egg at TEAroti, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-tearoti-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=754459779806984",
+     "author": "TEAroti (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 984,
+     "height": 1080,
+     "caption": "Halo-halo with ube and pandan jelly in TEAroti cups, Marawi"
+    }
+   ],
+   "lat": 7.99618,
+   "lon": 124.2564,
+   "placed": "street"
+  },
+  {
+   "name": "Zoë Kitchenette",
+   "kind": "restaurant",
+   "area": "lanao-del-sur",
+   "municipality": "Marawi",
+   "address": "Sarimanok Road",
+   "note": "Restaurant and coffee shop that makes Maranao snacks, bento boxes and party trays",
+   "halal": null,
+   "source": "https://www.facebook.com/zoekitchenette/",
+   "facebook": "https://www.facebook.com/zoekitchenette",
+   "instagram": null,
+   "website": null,
+   "phone": "0939 418 2706",
+   "email": null,
+   "hours": null,
+   "about": "Zoë Kitchenette on the Sarimanok highway is a restaurant and coffee shop that does much of its work as a caterer, supplying ministries, camps and events. It makes Maranao snacks, bento boxes, party trays (beef randang, shrimp, kinilaw, pasta) and Ramadan tubs and trays. It suits offices and families ordering food.",
+   "why_go": "For bento boxes and party trays with Maranao snacks.",
+   "tips": [
+    "Accepts Ramadan orders in tubs, trays and bento",
+    "Offers catering for weddings, birthdays and corporate events"
+   ],
+   "specialties": [
+    "Bento boxes",
+    "Beef randang",
+    "Party trays",
+    "Native snacks"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-09",
+   "image": {
+    "url": "/places/eats/eat-zoe-kitchenette.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=769651511847746",
+    "author": "Zoë Kitchenette Restaurant & Coffee Shop (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "Trays of native snacks at Zoë Kitchenette, Marawi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-zoe-kitchenette-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=769651508514413",
+     "author": "Zoë Kitchenette Restaurant & Coffee Shop (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A snack table of breads, fritters and brownies catered by Zoë Kitchenette, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-zoe-kitchenette-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=314387543800037",
+     "author": "Zoë Kitchenette Restaurant & Coffee Shop (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Bowls of pancit, shrimp, vegetables and a coconut dish from Zoë Kitchenette, Marawi"
+    },
+    {
+     "url": "/places/eats/eat-zoe-kitchenette-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=314387610466697",
+     "author": "Zoë Kitchenette Restaurant & Coffee Shop (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Bento boxes of spaghetti, sandwiches and cake from Zoë Kitchenette, Marawi"
+    }
+   ],
+   "lat": 8.02897,
+   "lon": 124.31806,
+   "placed": "street"
+  },
+  {
+   "name": "Cafe Primo",
+   "kind": "cafe",
+   "area": "maguindanao-del-norte",
+   "municipality": "Parang",
+   "address": "Salam Oil compound, Crossing Barira, Narciso Ramos Highway",
+   "note": "Coffee and non-coffee drinks, cakes, pastries and fried snacks",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Cafe-Primo/61572175779661/",
+   "facebook": "https://www.facebook.com/profile.php?id=61572175779661",
+   "instagram": null,
+   "website": null,
+   "phone": "0975 193 7115",
+   "email": "cafeprimo15@gmail.com",
+   "hours": "10:00 AM – 9:00 PM (Monday–Saturday); 1:00 PM – 9:00 PM (Friday & Sunday)",
+   "about": "Cafe Primo sits in the Salam Oil compound at Crossing Barira on the highway in Parang, in front of MLhuillier. It serves coffee and non-coffee drinks, frappés, cakes and pastries, with fried snacks such as cheese sticks, fries and chicken. A neon sign and bar stools fill the small room. It delivers by its own number and Kuku Express. It suits a highway coffee stop.",
+   "why_go": "For a coffee and snacks stop on the highway in Parang.",
+   "tips": [
+    "Delivery by calling its number or through Kuku Express"
+   ],
+   "specialties": [
+    "Iced coffee",
+    "Frappé",
+    "Cheese sticks",
+    "Cakes"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-cafe-primo.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122178962468739192",
+    "author": "Cafe Primo (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 928,
+    "height": 1080,
+    "caption": "Bar stools under a neon sign inside Cafe Primo, Parang"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-cafe-primo-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122178962558739192",
+     "author": "Cafe Primo (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 973,
+     "height": 1080,
+     "caption": "Iced coffees with cheese sticks and fries at Cafe Primo, Parang"
+    },
+    {
+     "url": "/places/eats/eat-cafe-primo-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122183236502739192",
+     "author": "Cafe Primo (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 811,
+     "height": 1080,
+     "caption": "Iced coffees and cream-topped drinks at Cafe Primo, Parang"
+    }
+   ],
+   "lat": 7.38079,
+   "lon": 124.27245,
+   "placed": "street"
+  },
+  {
+   "name": "Diners on Street",
+   "kind": "restaurant",
+   "area": "maguindanao-del-norte",
+   "municipality": "Datu Odin Sinsuat",
+   "address": null,
+   "note": "Restaurant in an industrial-rustic hall; its page places it in Dinaig, the old name of Datu Odin Sinsuat",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Diners-on-Street-100083129598893/",
+   "facebook": "https://www.facebook.com/profile.php?id=100083129598893",
+   "instagram": null,
+   "website": null,
+   "phone": "0975 764 3908",
+   "email": "dinersonstreet.18@gmail.com",
+   "hours": null,
+   "about": "Diners on Street calls itself an industrial-rustic restaurant and bar, in a high-ceilinged hall with a mezzanine, wooden tables and red chairs, in Dinaig (Datu Odin Sinsuat). It is popular for family meals and office groups, including local government teams from nearby towns. It suits groups looking for a sit-down restaurant outside Cotabato City.",
+   "why_go": "For a big sit-down meal in an industrial-rustic hall.",
+   "tips": [
+    "Posted hours on All Souls' Day 2026: 10:30 AM – 9:30 PM"
+   ],
+   "specialties": [],
+   "services": [
+    "Dine-in"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-diners-on-street.jpg",
+    "page": "https://www.facebook.com/p/Diners-on-Street-100083129598893/",
+    "author": "Diners on Street (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "Diners on Street, Datu Odin Sinsuat, lit at night"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-diners-on-street-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1130851716362471&set=pcb.1130853653028944",
+     "author": "Diners on Street (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The dining hall and bar of Diners on Street, Datu Odin Sinsuat"
+    }
+   ],
+   "lat": 7.0236,
+   "lon": 124.3157,
+   "placed": "town"
+  },
+  {
+   "name": "Drop Shot Café",
+   "kind": "cafe",
+   "area": "maguindanao-del-norte",
+   "municipality": "Sultan Mastura",
+   "address": "Barangay Tapayan",
+   "note": "Badminton-themed coffee shop known for its cloud cake",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Drop-Shot-Caf%C3%A9-61554986352702/",
+   "facebook": "https://www.facebook.com/profile.php?id=61554986352702",
+   "instagram": "https://www.instagram.com/dropshotcafe_sm",
+   "website": null,
+   "phone": null,
+   "email": null,
+   "hours": null,
+   "about": "Drop Shot Café in Barangay Tapayan, Sultan Mastura, pairs coffee with badminton. Its viral cloud cake, rich chocolate cake under a fluffy cloud of cream, sells out in limited batches, and drinks include tiramisu and banana pudding lattes. It suits young groups and players after a game.",
+   "why_go": "For its viral cloud cake and coffee by the badminton courts.",
+   "tips": [
+    "Cloud cake is sold in limited batches; reserve by commenting MINE and the quantity",
+    "Last order 9:45 PM"
+   ],
+   "specialties": [
+    "Cloud cake",
+    "Tiramisu latte",
+    "Banana pudding latte",
+    "Matcha latte"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-drop-shot-cafe.jpg",
+    "page": "https://www.facebook.com/p/Drop-Shot-Caf%C3%A9-61554986352702/",
+    "author": "Drop Shot Café (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 720,
+    "caption": "Drop Shot Café lit at dusk, Tapayan, Sultan Mastura"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-drop-shot-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122302835918166211",
+     "author": "Drop Shot Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 903,
+     "height": 1080,
+     "caption": "Cloud cakes, chocolate cake under a dome of cream, at Drop Shot Café, Sultan Mastura"
+    },
+    {
+     "url": "/places/eats/eat-drop-shot-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122300692184166211",
+     "author": "Drop Shot Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The Drop Shot Café coffee cart, Sultan Mastura"
+    }
+   ],
+   "lat": 7.30424,
+   "lon": 124.28031,
+   "placed": "barangay"
+  },
+  {
+   "name": "House of Maguindanaon Delicacies",
+   "kind": "bakery",
+   "area": "maguindanao-del-norte",
+   "municipality": "Sultan Kudarat",
+   "address": null,
+   "note": "Maker of Maguindanaon sweets such as bulua, tipas, dudul and putri mandi, sold by the box or tray",
+   "halal": null,
+   "source": "https://www.facebook.com/HouseofMaguindanaonDelicacies/",
+   "facebook": "https://www.facebook.com/HouseofMaguindanaonDelicacies",
+   "instagram": null,
+   "website": null,
+   "phone": "0997 467 8260",
+   "email": "sabreen0314@gmail.com",
+   "hours": null,
+   "about": "House of Maguindanaon Delicacies (est. 2010) makes traditional Maguindanaon sweets by order for events like kanduli, weddings and aqiqah. The range includes bulua (sponge-like buns), tipas (crisp fried pastry), dudul (a sticky sweet of glutinous rice, coconut milk and sugar, also made with durian), putri mandi (coconut-filled rice balls), panganan sising (ring-shaped fritters) and panyalam (rice pancakes), packed in boxes, bilao and trays, and it sends orders as far as Surallah in South Cotabato. It suits visitors wanting pasalubong of Maguindanaon sweets.",
+   "why_go": "For boxed Maguindanaon sweets like dudul and tipas to take home.",
+   "tips": [
+    "Customised boxes and trays on request; message for quotes"
+   ],
+   "specialties": [
+    "Dudul",
+    "Tipas",
+    "Bulua",
+    "Putri mandi",
+    "Panganan sising",
+    "Panyalam"
+   ],
+   "services": [
+    "Delivery",
+    "Catering"
+   ],
+   "opened": 2010,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-house-of-maguindanaon-delicacies.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=1518211073658380&set=a.548481833964647",
+    "author": "House of Maguindanaon Delicacies (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Boxed Maguindanaon delicacies from House of Maguindanaon Delicacies, Sultan Kudarat"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-house-of-maguindanaon-delicacies-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1511060787706742",
+     "author": "House of Maguindanaon Delicacies (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1080,
+     "caption": "Boxes of Maguindanaon sweets from House of Maguindanaon Delicacies, Sultan Kudarat"
+    }
+   ],
+   "lat": 7.2711,
+   "lon": 124.2919,
+   "placed": "town"
+  },
+  {
+   "name": "KAPÉ Station Upi",
+   "kind": "cafe",
+   "area": "maguindanao-del-norte",
+   "municipality": "Upi",
+   "address": "Borongotan",
+   "note": "Branch of a Cotabato City coffee shop: coffee, rice meals, pasta, pizza and ramen, with a view of Tudok Mamot",
+   "halal": null,
+   "source": "https://www.facebook.com/KapeStation2022",
+   "facebook": "https://www.facebook.com/KapeStation2022",
+   "instagram": null,
+   "website": null,
+   "phone": "0977 059 3533",
+   "email": "kapestation2022@gmail.com",
+   "hours": null,
+   "about": "KAPÉ Station, a homegrown coffee shop from Cotabato City (opened 2022), has a branch in Borongotan, Upi, in the cool Maguindanao highlands. The Upi café is air-conditioned, with outdoor seating facing Tudok Mamot, a local peak, and serves coffee, frappes, rice meals, pasta, pizza and ramen, with free Wi-Fi. It suits travellers on the mountain road who want a long sit.",
+   "why_go": "For coffee with a view of Tudok Mamot in the Upi highlands.",
+   "tips": [
+    "Free Wi-Fi"
+   ],
+   "specialties": [
+    "Spanish latte",
+    "Caramel frappé",
+    "Beef tapa",
+    "Shrimp pasta"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery",
+    "Wi-Fi",
+    "Air-conditioned",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [
+    "Sinsuat Avenue, Cotabato City (main shop)"
+   ],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-kape-station-upi.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122151260517110798&set=pcb.122151261315110798",
+    "author": "Kapé Station Upi (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 720,
+    "height": 960,
+    "caption": "The dining room of KAPÉ Station Upi"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-kape-station-upi-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1057857420375957",
+     "author": "KAPÉ Station (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Beef tapa with rice, egg and salad at KAPÉ Station"
+    },
+    {
+     "url": "/places/eats/eat-kape-station-upi-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1057857460375953",
+     "author": "KAPÉ Station (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 953,
+     "height": 1080,
+     "caption": "Spring rolls with sweet chili sauce at KAPÉ Station"
+    },
+    {
+     "url": "/places/eats/eat-kape-station-upi-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1055194230642276",
+     "author": "KAPÉ Station (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Shrimp pasta with toast and an iced coffee at KAPÉ Station"
+    },
+    {
+     "url": "/places/eats/eat-kape-station-upi-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1054289290732770",
+     "author": "KAPÉ Station (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Caramel frappes topped with crumble at KAPÉ Station"
+    }
+   ],
+   "lat": 6.99517,
+   "lon": 124.17549,
+   "placed": "barangay"
+  },
+  {
+   "name": "MamaLot's Lafangan",
+   "kind": "eatery",
+   "area": "maguindanao-del-norte",
+   "municipality": "Parang",
+   "address": "Making",
+   "note": "Roadside grill: chicken, barbecue and isaw",
+   "halal": "halal",
+   "source": "https://www.facebook.com/jglafangang/",
+   "facebook": "https://www.facebook.com/jglafangang",
+   "instagram": null,
+   "website": null,
+   "phone": "0927 373 4438",
+   "email": "jgslafangan@gmail.com",
+   "hours": null,
+   "about": "MamaLot's Lafangan is a roadside grill at Purok Nursery on the highway in Parang, facing Burger Hub, where skewers of chicken, isaw and barbecue are grilled to order; its sign marks it halal. It also brings its grill to the Parang plaza and to Ramadan trade fairs. It suits an evening snack of grilled skewers.",
+   "why_go": "For an evening of grilled skewers by the highway.",
+   "tips": [
+    "Posted hours: Monday–Saturday, 4 PM – 9 PM"
+   ],
+   "specialties": [
+    "Chicken barbecue",
+    "Isaw",
+    "Chicken pecho",
+    "Grilled balut"
+   ],
+   "services": [
+    "Take-out",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2025-04",
+   "image": {
+    "url": "/places/eats/eat-mamalots-lafangan.jpg",
+    "page": "https://www.facebook.com/jglafangang/",
+    "author": "MamaLot's Lafangan (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 810,
+    "caption": "MamaLot's Lafangan, a roadside grill stall in Making, Parang"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-mamalots-lafangan-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=654298500639762",
+     "author": "MamaLot's Lafangan (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Barbecue skewers in the glass case under the halal sign at MamaLot's Lafangan, Parang"
+    },
+    {
+     "url": "/places/eats/eat-mamalots-lafangan-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=477503611652586",
+     "author": "MamaLot's Lafangan (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Marinated meats and skewers ready for the grill at MamaLot's Lafangan, Parang"
+    },
+    {
+     "url": "/places/eats/eat-mamalots-lafangan-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=612665474803065",
+     "author": "MamaLot's Lafangan (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "MamaLot's Lafangan's roadside stall and tables by day, Parang"
+    }
+   ],
+   "lat": 7.38606,
+   "lon": 124.26385,
+   "placed": "barangay"
+  },
+  {
+   "name": "Silong Resto",
+   "kind": "restaurant",
+   "area": "maguindanao-del-norte",
+   "municipality": "Datu Odin Sinsuat",
+   "address": "Awang–Upi Road, KM 11, Tenorio, Awang",
+   "note": "Hillside restaurant (est. 2012) with a view over the plain; burgers, rice meals and grilled fish, live acoustic music on Fridays",
+   "halal": null,
+   "source": "https://www.facebook.com/SilongResto/",
+   "facebook": "https://www.facebook.com/SilongResto",
+   "instagram": null,
+   "website": null,
+   "phone": "0916 636 3828",
+   "email": "SilongResto@gmail.com",
+   "hours": null,
+   "about": "Silong Resto (est. 2012) sits on the Awang–Upi road at KM 11 in Datu Odin Sinsuat, on high ground with panoramic views over the Cotabato plain and the mountains. Open-sided dining rooms and a veranda frame the view; the menu runs from burgers and wings to grilled fish, pasta and coffee. Friday nights bring live acoustic music. It suits a weekend drive out of Cotabato City.",
+   "why_go": "For panoramic views and live acoustic sets on Friday nights.",
+   "tips": [
+    "Live acoustic music on Friday nights, 6 PM – 10 PM"
+   ],
+   "specialties": [
+    "Fried chicken burger",
+    "Chicken wings",
+    "Grilled fish",
+    "Onion rings",
+    "Ube shake"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Outdoor seating"
+   ],
+   "opened": 2012,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-silong-resto.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122319455450028045",
+    "author": "Silong Resto (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "The open-air dining area of Silong Resto, Awang, Datu Odin Sinsuat"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-silong-resto-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122313461018028045",
+     "author": "Silong Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 253,
+     "caption": "The covered veranda and its view over the plain at Silong Resto, Awang, Datu Odin Sinsuat"
+    },
+    {
+     "url": "/places/eats/eat-silong-resto-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122329403168028045",
+     "author": "Silong Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 809,
+     "height": 1080,
+     "caption": "Grilled fish, pasta, wings and a burger on a table at Silong Resto, Datu Odin Sinsuat"
+    },
+    {
+     "url": "/places/eats/eat-silong-resto-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122331754964028045",
+     "author": "Silong Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 974,
+     "height": 1080,
+     "caption": "A fried chicken burger with an iced drink at Silong Resto, Datu Odin Sinsuat"
+    },
+    {
+     "url": "/places/eats/eat-silong-resto-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122305465682028045",
+     "author": "Silong Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1079,
+     "caption": "Onion rings with garlic dip at Silong Resto, Datu Odin Sinsuat"
+    }
+   ],
+   "lat": 7.01999,
+   "lon": 124.27204,
+   "placed": "street"
+  },
+  {
+   "name": "1014 Cafe & Biryani House",
+   "kind": "cafe",
+   "area": "maguindanao-del-sur",
+   "municipality": "Buluan",
+   "address": null,
+   "note": "Café and restaurant: coffee, smoothies, chicken biryani, shawarma and pasta",
+   "halal": null,
+   "source": "https://www.facebook.com/people/1014-cafe-biryani-house/61561053855338/",
+   "facebook": "https://www.facebook.com/profile.php?id=61561053855338",
+   "instagram": null,
+   "website": null,
+   "phone": "0975 448 3569",
+   "email": "shahariaayesha@icloud.com",
+   "hours": null,
+   "about": "1014 Cafe & Biryani House sits along the national highway in Buluan, in front of Bteslife. It serves coffee and smoothies with chicken biryani, chicken shawarma heavy on garlic sauce, buffalo chicken, burgers and pasta. It suits a meal on the road through Maguindanao del Sur.",
+   "why_go": "For chicken biryani and shawarma on the highway in Buluan.",
+   "tips": [],
+   "specialties": [
+    "Chicken biryani",
+    "Chicken shawarma",
+    "Buffalo chicken",
+    "Burger"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-1014-cafe-and-biryani-house.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122251154192368461",
+    "author": "1014 cafe & biryani house (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Chicken biryani at 1014 Cafe & Biryani House, Buluan"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-1014-cafe-and-biryani-house-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122251154078368461",
+     "author": "1014 cafe & biryani house (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Saucy chicken wings with pasta at 1014 Cafe & Biryani House, Buluan"
+    },
+    {
+     "url": "/places/eats/eat-1014-cafe-and-biryani-house-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122251078172368461&set=pcb.122251078280368461",
+     "author": "1014 cafe & biryani house (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Chicken shawarma wraps with fries at 1014 Cafe & Biryani House, Buluan"
+    },
+    {
+     "url": "/places/eats/eat-1014-cafe-and-biryani-house-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122251153910368461",
+     "author": "1014 cafe & biryani house (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Spaghetti with an iced caramel drink at 1014 Cafe & Biryani House, Buluan"
+    }
+   ],
+   "lat": 6.7166,
+   "lon": 124.7866,
+   "placed": "town"
+  },
+  {
+   "name": "Croffee",
+   "kind": "cafe",
+   "area": "maguindanao-del-sur",
+   "municipality": "Datu Paglas",
+   "address": "Marobaks Street, Poblacion",
+   "note": "Small café: frappes, waffles, cheese fries and fried chicken",
+   "halal": null,
+   "source": "https://www.facebook.com/CROFFEE23/",
+   "facebook": "https://www.facebook.com/CROFFEE23",
+   "instagram": null,
+   "website": null,
+   "phone": "09851543474",
+   "email": null,
+   "hours": null,
+   "about": "Croffee is a small café on Marobaks Street in the poblacion of Datu Paglas. It serves frappes, waffles, cheese fries, lumpia and fried chicken with rice, for dine-in, take-out, pick-up and delivery. It suits a snack stop in town.",
+   "why_go": "For frappes and waffles in Datu Paglas.",
+   "tips": [
+    "Advance orders by call or text"
+   ],
+   "specialties": [
+    "Frappe",
+    "Waffle",
+    "Cheese fries",
+    "Fried chicken"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2025-10",
+   "image": {
+    "url": "/places/eats/eat-croffee.jpg",
+    "page": "https://www.facebook.com/CROFFEE23/",
+    "author": "Croffee (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 852,
+    "caption": "Croffee's open-front café on Marobaks Street, Datu Paglas"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-croffee-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1206418844828672",
+     "author": "Croffee (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 1029,
+     "caption": "A waffle with chocolate drizzle and cream at Croffee, Datu Paglas"
+    },
+    {
+     "url": "/places/eats/eat-croffee-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1206418808162009",
+     "author": "Croffee (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 743,
+     "height": 1080,
+     "caption": "A matcha frappe with cookies-and-cream topping at Croffee, Datu Paglas"
+    },
+    {
+     "url": "/places/eats/eat-croffee-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1205440091593214",
+     "author": "Croffee (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 813,
+     "caption": "Cheese fries at Croffee, Datu Paglas"
+    },
+    {
+     "url": "/places/eats/eat-croffee-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1205439921593231",
+     "author": "Croffee (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 997,
+     "height": 1080,
+     "caption": "Fried chicken with rice and cucumber at Croffee, Datu Paglas"
+    }
+   ],
+   "lat": 6.71914,
+   "lon": 124.79122,
+   "placed": "street"
+  },
+  {
+   "name": "iTravel Café",
+   "kind": "cafe",
+   "area": "maguindanao-del-sur",
+   "municipality": "Buluan",
+   "address": null,
+   "note": "Café and restaurant open since 2016: rice meals, pasta, pancit and drinks",
+   "halal": null,
+   "source": "https://www.facebook.com/iTravelCafe/",
+   "facebook": "https://www.facebook.com/iTravelCafe",
+   "instagram": "https://www.instagram.com/itravelcafe2018",
+   "website": null,
+   "phone": "0935 263 8398",
+   "email": null,
+   "hours": null,
+   "about": "iTravel Café & Restaurant in Buluan opened in July 2016 and celebrated ten years in 2026, calling itself a place where friends and families gather. The menu includes pastil (steamed rice with shredded chicken or beef wrapped in banana leaf, a Maguindanaon staple), beef tapa, pancit, chicken wings in several sauces, pizza and mais con yelo. It suits a lunch stop in Buluan.",
+   "why_go": "For pastil and a full lunch at a ten-year-old Buluan favourite.",
+   "tips": [],
+   "specialties": [
+    "Pastil",
+    "Beef tapa",
+    "Chicken wings",
+    "Pancit",
+    "Mais con yelo"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out"
+   ],
+   "opened": 2016,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-itravel-cafe.jpg",
+    "page": "https://www.facebook.com/iTravelCafe/",
+    "author": "iTravel Café (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 608,
+    "caption": "The dining room of iTravel Café, Buluan"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-itravel-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1565957838884185",
+     "author": "iTravel Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Beef tapa with garlic rice and egg at iTravel Café, Buluan"
+    },
+    {
+     "url": "/places/eats/eat-itravel-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1565957748884194",
+     "author": "iTravel Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Pastil plates on banana leaf with egg and corn at iTravel Café, Buluan"
+    },
+    {
+     "url": "/places/eats/eat-itravel-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1565957712217531",
+     "author": "iTravel Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Pancit bihon with calamansi at iTravel Café, Buluan"
+    },
+    {
+     "url": "/places/eats/eat-itravel-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1459169856229651",
+     "author": "iTravel Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 951,
+     "height": 1080,
+     "caption": "Mais con yelo and an ube shake in iTravel cups, Buluan"
+    },
+    {
+     "url": "/places/eats/eat-itravel-cafe-6.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=1565957648884204",
+     "author": "iTravel Café (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Platters of chicken wings in four sauces at iTravel Café, Buluan"
+    }
+   ],
+   "lat": 6.7166,
+   "lon": 124.7866,
+   "placed": "town"
+  },
+  {
+   "name": "Mango Grove at The South",
+   "kind": "restaurant",
+   "area": "maguindanao-del-sur",
+   "municipality": "Datu Anggal Midtimbang",
+   "address": null,
+   "note": "Restaurant, caterer and coffee shop in a mango grove resort; grilled chicken and fish, events",
+   "halal": null,
+   "source": "https://www.facebook.com/p/Mango-Grove-at-The-South-61553620646029/",
+   "facebook": "https://www.facebook.com/profile.php?id=61553620646029",
+   "instagram": null,
+   "website": null,
+   "phone": null,
+   "email": null,
+   "hours": null,
+   "about": "Mango Grove at The South sits in a mango grove in front of the Datu Anggal Midtimbang municipal hall in Talayan, Maguindanao del Sur. It is a restaurant, caterer and coffee shop, and its garden pavilions host weddings and parties. Food includes grilled chicken and grilled fish from Yahkies BBQ Grill. It suits groups and events.",
+   "why_go": "For grilled chicken and fish in a mango grove setting.",
+   "tips": [],
+   "specialties": [
+    "Grilled chicken",
+    "Grilled fish"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-mango-grove-at-the-south.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122116466690120688&set=pcb.122116467350120688",
+    "author": "Mango Grove at The South (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Grilled chicken with rice at Mango Grove at The South, Datu Anggal Midtimbang"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-mango-grove-at-the-south-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122096153816120688&set=a.122096148368120688",
+     "author": "Mango Grove at The South (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 700,
+     "caption": "An aerial view of the Mango Grove at The South compound among the trees, Datu Anggal Midtimbang"
+    },
+    {
+     "url": "/places/eats/eat-mango-grove-at-the-south-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122199206462120688",
+     "author": "Mango Grove at The South (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Tables set for an event in the garden pavilion at Mango Grove at The South, Datu Anggal Midtimbang"
+    },
+    {
+     "url": "/places/eats/eat-mango-grove-at-the-south-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122116466864120688&set=pcb.122116467350120688",
+     "author": "Mango Grove at The South (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Grilled fish with cucumber and dip at Mango Grove at The South, Datu Anggal Midtimbang"
+    }
+   ],
+   "lat": 6.9932,
+   "lon": 124.3415,
+   "placed": "town"
+  },
+  {
+   "name": "MSK Food Hub",
+   "kind": "restaurant",
+   "area": "maguindanao-del-sur",
+   "municipality": "Datu Piang",
+   "address": null,
+   "note": "Restaurant and party venue serving rice meals and packed food",
+   "halal": null,
+   "source": "https://www.facebook.com/people/MSK-Food-Hub/100076622802279/",
+   "facebook": "https://www.facebook.com/profile.php?id=100076622802279",
+   "instagram": null,
+   "website": null,
+   "phone": "0906 397 4409",
+   "email": "kusainyasser@yahoo.com",
+   "hours": null,
+   "about": "MSK Food Hub in Barangay Magaslong, Datu Piang, is a restaurant and event venue in an open-sided hall, used for graduations and family celebrations. It serves rice meals and packed food. It suits groups booking a celebration.",
+   "why_go": "For an event hall with food in Datu Piang.",
+   "tips": [
+    "Book reservations by phone"
+   ],
+   "specialties": [],
+   "services": [
+    "Dine-in",
+    "Catering",
+    "Function room"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2025-06",
+   "image": {
+    "url": "/places/eats/eat-msk-food-hub.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=687844440446310",
+    "author": "MSK Food Hub (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 768,
+    "height": 1024,
+    "caption": "Plates of rice, pancit and fried chicken at MSK Food Hub, Datu Piang"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-msk-food-hub-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=688292590401495&set=pcb.688292670401487",
+     "author": "MSK Food Hub (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "The open-sided hall of MSK Food Hub during an event, Datu Piang"
+    }
+   ],
+   "lat": 7.0288,
+   "lon": 124.4995,
+   "placed": "town"
+  },
+  {
+   "name": "JANN Cafe",
+   "kind": "cafe",
+   "area": "basilan",
+   "municipality": "Lamitan",
+   "address": "Barangay Malakas",
+   "note": "Café with a function hall and catering; venue of MTIT's halal-certification training in September 2026",
+   "halal": null,
+   "source": "https://www.facebook.com/janncafe/",
+   "facebook": "https://www.facebook.com/janncafe",
+   "instagram": null,
+   "website": null,
+   "phone": "0966 290 1278",
+   "email": null,
+   "hours": null,
+   "about": "JANN Cafe in Barangay Malakas, Lamitan, is a café with a function hall that also caters, supplying pack lunches and snacks to seminars and agencies such as OWWA; MTIT held its halal-certification training there in September 2026. Food includes spiced rice platters, empanadas, chili cheese lumpia, enoki dishes and milk tea. It suits groups and events.",
+   "why_go": "For a café, function hall and caterer in one in Lamitan.",
+   "tips": [
+    "Caters pack lunches and snacks for seminars"
+   ],
+   "specialties": [
+    "Pack lunches",
+    "Empanada",
+    "Milk tea",
+    "Chili cheese lumpia"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Delivery",
+    "Catering",
+    "Function room"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-jann-cafe.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122125894838658169&set=a.122112334640658169",
+    "author": "JANN Cafe (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 1080,
+    "height": 786,
+    "caption": "The counter and cake case of JANN Cafe, Lamitan"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-jann-cafe-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122167337000658169",
+     "author": "JANN Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 810,
+     "caption": "Platters of spiced rice topped with egg and vegetables from JANN Cafe, Lamitan"
+    },
+    {
+     "url": "/places/eats/eat-jann-cafe-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122166098876658169",
+     "author": "JANN Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 608,
+     "height": 830,
+     "caption": "A tray of empanadas from JANN Cafe, Lamitan"
+    },
+    {
+     "url": "/places/eats/eat-jann-cafe-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122166169088658169",
+     "author": "JANN Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A pearl milk tea beside the jar of tapioca at JANN Cafe, Lamitan"
+    },
+    {
+     "url": "/places/eats/eat-jann-cafe-5.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=122166701456658169",
+     "author": "JANN Cafe (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "Chili cheese lumpia with cheese sauce from JANN Cafe, Lamitan"
+    }
+   ],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "town"
+  },
+  {
+   "name": "JAS Tambayan",
+   "kind": "restaurant",
+   "area": "basilan",
+   "municipality": "Maluso",
+   "address": "Al-Mubarak Village, Highway",
+   "note": "Open-air restaurant (est. 2025) under bamboo roofs; its owner completed MTIT's business mentorship in July 2026",
+   "halal": null,
+   "source": "https://www.facebook.com/profile.php?id=61583151541670",
+   "facebook": "https://www.facebook.com/profile.php?id=61583151541670",
+   "instagram": null,
+   "website": null,
+   "phone": "0975 592 1018",
+   "email": null,
+   "hours": null,
+   "about": "JAS Tambayan is an open-air restaurant under bamboo roofs in Al-Mubarak Village on the Maluso highway, marking its first anniversary in November 2026. Its owner completed MTIT's business mentorship in July 2026. It suits families and groups in Maluso.",
+   "why_go": "For a relaxed meal under bamboo roofs in Maluso.",
+   "tips": [],
+   "specialties": [],
+   "services": [
+    "Dine-in",
+    "Outdoor seating"
+   ],
+   "opened": 2025,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-jas-tambayan.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=122155592097105051",
+    "author": "JAS Tambayan (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 810,
+    "height": 1080,
+    "caption": "Diners under the bamboo roof of JAS Tambayan, Maluso"
+   },
+   "gallery": [],
+   "lat": 6.5462,
+   "lon": 121.8706,
+   "placed": "town"
+  },
+  {
+   "name": "Jenils Bakehaus",
+   "kind": "bakery",
+   "area": "basilan",
+   "municipality": "Lamitan",
+   "address": "Limook",
+   "note": "Restaurant and bakeshop: pizza, seafood platters, cakes and pastries",
+   "halal": null,
+   "source": "https://www.facebook.com/people/Jenils-Bakehaus/100054239390646/",
+   "facebook": "https://www.facebook.com/profile.php?id=100054239390646",
+   "instagram": null,
+   "website": null,
+   "phone": "0917 164 8692",
+   "email": null,
+   "hours": null,
+   "about": "Jenils Restaurant & Bakehaus is a family restaurant and bakeshop in Limook, Lamitan, near the highway. It serves seafood platters, pizza, bread and cakes, and takes bilao orders, pack lunches (minimum 100) and pre-orders for bibingka and putopao. It suits families and groups.",
+   "why_go": "For seafood platters and baked goods in Lamitan.",
+   "tips": [
+    "Pack lunches by minimum order",
+    "Pre-orders for bibingka and putopao"
+   ],
+   "specialties": [
+    "Seafood platter",
+    "Pizza",
+    "Bibingka",
+    "Putopao"
+   ],
+   "services": [
+    "Dine-in",
+    "Take-out",
+    "Catering"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-11",
+   "image": {
+    "url": "/places/eats/eat-jenils-bakehaus.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=494219372396038&set=a.494219335729375",
+    "author": "Jenils Bakehaus (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 960,
+    "height": 720,
+    "caption": "Jenils Restaurant & Bakehaus, a yellow building with a red roof, Lamitan"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-jenils-bakehaus-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=396446256463578&set=pcb.396447383130132",
+     "author": "Jenils Bakehaus (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 833,
+     "caption": "A seafood rice platter with calamares and shrimp at Jenils Bakehaus, Lamitan"
+    },
+    {
+     "url": "/places/eats/eat-jenils-bakehaus-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=777544977396808",
+     "author": "Jenils Bakehaus (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A pizza from Jenils Bakehaus, Lamitan"
+    },
+    {
+     "url": "/places/eats/eat-jenils-bakehaus-4.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=421060864002117&set=pcb.421061457335391",
+     "author": "Jenils Bakehaus (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1080,
+     "height": 816,
+     "caption": "Shrimp in sauce around mounds of rice on banana leaf at Jenils Bakehaus, Lamitan"
+    }
+   ],
+   "lat": 6.64755,
+   "lon": 122.13609,
+   "placed": "barangay"
+  },
+  {
+   "name": "Kuya Joe Restaurant",
+   "kind": "restaurant",
+   "area": "basilan",
+   "municipality": "Lamitan",
+   "address": null,
+   "note": "Restaurant whose owner completed MTIT's Kapatid Mentor ME program in July 2026",
+   "halal": null,
+   "source": "https://bangsamoro.gov.ph/news/latest-news/basilan-entrepreneurs-complete-mtit-business-mentorship-program/",
+   "facebook": "https://www.facebook.com/profile.php?id=100071291267296",
+   "instagram": null,
+   "website": null,
+   "phone": "0935 946 2379",
+   "email": null,
+   "hours": null,
+   "about": "Kuya Joe Resto is a snack house in Lamitan, known for mee goreng, lomi and mango graham shakes. Its owner completed MTIT's Kapatid Mentor ME program in July 2026. It suits a quick snack.",
+   "why_go": "For mee goreng and a mango graham shake.",
+   "tips": [],
+   "specialties": [
+    "Mee goreng",
+    "Lomi",
+    "Mango graham shake"
+   ],
+   "services": [
+    "Dine-in",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-07",
+   "image": {
+    "url": "/places/eats/eat-kuya-joe-restaurant.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=143965667818084&set=pcb.143966901151294",
+    "author": "Kuya Joe Resto (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 720,
+    "height": 960,
+    "caption": "Fried noodles with a bun at Kuya Joe Resto, Lamitan (2021)"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-kuya-joe-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=194030446316663",
+     "author": "Kuya Joe Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1076,
+     "height": 1080,
+     "caption": "A mango graham shake at Kuya Joe Resto, Lamitan"
+    },
+    {
+     "url": "/places/eats/eat-kuya-joe-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=143966204484697",
+     "author": "Kuya Joe Resto (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A bowl of rice porridge with calamansi at Kuya Joe Resto, Lamitan"
+    }
+   ],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "town"
+  },
+  {
+   "name": "YangNoi",
+   "kind": "restaurant",
+   "area": "basilan",
+   "municipality": "Lamitan",
+   "address": "Sta. Clara Highway, beside Bacolod's Store and Sta. Clara Hardware",
+   "note": "Family restaurant: pizza, rice meals and party bookings",
+   "halal": null,
+   "source": "https://www.facebook.com/bacolodfamilyrestaurant/",
+   "facebook": "https://www.facebook.com/bacolodfamilyrestaurant",
+   "instagram": null,
+   "website": null,
+   "phone": "0953 073 4783",
+   "email": "yangnoibacolodrestaurant2022@gmail.com",
+   "hours": null,
+   "about": "YangNoi Bacolod Family Restaurant sits on the Sta. Clara highway in Lamitan, beside Bacolod's Store, with a garden and party spaces. It is a family restaurant with pizzas and rice meals, and hosts kiddie parties with its Yang & Noi mascots and Christmas gatherings. It suits families with children.",
+   "why_go": "For a family meal or a kiddie party in Lamitan.",
+   "tips": [
+    "Books kiddie parties with mascot appearances"
+   ],
+   "specialties": [
+    "Pizza",
+    "Chicken steak"
+   ],
+   "services": [
+    "Dine-in",
+    "Catering",
+    "Outdoor seating"
+   ],
+   "opened": null,
+   "branches": [],
+   "as_of": "2026-10",
+   "image": {
+    "url": "/places/eats/eat-yangnoi-restaurant.jpg",
+    "page": "https://www.facebook.com/photo/?fbid=927208666543906",
+    "author": "YangNoi (Facebook)",
+    "license": "Used with credit",
+    "license_url": null,
+    "width": 647,
+    "height": 1080,
+    "caption": "Tables set for a party inside YangNoi, Lamitan"
+   },
+   "gallery": [
+    {
+     "url": "/places/eats/eat-yangnoi-restaurant-2.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=927208286543944",
+     "author": "YangNoi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "The garden entrance and tent of YangNoi, Sta. Clara, Lamitan"
+    },
+    {
+     "url": "/places/eats/eat-yangnoi-restaurant-3.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=927208376543935",
+     "author": "YangNoi (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 810,
+     "height": 1080,
+     "caption": "A long table dressed for a party at YangNoi, Lamitan"
+    }
+   ],
+   "lat": 6.6576,
+   "lon": 122.145,
+   "placed": "town"
+  }
+ ]
+}

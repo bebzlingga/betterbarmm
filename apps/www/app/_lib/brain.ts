@@ -69,6 +69,7 @@ export function brain() {
 	const emails = read<{ generatedAt: string; towns: Record<string, unknown> }>('directory/lgu-emails.json')
 	const places = read<{ generatedAt: string; items: { slug: string; name: string; municipality: string; area: string }[] }>('places/places.json')
 	const stays = read<{ stays: unknown[] }>('places/stays.json').stays.length
+	const eats = read<{ eats: unknown[] }>('places/eats.json').eats.length
 	const shelf = read<{ built: string; books: { availability: string }[] }>('library/books.json')
 	const libAuthors = read<{ authors: unknown[] }>('library/authors.json').authors.length
 	const libPublishers = read<{ publishers: unknown[] }>('library/publishers.json').publishers.length
@@ -125,7 +126,7 @@ export function brain() {
 		{ id: 'd-offices', label: 'Regional offices & heads', kind: 'dataset', count: offices.offices.length, unit: 'offices', date: offices.generatedAt, note: 'Each ministry and office: its head as of the newest dated record, its numbers, emails, address, past heads and structure.' },
 		{ id: 'd-field', label: 'Provincial offices', kind: 'dataset', count: field.offices.length, unit: 'offices', date: field.generatedAt, note: 'The ministries’ offices in the provinces, with their heads and contacts where published.' },
 		{ id: 'd-lines', label: 'Emergency lines & emails', kind: 'dataset', count: emergency.towns.length, unit: 'towns', date: emails.generatedAt, note: 'Each town’s police, fire, health and town hall numbers, and its official email.' },
-		{ id: 'd-places', label: 'Places & stays', kind: 'dataset', count: places.items.length + stays, unit: 'places', date: places.generatedAt, note: `${places.items.length} places and ${stays} places to stay, each traced to its sources.` },
+		{ id: 'd-places', label: 'Places, stays & food', kind: 'dataset', count: places.items.length + stays + eats, unit: 'places', date: places.generatedAt, note: `${places.items.length} places, ${stays} places to stay and ${eats} halal places to eat, each traced to its sources.` },
 		{ id: 'd-books', label: 'Books, authors & publishers', kind: 'dataset', count: shelf.books.length, unit: 'books', date: shelf.built, note: `${shelf.books.length} books, ${shelf.books.filter((b) => b.availability === 'open-access').length} of them free to read, by ${libAuthors} authors from ${libPublishers} publishers, each with an overview from its sources.` },
 		{ id: 'd-magazines', label: 'Office magazines', kind: 'dataset', count: libMagazines.reduce((n, m) => n + m.issues.length, 0), unit: 'issues', note: `${libMagazines.length} magazines, newsletters and journals of the region’s ministries and offices, each issue linked on the office’s own site.` },
 		{ id: 'd-crafts', label: 'Crafts', kind: 'dataset', count: crafts.items.length, unit: 'crafts', date: crafts.generatedAt, note: 'Textiles, mats, brass, wood and gongs, with their makers and where to see them.' },

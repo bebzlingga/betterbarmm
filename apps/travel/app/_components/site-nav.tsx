@@ -193,6 +193,9 @@ export function SiteNav() {
 						<Link href='/ferries' data-active={pathname === '/ferries'} className='nav-item'>
 							Ferries
 						</Link>
+						<Link href='/eat' data-active={pathname === '/eat'} className='nav-item'>
+							Where to eat
+						</Link>
 
 						{GUIDE_PAGES ? (
 						<Menu label='The guide' active={isGuideActive} width='w-[15rem]'>
@@ -273,6 +276,9 @@ export function SiteNav() {
 								</Link>
 								<Link href='/ferries' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
 									Ferries
+								</Link>
+								<Link href='/eat' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
+									Where to eat
 								</Link>
 								<Link href='/saved' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
 									Saved

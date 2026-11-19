@@ -38,6 +38,7 @@ export function TileMap({
 	focusZoom = 15,
 	card,
 	legend = true,
+	fitZoom = MAX_ZOOM - 2,
 }: {
 	pins: MapPin[]
 	categories: MapCategory[]
@@ -54,6 +55,8 @@ export function TileMap({
 	card?: (pin: MapPin) => React.ReactNode
 	/** The colour key under the map. */
 	legend?: boolean
+	/** The closest the opening view may be: one pin alone opens at this zoom. */
+	fitZoom?: number
 }) {
 	const MIN_ZOOM = minZoom
 	const box = useRef<HTMLDivElement>(null)
@@ -83,7 +86,7 @@ export function TileMap({
 		const lats = pins.map((p) => p.lat)
 		const lons = pins.map((p) => p.lon)
 		const [s, n, w, e] = [Math.min(...lats), Math.max(...lats), Math.min(...lons), Math.max(...lons)]
-		let z = MAX_ZOOM - 2
+		let z = fitZoom
 		for (; z > MIN_ZOOM; z--) {
 			const a = project(n, w, z)
 			const b = project(s, e, z)

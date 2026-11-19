@@ -3,10 +3,11 @@ import Link from 'next/link'
 import { Suspense } from 'react'
 import { Skeleton, SkeletonLine } from '@betterbarmm/editorial'
 import { legsForArea, travelAreas } from '@betterbarmm/travel-data'
-import { EXPLORE_KINDS, explorePlaces } from '@betterbarmm/travel-data/explore'
+import { EXPLORE_KINDS, exploreEats, explorePlaces } from '@betterbarmm/travel-data/explore'
 import { AirplaneTiltIcon, ArrowRightIcon, BedIcon, BoatIcon, CalendarCheckIcon, CarIcon, ForkKnifeIcon, ImagesIcon, PathIcon, SunHorizonIcon } from '@phosphor-icons/react/ssr'
 import Image from 'next/image'
 import { Explorer } from './_components/explorer'
+import { StayCard } from './_components/stay-card'
 import { SectionHead } from './_components/travel-parts'
 import { toCard } from './_lib/cards'
 import { photosForArea } from './_lib/media'
@@ -91,6 +92,10 @@ function ExplorerSkeleton({ head }: { head: React.ReactNode }) {
 
 export default function TravelHome() {
 	const places = explorePlaces.map(toCard)
+	// Four places to eat for the front page: one from each area in turn, photographed ones first.
+	const byPhoto = [...exploreEats].sort((a, b) => Number(!!b.image) - Number(!!a.image))
+	const firstOfArea = byPhoto.filter((eat) => byPhoto.find((other) => other.area === eat.area) === eat)
+	const eatsShown = [...new Set([...firstOfArea, ...byPhoto])].slice(0, 4)
 	const areas = travelAreas.map((area) => ({ slug: area.slug, name: area.name }))
 	const head = (
 		<>
@@ -148,6 +153,24 @@ export default function TravelHome() {
 							</Link>
 						))}
 					</div>
+
+					{/* Halal places to eat (user decision): four here, the rest on their own page. */}
+					{eatsShown.length ? (
+						<>
+							<SectionHead title='Where to eat,' titleMuted='halal across the region.' className='mt-16' />
+							<ul className='mt-8 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-[48px]'>
+								{eatsShown.map((eat) => (
+									<StayCard key={eat.name} stay={eat} />
+								))}
+							</ul>
+							<div className='mt-8 flex justify-end'>
+								<Link href='/eat' className='group inline-flex items-center gap-1.5 text-[0.875rem] font-semibold text-[var(--ink)] hover:text-[var(--accent)]'>
+									All {exploreEats.length} places to eat
+									<ArrowRightIcon size={14} weight='bold' className='transition group-hover:translate-x-1' aria-hidden='true' />
+								</Link>
+							</div>
+						</>
+					) : null}
 
 					<SectionHead title='Where to go,' titleMuted='area by area.' className='mt-16' />
 					{/* A simple guide to the seven areas (user decision), improved: each row a picture to know it by, what it

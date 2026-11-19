@@ -1,5 +1,6 @@
 import placesFile from '../../../datasets/places/places.json'
 import staysFile from '../../../datasets/places/stays.json'
+import eatsFile from '../../../datasets/places/eats.json'
 import centresFile from '../../../datasets/accidents/municipality-centres.json'
 import craftsFile from '../../../datasets/crafts/crafts.json'
 import { placePoints } from './geo'
@@ -228,6 +229,47 @@ export const exploreStays = (staysFile as unknown as { stays: ExploreStay[] }).s
 )
 
 export const staysInArea = (area: string): ExploreStay[] => exploreStays.filter((stay) => stay.area === area)
+
+/* ---- Places to eat -------------------------------------------------- */
+
+/* Halal restaurants, cafés, bakeries and eateries (user decision), shaped as the stays are and checked the same way: each
+   one seen operating in 2025–26 on its own page or in a recent report. `halal` says only what a source says: "certified"
+   where one names a certification, "halal" where one says halal, pork-free or Muslim-run, null where none says. */
+export type ExploreEat = Omit<ExploreStay, 'accredited' | 'kind'> & {
+	kind: 'restaurant' | 'cafe' | 'bakery' | 'eatery'
+	halal: 'certified' | 'halal' | null
+	/** Its pin, and how exact it is: the place itself, its street, its barangay's centre, or its town's. */
+	lat: number
+	lon: number
+	placed: 'place' | 'street' | 'barangay' | 'town'
+	/** More photographs of the place and what it serves, after `image`. */
+	gallery?: NonNullable<ExploreStay['image']>[]
+	/** As its own page lists them. */
+	phone?: string | null
+	facebook?: string | null
+	instagram?: string | null
+	website?: string | null
+	email?: string | null
+	hours?: string | null
+	/** A longer description, the dishes it is known for, what it offers, the year it opened, its other branches. */
+	about?: string | null
+	/** The single best reason to go, and practical tips its own page states. */
+	why_go?: string | null
+	tips?: string[]
+	specialties?: string[]
+	services?: string[]
+	opened?: number | null
+	branches?: string[]
+}
+
+export const EAT_KIND_LABEL: Record<ExploreEat['kind'], string> = { restaurant: 'Restaurant', cafe: 'Café', bakery: 'Bakery', eatery: 'Eatery' }
+
+export const eatsNote = (eatsFile as unknown as { note: string }).note
+
+// Their photographs are the travel app's own (apps/travel/public/places/eats), so the paths stay as they are.
+export const exploreEats = (eatsFile as unknown as { eats: ExploreEat[] }).eats
+
+export const eatsInArea = (area: string): ExploreEat[] => exploreEats.filter((eat) => eat.area === area)
 
 /* ---- Crafts --------------------------------------------------------- */
 
