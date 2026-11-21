@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-20T01:05:20.990Z",
+ "generatedAt": "2026-11-21T00:22:03.246Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -189,6 +189,24 @@
    "via": null,
    "title": "Kidapawan mayor bars LGU Christmas parties outside province",
    "reason": "not about the region: Kidapawan City, Cotabato province"
+  },
+  {
+   "url": "https://www.abs-cbn.com/news/11/07/17/sundalo-tinanggal-ang-atay-dinurog-ang-ulo-sa-marawi-ayon-sa-kapatid",
+   "via": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdS1jbVFYTzRfMXk5a3dITWdvTjhQbDM4WlZIWXUxR1JZS2ZBVVRuYnNiQ0VQZDBad0hScEpBd0dfc3p5em5YNUlGcElENEgtTnNYTWNmNVVWTXg3Mmo3ME8zZVBWS0UwdTM5YlVuSjUxSGstRE1RTjVXMjI0bHREN1BCRlY2TEZPQ19lUUFKZHNydWFLZnItMDAtVE1iVjh3clE3UmZNMkhMdw?oc=5",
+   "title": "Sundalo tinanggal ang atay, dinurog ang ulo sa Marawi, ayon sa kapatid",
+   "reason": "published 2017-11-07"
+  },
+  {
+   "url": "https://en.yenisafak.com/world/duterte-calls-citizens-to-back-referendum-on-bangsamoro-3472256",
+   "via": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR2RMUkFzMEF6dTRyVGtLbTBQbmRFTUV6M3lEQ3FOSC1hUEo2dkpVLU9wMzVHSGw4cFdnREtmc2hOeXc4V3czeGhfMVdCeHhjQTA3Y1E3aTNlQkkyNHUtdWF2QVFlOTFyM2NPUVpjSk15R29xdllTU0p5dmRLaEw1YnFuZmk2UVkwQXVEU3JjVDhOYkhsYk1GOEtn?oc=5",
+   "title": "Duterte calls citizens to back referendum on Bangsamoro",
+   "reason": "published 2019-01-19"
+  },
+  {
+   "url": "https://en.yenisafak.com/world/philippines-59-marawi-city-evacuees-die-of-diseases-2724833",
+   "via": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVHNPSktjODNJVDBiNzBlaTFhcUhGWGlseTYxMTZLMHY1ZjlYd09PMVo4NUduYjlkSVQyaDR4RXJHaTVoT0hCS1hmNzg4ZjN4S2lQckxRcEp1UHJEWUxWcnVZc3VGTWN6Q3BubmZqQTBHUVVLNnZZV2s1dEVpUnB4ZzJfTkt0dFVUMS1qeGJnTGxoNTNK?oc=5",
+   "title": "Philippines: 59 Marawi city evacuees die of diseases",
+   "reason": "published 2017-06-16"
   }
  ],
  "weeks": [

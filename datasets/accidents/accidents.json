@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-19",
+ "generatedAt": "2026-11-21",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, public Facebook posts that index carried, and the Facebook page of DXMS Radyo Bida, NDBC’s station in Cotabato City. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -10,6 +10,58 @@
   "barangays": "datasets/accidents/barangay-centres.json"
  },
  "incidents": [
+  {
+   "date": "2026-11-20",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Unidentified man found shot dead on the diversion road in Capiton, Datu Odin Sinsuat",
+   "summary": "The body of an unidentified man was found along the Cotabato–Datu Odin Sinsuat Diversion Road in Barangay Capiton, Datu Odin Sinsuat, Maguindanao del Norte, at about 8:45 a.m. on Friday, 20 November 2026, after a resident reported a shooting there. Police said he had been shot by an unidentified gunman who fled before they arrived. His identity and the motive were not yet known, and the police had launched a hot pursuit.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Datu Odin Sinsuat",
+   "barangay": "Capiton",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.1569,
+   "lon": 124.2329,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "The Mindanao Sentinel",
+     "url": "https://themindanaosentinel.com/2026/11/unidentified-man-found-shot-dead-along-diversion-road-in-datu-odin-sinsuat/",
+     "title": "Unidentified Man Found Shot Dead Along Diversion Road in Datu Odin Sinsuat",
+     "date": "2026-11-20"
+    }
+   ],
+   "id": "2026-11-20-datu-odin-sinsuat-shooting"
+  },
+  {
+   "date": "2026-11-20",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Unidentified man shot dead in Sitio Dagurongan 1, Raguisi, Sultan Kudarat",
+   "summary": "A man was shot dead in Sitio Dagurongan 1, Barangay Raguisi, Sultan Kudarat, Maguindanao del Norte, on Friday, 20 November 2026, DXMS Radyo Bida reported. He had not yet been identified.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Kudarat",
+   "barangay": "Raguisi",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2382,
+   "lon": 124.2855,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "DXMS Radyo Bida (Facebook)",
+     "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0wTnzQCLHkN27kTyhiRBbHeQe88Gj1AnMxBn2R9zWj7WFUfkjx4kUrxC31crPmseFl&id=100068735708353",
+     "title": "JUST IN: Lalaki, patay sa pamamaril sa Sultan Kudarat, Maguindanao del Norte",
+     "date": "2026-11-20"
+    }
+   ],
+   "id": "2026-11-20-sultan-kudarat-shooting"
+  },
   {
    "date": "2026-11-18",
    "type": "shooting",

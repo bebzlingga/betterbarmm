@@ -636,6 +636,11 @@
    "lat": 7.2298,
    "lon": 124.2564,
    "matched": "Bulalo, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
+  },
+  "Raguisi|Sultan Kudarat|Maguindanao del Norte": {
+   "lat": 7.2382,
+   "lon": 124.2855,
+   "matched": "Raguisi, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
   }
  }
 }
