@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-21T14:33:14.158Z",
+ "generatedAt": "2026-11-22T14:15:51.790Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -207,6 +207,12 @@
    "via": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVHNPSktjODNJVDBiNzBlaTFhcUhGWGlseTYxMTZLMHY1ZjlYd09PMVo4NUduYjlkSVQyaDR4RXJHaTVoT0hCS1hmNzg4ZjN4S2lQckxRcEp1UHJEWUxWcnVZc3VGTWN6Q3BubmZqQTBHUVVLNnZZV2s1dEVpUnB4ZzJfTkt0dFVUMS1qeGJnTGxoNTNK?oc=5",
    "title": "Philippines: 59 Marawi city evacuees die of diseases",
    "reason": "published 2017-06-16"
+  },
+  {
+   "url": "https://ng.headtopics.com/news/school-principal-shot-dead-in-daylight-attack-in-89953580",
+   "via": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaWtTNmloOFlidGUyR2JEb01Id3pxbWhOaVFlWWFyVHhyU01qX3FZYlNTQjlDYUUyMVlxSDJ6U3BPZnVrUlA0b1NLY2ZvYno1LTZhMHRxMVVsNkF4YVpCZmZXcVhzSDNCTm40bF9RRENBSndjel9FdDNKNmQ4OVptTDJpd1ZYZ1FuNFdFaVpLZXBsUQ?oc=5",
+   "title": "School Principal Shot Dead in Daylight Attack in Maguindanao del Sur",
+   "reason": "a copy of The Manila Times story"
   }
  ],
  "weeks": [

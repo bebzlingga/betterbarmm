@@ -641,6 +641,11 @@
    "lat": 7.2382,
    "lon": 124.2855,
    "matched": "Raguisi, Sultan Kudarat, Maguindanao del Norte, Bangsamoro, 9605, Philippines"
+  },
+  "Calilangan|Balabagan|Lanao del Sur": {
+   "lat": 7.5422,
+   "lon": 124.1434,
+   "matched": "Calilangan, Balabagan, Lanao del Sur, Bangsamoro, Philippines"
   }
  }
 }
