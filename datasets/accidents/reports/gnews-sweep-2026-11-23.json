@@ -1,0 +1,48 @@
+[
+ {
+  "date": "2026-11-21",
+  "type": "shooting",
+  "title": "Lending-company collector shot dead and his motorcycle taken in Boganga II, Marawi City",
+  "summary": "A collector of Panjobjoban Lending Corporation was shot dead by unidentified armed men in the Boganga Shelter area of Barangay Boganga II, Marawi City, at about 4 p.m. on Saturday, 21 November 2026. The attackers fled with his motorcycle. The Marawi City Police Station launched a hot pursuit; the motive and the suspects' identities were not yet known.",
+  "province": "Lanao del Sur",
+  "municipality": "Marawi",
+  "barangay": "Boganga II",
+  "deaths": 1,
+  "injured": 0,
+  "missing": 0,
+  "vehicles": [
+   "motorcycle"
+  ],
+  "sources": [
+   {
+    "outlet": "The Mindanao Sentinel",
+    "url": "https://themindanaosentinel.com/2026/11/lending-company-collector-killed-in-marawi-shooting-motorcycle-reportedly-taken-by-suspects/",
+    "title": "Lending Company Collector Killed in Marawi Shooting; Motorcycle Reportedly Taken by Suspects",
+    "date": "2026-11-23"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-22",
+  "type": "shooting",
+  "title": "Motorcycle driver shot dead and his passenger wounded at a gas station in Manaulanan, Tugunan",
+  "summary": "Unidentified gunmen fired on a motorcycle driver and his female passenger at a gasoline station in Sitio SPDA, Barangay Manaulanan, Tugunan, Special Geographic Area, at about 6:55 a.m. on Sunday, 22 November 2026, as they rode from Barangay Silik toward Pikit. The driver, not yet identified, died at the scene; the passenger, Naribae Mangansakan Cansi, was wounded and taken to a hospital. The motive and the gunmen were not yet known.",
+  "province": "Special Geographic Area",
+  "municipality": "Tugunan",
+  "barangay": "Manaulanan",
+  "deaths": 1,
+  "injured": 1,
+  "missing": 0,
+  "vehicles": [
+   "motorcycle"
+  ],
+  "sources": [
+   {
+    "outlet": "The Mindanao Sentinel",
+    "url": "https://themindanaosentinel.com/2026/11/driver-killed-female-passenger-wounded-in-gas-station-shooting-in-barmms-sga/",
+    "title": "Driver Killed, Female Passenger Wounded in Gas Station Shooting in BARMM’s SGA",
+    "date": "2026-11-23"
+   }
+  ]
+ }
+]

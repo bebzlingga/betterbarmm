@@ -646,6 +646,12 @@
    "lat": 7.5422,
    "lon": 124.1434,
    "matched": "Calilangan, Balabagan, Lanao del Sur, Bangsamoro, Philippines"
+  },
+  "Boganga II|Marawi|Lanao del Sur": null,
+  "Manaulanan|Tugunan|Special Geographic Area": {
+   "lat": 7.0411,
+   "lon": 124.6125,
+   "matched": "Manaulanan, Tugunan, Special Geographic Area, Bangsamoro, 9409, Philippines"
   }
  }
 }
