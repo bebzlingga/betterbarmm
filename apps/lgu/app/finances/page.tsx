@@ -99,6 +99,10 @@ export default function StatsPage() {
 						<a href='https://compass.dbm.gov.ph/nta' target='_blank' rel='noreferrer' className='rule-link'>
 							DBM&rsquo;s COMPASS portal
 						</a>
+. Each area&rsquo;s whole allocation, barangays included, is on{' '}
+						<a href='/nta' className='rule-link'>
+							National Tax Allotment
+						</a>
 						. Barangays file none, so they are not here; the eight Special Geographic Area
 						towns, created in 2024, have no rows yet.
 					</p>

@@ -69,3 +69,21 @@ export function ntaShare(unitKey: string, year: number): number | null {
 	const unit = ntaShares.units[unitKey]
 	return (unitKey.includes('/') ? unit?.lgu : unit?.province)?.[String(year)] ?? null
 }
+
+/**
+ * A province's (or Cotabato City's, or the Special Geographic Area's) whole
+ * DBM allocation for a year, by level: the province government's own share,
+ * its cities and municipalities, and their barangays.
+ */
+export function areaNta(areaSlug: string, year: number) {
+	const y = String(year)
+	const province = ntaShares.units[areaSlug]?.province?.[y] ?? 0
+	let lgus = 0
+	let barangays = 0
+	for (const [key, unit] of Object.entries(ntaShares.units)) {
+		if (!key.startsWith(`${areaSlug}/`)) continue
+		lgus += unit.lgu?.[y] ?? 0
+		barangays += unit.barangays?.[y] ?? 0
+	}
+	return { province, lgus, barangays, total: province + lgus + barangays }
+}

@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowRightIcon, BankIcon, CaretDownIcon, ChartBarIcon, HandCoinsIcon, HandHeartIcon, MapPinIcon, MapTrifoldIcon, ScalesIcon, SealCheckIcon, SquaresFourIcon, StackIcon, TreeStructureIcon, WalletIcon, CalculatorIcon, type Icon } from '@phosphor-icons/react'
+import { ArrowRightIcon, BankIcon, CaretDownIcon, ChartBarIcon, HandCoinsIcon, HandHeartIcon, MapPinIcon, MapTrifoldIcon, ScalesIcon, SealCheckIcon, SquaresFourIcon, StackIcon, TreeStructureIcon, WalletIcon, CalculatorIcon, CoinsIcon, type Icon } from '@phosphor-icons/react'
 import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { areaHref, lguProvinces } from '@betterbarmm/lgu-data'
@@ -23,6 +23,7 @@ const guides = [
 /* The money: each unit's own books, and what the region's budget puts where. */
 const finances = [
 	{ href: '/finances', label: 'LGU finances', note: 'What each treasurer reported', icon: ChartBarIcon },
+	{ href: '/nta', label: 'National Tax Allotment', note: 'Each LGU’s share for 2027', icon: CoinsIcon },
 	{ href: '/lgsf', label: 'Support fund (LGSF)', note: 'Projects paid from DBM’s fund', icon: HandCoinsIcon },
 	{ href: '/audits', label: 'COA audits', note: 'What the auditors found', icon: SealCheckIcon },
 	{ href: '/regional-budget', label: 'Regional budget', note: 'What the region spends where', icon: BankIcon },

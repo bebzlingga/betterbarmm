@@ -21,7 +21,7 @@ import {
 } from '@betterbarmm/lgu-data'
 import { unitRosters } from '@betterbarmm/lgu-data/barangay-officials'
 import { lgsf } from '@betterbarmm/lgu-data/lgsf'
-import { ntaShares } from '@betterbarmm/lgu-data/nta'
+import { areaNta, ntaShares } from '@betterbarmm/lgu-data/nta'
 import { cityGuide } from '@betterbarmm/travel-data/cities'
 import type { Entry } from './corpus'
 
@@ -119,10 +119,25 @@ function nta(): Entry[] {
 			rollup: true,
 			title: `BARMM National Tax Allotment, FY ${years.join(' and FY ')}`,
 			note: years.map((y) => `FY ${y}: ${peso(ntaShares.region[y]!)} for all BARMM local governments, barangays included`).join('. ').concat('. DBM allocation, from its COMPASS portal.'),
-			href: `${LGU}/finances`,
+			href: `${LGU}/nta`,
 			text: 'nta national tax allotment ira total barmm region all local governments allocation dbm compass how much',
 		},
 	]
+	// Each area's whole allocation, barangays included, split by level.
+	const last = years.at(-1)!
+	for (const province of lguProvinces) {
+		const now = areaNta(province.slug, last)
+		const before = areaNta(province.slug, years.at(-2)!)
+		rows.push({
+			space: 'lgu',
+			kind: 'NTA allocation',
+			rollup: true,
+			title: `${province.name} total NTA, FY ${last}`,
+			note: `${peso(now.total)} for ${province.name}${now.province ? `: provincial government ${peso(now.province)},` : ':'} cities and municipalities ${peso(now.lgus)}, barangays ${peso(now.barangays)}. FY ${years.at(-2)}: ${peso(before.total)}. DBM allocation.`,
+			href: `${LGU}/nta`,
+			text: `${province.name} total nta national tax allotment ira province whole all towns barangays split allocation`.toLowerCase(),
+		})
+	}
 	for (const province of lguProvinces) {
 		const p = ntaShares.units[province.slug]
 		if (p?.province)
