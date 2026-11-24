@@ -11,6 +11,32 @@
  },
  "incidents": [
   {
+   "date": "2026-11-24",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "2 soldiers seriously wounded as gunmen fire on their motorcycle on the national highway in Sultan Kudarat",
+   "summary": "Gunmen opened fire on two soldiers riding a motorcycle along the national highway in Sultan Kudarat, Maguindanao del Norte, on the afternoon of Tuesday, 24 November 2026, seriously wounding both. Police arrested two suspects in a hot pursuit operation.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Kudarat",
+   "barangay": null,
+   "deaths": 0,
+   "injured": 2,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2711,
+   "lon": 124.2919,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2346448/2-soldiers-wounded-in-maguindanao-del-norte-ambush",
+     "title": "2 soldiers wounded in Maguindanao del Norte ambush",
+     "date": "2026-11-24"
+    }
+   ],
+   "id": "2026-11-24-sultan-kudarat-shooting"
+  },
+  {
    "date": "2026-11-23",
    "type": "shooting",
    "kind": "Shooting",
