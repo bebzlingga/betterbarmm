@@ -652,6 +652,22 @@
    "lat": 7.0411,
    "lon": 124.6125,
    "matched": "Manaulanan, Tugunan, Special Geographic Area, Bangsamoro, 9409, Philippines"
+  },
+  "Olandang|Nabalawag|Special Geographic Area": {
+   "lat": 7.0343,
+   "lon": 124.5014,
+   "matched": "Olandang, Nabalawag, Special Geographic Area, Bangsamoro, 9410, Philippines"
+  },
+  "Kadingilan|Nabalawag|Special Geographic Area": {
+   "lat": 7.0883,
+   "lon": 124.4899,
+   "matched": "Kadingilan, Nabalawag, Special Geographic Area, Bangsamoro, 9410, Philippines"
+  },
+  "Lukketon|Sumisip|Basilan": null,
+  "Gadungan|Sultan Sa Barongis|Maguindanao del Sur": {
+   "lat": 6.8868,
+   "lon": 124.6217,
+   "matched": "Gadungan, Sultan sa Barongis, Maguindanao del Sur, Bangsamoro, 9611, Philippines"
   }
  }
 }

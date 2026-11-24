@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-23T08:19:20.645Z",
+ "generatedAt": "2026-11-24T05:37:39.286Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -212,6 +212,17 @@
    "url": "https://ng.headtopics.com/news/school-principal-shot-dead-in-daylight-attack-in-89953580",
    "via": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPaWtTNmloOFlidGUyR2JEb01Id3pxbWhOaVFlWWFyVHhyU01qX3FZYlNTQjlDYUUyMVlxSDJ6U3BPZnVrUlA0b1NLY2ZvYno1LTZhMHRxMVVsNkF4YVpCZmZXcVhzSDNCTm40bF9RRENBSndjel9FdDNKNmQ4OVptTDJpd1ZYZ1FuNFdFaVpLZXBsUQ?oc=5",
    "title": "School Principal Shot Dead in Daylight Attack in Maguindanao del Sur",
+   "reason": "a copy of The Manila Times story"
+  },
+  {
+   "url": "https://mindanews.com/top-stories/2026/11/bangsamoro-education-minister-uncovers-stockpiles-of-unused-education-materials-alleged-corruption-in-education-ministry/",
+   "via": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNRkE0QlFMRnV0Y251TUNwb3dWS0lZelBCTm81OFpvS2NEUTlCNHlqQjlfYnhlRDB3QUlWWTV1dW5CUE0zak5jblNrWGZTS1dIWE4yTzhoSmVNOTlTTTZGN3RNQkpoZkZjOFZLVlVhWGtRVnNOZFRVRVBVYVYtSWRnMHM2ckx6ejloMzJBa1RUUEduZGhwYW91bTh4S0VDNEszRGZobUxTN3NTalA2dHZFb05uRjFMZEVvNnlnYkVfMTY0LWpUcWYzSVdTZEt4QktuMG91WlRUVHIxUlZGRXctZERIVXZYNDVVbEFGTS1XQ1B3Wl9pSXc?oc=5",
+   "title": "Bangsamoro education minister uncovers stockpiles of unused education materials in Cotabato City",
+   "reason": "published 2025-08-22"
+  },
+  {
+   "url": "https://www.manilatimes.net/2026/11/24/regions/rival-clans-clash-in-lanao-del-sur-1-injured/2475857",
+   "title": "Rival clans clash in Lanao del Sur; 1 injured",
    "reason": "a copy of The Manila Times story"
   }
  ],
