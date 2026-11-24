@@ -1,96 +1,117 @@
 [
- {
-  "date": "2026-11-05",
-  "type": "shooting",
-  "title": "18-year-old nephew of Nabalawag's vice mayor shot dead in Olandang",
-  "summary": "Two gunmen on motorcycles shot dead Morsid A. Lakiman, 18, of Sitio Alim, Barangay Kadingilan, as he sat on his motorcycle under a tree in Barangay Olandang, Nabalawag, Special Geographic Area, at about 1:20 p.m. on Thursday, 5 November 2026. He was a nephew of Nabalawag Vice Mayor Peng Akmad \"Samurai\" Lakiman. The gunmen fled; the motive was not known.",
-  "province": "Special Geographic Area",
-  "municipality": "Nabalawag",
-  "barangay": "Olandang",
-  "deaths": 1,
-  "injured": 0,
-  "missing": 0,
-  "vehicles": [
-   "motorcycle"
-  ],
-  "sources": [
-   {
-    "outlet": "The Mindanao Sentinel",
-    "url": "https://themindanaosentinel.com/2026/11/18-year-old-nephew-of-nabalawag-vice-mayor-killed-in-broad-daylight-shooting/",
-    "title": "18-Year-Old Nephew of Nabalawag Vice Mayor Killed in Broad Daylight Shooting",
-    "date": "2026-11-05"
-   }
-  ]
- },
- {
-  "date": "2026-11-21",
-  "type": "shooting",
-  "title": "Rocket-propelled grenade fired at the Nabalawag vice mayor's compound in Kadingilan; residents flee again",
-  "summary": "Armed men attacked the compound of Nabalawag Vice Mayor Peng \"Samurai\" Akmad Lakiman in Barangay Kadingilan, Nabalawag, Special Geographic Area, on Saturday, 21 November 2026, reportedly firing a rocket-propelled grenade that struck a house inside it. No one was reported hurt, but residents of Sitio Alim and nearby communities, some back home for only two days after earlier clashes, fled again; Philstar put the displaced from the fighting at 339 families. The conflict between two armed groups there began on 16 September.",
-  "province": "Special Geographic Area",
-  "municipality": "Nabalawag",
-  "barangay": "Kadingilan",
-  "deaths": 0,
-  "injured": 0,
-  "missing": 0,
-  "vehicles": [],
-  "sources": [
-   {
-    "outlet": "The Mindanao Sentinel",
-    "url": "https://themindanaosentinel.com/2026/11/renewed-armed-violence-in-nabalawag-forces-residents-to-flee-again-military-deploys-additional-forces/",
-    "title": "Renewed Armed Violence in Nabalawag Forces Residents to Flee Again; Military Deploys Additional Forces",
-    "date": "2026-11-22"
-   },
-   {
-    "outlet": "Philstar.com",
-    "url": "https://www.philstar.com/nation/2026/11/23/2572097/villager-wounded-hundreds-displaced-amid-moro-clan-conflict",
-    "title": "Villager wounded, hundreds displaced amid Moro clan conflict",
-    "date": "2026-11-23"
-   }
-  ]
- },
- {
-  "date": "2026-11-21",
-  "type": "shooting",
-  "title": "Farmer shot dead while tapping rubber trees in Lukketon, Sumisip",
-  "summary": "Unidentified armed men shot dead a farmer as he tapped rubber trees on his farm in Sitio Sucaten, Barangay Lukketon, Sumisip, Basilan, on Saturday, 21 November 2026, about 14 kilometres from the town's police station. Police did not release his name; the motive and the gunmen were not known.",
-  "province": "Basilan",
-  "municipality": "Sumisip",
-  "barangay": "Lukketon",
-  "deaths": 1,
-  "injured": 0,
-  "missing": 0,
-  "vehicles": [],
-  "sources": [
-   {
-    "outlet": "The Mindanao Sentinel",
-    "url": "https://themindanaosentinel.com/2026/11/farmer-shot-dead-while-tapping-rubber-trees-in-sumisip-basilan/",
-    "title": "Farmer Shot Dead While Tapping Rubber Trees in Sumisip, Basilan",
-    "date": "2026-11-23"
-   }
-  ]
- },
- {
-  "date": "2026-11-23",
-  "type": "shooting",
-  "title": "Couple wounded as motorcycle gunmen fire on their minivan in Gadungan, Sultan sa Barongis",
-  "summary": "Two men on a motorcycle followed and fired on a minivan carrying Rauf Bagundang Guiapar, 26, a farmer, and his wife Baby Ann Ibrahim Alabat, 21, on the boundary of Barangays Gadungan and Kulambog, Sultan sa Barongis, Maguindanao del Sur, at about 3 p.m. on Monday, 23 November 2026, as they drove home from Tacurong. Both were wounded and taken to a hospital in Lambayong; their child, also in the van, was unhurt. The motive and the gunmen were not known.",
-  "province": "Maguindanao del Sur",
-  "municipality": "Sultan Sa Barongis",
-  "barangay": "Gadungan",
-  "deaths": 0,
-  "injured": 2,
-  "missing": 0,
-  "vehicles": [
-   "van"
-  ],
-  "sources": [
-   {
-    "outlet": "The Mindanao Sentinel",
-    "url": "https://themindanaosentinel.com/2026/11/couple-wounded-in-motorcycle-riding-gunmens-ambush-in-sultan-sa-barongis/",
-    "title": "Couple Wounded in Motorcycle-Riding Gunmen’s Ambush in Sultan Sa Barongis",
-    "date": "2026-11-24"
-   }
-  ]
- }
+  {
+    "date": "2026-11-05",
+    "type": "shooting",
+    "title": "18-year-old nephew of Nabalawag's vice mayor shot dead in Olandang",
+    "summary": "Two gunmen on motorcycles shot dead Morsid A. Lakiman, 18, of Sitio Alim, Barangay Kadingilan, as he sat on his motorcycle under a tree in Barangay Olandang, Nabalawag, Special Geographic Area, at about 1:20 p.m. on Thursday, 5 November 2026. He was a nephew of Nabalawag Vice Mayor Peng Akmad \"Samurai\" Lakiman. The gunmen fled; the motive was not known.",
+    "province": "Special Geographic Area",
+    "municipality": "Nabalawag",
+    "barangay": "Olandang",
+    "deaths": 1,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [
+      "motorcycle"
+    ],
+    "sources": [
+      {
+        "outlet": "The Mindanao Sentinel",
+        "url": "https://themindanaosentinel.com/2026/11/18-year-old-nephew-of-nabalawag-vice-mayor-killed-in-broad-daylight-shooting/",
+        "title": "18-Year-Old Nephew of Nabalawag Vice Mayor Killed in Broad Daylight Shooting",
+        "date": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "type": "shooting",
+    "title": "Rocket-propelled grenade fired at the Nabalawag vice mayor's compound in Kadingilan; residents flee again",
+    "summary": "Armed men attacked the compound of Nabalawag Vice Mayor Peng \"Samurai\" Akmad Lakiman in Barangay Kadingilan, Nabalawag, Special Geographic Area, on Saturday, 21 November 2026, reportedly firing a rocket-propelled grenade that struck a house inside it. No one was reported hurt, but residents of Sitio Alim and nearby communities, some back home for only two days after earlier clashes, fled again; Philstar put the displaced from the fighting at 339 families. The conflict between two armed groups there began on 16 September.",
+    "province": "Special Geographic Area",
+    "municipality": "Nabalawag",
+    "barangay": "Kadingilan",
+    "deaths": 0,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "The Mindanao Sentinel",
+        "url": "https://themindanaosentinel.com/2026/11/renewed-armed-violence-in-nabalawag-forces-residents-to-flee-again-military-deploys-additional-forces/",
+        "title": "Renewed Armed Violence in Nabalawag Forces Residents to Flee Again; Military Deploys Additional Forces",
+        "date": "2026-11-22"
+      },
+      {
+        "outlet": "Philstar.com",
+        "url": "https://www.philstar.com/nation/2026/11/23/2572097/villager-wounded-hundreds-displaced-amid-moro-clan-conflict",
+        "title": "Villager wounded, hundreds displaced amid Moro clan conflict",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "type": "shooting",
+    "title": "Farmer shot dead while tapping rubber trees in Lukketon, Sumisip",
+    "summary": "Unidentified armed men shot dead a farmer as he tapped rubber trees on his farm in Sitio Sucaten, Barangay Lukketon, Sumisip, Basilan, on Saturday, 21 November 2026, about 14 kilometres from the town's police station. Police did not release his name; the motive and the gunmen were not known.",
+    "province": "Basilan",
+    "municipality": "Sumisip",
+    "barangay": "Lukketon",
+    "deaths": 1,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "The Mindanao Sentinel",
+        "url": "https://themindanaosentinel.com/2026/11/farmer-shot-dead-while-tapping-rubber-trees-in-sumisip-basilan/",
+        "title": "Farmer Shot Dead While Tapping Rubber Trees in Sumisip, Basilan",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "type": "shooting",
+    "title": "Couple wounded as motorcycle gunmen fire on their minivan in Gadungan, Sultan sa Barongis",
+    "summary": "Two men on a motorcycle followed and fired on a minivan carrying Rauf Bagundang Guiapar, 26, a farmer, and his wife Baby Ann Ibrahim Alabat, 21, on the boundary of Barangays Gadungan and Kulambog, Sultan sa Barongis, Maguindanao del Sur, at about 3 p.m. on Monday, 23 November 2026, as they drove home from Tacurong. Both were wounded and taken to a hospital in Lambayong; their child, also in the van, was unhurt. The motive and the gunmen were not known.",
+    "province": "Maguindanao del Sur",
+    "municipality": "Sultan Sa Barongis",
+    "barangay": "Gadungan",
+    "deaths": 0,
+    "injured": 2,
+    "missing": 0,
+    "vehicles": [
+      "van"
+    ],
+    "sources": [
+      {
+        "outlet": "The Mindanao Sentinel",
+        "url": "https://themindanaosentinel.com/2026/11/couple-wounded-in-motorcycle-riding-gunmens-ambush-in-sultan-sa-barongis/",
+        "title": "Couple Wounded in Motorcycle-Riding Gunmen’s Ambush in Sultan Sa Barongis",
+        "date": "2026-11-24"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "type": "shooting",
+    "title": "Man with four reported arrest warrants shot dead on a road in Baas, Lamitan City",
+    "summary": "Two unidentified gunmen shot dead Basri Tukul, 21, of Barangay Cabengbeng, Sumisip, as he walked along a barangay road in Barangay Baas, Lamitan City, Basilan, at about 8:50 a.m. on Monday, 23 November 2026. He died at the scene and the gunmen fled toward a forested area. Lamitan police said he reportedly faced four outstanding warrants, for murder and frustrated murder, subject to verification; six spent cartridges, from .45-calibre and 7.62mm firearms, were recovered. The motive was not known.",
+    "province": "Basilan",
+    "municipality": "Lamitan",
+    "barangay": "Baas",
+    "deaths": 1,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "outlet": "The Mindanao Sentinel",
+        "url": "https://themindanaosentinel.com/2026/11/21-year-old-man-with-four-reported-arrest-warrants-shot-dead-in-lamitan-city/",
+        "title": "21-Year-Old Man With Four Reported Arrest Warrants Shot Dead in Lamitan City",
+        "date": "2026-11-23"
+      }
+    ]
+  }
 ]

@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-24T05:37:39.286Z",
+ "generatedAt": "2026-11-24T08:41:31.321Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -224,6 +224,17 @@
    "url": "https://www.manilatimes.net/2026/11/24/regions/rival-clans-clash-in-lanao-del-sur-1-injured/2475857",
    "title": "Rival clans clash in Lanao del Sur; 1 injured",
    "reason": "a copy of The Manila Times story"
+  },
+  {
+   "url": "https://www.rappler.com/philippines/mindanao/barmm-new-parliament-guns-still-remain/",
+   "via": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSmYtd3B2Q191TEcteUFGNGR6U0o5RjNuaW43elRpYXFpRGlhcGlEVHJHMGJ0eUpDOGVUXzN5ZDUtSEFNMzhxV3JPdE1YVklwUFBZNm0xRGpCZlJ3elduV1l2RTdoVE5aeExseW1rLWpDZ2xrc0FNQTlHdVhnWEk1TWFlTjdJWUktX2trbA?oc=5",
+   "title": "BARMM has a new parliament, but the guns still remain",
+   "reason": "a copy of the Rappler story"
+  },
+  {
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVUpHM2lsZXpMR18xZDZwRGZpbnJTWXRMZXZTZTF3QnVuQjV0SmE5NngwSnNpU1Fwd0w5X0hHTUZweU1NN1kzYWE2eGFFUG14OFBtSWNkSWpUWnEwN3g0Njd2YnVWNXF6U0plbTJhX1ozTTNGSFlxcmM2NXNkZkFrdHVxVk5pMVVQNWJTNy1rYnFFVXB3UzRyRXlFcHhIOWw4NWZLb2lFTG5jd1BlbEJyZk9RYndZUFNpeWlj?oc=5",
+   "title": "Pursuit of justice for Maguindanao massacre victims continues | Manila Bulletin - newspaper",
+   "reason": "a copy of the Manila Bulletin story"
   }
  ],
  "weeks": [

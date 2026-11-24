@@ -39,6 +39,32 @@
    "id": "2026-11-23-sultan-sa-barongis-shooting"
   },
   {
+   "date": "2026-11-23",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Man with four reported arrest warrants shot dead on a road in Baas, Lamitan City",
+   "summary": "Two unidentified gunmen shot dead Basri Tukul, 21, of Barangay Cabengbeng, Sumisip, as he walked along a barangay road in Barangay Baas, Lamitan City, Basilan, at about 8:50 a.m. on Monday, 23 November 2026. He died at the scene and the gunmen fled toward a forested area. Lamitan police said he reportedly faced four outstanding warrants, for murder and frustrated murder, subject to verification; six spent cartridges, from .45-calibre and 7.62mm firearms, were recovered. The motive was not known.",
+   "province": "Basilan",
+   "municipality": "Lamitan",
+   "barangay": "Baas",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.5841,
+   "lon": 122.1794,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "The Mindanao Sentinel",
+     "url": "https://themindanaosentinel.com/2026/11/21-year-old-man-with-four-reported-arrest-warrants-shot-dead-in-lamitan-city/",
+     "title": "21-Year-Old Man With Four Reported Arrest Warrants Shot Dead in Lamitan City",
+     "date": "2026-11-23"
+    }
+   ],
+   "id": "2026-11-23-lamitan-shooting"
+  },
+  {
    "date": "2026-11-22",
    "type": "shooting",
    "kind": "Shooting",
