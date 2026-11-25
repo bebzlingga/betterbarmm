@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-24",
+ "generatedAt": "2026-11-25",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, public Facebook posts that index carried, and the Facebook page of DXMS Radyo Bida, NDBC’s station in Cotabato City. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -14,27 +14,85 @@
    "date": "2026-11-24",
    "type": "shooting",
    "kind": "Shooting",
-   "title": "2 soldiers seriously wounded as gunmen fire on their motorcycle on the national highway in Sultan Kudarat",
-   "summary": "Gunmen opened fire on two soldiers riding a motorcycle along the national highway in Sultan Kudarat, Maguindanao del Norte, on the afternoon of Tuesday, 24 November 2026, seriously wounding both. Police arrested two suspects in a hot pursuit operation.",
+   "title": "Soldier shot dead and another wounded as gunmen fire on their motorcycle at Crossing Simuay, Sultan Kudarat",
+   "summary": "Two men on a black motorcycle chased and shot Pvt. Egie Boy Buta, 25, and Pvt. Jay-r Nacin Gregorio, 29, both of the Army's 40th Infantry Battalion, as they rode a Yamaha Aerox from North Cotabato towards Cotabato City, at Crossing Simuay Junction, Sultan Kudarat, Maguindanao del Norte, at about 2:50 p.m. on Tuesday, 24 November 2026. Buta died and Gregorio was wounded and in treatment, the Sultan Kudarat police said; one outlet reported both killed. Police arrested 2 suspects in a hot pursuit.",
    "province": "Maguindanao del Norte",
    "municipality": "Sultan Kudarat",
-   "barangay": null,
-   "deaths": 0,
-   "injured": 2,
+   "barangay": "Crossing Simuay",
+   "deaths": 1,
+   "injured": 1,
    "missing": 0,
    "vehicles": [],
-   "lat": 7.2711,
-   "lon": 124.2919,
-   "placed": "municipality",
+   "lat": 7.281,
+   "lon": 124.3051,
+   "placed": "barangay",
    "sources": [
     {
      "outlet": "Inquirer",
      "url": "https://newsinfo.inquirer.net/2346448/2-soldiers-wounded-in-maguindanao-del-norte-ambush",
      "title": "2 soldiers wounded in Maguindanao del Norte ambush",
      "date": "2026-11-24"
+    },
+    {
+     "date": "2026-11-25",
+     "outlet": "DXMS Radyo Bida (Facebook)",
+     "title": "Patay si Pvt. Egie Boy Buta, 25-anyos, ng 40th Infantry Battalion",
+     "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02V41nL6DaF7sGNswPPYjFbA1ehU8vNky2KEH9WByH5jN58Yrbx47s1jFFJhvGcwwil&id=100068735708353"
+    },
+    {
+     "date": "2026-11-25",
+     "outlet": "DXMS Radyo Bida (Facebook)",
+     "title": "UPDATE: Dalawang sundalo, biktima ng pamamaril kahapon sa Sultan Kudarat",
+     "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid03yzWaEDTCgEuRgNXZL7dZpqLZ3kVWdtGQaX6ZnnLyvUPzDzQASuSanWQzaZFMghsl&id=100068735708353"
+    },
+    {
+     "date": "2026-11-25",
+     "outlet": "Brigada News",
+     "title": "Two soldiers killed in motorcycle shooting in Maguindanao del Norte",
+     "url": "https://www.brigadanews.ph/two-soldiers-killed-in-motorcycle-shooting-in-maguindanao-del-norte/"
+    },
+    {
+     "date": "2026-11-25",
+     "outlet": "DZRH",
+     "title": "Businessman killed, 2 soldiers wounded in separate BARMM shootings",
+     "url": "https://www.dzrh.com.ph/post/businessman-killed-2-soldiers-wounded-in-separate-barmm-shootings"
     }
    ],
    "id": "2026-11-24-sultan-kudarat-shooting"
+  },
+  {
+   "date": "2026-11-24",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Buy-and-sell trader shot dead and his motorcycle driver wounded on the highway in Kadingilan, Nabalawag",
+   "summary": "A gunman aboard a minivan opened fire on Darios Ondong Makakena, a buy-and-sell trader from Barangay Tumbras, Kadayangan, and the man driving the motorcycle he rode, along the highway in Sitio Ipil-Ipil, Barangay Kadingilan, Nabalawag, at about 12:10 p.m. on Tuesday, 24 November 2026. Makakena died at the scene and the driver was wounded. The pair were heading for Midsayap; the gunman fled in the same vehicle, and police had not named a suspect or a motive.",
+   "province": "Special Geographic Area",
+   "municipality": "Nabalawag",
+   "barangay": "Kadingilan",
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [
+    "motorcycle"
+   ],
+   "lat": 7.0883,
+   "lon": 124.4899,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "The Mindanao Sentinel",
+     "url": "https://themindanaosentinel.com/2026/11/businessman-killed-in-highway-shooting-in-nabalawag-sga-barmm-motorcycle-driver-wounded/",
+     "title": "Businessman Killed in Highway Shooting in Nabalawag, SGA-BARMM; Motorcycle Driver Wounded",
+     "date": "2026-11-24"
+    },
+    {
+     "outlet": "DZRH",
+     "url": "https://www.dzrh.com.ph/post/businessman-killed-2-soldiers-wounded-in-separate-barmm-shootings",
+     "title": "Businessman killed, 2 soldiers wounded in separate BARMM shootings",
+     "date": "2026-11-25"
+    }
+   ],
+   "id": "2026-11-24-nabalawag-shooting"
   },
   {
    "date": "2026-11-23",

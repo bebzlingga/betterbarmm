@@ -1,0 +1,31 @@
+[
+ {
+  "date": "2026-11-24",
+  "type": "shooting",
+  "province": "Special Geographic Area",
+  "municipality": "Nabalawag",
+  "barangay": "Kadingilan",
+  "title": "Buy-and-sell trader shot dead and his motorcycle driver wounded on the highway in Kadingilan, Nabalawag",
+  "summary": "A gunman aboard a minivan opened fire on Darios Ondong Makakena, a buy-and-sell trader from Barangay Tumbras, Kadayangan, and the man driving the motorcycle he rode, along the highway in Sitio Ipil-Ipil, Barangay Kadingilan, Nabalawag, at about 12:10 p.m. on Tuesday, 24 November 2026. Makakena died at the scene and the driver was wounded. The pair were heading for Midsayap; the gunman fled in the same vehicle, and police had not named a suspect or a motive.",
+  "deaths": 1,
+  "injured": 1,
+  "missing": 0,
+  "vehicles": [
+   "motorcycle"
+  ],
+  "sources": [
+   {
+    "date": "2026-11-24",
+    "outlet": "The Mindanao Sentinel",
+    "title": "Businessman Killed in Highway Shooting in Nabalawag, SGA-BARMM; Motorcycle Driver Wounded",
+    "url": "https://themindanaosentinel.com/2026/11/businessman-killed-in-highway-shooting-in-nabalawag-sga-barmm-motorcycle-driver-wounded/"
+   },
+   {
+    "date": "2026-11-25",
+    "outlet": "DZRH",
+    "title": "Businessman killed, 2 soldiers wounded in separate BARMM shootings",
+    "url": "https://www.dzrh.com.ph/post/businessman-killed-2-soldiers-wounded-in-separate-barmm-shootings"
+   }
+  ]
+ }
+]
