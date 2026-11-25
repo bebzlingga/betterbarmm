@@ -66,7 +66,7 @@ const measureEvents: MeasureEvent[] = (() => {
 })()
 
 /* ---- PhilGEPS ---- */
-const procurement = (() => {
+export const procurement = (() => {
 	// turbopackIgnore: the build would otherwise trace every file under these roots; next.config includes philgeps.json.
 	const file = ['.', '..', '../..']
 		.map((up) => path.join(/* turbopackIgnore: true */ process.cwd(), up, 'datasets/procurement/philgeps.json'))

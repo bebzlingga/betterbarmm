@@ -50,9 +50,11 @@ while (queue.length) {
 	}
 }
 
-// The data folders that code imports or reads, in code files only (a README or a comment in SQL builds nothing):
-// `datasets/news/...` in a path, join(..., 'datasets', 'budget'), and a path that ends at the folder itself
-// ('../../datasets', as www's open-data build reads it), which means all of it.
+// The data that code imports or reads, in code files only (a README or a comment in SQL builds nothing), as precisely
+// as the code names it: a whole path where it gives one (`datasets/bills/.../official_index.json` is that one file,
+// not all of datasets/bills), a folder from join(..., 'datasets', 'budget'), and all of datasets/ from a path that
+// ends at the folder itself ('../../datasets', as www's open-data build reads it). Each is matched as a prefix, so a
+// path cut short by a template (`datasets/news/weeks/${week}`) still covers what it can name.
 // A package's own scripts/ are tools run by hand (seeding, publishing), never imported into an app; an app's are its
 // build steps (www's prebuild), so they count.
 const code = [
@@ -69,10 +71,11 @@ const grep = (pattern) => {
 		return [] // git grep exits 1 when nothing matches
 	}
 }
-const data = new Set(grep('datasets/[A-Za-z0-9_-]+'))
+const data = new Set(grep('datasets/[A-Za-z0-9_./-]+').map((hit) => hit.replace(/[./]+$/, '')))
 for (const hit of grep(`['"]datasets['"], *['"][A-Za-z0-9_-]+`)) data.add(`datasets/${hit.match(/([A-Za-z0-9_-]+)$/)[1]}`)
 if (grep("/datasets['\"`]").length) data.add('datasets')
-const watched = [...dirs, ...(data.has('datasets') ? ['datasets'] : [...data]), 'package.json', 'bun.lock', 'turbo.json']
+// Folders end in a slash, so apps/lgu is not taken for apps/lgu-old; data paths stay prefixes.
+const watched = [...[...dirs].map((d) => `${d}/`), ...(data.has('datasets') ? ['datasets/'] : [...data]), 'package.json', 'bun.lock', 'turbo.json']
 
 // A shallow clone may not hold the previous deployment's commit; fetch it, and build if that fails.
 try {
@@ -87,7 +90,10 @@ try {
 
 let changed
 try {
-	changed = sh(`git diff --name-only ${prev} HEAD -- ${watched.map((p) => `'${p}'`).join(' ')}`)
+	changed = sh(`git diff --name-only ${prev} HEAD`)
+		.split('\n')
+		.filter((file) => file && watched.some((w) => file === w || file.startsWith(w)))
+		.join('\n')
 } catch {
 	decide(true, 'git diff failed')
 }

@@ -850,7 +850,18 @@
      "source": "guide"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pastil, the Maguindanaon rice parcel",
+     "detail": "Maguindanaon food is almost everywhere in Cotabato City; start with pastil, rice topped with shredded chicken adobo and rolled in a banana leaf.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "Kalintubo for breakfast",
+     "detail": "Chunky chicken adobo on rice, wrapped in banana leaves with a piece of the meat showing at the top; a popular breakfast, lunch or dinner in the city.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
   },
   {
    "slug": "bud-bongao",
@@ -1595,7 +1606,13 @@
      "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pugot from the Bongao Public Market",
+     "detail": "The titan triggerfish, called pugot, is a seafood the locals love, sold with the rest of the day's catch at the Bongao Public Market.",
+     "source": "https://thesmartlocal.ph/tawi-tawi/amp/"
+    }
+   ]
   },
   {
    "slug": "sibutu-island",
@@ -1615,7 +1632,7 @@
     "Coordinate with the municipality before arriving."
    ],
    "getting_there": "By boat from Bongao; it is the stop before Sitangkai on the route south.",
-   "best_time": null,
+   "best_time": "Plan around the boats: passenger boats from Bongao to Tandu Banak usually run on Tuesday, Thursday and Saturday, about 3 hours for under ₱200. Ask the boatmen at the Chinese port the day before or early in the morning.",
    "colors": [
     "#cef2ec",
     "#295668",
@@ -1716,7 +1733,7 @@
     "Like other border communities it lacks food, drinking water and health care; bring everything you need and leave nothing behind."
    ],
    "getting_there": "By boat via Sitangkai, near the Philippine-Malaysian border.",
-   "best_time": null,
+   "best_time": "Plan around the passenger boat from Bongao Port to Sitangkai, which leaves around 10 am on Monday, Wednesday and Friday and takes 5 to 6 hours.",
    "colors": [
     "#7196c6",
     "#26374f",
@@ -1724,7 +1741,8 @@
    ],
    "sources": [
     "https://en.wikipedia.org/wiki/Panguan_Island",
-    "https://www.philstar.com/nation/2017/11/08/1756887/tourism-tawi-tawi-thriving-province-reports/amp/"
+    "https://www.philstar.com/nation/2017/11/08/1756887/tourism-tawi-tawi-thriving-province-reports/amp/",
+    "https://www.rappler.com/?p=93689"
    ],
    "images": [
     {
@@ -2237,7 +2255,7 @@
     "If you buy nothing else on your trip, buy your lunch here."
    ],
    "getting_there": "By tricycle from the city across a new bridge into the area; public access was allowed again in 2022 after explosives and debris were cleared, and the rebuilt roads here continue towards Bukidnon. A 2022 visit with a resident took about 3 hours.",
-   "best_time": null,
+   "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
    "colors": [
     "#928d8d",
     "#716d6d",
@@ -2349,7 +2367,13 @@
      "source": "guide"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Piyaparan and other dishes cooked with palapa",
+     "detail": "Meranaw viands such as piyaparan a manok, piyaparan a bakas and beef randang are cooked with palapa, turmeric and coconut milk; bakas, the smoked tuna, is sold freshly made in Marawi's public markets.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/feast-of-faith-how-the-meranaw-celebrate-eid-al-adha/"
+    }
+   ]
   },
   {
    "slug": "marawi-grand-mosque",
@@ -2373,7 +2397,7 @@
     "Ask before photographing people, and never photograph anyone praying."
    ],
    "getting_there": "On Disalongan Street in Pangarungan Village, Marawi City.",
-   "best_time": null,
+   "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
    "colors": [
     "#f4f6fa",
     "#514b49",
@@ -2381,7 +2405,8 @@
     "#aab5ca"
    ],
    "sources": [
-    "https://en.wikipedia.org/wiki/Marawi_Grand_Mosque"
+    "https://en.wikipedia.org/wiki/Marawi_Grand_Mosque",
+    "https://en.wikipedia.org/wiki/Marawi"
    ],
    "images": [
     {
@@ -2468,7 +2493,13 @@
      "source": "https://en.wikipedia.org/wiki/Marawi_Grand_Mosque"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Bakas from the Marawi markets",
+     "detail": "Bakas, smoked yellowfin tuna, is the base of many Meranaw dishes; Marawi's public markets sell it freshly made, and fill with shoppers before Eid.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/feast-of-faith-how-the-meranaw-celebrate-eid-al-adha/"
+    }
+   ]
   },
   {
    "slug": "lake-dapao",
@@ -2509,6 +2540,20 @@
      "tone": [
       205,
       0.74
+     ]
+    },
+    {
+     "url": "/places/lake-dapao__2.jpg",
+     "page": "https://manilastandard.net/?p=314492577",
+     "author": "Lanao del Sur Provincial Tourism, Culture and the Arts Office, via Manila Standard",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 700,
+     "height": 384,
+     "caption": "Lake Dapao in Pualas from the air, with a lakeshore village, its mosque minaret and fish pens on the near bank.",
+     "tone": [
+      203,
+      0.3
      ]
     }
    ],
@@ -2552,7 +2597,22 @@
     "https://en.wikipedia.org/wiki/Lake_Butig_National_Park",
     "https://en.wikipedia.org/wiki/Mount_Makaturing"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/lake-butig__1.jpg",
+     "page": "https://butigbeyondbeauty.com/history-of-butig/",
+     "author": "Butig Beyond Beauty",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1600,
+     "height": 1200,
+     "caption": "Lake Butig from the air, with lakeshore houses in front and the slopes of Mount Makaturing behind.",
+     "tone": [
+      74,
+      0.69
+     ]
+    }
+   ],
    "from_guide": false,
    "do": [
     {
@@ -2571,7 +2631,13 @@
      "source": "https://en.wikipedia.org/wiki/Lake_Butig_National_Park"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Labas on the road to Butig",
+     "detail": "Labas, smoked bariles (tuna), is sold along the way from Marawi to Butig; a 2023 hiking party bought it for dinner.",
+     "source": "https://www.pinoymountaineer.com/2023/08/hiking-matters-750-climbing-mt-makaturing-1965m-in-butig-lanao-del-sur.html"
+    }
+   ]
   },
   {
    "slug": "sacred-mountain",
@@ -2633,7 +2699,13 @@
      "source": "https://en.wikipedia.org/wiki/Sacred_Mountain_National_Park"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Bakas from the Marawi markets",
+     "detail": "Bakas, smoked yellowfin tuna, is the base of many Meranaw dishes; Marawi's public markets sell it freshly made, and fill with shoppers before Eid.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/feast-of-faith-how-the-meranaw-celebrate-eid-al-adha/"
+    }
+   ]
   },
   {
    "slug": "upi-uplands",
@@ -2884,6 +2956,34 @@
       204,
       0.86
      ]
+    },
+    {
+     "url": "/places/blue-lagoon-datu-odin-sinsuat__2.jpg",
+     "page": "https://outoftownblog.com/the-blue-lagoon-of-datu-odin-sinsuat-maguindanao/",
+     "author": "Out of Town Blog",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1200,
+     "height": 900,
+     "caption": "The round blue pool of the Blue Lagoon in Datu Odin Sinsuat, ringed by tree roots and forest, with a few swimmers at its edge.",
+     "tone": [
+      195,
+      0.67
+     ]
+    },
+    {
+     "url": "/places/blue-lagoon-datu-odin-sinsuat__3.jpg",
+     "page": "https://www.nomadicexperiences.com/2019/07/dipping-sans-brooke-shields-in-blue.html",
+     "author": "Nomadic Experiences (blog)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1600,
+     "height": 1067,
+     "caption": "Swimmers on a fallen log across the turquoise water of the Blue Lagoon in Datu Odin Sinsuat.",
+     "tone": [
+      196,
+      0.83
+     ]
     }
    ],
    "from_guide": false,
@@ -2948,6 +3048,20 @@
       207,
       0.25
      ]
+    },
+    {
+     "url": "/places/kusiong-beach__2.jpg",
+     "page": "https://www.tripadvisor.com.ph/Attraction_Review-g6593002-d6589745-Reviews-Kusiong_Beach-Datu_Odin_Sinsuat_Maguindanao_Mindanao.html",
+     "author": "Tripadvisor traveller photo (June 2020)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1600,
+     "height": 1600,
+     "caption": "The grey pebble shore of Kusiong Beach in Datu Odin Sinsuat, with cottages under the trees and a ferry out on the bay.",
+     "tone": [
+      37,
+      0.19
+     ]
     }
    ],
    "from_guide": false,
@@ -2985,7 +3099,7 @@
     "Ask permission before going in or taking photographs."
    ],
    "getting_there": "In Barangay Taviran, Datu Odin Sinsuat.",
-   "best_time": null,
+   "best_time": "December to April are the driest months (about 20 to 30 mm of rain a month), June to August the wettest.",
    "colors": [],
    "sources": [
     "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat",
@@ -3765,7 +3879,13 @@
      "source": "https://langyaw.com/2015/06/16/charming-bulingan-falls-in-lamitan-city/"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Brew coffee from Lamitan",
+     "detail": "The Wikivoyage guide to Basilan says not to miss Basilan Brew coffee, sold in Lamitan, 45 minutes from Isabela City.",
+     "source": "https://en.wikivoyage.org/wiki/Basilan"
+    }
+   ]
   },
   {
    "slug": "malamawi-island",
@@ -3785,7 +3905,7 @@
     "Most people swim covered here."
    ],
    "getting_there": "Fly to Zamboanga, take a Canelar jeepney to Plaza Pershing near the port, then a fastcraft to Isabela City (45 minutes to an hour). Outrigger boats beside Isabela port cross in about 5 minutes (PHP 5 shared or PHP 100 for the whole boat in 2018), and habal-habal drivers at the landing take you 15 to 20 minutes to the white beach in Barangay Lukbuton (PHP 50).",
-   "best_time": null,
+   "best_time": "Morning: start with breakfast of rice cakes and brewed coffee at the Marang Marang floating restaurants, then go on to the beach. Book the restaurants ahead, as they fill up.",
    "colors": [
     "#5392cb",
     "#2d6a92",
@@ -3954,6 +4074,20 @@
       217,
       0.43
      ]
+    },
+    {
+     "url": "/places/calugusan-beach__2.jpg",
+     "page": "https://langyaw.com/2015/03/30/white-calugusan-beach-in-lamitan/",
+     "author": "Langyaw (travel blog)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 700,
+     "height": 467,
+     "caption": "The white sand and leaning coconut palms of Calugusan Beach in Lamitan.",
+     "tone": [
+      42,
+      0.33
+     ]
     }
    ],
    "from_guide": false,
@@ -3969,7 +4103,13 @@
      "source": "https://langyaw.com/2015/03/30/white-calugusan-beach-in-lamitan/"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Brew coffee from Lamitan",
+     "detail": "The Wikivoyage guide to Basilan says not to miss Basilan Brew coffee, sold in Lamitan, 45 minutes from Isabela City.",
+     "source": "https://en.wikivoyage.org/wiki/Basilan"
+    }
+   ]
   },
   {
    "slug": "basilan-national-park",
@@ -4043,7 +4183,13 @@
      "source": "https://www.pinoymountaineer.com/2025/09/punu-ulayan-basilan-peak-1001m.html"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Brew coffee from Lamitan",
+     "detail": "The Wikivoyage guide to Basilan says not to miss Basilan Brew coffee, sold in Lamitan, 45 minutes from Isabela City.",
+     "source": "https://en.wikivoyage.org/wiki/Basilan"
+    }
+   ]
   },
   {
    "slug": "datu-kalun-shrine",
@@ -4115,7 +4261,13 @@
      "source": "guide"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Brew coffee from Lamitan",
+     "detail": "The Wikivoyage guide to Basilan says not to miss Basilan Brew coffee, sold in Lamitan, 45 minutes from Isabela City.",
+     "source": "https://en.wikivoyage.org/wiki/Basilan"
+    }
+   ]
   },
   {
    "slug": "monte-santo-shrine",
@@ -4133,11 +4285,12 @@
     "A place of worship. Dress modestly and keep quiet during prayers.",
     "Coordinate with the city tourism office."
    ],
-   "getting_there": null,
+   "getting_there": "Take the fastcraft from Zamboanga to Lamitan (₱150 in 2018) and go first to the City Tourism Office, which runs tours with a guide, an escort and van transport for ₱400 per person.",
    "best_time": "Holy Week, when pilgrims walk the Stations of the Cross.",
    "colors": [],
    "sources": [
-    "https://en.wikipedia.org/wiki/Basilan"
+    "https://en.wikipedia.org/wiki/Basilan",
+    "https://transitpinas.com/basilan-travel-guide/"
    ],
    "images": [
     {
@@ -4163,7 +4316,13 @@
      "source": "guide"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Brew coffee from Lamitan",
+     "detail": "The Wikivoyage guide to Basilan says not to miss Basilan Brew coffee, sold in Lamitan, 45 minutes from Isabela City.",
+     "source": "https://en.wikivoyage.org/wiki/Basilan"
+    }
+   ]
   },
   {
    "slug": "fort-pikit",
@@ -4267,7 +4426,12 @@
    "also_known_as": [
     "Panglima Sugala Saturday barter market"
    ],
-   "before_you_go": [],
+   "before_you_go": [
+    "Arrive early: the port is already crowded with traders by 6 am.",
+    "Register with the tourism office in Bongao before travelling beyond the town, and follow the advice of local authorities.",
+    "Tawi-Tawi is mostly Muslim; avoid revealing clothes.",
+    "By pump boat the market is about an hour from the Chinese Pier in Bongao; by land it is 25 km from Sanga-Sanga Airport."
+   ],
    "getting_there": "By road from Bongao; a jeepney leaves Bongao Public Market daily for Panglima Sugala. The market is in Barangay Batu-Batu, the town centre.",
    "best_time": "Saturday, from first light; most goods are gone by 9 am.",
    "do": [
@@ -4722,7 +4886,13 @@
     "https://en.wikivoyage.org/wiki/Bongao",
     "https://mindanews.com/photo-of-the-day/2022/04/bihing-tahik/"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pugot from the Bongao Public Market",
+     "detail": "The titan triggerfish, called pugot, is a seafood the locals love, sold with the rest of the day's catch at the Bongao Public Market.",
+     "source": "https://thesmartlocal.ph/tawi-tawi/amp/"
+    }
+   ]
   },
   {
    "also_known_as": [],
@@ -4730,7 +4900,7 @@
     "Do not touch or chase the turtles."
    ],
    "getting_there": null,
-   "best_time": null,
+   "best_time": "The summer months, when a Tawi-Tawi travel guide says the seas are calm and the skies sunny.",
    "do": [
     {
      "title": "Snorkel with the turtles",
@@ -4771,9 +4941,16 @@
     "#232f34"
    ],
    "sources": [
-    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pugot from the Bongao Public Market",
+     "detail": "The titan triggerfish, called pugot, is a seafood the locals love, sold with the rest of the day's catch at the Bongao Public Market.",
+     "source": "https://thesmartlocal.ph/tawi-tawi/amp/"
+    }
+   ]
   },
   {
    "also_known_as": [
@@ -5205,7 +5382,7 @@
     "Arrange visits outside Marawi through the provincial tourism office and go with local companions."
    ],
    "getting_there": "The trail is in Barangay Bualan, Balindong, on the Gurain Range; experienced hikers take 2 to 3 hours to the campsite.",
-   "best_time": null,
+   "best_time": "Any time of year: Balindong has no distinct dry or wet season. Temperatures drop to about 15°C on rainy days and reach 27°C in drier spells, so bring warm layers for the campsite.",
    "do": [
     {
      "title": "Camp on the summit",
@@ -5251,7 +5428,8 @@
     "#625b5f"
    ],
    "sources": [
-    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+    "https://en.wikipedia.org/wiki/Balindong"
    ],
    "eat": []
   },
@@ -5264,7 +5442,23 @@
    ],
    "getting_there": "On the Iligan-Marawi road.",
    "best_time": null,
-   "do": [],
+   "do": [
+    {
+     "title": "Stop at the provincial welcome arch",
+     "detail": "Lanao del Sur's welcome arch stands in Saguiaran and is notable for its Islamic design.",
+     "source": "https://en.wikipedia.org/wiki/Saguiaran"
+    },
+    {
+     "title": "Visit Basak Lake",
+     "detail": "Saguiaran's other lake is at Barangay Maito Basak, on the same Iligan-Marawi road.",
+     "source": "https://en.wikipedia.org/wiki/Saguiaran"
+    },
+    {
+     "title": "See the Buwalan Mosque and its spring",
+     "detail": "The oldest mosque in Saguiaran stands on small hills above a spring that supplies drinking water to the town and to nearby Marawi.",
+     "source": "https://en.wikipedia.org/wiki/Saguiaran"
+    }
+   ],
    "images": [],
    "slug": "pantuwaraya-lake",
    "name": "Pantuwaraya Lake National Park",
@@ -5284,7 +5478,13 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Pantuwaraya_Lake_National_Park"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Browa from Tata Bakeshoppe",
+     "detail": "Browa, a Maranao delicacy, is sold at Tata Bakeshoppe on the National Highway facing the Saguiaran municipal hall; Wikipedia says it beats the browa of Marawi.",
+     "source": "https://en.wikipedia.org/wiki/Saguiaran"
+    }
+   ]
   },
   {
    "also_known_as": [
@@ -5294,7 +5494,7 @@
     "Dress modestly. Wikivoyage notes that Muslim women in Marawi are expected to cover their hair, while non-Muslims are not required to."
    ],
    "getting_there": "Inside the Mindanao State University main campus in Marawi.",
-   "best_time": null,
+   "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
    "do": [
     {
      "title": "Pair it with the Aga Khan Museum",
@@ -5321,6 +5521,20 @@
       205,
       0.89
      ]
+    },
+    {
+     "url": "/places/king-faisal-mosque__2.jpg",
+     "page": "https://en.shafaqna.com/79915/photos-king-faisal-mosque-in-marawi-philippines/",
+     "author": "Shafaqna",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 800,
+     "height": 600,
+     "caption": "The King Faisal Mosque on the MSU campus in Marawi, its green main dome and spired turrets under a clear sky.",
+     "tone": [
+      221,
+      0.32
+     ]
     }
    ],
    "slug": "king-faisal-mosque",
@@ -5341,13 +5555,23 @@
    "sources": [
     "https://en.wikivoyage.org/wiki/Marawi",
     "https://www.ivanhenares.com/search/label/Marawi",
-    "https://www.msumain.edu.ph/?p=52071"
+    "https://www.msumain.edu.ph/?p=52071",
+    "https://en.wikipedia.org/wiki/Marawi"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Snacks and desserts at JECOs Cafe",
+     "detail": "One of the city's best-known places to eat, at the MCU Commercial Center near the campus, serving snacks and desserts from 10 am to 8 pm (as of 2017).",
+     "source": "https://en.wikivoyage.org/wiki/Marawi"
+    }
+   ]
   },
   {
    "also_known_as": [],
-   "before_you_go": [],
+   "before_you_go": [
+    "Alcohol and gambling are banned in Marawi, karaoke in public is frowned on, and pork should not be eaten in public.",
+    "Muslim women cover their hair; it is not required of non-Muslims, but dress modestly."
+   ],
    "getting_there": "Inside the Mindanao State University main campus in Marawi.",
    "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
    "do": [
@@ -5398,13 +5622,22 @@
     "https://www.ivanhenares.com/search/label/Marawi",
     "https://en.wikipedia.org/wiki/Marawi"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Snacks and desserts at JECOs Cafe",
+     "detail": "One of the city's best-known places to eat, at the MCU Commercial Center near the campus, serving snacks and desserts from 10 am to 8 pm (as of 2017).",
+     "source": "https://en.wikivoyage.org/wiki/Marawi"
+    }
+   ]
   },
   {
    "also_known_as": [],
-   "before_you_go": [],
+   "before_you_go": [
+    "Alcohol and gambling are banned in Marawi, karaoke in public is frowned on, and pork should not be eaten in public.",
+    "Muslim women cover their hair; it is not required of non-Muslims, but dress modestly."
+   ],
    "getting_there": "In Marawi, on 30,697 square metres cut from the Camp Amai Pakpak reservation, between 2 national highways and next to Marawi City National High School.",
-   "best_time": null,
+   "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
    "do": [],
    "images": [
     {
@@ -5456,17 +5689,28 @@
    "sources": [
     "https://lawphil.net/executive/proc/proc1992/proc_922_1992.html",
     "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro",
-    "https://bangsamoro.gov.ph/news/latest-news/archaeological-finds-in-lanaos-kota-kalawi-shed-new-light-on-bangsamoro-past/"
+    "https://bangsamoro.gov.ph/news/latest-news/archaeological-finds-in-lanaos-kota-kalawi-shed-new-light-on-bangsamoro-past/",
+    "https://en.wikipedia.org/wiki/Marawi",
+    "https://en.wikivoyage.org/wiki/Marawi"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Bakas from the Marawi markets",
+     "detail": "Bakas, smoked yellowfin tuna, is the base of many Meranaw dishes; Marawi's public markets sell it freshly made, and fill with shoppers before Eid.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/feast-of-faith-how-the-meranaw-celebrate-eid-al-adha/"
+    }
+   ]
   },
   {
    "also_known_as": [
     "KM 0, Marawi"
    ],
-   "before_you_go": [],
-   "getting_there": null,
-   "best_time": null,
+   "before_you_go": [
+    "Alcohol and gambling are banned in Marawi, karaoke in public is frowned on, and pork should not be eaten in public.",
+    "Muslim women cover their hair; it is not required of non-Muslims, but dress modestly."
+   ],
+   "getting_there": "The marker stands at Al Ikhlas, Marawi, going by a 2023 photograph’s caption. There are no buses to Marawi, but UV Express minivans run often from Iligan; the nearest airport with commercial flights is Laguindingan.",
+   "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
    "do": [],
    "images": [
     {
@@ -5501,9 +5745,18 @@
    ],
    "sources": [
     "https://penfires.com/where-are-the-kilometer-0s-in-the-philippines/",
-    "https://www.sunstar.com.ph/article/125205/lanao-del-sur-marks-high-tourist-visitors"
+    "https://www.sunstar.com.ph/article/125205/lanao-del-sur-marks-high-tourist-visitors",
+    "https://en.wikipedia.org/wiki/File:Marawi_KM0_marker,_Al_Ikhlas_(Marawi,_Lanao_Del_Sur;_10-14-2023).jpg",
+    "https://en.wikivoyage.org/wiki/Marawi",
+    "https://en.wikipedia.org/wiki/Marawi"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Bakas from the Marawi markets",
+     "detail": "Bakas, smoked yellowfin tuna, is the base of many Meranaw dishes; Marawi's public markets sell it freshly made, and fill with shoppers before Eid.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/feast-of-faith-how-the-meranaw-celebrate-eid-al-adha/"
+    }
+   ]
   },
   {
    "also_known_as": [],
@@ -5590,9 +5843,20 @@
    "before_you_go": [
     "It is farmland; ask the municipality or barangay before walking in."
    ],
-   "getting_there": null,
-   "best_time": null,
-   "do": [],
+   "getting_there": "Bayang is about 61 km south of Marawi, on the shore of Lake Lanao. The 2022 commemoration was held in Barangay Sultan Pandapatan.",
+   "best_time": "Early May. Bayang marks the anniversary of the battle of 2 May 1902 together with its own founding anniversary; in 2017 the commemoration ran for 7 days, and in 2026 the 124th anniversary was held at the Bayang Municipal Hall Gymnasium.",
+   "do": [
+    {
+     "title": "Watch the reenactment at the anniversary",
+     "detail": "The 2026 programme featured a Quran reading and a theatrical reenactment of the 1902 battle by the cultural group Sining Pananadem.",
+     "source": "https://tribune.net.ph/2026/05/03/historic-padang-karbala-resistance-commemorated"
+    },
+    {
+     "title": "Look for the remains of Camp Vicars",
+     "detail": "The site is farmland now, but locals point to patches of cement they say belonged to the structures of the American Camp Vicars.",
+     "source": "https://bcpch.bangsamoro.gov.ph/?p=2418"
+    }
+   ],
    "images": [
     {
      "url": "/places/padang-karbala__1.jpg",
@@ -5625,17 +5889,71 @@
     "#eee8d6"
    ],
    "sources": [
-    "https://bcpch.bangsamoro.gov.ph/?p=2418"
+    "https://bcpch.bangsamoro.gov.ph/?p=2418",
+    "https://en.wikipedia.org/wiki/Bayang",
+    "https://mpos.bangsamoro.gov.ph/2022/05/03",
+    "https://ranaostar.blogspot.com/2017/05/115th-anniversary-of-battle-of-padang.html",
+    "https://tribune.net.ph/2026/05/03/historic-padang-karbala-resistance-commemorated"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Kakaw Meranaw chocolate from Bayang cacao",
+     "detail": "A family cacao farm in Bayang supplies Kakaw Meranaw, whose palapa and binaning (turmeric) chocolate bars won a medal at the AVPA Paris contest in 2023.",
+     "source": "https://bangsamoro.gov.ph/news/feature-story/kakaw-meranaw-from-bean-to-bar-cultivating-economic-progress-in-lanao-del-sur/"
+    }
+   ]
   },
   {
    "also_known_as": [],
-   "before_you_go": [],
-   "getting_there": null,
-   "best_time": null,
-   "do": [],
-   "images": [],
+   "before_you_go": [
+    "The monument stands on a private lot; ask locally before going in.",
+    "His grave has never been found. The monument marks where he is believed to have been executed, near the wartime Japanese camp later named Camp Jose Abad Santos.",
+    "Sources give 2 dates for the execution: 7 May 1942 on the National Historical Commission's list, 2 May 1942 in Pampanga accounts."
+   ],
+   "getting_there": "Malabang is 71 km from Marawi. Public vans and jeepneys run to nearby towns and cities, tricycles get around town, and daily coastal launches connect Malabang with Cotabato City.",
+   "best_time": "Around 7 May, the anniversary of the execution in 1942, or 1 March, when Malabang celebrates its founding day, Araw ng Malabang.",
+   "do": [
+    {
+     "title": "Read the markers from 3 eras at the monument",
+     "detail": "The renovated site keeps the Freemasons' marker of 1956, the commemorative marker put up by the City of San Fernando, Pampanga, and a newer marker signed by Gloria Macapagal Arroyo that includes an account by her father, Diosdado Macapagal.",
+     "source": "https://iorbitnews.com/?p=9363"
+    },
+    {
+     "title": "See the prewar airstrip north of town",
+     "detail": "Malabang Airport was built before the war north of the town. It has no commercial flights, and its runway has been used for drying copra and rice.",
+     "source": "https://en.wikivoyage.org/wiki/Lanao_del_Sur"
+    }
+   ],
+   "images": [
+    {
+     "url": "/places/jose-abad-santos-malabang__1.jpg",
+     "page": "https://www.facebook.com/photo/?fbid=630348336409208&set=pcb.630358549741520",
+     "author": "Municipal Government of Malabang (Facebook)",
+     "license": "Philippine government work",
+     "license_url": null,
+     "width": 1200,
+     "height": 1600,
+     "caption": "The National Historical Commission marker to José Abad Santos at his monument in Barangay Curahab, Malabang, unveiled in 2025 and recording that he was executed here on 1 May 1942.",
+     "tone": [
+      326,
+      0.72
+     ]
+    },
+    {
+     "url": "/places/jose-abad-santos-malabang__2.jpg",
+     "page": "https://newsinfo.inquirer.net/873991/abad-santos-acting-commonwealth-president-gets-proper-honors-in-place-where-he-died",
+     "author": "Philippine Daily Inquirer",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 680,
+     "height": 454,
+     "caption": "The robed statue of José Abad Santos among coconut palms at his monument in Malabang.",
+     "tone": [
+      219,
+      0.19
+     ]
+    }
+   ],
    "slug": "jose-abad-santos-malabang",
    "name": "José Abad Santos execution site",
    "kind": "memory",
@@ -5652,9 +5970,18 @@
     "#ecebe5"
    ],
    "sources": [
-    "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro"
+    "https://en.wikipedia.org/wiki/List_of_historical_markers_of_the_Philippines_in_Bangsamoro",
+    "https://en.wikipedia.org/wiki/Malabang",
+    "https://www.sunstar.com.ph/more-articles/jose-abad-santos-marker-monument-in-lanao-finished",
+    "https://pacificwrecks.com/location/philippines_malabang.html"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Puzan and bakas, Malabang's fish",
+     "detail": "Malabang is a fishing town known for puzan, a preserved fish product, and bakas, smoked dried fish.",
+     "source": "https://en.wikipedia.org/wiki/Malabang"
+    }
+   ]
   },
   {
    "also_known_as": [],
@@ -5662,7 +5989,7 @@
     "It is a grave and a place of remembrance: dress modestly and ask before taking photos.",
     "Go only with the heritage commission's or the municipality's arrangement."
    ],
-   "getting_there": null,
+   "getting_there": "Camp Bushra is in Barangay Sandab, Butig. A 2023 hiking party travelled from Marawi to Butig and made a courtesy call at the MILF satellite office in Sandab before going on.",
    "best_time": null,
    "do": [],
    "images": [],
@@ -5682,9 +6009,17 @@
     "#6b6b5e"
    ],
    "sources": [
-    "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-honors-moro-martyrs-through-construction-of-memorial-sites/"
+    "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-honors-moro-martyrs-through-construction-of-memorial-sites/",
+    "https://bangsamoro.gov.ph/news/latest-news/milf-camp-transformation-boosted-as-barmm-begins-100-unit-housing-project-in-camp-bushra/",
+    "https://www.pinoymountaineer.com/2023/08/hiking-matters-750-climbing-mt-makaturing-1965m-in-butig-lanao-del-sur.html"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Labas on the road to Butig",
+     "detail": "Labas, smoked bariles (tuna), is sold along the way from Marawi to Butig; a 2023 hiking party bought it for dinner.",
+     "source": "https://www.pinoymountaineer.com/2023/08/hiking-matters-750-climbing-mt-makaturing-1965m-in-butig-lanao-del-sur.html"
+    }
+   ]
   },
   {
    "also_known_as": [
@@ -5695,7 +6030,7 @@
     "Go with the municipality's or the local organisers' arrangement; escorts were provided in 2019."
    ],
    "getting_there": "About 1 hour by road from Cotabato City.",
-   "best_time": null,
+   "best_time": "Summer: the falls were opened as a certified summer outing spot, with swimming in cool mountain water.",
    "do": [
     {
      "title": "Swim under the falls",
@@ -5767,7 +6102,7 @@
    "before_you_go": [
     "Dress modestly and ask before taking photos inside."
    ],
-   "getting_there": null,
+   "getting_there": "In Barangay Bulalo, Sultan Kudarat, across the Rio Grande from Cotabato City; motorised boats from the Cotabato City wharf serve points in Sultan Kudarat.",
    "best_time": null,
    "do": [],
    "images": [
@@ -5803,7 +6138,8 @@
     "#1c2c28"
    ],
    "sources": [
-    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/"
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-announces-winners-for-2021-regional-photography-competition/",
+    "https://en.wikivoyage.org/wiki/Cotabato_City"
    ],
    "eat": []
   },
@@ -5812,7 +6148,28 @@
    "before_you_go": [],
    "getting_there": null,
    "best_time": null,
-   "do": [],
+   "do": [
+    {
+     "title": "Read the National Historical Commission marker",
+     "detail": "The marker at the tomb honours General Salipada K. Pendatun and his contributions to the country.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    },
+    {
+     "title": "Buy water hyacinth baskets made in the town",
+     "detail": "In General Salipada K. Pendatun, mothers weave the region's water hyacinths into baskets, mats and household goods; some Inaul weavers have trained in basketry too.",
+     "source": "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html"
+    },
+    {
+     "title": "Look out over Liguasan Marsh",
+     "detail": "The provincial tourism list places Liguasan Marsh in the town; when its water lilies bloom, parts of the marsh turn pink.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    },
+    {
+     "title": "Watch Inaul being woven",
+     "detail": "General Salipada K. Pendatun is one of the towns of Maguindanao del Sur where Inaul weaving continues.",
+     "source": "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
+    }
+   ],
    "images": [
     {
      "url": "/places/salipada-pendatun-tomb__1.jpg",
@@ -5933,9 +6290,25 @@
    "before_you_go": [
     "Visit with the municipality's or the heritage commission's arrangement."
    ],
-   "getting_there": null,
+   "getting_there": "In Barira, Maguindanao del Norte; Bubuludtua Falls in the same town is about an hour by road from Cotabato City.",
    "best_time": null,
-   "do": [],
+   "do": [
+    {
+     "title": "Read the heritage commission's first marker",
+     "detail": "Unveiled on 3 July 2025 at Salamat Hashim's former residence, it was the first historical marker of the Bangsamoro Commission for the Preservation of Cultural Heritage.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/barmms-first-historical-marker-honors-salamat-hashims-legacy/"
+    },
+    {
+     "title": "Swim at Bubuludtua Falls",
+     "detail": "Part of the falls area in Barira was once an MILF camp; GMA reported a ₱10 entrance fee in 2019, with MILF members acting as security escorts.",
+     "source": "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/"
+    },
+    {
+     "title": "Cool off in the Ambal River",
+     "detail": "The Ambal River near Bubuludtua Falls is free for swimming.",
+     "source": "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/"
+    }
+   ],
    "images": [
     {
      "url": "/places/camp-abubakar-hashim-residence__1.jpg",
@@ -5948,6 +6321,20 @@
      "caption": "A faded sign reading Residence of Salamat Hashim on the ruined house at Camp Abubakar.",
      "tone": [
       81,
+      0.32
+     ]
+    },
+    {
+     "url": "/places/camp-abubakar-hashim-residence__2.jpg",
+     "page": "https://www.bulatlat.com/2025/03/23/peace-is-possible-after-an-intense-battle/",
+     "author": "Franck Dick Rosete/Bulatlat",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1600,
+     "height": 1145,
+     "caption": "The concrete shell of Salamat Hashim's residence at Camp Abubakar (now Camp Iranun) in Barira, under the forest on a cobbled slope.",
+     "tone": [
+      76,
       0.32
      ]
     }
@@ -5969,7 +6356,8 @@
    ],
    "sources": [
     "https://bangsamoro.gov.ph/news/latest-news/barmms-first-historical-marker-honors-salamat-hashims-legacy/",
-    "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-honors-moro-martyrs-through-construction-of-memorial-sites/"
+    "https://bangsamoro.gov.ph/news/latest-news/barmm-govt-honors-moro-martyrs-through-construction-of-memorial-sites/",
+    "https://www.gmanetwork.com/news/lifestyle/content/689696/hidden-paradise-in-a-former-milf-camp/story/"
    ],
    "eat": []
   },
@@ -5977,7 +6365,10 @@
    "also_known_as": [
     "Timaco Hill"
    ],
-   "before_you_go": [],
+   "before_you_go": [
+    "Locals believe deities and engkanto still guard the hill and ask visitors to be respectful and keep quiet.",
+    "The hill rises to 197 m with a steep, jagged ridge; the trail runs past springs and rock formations, so wear proper shoes."
+   ],
    "getting_there": "In Barangay Kalanganan, the same barangay as the Grand Mosque.",
    "best_time": "December, when Mother Kalanganan holds the Layagan crab festival.",
    "do": [
@@ -6159,9 +6550,11 @@
     "Old Cotabato City Hall",
     "Cotabato City Museum"
    ],
-   "before_you_go": [],
+   "before_you_go": [
+    "Check that it is open before going: a travel blogger once found the building in use by the army and off limits, while a 2018 guide describes a small museum and the city's visitor information centre."
+   ],
    "getting_there": "On Dorotheo Street in downtown Cotabato City.",
-   "best_time": null,
+   "best_time": "December, when the Shariff Kabunsuan Festival fills Cotabato City with a fluvial parade, trade fairs and cultural shows.",
    "do": [
     {
      "title": "Start a city visit here",
@@ -6275,7 +6668,8 @@
    "sources": [
     "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/",
     "https://en.wikivoyage.org/wiki/Cotabato_City",
-    "https://www.liquisearch.com/cotabato_city/tourist_attractions"
+    "https://www.liquisearch.com/cotabato_city/tourist_attractions",
+    "https://iwandered.net/things-to-do-cotabato-city-maguindanao/"
    ],
    "eat": [
     {
@@ -6377,11 +6771,19 @@
     "https://en.wikivoyage.org/wiki/Cotabato_City",
     "https://www.lakwatsero.com/?p=18818"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Mud crab from the Kalanganan fishponds",
+     "detail": "Kalanganan, the barangay around the Baywalk and the Grand Mosque, produces hundreds of tons of crab a year and holds the Layagan crab festival every December.",
+     "source": "https://en.wikipedia.org/wiki/Cotabato_City"
+    }
+   ]
   },
   {
    "also_known_as": [],
-   "before_you_go": [],
+   "before_you_go": [
+    "Exhibits change through the year, from the 10-day Landung exhibit of February 2025 to month-long art shows such as the one that opened on 21 May 2026; check what is on before going."
+   ],
    "getting_there": "Inside the Bangsamoro Government Center, Rosary Heights VII, Cotabato City.",
    "best_time": "February, when the museum marks its anniversary and National Arts Month with exhibits and workshops.",
    "do": [
@@ -6524,7 +6926,13 @@
     "https://en.wikivoyage.org/wiki/Basilan",
     "https://transitpinas.com/basilan-travel-guide/"
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Sarap sardines from Samal Village",
+     "detail": "A fisherfolk and farmers' cooperative of former MNLF fighters in Samal Village, Maluso, bottles Spanish-style sardines, up to 700 bottles a day.",
+     "source": "https://bangsamoro.gov.ph/news/feature-story/preserving-fish-and-peace-a-basilan-co-ops-journey-from-war-to-work/"
+    }
+   ]
   },
   {
    "slug": "kilantan-spring",
@@ -6607,7 +7015,22 @@
     "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf",
     "https://newswav.com/article/the-hidden-treasures-of-maguindanao-del-sur-A2608_CZHiia"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/bual-spring__1.jpg",
+     "page": "https://www.facebook.com/mymaguindanaoph/posts/sangkadkaturismocrystal-clear-water-ba-hanap-mobual-spring-7-pools-das-maguindan/246264510373796/",
+     "author": "My Bangsamoro (Facebook)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1281,
+     "height": 720,
+     "caption": "One of the clear, blue-green pools of Bual Spring in Sitio Bisang, Datu Abdullah Sangki, over a bed of pale stones.",
+     "tone": [
+      176,
+      0.3
+     ]
+    }
+   ],
    "do": [
     {
      "title": "Swim in the natural pools",
@@ -6689,7 +7112,7 @@
     "The Tourism Promotions Board has picked communities in the province for community-based tourism; arrange a visit through the provincial tourism office.",
     "Ask before photographing people at work, and buy from the makers directly."
    ],
-   "getting_there": null,
+   "getting_there": "In Barangay Limpongo, Datu Hoffer Ampatuan. A 2026 travel writer visited with guides from the provincial tourism office.",
    "best_time": null,
    "colors": [
     "#8a5a2b",
@@ -6836,8 +7259,25 @@
      ]
     }
    ],
-   "do": [],
-   "eat": []
+   "do": [
+    {
+     "title": "See the mimbar said to have survived the 1951 flood",
+     "detail": "When a huge flash flood swept the area in 1951, the community says only the mimbar inside the mosque was not carried away; local ustadzes tell of other wonders tied to it.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    },
+    {
+     "title": "Visit the Al-Rahman Farmers farm in Manungkaling",
+     "detail": "The farmers' cooperative farm in Barangay Manungkaling has grown organic black, brown and red rice since 2013 and promotes 44 sustainable food crops under its MORE SAF 44 programme.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    }
+   ],
+   "eat": [
+    {
+     "title": "Organic black, brown and red rice from Manungkaling",
+     "detail": "The Al-Rahman Farmers cooperative in Barangay Manungkaling, Mamasapano, is the provincial government's named major supplier of organic black, brown and red rice across BARMM.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    }
+   ]
   },
   {
    "slug": "tomb-of-datu-udtog-matalam",
@@ -6934,7 +7374,7 @@
     "This is a grave site; behave as you would at a cemetery and do not walk on the tombs.",
     "Journalists visiting for the anniversaries have been escorted by the military and police; do not go on your own, and coordinate with local authorities first."
    ],
-   "getting_there": null,
+   "getting_there": "In Sitio Masalay, Barangay Salman, Ampatuan, about 10 km from Shariff Aguak on the road the 2009 convoy took from Buluan. Journalists visiting for the anniversaries have been escorted by the army and police.",
    "best_time": "Families and media groups gather at the site for the anniversary around 23 November.",
    "colors": [
     "#4a4a4a",
@@ -7012,7 +7452,18 @@
      "tone": null
     }
    ],
-   "do": [],
+   "do": [
+    {
+     "title": "See the Green Masjid on the national highway",
+     "detail": "The provincial tourism list names the Green Masjid, along the national highway in Shariff Aguak, as the town's sight.",
+     "source": "http://www.maguindanaodelsur.gov.ph/gov/images/tourism/mdsattraction.pdf"
+    },
+    {
+     "title": "Look at the capitol from outside",
+     "detail": "The 3-storey building was completed before the 2007 election, inaugurated in March 2009 and stands 400 m from the Ampatuan clan's mansions.",
+     "source": "https://en.wikipedia.org/wiki/Maguindanao_Provincial_Capitol_(Shariff_Aguak)"
+    }
+   ],
    "eat": []
   },
   {
@@ -7033,7 +7484,7 @@
     "No current source describes the state of the pool or resort; ask in Datu Odin Sinsuat before making the trip."
    ],
    "getting_there": "In Barangay Awang, Datu Odin Sinsuat, near Awang Airport.",
-   "best_time": null,
+   "best_time": "December to April are the driest months (about 20 to 30 mm of rain a month), June to August the wettest.",
    "colors": [
     "#7a8c5a",
     "#d9cfae",
@@ -7041,7 +7492,8 @@
    ],
    "sources": [
     "https://en.wikipedia.org/wiki/Mado_Hot_Spring_National_Park",
-    "https://lawphil.net/executive/proc/proc1939/proc_456_1939.html"
+    "https://lawphil.net/executive/proc/proc1939/proc_456_1939.html",
+    "https://en.wikipedia.org/wiki/Datu_Odin_Sinsuat"
    ],
    "images": [],
    "do": [
@@ -7157,7 +7609,7 @@
     "Go with a local guide arranged through the provincial tourism office."
    ],
    "getting_there": "A brisk 10-minute walk from the trailhead.",
-   "best_time": null,
+   "best_time": "December, for Upi's weeks-long Mëguyaya Festival, a thanksgiving for the harvest; the 23rd edition ended on 22 December 2025 with a street-dance parade.",
    "colors": [
     "#4a5234",
     "#605d4f",
@@ -7166,7 +7618,8 @@
    ],
    "sources": [
     "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html",
-    "https://www.philatlas.com/lists/physical/waterfalls-barmm.html"
+    "https://www.philatlas.com/lists/physical/waterfalls-barmm.html",
+    "https://bangsamoro.gov.ph/news/latest-news/peace-unity-take-center-stage-in-upis-23rd-meguyaya-festival/"
    ],
    "images": [
     {
@@ -7233,7 +7686,13 @@
      "source": "https://www.nomadicexperiences.com/2026/01/a-glimpse-of-mindanaoan-culture-in.html"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Roast corn at the Maisan Na grills",
+     "detail": "During the Mëguyaya Festival, Upi lines a long stretch of roadside with grills for Maisan Na, where everyone roasts corn together.",
+     "source": "https://en.wikipedia.org/wiki/Upi,_Maguindanao_del_Norte"
+    }
+   ]
   },
   {
    "slug": "forever-tulip-garden",
@@ -7253,7 +7712,7 @@
     "Coordinate with the Lamitan City tourism office before visiting places outside the city centre; it arranges guides and transport."
    ],
    "getting_there": "At Sitio Panansangan, Barangay Ubit, Lamitan City.",
-   "best_time": null,
+   "best_time": "Late June, for Lamitan's Lami-Lamihan Festival; the 43rd edition opened its tourism trade fair and gallery walk on 22 June 2026 in Barangay Malinis.",
    "colors": [
     "#d6336c",
     "#f2c94c",
@@ -7263,7 +7722,8 @@
     "https://www.rappler.com/?p=240799",
     "https://interaksyon.philstar.com/trends-spotlights/2019/09/25/155396/lamitan-city-turns-plastic-trash-into-tulips-to-fight-waste/",
     "https://tribune.net.ph/2025/10/01/tabiawan-falls-offers-tranquil-atmosphere",
-    "https://transitpinas.com/basilan-travel-guide/"
+    "https://transitpinas.com/basilan-travel-guide/",
+    "https://bangsamoro.gov.ph/news/latest-news/mtit-basilan-reaffirms-support-to-msmes-tourism-at-lamitans-lami-lamihan-festival/"
    ],
    "images": [
     {
@@ -7330,7 +7790,13 @@
      "source": "https://interaksyon.philstar.com/trends-spotlights/2019/09/25/155396/lamitan-city-turns-plastic-trash-into-tulips-to-fight-waste/"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Brew coffee from Lamitan",
+     "detail": "The Wikivoyage guide to Basilan says not to miss Basilan Brew coffee, sold in Lamitan, 45 minutes from Isabela City.",
+     "source": "https://en.wikivoyage.org/wiki/Basilan"
+    }
+   ]
   },
   {
    "slug": "ambalang-museum",
@@ -7352,7 +7818,7 @@
     "Hand-woven tennun takes weeks to make; pay the asking price rather than haggling.",
     "Ask before photographing weavers at their looms."
    ],
-   "getting_there": null,
+   "getting_there": "Take the fastcraft from Zamboanga to Lamitan (₱150 in 2018) and go first to the City Tourism Office, which runs tours with a guide, an escort and van transport for ₱400 per person.",
    "best_time": "Lamitan's Lami-Lamihan Festival in late June, when Yakan come in full dress to sell their produce and wares.",
    "colors": [
     "#c0392b",
@@ -7362,7 +7828,8 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Ambalang_Ausalin",
     "https://nomadicexperiences.com/2021/09/in-presence-of-national-living-treasure.html",
-    "https://en.wikipedia.org/wiki/Basilan"
+    "https://en.wikipedia.org/wiki/Basilan",
+    "https://transitpinas.com/basilan-travel-guide/"
    ],
    "images": [
     {
@@ -7448,7 +7915,13 @@
      "source": "https://nomadicexperiences.com/2021/09/in-presence-of-national-living-treasure.html"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Basilan Brew coffee from Lamitan",
+     "detail": "The Wikivoyage guide to Basilan says not to miss Basilan Brew coffee, sold in Lamitan, 45 minutes from Isabela City.",
+     "source": "https://en.wikivoyage.org/wiki/Basilan"
+    }
+   ]
   },
   {
    "slug": "kumalarang-river",
@@ -7536,7 +8009,7 @@
     "People live on the island; ask before photographing homes and residents."
    ],
    "getting_there": "From Tandu Banak or Sibutu proper, take a habal-habal (motorcycle taxi) to Tandu Owak, then charter a boat; the crossing takes about 30 minutes.",
-   "best_time": null,
+   "best_time": "Plan around the boats to Sibutu: passenger boats from Bongao to Tandu Banak usually run on Tuesday, Thursday and Saturday, about 3 hours, before the habal-habal and 30-minute boat on to Saluag.",
    "colors": [
     "#e9e4d4",
     "#3fb5c8",
@@ -7617,7 +8090,7 @@
     "Ask before photographing boatbuilders and their yards."
    ],
    "getting_there": "The island is joined to Bongao by road; tricycles and habal-habal run between the airport and Bongao town in about 15 minutes.",
-   "best_time": null,
+   "best_time": "Late afternoon, for the sunset at Yanas Farm in Barangay Lakit-Lakit; a 2022 itinerary has it at 2:30 pm with a ₱50 entry.",
    "colors": [
     "#6b4f2f",
     "#3f8fa6",
@@ -7671,7 +8144,13 @@
      "source": "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pugot from the Bongao Public Market",
+     "detail": "The titan triggerfish, called pugot, is a seafood the locals love, sold with the rest of the day's catch at the Bongao Public Market.",
+     "source": "https://thesmartlocal.ph/tawi-tawi/amp/"
+    }
+   ]
   },
   {
    "slug": "tawi-tawi-island",
@@ -7691,7 +8170,7 @@
     "Register with the tourism office in Bongao before travelling beyond the town, and travel with a local guide."
    ],
    "getting_there": "From Bongao, a jeepney leaves daily from the public market for Panglima Sugala and Languyan.",
-   "best_time": null,
+   "best_time": "Saturday, for the Adlaw Pagtabuh-tabuh barter market at Batu-Batu in Panglima Sugala, which is busy by 6 am.",
    "colors": [
     "#2f5d3a",
     "#7fb59a",
@@ -7701,7 +8180,8 @@
     "https://en.wikipedia.org/wiki/Tawi-Tawi_Island",
     "https://en.wikipedia.org/wiki/Tawi-Tawi",
     "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
-    "https://transitpinas.com/tawi-tawi-panglima-sugala/"
+    "https://transitpinas.com/tawi-tawi-panglima-sugala/",
+    "https://bangsamoro.gov.ph/news/feature-story/keeping-barter-trade-alive-the-adlaw-pagtabuh-tabuh-of-tawi-tawi/"
    ],
    "images": [
     {
@@ -7754,7 +8234,18 @@
      "source": "https://transitpinas.com/tawi-tawi-panglima-sugala/"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Bawlo, junay and putli mandih at Batu-Batu",
+     "detail": "Some sari-sari stores in Batu-Batu Market, Panglima Sugala, sell traditional Tawi-Tawi delicacies such as bawlo, junay and putli mandih.",
+     "source": "https://edgedavao.net/travel/2016/12/the-southernmost-jewel-of-the-philippines-tawi-tawi-2"
+    },
+    {
+     "title": "Gamay or lato seaweed by the tumpok",
+     "detail": "At the Saturday barter market in Batu-Batu, 2 tumpoks of gamay or lato, nearly 2 plates of seaweed, sold for ₱100 in 2022.",
+     "source": "https://transitpinas.com/tawi-tawi-panglima-sugala/"
+    }
+   ]
   },
   {
    "slug": "pahut-dive-site",
@@ -7772,8 +8263,8 @@
     "Dive only with a local dive operator; no source gives depth or current conditions at the wreck.",
     "Leave the wreck as you find it."
    ],
-   "getting_there": null,
-   "best_time": null,
+   "getting_there": "Barangay Pahut is about 5 km from Bongao town. Tricycles and habal-habal are the main way around the island, from a minimum fare of ₱10.",
+   "best_time": "The summer months, when a Tawi-Tawi travel guide says the seas are calm and the skies sunny.",
    "colors": [
     "#1f4e79",
     "#3fa9c9",
@@ -7781,7 +8272,9 @@
    ],
    "sources": [
     "https://www.rappler.com/?p=93689",
-    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/"
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://bangsamoro.gov.ph/news/latest-news/p76-m-investments-in-barmm-to-improve-tawi-tawis-power-electricity/",
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/"
    ],
    "images": [
     {
@@ -7834,7 +8327,13 @@
      "source": "https://www.rappler.com/?p=93689"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pugot and other catch from the Bongao Public Market",
+     "detail": "The titan triggerfish, called pugot, is a seafood the locals love, sold with the rest of the day's catch at the Bongao Public Market.",
+     "source": "https://thesmartlocal.ph/tawi-tawi/amp/"
+    }
+   ]
   },
   {
    "slug": "bongao-bajau-village",
@@ -7854,8 +8353,8 @@
     "This is a living neighbourhood; go with a local guide and ask before photographing people or their homes.",
     "Footbridges can be narrow and uneven."
    ],
-   "getting_there": null,
-   "best_time": null,
+   "getting_there": "In Bongao. Tricycles and habal-habal are the main way around the island, from a minimum fare of ₱10, or hire a tricycle for a half-day or whole-day tour of the town.",
+   "best_time": "Late September. The Lepa Festival, honouring the lepa houseboats the Badjao once lived on before they settled in stilt houses, was first held at Bongao Wharf on 24 September 2019, and the province's Agal-Agal seaweed festival falls on 25 September.",
    "colors": [
     "#787351",
     "#96857e",
@@ -7864,7 +8363,10 @@
    ],
    "sources": [
     "https://nomadicexperiences.com/2018/04/places-to-visit-in-tawi-tawi.html",
-    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/"
+    "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/",
+    "https://transitpinas.com/tawi-tawi-travel-guide-2022/",
+    "https://thesmartlocal.ph/tawi-tawi/amp/",
+    "https://www.sunstar.com.ph/more-articles/6-interesting-things-places-in-tawi-tawi"
    ],
    "images": [
     {
@@ -7908,7 +8410,23 @@
      "source": "https://www.lakwatsero.com/destinations/travel-guide-tawi-tawi/"
     }
    ],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pugot from the Bongao Public Market",
+     "detail": "The titan triggerfish, called pugot, is a seafood the locals love, sold by the fish vendors at the Bongao Public Market.",
+     "source": "https://thesmartlocal.ph/tawi-tawi/amp/"
+    },
+    {
+     "title": "Ribbontail ray cooked with malunggay",
+     "detail": "The blue-spotted ribbontail ray sold in the Bongao market is edible; locals like to cook it with malunggay leaves.",
+     "source": "https://thesmartlocal.ph/tawi-tawi/amp/"
+    },
+    {
+     "title": "Tarambulan at the afternoon food market",
+     "detail": "A folded pancake heaped with chocolate powder, sold by hawkers at Bongao's food market as the fast breaks during Ramadan.",
+     "source": "https://janisnarvas.com/tawi-tawi/"
+    }
+   ]
   },
   {
    "slug": "takumi-butai-memorial-shrine",
@@ -7928,7 +8446,7 @@
     "Treat the shrine as a grave and a war memorial."
    ],
    "getting_there": null,
-   "best_time": null,
+   "best_time": "December, when the Shariff Kabunsuan Festival fills Cotabato City with a fluvial parade, trade fairs and cultural shows.",
    "colors": [
     "#7a6a5a",
     "#d9d2c3",
@@ -7936,11 +8454,47 @@
    ],
    "sources": [
     "https://www.liquisearch.com/cotabato_city/tourist_attractions",
-    "https://en.wikivoyage.org/wiki/Cotabato_City"
+    "https://en.wikivoyage.org/wiki/Cotabato_City",
+    "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
    ],
-   "images": [],
+   "images": [
+    {
+     "url": "/places/takumi-butai-memorial-shrine__1.jpg",
+     "page": "https://laruylaruysinta.blogspot.com/2010/11/takumi-butais-shrine-japanese-hero.html",
+     "author": "LaRuY LaRuY SiNtA (blog)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1024,
+     "height": 768,
+     "caption": "The Takumi Butai Memorial Shrine in Cotabato City: a rounded stone with a peace plaque on a concrete plinth, shaded by trees.",
+     "tone": [
+      89,
+      0.45
+     ]
+    },
+    {
+     "url": "/places/takumi-butai-memorial-shrine__2.jpg",
+     "page": "https://laruylaruysinta.blogspot.com/2010/11/takumi-butais-shrine-japanese-hero.html",
+     "author": "LaRuY LaRuY SiNtA (blog)",
+     "license": "Used with credit",
+     "license_url": null,
+     "width": 1024,
+     "height": 768,
+     "caption": "The plaques on the Takumi Butai Memorial Shrine, reading 'peace' in Japanese above 'City Kotabato, Takumi Butai, 1975 15 August'.",
+     "tone": [
+      93,
+      0.55
+     ]
+    }
+   ],
    "do": [],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pastil, the Maguindanaon rice parcel",
+     "detail": "Maguindanaon food is almost everywhere in Cotabato City; start with pastil, rice topped with shredded chicken adobo and rolled in a banana leaf.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
   },
   {
    "slug": "cotabato-cathedral",
@@ -7988,7 +8542,18 @@
     }
    ],
    "do": [],
-   "eat": []
+   "eat": [
+    {
+     "title": "Pastil, the Maguindanaon rice parcel",
+     "detail": "Maguindanaon food is almost everywhere in Cotabato City; start with pastil, rice topped with shredded chicken adobo and rolled in a banana leaf.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    },
+    {
+     "title": "Grilled meats near Rizal Park on Sinsuat Avenue",
+     "detail": "The barbecue stalls near Rizal Park on Sinsuat Avenue get lively at night, with grilled meats from several vendors lining the road.",
+     "source": "https://langyaw.com/2018/12/17/things-to-do-in-cotabato-city-revisit/"
+    }
+   ]
   },
   {
    "slug": "camp-keithley",
@@ -8008,14 +8573,15 @@
     "The excavation is a research site; see the finds through exhibits rather than entering the trenches."
    ],
    "getting_there": "In Barangay Datu Saber, Marawi City, at the foot of Signal Hill.",
-   "best_time": null,
+   "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm); it is cool all year, with highs of 24 to 26°C.",
    "colors": [
     "#6b5a3a",
     "#cdbb93",
     "#2f5d6b"
    ],
    "sources": [
-    "https://bangsamoro.gov.ph/news/latest-news/camp-keithley-archaeological-project-showcases-findings-in-marawi-exhibit/"
+    "https://bangsamoro.gov.ph/news/latest-news/camp-keithley-archaeological-project-showcases-findings-in-marawi-exhibit/",
+    "https://en.wikipedia.org/wiki/Marawi"
    ],
    "images": [
     {
@@ -8047,8 +8613,25 @@
      ]
     }
    ],
-   "do": [],
-   "eat": []
+   "do": [
+    {
+     "title": "See the excavation finds at the Provincial Library",
+     "detail": "Earthenware, obsidian shards, chert, glass and metal objects from the 4 trenches were shown at the Provincial Library in Barangay Datu Saber on 18 June 2026; ask there whether the finds are still on display.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/camp-keithley-archaeological-project-showcases-findings-in-marawi-exhibit/"
+    },
+    {
+     "title": "Look up at Signal Hill",
+     "detail": "The American post of 1903 was set up at the foot of Signal Hill, in Barangay Matampay, one of the Marawi hills locals call beautiful but mysterious.",
+     "source": "https://en.wikipedia.org/wiki/Marawi"
+    }
+   ],
+   "eat": [
+    {
+     "title": "Bakas from the Marawi markets",
+     "detail": "Bakas, smoked yellowfin tuna, is the base of many Meranaw dishes; Marawi's public markets sell it freshly made, and fill with shoppers before Eid.",
+     "source": "https://bangsamoro.gov.ph/news/latest-news/feast-of-faith-how-the-meranaw-celebrate-eid-al-adha/"
+    }
+   ]
   },
   {
    "slug": "salikata-national-park",
@@ -8094,7 +8677,7 @@
    "before_you_go": [
     "No source describes trails or visitor facilities; ask locally for a guide."
    ],
-   "getting_there": null,
+   "getting_there": "In the mountains of Ditsaan-Ramain and Tagoloan II, about 10 km east-south-east of Marawi.",
    "best_time": null,
    "colors": [
     "#2f5d3a",
@@ -8123,8 +8706,8 @@
    "before_you_go": [
     "Do not swim in the fast-flowing stretches."
    ],
-   "getting_there": null,
-   "best_time": null,
+   "getting_there": "In Marawi the river runs between Barangays Saduc and Lilod. From there it flows 36.5 km past Linamon to Iligan, where it splits for Maria Cristina Falls and Tinago Falls.",
+   "best_time": "December to April are the least rainy months at Marawi (about 140 to 185 mm a month) and May to July the wettest (330 to 415 mm).",
    "colors": [
     "#2a5f7a",
     "#8cc0c9",
@@ -8132,7 +8715,8 @@
    ],
    "sources": [
     "https://en.wikipedia.org/wiki/Agus_River",
-    "https://en.wikivoyage.org/wiki/Lanao_del_Sur"
+    "https://en.wikivoyage.org/wiki/Lanao_del_Sur",
+    "https://en.wikipedia.org/wiki/Marawi"
    ],
    "images": [
     {
@@ -8150,7 +8734,13 @@
      ]
     }
    ],
-   "do": [],
+   "do": [
+    {
+     "title": "See where it leaves Marawi",
+     "detail": "The river flows between Saduc and Lilod in Marawi City and is called the swiftest river in the country.",
+     "source": "https://en.wikivoyage.org/wiki/Lanao_del_Sur"
+    }
+   ],
    "eat": []
   }
  ],

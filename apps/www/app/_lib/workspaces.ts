@@ -1,4 +1,5 @@
 import type { Workspace } from '../_components/workspace-index'
+import { SECTORS_LISTED, sectors } from './sectors'
 
 /**
  * What a reader is looking for, in the order the front page groups them.
@@ -17,6 +18,12 @@ export const TOPICS = [
 ] as const
 
 export type Topic = (typeof TOPICS)[number]['key']
+
+const SECTOR_TOPIC: Record<string, Topic> = {
+	'business-economy': 'money',
+	'taxes-finance': 'money',
+	'law-justice': 'government',
+}
 
 /** A record of a different kind: a page on this site rather than a workspace of its own. */
 export type Project = {
@@ -121,6 +128,10 @@ export const workspaces: Workspace[] = [
 		// the body that published it, and this one cannot make that promise.
 		state: 'live',
 	},
+	// The sector workspaces stay off the front page everywhere for now (user decision); their pages open by URL in development.
+	...(SECTORS_LISTED ? sectors : []).map(
+		(s): Workspace => ({ label: s.title, topic: SECTOR_TOPIC[s.slug] ?? 'services', href: `/sectors/${s.slug}`, blurb: s.lead, measure: 'In development', state: 'live' }),
+	),
 ]
 
 /** The projects: records of a different kind, each a page on this site rather than a workspace of its own. */
