@@ -142,9 +142,9 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 						</span>
 					))}
 				</p>
-				<div className='relative mt-4 flex h-48 items-stretch gap-[3px] pr-9 sm:gap-1'>
+				<div className='relative mt-4 flex h-48 items-stretch gap-[3px] sm:gap-1 sm:pr-9'>
 					<span aria-hidden='true' className='pointer-events-none absolute inset-x-0 z-[1] border-t border-dashed border-white/70' style={{ bottom: '50%' }}>
-						<span className='num absolute -top-2 right-0 text-[0.5625rem] leading-none text-[var(--ink-mute)]'>50%</span>
+						<span className='num absolute -top-2 right-0 hidden text-[0.5625rem] leading-none text-[var(--ink-mute)] sm:inline'>50%</span>
 					</span>
 					{perSitting.map(({ s, seated, present, absent, excused, rate }) => (
 						<Link

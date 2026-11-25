@@ -1,3 +1,5 @@
+const isSeal = (src: string) => src.endsWith('/BTA-logo.png')
+
 /**
  * A member's portrait, or a stand-in for one.
  *
@@ -19,6 +21,8 @@ export function MemberAvatar({
 	// official roster, and leaves room for a real headshot later. The large
 	// size heads a profile, where the person is the subject of the page, so it
 	// is sized to be looked at rather than glanced past.
+	// Some records give the seal itself as the photograph; frame it as the stand-in, not as a face.
+	if (src && isSeal(src)) src = undefined
 	const dimensions = size === 'lg' ? 'size-32 text-4xl sm:size-40 sm:text-5xl' : size === 'xs' ? 'size-11 text-sm' : 'size-14 text-base'
 
 	if (src) {
@@ -54,6 +58,7 @@ export function MemberAvatar({
 /** A Member's face at the head of a card, as the landing site's Directory heads its own: round, centred, larger than
  *  the list avatar. Without a photograph, the Transition Authority's seal sits in the circle instead. */
 export function MemberPortrait({ name, src }: { name: string; src?: string }) {
+	if (src && isSeal(src)) src = undefined
 	return (
 		<span className='grid size-24 shrink-0 place-items-center overflow-hidden rounded-full border border-[var(--rule)] bg-[var(--paper-2)] transition duration-500 group-hover:scale-105'>
 			{/* eslint-disable-next-line @next/next/no-img-element -- portraits are local files of mixed sizes */}
