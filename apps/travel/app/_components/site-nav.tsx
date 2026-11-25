@@ -86,7 +86,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`absolute right-0 top-full z-40 mt-1  border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
+						className={`absolute right-0 top-full z-40 mt-1  border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] ${width}`}
 					>
 						{children(() => setOpen(false))}
 					</motion.div>
@@ -179,8 +179,7 @@ export function SiteNav() {
 										onClick={close}
 										className='nav-menu-item'
 									>
-										<span>{area.name}</span>
-										<span className='text-[0.65625rem] text-[var(--ink-mute)]'>{area.base}</span>
+										{area.name}
 									</Link>
 								))
 							}

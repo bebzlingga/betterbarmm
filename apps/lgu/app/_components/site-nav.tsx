@@ -29,32 +29,12 @@ const finances = [
 	{ href: '/regional-budget', label: 'Regional budget', note: 'What the region spends where', icon: BankIcon },
 ] as const
 
-/** The dropdowns' look, as the landing site, legislation and budget draw theirs (user decision): a heading, then a row
- *  per page with its icon on a crimson tile, its name and a line on what it holds, the open page marked. */
-function MenuHeading({ children }: { children: React.ReactNode }) {
-	return <p className='border-b border-[var(--rule-soft)] px-4 pb-2.5 pt-3.5 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{children}</p>
+/** The dropdowns' look (user decision): the pages by name, nothing more. */
+function RowFace({ label, on }: { label: string; on: boolean }) {
+	return <span className={on ? 'text-[var(--accent)]' : undefined}>{label}</span>
 }
 
-function RowFace({ label, note, icon: Glyph, on }: { label: string; note?: string; icon: Icon; on: boolean }) {
-	return (
-		<>
-			<span
-				className={`grid size-9 shrink-0 place-items-center transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover/item:bg-[var(--accent)] group-hover/item:text-white'}`}
-			>
-				<Glyph size={18} weight='duotone' aria-hidden='true' />
-			</span>
-			<span className='min-w-0 flex-1'>
-				<span className={`block text-[0.875rem] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>{label}</span>
-				{note ? <span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{note}</span> : null}
-			</span>
-			{on ? null : (
-				<ArrowRightIcon size={13} weight='bold' aria-hidden='true' className='shrink-0 -translate-x-1 text-[var(--accent)] opacity-0 transition group-hover/item:translate-x-0 group-hover/item:opacity-100' />
-			)}
-		</>
-	)
-}
-
-const ROW = 'group/item flex items-center gap-3 px-2.5 py-2.5 transition-colors hover:bg-[var(--paper-2)]'
+const ROW = 'nav-menu-item'
 
 /**
  * A menu that opens on click and closes on Escape or any pointer landing
@@ -125,7 +105,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`absolute right-0 top-full z-40 mt-2 overflow-hidden border border-[var(--rule)] border-t-2 border-t-[var(--accent)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
+						className={`absolute right-0 top-full z-40 mt-2 overflow-hidden p-1 border border-[var(--rule)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
 					>
 						{children(() => setOpen(false))}
 					</motion.div>
@@ -218,20 +198,17 @@ export function SiteNav() {
 							Ordinances
 						</Link>
 
-						<Menu label='LGU profiles' active={isProvinceActive} width='w-[36rem]'>
+						<Menu label='LGU profiles' active={isProvinceActive} width='w-[26rem]'>
 							{(close) => (
 								<>
-									<MenuHeading>LGU profiles · the region, area by area</MenuHeading>
-									<div className='grid grid-cols-2 p-1.5'>
+									<div className='grid grid-cols-2'>
 										<Link href='/' onClick={close} className={ROW}>
-											<RowFace label='All provinces and areas' note='The region at a glance' icon={MapTrifoldIcon} on={pathname === '/'} />
+											<RowFace label='All provinces and areas' on={pathname === '/'} />
 										</Link>
 										{lguProvinces.map((province) => (
 											<Link key={province.slug} href={areaHref(province)} onClick={close} className={ROW}>
 												<RowFace
 													label={province.name}
-													note={`${province.municipalities.length} ${province.municipalities.length === 1 ? 'city' : 'cities and towns'} · ${province.barangayCount.toLocaleString('en-PH')} barangays`}
-													icon={MapPinIcon}
 													on={pathname.startsWith(areaHref(province))}
 												/>
 											</Link>
@@ -244,14 +221,13 @@ export function SiteNav() {
 						{/* The directory answers which unit you are in; the guides answer
 						    what it is for and which law it runs on, which is the question a
 						    reader who is not already a local government officer arrives with. */}
-						<Menu label='Learn' active={isGuideActive} width='w-[21rem]'>
+						<Menu label='Learn' active={isGuideActive} width='w-[15rem]'>
 							{(close) => (
 								<>
-									<MenuHeading>Learn · how local government works</MenuHeading>
-									<div className='grid p-1.5'>
+									<div className='grid'>
 										{guides.map((item) => (
 											<Link key={item.href} href={item.href} onClick={close} className={ROW}>
-												<RowFace label={item.label} note={item.note} icon={item.icon} on={pathname.startsWith(item.href)} />
+												<RowFace label={item.label} on={pathname.startsWith(item.href)} />
 											</Link>
 										))}
 									</div>
@@ -259,14 +235,13 @@ export function SiteNav() {
 							)}
 						</Menu>
 
-						<Menu label='Finances' active={isFinanceActive} width='w-[21rem]'>
+						<Menu label='Finances' active={isFinanceActive} width='w-[15rem]'>
 							{(close) => (
 								<>
-									<MenuHeading>Finances · where the money goes</MenuHeading>
-									<div className='grid p-1.5'>
+									<div className='grid'>
 										{finances.map((item) => (
 											<Link key={item.href} href={item.href} onClick={close} className={ROW}>
-												<RowFace label={item.label} note={item.note} icon={item.icon} on={pathname.startsWith(item.href)} />
+												<RowFace label={item.label} on={pathname.startsWith(item.href)} />
 											</Link>
 										))}
 									</div>

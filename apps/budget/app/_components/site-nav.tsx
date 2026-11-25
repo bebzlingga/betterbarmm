@@ -52,32 +52,12 @@ const learn = [
 	{ href: '/faq', label: 'FAQs', note: 'What the words mean', icon: QuestionIcon },
 ] as const
 
-/** The dropdowns' look, as the landing site and the legislation workspace draw theirs (user decision): a heading, then a
- *  row per page with its icon on a crimson tile, its name and a line on what it holds, the open page marked. */
-function MenuHeading({ children }: { children: React.ReactNode }) {
-	return <p className='border-b border-[var(--rule-soft)] px-4 pb-2.5 pt-3.5 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{children}</p>
+/** The dropdowns' look (user decision): the pages by name, nothing more. */
+function RowFace({ label, on }: { label: string; on: boolean }) {
+	return <span className={on ? 'text-[var(--accent)]' : undefined}>{label}</span>
 }
 
-function RowFace({ label, note, icon: Glyph, on }: { label: string; note?: string; icon: Icon; on: boolean }) {
-	return (
-		<>
-			<span
-				className={`grid size-9 shrink-0 place-items-center transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover/item:bg-[var(--accent)] group-hover/item:text-white'}`}
-			>
-				<Glyph size={18} weight='duotone' aria-hidden='true' />
-			</span>
-			<span className='min-w-0 flex-1'>
-				<span className={`block text-[0.875rem] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>{label}</span>
-				{note ? <span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{note}</span> : null}
-			</span>
-			{on ? null : (
-				<ArrowRightIcon size={13} weight='bold' aria-hidden='true' className='shrink-0 -translate-x-1 text-[var(--accent)] opacity-0 transition group-hover/item:translate-x-0 group-hover/item:opacity-100' />
-			)}
-		</>
-	)
-}
-
-const ROW = 'group/item flex items-center gap-3 px-2.5 py-2.5 transition-colors hover:bg-[var(--paper-2)]'
+const ROW = 'nav-menu-item'
 
 /**
  * A menu that opens on click and closes on Escape or any pointer landing
@@ -149,7 +129,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`absolute right-0 top-full z-40 mt-2 overflow-hidden border border-[var(--rule)] border-t-2 border-t-[var(--accent)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
+						className={`absolute right-0 top-full z-40 mt-2 overflow-hidden p-1 border border-[var(--rule)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
 					>
 						{children(() => setOpen(false))}
 					</motion.div>
@@ -215,15 +195,14 @@ export function SiteNav() {
 						<Menu
 							label='The budget'
 							active={sections.some((section) => pathname.startsWith(section.href))}
-							width='w-[21rem]'
+							width='w-[15rem]'
 						>
 							{(close) => (
 								<>
-									<MenuHeading>The budget · the Act, cut five ways</MenuHeading>
-									<div className='grid p-1.5'>
+									<div className='grid'>
 										{sections.map((section) => (
 											<YearLink key={section.href} href={section.href} onClick={close} className={ROW}>
-												<RowFace label={section.label} note={section.note} icon={section.icon} on={pathname.startsWith(section.href)} />
+												<RowFace label={section.label} on={pathname.startsWith(section.href)} />
 											</YearLink>
 										))}
 									</div>
@@ -231,14 +210,13 @@ export function SiteNav() {
 							)}
 						</Menu>
 
-						<Menu label='Learn' active={learn.some((item) => pathname.startsWith(item.href))} width='w-[19rem]'>
+						<Menu label='Learn' active={learn.some((item) => pathname.startsWith(item.href))} width='w-[13rem]'>
 							{(close) => (
 								<>
-									<MenuHeading>Learn · how the budget works</MenuHeading>
-									<div className='grid p-1.5'>
+									<div className='grid'>
 										{learn.map((item) => (
 											<YearLink key={item.href} href={item.href} onClick={close} className={ROW}>
-												<RowFace label={item.label} note={item.note} icon={item.icon} on={pathname.startsWith(item.href)} />
+												<RowFace label={item.label} on={pathname.startsWith(item.href)} />
 											</YearLink>
 										))}
 									</div>
@@ -260,7 +238,7 @@ export function SiteNav() {
 						    the same `Menu` as the bar's other dropdowns, so it closes on
 						    Escape and on a pointer landing outside it like they do. */}
 						<div className='hidden lg:block'>
-							<Menu label={`FY ${fiscalYear}`} width='w-[17rem]'>
+							<Menu label={`FY ${fiscalYear}`} width='w-[12rem]'>
 								{/* Straight off `FISCAL_YEARS`, not a list kept beside it. The
 								    hand-written version of this said FY 2020 was "not yet
 								    extracted" for a while after it was — a menu that describes
@@ -272,21 +250,20 @@ export function SiteNav() {
 								    to point at. */}
 								{(close) => (
 									<>
-										<MenuHeading>Fiscal year · switch the Act</MenuHeading>
-										<div className='grid p-1.5'>
+										<div className='grid'>
 											{FISCAL_YEARS.map((year) => {
 												const current = year === fiscalYear
 												if (current) {
 													return (
-														<p key={year} aria-current='true' className='flex items-center gap-3 px-2.5 py-2'>
-															<RowFace label={`FY ${year}`} note='Showing now' icon={CalendarBlankIcon} on />
+														<p key={year} aria-current='true' className='nav-menu-item'>
+															<RowFace label={`FY ${year}`} on />
 														</p>
 													)
 												}
 												/* Stays on the page it was clicked from, with the year swapped; the latest year is the bare URL. */
 												return (
-													<Link key={year} href={year === LATEST_YEAR ? pathname : `${pathname}?fy=${year}`} onClick={close} className={`${ROW} py-2`}>
-														<RowFace label={`FY ${year}`} icon={CalendarBlankIcon} on={false} />
+													<Link key={year} href={year === LATEST_YEAR ? pathname : `${pathname}?fy=${year}`} onClick={close} className={ROW}>
+														<RowFace label={`FY ${year}`} on={false} />
 													</Link>
 												)
 											})}

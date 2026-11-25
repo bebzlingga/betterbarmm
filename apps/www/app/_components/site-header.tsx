@@ -113,7 +113,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`nav-menu absolute right-0 top-full z-40 mt-2 overflow-hidden border border-[var(--rule)] border-t-2 border-t-[var(--accent)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
+						className={`nav-menu absolute right-0 top-full z-40 mt-2 overflow-hidden border border-[var(--rule)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
 					>
 						{/* The brass hairline at the head of the panel is the same mark the
 						    section kickers use, so a dropdown reads as part of the page's
@@ -126,48 +126,23 @@ function Menu({
 	)
 }
 
-/** A dropdown's contents: a heading, a row per page — its icon, its name and what it holds, the open page marked —
- *  and, where there is one, a way to the section's own front page at the foot. */
-function MenuPanel({ title, items, foot, close }: { title: string; items: readonly { label: string; href: string; icon: Icon; note: string }[]; foot?: { label: string; href: string }; close: () => void }) {
+/** A dropdown's contents (user decision): the pages by name, the open one marked, and where there is one a way to
+ *  the section's own front page at the foot. */
+function MenuPanel({ items, foot, close }: { items: readonly { label: string; href: string }[]; foot?: { label: string; href: string }; close: () => void }) {
 	const path = usePathname()
 	return (
-		<>
-			<p className='border-b border-[var(--rule-soft)] px-4 pb-2.5 pt-3.5 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{title}</p>
-			<div className='grid p-1.5'>
-				{items.map(({ label, href, icon: Glyph, note }) => {
-					const on = path === href
-					return (
-						<Link
-							key={href}
-							href={href}
-							onClick={close}
-							aria-current={on ? 'page' : undefined}
-							className='group/item flex items-center gap-3 px-2.5 py-2.5 transition-colors hover:bg-[var(--paper-2)]'
-						>
-							<span
-								className={`grid size-9 shrink-0 place-items-center transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover/item:bg-[var(--accent)] group-hover/item:text-white'}`}
-							>
-								<Glyph size={18} weight='duotone' aria-hidden='true' />
-							</span>
-							<span className='min-w-0 flex-1'>
-								<span className={`block text-[0.875rem] font-semibold leading-tight ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)]'}`}>{label}</span>
-								<span className='mt-0.5 block text-[0.75rem] leading-snug text-[var(--ink-3)]'>{note}</span>
-							</span>
-							<ArrowRightIcon size={13} weight='bold' aria-hidden='true' className='shrink-0 -translate-x-1 text-[var(--accent)] opacity-0 transition group-hover/item:translate-x-0 group-hover/item:opacity-100' />
-						</Link>
-					)
-				})}
-			</div>
+		<div className='p-1'>
+			{items.map(({ label, href }) => (
+				<Link key={href} href={href} onClick={close} aria-current={path === href ? 'page' : undefined} className='nav-menu-item'>
+					{label}
+				</Link>
+			))}
 			{foot ? (
-				<Link
-					href={foot.href}
-					onClick={close}
-					className='flex items-center justify-between border-t border-[var(--rule-soft)] bg-[var(--paper-2)] px-4 py-3 text-[0.8125rem] font-semibold text-[var(--ink)] transition-colors hover:text-[var(--accent)]'
-				>
-					{foot.label} <ArrowRightIcon size={13} weight='bold' aria-hidden='true' />
+				<Link href={foot.href} onClick={close} className='nav-menu-item mt-1 border-t border-[var(--rule-soft)] text-[var(--ink)]'>
+					{foot.label}
 				</Link>
 			) : null}
-		</>
+		</div>
 	)
 }
 
@@ -226,10 +201,9 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 						{/* No frame or fill — the links are grouped by proximity alone. */}
 						<nav className='hidden items-center justify-end gap-1 md:flex'>
-							<Menu label='Discover BARMM' active={activeItem === 'discover'} width='w-[23rem]'>
+							<Menu label='Discover BARMM' active={activeItem === 'discover'} width='w-[16rem]'>
 								{(close) => (
 									<MenuPanel
-										title='Discover BARMM · the chapters'
 										items={discoverSections.filter((item) => 'icon' in item)}
 										foot={{ label: 'All chapters', href: '/discover' }}
 										close={close}
@@ -239,8 +213,8 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 							{secondaryLinks.map((item) =>
 								'menu' in item ? (
-									<Menu key={item.href} label={item.label} active={activeItem === item.key} width='w-[23rem]'>
-										{(close) => <MenuPanel title='Programs & services' items={item.menu} close={close} />}
+									<Menu key={item.href} label={item.label} active={activeItem === item.key} width='w-[16rem]'>
+										{(close) => <MenuPanel items={item.menu} close={close} />}
 									</Menu>
 								) : (
 									<Link key={item.href} href={item.href} data-active={activeItem === item.key} className='nav-item'>

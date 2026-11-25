@@ -1186,14 +1186,17 @@
   color: var(--ink-2);
   transition:
     background-color 0.16s var(--ease),
-    color 0.16s var(--ease),
-    padding-left 0.22s var(--ease-swift);
+    color 0.16s var(--ease);
 }
 
 .nav-menu-item:hover {
   background: var(--paper-2);
   color: var(--ink);
-  padding-left: 1.15rem;
+}
+
+/* The page the reader is on, in crimson. */
+.nav-menu-item[aria-current='page'] {
+  color: var(--accent);
 }
 
 /* The reading-progress hairline under the bar. Width is a scaleX driven by

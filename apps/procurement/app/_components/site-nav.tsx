@@ -14,30 +14,28 @@ const groups = [
 	{
 		label: 'Records',
 		pages: [
-			{ href: '/', label: 'Entities', note: 'The offices that buy' },
-			{ href: '/notices', label: 'Bid notices', note: 'What they put out to bid' },
-			{ href: '/suppliers', label: 'Suppliers', note: 'Who wins the contracts' },
+			{ href: '/', label: 'Entities' },
+			{ href: '/notices', label: 'Bid notices' },
+			{ href: '/suppliers', label: 'Suppliers' },
 		],
 	},
 	{
 		label: 'Analysis',
 		pages: [
-			{ href: '/follow-the-peso', label: 'Follow the peso', note: 'Budget, bid out, awarded' },
+			{ href: '/follow-the-peso', label: 'Follow the peso' },
 		],
 	},
 	{
 		label: 'Guide',
 		pages: [
-			{ href: '/how-it-works', label: 'How it works', note: 'Bidding, thresholds and modes' },
-			{ href: '/sources', label: 'Sources', note: 'Where the figures come from' },
+			{ href: '/how-it-works', label: 'How it works' },
+			{ href: '/sources', label: 'Sources' },
 		],
 	},
 ]
 
 const pages = groups.flatMap((g) => g.pages)
 
-const MENU_NAME = 'text-[0.84375rem] font-bold tracking-[-0.02em] text-[var(--ink)]'
-const MENU_NOTE = 'text-[0.6875rem] font-semibold text-[var(--ink-mute)]'
 
 /** Opens on click; closes on Escape or a pointer landing outside it. The same
  *  menu as the budget workspace's bar. */
@@ -90,7 +88,7 @@ function Menu({ label, active, children }: { label: string; active: boolean; chi
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className='absolute right-0 top-full z-40 mt-1 w-[17rem] border border-[var(--ink)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'
+						className='absolute right-0 top-full z-40 mt-1 w-[17rem] border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'
 					>
 						{children(() => setOpen(false))}
 					</motion.div>
@@ -182,8 +180,7 @@ export function SiteNav() {
 											aria-current={isActive(page.href) ? 'page' : undefined}
 											className='nav-menu-item'
 										>
-											<span className={MENU_NAME}>{page.label}</span>
-											<span className={MENU_NOTE}>{page.note}</span>
+											{page.label}
 										</Link>
 									))
 								}
