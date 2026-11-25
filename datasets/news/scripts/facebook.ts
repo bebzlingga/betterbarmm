@@ -4,7 +4,8 @@ import { aboutTheRegion, type FetchedItem } from '../../../packages/db/src/news'
    Radyo Bida Cotabato City, NDBC's station in the region, as a source). Facebook gives a page no feed and loads its
    posts as the page scrolls, so this drives the Mac's own Chrome, headless, over its DevTools socket: no browser
    library to install. Each post keeps its own link; the first line is its headline and the rest its teaser, the
-   station's words. Live programmes are not news and are left out; posts must name the region, as Google News's must. */
+   station's words. Live programmes are not news and are left out; so is the station talking to its listeners (user
+   decision); posts must name the region, as Google News's must. */
 
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36'
@@ -12,6 +13,12 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 export const FACEBOOK_PAGES = [{ name: 'DXMS Radyo Bida', url: 'https://www.facebook.com/profile.php?id=100068735708353' }]
 
 type Post = { head: string; text: string; links: string[] }
+
+/* The station talking to its listeners rather than reporting: "MALAKAS ang buhos ng ulan ngayong gabi sa Cotabato
+   City. Kumusta diyan sa inyo mga Ka-Bida? Ingat po tayo!". A short post that greets, asks after, or signs off to
+   the audience ("Ka-Bida" is the station's name for them) is not news (user decision), whatever place it names. */
+const TO_LISTENERS = /\bka-?bida\b|\bkumusta\b|\bingat\s+po\b|^(magandang|good)\s+(umaga|tanghali|hapon|gabi|araw|morning|afternoon|evening)\b|\bstay\s+safe\b/i
+export const chatter = (text: string) => text.length < 220 && TO_LISTENERS.test(text)
 
 /* Runs in the page: scroll down the posts, opening every "See more" and reading each post on the way. Without an
    account Facebook shows a page's latest dozen or so posts and then a sign-in wall; the read stops there. On a page
@@ -105,6 +112,7 @@ export async function readFacebookPage(page: { name: string; url: string }, scro
 		for (const post of posts) {
 			// A live programme: "was live" or "is live" over it, or, once it ends, its listing ("Host: … Time: 4:00PM - 5:00PM").
 			if (/ (was|is) live\b/.test(post.head) || /^Host:/m.test(post.text) || !post.text) continue
+			if (chatter(post.text)) continue
 			const lines = post.text.replace(/‎/g, '').replace(/\s*See less$/, '').replace(/…?\s*See more$/, '').split('\n').map((l) => l.trim()).filter(Boolean)
 			const title = lines[0]!
 			const rest = lines.slice(1).join(' ')
@@ -130,6 +138,14 @@ export async function readFacebookPage(page: { name: string; url: string }, scro
 	}
 }
 
-if (import.meta.main) {
+if (import.meta.main && process.argv[2] === 'check') {
+	// `bun datasets/news/scripts/facebook.ts check`: the chatter rule on the post that prompted it, and on reports it must keep.
+	const yes = ['MALAKAS ang buhos ng ulan ngayong gabi sa Cotabato City. Kumusta diyan sa inyo mga Ka-Bida? Ingat po tayo!', 'Magandang umaga, Cotabato City! Ingat po sa biyahe.']
+	const no = ['LOOK: Isang bahay sa Mother Tamontaka, Cotabato City, nasunog ngayong tanghali.', 'PINAKAMATAAS na inflation rate sa bansa, naitala ng Bangsamoro Region, ayon sa Phil. Statistics Authority',
+		'UPDATE: Dalawang sundalo, biktima ng pamamaril kahapon sa Sultan Kudarat, Maguindanao del Norte; Isa patay, isa kritikal. ' + 'Ang mga biktima ay sakay ng isang motorsiklo nang pagbabarilin sa Brgy. Crossing Simuay. '.repeat(3) + 'Ingat po tayo mga Ka-Bida.']
+	for (const t of yes) if (!chatter(t)) throw new Error(`kept as news: ${t}`)
+	for (const t of no) if (chatter(t)) throw new Error(`struck as chatter: ${t.slice(0, 60)}`)
+	console.log('ok: chatter rule')
+} else if (import.meta.main) {
 	console.log(JSON.stringify(await readFacebookPage(FACEBOOK_PAGES[0]!, Number(process.argv[2] ?? 4)), null, 1))
 }
