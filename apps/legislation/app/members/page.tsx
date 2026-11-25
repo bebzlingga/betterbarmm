@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Metadata } from 'next'
 import { MemberBrowser } from '../_components/member-browser'
 import { RegistryBand } from '../_components/registry-band'
@@ -26,7 +27,13 @@ export default function MembersPage() {
 						they held, and the measures they are credited on.
 					</>
 				}
-			/>
+			>
+				<div className='mt-8'>
+					<Link href='/attendance' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[0.65625rem]'>
+						Attendance, Member by Member
+					</Link>
+				</div>
+			</RegistryBand>
 
 			<MemberBrowser dataset={dataset} />
 

@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "record_type": "session_calendar",
+  "parliament": "First Bangsamoro Parliament",
+  "session": "First Regular Session",
+  "period": {
+   "start": "2026-10-30",
+   "end": "2027-09-16"
+  },
+  "source": {
+   "title": "Proposed Resolution No. 02, A Resolution Setting the Calendar of Sessions for the First Regular Session of the First Bangsamoro Parliament",
+   "introduced_by": "The Government of the Day",
+   "received": "2026-11-24",
+   "status": "proposed",
+   "file": "/documents/first-parliament-proposed-resolution-02-calendar.pdf"
+  },
+  "basis": [
+   "Republic Act No. 11054 (Bangsamoro Organic Law), Article VII, Sections 22 and 25",
+   "Republic Act No. 12317"
+  ],
+  "note": "Read from the scanned resolution, received by Parliament's Bills and Index Division on 24 November 2026; the 'Adopted' line on this copy is blank. The resolution sets the days each sitting week resumes and adjourns; the days between are counted as sitting days. It is subject to change as Parliament may determine. Parliament also convened on 24 November 2026, under Memorandum Order No. 1126-008, to adopt its Rules of Procedure and this calendar."
+ },
+ "sittings": [
+  {
+   "start": "2026-10-30",
+   "end": "2026-10-30",
+   "label": "Opening of the session",
+   "note": "Inaugural session of the first elected Members"
+  },
+  {
+   "start": "2026-11-24",
+   "end": "2026-11-24",
+   "label": "Special sitting",
+   "note": "To adopt the Parliamentary Rules of Procedure and the calendar of sessions (Memorandum Order No. 1126-008)"
+  },
+  {
+   "start": "2026-12-09",
+   "end": "2026-12-10",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-01-05",
+   "end": "2027-01-07",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-01-12",
+   "end": "2027-01-14",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-02-02",
+   "end": "2027-02-04",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-04-06",
+   "end": "2027-04-08",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-04-13",
+   "end": "2027-04-15",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-05-04",
+   "end": "2027-05-06",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-05-11",
+   "end": "2027-05-13",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-06-01",
+   "end": "2027-06-03",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-06-08",
+   "end": "2027-06-10",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-07-06",
+   "end": "2027-07-08",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-07-13",
+   "end": "2027-07-15",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-08-03",
+   "end": "2027-08-05",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-08-10",
+   "end": "2027-08-12",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-09-07",
+   "end": "2027-09-09",
+   "label": "Sitting week"
+  },
+  {
+   "start": "2027-09-14",
+   "end": "2027-09-16",
+   "label": "Mandatory adjournment"
+  }
+ ]
+}

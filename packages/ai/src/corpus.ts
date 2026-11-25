@@ -43,6 +43,7 @@ import { joinRenames, type Line } from '@betterbarmm/budget-data/trends'
 import blgcFile from '../../../datasets/bills/blgc.json'
 import blgcIrrFile from '../../../datasets/bills/blgc-irr.json'
 import readingsFile from '../../../datasets/bills/readings.json'
+import calendarFile from '../../../datasets/bills/session-calendar.json'
 import ballotFile from '../../../datasets/election/election.min.json'
 import resultsFile from '../../../datasets/election/election-results.json'
 import { more, MORE_ASKED } from './more'
@@ -1052,6 +1053,8 @@ const ASKED_FOR: Record<string, string> = {
 	Rule: 'rule condition requirement provision allowed permitted must shall restriction report released conditions',
 	Program: 'budget appropriation appropriations program program spending funds fund allocation',
 	Project: 'project projects built building build construction road roads bridge infrastructure budget appropriation funds',
+	'Session calendar': 'schedule calendar session sitting sittings when sit meet plenary resume adjourn recess date dates',
+	Attendance: 'attendance absent absence present roll call showed up member members mp',
 	Election: 'election result results vote votes voted turnout seat seats parliament won winner chief minister majority hung chamber proclaimed',
 	Party: 'party parties seat seats won votes ballot bloc coalition stood contested',
 	Member: 'member members mp mps parliament elected win won seat nominee nominees representative name names sitting',
@@ -1235,6 +1238,34 @@ function library(): Entry[] {
 	return rows
 }
 
+/**
+ * When Parliament sits, and who turned up when it did. The calendar is one
+ * row with every sitting in it; attendance is a pointer to the dialog that
+ * counts it Member by Member from the journals.
+ */
+function sittings(): Entry[] {
+	const day = (iso: string) => new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+	const list = calendarFile.sittings.map((s) => (s.start === s.end ? day(s.start) : `${day(s.start)} to ${day(s.end)}`)).join('; ')
+	return [
+		{
+			space: 'legislation',
+			kind: 'Session calendar',
+			title: `${calendarFile.meta.parliament}: calendar of sessions`,
+			note: `The ${calendarFile.meta.session}, ${day(calendarFile.meta.period.start)} to ${day(calendarFile.meta.period.end)}, as Proposed Resolution No. 02 sets it, subject to change. Sittings: ${list}.`,
+			href: `${SITE.legislation}/schedule`,
+			text: `session calendar schedule sitting sittings plenary when does parliament sit meet resume adjourn adjournment recess ${calendarFile.meta.parliament} ${list}`.toLowerCase(),
+		},
+		{
+			space: 'legislation',
+			kind: 'Attendance',
+			title: 'Attendance of the Bangsamoro Transition Authority, 2019–2023',
+			note: 'How often each Member was present, absent, or on leave or official business at the sittings with a published journal, counted from the roll call each journal records.',
+			href: `${SITE.legislation}/attendance`,
+			text: 'attendance attended absent absence absences present roll call quorum who showed up member members mp mps first transition authority bta1 bta2 journal sittings'.toLowerCase(),
+		},
+	]
+}
+
 export function corpus(): Entry[] {
 	if (!built) {
 		built = [
@@ -1245,6 +1276,7 @@ export function corpus(): Entry[] {
 			...officeYears(),
 			...budget(),
 			...election(),
+			...sittings(),
 			...travel(),
 			...local(),
 			...primer(),

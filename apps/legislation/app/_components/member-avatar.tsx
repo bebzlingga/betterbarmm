@@ -13,13 +13,13 @@ export function MemberAvatar({
 }: {
 	name: string
 	src?: string
-	size?: 'sm' | 'lg'
+	size?: 'xs' | 'sm' | 'lg'
 }) {
 	// Portrait proportions rather than a circle — a squared frame suits an
 	// official roster, and leaves room for a real headshot later. The large
 	// size heads a profile, where the person is the subject of the page, so it
 	// is sized to be looked at rather than glanced past.
-	const dimensions = size === 'lg' ? 'size-32 text-4xl sm:size-40 sm:text-5xl' : 'size-14 text-base'
+	const dimensions = size === 'lg' ? 'size-32 text-4xl sm:size-40 sm:text-5xl' : size === 'xs' ? 'size-11 text-sm' : 'size-14 text-base'
 
 	if (src) {
 		return (
@@ -36,7 +36,7 @@ export function MemberAvatar({
 	// to a portrait frame reads as a badly cropped photograph.
 	return (
 		<span
-			className={`${dimensions} inline-flex shrink-0 select-none items-center justify-center rounded-[var(--radius)] border border-[var(--rule)] bg-[var(--paper-2)] p-2.5`}
+			className={`${dimensions} inline-flex shrink-0 select-none items-center justify-center rounded-[var(--radius)] border border-[var(--rule)] bg-[var(--paper-2)] ${size === 'xs' ? 'p-1.5' : 'p-2.5'}`}
 			title={`No photograph published for ${name}`}
 		>
 			{/* eslint-disable-next-line @next/next/no-img-element -- sized by its frame */}

@@ -55,6 +55,8 @@ export function brain() {
 	const adopted = read<{ measures: unknown[] }>('bills/bangsamoro_registry/resolutions/adopted_official_index.json').measures.length
 	const proposed = read<{ measures: unknown[] }>('bills/bangsamoro_registry/resolutions/proposed_official_index.json').measures.length
 	const code = read<{ sections: unknown[] }>('bills/blgc.json').sections.length + read<{ articles: unknown[] }>('bills/blgc-irr.json').articles.length
+	const journals = read<{ journals: unknown[] }>('bills/bangsamoro_registry/journal/sessions.json').journals.length
+	const calendar = read<{ sittings: unknown[] }>('bills/session-calendar.json').sittings.length
 
 	const election = read<Record<string, unknown>>('election/election-results.json')
 	const seats = 80
@@ -113,6 +115,7 @@ export function brain() {
 		{ id: 'w-discover', label: 'Discover', kind: 'workspace', note: 'How the Bangsamoro came to be, how its government works, and the explainers.', href: '/discover' },
 
 		{ id: 'd-measures', label: 'Acts, bills & resolutions', kind: 'dataset', count: acts + bills + adopted + proposed, unit: 'measures', note: `${acts} acts, ${bills} bills, ${adopted} adopted and ${proposed} proposed resolutions, with authors and status.` },
+		{ id: 'd-sittings', label: 'Sittings & attendance', kind: 'dataset', count: journals + calendar, unit: 'sittings', note: `${journals} published plenary journals, with who was absent or on leave at each roll call, and the First Parliament’s calendar of ${calendar} sittings for its first regular session.` },
 		{ id: 'd-code', label: 'Local Governance Code', kind: 'dataset', count: code, unit: 'rules', note: 'The 2023 Bangsamoro Local Governance Code section by section, and its 2025 implementing rules article by article.' },
 		{ id: 'd-appropriations', label: 'Appropriations acts', kind: 'dataset', count: appropriations, unit: 'budget years', note: 'Each year’s General Appropriations Act from FY 2020, transcribed line by line.' },
 		{ id: 'd-election', label: '2026 election results', kind: 'dataset', count: seats, unit: 'seats', date: dated(election), note: 'The proclaimed result: party totals, the party-list count, all 32 district races and the reserved seats.' },
@@ -179,7 +182,7 @@ export function brain() {
 	for (const n of nodes) if (n.date && new Date(n.date).getTime() >= week) n.fresh = true
 
 	const feeds: [string, string[]][] = [
-		['s-parliament', ['d-measures', 'd-code', 'd-appropriations']],
+		['s-parliament', ['d-measures', 'd-code', 'd-appropriations', 'd-sittings']],
 		['s-comelec', ['d-election', 'd-officials']],
 		['s-dilg', ['d-officials', 'd-lgus']],
 		['s-psa', ['d-lgus', 'd-hazards']],
@@ -217,6 +220,7 @@ export function brain() {
 	]
 	const publishes: [string, string[]][] = [
 		['d-measures', ['w-legislation']],
+		['d-sittings', ['w-legislation']],
 		['d-code', ['w-legislation', 'w-lgu']],
 		['d-appropriations', ['w-budget', 'w-services', 'w-health']],
 		['d-charters', ['w-services', 'w-directory', 'w-health']],

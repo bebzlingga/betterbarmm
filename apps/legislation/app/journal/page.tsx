@@ -33,7 +33,13 @@ export default function JournalPage() {
 						{`Parliament has published ${journals.length} plenary journals, from March 2019 to March 2023 — none since. Each is read here from the PDF itself: the measures taken up, the questions asked, the amendments won and lost, and the ${votes} votes recorded by name or count.`}
 					</>
 				}
-			/>
+			>
+				<div className='mt-8'>
+					<Link href='/attendance' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[0.65625rem]'>
+						Attendance, Member by Member
+					</Link>
+				</div>
+			</RegistryBand>
 
 			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
 				{groups.map((group) => (
