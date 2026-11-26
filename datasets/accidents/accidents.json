@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-25",
+ "generatedAt": "2026-11-26",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, public Facebook posts that index carried, and the Facebook page of DXMS Radyo Bida, NDBC’s station in Cotabato City. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -11,16 +11,70 @@
  },
  "incidents": [
   {
+   "date": "2026-11-26",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Two men shot dead on their motorcycle in Sitio Maliga, Mapayag, Datu Anggal Midtimbang",
+   "summary": "Armed men followed two men riding a black-and-orange Rusi KR-Z200 motorcycle towards the interior of Barangay Mapayag and fired on them in Sitio Maliga, Datu Anggal Midtimbang, Maguindanao del Sur, at about 9:40 a.m. on Thursday, 26 November 2026. Both died at the scene; police had not identified them, the gunmen or a motive, and launched dragnet operations with neighbouring stations and the military.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Datu Anggal Midtimbang",
+   "barangay": "Mapayag",
+   "deaths": 2,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [
+    "motorcycle"
+   ],
+   "lat": 6.9932,
+   "lon": 124.3415,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "The Mindanao Sentinel",
+     "url": "https://themindanaosentinel.com/2026/11/two-men-shot-dead-in-motorcycle-ambush-in-datu-anggal-midtimbang/",
+     "title": "Two Men Shot Dead in Motorcycle Ambush in Datu Anggal Midtimbang",
+     "date": "2026-11-26"
+    }
+   ],
+   "id": "2026-11-26-datu-anggal-midtimbang-shooting"
+  },
+  {
+   "date": "2026-11-25",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "Man shot dead and a woman wounded outside Buluan District Hospital",
+   "summary": "Unidentified gunmen opened fire on Aliman U. Minalang, of Barangay Tugal, Sultan sa Barongis, and a woman with him in front of Buluan District Hospital, Buluan, Maguindanao del Sur, at about noon on Wednesday, 25 November 2026. Minalang was killed; the woman was wounded and treated inside the hospital. The Buluan police launched a hot pursuit. Minalang had reportedly been party to a rido in Sultan sa Barongis in August that the MILF's Ad Hoc Joint Action Group and the Army's 2nd Mechanized Brigade had brought to a ceasefire.",
+   "province": "Maguindanao del Sur",
+   "municipality": "Buluan",
+   "barangay": null,
+   "deaths": 1,
+   "injured": 1,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 6.7166,
+   "lon": 124.7866,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "The Mindanao Sentinel",
+     "url": "https://themindanaosentinel.com/2026/11/man-killed-woman-wounded-in-shooting-outside-buluan-district-hospital/",
+     "title": "Man Killed, Woman Wounded in Shooting Outside Buluan District Hospital",
+     "date": "2026-11-25"
+    }
+   ],
+   "id": "2026-11-25-buluan-shooting"
+  },
+  {
    "date": "2026-11-24",
    "type": "shooting",
    "kind": "Shooting",
-   "title": "Soldier shot dead and another wounded as gunmen fire on their motorcycle at Crossing Simuay, Sultan Kudarat",
-   "summary": "Two men on a black motorcycle chased and shot Pvt. Egie Boy Buta, 25, and Pvt. Jay-r Nacin Gregorio, 29, both of the Army's 40th Infantry Battalion, as they rode a Yamaha Aerox from North Cotabato towards Cotabato City, at Crossing Simuay Junction, Sultan Kudarat, Maguindanao del Norte, at about 2:50 p.m. on Tuesday, 24 November 2026. Buta died and Gregorio was wounded and in treatment, the Sultan Kudarat police said; one outlet reported both killed. Police arrested 2 suspects in a hot pursuit.",
+   "title": "Two soldiers shot dead as gunmen fire on their motorcycle at Crossing Simuay, Sultan Kudarat",
+   "summary": "Two men on a motorcycle chased and shot Pvt. Egie Boy Buta, 25, and Pvt. Jay-Ar Nacin Gregorio, 29, both of the Army's 40th Infantry Battalion, as they rode a motorcycle from North Cotabato towards Cotabato City, at Crossing Simuay Junction, Sultan Kudarat, Maguindanao del Norte, at about 2:50 p.m. on Tuesday, 24 November 2026. One was declared dead on arrival at the Cotabato Sanitarium General Hospital; the other died of his wounds hours later at the Cotabato Regional Medical Center. The gunmen fled on a Honda Click; police said two suspects were held after a pursuit. Two other soldiers were killed in a similar attack in the same municipality on 23 September.",
    "province": "Maguindanao del Norte",
    "municipality": "Sultan Kudarat",
    "barangay": "Crossing Simuay",
-   "deaths": 1,
-   "injured": 1,
+   "deaths": 2,
+   "injured": 0,
    "missing": 0,
    "vehicles": [],
    "lat": 7.281,
@@ -56,6 +110,18 @@
      "outlet": "DZRH",
      "title": "Businessman killed, 2 soldiers wounded in separate BARMM shootings",
      "url": "https://www.dzrh.com.ph/post/businessman-killed-2-soldiers-wounded-in-separate-barmm-shootings"
+    },
+    {
+     "date": "2026-11-26",
+     "outlet": "Philstar",
+     "title": "2 soldiers killed in Maguindanao del Norte ambush",
+     "url": "https://www.philstar.com/nation/2026/11/26/2572774/2-soldiers-killed-maguindanao-del-norte-ambush"
+    },
+    {
+     "date": "2026-11-25",
+     "outlet": "Philstar",
+     "title": "2 soldiers slain in Maguindanao attack",
+     "url": "https://www.philstar.com/nation/2026/11/26/2572668/2-soldiers-slain-maguindanao-attack"
     }
    ],
    "id": "2026-11-24-sultan-kudarat-shooting"
@@ -153,7 +219,7 @@
    "type": "shooting",
    "kind": "Shooting",
    "title": "1 wounded as the Sampiano and Karim families trade fire in Calilangan, Balabagan",
-   "summary": "A gunfight broke out between the Sampiano and Karim families in Barangay Calilangan, Balabagan, Lanao del Sur, around midday on Sunday, 22 November 2026. PNP-BARMM spokesperson Capt. Steffi Salanguit said Andan Lim Maute, 26, of Poblacion, Balabagan, a member of the Sampiano family, was wounded in the exchange. Initial reports said the Karim family fired on the Sampiano group first. The police were monitoring the area.",
+   "summary": "Members of the Sampiano and Karim families exchanged gunfire in a remote part of Barangay Calilangan, Balabagan, Lanao del Sur, shortly after 1 p.m. on Sunday, 22 November 2026. Adnan Lim Maute, alias Abdul, 26, of Barangay Poblacion and a member of the Sampiano clan, was hit in the head by a bullet or shrapnel and taken to the Dr. Serapio Montaner Jr. Al-Haj Memorial Hospital in Malabang. Police said the Karim side allegedly fired first; the 2nd Provincial Mobile Force Company was sent in to keep the feud from spreading.",
    "province": "Lanao del Sur",
    "municipality": "Balabagan",
    "barangay": "Calilangan",
@@ -188,6 +254,12 @@
      "url": "https://themindanaosentinel.com/2026/11/one-wounded-as-armed-clash-erupts-between-two-families-in-balabagan-lanao-del-sur/",
      "title": "One Wounded as Armed Clash Erupts Between Two Families in Balabagan, Lanao del Sur",
      "date": "2026-11-23"
+    },
+    {
+     "date": "2026-11-25",
+     "outlet": "NewsLine Philippines",
+     "title": "Rido firefight wounds man in Lanao del Sur; police move to prevent retaliation",
+     "url": "https://newsline.ph/rido-firefight-wounds-man-in-lanao-del-sur-police-move-to-prevent-retaliation/"
     }
    ],
    "id": "2026-11-22-balabagan-shooting"

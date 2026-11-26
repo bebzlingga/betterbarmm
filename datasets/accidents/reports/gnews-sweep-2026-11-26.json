@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-11-25",
+    "type": "shooting",
+    "province": "Maguindanao del Sur",
+    "municipality": "Buluan",
+    "barangay": null,
+    "title": "Man shot dead and a woman wounded outside Buluan District Hospital",
+    "summary": "Unidentified gunmen opened fire on Aliman U. Minalang, of Barangay Tugal, Sultan sa Barongis, and a woman with him in front of Buluan District Hospital, Buluan, Maguindanao del Sur, at about noon on Wednesday, 25 November 2026. Minalang was killed; the woman was wounded and treated inside the hospital. The Buluan police launched a hot pursuit. Minalang had reportedly been party to a rido in Sultan sa Barongis in August that the MILF's Ad Hoc Joint Action Group and the Army's 2nd Mechanized Brigade had brought to a ceasefire.",
+    "deaths": 1,
+    "injured": 1,
+    "missing": 0,
+    "vehicles": [],
+    "sources": [
+      {
+        "date": "2026-11-25",
+        "outlet": "The Mindanao Sentinel",
+        "title": "Man Killed, Woman Wounded in Shooting Outside Buluan District Hospital",
+        "url": "https://themindanaosentinel.com/2026/11/man-killed-woman-wounded-in-shooting-outside-buluan-district-hospital/"
+      }
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "type": "shooting",
+    "province": "Maguindanao del Sur",
+    "municipality": "Datu Anggal Midtimbang",
+    "barangay": "Mapayag",
+    "title": "Two men shot dead on their motorcycle in Sitio Maliga, Mapayag, Datu Anggal Midtimbang",
+    "summary": "Armed men followed two men riding a black-and-orange Rusi KR-Z200 motorcycle towards the interior of Barangay Mapayag and fired on them in Sitio Maliga, Datu Anggal Midtimbang, Maguindanao del Sur, at about 9:40 a.m. on Thursday, 26 November 2026. Both died at the scene; police had not identified them, the gunmen or a motive, and launched dragnet operations with neighbouring stations and the military.",
+    "deaths": 2,
+    "injured": 0,
+    "missing": 0,
+    "vehicles": ["motorcycle"],
+    "sources": [
+      {
+        "date": "2026-11-26",
+        "outlet": "The Mindanao Sentinel",
+        "title": "Two Men Shot Dead in Motorcycle Ambush in Datu Anggal Midtimbang",
+        "url": "https://themindanaosentinel.com/2026/11/two-men-shot-dead-in-motorcycle-ambush-in-datu-anggal-midtimbang/"
+      }
+    ]
+  }
+]
