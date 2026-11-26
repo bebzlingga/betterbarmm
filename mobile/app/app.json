@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "BetterBARMM",
+    "slug": "betterbarmm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "betterbarmm",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.betterbarmm.app",
+      "supportsTablet": false,
+      "icon": "./assets/images/icon.png",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.betterbarmm.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#F7F3EE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0f0f0f",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 84
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#8a2418",
+          "enableRemoteNotifications": false
+        }
+      ],
+      "expo-background-task"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

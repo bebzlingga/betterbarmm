@@ -1,0 +1,87 @@
+<!doctype html>
+<!-- The BetterBARMM 3D icon renderer. Each Phosphor filled glyph (glyphs.json) is extruded with a bevelled edge and
+     lit the same way, on the same camera, from the same 256-unit grid — so every icon in the set has the same size,
+     depth, angle and light. render.ts drives it from headless Chrome; open it in a browser to look at one icon. -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>html, body { margin: 0; background: transparent; } canvas { display: block; }</style>
+<script type="importmap">{ "imports": { "three": "./three/build/three.module.js", "three/addons/": "./three/examples/jsm/" } }</script>
+</head>
+<body>
+<script type="module">
+import * as THREE from 'three'
+import { SVGLoader } from 'three/addons/loaders/SVGLoader.js'
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js'
+
+// Two finishes: crimson for light grounds, pearl for dark ones. Face and side differ so the edge reads.
+const PALETTES = {
+	crimson: { face: '#9c1f14', side: '#5a0f08' },
+	pearl: { face: '#ece5d8', side: '#a99c86' },
+}
+// The resting angle: turned a little to the right and tipped back, enough to show the bevel and depth.
+const TILT = { x: -0.34, y: 0.42 }
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true })
+renderer.setPixelRatio(1)
+renderer.outputColorSpace = THREE.SRGBColorSpace
+renderer.toneMapping = THREE.ACESFilmicToneMapping
+renderer.toneMappingExposure = 1.0
+renderer.setClearColor(0x000000, 0)
+document.body.appendChild(renderer.domElement)
+
+const scene = new THREE.Scene()
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture
+scene.environmentIntensity = 0.55
+const camera = new THREE.PerspectiveCamera(26, 1, 0.1, 100)
+camera.position.set(0, 0, 7.8)
+const key = new THREE.DirectionalLight('#ffffff', 1.25)
+key.position.set(-3, 4, 5)
+scene.add(key)
+const rim = new THREE.DirectionalLight('#ffffff', 0.7)
+rim.position.set(4, -2, -3)
+scene.add(rim)
+scene.add(new THREE.AmbientLight('#ffffff', 0.2))
+
+const glyphs = await (await fetch('./glyphs.json')).json()
+const loader = new SVGLoader()
+const pivot = new THREE.Group()
+scene.add(pivot)
+let built = ''
+
+function build(name, palette) {
+	if (built === `${name}/${palette}`) return
+	for (const child of [...pivot.children]) { pivot.remove(child); child.geometry.dispose() }
+	const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">${glyphs[name].map((d) => `<path d="${d}"/>`).join('')}</svg>`
+	const shapes = loader.parse(svg).paths.flatMap((p) => SVGLoader.createShapes(p))
+	const geometry = new THREE.ExtrudeGeometry(shapes, {
+		depth: 24, bevelEnabled: true, bevelThickness: 7, bevelSize: 4, bevelSegments: 6, curveSegments: 16,
+	})
+	// Centred on the 256 grid, not on its own bounds: Phosphor sizes every glyph optically on that grid, and
+	// keeping it is what makes a thin icon and a heavy one sit at the same size.
+	geometry.translate(-128, -128, -12)
+	const p = PALETTES[palette]
+	const face = new THREE.MeshPhysicalMaterial({ color: p.face, roughness: 0.38, clearcoat: 0.8, clearcoatRoughness: 0.22 })
+	const side = new THREE.MeshPhysicalMaterial({ color: p.side, roughness: 0.5, clearcoat: 0.5, clearcoatRoughness: 0.3 })
+	const mesh = new THREE.Mesh(geometry, [face, side])
+	mesh.scale.set(0.01, -0.01, 0.01) // the grid to scene units; SVG's y runs down
+	pivot.add(mesh)
+	built = `${name}/${palette}`
+}
+
+/** Renders one icon. `t` (0–1) is the place in the animated loop; leave it out for the still. */
+window.render = (name, { palette = 'crimson', size = 512, t = null } = {}) => {
+	if (!glyphs[name]) return null
+	build(name, palette)
+	renderer.setSize(size, size, false)
+	const loop = t == null ? 0 : Math.sin(t * Math.PI * 2)
+	pivot.rotation.set(TILT.x + (t == null ? 0 : 0.08 * Math.cos(t * Math.PI * 2)), TILT.y + 0.42 * loop, 0)
+	pivot.position.y = t == null ? 0 : 0.06 * Math.sin(t * Math.PI * 4)
+	renderer.render(scene, camera)
+	return renderer.domElement.toDataURL('image/png')
+}
+window.names = Object.keys(glyphs)
+window.ready = true
+</script>
+</body>
+</html>

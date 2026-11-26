@@ -63,6 +63,7 @@ __pycache__/
 
 # open data: tables built from datasets/ before every dev and build
 apps/www/public/data/files/
+apps/www/public/app/
 apps/www/app/_generated/open-data.json
 
 # portraits: copied from apps/legislation by apps/www/scripts/copy-portraits.mjs before every dev and build
