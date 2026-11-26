@@ -4,15 +4,13 @@ import { getMembersDataset } from './members-data'
 /* ============================================================
    Attendance, by Member, from the journals
 
-   A journal names who was absent at the roll call and who was on leave
-   or official business; it gives only a count for those present. So a
-   Member is counted present at a sitting they held a seat for and were
-   not named at. The seat comes from the roster's term of office, or from
-   the journal itself when it names someone the roster dates later.
-
-   Late arrivals are not named consistently, so a Member who came in
-   after the roll call is counted present: the derived count runs a few
-   above the journal's own on some days.
+   Every journal's roll call names each Member: present in the hall or
+   virtually, appeared after the roll call, absent, or on leave or
+   official business. A Member who came in after the roll call is counted
+   present, so the count here can run above the quorum the journal
+   declared. A Member the roll call does not name held no seat that day.
+   Where a journal names someone twice, the kinder list wins: present over
+   late, leave over absent.
    ============================================================ */
 
 export type Mark = 'present' | 'absent' | 'excused' | null
@@ -45,6 +43,21 @@ const words = (s: string) =>
 		.toLowerCase()
 		.split(/[^a-z]+/)
 		.filter((w) => w && !SUFFIX.has(w))
+const TITLES = new Set(['mp', 'hon', 'datu', 'ustadz'])
+/** Two spellings one or two letters apart (one for short names), by edit distance. */
+function near(a: string, b: string) {
+	if (!a || !b || Math.abs(a.length - b.length) > 2) return false
+	// Two letters swapped, "Sheik" for Shiek, counts as one slip.
+	const swap = [...a].findIndex((ch, i) => ch !== b[i])
+	if (a.length === b.length && swap >= 0 && a[swap] === b[swap + 1] && a[swap + 1] === b[swap] && a.slice(swap + 2) === b.slice(swap + 2)) return true
+	let row = Array.from({ length: b.length + 1 }, (_, j) => j)
+	for (let i = 1; i <= a.length; i++) {
+		const next = [i]
+		for (let j = 1; j <= b.length; j++) next[j] = Math.min(row[j]! + 1, next[j - 1]! + 1, row[j - 1]! + (a[i - 1] === b[j - 1] ? 0 : 1))
+		row = next
+	}
+	return row[b.length]! <= (Math.min(a.length, b.length) >= 6 ? 2 : 1)
+}
 const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 
 /** "March 2019 - June 2019; March 2025 - Present" → ISO day spans. */
@@ -70,16 +83,18 @@ export function getAttendance(parliament: Journal['parliament'] = 'BTA1'): Atten
 		.members.filter((m) => m.phases.includes(parliament))
 		.map((m) => {
 			const [surname = '', given = ''] = m.rosterName.split(',')
-			return { m, surname: words(surname), first: words(given).find((w) => w !== 'datu'), spans: seats(m.termOfOffice) }
+			return { m, surname: words(surname), first: words(given).find((w) => !TITLES.has(w)), spans: seats(m.termOfOffice) }
 		})
 
 	// "MP Narciso C. Ekey" → "YU EKEY, NARCISO CO": the last word of the surname, then the first name, then who held a seat that day.
 	const find = (name: string, date: string) => {
-		const w = words(name).filter((x) => x !== 'mp' && x !== 'datu')
+		const w = words(name).filter((x) => !TITLES.has(x))
 		let found = roster.filter((r) => r.surname.at(-1) === w.at(-1))
-		// A journal now and then prints the surname first: "Salendab Z. Said".
-		if (!found.length) found = roster.filter((r) => r.surname.at(-1) === w[0] && r.first === w.at(-1))
-		if (found.length > 1) found = found.filter((r) => r.first === w[0])
+		// A journal now and then prints the surname first: "Salendab Z. Said", "Lidasan Mussolini S.".
+		if (!found.length) found = roster.filter((r) => r.surname.at(-1) === w[0] && w.slice(1).includes(r.first!))
+		// Or misspells it: "Gyak" for Gayak, "Sheik" for Shiek. Then the first name must agree too.
+		if (!found.length) found = roster.filter((r) => w.includes(r.first!) && near(r.surname.at(-1)!, w.at(-1)!))
+		if (found.length > 1) found = found.filter((r) => r.first === w[0]).length ? found.filter((r) => r.first === w[0]) : found.filter((r) => near(r.first!, w[0]!))
 		if (found.length > 1) found = found.filter((r) => r.spans.some(([a, b]) => a <= date && date <= b))
 		return found.length === 1 ? found[0] : undefined
 	}
@@ -88,13 +103,14 @@ export function getAttendance(parliament: Journal['parliament'] = 'BTA1'): Atten
 	const marks = new Map(roster.map((r) => [r.m.slug, journals.map((): Mark => null)]))
 	journals.forEach((j, i) => {
 		const date = j.dates[0]!
-		for (const r of roster) if (r.spans.some(([a, b]) => a <= date && date <= b)) marks.get(r.m.slug)![i] = 'present'
-		const named: [string, Mark][] = [...(j.attendance!.absent ?? []).map((n): [string, Mark] => [n, 'absent']), ...(j.attendance!.onLeave ?? []).map((n): [string, Mark] => [n, 'excused'])]
-		for (const [name, mark] of named) {
-			const r = find(name, date)
-			if (r) marks.get(r.m.slug)![i] = mark
-			else unmatched.add(name.replace(/^MP\s+/, '').replace(/\s*\(.*\)$/, '').replace(/,?\s+Jr\.$/, ''))
-		}
+		const a = j.attendance!
+		const named: [string[] | undefined, Mark][] = [[a.absent, 'absent'], [a.late, 'present'], [a.onLeave, 'excused'], [a.attended, 'present']]
+		for (const [names, mark] of named)
+			for (const name of names ?? []) {
+				const r = find(name, date)
+				if (r) marks.get(r.m.slug)![i] = mark
+				else unmatched.add(name.replace(/^MP\s+/, '').replace(/\s*\(.*\)$/, '').replace(/,?\s+Jr\.$/, ''))
+			}
 	})
 
 	const members = roster

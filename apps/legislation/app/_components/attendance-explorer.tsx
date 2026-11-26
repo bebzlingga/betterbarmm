@@ -255,10 +255,10 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 
 			<div className='mt-12 grid gap-3 border-t border-[var(--rule)] pt-8 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 				<p>
-					Each journal names who was absent at the roll call and who was on leave or official business, and gives only a count of
-					those present. A Member is counted present at a sitting they held a seat for and were not named at, so someone who
-					arrived after the roll call is present here, and the count runs a few above the journal’s own on some days. A
-					Member’s rate is taken over the sittings they held a seat for. Only sittings with a published journal are counted:
+					Each journal’s roll call names every Member: present in the hall or virtually, appeared after the roll call, absent, or
+					on leave or official business. Someone who arrived after the roll call is counted present, so a sitting’s count here can
+					run above the quorum the journal declared. A Member the roll call does not name held no seat that day. A Member’s rate is
+					taken over the sittings they were named at. Only sittings with a published journal are counted:
 					Parliament has posted none since March 2023, and none yet for the First Parliament.
 				</p>
 				{unmatched.length ? <p>Named in the journals but not on this Authority’s roster, and so left out: {unmatched.join(', ')}.</p> : null}

@@ -38,7 +38,7 @@ export type Journal = {
 	kind: string
 	session: string
 	presiding?: string
-	attendance?: { present?: number; absent?: string[]; onLeave?: string[]; note?: string }
+	attendance?: { present?: number; attended?: string[]; late?: string[]; absent?: string[]; onLeave?: string[]; note?: string }
 	summary: string
 	items: JournalItem[]
 	points: JournalPoint[]
