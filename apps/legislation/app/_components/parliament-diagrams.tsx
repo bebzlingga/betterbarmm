@@ -18,19 +18,39 @@
 
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu'] as const
 
-/** Which weeks of the month the Parliament actually sits, per Rule VI. */
-const WEEKS = [
-	{ label: 'Week 1', sits: false },
-	{ label: 'Week 2', sits: false },
-	{ label: 'Week 3', sits: true },
-	{ label: 'Week 4', sits: true },
+type Tone = 'question' | 'privilege' | 'chief'
+/** One afternoon: whether the plenary sits, and the fixed hours that fall on it. */
+type Day = { sits: boolean; marks?: { tone: Tone; label: string }[] }
+/** Four weeks of Monday to Thursday, the shape both rulebooks fit in. */
+export type SittingMonth = Day[][]
+
+const TINT: Record<Tone, string> = {
+	question: 'bg-[var(--tone-early-bg)] text-[var(--tone-early-fg)]',
+	privilege: 'bg-[var(--tone-move-bg)] text-[var(--tone-move-fg)]',
+	chief: 'bg-[var(--tone-done-bg)] text-[var(--tone-done-fg)]',
+}
+
+/** The Transition Authority's month, per Rules VI, IX, X and XI: weeks 3 and 4
+    sit Monday to Thursday, Privilege Hour every Thursday it sits, and Question
+    Hour (or the Chief Minister's Hour) on the first Wednesday, a week it does
+    not otherwise sit. */
+export const BTA_MONTH: SittingMonth = [0, 1, 2, 3].map((week) =>
+	DAYS.map((day) => {
+		const sits = week >= 2
+		if (week === 0 && day === 'Wed') return { sits, marks: [{ tone: 'question', label: 'Questions' }] }
+		if (sits && day === 'Thu') return { sits, marks: [{ tone: 'privilege', label: 'Privilege' }] }
+		return { sits }
+	}),
+)
+
+export const BTA_LEGEND: { tone: Tone | 'sits'; label: string }[] = [
+	{ tone: 'sits', label: 'Plenary sits, from 1:00 pm' },
+	{ tone: 'question', label: 'Question Hour, or the Chief Minister’s Hour once a quarter' },
+	{ tone: 'privilege', label: 'Privilege Hour' },
 ]
 
-function Marker({ tone, children }: { tone: 'question' | 'privilege'; children: React.ReactNode }) {
-	const tint =
-		tone === 'question'
-			? 'bg-[var(--tone-early-bg)] text-[var(--tone-early-fg)]'
-			: 'bg-[var(--tone-move-bg)] text-[var(--tone-move-fg)]'
+function Marker({ tone, children }: { tone: Tone; children: React.ReactNode }) {
+	const tint = TINT[tone]
 
 	return (
 		<span
@@ -49,7 +69,7 @@ function Marker({ tone, children }: { tone: 'question' | 'privilege'; children: 
  * week it is not otherwise sitting at all — which is visible here and was not
  * visible in the sentence that said it.
  */
-export function SittingCalendar() {
+export function SittingCalendar({ month = BTA_MONTH, legend = BTA_LEGEND }: { month?: SittingMonth; legend?: typeof BTA_LEGEND }) {
 	return (
 		<figure className='mt-2'>
 			<div className='overflow-x-auto'>
@@ -64,56 +84,49 @@ export function SittingCalendar() {
 						))}
 					</div>
 
-					{WEEKS.map((week) => (
+					{month.map((week, w) => (
 						<div
-							key={week.label}
+							key={w}
 							className='grid grid-cols-[4.5rem_repeat(4,minmax(0,1fr))] items-stretch gap-1.5 pb-1.5'
 						>
-							<span className='meta-sm self-center'>{week.label}</span>
+							<span className='meta-sm self-center'>Week {w + 1}</span>
 
-							{DAYS.map((day) => {
-								// Question Hour and the Chief Minister's Hour share the first
-								// Wednesday; Privilege Hour is every Thursday it sits.
-								const isQuestionDay = week.label === 'Week 1' && day === 'Wed'
-								const isPrivilegeDay = week.sits && day === 'Thu'
-
-								return (
-									<div
-										key={day}
-										className={`flex min-h-[3.75rem] flex-col items-center justify-center rounded-[var(--radius-sm)] px-1 py-2 text-center ${
-											week.sits
-												? 'bg-[var(--accent-soft)] text-[var(--ink)]'
-												: 'border border-dashed border-[var(--rule)] text-[var(--ink-mute)]'
-										}`}
-									>
-										{week.sits ? (
-											<span className='num text-[0.6875rem] font-semibold leading-none'>1:00 pm</span>
-										) : isQuestionDay ? null : (
-											<span className='text-[0.6875rem] leading-none'>&mdash;</span>
-										)}
-										{isQuestionDay ? <Marker tone='question'>Questions</Marker> : null}
-										{isPrivilegeDay ? <Marker tone='privilege'>Privilege</Marker> : null}
-									</div>
-								)
-							})}
+							{week.map((day, d) => (
+								<div
+									key={DAYS[d]}
+									className={`flex min-h-[3.75rem] flex-col items-center justify-center rounded-[var(--radius-sm)] px-1 py-2 text-center ${
+										day.sits
+											? 'bg-[var(--accent-soft)] text-[var(--ink)]'
+											: 'border border-dashed border-[var(--rule)] text-[var(--ink-mute)]'
+									}`}
+								>
+									{day.sits ? (
+										<span className='num text-[0.6875rem] font-semibold leading-none'>1:00 pm</span>
+									) : day.marks ? null : (
+										<span className='text-[0.6875rem] leading-none'>&mdash;</span>
+									)}
+									{day.marks?.map((mark) => (
+										<Marker key={mark.label} tone={mark.tone}>
+											{mark.label}
+										</Marker>
+									))}
+								</div>
+							))}
 						</div>
 					))}
 				</div>
 			</div>
 
 			<figcaption className='mt-5 flex flex-wrap gap-x-6 gap-y-2 bb-body text-[var(--ink-3)]'>
-				<span className='flex items-center gap-2'>
-					<span className='size-3 rounded-[3px] bg-[var(--accent-soft)]' aria-hidden='true' />
-					Plenary sits, from 1:00 pm
-				</span>
-				<span className='flex items-center gap-2'>
-					<span className='size-3 rounded-[3px] bg-[var(--tone-early-bg)]' aria-hidden='true' />
-					Question Hour, or the Chief Minister&rsquo;s Hour once a quarter
-				</span>
-				<span className='flex items-center gap-2'>
-					<span className='size-3 rounded-[3px] bg-[var(--tone-move-bg)]' aria-hidden='true' />
-					Privilege Hour
-				</span>
+				{legend.map((item) => (
+					<span key={item.label} className='flex items-center gap-2'>
+						<span
+							className={`size-3 rounded-[3px] ${item.tone === 'sits' ? 'bg-[var(--accent-soft)]' : TINT[item.tone].split(' ')[0]}`}
+							aria-hidden='true'
+						/>
+						{item.label}
+					</span>
+				))}
 			</figcaption>
 		</figure>
 	)
@@ -144,7 +157,10 @@ function VoteRow({ named, name, answer }: { named: boolean; name: string; answer
  * seven measures and on nothing else. That is a claim about two record
  * formats, so it is shown as two records.
  */
-export function VoteComparison() {
+type VotePanel = { kind: string; when: string; note: string; rows?: { named: boolean; name: string; answer: string }[] }
+
+/** Each rulebook names its two kinds of vote differently; the picture is the same. */
+export function VoteComparison({ shouted, named }: { shouted?: Partial<VotePanel>; named?: Partial<VotePanel> } = {}) {
 	return (
 		<figure className='mt-2 grid gap-5 sm:grid-cols-2'>
 			{[
@@ -159,6 +175,7 @@ export function VoteComparison() {
 					result: 'Approved',
 					note: 'The record keeps the outcome. Who was on which side is never written down.',
 					tone: 'idle' as const,
+					...shouted,
 				},
 				{
 					kind: 'Vote by name',
@@ -171,6 +188,7 @@ export function VoteComparison() {
 					result: 'Approved',
 					note: 'The rules make the Journal record these in full, so every position survives.',
 					tone: 'done' as const,
+					...named,
 				},
 			].map((panel) => (
 				<div

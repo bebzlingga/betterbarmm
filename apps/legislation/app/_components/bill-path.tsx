@@ -1,4 +1,4 @@
-import { BILL_PATH_STEPS } from './bill-path-steps'
+import { BILL_PATH_STEPS, type BillStep } from './bill-path-steps'
 import { Reveal } from './reveal'
 import { Timeline } from './timeline'
 
@@ -11,23 +11,32 @@ import { Timeline } from './timeline'
    a reader can scroll or search the whole path.
    ============================================================ */
 
-export function BillPath({ id }: { id: string }) {
+export function BillPath({
+	id,
+	steps = BILL_PATH_STEPS,
+	title = 'Seven steps, and one of them is yours.',
+	lead = 'Parliament publishes this path as thirteen steps of rules citations. It is the same path either way — and at the committee stage, its own rules say it may solicit opinions from the public.',
+	note,
+}: {
+	id: string
+	steps?: BillStep[]
+	title?: string
+	lead?: string
+	/** The line under the path saying where it was simplified from. */
+	note?: React.ReactNode
+}) {
 	return (
 		<Reveal>
 			{/* `scroll-mt` clears the sticky header, so a jump from the index lands
 			    on the kicker rather than behind the bar. */}
 			<section id={id} className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
 				<p className='eyebrow'>The process, simplified</p>
-				<h2 className='section-title mt-4 max-w-3xl'>Seven steps, and one of them is yours.</h2>
-				<p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>
-					Parliament publishes this path as thirteen steps of rules citations. It is the same path
-					either way — and at the committee stage, its own rules say it may solicit opinions from
-					the public.
-				</p>
+				<h2 className='section-title mt-4 max-w-3xl'>{title}</h2>
+				<p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>{lead}</p>
 
 				<Timeline
 					className='mt-12 max-w-4xl'
-					items={BILL_PATH_STEPS.map((step) => ({
+					items={steps.map((step) => ({
 						id: step.label,
 						tone: step.tone,
 						content: (
@@ -64,6 +73,7 @@ export function BillPath({ id }: { id: string }) {
 				/>
 
 				<p className='meta-sm mt-10 max-w-4xl'>
+					{note ?? <>
 					Simplified from Parliament&rsquo;s{' '}
 					<a
 						href='https://parliament.bangsamoro.gov.ph/legislative-process-bill/'
@@ -74,6 +84,7 @@ export function BillPath({ id }: { id: string }) {
 						legislative process
 					</a>
 					, which sets out the same path in thirteen steps against the BTA Parliamentary Rules.
+					</>}
 				</p>
 			</section>
 		</Reveal>

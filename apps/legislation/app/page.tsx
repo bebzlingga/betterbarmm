@@ -267,7 +267,7 @@ export default function HomePage() {
 						<MemberPayFigures />
 					</div>
 
-					<Link href='/how-parliament-works#the-job' className='bb-btn bb-btn-solid mt-12'>
+					<Link href='/how-parliament-works/transition-authority#the-job' className='bb-btn bb-btn-solid mt-12'>
 						What a member actually does
 					</Link>
 				</Reveal>

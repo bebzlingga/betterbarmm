@@ -1,18 +1,19 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { PageHeader } from '../_components/page-header'
-import { SittingCalendar, VoteComparison } from '../_components/parliament-diagrams'
-import { Block, Point, Source } from '../_components/explainer'
-import { MemberSections } from '../_components/member-sections'
-import { ProcessSections } from '../_components/process-sections'
-import { ReadingColumn } from '../_components/reading-column'
-import { Reveal } from '../_components/reveal'
+import { PageHeader } from '../../_components/page-header'
+import { SittingCalendar, VoteComparison } from '../../_components/parliament-diagrams'
+import { Block, Point, Source } from '../../_components/explainer'
+import { MemberSections } from '../../_components/member-sections'
+import { ProcessSections } from '../../_components/process-sections'
+import { ParliamentSwitch } from '../../_components/parliament-switch'
+import { ReadingColumn } from '../../_components/reading-column'
+import { Reveal } from '../../_components/reveal'
 import type { TocItem } from '@betterbarmm/editorial'
 
 export const metadata: Metadata = {
-	title: 'How Parliament works',
+	title: 'How the Transition Authority worked',
 	description:
-		'Plain answers about the Bangsamoro Parliament: what it can and cannot do, how a bill becomes law, what a member is paid and barred from, how it votes, what gets written down, and where an ordinary person can actually take part.',
+		'The rules the appointed Bangsamoro Transition Authority sat under from 2019 to 2026: what it could do, how a bill became law, what a member was paid and barred from, how it voted, and what got written down. Kept for the record; the elected Parliament now sits under its own Standing Orders.',
 }
 
 /* ============================================================
@@ -97,18 +98,19 @@ const SECTIONS: TocItem[] = [
 	{ id: 'sources', label: 'Read the originals' },
 ]
 
-export default function HowParliamentWorksPage() {
+export default function TransitionAuthorityRulesPage() {
 	return (
 		<>
 			<PageHeader
 				emphasis='brand'
 				align='left'
 				size='compact'
-				eyebrow='Powers, limits, and the rulebook'
-				title='What this Parliament can actually do.'
-				titleMuted='And the rules it does it by.'
-				description='It writes the region&rsquo;s laws and runs the region at the same time, by a 34-rule book it wrote for itself. Here is what it can do, how a measure moves, what a seat costs and where you fit &mdash; each point tied to the rule behind it.'
+				eyebrow='The Transition Authority, 2019–2026'
+				title='What the Transition Authority could do.'
+				titleMuted='And the rules it did it by.'
+				description='From 2019 to 2026 an appointed Parliament wrote the region&rsquo;s laws and ran the region at the same time, by a 34-rule book it wrote for itself. Every act and journal from those years was made under it, so it is kept here as it stood &mdash; each point tied to the rule behind it.'
 			/>
+			<ParliamentSwitch current='/how-parliament-works/transition-authority' />
 
 			<ReadingColumn sections={SECTIONS}>
 				<Block
