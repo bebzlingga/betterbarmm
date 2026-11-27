@@ -1053,16 +1053,24 @@ header[data-clear='true'] button[aria-controls] { border-color: #fff; color: #ff
    size the screen needs (commonsSrcSet). All motion stops under a
    reduced-motion preference.
    ============================================================ */
-@keyframes tv-in { from { opacity: 0; transform: translateY(14px); } }
-@media (prefers-reduced-motion: no-preference) { .tv-page-in { animation: tv-in 0.42s cubic-bezier(0.2, 0.7, 0.2, 1) both; } }
+/* The page's fade: opacity only, on a large screen only, and gone once played (fill backwards), so no layer the
+   height of the page is ever kept. Kept on a phone, such a layer ran Safari out of memory ("A problem repeatedly
+   occurred"), as did the earlier slide. */
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) and (hover: hover) { .tv-page-in { animation: tv-page-fade 0.38s ease-out backwards; } }
+@keyframes tv-page-fade { from { opacity: 0; } }
 
 .dv-rail-section, footer { content-visibility: auto; contain-intrinsic-size: auto 640px; }
+/* Explore's hundred-odd cards too: off screen, they are not laid out or painted, and their pictures can be let go. */
+main article.group\/card { content-visibility: auto; contain-intrinsic-size: auto 400px; }
 
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
+}
+/* Reveals on a large screen only, and filled backwards: once a section is in, it drops its animation and its layer. */
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) and (hover: hover) {
   @supports (animation-timeline: view()) {
     .dv-section, .dv-rail-section, .tv-ask, main section[id] > * {
-      animation: tv-rise linear both;
+      animation: tv-rise linear backwards;
       animation-timeline: view();
       animation-range: entry 0% entry 40%;
     }
@@ -1070,3 +1078,12 @@ header[data-clear='true'] button[aria-controls] { border-color: #fff; color: #ff
 }
 @keyframes tv-rise { from { opacity: 0; transform: translateY(28px); } }
 
+
+/* A phone's memory (user report: Safari crashed, "A problem repeatedly occurred"): no slow zoom on the header
+   photographs, and no blur behind chips and glass buttons; their tinted grounds read well enough without it. */
+@media (max-width: 1023px) {
+  .dv-slide-img { animation: none; }
+  .dv-chip, .dv-btn-glass { backdrop-filter: none; }
+  .dv-chip { background: rgba(10, 14, 18, 0.6); }
+  .dv-btn-glass { background: rgba(10, 14, 18, 0.35); }
+}

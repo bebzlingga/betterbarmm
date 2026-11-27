@@ -60,7 +60,7 @@ export function PhotoCredit({ photo, className = '' }: { photo: Pick<CardPhoto, 
 			target='_blank'
 			rel='noreferrer'
 			title={`Photo: ${photo.author} · ${photo.license}`}
-			className={`group/credit inline-flex h-5 max-w-[calc(100%-1.5rem)] items-center gap-1 overflow-hidden bg-black/50 px-1.5 text-[0.625rem] font-medium text-white/90 backdrop-blur-sm ${className}`}
+			className={`group/credit inline-flex h-5 max-w-[calc(100%-1.5rem)] items-center gap-1 overflow-hidden bg-black/60 px-1.5 text-[0.625rem] font-medium text-white/90 ${className}`}
 		>
 			<span aria-hidden='true'>&#9432;</span>
 			<span className='hidden truncate group-hover/credit:inline group-focus-visible/credit:inline'>
