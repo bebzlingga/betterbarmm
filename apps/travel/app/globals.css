@@ -1044,9 +1044,8 @@ header[data-clear='true'] button[aria-controls] { border-color: #fff; color: #ff
 /* ============================================================
    Motion (user decision: smoother transitions and animation, and lighter)
 
-   Between pages, the content fades out quickly and the next rises in
-   (React's <ViewTransition> in the shell, Next's viewTransition flag);
-   only that content is captured, so the bars around it never move.
+   Each page fades and rises in as it arrives (PageFade in the shell; the
+   browser's view transitions failed on long pages and were dropped).
    Sections ease in as they scroll into view, on the browser's own
    scroll timeline (no script), and in-page jumps scroll smoothly. Rails
    and the footer are skipped by the browser until they come near the
@@ -1054,12 +1053,8 @@ header[data-clear='true'] button[aria-controls] { border-color: #fff; color: #ff
    size the screen needs (commonsSrcSet). All motion stops under a
    reduced-motion preference.
    ============================================================ */
-:root { view-transition-name: none; }
-::view-transition-group(.tv-page) { animation-duration: 0.36s; animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1); }
-::view-transition-old(.tv-page) { animation: 0.16s ease-in both tv-out; }
-::view-transition-new(.tv-page) { animation: 0.38s cubic-bezier(0.2, 0.7, 0.2, 1) 0.08s both tv-in; }
-@keyframes tv-out { to { opacity: 0; } }
 @keyframes tv-in { from { opacity: 0; transform: translateY(14px); } }
+@media (prefers-reduced-motion: no-preference) { .tv-page-in { animation: tv-in 0.42s cubic-bezier(0.2, 0.7, 0.2, 1) both; } }
 
 .dv-rail-section, footer { content-visibility: auto; contain-intrinsic-size: auto 640px; }
 
@@ -1075,6 +1070,3 @@ header[data-clear='true'] button[aria-controls] { border-color: #fff; color: #ff
 }
 @keyframes tv-rise { from { opacity: 0; transform: translateY(28px); } }
 
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(*), ::view-transition-new(*), ::view-transition-group(*) { animation-duration: 0s !important; animation-delay: 0s !important; }
-}
