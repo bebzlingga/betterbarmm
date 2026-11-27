@@ -144,7 +144,7 @@ export function PlaceDetails({ detail }: { detail: PlaceDetail }) {
 							<figure className='m-0'>
 								<div className='relative bg-[var(--paper-2)]'>
 									{/* eslint-disable-next-line @next/next/no-img-element */}
-									<img src={photo.url} alt={photo.caption} width={photo.width} height={photo.height} className='aspect-[4/3] w-full object-contain' />
+									<img decoding='async' src={photo.url} alt={photo.caption} width={photo.width} height={photo.height} className='aspect-[4/3] w-full object-contain' />
 									{photos.length > 1 ? (
 										<>
 											<button type='button' onClick={() => go(-1)} aria-label='Previous photo' className='absolute left-2 top-1/2 grid size-9 -translate-y-1/2 cursor-pointer place-items-center bg-black/55 text-white transition hover:bg-black/75'>
@@ -181,7 +181,7 @@ export function PlaceDetails({ detail }: { detail: PlaceDetail }) {
 											className={`block aspect-square w-full cursor-pointer overflow-hidden outline-offset-2 transition ${i === shown ? 'outline outline-2 outline-[var(--accent)]' : 'opacity-75 hover:opacity-100'}`}
 										>
 											{/* eslint-disable-next-line @next/next/no-img-element */}
-											<img src={p.url} alt='' loading='lazy' className='size-full object-cover' />
+											<img decoding='async' src={p.url} alt='' loading='lazy' className='size-full object-cover' />
 										</button>
 									</li>
 								))}

@@ -1,3 +1,4 @@
+import { ViewTransition } from 'react'
 import { DragScroll } from './drag-scroll'
 import { SiteNav } from './site-nav'
 import { TravelFooter } from './travel-footer'
@@ -14,7 +15,10 @@ export function Shell({ children }: { children: React.ReactNode }) {
 	return (
 		<div className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteNav />
-			<main>{children}</main>
+			{/* The page fades out and the next rises in (user decision: smoother transitions); the bars around it stay put. */}
+			<main>
+				<ViewTransition default='tv-page'>{children}</ViewTransition>
+			</main>
 
 			<TravelFooter />
 			<DragScroll />

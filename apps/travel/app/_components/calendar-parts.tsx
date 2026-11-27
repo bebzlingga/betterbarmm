@@ -46,22 +46,22 @@ export function AnniversaryRow({ a, year, province = false }: { a: Anniversary; 
 	const turns = year - d.getFullYear()
 	const body = (
 		<>
-			<span className={`flex size-12 shrink-0 flex-col items-center justify-center rounded-xl ${province ? 'bg-[var(--accent)] text-white' : 'bg-[color-mix(in_srgb,var(--accent)_9%,var(--paper))] text-[var(--accent)]'}`}>
+			<span className={`flex size-12 shrink-0 flex-col items-center justify-center rounded-xl ${province ? 'bg-[var(--accent)] text-white' : 'bg-white/[0.08] text-[#f1c453]'}`}>
 				<span className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold leading-none'>{d.getDate()}</span>
 			</span>
 			<span className='min-w-0 flex-1'>
 				<span className='flex flex-wrap items-baseline gap-x-2'>
-					<span className='font-semibold text-[var(--ink)]'>{a.name}</span>
-					<span className='text-[0.8125rem] text-[var(--ink-3)]'>{province ? (a.kind === 'charter' ? 'City' : 'Province') : AREA.get(a.area)}</span>
+					<span className='font-semibold text-white'>{a.name}</span>
+					<span className='text-[0.8125rem] text-white/60'>{province ? (a.kind === 'charter' ? 'City' : 'Province') : AREA.get(a.area)}</span>
 				</span>
-				<span className='mt-0.5 block truncate text-[0.75rem] text-[var(--ink-mute)]' title={a.basis}>
+				<span className='mt-0.5 block truncate text-[0.75rem] text-white/50' title={a.basis}>
 					{ANNIVERSARY_KIND_LABEL[a.kind]} · {d.getFullYear()}
 				</span>
 			</span>
 			{turns > 0 ? (
 				<span className='shrink-0 text-right'>
-					<span className='block font-[family-name:var(--font-display)] text-[1.125rem] font-bold leading-none text-[var(--ink)]'>{turns}</span>
-					<span className='text-[0.6875rem] text-[var(--ink-mute)]'>{turns === 1 ? 'year' : 'years'}</span>
+					<span className='block font-[family-name:var(--font-display)] text-[1.125rem] font-bold leading-none text-white'>{turns}</span>
+					<span className='text-[0.6875rem] text-white/50'>{turns === 1 ? 'year' : 'years'}</span>
 				</span>
 			) : null}
 		</>
@@ -69,7 +69,7 @@ export function AnniversaryRow({ a, year, province = false }: { a: Anniversary; 
 	return (
 		<li>
 			{a.source ? (
-				<a href={a.source} target='_blank' rel='noreferrer' className='flex items-center gap-4 rounded-2xl px-3 py-2.5 transition hover:bg-[var(--paper)]'>
+				<a href={a.source} target='_blank' rel='noreferrer' className='flex items-center gap-4 rounded-2xl px-3 py-2.5 transition hover:bg-white/[0.06]'>
 					{body}
 				</a>
 			) : (
@@ -146,7 +146,7 @@ export function MonthSection({ month: { name, events, areas, towns }, m, year, t
 									<div className='relative isolate aspect-[16/9] shrink-0 overflow-hidden bg-[var(--paper-3)] sm:order-last sm:aspect-auto sm:min-h-[12rem] sm:w-[38%]'>
 										{photo ? (
 											// eslint-disable-next-line @next/next/no-img-element
-											<img src={photo.src} alt='' loading='lazy' className='absolute inset-0 -z-10 size-full object-cover transition duration-700 group-hover:scale-105' />
+											<img decoding='async' src={photo.src} alt='' loading='lazy' className='absolute inset-0 -z-10 size-full object-cover transition duration-700 group-hover:scale-105' />
 										) : null}
 										<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(8,12,16,0.75)_0%,rgba(8,12,16,0.1)_55%,transparent_100%)]' />
 										{/* The month, as a page torn from a calendar. */}
@@ -186,11 +186,11 @@ export function MonthSection({ month: { name, events, areas, towns }, m, year, t
 					</ul>
 				) : null}
 
-				{/* The founding anniversaries: provinces and cities first, then the towns, by day. */}
+				{/* The founding anniversaries: provinces and cities first, then the towns, by day; on a dark panel (user decision). */}
 				{areas.length + towns.length ? (
-					<div className='rounded-[1.5rem] bg-[color-mix(in_srgb,var(--accent)_4%,var(--paper-2))] p-3 sm:p-4'>
-						<p className='flex items-center gap-2 px-3 pb-2 pt-1 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
-							<FlagBannerIcon size={16} weight='duotone' className='text-[var(--accent)]' aria-hidden='true' />
+					<div className='rounded-[1.5rem] bg-[#15181c] p-3 sm:p-4'>
+						<p className='flex items-center gap-2 px-3 pb-2 pt-1 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-white/60'>
+							<FlagBannerIcon size={16} weight='duotone' className='text-[#f1c453]' aria-hidden='true' />
 							Founding anniversaries
 						</p>
 						<ul className='grid gap-x-4 md:grid-cols-2'>

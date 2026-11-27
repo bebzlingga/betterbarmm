@@ -194,7 +194,7 @@ export default function TravelHome() {
 							<Link key={area.slug} href={destination ? `/discover/${area.slug}` : `/${area.slug}`} className='tv-panel group'>
 								{cover ? (
 									// eslint-disable-next-line @next/next/no-img-element
-									<img src={commonsThumb(cover.url, 960, cover.width)} alt='' loading='lazy' className='tv-panel-img' />
+									<img decoding='async' src={commonsThumb(cover.url, 960, cover.width)} alt='' loading='lazy' className='tv-panel-img' />
 								) : null}
 								<span aria-hidden='true' className='tv-panel-shade' />
 								<span aria-hidden='true' className='tv-panel-num'>{String(i + 1).padStart(2, '0')}</span>

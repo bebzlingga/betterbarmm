@@ -32,7 +32,7 @@ import { PlaceGallery, ShareButton, type GalleryPhoto } from '../../_components/
 import { StayCard } from '../../_components/stay-card'
 import { TOWN_PAGES } from '../../_lib/guide'
 import { findDestination } from '../../_lib/discover'
-import { commonsThumb, cropStyle } from '../../_lib/commons'
+import { commonsSrcSet, commonsThumb, cropStyle } from '../../_lib/commons'
 
 /* ============================================================
    One place, laid out as a travel app's listing (user decision: the Discover look, a page rather than a dialog,
@@ -113,6 +113,7 @@ export default async function PlacePage({ params }: { params: Promise<{ slug: st
 		thumb: commonsThumb(img.url, 960, img.width),
 		large: commonsThumb(img.url, 1280, img.width),
 		wide: commonsThumb(img.url, 1920, img.width),
+		wideSet: commonsSrcSet(img.url, img.width),
 		style: cropStyle(img, 4 / 3),
 		caption: img.caption,
 		author: img.author,
@@ -302,7 +303,7 @@ export default async function PlacePage({ params }: { params: Promise<{ slug: st
 						<a key={craft.slug} href={`https://betterbarmm.com/crafts/${craft.slug}`} target='_blank' rel='noreferrer' className='dv-card group !aspect-[4/5]'>
 							{craft.image ? (
 								// eslint-disable-next-line @next/next/no-img-element
-								<img src={commonsThumb(craft.image.url, 500, craft.image.width)} alt={craft.image.caption} loading='lazy' className='dv-card-img' />
+								<img decoding='async' src={commonsThumb(craft.image.url, 500, craft.image.width)} alt={craft.image.caption} loading='lazy' className='dv-card-img' />
 							) : (
 								<span className='grid size-full place-items-center text-[var(--ink-mute)]'>
 									<YarnIcon size={36} weight='duotone' aria-hidden='true' />

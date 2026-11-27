@@ -17,7 +17,7 @@ import {
 import { Credit, PlaceCard, SeeAllCard } from '../../_components/discover-card'
 import { Rail } from '../../_components/rail'
 import { StayCard } from '../../_components/stay-card'
-import { commonsThumb } from '../../_lib/commons'
+import { commonsSrcSet, commonsThumb } from '../../_lib/commons'
 import { DESTINATIONS, findDestination, type Shot } from '../../_lib/discover'
 
 /* ============================================================
@@ -42,13 +42,13 @@ export async function generateMetadata({ params }: { params: Promise<{ area: str
 	return { title: `Discover ${area.name}`, description: `${area.tagline} The places, crafts, food and stays of ${area.name}, and what to know before you go.` }
 }
 
-type Photo = { src: string; place: ExplorePlace; author: string; license: string; page: string }
+type Photo = { src: string; srcSet?: string; place: ExplorePlace; author: string; license: string; page: string }
 
 /** A place's photograph at the width asked for, with its credit; none where the place or the picture is missing. */
 function shot({ place: slug, image }: Shot, w: 960 | 1280 | 1920): Photo | null {
 	const place = explorePlaces.find((p) => p.slug === slug)
 	const img = place?.images[image]
-	return place && img ? { src: commonsThumb(img.url, w, img.width), place, author: img.author, license: img.license, page: img.page } : null
+	return place && img ? { src: commonsThumb(img.url, w, img.width), srcSet: w === 1920 ? commonsSrcSet(img.url, img.width) : undefined, place, author: img.author, license: img.license, page: img.page } : null
 }
 
 export default async function DiscoverPage({ params }: { params: Promise<{ area: string }> }) {
@@ -77,7 +77,7 @@ export default async function DiscoverPage({ params }: { params: Promise<{ area:
 				{hero.map((photo, i) => (
 					<figure key={photo.src} className='dv-slide' style={{ '--i': i, '--n': hero.length } as React.CSSProperties}>
 						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img src={photo.src} alt={`${photo.place.name}, ${photo.place.municipality}`} fetchPriority={i === 0 ? 'high' : 'low'} className='dv-slide-img' />
+						<img decoding='async' src={photo.src} srcSet={photo.srcSet} sizes='100vw' alt={`${photo.place.name}, ${photo.place.municipality}`} fetchPriority={i === 0 ? 'high' : 'low'} className='dv-slide-img' />
 					</figure>
 				))}
 				<span aria-hidden='true' className='dv-hero-shade' />
@@ -95,7 +95,7 @@ export default async function DiscoverPage({ params }: { params: Promise<{ area:
 				<div className='bb-container relative flex min-h-[inherit] flex-col justify-end pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:pb-24'>
 					{destination.seal ? (
 						// eslint-disable-next-line @next/next/no-img-element
-						<img src={destination.seal} alt={`Seal of ${area.name}`} className='size-28 drop-shadow-[0_12px_24px_rgba(0,0,0,0.5)] md:size-36' />
+						<img decoding='async' src={destination.seal} alt={`Seal of ${area.name}`} className='size-28 drop-shadow-[0_12px_24px_rgba(0,0,0,0.5)] md:size-36' />
 					) : null}
 					{/* The name in the colours of the province's own cloth (user decision), then a strip of it woven. */}
 					<h1 className='dv-hero-title' style={destination.weave ? ({ '--w1': destination.weave.colors[0], '--w2': destination.weave.colors[1], '--w3': destination.weave.colors[2], '--w4': destination.weave.colors[3] } as React.CSSProperties) : undefined}>
@@ -169,7 +169,7 @@ export default async function DiscoverPage({ params }: { params: Promise<{ area:
 						return photo ? (
 							<li key={k} className='group relative isolate flex min-h-[17rem] flex-col overflow-hidden rounded-[var(--dv-r)] p-6 text-white'>
 								{/* eslint-disable-next-line @next/next/no-img-element */}
-								<img src={photo.src} alt='' loading='lazy' className='dv-card-img' />
+								<img decoding='async' src={photo.src} alt='' loading='lazy' className='dv-card-img' />
 								<span aria-hidden='true' className='dv-card-shade' />
 								<span className='font-[family-name:var(--font-display)] text-[2rem] font-extrabold leading-none tracking-[-0.03em] text-[#f1c453]'>
 									{String(n + 1).padStart(2, '0')}
@@ -207,7 +207,7 @@ export default async function DiscoverPage({ params }: { params: Promise<{ area:
 			{feature ? (
 				<section className='dv-feature'>
 					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img src={feature.src} alt={`${feature.place.name}, ${feature.place.municipality}`} loading='lazy' className='absolute inset-0 -z-10 size-full object-cover' />
+					<img decoding='async' src={feature.src} srcSet={feature.srcSet} sizes='100vw' alt={`${feature.place.name}, ${feature.place.municipality}`} loading='lazy' className='absolute inset-0 -z-10 size-full object-cover' />
 					<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(6,12,18,0.85)_0%,rgba(6,12,18,0.45)_55%,rgba(6,12,18,0.1)_100%)]' />
 					<div className='bb-container py-24 md:py-32'>
 						<p className='dv-eyebrow !text-[#f1c453]'>Don’t miss</p>
@@ -305,7 +305,7 @@ export default async function DiscoverPage({ params }: { params: Promise<{ area:
 								<div key={a.slug} className='dv-town group !min-h-[17rem]'>
 									{cover ? (
 										// eslint-disable-next-line @next/next/no-img-element
-										<img src={commonsThumb(cover.url, 960, cover.width)} alt='' loading='lazy' className='dv-card-img' />
+										<img decoding='async' src={commonsThumb(cover.url, 960, cover.width)} alt='' loading='lazy' className='dv-card-img' />
 									) : null}
 									<span aria-hidden='true' className='dv-card-shade' />
 									<span className='dv-chip absolute left-5 top-5'>

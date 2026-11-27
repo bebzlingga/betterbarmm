@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
 	],
 	experimental: {
 		externalDir: true,
+		// Soft fades between pages (user decision: smoother transitions), through React's <ViewTransition> in the shell.
+		viewTransition: true,
 	},
 }
 

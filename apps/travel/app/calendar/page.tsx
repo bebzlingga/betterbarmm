@@ -44,7 +44,7 @@ export default function CalendarPage() {
 			/>
 
 			{/* ---- The months, a bar that stays in view ---- */}
-			<nav aria-label='Months' className='sticky top-0 z-20 border-b border-[var(--rule)] bg-[var(--paper)]/90 backdrop-blur-xl'>
+			<nav aria-label='Months' className='sticky top-0 z-20 border-b border-[var(--rule)] bg-[var(--paper)]/95 backdrop-blur-md'>
 				<div data-drag-scroll className='bb-container flex gap-1 overflow-x-auto py-3 [scrollbar-width:none] lg:justify-between [&::-webkit-scrollbar]:hidden'>
 					{months.map(({ name, events, areas, towns }, m) => {
 						const n = events.length + areas.length + towns.length
@@ -68,7 +68,7 @@ export default function CalendarPage() {
 					<MonthSection key={month.name} id={month.name.toLowerCase()} month={month} m={m} year={year} thisMonth={thisMonth} />
 				))}
 
-				<p className='mt-4 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-relaxed text-[var(--ink-3)]'>
+				<p className='pt-8 text-[0.8125rem] leading-relaxed text-[var(--ink-3)]'>
 					Each anniversary is the day the province, city or town legally began: the day its law took effect or a plebiscite ratified it where a source gives one, otherwise the
 					day its law was passed or signed; a city is dated from its charter. A town may celebrate its foundation day on another date. Each row links to the law or record it rests
 					on. Datu Blah T. Sinsuat (2006) and Talitay (1996) are known to the year only and are not listed by day.

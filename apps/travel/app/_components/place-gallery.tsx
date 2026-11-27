@@ -24,8 +24,9 @@ export type GalleryPhoto = {
 	page: string
 	width: number
 	height: number
-	/** A wide copy for the full-width header, where the page has one. */
+	/** A wide copy for the full-width header, where the page has one, and its smaller sizes. */
 	wide?: string
+	wideSet?: string
 }
 
 /**
@@ -84,7 +85,7 @@ export function PlaceGallery({ name, photos, hero }: { name: string; photos: Gal
 			{photos.map((photo, i) => (
 				<figure key={photo.large} id={`photo-${i}`} className='m-0 scroll-mt-28'>
 					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img src={photo.large} alt={photo.caption} loading='lazy' width={photo.width} height={photo.height} className='h-auto w-full rounded-[var(--dv-r)] bg-white/5' />
+					<img decoding='async' src={photo.large} alt={photo.caption} loading='lazy' width={photo.width} height={photo.height} className='h-auto w-full rounded-[var(--dv-r)] bg-white/5' />
 					<figcaption className='mt-5 flex gap-5'>
 						<span className='font-[family-name:var(--font-display)] text-[1.5rem] font-extrabold leading-none tracking-[-0.03em] text-[#f1c453]'>{String(i + 1).padStart(2, '0')}</span>
 						<span className='min-w-0'>
@@ -107,7 +108,7 @@ export function PlaceGallery({ name, photos, hero }: { name: string; photos: Gal
 				<header className={`dv-hero ${first ? 'pl-hero' : 'pl-hero-bare'}`}>
 					{first ? (
 						// eslint-disable-next-line @next/next/no-img-element
-						<img src={first.wide ?? first.large} alt={first.caption} fetchPriority='high' className='absolute inset-0 -z-[2] size-full object-cover' />
+						<img decoding='async' src={first.wide ?? first.large} srcSet={first.wideSet} sizes='100vw' alt={first.caption} fetchPriority='high' className='absolute inset-0 -z-[2] size-full object-cover' />
 					) : null}
 					<span aria-hidden='true' className='dv-hero-shade' />
 					{hero}
@@ -127,7 +128,7 @@ export function PlaceGallery({ name, photos, hero }: { name: string; photos: Gal
 											className='group/thumb relative h-16 w-20 cursor-pointer overflow-hidden rounded-xl border-2 border-white/70 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.6)] transition hover:-translate-y-0.5 hover:border-white lg:h-20 lg:w-28'
 										>
 											{/* eslint-disable-next-line @next/next/no-img-element */}
-											<img src={photo.thumb} alt='' loading='lazy' className='size-full object-cover transition duration-300 group-hover/thumb:scale-105' />
+											<img decoding='async' src={photo.thumb} alt='' loading='lazy' className='size-full object-cover transition duration-300 group-hover/thumb:scale-105' />
 											{last ? (
 												<span className='absolute inset-0 flex flex-col items-center justify-center gap-0.5 bg-black/45 text-white backdrop-blur-[1px]'>
 													<ImagesIcon size={18} weight='bold' aria-hidden='true' />
@@ -172,7 +173,7 @@ export function PlaceGallery({ name, photos, hero }: { name: string; photos: Gal
 					<div key={photo.large} className='relative aspect-[4/3] w-full shrink-0 snap-center overflow-hidden'>
 						<button type='button' onClick={() => show(i)} aria-label={`Open photo ${i + 1} of ${photos.length}`} className='block size-full'>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={photo.thumb} alt={photo.caption} loading={i ? 'lazy' : 'eager'} style={photo.style ?? undefined} className='size-full object-cover' />
+							<img decoding='async' src={photo.thumb} alt={photo.caption} loading={i ? 'lazy' : 'eager'} style={photo.style ?? undefined} className='size-full object-cover' />
 						</button>
 						<span className='pointer-events-none absolute bottom-3 right-3 rounded-md bg-black/60 px-2 py-1 text-[0.75rem] font-semibold text-white'>
 							{i + 1} / {photos.length}
@@ -188,7 +189,7 @@ export function PlaceGallery({ name, photos, hero }: { name: string; photos: Gal
 					<div key={photo.large} className={`group relative overflow-hidden ${i === 0 && tiles.length === 5 ? 'col-span-2 row-span-2' : ''}`}>
 						<button type='button' onClick={() => show(i)} aria-label={`Open photo ${i + 1} of ${photos.length}`} className='block size-full cursor-pointer'>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={i === 0 ? photo.large : photo.thumb} alt={photo.caption} loading={i ? 'lazy' : 'eager'} style={photo.style ?? undefined} className='size-full object-cover transition duration-300 group-hover:brightness-90' />
+							<img decoding='async' src={i === 0 ? photo.large : photo.thumb} alt={photo.caption} loading={i ? 'lazy' : 'eager'} style={photo.style ?? undefined} className='size-full object-cover transition duration-300 group-hover:brightness-90' />
 						</button>
 						<PhotoCredit photo={photo} className='absolute bottom-2.5 left-2.5' />
 					</div>

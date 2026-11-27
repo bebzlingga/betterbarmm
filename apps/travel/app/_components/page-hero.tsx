@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { MapPinIcon } from '@phosphor-icons/react/ssr'
 import type { ExplorePlace } from '@betterbarmm/travel-data/explore'
-import { commonsThumb } from '../_lib/commons'
+import { commonsSrcSet, commonsThumb } from '../_lib/commons'
 import type { TravelPhoto } from '../_lib/media'
 
 /* ============================================================
@@ -15,7 +15,7 @@ import type { TravelPhoto } from '../_lib/media'
    or centred.
    ============================================================ */
 
-export type HeroPhoto = { src: string; alt: string; label: string; credit: string; page: string; href?: string }
+export type HeroPhoto = { src: string; srcSet?: string; alt: string; label: string; credit: string; page: string; href?: string }
 
 /** One of the guide's own credited photographs (`_lib/media`). */
 export const heroFromTravelPhoto = (p: TravelPhoto): HeroPhoto => ({
@@ -30,7 +30,7 @@ export const heroFromTravelPhoto = (p: TravelPhoto): HeroPhoto => ({
 export function heroFromPlace(place: ExplorePlace | undefined, image = 0): HeroPhoto | null {
 	const img = place?.images[image]
 	return place && img
-		? { src: commonsThumb(img.url, 1920, img.width), alt: `${place.name}, ${place.municipality}`, label: place.name, credit: `${img.author} · ${img.license}`, page: img.page, href: `/places/${place.slug}` }
+		? { src: commonsThumb(img.url, 1920, img.width), srcSet: commonsSrcSet(img.url, img.width), alt: `${place.name}, ${place.municipality}`, label: place.name, credit: `${img.author} · ${img.license}`, page: img.page, href: `/places/${place.slug}` }
 		: null
 }
 
@@ -65,7 +65,7 @@ export function PageHero({
 			{shown.map((p, i) => (
 				<figure key={p.src} className='dv-slide' style={turn(i)}>
 					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img src={p.src} alt={p.alt} fetchPriority={i === 0 ? 'high' : 'low'} className='dv-slide-img' style={n > 1 ? undefined : { animation: 'none' }} />
+					<img decoding='async' src={p.src} srcSet={p.srcSet} sizes='100vw' alt={p.alt} fetchPriority={i === 0 ? 'high' : 'low'} className='dv-slide-img' style={n > 1 ? undefined : { animation: 'none' }} />
 				</figure>
 			))}
 			<span aria-hidden='true' className='dv-hero-shade' />

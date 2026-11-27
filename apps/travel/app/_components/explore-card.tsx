@@ -101,7 +101,7 @@ export function ExploreCard({ place, priority = false }: { place: CardPlace; pri
 						{place.photos.map((photo, i) => (
 							<span key={photo.src} className='relative block size-full shrink-0 snap-center overflow-hidden'>
 								{/* eslint-disable-next-line @next/next/no-img-element */}
-								<img
+								<img decoding='async'
 									src={photo.src}
 									srcSet={photo.srcSet}
 									sizes='(min-width: 1280px) 22rem, (min-width: 640px) 45vw, 92vw'

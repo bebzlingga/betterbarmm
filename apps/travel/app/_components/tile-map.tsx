@@ -167,7 +167,7 @@ export function TileMap({
 			>
 				{tiles.map((t) => (
 					// eslint-disable-next-line @next/next/no-img-element
-					<img
+					<img decoding='async'
 						key={t.key}
 						src={t.url}
 						alt=''

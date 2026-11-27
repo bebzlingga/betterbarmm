@@ -212,7 +212,7 @@ export function TravelFooter() {
 							<Link href={a.href} className='group relative isolate flex aspect-[3/4] flex-col justify-end overflow-hidden rounded-2xl bg-white/5 p-3.5'>
 								{a.cover ? (
 									// eslint-disable-next-line @next/next/no-img-element
-									<img src={commonsThumb(a.cover.url, 330, a.cover.width)} alt='' loading='lazy' className='absolute inset-0 -z-10 size-full object-cover transition duration-700 group-hover:scale-105' />
+									<img decoding='async' src={commonsThumb(a.cover.url, 330, a.cover.width)} alt='' loading='lazy' className='absolute inset-0 -z-10 size-full object-cover transition duration-700 group-hover:scale-105' />
 								) : null}
 								<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(8,12,16,0.9)_0%,rgba(8,12,16,0.2)_60%,transparent_100%)]' />
 								<span className='font-[family-name:var(--font-display)] text-[0.9375rem] font-bold leading-tight'>{a.name}</span>

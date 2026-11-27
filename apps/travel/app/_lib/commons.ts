@@ -11,6 +11,15 @@ export function commonsThumb(url: string, w: 250 | 330 | 500 | 960 | 1280 | 1920
 	return m ? `${m[1]}/thumb/${m[2]}/${m[3]}/${w}px-${m[3]}` : url
 }
 
+/** The same photograph at the widths a screen may want, for an <img srcSet> with `sizes='100vw'` (user decision:
+ *  photos that do not lag): a phone takes the 960, a laptop the 1280, a wide screen the 1920. Undefined where the
+ *  file is not on Commons, or the original is no wider than the smallest, so there is only the one size. */
+export function commonsSrcSet(url: string, of?: number) {
+	const set = new Map<string, number>()
+	for (const w of [960, 1280, 1920] as const) { const u = commonsThumb(url, w, of); if (!set.has(u)) set.set(u, of && of < w ? of : w) }
+	return set.size > 1 ? [...set].map(([u, w]) => `${u} ${w}w`).join(', ') : undefined
+}
+
 /** A photo's white margins as fractions of its sides, [top, right, bottom, left], measured offline. */
 export type Crop = [number, number, number, number]
 type Framed = { width: number; height: number; crop?: Crop; focus?: string }

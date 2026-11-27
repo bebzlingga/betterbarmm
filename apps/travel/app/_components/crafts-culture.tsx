@@ -67,7 +67,7 @@ export function CraftsCulture({ area, areaName }: { area: string; areaName: stri
 						<article key={c.slug} className='dv-card group'>
 							{c.image ? (
 								// eslint-disable-next-line @next/next/no-img-element
-								<img src={commonsThumb(c.image.url, 500, c.image.width)} alt='' loading='lazy' className='dv-card-img' />
+								<img decoding='async' src={commonsThumb(c.image.url, 500, c.image.width)} alt='' loading='lazy' className='dv-card-img' />
 							) : (
 								<span className='grid size-full place-items-center bg-[var(--paper-3)] text-[var(--ink-mute)]'>
 									<YarnIcon size={40} weight='duotone' aria-hidden='true' />

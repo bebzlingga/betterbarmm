@@ -58,7 +58,7 @@ export function StayCard({ stay }: { stay: ExploreStay | ExploreEat }) {
 				{stay.image ? (
 					<>
 						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img src={commonsThumb(stay.image.url, 500, stay.image.width)} alt={stay.image.caption} loading='lazy' className='size-full object-cover' />
+						<img decoding='async' src={commonsThumb(stay.image.url, 500, stay.image.width)} alt={stay.image.caption} loading='lazy' className='size-full object-cover' />
 						<PhotoCredit photo={{ author: stay.image.author, license: stay.image.license, page: stay.image.page }} className='absolute bottom-2.5 left-2.5 z-10' />
 					</>
 				) : (

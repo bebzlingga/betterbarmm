@@ -24,7 +24,7 @@ export function PlaceCard({ place, wide = false }: { place: ExplorePlace; wide?:
 		<article className={`dv-card group ${wide ? 'dv-card-wide' : ''}`}>
 			{img ? (
 				// eslint-disable-next-line @next/next/no-img-element
-				<img src={commonsThumb(img.url, 960, img.width)} alt='' loading='lazy' className='dv-card-img' />
+				<img decoding='async' src={commonsThumb(img.url, 960, img.width)} alt='' loading='lazy' className='dv-card-img' />
 			) : (
 				<span className='grid size-full place-items-center bg-[var(--paper-3)] text-[var(--ink-mute)]'>
 					<Glyph size={40} weight='duotone' />
@@ -62,7 +62,7 @@ export function SeeAllCard({ href, title, note, places = [], images, external = 
 			<span aria-hidden='true' className='absolute inset-0 -z-[1] grid grid-cols-2 grid-rows-2 gap-0.5'>
 				{tiles.map((src) => (
 					// eslint-disable-next-line @next/next/no-img-element
-					<img key={src} src={src} alt='' loading='lazy' className='size-full object-cover transition duration-700 group-hover:scale-105' />
+					<img decoding='async' key={src} src={src} alt='' loading='lazy' className='size-full object-cover transition duration-700 group-hover:scale-105' />
 				))}
 			</span>
 			<span aria-hidden='true' className='absolute inset-0 -z-[1] bg-[linear-gradient(to_top,rgba(8,12,16,0.92)_0%,rgba(8,12,16,0.55)_45%,rgba(8,12,16,0.25)_100%)]' />
