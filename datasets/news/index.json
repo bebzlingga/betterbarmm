@@ -1,6 +1,6 @@
 {
  "name": "Latest news",
- "generatedAt": "2026-11-26T08:39:05.180Z",
+ "generatedAt": "2026-11-27T11:02:26.313Z",
  "since": "2026-10-19",
  "note": "Headlines about the Bangsamoro from the region’s own offices and the national and international press, read from their RSS feeds, Google News’s index of them and the Facebook pages of local radio. Each links to the outlet that reported it; the headline and teaser are the outlet’s.",
  "dropped": [
@@ -241,6 +241,12 @@
    "via": null,
    "title": "MALAKAS ang buhos ng ulan ngayong gabi sa Cotabato City. Kumusta diyan sa inyo mga Ka-Bida? Ingat po tayo!",
    "reason": "the station talking to its listeners, not a report"
+  },
+  {
+   "url": "https://explained.ph/family-fights-for-missing-photojourn-recognition-as-58th-maguindanao-massacre-victim/",
+   "via": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLTR5NHlla05SdzVQQ2lEeWNVUzU2TWVaR09rOUtuREVoUGY1NFdHNXRxdUJ6LUVWMjAycjdnYjU0cUVBVjBVRDZiM2wwUUV6R0pMMllfSTJZUkhVSXM4aHZCYmg1aTliRzRrMVd0eDlFblNlUnN4X3NfdWg1d1prWFF0SmlMSXFGaEhFRW9vUlZScm1rSGNTS0xUZnFPN2JkQXc4aWxucnI3Zw?oc=5",
+   "title": "Family fights for ‘missing photojourn’ recognition as 58th Maguindanao massacre victim",
+   "reason": "published 2026-08-20"
   }
  ],
  "weeks": [

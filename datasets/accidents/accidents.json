@@ -1,6 +1,6 @@
 {
  "name": "Accidents in BARMM, as reported",
- "generatedAt": "2026-11-26",
+ "generatedAt": "2026-11-27",
  "since": "2019",
  "note": "Compiled from news reports: the outlets’ own sites, Google News’s index of them, public Facebook posts that index carried, and the Facebook page of DXMS Radyo Bida, NDBC’s station in Cotabato City. One record per incident, every report linked. Nobody publishes a register of accidents in the region, so this is what was reported in English or Filipino and indexed, and only that: a crash nobody wrote up is not here, and a town whose news lives only on Facebook is under-counted.",
  "sources": {
@@ -37,6 +37,78 @@
     }
    ],
    "id": "2026-11-26-datu-anggal-midtimbang-shooting"
+  },
+  {
+   "date": "2026-11-26",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "MENRE forest ranger shot dead beside the highway in Sitio Golf, Dalumangcob, Sultan Kudarat",
+   "summary": "A gunman on a motorcycle shot Ebrahim Sampayan Abdullah, 59, a forest ranger of the BARMM Ministry of Environment, Natural Resources and Energy assigned to Lanao del Sur, as he was about to board his motorbike beside the highway in Sitio Golf, Barangay Dalumangcob, Sultan Kudarat, Maguindanao del Norte, at about 10:40 a.m. on Thursday, 26 November 2026. He died at the scene. Witnesses named the gunman as a certain “Uto Kusain”, who fled; police launched a hot pursuit and had not established a motive.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Kudarat",
+   "barangay": "Dalumangcob",
+   "deaths": 1,
+   "injured": 0,
+   "missing": 0,
+   "vehicles": [
+    "motorcycle"
+   ],
+   "lat": 7.2697,
+   "lon": 124.2914,
+   "placed": "barangay",
+   "sources": [
+    {
+     "outlet": "The Chronicle (PNA)",
+     "url": "https://thechronicle.com.ph/police-hunt-for-killer-of-menre-barmm-employee/",
+     "title": "Police hunt for killer of MENRE-BARMM employee",
+     "date": "2026-11-27"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2347670/barmm-forest-ranger-killed-in-maguindanao-del-norte",
+     "title": "BARMM forest ranger killed in Maguindanao del Norte",
+     "date": "2026-11-26"
+    }
+   ],
+   "id": "2026-11-26-sultan-kudarat-shooting"
+  },
+  {
+   "date": "2026-11-26",
+   "type": "shooting",
+   "kind": "Shooting",
+   "title": "3 hurt as a rido settlement dialogue turns to an explosion and gunfire in Sambolawan, Sultan Kudarat",
+   "summary": "A dialogue in Barangay Sambolawan, Sultan Kudarat, Maguindanao del Norte, on Thursday, 26 November 2026, meant to settle a long-running family feud between two MILF groups ended in a fistfight, then an explosion and successive gunshots. Pahamudin Mundas, 37, and Salman Mundas, 39, of Barangay Limbo, and Saipudin Usman of Barangay Macaguiling, members of the BIAF Inner Guard 19th Brigade, were wounded and taken to the Cotabato Sanitarium and General Hospital. Police launched a manhunt for the group of a Commander Jun Barangay.",
+   "province": "Maguindanao del Norte",
+   "municipality": "Sultan Kudarat",
+   "barangay": "Sambolawan",
+   "deaths": 0,
+   "injured": 3,
+   "missing": 0,
+   "vehicles": [],
+   "lat": 7.2711,
+   "lon": 124.2919,
+   "placed": "municipality",
+   "sources": [
+    {
+     "outlet": "The Chronicle",
+     "url": "https://thechronicle.com.ph/three-injured-as-clan-feud-settlement-turns-violent-in-maguindanao-del-norte/",
+     "title": "Three injured as clan feud settlement turns violent in Maguindanao del Norte",
+     "date": "2026-11-27"
+    },
+    {
+     "outlet": "PNA",
+     "url": "https://www.pna.gov.ph/article/3-hurt-as-rido-settlement-in-maguindanao-norte-turns-violent",
+     "title": "3 hurt as ‘rido’ settlement in Maguindanao Norte turns violent",
+     "date": "2026-11-27"
+    },
+    {
+     "outlet": "Inquirer",
+     "url": "https://newsinfo.inquirer.net/2347979/3-hurt-as-rido-settlement-erupts-into-violence-in-maguindanao",
+     "title": "3 hurt as ‘rido’ settlement erupts into violence in Maguindanao",
+     "date": "2026-11-27"
+    }
+   ],
+   "id": "2026-11-26-sultan-kudarat-shooting-2"
   },
   {
    "date": "2026-11-25",
