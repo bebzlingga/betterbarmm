@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { heroFromTravelPhoto } from '../_components/page-hero'
+import { travelPhotos } from '../_lib/media'
 import Link from 'next/link'
 import { travelAreas } from '@betterbarmm/travel-data'
 import { eatsNote, exploreEats } from '@betterbarmm/travel-data/explore'
@@ -19,7 +21,7 @@ export default function EatPage() {
 
 	return (
 		<>
-			<TravelMasthead
+			<TravelMasthead photos={[heroFromTravelPhoto(travelPhotos.pastil)]}
 				kicker='Where to eat'
 				name='Halal places to eat'
 				note={`${exploreEats.length} restaurants, cafés, bakeries and eateries across ${byArea.length} areas${certified ? `, ${certified} of them halal-certified` : ''}. Each one was seen open in a recent post or report; confirm before you go.`}

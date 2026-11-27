@@ -18,13 +18,14 @@ import { ExploreCard } from './explore-card'
 import type { CardPlace } from '../_lib/cards'
 import { KIND_ICON } from './kind-icon'
 import { GUIDE_PAGES } from '../_lib/guide'
+import { PageHero, type HeroPhoto } from './page-hero'
 
 /* ============================================================
    The explorer: every place, browsed the way stays are
 
    A search — a place or a town, and an area — then a row of
-   categories, then the places as photo cards, in the estate's own
-   square, ruled style (user decision). No map here (user decision):
+   categories, then the places as photo cards, in the Discover look
+   (user decision). No map here (user decision):
    each place's own page carries one. The filters live
    in the address bar too, so a filtered view can be linked.
 
@@ -51,13 +52,16 @@ const WAYS_IN = [
 ]
 
 export function Explorer({
-	head,
+	hero,
+	photos,
 	places,
 	areas,
 	kinds,
 }: {
-	/** The band's words above the search: its label, title and lead. */
-	head: React.ReactNode
+	/** The header's words above the search: its kicker, title and lede. */
+	hero: { kicker: string; title: string; lede: string }
+	/** The header's photographs, turning. */
+	photos: (HeroPhoto | null)[]
 	places: CardPlace[]
 	areas: { slug: string; name: string }[]
 	kinds: { key: ExploreKind; label: string }[]
@@ -98,94 +102,81 @@ export function Explorer({
 
 	return (
 		<div>
-			{/* ---- The header: the directory's own (user decision) — the brand band, its glow, the words, a white
-			    search field with the area beside it, and the ways in under it. ---- */}
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<span
-					aria-hidden='true'
-					className='bb-glow absolute -top-[22rem] left-1/2 h-[40rem] w-[64rem] max-w-[160vw] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
-				/>
-				<div className='bb-container relative py-16 text-center lg:py-24'>
-					{head}
-					<form role='search' onSubmit={(e) => e.preventDefault()} className='mx-auto mt-8 max-w-2xl'>
-						{/* Fixed colours: inside the brand band, --paper and --ink point at its crimson ground. */}
-						<span className='flex h-14 items-center gap-3 bg-white pl-5 text-[#191713] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)]'>
-							<MagnifyingGlassIcon size={20} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
-							<label htmlFor='travel-search' className='sr-only'>
-								Search places
-							</label>
-							<input
-								id='travel-search'
-								type='search'
-								autoComplete='off'
-								value={query}
-								onChange={(e) => {
-									setQuery(e.target.value)
-									sync({ q: e.target.value })
+			{/* ---- The header in the Discover look (user decision): the region's photographs turning under the navigation, the
+			    words centred over them, and the search as a white pill with the area beside it. ---- */}
+			<PageHero photos={photos} kicker={hero.kicker} title={hero.title} lede={hero.lede} center>
+				<form role='search' onSubmit={(e) => e.preventDefault()} className='mx-auto mt-9 w-full max-w-2xl'>
+					<span className='flex h-16 items-center gap-3 rounded-full bg-white pl-6 pr-2 text-[#191713] shadow-[0_24px_48px_-24px_rgba(0,0,0,0.7)]'>
+						<MagnifyingGlassIcon size={20} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
+						<label htmlFor='travel-search' className='sr-only'>
+							Search places
+						</label>
+						<input
+							id='travel-search'
+							type='search'
+							autoComplete='off'
+							value={query}
+							onChange={(e) => {
+								setQuery(e.target.value)
+								sync({ q: e.target.value })
+							}}
+							placeholder='A place, a town, an island, a mosque…'
+							className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
+						/>
+						{query ? (
+							<button
+								type='button'
+								onClick={() => {
+									setQuery('')
+									sync({ q: '' })
 								}}
-								placeholder='A place, a town, an island, a mosque…'
-								className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
-							/>
-							{query ? (
-								<button
-									type='button'
-									onClick={() => {
-										setQuery('')
-										sync({ q: '' })
-									}}
-									aria-label='Clear the search'
-									className='grid size-7 shrink-0 cursor-pointer place-items-center rounded-full text-[#5c574c] hover:bg-[#f1ede6]'
-								>
-									<XIcon size={15} weight='bold' aria-hidden='true' />
-								</button>
-							) : null}
-							<span aria-hidden='true' className='h-7 w-px shrink-0 bg-[#d9d4ca]' />
-							<label htmlFor='travel-area' className='sr-only'>
-								Area
-							</label>
-							{/* The browser's own arrow sat against the field's edge; this one is drawn, and inset like the icon opposite. */}
-							<span className='relative flex h-full w-40 shrink-0 items-center sm:w-56'>
-								<select
-									id='travel-area'
-									value={area}
-									onChange={(e) => {
-										setArea(e.target.value)
-										sync({ area: e.target.value })
-									}}
-									className='h-full w-full cursor-pointer appearance-none bg-transparent pl-1 pr-12 text-[0.875rem] text-[#191713] outline-none'
-								>
-									<option value=''>All areas</option>
-									{areas.map((a) => (
-										<option key={a.slug} value={a.slug}>
-											{a.name}
-										</option>
-									))}
-								</select>
-								<CaretDownIcon size={16} weight='bold' className='pointer-events-none absolute right-5 text-[#5c574c]' aria-hidden='true' />
-							</span>
+								aria-label='Clear the search'
+								className='grid size-8 shrink-0 cursor-pointer place-items-center rounded-full text-[#5c574c] hover:bg-[#f1ede6]'
+							>
+								<XIcon size={15} weight='bold' aria-hidden='true' />
+							</button>
+						) : null}
+						<label htmlFor='travel-area' className='sr-only'>
+							Area
+						</label>
+						{/* The area as a grey pill inside the white one; its arrow drawn, inset like the glass opposite. */}
+						<span className='relative flex h-12 w-40 shrink-0 items-center rounded-full bg-[#f1ede6] sm:w-56'>
+							<select
+								id='travel-area'
+								value={area}
+								onChange={(e) => {
+									setArea(e.target.value)
+									sync({ area: e.target.value })
+								}}
+								className='h-full w-full cursor-pointer appearance-none rounded-full bg-transparent pl-5 pr-10 text-[0.875rem] font-medium text-[#191713] outline-none'
+							>
+								<option value=''>All areas</option>
+								{areas.map((a) => (
+									<option key={a.slug} value={a.slug}>
+										{a.name}
+									</option>
+								))}
+							</select>
+							<CaretDownIcon size={15} weight='bold' className='pointer-events-none absolute right-4 text-[#5c574c]' aria-hidden='true' />
 						</span>
-					</form>
-					{WAYS_IN.length ? (
+					</span>
+				</form>
+				{WAYS_IN.length ? (
 					<nav aria-label='Plan the trip' className='mt-6 flex flex-wrap justify-center gap-2'>
 						{WAYS_IN.map(({ href, label, icon: Glyph }) => (
-							<Link
-								key={href}
-								href={href}
-								className='inline-flex items-center gap-1.5 rounded-full border border-white/30 px-3.5 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] transition hover:border-white hover:bg-white hover:text-[#8f2328]'
-							>
+							<Link key={href} href={href} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 								<Glyph size={14} weight='bold' aria-hidden='true' /> {label}
 							</Link>
 						))}
 					</nav>
-					) : null}
-				</div>
-			</section>
+				) : null}
+			</PageHero>
 
-			{/* ---- The categories ---- */}
+			{/* ---- The categories (user decision: the earlier bar kept) ---- */}
 			<div className='sticky top-[var(--sticky-top,0px)] z-20 border-b border-[var(--rule)] bg-[var(--paper)] transition-[top] duration-300'>
 				<div className='bb-container flex items-center gap-6'>
 					{/* Centred on the page where they fit, scrolling from the left where they do not (user decision). */}
-					<div className='-mb-px flex min-w-0 flex-1 gap-9 overflow-x-auto pt-5 [scrollbar-width:none] lg:justify-center lg:gap-12 [&::-webkit-scrollbar]:hidden'>
+					<div data-drag-scroll className='-mb-px flex min-w-0 flex-1 gap-9 overflow-x-auto pt-5 [scrollbar-width:none] lg:justify-center lg:gap-12 [&::-webkit-scrollbar]:hidden'>
 						{[{ key: null as ExploreKind | null, label: 'All' }, ...kinds].map((k) => {
 							const Glyph = k.key ? KIND_ICON[k.key] : SquaresFourIcon
 							const active = kind === k.key
@@ -214,7 +205,7 @@ export function Explorer({
 			</div>
 
 			{/* ---- The places ---- */}
-			<section className='bb-container pb-20 pt-12 lg:pt-14'>
+			<section className='bb-container pb-24 pt-14 lg:pb-32 lg:pt-16'>
 				{/* The count is not shown (user decision); a screen reader still hears it change. */}
 				<p aria-live='polite' className='sr-only'>
 					{shown.length} of {places.length} places

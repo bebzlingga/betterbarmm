@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { heroFromTravelPhoto } from '../_components/page-hero'
+import { travelPhotos } from '../_lib/media'
 import { notFound } from 'next/navigation'
 import { GUIDE_PAGES } from '../_lib/guide'
 import { dishes, foodNotes, type FoodTradition } from '@betterbarmm/travel-data'
@@ -32,7 +34,7 @@ export default function FoodPage() {
 
 	return (
 		<>
-			<TravelMasthead
+			<TravelMasthead photos={[heroFromTravelPhoto(travelPhotos.tiyulaItum)]}
 				kicker='The guide'
 				name='Food'
 				note='The best reason to come, and the least written-about food in the Philippines: halal, rich in coconut, turmeric and chilli, closer to Sabah and Sulawesi than to Luzon. There is no single Bangsamoro cuisine — each dish names whose it is.'

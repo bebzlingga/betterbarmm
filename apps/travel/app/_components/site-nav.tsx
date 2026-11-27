@@ -1,7 +1,7 @@
 'use client'
 
 import { CaretDownIcon, HandHeartIcon, HeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
-import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import { travelAreas } from '@betterbarmm/travel-data'
 import Link from 'next/link'
@@ -9,6 +9,9 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeToggle } from './theme-toggle'
 import { GUIDE_PAGES } from '../_lib/guide'
+import { DESTINATIONS } from '../_lib/discover'
+
+const areaName = new Map(travelAreas.map((area) => [area.slug, area.name]))
 
 const guide = [
 	{ href: '/routes', label: 'Routes' },
@@ -99,10 +102,20 @@ function Menu({
 export function SiteNav() {
 	const pathname = usePathname()
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	const { past, hidden } = useHeaderScroll(isMenuOpen)
 	const closeMenu = () => setIsMenuOpen(false)
 
-	const isAreaActive = travelAreas.some((area) => pathname.startsWith(`/${area.slug}`))
+	// Pages with a photograph header run it under both bars (user decision): clear, on a hairline. The bar
+	// does not follow the reader down (user decision: not sticky in this workspace), so it is only ever over the photograph.
+	// Every page with a photograph header (PageHero): the explorer, the list pages, the guide's, a destination, a place,
+	// an area and its towns. An address that is none of these (a page not found) keeps the solid bar.
+	const overlay =
+		['/', '/eat', '/calendar', '/flights', '/ferries', '/saved', '/routes', '/food', '/stays', '/plan'].includes(pathname) ||
+		pathname.startsWith('/discover/') ||
+		pathname.startsWith('/guide/') ||
+		pathname.startsWith('/places/') ||
+		travelAreas.some((area) => pathname === `/${area.slug}` || pathname.startsWith(`/${area.slug}/`))
+	const clear = overlay && !isMenuOpen
+
 	const isGuideActive = guide.some((item) => pathname.startsWith(item.href))
 
 	return (
@@ -113,7 +126,7 @@ export function SiteNav() {
 			<UtilityBar
 				base='https://betterbarmm.com'
 				current='travel'
-				className='bb-strip bg-[var(--paper-2)]'
+				className={`bb-strip ${overlay ? 'tv-over' : 'bg-[var(--paper-2)]'}`}
 				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={
 					<>
@@ -134,17 +147,11 @@ export function SiteNav() {
 				}
 			/>
 
-			{/* The estate's masthead behaviour, the same on every workspace: it
-			    takes a ground once the reader has left the top, and ducks out of the
-			    way when they are reading down. `useHeaderScroll` also publishes the
-			    flag the shared stylesheet reads to drop `--sticky-top`, so anything
-			    sticking under this bar follows it up instead of leaving a band of
-			    empty page. */}
-		<motion.header
-			animate={{ y: hidden ? '-100%' : '0%' }}
-			transition={{ duration: 0.42, ease: EASE }}
-			data-solid={past}
-			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
+			{/* In this workspace the masthead stays at the top of the page and scrolls away with it (user decision): not
+			    sticky, and so not ducking in and out either. `--sticky-top` is 0 here (globals.css) to match. */}
+		<header
+			data-clear={clear}
+			className='relative z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
 			<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2'>
@@ -165,32 +172,46 @@ export function SiteNav() {
 					</div>
 
 					<nav className='hidden items-center justify-end gap-1 md:flex'>
-						{/* The places, browsed like stays: the front page. */}
-						<Link href='/' data-active={pathname === '/' || pathname.startsWith('/places')} className='nav-item'>
-							Explore
-						</Link>
-
-						<Menu label='Areas' active={isAreaActive} width='w-[19rem]'>
-							{(close) =>
-								travelAreas.map((area) => (
-									<Link
-										key={area.slug}
-										href={`/${area.slug}`}
-										onClick={close}
-										className='nav-menu-item'
-									>
-										{area.name}
+						{/* Discover (user decision): every place, browsed like stays, then each destination's own page. */}
+						<Menu label='Discover' active={pathname === '/' || pathname.startsWith('/places') || pathname.startsWith('/discover')} width='w-[17rem]'>
+							{(close) => (
+								<>
+									<Link href='/' onClick={close} className='nav-menu-item'>
+										All places
 									</Link>
-								))
-							}
+									<p className='px-3 pb-1 pt-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>Destinations</p>
+									{DESTINATIONS.map(({ slug }) => (
+										<Link key={slug} href={`/discover/${slug}`} onClick={close} className='nav-menu-item'>
+											{areaName.get(slug)}
+										</Link>
+									))}
+								</>
+							)}
 						</Menu>
 
-						{/* Getting here (user decision: a full travel site, flights included). */}
-						<Link href='/flights' data-active={pathname === '/flights'} className='nav-item'>
-							Flights
-						</Link>
-						<Link href='/ferries' data-active={pathname === '/ferries'} className='nav-item'>
-							Ferries
+
+						{/* Getting here (user decision: flights and ferries as one item, a menu of the two). */}
+						<Menu label='Getting here' active={pathname === '/flights' || pathname === '/ferries' || pathname.startsWith('/guide/')} width='w-[17rem]'>
+							{(close) => (
+								<>
+									<Link href='/flights' onClick={close} className='nav-menu-item'>
+										Flights
+									</Link>
+									<Link href='/ferries' onClick={close} className='nav-menu-item'>
+										Ferries &amp; boats
+									</Link>
+									{/* A travel guide per area (user decision): how to get in, around, sleep, when to go, safety. */}
+									<p className='px-3 pb-1 pt-3 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>Travel guides</p>
+									{travelAreas.map((area) => (
+										<Link key={area.slug} href={`/guide/${area.slug}`} onClick={close} className='nav-menu-item'>
+											{area.name}
+										</Link>
+									))}
+								</>
+							)}
+						</Menu>
+						<Link href='/calendar' data-active={pathname === '/calendar'} className='nav-item'>
+							Calendar
 						</Link>
 						<Link href='/eat' data-active={pathname === '/eat'} className='nav-item'>
 							Where to eat
@@ -270,11 +291,25 @@ export function SiteNav() {
 								<Link href='/' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
 									Explore places
 								</Link>
-								<Link href='/flights' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
+								{DESTINATIONS.map(({ slug }) => (
+									<Link key={slug} href={`/discover/${slug}`} onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 pl-4 text-[var(--ink)]'>
+										Discover {areaName.get(slug)}
+									</Link>
+								))}
+								<p className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>Getting here</p>
+								<Link href='/flights' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 pl-4 text-[var(--ink)]'>
 									Flights
 								</Link>
-								<Link href='/ferries' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
-									Ferries
+								<Link href='/ferries' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 pl-4 text-[var(--ink)]'>
+									Ferries &amp; boats
+								</Link>
+								{travelAreas.map((area) => (
+									<Link key={area.slug} href={`/guide/${area.slug}`} onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 pl-4 text-[var(--ink)]'>
+										Travel guide: {area.name}
+									</Link>
+								))}
+								<Link href='/calendar' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
+									Calendar
 								</Link>
 								<Link href='/eat' onClick={closeMenu} className='border-b border-[var(--rule-soft)] py-2.5 font-semibold text-[var(--ink)]'>
 									Where to eat
@@ -284,20 +319,6 @@ export function SiteNav() {
 								</Link>
 							</div>
 
-							<p className='bb-label mt-7'>Areas</p>
-							<div className='mt-3 grid'>
-								{travelAreas.map((area) => (
-									<Link
-										key={area.slug}
-										href={`/${area.slug}`}
-										onClick={closeMenu}
-										className='flex items-center justify-between gap-3 border-b border-[var(--rule-soft)] py-2.5'
-									>
-										{area.name}
-										<span className='text-[0.6875rem] text-[var(--ink-mute)]'>{area.base}</span>
-									</Link>
-								))}
-							</div>
 
 							{GUIDE_PAGES ? (
 								<>
@@ -324,7 +345,7 @@ export function SiteNav() {
 			</AnimatePresence>
 
 			<ScrollProgress />
-		</motion.header>
+		</header>
 		</>
 	)
 }

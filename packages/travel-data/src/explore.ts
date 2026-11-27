@@ -279,13 +279,15 @@ export const eatsInArea = (area: string): ExploreEat[] => exploreEats.filter((ea
 
 export type ExploreCraft = { slug: string; name: string; local_name: string; group: string; summary: string; image: ExploreImage | null }
 
-type RawCraft = Omit<ExploreCraft, 'image'> & { towns: string[]; images: ExploreImage[] }
+type RawCraft = Omit<ExploreCraft, 'image'> & { towns: string[]; images: ExploreImage[]; people: string; province: string }
 
 const townKey = (s: string) => norm(s.split(/,| and | \(| —/)[0]!)
 
 const CRAFTS = (craftsFile as unknown as { items: RawCraft[] }).items.map((c) => ({
 	craft: { slug: c.slug, name: c.name, local_name: c.local_name, group: c.group, summary: c.summary, image: c.images[0] ? hosted(c.images[0]) : null },
-	towns: new Set(c.towns.map(townKey)),
+	towns: new Set((c.towns ?? []).map(townKey)),
+	people: c.people,
+	province: c.province,
 }))
 
 /** The crafts made in this place's town, photographed ones first. */
@@ -296,3 +298,48 @@ export function craftsFor(place: ExplorePlace): ExploreCraft[] {
 		.sort((a, b) => Number(!a.image) - Number(!b.image))
 }
 
+
+/* ---- Crafts and peoples by area (user decision: connect the crafts and cultures to each area) ---- */
+
+export type AreaCraft = ExploreCraft & { people: string }
+
+/** Maguindanao divided in 2022; a craft the dataset files under the old province belongs to both halves. */
+const OLD_MAGUINDANAO = new Set(['maguindanao-del-norte', 'maguindanao-del-sur'])
+
+/** An area's town names, as the crafts dataset writes them, keyed the same way. */
+const areaTownKeys = (area: string) => new Set(towns.filter((t) => t.area === area).map((t) => townKey(t.name)))
+
+/** The crafts of an area: filed under it (or under undivided Maguindanao), or made in one of its towns. Photographed first. */
+export function craftsInArea(area: string): AreaCraft[] {
+	const keys = areaTownKeys(area)
+	return CRAFTS.filter((c) => c.province === area || (c.province === 'maguindanao' && OLD_MAGUINDANAO.has(area)) || [...c.towns].some((t) => keys.has(t)))
+		.map((c) => ({ ...c.craft, people: c.people }))
+		.sort((a, b) => Number(!a.image) - Number(!b.image))
+}
+
+/** The peoples an area's towns name, with how many towns name each, most first. */
+export function peoplesInArea(area: string): { name: string; towns: number }[] {
+	const count = new Map<string, number>()
+	for (const t of towns.filter((t) => t.area === area)) for (const p of t.peoples) count.set(p, (count.get(p) ?? 0) + 1)
+	return [...count].map(([name, n]) => ({ name, towns: n })).sort((a, b) => b.towns - a.towns)
+}
+
+export type CraftFestival = { name: string; place: string; month: string; note: string; source: string }
+
+/** The crafts dataset's festivals held in an area, matched on the area's name in the festival's place. */
+export function craftFestivalsInArea(areaName: string): CraftFestival[] {
+	return (craftsFile as unknown as { festivals: CraftFestival[] }).festivals.filter((f) => f.place.includes(areaName))
+}
+
+/** The crafts dataset's festivals held in the region, with the area each falls in (a place outside BARMM is left off). */
+export function craftFestivalsInRegion(): (CraftFestival & { area: string })[] {
+	return (craftsFile as unknown as { festivals: CraftFestival[] }).festivals
+		.filter((f) => !/outside BARMM/i.test(f.place))
+		.flatMap((f) => {
+			const area = travelAreas.find((a) => f.place.includes(a.name))
+			return area ? [{ ...f, area: area.slug }] : []
+		})
+}
+
+/** A craft by its slug, with its first photograph. */
+export const findCraft = (slug: string): ExploreCraft | undefined => CRAFTS.find((c) => c.craft.slug === slug)?.craft

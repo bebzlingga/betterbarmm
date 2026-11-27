@@ -1,0 +1,1022 @@
+{
+ "name": "Founding anniversaries of the Bangsamoro’s provinces, cities and municipalities",
+ "generatedAt": "2026-11-27",
+ "note": "Each date is the day a town legally began: the date its law took effect or its plebiscite ratified it where a source gives one, otherwise the day its law was passed or signed; a city is dated from its charter. `kind` says which. A town may celebrate a different day; where the town’s own reckoning is recorded, it is used (`tradition`). Drawn from the LGU histories (datasets/lgu/histories.json) and the laws themselves on Lawphil.",
+ "areas": [
+  {
+   "area": "basilan",
+   "name": "Basilan",
+   "date": "1973-12-27",
+   "kind": "law",
+   "basis": "Presidential Decree No. 356 created the Province of Basilan, signed 27 December 1973",
+   "source": "https://lawphil.net/statutes/presdecs/pd1973/pd_356_1973.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "name": "Lanao del Sur",
+   "date": "1959-05-22",
+   "kind": "law",
+   "basis": "Republic Act No. 2228 divided Lanao into Lanao del Norte and Lanao del Sur, approved 22 May 1959",
+   "source": "https://lawphil.net/statutes/repacts/ra1959/ra_2228_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "name": "Tawi-Tawi",
+   "date": "1973-09-11",
+   "kind": "law",
+   "basis": "Presidential Decree No. 302 created the Province of Tawi-Tawi, signed 11 September 1973",
+   "source": "https://lawphil.net/statutes/presdecs/pd1973/pd_302_1973.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "name": "Maguindanao del Norte",
+   "date": "2023-01-09",
+   "kind": "effective",
+   "basis": "Republic Act No. 11550 divided Maguindanao; ratified 17 September 2022, the province took effect on 9 January 2023",
+   "source": "https://lawphil.net/statutes/repacts/ra2021/ra_11550_2021.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "name": "Maguindanao del Sur",
+   "date": "2023-01-09",
+   "kind": "effective",
+   "basis": "Republic Act No. 11550 divided Maguindanao; ratified 17 September 2022, the province took effect on 9 January 2023",
+   "source": "https://lawphil.net/statutes/repacts/ra2021/ra_11550_2021.html"
+  },
+  {
+   "area": "cotabato-city",
+   "name": "Cotabato City",
+   "date": "1959-06-20",
+   "kind": "charter",
+   "basis": "Republic Act No. 2364 made Cotabato a chartered city, approved 20 June 1959",
+   "source": "https://lawphil.net/statutes/repacts/ra1959/ra_2364_1959.html"
+  }
+ ],
+ "units": [
+  {
+   "area": "basilan",
+   "slug": "akbar",
+   "name": "Akbar",
+   "date": "2005-12-20",
+   "kind": "law",
+   "basis": "Akbar was created by Muslim Mindanao Autonomy Act No. 193, passed by the ARMM Regional Legislative Assembly on 20 December 2005.",
+   "source": "https://www.lawphil.net/administ/mmaa/5a/pdf/mmaa_193_5a.pdf"
+  },
+  {
+   "area": "basilan",
+   "slug": "al-barka",
+   "name": "Al-Barka",
+   "date": "2006-05-22",
+   "kind": "ratified",
+   "basis": "Al-Barka was created by Muslim Mindanao Autonomy Act No. 191, passed by the ARMM Regional Legislative Assembly on 20 December 2005. Its creation was ratified in a plebiscite held on 22 May 2006, the same day as that for neighbouring Ungkaya Pukan, also carved from Tipo-Tipo.",
+   "source": "https://www.lawphil.net/administ/mmaa/5a/pdf/mmaa_191_5a.pdf"
+  },
+  {
+   "area": "basilan",
+   "slug": "hadji-mohammad-ajul",
+   "name": "Hadji Mohammad Ajul",
+   "date": "2006-05-22",
+   "kind": "ratified",
+   "basis": "Hadji Mohammad Ajul was created by Muslim Mindanao Autonomy Act No. 192, passed by the ARMM Regional Legislative Assembly on 20 December 2005 and ratified in a plebiscite on 22 May 2006.",
+   "source": "https://www.lawphil.net/administ/mmaa/5a/pdf/mmaa_192_5a.pdf"
+  },
+  {
+   "area": "basilan",
+   "slug": "hadji-muhtamad",
+   "name": "Hadji Muhtamad",
+   "date": "2007-08-25",
+   "kind": "ratified",
+   "basis": "Hadji Muhtamad was created by Muslim Mindanao Autonomy Act No. 200, passed by the ARMM Regional Legislative Assembly on 22 August 2006. The new town's creation was ratified in a plebiscite held on 25 August 2007.",
+   "source": "https://www.lawphil.net/administ/mmaa/5a/pdf/mmaa_200_5a.pdf"
+  },
+  {
+   "area": "basilan",
+   "slug": "lamitan",
+   "name": "Lamitan",
+   "date": "2007-03-15",
+   "kind": "charter",
+   "basis": "Republic Act No. 9393, approved 15 March 2007 and ratified 18 June 2007, made Lamitan a city; Datu Kalun founded the settlement in 1886",
+   "source": "https://lawphil.net/statutes/repacts/ra2007/ra_9393_2007.html"
+  },
+  {
+   "area": "basilan",
+   "slug": "lantawan",
+   "name": "Lantawan",
+   "date": "1974-12-02",
+   "kind": "law",
+   "basis": "Presidential Decree No. 593, signed 2 December 1974",
+   "source": "https://lawphil.net/statutes/presdecs/pd1974/pd_593_1974.html"
+  },
+  {
+   "area": "basilan",
+   "slug": "maluso",
+   "name": "Maluso",
+   "date": "1973-12-27",
+   "kind": "law",
+   "basis": "Formerly a municipal district, Maluso was made a regular municipality by Presidential Decree No. 356 of 1973, which created the Province of Basilan.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1973/pd_356_1973.html"
+  },
+  {
+   "area": "basilan",
+   "slug": "sumisip",
+   "name": "Sumisip",
+   "date": "1974-12-02",
+   "kind": "law",
+   "basis": "Presidential Decree No. 593, signed 2 December 1974",
+   "source": "https://lawphil.net/statutes/presdecs/pd1974/pd_593_1974.html"
+  },
+  {
+   "area": "basilan",
+   "slug": "tabuan-lasa",
+   "name": "Tabuan-Lasa",
+   "date": "2008-03-29",
+   "kind": "ratified",
+   "basis": "The creation was ratified in a plebiscite held on 29 March 2008.",
+   "source": "https://www.lawphil.net/administ/mmaa/4a/pdf/mmaa_187_4a.pdf"
+  },
+  {
+   "area": "basilan",
+   "slug": "tipo-tipo",
+   "name": "Tipo-Tipo",
+   "date": "1974-12-02",
+   "kind": "law",
+   "basis": "Presidential Decree No. 593, signed 2 December 1974",
+   "source": "https://lawphil.net/statutes/presdecs/pd1974/pd_593_1974.html"
+  },
+  {
+   "area": "basilan",
+   "slug": "tuburan",
+   "name": "Tuburan",
+   "date": "1974-12-02",
+   "kind": "law",
+   "basis": "Tuburan was created as a municipality by Presidential Decree No. 593, signed on 2 December 1974, which divided the Province of Basilan into 10 municipalities.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1974/pd_593_1974.html"
+  },
+  {
+   "area": "basilan",
+   "slug": "ungkaya-pukan",
+   "name": "Ungkaya Pukan",
+   "date": "2006-05-22",
+   "kind": "ratified",
+   "basis": "Ungkaya Pukan was created by Muslim Mindanao Autonomy Act No. 190, passed by the ARMM Regional Legislative Assembly on 20 December 2005 and ratified in a plebiscite on 22 May 2006.",
+   "source": "https://www.lawphil.net/administ/mmaa/5a/pdf/mmaa_190_5a.pdf"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "amai-manabilang",
+   "name": "Amai Manabilang",
+   "date": "1977-11-17",
+   "kind": "law",
+   "basis": "Presidential Decree No. 1243, signed 17 November 1977, created it as the Municipality of Bumbaran",
+   "source": "https://lawphil.net/administ/mmaa/8a/pdf/mmaa_316_8a.pdf"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "bacolod-kalawi",
+   "name": "Bacolod-Kalawi",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "balabagan",
+   "name": "Balabagan",
+   "date": "1969-07-05",
+   "kind": "law",
+   "basis": "Congress later passed Republic Act No. 5978, approved on 5 July 1969, which created Balabagan by statute from barrios of Malabang and Dianaton, effective from 16 March 1960, with Barrio Banago as the seat.",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_386_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "balindong",
+   "name": "Balindong",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "bayang",
+   "name": "Bayang",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "binidayan",
+   "name": "Binidayan",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "buadiposo-buntong",
+   "name": "Buadiposo-Buntong",
+   "date": "1977-05-04",
+   "kind": "law",
+   "basis": "Buadiposo-Buntong was created by Presidential Decree No. 1133, signed by President Ferdinand Marcos on 4 May 1977.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1133_1977.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "bubong",
+   "name": "Bubong",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "butig",
+   "name": "Butig",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "calanogas",
+   "name": "Calanogas",
+   "date": "1977-05-04",
+   "kind": "law",
+   "basis": "Calanogas was created by Presidential Decree No. 1132, signed by President Ferdinand Marcos on 4 May 1977.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1132_1977.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "ditsaan-ramain",
+   "name": "Ditsaan-Ramain",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "ganassi",
+   "name": "Ganassi",
+   "date": "1961-01-18",
+   "kind": "law",
+   "basis": "Garcia on 18 January 1961, converted it into a municipality on the recommendation of the Lanao del Sur Provincial Board.",
+   "source": "https://lawphil.net/executive/execord/eo1961/eo_411_1961.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "kapai",
+   "name": "Kapai",
+   "date": "1967-07-18",
+   "kind": "law",
+   "basis": "Executive Order No. 77, signed by President Ferdinand Marcos on 18 July 1967, declared Kapai a regular municipality effective 1 July 1964, after it met the revenue requirement.",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "kapatagan",
+   "name": "Kapatagan",
+   "date": "1982-05-17",
+   "kind": "ratified",
+   "basis": "Kapatagan was created by Batas Pambansa Blg. 168, approved on 8 February 1982. The law separated a large group of barangays from Balabagan and made the site of Barangay Kapatagan the seat of government, subject to a plebiscite held on 17 May 1982 alongside the barangay elections.",
+   "source": "https://lawphil.net/statutes/bataspam/bp1982/bp_168_1982.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "lumba-bayabao",
+   "name": "Lumba-Bayabao",
+   "date": "1961-06-01",
+   "kind": "law",
+   "basis": "Garcia on 1 June 1961, converted it into a municipality on the recommendation of the Lanao del Sur Provincial Board.",
+   "source": "https://lawphil.net/executive/execord/eo1961/eo_428_1961.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "lumbaca-unayan",
+   "name": "Lumbaca-Unayan",
+   "date": "2004-11-27",
+   "kind": "ratified",
+   "basis": "It was created from part of Lumbatan by Muslim Mindanao Autonomy Act No. 106, signed by Regional Governor Nur Misuari on 22 November 2000. Residents approved its creation in a plebiscite on 27 November 2004.",
+   "source": "https://lawphil.net/administ/mmaa/3a/3a.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "lumbatan",
+   "name": "Lumbatan",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "lumbayanague",
+   "name": "Lumbayanague",
+   "date": "1977-02-14",
+   "kind": "law",
+   "basis": "Lumbayanague was created by Presidential Decree No. 1091, signed by President Ferdinand Marcos on 14 February 1977.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1091_1977.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "madalum",
+   "name": "Madalum",
+   "date": "1967-07-18",
+   "kind": "law",
+   "basis": "Executive Order No. 77, signed by President Ferdinand Marcos on 18 July 1967, declared it a regular municipality effective 1 July 1964, after its revenue had passed the legal threshold for 4 straight fiscal years.",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "madamba",
+   "name": "Madamba",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_409_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "maguing",
+   "name": "Maguing",
+   "date": "1977-05-04",
+   "kind": "law",
+   "basis": "Maguing was created on 4 May 1977 by Presidential Decree No. 1134, signed by President Ferdinand Marcos.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1134_1977.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "malabang",
+   "name": "Malabang",
+   "date": "1893-03-01",
+   "kind": "tradition",
+   "basis": "The town marks its founding on 1 March 1893",
+   "source": null
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "marantao",
+   "name": "Marantao",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "marawi",
+   "name": "Marawi",
+   "date": "1940-08-19",
+   "kind": "charter",
+   "basis": "Commonwealth Act No. 592 made Dansalan (now Marawi) a city on 19 August 1940; it had been a municipality since 1907",
+   "source": "https://lawyerly.ph/laws/view/l8fc0"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "marogong",
+   "name": "Marogong",
+   "date": "1977-05-04",
+   "kind": "law",
+   "basis": "Presidential Decree No. 1131, signed 4 May 1977",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1131_1977.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "masiu",
+   "name": "Masiu",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "mulondo",
+   "name": "Mulondo",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "pagayawan",
+   "name": "Pagayawan",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "piagapo",
+   "name": "Piagapo",
+   "date": "1961-06-09",
+   "kind": "law",
+   "basis": "Executive Order No. 431, issued on 9 June 1961, divided the municipal district of Saguiaran in two and created the municipal district of Piagapo.",
+   "source": "https://lawphil.net/executive/execord/eo1961/eo_431_1961.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "picong",
+   "name": "Picong",
+   "date": "1977-05-04",
+   "kind": "law",
+   "basis": "Presidential Decree No. 1135, signed 4 May 1977, created it as the Municipality of Sultan Gumander",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1135_1977.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "poona-bayabao",
+   "name": "Poona Bayabao",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/statutes/repacts/ra1956/ra_1421_1956.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "pualas",
+   "name": "Pualas",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "saguiaran",
+   "name": "Saguiaran",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "sultan-dumalondong",
+   "name": "Sultan Dumalondong",
+   "date": "1995-06-19",
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 36, passed by the Regional Legislative Assembly on 19 June 1995",
+   "source": "https://lawphil.net/administ/mmaa/2a/pdf/mmaa_36_2a.pdf"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "tagoloan-ii",
+   "name": "Tagoloan II",
+   "date": "1978-06-11",
+   "kind": "law",
+   "basis": "Tagoloan was created by Presidential Decree No. 1548, signed by President Ferdinand Marcos on 11 June 1978, which separated 39 barangays from Kapai to form a new municipality with its seat at Barangay Tagoloan.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1978/pd_1548_1978.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "tamparan",
+   "name": "Tamparan",
+   "date": "1960-09-28",
+   "kind": "law",
+   "basis": "It was a municipal district until Executive Order No. 405, issued on 28 September 1960, converted it into a regular municipality.",
+   "source": "https://lawphil.net/executive/execord/eo1960/eo_405_1960.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "taraka",
+   "name": "Taraka",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "tubaran",
+   "name": "Tubaran",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "tugaya",
+   "name": "Tugaya",
+   "date": "1962-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 42 (25 June 1963) declared it a regular municipality, effective 1 July 1962",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_42_1963.html"
+  },
+  {
+   "area": "lanao-del-sur",
+   "slug": "wao",
+   "name": "Wao",
+   "date": "1961-02-22",
+   "kind": "law",
+   "basis": "Executive Order No. 418, issued on 22 February 1961, converted the municipal district of Wao into a municipality.",
+   "source": "https://lawphil.net/executive/execord/eo1961/eo_418_1961.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "barira",
+   "name": "Barira",
+   "date": "1977-08-29",
+   "kind": "law",
+   "basis": "Presidential Decree No. 1188, signed 29 August 1977",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1188_1977.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "buldon",
+   "name": "Buldon",
+   "date": "1961-06-18",
+   "kind": "law",
+   "basis": "Republic Act No. 3419, approved 18 June 1961",
+   "source": "https://lawphil.net/statutes/repacts/ra1961/ra_3419_1961.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "datu-blah-t-sinsuat",
+   "name": "Datu Blah T. Sinsuat",
+   "date": null,
+   "year": 2006,
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 198 (2005), ratified in a plebiscite in 2006; the act on Lawphil leaves its approval date blank",
+   "source": "https://lawphil.net/administ/mmaa/5a/mmaa_198_5a.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "datu-odin-sinsuat",
+   "name": "Datu Odin Sinsuat",
+   "date": "1947-08-18",
+   "kind": "law",
+   "basis": "Datu Odin Sinsuat began as the town of Dinaig, one of the 10 municipalities that President Manuel Roxas organized in Cotabato province through Executive Order No. 82 in 1947.",
+   "source": "https://lawphil.net/executive/execord/eo1947/eo_82_1947.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "kabuntalan",
+   "name": "Kabuntalan",
+   "date": "1949-06-16",
+   "kind": "law",
+   "basis": "Executive Order No. 82 of 1947 annexed the municipal district of Tumbao to Cotabato, but Executive Order No. 227, signed on 16 June 1949, organized the former districts of Tumbao and Gambar into the Municipality of Tumbao.",
+   "source": "https://lawphil.net/executive/execord/eo1949/eo_227_1949.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "matanog",
+   "name": "Matanog",
+   "date": "1975-08-25",
+   "kind": "law",
+   "basis": "Presidential Decree No. 780, signed 25 August 1975",
+   "source": "https://lawphil.net/statutes/presdecs/pd1975/pd_780_1975.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "northern-kabuntalan",
+   "name": "Northern Kabuntalan",
+   "date": "2006-12-30",
+   "kind": "ratified",
+   "basis": "Muslim Mindanao Autonomy Act No. 206, ratified in a plebiscite on 30 December 2006",
+   "source": "https://lawphil.net/administ/mmaa/5a/mmaa_206_5a.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "parang",
+   "name": "Parang",
+   "date": "1947-08-18",
+   "kind": "law",
+   "basis": "Under American rule, Polloc became part of the municipal district of Parang in 1917, and President Manuel Roxas organized Parang as a full municipality through Executive Order No. 82 in 1947.",
+   "source": "https://lawphil.net/executive/execord/eo1947/eo_82_1947.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "sultan-kudarat",
+   "name": "Sultan Kudarat",
+   "date": "1947-08-18",
+   "kind": "law",
+   "basis": "The town was first known as Nuling, a municipal district that President Manuel Roxas organized into a municipality through Executive Order No. 82 in 1947, joining the districts of Nuling, Gubpangan and Balut.",
+   "source": "https://lawphil.net/executive/execord/eo1947/eo_82_1947.html"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "sultan-mastura",
+   "name": "Sultan Mastura",
+   "date": "2003-04-28",
+   "kind": "effective",
+   "basis": "Muslim Mindanao Autonomy Act No. 89 (approved 13 September 1999), ratified 15 March 2003; corporate existence from 28 April 2003",
+   "source": "https://lawphil.net/administ/mmaa/3a/pdf/mmaa_89_3a.pdf"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "talitay",
+   "name": "Talitay",
+   "date": null,
+   "year": 1996,
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 52 of 1996 (session begun 22 April 1996), approved in a plebiscite in 1999; the scanned act shows no date",
+   "source": "https://lawphil.net/administ/mmaa/2a/pdf/mmaa_52_2a.pdf"
+  },
+  {
+   "area": "maguindanao-del-norte",
+   "slug": "upi",
+   "name": "Upi",
+   "date": "1955-06-10",
+   "kind": "law",
+   "basis": "Upi was a barrio of Dinaig, now Datu Odin Sinsuat, until Republic Act No. 1248, approved on 10 June 1955, made it a separate municipality.",
+   "source": "https://lawphil.net/statutes/repacts/ra1955/ra_1248_1955.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "ampatuan",
+   "name": "Ampatuan",
+   "date": "1959-06-21",
+   "kind": "law",
+   "basis": "Ampatuan was created as a municipality of the old province of Cotabato by Republic Act No. 2509, approved in 1959, which separated 23 barrios from Datu Piang and set the seat of government at Decalungan.",
+   "source": "https://lawphil.net/statutes/repacts/ra1959/ra_2509_1959.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "buluan",
+   "name": "Buluan",
+   "date": "1947-08-18",
+   "kind": "law",
+   "basis": "Buluan was one of 10 municipalities organized in the old province of Cotabato by Executive Order No. 82 of President Manuel Roxas in 1947, formed from the municipal districts of Buluan and Liguasan around Lake Buluan.",
+   "source": "https://lawphil.net/executive/execord/eo1947/eo_82_1947.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-abdullah-sangki",
+   "name": "Datu Abdullah Sangki",
+   "date": "2004-01-03",
+   "kind": "ratified",
+   "basis": "It was carved out of its mother town, Ampatuan, and its creation was ratified in a plebiscite on 3 January 2004.",
+   "source": "https://en.wikipedia.org/wiki/Datu_Abdullah_Sangki"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-anggal-midtimbang",
+   "name": "Datu Anggal Midtimbang",
+   "date": "2006-12-30",
+   "kind": "ratified",
+   "basis": "Voters ratified its creation in a plebiscite on 30 December 2006, and the law set its administrative centre at barangay Brar.",
+   "source": "https://en.wikipedia.org/wiki/Datu_Anggal_Midtimbang"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-hoffer-ampatuan",
+   "name": "Datu Hoffer Ampatuan",
+   "date": "2009-07-30",
+   "kind": "ratified",
+   "basis": "It was formed from 9 barangays of Shariff Aguak and parts of 2 barangays of Datu Unsay, and its creation was ratified in a plebiscite on 30 July 2009, the same day the neighbouring towns of Shariff Saydona Mustapha and Datu Salibo were ratified.",
+   "source": "https://en.wikipedia.org/wiki/Datu_Hoffer_Ampatuan"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-paglas",
+   "name": "Datu Paglas",
+   "date": "1973-11-22",
+   "kind": "law",
+   "basis": "Datu Paglas was created on 22 November 1973 by Presidential Decree No. 340 of President Ferdinand Marcos, issued on the day the old province of Cotabato was divided.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1973/pd_340_1973.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-piang",
+   "name": "Datu Piang",
+   "date": "1936-11-25",
+   "kind": "law",
+   "basis": "It was organized as the municipality of Dulawan by Executive Order No. 66 of President Manuel L.",
+   "source": "https://lawphil.net/executive/execord/eo1936/eo_66_1936.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-salibo",
+   "name": "Datu Salibo",
+   "date": "2009-07-30",
+   "kind": "ratified",
+   "basis": "Its creation was ratified in a plebiscite held by the Commission on Elections on 30 July 2009.",
+   "source": "https://en.wikipedia.org/wiki/Datu_Salibo"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-saudi-ampatuan",
+   "name": "Datu Saudi-Ampatuan",
+   "date": "2003-05-14",
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 151, passed 14 May 2003 and approved 9 June 2003",
+   "source": "https://lawphil.net/administ/mmaa/4a/mmaa_151_4a.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "datu-unsay",
+   "name": "Datu Unsay",
+   "date": "2003-05-14",
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 150, passed 14 May 2003 and approved 9 June 2003",
+   "source": "https://lawphil.net/administ/mmaa/4a/mmaa_150_4a.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "gen-s-k-pendatun",
+   "name": "Gen. S. K. Pendatun",
+   "date": "1991-04-07",
+   "kind": "law",
+   "basis": "It was created on 7 April 1991 by Muslim Mindanao Autonomy Act No. 3, which carved it out of Buluan.",
+   "source": "https://en.wikipedia.org/wiki/General_Salipada_K._Pendatun,_Maguindanao_del_Sur"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "guindulungan",
+   "name": "Guindulungan",
+   "date": "2003-03-10",
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 139, passed 10 March 2003",
+   "source": "https://lawphil.net/administ/mmaa/4a/pdf/mmaa_139_4a.pdf"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "mamasapano",
+   "name": "Mamasapano",
+   "date": "1998-10-31",
+   "kind": "ratified",
+   "basis": "It became a municipality under Muslim Mindanao Autonomy Act No. 54, with 18 barangays taken from Shariff Aguak, after a plebiscite on 31 October 1998.",
+   "source": "https://en.wikipedia.org/wiki/Mamasapano"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "mangudadatu",
+   "name": "Mangudadatu",
+   "date": "2006-12-30",
+   "kind": "ratified",
+   "basis": "It was formed from 8 barangays in the southern part of Buluan, and its creation was ratified in a plebiscite on 30 December 2006, the same day as the neighbouring town of Pandag, which was also carved from Buluan.",
+   "source": "https://en.wikipedia.org/wiki/Mangudadatu,_Maguindanao_del_Sur"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "pagagawan",
+   "name": "Pagagawan",
+   "date": "2000-01-18",
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 95, passed 18 January 2000",
+   "source": "https://lawphil.net/administ/mmaa/3a/pdf/mmaa_95_3a.pdf"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "pagalungan",
+   "name": "Pagalungan",
+   "date": "1947-08-18",
+   "kind": "law",
+   "basis": "Pagalungan became a municipality in 1947 under Executive Order No. 82 of President Manuel Roxas, which organized 10 new municipalities in the old province of Cotabato.",
+   "source": "https://lawphil.net/executive/execord/eo1947/eo_82_1947.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "paglat",
+   "name": "Paglat",
+   "date": "2001-07-19",
+   "kind": "law",
+   "basis": "Muslim Mindanao Autonomy Act No. 112, passed 19 July 2001",
+   "source": "https://lawphil.net/administ/mmaa/3a/pdf/mmaa_112_3a.pdf"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "pandag",
+   "name": "Pandag",
+   "date": "2006-12-30",
+   "kind": "ratified",
+   "basis": "It was formed from 8 barangays in the northern part of Buluan, and its creation was ratified in a plebiscite on 30 December 2006, the same day as Mangudadatu, which was carved from Buluan's southern barangays.",
+   "source": "https://en.wikipedia.org/wiki/Pandag"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "rajah-buayan",
+   "name": "Rajah Buayan",
+   "date": "2004-09-04",
+   "kind": "ratified",
+   "basis": "The modern municipality was created by Muslim Mindanao Autonomy Act No. 166 of October 2002 and ratified in a plebiscite on 4 September 2004.",
+   "source": "https://en.wikipedia.org/wiki/Rajah_Buayan"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "shariff-aguak",
+   "name": "Shariff Aguak",
+   "date": "1963-09-11",
+   "kind": "law",
+   "basis": "Shariff Aguak was founded as Maganoy by Executive Order No. 47 of President Diosdado Macapagal in 1963, which formed the new town from 28 barrios of Datu Piang in the old province of Cotabato.",
+   "source": "https://lawphil.net/executive/execord/eo1963/eo_47_1963.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "shariff-saydona-mustapha",
+   "name": "Shariff Saydona Mustapha",
+   "date": "2009-07-30",
+   "kind": "ratified",
+   "basis": "It was created by Muslim Mindanao Autonomy Act No. 225, as amended by Act No. 252, from barangays of Shariff Aguak, Mamasapano, Datu Unsay, Datu Piang and Datu Saudi-Ampatuan, and was ratified in a plebiscite on 30 July 2009.",
+   "source": "https://en.wikipedia.org/wiki/Shariff_Saydona_Mustapha"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "south-upi",
+   "name": "South Upi",
+   "date": "1976-09-22",
+   "kind": "law",
+   "basis": "South Upi was created on 22 September 1976 by Presidential Decree No. 1011 of President Ferdinand Marcos.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1976/pd_1011_1976.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "sultan-sa-barongis",
+   "name": "Sultan sa Barongis",
+   "date": "1952-10-29",
+   "kind": "law",
+   "basis": "Sultan sa Barongis was created as the municipality of Lambayong by Executive Order No. 543 of President Elpidio Quirino in October 1952, formed from places in and around the barrios of Barurao and Lambayong in the municipality of Dulawan, now Datu Piang.",
+   "source": "https://lawphil.net/executive/execord/eo1952/eo_543_1952.html"
+  },
+  {
+   "area": "maguindanao-del-sur",
+   "slug": "talayan",
+   "name": "Talayan",
+   "date": "1976-09-22",
+   "kind": "law",
+   "basis": "Presidential Decree No. 1009, signed 22 September 1976",
+   "source": "https://lawphil.net/statutes/presdecs/pd1976/pd_1009_1976.html"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "kadayangan",
+   "name": "Kadayangan",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Kadayangan was created by Bangsamoro Autonomy Act 42, which the Bangsamoro Parliament passed on 17 August 2023. It joins 7 barangays that had belonged to Midsayap, North Cotabato, and voted to join the Bangsamoro region in the 2019 plebiscite: Central Labas, Kapinpilan, Malingao, Mudseng, Sambulawan, Tugal and Tumbras.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-42-BAA-42-Mun.-of-Kadayangan-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "kapalawan",
+   "name": "Kapalawan",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Kapalawan was created by Bangsamoro Autonomy Act 45, which the Bangsamoro Parliament passed on 17 August 2023. It joins 7 barangays that had belonged to Carmen, North Cotabato, and voted to join the Bangsamoro region in the 2019 plebiscite: Kibayao, Kitulaan, Langogan, Manarapan, Nasapian, Pebpoloan and Tupig.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-45-BAA-45-Mun.-of-Kapalawan-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "ligawasan",
+   "name": "Ligawasan",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Ligawasan was created by Bangsamoro Autonomy Act 48, which the Bangsamoro Parliament passed on 17 August 2023. It joins 7 barangays that had belonged to Pikit, North Cotabato, and voted to join the Bangsamoro region in the 2019 plebiscite: Bagoinged, Barungis, Buliok, Bulol, Gli-Gli, Kabasalan and Rajamuda.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-48-Mun.-of-Ligawasan-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "malidegao",
+   "name": "Malidegao",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Malidegao was created by Bangsamoro Autonomy Act 46, which the Bangsamoro Parliament passed on 17 August 2023. It joins 7 barangays that had belonged to Pikit, North Cotabato, and voted to join the Bangsamoro region in the 2019 plebiscite: Balungis, Batulawan, Fort Pikit, Gokotan, Nabundas, Nalapaan and Nunguan.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-46-Mun.-of-Malidegao-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "nabalawag",
+   "name": "Nabalawag",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Nabalawag was created by Bangsamoro Autonomy Act 43, which the Bangsamoro Parliament passed on 17 August 2023. It joins 7 barangays that voted to join the Bangsamoro region in the 2019 plebiscite: Damatulan, Kadigasan, Kadingilan, Kudarangan, Nabalawag and Olandang from Midsayap, and Dungguan from Aleosan, both in North Cotabato.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-43-BAA-43-Mun.-of-Nabalawag-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "old-kaabakan",
+   "name": "Old Kaabakan",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Old Kaabakan was created by Bangsamoro Autonomy Act 44, which the Bangsamoro Parliament passed on 17 August 2023. It joins 7 barangays that had belonged to Kabacan, North Cotabato, and voted to join the Bangsamoro region in the 2019 plebiscite: Buluan, Nangaan, Pedtad, Sanggadong, Simbuhay, Simone and Tamped.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-44-BAA-44-Mun.-of-Old-Kaabakan-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "pahamuddin",
+   "name": "Pahamuddin",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Pahamuddin was created by Bangsamoro Autonomy Act 41, which the Bangsamoro Parliament passed on 17 August 2023. It joins 12 barangays that had belonged to Pigcawayan, North Cotabato, and voted to join the Bangsamoro region in the 2019 plebiscite: Balacayon, Buricain, Datu Binasing, Datu Mantil, Kadingilan, Libungan Torreta, Lower Baquer, Lower Pangangkalan, Matilac, Patot, Simsiman and Upper Pangangkalan.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-41-BAA-41-Mun.-of-Pahamuddin-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "special-geographic-area",
+   "slug": "tugunan",
+   "name": "Tugunan",
+   "date": "2024-04-13",
+   "kind": "ratified",
+   "basis": "Tugunan was created by Bangsamoro Autonomy Act 47, which the Bangsamoro Parliament passed on 17 August 2023. It joins 9 barangays that voted to join the Bangsamoro region in the 2019 plebiscite: 8 from Pikit, among them Balong, Bualan, Lagunde, Macasendeg, Manaulanan, Pamalian and Panicupan, and Tapodoc from Aleosan, both in North Cotabato.",
+   "source": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/09/BAA-47-Mun.-of-Tugunan-with-metes-and-bounds.pdf"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "bongao",
+   "name": "Bongao",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355, effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "languyan",
+   "name": "Languyan",
+   "date": "1977-02-04",
+   "kind": "law",
+   "basis": "Languyan was created by Presidential Decree No. 1086 on 4 February 1977.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1086_1977.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "mapun",
+   "name": "Mapun",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355 made Cagayan de Sulu a municipality, effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "panglima-sugala",
+   "name": "Panglima Sugala",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355 made the district of Balimbing a municipality, effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "sapa-sapa",
+   "name": "Sapa-Sapa",
+   "date": "1977-02-04",
+   "kind": "law",
+   "basis": "Sapa-Sapa was created by Presidential Decree No. 1087 on 4 February 1977.",
+   "source": "https://lawphil.net/statutes/presdecs/pd1977/pd_1087_1977.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "sibutu",
+   "name": "Sibutu",
+   "date": "2006-10-21",
+   "kind": "ratified",
+   "basis": "The municipality was created out of Sitangkai by Muslim Mindanao Autonomy Act No. 197, ratified in a plebiscite on 21 October 2006, which moved 16 Sitangkai barangays on Sibutu Island to the new town.",
+   "source": "https://en.wikipedia.org/wiki/Sibutu"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "simunul",
+   "name": "Simunul",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355, effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "sitangkai",
+   "name": "Sitangkai",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355, effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "south-ubian",
+   "name": "South Ubian",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355, effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "tandubas",
+   "name": "Tandubas",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355 (26 August 1959), effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  },
+  {
+   "area": "tawi-tawi",
+   "slug": "turtle-islands",
+   "name": "Turtle Islands",
+   "date": "1958-07-01",
+   "kind": "effective",
+   "basis": "Executive Order No. 355, effective 1 July 1958",
+   "source": "https://lawphil.net/executive/execord/eo1959/eo_355_1959.html"
+  }
+ ]
+}

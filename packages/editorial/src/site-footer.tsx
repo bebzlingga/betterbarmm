@@ -301,3 +301,6 @@ export function SiteFooter({
 		</footer>
 	)
 }
+
+/** The estate lists, for a workspace that draws its own footer (travel) and must link the same places. */
+export { WORKSPACES as FOOTER_WORKSPACES, FOLLOW as FOOTER_FOLLOW }

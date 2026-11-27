@@ -125,17 +125,20 @@
   display: flex;
   flex-direction: column;
   border: 1px solid var(--rule);
+  border-radius: var(--dv-r);
   background: var(--paper);
-  padding: 1.35rem 1.4rem;
+  padding: 1.5rem 1.6rem;
   transition:
     border-color 0.2s var(--ease),
-    background-color 0.2s var(--ease),
+    box-shadow 0.2s var(--ease),
     transform 0.2s var(--ease);
 }
 
-/* Only the rule turns, to the accent, to say it is a link: no tint, no lift, no shadow (user decision). */
+/* In the Discover look (user decision): rounded, and a link lifts a little on its way to the reader. */
 a.tv-card:hover {
-  border-color: var(--accent);
+  border-color: color-mix(in srgb, var(--ink) 30%, var(--rule));
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
 }
 
 .tv-kind {
@@ -439,4 +442,601 @@ a.tv-card:hover {
    estate's own rule, so this one wins. */
 .bb-dropcap::first-letter {
   padding-right: 0.75rem;
+}
+
+/* ============================================================
+   Discover: a destination as a travel app shows it (user decision)
+   Rounded photo cards, a turning full-width header, glass chips and
+   rails that run to the page's edge. Only these pages use them.
+   ============================================================ */
+
+:root,
+.dv {
+  --dv-r: 1.25rem;
+  --dv-gutter: max(1.5rem, calc((100vw - var(--bb-page-width)) / 2 + 2rem));
+}
+
+.dv-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* Up under the strip and the masthead, which go clear over it (`tv-over`, `data-clear`). */
+  margin-top: calc(-1 * var(--tv-nav-h) - 1px);
+  min-height: clamp(38rem, 100svh, 60rem);
+  background: #10161b;
+  color: #fff;
+}
+.dv-slide {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  margin: 0;
+  opacity: 0;
+  animation: dv-fade calc(var(--n) * 7s) linear calc((var(--i) - var(--n)) * 7s) infinite;
+}
+.dv-slide:first-child {
+  opacity: 1;
+}
+.dv-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: dv-zoom calc(var(--n) * 7s) linear calc((var(--i) - var(--n)) * 7s) infinite;
+}
+.dv-slide-cap {
+  position: absolute;
+  bottom: 1.5rem;
+  right: var(--dv-gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+  font-size: 0.8125rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+@keyframes dv-fade {
+  0%, 25% { opacity: 1; }
+  30%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* The same turn for two and three photographs, each visible for its share of the cycle. */
+@keyframes dv-fade-2 {
+  0%, 50% { opacity: 1; }
+  55%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes dv-fade-3 {
+  0%, 33.3% { opacity: 1; }
+  38%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes dv-zoom {
+  0% { transform: scale(1.1); }
+  30% { transform: scale(1.01); }
+  100% { transform: scale(1.1); }
+}
+.dv-hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to bottom, rgba(8, 12, 16, 0.6) 0%, transparent 28%),
+    linear-gradient(to top, rgba(8, 12, 16, 0.92) 0%, rgba(8, 12, 16, 0.55) 35%, rgba(8, 12, 16, 0.05) 65%),
+    linear-gradient(to right, rgba(8, 12, 16, 0.45) 0%, transparent 60%);
+}
+.dv-hero-title {
+  margin-top: 1rem;
+  max-width: 14ch;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.045em;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .dv-slide-cap { display: none; }
+}
+
+.dv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: transform 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-btn:hover { transform: translateY(-1px); }
+.dv-btn-light { background: #fff; color: #10161b; }
+.dv-btn-glass {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  backdrop-filter: blur(12px);
+}
+.dv-btn-glass:hover { background: rgba(255, 255, 255, 0.22); }
+
+.dv-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  background: rgba(10, 14, 18, 0.45);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+.dv-credit {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.15rem 0.5rem;
+  font-size: 0.6875rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.dv-credit:hover { color: #fff; }
+
+.dv-pill {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-pill:hover { border-color: var(--ink); background: var(--paper-2); }
+.dv-pill-kind { background: var(--paper); }
+
+.dv-section { padding-block: clamp(5.5rem, 11vw, 10rem); }
+.dv-rail-section { padding-block: clamp(4.5rem, 9vw, 8rem); }
+.dv-section[id] { scroll-margin-top: calc(var(--sticky-top) + 4rem); }
+.dv-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+.dv-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.dv-lede {
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+  color: var(--ink-3);
+}
+
+.dv-panel {
+  border: 1px solid var(--rule);
+  border-radius: var(--dv-r);
+  background: var(--paper);
+  padding: 1.5rem;
+}
+.dv-panel-warn {
+  border-color: color-mix(in srgb, #b7791f 35%, var(--rule));
+  background: color-mix(in srgb, #b7791f 7%, var(--paper));
+}
+.dv-panel-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.dv-round {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-round:hover { border-color: var(--ink); background: var(--paper-2); }
+
+.dv-rail {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding-inline: var(--dv-gutter);
+  padding-bottom: 0.5rem;
+  scroll-padding-inline: var(--dv-gutter);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.dv-rail::-webkit-scrollbar { display: none; }
+.dv-rail > * { scroll-snap-align: start; flex-shrink: 0; }
+.dv-rail-item { width: min(80vw, 19rem); }
+
+.dv-card {
+  position: relative;
+  isolation: isolate;
+  width: min(78vw, 21rem);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--dv-r);
+  background: var(--paper-3);
+}
+.dv-card-img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease);
+}
+.group:hover .dv-card-img { transform: scale(1.05); }
+.dv-card-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgba(8, 12, 16, 0.88) 0%, rgba(8, 12, 16, 0.35) 45%, transparent 70%);
+}
+
+.dv-town {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  min-height: 15rem;
+  overflow: hidden;
+  border-radius: var(--dv-r);
+  background: var(--paper-3);
+}
+
+.dv-feature {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: min(75svh, 42rem);
+  align-items: center;
+  overflow: hidden;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .dv-slide, .dv-slide-img { animation: none; }
+  .dv-card-img, .dv-btn { transition: none; }
+}
+
+/* ---- The bars over a destination's photograph ----
+   The strip is clear on these pages throughout (it scrolls away with the photograph); the masthead is clear only
+   while the reader is at the top, and takes its ground back once they leave it. */
+:root { --tv-nav-h: calc(var(--site-header-h) + 2.25rem); }
+.tv-over {
+  z-index: 31;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+}
+.tv-over .utility-bar-link,
+.tv-over summary,
+.tv-over nav > button { color: rgba(255, 255, 255, 0.78); }
+.tv-over .utility-bar-link:hover,
+.tv-over summary:hover,
+.tv-over summary span { color: #fff; }
+
+header[data-clear='true'] {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: transparent;
+  backdrop-filter: none;
+  color: #fff;
+  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+header[data-clear='true'] .nav-item { color: rgba(255, 255, 255, 0.8); }
+header[data-clear='true'] .nav-item:hover,
+header[data-clear='true'] .nav-item[data-open='true'],
+header[data-clear='true'] .nav-item[data-active='true'] { color: #fff; }
+header[data-clear='true'] .nav-item::after { background: #fff; }
+header[data-clear='true'] a > span,
+header[data-clear='true'] .nav-item span { color: inherit; }
+header[data-clear='true'] a[href='/'] { color: #f1c453; }
+header[data-clear='true'] button[aria-controls] { border-color: #fff; color: #fff; }
+
+/* A place's header: the same photograph-under-the-bars as a destination's, a little shorter, so the page below shows. */
+.pl-hero { min-height: clamp(34rem, 86svh, 50rem); }
+.pl-hero-bare { min-height: clamp(26rem, 60svh, 34rem); }
+/* A card's photo credit shows on hover (or keyboard focus), so it never sits over the card's words. */
+.dv-card-credit { display: none; }
+.dv-card:hover .dv-card-credit,
+.dv-card:focus-within .dv-card-credit,
+.dv-town:hover .dv-card-credit,
+.dv-town:focus-within .dv-card-credit { display: inline-block; }
+.group:hover > .dv-card-credit { display: inline-block; }
+.dv-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--dv-r);
+  background: var(--paper);
+  padding: 1.1rem 1.25rem;
+  transition: border-color 0.2s var(--ease);
+}
+.dv-next:hover { border-color: var(--ink); }
+
+/* A route: stops down a hairline, each on a round brass-tinted dot. */
+.dv-route { position: relative; display: grid; gap: 1.1rem; }
+.dv-route::before {
+  content: "";
+  position: absolute;
+  left: 1.0625rem;
+  top: 1rem;
+  bottom: 1rem;
+  width: 1px;
+  background: var(--rule);
+}
+.dv-route > li { position: relative; display: flex; gap: 1rem; align-items: flex-start; }
+.dv-route-dot {
+  display: grid;
+  width: 2.125rem;
+  height: 2.125rem;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--brass) 14%, var(--paper));
+  color: var(--brass);
+  box-shadow: 0 0 0 4px var(--paper);
+}
+.dv-route > li > p { padding-top: 0.3rem; }
+
+
+/* The photograph captions, above the hero's shade, turning in step with their photographs. */
+.dv-cap {
+  z-index: 1;
+  /* Its foot on the same line as the foot of the hero's buttons (the content's bottom padding, md:pb-24). */
+  bottom: 6rem;
+  opacity: 0;
+  animation: dv-fade calc(var(--n) * 7s) linear calc((var(--i) - var(--n)) * 7s) infinite;
+}
+.dv-cap[data-first] { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .dv-cap { animation: none; }
+}
+
+/* A destination's name in its cloth's colours (user decision): the four lifted toward white so they read on the
+   photograph, run as a slow sweep across the letters. */
+.dv-woven-text {
+  /* The cloth's pattern in the letters (user decision), kept faint so the name still reads first: a diamond twill and
+     fine weft threads over bright tones of the cloth's four colours (gold, red, purple, green). The tones are the
+     data's colours lifted by hand; mixing them toward white turned the purple and green grey. */
+  background-image:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.07) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.16) 0 1.5px, transparent 1.5px 18px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.16) 0 1.5px, transparent 1.5px 18px),
+    linear-gradient(100deg, #ffd34d 0%, #ff6b5e 36%, #c98bff 70%, #7fe07a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Every line runs the whole sweep, so a short last line is not left with one end of it. */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.dv-hero-title:has(.dv-woven-text) { filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.55)) drop-shadow(0 8px 28px rgba(0, 0, 0, 0.5)); }
+
+/* A strip of the cloth itself: bands of its four colours split by fine gold threads, with a weft running across. */
+.dv-weave {
+  display: inline-block;
+  flex-shrink: 0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(
+      90deg,
+      var(--w1) 0 14px, var(--w3) 14px 16px,
+      var(--w4) 16px 30px, var(--w3) 30px 32px,
+      var(--w2) 32px 46px, var(--w3) 46px 48px,
+      var(--w4) 48px 54px, var(--w3) 54px 56px
+    );
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+/* ---- The travel footer: a deep ground lit from one corner, the region's name large and faint across the foot ---- */
+.tv-footer {
+  /* Flat at the foot, where the name's letters are filled with it. */
+  --tv-footer-ground: #0d1216;
+  background:
+    radial-gradient(60rem 30rem at 85% 0%, rgba(212, 167, 44, 0.14), transparent 60%),
+    radial-gradient(50rem 30rem at 0% 0%, rgba(91, 42, 110, 0.3), transparent 60%),
+    var(--tv-footer-ground);
+}
+.tv-footer-word {
+  font-family: var(--font-display);
+  /* Sized to the window so the word spans it edge to edge (user decision). */
+  font-size: 17vw;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  /* The region's name as a thick outline in the cloth's colours (user decision), centred. The gradient is clipped to
+     the letters and their stroke; the letters are then filled with the footer's own ground, painted over the inner
+     half of the stroke, so only the outer ring shows and the seams where the face's strokes overlap are hidden. */
+  background-image: linear-gradient(100deg, #ffd34d 0%, #ff6b5e 36%, #c98bff 70%, #7fe07a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+  -webkit-text-fill-color: var(--tv-footer-ground);
+  paint-order: stroke fill;
+  white-space: nowrap;
+}
+
+/* The weave in the letters: the same word, each letter plain-filled with its own pattern (set inline, one per letter;
+   a fill has none of the outline's seams). Only the outline copy carries the gradient and the stroke. */
+.tv-footer-lattice {
+  background: none;
+  -webkit-text-stroke: 0;
+}
+.tv-footer-lattice > span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* The masthead is not sticky in this workspace (user decision), so nothing sticking to the top offsets itself by it. */
+:root,
+:root[data-header-hidden="true"] {
+  --sticky-top: 0px;
+}
+
+/* The ask above the footer: a warm light band, the page's paper tinted toward the crimson, with a gold and a crimson glow
+   (user decision). Built from the theme's tokens, so the dark theme gets its own version. */
+/* The same wash on the guide's other banded sections (user decision: not plain), and a mirrored one for a band that
+   sits next to another, so the two read as separate. */
+.tv-ask,
+.tv-wash {
+  background:
+    radial-gradient(40rem 22rem at 0% 0%, color-mix(in srgb, #d4a72c 14%, transparent), transparent 70%),
+    radial-gradient(44rem 24rem at 100% 100%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--accent) 5%, var(--paper));
+}
+
+.tv-wash-flip {
+  background:
+    radial-gradient(40rem 22rem at 100% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%),
+    radial-gradient(44rem 24rem at 0% 100%, color-mix(in srgb, #d4a72c 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--accent) 4%, var(--paper));
+}
+
+/* A list page's header (PageHero): the destination's look, a little shorter, and a title sized for longer names. */
+.pg-hero { min-height: clamp(30rem, 74svh, 46rem); }
+.pg-hero-title {
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6.2vw, 5.25rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+/* ---- The areas as tall photo panels (front page; user decision) ----
+   From a wide screen: a row; the panel under the pointer, or the first when none is, opens wide; the rest are strips
+   with the name up their side. Below it: a stack of cards, every one open. */
+.tv-accordion { display: grid; gap: 0.75rem; }
+.tv-panel {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 22rem;
+  overflow: hidden;
+  border-radius: var(--dv-r);
+  background: #10161b;
+  color: #fff;
+}
+.tv-panel-img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s var(--ease);
+}
+.tv-panel-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgba(8, 12, 16, 0.92) 0%, rgba(8, 12, 16, 0.45) 45%, rgba(8, 12, 16, 0.15) 100%);
+}
+.tv-panel-num {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.tv-panel-spine { display: none; }
+.tv-panel-body {
+  align-self: flex-end;
+  padding: 1.75rem;
+}
+@media (min-width: 1024px) {
+  .tv-accordion { display: flex; height: 34rem; }
+  .tv-panel {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+    transition: flex-grow 0.6s var(--ease);
+  }
+  .tv-panel-spine {
+    position: absolute;
+    bottom: 1.75rem;
+    left: 50%;
+    display: block;
+    translate: -50% 0;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    white-space: nowrap;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    transition: opacity 0.3s var(--ease);
+  }
+  .tv-panel-body {
+    width: 34rem;
+    max-width: none;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.3s var(--ease);
+  }
+  /* The open one: the hovered or focused panel, or the first while none is. */
+  .tv-panel:hover,
+  .tv-panel:focus-visible,
+  .tv-accordion:not(:hover, :focus-within) .tv-panel:first-child { flex-grow: 5; }
+  .tv-panel:hover .tv-panel-body,
+  .tv-panel:focus-visible .tv-panel-body,
+  .tv-accordion:not(:hover, :focus-within) .tv-panel:first-child .tv-panel-body { opacity: 1; transition-delay: 0.2s; }
+  .tv-panel:hover .tv-panel-spine,
+  .tv-panel:focus-visible .tv-panel-spine,
+  .tv-accordion:not(:hover, :focus-within) .tv-panel:first-child .tv-panel-spine { opacity: 0; }
+  .tv-panel:hover .tv-panel-img { transform: scale(1.04); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tv-panel, .tv-panel-body, .tv-panel-spine, .tv-panel-img { transition: none; }
+}
+
+/* ---- Drag to scroll (user decision; _components/drag-scroll.tsx): a mouse drags any sideways row, the grabbing
+   hand showing over everything in it while it moves, and the snap let go so the row follows the hand. ---- */
+[data-dragging],
+[data-free] {
+  scroll-snap-type: none !important;
+}
+[data-dragging] {
+  user-select: none;
+  cursor: grabbing;
+}
+/* Nothing in the row reacts under the hand while it moves (no card lifting or zooming), so the drag stays smooth. */
+[data-dragging] * { cursor: grabbing !important; pointer-events: none; }
+/* The open hand over a row a mouse can drag (user decision: grab on hover), on its cards too; a button in a card
+   (save, the photo arrows) keeps the pointing hand, since it is pressed, not dragged. */
+@media (hover: hover) and (pointer: fine) {
+  :is(.dv-rail, [data-drag-scroll]),
+  :is(.dv-rail, [data-drag-scroll]) :is(a, a *) { cursor: grab; }
+  :is(.dv-rail, [data-drag-scroll]) :is(button, button *) { cursor: pointer; }
 }

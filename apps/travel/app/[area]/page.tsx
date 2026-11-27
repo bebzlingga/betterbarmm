@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { CraftsCulture } from '../_components/crafts-culture'
+import { PageHero, heroFromPlace, type HeroPhoto } from '../_components/page-hero'
 import { GUIDE_PAGES, TOWN_PAGES } from '../_lib/guide'
 
 
@@ -47,7 +49,6 @@ import {
 } from '@phosphor-icons/react/ssr'
 import { WayList } from '../_components/travel-parts'
 import { cityGuide, type CityPlace } from '@betterbarmm/travel-data/cities'
-import Image from 'next/image'
 import { photosForArea } from '../_lib/media'
 import { cotabatoPhotos } from '../_lib/city-photos'
 import { ExploreCard } from '../_components/explore-card'
@@ -112,28 +113,30 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 	const moreStays = (guide?.stay ?? []).filter((place) => place.status === 'open' && !shownStays.has(stayKey(place.name)))
 	// The season's first sentence is the answer; the rest of it is in the section below.
 	const bestTime = area.whenToGo.split(/(?<=\.)\s/)[0]!
+	// The header's photographs: up to three of the area's own places, wide ones first.
+	const heroPlaces = explorePlaces
+		.filter((p) => p.area === area.slug && p.images[0] && p.images[0].width > p.images[0].height)
+		.slice(0, 3)
+		.map((p) => heroFromPlace(p))
+		.filter((p): p is HeroPhoto => Boolean(p))
 
 
 	return (
 		<>
-			{/* The header on the area's own photograph (user decision); where the guide holds none, the dark ground alone. */}
-			<header className='relative isolate overflow-hidden bg-[#1c1a17] text-white'>
-				{lead ? (
-					<Image src={lead.src} alt={lead.alt} fill priority sizes='100vw' placeholder='blur' className='-z-10 object-cover' />
-				) : null}
-				<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(12,10,8,0.92)_0%,rgba(12,10,8,0.6)_50%,rgba(12,10,8,0.25)_100%)]' />
-				<div className='bb-container flex min-h-[clamp(20rem,42vw,30rem)] flex-col justify-end pb-10 pt-24 lg:pb-12'>
-					<p className='!font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[#f1c453]'>Area guide</p>
-					<h1 className='bb-display-md mt-3 text-white'>{area.name}</h1>
-					<p className='mt-4 max-w-2xl text-[1rem] leading-7 text-white/85'>{area.tagline}</p>
-
-				</div>
-				{lead ? (
-					<a href={lead.source} target='_blank' rel='noreferrer' className='absolute bottom-3 right-4 text-[0.6875rem] text-white/60 hover:text-white'>
-						{lead.credit} · {lead.license}
-					</a>
-				) : null}
-			</header>
+			{/* The header in the Discover look (user decision): the area's own places' photographs turning under the navigation;
+			    where it has none, the guide's lead photograph for it; where neither, the dark ground alone. */}
+			<PageHero
+				photos={
+					heroPlaces.length
+						? heroPlaces
+						: lead
+							? [{ src: lead.src.src, alt: lead.alt, label: area.name, credit: `${lead.credit} · ${lead.license}`, page: lead.source }]
+							: []
+				}
+				kicker='Area guide'
+				title={area.name}
+				lede={area.tagline}
+			/>
 
 			{/* ---- The three things a visitor asks first, under the photograph (user decision), in place of the section bar ---- */}
 			<div className='border-b border-[var(--rule)]'>
@@ -161,7 +164,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 				</dl>
 			</div>
 
-			<div className='bb-container pb-20'>
+			<div className='bb-container'>
 				{/* ---- Overview: the picture, three facts, what the place is ---- */}
 				<AreaSection id='overview' first>
 
@@ -197,6 +200,14 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
 					</AreaSection>
 				) : null}
 
+			</div>
+
+			{/* ---- The area's peoples, crafts and craft festivals, on the warm wash at the page's full width ---- */}
+			<div className='tv-wash mt-16'>
+				<CraftsCulture area={area.slug} areaName={area.name} />
+			</div>
+
+			<div className='bb-container pb-20'>
 				{/* ---- Getting there and around ---- */}
 				<AreaSection id='getting-there' title='Getting there and around'>
 					<div className='grid gap-12 lg:grid-cols-2 lg:gap-14'>

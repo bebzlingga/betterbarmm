@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowLeftIcon, CheckIcon, ImagesIcon, ShareNetworkIcon } from '@phosphor-icons/react'
+import { CheckIcon, ImagesIcon, ShareNetworkIcon, XIcon } from '@phosphor-icons/react'
 import { useEffect, useRef, useState } from 'react'
 import { PhotoCredit } from './explore-card'
 
@@ -24,9 +24,15 @@ export type GalleryPhoto = {
 	page: string
 	width: number
 	height: number
+	/** A wide copy for the full-width header, where the page has one. */
+	wide?: string
 }
 
-export function PlaceGallery({ name, photos }: { name: string; photos: GalleryPhoto[] }) {
+/**
+ * The photographs, as a mosaic, or (given `hero`) as a page's full-width header: the first photograph behind the
+ * page's own words, with "all photos" and its credit at the top right. Either way the button opens the same viewer.
+ */
+export function PlaceGallery({ name, photos, hero }: { name: string; photos: GalleryPhoto[]; hero?: React.ReactNode }) {
 	const dialog = useRef<HTMLDialogElement>(null)
 	const [open, setOpen] = useState(false)
 
@@ -44,6 +50,108 @@ export function PlaceGallery({ name, photos }: { name: string; photos: GalleryPh
 		dialog.current?.showModal()
 		setOpen(true)
 		requestAnimationFrame(() => document.getElementById(`photo-${i}`)?.scrollIntoView({ block: 'start' }))
+	}
+
+	/* The viewer (user decision: match the Discover look): the dark ground of a destination's header, a glass bar
+	   with the name and a round close, and every photograph rounded at a wide measure, numbered in the header's gold,
+	   its caption and credit under it. */
+	const viewer = (
+	<dialog
+		ref={dialog}
+		onClose={() => setOpen(false)}
+		aria-label={`Photographs of ${name}`}
+		className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[#0b1014] p-0 text-white backdrop:bg-black/60'
+	>
+		<div className='sticky top-0 z-10 border-b border-white/10 bg-[#0b1014]/80 backdrop-blur-xl'>
+			<div className='bb-container flex h-20 items-center justify-between gap-6'>
+				<div className='min-w-0'>
+					<p className='font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-[#f1c453]'>
+						{photos.length} {photos.length === 1 ? 'photograph' : 'photographs'}
+					</p>
+					<p className='truncate font-[family-name:var(--font-display)] text-[1.25rem] font-extrabold tracking-[-0.02em]'>{name}</p>
+				</div>
+				<button
+					type='button'
+					onClick={() => dialog.current?.close()}
+					aria-label='Close photos'
+					className='grid size-11 shrink-0 cursor-pointer place-items-center rounded-full bg-white/10 text-white transition hover:bg-white hover:text-[#10161b]'
+				>
+					<XIcon size={18} weight='bold' />
+				</button>
+			</div>
+		</div>
+		<div className='mx-auto flex max-w-5xl flex-col gap-14 px-4 py-10 lg:gap-20 lg:py-16'>
+			{photos.map((photo, i) => (
+				<figure key={photo.large} id={`photo-${i}`} className='m-0 scroll-mt-28'>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={photo.large} alt={photo.caption} loading='lazy' width={photo.width} height={photo.height} className='h-auto w-full rounded-[var(--dv-r)] bg-white/5' />
+					<figcaption className='mt-5 flex gap-5'>
+						<span className='font-[family-name:var(--font-display)] text-[1.5rem] font-extrabold leading-none tracking-[-0.03em] text-[#f1c453]'>{String(i + 1).padStart(2, '0')}</span>
+						<span className='min-w-0'>
+							<span className='block text-[0.9375rem] leading-relaxed text-white/85'>{photo.caption}</span>
+							<a href={photo.page} target='_blank' rel='noreferrer' className='mt-1 inline-block text-[0.75rem] text-white/45 hover:text-white'>
+								Photo: {photo.author} · {photo.license}
+							</a>
+						</span>
+					</figcaption>
+				</figure>
+			))}
+		</div>
+	</dialog>
+	)
+
+	if (hero) {
+		const first = photos[0]
+		return (
+			<>
+				<header className={`dv-hero ${first ? 'pl-hero' : 'pl-hero-bare'}`}>
+					{first ? (
+						// eslint-disable-next-line @next/next/no-img-element
+						<img src={first.wide ?? first.large} alt={first.caption} fetchPriority='high' className='absolute inset-0 -z-[2] size-full object-cover' />
+					) : null}
+					<span aria-hidden='true' className='dv-hero-shade' />
+					{hero}
+					{first ? (
+						/* A preview of the photographs, bottom right (user decision): up to three thumbnails, the last carrying
+						   the count; any of them opens the viewer at that photograph. Below a wide screen it sits under the words. */
+						<div className='bb-container flex flex-col items-start gap-2 pb-8 lg:absolute lg:bottom-28 lg:right-[var(--dv-gutter)] lg:mx-0 lg:w-auto lg:max-w-none lg:items-end lg:!p-0'>
+							<div className='flex gap-2'>
+								{photos.slice(0, 3).map((photo, i, shown) => {
+									const last = i === shown.length - 1
+									return (
+										<button
+											key={photo.large}
+											type='button'
+											onClick={() => show(i)}
+											aria-label={last ? `See all ${photos.length} photos` : `Open photo ${i + 1} of ${photos.length}`}
+											className='group/thumb relative h-16 w-20 cursor-pointer overflow-hidden rounded-xl border-2 border-white/70 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.6)] transition hover:-translate-y-0.5 hover:border-white lg:h-20 lg:w-28'
+										>
+											{/* eslint-disable-next-line @next/next/no-img-element */}
+											<img src={photo.thumb} alt='' loading='lazy' className='size-full object-cover transition duration-300 group-hover/thumb:scale-105' />
+											{last ? (
+												<span className='absolute inset-0 flex flex-col items-center justify-center gap-0.5 bg-black/45 text-white backdrop-blur-[1px]'>
+													<ImagesIcon size={18} weight='bold' aria-hidden='true' />
+													<span className='text-[0.75rem] font-semibold'>{photos.length > 3 ? `+${photos.length - 2}` : photos.length === 1 ? 'View' : `All ${photos.length}`}</span>
+												</span>
+											) : null}
+										</button>
+									)
+								})}
+							</div>
+							<a href={first.page} target='_blank' rel='noreferrer' className='max-w-[20rem] truncate text-[0.6875rem] text-white/65 hover:text-white'>
+								Photo: {first.author} · {first.license}
+							</a>
+						</div>
+					) : (
+						<p className='dv-slide-cap !flex items-center gap-2 text-white/60'>
+							<ImagesIcon size={16} aria-hidden='true' />
+							No free photograph of {name} yet
+						</p>
+					)}
+				</header>
+				{viewer}
+			</>
+		)
 	}
 
 	// No photograph of the place itself: a placeholder, never another place's (user decision).
@@ -95,47 +203,14 @@ export function PlaceGallery({ name, photos }: { name: string; photos: GalleryPh
 				</button>
 			</div>
 
-			<dialog
-				ref={dialog}
-				onClose={() => setOpen(false)}
-				aria-label={`Photographs of ${name}`}
-				className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40'
-			>
-				<div className='sticky top-0 z-10 flex h-16 items-center gap-4 border-b border-[var(--rule)] bg-[var(--paper)] px-4 lg:px-8'>
-					<button
-						type='button'
-						onClick={() => dialog.current?.close()}
-						aria-label='Close photos'
-						className='grid size-9 cursor-pointer place-items-center border border-[var(--rule)] transition hover:border-[var(--ink)]'
-					>
-						<ArrowLeftIcon size={18} weight='bold' />
-					</button>
-					<p className='!font-[family-name:var(--font-display)] text-[0.9375rem] font-extrabold tracking-[-0.02em]'>
-						{name} · {photos.length} {photos.length === 1 ? 'photo' : 'photos'}
-					</p>
-				</div>
-				<div className='mx-auto flex max-w-3xl flex-col gap-10 px-4 py-8 lg:py-12'>
-					{photos.map((photo, i) => (
-						<figure key={photo.large} id={`photo-${i}`} className='m-0 scroll-mt-20'>
-							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={photo.large} alt={photo.caption} loading='lazy' width={photo.width} height={photo.height} className='h-auto w-full' />
-							<figcaption className='mt-3 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 text-[0.8125rem] leading-snug'>
-								<span className='text-[var(--ink-2)]'>{photo.caption}</span>
-								<a href={photo.page} target='_blank' rel='noreferrer' className='font-mono text-[0.625rem] uppercase tracking-[0.12em] text-[var(--ink-3)] hover:text-[var(--accent)]'>
-									{photo.author} · {photo.license}
-								</a>
-							</figcaption>
-						</figure>
-					))}
-				</div>
-			</dialog>
+			{viewer}
 
 		</>
 	)
 }
 
 /** Share a place: the device's own sheet where there is one, otherwise the link copied. */
-export function ShareButton({ name }: { name: string }) {
+export function ShareButton({ name, className }: { name: string; className?: string }) {
 	const [copied, setCopied] = useState(false)
 	return (
 		<button
@@ -153,7 +228,10 @@ export function ShareButton({ name }: { name: string }) {
 					// The reader closed the share sheet.
 				}
 			}}
-			className='inline-flex h-9 cursor-pointer items-center gap-2 border border-[var(--rule)] px-3 font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink)] transition hover:border-[var(--ink)]'
+			className={
+				className ??
+				'inline-flex h-9 cursor-pointer items-center gap-2 border border-[var(--rule)] px-3 font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink)] transition hover:border-[var(--ink)]'
+			}
 		>
 			{copied ? <CheckIcon size={14} weight='bold' aria-hidden='true' /> : <ShareNetworkIcon size={14} weight='bold' aria-hidden='true' />}
 			{copied ? 'Link copied' : 'Share'}

@@ -54,7 +54,7 @@ export function StayCard({ stay }: { stay: ExploreStay | ExploreEat }) {
 	}
 	return (
 		<li className='relative flex flex-col'>
-			<div className='relative aspect-[4/3] overflow-hidden bg-[var(--paper-2)]'>
+			<div className='relative aspect-[4/3] overflow-hidden rounded-[1.25rem] bg-[var(--paper-2)]'>
 				{stay.image ? (
 					<>
 						{/* eslint-disable-next-line @next/next/no-img-element */}

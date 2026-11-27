@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { heroFromTravelPhoto } from '../_components/page-hero'
+import { travelPhotos } from '../_lib/media'
 import { notFound } from 'next/navigation'
 import { GUIDE_PAGES } from '../_lib/guide'
 
@@ -21,7 +23,7 @@ export default function StaysPage() {
 	if (!GUIDE_PAGES) notFound()
 	return (
 		<>
-			<TravelMasthead
+			<TravelMasthead photos={[heroFromTravelPhoto(travelPhotos.governmentCenter)]}
 				kicker='The guide'
 				name='Where to sleep'
 				note='This describes how lodging works in each area rather than listing establishments with rates and phone numbers that would be stale within a season. Outside Cotabato City the booking sites barely cover this region, and a property’s absence from them says nothing about whether it exists or is any good.'

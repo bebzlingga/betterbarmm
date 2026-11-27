@@ -333,7 +333,7 @@ export function CityGuideView({
 				aria-label='Sections'
 				className='sticky top-[var(--sticky-top,5rem)] z-20 border-b border-[var(--rule)] bg-[var(--paper)]/92 backdrop-blur-xl transition-[top] duration-300'
 			>
-				<div className='bb-container flex gap-7 overflow-x-auto [scrollbar-width:none]'>
+				<div data-drag-scroll className='bb-container flex gap-7 overflow-x-auto [scrollbar-width:none]'>
 					{TABS.map((tab) => {
 						const TabIcon = tab.icon
 						return (
@@ -408,7 +408,7 @@ export function CityGuideView({
 				{/* ---- Eat ---- */}
 				<Section id='eat' title='What and where to eat' lead='The food is halal-first and Maguindanaon at heart. Start with the dishes, then the places.'>
 					{guide.dishes.length ? (
-						<div className='-mx-4 flex snap-x gap-4 overflow-x-auto px-4 pb-2 [scrollbar-width:thin]'>
+						<div data-drag-scroll className='-mx-4 flex snap-x gap-4 overflow-x-auto px-4 pb-2 [scrollbar-width:thin]'>
 							{guide.dishes.map((d) => {
 								const photo = Object.entries(dishPhotos).find(([w]) => d.name.toLowerCase().includes(w))?.[1]
 								return (

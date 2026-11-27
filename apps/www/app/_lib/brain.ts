@@ -77,6 +77,7 @@ export function brain() {
 	const libPublishers = read<{ publishers: unknown[] }>('library/publishers.json').publishers.length
 	const libMagazines = read<{ magazines: { issues: unknown[] }[] }>('library/magazines.json').magazines
 	const crafts = read<{ generatedAt: string; items: unknown[] }>('crafts/crafts.json')
+	const anniversaries = read<{ generatedAt: string; areas: unknown[]; units: { date: string | null }[] }>('travel/anniversaries.json')
 	const exposure = read<{ generatedAt: string; barangays: unknown[] }>('preparedness/exposure.json')
 	const facilitiesFile = read<{ generatedAt: string; facilities: unknown[] }>('preparedness/facilities.json')
 	const accidents = read<{ generatedAt: string; incidents: { province: string; municipality: string | null; deaths: number }[] }>('accidents/accidents.json')
@@ -133,6 +134,7 @@ export function brain() {
 		{ id: 'd-books', label: 'Books, authors & publishers', kind: 'dataset', count: shelf.books.length, unit: 'books', date: shelf.built, note: `${shelf.books.length} books, ${shelf.books.filter((b) => b.availability === 'open-access').length} of them free to read, by ${libAuthors} authors from ${libPublishers} publishers, each with an overview from its sources.` },
 		{ id: 'd-magazines', label: 'Office magazines', kind: 'dataset', count: libMagazines.reduce((n, m) => n + m.issues.length, 0), unit: 'issues', note: `${libMagazines.length} magazines, newsletters and journals of the region’s ministries and offices, each issue linked on the office’s own site.` },
 		{ id: 'd-crafts', label: 'Crafts', kind: 'dataset', count: crafts.items.length, unit: 'crafts', date: crafts.generatedAt, note: 'Textiles, mats, brass, wood and gongs, with their makers and where to see them.' },
+		{ id: 'd-anniversaries', label: 'Founding anniversaries', kind: 'dataset', count: anniversaries.areas.length + anniversaries.units.filter((u) => u.date).length, unit: 'provinces, cities and towns', date: anniversaries.generatedAt, note: 'The day each province, city and municipality legally began, from the law, charter or plebiscite that created it, on the travel calendar.' },
 		{ id: 'd-incidents', label: 'Incident reports', kind: 'dataset', count: accidents.incidents.length, unit: 'incidents', date: accidents.generatedAt, note: 'One record per incident since 2019, every report linked, placed on its barangay where named.' },
 		{ id: 'd-hazards', label: 'Hazard exposure', kind: 'dataset', count: exposure.barangays.length, unit: 'barangays', date: exposure.generatedAt, note: 'Each barangay’s land in each of NOAH’s flood, landslide and storm surge hazard classes, with its 2020 population.' },
 		{ id: 'd-facilities', label: 'Emergency facilities', kind: 'dataset', count: facilitiesFile.facilities.length, unit: 'facilities', date: facilitiesFile.generatedAt, note: 'Evacuation sites, schools, hospitals, health centres, police, fire and disaster risk reduction offices, each placed in its barangay.' },
@@ -208,7 +210,7 @@ export function brain() {
 		['s-commons', ['d-places', 'd-crafts', 'd-books']],
 		['s-openlibrary', ['d-books']],
 		['s-publishers', ['d-books']],
-		['s-scholars', ['d-primer']],
+		['s-scholars', ['d-primer', 'd-anniversaries']],
 		['s-deped', ['d-schools']],
 		['s-mbhte', ['d-ministry', 'd-charters']],
 		['s-osm', ['d-schools']],
@@ -238,6 +240,7 @@ export function brain() {
 		['d-lines', ['w-directory', 'w-services']],
 		['d-places', ['w-places']],
 		['d-crafts', ['w-crafts']],
+		['d-anniversaries', ['w-places']],
 		['d-books', ['w-library']],
 		['d-magazines', ['w-library']],
 		['d-incidents', ['w-incidents']],

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { heroFromTravelPhoto } from '../_components/page-hero'
+import { travelPhotos } from '../_lib/media'
 import { explorePlaces } from '@betterbarmm/travel-data/explore'
 import { SavedList } from '../_components/saved-list'
 import { TravelMasthead } from '../_components/travel-parts'
@@ -14,8 +16,8 @@ export const metadata: Metadata = {
 export default function SavedPage() {
 	return (
 		<>
-			<TravelMasthead kicker='Travel & Places' name='Saved places' note='Kept in this browser only: there are no accounts here. Clearing your browsing data clears them.' />
-			<div className='bb-container pb-24 pt-10'>
+			<TravelMasthead photos={[heroFromTravelPhoto(travelPhotos.lakeLanao)]} kicker='Travel & Places' name='Saved places' note='Kept in this browser only: there are no accounts here. Clearing your browsing data clears them.' />
+			<div className='bb-container pb-[clamp(4.5rem,9vw,8rem)] pt-[clamp(3.5rem,7vw,6rem)]'>
 				<SavedList places={explorePlaces.map(toCard)} />
 			</div>
 		</>

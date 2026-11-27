@@ -184,6 +184,10 @@ export type Festival = {
 	area: string
 	when: string
 	what: string
+	/** What it is: a festival, an anniversary, or an observance of the faith whose date moves each year. */
+	kind?: 'festival' | 'anniversary' | 'observance'
+	/** Where the date comes from, where it is not the guide's own text. */
+	source?: string
 }
 
 /**
@@ -212,11 +216,20 @@ export const festivals: Festival[] = [
 		area: 'tawi-tawi',
 		when: 'Late September',
 		what: 'The province’s founding anniversary, with Sama and Tausug performance, boat events and craft.',
+		kind: 'anniversary',
+	},
+	{
+		name: 'Maguindanao del Norte’s anniversary',
+		area: 'maguindanao-del-norte',
+		when: 'January 9',
+		what: 'The province took effect on 9 January 2023, after Republic Act 11550 divided Maguindanao in two and voters approved it on 17 September 2022.',
+		kind: 'anniversary',
+		source: 'https://lawphil.net/statutes/repacts/ra2021/ra_11550_2021.html',
 	},
 	{
 		name: 'Meguyaya Festival',
 		area: 'maguindanao-del-norte',
-		when: 'Around mid-year',
+		when: 'December',
 		what: 'Upi’s Teduray thanksgiving festival — one of the few places where an indigenous non-Muslim culture of the region is publicly celebrated.',
 	},
 	{
@@ -224,18 +237,21 @@ export const festivals: Festival[] = [
 		area: 'region',
 		when: 'Moves each year — end of Ramadan',
 		what: 'The end of the fast, and the largest celebration in the calendar. A regional and national holiday. Transport fills and rooms disappear; the hospitality is extraordinary.',
+		kind: 'observance',
 	},
 	{
 		name: 'Eid al-Adha',
 		area: 'region',
 		when: 'Moves each year — the month of pilgrimage',
 		what: 'The feast of sacrifice, marked across the region. A regional holiday.',
+		kind: 'observance',
 	},
 	{
 		name: 'Ramadan',
 		area: 'region',
 		when: 'Moves each year — shifts about 11 days earlier annually',
 		what: 'A month of daylight fasting. Daytime eateries close, the rhythm of every town changes, and iftar at sundown is the most generous meal of the year.',
+		kind: 'observance',
 	},
 ]
 

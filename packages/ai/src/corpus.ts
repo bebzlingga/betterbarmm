@@ -874,7 +874,7 @@ function travel(): Entry[] {
 		kind: 'Area',
 		title: area.name,
 		note: `${area.tagline} Base yourself in ${area.base}.`,
-		href: `${SITE.travel}/${area.slug}`,
+		href: `${SITE.travel}/discover/${area.slug}`,
 		photo: shown(area.slug),
 		text: [area.name, area.tagline, area.base, area.intro.join(' '), area.knownFor.join(' '), area.whenToGo, area.safety, area.languages.join(' ')]
 			.join(' ')

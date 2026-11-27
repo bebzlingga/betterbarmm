@@ -1,6 +1,6 @@
-import { LineReveal, Rise } from '@betterbarmm/editorial'
 import type { TravelPhoto } from '../_lib/media'
 import { PhotoFigure } from './photo-figure'
+import { PageHero, type HeroPhoto } from './page-hero'
 import {
 	AirplaneTiltIcon,
 	BoatIcon,
@@ -58,50 +58,30 @@ export function Caution({ label, children }: { label: string; children: React.Re
 }
 
 /**
- * The masthead of a guide page, in the Local Government workspace's style:
- * the brand ground, the name to the left and its note to the right. What a
- * page passes as children (its facts, its chips) sits in a light band under
- * it rather than inside it.
+ * The masthead of a guide page, in the Discover look (user decision): the page's photograph across the top under a
+ * dark wash, the navigation clear over it, the kicker, name and note in white. What a page passes as children (a
+ * search, its facts) sits under it.
  */
 export function TravelMasthead({
+	photos,
 	badges,
 	kicker,
 	name,
 	note,
-	compact = false,
 	children,
 }: {
+	photos: (HeroPhoto | null)[]
 	badges?: React.ReactNode
 	kicker: string
 	name: string
 	note?: string
-	/** Less air above and below (user decision), for a page whose photographs follow straight after — a place. */
-	compact?: boolean
 	children?: React.ReactNode
 }) {
 	return (
 		<>
-			<section className='bb-lattice brand-bg relative overflow-hidden'>
-				<div className={`bb-container relative ${compact ? 'py-10 lg:py-12' : 'py-[clamp(3.75rem,7vw,6.5rem)]'}`}>
-					<Rise distance={12}>
-						<div className='flex flex-wrap items-center gap-2.5'>
-							{badges}
-							<span className='bb-label'>{kicker}</span>
-						</div>
-					</Rise>
-
-					<div className='lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16'>
-						<LineReveal lines={[name]} delay={0.06} className={`bb-display-md mt-5 text-[var(--ink)] ${compact ? '!leading-[1.08]' : ''}`} />
-						{note ? (
-							<Rise delay={0.25} distance={14}>
-								<p className='mt-7 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:mt-0 lg:text-right lg:leading-6'>{note}</p>
-							</Rise>
-						) : null}
-					</div>
-				</div>
-
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
+			<PageHero photos={photos} kicker={kicker} title={name} lede={note}>
+				{badges ? <div className='mt-6 flex flex-wrap gap-2'>{badges}</div> : null}
+			</PageHero>
 
 			{children ? (
 				<section>
@@ -136,9 +116,7 @@ export function SectionHead({
 	return (
 		<div className={className}>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
-				<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
-					{titleMuted ? `${title} ${titleMuted}` : title}
-				</h2>
+				<h2 className='dv-title'>{titleMuted ? `${title} ${titleMuted}` : title}</h2>
 				{aside}
 			</div>
 			{lead ? <p className='mt-3 max-w-[48rem] text-[0.9375rem] leading-7 text-[var(--ink-3)]'>{lead}</p> : null}

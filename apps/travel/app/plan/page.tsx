@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { heroFromTravelPhoto } from '../_components/page-hero'
+import { travelPhotos } from '../_lib/media'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { GUIDE_PAGES } from '../_lib/guide'
@@ -21,7 +23,7 @@ export default function PlanPage() {
 	if (!GUIDE_PAGES) notFound()
 	return (
 		<>
-			<TravelMasthead
+			<TravelMasthead photos={[heroFromTravelPhoto(travelPhotos.makhdumMosque)]}
 				kicker='The guide'
 				name='Plan a trip'
 				note='The practical half of the guide, and the answers to the questions a first-time visitor actually asks — several of which nobody publishes a straight answer to.'

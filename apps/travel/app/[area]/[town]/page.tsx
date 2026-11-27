@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { photosForArea } from '../../_lib/media'
+import { heroFromTravelPhoto } from '../../_components/page-hero'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { GUIDE_PAGES, TOWN_PAGES } from '../../_lib/guide'
@@ -105,7 +107,7 @@ export default async function TownPage({ params }: { params: Promise<{ area: str
 
 	return (
 		<>
-			<TravelMasthead
+			<TravelMasthead photos={photosForArea(area.slug).slice(0, 1).map(heroFromTravelPhoto)}
 				kicker={area.name}
 				name={unit.name}
 				note={town?.summary ?? 'This town has not been researched for the guide yet.'}

@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
+import { heroFromTravelPhoto } from '../_components/page-hero'
+import { travelPhotos } from '../_lib/media'
 import { ferries } from '@betterbarmm/travel-data/transport'
-import { ArrowRightIcon, BoatIcon, ClockIcon } from '@phosphor-icons/react/ssr'
-import { SectionHead, TravelMasthead } from '../_components/travel-parts'
+import { BoatIcon } from '@phosphor-icons/react/ssr'
+import { RouteTicket } from '../_components/route-ticket'
+import { TravelMasthead } from '../_components/travel-parts'
 
 export const metadata: Metadata = {
 	title: 'Ferries & boats',
@@ -24,57 +27,54 @@ export default function FerriesPage() {
 	return (
 		<>
 			<TravelMasthead
+				photos={[heroFromTravelPhoto(travelPhotos.panampangan)]}
 				kicker='Getting here'
 				name='Ferries & boats'
 				note='The island provinces are reached by sea as often as by air, and between their own islands only by sea. Boats run on the weather as much as on the timetable.'
 			/>
 
-			<section>
-				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
-					{ports.map((port, index) => (
-						<div key={port} className={index ? 'mt-14' : ''}>
-							<SectionHead title={`From ${port}`} />
-							<div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-								{ferries
-									.filter((f) => f.from === port)
-									.map((route, i) => (
-										<div key={i} className='tv-card'>
-											<p className='tv-kind flex items-center gap-1.5'>
-												<BoatIcon size={14} weight='duotone' className='text-[var(--brass)]' aria-hidden='true' />
-												{KIND[route.kind] ?? route.kind}
-											</p>
-											<p className='mt-3 flex items-center gap-2 font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
-												{route.from}
-												<ArrowRightIcon size={14} weight='bold' className='text-[var(--ink-3)]' aria-hidden='true' />
-												{route.to}
-											</p>
-											{route.duration || route.frequency ? (
-												<p className='mt-2 flex items-center gap-1.5 text-[0.84375rem] text-[var(--ink-2)]'>
-													<ClockIcon size={14} className='text-[var(--ink-3)]' aria-hidden='true' />
-													{[route.duration, route.frequency].filter(Boolean).join(' · ')}
-												</p>
-											) : null}
-											{route.operators.length ? (
-												<p className='mt-3 text-[0.84375rem] text-[var(--ink-3)]'>
-													<span className='text-[var(--ink-2)]'>Sailed by</span> {route.operators.join(', ')}
-												</p>
-											) : null}
-											{route.note ? <p className='mt-3 text-[0.8125rem] leading-[1.55] text-[var(--ink-3)]'>{route.note}</p> : null}
-											<a href={route.source} target='_blank' rel='noopener' className='mt-4 inline-block text-[0.75rem] text-[var(--ink-3)] underline-offset-2 hover:text-[var(--accent)] hover:underline'>
-												Source · {route.asOf}
-											</a>
-										</div>
-									))}
-							</div>
-						</div>
-					))}
 
-					<p className='mt-16 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
-						Routes are taken from the operators’ own pages and dated reports. Sailings are cancelled when the sea is up, and
-						the coast guard can hold every boat in port; ask at the terminal the day before, and buy tickets there or from the
-						operator. Nothing is booked or sold here.
-					</p>
-				</div>
+			{/* ---- Port by port: each route a ticket ---- */}
+			<section className='dv-section bb-container'>
+				{ports.map((port, index) => {
+					const routes = ferries.filter((f) => f.from === port)
+					return (
+						<div key={port} className={index ? 'mt-16' : ''}>
+							<div className='flex flex-wrap items-end justify-between gap-3'>
+								<h2 className='flex items-center gap-3 font-[family-name:var(--font-display)] text-[clamp(1.5rem,2.6vw,2rem)] font-extrabold tracking-[-0.025em] text-[var(--ink)]'>
+									<span className='grid size-10 place-items-center rounded-full bg-[var(--accent)] text-white'>
+										<BoatIcon size={20} weight='fill' aria-hidden='true' />
+									</span>
+									From {port}
+								</h2>
+								<p className='text-[0.875rem] text-[var(--ink-3)]'>
+									{routes.length} {routes.length === 1 ? 'route' : 'routes'}
+								</p>
+							</div>
+							<ul className='mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3'>
+								{routes.map((route, i) => (
+									<RouteTicket
+										key={i}
+										mode='sea'
+										from={route.from}
+										to={route.to}
+										kind={KIND[route.kind] ?? route.kind}
+										carriers={route.operators}
+										duration={route.duration}
+										frequency={route.frequency}
+										note={route.note}
+										action={{ href: route.source, label: `Source · ${route.asOf}` }}
+									/>
+								))}
+							</ul>
+						</div>
+					)
+				})}
+
+				<p className='mt-16 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
+					Routes are taken from the operators’ own pages and dated reports. Sailings are cancelled when the sea is up, and the coast guard can hold every boat in port; ask at the
+					terminal the day before, and buy tickets there or from the operator. Nothing is booked or sold here.
+				</p>
 			</section>
 		</>
 	)

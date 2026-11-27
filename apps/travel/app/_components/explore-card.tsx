@@ -26,7 +26,7 @@ import { KIND_ICON } from './kind-icon'
    No price and no rating: there are none to show.
    ============================================================ */
 
-export function HeartButton({ slug, name, className = '', size = 20 }: { slug: string; name: string; className?: string; size?: number }) {
+export function HeartButton({ slug, name, className = '', size = 20, label }: { slug: string; name: string; className?: string; size?: number; label?: string }) {
 	const { has, toggle } = useSaved()
 	const on = has(slug)
 	return (
@@ -47,6 +47,7 @@ export function HeartButton({ slug, name, className = '', size = 20 }: { slug: s
 				className={`drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)] transition ${on ? 'text-[var(--accent)]' : 'text-black/40'}`}
 				style={on ? undefined : { stroke: 'white', strokeWidth: 16 }}
 			/>
+			{label ? <span>{on ? 'Saved' : label}</span> : null}
 		</button>
 	)
 }
@@ -87,7 +88,7 @@ export function ExploreCard({ place, priority = false }: { place: CardPlace; pri
 
 	return (
 		<article className='group/card min-w-0'>
-			<div className='relative aspect-[4/3] overflow-hidden bg-[var(--paper-3)]'>
+			<div className='relative aspect-[4/3] overflow-hidden rounded-[1.25rem] bg-[var(--paper-3)]'>
 				{count ? (
 					<Link
 						ref={strip}
@@ -129,7 +130,7 @@ export function ExploreCard({ place, priority = false }: { place: CardPlace; pri
 							type='button'
 							aria-label='Previous photo'
 							onClick={() => step(-1)}
-							className={`absolute left-3 top-1/2 hidden size-8 -translate-y-1/2 cursor-pointer place-items-center bg-[var(--paper)]/90 text-[var(--ink)] opacity-0 shadow transition hover:bg-[var(--paper)] group-hover/card:opacity-100 md:grid ${index === 0 ? 'invisible' : ''}`}
+							className={`absolute left-3 top-1/2 hidden size-8 -translate-y-1/2 cursor-pointer place-items-center rounded-full bg-black/50 text-white opacity-0 backdrop-blur-sm transition hover:bg-black/70 group-hover/card:opacity-100 md:grid ${index === 0 ? 'invisible' : ''}`}
 						>
 							<CaretLeftIcon size={14} weight='bold' />
 						</button>
@@ -137,7 +138,7 @@ export function ExploreCard({ place, priority = false }: { place: CardPlace; pri
 							type='button'
 							aria-label='Next photo'
 							onClick={() => step(1)}
-							className={`absolute right-3 top-1/2 hidden size-8 -translate-y-1/2 cursor-pointer place-items-center bg-[var(--paper)]/90 text-[var(--ink)] opacity-0 shadow transition hover:bg-[var(--paper)] group-hover/card:opacity-100 md:grid ${index === count - 1 ? 'invisible' : ''}`}
+							className={`absolute right-3 top-1/2 hidden size-8 -translate-y-1/2 cursor-pointer place-items-center rounded-full bg-black/50 text-white opacity-0 backdrop-blur-sm transition hover:bg-black/70 group-hover/card:opacity-100 md:grid ${index === count - 1 ? 'invisible' : ''}`}
 						>
 							<CaretRightIcon size={14} weight='bold' />
 						</button>

@@ -27,6 +27,7 @@ import structureFile from '../../../datasets/directory/structure.json'
 import placesFile from '../../../datasets/places/places.json'
 import staysFile from '../../../datasets/places/stays.json'
 import eatsFile from '../../../datasets/places/eats.json'
+import anniversariesFile from '../../../datasets/travel/anniversaries.json'
 import type { Entry } from './corpus'
 
 const TRAVEL = 'https://travel.betterbarmm.com'
@@ -281,6 +282,26 @@ function eats(): Entry[] {
 	}))
 }
 
+/** Each province's, city's and town's founding anniversary, on the travel calendar. */
+function anniversaries(): Entry[] {
+	type Unit = { name: string; area: string; date: string | null; kind: string; basis: string; source?: string }
+	const file = anniversariesFile as { areas: Unit[]; units: Unit[] }
+	return [...file.areas, ...file.units]
+		.filter((u) => u.date && u.date.length === 10)
+		.map((u) => {
+			const [y, m, d] = u.date!.split('-').map(Number)
+			const day = `${d} ${MONTHS[m! - 1]}`
+			return {
+				space: 'travel' as const,
+				kind: 'Founding anniversary',
+				title: `${u.name}, founded ${day} ${y}`,
+				note: joined([`${u.name} marks its founding anniversary on ${day}; it turns ${new Date().getFullYear() - y!} this year.`, u.basis.replace(/\.?$/, '.'), 'A town may celebrate its foundation day on another date.']),
+				href: `${TRAVEL}/calendar#${MONTHS[m! - 1]!.toLowerCase()}`,
+				text: joined([u.name, AREA[u.area], 'founding anniversary foundation day araw created founded', MONTHS[m! - 1], u.basis]).toLowerCase(),
+			}
+		})
+}
+
 function crafts(): Entry[] {
 	type Craft = { slug: string; name: string; local_name?: string; group: string; people?: string; province?: string; towns?: string[]; summary: string; materials?: string }
 	return (craftsFile as { items: Craft[] }).items.map((c) => ({
@@ -356,7 +377,7 @@ function incidents(): Entry[] {
 }
 
 export function directory(): Entry[] {
-	return [...regionalOffices(), ...officers(), ...pastHeads(), ...fieldOffices(), ...hotlines(), ...localLines(), ...catalogue(), ...stays(), ...eats(), ...crafts(), ...incidents()]
+	return [...regionalOffices(), ...officers(), ...pastHeads(), ...fieldOffices(), ...hotlines(), ...localLines(), ...catalogue(), ...stays(), ...eats(), ...crafts(), ...anniversaries(), ...incidents()]
 }
 
 /** The words a question uses for each kind of row here. */

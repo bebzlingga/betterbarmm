@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { heroFromTravelPhoto } from '../_components/page-hero'
+import { travelPhotos } from '../_lib/media'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { GUIDE_PAGES } from '../_lib/guide'
@@ -21,7 +23,7 @@ export default function RoutesPage() {
 	if (!GUIDE_PAGES) notFound()
 	return (
 		<>
-			<TravelMasthead
+			<TravelMasthead photos={[heroFromTravelPhoto(travelPhotos.lakeLanao)]}
 				kicker='The guide'
 				name='Routes'
 				note='Given a week, where do you go? Each route uses transport that actually exists, so none covers the whole region: Tawi-Tawi and Lanao del Sur are reached through different cities on different islands.'
