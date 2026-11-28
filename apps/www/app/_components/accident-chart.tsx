@@ -68,7 +68,7 @@ export function AccidentChart({
 	const total = bars.reduce((n, b) => n + b.total, 0)
 
 	return (
-		<figure className='mt-10 mb-14'>
+		<figure className='mt-10 mb-4 rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-8'>
 			<figcaption className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
 				<span className='text-[0.9375rem] font-bold text-[var(--ink)]'>
 					{year ? `Incidents by month, ${year}` : 'Incidents by year'}{' '}

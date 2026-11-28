@@ -2,8 +2,8 @@
 // using it too. It is re-exported here so no call site had to change.
 export { SectionHead } from '@betterbarmm/editorial'
 
-import { LineReveal, Rise } from '@betterbarmm/editorial'
-import { ScrollCue } from './scroll-cue'
+import { PhotoHero, photosFor } from './photo-hero'
+import type { DiscoverPhotoKey } from './discover-media'
 
 type MastheadProps = {
   /** The small brass label above the headline. States the subject, not the page. Left out, the headline stands alone. */
@@ -47,19 +47,16 @@ type MastheadProps = {
   backdrop?: React.ReactNode
   /** Before the label and headline, on their left and centred on them: a logo or a seal. */
   aside?: React.ReactNode
+  /** The header's photographs; left out, three of the region's chosen by the headline. */
+  photos?: DiscoverPhotoKey[]
 }
 
 /**
- * The top of every page that is not a chapter.
- *
- * It is a masthead rather than a header: a large empty warm ground and the
- * headline arriving line by line out of its own baseline. The rest of the
- * estate opens on a paragraph of 13px grey, which is correct for a filing
- * system and hopeless for a front door.
- *
- * The okir medallion that used to turn behind it is gone (user decision): on
- * a ground this open it read as a logo the page did not have, and the glow
- * alone carries the warmth it was there for.
+ * The top of every page that is not a chapter, in the travel workspace's look (user decision): the region's
+ * photographs turning under a dark wash, the bars clear over them, the headline and its line at the foot. The props
+ * are the ones the masthead always took, so no page had to change: the lines run on as one headline (the qualifier
+ * still muted), the buttons and figures sit under the line, and `backdrop`, `brand` and the scroll cue are no longer
+ * drawn (the photographs and the shorter header replace them).
  */
 export function Masthead({
   label,
@@ -68,91 +65,40 @@ export function Masthead({
   standfirst,
   children,
   facts,
-  scrollTo,
-  scrollLabel = 'Read on',
   size = 'display-md',
-  headlineClassName = '',
-  brand = false,
-  backdrop,
   aside,
+  photos,
 }: MastheadProps) {
   return (
-    /* Four fifths of the screen: enough that the headline opens on nothing but
-       itself, and short enough that the edge of what follows is visible without
-       scrolling — which is what tells a reader the page continues. `svh` rather
-       than `vh` so a phone's collapsing address bar cannot change the height
-       mid-scroll. */
-    <section className={`${brand ? 'brand-bg ' : ''}bb-lattice relative overflow-hidden`}>
-      {backdrop}
-      <span
-        aria-hidden='true'
-        className='bb-glow absolute -right-[10%] -top-[20%] size-[36rem]'
-      />
-
-      <div className='bb-container relative w-full py-[clamp(3.75rem,7vw,6.5rem)]'>
-        <div className={aside ? 'flex items-center gap-5 sm:gap-8' : undefined}>
-          {aside}
-          <div className='min-w-0'>
-            <Rise distance={14}>
-              {label ? <p className='bb-label'>{label}</p> : null}
-            </Rise>
-
-            <LineReveal
-              lines={lines}
-              delay={0.08}
-              className={`bb-${size} mt-6 text-[var(--ink)] ${headlineClassName}`}
-              lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
-            />
-          </div>
+    <PhotoHero
+      photos={photos ?? photosFor(lines.join(' '))}
+      kicker={label}
+      tall={size === 'display'}
+      aside={aside}
+      title={lines.map((line, i) => (
+        <span key={i} className={muted.includes(i) ? 'text-white/55' : undefined}>
+          {i ? ' ' : ''}
+          {line}
+        </span>
+      ))}
+      lede={standfirst}
+    >
+      {children || facts?.length ? (
+        <div className='mt-9 flex flex-wrap items-end justify-between gap-x-12 gap-y-8'>
+          {children ? <div className='flex flex-wrap items-center gap-3'>{children}</div> : null}
+          {facts?.length ? (
+            <dl className='flex flex-wrap gap-x-10 gap-y-6'>
+              {facts.map((fact) => (
+                <div key={fact.label}>
+                  <dt className='sr-only'>{fact.label}</dt>
+                  <dd className='font-[family-name:var(--font-display)] text-[clamp(1.5rem,2.6vw,2.125rem)] font-extrabold leading-none tracking-[-0.03em] text-white'>{fact.value}</dd>
+                  <p className='mt-2 text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-white/60'>{fact.label}</p>
+                </div>
+              ))}
+            </dl>
+          ) : null}
         </div>
-
-        {standfirst ? (
-          <Rise delay={0.35} distance={16}>
-            <p className='mt-7 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
-              {standfirst}
-            </p>
-          </Rise>
-        ) : null}
-
-        {children || facts?.length ? (
-          <Rise delay={0.45} distance={14}>
-            {/* One row on a single brass rule: what to do on the left, the size
-                of the thing on the right. They were stacked, which spent two
-                bands of the masthead on four buttons and three numbers and put
-                a hairline between two things that belong to the same breath. */}
-            <div className='mt-12 flex flex-wrap items-center justify-between gap-x-12 gap-y-8 border-t border-[var(--brass-line)] pt-7'>
-              {children ? (
-                <div className='flex flex-wrap items-center gap-3'>{children}</div>
-              ) : null}
-
-              {facts?.length ? (
-                /* Divided by space rather than by dots, so the row reads as a
-                   set of measurements rather than as a sentence with
-                   punctuation. */
-                <dl className='flex flex-wrap gap-x-10 gap-y-6'>
-                  {facts.map((fact) => (
-                    <div key={fact.label}>
-                      <dt className='sr-only'>{fact.label}</dt>
-                      <dd className='bb-figure-sm text-[var(--ink)]'>{fact.value}</dd>
-                      <p className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-                        {fact.label}
-                      </p>
-                    </div>
-                  ))}
-                </dl>
-              ) : null}
-            </div>
-          </Rise>
-        ) : null}
-        {scrollTo ? (
-          <Rise delay={0.7} distance={10}>
-            <ScrollCue to={scrollTo} label={scrollLabel} className='mt-16' />
-          </Rise>
-        ) : null}
-      </div>
-
-      {/* The seam into the page proper. A malong's warp, not a 1px rule. */}
-      <div className='bb-weave' aria-hidden='true' />
-    </section>
+      ) : null}
+    </PhotoHero>
   )
 }

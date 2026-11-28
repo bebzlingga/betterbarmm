@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMeta({
 	path: '/this-week',
 })
 
-const H2 = 'text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'dv-title'
 const peso = (n: number) => (n >= 1e9 ? `₱${(n / 1e9).toFixed(2)}B` : n >= 1e6 ? `₱${(n / 1e6).toFixed(1)}M` : `₱${Math.round(n).toLocaleString('en-PH')}`)
 const day = (iso: string, opts: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric' }) =>
 	new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-US', { ...opts, timeZone: 'UTC' })
@@ -51,7 +51,7 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='this-week' />
 			<Masthead
-				brand
+				photos={['parliamentSession', 'parliamentHall', 'governmentCenter']}
 				label={isCurrent ? 'The latest week' : 'Week of'}
 				lines={[`${day(w.monday)} – ${day(w.sunday, { month: 'long', day: 'numeric', year: 'numeric' })}`]}
 				standfirst='What moved in the Bangsamoro: each stage Parliament recorded, each law signed, each bid notice posted and contract awarded on PhilGEPS — read from the records themselves.'
@@ -63,8 +63,8 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 				]}
 			/>
 
-			<nav className='bb-container flex flex-wrap items-center justify-between gap-4 border-b border-[var(--rule)] py-5 text-[0.875rem]'>
-				<Link href={`/this-week?week=${addDays(monday, -7)}`} className='inline-flex items-center gap-2 font-semibold hover:text-[var(--accent)]'>
+			<nav className='bb-container flex flex-wrap items-center justify-between gap-4 pt-10 text-[0.875rem]'>
+				<Link href={`/this-week?week=${addDays(monday, -7)}`} className='inline-flex items-center gap-2 rounded-full border border-[var(--rule)] px-4 py-2 font-semibold transition hover:border-[var(--ink)] hover:bg-[var(--paper-2)]'>
 					<ArrowLeftIcon size={14} weight='bold' aria-hidden='true' /> Week before
 				</Link>
 				<a href='/this-week/feed.xml' className='inline-flex items-center gap-2 text-[0.8125rem] text-[var(--ink-3)] hover:text-[var(--accent)]'>
@@ -73,14 +73,14 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 				{monday >= mondayOf(latestDay) ? (
 					<span />
 				) : (
-					<Link href={`/this-week?week=${addDays(monday, 7)}`} className='inline-flex items-center gap-2 font-semibold hover:text-[var(--accent)]'>
+					<Link href={`/this-week?week=${addDays(monday, 7)}`} className='inline-flex items-center gap-2 rounded-full border border-[var(--rule)] px-4 py-2 font-semibold transition hover:border-[var(--ink)] hover:bg-[var(--paper-2)]'>
 						Week after <ArrowRightIcon size={14} weight='bold' aria-hidden='true' />
 					</Link>
 				)}
 			</nav>
 
-			<div className='bb-container bb-section grid gap-x-20 gap-y-16 lg:grid-cols-2'>
-				<section>
+			<div className='bb-container grid items-start gap-5 pb-24 pt-10 lg:grid-cols-2 lg:pb-32'>
+				<section className='tv-card !p-6 sm:!p-8'>
 					<h2 className={H2}>In Parliament</h2>
 					{w.events.length ? (
 						<>
@@ -108,7 +108,7 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 					)}
 				</section>
 
-				<section>
+				<section className='tv-card !p-6 sm:!p-8'>
 					<h2 className={H2}>In procurement</h2>
 					<p className='mt-3 text-[0.90625rem] leading-7 text-[var(--ink-2)]'>
 						BARMM offices posted <strong>{w.notices.count.toLocaleString('en-PH')}</strong> bid notices worth <strong>{peso(w.notices.budget)}</strong>.{' '}
@@ -175,9 +175,11 @@ export default async function ThisWeekPage({ searchParams }: { searchParams: Pro
 							</ul>
 						</>
 					) : null}
-					<a href={`${PROC}/notices`} className='mt-6 inline-block text-[0.8125rem] font-semibold text-[var(--accent)]'>
-						Every bid notice →
-					</a>
+					<div className='mt-6 flex justify-end'>
+						<a href={`${PROC}/notices`} className='inline-flex items-center gap-1.5 text-[0.875rem] font-semibold text-[var(--ink-2)] transition hover:text-[var(--accent)]'>
+							Every bid notice <ArrowRightIcon size={14} weight='bold' aria-hidden='true' />
+						</a>
+					</div>
 				</section>
 			</div>
 			<GetInvolved />

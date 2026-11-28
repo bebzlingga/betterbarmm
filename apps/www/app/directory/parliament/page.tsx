@@ -1,11 +1,10 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import parliament from '../../../../../datasets/bills/bangsamoro_registry/members/parliament-2026.json'
-import { linkClass } from '../../_components/directory-bits'
+import { DirectoryHead, linkClass } from '../../_components/directory-bits'
 import { memberId } from '../../_lib/directory'
 import { memberPortrait } from '../../_lib/images'
 import { Emblem } from '../../_components/emblem'
-import { Masthead } from '../../_components/masthead'
 import { DirectoryDialog } from '../../_components/directory-dialog'
 import { pageMeta } from '../../_lib/seo'
 
@@ -34,7 +33,7 @@ export default function ParliamentDirectoryPage() {
 
 	return (
 		<DirectoryDialog id={'parliament'} name={'Members of Parliament'}>
-			<Masthead brand label='Directory' lines={['Members of Parliament']} />
+			<DirectoryHead label='Directory' name='Members of Parliament' photo={null} logo={null} discover='parliamentSession' />
 
 			<section className='bb-container bb-section'>
 				<p className='text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>
@@ -51,13 +50,13 @@ export default function ParliamentDirectoryPage() {
 
 				{groups.map((g) => (
 					<section key={g.label} aria-label={g.label} className='mt-12'>
-						<h2 className='text-[0.8125rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+						<h2 className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em] text-[var(--ink)]'>
 							{g.label}s <span className='text-[var(--ink-mute)]'>{g.list.length}</span>
 						</h2>
-						<ul className='mt-4 grid pt-px pl-px sm:grid-cols-2 lg:grid-cols-4'>
+						<ul className='mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4'>
 							{g.list.map((m) => (
-								<li key={m.rosterName} id={memberId(m)} className='-mt-px -ml-px scroll-mt-[calc(var(--site-header-h)+1rem)] border border-[var(--rule)] bg-[var(--paper)] target:bg-[var(--paper-2)] target:outline-2 target:outline-[var(--accent)]'>
-									<a href={`${LEGISLATION}/members/elected`} className='group flex h-full items-center gap-3 p-4 hover:bg-[var(--paper-2)]'>
+								<li key={m.rosterName} id={memberId(m)} className='scroll-mt-[calc(var(--site-header-h)+1rem)] overflow-hidden rounded-2xl border border-[var(--rule)] bg-[var(--paper)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)] target:bg-[var(--paper-2)] target:outline-2 target:outline-[var(--accent)]'>
+									<a href={`${LEGISLATION}/members/elected`} className='group flex h-full items-start gap-3 p-4'>
 										<Emblem image={memberPortrait(m)} name={m.fullName} portrait className='size-12 rounded-full text-[0.8125rem]' />
 										<span className='min-w-0'>
 											<span className='block text-[0.875rem] font-semibold leading-snug group-hover:text-[var(--accent)]'>{m.fullName}</span>

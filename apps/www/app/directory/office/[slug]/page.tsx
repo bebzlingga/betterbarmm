@@ -67,9 +67,9 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				{/* Two columns from a laptop up: who heads it and how to reach it (35%), beside the right (65%):
 				    how it is organized, its offices in the provinces and its past heads. */}
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-20 xl:gap-24'>
-					<aside className='space-y-8'>
+					<aside className='space-y-8 self-start'>
 					<div>
-						<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Head of office</p>
+						<p className='mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Head of office</p>
 						{o.head ? (
 							<div className='mt-2 flex items-start gap-5'>
 								<HeadPortrait slug={o.slug} name={o.head.name} className='size-24 sm:size-28' />
@@ -93,7 +93,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</div>
 
 					<div>
-						<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>How to reach it</p>
+						<p className='mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>How to reach it</p>
 						<ul className='mt-2 space-y-1.5 text-[0.875rem] leading-6'>
 							{o.phones.map((p) => (
 								<Phone key={p} number={p} />
@@ -134,7 +134,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 					</div>
 
 					<div>
-						<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Its budget</p>
+						<p className='mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Its budget</p>
 						<ul className='mt-2 space-y-1.5 text-[0.875rem] leading-6'>
 							<li className='flex gap-2'>
 								<CoinsIcon size={15} className='mt-1 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
@@ -166,7 +166,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{field.length ? (
 					<section aria-labelledby='field' className='mt-10'>
-						<h2 id='field' className='text-[1.25rem] font-extrabold'>
+						<h2 id='field' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 							In the provinces <span className='text-[var(--ink-mute)]'>{field.length}</span>
 						</h2>
 						{/* A list, as the past heads are: where, which office and who heads it, its numbers, its source. */}
@@ -210,7 +210,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 				) : null}
 
 				<section aria-labelledby='heads' className='mt-10'>
-					<h2 id='heads' className='text-[1.25rem] font-extrabold'>
+					<h2 id='heads' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 						Who has headed it
 					</h2>
 					{history.length ? (
@@ -245,7 +245,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{within.length ? (
 					<section aria-labelledby='within' className='mt-10'>
-						<h2 id='within' className='text-[1.25rem] font-extrabold'>
+						<h2 id='within' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 							Its offices
 						</h2>
 						<ul className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[0.875rem]'>
@@ -263,7 +263,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{attached.length ? (
 					<section aria-labelledby='attached' className='mt-10'>
-						<h2 id='attached' className='text-[1.25rem] font-extrabold'>
+						<h2 id='attached' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 							Attached offices
 						</h2>
 						<ul className='mt-3 flex flex-wrap gap-x-6 gap-y-2 text-[0.875rem]'>
@@ -283,7 +283,7 @@ export default async function OfficeDirectoryPage({ params }: { params: Promise<
 
 				{/* Where it all came from, as a section of its own under the two columns. */}
 				<section aria-labelledby='read' className='mt-10'>
-					<h2 id='read' className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>
+					<h2 id='read' className='mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 						How this was read
 					</h2>
 					<div className='mt-2 space-y-2 text-[0.78125rem] leading-[1.7] text-[var(--ink-mute)]'>

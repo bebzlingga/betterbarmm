@@ -1,8 +1,7 @@
-import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
+import { HonestBand } from '../_components/honest-band'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
-import Link from 'next/link'
-import { CtaAction, CtaPanel, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { Masthead, SectionHead } from '../_components/masthead'
 import { SiteHeader } from '../_components/site-header'
 
@@ -117,7 +116,7 @@ export default function JoPage() {
 			    is an argument rather than a list — and it is the passage the whole
 			    persona rests on: Jo is a composite, and saying so is what keeps her
 			    from reading as a claim about a real woman. */}
-			<section className='bb-lattice-soft relative isolate overflow-hidden bg-[var(--paper-2)] bb-section'>
+			<section className='tv-wash relative isolate overflow-hidden dv-section'>
 				<div className='bb-container'>
 					<SectionHead
 						eyebrow='Many voices'
@@ -144,7 +143,7 @@ export default function JoPage() {
 			</section>
 
 			{/* ---- What she actually is ---- */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				<SectionHead
 					eyebrow='What she is'
 					title='And what she'
@@ -175,23 +174,13 @@ export default function JoPage() {
 				</p>
 			</section>
 
-			<CtaPanel
+			<HonestBand
 				label='Contribute'
-				lines={['Better records need', 'many careful readers.']}
+				title='Better records need many careful readers.'
 				standfirst='Jo is only as good as what the record holds. Send source links, corrections, missing context, or notes about confusing records — every one of them makes her answers better.'
-			>
-				<CtaAction>
-					<Link href='/contribute' className='bb-btn bb-btn-brass'>
-						Contribute
-						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-					</Link>
-				</CtaAction>
-				<CtaAction>
-					<Link href='/about' className='bb-btn bb-btn-ghost'>
-						About the project
-					</Link>
-				</CtaAction>
-			</CtaPanel>
+				primary={{ href: '/contribute', label: 'Contribute' }}
+				secondary={{ href: '/about', label: 'About the project' }}
+			/>
 		</main>
 	)
 }

@@ -183,7 +183,7 @@ export function RegionBand({ index = '03' }: { index?: string }) {
 				</Rise>
 
 				<Stagger gap={0.06}>
-					<ol className='mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-[2px] border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-4 xl:grid-cols-7'>
+					<ol className='mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--rule)] sm:grid-cols-4 xl:grid-cols-7'>
 						{/* 7 tiles: the largest takes 2 columns below xl, so 2- and 4-column grids fill evenly. */}
 						{rows.map((p, i) => (
 							<StaggerItem key={p.slug} as='li' className={`bg-[var(--paper)] ${i === 0 ? 'col-span-2 xl:col-span-1' : ''}`}>

@@ -7,10 +7,10 @@ import { pageMeta } from '../_lib/seo'
 import { GetInvolved } from '../_components/get-involved'
 
 export const metadata: Metadata = pageMeta({
-	title: 'Accidents',
+	title: 'Incident Watch',
 	description:
 		'Road crashes, sea mishaps, fires, shootings and other incidents across the Bangsamoro since 2019, mapped from the news reports that covered them, with the dead and injured counted and every report linked.',
-	path: '/accidents',
+	path: '/incidents',
 })
 
 export default function AccidentsPage() {
@@ -18,16 +18,10 @@ export default function AccidentsPage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='accidents' />
 
-			{/* The band opens straight on the map's door — the same ground and
-			    seam the masthead would have drawn, with nothing else in it. */}
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<div className='bb-container relative w-full py-14 md:py-20'>
-					<AccidentOpener />
-				</div>
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
+			{/* The page opens straight on the map's door, in the photograph header. */}
+			<AccidentOpener />
 
-			<section id='accident-map' className='bb-container bb-section scroll-mt-[var(--site-header-h)]'>
+			<section id='accident-map' className='bb-container pb-24 pt-14 lg:pb-32 lg:pt-20'>
 				<AccidentMap incidents={accidents} />
 
 				<p className='mt-16 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>

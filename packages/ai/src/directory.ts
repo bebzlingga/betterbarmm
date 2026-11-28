@@ -334,7 +334,7 @@ function incidents(): Entry[] {
 			`${i.deaths} dead, ${i.injured} injured${i.missing ? `, ${i.missing} missing` : ''}.`,
 			trim(i.summary, 240),
 		]),
-		href: `${WWW}/accidents`,
+		href: `${WWW}/incidents`,
 		text: joined([i.kind, i.title, i.municipality, i.barangay, i.province, i.date]).toLowerCase(),
 	}))
 
@@ -366,13 +366,13 @@ function incidents(): Entry[] {
 			kind: 'Incident count',
 			title: town ? `Incidents in ${town}, ${province}` : `Incidents in ${province}`,
 			note: tally(list),
-			href: `${WWW}/accidents`,
+			href: `${WWW}/incidents`,
 			// The kinds it counts, so "road crashes in Basilan" reaches the count and not one roadside shooting.
 			text: `${town ?? ''} ${province} incidents accidents crashes ${[...new Set(list.map((i) => i.kind))].join(' ')}`.toLowerCase(),
 			rollup: true,
 		})
 	}
-	rows.push({ space: 'incidents', kind: 'Incident count', title: 'Incidents across BARMM', note: tally(all), href: `${WWW}/accidents`, text: 'incidents accidents crashes region whole', rollup: true })
+	rows.push({ space: 'incidents', kind: 'Incident count', title: 'Incidents across BARMM', note: tally(all), href: `${WWW}/incidents`, text: 'incidents accidents crashes region whole', rollup: true })
 	return rows
 }
 

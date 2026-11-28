@@ -344,7 +344,7 @@ export function Insight() {
 				</span>
 			</p>
 			<figcaption className={CAPTION}>
-				BetterBARMM <a href='/accidents' className='underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>Incident Watch</a>, from news reports, January 2019 to October 26, 2026. Each incident is linked to the reports behind it.
+				BetterBARMM <a href='/incidents' className='underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>Incident Watch</a>, from news reports, January 2019 to October 26, 2026. Each incident is linked to the reports behind it.
 			</figcaption>
 		</figure>
 	)

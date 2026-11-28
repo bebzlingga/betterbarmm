@@ -1,6 +1,6 @@
-import { ArrowRightIcon, ArrowUpRightIcon, BuildingsIcon, CoinsIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
+import { ArrowUpRightIcon, BuildingsIcon, CoinsIcon, ScrollIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
+import { HonestBand } from '../_components/honest-band'
 import type { Metadata } from 'next'
-import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { pageMeta } from '../_lib/seo'
 import Link from 'next/link'
 import { EXPLAINER_CATEGORIES } from '@betterbarmm/db'
@@ -56,7 +56,7 @@ export default async function ExplainersPage({
 			/>
 
 			{all.length ? (
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				{/* Topics left, tags right; stacked on a phone. */}
 				<nav aria-label='Filter explainers' className='flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between'>
 					<div className='flex flex-wrap gap-2'>
@@ -102,23 +102,13 @@ export default async function ExplainersPage({
 
 			<Guides />
 
-			<CtaPanel
+			<HonestBand
 				label='Get involved'
-				lines={['Know something', 'we should explain?']}
+				title='Know something we should explain?'
 				standfirst='Spotted an error, or a law, budget or process that deserves a plain-language guide? Tell us — every correction and every suggestion makes these better.'
-			>
-				<CtaAction>
-					<Link href='/contribute' className='bb-btn bb-btn-brass'>
-						Contribute
-						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-					</Link>
-				</CtaAction>
-				<CtaAction>
-					<Link href='/contact' className='bb-btn bb-btn-ghost'>
-						Suggest a topic
-					</Link>
-				</CtaAction>
-			</CtaPanel>
+				primary={{ href: '/contribute', label: 'Contribute' }}
+				secondary={{ href: '/contact', label: 'Suggest a topic' }}
+			/>
 		</main>
 	)
 }
@@ -142,8 +132,8 @@ function Guides() {
 		// The workspace with the most guides last, so it takes a column of its own and the two columns come out level.
 		.sort((a, b) => a.guides.length - b.guides.length)
 	return (
-		<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
-			<div className='bb-container bb-section'>
+		<section className='tv-wash'>
+			<div className='bb-container dv-section'>
 				<div className='grid gap-x-16 gap-y-4 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:items-end'>
 					<div>
 						<p className='bb-label'>From the workspaces</p>
@@ -159,7 +149,7 @@ function Guides() {
 					{workspaces.map(({ name, guides, home }) => {
 						const Icon = WORKSPACE_ICON[name] ?? ScrollIcon
 						return (
-							<article key={name} className='mb-5 break-inside-avoid border border-[var(--rule)] bg-[var(--paper)]'>
+							<article key={name} className='mb-5 break-inside-avoid overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)]'>
 								<header className='flex items-center gap-3 border-b border-[var(--rule)] px-5 py-4'>
 									<span className='grid size-10 shrink-0 place-items-center bg-[var(--accent)] text-white'>
 										<Icon size={20} weight='fill' aria-hidden='true' />
@@ -181,7 +171,7 @@ function Guides() {
 									{guides.map((g) => (
 										<li key={g.href} className='border-b border-[var(--rule-soft)] last:border-b-0'>
 											<a href={g.href} className='group flex gap-4 px-5 py-4 transition-colors hover:bg-[var(--paper-2)]'>
-												<span className='grid h-16 w-24 shrink-0 place-items-center bg-[var(--paper-2)] transition-colors group-hover:bg-[var(--paper)]'>
+												<span className='grid h-16 w-24 shrink-0 place-items-center rounded-xl bg-[var(--paper-2)] transition-colors group-hover:bg-[var(--paper)]'>
 													<GuideMotif motif={g.motif} className='block h-12 w-full' />
 												</span>
 												<span className='min-w-0 flex-1'>

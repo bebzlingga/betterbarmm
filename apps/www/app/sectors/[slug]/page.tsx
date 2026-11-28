@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 	return { title: s ? s.title : 'Sector', description: s?.lead, robots: { index: false, follow: false } }
 }
 
-const H2 = 'text-[1.375rem] font-extrabold tracking-[-0.01em]'
+const H2 = 'dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'
 const NOTE = 'mt-1 text-[0.84375rem] text-[var(--ink-3)]'
 const LINK = 'underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'
 const date = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Manila' })
@@ -39,23 +39,23 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
 			<SiteHeader />
 
 			<Masthead brand label='Sector workspace · in development' lines={[sector.title]} standfirst={sector.lead}>
-				<div className='flex flex-wrap gap-x-5 gap-y-2'>
+				<div className='flex flex-wrap gap-2'>
 					{sector.related.map((r) => (
-						<a key={r.href} href={r.href} className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+						<a key={r.href} href={r.href} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 							{r.label} <ArrowUpRightIcon size={13} weight='bold' aria-hidden='true' />
 						</a>
 					))}
 				</div>
 			</Masthead>
 
-			<div className='bb-container bb-section space-y-16'>
+			<div className='bb-container dv-section space-y-16'>
 				<section aria-labelledby='offices'>
 					<h2 id='offices' className={H2}>
 						Who is responsible <span className='text-[var(--ink-mute)]'>{own.length}</span>
 					</h2>
-					<ul className='mt-5 grid border-l border-t border-[var(--rule)] sm:grid-cols-2'>
+					<ul className='mt-5 grid gap-4 sm:grid-cols-2'>
 						{own.map((o) => (
-							<li key={o.slug} className='border-b border-r border-[var(--rule)] p-5'>
+							<li key={o.slug} className='rounded-[1.25rem] border border-[var(--rule)] p-5 sm:p-6'>
 								<Link href={`/services/${o.slug}`} className='text-[1.03125rem] font-bold leading-snug hover:text-[var(--accent)]'>
 									{o.name}
 								</Link>
@@ -82,7 +82,7 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
 							Programs <span className='text-[var(--ink-mute)]'>{programs.length}</span>
 						</h2>
 						<p className={NOTE}>What each office runs for the public, as the office describes it.</p>
-						<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+						<ul className='mt-5 divide-y divide-[var(--rule-soft)] rounded-[1.25rem] border border-[var(--rule)] px-5'>
 							{programs.map(({ office, item }) => (
 								<li key={`${office.slug}-${item.name}`} className='py-4'>
 									<Link href={`/services/${office.slug}#program-${slugify(item.name)}`} className='font-bold leading-snug hover:text-[var(--accent)]'>
@@ -128,11 +128,11 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
 							</Link>
 							: each target beside the latest published figure.
 						</p>
-						<ul className='mt-5 grid border-l border-t border-[var(--rule)] md:grid-cols-2'>
+						<ul className='mt-5 grid gap-4 md:grid-cols-2'>
 							{plan.map((i) => {
 								const { status, against } = judge(i)
 								return (
-									<li key={i.id} className='border-b border-r border-[var(--rule)] p-5'>
+									<li key={i.id} className='rounded-[1.25rem] border border-[var(--rule)] p-5 sm:p-6'>
 										<p className='text-[0.75rem] font-semibold uppercase tracking-[0.08em] text-[var(--ink-mute)]'>{i.area}</p>
 										<p className='mt-1 font-bold leading-snug'>{i.name}</p>
 										<p className='mt-2 text-[1.5rem] font-extrabold tabular-nums'>
@@ -161,7 +161,7 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
 							</Link>
 							.
 						</p>
-						<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+						<ul className='mt-5 divide-y divide-[var(--rule-soft)] rounded-[1.25rem] border border-[var(--rule)] px-5'>
 							{grants.map((g) => (
 								<li key={g.name} className='py-4'>
 									<a href={g.source} target='_blank' rel='noreferrer' className='font-bold hover:text-[var(--accent)]'>
@@ -188,7 +188,7 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
 							Bids open <span className='text-[var(--ink-mute)]'>{bids.length}</span>
 						</h2>
 						<p className={NOTE}>What these offices are buying on PhilGEPS now.</p>
-						<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+						<ul className='mt-5 divide-y divide-[var(--rule-soft)] rounded-[1.25rem] border border-[var(--rule)] px-5'>
 							{bids.slice(0, 12).map((n) => (
 								<li key={n.ref} className='py-3'>
 									<p className='text-[0.90625rem] font-semibold leading-snug'>{n.title}</p>
@@ -210,7 +210,7 @@ export default async function SectorPage({ params }: { params: Promise<{ slug: s
 						<h2 id='news' className={H2}>
 							In the news
 						</h2>
-						<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+						<ul className='mt-5 divide-y divide-[var(--rule-soft)] rounded-[1.25rem] border border-[var(--rule)] px-5'>
 							{news.map((n) => (
 								<li key={n.url} className='py-3'>
 									<a href={n.url} target='_blank' rel='noreferrer' className='font-semibold leading-snug hover:text-[var(--accent)]'>

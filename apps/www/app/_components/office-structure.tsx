@@ -102,7 +102,7 @@ export function OfficeStructure({ org }: { org: OrgStructure }) {
 	return (
 		<section aria-labelledby='structure' className='mt-14'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-				<h2 id='structure' className='text-[1.25rem] font-extrabold'>
+				<h2 id='structure' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 					{/* Counts the people named, not the units: the line beside it says how many units have one. */}
 					Officials <span className='text-[var(--ink-mute)]'>{named}</span>
 				</h2>

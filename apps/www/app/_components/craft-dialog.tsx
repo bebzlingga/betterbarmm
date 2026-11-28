@@ -54,13 +54,13 @@ export function CraftDialog({ slug, name, children }: { slug: string; name: stri
 			}}
 			// The size is set inline as well: some browsers' own dialog styles cap a modal at the window less a margin.
 			style={{ position: 'fixed', inset: 0, width: '100%', height: '100dvh', maxWidth: 'none', maxHeight: 'none', margin: 0, padding: 0, border: 0 }}
-			className='z-[60] overflow-y-auto overscroll-contain bg-[#f4efe8] text-[#3b2419] outline-none backdrop:bg-[#2a1810]/80'
+			className='z-[60] overflow-y-auto overscroll-contain bg-[var(--paper)] text-[var(--ink)] outline-none backdrop:bg-black/70'
 		>
 			<button
 				type='button'
 				onClick={close}
 				aria-label='Close'
-				className='fixed top-4 right-4 z-20 flex size-11 items-center justify-center text-[#2a1810] transition hover:opacity-70 sm:top-5 sm:right-5'
+				className='fixed top-4 right-4 z-20 flex size-11 items-center justify-center rounded-full bg-white text-[#191713] shadow-[0_12px_28px_-12px_rgba(0,0,0,0.5)] transition hover:bg-[#191713] hover:text-white sm:top-5 sm:right-5'
 			>
 				<XIcon size={26} weight='bold' aria-hidden='true' />
 			</button>

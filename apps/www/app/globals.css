@@ -1057,3 +1057,444 @@
   -webkit-mask-image: linear-gradient(90deg, transparent 15%, #000 70%);
   mask-image: linear-gradient(90deg, transparent 15%, #000 70%);
 }
+
+/* ============================================================
+   The travel workspace's look, across the site (user decision)
+
+   A dark header across the page with the bars clear over it and the
+   region's own photographs turning under a wash; rounded cards; warm
+   washed bands; the travel footer. The rules are travel's
+   (apps/travel/app/globals.css). The bars go clear on their own over
+   any page that opens on a `.dv-hero` (`:has`), so no page has to say so.
+   ============================================================ */
+
+:root {
+  --dv-r: 1.25rem;
+  --dv-gutter: max(1.5rem, calc((100vw - var(--bb-page-width)) / 2 + 2rem));
+  --tv-nav-h: calc(var(--site-header-h) + 2.25rem);
+}
+/* The masthead scrolls away with the page, as travel's does, so nothing sticking to the top offsets itself by it. */
+:root,
+:root[data-header-hidden="true"] {
+  --sticky-top: 0px;
+}
+
+.dv-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: calc(-1 * var(--tv-nav-h) - 1px);
+  min-height: clamp(30rem, 74svh, 46rem);
+  background: #10161b;
+  color: #fff;
+  /* The page's tokens, re-pointed for the dark ground, so a button or a line a page passes in reads on it. */
+  --ink: #fff;
+  --ink-2: rgba(255, 255, 255, 0.85);
+  --ink-3: rgba(255, 255, 255, 0.66);
+  --ink-mute: rgba(255, 255, 255, 0.55);
+  --rule: rgba(255, 255, 255, 0.2);
+  --rule-soft: rgba(255, 255, 255, 0.12);
+  --brass-line: rgba(255, 255, 255, 0.2);
+  --paper: #10161b;
+  --paper-2: rgba(255, 255, 255, 0.08);
+}
+.dv-hero-tall { min-height: clamp(38rem, 96svh, 60rem); }
+.dv-slide {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  margin: 0;
+  opacity: 0;
+  animation: dv-fade calc(var(--n) * 7s) linear calc((var(--i) - var(--n)) * 7s) infinite;
+}
+.dv-slide:first-child { opacity: 1; }
+.dv-slide-img {
+  object-fit: cover;
+  animation: dv-zoom calc(var(--n) * 7s) linear calc((var(--i) - var(--n)) * 7s) infinite;
+}
+.dv-slide-cap {
+  position: absolute;
+  bottom: 1.5rem;
+  right: var(--dv-gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+  font-size: 0.8125rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: dv-fade calc(var(--n) * 7s) linear calc((var(--i) - var(--n)) * 7s) infinite;
+}
+.dv-slide-cap[data-first] { opacity: 1; }
+@keyframes dv-fade {
+  0%, 25% { opacity: 1; }
+  30%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes dv-fade-2 {
+  0%, 50% { opacity: 1; }
+  55%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes dv-fade-3 {
+  0%, 33.3% { opacity: 1; }
+  38%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes dv-zoom {
+  0% { transform: scale(1.1); }
+  30% { transform: scale(1.01); }
+  100% { transform: scale(1.1); }
+}
+.dv-hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to bottom, rgba(8, 12, 16, 0.6) 0%, transparent 28%),
+    linear-gradient(to top, rgba(8, 12, 16, 0.92) 0%, rgba(8, 12, 16, 0.55) 35%, rgba(8, 12, 16, 0.05) 65%),
+    linear-gradient(to right, rgba(8, 12, 16, 0.45) 0%, transparent 60%),
+    rgba(8, 12, 16, 0.32);
+}
+/* A centred header's words sit mid-photograph, where a bright sky or a white wall would swallow them: a soft dark
+   pool behind them. */
+.dv-hero-center .dv-hero-shade {
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 52%, rgba(8, 12, 16, 0.55), transparent 75%),
+    linear-gradient(to bottom, rgba(8, 12, 16, 0.6) 0%, transparent 28%),
+    linear-gradient(to top, rgba(8, 12, 16, 0.85) 0%, transparent 45%),
+    rgba(8, 12, 16, 0.38);
+}
+.dv-hero p, .dv-hero h1 { text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35); }
+.pg-hero-title {
+  max-width: 20ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6.2vw, 5.25rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: #fff;
+  text-wrap: balance;
+}
+@media (max-width: 767px) {
+  .dv-slide-cap { display: none; }
+}
+
+.dv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: transform 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-btn:hover { transform: translateY(-1px); }
+.dv-btn-light { background: #fff; color: #10161b; }
+.dv-btn-glass {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  backdrop-filter: blur(12px);
+}
+.dv-btn-glass:hover { background: rgba(255, 255, 255, 0.22); }
+/* The site's own buttons, passed into a dark header, go round there too. */
+.dv-hero .bb-btn { border-radius: 999px; }
+
+.dv-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  background: rgba(10, 14, 18, 0.45);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.dv-section { padding-block: clamp(5.5rem, 11vw, 10rem); }
+.dv-rail-section { padding-block: clamp(4rem, 8vw, 7rem); }
+.dv-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.dv-lede {
+  margin-top: 0.5rem;
+  max-width: 48rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+.dv-round {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-round:hover { border-color: var(--ink); background: var(--paper-2); }
+.dv-rail {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding-inline: var(--dv-gutter);
+  padding-bottom: 0.5rem;
+  scroll-padding-inline: var(--dv-gutter);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.dv-rail::-webkit-scrollbar { display: none; }
+.dv-rail > * { scroll-snap-align: start; flex-shrink: 0; }
+
+/* ---- The bars over a dark header: clear, on a hairline, whenever the page opens on one ---- */
+body:has(.dv-hero) .site-strip {
+  position: relative;
+  z-index: 31;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+}
+body:has(.dv-hero) .site-strip :is(.utility-bar-link, summary, nav > button) { color: rgba(255, 255, 255, 0.78); }
+body:has(.dv-hero) .site-strip :is(.utility-bar-link, summary):hover,
+body:has(.dv-hero) .site-strip summary span { color: #fff; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: transparent;
+  backdrop-filter: none;
+  color: #fff;
+}
+body:has(.dv-hero) .site-head:not([data-menu='true']) .nav-item:not(.nav-menu *) { color: rgba(255, 255, 255, 0.8); }
+body:has(.dv-hero) .site-head:not([data-menu='true']) :is(.nav-item:hover, .nav-item[data-open='true'], .nav-item[data-active='true']) { color: #fff; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) .nav-item::after { background: #fff; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) .nav-item span { color: inherit; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) .text-\[var\(--ink\)\]:not(.nav-menu *) { color: #fff; }
+/* An open dropdown is its own paper panel: it keeps the page's ink, not the clear bar's white (user report: "All chapters" was white on white). */
+body:has(.dv-hero) .site-head .nav-menu { color: var(--ink); }
+body:has(.dv-hero) .site-head:not([data-menu='true']) button[aria-controls] { border-color: #fff; color: #fff; }
+
+/* ---- Rounded cards, and warm bands ---- */
+.tv-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  border-radius: var(--dv-r);
+  background: var(--paper);
+  padding: 1.5rem 1.6rem;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+}
+a.tv-card:hover {
+  border-color: color-mix(in srgb, var(--ink) 30%, var(--rule));
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
+}
+.tv-ask,
+.tv-wash {
+  background:
+    radial-gradient(40rem 22rem at 0% 0%, color-mix(in srgb, #d4a72c 14%, transparent), transparent 70%),
+    radial-gradient(44rem 24rem at 100% 100%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--accent) 5%, var(--paper));
+}
+
+/* ---- The footer: a deep ground lit from one corner, the region's name large across the foot ---- */
+.tv-footer {
+  --tv-footer-ground: #0d1216;
+  background:
+    radial-gradient(60rem 30rem at 85% 0%, rgba(212, 167, 44, 0.14), transparent 60%),
+    radial-gradient(50rem 30rem at 0% 0%, rgba(91, 42, 110, 0.3), transparent 60%),
+    var(--tv-footer-ground);
+}
+.tv-footer-word {
+  font-family: var(--font-display);
+  font-size: 17vw;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  background-image: linear-gradient(100deg, #ffd34d 0%, #ff6b5e 36%, #c98bff 70%, #7fe07a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+  -webkit-text-fill-color: var(--tv-footer-ground);
+  paint-order: stroke fill;
+  white-space: nowrap;
+}
+.tv-footer-lattice { background: none; -webkit-text-stroke: 0; }
+.tv-footer-lattice > span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- Drag to scroll (_components/drag-scroll.tsx) ---- */
+[data-dragging],
+[data-free] { scroll-snap-type: none !important; }
+[data-dragging] { user-select: none; cursor: grabbing; }
+[data-dragging] * { cursor: grabbing !important; pointer-events: none; }
+@media (hover: hover) and (pointer: fine) {
+  :is(.dv-rail, [data-drag-scroll]),
+  :is(.dv-rail, [data-drag-scroll]) :is(a, a *) { cursor: grab; }
+  :is(.dv-rail, [data-drag-scroll]) :is(button, button *) { cursor: pointer; }
+}
+
+/* ---- Motion, as travel's: opacity only, large screens only, filled backwards; nothing page-sized kept on a phone ---- */
+.page-enter { animation: none; }
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) and (hover: hover) {
+  .page-enter { animation: tv-page-fade 0.38s ease-out backwards; }
+  @supports (animation-timeline: view()) {
+    .dv-section, .dv-rail-section, .tv-ask {
+      animation: tv-rise linear backwards;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+@keyframes tv-page-fade { from { opacity: 0; } }
+@keyframes tv-rise { from { opacity: 0; transform: translateY(28px); } }
+.dv-rail-section, footer.tv-footer { content-visibility: auto; contain-intrinsic-size: auto 640px; }
+@media (prefers-reduced-motion: reduce) {
+  .dv-slide, .dv-slide-img, .dv-slide-cap { animation: none; }
+  .dv-btn, .tv-card { transition: none; }
+}
+/* A phone's memory (travel's Safari crash): no slow zoom on the header photographs, no blur behind chips and glass. */
+@media (max-width: 1023px) {
+  .dv-slide-img { animation: none; }
+  .dv-chip, .dv-btn-glass { backdrop-filter: none; }
+  .dv-chip { background: rgba(10, 14, 18, 0.6); }
+  .dv-btn-glass { background: rgba(10, 14, 18, 0.35); }
+}
+
+/* ---- The pattern header (user decision: the brand crimson and its lattice, as before): every page but the front
+   page and Discover. `.dv-hero` re-points the tokens for its dark photograph ground; on the crimson they are the
+   brand band's own (ui's .brand-bg), restated here because `.dv-hero` comes later. Shorter, with no picture to show. ---- */
+.dv-hero.brand-bg {
+  --paper: #8a2418;
+  --paper-2: #7c2015;
+  --paper-3: #6b1a11;
+  --ink-2: rgba(255, 255, 255, 0.82);
+  --ink-3: rgba(255, 255, 255, 0.72);
+  --ink-mute: rgba(255, 255, 255, 0.62);
+  --rule: rgba(255, 255, 255, 0.28);
+  --rule-soft: rgba(255, 255, 255, 0.16);
+  --brass: #f0c98a;
+  --brass-line: rgba(240, 201, 138, 0.42);
+  background: var(--paper);
+}
+.dv-hero-plain:not(.dv-hero-tall) { min-height: clamp(24rem, 58svh, 36rem); }
+.dv-hero.brand-bg p, .dv-hero.brand-bg h1 { text-shadow: none; }
+
+/* A little more air in the crimson headers (user decision): above the words and below what they carry. */
+.dv-hero-plain > .bb-container { padding-top: calc(var(--tv-nav-h) + 4.75rem); padding-bottom: 5rem; }
+@media (min-width: 768px) { .dv-hero-plain:not(.dv-hero-center) > .bb-container { padding-bottom: 6.75rem; } }
+
+/* ---- Dropdowns in the travel look (user decision): the estate's Select (@betterbarmm/editorial, shared with the other
+   workspaces, so restyled here for this site only) as a rounded pill like the search, its label a small display-face
+   caption, its list a rounded panel. Only the boxed form (`w-full`); the plain one in a header row is left as it is. ---- */
+div:has(> button[role='combobox'].w-full) { gap: 0.4rem; }
+div:has(> button[role='combobox'].w-full) > span[id$='-label'] {
+  padding-left: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+button[role='combobox'].w-full {
+  height: 3rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  padding-left: 1.25rem;
+  padding-right: 2.75rem;
+  font-weight: 500;
+  box-shadow: 0 10px 24px -20px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+button[role='combobox'].w-full:hover,
+button[role='combobox'].w-full[aria-expanded='true'] {
+  border-color: color-mix(in srgb, var(--ink) 45%, var(--rule));
+  box-shadow: 0 14px 30px -20px rgba(0, 0, 0, 0.5);
+}
+button[role='combobox'].w-full > svg { right: 1.1rem; color: var(--accent); }
+ul[role='listbox'][popover] {
+  margin-top: 0.25rem;
+  border-radius: 1rem;
+  padding: 0.375rem;
+  box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.4);
+}
+ul[role='listbox'][popover] > li { border-radius: 0.65rem; }
+ul[role='listbox'][popover] > li[aria-selected='true'] { color: var(--accent); }
+/* The open list's scrollbar: thin, on a clear track, inside the rounded panel (user decision). */
+ul[role='listbox'][popover] {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--ink) 22%, transparent) transparent;
+  scrollbar-gutter: stable;
+}
+ul[role='listbox'][popover]::-webkit-scrollbar { width: 8px; }
+ul[role='listbox'][popover]::-webkit-scrollbar-track { background: transparent; margin-block: 0.75rem; }
+ul[role='listbox'][popover]::-webkit-scrollbar-thumb { border-radius: 999px; border: 2px solid transparent; background: color-mix(in srgb, var(--ink) 22%, transparent) padding-box; }
+/* The wordmark over a crimson header (user decision: logo on crimson takes the white box): its red "Better" box would
+   vanish into the ground, so it turns to the logo's inverse, white with crimson letters. */
+body:has(.dv-hero.brand-bg) .site-head:not([data-menu='true']) span.bg-\[\#8a2418\] {
+  background: #fff;
+  color: #8a2418;
+}
+/* The estate's buttons as pills across this site (user decision: rounded, the travel look); the hover fill is clipped
+   by the button's own overflow, so it follows the pill. The strip's small Contribute stays square, flush in its bar. */
+.bb-btn:not(.bb-strip .bb-btn) { border-radius: 999px; padding-inline: 1.35rem; }
+/* The strip's Contribute over a crimson header: crimson on crimson would vanish, so it takes the inverse, as the
+   wordmark does (user report). Its hover fill stays the button's own. */
+body:has(.dv-hero.brand-bg) .site-strip .bb-btn-accent { background: #fff; color: #8a2418; }
+body:has(.dv-hero.brand-bg) .site-strip .bb-btn-accent:hover { color: #fff; }
+/* The strip's Contribute: the boxed button, the strip's full height, filled with no border (user decision). */
+.site-strip .bb-btn-accent { border: 0; }
+/* The strip's icon buttons (the theme toggle) over a header: their hover ground was the page's light paper, a white
+   square on the clear strip (user report). A faint white tint instead, the icon in white. */
+body:has(.dv-hero) .site-strip button:not(.bb-btn) { color: rgba(255, 255, 255, 0.78); }
+body:has(.dv-hero) .site-strip button:not(.bb-btn):hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+/* The estate's search field (@betterbarmm/editorial SearchField), boxed form only, as a pill like the dropdowns beside
+   it (user decision: the travel look). */
+label:has(> span.h-10.border > input[type='search']) { gap: 0.4rem; }
+label:has(> span.h-10.border > input[type='search']) > span:first-child {
+  padding-left: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+label > span.h-10.border:has(> input[type='search']) {
+  height: 3rem;
+  border-radius: 999px;
+  background: var(--paper);
+  padding-inline: 1.25rem;
+  box-shadow: 0 10px 24px -20px rgba(0, 0, 0, 0.45);
+}
+
+/* ---- Incident Watch's map (accident-map.tsx, user decision: the map in the travel look) ----
+   The header's filters are the estate's plain Select and SearchField (shared, so styled here, scoped to the map): each
+   with its icon (.inc-filter), no border, wide gaps between them (user decision). The map's own buttons round. */
+.inc-filter { display: inline-flex; align-items: center; gap: 0.5rem; }
+.inc-map-head div:has(> button[role='combobox']:not(.w-full)) > span { font-size: 0.75rem; }
+.inc-map-head button[role='combobox']:not(.w-full) { font-size: 0.8125rem; }
+.inc-map-head button[role='combobox']:not(.w-full) > svg { color: var(--accent); }
+.inc-map-head label > span.h-10.bg-transparent:has(> input[type='search']) {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--paper-2) 70%, var(--paper));
+  padding-inline: 1rem;
+}
+.inc-map-head .gap-x-5 { column-gap: 2rem; }
+:is(.inc-map, .prep-map) div:has(> button[aria-label='Zoom in']) { overflow: hidden; border-radius: 999px; box-shadow: 0 12px 26px -16px rgba(0, 0, 0, 0.45); }
+:is(.inc-map, .prep-map) button[aria-label='Zoom in'],
+:is(.inc-map, .prep-map) button[aria-label='Zoom out'] { width: 2.25rem; height: 2.25rem; }

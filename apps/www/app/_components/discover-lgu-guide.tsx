@@ -1,5 +1,5 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
-import { OkirCorner, Rise } from '@betterbarmm/editorial'
+import { Rise } from '@betterbarmm/editorial'
 import {
 	formatNumber,
 	lguCounts,
@@ -95,13 +95,11 @@ function Directory() {
 		<Rise delay={0.1} distance={16}>
 			<a
 				href='/soon'
-				className='bb-plate group relative mt-14 flex flex-col gap-8 p-9 transition hover:bg-[var(--paper-3)] lg:flex-row lg:items-center lg:justify-between lg:p-12'
+				className='tv-card group relative mt-14 !flex-col gap-8 !p-9 transition lg:!flex-row lg:items-center lg:justify-between lg:!p-12 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 			>
-				<OkirCorner position='top-right' className='m-3 size-6 opacity-50' />
-
 				<div className='max-w-xl'>
-					<p className='bb-label'>The workspace</p>
-					<h3 className='mt-5 text-[1.6rem] font-extrabold leading-tight tracking-[-0.035em] text-[var(--ink)] sm:text-[2rem]'>
+					<p className='font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>The workspace</p>
+					<h3 className='mt-4 font-[family-name:var(--font-display)] text-[1.6rem] font-extrabold leading-tight tracking-[-0.035em] text-[var(--ink)] sm:text-[2rem]'>
 						Look up any province, city, municipality, or barangay.
 					</h3>
 					<p className='bb-measure mt-4 bb-body text-[var(--ink-2)]'>
@@ -133,7 +131,7 @@ function Lookups() {
 	return (
 		<div className='mt-12'>
 			<Reveal>
-				<div className='grid border-t border-[var(--rule)] sm:grid-cols-2'>
+				<div className='grid gap-3 sm:grid-cols-2'>
 					{lguLookups.map((lookup, index) => (
 						<a
 							key={lookup.href}
@@ -141,7 +139,7 @@ function Lookups() {
 							target='_blank'
 							rel='noreferrer'
 							style={{ '--row-index': index } as React.CSSProperties}
-							className='row-in group flex flex-col border-b border-[var(--rule)] py-6 transition hover:bg-[var(--paper-2)] sm:px-6 sm:[&:nth-child(odd)]:border-r'
+							className='row-in tv-card group !p-7 lg:!p-9 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))]'
 						>
 							<div className='flex items-start justify-between gap-4'>
 								<h4 className='text-[1rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
@@ -152,7 +150,7 @@ function Lookups() {
 									aria-hidden='true'
 								/>
 							</div>
-							<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{lookup.what}</p>
+							<p className='mt-3 bb-body text-[var(--ink-2)]'>{lookup.what}</p>
 						</a>
 					))}
 				</div>

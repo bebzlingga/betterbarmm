@@ -41,7 +41,7 @@ const members = parliament.members as unknown as Member[]
 const officers = (firstParliament as unknown as { members: { url?: string | null; roles?: string[] }[] }).members
 const find = (id: string) => members.find((m) => memberId(m) === id)
 const LEGISLATION = 'https://legislation.betterbarmm.com'
-const LABEL = 'font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)]'
+const LABEL = 'font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
 const BULLET = 'relative pl-3.5 before:absolute before:left-0 before:top-[0.6em] before:size-1 before:bg-[var(--brass)]'
 const day = (iso: string) => new Date(iso).toLocaleDateString('en-PH', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Manila' })
 const sentenceCase = (s: string) => s[0]!.toUpperCase() + s.slice(1)
@@ -133,7 +133,7 @@ export default async function MemberPage({ params }: { params: Promise<{ id: str
 					<aside>
 						{portrait ? (
 							// eslint-disable-next-line @next/next/no-img-element
-							<img src={portrait.src} alt={m.fullName} className='aspect-[4/5] w-full border border-[var(--rule)] object-cover' />
+							<img src={portrait.src} alt={m.fullName} className='aspect-[4/5] w-full rounded-[1.25rem] object-cover' />
 						) : null}
 						{m.photo?.source ? (
 							<p className='mt-2 text-[0.6875rem] text-[var(--ink-mute)]'>
@@ -143,7 +143,7 @@ export default async function MemberPage({ params }: { params: Promise<{ id: str
 								</a>
 							</p>
 						) : null}
-						<dl className='mt-6 grid gap-4 bg-[var(--paper-2)] p-5 text-[0.84375rem]'>
+						<dl className='mt-6 grid gap-4 text-[0.84375rem]'>
 							{roles.length ? (
 								<div>
 									<dt className={LABEL}>Office</dt>

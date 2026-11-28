@@ -37,7 +37,7 @@ export function SiteSearch({ initial = '' }: { initial?: string }) {
 
 	return (
 		<div>
-			<label className='flex max-w-[40rem] items-center gap-3 border border-[var(--rule)] bg-[var(--paper)] px-4 py-3.5'>
+			<label className='flex max-w-[40rem] items-center gap-3 rounded-full border border-[var(--rule)] bg-[var(--paper)] px-5 py-3.5 shadow-[0_18px_40px_-30px_rgba(0,0,0,0.45)] focus-within:border-[var(--ink)]'>
 				<MagnifyingGlassIcon size={20} className='text-[var(--ink-3)]' aria-hidden='true' />
 				<input
 					type='search'

@@ -55,15 +55,15 @@ function OfficeCard({
 	return (
 		<li
 			id={id}
-			className='group relative flex scroll-mt-[calc(var(--site-header-h)+1rem)] flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+			className='group relative flex scroll-mt-[calc(var(--site-header-h)+1rem)] flex-col overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 		>
 			{/* The office's mark, large, on the card's own ground. */}
-			<div className='relative grid h-28 place-items-center pt-4'>
+			<div className='tv-wash relative grid h-32 place-items-center'>
 				<Emblem image={logo} name={name} label={acronym} className='size-[4.5rem] text-[0.75rem] transition duration-500 group-hover:scale-105' />
 			</div>
 
 			<div className='flex flex-1 flex-col px-5 pb-5 pt-5 text-center'>
-				<p className='text-[1rem] font-extrabold leading-snug tracking-[-0.015em]'>
+				<p className='font-[family-name:var(--font-display)] text-[1.0625rem] font-bold leading-snug tracking-[-0.015em]'>
 					{/* The card's one link, stretched over it, so the number and email below stay links of their own. */}
 					<Link scroll={false} href={href} className='after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
 						{name}
@@ -107,7 +107,7 @@ function OfficeCard({
 				{children}
 			</div>
 			{/* Who heads it, at the foot of the card (user decision), so the heads line up across a row. */}
-			<div className='flex min-h-[4.25rem] items-center gap-3 border-t border-[var(--rule)] px-4 py-3'>
+			<div className='flex min-h-[4.25rem] items-center gap-3 border-t border-[var(--rule)] bg-[color-mix(in_srgb,var(--paper-2)_45%,var(--paper))] px-4 py-3'>
 				{head ? (
 					<>
 						<Emblem image={head.photo} name={head.name} portrait className='size-11 shrink-0 rounded-full text-[0.6875rem]' />
@@ -135,25 +135,21 @@ export function DirectoryIndex() {
 			<SiteHeader activeItem='directory' />
 
 			<DirectorySearch
-				head={
-					<>
-						<p className='bb-label'>Who runs what, and how to reach them</p>
-						<h1 className='bb-display-md mt-4 text-[var(--ink)]'>Directory</h1>
-						<p className='mx-auto mt-4 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-							{directoryOffices.filter((o) => o.kind !== 'unit').length} regional offices, {localGovernments.length} provinces and areas, {towns} towns and cities, {barangays.toLocaleString('en-PH')} barangays and the {members.length} Members of Parliament.
-						</p>
-					</>
-				}
+				hero={{
+					kicker: 'Who runs what, and how to reach them',
+					title: 'Directory',
+					lede: `${directoryOffices.filter((o) => o.kind !== 'unit').length} regional offices, ${localGovernments.length} provinces and areas, ${towns} towns and cities, ${barangays.toLocaleString('en-PH')} barangays and the ${members.length} Members of Parliament.`,
+				}}
 			>
-				<div className='bb-container py-14 lg:py-20'>
+				<div className='bb-container py-16 lg:py-24'>
 					{hotlines.length ? (
 						<section id='hotlines' aria-labelledby='hotlines-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
 							{/* One crimson band: 911 first, then each hotline, with a hairline between them. */}
-							<div className={`grid divide-y divide-white/20 bg-[#8f2328] text-white sm:grid-cols-2 sm:divide-x sm:divide-y-0 ${hotlines.length + 1 >= 3 ? 'lg:grid-cols-3' : ''}`}>
+							<div className={`grid divide-y divide-white/20 overflow-hidden rounded-[1.25rem] bg-[#8f2328] bg-[radial-gradient(40rem_20rem_at_0%_0%,rgba(255,206,84,0.18),transparent_70%)] text-white shadow-[0_24px_48px_-30px_rgba(143,35,40,0.7)] sm:grid-cols-2 sm:divide-x sm:divide-y-0 ${hotlines.length + 1 >= 3 ? 'lg:grid-cols-3' : ''}`}>
 								<div className='flex items-center justify-center gap-3 p-5 text-center'>
 									<SirenIcon size={26} weight='fill' aria-hidden='true' />
 									<div>
-										<h2 id='hotlines-title' className='text-[1.0625rem] font-extrabold'>
+										<h2 id='hotlines-title' className='font-[family-name:var(--font-display)] text-[1.125rem] font-bold'>
 											In an emergency, call 911
 										</h2>
 										<p className='text-[0.8125rem] text-white/80'>Each town’s police, fire and health lines are on its page.</p>
@@ -310,10 +306,10 @@ export function DirectoryIndex() {
 													<li
 														key={m.rosterName}
 														id={memberId(m)}
-														className='group relative flex scroll-mt-[calc(var(--site-header-h)+1rem)] flex-col items-center overflow-hidden border border-[var(--rule)] bg-[var(--paper)] px-4 pb-5 pt-6 text-center transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+														className='group relative flex scroll-mt-[calc(var(--site-header-h)+1rem)] flex-col items-center overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] px-4 pb-5 pt-6 text-center transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 													>
-														<Emblem image={memberPortrait(m)} name={m.fullName} portrait className='size-24 rounded-full text-[1rem]' />
-														<Link scroll={false} href={`/directory/member/${memberId(m)}`} className='mt-4 text-[1rem] font-extrabold leading-snug tracking-[-0.015em] after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
+														<Emblem image={memberPortrait(m)} name={m.fullName} portrait className='size-24 rounded-full text-[1rem] ring-4 ring-[color-mix(in_srgb,var(--accent)_10%,var(--paper))]' />
+														<Link scroll={false} href={`/directory/member/${memberId(m)}`} className='mt-4 font-[family-name:var(--font-display)] text-[1.0625rem] font-bold leading-snug tracking-[-0.015em] after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
 															{m.fullName}
 														</Link>
 														<p className='mt-2 flex flex-wrap justify-center gap-1.5'>

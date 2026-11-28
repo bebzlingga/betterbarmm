@@ -22,7 +22,7 @@ const GROUPS: { kind: Office['kind'][]; title: string | null }[] = [
 	{ kind: ['attached'], title: 'Attached offices, authorities and commissions' },
 ]
 
-const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
+const sectionHead = 'flex flex-col gap-1'
 const eyebrow = 'font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em]'
 const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'
 
@@ -64,17 +64,14 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 					{ href: '#offices', label: 'Offices with a charter', icon: 'charter' },
 					{ href: '#no-charter', label: 'Offices without one', icon: 'none' },
 				]}
-				head={
-					<>
-						<p className='bb-label'>What the government offers, and how to get it</p>
-						<h1 className='bb-display-md mt-4 text-[var(--ink)]'>Programs & services</h1>
-						<p className='mx-auto mt-4 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-							{services} services and {programs} programs from the Citizen’s Charters of {listed.length} offices: who each is for, what to bring, the fee and how long it takes.
-						</p>
-					</>
-				}
+				hero={{
+					kicker: 'What the government offers, and how to get it',
+					title: 'Programs & services',
+					lede: `${services} services and ${programs} programs from the Citizen’s Charters of ${listed.length} offices: who each is for, what to bring, the fee and how long it takes.`,
+					photos: ['governmentCenter', 'parliamentBuilding', 'cotabatoPlaza'],
+				}}
 			>
-				<div className='bb-container py-14 lg:py-20'>
+				<div className='bb-container pb-24 pt-16 lg:pb-32 lg:pt-24'>
 					<WithCharter />
 					<WithoutCharter />
 
@@ -96,7 +93,7 @@ export default async function ServicesPage({ searchParams }: { searchParams: Pro
 const KIND: Record<Office['kind'], string> = { office: 'Office', ministry: 'Ministry', attached: 'Attached' }
 const badge = 'inline-block rounded-full px-2.5 py-0.5 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em]'
 const card =
-	'group relative flex min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+	'group relative flex min-w-0 flex-col overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 
 /** An office's acronym, what kind of office it is, and anything else said of it, as badges, as the Directory draws them. */
 function Badges({ o, extra }: { o: Office; extra?: React.ReactNode }) {
@@ -114,12 +111,12 @@ function Badges({ o, extra }: { o: Office; extra?: React.ReactNode }) {
 function WithCharter() {
 	const listed = offices.filter(hasCharter)
 	return (
-		<section id='offices' aria-labelledby='offices-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+		<section id='offices' aria-labelledby='offices-title' className='scroll-mt-4'>
 			<div className={sectionHead}>
-				<h2 id='offices-title' className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>
+				<h2 id='offices-title' className='dv-title'>
 					Offices with a Citizen’s Charter <span className='text-[var(--ink-mute)]'>· {listed.length}</span>
 				</h2>
-				<p className='text-[0.84375rem] text-[var(--ink-3)]'>Each office’s page has every service: what to bring, the fee, the time and where to go.</p>
+				<p className='dv-lede'>Each office’s page has every service: what to bring, the fee, the time and where to go.</p>
 			</div>
 			{GROUPS.map((g) => {
 				const list = listed.filter((o) => g.kind.includes(o.kind))
@@ -147,7 +144,7 @@ function WithCharter() {
 										<Badges o={o} extra={o.charterStatus === 'draft' ? <span className={`${badge} bg-[var(--paper-2)] text-[var(--brass)]`}>Draft charter</span> : null} />
 										{/* The two counts side by side, pushed to the card's foot so they line up across a row. */}
 										<div className='mt-auto pt-5'>
-										<dl className='grid grid-cols-2 divide-x divide-[var(--rule)] border border-[var(--rule)]'>
+										<dl className='grid grid-cols-2 divide-x divide-[var(--rule)] overflow-hidden rounded-xl border border-[var(--rule)]'>
 											{[
 												['Services', o.services.length],
 												['Programs', o.programs.length],
@@ -183,12 +180,12 @@ function WithCharter() {
 function WithoutCharter() {
 	const without = offices.filter((o) => !hasCharter(o))
 	return (
-		<section id='no-charter' aria-labelledby='no-charter-title' className='mt-20 scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] pt-14 lg:mt-24'>
+		<section id='no-charter' aria-labelledby='no-charter-title' className='mt-20 scroll-mt-4 border-t border-[var(--rule)] pt-14 lg:mt-28 lg:pt-20'>
 			<div className={sectionHead}>
-				<h2 id='no-charter-title' className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>
+				<h2 id='no-charter-title' className='dv-title'>
 					Offices without one <span className='text-[var(--ink-mute)]'>· {without.length}</span>
 				</h2>
-				<p className='max-w-xl text-[0.84375rem] text-[var(--ink-3)]'>
+				<p className='dv-lede'>
 					Every office must publish a Citizen’s Charter: each service, what to bring, the fee and how long it takes. Until these do, here is what the 2026 budget funds each to do.
 				</p>
 			</div>

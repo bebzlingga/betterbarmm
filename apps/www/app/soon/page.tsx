@@ -67,7 +67,7 @@ export default function SoonPage() {
 
 
 			{/* ---- Hear when it opens ---- */}
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
+			<section className='tv-wash relative overflow-hidden'>
 				<div className='bb-container relative flex flex-col gap-6 py-[clamp(3.75rem,7vw,6.5rem)] lg:flex-row lg:items-center lg:justify-between lg:gap-12'>
 					<div className='max-w-[40rem]'>
 						<h2 className='bb-display-sm text-[var(--ink)]'>Want to know when it opens?</h2>
@@ -77,11 +77,11 @@ export default function SoonPage() {
 						</p>
 					</div>
 					<div className='flex shrink-0 flex-wrap gap-3'>
-						<a href='https://www.facebook.com/betterbarmm' target='_blank' rel='noreferrer' className='bb-btn bb-btn-solid'>
+						<a href='https://www.facebook.com/betterbarmm' target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3.5 font-[family-name:var(--font-display)] text-[0.9375rem] font-semibold text-white transition hover:-translate-y-px hover:brightness-110'>
 							<FacebookLogoIcon size={16} weight='fill' aria-hidden='true' />
 							Follow on Facebook
 						</a>
-						<a href='mailto:support@betterbarmm.com' className='bb-btn bb-btn-ghost'>
+						<a href='mailto:support@betterbarmm.com' className='inline-flex items-center gap-2 rounded-full border border-[var(--rule)] bg-[var(--paper)] px-6 py-3.5 font-[family-name:var(--font-display)] text-[0.9375rem] font-semibold text-[var(--ink)] transition hover:border-[var(--ink)]'>
 							<EnvelopeSimpleIcon size={16} aria-hidden='true' />
 							Email us
 						</a>

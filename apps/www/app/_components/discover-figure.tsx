@@ -95,7 +95,7 @@ export function PhotoFrame({
 
   return (
     <motion.div
-      className={`bb-frame${kenburns ? ' bb-drift' : ''}${zoom ? ' bb-zoom' : ''}${scrimClass} ${className}`}
+      className={`bb-frame isolate overflow-hidden rounded-[1.25rem]${kenburns ? ' bb-drift' : ''}${zoom ? ' bb-zoom' : ''}${scrimClass} ${className}`}
       initial='rest'
       whileInView='go'
       viewport={IN_VIEW}
@@ -192,13 +192,13 @@ export function PhotoFigure({
       {/* Caption and credit on separate lines. Run inline they read as one
           sentence that suddenly shouts a photographer's name — the credit is a
           different kind of statement and wants its own line. */}
-      <figcaption className='mt-3 border-t border-[var(--brass-line)] pt-3'>
+      <figcaption className='mt-3'>
         <span className='block text-[0.8125rem] leading-[var(--leading-body)] text-[var(--ink-2)]'>{photo.caption}</span>
         <a
           href={photo.source}
           target='_blank'
           rel='noreferrer'
-          className='mt-1.5 block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+          className='mt-1 block text-[0.71875rem] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
         >
           {photo.credit} · {photo.license}
         </a>

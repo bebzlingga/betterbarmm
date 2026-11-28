@@ -1,10 +1,11 @@
 import { ArrowDownIcon, ArrowLeftIcon } from '@phosphor-icons/react/ssr'
-import { LineReveal, Rise } from '@betterbarmm/editorial'
+import type { DiscoverPhotoKey } from './discover-media'
+import { PhotoHero, photosFor } from './photo-hero'
 import Link from 'next/link'
 
 /**
- * The opening of Discover and of every chapter in it: words only, on the brand band the site's other pages open on
- * (user decision — no photograph in the header). The photographs are in the chapters, beside what they show.
+ * The opening of Discover and of every chapter in it, in the travel look (user decision, replacing the words-only
+ * band): the region's photographs turning under the words, a chapter's own photograph first.
  */
 export function DiscoverHero({
 	kicker,
@@ -20,6 +21,7 @@ export function DiscoverHero({
 	/** Anything extra beside the scroll cue — a count. */
 	footnote,
 	size = 'chapter',
+	photos,
 }: {
 	kicker: string
 	lines: string[]
@@ -33,75 +35,53 @@ export function DiscoverHero({
 	footnote?: React.ReactNode
 	/** `index` is the larger cut used once, at the front of Discover. */
 	size?: 'index' | 'chapter'
+	/** The header's photographs; left out, three of the region's chosen by the title. */
+	photos?: DiscoverPhotoKey[]
 }) {
 	return (
-		<header className='brand-bg bb-lattice relative overflow-hidden'>
-			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
-				<div className='max-w-4xl'>
-					{backHref ? (
-						<Rise distance={10}>
-							<Link
-								href={backHref}
-								className='inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)] transition hover:text-[var(--ink)]'
-							>
-								<ArrowLeftIcon className='size-3.5' aria-hidden='true' />
-								{backLabel}
-							</Link>
-						</Rise>
-					) : null}
-
-					<Rise delay={0.06} distance={12}>
-						<p className={`bb-label ${backHref ? 'mt-8' : ''}`}>{kicker}</p>
-					</Rise>
-
-					<LineReveal
-						as='h1'
-						lines={lines}
-						delay={0.12}
-						className={`${size === 'index' ? 'bb-display' : 'bb-display-md max-w-[22ch]'} mt-5 text-[var(--ink)]`}
-						lineClassName={lines.map((_, i) => (i > 0 ? 'bb-mute' : undefined))}
-					/>
-
-					<Rise delay={0.3} distance={14}>
-						<p className='mt-6 max-w-[38rem] text-[1.0625rem] leading-[1.65] text-[var(--ink-2)]'>{standfirst}</p>
-					</Rise>
-
-					{chips?.length ? (
-						<Rise delay={0.38} distance={12}>
-							<ul className='mt-6 flex flex-wrap gap-2'>
-								{chips.map((c) => (
-									<li
-										key={c}
-										className='rounded-full border border-[var(--rule)] px-3 py-1.5 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-2)]'
-									>
-										{c}
-									</li>
-								))}
-							</ul>
-						</Rise>
-					) : null}
-
-					{scrollTo ? (
-						<Rise delay={0.46} distance={12}>
-							<div className='mt-9 flex flex-wrap items-center gap-x-8 gap-y-4'>
-								<a
-									href={scrollTo}
-									className='group inline-flex items-center gap-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'
-								>
-									<span className='bb-cue flex size-10 items-center justify-center rounded-full border border-[var(--rule)] transition group-hover:border-[var(--ink)]'>
-										<ArrowDownIcon className='size-3.5' aria-hidden='true' />
-									</span>
-									{scrollLabel}
-								</a>
-								{footnote}
-							</div>
-						</Rise>
-					) : null}
+		<PhotoHero
+			showPhotos
+			photos={photos ?? photosFor(lines.join(' '))}
+			tall={size === 'index'}
+			kicker={
+				backHref ? (
+					<Link href={backHref} className='inline-flex items-center gap-2 text-white/70 transition hover:text-white'>
+						<ArrowLeftIcon className='size-3.5' aria-hidden='true' />
+						{backLabel}
+						<span className='text-white/40'>·</span>
+						<span className='text-[#f1c453]'>{kicker}</span>
+					</Link>
+				) : (
+					kicker
+				)
+			}
+			title={lines.map((line, i) => (
+				<span key={i} className={i > 0 ? 'text-white/55' : undefined}>
+					{i ? ' ' : ''}
+					{line}
+				</span>
+			))}
+			lede={standfirst}
+		>
+			{chips?.length ? (
+				<ul className='mt-6 flex flex-wrap gap-2'>
+					{chips.map((c) => (
+						<li key={c} className='dv-chip'>
+							{c}
+						</li>
+					))}
+				</ul>
+			) : null}
+			{scrollTo ? (
+				<div className='mt-9 flex flex-wrap items-center gap-x-8 gap-y-4'>
+					<a href={scrollTo} className='dv-btn dv-btn-light'>
+						{scrollLabel}
+						<ArrowDownIcon className='size-4' weight='bold' aria-hidden='true' />
+					</a>
+					{footnote ? <span className='text-[0.875rem] text-white/70'>{footnote}</span> : null}
 				</div>
-
-			</div>
-			<div className='bb-weave' aria-hidden='true' />
-		</header>
+			) : null}
+		</PhotoHero>
 	)
 }
 
@@ -114,6 +94,7 @@ export function DiscoverChapterHero({
 	backHref = '/discover',
 	backLabel = 'All chapters',
 	scrollTo,
+	photo,
 }: {
 	chapter: string
 	title: string
@@ -122,9 +103,12 @@ export function DiscoverChapterHero({
 	backHref?: string
 	backLabel?: string
 	scrollTo?: string
+	/** The chapter's own photograph, shown first. */
+	photo?: DiscoverPhotoKey
 }) {
 	return (
 		<DiscoverHero
+			photos={photo ? [photo, ...photosFor(title)] : undefined}
 			kicker={chapter}
 			lines={[title]}
 			standfirst={standfirst}

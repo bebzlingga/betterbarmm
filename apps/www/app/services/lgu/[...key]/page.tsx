@@ -52,34 +52,34 @@ export default async function LguPage({ params }: { params: Promise<{ key: strin
 			<SiteHeader activeItem='services' />
 
 			<Masthead brand label={l.kind === 'Province' ? 'Province' : `${l.kind === 'Municipality' ? 'Town' : l.kind} · ${l.province}`} lines={[title(l)]}>
-				<div className='flex flex-wrap gap-x-5 gap-y-2'>
+				<div className='flex flex-wrap gap-2'>
 										{l.charter ? (
-						<a href={l.charter.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+						<a href={l.charter.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 							<FileTextIcon size={16} aria-hidden='true' /> Citizen’s Charter
 						</a>
 					) : null}
 					{l.website ? (
-						<a href={l.website} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+						<a href={l.website} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 							<GlobeIcon size={16} aria-hidden='true' /> Official website
 						</a>
 					) : null}
 					{l.facebook ? (
-						<a href={l.facebook} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+						<a href={l.facebook} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 							<FacebookLogoIcon size={16} aria-hidden='true' /> Facebook
 						</a>
 					) : null}
-					<Link href={directory} className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+					<Link href={directory} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 						<AddressBookIcon size={16} aria-hidden='true' /> In the Directory
 					</Link>
 				</div>
 			</Masthead>
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_18rem]'>
 					<div className='min-w-0'>
 						{listed ? (
 							<section aria-labelledby='services'>
-								<h2 id='services' className='text-[1.375rem] font-extrabold tracking-[-0.01em]'>
+								<h2 id='services' className='dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'>
 									Services <span className='text-[var(--ink-mute)]'>{l.services.length}</span>
 								</h2>
 								<p className='mt-1 text-[0.84375rem] text-[var(--ink-3)]'>As its Citizen’s Charter lists them: what to bring, what it costs, how long it takes.</p>
@@ -98,7 +98,7 @@ export default async function LguPage({ params }: { params: Promise<{ key: strin
 								})}
 							</section>
 						) : (
-							<section aria-labelledby='no-charter' className='border border-[var(--rule)] bg-[var(--paper-2)] p-6'>
+							<section aria-labelledby='no-charter' className='tv-wash rounded-[1.25rem] border border-[var(--rule)] p-6 sm:p-7'>
 								<h2 id='no-charter' className='text-[1.125rem] font-bold'>No Citizen’s Charter we could read</h2>
 								<p className='mt-2 max-w-2xl text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>
 									Every local government must publish a Citizen’s Charter: each service it gives, what to bring, what it costs and how long it takes. Until one from the {title(l)} can be read here, ask its municipal or city hall directly, or tell us where its charter is.
@@ -111,7 +111,7 @@ export default async function LguPage({ params }: { params: Promise<{ key: strin
 						)}
 					</div>
 
-					<aside className='space-y-10 lg:sticky lg:top-[calc(var(--site-header-h)+1.5rem)] lg:self-start'>
+					<aside className='space-y-8 self-start rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-6 lg:sticky lg:top-6'>
 						<section>
 							<h2 className={label}>Contact</h2>
 							<ul className='mt-3 space-y-2.5 text-[0.84375rem] leading-6'>

@@ -55,7 +55,7 @@ export function PhotoCluster({
         initial={{ opacity: 0, clipPath: 'inset(100% 0 0 0)' }}
         animate={{ opacity: 1, clipPath: 'inset(0% 0 0 0)' }}
         transition={{ duration: 1.1, delay: 0.25, ease: EASE }}
-        className='bb-frame bb-drift absolute right-0 top-0 h-[68%] w-[74%]'
+        className='bb-frame isolate overflow-hidden rounded-[1.25rem] bb-drift absolute right-0 top-0 h-[68%] w-[74%]'
       >
         <Image
           src={photos[0].src}
@@ -74,7 +74,7 @@ export function PhotoCluster({
         initial={{ opacity: 0, clipPath: 'inset(100% 0 0 0)' }}
         animate={{ opacity: 1, clipPath: 'inset(0% 0 0 0)' }}
         transition={{ duration: 1.1, delay: 0.45, ease: EASE }}
-        className='bb-frame absolute bottom-[4%] left-0 h-[40%] w-[56%]'
+        className='bb-frame isolate overflow-hidden rounded-[1.25rem] absolute bottom-[4%] left-0 h-[40%] w-[56%]'
       >
         <Image
           src={photos[1].src}
@@ -92,7 +92,7 @@ export function PhotoCluster({
         initial={{ opacity: 0, clipPath: 'inset(100% 0 0 0)' }}
         animate={{ opacity: 1, clipPath: 'inset(0% 0 0 0)' }}
         transition={{ duration: 1.1, delay: 0.65, ease: EASE }}
-        className='bb-frame absolute bottom-[13%] right-[4%] hidden h-[22%] w-[30%] sm:block'
+        className='bb-frame isolate overflow-hidden rounded-[1.25rem] absolute bottom-[13%] right-[4%] hidden h-[22%] w-[30%] sm:block'
       >
         <Image
           src={photos[2].src}

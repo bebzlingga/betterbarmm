@@ -140,7 +140,7 @@ export const projects: Project[] = [
 		key: 'accidents',
 		label: 'Incident Watch',
 		topic: 'services',
-		href: '/accidents',
+		href: '/incidents',
 		measure: 'Since 2019',
 		blurb: 'Road crashes, sea mishaps, fires, floods and shootings across the region, mapped from the news, every report linked.',
 		state: 'live',

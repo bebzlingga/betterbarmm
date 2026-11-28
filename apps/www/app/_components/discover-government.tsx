@@ -57,17 +57,17 @@ export function GovernmentFlow({ cards }: { cards: DiscoverBarmmDetailCard[] }) 
 	]
 
 	return (
-		<Stagger gap={0.1} className='grid gap-px overflow-hidden rounded-[3px] border border-[var(--rule)] bg-[var(--rule)] md:grid-cols-4'>
+		<Stagger gap={0.1} className='grid gap-3 md:grid-cols-4'>
 			{steps.map((s, i) => (
-				<StaggerItem key={s.who} className='relative flex flex-col bg-[var(--paper)] p-6 lg:p-7'>
-					<span className='num font-mono text-[0.625rem] font-semibold tracking-[0.16em] text-[var(--accent)]'>
+				<StaggerItem key={s.who} className='tv-card relative h-full !p-6 lg:!p-7'>
+					<span className='num grid size-9 place-items-center rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[0.75rem] font-bold text-[var(--accent)]'>
 						{String(i + 1).padStart(2, '0')}
 					</span>
-					<p className='mt-4 text-[1.125rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>{s.who}</p>
+					<p className='mt-4 font-[family-name:var(--font-display)] text-[1.125rem] font-bold leading-tight tracking-[-0.02em] text-[var(--ink)]'>{s.who}</p>
 					<p className='bb-figure-sm mt-5 text-[var(--ink)]'>{s.figure}</p>
 					<p className='mt-3 flex-1 text-[0.875rem] leading-[1.6] text-[var(--ink-2)]'>{s.text}</p>
 					{s.verb ? (
-						<p className='mt-6 inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]'>
+						<p className='mt-6 inline-flex items-center gap-2 text-[0.8125rem] font-semibold text-[var(--accent)]'>
 							{s.verb}
 							<ArrowRightIcon className='size-3.5 rotate-90 md:rotate-0' weight='bold' aria-hidden='true' />
 						</p>

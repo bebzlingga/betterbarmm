@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
 import { CARD } from './_lib/seo'
-import { ArrowRightIcon, ArrowUpRightIcon, MagnifyingGlassIcon } from '@phosphor-icons/react/ssr'
+import { AddressBookIcon, ArrowRightIcon, CoinsIcon, CompassIcon, MagnifyingGlassIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { DiscoverGrid } from './_components/chapter-grid'
-import { LineReveal, Rise } from '@betterbarmm/editorial'
 import { DiscoverMarquee } from './_components/discover-marquee'
-import { photo } from './_components/discover-media'
 import { SectionHead } from './_components/masthead'
 import { SiteHeader } from './_components/site-header'
+import { PhotoHero } from './_components/photo-hero'
 import { Directory } from './_components/directory'
 import { ExplainerFeature } from './_components/explainer-card'
 import { GetInvolved } from './_components/get-involved'
@@ -73,82 +72,52 @@ export default async function HomePage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
-			{/* ---- Masthead ----
-
-			    Type on the left, ornament on the right. The right-hand column is the
-			    whole argument for the split: every other page on this estate opens on
-			    a paragraph, and a paragraph is not what makes someone who has never
-			    heard of the Bangsamoro read the next screen. */}
-			{/* The masthead is the one band on the front page painted in the brand
-			    crimson. `.brand-bg` re-points the tokens rather than restyling the
-			    parts, so the headline, the standfirst, the three figures, the search
-			    and the links all invert together — and anything added
-			    here later inverts with them. */}
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				{/* A warm yellow light from the top centre, over the headline. Important: bb-glow sets its own brass ground outside the layers. */}
-				<span
-					aria-hidden='true'
-					className='bb-glow absolute -top-[22rem] left-1/2 h-[40rem] w-[64rem] max-w-[160vw] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.75)_0%,rgba(255,170,40,0.35)_38%,transparent_70%)]! opacity-80!'
-				/>
-
-				{/* Shorter than it was, and it now does a job: the search box is the band's one
-				    action, since most readers arrive looking for something specific — a bill, a
-				    town, a budget line. The links under it are the ways in for everyone else. */}
-				<div className='bb-container relative py-20 lg:py-32'>
-					{/* One centred column: label, headline, standfirst, search, the ways in. */}
-					<div className='mx-auto max-w-5xl text-center'>
-						<Rise distance={14}>
-							<p className='bb-label'>Public transparency for the Bangsamoro</p>
-						</Rise>
-
-						<LineReveal
-							lines={[
-								<span key='line'>
-									Public records, <span className='bb-mute'>in one place.</span>
-								</span>,
-							]}
-							delay={0.08}
-							// On a phone, two lines at a size that reads; from sm, one line sized to the screen rather than wrapped,
-							// up to a step above bb-display-md. Important: bb-display-md sits outside the layers and would win over
-							// both, its text-wrap: balance included.
-							className='bb-display-md mt-5 text-[var(--ink)] [font-size:clamp(2.4rem,11vw,3.4rem)]! sm:[font-size:clamp(1.6rem,6.4vw,5rem)]! sm:text-nowrap!'
+			{/* ---- Masthead, in the travel look (user decision): the region's photographs turning under the bars, the
+			    promise and the search centred on them, the ways in as glass buttons. ---- */}
+			<PhotoHero
+				showPhotos
+				photos={['panampangan', 'parliamentBuilding', 'lakeLanao', 'marawiGrandMosque']}
+				center
+				tall
+				kicker='Public transparency for the Bangsamoro'
+				title={
+					<>
+						Public records, <span className='text-white/55'>in one place.</span>
+					</>
+				}
+				lede='Bills, budgets, elections, procurement and every local government in the region, readable and traced back to the source.'
+			>
+				<form action='/search' role='search' className='mx-auto mt-9 w-full max-w-2xl'>
+					<span className='flex h-16 items-center gap-3 rounded-full bg-white pl-6 pr-2 text-[#191713] shadow-[0_24px_48px_-24px_rgba(0,0,0,0.7)]'>
+						<MagnifyingGlassIcon size={20} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
+						<label className='sr-only' htmlFor='home-search'>
+							Search BetterBARMM
+						</label>
+						<input
+							id='home-search'
+							name='q'
+							type='search'
+							autoComplete='off'
+							placeholder='A bill, a town, a budget line, an official…'
+							className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
 						/>
-
-						<Rise delay={0.3} distance={16}>
-							<p className='mx-auto mt-6 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-								Bills, budgets, elections, procurement and every local government in the region, readable and traced back to the source.
-							</p>
-						</Rise>
-
-						<Rise delay={0.4} distance={14}>
-							<form action='/search' role='search' className='mx-auto mt-8 flex max-w-xl text-left'>
-								<label className='sr-only' htmlFor='home-search'>
-									Search BetterBARMM
-								</label>
-								{/* Fixed colours: inside the band, --paper and --ink are re-pointed to its crimson ground. */}
-								<span className='flex h-12 min-w-0 flex-1 items-center gap-3 bg-white px-4 text-[#191713]'>
-									<MagnifyingGlassIcon size={18} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
-									<input id='home-search' name='q' placeholder='A bill, a town, a budget line, an official…' className='min-w-0 flex-1 bg-transparent text-[0.9375rem] outline-none placeholder:text-[#8a857a]' />
-								</span>
-								<button type='submit' className='h-12 shrink-0 cursor-pointer border-l border-[#e7e2d8] bg-white px-5 text-[0.8125rem] font-semibold uppercase tracking-[0.12em] text-[#8f2328] transition hover:bg-[#f7f3ec]'>
-									Search
-								</button>
-							</form>
-						</Rise>
-
-						<Rise delay={0.5} distance={12}>
-							<p className='mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[0.875rem] font-semibold'>
-								<Link href='https://budget.betterbarmm.com' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
-									Open the Budget workspace <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-								</Link>
-								<Link href='/discover' className='inline-flex items-center gap-1.5 text-[var(--ink)] underline decoration-white/40 underline-offset-4 hover:decoration-white'>
-									Discover BARMM <ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-								</Link>
-							</p>
-						</Rise>
-					</div>
-				</div>
-			</section>
+						<button type='submit' className='h-12 shrink-0 cursor-pointer rounded-full bg-[#8f2328] px-6 font-[family-name:var(--font-display)] text-[0.875rem] font-semibold text-white transition hover:brightness-110'>
+							Search
+						</button>
+					</span>
+				</form>
+				<nav aria-label='Ways in' className='mt-6 flex flex-wrap justify-center gap-2'>
+					{[
+						{ href: 'https://budget.betterbarmm.com', label: 'The Budget workspace', icon: CoinsIcon },
+						{ href: '/directory', label: 'The Directory', icon: AddressBookIcon },
+						{ href: '/discover', label: 'Discover BARMM', icon: CompassIcon },
+					].map(({ href, label, icon: Glyph }) => (
+						<Link key={href} href={href} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
+							<Glyph size={14} weight='bold' aria-hidden='true' /> {label}
+						</Link>
+					))}
+				</nav>
+			</PhotoHero>
 
 			{/* ---- The names ---- */}
 			<DiscoverMarquee items={principlesBand} duration={50} />
@@ -157,7 +126,7 @@ export default async function HomePage() {
 
 			    Every workspace and project in one place, grouped by what a reader is
 			    looking for (user decision). */}
-			<section id='workspaces' className='bb-container scroll-mt-20 py-[clamp(5rem,9vw,8.5rem)]'>
+			<section id='workspaces' className='bb-container dv-section scroll-mt-8'>
 				<SectionHead
 					index='01'
 					eyebrow='Find a record'
@@ -172,8 +141,8 @@ export default async function HomePage() {
 
 			{/* ---- Explainers ---- */}
 			{explainers.length ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container py-[clamp(5rem,9vw,8.5rem)]'>
+				<section className='tv-wash'>
+					<div className='bb-container dv-section'>
 						<SectionHead
 							index='02'
 							eyebrow='Explainers'

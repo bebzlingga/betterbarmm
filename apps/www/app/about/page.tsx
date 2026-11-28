@@ -1,8 +1,7 @@
-import { ArrowRightIcon, BuildingsIcon, CompassIcon, EyeIcon, GraduationCapIcon, HandHeartIcon, NewspaperIcon, SealCheckIcon, SquaresFourIcon, TextAaIcon, UsersThreeIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
+import { BuildingsIcon, CompassIcon, EyeIcon, GraduationCapIcon, HandHeartIcon, NewspaperIcon, SealCheckIcon, SquaresFourIcon, TextAaIcon, UsersThreeIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
+import { HonestBand } from '../_components/honest-band'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
-import Link from 'next/link'
-import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { Directory } from '../_components/directory'
 import { CARD, ICON_TILE, PageBand, SectionTitle } from '../_components/page-band'
 import { datasets } from '../_lib/open-data'
@@ -80,7 +79,7 @@ export default function AboutPage() {
 			/>
 
 			{/* ---- Purpose: the argument on the left, the size of the thing beside it as figures. ---- */}
-			<section id='purpose' aria-labelledby='purpose-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+			<section id='purpose' aria-labelledby='purpose-title' className='bb-container scroll-mt-4 bb-section'>
 				<div className='grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:gap-16'>
 					<div>
 						<h2 id='purpose-title' className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] lg:text-[2.125rem]'>
@@ -101,7 +100,7 @@ export default function AboutPage() {
 					</div>
 					<dl className='grid grid-cols-2 content-start gap-4'>
 						{figures.map((f) => (
-							<div key={f.label} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 text-center'>
+							<div key={f.label} className='flex flex-col rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-5 text-center'>
 								<dd className='num text-[2.75rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{f.value}</dd>
 								<dt className='mt-3 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink)]'>{f.label}</dt>
 								<p className='mt-1.5 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>{f.note}</p>
@@ -112,8 +111,8 @@ export default function AboutPage() {
 			</section>
 
 			{/* ---- What it covers: the front page's own grid, filters and all ---- */}
-			<section id='covers' aria-labelledby='covers-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] bg-[var(--paper-2)]'>
-				<div className='bb-container bb-section'>
+			<section id='covers' aria-labelledby='covers-title' className='tv-wash scroll-mt-4'>
+				<div className='bb-container dv-section'>
 					<SectionTitle id='covers' title='Every workspace, and what it holds' lead='Each built around one part of the public record, and every record traced back to its source.' />
 					<div className='mt-8'>
 						<Directory workspaces={workspaces} projects={projects} />
@@ -122,7 +121,7 @@ export default function AboutPage() {
 			</section>
 
 			{/* ---- How it works ---- */}
-			<section id='rules' aria-labelledby='rules-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+			<section id='rules' aria-labelledby='rules-title' className='bb-container scroll-mt-4 bb-section'>
 				<SectionTitle id='rules' title='Four rules, on every page' lead='What a reader can hold every page on this site to.' />
 				<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 					{principles.map((p, i) => (
@@ -145,11 +144,11 @@ export default function AboutPage() {
 			</section>
 
 			{/* ---- Who it is for ---- */}
-			<section id='readers' aria-labelledby='readers-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section-bottom'>
+			<section id='readers' aria-labelledby='readers-title' className='bb-container scroll-mt-4 bb-section-bottom'>
 				<SectionTitle id='readers' title='Anyone with a question about the region' />
 				<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 					{readers.map((r) => (
-						<li key={r.who} className='flex gap-4 border border-[var(--rule)] bg-[var(--paper-2)] p-5'>
+						<li key={r.who} className='flex items-start gap-4 rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-5'>
 							<span className='grid size-11 shrink-0 place-items-center rounded-full bg-[var(--accent)] text-white'>
 								<r.icon size={22} weight='fill' aria-hidden='true' />
 							</span>
@@ -175,23 +174,13 @@ export default function AboutPage() {
 				</div>
 			</section>
 
-			<CtaPanel
+			<HonestBand
 				label='Contribute'
-				lines={['Better records need', 'many careful readers.']}
+				title='Better records need many careful readers.'
 				standfirst='Send source links, corrections, missing context, or notes about confusing records. The project becomes more useful when the public trail becomes easier to inspect.'
-			>
-				<CtaAction>
-					<Link href='/contribute' className='bb-btn bb-btn-brass'>
-						Contribute
-						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-					</Link>
-				</CtaAction>
-				<CtaAction>
-					<a href='mailto:support@betterbarmm.com' className='bb-btn bb-btn-ghost'>
-						support@betterbarmm.com
-					</a>
-				</CtaAction>
-			</CtaPanel>
+				primary={{ href: '/contribute', label: 'Contribute' }}
+				secondary={{ href: 'mailto:support@betterbarmm.com', label: 'support@betterbarmm.com' }}
+			/>
 		</main>
 	)
 }

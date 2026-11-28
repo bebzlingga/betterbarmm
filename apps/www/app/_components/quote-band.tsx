@@ -44,7 +44,7 @@ export function QuoteBand({
       // Its own padding, not `.bb-section`: that class takes part in the
       // adjacent-section rule, which zeroed this band's top and the next
       // section's top — the quote sat on the photo's edge.
-      className={`bb-frame bb-scrim relative w-full overflow-hidden ${
+      className={`bb-frame bb-scrim relative isolate w-full overflow-hidden ${
         height === 'tall' ? 'min-h-[26rem] py-28 lg:py-40' : 'min-h-[20rem] py-[var(--bb-rhythm)]'
       }`}
     >

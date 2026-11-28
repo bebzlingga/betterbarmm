@@ -52,7 +52,7 @@ export function ChapterTile({
 	return (
 		<Link
 			href={card.href}
-			className={`group bb-zoom relative isolate flex h-full overflow-hidden rounded-[3px] bg-[var(--paper-3)] ${
+			className={`group bb-zoom relative isolate flex h-full overflow-hidden rounded-[1.25rem] bg-[var(--paper-3)] ${
 				wide ? 'min-h-[22rem] lg:min-h-[26rem]' : feature ? 'min-h-[26rem] lg:min-h-[38rem]' : 'min-h-[18rem]'
 			}`}
 		>
@@ -76,7 +76,7 @@ export function ChapterTile({
 
 				<span className='block'>
 					{label ? (
-						<span className='mb-3 block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-[var(--brass)]'>
+						<span className='mb-3 block font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-[#f1c453]'>
 							{label}
 						</span>
 					) : null}
@@ -95,7 +95,7 @@ export function ChapterTile({
 							{card.contains.map((item) => (
 								<span
 									key={item}
-									className='rounded-full border border-white/25 bg-white/10 px-2.5 py-1 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-white backdrop-blur-sm'
+									className='rounded-full border border-white/25 bg-black/30 px-2.5 py-1 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-white'
 								>
 									{item}
 								</span>
@@ -105,43 +105,5 @@ export function ChapterTile({
 				</span>
 			</span>
 		</Link>
-	)
-}
-
-/**
- * The chapters as a row of numbered tabs, the current one marked: where a reader is in the primer, and a way to any
- * other chapter, under each chapter's photograph. Scrolls sideways on a phone rather than wrapping.
- */
-export function ChapterTabs({ cards, current }: { cards: (ChapterCard & { slug: string })[]; current: string }) {
-	return (
-		<nav aria-label='Chapters' className='border-b border-[var(--rule)] bg-[var(--paper)]'>
-			<ol className='bb-container flex overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'>
-				{cards.map((card, index) => {
-					const here = card.slug === current
-					return (
-						<li key={card.slug} className='min-w-[11rem] flex-1'>
-							<Link
-								href={card.href}
-								aria-current={here ? 'page' : undefined}
-								className={`group flex h-full flex-col gap-1 border-b-[3px] px-1 py-4 pr-6 transition ${
-									here ? 'border-[var(--accent)]' : 'border-transparent hover:border-[var(--rule)]'
-								}`}
-							>
-								<span className={`num font-mono text-[0.625rem] font-semibold tracking-[0.16em] ${here ? 'text-[var(--accent)]' : 'text-[var(--ink-mute)]'}`}>
-									{String(index + 1).padStart(2, '0')}
-								</span>
-								<span
-									className={`text-[0.9375rem] font-extrabold tracking-[-0.02em] transition ${
-										here ? 'text-[var(--ink)]' : 'text-[var(--ink-3)] group-hover:text-[var(--ink)]'
-									}`}
-								>
-									{card.title}
-								</span>
-							</Link>
-						</li>
-					)
-				})}
-			</ol>
-		</nav>
 	)
 }

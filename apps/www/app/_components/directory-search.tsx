@@ -4,6 +4,7 @@ import { ArrowRightIcon, BankIcon, BuildingsIcon, MagnifyingGlassIcon, MapTrifol
 import Link from 'next/link'
 import { RowsSkeleton, SkeletonLine } from '@betterbarmm/editorial'
 import { Emblem } from './emblem'
+import { PhotoHero } from './photo-hero'
 import { useRouter } from 'next/navigation'
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 
@@ -48,8 +49,8 @@ const JUMP = [
 
 const fold = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
-/** head: the band's words above the search; children: the page's sections. */
-export function DirectorySearch({ head, children }: { head: React.ReactNode; children: React.ReactNode }) {
+/** hero: the header's words above the search; children: the page's sections. */
+export function DirectorySearch({ hero, children }: { hero: { kicker: string; title: string; lede: string }; children: React.ReactNode }) {
 	const [q, setQ] = useState('')
 	// The index is fetched the first time the reader focuses or types in the search, not with the page.
 	const [entries, setEntries] = useState<DirectoryEntry[] | null>(null)
@@ -112,56 +113,46 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 	let n = -1
 	return (
 		<>
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<span
-					aria-hidden='true'
-					className='bb-glow absolute -top-[22rem] left-1/2 h-[40rem] w-[64rem] max-w-[160vw] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
-				/>
-				<div className='bb-container relative py-16 text-center lg:py-24'>
-					{head}
-			<form role='search' action='/directory' onSubmit={(e) => e.preventDefault()} className='mx-auto mt-8 max-w-2xl'>
-				<label htmlFor='directory-search' className='sr-only'>
-					Search the directory
-				</label>
-				{/* Fixed colours: inside the brand band, --paper and --ink point at its crimson ground. */}
-				<span className='flex h-14 items-center gap-3 bg-white px-5 text-[#191713] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)]'>
-					<MagnifyingGlassIcon size={20} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
-					<input
-						ref={input}
-						id='directory-search'
-						name='q'
-						type='search'
-						autoComplete='off'
-						value={q}
-						onFocus={load}
-						onChange={(e) => (load(), setQ(e.target.value), setAt(0))}
-						onKeyDown={onKeyDown}
-						placeholder='An office, a minister, a town, a mayor, a barangay…'
-						aria-controls='directory-results'
-						className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
-					/>
-					{q ? (
-						<button type='button' onClick={() => (setQ(''), input.current?.focus())} aria-label='Clear the search' className='grid size-7 shrink-0 cursor-pointer place-items-center rounded-full text-[#5c574c] hover:bg-[#f1ede6]'>
-							<XIcon size={15} weight='bold' aria-hidden='true' />
-						</button>
-					) : (
-						<kbd className='hidden shrink-0 rounded border border-[#d9d4ca] px-1.5 py-0.5 font-mono text-[0.6875rem] text-[#8a857a] sm:block'>/</kbd>
-					)}
-				</span>
-			</form>
-					<nav aria-label='Jump to' className='mt-6 flex flex-wrap justify-center gap-2'>
-						{JUMP.map(({ href, label, icon: Icon }) => (
-							<a
-								key={href}
-								href={href}
-								className='inline-flex items-center gap-1.5 rounded-full border border-white/30 px-3.5 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] transition hover:border-white hover:bg-white hover:text-[#8f2328]'
-							>
-								<Icon size={14} weight='bold' aria-hidden='true' /> {label}
-							</a>
-						))}
-					</nav>
-				</div>
-			</section>
+			{/* The travel look (user decision): the region's government seats turning under the bars, the words and the
+			    search centred on them, the sections as glass jumps. */}
+			<PhotoHero photos={['parliamentBuilding', 'cotabatoPlaza', 'governmentCenter', 'chiefMinisterOffice']} center kicker={hero.kicker} title={hero.title} lede={hero.lede}>
+				<form role='search' action='/directory' onSubmit={(e) => e.preventDefault()} className='mx-auto mt-9 w-full max-w-2xl'>
+					<label htmlFor='directory-search' className='sr-only'>
+						Search the directory
+					</label>
+					<span className='flex h-16 items-center gap-3 rounded-full bg-white pl-6 pr-3 text-[#191713] shadow-[0_24px_48px_-24px_rgba(0,0,0,0.7)]'>
+						<MagnifyingGlassIcon size={20} className='shrink-0 text-[#5c574c]' aria-hidden='true' />
+						<input
+							ref={input}
+							id='directory-search'
+							name='q'
+							type='search'
+							autoComplete='off'
+							value={q}
+							onFocus={load}
+							onChange={(e) => (load(), setQ(e.target.value), setAt(0))}
+							onKeyDown={onKeyDown}
+							placeholder='An office, a minister, a town, a mayor, a barangay…'
+							aria-controls='directory-results'
+							className='min-w-0 flex-1 bg-transparent text-[1rem] outline-none placeholder:text-[#8a857a] [&::-webkit-search-cancel-button]:hidden'
+						/>
+						{q ? (
+							<button type='button' onClick={() => (setQ(''), input.current?.focus())} aria-label='Clear the search' className='grid size-8 shrink-0 cursor-pointer place-items-center rounded-full text-[#5c574c] hover:bg-[#f1ede6]'>
+								<XIcon size={15} weight='bold' aria-hidden='true' />
+							</button>
+						) : (
+							<kbd className='mr-1 hidden shrink-0 rounded-md border border-[#d9d4ca] px-1.5 py-0.5 font-mono text-[0.6875rem] text-[#8a857a] sm:block'>/</kbd>
+						)}
+					</span>
+				</form>
+				<nav aria-label='Jump to' className='mt-6 flex flex-wrap justify-center gap-2'>
+					{JUMP.map(({ href, label, icon: Icon }) => (
+						<a key={href} href={href} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
+							<Icon size={14} weight='bold' aria-hidden='true' /> {label}
+						</a>
+					))}
+				</nav>
+			</PhotoHero>
 
 			<div id='directory-results' aria-live='polite'>
 				{query.trim() ? (
@@ -176,7 +167,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 								<div className='mt-6 grid gap-10 lg:grid-cols-2'>
 									{[0, 1].map((i) => (
 										<div key={i}>
-											<div className='border-b border-[var(--ink)] pb-2 text-[0.75rem]'>
+											<div className='border-b border-[var(--rule)] pb-2 text-[0.75rem]'>
 												<SkeletonLine width='8rem' />
 											</div>
 											<RowsSkeleton
@@ -201,11 +192,11 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 						<div className='mt-6 grid gap-10 lg:grid-cols-2'>
 							{groups.map((g) => (
 								<section key={g.kind} aria-label={PLURAL[g.kind]}>
-									<h2 className='flex items-baseline justify-between border-b border-[var(--ink)] pb-2 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+									<h2 className='flex items-baseline justify-between border-b border-[var(--rule)] pb-2 font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 										{PLURAL[g.kind]}
 										<span className='text-[var(--ink-mute)]'>{g.all.length > LIMIT ? `${LIMIT} of ${g.all.length}` : g.all.length}</span>
 									</h2>
-									<ul>
+									<ul className='mt-2'>
 										{g.shown.map((e) => {
 											n++
 											const on = n === at
@@ -216,7 +207,7 @@ export function DirectorySearch({ head, children }: { head: React.ReactNode; chi
 														href={e.href}
 														onMouseEnter={() => setAt(i)}
 														data-on={on}
-														className='group flex items-center gap-4 border-b border-[var(--rule-soft)] px-2 py-3 data-[on=true]:bg-[var(--paper-2)]'
+														className='group flex items-center gap-4 rounded-2xl px-3 py-3 data-[on=true]:bg-[var(--paper-2)]'
 													>
 														<Emblem image={e.image ? { src: e.image } : null} name={e.title} portrait={e.kind === 'Member of Parliament'} className='size-10 rounded-full text-[0.625rem]' />
 														<span className='min-w-0 flex-1'>

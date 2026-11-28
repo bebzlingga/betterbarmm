@@ -119,7 +119,7 @@ function Card({ entry, topic, feature = false }: { entry: Entry; topic: string; 
 			</span>
 		</>
 	)
-	const base = `group relative flex h-full flex-col overflow-hidden p-6 transition duration-300 ${
+	const base = `group relative flex h-full flex-col overflow-hidden rounded-[1.25rem] p-6 transition duration-300 ${
 		feature ? 'bg-[var(--accent)] sm:min-h-[15rem]' : 'border border-[var(--rule)] bg-[var(--paper)] sm:min-h-[16.5rem]'
 	}`
 	if (!entry.open || !entry.href) return <div className={`${base} opacity-70`}>{body}</div>

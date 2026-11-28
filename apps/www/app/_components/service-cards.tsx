@@ -57,7 +57,7 @@ export const Source = ({ url }: { url: string }) => (
    each row is a link to that service on its services page instead. */
 const COLS = 'lg:grid lg:grid-cols-[minmax(0,4fr)_minmax(0,1.3fr)_minmax(0,0.5fr)_1rem] lg:gap-x-12'
 const HEAD = 'text-[0.6875rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)]'
-const ROW = `flex items-start gap-4 px-3 py-6 transition hover:bg-[var(--paper-2)] ${COLS}`
+const ROW = `flex items-start gap-4 px-5 py-6 transition hover:bg-[var(--paper-2)] ${COLS}`
 const anchor = (s: Service) => `service-${slugify(s.name)}`
 
 /** A row's cells. With `href` the name is the row's link, its hit area stretched over the whole row; the category and audience links sit above it. */
@@ -112,8 +112,8 @@ function Cells({ s, base, href }: { s: Service; base: string; href?: string }) {
 
 export function ServiceCards({ services, base = '/services', href }: { services: Service[]; base?: string; href?: string }) {
 	return (
-		<div className='mt-5 border-t border-[var(--rule)]'>
-			<div aria-hidden='true' className={`hidden border-b border-[var(--rule)] px-3 py-2.5 ${COLS} ${HEAD}`}>
+		<div className='mt-5 overflow-hidden rounded-[1.25rem] border border-[var(--rule)]'>
+			<div aria-hidden='true' className={`hidden border-b border-[var(--rule)] bg-[color-mix(in_srgb,var(--accent)_4%,var(--paper))] px-5 py-2.5 ${COLS} ${HEAD}`}>
 				<span>Service</span>
 				<span>For</span>
 				<span>Fee</span>
@@ -122,17 +122,17 @@ export function ServiceCards({ services, base = '/services', href }: { services:
 			{href ? null : <OpenFromHash />}
 			<ul>
 				{services.map((s) => (
-					<li key={s.name} id={anchor(s)} className='relative scroll-mt-[calc(var(--site-header-h)+1rem)] border-b border-[var(--rule)]'>
+					<li key={s.name} id={anchor(s)} className='relative scroll-mt-4 border-b border-[var(--rule)] last:border-b-0'>
 						{href ? (
 							<div className={ROW}>
 								<Cells s={s} base={base} href={href} />
 							</div>
 						) : (
-							<details className='group open:bg-[var(--paper-2)]'>
+							<details className='group open:bg-[color-mix(in_srgb,var(--accent)_4%,var(--paper))]'>
 								<summary className={`cursor-pointer list-none [&::-webkit-details-marker]:hidden ${ROW}`}>
 									<Cells s={s} base={base} />
 								</summary>
-								<div className='max-w-3xl px-3 pb-7 pt-1 text-[0.875rem] leading-6'>
+								<div className='max-w-3xl px-5 pb-7 pt-1 text-[0.875rem] leading-6'>
 									{s.summary ? <p className='text-[var(--ink-2)]'>{s.summary}</p> : null}
 									{s.requirements.length ? (
 										<>

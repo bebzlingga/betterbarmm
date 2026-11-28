@@ -10,7 +10,7 @@ import { DiscoverLguGuide } from './discover-lgu-guide'
 import { DiscoverTribeGuide } from './discover-tribe-guide'
 import { discoverPhotos, type DiscoverPhotoKey } from './discover-media'
 import { type DiscoverTopicMedia } from './discover-topic-media'
-import { LineReveal, OkirCorner, Rise, Stagger, StaggerItem, Tilt } from '@betterbarmm/editorial'
+import { Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
 import { Timeline } from './topic-timeline'
 import { GovernmentFlow, InstitutionList } from './discover-government'
 
@@ -54,67 +54,29 @@ function ModuleHead({
 	 */
 	tightGap?: boolean
 }) {
-	const kicker = (
-		<Rise distance={14}>
-			{/* Number first here, unlike the group counters further down. This row
-			    runs the full width of the page: ranged right, the number ends up an
-			    arm's length from the label it belongs to, with a rule between them
-			    and nothing to read. In a narrow column that distance is small
-			    enough for the pairing to hold. */}
-			<div className='bb-kicker'>
-				<span>{index}</span>
-				<span>{eyebrow}</span>
-			</div>
-		</Rise>
-	)
-
-	const heading = (topClass: string) => (
-		<LineReveal
-			as='h2'
-			lines={[title]}
-			className={`bb-display-sm ${topClass} max-w-[20ch] text-[var(--ink)]`}
-		/>
-	)
+	// The travel look (user decision): a small accent eyebrow, the title as travel's section heads, the line under or
+	// beside it. The module's number is dropped with the brass rule it sat on.
+	void index
+	const kicker = <p className='font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>{eyebrow}</p>
+	const heading = (topClass: string) => <h2 className={`dv-title ${topClass} max-w-[22ch]`}>{title}</h2>
 
 	if (split) {
 		return (
-			<div className={tightGap ? 'bb-head-gap' : 'bb-head-gap-lg'}>
-				{/* The kicker runs above both columns, so the two things a reader is
-				    meant to compare — the claim and the sentence qualifying it — start
-				    on the same line. Nested inside the left column instead, the
-				    standfirst lined up with the kicker and sat a heading's height above
-				    the words it belongs to. */}
+			<div className={tightGap ? 'mb-10' : 'mb-12 lg:mb-14'}>
 				{kicker}
-
-				<div className='mt-8 grid gap-6 lg:grid-cols-[1.05fr_1fr] lg:items-start lg:gap-16'>
+				<div className='mt-4 grid gap-4 lg:grid-cols-[1.05fr_1fr] lg:items-start lg:gap-16'>
 					{heading('mt-0')}
-
-					{description ? (
-						<Rise delay={0.15} distance={16}>
-							{/* No measure: the column is the measure here. The top padding is
-							    optical — display type sits high in its own line box, so a
-							    paragraph set flush against it reads as starting early. */}
-							<p className='bb-body text-[var(--ink-2)] lg:pt-2'>{description}</p>
-						</Rise>
-					) : null}
+					{description ? <p className='text-[0.9375rem] leading-[1.75] text-[var(--ink-3)] lg:pt-1.5'>{description}</p> : null}
 				</div>
 			</div>
 		)
 	}
 
 	return (
-		<div className='bb-head-gap'>
+		<div className='mb-12'>
 			{kicker}
-			{heading('mt-8')}
-
-			{description ? (
-				<Rise delay={0.15} distance={16}>
-					{/* On the measure, not on a `max-w-*`. A standfirst set to the
-					    container's three-quarter width ran to 96 characters a line,
-					    which is a headline's job done at body size. */}
-					<p className='bb-measure mt-7 bb-body text-[var(--ink-2)]'>{description}</p>
-				</Rise>
-			) : null}
+			{heading('mt-4')}
+			{description ? <p className='dv-lede'>{description}</p> : null}
 		</div>
 	)
 }
@@ -157,8 +119,9 @@ export function DiscoverTopicBody({
 			    Two chapters have one paragraph and four have five, so the lede and
 			    the photograph share a row when there is nothing to follow — the
 			    alternative left half the opening screen empty. */}
+			{/* The first section under the chapter bar opens a little nearer it (user decision). */}
 			{lede ? (
-				<section className='bb-container bb-section'>
+				<section className='bb-container dv-section !pt-[clamp(4rem,7.5vw,7rem)]'>
 					{rest.length === 0 && inline ? (
 						<div className='grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16'>
 							<Rise distance={18}>
@@ -213,8 +176,8 @@ export function DiscoverTopicBody({
 			    above its heading than below its last row reads as having been cut
 			    short rather than as having been set. */}
 			{topic.timeline ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container bb-section'>
+				<section className='tv-wash'>
+					<div className='bb-container dv-section'>
 						<ModuleHead
 							index={nextIndex()}
 							eyebrow='The story'
@@ -233,8 +196,10 @@ export function DiscoverTopicBody({
 			    apart. */}
 			{/* Government: how the parts connect, before the parts. */}
 			{topic.slug === 'governance' && topic.detailCards ? (
-				<section className='border-t border-[var(--rule)]'>
-					<div className='bb-container bb-section'>
+				<section>
+					{/* Half the usual space at its foot: the cards below follow straight on, over a hairline (user decision: the
+					    two plain sections' paddings had stacked into one big gap). */}
+					<div className={`bb-container dv-section !pb-[clamp(3.5rem,6vw,5.5rem)] ${lede ? '' : '!pt-[clamp(4rem,7.5vw,7rem)]'}`}>
 						<ModuleHead
 							index={nextIndex()}
 							eyebrow='How it fits together'
@@ -248,8 +213,13 @@ export function DiscoverTopicBody({
 			) : null}
 
 			{topic.detailCards ? (
-				<section className='border-t border-[var(--rule)]'>
-					<div className='bb-container bb-section-top pb-14 lg:pb-16'>
+				<section>
+					{topic.slug === 'governance' ? (
+						<div aria-hidden='true' className='bb-container'>
+							<div className='border-t border-[var(--rule)]' />
+						</div>
+					) : null}
+					<div className={`bb-container dv-section ${topic.slug === 'governance' ? '!pt-[clamp(3.5rem,6vw,5.5rem)]' : ''}`}>
 						<ModuleHead
 							index={nextIndex()}
 							eyebrow={topic.detailEyebrow ?? 'What to notice'}
@@ -272,8 +242,8 @@ export function DiscoverTopicBody({
 			) : null}
 
 			{topic.slug === 'governance' && topic.detailCards ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container bb-section'>
+				<section className='tv-wash'>
+					<div className='bb-container dv-section'>
 						<ModuleHead
 							index={nextIndex()}
 							eyebrow='The directory'
@@ -290,8 +260,8 @@ export function DiscoverTopicBody({
 			    is. This module is a directory — a ladder and a list of offices — and
 			    a change of ground is what says so without a rule over it. */}
 			{media?.lguGuide ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container bb-section'>
+				<section className='tv-wash'>
+					<div className='bb-container dv-section'>
 						<ModuleHead
 							index={nextIndex()}
 							eyebrow='The directory'
@@ -309,7 +279,7 @@ export function DiscoverTopicBody({
 			    that space marked a division the change of subject makes on its own. */}
 			{media?.tribeGuide ? (
 				<section>
-					<div className='bb-container pb-10 lg:pb-12'>
+					<div className='bb-container dv-section !pb-10 lg:!pb-12'>
 						<ModuleHead
 							index={nextIndex()}
 							eyebrow='Food and culture, by people'
@@ -332,7 +302,7 @@ export function DiscoverTopicBody({
 				<section>
 					{/* A shorter run-out, as on the other modules that end a chapter: the
 					    block after this one carries padding of its own. */}
-					<div className='bb-container bb-section-top pb-14 lg:pb-16'>
+					<div className='bb-container dv-section'>
 						<ModuleHead
 							index={nextIndex()}
 							eyebrow='People and communities'
@@ -426,8 +396,8 @@ function DetailCards({
 								    lands wherever the description happens to end. Cards in a row are
 								    the same height, so their footers should share a line. */}
 								<Rise delay={0.1} distance={14} className='flex flex-1 flex-col'>
-									<p className='bb-label mt-7'>{card.label}</p>
-									<h3 className='mt-4 text-[1.3rem] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
+									<p className='mt-5 text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{card.label}</p>
+									<h3 className='mt-2 font-[family-name:var(--font-display)] text-[1.3rem] font-bold leading-tight tracking-[-0.025em] text-[var(--ink)]'>
 										{card.title}
 									</h3>
 									<p className='mt-3 flex-1 bb-body text-[var(--ink-2)]'>{card.description}</p>
@@ -437,7 +407,7 @@ function DetailCards({
 											href={card.href}
 											target='_blank'
 											rel='noreferrer'
-											className='mt-6 flex items-center justify-between gap-4 border-t border-[var(--brass-line)] pt-3.5 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+											className='mt-5 inline-flex w-fit items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition hover:text-[var(--accent)]'
 										>
 											<span>{card.sourceLabel ?? 'Source'}</span>
 											<span aria-hidden='true'>&rarr;</span>
@@ -459,12 +429,10 @@ function DetailCards({
 				>
 					{plain.map((card) => (
 						<StaggerItem key={`${card.label}-${card.title}`} distance={14}>
-							<Tilt max={3.5} className='h-full'>
-								<article className='bb-plate relative flex h-full flex-col p-6 lg:p-7'>
-									<OkirCorner position='top-right' className='m-1.5 size-5 opacity-45' />
+							<article className='tv-card h-full !p-6 lg:!p-7'>
 
 									<div className='flex items-baseline justify-between gap-3'>
-										<p className='bb-label'>{card.label}</p>
+										<p className='text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{card.label}</p>
 										{card.value ? (
 											<p className='font-mono text-[0.6875rem] font-bold uppercase tracking-[0.1em] text-[var(--accent)]'>
 												{card.value}
@@ -472,7 +440,7 @@ function DetailCards({
 										) : null}
 									</div>
 
-									<h3 className='mt-5 text-[1.15rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
+									<h3 className='mt-4 font-[family-name:var(--font-display)] text-[1.15rem] font-bold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 										{card.title}
 									</h3>
 									<p className='mt-2.5 flex-1 bb-body text-[var(--ink-2)]'>
@@ -484,14 +452,13 @@ function DetailCards({
 											href={card.href}
 											target='_blank'
 											rel='noreferrer'
-											className='mt-6 flex items-center justify-between gap-4 border-t border-[var(--rule)] pt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+											className='mt-5 inline-flex w-fit items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition hover:text-[var(--accent)]'
 										>
 											<span>{card.sourceLabel ?? 'Source'}</span>
 											<span aria-hidden='true'>&rarr;</span>
 										</a>
 									) : null}
 								</article>
-							</Tilt>
 						</StaggerItem>
 					))}
 				</Stagger>
@@ -524,7 +491,7 @@ function PeopleGroups({
 				return (
 					<section key={group.category} className='mt-16 first:mt-0 lg:mt-24 lg:first:mt-0'>
 						<div className='grid gap-8 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] lg:gap-14'>
-							<div className='lg:sticky lg:top-24 lg:self-start'>
+							<div className='lg:sticky lg:top-8 lg:self-start'>
 								{photo ? (
 									<PhotoFrame
 										photo={photo}
@@ -540,14 +507,12 @@ function PeopleGroups({
 									    that is the number wherever this appears — so the order in the
 									    markup stays as it was and the two are placed by the flex rules
 									    instead. */}
-									<p className='bb-kicker justify-between'>
-										<span className='order-2'>{String(groupIndex + 1).padStart(2, '0')}</span>
-										<span className='order-1'>
-											{group.people.length} {group.people.length === 1 ? 'group' : 'groups'}
-										</span>
+									<p className='inline-flex rounded-full bg-[color-mix(in_srgb,var(--accent)_9%,var(--paper))] px-3 py-1 text-[0.75rem] font-semibold text-[var(--accent)]'>
+										{group.people.length} {group.people.length === 1 ? 'group' : 'groups'}
+										<span className='sr-only'> · {groupIndex + 1}</span>
 									</p>
 
-									<h3 className='mt-5 text-2xl font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
+									<h3 className='mt-4 font-[family-name:var(--font-display)] text-2xl font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>
 										{group.category}
 									</h3>
 									<p className='mt-3 bb-body text-[var(--ink-2)]'>
@@ -556,19 +521,19 @@ function PeopleGroups({
 								</Rise>
 							</div>
 
-							<Stagger gap={0.04} className='grid border-t border-[var(--rule)] sm:grid-cols-2'>
+							<Stagger gap={0.04} className='grid content-start gap-3 sm:grid-cols-2'>
 								{group.people.map((person, index) => (
 									<StaggerItem
 										key={person.name}
 										as='article'
 										distance={12}
-										className='group flex flex-col border-b border-[var(--rule)] py-7 transition hover:bg-[var(--paper-2)] sm:px-7 sm:[&:nth-child(odd)]:border-r'
+										className='group tv-card !p-6 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))]'
 									>
 										{/* The name leads and the number closes the row, the way the group
 										    counter above these cards reads. A card is narrow enough that the
 										    two still pair at a glance. */}
 										<div className='flex items-baseline justify-between gap-3'>
-											<h4 className='text-[1.1875rem] font-extrabold tracking-[-0.03em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
+											<h4 className='font-[family-name:var(--font-display)] text-[1.1875rem] font-bold tracking-[-0.03em] text-[var(--ink)] transition group-hover:text-[var(--accent)]'>
 												{person.name}
 											</h4>
 											<span className='num shrink-0 text-[0.6875rem] font-semibold text-[var(--brass)]'>
@@ -585,7 +550,7 @@ function PeopleGroups({
 												href={person.href}
 												target='_blank'
 												rel='noreferrer'
-												className='mt-4 flex items-center justify-between gap-4 border-t border-[var(--rule-soft)] pt-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+												className='mt-4 inline-flex w-fit items-center gap-1.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition hover:text-[var(--accent)]'
 											>
 												<span>BCPCH source</span>
 												<span aria-hidden='true'>&rarr;</span>

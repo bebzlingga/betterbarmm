@@ -92,30 +92,12 @@ function LivePulse() {
  * rather than going somewhere disappointing.
  */
 export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
-	// Seven entries fill neither a row of two nor a row of three, and the cells
-	// carrying the rules are the entries themselves — so the rule above the last
-	// row stopped a third of the way across, in mid-air. Empty cells carrying that
-	// one border and nothing else finish the line, one for every column the row
-	// is short. Only the first of them takes a left border — that one closes off
-	// the right edge of the final card, and any past it would be a vertical
-	// hanging in open space, dividing nothing from nothing.
-	//
-	// Counted from the length rather than written down, because the number is
-	// different at every breakpoint and different again the day an eighth
-	// workspace is added. A breakpoint needing fewer hides the spares rather than
-	// rendering a second set.
-	const shortBySm = (2 - (workspaces.length % 2)) % 2
-	const shortByLg = (3 - (workspaces.length % 3)) % 3
-
 	return (
-		// Interior rules only: a hairline on the top and left of every cell, with
-		// the grid pulled up and left by one pixel so the outer edges come off.
-		// Drawing borders per-cell by index means re-counting them at every
-		// breakpoint, and the count is different at each one.
-		<div className='overflow-hidden'>
+		// Rounded cards on a gap, in the travel look (user decision), in place of the hairline grid.
+		<div>
 			<Stagger
 				gap={0.05}
-				className='-ml-px -mt-px grid sm:grid-cols-2 lg:grid-cols-3'
+				className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3'
 			>
 				{workspaces.map((workspace, index) => {
 					const Glyph = ICONS[workspace.label]
@@ -171,14 +153,9 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 						</>
 					)
 
-					/* `duration-200` on the ground and the rule, not the 500 that was
-					   here: a hover is an answer, and half a second of easing on one
-					   reads as the page thinking about it. The top edge takes the accent
-					   so the crimson that opens the page comes back down it — before
-					   this it was the masthead's color and nothing else's. */
-					const className = `group flex h-full flex-col border-l border-t border-[var(--rule)] p-7 transition duration-200 lg:p-8 ${
+					const className = `group flex h-full flex-col rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-7 transition duration-300 lg:p-8 ${
 						workspace.href
-							? 'hover:border-t-[var(--accent)] hover:bg-[var(--paper-2)]'
+							? 'hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 							: ''
 					}`
 
@@ -195,17 +172,6 @@ export function WorkspaceIndex({ workspaces }: { workspaces: Workspace[] }) {
 					)
 				})}
 
-				{Array.from({ length: Math.max(shortBySm, shortByLg) }, (_, index) => (
-					<div
-						key={`filler-${index}`}
-						aria-hidden='true'
-						className={`hidden border-t border-[var(--rule)] ${
-							index === 0 ? 'border-l' : ''
-						} ${index < shortBySm ? 'sm:block' : 'sm:hidden'} ${
-							index < shortByLg ? 'lg:block' : 'lg:hidden'
-						}`}
-					/>
-				))}
 			</Stagger>
 		</div>
 	)

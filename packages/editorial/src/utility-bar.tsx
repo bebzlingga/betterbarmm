@@ -58,7 +58,7 @@ export type WorkspaceKey = (typeof WORKSPACES)[number]['key']
 /** The projects: records of a different kind, each a page on the landing
  *  site rather than a workspace of its own, listed from every workspace. */
 const PROJECTS = [
-	{ key: 'accidents', href: 'https://betterbarmm.com/accidents', label: 'Incident Watch', icon: SirenIcon, blurb: 'Crashes, fires, floods and shootings, mapped from the news' },
+	{ key: 'accidents', href: 'https://betterbarmm.com/incidents', label: 'Incident Watch', icon: SirenIcon, blurb: 'Crashes, fires, floods and shootings, mapped from the news' },
 	{ key: 'preparedness', href: 'https://betterbarmm.com/preparedness', label: 'Preparedness', icon: UmbrellaIcon, blurb: 'Hazards for every barangay and the evacuation sites near it' },
 	{ key: 'plan', href: 'https://betterbarmm.com/development-plan', label: 'Plan scorecard', icon: TargetIcon, blurb: 'The regional plan’s targets beside the latest figures' },
 	{ key: 'crafts', href: 'https://betterbarmm.com/crafts', label: 'Crafts', icon: DiamondsFourIcon, blurb: 'Weaves, mats, brass and gongs, and where each is made' },
@@ -99,16 +99,20 @@ function Switch({
 		const Icon = item.icon
 		return (
 			<li key={item.key}>
-				{/* No side padding and no bar or fill on the open one (user decision): the rows line up with their
-				    headings, and the open workspace is marked by its filled tile and its crimson name. */}
-				<a href={item.href} aria-current={on ? 'page' : undefined} className='group flex items-start gap-3 py-2.5'>
+				{/* Each a rounded tile in the travel look (user decision): a soft tint under the pointer, the open one tinted and
+				    marked by its filled glyph tile and its crimson name. */}
+				<a
+					href={item.href}
+					aria-current={on ? 'page' : undefined}
+					className={`group flex items-start gap-3 rounded-2xl p-3 transition-colors ${on ? 'bg-[color-mix(in_srgb,var(--accent)_7%,var(--paper))]' : 'hover:bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))]'}`}
+				>
 					<span
-						className={`grid size-9 shrink-0 place-items-center transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover:bg-[var(--accent)] group-hover:text-white'}`}
+						className={`grid size-10 shrink-0 place-items-center rounded-xl transition-colors ${on ? 'bg-[var(--accent)] text-white' : 'bg-[var(--accent-soft)] text-[var(--accent)] group-hover:bg-[var(--accent)] group-hover:text-white'}`}
 					>
 						<Icon size={18} weight={on ? 'fill' : 'duotone'} aria-hidden='true' />
 					</span>
 					<span className='min-w-0 pt-0.5'>
-						<span className={`block text-[0.875rem] font-bold leading-5 transition-colors ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)] group-hover:text-[var(--accent)]'}`}>{item.label}</span>
+						<span className={`block font-[family-name:var(--font-display)] text-[0.9375rem] font-semibold leading-5 transition-colors ${on ? 'text-[var(--accent)]' : 'text-[var(--ink)] group-hover:text-[var(--accent)]'}`}>{item.label}</span>
 						{item.blurb ? <span className='mt-0.5 block text-[0.75rem] font-normal leading-snug text-[var(--ink-3)]'>{item.blurb}</span> : null}
 					</span>
 				</a>
@@ -129,24 +133,24 @@ function Switch({
 			{/* The full width of the window under the strip (user decision), its rows in the page's own container:
 			    the groups side by side from a laptop up, two to a row on a tablet, stacked on a phone. Placed against
 			    the strip itself, which is the positioned box, not against this switch. */}
-			<div className='absolute inset-x-0 top-full z-50 max-h-[calc(100dvh-5rem)] overflow-y-auto border-b border-[var(--rule)] border-t-2 border-t-[var(--accent)] bg-[var(--paper)] normal-case tracking-normal shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)]'>
-				<div className='mx-auto max-w-[var(--bb-page-width)] px-6 py-7 lg:px-8'>
+			<div className='absolute inset-x-0 top-full z-50 max-h-[calc(100dvh-5rem)] overflow-y-auto rounded-b-[1.5rem] bg-[var(--paper)] normal-case tracking-normal shadow-[0_36px_70px_-30px_rgba(0,0,0,0.55)] [scrollbar-width:thin]'>
+				<div className='mx-auto max-w-[var(--bb-page-width)] px-3 py-7 sm:px-4 lg:px-5 lg:py-8'>
 					{grouped ? (
-						<div className='grid gap-x-10 gap-y-7 sm:grid-cols-2 lg:grid-cols-5'>
+						<div className='grid gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-5'>
 							{GROUPS.map((g) => {
 								const here = items.filter((item) => item.group === g)
 								return here.length ? (
 									<section key={g}>
-										<p className='border-b border-[var(--rule)] pb-2 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{g}</p>
-										<ul className='mt-2 grid'>{here.map((item) => row(item))}</ul>
+										<p className='px-3 pb-1 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{g}</p>
+										<ul className='mt-1 grid gap-0.5'>{here.map((item) => row(item))}</ul>
 									</section>
 								) : null
 							})}
 						</div>
 					) : (
 						<>
-							<p className='border-b border-[var(--rule)] pb-2 font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[var(--ink-3)]'>{heading}</p>
-							<ul className='mt-2 grid gap-x-10 sm:grid-cols-2 lg:grid-cols-5'>{items.map((item) => row(item))}</ul>
+							<p className='px-3 pb-1 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>{heading}</p>
+							<ul className='mt-1 grid gap-x-4 gap-y-0.5 sm:grid-cols-2 lg:grid-cols-5'>{items.map((item) => row(item))}</ul>
 						</>
 					)}
 				</div>

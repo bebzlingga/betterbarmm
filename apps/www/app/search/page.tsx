@@ -17,7 +17,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 			<Masthead brand label='Search' lines={['Everything,', 'in one box.']} muted={[1]} size='display' />
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				<SiteSearch initial={q ?? ''} />
 			</section>
 			<GetInvolved />

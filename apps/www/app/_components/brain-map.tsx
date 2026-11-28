@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRightIcon, BuildingsIcon, MagnifyingGlassIcon, MapPinIcon, SidebarSimpleIcon, XIcon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, BrainIcon, BuildingsIcon, CursorClickIcon, HandGrabbingIcon, MagnifyingGlassIcon, MagnifyingGlassPlusIcon, MapPinIcon, SidebarSimpleIcon, XIcon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import type { BrainEdge, BrainNode, Thread } from '../_lib/brain'
@@ -100,7 +100,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 			onClick={() => setView(view === '3d' ? '2d' : '3d')}
 			aria-label={`Showing ${view.toUpperCase()}; switch to ${view === '3d' ? '2D' : '3D'}`}
 			title={`Switch to ${view === '3d' ? '2D' : '3D'}`}
-			className='mb-1.5 flex size-9 items-center justify-center border border-[#f1c453] bg-[#f1c453] font-mono text-[0.6875rem] font-bold text-[#2a0a10] transition hover:bg-transparent hover:text-[#f1c453]'
+			className='mb-1.5 flex size-10 items-center justify-center rounded-full bg-[#f1c453] font-[family-name:var(--font-display)] text-[0.6875rem] font-bold text-[#10161b] transition hover:bg-white'
 		>
 			{view.toUpperCase()}
 		</button>
@@ -115,7 +115,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 					onClick={() => setShown(!shown)}
 					aria-expanded={shown}
 					aria-controls='brain-details'
-					className='absolute top-4 left-4 z-10 flex items-center gap-1.5 border border-white/20 bg-black/30 px-3 py-2 text-[0.78125rem] font-semibold text-white/85 backdrop-blur transition hover:border-white hover:text-white'
+					className='absolute top-5 left-5 z-10 flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.08] px-4 py-2 text-[0.78125rem] font-semibold text-white/85 transition hover:bg-white hover:text-[#10161b]'
 				>
 					<SidebarSimpleIcon size={16} weight='bold' aria-hidden='true' /> {shown ? 'Hide details' : 'Show details'}
 				</button>
@@ -126,21 +126,49 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 						<BrainFlat nodes={nodes} edges={edges} lit={lit} edgeLit={edgeLit} picked={picked} onHover={setHover} onPick={setPicked} toolbar={switcher} />
 					)}
 				</div>
-				<ul className='pointer-events-none flex flex-wrap justify-center gap-x-5 gap-y-1 px-4 pt-2 pb-4 text-[0.75rem] text-white/70 lg:absolute lg:inset-x-0 lg:bottom-0 lg:pt-0 lg:pb-5'>
+				<ul className='pointer-events-none flex flex-wrap justify-center gap-2 px-4 pt-2 pb-4 text-[0.75rem] text-white/75 lg:absolute lg:inset-x-0 lg:bottom-0 lg:pt-0 lg:pb-5 [&>li]:rounded-full [&>li]:bg-white/[0.07] [&>li]:px-3 [&>li]:py-1'>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#7fa9aa]' /> Sources</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#e3ac3e]' /> Datasets</li>
 					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#c3313b]' /> Workspaces</li>
+					<li className='flex items-center gap-1.5'><span className='size-2.5 rounded-full bg-[#a77be6]' /> Projects</li>
 					<li className='flex items-center gap-1.5'><span className='h-0 w-4 border-t border-dashed border-[#f1c453]' /> Shared keys</li>
 				</ul>
 			</div>
 
-			<aside id='brain-details' hidden={!shown} className='border-t border-white/10 p-6 text-white lg:order-1 lg:min-h-0 lg:overflow-y-auto lg:border-t-0 lg:border-r lg:bg-black/20 lg:p-8'>
+			<aside id='brain-details' hidden={!shown} className='border-t border-white/10 p-6 text-white [scrollbar-width:thin] [scrollbar-color:rgb(255_255_255/0.2)_transparent] lg:order-1 lg:min-h-0 lg:overflow-y-auto lg:border-t-0 lg:border-r lg:bg-white/[0.03] lg:p-8'>
+				{/* The Brain's name and what it holds, in the travel look (user decision: the Brain redesigned). */}
+				<div className='flex items-center gap-3'>
+					<span className='grid size-11 place-items-center rounded-2xl bg-[#f1c453]/15 text-[#f1c453]'>
+						<BrainIcon size={22} weight='duotone' aria-hidden='true' />
+					</span>
+					<span>
+						<span className='block font-[family-name:var(--font-display)] text-[1.25rem] font-bold leading-tight tracking-[-0.02em]'>The Brain</span>
+						<span className='block text-[0.78125rem] text-white/55'>Every source, dataset and workspace, and how they join</span>
+					</span>
+				</div>
+				<ul className='mt-5 flex flex-wrap gap-1.5'>
+					{(
+						[
+							['source', 'sources', '#7fa9aa'],
+							['dataset', 'datasets', '#e3ac3e'],
+							['workspace', 'workspaces', '#c3313b'],
+							['project', 'projects', '#a77be6'],
+						] as const
+					).map(([kind, noun, color]) => (
+						<li key={kind} className='inline-flex items-center gap-1.5 rounded-full bg-white/[0.07] px-3 py-1.5 text-[0.75rem] text-white/80'>
+							<span className='size-2 rounded-full' style={{ background: color }} aria-hidden='true' />
+							<span className='num font-semibold text-white'>{nodes.filter((n) => (kind === 'project' ? n.project : n.kind === kind && !n.project)).length}</span> {noun}
+						</li>
+					))}
+				</ul>
+				<div className='mt-7'>
 				<FollowSearch threads={threads} value={thread} onChoose={(key) => (setFollow(key), setPicked(null))} />
+				</div>
 
 				{chosen ? (
 					<div className='mt-8'>
-						<p className='font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-white/50'>{KIND_LABEL[chosen.kind]}</p>
-						<h3 className='mt-1 text-[1.375rem] font-extrabold leading-tight tracking-[-0.02em]'>{chosen.label}</h3>
+						<p className='font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-white/50'>{chosen.project ? 'Project' : KIND_LABEL[chosen.kind]}</p>
+						<h3 className='mt-1 font-[family-name:var(--font-display)] text-[1.5rem] font-bold leading-tight tracking-[-0.025em]'>{chosen.label}</h3>
 						{chosen.count ? (
 							<p className='mt-2 text-[1.75rem] font-extrabold tabular-nums text-[#f1c453]'>
 								{chosen.count.toLocaleString('en-PH')} <span className='text-[0.875rem] font-semibold text-white/70'>{chosen.unit}</span>
@@ -156,7 +184,7 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 										const other = e.from === chosen.id ? e.to : e.from
 										return (
 											<li key={i}>
-												<button type='button' onClick={() => setPicked(other)} className='border border-white/20 px-2 py-1 text-[0.75rem] text-white/85 hover:border-white hover:text-white'>
+												<button type='button' onClick={() => setPicked(other)} className='rounded-full bg-white/[0.07] px-3 py-1 text-[0.75rem] text-white/85 transition hover:bg-white hover:text-[#10161b]'>
 													{name(other)}
 													{e.label ? <span className='text-[#f1c453]'> · {e.label}</span> : null}
 												</button>
@@ -174,12 +202,12 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 					</div>
 				) : thread ? (
 					<div className='mt-8'>
-						<p className='font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-white/50'>{thread.kicker}</p>
-						<h3 className='mt-1 text-[1.5rem] font-extrabold leading-tight tracking-[-0.02em]'>{thread.title}</h3>
+						<p className='font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-white/50'>{thread.kicker}</p>
+						<h3 className='mt-1 font-[family-name:var(--font-display)] text-[1.625rem] font-bold leading-tight tracking-[-0.025em]'>{thread.title}</h3>
 						<p className='mt-1 text-[0.8125rem] text-white/70'>Everything the estate holds about it, lit on the globe.</p>
-						<dl className='mt-5 grid grid-cols-2 gap-px bg-white/10'>
+						<dl className='mt-5 grid grid-cols-2 gap-2'>
 							{spans(thread.facts).map(([k, v, wide]) => (
-								<div key={k} className={`min-w-0 bg-[#1d080d] p-3 ${wide ? 'col-span-2' : ''}`}>
+								<div key={k} className={`min-w-0 rounded-xl bg-white/[0.06] p-3 ${wide ? 'col-span-2' : ''}`}>
 									<dt className='text-[0.6875rem] text-white/55'>{k}</dt>
 									<dd className='mt-0.5 text-[0.90625rem] font-bold leading-snug break-words'>
 										{v}
@@ -187,11 +215,11 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 								</div>
 							))}
 						</dl>
-						<p className='mt-6 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[#f1c453]'>Where it appears</p>
-						<ul className='mt-2 divide-y divide-white/10 border-y border-white/10'>
+						<p className='mt-7 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[#f1c453]'>Where it appears</p>
+						<ul className='mt-2 divide-y divide-white/10 rounded-2xl bg-white/[0.04] px-3'>
 							{thread.links.map((l, i) => (
 								<li key={i}>
-									<Link href={l.href} className='group flex items-start gap-3 py-2.5 hover:bg-white/5'>
+									<Link href={l.href} className='group flex items-start gap-3 py-2.5'>
 										<span className='w-24 shrink-0 pt-px text-[0.625rem] font-semibold uppercase leading-snug tracking-[0.08em] text-white/55'>{l.where}</span>
 										<span className='min-w-0 flex-1 text-[0.84375rem] leading-snug text-white/90 group-hover:text-white'>{l.what}</span>
 										<ArrowUpRightIcon size={13} weight='bold' className='mt-0.5 shrink-0 text-[#f1c453]' aria-hidden='true' />
@@ -202,9 +230,22 @@ export function BrainMap({ nodes, edges, threads }: { nodes: BrainNode[]; edges:
 					</div>
 				) : (
 					<div className='mt-8 space-y-4 text-[0.875rem] leading-[1.65] text-white/80'>
-						<p>
-							<span className='font-bold text-white'>Drag</span> to turn the globe and <span className='font-bold text-white'>scroll</span> to zoom. <span className='font-bold text-white'>Hover</span> any node to light everything it touches, and <span className='font-bold text-white'>click</span> it for what it holds, how fresh it is, and what it links to.
-						</p>
+						<ul className='grid gap-2'>
+							{(
+								[
+									[HandGrabbingIcon, 'Drag', 'to turn the globe'],
+									[MagnifyingGlassPlusIcon, 'Scroll', 'to zoom'],
+									[CursorClickIcon, 'Hover or click', 'a node for what it holds and links to'],
+								] as const
+							).map(([Glyph, verb, rest]) => (
+								<li key={verb} className='flex items-center gap-3 rounded-xl bg-white/[0.05] px-3 py-2.5'>
+									<Glyph size={18} weight='duotone' className='shrink-0 text-[#f1c453]' aria-hidden='true' />
+									<span>
+										<span className='font-semibold text-white'>{verb}</span> {rest}
+									</span>
+								</li>
+							))}
+						</ul>
 						<p>The pulses run the way the data does: from the sources on the outer shell, into the datasets, out through the workspaces, and to Jo, who answers from all of them.</p>
 						<p>The gold dashed lines are the joins. One code per town and one ID per office are why a mayor, a contract and an incident in the same town can be read side by side. Follow one above to see it.</p>
 					</div>
@@ -232,10 +273,10 @@ function FollowSearch({ threads, value, onChoose }: { threads: Thread[]; value: 
 	}
 	return (
 		<div className='relative'>
-			<label htmlFor='follow' className='font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[#f1c453]'>
+			<label htmlFor='follow' className='font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[#f1c453]'>
 				Follow a town or an office
 			</label>
-			<div className='mt-2 flex items-center gap-2 border border-white/20 bg-white/5 px-3 focus-within:border-white/60'>
+			<div className='mt-2 flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 focus-within:border-white/50'>
 				<MagnifyingGlassIcon size={15} className='shrink-0 text-white/60' aria-hidden='true' />
 				<input
 					id='follow'
@@ -274,7 +315,7 @@ function FollowSearch({ threads, value, onChoose }: { threads: Thread[]; value: 
 				) : null}
 			</div>
 			{open && hits.length ? (
-				<ul id='follow-list' role='listbox' className='absolute inset-x-0 top-full z-20 mt-1 border border-white/20 bg-[#1d080d] shadow-[0_20px_40px_-20px_rgba(0,0,0,.9)]'>
+				<ul id='follow-list' role='listbox' className='absolute inset-x-0 top-full z-20 mt-1.5 rounded-2xl border border-white/15 bg-[#161d24] p-1 shadow-[0_20px_40px_-20px_rgba(0,0,0,.9)]'>
 					{hits.map((t, i) => (
 						<li key={t.key} role='option' aria-selected={i === at}>
 							<button
@@ -282,7 +323,7 @@ function FollowSearch({ threads, value, onChoose }: { threads: Thread[]; value: 
 								onMouseDown={(e) => e.preventDefault()}
 								onClick={() => choose(t)}
 								onMouseEnter={() => setAt(i)}
-								className={`flex w-full items-center gap-3 px-3 py-2 text-left ${i === at ? 'bg-white/10' : ''}`}
+								className={`flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left ${i === at ? 'bg-white/10' : ''}`}
 							>
 								{t.kind === 'town' ? <MapPinIcon size={14} className='shrink-0 text-[#f1c453]' aria-hidden='true' /> : <BuildingsIcon size={14} className='shrink-0 text-[#e8848a]' aria-hidden='true' />}
 								<span className='min-w-0 flex-1'>

@@ -3,13 +3,15 @@ import type { Metadata } from 'next'
 import { pageMeta } from '../../_lib/seo'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { CtaAction, CtaPanel, Rise } from '@betterbarmm/editorial'
+import { Rise } from '@betterbarmm/editorial'
 import { discoverBarmmTopics } from '@betterbarmm/primer-data'
 import { DiscoverChapterHero } from '../../_components/discover-hero'
 import { photo } from '../../_components/discover-media'
 import { DiscoverTopicBody } from '../../_components/discover-topic'
-import { ChapterTabs, ChapterTile } from '../../_components/chapter-grid'
-import { chapterCards } from '../../_lib/chapters'
+import { ChapterTile } from '../../_components/chapter-grid'
+import { ChapterBar } from '../../_components/chapter-bar'
+import { HonestBand } from '../../_components/honest-band'
+import { chapterCards, PHOTO } from '../../_lib/chapters'
 import { discoverTopicMedia, topicMedia } from '../../_components/discover-topic-media'
 import { SiteHeader } from '../../_components/site-header'
 
@@ -65,9 +67,10 @@ export default async function DiscoverTopicPage({
 				standfirst={media?.standfirst ?? topic.description}
 				chips={chapterCards[index]?.contains}
 				scrollTo='#read'
+				photo={PHOTO[topic.slug]}
 			/>
 
-			<ChapterTabs cards={chapterCards} current={topic.slug} />
+			<ChapterBar cards={chapterCards} current={topic.slug} />
 
 			<DiscoverTopicBody topic={topic} media={media} />
 
@@ -76,7 +79,7 @@ export default async function DiscoverTopicPage({
 			    The next chapter as a photograph the width of the page, with what it holds,
 			    so the end of three thousand words reads as a door. The last chapter opens
 			    on the region's election instead. The previous chapter is a quiet link. */}
-			<section className='bb-container pb-28 pt-24 lg:pb-36 lg:pt-32'>
+			<section className='bb-container dv-section'>
 				<Rise distance={18}>
 					{next ? (
 						<ChapterTile card={next} index={index + 1} wide label={`Up next · Chapter ${String(index + 2).padStart(2, '0')}`} />
@@ -109,23 +112,13 @@ export default async function DiscoverTopicPage({
 				</div>
 			</section>
 
-			<CtaPanel
+			<HonestBand
 				label='Keep it honest'
-				lines={['Names change.', 'Figures get revised.']}
+				title='Names change. Figures get revised.'
 				standfirst='Where this chapter differs from an official page, the official page is right — and the correction is welcome. Send the source and it gets checked against the record.'
-			>
-				<CtaAction>
-					<Link href='/contribute' className='bb-btn bb-btn-brass'>
-						Send a correction
-						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-					</Link>
-				</CtaAction>
-				<CtaAction>
-					<Link href='/discover' className='bb-btn bb-btn-ghost'>
-						All {discoverBarmmTopics.length} chapters
-					</Link>
-				</CtaAction>
-			</CtaPanel>
+				primary={{ href: '/contribute', label: 'Send a correction' }}
+				secondary={{ href: '/discover', label: `All ${discoverBarmmTopics.length} chapters` }}
+			/>
 		</main>
 	)
 }

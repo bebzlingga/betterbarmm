@@ -93,7 +93,7 @@ export function Timeline({
                       : 'lg:grid-cols-[minmax(0,15rem)_minmax(0,1fr)]'
                   }`}
                 >
-                  <div className='lg:sticky lg:top-24 lg:self-start'>
+                  <div className='lg:sticky lg:top-8 lg:self-start'>
                     <p className='num text-[0.6875rem] font-medium text-[var(--ink-3)]'>
                       {String(index + 1).padStart(2, '0')} / {String(events.length).padStart(2, '0')}
                     </p>
@@ -101,7 +101,7 @@ export function Timeline({
                   </div>
 
                   <div className='min-w-0'>
-                    <h3 className='text-xl font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] sm:text-2xl'>
+                    <h3 className='font-[family-name:var(--font-display)] text-xl font-bold leading-tight tracking-[-0.03em] text-[var(--ink)] sm:text-2xl'>
                       {event.title}
                     </h3>
                     <p className='mt-3 max-w-[44em] bb-body text-[var(--ink-2)]'>
@@ -118,7 +118,7 @@ export function Timeline({
                         zoom
                         hideCredit
                       />
-                      <figcaption className='mt-2.5 border-t border-[var(--brass-line)] pt-2.5'>
+                      <figcaption className='mt-2.5'>
                         <span className='block text-[0.78125rem] leading-5 text-[var(--ink-3)]'>
                           {photo.caption}
                         </span>
@@ -126,7 +126,7 @@ export function Timeline({
                           href={photo.source}
                           target='_blank'
                           rel='noreferrer'
-                          className='mt-1.5 block font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+                          className='mt-1 block text-[0.6875rem] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
                         >
                           {photo.credit} · {photo.license}
                         </a>

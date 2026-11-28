@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRightIcon, CaretDownIcon, CrosshairIcon, MagnifyingGlassIcon, XIcon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, CaretDownIcon, CrosshairIcon, FirstAidKitIcon, MagnifyingGlassIcon, MapPinIcon, StackIcon, UmbrellaIcon, WavesIcon, XIcon, type Icon } from '@phosphor-icons/react'
 import { Select, Skeleton } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { type CSSProperties, type ReactNode, useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
@@ -98,7 +98,7 @@ function Search({ places, onBarangay, onTown, onLocate, locating }: { places: Pl
 	const shown = open && hits.length > 0
 	return (
 		<div className='relative'>
-			<MagnifyingGlassIcon size={15} weight='bold' className='pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--ink-3)]' aria-hidden='true' />
+			<MagnifyingGlassIcon size={15} weight='bold' className='pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--ink-3)]' aria-hidden='true' />
 			<input
 				type='search'
 				role='combobox'
@@ -131,19 +131,19 @@ function Search({ places, onBarangay, onTown, onLocate, locating }: { places: Pl
 						setOpen(false)
 					}
 				}}
-				className='h-10 w-full min-w-0 border border-[var(--rule)] bg-[var(--paper)] pl-9 pr-11 text-[0.875rem] text-[var(--ink)] placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
+				className='h-11 w-full min-w-0 rounded-full border border-[var(--rule)] bg-[var(--paper)] pl-10 pr-12 text-[0.875rem] text-[var(--ink)] placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 			/>
 			<button
 				type='button'
 				onClick={onLocate}
 				aria-label={locating ? 'Finding you' : 'Find places near me'}
 				title='Near me'
-				className={`absolute right-1 top-1/2 inline-flex size-8 -translate-y-1/2 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--accent)] ${locating ? 'animate-pulse text-[var(--accent)]' : ''}`}
+				className={`absolute right-1.5 top-1/2 inline-flex size-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full hover:bg-[var(--paper-2)] text-[var(--ink-3)] transition hover:text-[var(--accent)] ${locating ? 'animate-pulse text-[var(--accent)]' : ''}`}
 			>
 				<CrosshairIcon size={17} weight='bold' aria-hidden='true' />
 			</button>
 			{shown ? (
-				<ul id='prep-search-list' role='listbox' className='absolute inset-x-0 top-full z-30 mt-1 max-h-80 overflow-y-auto border border-[var(--rule)] bg-[var(--paper)] py-1 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.4)]'>
+				<ul id='prep-search-list' role='listbox' className='absolute inset-x-0 top-full z-30 mt-1.5 max-h-80 overflow-y-auto rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.4)]'>
 					{hits.map((h, i) => (
 						<li
 							key={`${h.kind}-${h.psgc}`}
@@ -152,7 +152,7 @@ function Search({ places, onBarangay, onTown, onLocate, locating }: { places: Pl
 							aria-selected={i === active}
 							onMouseDown={(e) => (e.preventDefault(), choose(h))}
 							onMouseEnter={() => setActive(i)}
-							className={`cursor-pointer px-3 py-1.5 text-[0.84375rem] ${i === active ? 'bg-[var(--paper-2)]' : ''}`}
+							className={`cursor-pointer rounded-xl px-3 py-1.5 text-[0.84375rem] ${i === active ? 'bg-[var(--paper-2)]' : ''}`}
 						>
 							<span className='font-semibold'>{h.name}</span>
 							<span className='block text-[0.71875rem] text-[var(--ink-3)]'>
@@ -164,6 +164,11 @@ function Search({ places, onBarangay, onTown, onLocate, locating }: { places: Pl
 			) : null}
 		</div>
 	)
+}
+
+/** A control's icon in the map's header (user decision: icons, no borders); the next control follows it closely. */
+function HeadIcon({ Glyph }: { Glyph: Icon }) {
+	return <Glyph size={15} weight='duotone' aria-hidden='true' className='-mr-6 shrink-0 text-[var(--accent)]' />
 }
 
 /** A dropdown in the header, drawn as the editorial Select's plain trigger (a label, then the value and a
@@ -210,7 +215,7 @@ function Menu({ label, value, width = 340, shut = 0, children }: { label: string
 				{value}
 				<CaretDownIcon size={11} weight='bold' aria-hidden='true' className={`shrink-0 text-[var(--ink-3)] transition-transform ${open ? 'rotate-180' : ''}`} />
 			</button>
-			<div ref={panel} id={`${id}-panel`} popover='auto' style={place} className='fixed inset-auto m-0 overflow-visible border border-[var(--rule)] bg-[var(--paper)] p-1.5 text-[0.84375rem] text-[var(--ink)] shadow-[0_16px_40px_rgba(0,0,0,0.28)]'>
+			<div ref={panel} id={`${id}-panel`} popover='auto' style={place} className='fixed inset-auto m-0 overflow-visible rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-1.5 text-[0.84375rem] text-[var(--ink)] shadow-[0_16px_40px_rgba(0,0,0,0.28)]'>
 				{children}
 			</div>
 		</div>
@@ -240,7 +245,7 @@ function FacilityMenu({ kinds, counts, onToggle }: { kinds: FacilityKind[]; coun
 			<ul>
 				{kinds.map((k) => (
 					<li key={k.id}>
-						<label className='flex cursor-pointer items-center gap-2.5 px-2.5 py-2 transition hover:bg-[var(--paper-2)]'>
+						<label className='flex cursor-pointer items-center gap-2.5 rounded-xl px-2.5 py-2 transition hover:bg-[var(--paper-2)]'>
 							<input type='checkbox' checked={k.on} onChange={() => onToggle(k.id)} className='accent-[var(--accent)]' />
 							<KindBadge kind={k.id} color={k.color} />
 							<span className={`flex-1 ${k.on ? '' : 'text-[var(--ink-3)]'}`}>{k.label}</span>
@@ -268,7 +273,7 @@ function Exposure({ place }: { place: Place }) {
 							<span className='font-semibold'>{h.label}</span>
 							<span className='text-[var(--ink-3)]'>{none ? (h.id === 'flood' && place.prov === 'tawi-tawi' ? 'Not modelled' : 'None mapped') : `${pct((v[1] + v[2]) / a)} medium or high`}</span>
 						</p>
-						<span className='mt-1 flex h-2 overflow-hidden bg-[var(--paper-2)]'>
+						<span className='mt-1 flex h-2 overflow-hidden rounded-full bg-[var(--paper-2)]'>
 							{v.map((x, i) => (
 								<span key={i} style={{ width: `${Math.min(100, (x / a) * 100)}%`, background: CLASS_COLORS[i] }} title={`${CLASS_LABELS[i]}: ${pct(x / a)}`} />
 							))}
@@ -280,8 +285,8 @@ function Exposure({ place }: { place: Place }) {
 	)
 }
 
-const select = 'h-10 w-full min-w-0 border border-[var(--rule)] bg-[var(--paper)] px-2 text-[0.875rem] text-[var(--ink)]'
-const label = 'font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink-3)]'
+const select = 'h-10 w-full min-w-0 cursor-pointer rounded-full border border-[var(--rule)] bg-[var(--paper)] px-4 text-[0.875rem] text-[var(--ink)]'
+const label = 'font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 const VIEWS: { id: View; label: string }[] = [
 	{ id: 'zones', label: 'NOAH’s zones' },
 	{ id: 'heat', label: 'Heat' },
@@ -485,16 +490,29 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 				if (window.location.hash.startsWith('#map')) history.replaceState(null, '', window.location.pathname + window.location.search)
 			}}
 			aria-label='Hazard and preparedness map'
-			className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
+			className='prep-map m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
 		>
-			{/* The header is the hazard and how it is drawn, and the way out, on the dark ground. */}
-			<div className='bb-ground flex shrink-0 items-start justify-between gap-4 border-b border-[var(--rule)] px-4 py-2 [color-scheme:dark] lg:items-center lg:px-6'>
+			{/* The header in the travel look, as Incident Watch's map (user decision): light, the map's name on a tile, each
+			    control with its icon and no border (globals.css, .inc-map-head), the way out a round button. */}
+			<div className='inc-map-head flex shrink-0 items-center justify-between gap-4 border-b border-[var(--rule)] bg-[var(--paper)] px-4 py-3 lg:px-6'>
 				{/* The hazard and how to draw it, as the accident map's header does its filters: plain dropdowns on the dark ground. */}
-				<div className='flex min-w-0 flex-1 flex-wrap items-center gap-x-6 gap-y-1'>
-					<p className='hidden text-[0.875rem] font-extrabold tracking-[-0.01em] text-[var(--ink)] xl:block'>Hazard and preparedness map</p>
+				<div className='hidden shrink-0 items-center gap-3 xl:flex'>
+					<span className='grid size-10 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
+						<UmbrellaIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
+					<span>
+						<span className='block font-[family-name:var(--font-display)] text-[1rem] font-bold leading-tight text-[var(--ink)]'>Preparedness</span>
+						<span className='block text-[0.75rem] text-[var(--ink-3)]'>Hazards from Project NOAH</span>
+					</span>
+				</div>
+				<div className='flex min-w-0 flex-1 flex-wrap items-center gap-x-8 gap-y-1 xl:pl-6'>
+					<HeadIcon Glyph={WavesIcon} />
 					<Select label='Hazard' value={hazard ?? 'none'} onChange={(v) => setHazard(v === 'none' ? null : (v as HazardId))} options={[...HAZARDS.map((h): [string, string] => [h.id, h.label]), ['none', 'None']]} plain />
+					<HeadIcon Glyph={StackIcon} />
 					<Select label='Show' value={view} onChange={(v) => setView(v as View)} options={VIEWS.map((v): [string, string] => [v.id, v.label])} plain />
+					<HeadIcon Glyph={FirstAidKitIcon} />
 					<FacilityMenu kinds={kinds} counts={counts} onToggle={(id) => setKinds(kinds.map((x) => (x.id === id ? { ...x, on: !x.on } : x)))} />
+					<HeadIcon Glyph={MapPinIcon} />
 					<Menu label='Place' value={<span className='max-w-[12rem] truncate'>{place ? place.name : 'Find a place'}</span>} width={380} shut={shut}>
 						<div className='p-2.5'>
 							<p className='mb-2 text-[0.78125rem] text-[var(--ink-3)]'>Search, tap the crosshair for places near you, or tap a barangay on the map.</p>
@@ -531,7 +549,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 						</div>
 					</Menu>
 				</div>
-				<button type='button' onClick={() => dialog.current?.close()} aria-label='Close map' className='inline-flex h-10 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'>
+				<button type='button' onClick={() => dialog.current?.close()} aria-label='Close map' className='inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] text-[var(--ink-2)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'>
 					<XIcon size={16} weight='bold' aria-hidden='true' />
 				</button>
 			</div>
@@ -542,7 +560,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 
 					{/* The legend sits on the map it explains. On a phone it gives way to a picked place or facility. */}
 					{hz ? (
-						<div className={`absolute bottom-3 left-3 z-10 w-auto max-w-[calc(100%-1.5rem)] border lg:w-[19rem] border-[var(--rule)] bg-[var(--paper)]/95 p-3.5 shadow-[0_18px_40px_-22px_rgba(0,0,0,0.45)] backdrop-blur ${place || facility ? 'max-lg:hidden' : ''}`}>
+						<div className={`absolute bottom-3 left-3 z-10 w-auto max-w-[calc(100%-1.5rem)] rounded-[1.25rem] lg:w-[19rem] bg-[var(--paper)] p-4 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.5)] ${place || facility ? 'max-lg:hidden' : ''}`}>
 							<p className={label}>
 								{hz.label} · {view === 'heat' ? 'where it gathers' : view === 'barangays' ? 'by barangay' : 'NOAH’s zones'}
 							</p>
@@ -557,7 +575,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 											[CLASS_COLORS[2], '50%+'],
 										].map(([c, t]) => (
 											<span key={t}>
-												<span className='block h-2' style={{ background: c }} />
+												<span className='block h-2 rounded-full' style={{ background: c }} />
 												<span className='mt-1 block tabular-nums'>{t}</span>
 											</span>
 										))}
@@ -569,7 +587,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 									<ul className='mt-2 flex gap-x-3 gap-y-1 text-[0.75rem] lg:block lg:space-y-1'>
 										{hz.classes.map((c, i) => (
 											<li key={c} className='flex items-center gap-2'>
-												<span className='size-3 shrink-0' style={{ background: CLASS_COLORS[i] }} /> <span className='font-semibold'>{CLASS_LABELS[i]}</span> <span className='truncate text-[var(--ink-3)] max-lg:hidden'>{c}</span>
+												<span className='size-3 shrink-0 rounded-full' style={{ background: CLASS_COLORS[i] }} /> <span className='font-semibold'>{CLASS_LABELS[i]}</span> <span className='truncate text-[var(--ink-3)] max-lg:hidden'>{c}</span>
 											</li>
 										))}
 									</ul>
@@ -584,7 +602,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 
 					{/* On a phone the panel is below the fold, so the picked place is summed up on the map. */}
 					{place && !facility ? (
-						<div className='absolute inset-x-3 bottom-3 z-10 bg-[var(--paper)] p-4 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] lg:hidden'>
+						<div className='absolute inset-x-3 bottom-3 z-10 rounded-[1.25rem] bg-[var(--paper)] p-5 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.5)] lg:hidden'>
 							<div className='flex items-start justify-between gap-3'>
 								<div className='min-w-0'>
 									<p className='truncate text-[1rem] font-extrabold leading-tight'>{place.name}</p>
@@ -605,7 +623,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 					) : null}
 
 					{facility ? (
-						<div className='absolute inset-x-3 bottom-3 z-10 bg-[var(--paper)] p-4 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)] lg:inset-x-auto lg:bottom-4 lg:right-4 lg:w-[22rem]'>
+						<div className='absolute inset-x-3 bottom-3 z-10 rounded-[1.25rem] bg-[var(--paper)] p-5 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.5)] lg:inset-x-auto lg:bottom-4 lg:right-4 lg:w-[22rem]'>
 							<div className='flex items-start justify-between gap-3'>
 								<p className='flex items-center gap-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.1em]' style={{ color: color[facility.kind] }}>
 									<KindBadge kind={facility.kind} color={color[facility.kind] ?? '#888'} size={16} /> {kindLabel[facility.kind]}
@@ -626,15 +644,15 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 
 				{/* The panel: the picked place, read; with nothing picked there is nothing to say, so there is no panel. */}
 				{panel ? (
-				<aside className='flex min-h-0 flex-col overflow-y-auto border-t border-[var(--rule)] lg:border-l lg:border-t-0'>
+				<aside className='flex min-h-0 flex-col overflow-y-auto border-t border-[var(--rule)] bg-[#f6f3ee] [scrollbar-width:thin] dark:bg-[var(--paper-2)] lg:border-l lg:border-t-0'>
 
-						<section className='border-b border-[var(--rule)] bg-[var(--paper-2)] px-6 py-6'>
+						<section className='px-5 py-6'>
 							{place ? (
 								<>
 									<div className='flex items-start justify-between gap-3'>
 										<div>
 											<p className={label}>Barangay</p>
-											<p className='mt-1 text-[1.375rem] font-extrabold leading-tight tracking-[-0.015em]'>{place.name}</p>
+											<p className='mt-1 font-[family-name:var(--font-display)] text-[1.5rem] font-bold leading-tight tracking-[-0.025em]'>{place.name}</p>
 											<p className='mt-0.5 text-[0.78125rem] text-[var(--ink-3)]'>
 												{place.town}, {PROVINCE_NAMES[place.prov] ?? place.prov}
 											</p>
@@ -643,7 +661,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 											<XIcon size={16} weight='bold' />
 										</button>
 									</div>
-									<dl className='mt-3 grid grid-cols-2 gap-3 border-y border-[var(--rule)] py-3'>
+									<dl className='mt-4 grid grid-cols-2 gap-3 rounded-2xl bg-[var(--paper)] p-4'>
 										<div>
 											<dt className='text-[0.6875rem] text-[var(--ink-3)]'>Land</dt>
 											<dd className='text-[0.9375rem] font-bold tabular-nums'>{place.area < 10 ? place.area.toFixed(1) : Math.round(place.area)} km²</dd>
@@ -669,7 +687,7 @@ export function PreparednessMap({ kinds: initialKinds }: { kinds: FacilityKind[]
 												<p className='flex items-center gap-1.5 text-[0.75rem] font-semibold'>
 													<KindBadge kind={kind.id} color={kind.color} size={16} /> {kind.label}
 												</p>
-												<ul className='mt-1 divide-y divide-[var(--rule)] border-y border-[var(--rule)]'>
+												<ul className='mt-1.5 divide-y divide-[var(--rule-soft)] rounded-2xl bg-[var(--paper)] px-4'>
 													{list.map(({ f, d }) => (
 														<li key={f.id}>
 															<button

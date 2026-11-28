@@ -1,30 +1,34 @@
-import { MapTrifoldIcon } from '@phosphor-icons/react/ssr'
+import { accidents } from '../_lib/accidents'
+import { PhotoHero } from './photo-hero'
+import { RegionMapCard } from './region-map-card'
 
 /* ============================================================
-   The way into the map, in the band at the top of the page
+   The way into the map, as the page's header
 
-   The map is a dialog, so the page opens on a door to it: a line of
-   words and a button. The button is a plain link to `#map`; the dialog
-   listens for the hash and opens, so nothing here needs to be a client
-   component or share state with the map.
+   The map is a dialog, so the page opens on a door to it: the words on
+   the left (the headline wider, user decision), and on the right the map
+   itself as a card, always there (user decision): the region drawn from
+   the same PSA outlines as the front page's map, the count of what is on
+   it, and the button. Every link is a plain `#map`; the dialog listens
+   for the hash and opens, so nothing here needs to be a client component.
+   No dots are drawn on the card: they would need the map's projection,
+   and a card that only looked like the data would not be the data.
    ============================================================ */
+
+function MapCard() {
+	const since = Math.min(...accidents.map((a) => Number(a.date.slice(0, 4))))
+	const dead = accidents.reduce((n, a) => n + (a.deaths ?? 0), 0)
+	return <RegionMapCard corner={`Since ${since}`} value={accidents.length.toLocaleString('en-PH')} caption={`incidents mapped · ${dead.toLocaleString('en-PH')} dead`} />
+}
 
 export function AccidentOpener() {
 	return (
-		<div className='flex flex-wrap items-center justify-between gap-8'>
-			<div className='max-w-[48rem]'>
-				<p className='bb-label'>Interactive map</p>
-				<h1 className='mt-2 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>
-					Every incident on one map, with the report behind each mark.
-				</h1>
-				<p className='mt-3 text-[0.96875rem] leading-[1.65] text-[var(--ink-2)]'>
-					Heat for where it keeps happening; dots coloured by kind and sized by deaths. Filters, details and each report down the left.
-				</p>
-			</div>
-			<a href='#map' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[0.65625rem]'>
-				<MapTrifoldIcon size={15} weight='bold' aria-hidden='true' />
-				Open the map
-			</a>
-		</div>
+		<PhotoHero
+			photos={['cotabatoPlaza', 'lakeLanao', 'budBongao']}
+			kicker='Incident Watch · interactive map'
+			title={<span className='block text-[clamp(2.5rem,4.6vw,4.25rem)] leading-[1.02]'>Every incident on one map, with the report behind each mark.</span>}
+			lede='Heat for where it keeps happening; dots coloured by kind and sized by deaths. Filters, details and each report down the left.'
+			side={<MapCard />}
+		/>
 	)
 }

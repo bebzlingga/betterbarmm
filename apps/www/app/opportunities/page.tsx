@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import jobsFile from '../../../../datasets/opportunities/jobs.json'
 import programsFile from '../../../../datasets/opportunities/scholarships.json'
 import { GetInvolved } from '../_components/get-involved'
+import { PhotoHero } from '../_components/photo-hero'
 import { SiteHeader } from '../_components/site-header'
 import { pageMeta } from '../_lib/seo'
 import { DaysLeft } from './days-left'
@@ -55,10 +56,10 @@ function JobCard({ j }: { j: Job }) {
 		['Training', j.training],
 	].filter(([, v]) => v) as [string, string][]
 	return (
-		<li className='border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+		<li className='rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
 			<div className='flex flex-wrap items-start justify-between gap-x-6 gap-y-2'>
 				<div className='min-w-0'>
-					<h3 className='text-[1.0625rem] font-extrabold leading-snug tracking-[-0.01em]'>{j.title}</h3>
+					<h3 className='font-[family-name:var(--font-display)] text-[1.125rem] font-bold leading-snug tracking-[-0.02em]'>{j.title}</h3>
 					<p className='mt-1 text-[0.84375rem] leading-[1.5] text-[var(--ink-2)]'>
 						{j.office}
 						{j.assignment ? <span className='text-[var(--ink-3)]'> · {j.assignment}</span> : null}
@@ -92,7 +93,7 @@ function JobCard({ j }: { j: Job }) {
 				</dl>
 			) : null}
 			<div className='mt-4 flex flex-wrap items-center gap-x-5 gap-y-2'>
-				<a href={j.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1.5 bg-[var(--accent)] px-3.5 py-2 text-[0.8125rem] font-semibold text-white hover:opacity-90'>
+				<a href={j.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1.5 rounded-full bg-[var(--accent)] px-4 py-2 text-[0.8125rem] font-semibold text-white hover:opacity-90'>
 					Apply on the Bangsamoro Job Portal <ArrowUpRightIcon size={12} weight='bold' aria-hidden='true' />
 				</a>
 				{j.description || j.howToApply ? (
@@ -112,9 +113,9 @@ function JobCard({ j }: { j: Job }) {
 function ProgramCard({ p }: { p: Program }) {
 	const closed = p.status.state === 'closed'
 	return (
-		<li className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5'>
+		<li className='flex flex-col rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
 			<p className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{p.office}</p>
-			<h3 className='mt-1.5 text-[1rem] font-extrabold leading-snug tracking-[-0.01em]'>{p.name}</h3>
+			<h3 className='mt-1.5 font-[family-name:var(--font-display)] text-[1.0625rem] font-bold leading-snug tracking-[-0.02em]'>{p.name}</h3>
 			{p.summary ? <p className='mt-2 text-[0.84375rem] leading-[1.6] text-[var(--ink-2)]'>{p.summary}</p> : null}
 			{p.for.length ? <p className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>For: {p.for.map((f) => FOR[f] ?? f).join(', ')}</p> : null}
 			{p.how ? <p className='mt-2 text-[0.8125rem] leading-[1.55] text-[var(--ink-2)]'><b className='font-semibold'>How to apply:</b> {p.how}</p> : null}
@@ -150,33 +151,34 @@ export default function OpportunitiesPage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<div className='bb-container relative py-14 md:py-20'>
-					<p className='bb-label'>Jobs, scholarships and training</p>
-					<h1 className='mt-2 max-w-[48rem] text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>Open calls from the Bangsamoro Government, in one place.</h1>
-					<p className='mt-3 max-w-[44rem] text-[0.96875rem] leading-[1.65] text-[var(--ink-2)]'>
-						Government jobs as the Bangsamoro Job Portal lists them, and the region’s scholarships and paid training as each office describes them. We take no applications: every item links to where you apply.
-					</p>
-					<nav aria-label='On this page' className='mt-7 flex flex-wrap gap-2'>
-						<a href='#jobs' className='rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] hover:border-[var(--ink)]'>
-							Jobs <span className='text-[var(--ink-3)]'>{jobs.length}</span>
-						</a>
-						{groups.map(({ k, list }) => (
-							<a key={k} href={`#${k}`} className='rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink)] hover:border-[var(--ink)]'>
-								{KIND[k].label} <span className='text-[var(--ink-3)]'>{list.length}</span>
+			<PhotoHero
+				photos={['governmentCenter', 'yakanWeaving', 'chiefMinisterOffice']}
+				kicker='Jobs, scholarships and training'
+				title='Open calls from the Bangsamoro Government, in one place.'
+				lede='Government jobs as the Bangsamoro Job Portal lists them, and the region’s scholarships and paid training as each office describes them. We take no applications: every item links to where you apply.'
+			>
+				<nav aria-label='On this page' className='mt-8 flex flex-wrap gap-2'>
+					<a href='#jobs' className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
+						<BriefcaseIcon size={14} weight='bold' aria-hidden='true' /> Jobs <span className='text-white/60'>{jobs.length}</span>
+					</a>
+					{groups.map(({ k, list }) => {
+						const Glyph = KIND[k].icon
+						return (
+							<a key={k} href={`#${k}`} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
+								<Glyph size={14} weight='bold' aria-hidden='true' /> {KIND[k].label} <span className='text-white/60'>{list.length}</span>
 							</a>
-						))}
-					</nav>
-				</div>
-			</section>
+						)
+					})}
+				</nav>
+			</PhotoHero>
 
-			<div className='bb-container py-14 lg:py-20'>
-				<section id='jobs' aria-labelledby='jobs-title' className='scroll-mt-24'>
-					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-						<h2 id='jobs-title' className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>
+			<div className='bb-container pb-24 pt-16 lg:pb-32 lg:pt-20'>
+				<section id='jobs' aria-labelledby='jobs-title' className='scroll-mt-8'>
+					<div>
+						<h2 id='jobs-title' className='dv-title'>
 							Open jobs <span className='text-[var(--ink-mute)]'>{jobs.length}</span>
 						</h2>
-						<p className='text-[0.84375rem] text-[var(--ink-3)]'>
+						<p className='dv-lede'>
 							{hiring.length ? `Hiring now: ${hiring.map((o) => `${o.name} (${o.open})`).join(', ')}.` : 'No office is hiring on the portal right now.'} Read {day(jobsFile.generatedAt)}.
 						</p>
 					</div>
@@ -201,9 +203,11 @@ export default function OpportunitiesPage() {
 				{groups.map(({ k, list }) => {
 					const Icon = KIND[k].icon
 					return (
-						<section key={k} id={k} aria-labelledby={`${k}-title`} className='mt-16 scroll-mt-24'>
-							<h2 id={`${k}-title`} className='flex items-center gap-2.5 text-[1.625rem] font-extrabold tracking-[-0.02em]'>
-								<Icon size={24} weight='duotone' className='text-[var(--accent)]' aria-hidden='true' />
+						<section key={k} id={k} aria-labelledby={`${k}-title`} className='mt-20 scroll-mt-8'>
+							<h2 id={`${k}-title`} className='dv-title flex items-center gap-3'>
+								<span className='grid size-11 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)]'>
+									<Icon size={24} weight='duotone' className='text-[var(--accent)]' aria-hidden='true' />
+								</span>
 								{KIND[k].label} <span className='text-[var(--ink-mute)]'>{list.length}</span>
 							</h2>
 							<ul className='mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>

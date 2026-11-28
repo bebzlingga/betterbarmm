@@ -18,6 +18,8 @@ const nextConfig: NextConfig = {
 	// Places moved to the travel workspace as Travel & Places (user decision); old links follow it there.
 	async redirects() {
 		return [
+			// Incident Watch moved from /accidents to /incidents (user decision); old links follow it.
+			{ source: '/accidents', destination: '/incidents', permanent: true },
 			{ source: '/places', destination: 'https://travel.betterbarmm.com', permanent: true },
 			// A place's slug only: the photos under /places/ ("…__1.jpg") stay here, and the travel app links to them.
 			{ source: '/places/:slug([a-z0-9-]+)', destination: 'https://travel.betterbarmm.com/places/:slug', permanent: true },

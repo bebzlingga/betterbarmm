@@ -1,22 +1,24 @@
 'use client'
 
-import { PageSkeleton } from '@betterbarmm/editorial'
 import { usePathname } from 'next/navigation'
 import { SiteHeader } from './_components/site-header'
 import {
 	ArticleSkeleton,
+	CardsSkeleton,
 	ChapterSkeleton,
 	DirectorySkeleton,
+	FilterRowSkeleton,
 	DiscoverSkeleton,
 	ExplainersSkeleton,
+	HeroSkeleton,
 	HomeSkeleton,
 	NewsSkeleton,
 } from './_components/page-skeletons'
 
-/* What a page shows while it streams in: its shape in grey (user decision), matched to the page coming — its band,
-   its alignment, its padding, and for the main pages their structure and placement (user decision), block for block. Each page draws its own header, so the skeleton does too, or the bar would vanish while
-   the next page loads. A client component only to read the path: the front page, the directory, the news, the
-   services and each explainer open on a centred band, every other page on a masthead ranged left. */
+/* What a page shows while it streams in: its shape in grey (user decision), matched to the page coming, block for
+   block. Each page draws its own header, so the skeleton does too, or the bar would vanish while the next page loads.
+   Every page now opens on the photograph header (the travel look), so the skeleton does too, dark, under the clear
+   bars. A client component only to read the path. */
 export default function Loading() {
 	const path = usePathname()
 	// The pages drawn in their own shape (page-skeletons.tsx); every other page on the shared one.
@@ -27,18 +29,23 @@ export default function Loading() {
 		: path === '/news' ? <NewsSkeleton />
 		: path === '/explainers' ? <ExplainersSkeleton />
 		: path.startsWith('/explainers/') ? <ArticleSkeleton />
-		: path === '/directory' ? <DirectorySkeleton />
+		: path === '/directory' || path.startsWith('/directory/') ? <DirectorySkeleton />
 		: null
+	// Every other page opens on the photograph header: centred where the page is a front door (services, about,
+	// contact, contribute: PageBand), ranged left elsewhere (Masthead), then its body as rounded cards.
+	const centred = ['/services', '/services/lgu', '/about', '/contact', '/contribute'].includes(path)
+	const services = path === '/services' || path === '/services/lgu'
 	return (
 		<>
 			<SiteHeader activeItem={path.startsWith('/discover') ? 'discover' : undefined} />
-			{own ??
-				(path === '/services' || path === '/services/lgu' ? (
-					// The ways in under the words, not a field.
-					<PageSkeleton center pad='py-16 lg:py-24' field='mt-8 h-[2.1rem] max-w-md rounded-full' />
-				) : (
-					<PageSkeleton />
-				))}
+			{own ?? (
+				<div role='status'>
+					<span className='sr-only'>Loading…</span>
+					<HeroSkeleton center={centred} field={services} chips={centred ? 4 : 0} />
+					{services ? <FilterRowSkeleton /> : null}
+					<CardsSkeleton />
+				</div>
+			)}
 		</>
 	)
 }

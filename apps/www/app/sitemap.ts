@@ -22,7 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		page('', 1, 'daily'),
 		page('/discover', 0.9),
 		...discoverBarmmTopics.map((topic) => page(`/discover/${topic.slug}`, 0.8, 'monthly')),
-		page('/accidents', 0.8, 'daily'),
+		page('/incidents', 0.8, 'daily'),
 		page('/preparedness', 0.8, 'monthly'),
 		// Programs & services is hidden for now: back in when its link returns to the header.
 		page('/directory', 0.8, 'monthly'),

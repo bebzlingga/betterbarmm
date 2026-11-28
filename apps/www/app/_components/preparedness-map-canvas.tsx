@@ -313,15 +313,15 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 
 	return (
 		<>
-			<div className='absolute left-2 top-2 z-10 flex gap-2'>
+			<div className='absolute left-3 top-3 z-10 flex gap-2'>
 				<button
 					type='button'
 					onClick={() => map?.fitBounds(BOUNDS, { padding: 24, duration: 800 })}
-					className='flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[0.75rem] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
+					className='flex h-9 cursor-pointer items-center rounded-full border border-[var(--rule)] bg-[var(--paper)] px-4 text-[0.75rem] font-semibold text-[var(--ink)] shadow-[0_10px_22px_-14px_rgba(0,0,0,0.45)] transition hover:text-[var(--accent)]'
 				>
 					Whole region
 				</button>
-				<div role='group' aria-label='Map view' className='flex h-8 overflow-hidden rounded-md border border-[var(--rule)] bg-[var(--paper)] text-[0.75rem] font-semibold shadow-sm'>
+				<div role='group' aria-label='Map view' className='flex h-9 overflow-hidden rounded-full border border-[var(--rule)] bg-[var(--paper)] p-0.5 text-[0.75rem] font-semibold shadow-[0_10px_22px_-14px_rgba(0,0,0,0.45)]'>
 					{(['2D', '3D'] as const).map((m) => {
 						const on = (m === '3D') === three
 						return (
@@ -330,7 +330,7 @@ function Layers({ hazard, view, facilities, kinds, heat, selected, focus, me, on
 								type='button'
 								aria-pressed={on}
 								onClick={() => setThree(m === '3D')}
-								className={`cursor-pointer px-2.5 transition ${on ? 'bg-[var(--ink)] text-[var(--paper)]' : 'text-[var(--ink)] hover:text-[var(--accent)]'}`}
+								className={`cursor-pointer rounded-full px-3 transition ${on ? 'bg-[var(--ink)] text-[var(--paper)]' : 'text-[var(--ink)] hover:text-[var(--accent)]'}`}
 							>
 								{m}
 							</button>

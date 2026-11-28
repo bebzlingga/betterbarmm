@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks, ESTATE_LINKS } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, BrandLogo, UtilityMenuLinks, ESTATE_LINKS } from '@betterbarmm/editorial'
 // import { MapDialog } from './map-dialog'
 import { ThemeToggle } from './theme-toggle'
 
@@ -150,15 +150,13 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const closeMenu = () => setIsMenuOpen(false)
 
-	// The ducking lives in the shared hook, because five other workspaces want the same bar.
-	const { hidden } = useHeaderScroll(isMenuOpen)
 
 	return (
 		<>
 			<UtilityBar
 					current='home'
 					project={activeItem === 'accidents' || activeItem === 'preparedness' || activeItem === 'crafts' || activeItem === 'data' ? activeItem : undefined}
-					className='bb-strip bg-[var(--paper-2)]'
+					className='bb-strip site-strip bg-[var(--paper-2)]'
 					switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 					end={
 						<>
@@ -174,10 +172,12 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 					}
 				/>
 
-		<motion.header
-			animate={{ y: hidden ? '-100%' : '0%' }}
-			transition={{ duration: 0.42, ease: EASE }}
-			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl transition-colors duration-500'
+		{/* As in travel (user decision: the travel look): the masthead stays at the top of the page and scrolls away with
+		    it. Over a page that opens on a photograph header (.dv-hero) it and the strip run clear (globals.css), unless
+		    the phone menu is open. */}
+		<header
+			data-menu={isMenuOpen}
+			className='site-head relative z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl transition-colors duration-500'
 		>
 			<div>
 				<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
@@ -298,7 +298,7 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 							<p className='bb-label mt-7'>Project</p>
 							<div className='mt-3 grid'>
-								{[...secondaryLinks, { key: 'accidents', href: '/accidents', label: 'Incident Watch' } as const, { key: 'preparedness', href: '/preparedness', label: 'Preparedness' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const].map((item) => (
+								{[...secondaryLinks, { key: 'accidents', href: '/incidents', label: 'Incident Watch' } as const, { key: 'preparedness', href: '/preparedness', label: 'Preparedness' } as const, { key: 'crafts', href: '/crafts', label: 'Crafts' } as const].map((item) => (
 									<Fragment key={item.href}>
 										<Link
 											href={item.href}
@@ -356,7 +356,7 @@ export function SiteHeader({ activeItem }: SiteHeaderProps) {
 
 			{/* How far down the document the reader is. */}
 			<ScrollProgress />
-		</motion.header>
+		</header>
 		</>
 	)
 }

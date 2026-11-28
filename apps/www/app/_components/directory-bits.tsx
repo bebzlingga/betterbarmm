@@ -1,8 +1,8 @@
 import type { Icon } from '@phosphor-icons/react'
 import { ArrowUpRightIcon, EnvelopeSimpleIcon, FireIcon, FirstAidIcon, HouseIcon, PhoneIcon, ShieldIcon, SirenIcon } from '@phosphor-icons/react/ssr'
 import { LINE_LABEL, telHref, type Line, type LguEmail } from '../_lib/directory'
-import { PhotoCredit } from './discover-figure'
-import { Masthead } from './masthead'
+import type { DiscoverPhotoKey } from './discover-media'
+import { BRAND_HEAD, HeroPattern } from './photo-hero'
 
 /* The pieces every directory page shares: a number you can tap, a block of service lines, a crumb trail. */
 
@@ -106,7 +106,7 @@ export function LguEmailBlock({ email, className = 'mt-8' }: { email: LguEmail |
 	if (!email) return null
 	return (
 		<div className={className}>
-			<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Email</p>
+			<p className='mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Email</p>
 			<ul className='space-y-1 text-[0.875rem] leading-6'>
 				{email.emails.map((e) => (
 					<li key={e} className='flex gap-2'>
@@ -128,33 +128,40 @@ type HeadPhoto = { src: string; alt: string; credit: { credit: string; license: 
 /** `className` sizes the logo where the default is too big for it, as a seal is. */
 type HeadLogo = { src: string; alt: string; title: string; className?: string }
 
-/** A directory dialog's band: its label and name over the crimson ground, the place's or the office's photograph
- * blended into that ground where there is one, and its logo or seal on the left of its name. */
-export function DirectoryHead({ label, name, photo, logo }: { label: string; name: string; photo: HeadPhoto | null; logo: HeadLogo | null }) {
+/** A directory dialog's header, in the travel look with the pattern header (user decision: no photographs behind the
+ * directory's headers): the brand crimson and its lattice, its seal or logo on a white tile at the top left of its
+ * name. Compact, since it opens inside a panel with no bars over it. `photo` and `discover` are still accepted, as the
+ * pages pass them, but no longer drawn. */
+export function DirectoryHead({
+	label,
+	name,
+	logo,
+}: {
+	label: string
+	name: string
+	photo?: HeadPhoto | null
+	logo: HeadLogo | null
+	discover?: DiscoverPhotoKey
+}) {
 	return (
-		<Masthead
-			brand
-			label={label}
-			lines={[name]}
-			backdrop={
-				photo ? (
-					<span className='absolute inset-0'>
-						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img src={photo.src} alt={photo.alt} className='absolute inset-0 size-full object-cover opacity-45 mix-blend-luminosity' />
-						{/* The crimson comes back over the left, so the name reads; the photograph shows through on the right. */}
-						<span aria-hidden='true' className='absolute inset-0 bg-[linear-gradient(90deg,var(--paper)_20%,color-mix(in_srgb,var(--paper)_55%,transparent)_65%,transparent)]' />
-						<span className='[&_.dsc-credit]:z-10'>
-							<PhotoCredit photo={photo.credit} />
+		<header className={`${BRAND_HEAD} relative isolate overflow-hidden text-white`}>
+			<HeroPattern />
+			<div className='bb-container relative flex items-end pb-12 pt-16 md:pb-16 md:pt-20'>
+				<div className='flex w-full items-start gap-4 sm:gap-6'>
+					{logo ? (
+						<span className='grid shrink-0 place-items-center rounded-2xl bg-white p-2 shadow-[0_18px_36px_-18px_rgba(0,0,0,0.7)] sm:p-2.5'>
+							{/* eslint-disable-next-line @next/next/no-img-element */}
+							<img src={logo.src} alt={logo.alt} title={logo.title} className={`object-contain ${logo.className ?? 'size-14 md:size-20'}`} />
 						</span>
-					</span>
-				) : null
-			}
-			aside={
-				logo ? (
-					// eslint-disable-next-line @next/next/no-img-element
-					<img src={logo.src} alt={logo.alt} title={logo.title} className={`shrink-0 object-contain ${logo.className ?? 'size-16 md:size-[6.5rem]'}`} />
-				) : null
-			}
-		/>
+					) : null}
+					<div className='min-w-0 flex-1'>
+						<p className='font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-[#f1c453]'>{label}</p>
+						<h1 className='mt-2 text-balance font-[family-name:var(--font-display)] text-[clamp(1.875rem,3.6vw,3.25rem)] font-extrabold leading-[1.02] tracking-[-0.035em] text-white'>
+							{name}
+						</h1>
+					</div>
+				</div>
+			</div>
+		</header>
 	)
 }

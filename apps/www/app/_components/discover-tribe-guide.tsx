@@ -18,7 +18,7 @@ import { Reveal } from './reveal'
 function TribeRail({ tribes, active }: { tribes: BangsamoroTribe[]; active: string | null }) {
 	return (
 		<div className='sticky top-[var(--sticky-top)] z-20 transition-[top] duration-300 -mx-6 border-y border-[var(--rule)] bg-[var(--paper)]/92 px-6 backdrop-blur-md lg:-mx-8 lg:px-8'>
-			<div className='flex items-center gap-2 overflow-x-auto py-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'>
+			<div data-drag-scroll className='flex items-center gap-2 overflow-x-auto py-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'>
 				<span className='shrink-0 pr-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)]'>
 					Jump to
 				</span>
@@ -27,7 +27,7 @@ function TribeRail({ tribes, active }: { tribes: BangsamoroTribe[]; active: stri
 						key={tribe.slug}
 						href={`#tribe-${tribe.slug}`}
 						data-active={active === tribe.slug}
-						className='flex shrink-0 items-baseline gap-2 border border-[var(--rule)] px-3 py-1.5 font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition hover:border-[var(--accent)] hover:text-[var(--accent)] data-[active=true]:border-[var(--accent)] data-[active=true]:bg-[var(--accent)] data-[active=true]:text-white'
+						className='flex shrink-0 items-baseline gap-2 rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition hover:border-[var(--accent)] hover:text-[var(--accent)] data-[active=true]:border-[var(--accent)] data-[active=true]:bg-[var(--accent)] data-[active=true]:text-white'
 					>
 						<span className='opacity-60'>{String(index + 1).padStart(2, '0')}</span>
 						{tribe.name}
@@ -118,7 +118,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 						{[foodPhoto, craftPhoto].map((entry, i) =>
 							entry ? (
 								<figure key={entry.source} className='flex flex-col'>
-									<div className='dsc-frame dsc-frame-anim dsc-zoom aspect-[3/4]'>
+									<div className='dsc-frame dsc-frame-anim dsc-zoom isolate aspect-[3/4] overflow-hidden rounded-[1rem]'>
 										<Image
 											src={entry.src}
 											alt={entry.alt}
@@ -126,11 +126,11 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 											placeholder='blur'
 											className='size-full object-cover'
 										/>
-										<span className='absolute left-0 top-0 z-2 bg-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.18em] text-white'>
+										<span className='absolute left-2.5 top-2.5 z-2 rounded-full bg-[var(--accent)] px-2.5 py-1 text-[0.6875rem] font-semibold text-white'>
 											{i === 0 ? 'Table' : 'Hand'}
 										</span>
 									</div>
-									<figcaption className='mt-2.5 border-t border-[var(--rule)] pt-2.5 text-[0.71875rem] leading-5 text-[var(--ink-3)]'>
+									<figcaption className='mt-2.5 text-[0.71875rem] leading-5 text-[var(--ink-3)]'>
 										{entry.caption}{' '}
 										<a
 											href={entry.source}
@@ -155,7 +155,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 
 						return (
 							<div key={column.key}>
-								<div className='flex items-baseline justify-between gap-3 border-t border-[var(--ink)] pt-3'>
+								<div className='flex items-baseline justify-between gap-3 border-t border-[var(--rule)] pt-3'>
 									<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 										{column.eyebrow}
 									</p>
@@ -175,7 +175,7 @@ function TribeSection({ tribe, index }: { tribe: BangsamoroTribe; index: number 
 				    turns "the Yakan are known for weaving" into a woman in Lamitan who
 				    can execute every design her people have. */}
 				{tribe.livingTreasure ? (
-					<div className='mt-12 border border-[var(--rule)] bg-[var(--paper-2)] p-6 lg:p-8'>
+					<div className='mt-12 rounded-[1.25rem] border border-[var(--rule)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] p-6 lg:p-8'>
 						<div className='flex flex-wrap items-baseline gap-x-4 gap-y-2'>
 							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.2em] text-[var(--accent)]'>
 								National Living Treasure

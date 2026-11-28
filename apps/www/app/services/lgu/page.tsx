@@ -17,7 +17,7 @@ export const metadata: Metadata = pageMeta({
 	path: '/services/lgu',
 })
 
-const sectionHead = 'flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'
+const sectionHead = 'flex flex-col gap-1'
 const eyebrow = 'font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em]'
 const linkClass = 'underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'
 
@@ -63,17 +63,14 @@ export default async function LguServicesPage({ searchParams }: { searchParams: 
 					{ href: '#lgus', label: 'With a charter', icon: 'charter' },
 					{ href: '#no-charter', label: 'Without one', icon: 'none' },
 				]}
-				head={
-					<>
-						<p className='bb-label'>What your province, city or town offers</p>
-						<h1 className='bb-display-md mt-4 text-[var(--ink)]'>Programs & services</h1>
-						<p className='mx-auto mt-4 max-w-xl text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
-							{total ? `${total} services from the Citizen’s Charters of ${listed.length} of the region’s ${lgus.length} local governments` : `The Citizen’s Charters of the region’s ${lgus.length} local governments`}: who each is for, what to bring, the fee and how long it takes.
-						</p>
-					</>
-				}
+				hero={{
+					kicker: 'What your province, city or town offers',
+					title: 'Programs & services',
+					lede: `${total ? `${total} services from the Citizen’s Charters of ${listed.length} of the region’s ${lgus.length} local governments` : `The Citizen’s Charters of the region’s ${lgus.length} local governments`}: who each is for, what to bring, the fee and how long it takes.`,
+					photos: ['cotabatoPlaza', 'lakeLanao', 'budBongao'],
+				}}
 			>
-				<div className='bb-container py-14 lg:py-20'>
+				<div className='bb-container pb-24 pt-16 lg:pb-32 lg:pt-24'>
 					<WithCharter listed={listed} />
 					<WithoutCharter />
 
@@ -94,19 +91,19 @@ export default async function LguServicesPage({ searchParams }: { searchParams: 
 
 const badge = 'inline-block rounded-full px-2.5 py-0.5 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em]'
 const card =
-	'group relative flex min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+	'group relative flex min-w-0 flex-col overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 const pill = 'relative z-1 inline-flex items-center gap-1 rounded-full border border-[var(--rule)] px-2.5 py-1 text-[0.71875rem] font-semibold transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'
 
 /** The LGUs whose services are listed: cards, as the regional offices are drawn — the seal, the name, what kind of
  *  government and where, the count, and the way in at the foot. */
 function WithCharter({ listed }: { listed: Lgu[] }) {
 	return (
-		<section id='lgus' aria-labelledby='lgus-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+		<section id='lgus' aria-labelledby='lgus-title' className='scroll-mt-4'>
 			<div className={sectionHead}>
-				<h2 id='lgus-title' className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>
+				<h2 id='lgus-title' className='dv-title'>
 					With a Citizen’s Charter <span className='text-[var(--ink-mute)]'>· {listed.length}</span>
 				</h2>
-				<p className='text-[0.84375rem] text-[var(--ink-3)]'>Each page has every service: what to bring, the fee, the time and where to go.</p>
+				<p className='dv-lede'>Each page has every service: what to bring, the fee, the time and where to go.</p>
 			</div>
 			{listed.length ? (
 				<ul className='mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
@@ -151,12 +148,12 @@ function WithoutCharter() {
 	const without = lgus.filter((l) => !lguHasCharter(l))
 	const groups = LGU_GAPS.map((g) => ({ g, list: without.filter((l) => g.status.includes(l.charterStatus)) })).filter(({ list }) => list.length)
 	return (
-		<section id='no-charter' aria-labelledby='no-charter-title' className='mt-20 scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] pt-14 lg:mt-24'>
+		<section id='no-charter' aria-labelledby='no-charter-title' className='mt-20 scroll-mt-4 border-t border-[var(--rule)] pt-14 lg:mt-28 lg:pt-20'>
 			<div className={sectionHead}>
-				<h2 id='no-charter-title' className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>
+				<h2 id='no-charter-title' className='dv-title'>
 					Without one <span className='text-[var(--ink-mute)]'>· {without.length}</span>
 				</h2>
-				<p className='max-w-xl text-[0.84375rem] text-[var(--ink-3)]'>Every local government must publish a Citizen’s Charter: each service, what to bring, the fee and how long it takes.</p>
+				<p className='dv-lede'>Every local government must publish a Citizen’s Charter: each service, what to bring, the fee and how long it takes.</p>
 			</div>
 
 			{/* A group is only named when there is another to tell it from; with one, the provinces follow the section's heading. */}

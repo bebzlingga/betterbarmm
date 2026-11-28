@@ -38,29 +38,29 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 			<SiteHeader activeItem='services' />
 
 			<Masthead brand label={office.acronym ? `${KIND[office.kind]} · ${office.acronym}` : KIND[office.kind]} lines={[office.name]} standfirst={office.mandate ?? undefined}>
-				<div className='flex flex-wrap gap-x-5 gap-y-2'>
+				<div className='flex flex-wrap gap-2'>
 										{office.website ? (
-						<a href={office.website} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+						<a href={office.website} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 							<GlobeIcon size={16} aria-hidden='true' /> Official website
 						</a>
 					) : null}
 					{office.charter ? (
-						<a href={office.charter.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+						<a href={office.charter.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 							<FileTextIcon size={16} aria-hidden='true' /> Citizen’s Charter
 						</a>
 					) : null}
-					<a href={budgetHref(office)} className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+					<a href={budgetHref(office)} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 						<CoinsIcon size={16} aria-hidden='true' /> Its budget
 					</a>
 					{directoryOffice(office.slug) ? (
-						<Link href={`/directory/office/${office.slug}`} className='inline-flex items-center gap-2 text-[0.875rem] font-semibold text-white underline decoration-white/30 underline-offset-[6px] transition hover:decoration-white'>
+						<Link href={`/directory/office/${office.slug}`} className='dv-btn dv-btn-glass !px-4 !py-2 !text-[0.8125rem]'>
 							<AddressBookIcon size={16} aria-hidden='true' /> In the Directory
 						</Link>
 					) : null}
 				</div>
 			</Masthead>
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				{parent ? (
 					<p className='mb-10 text-[0.84375rem] text-[var(--ink-3)]'>
 						Attached to the{' '}
@@ -81,11 +81,11 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 									</p>
 								) : null}
 								<section aria-labelledby='programs'>
-									<h2 id='programs' className='text-[1.375rem] font-extrabold tracking-[-0.01em]'>
+									<h2 id='programs' className='dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'>
 										Programs <span className='text-[var(--ink-mute)]'>{office.programs.length}</span>
 									</h2>
 									{office.programs.length ? (
-										<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+										<ul className='mt-5 divide-y divide-[var(--rule-soft)] rounded-[1.25rem] border border-[var(--rule)] px-5'>
 											{office.programs.map((p) => (
 												<li key={p.name} id={`program-${slugify(p.name)}`} className='scroll-mt-[calc(var(--site-header-h)+1rem)] py-5'>
 													<div className='flex items-start justify-between gap-4'>
@@ -111,7 +111,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 								</section>
 
 								<section aria-labelledby='services'>
-									<h2 id='services' className='text-[1.375rem] font-extrabold tracking-[-0.01em]'>
+									<h2 id='services' className='dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'>
 										Services <span className='text-[var(--ink-mute)]'>{office.services.length}</span>
 									</h2>
 									<p className='mt-1 text-[0.84375rem] text-[var(--ink-3)]'>As the office’s Citizen’s Charter lists them: what to bring, what it costs, how long it takes.</p>
@@ -123,7 +123,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 								</section>
 							</>
 						) : (
-							<section aria-labelledby='no-charter' className='border border-[var(--rule)] bg-[var(--paper-2)] p-6'>
+							<section aria-labelledby='no-charter' className='tv-wash rounded-[1.25rem] border border-[var(--rule)] p-6 sm:p-7'>
 								<h2 id='no-charter' className='text-[1.125rem] font-bold'>No Citizen’s Charter published</h2>
 								<p className='mt-2 max-w-2xl text-[0.90625rem] leading-[1.7] text-[var(--ink-2)]'>
 									Every government office must publish a Citizen’s Charter: each service it gives, what to bring, what it costs and how long it takes. We could not find one from the {office.name} online, so its services are not listed here until it does. Ask the office directly, or tell us where its charter is.
@@ -147,13 +147,13 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 						{!hasCharter(office) && fundedPrograms(office).length ? (
 							// Until it publishes a charter, its 2026 appropriation is the only public account of what it does.
 							<section aria-labelledby='funded'>
-								<h2 id='funded' className='text-[1.375rem] font-extrabold tracking-[-0.01em]'>
+								<h2 id='funded' className='dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'>
 									What the 2026 budget funds it to do
 								</h2>
 								<p className='mt-1.5 max-w-2xl text-[0.84375rem] leading-6 text-[var(--ink-3)]'>
 									Its programs as the 2026 General Appropriations Act names them. These are what it is paid to do, not services you can apply for.
 								</p>
-								<ul className='mt-5 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+								<ul className='mt-5 divide-y divide-[var(--rule-soft)] rounded-[1.25rem] border border-[var(--rule)] px-5'>
 									{fundedPrograms(office).map((p) => (
 										<li key={p.name} className='flex items-baseline justify-between gap-4 py-3 text-[0.90625rem] leading-snug'>
 											<span className='min-w-0'>{p.name}</span>
@@ -170,7 +170,7 @@ export default async function OfficePage({ params }: { params: Promise<{ slug: s
 						) : null}
 					</div>
 
-					<aside className='space-y-10 lg:sticky lg:top-[calc(var(--site-header-h)+1.5rem)] lg:self-start'>
+					<aside className='space-y-8 self-start rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-6 lg:sticky lg:top-6'>
 						{c && (c.address || c.phone || c.email) ? (
 							<section>
 								<h2 className='text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Contact</h2>

@@ -15,7 +15,7 @@ export function DirectoryServices({ services, href, base, note }: { services: Se
 	return (
 		<section aria-labelledby='services' className='mt-14'>
 			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-				<h2 id='services' className='text-[1.25rem] font-extrabold'>
+				<h2 id='services' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 					Programs & services {services.length ? <span className='text-[var(--ink-mute)]'>{services.length}</span> : null}
 				</h2>
 				<Link href={href} className='inline-flex items-center gap-1.5 text-[0.84375rem] font-semibold underline decoration-[var(--rule)] underline-offset-4 hover:decoration-[var(--accent)]'>

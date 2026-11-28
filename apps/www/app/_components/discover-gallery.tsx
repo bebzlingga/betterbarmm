@@ -103,7 +103,7 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
           tabIndex={clone ? -1 : undefined}
           onClick={() => setOpen(index)}
           style={{ '--dsc-ratio': TILE_RATIOS[position % TILE_RATIOS.length] } as React.CSSProperties}
-          className='bb-frame bb-zoom dsc-wall-tile group relative'
+          className='bb-frame bb-zoom dsc-wall-tile group relative isolate overflow-hidden rounded-[1rem]'
         >
           <Image
             src={item.src}
@@ -196,7 +196,7 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
                   type='button'
                   onClick={() => step(-1)}
                   aria-label='Previous photo'
-                  className='flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
+                  className='flex size-10 items-center justify-center rounded-full border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-[#10161b]'
                 >
                   <ArrowLeftIcon className='size-4' aria-hidden='true' />
                 </button>
@@ -204,7 +204,7 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
                   type='button'
                   onClick={() => step(1)}
                   aria-label='Next photo'
-                  className='flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
+                  className='flex size-10 items-center justify-center rounded-full border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-[#10161b]'
                 >
                   <ArrowRightIcon className='size-4' aria-hidden='true' />
                 </button>
@@ -212,7 +212,7 @@ export function DiscoverGallery({ photos }: { photos: DiscoverPhoto[] }) {
                   type='button'
                   onClick={() => setOpen(null)}
                   aria-label='Close'
-                  className='ml-1 flex size-10 items-center justify-center border border-white/25 text-white transition hover:border-[var(--brass)] hover:text-[var(--brass)]'
+                  className='ml-1 flex size-10 items-center justify-center rounded-full border border-white/25 text-white transition hover:border-white hover:bg-white hover:text-[#10161b]'
                 >
                   <XIcon className='size-4.5' aria-hidden='true' />
                 </button>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { GetInvolved } from '../_components/get-involved'
+import { PhotoHero } from '../_components/photo-hero'
 import { SiteHeader } from '../_components/site-header'
 import { AREAS, formatGoal, formatValue, gapText, PLAN_START, progress, indicators, judge, plan, scorecardGaps, scorecardNote, STATUS_LABEL, type Indicator, type Status } from '../_lib/development-plan'
 import { pageMeta } from '../_lib/seo'
@@ -62,8 +63,8 @@ function ProgressTrack({ indicator, status }: { indicator: Indicator; status: St
 				{pace ? <span className='font-normal text-[var(--ink-3)]'>, {pace}</span> : null}
 			</p>
 
-			<div className='relative mt-4 h-3 bg-[var(--paper-3)]'>
-				<div className='absolute inset-y-0 left-0' style={{ width: `${fill * 100}%`, background: p.share >= 1 ? FILL.met : FILL.short }} />
+			<div className='relative mt-4 h-3 rounded-full bg-[var(--paper-3)]'>
+				<div className='absolute inset-y-0 left-0 rounded-full' style={{ width: `${fill * 100}%`, background: p.share >= 1 ? FILL.met : FILL.short }} />
 				{/* Where a steady pace would have it by the latest figure's year. */}
 				{p.share > 0 && p.share < 1 ? <div className='absolute -inset-y-1 w-0.5 bg-[var(--ink)]' style={{ left: `${p.elapsed * 100}%` }} title={`A steady pace would be here by ${latest.year}`} /> : null}
 			</div>
@@ -187,26 +188,25 @@ export default function DevelopmentPlanPage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader />
 
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				{/* Two columns (user decision: the right half stood empty and the counts read as a table): the claim on the
-				    left, and on the right the whole scorecard as one divided bar, with where the plan is in its six years. */}
-				<div className='bb-container relative grid w-full gap-10 py-14 md:py-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center lg:gap-16'>
-					<div>
-						<p className='bb-label'>Development plan scorecard</p>
-						<h1 className='mt-3 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>
-							The plan’s targets, and where the region stands.
-						</h1>
-						<p className='mt-5 max-w-[40rem] text-[0.96875rem] leading-[1.7] text-[var(--ink-2)]'>
-							The{' '}
-							<a href={plan.url} target='_blank' rel='noreferrer' className={linkClass}>
-								2nd Bangsamoro Development Plan 2023–2028
-							</a>{' '}
-							sets targets for every part of regional life: poverty and jobs, farms and tourism, schools and health, homes, roads,
-							forests and peace. Each is set here beside the latest figure published for it, with both sources a click away.
-						</p>
-					</div>
-
-					<div className='border border-[var(--rule)] bg-[var(--paper-2)] p-6 md:p-7'>
+			{/* The travel look (user decision): the claim on the photograph header, and under it the whole scorecard as one
+			    divided bar on a dark panel, with where the plan is in its six years. */}
+			<PhotoHero
+				photos={['governmentCenter', 'parliamentBuilding', 'cotabatoPlaza']}
+				kicker='Development plan scorecard'
+				title={<span className='block text-[clamp(2.5rem,4.6vw,4.25rem)] leading-[1.02]'>The plan’s targets, and where the region stands.</span>}
+				lede={
+					<>
+						The{' '}
+						<a href={plan.url} target='_blank' rel='noreferrer' className={linkClass}>
+							2nd Bangsamoro Development Plan 2023–2028
+						</a>{' '}
+						sets targets for every part of regional life: poverty and jobs, farms and tourism, schools and health, homes, roads, forests and peace. Each is set
+						here beside the latest figure published for it, with both sources a click away.
+					</>
+				}
+				// The scorecard on the right of the words (user decision), as the map pages' cards sit.
+				side={
+					<div className='rounded-[1.25rem] border border-white/15 bg-[rgba(10,14,18,0.55)] p-6 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.6)] md:p-7'>
 						<p className='flex items-baseline justify-between gap-4'>
 							<span className='font-[family-name:var(--font-display)] text-[2.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
 								{indicators.length}
@@ -245,18 +245,20 @@ export default function DevelopmentPlanPage() {
 							</div>
 						</div>
 					</div>
-				</div>
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
+				}
+			/>
 
-			<section className='bb-container bb-section'>
+
+			{/* The areas as white cards on the warm wash, so each reads as a card (user decision: the travel look). */}
+			<section className='tv-wash'>
+				<div className='bb-container dv-section'>
 				{AREAS.map((area) => {
 					const here = indicators.filter((indicator) => indicator.area === area)
 					if (!here.length) return null
 					return (
-						<div key={area} className='mb-14 last:mb-0'>
-							<h2 className='border-b border-[var(--ink)] pb-3 text-[1.5rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>{area}</h2>
-							<ul>
+						<div key={area} className='mb-6 rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] px-5 pt-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.35)] last:mb-0 sm:px-8 sm:pt-8'>
+							<h2 className='dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'>{area}</h2>
+							<ul className='mt-2 [&>li:last-child]:border-b-0'>
 								{here.map((indicator) => (
 									<Row key={indicator.id} indicator={indicator} />
 								))}
@@ -264,9 +266,12 @@ export default function DevelopmentPlanPage() {
 						</div>
 					)
 				})}
+				</div>
+			</section>
 
+			<section className='bb-container pb-24 pt-16 lg:pb-32 lg:pt-20'>
 				{/* One column, full width (user decision); the documents as a grid of cards. */}
-				<div className='mt-16 border-t border-[var(--rule)] pt-6 text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
+				<div className='text-[0.8125rem] leading-[1.7] text-[var(--ink-3)]'>
 					<p className='font-semibold text-[var(--ink-2)]'>How this is judged</p>
 					<p className='mt-1'>
 						{scorecardNote} A figure is judged against the target for its own year where the plan set one, and against the end target
@@ -283,7 +288,7 @@ export default function DevelopmentPlanPage() {
 							...plan.progress_reports.map((report) => ({ kind: 'Progress report', title: report.title, url: report.url })),
 						].map((doc) => (
 							<li key={doc.url}>
-								<a href={doc.url} target='_blank' rel='noreferrer' className='group flex h-full flex-col border border-[var(--rule)] p-4 transition hover:border-[var(--accent)]'>
+								<a href={doc.url} target='_blank' rel='noreferrer' className='group flex h-full flex-col rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-5 transition hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'>
 									<span className='font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>{doc.kind}</span>
 									<span className='mt-2 flex-1 text-[0.875rem] font-semibold leading-snug text-[var(--ink)] group-hover:text-[var(--accent)]'>{doc.title}</span>
 									<span className='mt-3 text-[0.75rem] font-semibold text-[var(--ink-3)] group-hover:text-[var(--accent)]'>Open ↗</span>

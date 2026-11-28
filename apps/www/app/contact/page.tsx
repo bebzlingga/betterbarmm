@@ -60,7 +60,7 @@ export default function ContactPage() {
 			/>
 
 			{/* ---- The project ---- */}
-			<section id='reach' aria-labelledby='reach-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+			<section id='reach' aria-labelledby='reach-title' className='bb-container scroll-mt-4 bb-section'>
 				<SectionTitle id='reach' title='Three ways to reach us' lead='One team maintains every workspace on the site; any of these reaches it.' />
 				<ul className='mt-8 grid gap-4 md:grid-cols-3'>
 					{channels.map((c) => (
@@ -95,8 +95,8 @@ export default function ContactPage() {
 			</section>
 
 			{/* ---- The government ---- */}
-			<section id='government' aria-labelledby='government-title' className='scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] bg-[var(--paper-2)]'>
-				<div className='bb-container bb-section'>
+			<section id='government' aria-labelledby='government-title' className='tv-wash scroll-mt-4'>
+				<div className='bb-container dv-section'>
 					<SectionTitle
 						id='government'
 						title='Need the government? Go straight to it'
@@ -123,7 +123,7 @@ export default function ContactPage() {
 							</p>
 						</div>
 
-						<div id='emergency' className='flex scroll-mt-[calc(var(--site-header-h)+1rem)] flex-col bg-[#8f2328] p-6 text-white lg:p-8'>
+						<div id='emergency' className='flex scroll-mt-4 flex-col rounded-[1.25rem] bg-[#8f2328] p-6 text-white lg:p-8'>
 							<span className='flex items-center gap-3'>
 								<span className='grid size-12 shrink-0 place-items-center bg-white/15'>
 									<SirenIcon size={26} weight='fill' aria-hidden='true' />

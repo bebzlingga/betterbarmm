@@ -27,8 +27,11 @@ const SHELL = { jo: 0, workspace: 1.85, dataset: 2.95, source: 3.95 } as const
 /** Phosphor's filled brain, drawn at the centre in place of Jo's name (labels are plain DOM, not React). */
 const BRAIN =
 	'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><path d="M212,76V72a44,44,0,0,0-74.86-31.31,3.93,3.93,0,0,0-1.14,2.8v88.72a4,4,0,0,0,6.2,3.33A47.67,47.67,0,0,1,167.68,128a8.18,8.18,0,0,1,8.31,7.58,8,8,0,0,1-8,8.42,32,32,0,0,0-32,32v33.88a4,4,0,0,0,1.49,3.12,47.92,47.92,0,0,0,74.21-17.16,4,4,0,0,0-4.49-5.56A68.06,68.06,0,0,1,192,192h-7.73a8.18,8.18,0,0,1-8.25-7.47,8,8,0,0,1,8-8.53h8a51.6,51.6,0,0,0,24-5.88v0A52,52,0,0,0,212,76Zm-12,36h-4a36,36,0,0,1-36-36V72a8,8,0,0,1,16,0v4a20,20,0,0,0,20,20h4a8,8,0,0,1,0,16ZM88,28A44.05,44.05,0,0,0,44,72v4a52,52,0,0,0-4,94.12h0A51.6,51.6,0,0,0,64,176h7.73A8.18,8.18,0,0,1,80,183.47,8,8,0,0,1,72,192H64a67.48,67.48,0,0,1-15.21-1.73,4,4,0,0,0-4.5,5.55A47.93,47.93,0,0,0,118.51,213a4,4,0,0,0,1.49-3.12V176a32,32,0,0,0-32-32,8,8,0,0,1-8-8.42A8.18,8.18,0,0,1,88.32,128a47.67,47.67,0,0,1,25.48,7.54,4,4,0,0,0,6.2-3.33V43.49a4,4,0,0,0-1.14-2.81A43.85,43.85,0,0,0,88,28Zm8,48a36,36,0,0,1-36,36H56a8,8,0,0,1,0-16h4A20,20,0,0,0,80,76V72a8,8,0,0,1,16,0Z"/></svg>'
+/** Placed first, in this order; any workspace or project not named here follows (Education, Health, Library and the projects had been left off). */
 const ORDER = ['w-legislation', 'w-budget', 'w-directory', 'w-services', 'w-procurement', 'w-lgu', 'w-election', 'w-incidents', 'w-preparedness', 'w-places', 'w-crafts', 'w-discover']
 const COLOR = { jo: '#ffe9b0', workspace: '#d8343f', dataset: '#e8b043', source: '#86b3b4' }
+/** A project, on the workspaces' ring in a colour of its own. */
+const PROJECT = '#a77be6'
 const SIZE = { jo: 0.32, workspace: 0.13, dataset: 0.085, source: 0.06 }
 const EDGE = { feeds: '#d9b77a', reads: '#ee8b90', join: '#f1c453' }
 
@@ -43,7 +46,8 @@ function place(nodes: BrainNode[], edges: BrainEdge[]): Map<string, THREE.Vector
 		const r = SHELL[kind]
 		at.set(id, new THREE.Vector3(r * Math.cos(lat) * Math.cos(a), r * Math.sin(lat), r * Math.cos(lat) * Math.sin(a)))
 	}
-	ORDER.forEach((id, i) => put(id, 'workspace', (i / ORDER.length) * Math.PI * 2, (i % 2 ? 1 : -1) * 0.38))
+	const ring = [...ORDER, ...nodes.filter((n) => n.kind === 'workspace' && !ORDER.includes(n.id)).sort((a, b) => Number(Boolean(a.project)) - Number(Boolean(b.project))).map((n) => n.id)]
+	ring.forEach((id, i) => put(id, 'workspace', (i / ring.length) * Math.PI * 2, (i % 2 ? 1 : -1) * 0.38))
 	at.set('jo', new THREE.Vector3())
 	for (const [kind, lats] of [
 		['dataset', [-0.55, 0.05, 0.6]],
@@ -180,7 +184,7 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 			if (!pos) continue
 			const r = n.kind === 'dataset' && n.count ? Math.min(0.16, SIZE.dataset + Math.log10(n.count) * 0.012) : SIZE[n.kind]
 			// Drawn over the glass and the links, so the graticule never stripes a node.
-			const mat = new THREE.MeshBasicMaterial({ color: COLOR[n.kind], transparent: true, depthTest: false })
+			const mat = new THREE.MeshBasicMaterial({ color: n.project ? PROJECT : COLOR[n.kind], transparent: true, depthTest: false })
 			const mesh = new THREE.Mesh(new THREE.SphereGeometry(r, 24, 24), mat)
 			mesh.renderOrder = 10
 			mesh.position.copy(pos)
@@ -400,7 +404,7 @@ export function BrainGlobe({ nodes, edges, lit, edgeLit, picked, onHover, onPick
 		}
 	}, [nodes, edges])
 
-	const button = 'flex size-9 items-center justify-center border border-white/20 bg-black/30 text-white/85 backdrop-blur transition hover:border-white hover:text-white'
+	const button = 'flex size-10 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white/85 transition hover:bg-white hover:text-[#10161b]'
 	return (
 		<div className='relative h-full min-h-[60vh] w-full lg:min-h-0'>
 			<div ref={box} className='absolute inset-0 overflow-hidden' aria-label='A globe of BetterBARMM: drag to turn it, scroll to zoom, click a node for its details' role='img' />

@@ -29,7 +29,7 @@ const cell = (value: unknown) => {
 }
 
 function Download({ table }: { table: Table }) {
-	const file = 'inline-flex items-center gap-2 border border-[var(--ink)] px-4 py-2.5 text-[0.84375rem] font-semibold text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
+	const file = 'inline-flex items-center gap-2 rounded-full border border-[var(--rule)] px-5 py-2.5 text-[0.84375rem] font-semibold text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
 	return (
 		<div className='flex flex-wrap gap-2'>
 			<a href={table.files.csv.href} download className={file}>
@@ -75,7 +75,7 @@ export default async function DatasetPage({ params }: { params: Promise<{ datase
 				/ {d.title}
 			</nav>
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				<div className='grid gap-10 lg:grid-cols-[1fr_1fr] lg:gap-16'>
 					<dl className='grid gap-5'>
 						{facts.map((f) => (
@@ -86,7 +86,7 @@ export default async function DatasetPage({ params }: { params: Promise<{ datase
 						))}
 					</dl>
 					{d.caveats.length ? (
-						<div className='self-start border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-6 py-5 sm:px-8 sm:py-6'>
+						<div className='self-start rounded-[1.25rem] border-l-4 border-[var(--accent)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] px-6 py-5 sm:px-8 sm:py-6'>
 							<p className='eyebrow'>Before you use it</p>
 							<ul className='mt-3 space-y-3'>
 								{d.caveats.map((c) => (
@@ -99,7 +99,7 @@ export default async function DatasetPage({ params }: { params: Promise<{ datase
 			</section>
 
 			{d.tables.map((t) => (
-				<section key={t.slug} id={t.slug} className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] border-t border-[var(--rule)] py-[clamp(3rem,6vw,5rem)]'>
+				<section key={t.slug} id={t.slug} className='bb-container scroll-mt-4 border-t border-[var(--rule)] py-[clamp(3rem,6vw,5rem)]'>
 					<div className='flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between'>
 						<div>
 							<h2 className='section-title'>
@@ -114,7 +114,7 @@ export default async function DatasetPage({ params }: { params: Promise<{ datase
 					<div className='mt-8 overflow-x-auto'>
 						<table className='w-full min-w-[36rem] border-collapse text-left'>
 							<thead>
-								<tr className='border-b border-[var(--ink)]'>
+								<tr className='border-b border-[var(--rule)]'>
 									<th className='label py-2 pr-6 font-semibold'>Column</th>
 									<th className='label py-2 pr-6 font-semibold'>Kind</th>
 									<th className='label py-2 font-semibold'>What it holds</th>
@@ -133,9 +133,9 @@ export default async function DatasetPage({ params }: { params: Promise<{ datase
 					</div>
 
 					<p className='label mt-10'>The first {Math.min(5, t.rowCount)} rows</p>
-					<div className='mt-3 overflow-x-auto border border-[var(--rule)]'>
+					<div className='mt-3 overflow-x-auto rounded-[1.25rem] border border-[var(--rule)]'>
 						<table className='border-collapse text-left'>
-							<thead className='bg-[var(--paper-2)]'>
+							<thead className='tv-wash'>
 								<tr>
 									{t.columns.map((c) => (
 										<th key={c.name} className='whitespace-nowrap border-b border-[var(--rule)] px-3 py-2 font-mono text-[0.75rem] font-semibold text-[var(--ink)]'>

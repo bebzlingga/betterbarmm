@@ -25,7 +25,8 @@ const read = <T = Record<string, unknown>>(file: string): T => JSON.parse(fs.rea
 const dated = (d: Record<string, unknown>) => (d.generatedAt ?? d.generated_at ?? null) as string | null
 
 export type Kind = 'jo' | 'workspace' | 'dataset' | 'source'
-export type BrainNode = { id: string; label: string; kind: Kind; note: string; count?: number; unit?: string; date?: string | null; href?: string; fresh?: boolean }
+/** `project`: one of the site's projects rather than a workspace (user decision: the projects shown too); drawn on the workspaces' ring in a colour of its own. */
+export type BrainNode = { id: string; label: string; kind: Kind; note: string; count?: number; unit?: string; date?: string | null; href?: string; fresh?: boolean; project?: boolean }
 export type BrainEdge = { from: string; to: string; kind: 'feeds' | 'reads' | 'join'; label?: string }
 
 /** A town or an office, followed across the estate: what it is, its facts, every place it appears, and what to light. */
@@ -105,15 +106,17 @@ export function brain() {
 		{ id: 'w-lgu', label: 'Local Government', kind: 'workspace', note: 'Every province, town and barangay: who governs it, what it collects and spends, and how it was audited.', href: 'https://lgu.betterbarmm.com' },
 		{ id: 'w-procurement', label: 'Procurement', kind: 'workspace', note: 'What every BARMM office set out to buy on PhilGEPS since 2019, and who won the contracts.', href: 'https://procurement.betterbarmm.com' },
 		{ id: 'w-directory', label: 'Directory', kind: 'workspace', note: 'Who heads each regional office, how to reach it, who led it before, every town’s emergency lines, and the first few services each office and town offers, each a link to it.', href: '/directory' },
-		{ id: 'w-incidents', label: 'Incident Watch', kind: 'workspace', note: 'Road crashes, shootings, drownings, fires and floods reported in the region, on a map.', href: '/accidents' },
-		{ id: 'w-preparedness', label: 'Preparedness', kind: 'workspace', note: 'Flood, landslide and storm surge hazard for every barangay, from Project NOAH, and the evacuation sites, hospitals and offices nearest each one.', href: '/preparedness' },
+		{ id: 'w-incidents', project: true, label: 'Incident Watch', kind: 'workspace', note: 'Road crashes, shootings, drownings, fires and floods reported in the region, on a map.', href: '/incidents' },
+		{ id: 'w-preparedness', project: true, label: 'Preparedness', kind: 'workspace', note: 'Flood, landslide and storm surge hazard for every barangay, from Project NOAH, and the evacuation sites, hospitals and offices nearest each one.', href: '/preparedness' },
 		{ id: 'w-places', label: 'Travel & Places', kind: 'workspace', note: 'Islands, lakes, mosques, falls and heritage sites: what is there, how to get there, where to stay.', href: 'https://travel.betterbarmm.com' },
 		{ id: 'w-education', label: 'Education', kind: 'workspace', note: `Every school in the region on a map and town by town, with its learners each school year; how learners do against the plan; the scholarships on offer; and the education ministry’s own figures.`, href: 'https://education.betterbarmm.com' },
 		{ id: 'w-health', label: 'Health', kind: 'workspace', note: 'The health ministry’s budget and the hospitals it funds; every town’s facilities beside its people and barangays; the mapped facilities; mothers’ and children’s health against the plan; and the programs and services on offer.', href: 'https://health.betterbarmm.com' },
 		{ id: 'w-library', label: 'Library', kind: 'workspace', note: 'Books about the Bangsamoro and its peoples, who wrote and published them, where each can be bought, borrowed or read free, and the magazines of the region’s own offices.', href: 'https://library.betterbarmm.com' },
-		{ id: 'w-crafts', label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
+		{ id: 'w-crafts', project: true, label: 'Crafts', kind: 'workspace', note: 'The weaves, mats, brass and gongs of the region, who makes them and where to see them.', href: '/crafts' },
 		{ id: 'w-services', label: 'Programs & services', kind: 'workspace', note: 'What each regional office, province, city and town offers the public: who it is for, what to bring, the fee and how long it takes, with each place’s head, numbers and email beside it.', href: '/services' },
 		{ id: 'w-discover', label: 'Discover', kind: 'workspace', note: 'How the Bangsamoro came to be, how its government works, and the explainers.', href: '/discover' },
+		{ id: 'p-plan', project: true, label: 'Plan scorecard', kind: 'workspace', note: 'The regional development plan’s targets beside the latest published figures, area by area.', href: '/development-plan' },
+		{ id: 'p-data', project: true, label: 'Open data', kind: 'workspace', note: 'The records behind every workspace as tables anyone can download, CSV and JSON, each with its source.', href: '/data' },
 
 		{ id: 'd-measures', label: 'Acts, bills & resolutions', kind: 'dataset', count: acts + bills + adopted + proposed, unit: 'measures', note: `${acts} acts, ${bills} bills, ${adopted} adopted and ${proposed} proposed resolutions, with authors and status.` },
 		{ id: 'd-sittings', label: 'Sittings & attendance', kind: 'dataset', count: journals + calendar, unit: 'sittings', note: `${journals} published plenary journals, with who was absent or on leave at each roll call, and the First Parliament’s calendar of ${calendar} sittings for its first regular session.` },
@@ -247,8 +250,10 @@ export function brain() {
 		['d-hazards', ['w-preparedness']],
 		['d-facilities', ['w-preparedness', 'w-health']],
 		['d-health', ['w-health']],
-		['d-plan', ['w-health']],
+		['d-plan', ['w-health', 'p-plan']],
 		['d-primer', ['w-discover']],
+		// Open data publishes these as tables (scripts/build-open-data.mjs).
+		...(['d-measures', 'd-sittings', 'd-election', 'd-appropriations', 'd-lgus', 'd-officials', 'd-notices', 'd-offices', 'd-charters', 'd-incidents', 'd-hazards', 'd-audits', 'd-crafts'] as const).map((d): [string, string[]] => [d, ['p-data']]),
 		['d-schools', ['w-education']],
 		['d-ministry', ['w-education']],
 		['d-charters', ['w-education']],
@@ -317,7 +322,7 @@ export function brain() {
 				...(lgu ? [{ where: 'Programs & services', what: served ? `${plural(served, 'service')} from its Citizen’s Charter, with its mayor, numbers and email` : 'No Citizen’s Charter online; its mayor, numbers and email', href: lguHref(lgu) }] : []),
 				...(district ? [{ where: 'Election', what: `Votes in its province’s ${district} parliamentary district`, href: `${ELECTION}/results` }] : []),
 				...procurementLinks(own),
-				...(hits.length ? [{ where: 'Incident Watch', what: `${plural(hits.length, 'incident')} since 2019, ${n(dead)} dead`, href: '/accidents' }] : []),
+				...(hits.length ? [{ where: 'Incident Watch', what: `${plural(hits.length, 'incident')} since 2019, ${n(dead)} dead`, href: '/incidents' }] : []),
 				...here.map((p) => ({ where: 'Travel & Places', what: p.name, href: `https://travel.betterbarmm.com/places/${p.slug}` })),
 			]
 			const lit = ['jo', 'w-directory', 'w-lgu', 'd-lgus', 'd-officials', 'd-lines', 'd-finances', ...(district ? ['w-election', 'd-election'] : []), ...(notices ? ['w-procurement', 'd-notices'] : []), ...(hits.length ? ['w-incidents', 'd-incidents'] : []), ...(here.length ? ['w-places', 'd-places'] : []), ...(lgu ? ['w-services', ...(served ? ['d-lgu-charters'] : [])] : [])]

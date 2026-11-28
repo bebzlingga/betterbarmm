@@ -33,7 +33,7 @@ type Incident = {
 };
 
 const PAGE = 50;
-const SITE = "https://betterbarmm.com/accidents";
+const SITE = "https://betterbarmm.com/incidents";
 const incidents = (dataset.incidents as Incident[]).slice().sort((a, b) => (a.date < b.date ? 1 : -1));
 // The records no automated reader could check against their articles (blocked or empty pages), as of the last pass.
 const UNVERIFIED = new Set((verify as { id: string; verdict: string }[]).filter((p) => p.verdict === "unverified").map((p) => p.id));
@@ -67,7 +67,7 @@ export default async function IncidentsPage({ searchParams }: { searchParams: Pr
   const [{ data: edits }, { count: added }, { count: openReports }] = await Promise.all([
     supabase.from("records").select("key").eq("workspace", "accidents").eq("collection", "edits"),
     supabase.from("records").select("key", { count: "exact", head: true }).eq("workspace", "accidents").eq("collection", "added"),
-    supabase.from("reports").select("id", { count: "exact", head: true }).eq("status", "new").ilike("page_url", "%/accidents%"),
+    supabase.from("reports").select("id", { count: "exact", head: true }).eq("status", "new").or("page_url.ilike.%/accidents%,page_url.ilike.%/incidents%"),
   ]);
   const edited = new Set((edits ?? []).map((r) => r.key as string));
   const needsCheck = (a: Incident) => UNVERIFIED.has(a.id) || a.placed === "province";

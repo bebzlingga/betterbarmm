@@ -634,10 +634,10 @@ const datasets = [
 		slug: 'incidents',
 		title: 'Incidents',
 		summary: 'Road, sea, fire, flood and shooting incidents in the region since 2019, compiled from news reports, one record per incident.',
-		source: { label: 'News reports: the outlets’ own sites, Google News and public Facebook posts, every report linked', href: 'https://betterbarmm.com/accidents' },
+		source: { label: 'News reports: the outlets’ own sites, Google News and public Facebook posts, every report linked', href: 'https://betterbarmm.com/incidents' },
 		licence: CC_BY,
 		coverage: '2019 to October 2026',
-		workspace: 'https://betterbarmm.com/accidents',
+		workspace: 'https://betterbarmm.com/incidents',
 		caveats: [
 			'Nobody publishes a register of incidents in the region: this is what was reported and indexed, and only that.',
 			'Summaries are BetterBARMM’s; the reports they rest on are the outlets’.',

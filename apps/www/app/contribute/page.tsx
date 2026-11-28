@@ -1,8 +1,7 @@
 import { ArrowRightIcon, ArrowUpRightIcon, BookOpenTextIcon, CheckIcon, CodeIcon, EnvelopeSimpleIcon, ListNumbersIcon, MagnifyingGlassIcon, PaperclipIcon } from '@phosphor-icons/react/ssr'
+import { HonestBand } from '../_components/honest-band'
 import type { Metadata } from 'next'
 import { pageMeta } from '../_lib/seo'
-import Link from 'next/link'
-import { CtaAction, CtaPanel } from '@betterbarmm/editorial'
 import { photo } from '../_components/discover-media'
 import { BADGE, CARD, CARD_FOOT, ICON_TILE, PageBand, SectionTitle } from '../_components/page-band'
 import { QuoteBand } from '../_components/quote-band'
@@ -116,7 +115,7 @@ export default function ContributePage() {
 			</PageBand>
 
 			{/* ---- Ways to help ---- */}
-			<section id='ways' aria-labelledby='ways-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+			<section id='ways' aria-labelledby='ways-title' className='bb-container scroll-mt-4 bb-section'>
 				<SectionTitle
 					id='ways'
 					title='Small contributions improve the record'
@@ -150,7 +149,7 @@ export default function ContributePage() {
 				</ul>
 
 				{/* What to put in it. */}
-				<div id='include' className='mt-6 grid scroll-mt-[calc(var(--site-header-h)+1rem)] gap-6 border border-[var(--rule)] bg-[var(--paper-2)] p-6 lg:grid-cols-[16rem_minmax(0,1fr)] lg:p-8'>
+				<div id='include' className='mt-6 grid scroll-mt-4 gap-6 rounded-[1.25rem] border border-[var(--rule)] bg-[color-mix(in_srgb,var(--accent)_4%,var(--paper))] p-6 lg:grid-cols-[16rem_minmax(0,1fr)] lg:p-8'>
 					<div>
 						<p className='text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>What to include</p>
 						<p className='mt-1 text-[0.8125rem] leading-[1.6] text-[var(--ink-3)]'>Each email above opens with these as headings.</p>
@@ -176,11 +175,11 @@ export default function ContributePage() {
 			/>
 
 			{/* ---- What happens next: the four steps as numbered cards, joined by an arrow on a wide screen. ---- */}
-			<section id='next' aria-labelledby='next-title' className='bb-container scroll-mt-[calc(var(--site-header-h)+1rem)] bb-section'>
+			<section id='next' aria-labelledby='next-title' className='bb-container scroll-mt-4 bb-section'>
 				<SectionTitle id='next' title='Four steps, and none of them hidden' lead='Where what you send goes, from your email to the page.' />
 				<ol className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 					{whatHappens.map((step, i) => (
-						<li key={step.title} className='relative flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-6'>
+						<li key={step.title} className='relative flex flex-col rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-6'>
 							<span className='num text-[2.5rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{String(i + 1).padStart(2, '0')}</span>
 							<h3 className='mt-4 text-[1.0625rem] font-extrabold leading-snug tracking-[-0.02em] text-[var(--ink)]'>{step.title}</h3>
 							<p className='mt-2 text-[0.84375rem] leading-[1.65] text-[var(--ink-2)]'>{step.description}</p>
@@ -194,24 +193,13 @@ export default function ContributePage() {
 				</ol>
 			</section>
 
-			<CtaPanel
+			<HonestBand
 				label='One address'
-				lines={['Send a source.', 'Send a correction.']}
+				title='Send a source. Send a correction.'
 				standfirst='There is no form to fill in and no account to make. One email address reaches the people who maintain every workspace on this site.'
-			>
-				<CtaAction>
-					<a href='mailto:support@betterbarmm.com' className='bb-btn bb-btn-brass'>
-						<EnvelopeSimpleIcon size={15} weight='fill' aria-hidden='true' />
-						support@betterbarmm.com
-					</a>
-				</CtaAction>
-				<CtaAction>
-					<Link href='/discover' className='bb-btn bb-btn-ghost'>
-						Discover BARMM
-						<ArrowRightIcon className='size-3.5' weight='bold' aria-hidden='true' />
-					</Link>
-				</CtaAction>
-			</CtaPanel>
+				primary={{ href: 'mailto:support@betterbarmm.com', label: 'support@betterbarmm.com' }}
+				secondary={{ href: '/discover', label: 'Discover BARMM' }}
+			/>
 		</main>
 	)
 }

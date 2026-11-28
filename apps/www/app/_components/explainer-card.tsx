@@ -18,7 +18,7 @@ export function ExplainerCard({ e, heading: Heading = 'h2' }: { e: Article; head
 	return (
 		<Link
 			href={`/explainers/${e.slug}`}
-			className='group flex h-full flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_-30px_rgba(25,23,19,0.55)]'
+			className='group flex h-full flex-col overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_-30px_rgba(25,23,19,0.55)]'
 		>
 			<div className='relative aspect-[1200/622] overflow-hidden bg-[#2e0b12]'>
 				{e.cover ? (

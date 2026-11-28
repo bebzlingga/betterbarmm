@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 	})
 }
 
-const label = 'mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'
+const label = 'mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
 
 export default async function NationalOfficePage({ params }: { params: Promise<{ slug: string }> }) {
 	const o = nationalOffice((await params).slug)
@@ -42,7 +42,7 @@ export default async function NationalOfficePage({ params }: { params: Promise<{
 
 			<section className='bb-container py-14 lg:py-20'>
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-20 xl:gap-24'>
-					<aside className='space-y-8'>
+					<aside className='space-y-8 self-start'>
 						<div>
 							<p className={label}>What it is for</p>
 							<p className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{o.for}</p>
@@ -110,7 +110,7 @@ export default async function NationalOfficePage({ params }: { params: Promise<{
 						) : null}
 
 						<section aria-labelledby='sources'>
-							<h2 id='sources' className='text-[1.25rem] font-extrabold'>
+							<h2 id='sources' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 								Sources
 							</h2>
 							<ul className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[0.875rem]'>

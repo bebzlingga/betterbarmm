@@ -82,9 +82,9 @@ export function BrainDialog() {
 			aria-label='The brain of BetterBARMM'
 			tabIndex={-1}
 			onCancel={(e) => (e.preventDefault(), close())}
-			className='fixed inset-0 m-0! h-dvh! max-h-none! w-full! max-w-none! overflow-hidden border-0! bg-[radial-gradient(ellipse_at_50%_40%,#3d0f18_0%,#1a0609_60%,#110406_100%)] p-0! text-white outline-none backdrop:bg-black/80'
+			className='fixed inset-0 m-0! h-dvh! max-h-none! w-full! max-w-none! overflow-hidden border-0! bg-[radial-gradient(60rem_40rem_at_85%_0%,rgba(212,167,44,0.14),transparent_60%),radial-gradient(50rem_36rem_at_0%_100%,rgba(91,42,110,0.32),transparent_60%),radial-gradient(ellipse_at_62%_45%,#18212a_0%,#0d1216_65%)] p-0! text-white outline-none backdrop:bg-black/80'
 		>
-			<button type='button' onClick={close} aria-label='Close' className='fixed top-5 right-5 z-20 flex size-11 items-center justify-center text-white transition hover:opacity-70'>
+			<button type='button' onClick={close} aria-label='Close' className='fixed top-5 right-5 z-20 flex size-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-white transition hover:bg-white hover:text-[#10161b]'>
 				<XIcon size={26} weight='bold' aria-hidden='true' />
 			</button>
 			{/* From a laptop up the dialog is the screen: the details column against the left edge, the globe filling the rest. */}

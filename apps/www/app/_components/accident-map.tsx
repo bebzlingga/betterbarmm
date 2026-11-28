@@ -1,7 +1,7 @@
 'use client'
 
-import { ArrowUpRightIcon, BoatIcon, CaretLeftIcon, CaretRightIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, WavesIcon, XIcon, type Icon } from '@phosphor-icons/react'
-import { MapList, MapListGroup, MapListHead, MapListNote, MapListRow, SearchField, Select, Skeleton } from '@betterbarmm/editorial'
+import { ArrowUpRightIcon, BoatIcon, CalendarBlankIcon, CaretLeftIcon, HeartbeatIcon, MapPinIcon, StackIcon, TagIcon, CaretRightIcon, CarProfileIcon, CrosshairIcon, FireIcon, WarningIcon, WavesIcon, XIcon, type Icon } from '@phosphor-icons/react'
+import { SearchField, Select, Skeleton } from '@betterbarmm/editorial'
 import dynamic from 'next/dynamic'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ACCIDENT_TYPES, accidentDate, MAX_ZOOM, typeOf, type Accident, type AccidentType } from '../_lib/accidents'
@@ -107,9 +107,9 @@ function Sources({ a, sep = ' · ' }: { a: Accident; sep?: string }) {
 function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 	const t = typeOf(a.type)
 	return (
-		<article className='bg-[var(--paper)] p-4'>
+		<article className='bg-[var(--paper)] p-5 sm:p-6'>
 			<div className='flex items-start justify-between gap-3'>
-				<p className='flex flex-wrap items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='flex flex-wrap items-center gap-2 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 					<KindIcon type={a.type} />
 					{t.label}
 					{a.kind && a.kind.toLowerCase() !== t.label.toLowerCase() ? <span className='text-[var(--ink-mute)]'>· {a.kind}</span> : null}
@@ -119,19 +119,19 @@ function Details({ a, onClose }: { a: Accident; onClose: () => void }) {
 					type='button'
 					onClick={onClose}
 					aria-label='Close details'
-					className='-mr-1.5 -mt-1.5 inline-flex size-7 shrink-0 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'
+					className='-mr-2 -mt-2 inline-flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-full text-[var(--ink-3)] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)]'
 				>
 					<XIcon size={14} weight='bold' aria-hidden='true' />
 				</button>
 			</div>
-			<h3 className='mt-2 text-[0.9375rem] font-extrabold leading-snug tracking-[-0.01em]'>{a.title}</h3>
+			<h3 className='mt-2.5 font-[family-name:var(--font-display)] text-[1.125rem] font-bold leading-snug tracking-[-0.02em]'>{a.title}</h3>
 			<p className='mt-1 text-[0.78125rem] text-[var(--ink-2)]'>{place(a)}</p>
-			{a.deaths || a.injured || a.missing ? <Counts a={a} className='mt-3 border-t border-[var(--rule)] pt-3' /> : null}
+			{a.deaths || a.injured || a.missing ? <Counts a={a} className='mt-4 rounded-xl bg-[color-mix(in_srgb,var(--paper-2)_60%,var(--paper))] px-4 py-3' /> : null}
 			{a.image ? (
 				<a href={a.image.href} target='_blank' rel='noreferrer' className='group/photo mt-3 block'>
 					{/* The outlet's photo, hot-linked and credited — a thumbnail, not a reproduction. */}
 					{/* eslint-disable-next-line @next/next/no-img-element */}
-					<img src={a.image.url} alt='' loading='lazy' className='aspect-[16/9] w-full object-cover' />
+					<img src={a.image.url} alt='' loading='lazy' className='aspect-[16/9] w-full rounded-xl object-cover' />
 					<span className='mt-1 block text-[0.65625rem] text-[var(--ink-mute)] group-hover/photo:text-[var(--ink-3)]'>Photo: {a.image.outlet}</span>
 				</a>
 			) : null}
@@ -228,6 +228,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	const [focus, setFocus] = useState<Focus>(null)
 	const [open, setOpen] = useState(false)
 	const dialog = useRef<HTMLDialogElement>(null)
+	const list = useRef<HTMLDivElement>(null)
 	// Counts the asks to fly, so asking for the same incident twice flies twice.
 	const asks = useRef(0)
 
@@ -281,6 +282,10 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 		return out
 	}, [filtered])
 	const onSelect = useCallback((id: string | null) => setSelectedId(id), [])
+	// The chosen incident's card kept in view in the list, whether it was chosen there or on the map.
+	useEffect(() => {
+		if (selectedId) list.current?.querySelector(`[data-row="${CSS.escape(selectedId)}"]`)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+	}, [selectedId])
 
 	const openMap = useCallback(() => {
 		setOpen(true)
@@ -335,6 +340,16 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 	// Only the dialog gets "Show", since the page has no heat or dots to
 	// switch; and in the dialog the boxes go bare, a row of controls in a
 	// header rather than a form.
+	// In the map's header each filter is a pill with its icon (user decision); on the page they stay boxed.
+	const pill = (plain: boolean, Glyph: Icon, node: React.ReactNode) =>
+		plain ? (
+			<span className='inc-filter'>
+				<Glyph size={15} weight='duotone' aria-hidden='true' className='shrink-0 text-[var(--accent)]' />
+				{node}
+			</span>
+		) : (
+			node
+		)
 	const filters = (withShow: boolean, plain = false) => (
 		<div className='@container'>
 			<div className={`flex flex-wrap gap-3 ${plain ? 'items-center gap-x-5' : 'items-end justify-between'}`}>
@@ -349,31 +364,39 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 							: 'flex w-full flex-wrap gap-3 @xl:w-auto [&>*]:w-[calc(50%-0.375rem)] @xl:[&>*]:w-[8.5rem]'
 					}
 				>
-				<Select label='Year' value={year} onChange={setYear} options={[['', 'All years'], ...years.map((y): [string, string] => [y, `${y} (${byYear.get(y) ?? 0})`])]} plain={plain} />
-				<Select label='Kind' value={type} onChange={setType} options={[['', 'All kinds'], ...ACCIDENT_TYPES.map((k): [string, string] => [k.id, `${k.label} (${byType.get(k.id) ?? 0})`])]} plain={plain} />
-				<Select label='Area' value={province} onChange={setProvince} options={[['', 'All areas'], ...provinces.map((p): [string, string] => [p, `${p} (${byProvince.get(p) ?? 0})`])]} plain={plain} />
-				<Select
-					label='Casualties'
-					value={deadlyOnly ? 'deadly' : ''}
-					onChange={(v) => setDeadlyOnly(v === 'deadly')}
-						plain={plain}
-					options={[
-						['', 'All incidents'],
-						['deadly', 'With deaths only'],
-					]}
-				/>
-				{withShow ? (
+				{pill(plain, CalendarBlankIcon, <Select label='Year' value={year} onChange={setYear} options={[['', 'All years'], ...years.map((y): [string, string] => [y, `${y} (${byYear.get(y) ?? 0})`])]} plain={plain} />)}
+				{pill(plain, TagIcon, <Select label='Kind' value={type} onChange={setType} options={[['', 'All kinds'], ...ACCIDENT_TYPES.map((k): [string, string] => [k.id, `${k.label} (${byType.get(k.id) ?? 0})`])]} plain={plain} />)}
+				{pill(plain, MapPinIcon, <Select label='Area' value={province} onChange={setProvince} options={[['', 'All areas'], ...provinces.map((p): [string, string] => [p, `${p} (${byProvince.get(p) ?? 0})`])]} plain={plain} />)}
+				{pill(
+					plain,
+					HeartbeatIcon,
 					<Select
-						label='Show'
-						value={show}
-						onChange={(v) => setShow(v as Show)}
-						plain={plain}
+						label='Casualties'
+						value={deadlyOnly ? 'deadly' : ''}
+						onChange={(v) => setDeadlyOnly(v === 'deadly')}
+							plain={plain}
 						options={[
-							['both', 'Heat & dots'],
-							['heat', 'Heat only'],
-							['points', 'Dots only'],
+							['', 'All incidents'],
+							['deadly', 'With deaths only'],
 						]}
 					/>
+				)}
+				{withShow ? (
+					pill(
+						plain,
+						StackIcon,
+						<Select
+							label='Show'
+							value={show}
+							onChange={(v) => setShow(v as Show)}
+							plain={plain}
+							options={[
+								['both', 'Heat & dots'],
+								['heat', 'Heat only'],
+								['points', 'Dots only'],
+							]}
+						/>
+					)
 				) : null}
 				</div>
 			</div>
@@ -389,10 +412,11 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 
 			{/* The table view: every incident on the map, newest first, with its
 			    sources — drawn the way the registry's tables are drawn. */}
-			<table className='mt-8 w-full border-collapse'>
+			<div className='mt-8 overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] px-5 sm:px-7'>
+			<table className='w-full border-collapse'>
 				<caption className='sr-only'>Every incident on the map, newest first</caption>
 				<thead>
-					<tr className='border-b border-[var(--ink)]'>
+					<tr className='border-b border-[var(--rule)]'>
 						<Th className='hidden sm:table-cell'>Date</Th>
 						<Th className='hidden md:table-cell'>Kind</Th>
 						<Th wide>Incident</Th>
@@ -403,7 +427,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 				</thead>
 				<tbody>
 					{shown.map((a) => (
-						<tr key={a.id} id={a.id} className='border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'>
+						<tr key={a.id} id={a.id} className='border-b border-[var(--rule-soft)] align-top transition-colors last:border-b-0 hover:bg-[color-mix(in_srgb,var(--paper-2)_55%,var(--paper))]'>
 							<td className='num hidden w-px whitespace-nowrap py-3.5 pr-8 text-[0.8125rem] text-[var(--ink-2)] sm:table-cell'>{accidentDate(a.date)}</td>
 							<td className='hidden w-px whitespace-nowrap py-3.5 pr-8 text-[0.8125rem] text-[var(--ink-2)] md:table-cell'>
 								<span className='flex items-center gap-1.5'>
@@ -444,6 +468,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 					))}
 				</tbody>
 			</table>
+			</div>
 			{filtered.length === 0 ? <p className='py-10 text-center text-[0.84375rem] text-[var(--ink-3)]'>Nothing here matches these filters.</p> : null}
 			{pages > 1 ? (
 				<div className='mt-6 flex items-center justify-end gap-3 text-[0.8125rem] text-[var(--ink-3)]'>
@@ -451,7 +476,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 						type='button'
 						disabled={current <= 1}
 						onClick={() => setPage(current - 1)}
-						className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40'
+						className='inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] transition hover:border-[var(--ink)] disabled:cursor-default disabled:opacity-40 disabled:hover:border-[var(--rule)]'
 						aria-label='Previous page'
 					>
 						<CaretLeftIcon size={14} />
@@ -463,7 +488,7 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 						type='button'
 						disabled={current >= pages}
 						onClick={() => setPage(current + 1)}
-						className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40'
+						className='inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] transition hover:border-[var(--ink)] disabled:cursor-default disabled:opacity-40 disabled:hover:border-[var(--rule)]'
 						aria-label='Next page'
 					>
 						<CaretRightIcon size={14} />
@@ -479,16 +504,27 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 					if (window.location.hash === '#map') history.replaceState(null, '', window.location.pathname + window.location.search)
 				}}
 				aria-label='Interactive map'
-				className='m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
+				className='inc-map m-0 h-dvh max-h-none w-screen max-w-none overflow-y-auto bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/40 open:flex open:flex-col lg:overflow-hidden'
 			>
 				{/* The header is the filters, and the way out — on the dark ground, so it reads as the frame and the map as the page. */}
-				<div className='bb-ground flex shrink-0 items-start justify-between gap-4 border-b border-[var(--rule)] px-4 py-2 [color-scheme:dark] lg:items-center lg:px-6'>
-					<div className='min-w-0 flex-1'>{filters(true, true)}</div>
+				{/* The header in the travel look (user decision: the map redesigned): light, the map's name on the left, the
+				    filters as pills (globals.css, .inc-map-head), the way out a round button. */}
+				<div className='inc-map-head flex shrink-0 items-center justify-between gap-4 border-b border-[var(--rule)] bg-[var(--paper)] px-4 py-3 lg:px-6'>
+					<div className='hidden shrink-0 items-center gap-3 xl:flex'>
+						<span className='grid size-10 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
+							<WarningIcon size={20} weight='duotone' aria-hidden='true' />
+						</span>
+						<span>
+							<span className='block font-[family-name:var(--font-display)] text-[1rem] font-bold leading-tight text-[var(--ink)]'>Incident Watch</span>
+							<span className='block text-[0.75rem] text-[var(--ink-3)]'>Since 2019, from the news</span>
+						</span>
+					</div>
+					<div className='min-w-0 flex-1 xl:pl-6'>{filters(true, true)}</div>
 					<button
 						type='button'
 						onClick={() => dialog.current?.close()}
 						aria-label='Close map'
-						className='inline-flex h-10 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'
+						className='inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] text-[var(--ink-2)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'
 					>
 						<XIcon size={16} weight='bold' aria-hidden='true' />
 					</button>
@@ -496,34 +532,63 @@ export function AccidentMap({ incidents }: { incidents: Accident[] }) {
 
 				<div className='grid min-h-0 flex-1 lg:grid-cols-[26rem_minmax(0,1fr)]'>
 					{/* The list on the left, a month to a group; the chosen incident floats over the map's corner. */}
-					<MapList className='order-2 border-t border-[var(--rule)] lg:order-1 lg:border-r lg:border-t-0' head={<MapListHead count={filtered.length} of={incidents.length} noun='incidents' />}>
-						{months.map((m) => (
-							<MapListGroup key={m.key} title={m.title} count={m.items.length}>
-								{m.items.map((a) => (
-									<MapListRow
-										key={a.id}
-										current={a.id === selectedId}
-										onClick={() => goTo(a)}
-										marker={<KindIcon type={a.type} size={16} />}
-										title={a.title}
-										meta={`${accidentDate(a.date)} · ${a.municipality ?? a.province}`}
-										figure={
-											a.deaths ? (
-												<>
-													{figure(a.deaths)} <span className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>dead</span>
-												</>
-											) : null
-										}
-									/>
-								))}
-							</MapListGroup>
-						))}
-						{filtered.length === 0 ? <MapListNote>Nothing here matches these filters.</MapListNote> : null}
-					</MapList>
+					{/* The list in the travel look: the count large, a month to a heading, each incident a rounded card with its
+					    kind's glyph on a tile of its colour; the chosen one ringed and kept in view. */}
+					<div className='order-2 flex min-h-0 flex-col border-t border-[var(--rule)] bg-[#f6f3ee] dark:bg-[var(--paper-2)] lg:order-1 lg:border-r lg:border-t-0'>
+						<div className='shrink-0 px-5 pb-3 pt-5'>
+							<p className='num font-[family-name:var(--font-display)] text-[2.25rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{figure(filtered.length)}</p>
+							<p className='mt-1 text-[0.8125rem] text-[var(--ink-3)]'>of {figure(incidents.length)} incidents on the map</p>
+						</div>
+						<div ref={list} className='min-h-0 flex-1 overflow-y-auto overscroll-contain px-3 pb-6 [scrollbar-width:thin] [scrollbar-color:rgb(0_0_0/0.25)_transparent]'>
+							{months.map((m) => (
+								<section key={m.key}>
+									<h3 className='sticky top-0 z-10 flex items-center justify-between bg-[#f6f3ee] px-2 pb-2 pt-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] dark:bg-[var(--paper-2)]'>
+										{m.title}
+										<span className='num rounded-full bg-[var(--paper)] px-2 py-0.5 text-[0.6875rem] text-[var(--ink-2)]'>{m.items.length}</span>
+									</h3>
+									<ul className='grid gap-2'>
+										{m.items.map((a) => {
+											const kind = typeOf(a.type)
+											const here = a.id === selectedId
+											return (
+												<li key={a.id}>
+													<button
+														type='button'
+														data-row={a.id}
+														aria-current={here || undefined}
+														onClick={() => goTo(a)}
+														className={`flex w-full cursor-pointer items-start gap-3 rounded-2xl border bg-[var(--paper)] p-3.5 text-left transition ${
+															here ? 'border-[var(--accent)] shadow-[0_14px_30px_-20px_rgba(0,0,0,0.5)]' : 'border-transparent hover:border-[var(--rule)] hover:shadow-[0_12px_26px_-22px_rgba(0,0,0,0.45)]'
+														}`}
+													>
+														<span className='grid size-9 shrink-0 place-items-center rounded-xl' style={{ background: `color-mix(in srgb, var(--acc-${kind.id}) 14%, transparent)` }}>
+															<KindIcon type={a.type} size={17} />
+														</span>
+														<span className='min-w-0 flex-1'>
+															<span className='line-clamp-2 block text-[0.875rem] font-semibold leading-snug text-[var(--ink)]'>{a.title}</span>
+															<span className='mt-1 block text-[0.75rem] text-[var(--ink-3)]'>
+																{accidentDate(a.date)} · {a.municipality ?? a.province}
+															</span>
+														</span>
+														{a.deaths ? (
+															<span className='num shrink-0 rounded-full bg-[color-mix(in_srgb,#b23a2e_12%,transparent)] px-2 py-0.5 text-[0.6875rem] font-bold text-[#b23a2e] dark:text-[#f08a7e]'>
+																{figure(a.deaths)} dead
+															</span>
+														) : null}
+													</button>
+												</li>
+											)
+										})}
+									</ul>
+								</section>
+							))}
+							{filtered.length === 0 ? <p className='px-2 py-10 text-center text-[0.84375rem] text-[var(--ink-3)]'>Nothing here matches these filters.</p> : null}
+						</div>
+					</div>
 					<div className='relative order-1 h-[55dvh] min-h-0 lg:order-2 lg:h-auto'>
 						{open ? <Canvas features={features} show={show} selectedId={selectedId} onSelect={onSelect} focus={focus} /> : null}
 						{selected ? (
-							<div className='absolute bottom-4 right-4 z-10 w-[22rem] max-w-[calc(100%-2rem)] max-h-[calc(100%-2rem)] overflow-y-auto shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'>
+							<div className='absolute bottom-4 right-4 z-10 w-[23rem] max-w-[calc(100%-2rem)] max-h-[calc(100%-2rem)] overflow-y-auto rounded-[1.25rem] shadow-[0_30px_60px_-28px_rgba(0,0,0,0.55)] [scrollbar-width:thin]'>
 								<Details a={selected} onClose={() => setSelectedId(null)} />
 							</div>
 						) : null}

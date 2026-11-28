@@ -1,4 +1,5 @@
 import { Skeleton, SkeletonLine } from '@betterbarmm/editorial'
+import { HeroPattern } from './photo-hero'
 
 /* ============================================================
    Page skeletons
@@ -13,27 +14,85 @@ import { Skeleton, SkeletonLine } from '@betterbarmm/editorial'
 
 const W = [78, 62, 86, 70, 56, 82, 66, 74]
 
-/** The centred head on the brand band: label, headline, standfirst, and the search field where the page has one. */
-function BandHead({ pad, title = 'min(26rem, 70%)', field = true, chips = 0 }: { pad: string; title?: string; field?: boolean; chips?: number }) {
+/**
+ * The photograph header every page now opens on (photo-hero.tsx, user decision: the travel look), in the dark: the
+ * same classes, so it sits up under the clear bars at the same height, its lines grey-on-dark (the ink re-pointed).
+ */
+export function HeroSkeleton({
+	center = false,
+	tall = false,
+	title = 'min(30rem, 75%)',
+	field = false,
+	chips = 0,
+	buttons = 0,
+	back = false,
+	photos = false,
+}: {
+	/** A photograph header (the front page and Discover); every other page has the shorter pattern header. */
+	photos?: boolean
+	center?: boolean
+	tall?: boolean
+	title?: string
+	/** The white search pill, as the front page, the directory and the services carry. */
+	field?: boolean
+	/** Rounded chips or glass buttons under the line. */
+	chips?: number
+	/** Light buttons, as Discover's "Start reading". */
+	buttons?: number
+	/** A chapter's way back beside its kicker. */
+	back?: boolean
+}) {
 	return (
-		<section aria-hidden='true' className='brand-bg bb-lattice relative overflow-hidden'>
-			<div className={`bb-container relative text-center ${pad}`}>
-				<SkeletonLine className='text-[0.625rem]' width='14rem' />
-				<SkeletonLine className='bb-display-md mt-4' width={title} />
-				<div className='mx-auto mt-4 max-w-xl text-[0.9375rem] leading-7'>
-					<SkeletonLine width='96%' />
-					<SkeletonLine width='72%' />
+		<header
+			aria-hidden='true'
+			className={`dv-hero ${tall ? 'dv-hero-tall' : ''} ${center ? 'dv-hero-center' : ''} ${photos ? '' : 'dv-hero-plain brand-bg bb-lattice'}`}
+		>
+			{photos ? <span className='dv-hero-shade' /> : <HeroPattern />}
+			{/* The skeleton's ink re-pointed to white on the words' container only: on the header itself it would also
+			    repaint the crimson ground, which is drawn from --paper (it read as a white header while loading). */}
+			<div
+				style={{ '--ink': '#fff', '--paper': 'rgb(255 255 255 / 0.25)' } as React.CSSProperties}
+				className={`bb-container relative flex min-h-[inherit] flex-col ${center ? 'items-center justify-center pb-16 pt-[calc(var(--tv-nav-h)+3rem)] text-center' : 'justify-end pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:pb-24'}`}
+			>
+				<SkeletonLine className='text-[0.75rem]' width={back ? '16rem' : '12rem'} />
+				<div className='pg-hero-title mt-4 w-full !max-w-none'>
+					<SkeletonLine width={title} />
 				</div>
-				{field ? <Skeleton className='mx-auto mt-8 h-14 w-full max-w-2xl' /> : null}
+				<div className={`mt-5 w-full max-w-2xl text-[1.0625rem] leading-relaxed md:text-[1.125rem] ${center ? 'mx-auto' : ''}`}>
+					<SkeletonLine width='94%' />
+					<SkeletonLine width='62%' />
+				</div>
+				{field ? <Skeleton className='mx-auto mt-9 h-16 w-full max-w-2xl rounded-full' /> : null}
 				{chips ? (
-					<div className='mt-6 flex flex-wrap justify-center gap-2'>
+					<div className={`mt-6 flex flex-wrap gap-2 ${center ? 'justify-center' : ''}`}>
 						{Array.from({ length: chips }, (_, i) => (
-							<Skeleton key={i} className='h-8 rounded-full' style={{ width: `${5 + (i % 3)}rem` }} />
+							<Skeleton key={i} className='h-9 rounded-full' style={{ width: `${6.5 + (i % 3)}rem` }} />
+						))}
+					</div>
+				) : null}
+				{buttons ? (
+					<div className='mt-9 flex gap-3'>
+						{Array.from({ length: buttons }, (_, i) => (
+							<Skeleton key={i} className='h-12 w-44 rounded-full' />
 						))}
 					</div>
 				) : null}
 			</div>
-			<div className='bb-weave' />
+		</header>
+	)
+}
+
+/** A page's body as most are now laid out (user decision: the travel look): a heading, a line, a grid of rounded cards. */
+export function CardsSkeleton({ count = 6 }: { count?: number }) {
+	return (
+		<section aria-hidden='true' className='bb-container dv-section'>
+			<SkeletonLine className='dv-title' width='min(22rem, 70%)' />
+			<SkeletonLine className='dv-lede' width='min(34rem, 85%)' />
+			<div className='mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+				{Array.from({ length: count }, (_, i) => (
+					<Skeleton key={i} className='min-h-[13rem] rounded-[1.25rem]' />
+				))}
+			</div>
 		</section>
 	)
 }
@@ -61,35 +120,6 @@ function HeadSkeleton({ lead = false }: { lead?: boolean }) {
 	)
 }
 
-/** The Discover header (discover-hero.tsx): words only, on the brand band. */
-function PhotoHero({ size }: { size: 'index' | 'chapter' }) {
-	return (
-		<header aria-hidden='true' className='brand-bg bb-lattice relative overflow-hidden'>
-			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
-				<div className='max-w-4xl'>
-					{size === 'chapter' ? <SkeletonLine className='mb-8 text-[0.625rem]' width='7rem' /> : null}
-					<SkeletonLine className='text-[0.625rem]' width='14rem' />
-					<div className={size === 'index' ? 'bb-display mt-5' : 'bb-display-md mt-5 max-w-[22ch]'}>
-						<SkeletonLine width='min(30rem, 90%)' />
-						<SkeletonLine width='min(24rem, 70%)' />
-					</div>
-					<div className='mt-6 max-w-[38rem] text-[1.0625rem] leading-[1.65]'>
-						<SkeletonLine width='95%' />
-						<SkeletonLine width='70%' />
-					</div>
-					<div className='mt-6 flex gap-2'>
-						{[5, 6, 5.5, 6.5].map((w) => (
-							<Skeleton key={w} className='h-7 rounded-full' style={{ width: `${w}rem` }} />
-						))}
-					</div>
-					<Skeleton className='mt-9 size-10 rounded-full' />
-				</div>
-			</div>
-			<div className='bb-weave' />
-		</header>
-	)
-}
-
 /** The primer's chapters as the bento draws them: the first large, 4 beside it. */
 function BentoSkeleton() {
 	return (
@@ -97,7 +127,7 @@ function BentoSkeleton() {
 			{Array.from({ length: 5 }, (_, i) => (
 				<Skeleton
 					key={i}
-					className={`rounded-[3px] ${i === 0 ? 'min-h-[26rem] sm:col-span-2 lg:row-span-2 lg:min-h-[38rem]' : 'min-h-[18rem]'}`}
+					className={`rounded-[1.25rem] ${i === 0 ? 'min-h-[26rem] sm:col-span-2 lg:row-span-2 lg:min-h-[38rem]' : 'min-h-[18rem]'}`}
 				/>
 			))}
 		</div>
@@ -131,26 +161,7 @@ function Status({ children }: { children: React.ReactNode }) {
 export function HomeSkeleton() {
 	return (
 		<Status>
-			<section aria-hidden='true' className='brand-bg bb-lattice relative overflow-hidden'>
-				<div className='bb-container relative py-20 lg:py-32'>
-					<div className='mx-auto max-w-5xl text-center'>
-						<SkeletonLine className='text-[0.625rem]' width='16rem' />
-						<SkeletonLine
-							className='bb-display-md mt-5 [font-size:clamp(2.4rem,11vw,3.4rem)]! sm:[font-size:clamp(1.6rem,6.4vw,5rem)]!'
-							width='min(44rem, 92%)'
-						/>
-						<div className='mx-auto mt-6 max-w-xl text-[0.9375rem] leading-7'>
-							<SkeletonLine width='95%' />
-							<SkeletonLine width='70%' />
-						</div>
-						<Skeleton className='mx-auto mt-8 h-12 w-full max-w-xl' />
-						<div className='mt-6 flex justify-center gap-6 text-[0.8125rem]'>
-							<SkeletonLine width='10rem' />
-							<SkeletonLine width='7rem' />
-						</div>
-					</div>
-				</div>
-			</section>
+			<HeroSkeleton photos center tall title='min(40rem, 90%)' field chips={3} />
 			<Skeleton className='h-[4.5rem] rounded-none!' />
 			<section aria-hidden='true' className='bb-container bb-section'>
 				<HeadSkeleton lead />
@@ -161,7 +172,7 @@ export function HomeSkeleton() {
 				</div>
 				<div className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 					{Array.from({ length: 8 }, (_, i) => (
-						<Skeleton key={i} className='min-h-[13rem] sm:min-h-[16.5rem]' />
+						<Skeleton key={i} className='min-h-[13rem] rounded-[1.25rem] sm:min-h-[16.5rem]' />
 					))}
 				</div>
 			</section>
@@ -172,7 +183,7 @@ export function HomeSkeleton() {
 export function DiscoverSkeleton() {
 	return (
 		<Status>
-			<PhotoHero size='index' />
+			<HeroSkeleton photos tall title='min(36rem, 85%)' chips={4} buttons={1} />
 			<Skeleton className='h-[4.5rem] rounded-none!' />
 			<section aria-hidden='true' className='bb-container bb-section'>
 				<HeadSkeleton lead />
@@ -187,19 +198,19 @@ export function DiscoverSkeleton() {
 export function ChapterSkeleton() {
 	return (
 		<Status>
-			<PhotoHero size='chapter' />
-			{/* The chapter tabs (chapter-grid.tsx), in grey. */}
+			<HeroSkeleton photos back chips={4} buttons={1} />
+			{/* The chapter bar (chapter-bar.tsx), in grey: a glyph over each label, "All chapters" first. */}
 			<div aria-hidden='true' className='border-b border-[var(--rule)]'>
-				<div className='bb-container flex overflow-hidden'>
-					{Array.from({ length: 5 }, (_, i) => (
-						<div key={i} className='min-w-[11rem] flex-1 border-b-[3px] border-transparent px-1 py-4 pr-6'>
-							<SkeletonLine className='text-[0.625rem]' width='1.25rem' />
-							<SkeletonLine className='mt-1 text-[0.9375rem]' width={`${55 + (i % 3) * 12}%`} />
+				<div className='bb-container flex gap-9 overflow-hidden pt-5 lg:justify-center lg:gap-14'>
+					{Array.from({ length: 6 }, (_, i) => (
+						<div key={i} className='flex shrink-0 flex-col items-center gap-2 pb-3'>
+							<Skeleton className='size-[22px]' />
+							<SkeletonLine className='text-[0.625rem]' width={`${4.5 + (i % 3)}rem`} />
 						</div>
 					))}
 				</div>
 			</div>
-			<section aria-hidden='true' className='bb-container bb-section'>
+			<section aria-hidden='true' className='bb-container dv-section'>
 				<Columns />
 			</section>
 		</Status>
@@ -209,7 +220,7 @@ export function ChapterSkeleton() {
 export function NewsSkeleton() {
 	return (
 		<Status>
-			<BandHead pad='py-16 lg:py-24' title='min(18rem, 60%)' />
+			<HeroSkeleton center title='min(18rem, 60%)' field />
 			<section aria-hidden='true' className='bb-container bb-section'>
 				<div className='mx-auto grid max-w-5xl gap-14'>
 					{[0, 1].map((day) => (
@@ -221,7 +232,7 @@ export function NewsSkeleton() {
 										key={i}
 										className='grid grid-cols-[3.25rem_minmax(0,1fr)] gap-x-3.5 gap-y-1 border-t border-[var(--rule)] py-5 sm:grid-cols-[5.25rem_minmax(0,1fr)] sm:gap-x-5 md:grid-cols-[6rem_minmax(0,1fr)_12rem] md:gap-x-6'
 									>
-										<Skeleton className='row-span-2 aspect-square self-start sm:aspect-[3/2] md:row-span-1' />
+										<Skeleton className='row-span-2 aspect-square self-start rounded-xl sm:aspect-[3/2] md:row-span-1' />
 										<div className='min-w-0'>
 											<SkeletonLine className='text-[1.05rem] leading-snug' width={`${W[(i + day) % W.length]}%`} />
 											<div className='mt-2 text-[0.875rem] leading-[1.7]'>
@@ -247,17 +258,7 @@ export function NewsSkeleton() {
 export function ExplainersSkeleton() {
 	return (
 		<Status>
-			<section aria-hidden='true' className='brand-bg bb-lattice relative overflow-hidden'>
-				<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
-					<SkeletonLine className='text-[0.625rem]' width='8rem' />
-					<div className='bb-display-md mt-6'>
-						<SkeletonLine width='min(34rem, 85%)' />
-						<SkeletonLine width='min(22rem, 60%)' />
-					</div>
-					<SkeletonLine className='mt-7 text-[0.9375rem] leading-8' width='min(40rem, 90%)' />
-				</div>
-				<div className='bb-weave' />
-			</section>
+			<HeroSkeleton title='min(34rem, 85%)' />
 			<section aria-hidden='true' className='bb-container bb-section'>
 				<div className='flex flex-wrap gap-2'>
 					{Array.from({ length: 5 }, (_, i) => (
@@ -266,7 +267,7 @@ export function ExplainersSkeleton() {
 				</div>
 				<div className='mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
 					{Array.from({ length: 6 }, (_, i) => (
-						<div key={i} className='border border-[var(--rule)]'>
+						<div key={i} className='overflow-hidden rounded-[1.25rem] border border-[var(--rule)]'>
 							<Skeleton className='aspect-[1200/622] rounded-none!' />
 							<div className='p-5'>
 								<SkeletonLine className='text-[0.625rem]' width='5rem' />
@@ -323,9 +324,9 @@ export function ArticleSkeleton() {
 export function DirectorySkeleton() {
 	return (
 		<Status>
-			<BandHead pad='py-16 lg:py-24' title='min(16rem, 55%)' chips={5} />
+			<HeroSkeleton center title='min(16rem, 55%)' field chips={5} />
 			<div aria-hidden='true' className='bb-container py-14 lg:py-20'>
-				<Skeleton className='h-[5.5rem] w-full rounded-none!' />
+				<Skeleton className='h-[5.5rem] w-full rounded-[1.25rem]' />
 				{/* The section tabs (switch-tabs.tsx), then the open section's line. */}
 				<div className='mt-14 flex gap-8 border-b border-[var(--rule)] py-4'>
 					{['11rem', '9rem', '10rem', '6rem'].map((w) => (
@@ -335,7 +336,7 @@ export function DirectorySkeleton() {
 				<SkeletonLine className='mt-8 text-[0.84375rem]' width='min(30rem, 80%)' />
 				<div className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 					{Array.from({ length: 8 }, (_, i) => (
-						<div key={i} className='overflow-hidden border border-[var(--rule)]'>
+						<div key={i} className='overflow-hidden rounded-[1.25rem] border border-[var(--rule)]'>
 							{/* The office card (directory-index-view.tsx): the logo, name, the number and the email, its head at the foot. */}
 							<div className='grid h-28 place-items-center'>
 								<Skeleton className='size-[4.5rem] rounded-full' />
@@ -359,5 +360,25 @@ export function DirectorySkeleton() {
 				</div>
 			</div>
 		</Status>
+	)
+}
+
+/** The services' filter row (services-search.tsx): what it is for on the left, the compact dropdowns on the right. */
+export function FilterRowSkeleton() {
+	return (
+		<div aria-hidden='true' className='bb-container flex flex-wrap items-end justify-between gap-x-10 gap-y-6 pt-14 lg:pt-20'>
+			<div>
+				<SkeletonLine className='text-[clamp(1.375rem,2.2vw,1.75rem)]' width='11rem' />
+				<SkeletonLine className='mt-1 text-[0.875rem]' width='19rem' />
+			</div>
+			<div className='flex w-full flex-wrap gap-3 sm:w-auto'>
+				{[0, 1].map((i) => (
+					<div key={i} className='w-full sm:w-[14.5rem]'>
+						<SkeletonLine className='pl-5 text-[0.6875rem]' width='5rem' />
+						<Skeleton className='mt-1.5 h-12 w-full rounded-full' />
+					</div>
+				))}
+			</div>
+		</div>
 	)
 }

@@ -155,7 +155,7 @@ const SITE: Record<Space, string> = {
 	lgu: 'https://lgu.betterbarmm.com',
 	primer: 'https://betterbarmm.com',
 	directory: 'https://betterbarmm.com/directory',
-	incidents: 'https://betterbarmm.com/accidents',
+	incidents: 'https://betterbarmm.com/incidents',
 	services: 'https://betterbarmm.com/services',
 	library: 'https://library.betterbarmm.com',
 	audit: 'https://betterbarmm.com',

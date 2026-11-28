@@ -24,7 +24,7 @@ export default async function ReportPage({ searchParams }: { searchParams: Promi
 				muted={[1]}
 				standfirst='A figure, a name, a date that does not match the source. Tell us where, and an editor checks it against the official document and fixes it in the open.'
 			/>
-			<section className='bb-container bb-section max-w-[44rem]'>
+			<section className='bb-container dv-section max-w-[44rem]'>
 				<ReportForm url={url.slice(0, 500)} title={title.slice(0, 200)} />
 			</section>
 			<GetInvolved />

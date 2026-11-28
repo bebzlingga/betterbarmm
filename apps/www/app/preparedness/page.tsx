@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { MapTrifoldIcon, WarningCircleIcon } from '@phosphor-icons/react/ssr'
+import { WarningCircleIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { GetInvolved } from '../_components/get-involved'
 import { PreparednessMap, type FacilityKind } from '../_components/preparedness-map'
+import { PhotoHero } from '../_components/photo-hero'
+import { RegionMapCard } from '../_components/region-map-card'
 import { SiteHeader } from '../_components/site-header'
 import { CLASS_COLORS, HAZARDS, officialBarangays, PROVINCE_NAMES, preparednessMeta, provinces, region, share, towns, type AreaSummary, type HazardId } from '../_lib/preparedness'
 import { facilityKinds, facilitySources } from '../_lib/preparedness-facilities'
@@ -100,7 +102,7 @@ function HazardArt({ hazard }: { hazard: HazardId }) {
 /** A row's hazard as a bar: low, medium and high as a share of its land. */
 function Bar({ a, h }: { a: AreaSummary; h: HazardId }) {
 	return (
-		<span className='flex h-2 w-full overflow-hidden bg-[var(--paper-2)]' aria-hidden='true'>
+		<span className='flex h-2 w-full overflow-hidden rounded-full bg-[var(--paper-2)]' aria-hidden='true'>
 			{[0, 1, 2].map((c) => (
 				<span key={c} style={{ width: `${Math.min(100, share(a, h, c as 0 | 1 | 2) * 100)}%`, background: CLASS_COLORS[c] }} />
 			))}
@@ -115,13 +117,13 @@ function Ranking({ h }: { h: (typeof HAZARDS)[number] }) {
 		.sort((a, b) => b.high + b.med - (a.high + a.med))
 		.slice(0, 12)
 	return (
-		<div>
-			<h3 className='text-[1.125rem] font-extrabold'>{h.label}</h3>
+		<div className='rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+			<h3 className='font-[family-name:var(--font-display)] text-[1.25rem] font-bold tracking-[-0.02em]'>{h.label}</h3>
 			<p className='mt-1 text-[0.78125rem] text-[var(--ink-3)]'>Towns with the most land in medium or high {h.label.toLowerCase()} hazard, from {h.scenario}.</p>
-			<ol className='mt-4 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+			<ol className='mt-4 divide-y divide-[var(--rule-soft)]'>
 				{rows.map(({ t, high, med }, i) => (
 					<li key={t.key} className='grid grid-cols-[1.5rem_minmax(0,1fr)_4.5rem] items-center gap-x-3 py-2.5 text-[0.84375rem]'>
-						<span className='tabular-nums text-[var(--ink-mute)]'>{i + 1}</span>
+						<span className='num grid size-6 place-items-center rounded-full bg-[var(--paper-2)] text-[0.6875rem] font-semibold text-[var(--ink-2)]'>{i + 1}</span>
 						<span className='min-w-0'>
 							{t.href ? (
 								<Link href={t.href} className='font-semibold hover:text-[var(--accent)]'>
@@ -152,36 +154,41 @@ export default function PreparednessPage() {
 		<main className='min-h-screen bg-[var(--paper)] text-[var(--ink)]'>
 			<SiteHeader activeItem='preparedness' />
 
-			{/* The band opens straight on the map's door, as Incident Watch's does. */}
-			<section className='brand-bg bb-lattice relative overflow-hidden'>
-				<div className='bb-container relative w-full py-14 md:py-20'>
-					<div className='flex flex-wrap items-center justify-between gap-8'>
-						<div className='max-w-[48rem]'>
-							<p className='bb-label'>Interactive map</p>
-							<h1 className='mt-2 text-[clamp(2.1rem,4.4vw,3.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-[var(--ink)]'>Know the hazard where you live, and where to go.</h1>
-							<p className='mt-3 text-[0.96875rem] leading-[1.65] text-[var(--ink-2)]'>
-								Flood, landslide and storm surge from{' '}
-								<a href='https://noah.up.edu.ph/' target='_blank' rel='noreferrer' className='underline decoration-[var(--rule)] underline-offset-4 hover:text-[var(--accent)]'>
-									Project NOAH
-								</a>
-								, as zones, as heat or barangay by barangay, with evacuation sites, hospitals and offices on top. Pick a place, or let the map find you.
-							</p>
-						</div>
-						<a href='#map' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[0.65625rem]'>
-							<MapTrifoldIcon size={15} weight='bold' aria-hidden='true' />
-							Open the map
+			{/* The page opens straight on the map's door, as Incident Watch's does, in the photograph header (travel look). */}
+			<PhotoHero
+				photos={['lakeLanao', 'panampangan', 'budBongao']}
+				kicker='Preparedness · interactive map'
+				title={<span className='block text-[clamp(2.5rem,4.6vw,4.25rem)] leading-[1.02]'>Know the hazard where you live, and where to go.</span>}
+				lede={
+					<>
+						Flood, landslide and storm surge from{' '}
+						<a href='https://noah.up.edu.ph/' target='_blank' rel='noreferrer' className='underline decoration-white/40 underline-offset-4 hover:decoration-white'>
+							Project NOAH
 						</a>
-					</div>
-				</div>
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
+						, as zones, as heat or barangay by barangay, with evacuation sites, hospitals and offices on top. Pick a place, or let the map find you.
+					</>
+				}
+				side={
+					<RegionMapCard corner='Project NOAH' value={officialBarangays.toLocaleString('en-PH')} caption='barangays, each with its hazards and the nearest help'>
+						{/* The three hazards, each with how many barangays have a tenth of their land in its high class. */}
+						<span className='relative mt-1 flex flex-wrap gap-1.5'>
+							{HAZARDS.map((h) => (
+								<span key={h.id} className='inline-flex items-center gap-1.5 rounded-full bg-[#191713]/[0.06] px-2.5 py-1 text-[0.75rem] font-semibold'>
+									<span className='size-2 rounded-full' style={{ background: CLASS_COLORS[2] }} aria-hidden='true' />
+									{h.label} <span className='num font-normal text-[#5c574c]'>{region.highBarangays[h.id].toLocaleString('en-PH')} high</span>
+								</span>
+							))}
+						</span>
+					</RegionMapCard>
+				}
+			/>
 
 			<PreparednessMap kinds={kinds} />
 
-			<section className='bb-container bb-section'>
-				<div className='flex flex-wrap items-end justify-between gap-x-10 gap-y-3'>
-					<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>Disaster risk and preparedness</h2>
-					<p className='max-w-[34rem] text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>
+			<section className='bb-container dv-section'>
+				<div>
+					<h2 className='dv-title'>Disaster risk and preparedness</h2>
+					<p className='dv-lede'>
 						Barangays with a tenth or more of their land in NOAH’s high class, of the region’s {officialBarangays.toLocaleString('en-PH')}, and the people who lived in them at the 2024 census.
 					</p>
 				</div>
@@ -190,19 +197,19 @@ export default function PreparednessPage() {
 						const n = region.highBarangays[h.id]
 						const people = region.highPeople[h.id]
 						return (
-							<div key={h.id} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)]'>
+							<div key={h.id} className='flex flex-col overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)]'>
 								<div className='relative overflow-hidden border-b border-[var(--rule)] bg-[var(--paper-2)]'>
 									<HazardArt hazard={h.id} />
-									<p className='absolute left-3 top-2.5 bg-[var(--paper-2)] px-1.5 py-0.5 bb-label'>{h.label}</p>
+									<p className='absolute left-3 top-3 rounded-full bg-[var(--paper)] px-3 py-1 text-[0.75rem] font-semibold text-[var(--ink)] shadow-[0_6px_16px_-10px_rgba(0,0,0,0.4)]'>{h.label}</p>
 								</div>
 								<div className='flex flex-1 flex-col p-5'>
 									<dt className='text-[0.8125rem] leading-[1.5] text-[var(--ink-3)]'>Barangays with a tenth or more of their land in the high class</dt>
 									<dd className='mt-2 flex items-baseline gap-2'>
-										<span className='text-[2.75rem] font-extrabold leading-none tracking-[-0.03em] tabular-nums'>{n.toLocaleString('en-PH')}</span>
+										<span className='font-[family-name:var(--font-display)] text-[2.75rem] font-extrabold leading-none tracking-[-0.035em] tabular-nums'>{n.toLocaleString('en-PH')}</span>
 										<span className='text-[0.8125rem] text-[var(--ink-3)]'>of {officialBarangays.toLocaleString('en-PH')}</span>
 									</dd>
 									<dd className='mt-3'>
-										<span className='flex h-2 overflow-hidden bg-[var(--paper-2)]' aria-hidden='true'>
+										<span className='flex h-2 overflow-hidden rounded-full bg-[var(--paper-2)]' aria-hidden='true'>
 											<span style={{ width: `${(n / officialBarangays) * 100}%`, background: CLASS_COLORS[2] }} />
 										</span>
 									</dd>
@@ -214,7 +221,7 @@ export default function PreparednessPage() {
 						)
 					})}
 				</dl>
-				<div className='mt-6 flex gap-3 border-l-[3px] border-[var(--accent)] bg-[var(--paper-2)] px-5 py-4'>
+				<div className='mt-6 flex gap-3 rounded-[1.25rem] border border-[color-mix(in_srgb,var(--accent)_30%,var(--rule))] bg-[color-mix(in_srgb,var(--accent)_6%,var(--paper))] px-5 py-4'>
 					<WarningCircleIcon size={18} weight='bold' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
 					<p className='text-[0.8125rem] leading-[1.65] text-[var(--ink-2)]'>
 						NOAH’s maps show what could happen in a severe event, not what has happened. They are drawn from elevation data and models, at a scale for planning: check a site that matters with your municipal disaster risk reduction and management office (MDRRMO) before you build or decide to stay. In an
@@ -223,12 +230,13 @@ export default function PreparednessPage() {
 				</div>
 			</section>
 
-			<section className='bb-container pb-16'>
-				<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em]'>By province</h2>
-				<div className='mt-6 overflow-x-auto'>
+			<section className='tv-wash'>
+			<div className='bb-container dv-section'>
+				<h2 className='dv-title'>By province</h2>
+				<div className='mt-8 overflow-x-auto rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] px-5 py-2'>
 					<table className='w-full min-w-[40rem] text-[0.84375rem]'>
 						<thead>
-							<tr className='border-b border-[var(--ink)] text-left text-[0.6875rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+							<tr className='border-b border-[var(--rule)] text-left text-[0.6875rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 								<th className='py-2 pr-4 font-semibold'>Province</th>
 								<th className='py-2 pr-4 font-semibold'>Barangays</th>
 								{HAZARDS.map((h) => (
@@ -268,16 +276,17 @@ export default function PreparednessPage() {
 					</table>
 				</div>
 
-				<h2 className='mt-16 text-[1.625rem] font-extrabold tracking-[-0.02em]'>Towns most exposed</h2>
-				<div className='mt-6 grid gap-12 lg:grid-cols-3 lg:gap-x-20 xl:gap-x-28'>
+				<h2 className='dv-title mt-20'>Towns most exposed</h2>
+				<div className='mt-8 grid gap-5 lg:grid-cols-3'>
 					{HAZARDS.map((h) => (
 						<Ranking key={h.id} h={h} />
 					))}
 				</div>
+			</div>
 			</section>
 
-			<section className='bb-container pb-20'>
-				<h2 className='text-[1.375rem] font-extrabold'>Sources and method</h2>
+			<section className='bb-container py-20'>
+				<h2 className='dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'>Sources and method</h2>
 				<div className='mt-4 grid gap-8 text-[0.84375rem] leading-[1.7] text-[var(--ink-2)] lg:grid-cols-2'>
 					<div className='space-y-3'>
 						<p>

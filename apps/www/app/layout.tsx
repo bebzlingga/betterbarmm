@@ -3,7 +3,8 @@ import { BrainDialog } from './_components/brain-dialog'
 import { DM_Sans, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { AskDock } from '@betterbarmm/ai/dock'
-import { MotionProvider, SiteFooter } from '@betterbarmm/editorial'
+import { MotionProvider } from '@betterbarmm/editorial'
+import { WwwFooter } from './_components/www-footer'
 import { themeInitScript } from './_components/theme-toggle'
 import './globals.css'
 
@@ -125,7 +126,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='min-h-full bg-[var(--paper)] antialiased'>
         <MotionProvider>
           {children}
-          <SiteFooter />
+          <WwwFooter />
         </MotionProvider>
         <Analytics />
         <AskDock />

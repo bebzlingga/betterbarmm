@@ -39,9 +39,9 @@ export default function LicencePage() {
 			<SiteHeader activeItem='data' />
 			<Masthead brand label='Open data · Licence' lines={['Reuse it.', 'Say where it came from.']} muted={[1]} standfirst='Most tables here are yours to copy, change and publish, commercially or not, as long as you credit BetterBARMM. Two follow their sources’ terms instead.' />
 
-			<div className='bb-container bb-section'>
+			<div className='bb-container dv-section'>
 				<div className='max-w-[52rem] [&>section+section]:mt-14'>
-				<section id='cc-by' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+				<section id='cc-by' className='scroll-mt-4'>
 					<h2 className={H2}>CC BY 4.0</h2>
 					<p className={P}>
 						BetterBARMM releases its tables under the{' '}
@@ -52,7 +52,7 @@ export default function LicencePage() {
 						licence, and say if you changed anything.
 					</p>
 					<p className={P}>Credit it like this:</p>
-					<p className='mt-3 border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-5 py-4 font-mono text-[0.8125rem] leading-6 text-[var(--ink)]'>
+					<p className='mt-3 rounded-[1.25rem] border-l-4 border-[var(--accent)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] px-5 py-4 font-mono text-[0.8125rem] leading-6 text-[var(--ink)]'>
 						Source: BetterBARMM, “Local governments” (betterbarmm.com/data), CC BY 4.0.
 					</p>
 					<p className={P}>
@@ -64,7 +64,7 @@ export default function LicencePage() {
 					<Under licence={(l) => l.startsWith('CC BY')} />
 				</section>
 
-				<section id='odbl' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+				<section id='odbl' className='scroll-mt-4'>
 					<h2 className={H2}>ODbL 1.0</h2>
 					<p className={P}>
 						The hazard exposure tables are built from Project NOAH’s hazard maps and OpenStreetMap, both shared under the{' '}
@@ -77,7 +77,7 @@ export default function LicencePage() {
 					<Under licence={(l) => l.startsWith('ODbL')} />
 				</section>
 
-				<section id='facts' className='scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+				<section id='facts' className='scroll-mt-4'>
 					<h2 className={H2}>Facts only</h2>
 					<p className={P}>
 						The news table lists where a story is: the outlet, the date, the headline and the link. The stories are the outlets’

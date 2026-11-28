@@ -10,7 +10,7 @@ export function ReportForm({ url, title }: { url: string; title: string }) {
 
 	if (state.ok)
 		return (
-			<div className='flex items-start gap-3 bg-[var(--paper-2)] p-6'>
+			<div className='tv-wash flex items-start gap-3 rounded-[1.25rem] p-6'>
 				<CheckCircleIcon size={22} weight='fill' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
 				<div>
 					<p className='text-[1.0625rem] font-extrabold'>Thank you. An editor will check it against the source.</p>
@@ -24,7 +24,7 @@ export function ReportForm({ url, title }: { url: string; title: string }) {
 			</div>
 		)
 
-	const field = 'w-full border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 text-[0.9375rem] outline-none focus:border-[var(--accent)]'
+	const field = 'rounded-2xl w-full border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 text-[0.9375rem] outline-none focus:border-[var(--accent)]'
 	return (
 		<form action={action} className='space-y-6'>
 			<input type='hidden' name='started' value={started} />
@@ -59,7 +59,7 @@ export function ReportForm({ url, title }: { url: string; title: string }) {
 					{state.error}
 				</p>
 			) : null}
-			<button type='submit' disabled={pending} className='bb-btn bb-btn-brass'>
+			<button type='submit' disabled={pending} className='inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3.5 font-[family-name:var(--font-display)] text-[0.9375rem] font-semibold text-white transition hover:-translate-y-px hover:brightness-110 disabled:opacity-60'>
 				{pending ? 'Sending…' : 'Send the report'}
 			</button>
 		</form>

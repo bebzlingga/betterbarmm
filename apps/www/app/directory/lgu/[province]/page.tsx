@@ -38,15 +38,15 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 			<section className='bb-container py-14 lg:py-20'>
 				{/* Two columns, as an office's dialog: who governs it and how to reach it on the left; what it offers, its towns and its governors on the right. */}
 				<div className='grid gap-12 lg:grid-cols-[minmax(0,35fr)_minmax(0,65fr)] lg:gap-20 xl:gap-24'>
-					<aside className='space-y-8'>
+					<aside className='space-y-8 self-start'>
 						{isProvince ? (
 							<div className='space-y-4'>
-								<div className='border-t border-[var(--ink)] pt-4'>
-									<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Governor</p>
+								<div>
+									<p className='mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Governor</p>
 									<p className='mt-1 text-[1.375rem] font-extrabold tracking-[-0.02em]'>{g.governor ?? 'Not in the canvass'}</p>
 								</div>
 								<div className='border-t border-[var(--rule)] pt-4'>
-									<p className='mb-1.5 font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink)]'>Vice governor</p>
+									<p className='mb-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>Vice governor</p>
 									<p className='mt-1 text-[1.375rem] font-extrabold tracking-[-0.02em]'>{g.viceGovernor ?? '–'}</p>
 								</div>
 							</div>
@@ -55,7 +55,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						<LguEmailBlock email={lguEmail(g.slug)} className='' />
 
 						<section aria-labelledby='lines'>
-							<h2 id='lines' className='text-[1.25rem] font-extrabold'>
+							<h2 id='lines' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 								Who to call, province-wide
 							</h2>
 							<Lines lines={lines} empty='No province-wide numbers found on an official page yet.' />
@@ -67,12 +67,12 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						{lgu ? <DirectoryServices services={lguHasCharter(lgu) ? lgu.services : []} href={lguHref(lgu)} base='/services/lgu' note={lgu ? (lguHasCharter(lgu) ? 'From its Citizen’s Charter: what to bring, the fee and how long each takes.' : (lgu.charterNote ?? 'No Citizen’s Charter of its own was found online.')) : ''} /> : null}
 
 						<section aria-labelledby='towns' className='mt-10'>
-							<h2 id='towns' className='text-[1.25rem] font-extrabold'>
+							<h2 id='towns' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 								{g.units.length === 1 ? 'The city' : 'Towns and cities'} <span className='text-[var(--ink-mute)]'>{g.units.length}</span>
 							</h2>
 							<table className='mt-3 w-full table-fixed border-collapse text-[0.84375rem]'>
 								<thead>
-									<tr className='border-b border-[var(--ink)] text-left text-[0.65625rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+									<tr className='border-b border-[var(--rule)] text-left text-[0.65625rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 										<th className='w-1/2 py-2 pr-4 font-semibold sm:w-1/3'>Town or city</th>
 										<th className='w-1/2 py-2 pr-4 font-semibold sm:w-1/3'>Mayor</th>
 										<th className='hidden py-2 pr-4 font-semibold sm:table-cell sm:w-1/3'>Vice mayor</th>
@@ -97,7 +97,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
 						{lineage.length ? (
 							<section aria-labelledby='lineage' className='mt-10'>
-								<h2 id='lineage' className='text-[1.25rem] font-extrabold'>
+								<h2 id='lineage' className='font-[family-name:var(--font-display)] text-[1.375rem] font-bold tracking-[-0.02em]'>
 									Governors since 2007
 								</h2>
 								<ol className='mt-3 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)] text-[0.875rem]'>

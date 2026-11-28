@@ -95,7 +95,8 @@ export function PlaceHeader({ label, province, town, name }: { label: string; pr
 			name={name}
 			photo={photo ? { src: photo.src, alt: tp?.caption || name, credit: photo.credit } : null}
 			// A seal fills its whole square where an office's wordmark does not, so it runs a size down to look the same.
-			logo={seal ? { src: seal.src, alt: `The seal of ${name}`, title: `Seal: ${seal.credit}`, className: 'size-14 md:size-[5.5rem]' } : null}
+			logo={seal ? { src: seal.src, alt: `The seal of ${name}`, title: `Seal: ${seal.credit}`, className: 'size-14 md:size-[4.5rem]' } : null}
+			discover='cotabatoPlaza'
 		/>
 	)
 }
@@ -111,15 +112,15 @@ export function DirectoryPlaces() {
 				return (
 					<section key={g.slug} id={`area-${g.slug}`} aria-labelledby={`area-${g.slug}-title`} className='scroll-mt-[calc(var(--site-header-h)+1rem)] pt-10'>
 						{/* The province under its photograph. */}
-						<div className='bb-frame relative isolate h-56 overflow-hidden bg-[#3a1a14] sm:h-64'>
+						<div className='relative isolate h-56 overflow-hidden rounded-[1.25rem] bg-[#10161b] sm:h-72'>
 							{banner ? (
 								// eslint-disable-next-line @next/next/no-img-element
 								<img src={banner.src} alt='' loading='lazy' className='absolute inset-0 -z-10 size-full object-cover' />
 							) : null}
-							<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(20,8,4,0.85),rgba(20,8,4,0.25)_60%,rgba(20,8,4,0.05))]' />
+							<span aria-hidden='true' className='absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgba(8,12,16,0.92),rgba(8,12,16,0.35)_60%,rgba(8,12,16,0.08))]' />
 							<div className='flex h-full flex-col justify-end p-5 text-white sm:p-7'>
-								<p className='font-mono text-[0.65625rem] font-semibold uppercase tracking-[0.14em] text-white/75'>{g.kind}</p>
-								<h3 id={`area-${g.slug}-title`} className='mt-1 text-[1.75rem] font-extrabold leading-tight tracking-[-0.02em] sm:text-[2.125rem]'>
+								<p className='font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-[#f1c453]'>{g.kind}</p>
+								<h3 id={`area-${g.slug}-title`} className='mt-1 font-[family-name:var(--font-display)] text-[2rem] font-extrabold leading-tight tracking-[-0.03em] sm:text-[2.5rem]'>
 									<Link scroll={false} href={g.href} className='hover:underline hover:decoration-white/50 hover:underline-offset-4'>
 										{g.name}
 									</Link>
@@ -171,10 +172,10 @@ export function DirectoryPlaces() {
 								return (
 									<li
 										key={u.slug}
-										className='group relative flex flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+										className='group relative flex flex-col overflow-hidden rounded-[1.25rem] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
 									>
 										{/* The town's picture: a photograph where there is one, else its seal, else where it is. */}
-										<span className='relative block h-40 overflow-hidden bg-[var(--paper-2)]'>
+										<span className='tv-wash relative block h-40 overflow-hidden'>
 											{tp ? (
 												<Picture photo={tp} name={u.name} size={500} />
 											) : seal ? (
@@ -192,7 +193,7 @@ export function DirectoryPlaces() {
 
 										<div className='flex flex-1 flex-col px-4 pb-5 pt-4 text-center'>
 											{/* The name under the picture (user decision); the card's one link, stretched over it. */}
-											<Link scroll={false} href={u.href} className='text-[1.0625rem] font-extrabold leading-tight tracking-[-0.015em] text-[var(--ink)] after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
+											<Link scroll={false} href={u.href} className='font-[family-name:var(--font-display)] text-[1.0625rem] font-bold leading-tight tracking-[-0.015em] text-[var(--ink)] after:absolute after:inset-0 group-hover:text-[var(--accent)]'>
 												{u.name}
 											</Link>
 											{/* As the office cards: its kind as a badge under the name. */}
@@ -231,7 +232,7 @@ export function DirectoryPlaces() {
 										</div>
 
 										{/* Who runs it, at the foot of the card, as on the office cards: the heads line up across a row. */}
-										<div className='flex min-h-[4.25rem] items-center gap-3 border-t border-[var(--rule)] px-4 py-3'>
+										<div className='flex min-h-[4.25rem] items-center gap-3 border-t border-[var(--rule)] bg-[color-mix(in_srgb,var(--paper-2)_45%,var(--paper))] px-4 py-3'>
 											<Emblem image={null} name={u.head ?? u.name} portrait className='size-11 shrink-0 rounded-full text-[0.6875rem]' />
 											<span className='min-w-0'>
 												<span className='block truncate text-[0.875rem] font-bold leading-tight text-[var(--ink)]'>{u.head ?? 'Mayor not in the canvass'}</span>

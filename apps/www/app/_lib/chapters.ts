@@ -6,7 +6,7 @@ import { photo, type DiscoverPhotoKey } from '../_components/discover-media'
 /* The primer's chapters as cards, in the primer's own order, so a chapter is numbered the same on the front page,
    the Discover index and its own page. One list: the photograph and what each holds were kept in three places. */
 
-const PHOTO: Record<string, DiscoverPhotoKey> = {
+export const PHOTO: Record<string, DiscoverPhotoKey> = {
 	history: 'makhdumMosque',
 	governance: 'parliamentBuilding',
 	people: 'singkil',

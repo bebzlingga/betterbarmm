@@ -1,6 +1,31 @@
 'use client'
 
-import { ArrowsInIcon, BrainIcon, CircleDashedIcon, MinusIcon, PlusIcon, TreeStructureIcon } from '@phosphor-icons/react'
+import {
+	AddressBookIcon,
+	ArrowsInIcon,
+	BooksIcon,
+	BrainIcon,
+	BuildingsIcon,
+	CheckSquareOffsetIcon,
+	CircleDashedIcon,
+	CoinsIcon,
+	CompassIcon,
+	DatabaseIcon,
+	DiamondsFourIcon,
+	FirstAidKitIcon,
+	GraduationCapIcon,
+	HandshakeIcon,
+	HouseIcon,
+	MinusIcon,
+	PlusIcon,
+	ScrollIcon,
+	ShoppingCartIcon,
+	SirenIcon,
+	TargetIcon,
+	TreeStructureIcon,
+	UmbrellaIcon,
+	type Icon,
+} from '@phosphor-icons/react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { BrainEdge, BrainNode } from '../_lib/brain'
 
@@ -18,11 +43,17 @@ import type { BrainEdge, BrainNode } from '../_lib/brain'
 
 const C = 500
 const RADIUS = { jo: 0, workspace: 175, dataset: 318, source: 448 } as const
+/** Placed first, in this order; any workspace or project not named here follows (Education, Health, Library and the projects had been left off). */
 const ORDER = ['w-legislation', 'w-budget', 'w-directory', 'w-services', 'w-procurement', 'w-lgu', 'w-election', 'w-incidents', 'w-preparedness', 'w-places', 'w-crafts', 'w-discover']
+/** The workspaces and then the projects, the named ones first in their order. */
+const ordered = (nodes: BrainNode[]) => [
+	...ORDER.map((id) => nodes.find((n) => n.id === id)!).filter(Boolean),
+	...nodes.filter((n) => n.kind === 'workspace' && !ORDER.includes(n.id)).sort((a, b) => Number(Boolean(a.project)) - Number(Boolean(b.project))),
+]
 
 type Layout = 'rings' | 'columns'
 /** A node where it sits, and where its label goes. */
-type Placed = BrainNode & { x: number; y: number; a: number; lx: number; ly: number; anchor: 'start' | 'middle' | 'end' }
+type Placed = BrainNode & { x: number; y: number; a: number; lx: number; ly: number; anchor: 'start' | 'middle' | 'end'; r?: number }
 
 const at = (r: number, a: number) => ({ x: C + r * Math.cos(a), y: C + r * Math.sin(a) })
 const mean = (as: number[]) => Math.atan2(as.reduce((s, a) => s + Math.sin(a), 0), as.reduce((s, a) => s + Math.cos(a), 0))
@@ -46,7 +77,7 @@ function rings(nodes: BrainNode[], edges: BrainEdge[]): Map<string, Placed> {
 		})
 	}
 	const start = -Math.PI / 2
-	const ws = ORDER.map((id) => nodes.find((n) => n.id === id)!).filter(Boolean)
+	const ws = ordered(nodes)
 	ws.forEach((n, i) => {
 		const a = start + (i / ws.length) * Math.PI * 2
 		const p = at(RADIUS.workspace, a)
@@ -77,15 +108,16 @@ const COL = { jo: 0, workspace: 280, dataset: 640, source: 1000 } as const
 const TALL = 720
 function columns(nodes: BrainNode[], edges: BrainEdge[]): Map<string, Placed> {
 	const placed = new Map<string, Placed>()
-	const put = (n: BrainNode, y: number) => {
+	const put = (n: BrainNode, y: number, room = Infinity) => {
 		const x = COL[n.kind]
-		const r = radius(n)
-		// Datasets and sources are labelled to their right, a workspace under it.
-		const side = n.kind === 'source' || n.kind === 'dataset' ? 'start' : 'middle'
-		placed.set(n.id, { ...n, a: 0, x, y, lx: side === 'start' ? x + r + 8 : x, ly: side === 'middle' ? y + r + 16 : y + 4, anchor: side })
+		// In a column a circle may be no wider than its row, less a gap, or its neighbours overlap it (user report).
+		const r = Math.min(radius(n), Math.max(3, room / 2 - 2))
+		// Every column labelled to the right of its circles (user decision: a workspace's name under it ran into the next one); Jo under it.
+		const side = n.kind === 'jo' ? 'middle' : 'start'
+		placed.set(n.id, { ...n, a: 0, x, y, r, lx: side === 'start' ? x + r + 8 : x, ly: side === 'middle' ? y + r + 16 : y + 4, anchor: side })
 	}
-	const spread = (list: BrainNode[]) => list.forEach((n, i) => put(n, ((i + 0.5) / list.length) * TALL))
-	spread(ORDER.map((id) => nodes.find((n) => n.id === id)!).filter(Boolean))
+	const spread = (list: BrainNode[]) => list.forEach((n, i) => put(n, ((i + 0.5) / list.length) * TALL, TALL / list.length))
+	spread(ordered(nodes))
 	put(nodes.find((n) => n.kind === 'jo')!, TALL / 2)
 	for (const kind of ['dataset', 'source'] as const) {
 		const col = nodes.filter((n) => n.kind === kind)
@@ -115,6 +147,28 @@ function curve(p: Placed, q: Placed, kind: BrainEdge['kind'], mode: Layout): str
 
 const SIZE = { jo: 34, workspace: 15, dataset: 8, source: 6 }
 const FILL = { jo: 'url(#jo)', workspace: '#c3313b', dataset: '#e3ac3e', source: '#7fa9aa' }
+/** Each workspace's and project's glyph, drawn inside its circle (user decision), the ones the site uses for them. */
+const GLYPH: Record<string, Icon> = {
+	'w-legislation': ScrollIcon,
+	'w-budget': CoinsIcon,
+	'w-election': CheckSquareOffsetIcon,
+	'w-lgu': BuildingsIcon,
+	'w-procurement': ShoppingCartIcon,
+	'w-directory': AddressBookIcon,
+	'w-incidents': SirenIcon,
+	'w-preparedness': UmbrellaIcon,
+	'w-places': CompassIcon,
+	'w-education': GraduationCapIcon,
+	'w-health': FirstAidKitIcon,
+	'w-library': BooksIcon,
+	'w-crafts': DiamondsFourIcon,
+	'w-services': HandshakeIcon,
+	'w-discover': HouseIcon,
+	'p-plan': TargetIcon,
+	'p-data': DatabaseIcon,
+}
+/** A project, on the workspaces' ring in a colour of its own. */
+const PROJECT = '#a77be6'
 type Props = {
 	nodes: BrainNode[]
 	edges: BrainEdge[]
@@ -227,7 +281,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick,
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
-	const button = 'flex size-9 items-center justify-center border border-white/20 bg-black/30 text-white/85 backdrop-blur transition hover:border-white hover:text-white'
+	const button = 'flex size-10 items-center justify-center rounded-full border border-white/15 bg-white/[0.08] text-white/85 transition hover:bg-white hover:text-[#10161b]'
 	return (
 	<div className='relative h-full w-full'>
 	<svg
@@ -314,7 +368,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick,
 
 		{[...placed.values()].map((n) => {
 			const on = lit(n.id)
-			const r = radius(n)
+			const r = n.r ?? radius(n)
 						return (
 				<g
 					key={n.id}
@@ -335,7 +389,12 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick,
 					opacity={on ? 1 : 0.18}
 				>
 					{n.kind === 'jo' ? <circle cx={n.x} cy={n.y} r={r + 10} fill='#f1c453' opacity='.18' filter='url(#glow)' /> : null}
-					<circle cx={n.x} cy={n.y} r={r} fill={FILL[n.kind]} stroke={picked === n.id ? '#ffffff' : 'none'} strokeWidth='2' filter={n.kind === 'workspace' ? 'url(#glow)' : undefined} />
+					<circle cx={n.x} cy={n.y} r={r} fill={n.project ? PROJECT : FILL[n.kind]} stroke={picked === n.id ? '#ffffff' : 'none'} strokeWidth='2' filter={n.kind === 'workspace' ? 'url(#glow)' : undefined} />
+					{n.kind === 'workspace' && GLYPH[n.id] ? (() => {
+						const Glyph = GLYPH[n.id]!
+						const g = Math.round(r * 1.15)
+						return <Glyph x={n.x - g / 2} y={n.y - g / 2} size={g} weight='bold' color='#ffffff' aria-hidden='true' className='pointer-events-none' />
+					})() : null}
 					{n.kind === 'jo' ? (
 						<BrainIcon x={n.x - 18} y={n.y - 18} size={36} weight='fill' color='#3a0f16' aria-hidden='true' />
 					) : (
@@ -344,7 +403,7 @@ export function BrainFlat({ nodes, edges, lit, edgeLit, picked, onHover, onPick,
 							y={n.ly}
 							textAnchor={n.anchor}
 							// In columns a label crosses the links beside it; a halo of the ground keeps it legible.
-							{...(mode === 'columns' ? { stroke: '#1f070b', strokeWidth: 3.5, strokeLinejoin: 'round' as const, paintOrder: 'stroke' } : {})}
+							{...(mode === 'columns' ? { stroke: '#0f151a', strokeWidth: 3.5, strokeLinejoin: 'round' as const, paintOrder: 'stroke' } : {})}
 							className={n.kind === 'workspace' ? 'fill-white text-[0.875rem] font-bold' : n.kind === 'dataset' ? 'fill-[#f3dcae] text-[0.71875rem]' : 'fill-[#a9c6c6] text-[0.6875rem]'}
 						>
 							{n.label}
