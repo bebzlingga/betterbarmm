@@ -349,7 +349,7 @@ export function MemberRecord({
 						role='tablist'
 						aria-label='Legislative record'
 						onKeyDown={handleKeyDown}
-						className='mt-7 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]'
+						className='seg mt-7'
 					>
 						{tabs.map((tab) => {
 							const selected = tab.key === activeKey
@@ -366,10 +366,10 @@ export function MemberRecord({
 									// move between them from there.
 									tabIndex={selected ? 0 : -1}
 									onClick={() => setChosen(tab.key)}
-									className='dv-pill aria-selected:!border-[var(--accent)] aria-selected:!bg-[var(--accent)] aria-selected:!text-white'
+									className='seg-tab'
 								>
 									{tab.label}
-									<span className='tab-count'>{tab.count}</span>
+									<span className='seg-count'>{tab.count}</span>
 								</button>
 							)
 						})}

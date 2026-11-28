@@ -47,7 +47,7 @@ export function InstitutionBrowser({ items }: { items: Institution[] }) {
 	return (
 		<div>
 			<div className='flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between'>
-				<div role='tablist' aria-label='Kind of institution' className='flex flex-wrap gap-2'>
+				<div role='tablist' aria-label='Kind of institution' className='seg'>
 					{KINDS.map((k) => {
 						const on = kind === k.key
 						return (
@@ -57,12 +57,10 @@ export function InstitutionBrowser({ items }: { items: Institution[] }) {
 								role='tab'
 								aria-selected={on}
 								onClick={() => setKind(k.key)}
-								className={`inline-flex cursor-pointer items-center gap-2 rounded-full border px-4 py-2.5 text-[0.8125rem] font-semibold leading-none transition ${
-									on ? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]' : 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)]'
-								}`}
+								className='seg-tab'
 							>
 								{k.label}
-								<span className={`num font-medium leading-none ${on ? 'opacity-70' : 'text-[var(--ink-mute)]'}`}>{count(k.key)}</span>
+								<span className='seg-count'>{count(k.key)}</span>
 							</button>
 						)
 					})}

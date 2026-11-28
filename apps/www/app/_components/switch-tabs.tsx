@@ -48,11 +48,7 @@ export function SwitchTabs({
 			<div
 				role='tablist'
 				aria-label={label}
-				className={
-					look === 'underline'
-						? 'flex overflow-x-auto border-b border-[var(--rule)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'
-						: 'flex flex-wrap gap-2'
-				}
+				className='seg'
 			>
 				{[...(all ? [{ key: ALL, label: all.label, count: all.count, panel: null }] : []), ...tabs].map((t) => {
 					const on = t.key === active
@@ -65,19 +61,11 @@ export function SwitchTabs({
 							aria-selected={on}
 							aria-controls={t.key === ALL ? undefined : `tab-panel-${t.key}`}
 							onClick={() => setActive(t.key)}
-							className={
-								look === 'underline'
-									? `-mb-px inline-flex shrink-0 cursor-pointer items-baseline gap-2 border-b-[3px] px-1 py-4 pr-7 text-[1.0625rem] font-extrabold tracking-[-0.015em] transition ${
-											on ? 'border-[var(--accent)] text-[var(--ink)]' : 'border-transparent text-[var(--ink-3)] hover:text-[var(--ink)]'
-										}`
-									: `inline-flex cursor-pointer items-center gap-2 rounded-full border px-4 py-2.5 text-[0.8125rem] font-semibold leading-none transition ${
-											on ? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]' : 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)]'
-										}`
-							}
+							className='seg-tab'
 						>
 							{t.label}
 							{t.count !== undefined ? (
-								<span className={`num leading-none ${look === 'underline' ? 'text-[0.8125rem] font-semibold' : 'font-medium'} ${on ? (look === 'pills' ? 'opacity-70' : 'text-[var(--accent)]') : 'text-[var(--ink-mute)]'}`}>
+								<span className='seg-count'>
 									{t.count}
 								</span>
 							) : null}

@@ -110,7 +110,7 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 	return (
 		<section className='bb-container py-[clamp(3.5rem,6vw,5.5rem)]'>
 			{/* Which Authority, as tabs over the figures they change: everything under them follows the choice. */}
-			<div role='tablist' aria-label='Transition Authority' className='flex gap-3 overflow-x-auto pb-1 [scrollbar-width:none]'>
+			<div role='tablist' aria-label='Transition Authority' className='seg'>
 				{data.map((d) => (
 					<button
 						key={d.key}
@@ -121,10 +121,10 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 							setWhich(d.key)
 							setYear('all')
 						}}
-						className={`shrink-0 cursor-pointer rounded-2xl border px-5 py-3.5 text-left outline-none transition focus-visible:ring-2 focus-visible:ring-[var(--accent)] ${d.key === which ? 'border-[var(--accent)] bg-[var(--accent)] text-white' : 'border-[var(--rule)] bg-[var(--paper)] hover:border-[color-mix(in_srgb,var(--ink)_35%,var(--rule))]'}`}
+						className='seg-tab'
 					>
-						<span className={`block font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold tracking-[-0.015em] ${d.key === which ? 'text-white' : 'text-[var(--ink)]'}`}>{d.label}</span>
-						<span className={`mt-0.5 block text-[0.75rem] ${d.key === which ? 'text-white/75' : 'text-[var(--ink-mute)]'}`}>
+						{d.label}
+						<span className='seg-count'>
 							{d.years} · {d.attendance.sittings.length} sittings
 						</span>
 					</button>

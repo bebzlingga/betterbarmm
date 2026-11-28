@@ -15,7 +15,7 @@ export function DirectoryGrid({
 	const chips = [{ key: 'all', title: 'Everything', count: items.length }, ...topics]
 	return (
 		<div>
-			<div role='tablist' aria-label='Filter by topic' className='-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0'>
+			<div role='tablist' aria-label='Filter by topic' className='seg'>
 				{chips.map((c) => {
 					const on = c.key === active
 					return (
@@ -25,14 +25,10 @@ export function DirectoryGrid({
 							role='tab'
 							aria-selected={on}
 							onClick={() => setActive(c.key)}
-							className={`inline-flex shrink-0 cursor-pointer items-center gap-2.5 rounded-full border px-4 py-2.5 text-[0.8125rem] font-semibold leading-none transition duration-200 ${
-								on
-									? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]'
-									: 'border-[var(--rule)] bg-[var(--paper)] text-[var(--ink-2)] hover:border-[var(--ink)]'
-							}`}
+							className='seg-tab'
 						>
 							{c.title}
-							<span className={`font-medium leading-none tabular-nums ${on ? 'text-[var(--paper)]/60' : 'text-[var(--ink-mute)]'}`}>{c.count}</span>
+							<span className='seg-count'>{c.count}</span>
 						</button>
 					)
 				})}
