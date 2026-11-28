@@ -373,9 +373,8 @@
   color: #fff;
   text-wrap: balance;
 }
-/* A measure's official title, a sentence of forty words: a step smaller and wider. */
-.pg-hero-title-sm { max-width: 46rem; font-size: clamp(1.875rem, 3.4vw, 2.875rem); line-height: 1.08; letter-spacing: -0.03em; }
-@media (min-width: 1024px) { .pg-hero-title-sm { max-width: 62rem; } }
+/* A measure's official title, a sentence of forty words: a step smaller, across the header's full width. */
+.pg-hero-title-sm { max-width: none; font-size: clamp(1.875rem, 3.4vw, 2.875rem); line-height: 1.08; letter-spacing: -0.03em; text-wrap: pretty; }
 .pg-hero-kicker {
   font-family: var(--font-display);
   font-size: 0.75rem;
@@ -429,6 +428,12 @@
 
 .dv-section { padding-block: clamp(5rem, 10vw, 9rem); }
 .dv-section[id] { scroll-margin-top: 4rem; }
+/* What sits right under the header (the front page's figures): the same space above it and below it, whatever follows. */
+:root { --lg-under: clamp(3.5rem, 6vw, 5rem); }
+.lg-under { padding-top: var(--lg-under); }
+.lg-under + :not(.tv-wash, .tv-wash-flip) { padding-top: var(--lg-under) !important; }
+.lg-under:has(+ :is(.tv-wash, .tv-wash-flip)),
+.lg-under:last-child { padding-bottom: var(--lg-under); }
 .dv-title {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.2vw, 2.5rem);

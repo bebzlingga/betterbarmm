@@ -12,6 +12,18 @@ const TONE_FILL: Record<StatusTone, string> = {
   neutral: "bg-[var(--tone-idle-fg)]",
 };
 
+/** The rail between dots: the stage's tone, lighter, so the dots stand out on it. */
+const TONE_LINE: Record<StatusTone, string> = {
+  filed: "bg-[color-mix(in_srgb,var(--tone-file-fg)_32%,transparent)]",
+  early: "bg-[color-mix(in_srgb,var(--tone-early-fg)_32%,transparent)]",
+  committee: "bg-[color-mix(in_srgb,var(--tone-committee-fg)_32%,transparent)]",
+  advancing: "bg-[color-mix(in_srgb,var(--tone-move-fg)_32%,transparent)]",
+  passed: "bg-[color-mix(in_srgb,var(--tone-pass-fg)_32%,transparent)]",
+  enacted: "bg-[color-mix(in_srgb,var(--tone-done-fg)_32%,transparent)]",
+  archived: "bg-[color-mix(in_srgb,var(--tone-idle-fg)_32%,transparent)]",
+  neutral: "bg-[color-mix(in_srgb,var(--tone-idle-fg)_32%,transparent)]",
+};
+
 /** The halo that picks the current stage out of the ones behind it. */
 const TONE_HALO: Record<StatusTone, string> = {
   filed: "ring-[var(--tone-file-bg)]",
@@ -150,7 +162,7 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
                     index === 0
                       ? "bg-transparent"
                       : stage.reached
-                        ? TONE_FILL[tone]
+                        ? TONE_LINE[tone]
                         : "bg-[var(--rule)]"
                   }`}
                 />
@@ -166,7 +178,7 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
                     isLast || !next
                       ? "bg-transparent"
                       : next.reached
-                        ? TONE_FILL[stageTone(next.label)]
+                        ? TONE_LINE[stageTone(next.label)]
                         : "bg-[var(--rule)]"
                   }`}
                 />

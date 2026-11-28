@@ -147,7 +147,7 @@ export default function HomePage() {
 				</div>
 			</RegistryBand>
 
-			<section className='bb-container pt-12 lg:pt-16'>
+			<section className='bb-container lg-under'>
 					<StatFigures
 						onPaper
 						stats={[
