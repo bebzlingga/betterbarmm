@@ -21,7 +21,7 @@ export default function Loading() {
 						home
 							? 'flex flex-col items-center justify-center pb-16 pt-[calc(var(--tv-nav-h)+3rem)] text-center'
 							: book
-								? 'grid content-end gap-10 pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:grid-cols-[minmax(0,14rem)_1fr] md:items-end md:gap-14 md:pb-20 lg:grid-cols-[minmax(0,16rem)_1fr]'
+								? 'grid content-end gap-10 pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:grid-cols-[minmax(0,14rem)_1fr] md:items-start md:gap-14 md:pb-20 lg:grid-cols-[minmax(0,16rem)_1fr]'
 								: 'flex flex-col justify-end pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:pb-20'
 					}`}
 				>

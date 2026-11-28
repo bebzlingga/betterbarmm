@@ -1,4 +1,5 @@
 import type { Icon } from '@phosphor-icons/react'
+import Link from 'next/link'
 import { books, coverSrc, type Book } from '../_lib/library'
 
 /* ============================================================
@@ -96,22 +97,71 @@ export function SectionHead({ title, note, children }: { title: string; note?: s
 	)
 }
 
-/** A row of headline figures, each on a rounded card. */
-export function Figures({ items }: { items: { value: string; label: string; icon: Icon; href?: string }[] }) {
+/**
+ * The shelf in figures (user decision: redesigned): each a card that opens what it counts, with a picture of it above
+ * the number, as travel's cards lead with a photograph: a fan of covers, a row of faces, the presses' marks.
+ */
+export function Figures({ items }: { items: { value: string; label: string; icon: Icon; href: string; visual: React.ReactNode }[] }) {
 	return (
-		<dl className='grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4'>
+		<dl className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4'>
 			{items.map(({ icon: Glyph, ...item }) => (
-				<div key={item.label} className='tv-card !p-5 sm:!p-6'>
-					<dd className='num font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-						<span aria-hidden className='mb-4 grid size-11 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
-							<Glyph size={22} weight='duotone' />
+				<Link key={item.label} href={item.href} className='group relative flex flex-col overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'>
+					{/* The picture, on the warm wash, its foot cut off by the card's edge. */}
+					<div aria-hidden='true' className='tv-wash relative flex h-36 items-end justify-center overflow-hidden px-6 pt-6'>
+						{item.visual}
+					</div>
+					<div className='flex items-start justify-between gap-3 p-5 sm:p-6'>
+						<div>
+							<dd className='num font-[family-name:var(--font-display)] text-[clamp(2rem,3.4vw,2.75rem)] font-extrabold leading-none tracking-[-0.035em] text-[var(--ink)]'>{item.value}</dd>
+							<dt className='mt-2 text-[0.875rem] leading-snug text-[var(--ink-3)]'>{item.label}</dt>
+						</div>
+						<span className='grid size-10 shrink-0 place-items-center rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)] transition group-hover:bg-[var(--accent)] group-hover:text-white'>
+							<Glyph size={19} weight='duotone' />
 						</span>
-						{item.value}
-					</dd>
-					<dt className='mt-2 text-[0.8125rem] leading-snug text-[var(--ink-3)]'>{item.label}</dt>
-				</div>
+					</div>
+				</Link>
 			))}
 		</dl>
+	)
+}
+
+/** Three covers fanned, the middle one standing forward: a picture of a shelf. */
+export function CoverFan({ books: list }: { books: Book[] }) {
+	const three = list.filter((b) => b.cover).slice(0, 3)
+	const pose = ['-rotate-[9deg] translate-x-7 translate-y-3', 'z-10 -translate-y-1', 'rotate-[9deg] -translate-x-7 translate-y-3']
+	return (
+		<span className='flex items-end'>
+			{three.map((b, i) => (
+				<span key={b.slug} className={`block w-[4.5rem] overflow-hidden rounded-lg shadow-[0_12px_24px_-12px_rgba(0,0,0,0.6)] ring-1 ring-black/5 transition duration-500 group-hover:-translate-y-2 ${pose[i]}`}>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
+					<img src={coverSrc(b)!} alt='' loading='lazy' decoding='async' className='aspect-[2/3] w-full object-cover' />
+				</span>
+			))}
+		</span>
+	)
+}
+
+/** Faces in a row, each overlapping the last. */
+export function FaceRow({ people }: { people: { name: string; photo?: string | null }[] }) {
+	return (
+		<span className='mb-6 flex -space-x-4'>
+			{people.slice(0, 5).map((p) => (
+				<AuthorMark key={p.name} name={p.name} photo={p.photo} className='size-16 !bg-[color-mix(in_srgb,var(--accent)_9%,var(--paper))] text-[0.875rem] !text-[var(--accent)] ring-4 ring-[var(--paper)]' />
+			))}
+		</span>
+	)
+}
+
+/** The presses' marks on white tiles, a little staggered. */
+export function MarkRow({ presses }: { presses: { name: string; logo?: string | null }[] }) {
+	return (
+		<span className='mb-5 flex gap-2.5'>
+			{presses.slice(0, 4).map((p, i) => (
+				<span key={p.name} className={i % 2 ? 'translate-y-2' : ''}>
+					<PublisherMark name={p.name} logo={p.logo} className='size-14 shadow-[0_10px_20px_-12px_rgba(0,0,0,0.45)]' />
+				</span>
+			))}
+		</span>
 	)
 }
 

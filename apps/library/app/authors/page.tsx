@@ -31,7 +31,7 @@ export default function AuthorsPage() {
 									.map((a) => {
 										const n = booksBy(a.slug).length
 										return (
-											<li key={a.slug} className='tv-card relative !flex-row items-center gap-3.5 !p-4'>
+											<li key={a.slug} className='tv-card relative !flex-row items-start gap-3.5 !p-4'>
 												<AuthorMark name={a.name} photo={a.photo ? `/authors/${a.photo.file}` : null} className='size-11 !bg-[var(--paper)] text-[0.8125rem]' />
 												<div className='min-w-0'>
 													<Link href={`/authors/${a.slug}`} className='tv-card-link font-[family-name:var(--font-display)] text-[1rem] font-bold tracking-[-0.02em] text-[var(--ink)] after:absolute after:inset-0 hover:text-[var(--accent)]'>

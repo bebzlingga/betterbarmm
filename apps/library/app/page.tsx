@@ -1,7 +1,7 @@
 import { ArrowRightIcon, BookOpenTextIcon, BooksIcon, BuildingsIcon, MagnifyingGlassIcon, NewspaperIcon, PenNibIcon, ShoppingCartIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { BookRail } from './_components/book-card'
-import { AuthorMark, Figures, Masthead, SectionHead } from './_components/parts'
+import { AuthorMark, CoverFan, FaceRow, Figures, MarkRow, Masthead, SectionHead } from './_components/parts'
 import { Rail } from './_components/rail'
 import { SubjectBar } from './_components/subject-icon'
 import { authors, books, booksBy, isLocal, localAuthors, magazines, publishers, subjects, subjectName } from './_lib/library'
@@ -74,10 +74,22 @@ export default function LibraryHome() {
 			<section className='bb-container pt-16 lg:pt-20'>
 				<Figures
 					items={[
-						{ value: books.length.toLocaleString('en-PH'), label: 'Books on the shelf', icon: BooksIcon },
-						{ value: authors.length.toLocaleString('en-PH'), label: 'Authors, editors and translators', icon: PenNibIcon },
-						{ value: publishers.length.toLocaleString('en-PH'), label: 'Publishers, from university presses to the author’s own', icon: BuildingsIcon },
-						{ value: free.length.toLocaleString('en-PH'), label: 'Free to read in full', icon: BookOpenTextIcon },
+						{ value: books.length.toLocaleString('en-PH'), label: 'Books on the shelf', icon: BooksIcon, href: '/books', visual: <CoverFan books={byYear} /> },
+						{
+							value: authors.length.toLocaleString('en-PH'),
+							label: 'Authors, editors and translators',
+							icon: PenNibIcon,
+							href: '/authors',
+							visual: <FaceRow people={writers.map((a) => ({ name: a.name, photo: a.photo ? `/authors/${a.photo.file}` : null }))} />,
+						},
+						{
+							value: publishers.length.toLocaleString('en-PH'),
+							label: 'Publishers, from university presses to the author’s own',
+							icon: BuildingsIcon,
+							href: '/publishers',
+							visual: <MarkRow presses={[...publishers].sort((a, b) => Number(Boolean(b.logo)) - Number(Boolean(a.logo)))} />,
+						},
+						{ value: free.length.toLocaleString('en-PH'), label: 'Free to read in full', icon: BookOpenTextIcon, href: '/books?availability=open-access', visual: <CoverFan books={withCover(free).slice(3)} /> },
 					]}
 				/>
 			</section>

@@ -41,7 +41,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 			<header className='dv-hero dv-hero-short'>
 				<CoverWall first={[...byAuthors, ...sameShelf]} />
 				<span aria-hidden='true' className='dv-hero-shade !bg-[rgba(8,12,16,0.72)]' />
-				<div className='bb-container relative grid min-h-[inherit] content-end gap-10 pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:grid-cols-[minmax(0,14rem)_1fr] md:items-end md:gap-14 md:pb-20 lg:grid-cols-[minmax(0,16rem)_1fr]'>
+				<div className='bb-container relative grid min-h-[inherit] content-end gap-10 pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:grid-cols-[minmax(0,14rem)_1fr] md:items-start md:gap-14 md:pb-20 lg:grid-cols-[minmax(0,16rem)_1fr]'>
 					<div className='w-[11rem] md:w-auto'>
 						<Cover book={book} sizes='(min-width: 1024px) 256px, (min-width: 768px) 224px, 176px' priority className='shadow-[0_30px_60px_-24px_rgba(0,0,0,0.8)] ring-1 ring-white/10' />
 					</div>
@@ -53,8 +53,9 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 							<span className='dv-chip !px-3 !py-1.5'>{book.kind}</span>
 							<span className='dv-chip !px-3 !py-1.5'>{a.label}</span>
 						</p>
-						<h1 className='pg-hero-title pg-hero-title-sm mt-5'>{book.title}</h1>
+						<h1 className={`pg-hero-title pg-hero-title-sm mt-5 ${book.title.length > 60 ? '!text-[clamp(1.875rem,3.4vw,3rem)] !leading-[1.06]' : ''}`}>{book.title}</h1>
 						{book.subtitle ? <p className='mt-3 max-w-3xl text-[1.0625rem] leading-snug text-white/80'>{book.subtitle}</p> : null}
+						{people.length ? (
 						<p className='mt-5 text-[1rem] text-white/90'>
 							{book.role === 'editor' ? 'Edited by ' : book.role === 'translator' ? 'Translated by ' : book.role === 'compiler' ? 'Compiled by ' : 'By '}
 							{people.map((p, i) => (
@@ -66,7 +67,10 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 								</span>
 							))}
 						</p>
-						<dl className='mt-6 flex flex-wrap gap-x-10 gap-y-4 text-[0.9375rem]'>
+						) : null}
+						{/* The details on the left and where to get it at the row's right end (user decision), wrapping under on a narrow screen. */}
+						<div className='mt-6 flex flex-wrap items-end justify-between gap-x-10 gap-y-8'>
+						<dl className='flex flex-wrap gap-x-10 gap-y-4 text-[0.9375rem]'>
 							<div>
 								<dt className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-white/50'>Publisher</dt>
 								<dd className='mt-1 text-white'>
@@ -105,21 +109,24 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 						</dl>
 
 						{/* ---- Where to get it ---- */}
-						{first ? (
-							<div className='mt-8 flex flex-wrap items-center gap-2.5'>
-								<a href={first.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-light'>
-									{first.label}
-									<ArrowSquareOutIcon size={15} weight='bold' aria-hidden='true' />
-								</a>
-								{rest.map((l) => (
-									<a key={l.url} href={l.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2.5 !text-[0.8125rem]'>
-										{l.label}
-										<ArrowUpRightIcon size={12} weight='bold' aria-hidden='true' />
+						<div className='flex flex-col items-start gap-3 lg:items-end lg:text-right'>
+							{first ? (
+								<div className='flex flex-wrap items-center gap-2.5 lg:justify-end'>
+									<a href={first.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-light'>
+										{first.label}
+										<ArrowSquareOutIcon size={15} weight='bold' aria-hidden='true' />
 									</a>
-								))}
-							</div>
-						) : null}
-						<p className='mt-3 text-[0.8125rem] leading-snug text-white/60'>{a.note}</p>
+									{rest.map((l) => (
+										<a key={l.url} href={l.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2.5 !text-[0.8125rem]'>
+											{l.label}
+											<ArrowUpRightIcon size={12} weight='bold' aria-hidden='true' />
+										</a>
+									))}
+								</div>
+							) : null}
+							<p className='max-w-[22rem] text-[0.8125rem] leading-snug text-white/60'>{a.note}</p>
+						</div>
+						</div>
 					</div>
 				</div>
 			</header>
