@@ -73,6 +73,9 @@ export type School = {
 	/** From the 2019 masterlist: pupils in 2012–13 and 2015–16. */
 	pupils2012: number | null
 	pupils2015: number | null
+	/** Teachers and instructional classrooms, SY 2023–24, from DepEd's personnel and facilities files: public schools only. */
+	teachers?: number | null
+	classrooms?: number | null
 	lat: number | null
 	lon: number | null
 	/** Where the pin comes from: the masterlist, OpenStreetMap, Wikidata, or only the town's centre. */

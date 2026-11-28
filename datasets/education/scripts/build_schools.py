@@ -242,6 +242,32 @@ def spell_out(name: str) -> str:
     return re.sub(r'\b(ES|PS|CES|NHS|HS|SHS)\b(?=\s*(?:$|[-–(,]|Annex|Extension))', lambda m: SHORT[m.group(1)], name)
 
 
+def staffing() -> dict[str, dict]:
+    """Each public school's teachers and instructional classrooms, SY 2023-24, from DepEd's personnel and facilities
+    files. A teacher is a post that teaches a class: teachers, master teachers, SPED teachers, instructors and kinder
+    teachers, however funded; head teachers run a school and are left out. DepEd files these for public schools only."""
+    def num(v: str) -> float:
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return 0.0
+
+    out: dict[str, dict] = {}
+    with open(DEPED / 'personnel_2023-24.csv', newline='', encoding='utf-8') as f:
+        rows = list(csv.DictReader(f))
+    cols = [c for c in rows[0] if ('teacher' in c or 'instructor' in c) and 'head_teacher' not in c]
+    for r in rows:
+        t = round(sum(num(r[c]) for c in cols))
+        if t:
+            out.setdefault(r['school_id'].strip(), {})['teachers'] = t
+    with open(DEPED / 'facilities_2023-24.csv', newline='', encoding='utf-8') as f:
+        for r in csv.DictReader(f):
+            c = round(sum(num(r[k]) for k in ('es_classrooms_instructional', 'jhs_classrooms_instructional', 'shs_classrooms_instructional')))
+            if c:
+                out.setdefault(r['school_id'].strip(), {})['classrooms'] = c
+    return out
+
+
 def learners(r: dict) -> int:
     return sum(int(float(v or 0)) for k, v in r.items() if k.endswith(('_male', '_female')))
 
@@ -256,6 +282,9 @@ def district_of(r: dict) -> str | None:
 def division_of(r: dict) -> str:
     v = re.sub(r'\s+', ' ', r['division']).strip()
     return v if 'division' in v.lower() else f'{v} Schools Division'
+
+
+STAFF: dict[str, dict] = {}
 
 
 def deped_current(old: list[dict], osm: dict, by_name: dict, sga: dict, centres: dict) -> tuple[list[dict], list[dict], Counter]:
@@ -319,6 +348,9 @@ def deped_current(old: list[dict], osm: dict, by_name: dict, sga: dict, centres:
             'enrolment': enrolment,
             'pupils2012': was['pupils2012'] if was else None,
             'pupils2015': was['pupils2015'] if was else None,
+            # Teachers and classrooms, SY 2023-24 (public schools only): see `staffing`.
+            'teachers': STAFF.get(sid, {}).get('teachers'),
+            'classrooms': STAFF.get(sid, {}).get('classrooms'),
         }
         if was and was.get('placed') in ('masterlist', 'openstreetmap'):
             sc.update(lat=was['lat'], lon=was['lon'], placed=was['placed'])
@@ -338,6 +370,7 @@ def deped_current(old: list[dict], osm: dict, by_name: dict, sga: dict, centres:
 
 
 def main() -> None:
+    STAFF.update(staffing())
     lgu = json.loads((ROOT / 'datasets/lgu/barmm-lgu.json').read_text())
     towns: dict[tuple[str, str], tuple[str, str, str]] = {}
     by_name: dict[str, list[tuple[str, str, str]]] = {}
