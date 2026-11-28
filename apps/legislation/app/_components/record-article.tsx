@@ -380,7 +380,7 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 					</div>
 				}
 				title={record.title}
-				lede={lead ? <p className='copy max-w-4xl text-white/85'>{lead}</p> : null}
+				lede={lead ? <p className='copy !max-w-none text-white/85'>{lead}</p> : null}
 			/>
 
 			{/* Where it stands, under the head on the paper ground. The rail

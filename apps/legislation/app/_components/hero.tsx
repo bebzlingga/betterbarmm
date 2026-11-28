@@ -46,7 +46,7 @@ export function Hero({
 				<div className='min-w-0'>
 					{top ?? (kicker ? <p className='pg-hero-kicker'>{kicker}</p> : null)}
 					<h1 className={`pg-hero-title mt-4 ${small ? 'pg-hero-title-sm' : ''} ${side ? '!max-w-none' : ''}`}>{title}</h1>
-					{lede ? <div className='mt-5 max-w-3xl text-[1.0625rem] leading-relaxed text-white/85 md:text-[1.125rem]'>{lede}</div> : null}
+					{lede ? <div className={`mt-5 ${small ? '' : 'max-w-3xl'} text-[1.0625rem] leading-relaxed text-white/85 md:text-[1.125rem]`}>{lede}</div> : null}
 					{children}
 				</div>
 				{side ? <div className='mt-10 min-w-0 lg:mt-0'>{side}</div> : null}
