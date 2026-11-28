@@ -143,25 +143,25 @@ function YearTable({
 				Swipe for every year &rarr;
 			</p>
 			<div className='overflow-x-auto'>
-			<table className={`w-full border-collapse text-[0.90625rem] ${wide ? 'min-w-[50rem] lg:min-w-[58rem]' : 'min-w-[46rem] lg:min-w-[54rem]'}`}>
+			<table className={`bt-table w-full text-[0.90625rem] ${wide ? 'min-w-[50rem] lg:min-w-[58rem]' : 'min-w-[46rem] lg:min-w-[54rem]'}`}>
 				<caption className='sr-only'>{caption}</caption>
 				<thead>
-					<tr className='border-b border-[var(--ink)]'>
-						<th scope='col' className='bb-label sticky left-0 z-[1] bg-[var(--paper)] py-4 pr-4 text-left'>
+					<tr>
+						<th scope='col' className='sticky left-0 z-[1] py-4 pr-4 text-left font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 							{head}
 						</th>
 						{trendYears.map((year) => (
 							<th
 								key={year}
 								scope='col'
-								className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+								className='num py-4 pl-5 text-right font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 							>
 								FY {year}
 							</th>
 						))}
 						<th
 							scope='col'
-							className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+							className='num py-4 pl-5 text-right font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 						>
 							Total
 						</th>
@@ -228,14 +228,14 @@ function YearTable({
 function ActBars() {
 	return (
 		<figure
-			className='m-0 mt-14'
+			className='m-0 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-8'
 			role='img'
 			aria-label={`What each Act appropriated: ${ACTS.map((act) => `FY ${act.year}, ${peso(act.total)}`).join('; ')}.`}
 		>
-			<div className='flex items-end gap-3 border-b border-[var(--brass-line)] sm:gap-6'>
+			<div className='flex items-end gap-1.5 border-b border-[var(--rule)] sm:gap-6'>
 				{ACTS.map((act) => (
 					<div key={act.year} className='flex min-w-0 flex-1 flex-col items-stretch gap-2.5'>
-						<p className='num text-center font-mono text-[0.65625rem] font-semibold tabular-nums text-[var(--ink-2)]'>
+						<p className='num whitespace-nowrap text-center font-[family-name:var(--font-display)] text-[0.5625rem] font-bold tabular-nums text-[var(--ink)] sm:text-[0.8125rem]'>
 							{short(act.total)}
 						</p>
 						{/* Capped and centerd in its track. Across the full container a
@@ -243,18 +243,18 @@ function ActBars() {
 						    fence rather than a chart. */}
 						<div
 							title={peso(act.total)}
-							className='mx-auto w-full max-w-[6rem] border-t-2 border-[var(--accent)] bg-gradient-to-b from-[var(--accent-soft)] to-transparent'
+							className='mx-auto w-full max-w-[5rem] rounded-t-lg bg-[var(--accent)] transition hover:brightness-110'
 							style={{ height: `${Math.round((act.total / TALLEST) * BAR_H)}px` }}
 						/>
 					</div>
 				))}
 			</div>
 
-			<div className='mt-3 flex gap-3 sm:gap-6'>
+			<div className='mt-3 flex gap-1.5 sm:gap-6'>
 				{ACTS.map((act) => (
 					<p
 						key={act.year}
-						className='num min-w-0 flex-1 text-center font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+						className='num min-w-0 flex-1 text-center text-[0.625rem] font-semibold text-[var(--ink-3)] sm:text-[0.75rem]'
 					>
 						FY {act.year}
 					</p>
@@ -299,7 +299,7 @@ export default function CompositionPage() {
 						{ label: 'Since the first', value: `+${percent(((LATEST.total - FIRST.total) / FIRST.total) * 100, 0)}`, note: `From ${short(FIRST.total)} in FY ${FIRST.year}` },
 						{ label: 'In special funds', value: percent((LATEST.funds / LATEST.total) * 100, 0), note: `Of FY ${LATEST.year}, held outside every ministry` },
 					].map((card) => (
-						<div key={card.label} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+						<div key={card.label} className='flex flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
 							<dd className='num order-1 text-[2rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{card.value}</dd>
 							<dt className='order-2 mt-3 font-mono text-[0.625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)]'>{card.label}</dt>
 							<dd className='order-3 mt-1.5 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{card.note}</dd>
@@ -314,14 +314,14 @@ export default function CompositionPage() {
 
 			    The strip below is a tinted band, and that change of ground is the
 			    separator: a rule as well read as a third line in a row of them. */}
-			<section className='bb-container section-band'>
+			<section className='bb-container section-band-bottom pt-[var(--bt-under)]'>
 				<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-					<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Wages, running costs, and things you can point at</h2>
-					<p className='max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>Three buckets, and every peso in the Act sits in one. The first pays the people, the second keeps the lights on, the third buys what is still there next year.</p>
+					<h2 className='dv-title'>Wages, running costs, and things you can point at</h2>
+					<p className='max-w-xl text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>Three buckets, and every peso in the Act sits in one. The first pays the people, the second keeps the lights on, the third buys what is still there next year.</p>
 				</div>
 
 				{/* Each Act's split, as a share bar a year: the table under it has the pesos. */}
-				<div className='mt-8 border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+				<div className='mt-8 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
 					<div className='flex flex-wrap gap-x-5 gap-y-2'>
 						{EXPENSE_CLASSES.map((one) => (
 							<span key={one.key} className='inline-flex items-center gap-2 text-[0.8125rem] text-[var(--ink-2)]'>
@@ -353,33 +353,33 @@ export default function CompositionPage() {
 					</ol>
 				</div>
 
-				<div className='mt-4 border border-[var(--rule)] bg-[var(--paper)] px-5 sm:px-6'>
+				<div className='mt-4 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-5 sm:px-6'>
 
 				<p aria-hidden='true' className='mb-3 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:hidden'>
 					Swipe for every year &rarr;
 				</p>
 				<div className='overflow-x-auto lg:-mx-8 lg:px-8'>
-					<table className='w-full min-w-[46rem] border-collapse text-[0.90625rem] lg:min-w-[54rem]'>
+					<table className='bt-table w-full min-w-[46rem] text-[0.90625rem] lg:min-w-[54rem]'>
 						<caption className='sr-only'>
 							Each Bangsamoro Act by expense class
 						</caption>
 						<thead>
-							<tr className='border-b border-[var(--ink)]'>
-								<th scope='col' className='sticky left-0 z-[1] bg-[var(--paper)] py-4 pr-4 text-left'>
+							<tr>
+								<th scope='col' className='sticky left-0 z-[1] py-4 pr-4 text-left'>
 									<span className='sr-only'>Class</span>
 								</th>
 								{ACTS.map((act) => (
 									<th
 										key={act.year}
 										scope='col'
-										className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+										className='num py-4 pl-5 text-right font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 									>
 										FY {act.year}
 									</th>
 								))}
 								<th
 									scope='col'
-									className='num py-4 pl-5 text-right font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
+									className='num py-4 pl-5 text-right font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 								>
 									Total
 								</th>
@@ -421,7 +421,7 @@ export default function CompositionPage() {
 						</tbody>
 
 						<tfoot>
-							<tr className='border-t-2 border-[var(--brass)]'>
+							<tr className='bt-total'>
 								<th scope='row' className='sticky left-0 z-[1] bg-[var(--paper)] py-5 pr-4 text-left'>
 									<span className='sr-only'>The Act</span>
 								</th>
@@ -446,15 +446,15 @@ export default function CompositionPage() {
 			{/* A fifth of an Act sitting outside every ministry qualifies every
 			    table below it, so a reader meets it before the first column of
 			    ministries rather than after. */}
-			<section className='bg-[var(--paper-2)]'>
+			<section className='tv-wash'>
 				<div className='bb-container section-band'>
 					<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-						<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Money without a ministry</h2>
-						<p className='max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>Kept aside for what nobody can put in a calendar: a typhoon, an outbreak, a bill that lands on every ministry at once. No office is given it until the thing happens.</p>
+						<h2 className='dv-title'>Money without a ministry</h2>
+						<p className='max-w-xl text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>Kept aside for what nobody can put in a calendar: a typhoon, an outbreak, a bill that lands on every ministry at once. No office is given it until the thing happens.</p>
 					</div>
 					<dl className='mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-7'>
 						{ACTS.map((act) => (
-							<div key={act.year} className={`border bg-[var(--paper)] p-4 ${act.funds === MOST_FUNDS ? 'border-[var(--accent)]' : 'border-[var(--rule)]'}`}>
+							<div key={act.year} className={`rounded-[var(--dv-r)] border bg-[var(--paper)] p-5 ${act.funds === MOST_FUNDS ? 'border-[var(--accent)]' : 'border-[var(--rule)]'}`}>
 								<div
 									className='split-bar split-bar-xs'
 									role='img'
@@ -501,8 +501,8 @@ export default function CompositionPage() {
 			    that had failed to line up with anything. */}
 			<section className='bb-container section-band'>
 				<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-					<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Every office, sector and area, year by year</h2>
-					<p className='max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>Every ministry and office, every sector, and every area the Acts name for construction.</p>
+					<h2 className='dv-title'>Every office, sector and area, year by year</h2>
+					<p className='max-w-xl text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>Every ministry and office, every sector, and every area the Acts name for construction.</p>
 				</div>
 				<div className='mt-6'>
 				<BudgetTabs

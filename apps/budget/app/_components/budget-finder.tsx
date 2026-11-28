@@ -219,7 +219,7 @@ export function BudgetFinder({ children }: { children: React.ReactNode }) {
 									placeholder='Health, scholarship, Marawi, bridges…'
 									className='min-w-0 flex-1 bg-transparent text-[1rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 								/>
-								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+								<kbd className='hidden shrink-0 rounded-full border border-[var(--rule)] px-2 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 									Esc
 								</kbd>
 							</div>
@@ -293,7 +293,7 @@ export function FinderTrigger({
 				<span className='flex-1 text-left text-[0.90625rem] text-[var(--ink-mute)]'>
 					Search an office, a program, or a project near you
 				</span>
-				<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+				<kbd className='hidden shrink-0 rounded-full border border-[var(--rule)] px-2 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 					/
 				</kbd>
 			</button>
@@ -305,7 +305,7 @@ export function FinderTrigger({
 			type='button'
 			onClick={open}
 			aria-label='Search the budget'
-			className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] text-[var(--ink-3)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'
+			className='inline-flex size-9 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] text-[var(--ink-3)] transition hover:border-[var(--ink)] hover:text-[var(--ink)]'
 		>
 			<MagnifyingGlassIcon className='size-4' aria-hidden='true' />
 		</button>

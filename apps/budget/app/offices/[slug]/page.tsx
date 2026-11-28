@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
-import { SectionHead } from '@betterbarmm/editorial'
+import { SectionHead } from '../../_components/section-head'
 import { budgetFor, percent, peso, pesoShort, type Office } from '@betterbarmm/budget-data'
 import { YearLink } from '../../_components/year-link'
 import { notFound } from 'next/navigation'
@@ -237,7 +237,7 @@ export default async function OfficePage({
 				   would stop at the text column and read as a floating panel rather
 				   than a band across the page. The tint is also the divider, so the
 				   rule that every other section carries comes off. */
-				<section className='bg-[var(--paper-2)]'>
+				<section className='tv-wash'>
 					<div className='bb-container section-band'>
 						<SectionHead
 							index={nextIndex()}

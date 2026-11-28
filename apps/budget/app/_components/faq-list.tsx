@@ -67,7 +67,7 @@ export function FaqSearch() {
 	return (
 		<>
 		{/* Fixed colours: inside the crimson band, --paper and --ink point at its ground. A white field, as the Directory's. */}
-		<label className='mx-auto mt-8 flex h-14 max-w-[40rem] items-center gap-3 bg-white px-5 text-left text-[#191713] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)]'>
+		<label className='mx-auto mt-8 flex h-14 max-w-[40rem] items-center gap-3 rounded-full bg-white px-6 text-left text-[#191713] shadow-[0_20px_40px_-24px_rgba(0,0,0,0.6)]'>
 			<MagnifyingGlassIcon
 				className='size-5 shrink-0 text-[#5c574c]'
 				aria-hidden='true'
@@ -171,10 +171,10 @@ export function FaqList() {
 		   answer opening in place under its question. */
 		<div className='mx-auto max-w-[64rem]'>
 			{groups.map((group, index) => (
-				<section key={group.title} id={`faq-${index}`} className='scroll-mt-28'>
-					<h2 className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] bg-[var(--paper-2)] px-4 py-4 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--accent)] sm:px-5'>
+				<section key={group.title} id={`faq-${index}`} className='mt-8 scroll-mt-28 overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-34px_rgba(0,0,0,0.45)] first:mt-0'>
+					<h2 className='flex items-center justify-between gap-4 border-b border-[var(--rule)] px-5 py-5 font-[family-name:var(--font-display)] text-[1.1875rem] font-bold tracking-[-0.015em] text-[var(--ink)] sm:px-6'>
 						{group.title}
-						<span className='num text-[var(--ink-3)]'>{group.items.length}</span>
+						<span className='num rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] px-2.5 py-0.5 text-[0.75rem] font-semibold text-[var(--accent)]'>{group.items.length}</span>
 					</h2>
 
 					<div>
@@ -182,7 +182,7 @@ export function FaqList() {
 							<details
 								key={entry.q.en}
 								open={query.trim().length > 0}
-								className='group border-b border-[var(--rule)]'
+								className='group border-b border-[var(--rule)] last:border-b-0'
 							>
 								<summary className='grid cursor-pointer list-none grid-cols-[2.75rem_minmax(0,1fr)_auto] items-center gap-3 px-4 py-6 transition-colors hover:bg-[var(--paper-2)] sm:grid-cols-[3.5rem_minmax(0,1fr)_auto] sm:px-5 [&::-webkit-details-marker]:hidden'>
 									<span className='num text-[1.125rem] font-extrabold tracking-[-0.03em] text-[var(--ink-mute)] transition-colors group-open:text-[var(--accent)]'>{number.get(entry)}</span>
@@ -200,7 +200,7 @@ export function FaqList() {
 										   different lengths and nothing in the sixth "yes" answers the
 										   fourth "no" — set side by side as a grid they would read as
 										   pairs and invent a correspondence that is not there. */
-										<table className='mt-6 w-full border-collapse text-left'>
+										<table className='bt-table mt-6 w-full text-left'>
 											<caption className='sr-only'>
 												{lang === 'fil'
 													? 'Kasama at hindi kasama'
@@ -210,7 +210,7 @@ export function FaqList() {
 												{sayAll(entry.pays, lang).map((item) => (
 													<tr key={item} className='border-b border-[var(--rule-soft)]'>
 														<td className='w-14 py-3 pr-4 align-top'>
-															<span className='inline-flex items-center justify-center bg-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-black uppercase tracking-[0.14em] text-white'>
+															<span className='inline-flex items-center justify-center rounded-full bg-[var(--accent)] px-2.5 py-1 font-mono text-[0.5625rem] font-black uppercase tracking-[0.14em] text-white'>
 																{lang === 'fil' ? 'Oo' : 'Yes'}
 															</span>
 														</td>
@@ -222,7 +222,7 @@ export function FaqList() {
 												{sayAll(entry.notPays, lang).map((item) => (
 													<tr key={item} className='border-b border-[var(--rule-soft)]'>
 														<td className='w-14 py-3 pr-4 align-top'>
-															<span className='inline-flex items-center justify-center border border-[var(--rule)] px-2 py-1 font-mono text-[0.5625rem] font-black uppercase tracking-[0.14em] text-[var(--ink-3)]'>
+															<span className='inline-flex items-center justify-center rounded-full border border-[var(--rule)] px-2.5 py-1 font-mono text-[0.5625rem] font-black uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 																{lang === 'fil' ? 'Hindi' : 'No'}
 															</span>
 														</td>
@@ -240,7 +240,7 @@ export function FaqList() {
 									    example is doing the same job there and should not look like a
 									    different kind of thing here. */}
 									{entry.example ? (
-										<div className='mt-5 bg-[var(--paper-2)] px-5 py-4'>
+										<div className='mt-5 rounded-2xl bg-[var(--paper-2)] px-5 py-4'>
 											<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
 												{lang === 'fil' ? 'Halimbawa' : 'For example'}
 											</p>

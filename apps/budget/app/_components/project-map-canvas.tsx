@@ -41,9 +41,9 @@ function AllBarmm() {
 		<button
 			type='button'
 			onClick={() => map?.fitBounds(BOUNDS, { ...FIT, duration: 700 })}
-			className='absolute right-12 top-2 z-10 flex h-8 cursor-pointer items-center rounded-md border border-[var(--rule)] bg-[var(--paper)] px-3 text-[0.75rem] font-semibold text-[var(--ink)] shadow-sm transition hover:text-[var(--accent)]'
+			className='absolute right-14 top-2 z-10 flex h-9 cursor-pointer items-center rounded-full bg-[var(--paper)] px-4 text-[0.8125rem] font-semibold text-[var(--ink)] shadow-[0_12px_26px_-16px_rgba(0,0,0,0.45),0_0_0_1px_color-mix(in_srgb,var(--ink)_8%,transparent)] transition hover:text-[var(--accent)]'
 		>
-			All BARMM
+			Whole region
 		</button>
 	)
 }
@@ -155,7 +155,7 @@ export default function ProjectMapCanvas({ places, selected, focus, onSelect }: 
 
 	if (!webgl)
 		return (
-			<div className='flex h-full w-full items-center justify-center bg-[var(--paper-2)] p-8 text-center text-[0.875rem] leading-[1.7] text-[var(--ink-3)]'>
+			<div className='flex h-full w-full items-center justify-center rounded-2xl bg-[var(--paper-2)] p-8 text-center text-[0.875rem] leading-[1.7] text-[var(--ink-3)]'>
 				The map needs WebGL2, which this browser does not provide. Every place is listed beside it.
 			</div>
 		)

@@ -1200,6 +1200,57 @@
   color: var(--accent);
 }
 
+/* Tabs, in every workspace (user decision: the budget's tabs, everywhere): the choices together in one rounded pill
+   group on a tint, the chosen one a crimson pill on a soft shadow, a count beside a label as a small chip. A tab is
+   chosen by `aria-selected`, `aria-pressed` or `aria-current`, whichever the control already says. Unlayered, so it
+   beats the utilities a tab set was written with. */
+.seg {
+  display: flex;
+  gap: 0.25rem;
+  max-width: 100%;
+  width: fit-content;
+  overflow-x: auto;
+  border-radius: 999px;
+  background: var(--paper-2);
+  padding: 0.375rem;
+  scrollbar-width: none;
+}
+.seg::-webkit-scrollbar { display: none; }
+.seg-tab {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.625rem 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: background-color 0.2s var(--ease), color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.seg-tab:hover { background: var(--paper); color: var(--ink); }
+.seg-tab:is([aria-selected='true'], [aria-pressed='true'], [aria-current]:not([aria-current='false'])) {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 24px -14px rgba(138, 36, 24, 0.8);
+}
+.seg-count {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: inherit;
+}
+.seg-tab:is([aria-selected='true'], [aria-pressed='true'], [aria-current]:not([aria-current='false'])) .seg-count { background: rgba(255, 255, 255, 0.2); }
+
 /* The bar's dropdown panels, in every workspace (user decision: the travel look): a rounded panel with no border, lifted
    on a soft shadow, its rows rounded and spaced. Each workspace's panel carries `.nav-menu`. Unlayered, so it beats the
    border and padding utilities the panels were written with. */

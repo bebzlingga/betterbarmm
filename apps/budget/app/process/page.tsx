@@ -156,7 +156,7 @@ export default function ProcessPage() {
 						<li key={phase.phase}>
 							<a
 								href={`#${slug(phase.phase)}`}
-								className='group flex h-full flex-col border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+								className='group flex h-full flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
 							>
 								<span className='flex flex-1 flex-col p-5 sm:p-6'>
 									<span className='num text-[2.25rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{String(index + 1).padStart(2, '0')}</span>
@@ -176,10 +176,10 @@ export default function ProcessPage() {
 			{/* Each phase: its heading and who acts, what it is, its steps as numbered cards in order, and what it means
 			    for somebody watching from outside, set apart as a callout. */}
 			{PHASES.map((phase, index) => (
-				<section key={phase.phase} id={slug(phase.phase)} className={`scroll-mt-28 ${index % 2 ? 'bg-[var(--paper-2)]' : ''}`}>
+				<section key={phase.phase} id={slug(phase.phase)} className={`scroll-mt-28 ${index % 2 ? 'tv-wash' : ''}`}>
 					<div className='bb-container bb-section'>
 						<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
-							<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+							<h2 className='dv-title'>
 								<span className='text-[var(--accent)]'>{String(index + 1).padStart(2, '0')}</span> {phase.phase}
 							</h2>
 							<span className='inline-block rounded-full bg-[var(--accent-soft)] px-3 py-1 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em] text-[var(--accent)]'>{phase.who}</span>
@@ -188,14 +188,14 @@ export default function ProcessPage() {
 
 						<ol className='mt-8 grid gap-3 md:grid-cols-2'>
 							{phase.steps.map((step, at) => (
-								<li key={step} className='flex gap-4 border border-[var(--rule)] bg-[var(--paper)] p-5'>
-									<span className='num grid size-8 shrink-0 place-items-center bg-[var(--accent)] text-[0.75rem] font-black text-white'>{at + 1}</span>
+								<li key={step} className='flex gap-4 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5'>
+									<span className='num grid size-8 shrink-0 place-items-center rounded-full bg-[var(--accent)] text-[0.75rem] font-black text-white'>{at + 1}</span>
 									<span className='text-[0.90625rem] leading-[1.65] text-[var(--ink-2)]'>{step}</span>
 								</li>
 							))}
 						</ol>
 
-						<div className='mt-4 bg-[#8f2328] p-6 text-white lg:p-8'>
+						<div className='mt-4 rounded-[var(--dv-r)] bg-[#8f2328] p-6 text-white lg:p-8'>
 							<p className='font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[#f6cf7a]'>Why this phase matters</p>
 							<p className='mt-3 text-[0.9375rem] leading-[1.75] text-white/90'>{phase.stakes}</p>
 							{'basis' in phase && phase.basis ? (

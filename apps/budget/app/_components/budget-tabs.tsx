@@ -88,9 +88,9 @@ export function BudgetTabs({ tabs, label }: { tabs: BudgetTab[]; label?: string 
 			    under the nav would cover an extra band of whatever is scrolling
 			    beneath it. */}
 			<div className='sticky top-[var(--sticky-top)] z-20 -mx-6 bg-[var(--paper)]/92 px-6 backdrop-blur-md lg:-mx-8 lg:px-8'>
-				<div className='flex flex-col items-start gap-2 border-b border-t border-[var(--rule)] py-3 sm:flex-row sm:items-center sm:gap-6'>
+				<div className='flex flex-col items-start gap-3 py-3 sm:flex-row sm:items-center sm:gap-6'>
 					{label ? (
-						<p id='budget-tabs-label' className='bb-label shrink-0'>
+						<p id='budget-tabs-label' className='shrink-0 font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>
 							{label}
 						</p>
 					) : null}
@@ -98,7 +98,7 @@ export function BudgetTabs({ tabs, label }: { tabs: BudgetTab[]; label?: string 
 						role='tablist'
 						aria-label={label ? undefined : 'How to cut the budget'}
 						aria-labelledby={label ? 'budget-tabs-label' : undefined}
-						className='flex w-full gap-1.5 overflow-x-auto [scrollbar-width:none] sm:ml-auto sm:w-auto [&::-webkit-scrollbar]:hidden'
+						className='seg sm:ml-auto'
 					>
 						{tabs.map((tab) => (
 							<button
@@ -109,11 +109,11 @@ export function BudgetTabs({ tabs, label }: { tabs: BudgetTab[]; label?: string 
 								aria-selected={active === tab.id}
 								aria-controls={`panel-${tab.id}`}
 								onClick={() => select(tab.id)}
-								className='flex shrink-0 cursor-pointer items-center gap-2 px-4 py-2.5 font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)] transition duration-200 aria-selected:bg-[var(--accent)] aria-selected:text-white hover:text-[var(--ink)] aria-selected:hover:text-white'
+								className='seg-tab'
 							>
 								{tab.label}
 								{tab.badge != null ? (
-									<span className='num text-[0.65625rem] font-semibold text-current opacity-60'>
+									<span className='seg-count'>
 										{tab.badge}
 									</span>
 								) : null}

@@ -132,7 +132,7 @@ export function OfficeList({ offices }: { offices: Office[] }) {
 								<th scope='row' className={`${TD} font-normal`}>
 									<YearLink
 										href={`/offices/${office.slug}`}
-										className='inline-flex items-baseline gap-2 text-[0.96875rem] font-bold leading-snug tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
+										className='inline-flex items-baseline gap-2 text-[1.0625rem] font-bold leading-snug tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
 									>
 										{office.name}
 										<ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />

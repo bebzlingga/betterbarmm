@@ -41,7 +41,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 				lead={`All ${projects.length} construction projects the Act itemises, each with a place on it: roads, bridges, flood control and buildings, by area and by kind.`}
 			>
 				<Rise delay={0.3} distance={14}>
-					<div className='mt-12'>
+					<div>
 						<ProjectCharts fy={fy} />
 					</div>
 				</Rise>
@@ -54,10 +54,10 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 			{/* Where each project is, read out of its own name. */}
 			{/* A light band rather than a full section (user decision): what the map shows on the left, the door to it on the
 			    right, on one centred row — the map opens over the page, as the incident map does. */}
-			<section className='bg-[var(--paper-2)]'>
-				<div className='bb-container flex flex-wrap items-center justify-between gap-x-16 gap-y-6 py-12 lg:py-14'>
+			<section className='tv-wash'>
+				<div className='bb-container flex flex-wrap items-center justify-between gap-x-16 gap-y-6 py-16 lg:py-20'>
 					<div className='max-w-[46rem]'>
-						<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Where the money is being built</h2>
+						<h2 className='dv-title'>Where the money is being built</h2>
 						<p className='mt-2 text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
 							Every project whose name says where it is, on that barangay or town. Open the map to zoom in on a place and click a dot to see what is being built there.
 						</p>
@@ -66,7 +66,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: Pro
 				</div>
 			</section>
 
-			<section id='browse' className='bb-container section-band-bottom pt-12 lg:pt-14 scroll-mt-[calc(var(--site-header-h)+1rem)]'>
+			<section id='browse' className='bb-container section-band-bottom pt-16 lg:pt-20 scroll-mt-[calc(var(--site-header-h)+1rem)]'>
 				<SectionTitle title='Every project, largest first' lead='Search a barangay, a town or a kind of work, or narrow it by area.' className='mb-8' />
 				<Suspense
 					fallback={<BrowserSkeleton kind='projects' label={`Loading ${projects.length} projects…`} />}

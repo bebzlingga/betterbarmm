@@ -2,29 +2,29 @@
    One table voice for every list in the workspace
 
    Every list of offices, sectors, programs and projects is a table
-   (user decision), set the way the home page's year-by-year table
-   already was: small capitals over the columns, an ink rule under
-   the head, hairlines between rows, figures ranged right on one
-   edge. Constants rather than a component, so each list keeps its
-   own markup and only the classes are shared.
+   (user decision), in the travel look (user decision): a rounded
+   card, the head on a warm tint, soft rules between rows, figures
+   ranged right on one edge (`.bt-table`, globals.css). Constants
+   rather than a component, so each list keeps its own markup and
+   only the classes are shared.
    ============================================================ */
 
-export const TABLE = 'w-full border-collapse text-left'
+export const TABLE = 'bt-table w-full text-left'
 
-export const HEAD_ROW = 'border-b border-[var(--ink)]'
+export const HEAD_ROW = ''
 
-const HEAD = 'py-3 align-bottom font-mono text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+const HEAD = 'py-3.5 align-bottom font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 /** A column heading over words. */
 export const TH = `${HEAD} pr-5 sm:pr-10`
 /** A column heading over figures: ranged right, like the figures under it. */
 export const TH_NUM = `${HEAD} whitespace-nowrap pl-5 text-right sm:pl-10`
 
-export const ROW = 'group border-b border-[var(--rule-soft)] transition-colors duration-150 hover:bg-[var(--paper-2)]'
+export const ROW = 'group transition-colors duration-150 hover:bg-[var(--paper-2)]'
 
-/** A cell of words. The gap between columns is wide (user decision), halved on a phone so a name keeps its room. */
-export const TD = 'py-4 pr-5 align-top sm:pr-10'
+/** Every cell centred on its row (user decision). A cell of words. The gap between columns is wide (user decision), halved on a phone so a name keeps its room. */
+export const TD = 'py-4 pr-5 align-middle sm:pr-10'
 /** A cell holding a figure. */
-export const TD_NUM = 'money money-light whitespace-nowrap py-4 pl-5 text-right sm:pl-10 align-top text-[0.875rem] text-[var(--ink)]'
+export const TD_NUM = 'money money-light whitespace-nowrap py-4 pl-5 text-right sm:pl-10 align-middle text-[0.9375rem] text-[var(--ink)]'
 
 /** The small grey line under a name: the area, the office, the kind. */
-export const SUB = 'mt-1 block text-[0.75rem] leading-snug text-[var(--ink-3)]'
+export const SUB = 'mt-1 block text-[0.8125rem] leading-snug text-[var(--ink-3)]'

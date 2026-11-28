@@ -117,7 +117,7 @@ export default function RevenuePage() {
 			</section>
 
 			{/* ---- The three amounts ---- */}
-			<section className='bg-[var(--paper-2)]'>
+			<section className='tv-wash'>
 				<div className='bb-container section-band'>
 					<SectionTitle title='A formula, a fund and a share' />
 					<Rise distance={12}>

@@ -33,7 +33,7 @@ export function SourceFiles({ files }: { files: SourceFile[] }) {
 				const act = mine.find((one) => one.kind === 'The Act') ?? mine[0]!
 
 				return (
-					<div key={year} className='flex h-full flex-col border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'>
+					<div key={year} className='flex h-full flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'>
 						<div className='flex flex-1 flex-col p-5 sm:p-6'>
 							<div className='flex items-baseline justify-between gap-4'>
 								<p className='num text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{/^\d+$/.test(year) ? `FY ${year}` : year}</p>

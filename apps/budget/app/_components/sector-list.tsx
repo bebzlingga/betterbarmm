@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpRightIcon, CaretDownIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
+import { ArrowUpRightIcon, CaretDownIcon, CheckIcon, MagnifyingGlassIcon } from '@phosphor-icons/react'
 import { type Sector } from '@betterbarmm/budget-data'
 import { YearLink } from './year-link'
 import { useEffect, useMemo, useRef, useState } from 'react'
@@ -81,10 +81,8 @@ function SortMenu({ sort, onPick }: { sort: string; onPick: (key: string) => voi
 				<div
 					role='listbox'
 					aria-label='Sort sectors'
-					className='absolute right-0 top-full z-20 mt-2 w-[13rem] border border-[var(--ink)] bg-[var(--paper)] p-1 text-left shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'
+					className='absolute right-0 top-full z-20 mt-2 w-[14rem] rounded-[1.25rem] bg-[var(--paper)] p-2 text-left shadow-[0_28px_60px_-26px_rgba(0,0,0,0.4),0_0_0_1px_color-mix(in_srgb,var(--ink)_6%,transparent)]'
 				>
-					<span aria-hidden='true' className='absolute inset-x-0 top-0 h-px bg-[var(--brass)]' />
-
 					{SORTS.map((one) => (
 						<button
 							key={one.key}
@@ -95,13 +93,12 @@ function SortMenu({ sort, onPick }: { sort: string; onPick: (key: string) => voi
 								onPick(one.key)
 								setOpen(false)
 							}}
-							className={`block w-full px-3 py-2 text-left text-[0.84375rem] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)] ${
-								one.key === sort
-									? 'font-semibold text-[var(--ink)]'
-									: 'text-[var(--ink-2)]'
+							className={`flex w-full items-center justify-between gap-3 rounded-[0.8rem] px-4 py-3 text-left text-[0.875rem] font-semibold transition hover:bg-[var(--paper-2)] ${
+								one.key === sort ? 'text-[var(--accent)]' : 'text-[var(--ink)]'
 							}`}
 						>
 							{one.label}
+							{one.key === sort ? <CheckIcon size={14} weight='bold' aria-hidden='true' /> : null}
 						</button>
 					))}
 				</div>
@@ -189,7 +186,7 @@ export function SectorList({ sectors }: { sectors: Sector[] }) {
 										<span className='min-w-0'>
 											<YearLink
 												href={`/sectors/${sector.slug}`}
-												className='inline-flex items-baseline gap-2 text-[0.96875rem] font-bold leading-snug tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
+												className='inline-flex items-baseline gap-2 text-[1.0625rem] font-bold leading-snug tracking-[-0.02em] text-[var(--ink)] transition hover:text-[var(--accent)]'
 											>
 												{sector.name}
 												<ArrowUpRightIcon className='size-3.5 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
@@ -200,12 +197,12 @@ export function SectorList({ sectors }: { sectors: Sector[] }) {
 								</th>
 								{/* Drawn against the largest sector rather than the whole budget: the sectors overlap, so a bar
 								    measured against the total would invite adding them up. */}
-								<td className={`${TD} hidden w-[16rem] pt-[1.35rem] lg:table-cell`}>
+								<td className={`${TD} hidden w-[16rem] lg:table-cell`}>
 									<div className='rank-track'>
 										<div className='rank-bar' style={{ width: `${Math.max(1.5, (sector.total / biggest) * 100)}%` }} aria-hidden='true' />
 									</div>
 								</td>
-								<td className={`${TD_NUM} hidden font-mono text-[0.75rem] text-[var(--ink-3)] sm:table-cell`}>{sector.count}</td>
+								<td className={`${TD_NUM} hidden text-[0.875rem] text-[var(--ink-3)] sm:table-cell`}>{sector.count}</td>
 								<td className={TD_NUM}>{sector.total > 0 ? <Money amount={sector.total} /> : '—'}</td>
 							</tr>
 						))}

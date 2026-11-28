@@ -54,8 +54,8 @@ export default function SourcesPage() {
       {/* ---- The files ---- */}
       <section className="bb-container section-band">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-          <h2 className="text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]">Every file this was built from</h2>
-          <p className="max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]">Nothing here is a figure you have to take on trust.</p>
+          <h2 className="dv-title">Every file this was built from</h2>
+          <p className="max-w-xl text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]">Nothing here is a figure you have to take on trust.</p>
         </div>
 
         <SourceFiles
@@ -68,7 +68,7 @@ export default function SourcesPage() {
         />
 
         {/* How to find a printed page in the PDF, as a note card under the files. */}
-        <div className="mt-6 flex flex-col gap-2 bg-[var(--paper-2)] p-5 text-[0.84375rem] leading-[1.65] text-[var(--ink-2)] sm:flex-row sm:gap-6">
+        <div className="mt-6 flex flex-col gap-2 rounded-2xl bg-[var(--paper-2)] p-5 text-[0.84375rem] leading-[1.65] text-[var(--ink-2)] sm:flex-row sm:gap-6">
           <p className="shrink-0 font-mono text-[0.625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)] sm:pt-1">Page numbers</p>
           <p>
             The page numbers on this workspace are the Act&rsquo;s own, as it numbers itself. In the PDF they sit {budget.pdfPageOffset} pages
@@ -78,16 +78,16 @@ export default function SourcesPage() {
       </section>
 
       {/* ---- How the figures were got, and how they could still be wrong ---- */}
-      <section className="bg-[var(--paper-2)]">
+      <section className="tv-wash">
         <div className="bb-container section-band">
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-            <h2 className="text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]">How the figures were made</h2>
-            <p className="max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]">From the published Act to a line on this workspace.</p>
+            <h2 className="dv-title">How the figures were made</h2>
+            <p className="max-w-xl text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]">From the published Act to a line on this workspace.</p>
           </div>
 
           <ol className="mt-8 grid gap-4 md:grid-cols-3">
             {method.map((step, index) => (
-              <li key={step.title} className="flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-6">
+              <li key={step.title} className="flex flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6">
                 <span className="num text-[2rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-4 text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]">{step.title}</h3>
                 <p className="mt-2 text-[0.875rem] leading-[1.7] text-[var(--ink-2)]">{step.body}</p>
@@ -97,7 +97,7 @@ export default function SourcesPage() {
 
           {/* The caveat beside the claim, not in a footnote under it: a page that says its figures are checkable says in
               the same breath how they could still be wrong. */}
-          <div className="mt-4 bg-[#8f2328] p-6 text-white lg:p-8">
+          <div className="mt-4 rounded-[var(--dv-r)] bg-[#8f2328] p-6 text-white lg:p-8">
             <p className="font-mono text-[0.625rem] font-bold uppercase tracking-[0.16em] text-[#f6cf7a]">Some of these will be wrong</p>
             <p className="mt-3 max-w-4xl text-[0.9375rem] leading-[1.75] text-white/90">
               <strong className="font-semibold text-white">These figures are machine-read.</strong> The Act is a PDF, and the {lines}{" "}lines on this
@@ -108,7 +108,7 @@ export default function SourcesPage() {
             </p>
             <a
               href="mailto:support@betterbarmm.com"
-              className="mt-6 inline-flex items-center gap-2 bg-white px-5 py-3 text-[0.8125rem] font-bold text-[#8f2328] transition hover:bg-[#fff3cf]"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-[0.8125rem] font-bold text-[#8f2328] transition hover:bg-[#fff3cf]"
             >
               Tell us about an error
             </a>

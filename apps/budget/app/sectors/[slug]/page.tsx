@@ -1,6 +1,7 @@
 import { ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
-import { Rise, SectionHead } from '@betterbarmm/editorial'
+import { Rise } from '@betterbarmm/editorial'
+import { SectionHead } from '../../_components/section-head'
 import { budgetFor, percent } from '@betterbarmm/budget-data'
 import { YearLink } from '../../_components/year-link'
 import { notFound } from 'next/navigation'
@@ -244,7 +245,7 @@ export default async function SectorPage({
 				   because `bb-container` caps the width — left on the same element the
 				   tint would have stopped at the text column and read as a panel
 				   floating in the page rather than as a band across it. */
-				<section className='bg-[var(--paper-2)]'>
+				<section className='tv-wash'>
 					<div className='bb-container section-band'>
 						<SectionHead
 							index='04'

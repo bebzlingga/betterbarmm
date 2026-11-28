@@ -74,14 +74,12 @@ export function FilterMenu({
 					   drew over the header when the page was scrolled — the nav is the
 					   one thing that should stay on top of page furniture. Above the
 					   content around it, below the chrome. */
-					className='absolute right-0 top-full z-20 mt-2 max-h-[22rem] w-[17rem] overflow-y-auto border border-[var(--ink)] bg-[var(--paper)] p-1 text-left shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'>
-					<span aria-hidden='true' className='absolute inset-x-0 top-0 h-px bg-[var(--brass)]' />
-
+					className='absolute right-0 top-full z-20 mt-2 max-h-[22rem] w-[18rem] overflow-y-auto overscroll-contain [scrollbar-width:thin] rounded-[1.25rem] bg-[var(--paper)] p-2 text-left shadow-[0_28px_60px_-26px_rgba(0,0,0,0.4),0_0_0_1px_color-mix(in_srgb,var(--ink)_6%,transparent)]'>
 					{selected.size > 0 ? (
 						<button
 							type='button'
 							onClick={onClear}
-							className='mb-1 w-full px-3 py-2 text-left font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
+							className='mb-1 w-full rounded-[0.8rem] px-4 py-2.5 text-left font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)] transition hover:bg-[var(--paper-2)]'
 						>
 							Clear {selected.size}
 						</button>
@@ -90,20 +88,20 @@ export function FilterMenu({
 					{options.map((option) => (
 						<label
 							key={option.value}
-							className='flex cursor-pointer items-center gap-2.5 px-3 py-2 text-[0.84375rem] text-[var(--ink-2)] transition hover:bg-[var(--paper-2)] hover:text-[var(--ink)]'
+							className='flex cursor-pointer items-center gap-3 rounded-[0.8rem] px-4 py-2.5 text-[0.875rem] font-semibold text-[var(--ink)] transition hover:bg-[var(--paper-2)] has-[:checked]:text-[var(--accent)]'
 						>
 							<input
 								type='checkbox'
 								checked={selected.has(option.value)}
 								onChange={() => onToggle(option.value)}
-								className='size-3.5 shrink-0 accent-[var(--accent)]'
+								className='size-4 shrink-0 rounded accent-[var(--accent)]'
 							/>
 							{/* The value is what is filtered on and the label is what is read.
 							    They differ where the dataset's own word is not the one a reader
 							    uses: programs are tagged "Lump-sum / Special Purpose Fund" and
 							    the workspace shows "Special Purpose Fund". */}
 							<span className='min-w-0 flex-1'>{option.label ?? option.value}</span>
-							<span className='money font-mono text-[0.625rem] text-[var(--ink-mute)]'>
+							<span className='money rounded-full bg-[var(--paper-2)] px-2 py-0.5 text-[0.6875rem] font-semibold text-[var(--ink-3)]'>
 								{option.count}
 							</span>
 						</label>

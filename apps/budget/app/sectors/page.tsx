@@ -37,7 +37,7 @@ export default async function SectorsPage({ searchParams }: { searchParams: Prom
 				    and the thirty-six in between as well. Every color in it is a
 				    token, so it needs no crimson variant. */}
 				<Rise delay={0.3} distance={14}>
-					<div className='mt-12'>
+					<div>
 						<SectorChart sectors={sectors} />
 					</div>
 				</Rise>

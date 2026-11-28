@@ -92,7 +92,7 @@ function Row({ group }: { group: RepeatGroup }) {
 				<span className={SUB}>{group.province}</span>
 				<ol className='mt-2.5 flex flex-wrap gap-1.5'>
 					{group.appearances.map((a) => (
-						<li key={`${a.year}-${a.id}`} title={a.name} className='border border-[var(--rule)] bg-[var(--paper)] px-2 py-0.5 text-[0.71875rem] text-[var(--ink-2)]'>
+						<li key={`${a.year}-${a.id}`} title={a.name} className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-2 py-0.5 text-[0.71875rem] text-[var(--ink-2)]'>
 							<span className='font-semibold text-[var(--ink)]'>FY {a.year}</span> · <Money amount={a.amount} />
 						</li>
 					))}

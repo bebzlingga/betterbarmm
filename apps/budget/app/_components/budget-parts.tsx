@@ -1,5 +1,5 @@
 import { ArrowLeftIcon } from '@phosphor-icons/react/ssr'
-import { Counter, LineReveal, Rise } from '@betterbarmm/editorial'
+import { Counter, Rise } from '@betterbarmm/editorial'
 import { EXPENSE_CLASSES, budgetFor, percent, peso, type Totals } from '@betterbarmm/budget-data'
 import { YearLink } from './year-link'
 import { Money } from './money'
@@ -59,95 +59,51 @@ export function Masthead({
 	aside?: React.ReactNode
 	children?: React.ReactNode
 }) {
-	return (
-		/* Every page in the workspace opens on the brand crimson (user decision).
-		   `bb-crimson` re-points every token — ink, brass, rules, the accent — so
-		   the kicker, the claim, the lead and the stat row under it all restyle
-		   themselves without one inverted variant written here. */
-		<section className='bb-crimson bb-lattice relative isolate overflow-hidden'>
-			<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[30%] size-[30rem]' />
-
-			{/* `masthead-band` is the workspace's one rhythm, the same value that
-			    sits between two sections and around the closing panel. */}
-			<div className={`bb-container masthead-band relative ${center ? 'text-center' : ''}`}>
-				<div
-					className={
-						aside
-							? 'grid items-center gap-x-14 gap-y-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)]'
-							: ''
-					}
-				>
-				<div>
-				{/* The way back and the kicker on one line, divided by a hairline
-				    (user decision). They are both the same kind of thing — where you
-				    are — and stacked they took two lines and 1.75rem of air to say
-				    it. `flex-wrap` so a long kicker drops under the link on a phone
-				    rather than squeezing it. */}
-				<Rise distance={10}>
-					<div
-						className={`flex flex-wrap items-center gap-x-4 gap-y-2 ${center ? 'justify-center' : ''}`}
+	/* Every page opens on the crimson header under the clear bars (user decision: the travel look, as the registry's).
+	   What a page hands in as `children` (its figures, its chart) sits on the paper under the header (user decision:
+	   figures below the header), except on a centred head, where it is the head's own search. */
+	const top = (
+		<div className={`flex flex-wrap items-center gap-x-4 gap-y-2 ${center ? 'justify-center' : ''}`}>
+			{back ? (
+				<>
+					<YearLink
+						href={back.href}
+						className='group inline-flex items-center gap-2 rounded-full border border-white/25 px-3 py-1 text-[0.75rem] font-semibold text-white/85 transition hover:bg-white/10 hover:text-white'
 					>
-						{back ? (
-							<>
-								<YearLink
-									href={back.href}
-									className='group inline-flex items-center gap-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
-								>
-									<ArrowLeftIcon
-										className='size-3.5 transition duration-500 group-hover:-translate-x-0.5'
-										aria-hidden='true'
-									/>
-									{back.label}
-								</YearLink>
-
-								<span aria-hidden='true' className='h-3 w-px shrink-0 bg-[var(--rule)]' />
-							</>
-						) : null}
-
-						<p className='bb-label'>{kicker}</p>
-					</div>
-				</Rise>
-
-				{/* Above the claim rather than beside it: a mark set on the same line
-				    as a display heading has to be sized against it, and at that size
-				    it stops being a mark and becomes a picture. */}
-				{mark ? (
-					<Rise delay={0.08} distance={12}>
-						<div className='mt-6'>{mark}</div>
-					</Rise>
-				) : null}
-
-				<LineReveal
-					lines={titleMuted ? [title, titleMuted] : [title]}
-					delay={0.1}
-					className='bb-display-md mt-6 text-[var(--ink)]'
-					lineClassName={[undefined, 'bb-mute']}
+						<ArrowLeftIcon className='size-3.5 transition duration-500 group-hover:-translate-x-0.5' aria-hidden='true' />
+						{back.label}
+					</YearLink>
+				</>
+			) : null}
+			<p className='pg-hero-kicker'>{kicker}</p>
+		</div>
+	)
+	return (
+		<>
+			<header className='dv-hero brand-bg bb-lattice'>
+				<span
+					aria-hidden='true'
+					className='bb-glow absolute -top-[22rem] left-1/2 -z-10 h-[40rem] w-[64rem] max-w-[160vw] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
 				/>
-
-				{lead ? (
-					<Rise delay={0.28} distance={14}>
-						{/* Three quarters of the container, not `bb-measure`'s 34em and not
-						    the full width. The measure broke the lead into a narrow column
-						    with a hand's width of blank paper beside it; the full width ran
-						    the line past what is comfortable to read on a wide screen. A
-						    share rather than a fixed max, so it stays proportional to the
-						    heading above it, and only from `lg` — at phone width 75% of a
-						    narrow column is just a narrower column. */}
-						<div className='mt-7 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
-							{lead}
-						</div>
-					</Rise>
-				) : null}
-
-				{children}
+				<span aria-hidden='true' className='bb-weave absolute inset-x-0 bottom-0' />
+				<div
+					className={`bb-container relative flex flex-col justify-end ${center ? 'items-center text-center' : ''} ${aside ? 'lg:grid lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-center lg:gap-14 xl:gap-20' : ''}`}
+				>
+					<div className='min-w-0'>
+						{top}
+						{mark ? <div className='mt-6'>{mark}</div> : null}
+						<h1 className={`pg-hero-title mt-4 ${center ? 'mx-auto' : ''} ${aside ? '!max-w-none' : ''}`}>
+							{title}
+							{titleMuted ? <span className='block text-white/55'>{titleMuted}</span> : null}
+						</h1>
+						{lead ? <div className={`mt-5 max-w-3xl text-[1.0625rem] leading-relaxed text-white/85 md:text-[1.125rem] ${center ? 'mx-auto' : ''}`}>{lead}</div> : null}
+						{center ? children : null}
+					</div>
+					{aside ? <div className='mt-10 min-w-0 lg:mt-0'>{aside}</div> : null}
 				</div>
-
-					{aside ? <div className='min-w-0'>{aside}</div> : null}
-				</div>
-			</div>
-
-			<div className='bb-weave' aria-hidden='true' />
-		</section>
+			</header>
+			{!center && children ? <div className='bt-under bb-container'>{children}</div> : null}
+		</>
 	)
 }
 
@@ -167,37 +123,22 @@ export function StatRow({
 }) {
 	return (
 		<Rise delay={delay} distance={14}>
-			{/* Content-width, not four equal tracks (user decision). A ₱-figure of
-				    seventeen glyphs and a count of two were being given the same width,
-				    which left a hand of blank paper after the short ones and the brass
-				    rule over each running far past what it was ruling.
-
-				    The separation is the container's `gap`, not padding on the items:
-				    `.money-stat` draws its rule as a `border-top`, and padding sits
-				    inside a border — so `pr-*` would stretch each rule out past its own
-				    figure, which is the thing this change is undoing. */}
-				<dl className='mt-16 flex flex-wrap gap-x-16 gap-y-10'>
-				{/* Extra room after the lead figure: it is the one the page is about,
-				    and at the row's own gap the next stat crowded seventeen glyphs of
-				    peso. Padding rather than margin here on purpose — the brass rule
-				    runs the full width of the space it owns, and a lead rule that
-				    stopped short of the gap would read as a mistake. */}
-				{stats.map((stat) => (
-					<div key={stat.label} className='money-stat first:pr-12'>
-						<dt className='sr-only'>{stat.label}</dt>
-						<dd className='money-stat-value money'>
+			{/* Each figure on a rounded card under the header (user decision: the travel look, figures below the header);
+			    the lead figure, a peso amount of seventeen glyphs, takes two tracks on a wide screen. */}
+			<dl className='grid grid-cols-2 gap-3 lg:flex'>
+				{stats.map((stat, i) => (
+					<div
+						key={stat.label}
+						className={`flex flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] lg:min-w-[12rem] lg:flex-1 lg:p-6 ${i === 0 ? 'col-span-2 lg:flex-[2]' : ''}`}
+					>
+						<dt className='order-2 mt-2 text-[0.78125rem] leading-[1.5] text-[var(--ink-3)]'>{stat.label}</dt>
+						<dd className='money order-1 font-[family-name:var(--font-display)] text-[clamp(1.5rem,2.4vw,2.125rem)] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
 							{stat.money ? (
 								<ExactMoney amount={stat.value} />
 							) : (
-								<Counter
-									value={stat.value}
-									group
-									decimals={stat.decimals ?? 0}
-									suffix={stat.suffix ?? ''}
-								/>
+								<Counter value={stat.value} group decimals={stat.decimals ?? 0} suffix={stat.suffix ?? ''} />
 							)}
 						</dd>
-						<p className='money-stat-label'>{stat.label}</p>
 					</div>
 				))}
 			</dl>
