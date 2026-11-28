@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { CameraIcon, ChalkboardTeacherIcon, CoinsIcon, GraduationCapIcon, HandHeartIcon, MapPinIcon, MosqueIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { Masthead } from '../_components/parts'
 import { NEEDS_LIVE } from '../_lib/needs'
@@ -9,15 +10,21 @@ export const metadata: Metadata = {
 	description: 'Where the Education workspace’s figures come from, and what each record cannot tell you.',
 }
 
-const H2 = 'text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'mt-5 font-[family-name:var(--font-display)] text-[1.375rem] font-bold leading-tight tracking-[-0.025em] text-[var(--ink)]'
+/** Each source on a rounded card with its icon (user decision: the travel look). */
+const CARD = 'rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-7 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-9'
+const ICON_TILE = 'grid size-11 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'
 const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
 export default function SourcesPage() {
 	return (
 		<>
 			<Masthead kicker='Education · Bangsamoro' name='Sources' note='Public records, each kept as its publisher printed it, and what schools tell us themselves.' />
-			<div className='bb-container bb-section max-w-[52rem] [&>section+section]:mt-14'>
-				<section>
+			<div className='bb-container dv-section grid gap-4'>
+				<section className={CARD}>
+					<span className={ICON_TILE}>
+						<CoinsIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
 					<h2 className={H2}>The money</h2>
 					<p className={P}>
 						What each General Appropriations Act of the Bangsamoro, FY {years[0]} to FY {years.at(-1)}, gives the Ministry of
@@ -29,7 +36,10 @@ export default function SourcesPage() {
 						left the region in 2024, and its lines are shown as printed.
 					</p>
 				</section>
-				<section>
+				<section className={CARD}>
+					<span className={ICON_TILE}>
+						<ChalkboardTeacherIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
 					<h2 className={H2}>The schools</h2>
 					<p className={P}>
 						{countBy('source', 'deped').toLocaleString('en-PH')} schools, public and private, from the Department of Education&rsquo;s{' '}
@@ -57,6 +67,13 @@ export default function SourcesPage() {
 						not on the latest one: closed, merged, or renumbered past matching.
 					</p>
 					<p className={P}>
+						Each public school&rsquo;s teachers and classrooms are DepEd&rsquo;s for school year 2023–24, from the same Project Bukas
+						release (its personnel and facilities files, joined by school ID). A teacher here is a post that teaches a class: teachers,
+						master teachers, special education teachers, instructors and kindergarten teachers, however they are funded; head
+						teachers, who run a school, are left out. DepEd files these for public schools only, so private schools and colleges show
+						none.
+					</p>
+					<p className={P}>
 						What it cannot tell you: learners are formal schooling only, not the Alternative Learning System or community learning
 						centres, and madaris outside the public schools are only those OpenStreetMap names. The Ministry of Basic, Higher and
 						Technical Education publishes no list of its own; its figures, as it and the Parliament have stated them, are on the
@@ -75,7 +92,10 @@ export default function SourcesPage() {
 						.
 					</p>
 				</section>
-				<section>
+				<section className={CARD}>
+					<span className={ICON_TILE}>
+						<MosqueIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
 					<h2 className={H2}>Private schools, madaris, colleges and universities</h2>
 					<p className={P}>
 						DepEd&rsquo;s list holds public schools only, and no list of the region&rsquo;s private schools is published that we have
@@ -95,7 +115,10 @@ export default function SourcesPage() {
 						name. This is far from every private school, madrasah or college in the region: only those volunteers have mapped.
 					</p>
 				</section>
-				<section>
+				<section className={CARD}>
+					<span className={ICON_TILE}>
+						<GraduationCapIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
 					<h2 className={H2}>Colleges added by hand</h2>
 					<p className={P}>
 						{countBy('source', 'wikipedia')} more are added from{' '}
@@ -107,7 +130,10 @@ export default function SourcesPage() {
 						A few schools with a Wikipedia article of their own are added the same way (datasets/education/school-additions.json).
 					</p>
 				</section>
-				<section>
+				<section className={CARD}>
+					<span className={ICON_TILE}>
+						<CameraIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
 					<h2 className={H2}>Photographs and histories</h2>
 					<p className={P}>
 						Photographs are freely licensed files on Wikimedia Commons, credited on each page; few schools in the region have one
@@ -116,7 +142,10 @@ export default function SourcesPage() {
 						agencies and news reports.
 					</p>
 				</section>
-				<section>
+				<section className={CARD}>
+					<span className={ICON_TILE}>
+						<MapPinIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
 					<h2 className={H2}>Where each school is</h2>
 					<p className={P}>
 						{placedCounts.exact.toLocaleString('en-PH')} schools are pinned where they stand: by the coordinates on DepEd&rsquo;s list
@@ -129,7 +158,10 @@ export default function SourcesPage() {
 					</p>
 				</section>
 				{NEEDS_LIVE ? (
-				<section>
+				<section className={CARD}>
+					<span className={ICON_TILE}>
+						<HandHeartIcon size={20} weight='duotone' aria-hidden='true' />
+					</span>
 					<h2 className={H2}>What schools need</h2>
 					<p className={P}>
 						Posted by teachers, school heads, students, parents and people in the community, through the form on this site. Each is

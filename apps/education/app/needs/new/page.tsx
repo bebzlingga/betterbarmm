@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 	robots: { index: false, follow: true },
 }
 
-const FIELD = 'h-11 min-w-0 flex-1 border border-[var(--rule)] bg-[var(--paper)] px-4 text-[0.9375rem] text-[var(--ink)]'
+const FIELD = 'h-12 min-w-0 flex-1 rounded-full border border-[var(--rule)] bg-[var(--paper)] px-5 text-[0.9375rem] text-[var(--ink)]'
 
 const fold = (s: string) => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase()
 /** How a school reads in the pick-list: its name and its town. */
@@ -30,7 +30,7 @@ export default async function PostNeedPage({ searchParams }: { searchParams: Pro
 		<>
 			<Masthead kicker='Education · Bangsamoro' name='Post a need' note='Two steps: find the school, then say what it needs. An editor checks every post before it appears on the site.' />
 
-			<section className='bb-container bb-section max-w-[48rem]'>
+			<section className='bb-container dv-section max-w-[48rem]'>
 				{school ? (
 					<>
 						<div className='flex flex-wrap items-baseline justify-between gap-3 border-b border-[var(--rule)] pb-4'>
@@ -60,13 +60,13 @@ export default async function PostNeedPage({ searchParams }: { searchParams: Pro
 									<option key={s.id} value={option(s)} />
 								))}
 							</datalist>
-							<button type='submit' className='bb-btn bb-btn-accent h-11'>
+							<button type='submit' className='dv-btn dv-btn-accent h-12'>
 								Find
 							</button>
 						</form>
 						{words.length ? (
 							matches.length ? (
-								<ul className='mt-6 divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+								<ul className='mt-6 divide-y divide-[var(--rule-soft)] rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] px-5'>
 									{matches.map((s) => (
 										<li key={s.id}>
 											<Link href={`/needs/new?school=${s.id}`} className='group flex items-baseline justify-between gap-4 py-3'>

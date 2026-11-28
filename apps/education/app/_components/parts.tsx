@@ -1,7 +1,7 @@
-import { LineReveal, Rise } from '@betterbarmm/editorial'
+import { Hero } from './hero'
 
-/* The masthead and the year chart every page here opens with, in the Local
-   Government workspace's style. */
+/* The header every page here opens with, in the travel workspace's look (user decision: as legislation's): the crimson
+   and its lattice under the clear bars, the page's words at its foot. A chart (the budget's years) closes it. */
 
 export function Masthead({
 	kicker,
@@ -9,35 +9,24 @@ export function Masthead({
 	note,
 	chart = false,
 	stacked = false,
+	side,
 	children,
 }: {
 	kicker: string
 	name: string
 	note?: string
-	/** A chart closes the masthead: less room under it. */
+	/** A chart closes the masthead: as tall as it needs. */
 	chart?: boolean
-	/** The name across the full width with the note under it: for long names. */
+	/** A long name (a school's): a step smaller. */
 	stacked?: boolean
+	/** A card on the right of the words from a wide screen. */
+	side?: React.ReactNode
 	children?: React.ReactNode
 }) {
 	return (
-		<section className='bb-lattice brand-bg relative overflow-hidden'>
-			<div className={`bb-container relative pt-[clamp(3.75rem,7vw,6.5rem)] ${chart ? 'pb-[clamp(2rem,4vw,3rem)]' : 'pb-[clamp(3.75rem,7vw,6.5rem)]'}`}>
-				<Rise distance={12}>
-					<span className='bb-label'>{kicker}</span>
-				</Rise>
-				<div className={stacked ? '' : 'lg:grid lg:grid-cols-[1.1fr_1fr] lg:items-end lg:gap-16'}>
-					<LineReveal lines={[name]} delay={0.06} className={`bb-display-md mt-5 text-[var(--ink)] ${stacked ? '!font-black' : ''}`} />
-					{note ? (
-						<Rise delay={0.25} distance={14}>
-							<p className={`mt-7 text-[0.9375rem] leading-7 text-[var(--ink-2)] ${stacked ? 'max-w-[44rem]' : 'lg:mt-0 lg:text-right lg:leading-6'}`}>{note}</p>
-						</Rise>
-					) : null}
-				</div>
-				{children}
-			</div>
-			<div className='bb-weave' aria-hidden='true' />
-		</section>
+		<Hero kicker={kicker} title={name} lede={note} small={stacked} auto={chart} side={side}>
+			{children}
+		</Hero>
 	)
 }
 
@@ -53,7 +42,7 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 	const top = Math.max(...bars.map((b) => b.value), 1)
 	const cols = { gridTemplateColumns: `repeat(${bars.length}, minmax(0, 1fr))` }
 	return (
-		<figure className='m-0 mt-16 lg:mt-20'>
+		<figure className='m-0 mt-12 rounded-[var(--dv-r)] bg-white/[0.07] p-5 ring-1 ring-inset ring-white/15 sm:p-7 lg:mt-14'>
 			<div className='grid h-44 items-end gap-1.5 sm:gap-4' style={cols}>
 				{bars.map(({ year, value }) => (
 					<div key={year} className='flex h-full flex-col items-center justify-end'>
@@ -61,8 +50,8 @@ export function YearBars({ bars, caption, note }: { bars: { year: number; value:
 							{value >= 1e9 ? `${(value / 1e9).toFixed(1)}B` : `${Math.round(value / 1e6)}M`}
 						</span>
 						<div
-							className='w-full max-w-36'
-							style={{ height: `calc(${(value / top) * 100}% - 1.5rem)`, minHeight: '2px', background: 'linear-gradient(to top, transparent, var(--accent))' }}
+							className='w-full max-w-36 rounded-t-md'
+							style={{ height: `calc(${(value / top) * 100}% - 1.5rem)`, minHeight: '2px', background: 'linear-gradient(to top, rgba(241,196,83,0.25), #f1c453)' }}
 							title={`${year}: ₱${Math.round(value).toLocaleString('en-PH')}`}
 						/>
 					</div>
@@ -117,31 +106,32 @@ export function Figures({
 }: {
 	title: string
 	note: string
-	/** On the page's own white rather than the light band. */
+	/** On the page's own white rather than the warm band. */
 	plain?: boolean
 	items: { value: string; label: string; series?: number[] }[]
 	/** The years a figure's series runs over; the last is drawn lighter, as the year so far. */
 	years?: number[]
 }) {
+	// Each figure on a rounded card (user decision: the travel look), on a warm wash unless the page asks for paper.
 	return (
-		<section className={plain ? '' : 'bg-[var(--paper-2)]'}>
-			<div className='bb-container pt-16 lg:pt-20'>
-				<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
-					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
-					<p className='max-w-[38rem] text-[0.875rem] leading-6 text-[var(--ink-3)] lg:text-right'>{note}</p>
+		<section className={plain ? '' : 'tv-wash'}>
+			<div className='bb-container dv-section'>
+				<div className='flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between lg:gap-16'>
+					<h2 className='dv-title'>{title}</h2>
+					<p className='max-w-[38rem] text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>{note}</p>
 				</div>
+				<dl className='mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4'>
+					{items.map((item) => (
+						<div key={item.label} className='flex flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)]'>
+							{item.series && years ? <Spark series={item.series} years={years} /> : null}
+							<dd className='num font-[family-name:var(--font-display)] text-[clamp(1.75rem,3vw,2.35rem)] font-extrabold leading-none tracking-[-0.035em] text-[var(--ink)]'>
+								{item.value}
+							</dd>
+							<dt className='mt-2 text-[0.8125rem] leading-snug text-[var(--ink-3)]'>{item.label}</dt>
+						</div>
+					))}
+				</dl>
 			</div>
-			<dl className='bb-container grid grid-cols-2 gap-x-10 gap-y-10 pb-16 pt-10 lg:grid-cols-4 lg:gap-x-16 lg:pb-20 lg:pt-14'>
-				{items.map((item) => (
-					<div key={item.label}>
-						{item.series && years ? <Spark series={item.series} years={years} /> : null}
-						<dd className='num border-t border-[var(--rule)] pt-4 font-[family-name:var(--font-display)] text-[clamp(1.6rem,3.2vw,2.35rem)] font-black leading-none tracking-[-0.03em] text-[var(--ink)]'>
-							{item.value}
-						</dd>
-						<dt className='mt-2 text-[0.78125rem] text-[var(--ink-3)]'>{item.label}</dt>
-					</div>
-				))}
-			</dl>
 		</section>
 	)
 }

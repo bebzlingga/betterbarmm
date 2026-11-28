@@ -27,7 +27,7 @@ export function SchoolMap({
 	className?: string
 }) {
 	return (
-		<div className={`relative overflow-hidden border border-[var(--rule)] bg-[var(--paper-2)] ${className}`}>
+		<div className={`relative overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper-2)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] ${className}`}>
 			<Canvas schools={schools} focus={focus} selectedId={selectedId} onSelect={onSelect} fly={fly} />
 		</div>
 	)

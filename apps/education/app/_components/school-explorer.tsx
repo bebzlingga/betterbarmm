@@ -123,7 +123,7 @@ export function SchoolExplorer({
 					<SchoolMap schools={schools} onSelect={(id) => openWith(id)} className='!h-full' />
 					{/* The wrapper takes the corner: .bb-btn sets its own position, outside the layers, and would win over `absolute`. */}
 					<div className='absolute bottom-4 right-4 z-10'>
-						<button type='button' onClick={() => openWith()} className='bb-btn bb-btn-accent shadow-[0_12px_30px_-14px_rgba(0,0,0,0.6)]'>
+						<button type='button' onClick={() => openWith()} className='dv-btn dv-btn-accent shadow-[0_12px_30px_-14px_rgba(0,0,0,0.6)]'>
 							<ArrowsOutIcon size={14} weight='bold' aria-hidden='true' />
 							Open the map
 						</button>
@@ -149,7 +149,7 @@ export function SchoolExplorer({
 							<div className='@container min-w-0 flex-1'>
 								<div className='flex flex-wrap items-center gap-3 gap-x-5'>
 									<div className='w-full @xl:w-72'>
-										<SearchField value={q} onChange={setQ} placeholder='Name, town or school ID' plain />
+										<SearchField value={q} onChange={setQ} placeholder='Name, municipality or school ID' plain />
 									</div>
 									{/* On a phone the controls keep to one line that scrolls sideways, so the map keeps the screen. */}
 									<div className='flex w-full items-center gap-x-5 overflow-x-auto pr-8 [mask-image:linear-gradient(to_right,#000_calc(100%-2.5rem),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden [&>*]:shrink-0 @xl:w-auto @xl:flex-wrap @xl:gap-y-2 @xl:overflow-visible @xl:pr-0 @xl:[mask-image:none]'>
@@ -165,7 +165,7 @@ export function SchoolExplorer({
 									</div>
 								</div>
 							</div>
-							<button type='button' onClick={close} aria-label='Close the map' className='inline-flex h-10 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'>
+							<button type='button' onClick={close} aria-label='Close the map' className='inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full bg-white/10 text-[var(--ink-2)] transition hover:bg-white/20 hover:text-[var(--ink)]'>
 								<XIcon size={16} weight='bold' aria-hidden='true' />
 							</button>
 						</div>
@@ -213,8 +213,8 @@ export function SchoolExplorer({
 							</MapList>
 
 							<div className='relative order-1 h-[55dvh] min-h-0 lg:order-2 lg:h-auto'>
-								<SchoolMap schools={shown} selectedId={selectedId} onSelect={choose} fly={fly} className='!h-full border-0' />
-								<div className='pointer-events-none absolute bottom-3 left-3 hidden flex-wrap gap-x-4 gap-y-1 bg-[var(--paper)]/90 px-3 py-2 text-[0.6875rem] text-[var(--ink-2)] shadow-sm sm:flex'>
+								<SchoolMap schools={shown} selectedId={selectedId} onSelect={choose} fly={fly} className='!h-full !rounded-none border-0' />
+								<div className='pointer-events-none absolute bottom-3 left-3 hidden flex-wrap gap-x-4 gap-y-1 rounded-full bg-[var(--paper)]/95 px-4 py-2 text-[0.6875rem] text-[var(--ink-2)] shadow-sm sm:flex'>
 									<span className='inline-flex items-center gap-1.5'>
 										<span className='size-2.5 rounded-full bg-[var(--ink-2)]' aria-hidden='true' /> Pinned where it stands
 									</span>
@@ -223,7 +223,7 @@ export function SchoolExplorer({
 									</span>
 								</div>
 								{selected ? (
-									<div className='absolute bottom-4 right-4 z-10 w-[22rem] max-w-[calc(100%-2rem)] max-h-[calc(100%-2rem)] overflow-y-auto shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'>
+									<div className='absolute bottom-4 right-4 z-10 w-[22rem] max-w-[calc(100%-2rem)] max-h-[calc(100%-2rem)] overflow-y-auto rounded-[var(--dv-r)] shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'>
 										<SchoolCard school={selected} dark={dark} year={year} onClose={() => setSelectedId(null)} />
 									</div>
 								) : null}
@@ -238,20 +238,20 @@ export function SchoolExplorer({
 
 function SchoolCard({ school, dark, year, onClose }: { school: MapSchool; dark: boolean; year: string; onClose: () => void }) {
 	return (
-		<article className='bg-[var(--paper)] p-4'>
+		<article className='bg-[var(--paper)] p-5'>
 			<div className='flex items-start justify-between gap-3'>
 				<p className='inline-flex items-center gap-1.5 text-[0.71875rem] font-semibold uppercase tracking-[0.1em]' style={{ color: typeColour(school.type, dark) }}>
 					<span className='size-2.5 rounded-full' style={{ background: typeColour(school.type, dark) }} aria-hidden='true' />
 					{school.type}
 				</p>
-				<button type='button' onClick={onClose} aria-label='Close details' className='-mr-1.5 -mt-1.5 inline-flex size-7 shrink-0 cursor-pointer items-center justify-center text-[var(--ink-3)] transition hover:text-[var(--ink)]'>
+				<button type='button' onClick={onClose} aria-label='Close details' className='-mr-1.5 -mt-1.5 inline-flex size-8 shrink-0 cursor-pointer items-center justify-center rounded-full bg-[var(--paper-2)] text-[var(--ink-3)] transition hover:text-[var(--ink)]'>
 					<XIcon size={14} weight='bold' aria-hidden='true' />
 				</button>
 			</div>
-			<h2 className='mt-2 text-[1.0625rem] font-extrabold leading-snug tracking-[-0.01em]'>{school.name}</h2>
+			<h2 className='mt-2 font-[family-name:var(--font-display)] text-[1.125rem] font-bold leading-snug tracking-[-0.01em]'>{school.name}</h2>
 			{school.image ? (
 				<figure className='mt-3'>
-					<img src={school.image.url} alt='' className='aspect-[16/9] w-full object-cover' />
+					<img src={school.image.url} alt='' className='aspect-[16/9] w-full rounded-xl object-cover' />
 					<figcaption className='mt-1 text-[0.6875rem] text-[var(--ink-3)]'>
 						<a href={school.image.page} target='_blank' rel='noreferrer' className='hover:text-[var(--accent)]'>
 							{school.image.author} · {school.image.license}
@@ -275,7 +275,7 @@ function SchoolCard({ school, dark, year, onClose }: { school: MapSchool; dark: 
 			</dl>
 			{school.exact ? null : <p className='mt-3 text-[0.75rem] leading-5 text-[var(--ink-3)]'>Not mapped yet: its dot is the town&rsquo;s centre, not the school.</p>}
 			<div className={`mt-4 grid gap-2 ${NEEDS_LIVE ? 'grid-cols-2' : ''}`}>
-				<a href={`/schools/${school.id}`} className='bb-btn bb-btn-accent justify-center !px-2'>
+				<a href={`/schools/${school.id}`} className='dv-btn dv-btn-accent justify-center !px-3 !py-2.5 !text-[0.8125rem]'>
 					School page <ArrowUpRightIcon size={13} weight='bold' aria-hidden='true' />
 				</a>
 				{NEEDS_LIVE ? (

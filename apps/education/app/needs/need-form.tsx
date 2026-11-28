@@ -6,10 +6,10 @@ import Link from 'next/link'
 import { useActionState, useState } from 'react'
 import { postNeed, type NeedState } from './actions'
 
-const field = 'w-full border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 text-[0.9375rem] outline-none focus:border-[var(--accent)]'
+const field = 'w-full rounded-2xl border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 text-[0.9375rem] outline-none focus:border-[var(--accent)]'
 const label = 'mb-2 block text-[0.8125rem] font-semibold text-[var(--ink)]'
 const hint = 'mt-1.5 block text-[0.78125rem] leading-5 text-[var(--ink-3)]'
-const CHIP = 'cursor-pointer border border-[var(--rule)] px-3 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition hover:border-[var(--ink)] aria-pressed:border-[var(--ink)] aria-pressed:bg-[var(--ink)] aria-pressed:text-[var(--paper)]'
+const CHIP = 'cursor-pointer rounded-full border border-[var(--rule)] px-3.5 py-1.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition hover:border-[var(--ink)] aria-pressed:border-[var(--accent)] aria-pressed:bg-[var(--accent)] aria-pressed:text-white'
 
 /** The needs schools post most: one tap fills in the kind and the title, and only the details are left to write. */
 const COMMON: { kind: string; title: string }[] = [
@@ -34,7 +34,7 @@ export function NeedForm({ school }: { school: { id: string; name: string; townN
 
 	if (state.ok)
 		return (
-			<div className='flex items-start gap-3 bg-[var(--paper-2)] p-6'>
+			<div className='flex items-start gap-3 rounded-[var(--dv-r)] bg-[var(--paper-2)] p-6'>
 				<CheckCircleIcon size={22} weight='fill' className='mt-0.5 shrink-0 text-[var(--accent)]' aria-hidden='true' />
 				<div>
 					<p className='text-[1.0625rem] font-extrabold text-[var(--ink)]'>Thank you. It is with our editors now.</p>
@@ -146,7 +146,7 @@ export function NeedForm({ school }: { school: { id: string; name: string; townN
 					{state.error}
 				</p>
 			) : null}
-			<button type='submit' disabled={pending} className='bb-btn bb-btn-accent'>
+			<button type='submit' disabled={pending} className='dv-btn dv-btn-accent'>
 				{pending ? 'Sending…' : 'Post the need'}
 			</button>
 		</form>

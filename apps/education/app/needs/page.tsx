@@ -38,7 +38,7 @@ export default async function NeedsPage({ searchParams }: { searchParams: Promis
 				note='Posted by the teachers, school heads, students and parents who know a school best, and checked by our editors before they appear. So that the ministry, the towns, donors and volunteers can see where help is needed.'
 			>
 				<div className='mt-10 flex flex-wrap items-center gap-x-8 gap-y-4'>
-					<Link href='/needs/new' className='bb-btn bb-btn-brass'>
+					<Link href='/needs/new' className='dv-btn dv-btn-light'>
 						<PlusIcon size={14} weight='bold' aria-hidden='true' />
 						Post a need
 					</Link>
@@ -48,7 +48,7 @@ export default async function NeedsPage({ searchParams }: { searchParams: Promis
 				</div>
 			</Masthead>
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				{all.length ? (
 					<>
 						<nav aria-label='Filter needs' className='flex flex-col gap-3'>
@@ -84,20 +84,20 @@ export default async function NeedsPage({ searchParams }: { searchParams: Promis
 						</ul>
 					</>
 				) : (
-					<div className='max-w-[44rem] border border-dashed border-[var(--rule)] p-8'>
+					<div className='tv-wash max-w-[44rem] rounded-[var(--dv-r)] p-8 sm:p-10'>
 						<h2 className='text-[1.25rem] font-extrabold text-[var(--ink)]'>No needs posted yet</h2>
 						<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>
 							If your school is short of classrooms, chairs, books, teachers, water or anything else its learners need, tell us. Pick
 							the school, say what is missing and how many learners it affects. An editor checks it, then it goes on the school&rsquo;s
 							page and here.
 						</p>
-						<Link href='/needs/new' className='bb-btn bb-btn-accent mt-6'>
+						<Link href='/needs/new' className='dv-btn dv-btn-accent mt-6'>
 							Post a need
 						</Link>
 					</div>
 				)}
 
-				<section className='mt-16 grid gap-8 border-t border-[var(--rule)] pt-10 md:grid-cols-3'>
+				<section className='mt-16 grid gap-8 md:grid-cols-3'>
 					{[
 						['Anyone in the school can post', 'A teacher, the school head, a student, a parent, or someone in the community who knows the school.'],
 						['An editor checks every post', 'That the school is real and the post names no child. Nothing appears until it is approved.'],

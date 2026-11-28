@@ -1,5 +1,5 @@
 import { listSchoolNeeds } from '@betterbarmm/db'
-import { PlusIcon } from '@phosphor-icons/react/ssr'
+import { PlusIcon, ScrollIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -83,18 +83,18 @@ export default async function SchoolPage({ params }: Props) {
 		<>
 			<Masthead kicker={`School · ${school.townName}, ${areaNameOf(school.area)}`} name={school.name} stacked note={sizeOf(school.pupils) ?? undefined} />
 
-			<section className='bb-container bb-section'>
-				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]'>
+			<section className='bb-container dv-section'>
+				<div className='grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-12'>
 					<div>
-						<dl className='divide-y divide-[var(--rule-soft)] border-y border-[var(--rule)]'>
+						<dl className='divide-y divide-[var(--rule-soft)] rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] px-6 py-2 sm:px-8'>
 							{facts.map(([k, v]) => (
-								<div key={k} className='grid gap-1 py-3 sm:grid-cols-[8rem_1fr]'>
-									<dt className='font-mono text-[0.65625rem] font-semibold uppercase leading-6 tracking-[0.12em] text-[var(--ink-3)]'>{k}</dt>
+								<div key={k} className='grid gap-1 py-3.5 sm:grid-cols-[8rem_1fr]'>
+									<dt className='text-[0.6875rem] font-semibold uppercase leading-6 tracking-[0.12em] text-[var(--accent)]'>{k}</dt>
 									<dd className='text-[0.9375rem] text-[var(--ink)]'>{v}</dd>
 								</div>
 							))}
 						</dl>
-						<p className='mt-5 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
+						<p className='mt-5 px-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 							{school.note ? <span className='block pb-2 text-[var(--ink-2)]'>{school.note}</span> : null}
 							{deped
 								? `On the Department of Education’s list for school year ${latestSY}, with its learners for each year DepEd publishes; the 2012–13 and 2015–16 counts and where it stands are from DepEd’s 2019 masterlist.`
@@ -117,7 +117,7 @@ export default async function SchoolPage({ params }: Props) {
 					<div>
 						{school.image ? (
 							<figure className='mb-6'>
-								<img src={school.image.url} alt={school.image.caption} className='max-h-[26rem] w-full object-cover' />
+								<img src={school.image.url} alt={school.image.caption} className='max-h-[26rem] w-full rounded-[var(--dv-r)] object-cover' />
 								<figcaption className='mt-2 text-[0.75rem] text-[var(--ink-3)]'>
 									{school.image.caption}.{' '}
 									<a href={school.image.page} target='_blank' rel='noreferrer' className='rule-link'>
@@ -145,15 +145,20 @@ export default async function SchoolPage({ params }: Props) {
 			</section>
 
 			{history ? (
-				<section className='bb-container pb-[clamp(3rem,6vw,5rem)]'>
-					<div className='max-w-[48rem]'>
-						<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>History</h2>
+				<section className='bb-container pb-[clamp(4rem,8vw,7rem)]'>
+					<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] max-w-[56rem] p-7 sm:p-10'>
+						<h2 className='dv-title flex items-center gap-3'>
+							<span className='grid size-11 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
+								<ScrollIcon size={20} weight='duotone' aria-hidden='true' />
+							</span>
+							History
+						</h2>
 						<div className='mt-5 space-y-4 text-[0.96875rem] leading-7 text-[var(--ink-2)]'>
 							{history.history.map((para, i) => (
 								<p key={i}>{para}</p>
 							))}
 						</div>
-						<ul className='mt-6 space-y-1 border-t border-[var(--rule)] pt-4 text-[0.78125rem] text-[var(--ink-3)]'>
+						<ul className='mt-6 space-y-1 rounded-2xl bg-[var(--paper-2)] px-5 py-4 text-[0.78125rem] text-[var(--ink-3)]'>
 							{history.sources.map((src) => (
 								<li key={src.url}>
 									<a href={src.url} target='_blank' rel='noreferrer' className='rule-link'>
@@ -167,16 +172,16 @@ export default async function SchoolPage({ params }: Props) {
 			) : null}
 
 			{NEEDS_LIVE ? (
-			<section className='bg-[var(--paper-2)]'>
-				<div className='bb-container bb-section'>
+			<section className='tv-wash-flip'>
+				<div className='bb-container dv-section'>
 					<div className='flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between'>
 						<div>
-							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>What it needs</h2>
+							<h2 className='dv-title'>What it needs</h2>
 							<p className='mt-2 max-w-[40rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
 								Posted by its teachers, students and parents, and checked by an editor.
 							</p>
 						</div>
-						<Link href={`/needs/new?school=${school.id}`} className='bb-btn bb-btn-accent shrink-0'>
+						<Link href={`/needs/new?school=${school.id}`} className='dv-btn dv-btn-accent shrink-0'>
 							<PlusIcon size={14} weight='bold' aria-hidden='true' />
 							Post a need for this school
 						</Link>
@@ -198,11 +203,11 @@ export default async function SchoolPage({ params }: Props) {
 
 			{/* ---- Learners, year by year: every count the records hold, oldest first ---- */}
 			{counts.length > 1 ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container bb-section'>
-						<div className='flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between lg:gap-16'>
-							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Learners, year by year</h2>
-							<p className='max-w-[38rem] text-[0.875rem] leading-6 text-[var(--ink-3)] lg:text-right'>
+				<section className='tv-wash'>
+					<div className='bb-container dv-section'>
+						<div className='flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between lg:gap-16'>
+							<h2 className='dv-title'>Learners, year by year</h2>
+							<p className='max-w-[38rem] text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>
 								As the Department of Education counted them: school years {enrolmentYears.map(syLabel).join(', ')} from its school data, and
 								the paler 2012–13 and 2015–16 from its 2019 masterlist. The years between are not held here.
 							</p>
@@ -211,7 +216,7 @@ export default async function SchoolPage({ params }: Props) {
 							const years = [...counts].reverse()
 							const top = Math.max(...years.map(([, n]) => n))
 							return (
-								<div className='mt-10 flex items-end gap-3 sm:gap-8'>
+								<div className='mt-10 flex items-end gap-3 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] px-5 pb-5 pt-8 sm:gap-8 sm:px-10 sm:pb-8 lg:mt-12'>
 									{years.map(([label, n], i) => {
 										const old = label === '2012–13' || label === '2015–16'
 										const gap = old && years[i + 1] && !(years[i + 1]![0] === '2012–13' || years[i + 1]![0] === '2015–16')
@@ -221,12 +226,12 @@ export default async function SchoolPage({ params }: Props) {
 													<div className='flex h-64 flex-col justify-end'>
 														<span className='num mb-2 text-center text-[1.0625rem] font-extrabold text-[var(--ink)] sm:text-[1.25rem]'>{n.toLocaleString('en-PH')}</span>
 														<div
-															className={`bg-[var(--accent)] ${old ? 'opacity-40' : ''}`}
+															className={`rounded-t-lg bg-[var(--accent)] ${old ? 'opacity-40' : ''}`}
 															style={{ height: `${Math.max(2, (n / top) * 82)}%` }}
 															title={`${label}: ${n.toLocaleString('en-PH')} learners`}
 														/>
 													</div>
-													<span className='num border-t-2 border-[var(--ink)] pt-2 text-center text-[0.75rem] text-[var(--ink-3)] sm:text-[0.8125rem]'>{label}</span>
+													<span className='num border-t border-[var(--rule)] pt-2 text-center text-[0.75rem] text-[var(--ink-3)] sm:text-[0.8125rem]'>{label}</span>
 												</div>
 												{gap ? <div aria-hidden='true' className='mb-8 h-40 w-px shrink-0 self-end border-l-2 border-dashed border-[var(--rule)]' /> : null}
 											</div>
@@ -240,12 +245,12 @@ export default async function SchoolPage({ params }: Props) {
 			) : null}
 
 			{nearby.length ? (
-				<section className='bb-container pt-[clamp(3rem,6vw,5rem)]'>
-					<h2 className='text-[1.375rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Nearest schools</h2>
-					<p className='mt-2 text-[0.8125rem] text-[var(--ink-3)]'>As the crow flies, among the schools pinned where they stand.</p>
-					<ul className='mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4'>
+				<section className='bb-container pt-[clamp(4rem,8vw,7rem)]'>
+					<h2 className='dv-title'>Nearest schools</h2>
+					<p className='dv-lede'>As the crow flies, among the schools pinned where they stand.</p>
+					<ul className='mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4'>
 						{nearby.map(({ school: s, km }) => (
-							<li key={s.id} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-2.5'>
+							<li key={s.id} className='flex items-start justify-between gap-4 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] p-5'>
 								<span>
 									<Link href={`/schools/${s.id}`} className='rule-link text-[0.875rem] font-semibold'>
 										{s.name}
@@ -263,13 +268,13 @@ export default async function SchoolPage({ params }: Props) {
 			) : null}
 
 			{neighbours.length ? (
-				<section className='bb-container bb-section'>
-					<h2 className='text-[1.375rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
-						Other schools in {school.townName} <span className='text-[0.875rem] font-semibold text-[var(--ink-3)]'>{neighbours.length}</span>
+				<section className='bb-container dv-section'>
+					<h2 className='dv-title'>
+						Other schools in {school.townName} <span className='ml-1 align-middle text-[0.55em] font-semibold tracking-normal text-[var(--ink-mute)]'>{neighbours.length}</span>
 					</h2>
-					<ul className='mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-4'>
+					<ul className='mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4'>
 						{neighbours.map((s) => (
-							<li key={s.id} className='border-b border-[var(--rule-soft)] py-2.5'>
+							<li key={s.id} className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] p-5'>
 								<Link href={`/schools/${s.id}`} className='rule-link text-[0.875rem] font-semibold'>
 									{s.name}
 								</Link>
