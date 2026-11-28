@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Shelf } from '../_components/book-card'
 import { AutoSelect } from '../_components/auto-select'
 import { Masthead } from '../_components/parts'
+import { SubjectBar } from '../_components/subject-icon'
+import { MagnifyingGlassIcon } from '@phosphor-icons/react/ssr'
 import { AVAILABILITY, books, isLocal, matches, subjectName, subjects, type Availability } from '../_lib/library'
 
 export const metadata: Metadata = {
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
 type Params = { q?: string; subject?: string; availability?: string; sort?: string; language?: string; local?: string }
 
 const SORTS = { newest: 'Newest first', oldest: 'Oldest first', title: 'By title' } as const
-const FIELD = 'h-10 cursor-pointer border border-[var(--rule)] bg-[var(--paper)] px-3 text-[0.875rem] text-[var(--ink)]'
+const FIELD = 'h-11 cursor-pointer rounded-full border border-[var(--rule)] bg-[var(--paper)] pl-4 text-[0.875rem] text-[var(--ink)] transition hover:border-[var(--ink)]'
 
 export default async function BooksPage({ searchParams }: { searchParams: Promise<Params> }) {
 	const sp = await searchParams
@@ -40,19 +42,26 @@ export default async function BooksPage({ searchParams }: { searchParams: Promis
 
 	return (
 		<>
-			<Masthead kicker='Library · Bangsamoro' name='The books' note={`${books.length} books about the Bangsamoro and its peoples, with where each can be bought, borrowed or read free.`} />
+			<Masthead
+				kicker='Library · Bangsamoro'
+				name={subject ? subjectName(subject) : 'The books'}
+				note={subject ? `${list.length} ${list.length === 1 ? 'book' : 'books'} on this shelf, with where each can be bought, borrowed or read free.` : `${books.length} books about the Bangsamoro and its peoples, with where each can be bought, borrowed or read free.`}
+				covers={list.slice(0, 18)}
+			/>
+			<SubjectBar active={subject} />
 
-			<div className='bb-container bb-section'>
+			<div className='bb-container pb-24 pt-12 lg:pb-32 lg:pt-14'>
 				{/* ---- Filters: a GET form and plain links, so every view is an address ---- */}
-				<div className='grid gap-5 border-b border-[var(--rule)] pb-6'>
+				<div className='grid gap-5'>
 					<form method='get' action='/books' className='flex flex-wrap items-center justify-between gap-3'>
 						{sort !== 'newest' ? <input type='hidden' name='sort' value={sort} /> : null}
-						<div className='flex h-10 min-w-[16rem] flex-1 items-center border border-[var(--rule)] bg-[var(--paper)] pl-3 sm:max-w-[28rem]'>
+						<div className='flex h-12 min-w-[16rem] flex-1 items-center gap-2 rounded-full border border-[var(--rule)] bg-[var(--paper)] pl-5 pr-1.5 sm:max-w-[30rem]'>
+							<MagnifyingGlassIcon size={17} className='shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 							<label htmlFor='q' className='sr-only'>
 								Find a book
 							</label>
 							<input id='q' name='q' type='search' defaultValue={q} autoComplete='off' placeholder='Title, author, publisher or year' className='h-full min-w-0 flex-1 bg-transparent text-[0.875rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-3)] [&::-webkit-search-cancel-button]:hidden' />
-							<button type='submit' className='h-full shrink-0 cursor-pointer bg-[var(--ink)] px-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--paper)] transition hover:bg-[var(--accent)]'>
+							<button type='submit' className='h-9 shrink-0 cursor-pointer rounded-full bg-[var(--accent)] px-5 font-[family-name:var(--font-display)] text-[0.8125rem] font-semibold text-white transition hover:brightness-110'>
 								Find
 							</button>
 						</div>
@@ -101,7 +110,7 @@ export default async function BooksPage({ searchParams }: { searchParams: Promis
 					</form>
 				</div>
 
-				<div className='mt-5 flex flex-wrap items-center justify-between gap-3 text-[0.8125rem] text-[var(--ink-3)]'>
+				<div className='mt-6 flex flex-wrap items-center justify-between gap-3 border-b border-[var(--rule)] pb-5 text-[0.8125rem] text-[var(--ink-3)]'>
 					<p>
 						<span className='num font-semibold text-[var(--ink)]'>{list.length}</span> {list.length === 1 ? 'book' : 'books'}
 						{subject ? ` on ${subjectName(subject).toLowerCase()}` : ''}
@@ -121,7 +130,7 @@ export default async function BooksPage({ searchParams }: { searchParams: Promis
 					<div className='flex flex-wrap items-center gap-x-5 gap-y-1'>
 						<span className='flex gap-2'>
 							{(Object.keys(SORTS) as (keyof typeof SORTS)[]).map((s) => (
-								<Link key={s} href={href({ sort: s })} aria-current={sort === s ? 'true' : undefined} className='aria-[current]:font-semibold aria-[current]:text-[var(--ink)] hover:text-[var(--ink)]'>
+								<Link key={s} href={href({ sort: s })} aria-current={sort === s ? 'true' : undefined} className='dv-pill !px-3.5 !py-1.5 !text-[0.8125rem]'>
 									{SORTS[s]}
 								</Link>
 							))}
@@ -129,7 +138,7 @@ export default async function BooksPage({ searchParams }: { searchParams: Promis
 					</div>
 				</div>
 
-				<div className='mt-16 lg:mt-20'>
+				<div className='mt-12 lg:mt-14'>
 					{list.length ? (
 						<Shelf books={list} showPublisher />
 					) : (

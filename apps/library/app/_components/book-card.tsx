@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Rail } from './rail'
 import { AVAILABILITY, byline, coverSrc, publisherBySlug, type Book } from '../_lib/library'
 
 /* A cover on the shelf. Where no cover has been found the title is set on
@@ -8,13 +9,13 @@ import { AVAILABILITY, byline, coverSrc, publisherBySlug, type Book } from '../_
 const BOARDS = ['#8c2f39', '#2f4f6f', '#3f6b4f', '#6b4f2f', '#4f3f6b', '#2f6b6b', '#6b2f5f', '#5f5f2f']
 const board = (slug: string) => BOARDS[[...slug].reduce((h, c) => h + c.charCodeAt(0), 0) % BOARDS.length]
 
-export function Cover({ book, sizes = '(min-width: 1024px) 180px, 40vw', priority = false }: { book: Book; sizes?: string; priority?: boolean }) {
+export function Cover({ book, sizes = '(min-width: 1024px) 180px, 40vw', priority = false, className = '' }: { book: Book; sizes?: string; priority?: boolean; className?: string }) {
 	const src = coverSrc(book)
 	return (
-		<div className='relative aspect-[2/3] w-full overflow-hidden bg-[var(--paper-2)] shadow-[0_18px_30px_-22px_rgba(0,0,0,0.55)]'>
+		<div className={`relative aspect-[2/3] w-full overflow-hidden rounded-[1rem] bg-[var(--paper-2)] shadow-[0_18px_30px_-22px_rgba(0,0,0,0.55)] ${className}`}>
 			{src ? (
 				// eslint-disable-next-line @next/next/no-img-element
-				<img src={src} alt={`Cover of ${book.title}`} sizes={sizes} loading={priority ? 'eager' : 'lazy'} className='size-full object-cover' />
+				<img src={src} alt={`Cover of ${book.title}`} sizes={sizes} loading={priority ? 'eager' : 'lazy'} decoding='async' draggable={false} className='size-full object-cover' />
 			) : (
 				<div className='flex size-full flex-col justify-between p-4 text-white' style={{ background: `linear-gradient(160deg, ${board(book.slug)}, #1c1a17)` }} aria-hidden='true'>
 					<span className='font-[family-name:var(--font-display)] text-[0.9rem] font-extrabold leading-tight tracking-[-0.02em] [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:6] overflow-hidden'>{book.title}</span>
@@ -25,11 +26,11 @@ export function Cover({ book, sizes = '(min-width: 1024px) 180px, 40vw', priorit
 	)
 }
 
-export function BookCard({ book, showPublisher = false }: { book: Book; showPublisher?: boolean }) {
+export function BookCard({ book, showPublisher = false, className = '' }: { book: Book; showPublisher?: boolean; className?: string }) {
 	const a = AVAILABILITY[book.availability]
 	return (
-		<li className='group flex flex-col'>
-			<Link href={`/books/${book.slug}`} className='block transition group-hover:-translate-y-0.5'>
+		<li className={`group flex flex-col ${className}`}>
+			<Link href={`/books/${book.slug}`} draggable={false} className='block transition duration-300 group-hover:-translate-y-1'>
 				<Cover book={book} />
 			</Link>
 			<div className='flex flex-1 flex-col pt-3.5'>
@@ -37,10 +38,10 @@ export function BookCard({ book, showPublisher = false }: { book: Book; showPubl
 					<span className='tabular-nums'>{book.year}</span>
 					<span className={book.availability === 'for-sale' ? 'text-[var(--accent)]' : book.availability === 'open-access' ? 'text-[#2f6b4f] dark:text-[#7fc9a1]' : ''}>{a.label}</span>
 				</p>
-				<Link href={`/books/${book.slug}`} className='mt-2 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold leading-snug lg:text-[1.125rem] tracking-[-0.02em] text-[var(--ink)] hover:text-[var(--accent)]'>
+				<Link href={`/books/${book.slug}`} title={book.title} draggable={false} className='mt-2 overflow-hidden font-[family-name:var(--font-display)] text-[1.0625rem] font-bold leading-snug tracking-[-0.02em] text-[var(--ink)] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] [display:-webkit-box] hover:text-[var(--accent)]'>
 					{book.title}
 				</Link>
-				<p className='mt-1 text-[0.8125rem] leading-snug text-[var(--ink-2)]'>{byline(book)}</p>
+				<p className='mt-1 overflow-hidden text-[0.8125rem] leading-snug text-[var(--ink-2)] [-webkit-box-orient:vertical] [-webkit-line-clamp:2] [display:-webkit-box]'>{byline(book)}</p>
 				{showPublisher ? <p className='mt-0.5 text-[0.75rem] text-[var(--ink-3)]'>{publisherBySlug.get(book.publisher)?.name}</p> : null}
 				{/* What it is about, in three lines; the page has the rest. */}
 				<p className='mt-2 text-[0.78125rem] leading-snug text-[var(--ink-3)] [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden'>{book.summary}</p>
@@ -49,13 +50,24 @@ export function BookCard({ book, showPublisher = false }: { book: Book; showPubl
 	)
 }
 
-/** A shelf: a row of cards, six across on a wide screen. */
+/** A shelf: a grid of cards, six across on a wide screen. */
 export function Shelf({ books, showPublisher = false }: { books: Book[]; showPublisher?: boolean }) {
 	return (
-		<ul className='grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-8 xl:grid-cols-6 xl:gap-x-10 xl:gap-y-14'>
+		<ul className='lb-grid grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-8 xl:grid-cols-6 xl:gap-x-10 xl:gap-y-14'>
 			{books.map((b) => (
 				<BookCard key={b.slug} book={b} showPublisher={showPublisher} />
 			))}
 		</ul>
+	)
+}
+
+/** A shelf as a rail: one row that scrolls sideways (travel's rails), its cards a cover's width. */
+export function BookRail({ title, lede, books, more, className }: { title: string; lede?: string; books: Book[]; more?: React.ReactNode; className?: string }) {
+	return (
+		<Rail title={title} lede={lede} more={more} className={className}>
+			{books.map((b) => (
+				<BookCard key={b.slug} book={b} className='lb-rail-book' />
+			))}
+		</Rail>
 	)
 }

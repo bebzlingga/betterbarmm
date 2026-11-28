@@ -7,21 +7,332 @@
 @source "../../../packages/editorial/src";
 
 /* ============================================================
-   Library workspace
+   Library workspace, in the travel workspace's look (user decision)
 
-   Nothing of its own beyond the estate's layers: tables, filters
-   and figures, all built from the shared rules.
+   A dark header across the page with the bars clear over it, where
+   travel has its photographs this has a wall of the shelf's own
+   covers; rounded cards and rails that run to the page's edge and a
+   mouse can drag; warm washed bands; the travel footer. The rules
+   below are travel's (apps/travel/app/globals.css) with the
+   photograph turning left out.
    ============================================================ */
 
-/* Phones: everything a step smaller, and a wider margin either side, as
-   in the Local Government workspace. */
-@media (max-width: 639px) {
-  body {
-    zoom: 0.9;
-  }
+:root {
+  --dv-r: 1.25rem;
+  --dv-gutter: max(1.5rem, calc((100vw - var(--bb-page-width)) / 2 + 2rem));
+  --tv-nav-h: calc(var(--site-header-h) + 2.25rem);
+}
 
-  .bb-container,
-  .utility-bar > div {
-    padding-inline: 2rem;
+/* The masthead is not sticky here, as in travel, so nothing sticking to the top offsets itself by it. */
+:root,
+:root[data-header-hidden="true"] {
+  --sticky-top: 0px;
+}
+
+/* ---- The header: dark, up under both bars ---- */
+.dv-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: calc(-1 * var(--tv-nav-h) - 1px);
+  min-height: clamp(30rem, 74svh, 46rem);
+  background: #10161b;
+  color: #fff;
+}
+.dv-hero-tall { min-height: clamp(38rem, 92svh, 56rem); }
+.dv-hero-short { min-height: clamp(24rem, 56svh, 34rem); }
+.dv-hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(to bottom, rgba(8, 12, 16, 0.7) 0%, transparent 30%),
+    linear-gradient(to top, rgba(8, 12, 16, 0.94) 0%, rgba(8, 12, 16, 0.6) 40%, rgba(8, 12, 16, 0.25) 75%),
+    linear-gradient(to right, rgba(8, 12, 16, 0.55) 0%, transparent 65%);
+}
+.pg-hero-title {
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6.2vw, 5.25rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+/* A book's or a person's own name, often long: a step smaller. */
+.pg-hero-title-sm { font-size: clamp(2.25rem, 4.6vw, 4rem); max-width: 22ch; line-height: 1.02; }
+
+/* The wall of covers behind a header, tilted and dimmed. Still (no motion: a phone's memory, see the foot of this file). */
+.lb-wall {
+  position: absolute;
+  inset: -12% -8%;
+  z-index: -2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-content: center;
+  transform: rotate(-8deg);
+  opacity: 0.5;
+}
+@media (min-width: 768px) { .lb-wall { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+@media (min-width: 1280px) { .lb-wall { grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 1.25rem; } }
+.lb-wall > * { aspect-ratio: 2 / 3; overflow: hidden; border-radius: 0.75rem; background: #1c2329; }
+.lb-wall > :nth-child(even) { transform: translateY(18%); }
+.lb-wall img { width: 100%; height: 100%; object-fit: cover; }
+
+.dv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: transform 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-btn:hover { transform: translateY(-1px); }
+.dv-btn-light { background: #fff; color: #10161b; }
+.dv-btn-glass {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  backdrop-filter: blur(12px);
+}
+.dv-btn-glass:hover { background: rgba(255, 255, 255, 0.22); }
+
+.dv-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  background: rgba(10, 14, 18, 0.45);
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+/* A chip over the header's dark ground that links somewhere. */
+a.dv-chip { border: 1px solid rgba(255, 255, 255, 0.2); transition: background-color 0.2s var(--ease); }
+a.dv-chip:hover { background: rgba(255, 255, 255, 0.18); }
+
+.dv-pill {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-pill:hover { border-color: var(--ink); background: var(--paper-2); }
+.dv-pill[aria-current] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+
+.dv-section { padding-block: clamp(5.5rem, 11vw, 10rem); }
+.dv-rail-section { padding-block: clamp(3.5rem, 6.5vw, 6rem); }
+.dv-section[id] { scroll-margin-top: 4rem; }
+.dv-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.dv-lede {
+  margin-top: 0.5rem;
+  max-width: 48rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+
+.dv-panel {
+  border: 1px solid var(--rule);
+  border-radius: var(--dv-r);
+  background: var(--paper);
+  padding: 1.5rem;
+}
+
+.dv-round {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-round:hover { border-color: var(--ink); background: var(--paper-2); }
+
+.dv-rail {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding-inline: var(--dv-gutter);
+  padding-bottom: 0.5rem;
+  scroll-padding-inline: var(--dv-gutter);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.dv-rail::-webkit-scrollbar { display: none; }
+.dv-rail > * { scroll-snap-align: start; flex-shrink: 0; }
+/* A book on a rail: a cover's width. */
+.lb-rail-book { width: min(42vw, 12.5rem); }
+.lb-rail-wide { width: min(80vw, 19rem); }
+
+/* Cards: rounded, and a link lifts a little on its way to the reader. */
+.tv-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  border-radius: var(--dv-r);
+  background: var(--paper);
+  padding: 1.5rem 1.6rem;
+  transition:
+    border-color 0.2s var(--ease),
+    box-shadow 0.2s var(--ease),
+    transform 0.2s var(--ease);
+}
+a.tv-card:hover,
+.tv-card:has(a.tv-card-link:hover) {
+  border-color: color-mix(in srgb, var(--ink) 30%, var(--rule));
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
+}
+
+/* ---- The bars over the header: clear, on a hairline ---- */
+.tv-over {
+  z-index: 31;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+}
+.tv-over .utility-bar-link,
+.tv-over summary,
+.tv-over nav > button { color: rgba(255, 255, 255, 0.78); }
+.tv-over .utility-bar-link:hover,
+.tv-over summary:hover,
+.tv-over summary span { color: #fff; }
+
+header[data-clear='true'] {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: transparent;
+  backdrop-filter: none;
+  color: #fff;
+  transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+header[data-clear='true'] .nav-item { color: rgba(255, 255, 255, 0.8); }
+header[data-clear='true'] .nav-item:hover,
+header[data-clear='true'] .nav-item[data-active='true'] { color: #fff; }
+header[data-clear='true'] .nav-item::after { background: #fff; }
+header[data-clear='true'] a > span,
+header[data-clear='true'] .nav-item span { color: inherit; }
+header[data-clear='true'] a[href='/']:not(.nav-item) { color: #f1c453; }
+header[data-clear='true'] button[aria-controls] { border-color: #fff; color: #fff; }
+
+/* ---- Warm bands: the page's paper tinted toward the crimson, a gold and a crimson glow ---- */
+.tv-ask,
+.tv-wash {
+  background:
+    radial-gradient(40rem 22rem at 0% 0%, color-mix(in srgb, #d4a72c 14%, transparent), transparent 70%),
+    radial-gradient(44rem 24rem at 100% 100%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--accent) 5%, var(--paper));
+}
+.tv-wash-flip {
+  background:
+    radial-gradient(40rem 22rem at 100% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%),
+    radial-gradient(44rem 24rem at 0% 100%, color-mix(in srgb, #d4a72c 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--accent) 4%, var(--paper));
+}
+
+/* ---- The footer: a deep ground lit from one corner, the region's name large across the foot ---- */
+.tv-footer {
+  --tv-footer-ground: #0d1216;
+  background:
+    radial-gradient(60rem 30rem at 85% 0%, rgba(212, 167, 44, 0.14), transparent 60%),
+    radial-gradient(50rem 30rem at 0% 0%, rgba(91, 42, 110, 0.3), transparent 60%),
+    var(--tv-footer-ground);
+}
+.tv-footer-word {
+  font-family: var(--font-display);
+  font-size: 17vw;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  background-image: linear-gradient(100deg, #ffd34d 0%, #ff6b5e 36%, #c98bff 70%, #7fe07a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+  -webkit-text-fill-color: var(--tv-footer-ground);
+  paint-order: stroke fill;
+  white-space: nowrap;
+}
+.tv-footer-lattice {
+  background: none;
+  -webkit-text-stroke: 0;
+}
+.tv-footer-lattice > span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- Drag to scroll (_components/drag-scroll.tsx) ---- */
+[data-dragging],
+[data-free] {
+  scroll-snap-type: none !important;
+}
+[data-dragging] {
+  user-select: none;
+  cursor: grabbing;
+}
+[data-dragging] * { cursor: grabbing !important; pointer-events: none; }
+@media (hover: hover) and (pointer: fine) {
+  :is(.dv-rail, [data-drag-scroll]),
+  :is(.dv-rail, [data-drag-scroll]) :is(a, a *) { cursor: grab; }
+  :is(.dv-rail, [data-drag-scroll]) :is(button, button *) { cursor: pointer; }
+}
+
+/* ---- Motion, as travel's: opacity-only page fade and section reveals, large screens only, filled backwards ---- */
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) and (hover: hover) { .tv-page-in { animation: tv-page-fade 0.38s ease-out backwards; } }
+@keyframes tv-page-fade { from { opacity: 0; } }
+
+.dv-rail-section, footer { content-visibility: auto; contain-intrinsic-size: auto 640px; }
+/* The long lists (every book, every author): off screen, not laid out or painted. */
+.lb-grid > li { content-visibility: auto; contain-intrinsic-size: auto 420px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) and (hover: hover) {
+  @supports (animation-timeline: view()) {
+    .dv-section, .dv-rail-section, .tv-ask {
+      animation: tv-rise linear backwards;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
   }
 }
+@keyframes tv-rise { from { opacity: 0; transform: translateY(28px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .dv-btn, .tv-card { transition: none; }
+}
+
+/* A phone's memory (Safari's "A problem repeatedly occurred" on travel): no blur behind chips and glass buttons. */
+@media (max-width: 1023px) {
+  .dv-chip, .dv-btn-glass { backdrop-filter: none; }
+  .dv-chip { background: rgba(10, 14, 18, 0.6); }
+  .dv-btn-glass { background: rgba(10, 14, 18, 0.35); }
+}
+
+/* A phone shows fewer covers on the wall: four columns of five rows are enough to fill it. */
+@media (max-width: 767px) { .lb-wall > :nth-child(n+21) { display: none; } }

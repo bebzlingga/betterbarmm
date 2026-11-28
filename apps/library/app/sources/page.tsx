@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	description: 'How the library was put together, what each record comes from, and what it cannot tell you.',
 }
 
-const H2 = 'text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'dv-title !text-[clamp(1.5rem,2.4vw,1.875rem)]'
 const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
 export default function SourcesPage() {
@@ -17,7 +17,7 @@ export default function SourcesPage() {
 	return (
 		<>
 			<Masthead kicker='Library · Bangsamoro' name='Sources' note='A catalogue compiled by hand from library records, publishers’ pages and the offices’ own websites, and what it cannot tell you.' />
-			<div className='bb-container bb-section max-w-[52rem] [&>section+section]:mt-14'>
+			<div className='bb-container dv-section max-w-[52rem] [&>section+section]:mt-14'>
 				<section>
 					<h2 className={H2}>The books</h2>
 					<p className={P}>

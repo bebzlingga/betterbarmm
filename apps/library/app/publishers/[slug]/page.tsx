@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { Shelf } from '../../_components/book-card'
-import { CHIP, H2, Masthead, PublisherMark } from '../../_components/parts'
+import { CHIP_DARK, H2, Masthead, PublisherMark } from '../../_components/parts'
 import { booksFrom, publisherBySlug, publishers } from '../../_lib/library'
 
 export function generateStaticParams() {
@@ -27,20 +27,20 @@ export default async function PublisherPage({ params }: { params: Promise<{ slug
 	const list = booksFrom(p.slug)
 	return (
 		<>
-			<Masthead kicker={`Publisher · ${p.kind}`} name={p.name} note={`${p.based}${p.founded ? ` · since ${p.founded}` : ''}`} stacked>
-				<div className='mt-8 flex items-start gap-5'>
-					<PublisherMark name={p.name} logo={p.logo} className='size-20' />
-					<p className='max-w-[44rem] text-[1rem] leading-7 text-[var(--ink-2)]'>{p.about}</p>
+			<Masthead kicker={`Publisher · ${p.kind}`} name={p.name} note={`${p.based}${p.founded ? ` · since ${p.founded}` : ''}`} stacked covers={list}>
+				<div className='mt-6 flex items-start gap-5'>
+					<PublisherMark name={p.name} logo={p.logo} className='size-20 !ring-white/20' />
+					<p className='max-w-[46rem] text-[1rem] leading-7 text-white/80'>{p.about}</p>
 				</div>
 				{p.url ? (
 					<p className='mt-6'>
-						<a href={p.url} target='_blank' rel='noreferrer' className={CHIP}>
+						<a href={p.url} target='_blank' rel='noreferrer' className={CHIP_DARK}>
 							{host(p.url)}
 						</a>
 					</p>
 				) : null}
 			</Masthead>
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				<h2 className={H2}>
 					{list.length} {list.length === 1 ? 'book' : 'books'} on the shelf
 				</h2>

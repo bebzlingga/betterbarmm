@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { ArrowSquareOutIcon, ArrowUpRightIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { Cover, Shelf } from '../../_components/book-card'
-import { CHIP, H2 } from '../../_components/parts'
+import { BookRail, Cover } from '../../_components/book-card'
+import { CHIP, CHIP_DARK, CoverWall, H2 } from '../../_components/parts'
 import { AVAILABILITY, authorBySlug, bookBySlug, books, booksBy, booksFrom, byline, publisherBySlug, subjectName } from '../../_lib/library'
 
 export function generateStaticParams() {
@@ -32,43 +32,46 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 	const a = AVAILABILITY[book.availability]
 	const [first, ...rest] = book.links
 	const byAuthors = [...new Map(people.flatMap((p) => booksBy(p.slug)).map((b) => [b.slug, b])).values()].filter((b) => b.slug !== book.slug)
-	const sameShelf = books.filter((b) => b.slug !== book.slug && !byAuthors.some((x) => x.slug === b.slug) && b.subjects.some((s) => book.subjects.includes(s))).slice(0, 6)
-	const fromPublisher = booksFrom(book.publisher).filter((b) => b.slug !== book.slug).slice(0, 6)
+	const sameShelf = books.filter((b) => b.slug !== book.slug && !byAuthors.some((x) => x.slug === b.slug) && b.subjects.some((s) => book.subjects.includes(s))).slice(0, 12)
+	const fromPublisher = booksFrom(book.publisher).filter((b) => b.slug !== book.slug).slice(0, 12)
 
 	return (
 		<>
-			<section className='bb-lattice brand-bg relative overflow-hidden'>
-				<div className='bb-container relative grid gap-10 pb-[clamp(3rem,6vw,5rem)] pt-[clamp(3rem,6vw,5rem)] md:grid-cols-[minmax(0,14rem)_1fr] md:gap-14 lg:grid-cols-[minmax(0,17rem)_1fr]'>
-					<div className='max-w-[14rem] md:max-w-none'>
-						<Cover book={book} sizes='(min-width: 1024px) 272px, (min-width: 768px) 224px, 224px' priority />
+			{/* The travel look (user decision): the book's own cover, sharp, on the dark header over a wall of its shelf's covers. */}
+			<header className='dv-hero dv-hero-short'>
+				<CoverWall first={[...byAuthors, ...sameShelf]} />
+				<span aria-hidden='true' className='dv-hero-shade !bg-[rgba(8,12,16,0.72)]' />
+				<div className='bb-container relative grid min-h-[inherit] content-end gap-10 pb-16 pt-[calc(var(--tv-nav-h)+4rem)] md:grid-cols-[minmax(0,14rem)_1fr] md:items-end md:gap-14 md:pb-20 lg:grid-cols-[minmax(0,16rem)_1fr]'>
+					<div className='w-[11rem] md:w-auto'>
+						<Cover book={book} sizes='(min-width: 1024px) 256px, (min-width: 768px) 224px, 176px' priority className='shadow-[0_30px_60px_-24px_rgba(0,0,0,0.8)] ring-1 ring-white/10' />
 					</div>
 					<div>
-						<p className='bb-label'>
-							<Link href={`/books?subject=${book.subjects[0]}`} className='hover:underline'>
+						<p className='flex flex-wrap items-center gap-2'>
+							<Link href={`/books?subject=${book.subjects[0]}`} className={CHIP_DARK}>
 								{subjectName(book.subjects[0] ?? '')}
 							</Link>
-							{' · '}
-							{book.kind}
+							<span className='dv-chip !px-3 !py-1.5'>{book.kind}</span>
+							<span className='dv-chip !px-3 !py-1.5'>{a.label}</span>
 						</p>
-						<h1 className='bb-display-md mt-4 !font-black text-[var(--ink)]'>{book.title}</h1>
-						{book.subtitle ? <p className='mt-3 text-[1.0625rem] leading-snug text-[var(--ink-2)]'>{book.subtitle}</p> : null}
-						<p className='mt-5 text-[1rem] text-[var(--ink)]'>
-							{book.role === 'editor' ? (people.length > 1 ? 'Edited by ' : 'Edited by ') : book.role === 'translator' ? 'Translated by ' : book.role === 'compiler' ? 'Compiled by ' : ''}
+						<h1 className='pg-hero-title pg-hero-title-sm mt-5'>{book.title}</h1>
+						{book.subtitle ? <p className='mt-3 max-w-3xl text-[1.0625rem] leading-snug text-white/80'>{book.subtitle}</p> : null}
+						<p className='mt-5 text-[1rem] text-white/90'>
+							{book.role === 'editor' ? 'Edited by ' : book.role === 'translator' ? 'Translated by ' : book.role === 'compiler' ? 'Compiled by ' : 'By '}
 							{people.map((p, i) => (
 								<span key={p.slug}>
 									{i ? (i === people.length - 1 ? ' and ' : ', ') : ''}
-									<Link href={`/authors/${p.slug}`} className='rule-link font-semibold'>
+									<Link href={`/authors/${p.slug}`} className='font-semibold text-white underline decoration-white/30 underline-offset-4 hover:decoration-white'>
 										{p.name}
 									</Link>
 								</span>
 							))}
 						</p>
-						<dl className='mt-6 grid grid-cols-2 gap-x-8 gap-y-4 text-[0.875rem] sm:grid-cols-3'>
+						<dl className='mt-6 flex flex-wrap gap-x-10 gap-y-4 text-[0.9375rem]'>
 							<div>
-								<dt className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Publisher</dt>
-								<dd className='mt-1 text-[var(--ink)]'>
+								<dt className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-white/50'>Publisher</dt>
+								<dd className='mt-1 text-white'>
 									{publisher ? (
-										<Link href={`/publishers/${publisher.slug}`} className='rule-link'>
+										<Link href={`/publishers/${publisher.slug}`} className='hover:underline'>
 											{publisher.name}
 										</Link>
 									) : (
@@ -77,63 +80,51 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 								</dd>
 							</div>
 							<div>
-								<dt className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Year</dt>
-								<dd className='num mt-1 text-[var(--ink)]'>
+								<dt className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-white/50'>Year</dt>
+								<dd className='num mt-1 text-white'>
 									{book.year}
-									{book.edition ? <span className='block text-[0.75rem] text-[var(--ink-3)]'>{book.edition}</span> : null}
+									{book.edition ? <span className='block text-[0.75rem] text-white/55'>{book.edition}</span> : null}
 								</dd>
 							</div>
 							<div>
-								<dt className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Language</dt>
-								<dd className='mt-1 text-[var(--ink)]'>{book.language}</dd>
+								<dt className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-white/50'>Language</dt>
+								<dd className='mt-1 text-white'>{book.language}</dd>
 							</div>
 							{book.pages ? (
 								<div>
-									<dt className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Pages</dt>
-									<dd className='num mt-1 text-[var(--ink)]'>{book.pages}</dd>
+									<dt className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-white/50'>Pages</dt>
+									<dd className='num mt-1 text-white'>{book.pages}</dd>
 								</div>
 							) : null}
 							{book.isbn ? (
 								<div>
-									<dt className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>ISBN</dt>
-									<dd className='num mt-1 text-[var(--ink)]'>{book.isbn}</dd>
+									<dt className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-white/50'>ISBN</dt>
+									<dd className='num mt-1 text-white'>{book.isbn}</dd>
 								</div>
 							) : null}
-							<div>
-								<dt className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Availability</dt>
-								<dd className='mt-1 font-semibold text-[var(--ink)]'>{a.label}</dd>
-							</div>
 						</dl>
 
 						{/* ---- Where to get it ---- */}
 						{first ? (
-							<div className='mt-8 flex flex-wrap items-center gap-3'>
-								<a href={first.url} target='_blank' rel='noreferrer' className='bb-btn bb-btn-solid'>
+							<div className='mt-8 flex flex-wrap items-center gap-2.5'>
+								<a href={first.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-light'>
 									{first.label}
-									<ArrowSquareOutIcon size={14} weight='bold' aria-hidden='true' />
+									<ArrowSquareOutIcon size={15} weight='bold' aria-hidden='true' />
 								</a>
-								{rest.length ? (
-									<span className='text-[0.875rem] font-semibold text-[var(--ink)]'>
-										{rest.map((l, i) => (
-											<span key={l.url}>
-												{i ? ', ' : ''}
-												<a href={l.url} target='_blank' rel='noreferrer' className='inline-flex items-center gap-1 underline-offset-4 hover:underline'>
-													{l.label}
-													<ArrowUpRightIcon size={12} weight='bold' aria-hidden='true' />
-												</a>
-											</span>
-										))}
-									</span>
-								) : null}
+								{rest.map((l) => (
+									<a key={l.url} href={l.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-glass !px-4 !py-2.5 !text-[0.8125rem]'>
+										{l.label}
+										<ArrowUpRightIcon size={12} weight='bold' aria-hidden='true' />
+									</a>
+								))}
 							</div>
 						) : null}
-						<p className='mt-3 text-[0.8125rem] leading-snug text-[var(--ink-3)]'>{a.note}</p>
+						<p className='mt-3 text-[0.8125rem] leading-snug text-white/60'>{a.note}</p>
 					</div>
 				</div>
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
+			</header>
 
-			<div className='bb-container bb-section grid gap-12 lg:grid-cols-[1fr_minmax(0,20rem)] lg:gap-20'>
+			<div className='bb-container dv-section grid gap-12 lg:grid-cols-[1fr_minmax(0,22rem)] lg:gap-20'>
 				<div>
 					<h2 className={H2}>About the book</h2>
 					<p className='mt-4 max-w-[60rem] text-[1rem] leading-7 text-[var(--ink-2)]'>{book.summary}</p>
@@ -189,10 +180,10 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 					) : null}
 				</div>
 
-				{/* ---- The people ---- */}
-				<aside>
+				{/* ---- The people, each on a rounded panel ---- */}
+				<aside className='grid content-start gap-4'>
 					{people.map((p) => (
-						<div key={p.slug} className='border-t border-[var(--rule)] py-5 first:border-t-0 first:pt-0'>
+						<div key={p.slug} className='dv-panel'>
 							<p className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{p.roles.join(' · ')}</p>
 							<Link href={`/authors/${p.slug}`} className='mt-1 block font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)] hover:text-[var(--accent)]'>
 								{p.name}
@@ -201,7 +192,7 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 						</div>
 					))}
 					{publisher ? (
-						<div className='border-t border-[var(--rule)] py-5'>
+						<div className='dv-panel'>
 							<p className='text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>{publisher.kind} · {publisher.based}</p>
 							<Link href={`/publishers/${publisher.slug}`} className='mt-1 block font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)] hover:text-[var(--accent)]'>
 								{publisher.name}
@@ -217,36 +208,9 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
 				</aside>
 			</div>
 
-			{byAuthors.length ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container bb-section'>
-						<h2 className={H2}>More by {people.length === 1 ? people[0]!.name : 'the same authors'}</h2>
-						<div className='mt-8'>
-							<Shelf books={byAuthors} />
-						</div>
-					</div>
-				</section>
-			) : null}
-			{sameShelf.length ? (
-				<section className={byAuthors.length ? '' : 'bg-[var(--paper-2)]'}>
-					<div className='bb-container bb-section'>
-						<h2 className={H2}>On the same shelf</h2>
-						<div className='mt-8'>
-							<Shelf books={sameShelf} />
-						</div>
-					</div>
-				</section>
-			) : null}
-			{fromPublisher.length ? (
-				<section className={(byAuthors.length ? 1 : 0) + (sameShelf.length ? 1 : 0) === 1 ? 'bg-[var(--paper-2)]' : ''}>
-					<div className='bb-container bb-section'>
-						<h2 className={H2}>More from {publisher?.name}</h2>
-						<div className='mt-8'>
-							<Shelf books={fromPublisher} />
-						</div>
-					</div>
-				</section>
-			) : null}
+			{byAuthors.length ? <BookRail className='tv-wash' title={`More by ${people.length === 1 ? people[0]!.name : 'the same authors'}`} books={byAuthors} /> : null}
+			{sameShelf.length ? <BookRail className={byAuthors.length ? '' : 'tv-wash'} title='On the same shelf' books={sameShelf} /> : null}
+			{fromPublisher.length ? <BookRail className={(byAuthors.length ? 1 : 0) + (sameShelf.length ? 1 : 0) === 1 ? 'tv-wash' : 'tv-wash-flip'} title={`More from ${publisher?.name}`} books={fromPublisher} /> : null}
 		</>
 	)
 }

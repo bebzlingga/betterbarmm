@@ -1,7 +1,7 @@
 'use client'
 
 import { HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
-import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -21,8 +21,11 @@ const pages = [
 export function SiteNav() {
 	const pathname = usePathname()
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	const { past, hidden } = useHeaderScroll(isMenuOpen)
 	const closeMenu = () => setIsMenuOpen(false)
+	// Every page here opens on the dark header (Masthead), so the bars run clear over it, as travel's do; an address
+	// that is none of the workspace's pages (a page not found) keeps the solid bar.
+	const overlay = pathname === '/' || pages.some((p) => p.href !== '/' && (pathname === p.href || pathname.startsWith(`${p.href}/`)))
+	const clear = overlay && !isMenuOpen
 
 	const isActive = (href: string) =>
 		href === '/' ? !pages.some((p) => p.href !== '/' && pathname.startsWith(p.href)) : pathname.startsWith(href)
@@ -35,7 +38,7 @@ export function SiteNav() {
 			<UtilityBar
 				base='https://betterbarmm.com'
 				current='library'
-				className='bb-strip bg-[var(--paper-2)]'
+				className={`bb-strip ${overlay ? 'tv-over' : 'bg-[var(--paper-2)]'}`}
 				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={
 					<>
@@ -57,19 +60,13 @@ export function SiteNav() {
 				}
 			/>
 
-			{/* The estate's masthead behaviour, the same on every workspace: it
-			    takes a ground once the reader has left the top, and ducks out of the
-			    way when they are reading down. `useHeaderScroll` also publishes the
-			    flag the shared stylesheet reads to drop `--sticky-top`, so anything
-			    sticking under this bar follows it up instead of leaving a band of
-			    empty page. */}
-		<motion.header
-			animate={{ y: hidden ? '-100%' : '0%' }}
-			transition={{ duration: 0.42, ease: EASE }}
-			data-solid={past}
-			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
+			{/* As in travel (user decision: the travel look): the masthead stays at the top of the page and scrolls away
+			    with it, clear over the dark header. `--sticky-top` is 0 here (globals.css) to match. */}
+		<header
+			data-clear={clear}
+			className='relative z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
-			<div className='mx-auto max-w-[var(--bb-page-width)] px-8 sm:px-6 lg:px-8'>
+			<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
 				<div className='grid h-[calc(var(--site-header-h)-1px)] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 md:grid-cols-[auto_minmax(0,1fr)_auto] md:gap-2'>
 					<div className='flex min-w-0 items-center gap-3'>
 						<a href='https://betterbarmm.com' onClick={closeMenu} className='w-fit shrink-0'>
@@ -140,7 +137,7 @@ export function SiteNav() {
 						<nav
 							id='library-mobile-menu'
 							aria-label='Mobile navigation'
-							className='mx-auto max-w-[var(--bb-page-width)] px-8 py-6 sm:px-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
+							className='mx-auto max-w-[var(--bb-page-width)] px-6 py-6 text-sm text-[var(--ink-2)] lg:px-8 max-h-[calc(100dvh-7.5rem)] overflow-y-auto overscroll-contain'
 						>
 							<p className='bb-label'>Library</p>
 							<div className='mt-3 grid'>
@@ -164,7 +161,7 @@ export function SiteNav() {
 			</AnimatePresence>
 
 			<ScrollProgress />
-		</motion.header>
+		</header>
 		</>
 	)
 }
