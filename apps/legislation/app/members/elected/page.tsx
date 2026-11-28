@@ -54,7 +54,7 @@ function groupBy(members: Elected[], key: (m: Elected) => string) {
 
 const sentenceCase = (s: string) => s[0]!.toUpperCase() + s.slice(1)
 
-const BULLET = 'relative pl-3.5 before:absolute before:left-0 before:top-[0.6em] before:size-1 before:bg-[var(--brass)]'
+const BULLET = 'relative pl-4 before:absolute before:left-0 before:top-[0.55em] before:size-1.5 before:rounded-full before:bg-[var(--accent)]'
 
 const LABEL = 'text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'
 
@@ -98,9 +98,9 @@ function CardFace({ member }: { member: Elected }) {
 	const relatives = publicRelatives(elected).length
 	return (
 		<>
-			<div className='flex flex-1 flex-col items-center px-5 pb-5 pt-6'>
+			<div className='flex flex-1 flex-col items-center px-5 pb-6 pt-7'>
 				<MemberPortrait name={member.displayName} src={member.photoUrl} />
-				<h3 className='mt-4 text-[1rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>{member.displayName}</h3>
+				<h3 className='mt-4 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>{member.displayName}</h3>
 				{elected.roles.length ? <p className='mt-1 text-[0.75rem] font-semibold leading-snug text-[var(--accent)]'>{elected.roles.join(' · ')}</p> : null}
 				<p className='mt-1.5 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{[elected.where, elected.party].filter(Boolean).join(' · ')}</p>
 				{member.phases.length > 1 || relatives ? (
@@ -139,12 +139,12 @@ function Profile({ member }: { member: Elected }) {
 	return (
 		// Each column scrolls on its own, so the picture and the close button stay put.
 		<div className='grid h-full min-h-0 overflow-y-auto overscroll-contain md:grid-cols-[22rem_minmax(0,1fr)] md:overflow-hidden'>
-			<div className='bg-[var(--paper-2)] p-6 md:overflow-y-auto md:overscroll-contain md:p-8'>
+			<div className='tv-wash p-6 md:overflow-y-auto md:overscroll-contain md:p-8'>
 				{member.photoUrl ? (
 					// eslint-disable-next-line @next/next/no-img-element -- local portrait, unsized
-					<img src={member.photoUrl} alt={member.displayName} className='aspect-[4/5] w-full border border-[var(--rule)] object-cover' />
+					<img src={member.photoUrl} alt={member.displayName} className='aspect-[4/5] w-full rounded-[1.5rem] object-cover object-top' />
 				) : (
-					<div className='grid aspect-[4/5] w-full place-items-center border border-[var(--rule)] bg-[var(--paper)] p-10' title={`No official photograph found for ${member.displayName}`}>
+					<div className='grid aspect-[4/5] w-full place-items-center rounded-[1.5rem] bg-[var(--paper)] p-10' title={`No official photograph found for ${member.displayName}`}>
 						{/* eslint-disable-next-line @next/next/no-img-element -- the seal, sized by its frame */}
 						<img src='/images/members/BTA-logo.png' alt='' aria-hidden='true' className='w-2/3 opacity-60' />
 					</div>
@@ -188,7 +188,7 @@ function Profile({ member }: { member: Elected }) {
 			</div>
 
 			<div className='p-6 md:overflow-y-auto md:overscroll-contain md:p-10'>
-				<h2 className='pr-8 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{member.displayName}</h2>
+				<h2 className='pr-10 font-[family-name:var(--font-display)] text-[clamp(1.75rem,3vw,2.25rem)] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{member.displayName}</h2>
 				{member.phases.length > 1 ? (
 					<p className='mt-2 text-[0.8125rem] text-[var(--ink-3)]'>
 						Sat in the Transition Authority{member.principalCount ? ` · ${member.principalCount} measures as principal` : ''}
@@ -254,7 +254,7 @@ function Profile({ member }: { member: Elected }) {
 						<h3 className={LABEL}>Recent measures as principal author</h3>
 						<ul className='mt-3 grid gap-2 text-[0.84375rem] leading-snug'>
 							{principal.map((measure) => (
-								<li key={measure.id} className='border-b border-[var(--rule)] pb-2'>
+								<li key={measure.id} className='rounded-xl bg-[var(--paper-2)] px-4 py-3'>
 									<Link href={measure.href} className='line-clamp-2 text-[var(--ink)] hover:text-[var(--accent)]'>
 										<span className='num mr-2 font-semibold text-[var(--ink)]'>{measure.numberLabel}</span>
 										{measure.title}
@@ -301,7 +301,7 @@ function Profile({ member }: { member: Elected }) {
 				) : null}
 
 				{elected.sources.length ? (
-					<section className='mt-7 border-t border-[var(--rule)] pt-5'>
+					<section className='mt-8 border-t border-[var(--rule-soft)] pt-6'>
 						<h3 className={LABEL}>Sources</h3>
 						<ul className='mt-2 grid gap-1 text-[0.75rem] leading-snug'>
 							{elected.sources.map((source) => (
@@ -315,8 +315,11 @@ function Profile({ member }: { member: Elected }) {
 					</section>
 				) : null}
 
-				<Link href={`/members/${member.slug}`} className='bb-btn bb-btn-solid mt-8'>
+				<Link href={`/members/${member.slug}`} className='dv-btn dv-btn-accent mt-8'>
 					Full record
+					<svg className='size-4' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
+						<path d='M5 12h14M13 6l6 6-6 6' />
+					</svg>
 				</Link>
 			</div>
 		</div>
@@ -346,11 +349,11 @@ function Holder({ p, role }: { p: FirstParliamentPerson | { name: string; member
 		</>
 	)
 	return p.member ? (
-		<Link href={`/members/${p.member.slug}`} className='group flex items-center gap-3.5'>
+		<Link href={`/members/${p.member.slug}`} className='group flex items-center gap-4 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-3 pr-5 transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'>
 			{body}
 		</Link>
 	) : (
-		<div className='flex items-center gap-3.5'>{body}</div>
+		<div className='flex items-center gap-4 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-3 pr-5'>{body}</div>
 	)
 }
 
@@ -367,14 +370,14 @@ function Officers() {
 		{ title: 'In the cabinet', people: fp.cabinet.map((c) => ({ p: { name: c.member.displayName, member: c.member }, role: c.roles.join(' · ') })) },
 	]
 	return (
-		<section id='officers' className='scroll-mt-24'>
-			<div className='bb-container bb-section'>
+		<section id='officers' className='tv-wash scroll-mt-24'>
+			<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<BandSectionTitle title='Who presides, and who runs the House' lead='The chamber’s officers, the cabinet seats Members hold, and the Secretariat.' />
-				<div className='mt-10 grid gap-x-16 gap-y-12 lg:grid-cols-2'>
+				<div className='mt-12 grid gap-x-12 gap-y-12 lg:grid-cols-2'>
 					{groups.filter((g) => g.people.length).map((g) => (
 						<div key={g.title} className={g.people.length > 4 ? 'lg:col-span-2' : ''}>
 							<h3 className={LABEL}>{g.title}</h3>
-							<div className={`mt-4 grid gap-5 ${g.people.length > 4 ? 'sm:grid-cols-2 xl:grid-cols-3' : ''}`}>
+							<div className={`mt-4 grid gap-3 ${g.people.length > 4 ? 'sm:grid-cols-2 xl:grid-cols-3' : 'sm:grid-cols-2'}`}>
 								{g.people.map(({ p, role }) => (
 									<Holder key={p.name} p={p} role={role} />
 								))}
@@ -383,7 +386,7 @@ function Officers() {
 					))}
 					<div>
 						<h3 className={LABEL}>Secretariat</h3>
-						<dl className='mt-4 grid gap-3 text-[0.9375rem]'>
+						<dl className='mt-4 grid gap-3 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-5 text-[0.9375rem]'>
 							{fp.secretaryGeneral ? (
 								<div>
 									<dt className='text-[0.75rem] text-[var(--ink-3)]'>Secretary General</dt>
@@ -431,28 +434,26 @@ export default function ElectedPage() {
 						The Bangsamoro’s first elected Parliament: who presides, who sits in the cabinet, and every Member by the seat they won.
 					</>
 				}
+				side={
+					/* The make-up at a glance, and a way down to each kind of seat: a cream card on the header's right. */
+					<nav aria-label='Seats' className='rounded-[var(--dv-r)] bg-[#f6f1ea] p-3 text-[#1d1a16] shadow-[0_30px_60px_-30px_rgba(0,0,0,0.5)] sm:p-4'>
+						<ol className='grid grid-cols-2 gap-2'>
+							{SEATS.map((s) => {
+								const count = members.filter((m) => m.elected.seat === s.seat).length
+								return (
+									<li key={s.id}>
+										<a href={`#${s.id}`} className='group flex h-full flex-col rounded-2xl p-4 transition hover:bg-white sm:p-5'>
+											<span className='num font-[family-name:var(--font-display)] text-[2.5rem] font-extrabold leading-none tracking-[-0.04em] text-[#8a2418]'>{count}</span>
+											<span className='mt-3 text-[0.9375rem] font-extrabold'>{s.title}</span>
+											<span className='mt-1 text-[0.78125rem] leading-snug text-[#5c564d]'>{s.note}</span>
+										</a>
+									</li>
+								)
+							})}
+						</ol>
+					</nav>
+				}
 			/>
-
-			{/* The make-up at a glance, and a way down to each kind of seat, as cards. */}
-			<nav aria-label='Seats' className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
-				<ol className='grid grid-cols-2 gap-4 lg:grid-cols-4'>
-					{SEATS.map((s) => {
-						const count = members.filter((m) => m.elected.seat === s.seat).length
-						return (
-							<li key={s.id}>
-								<a
-									href={`#${s.id}`}
-									className='group flex h-full flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)] sm:p-6'
-								>
-									<span className='num text-[2.25rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{count}</span>
-									<span className='mt-3 text-[0.9375rem] font-extrabold text-[var(--ink)] group-hover:text-[var(--accent)]'>{s.title}</span>
-									<span className='mt-1 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{s.note}</span>
-								</a>
-							</li>
-						)
-					})}
-				</ol>
-			</nav>
 
 			<Officers />
 
@@ -460,17 +461,17 @@ export default function ElectedPage() {
 				const groups = sections[i]!
 				if (!groups.length) return null
 				return (
-					<section key={s.id} id={s.id} className={`scroll-mt-24 ${i % 2 ? 'bg-[var(--paper-2)]' : ''}`}>
-						<div className='bb-container bb-section'>
+					<section key={s.id} id={s.id} className={`scroll-mt-24 ${i % 2 ? 'tv-wash-flip' : ''}`}>
+						<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 							<BandSectionTitle title={s.title} count={groups.reduce((n, [, list]) => n + list.length, 0)} lead={s.note} />
 							{groups.map(([name, list]) => (
-								<div key={name} className='mt-10'>
+								<div key={name} className='mt-12'>
 									{name ? (
-										<h3 className='mb-4 text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+										<h3 className='mb-5 font-[family-name:var(--font-display)] text-[1.25rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
 											{name} <span className='font-semibold text-[var(--ink-mute)]'>· {list.length}</span>
 										</h3>
 									) : null}
-									<div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+									<div className='grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 										{list.map((m) => (
 											<Card
 												key={m.slug}
@@ -488,9 +489,9 @@ export default function ElectedPage() {
 			})}
 
 			{/* How the page was put together, after the Members themselves. */}
-			<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
-				<div className='bb-container py-12'>
-				<p className='max-w-[52rem] text-[0.84375rem] leading-[1.7] text-[var(--ink-3)]'>
+			<section className='border-t border-[var(--rule-soft)]'>
+				<div className='bb-container py-14'>
+				<p className='text-[0.875rem] leading-[1.7] text-[var(--ink-3)]'>
 					{veterans} of the {members.length} sat in the Transition Authority; their full record is on their page. {withFamily} have a relative in public life
 					that a source names. A relationship is listed only where a source states it, never from a shared surname. Something wrong or missing?{' '}
 					<a href='https://betterbarmm.com/contact' className='rule-link'>

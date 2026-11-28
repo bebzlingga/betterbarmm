@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { BillPath } from './bill-path'
-import { Block } from './explainer'
+import { Block, Point } from './explainer'
 import { Timeline } from './timeline'
 import type { StatusTone } from '../_lib/labels'
 
@@ -121,12 +121,12 @@ export function ProcessSections() {
 					id: step.label,
 					tone: step.tone,
 					content: (
-						<>
-							<h3 className='font-title text-[1.25rem] font-extrabold leading-tight text-[var(--ink)]'>
+						<div className='rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+							<h3 className='font-[family-name:var(--font-display)] text-[1.25rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 								{step.label}
 							</h3>
 							<p className='copy mt-2 text-[var(--ink-2)]'>{step.body}</p>
-						</>
+						</div>
 					),
 				}))}
 			/>
@@ -139,16 +139,9 @@ export function ProcessSections() {
 			lead='The two paths look alike until the end, where the resolution loses the vote that leaves names and the signature that makes law.'
 		>
 			{DIFFERENCES.map((item) => (
-				<div
-					key={item.title}
-					className='border-t border-[var(--rule-soft)] py-6 first:border-t-0 first:pt-0'
-				>
-					<h3 className='item-title text-[var(--ink)]'>{item.title}</h3>
-					<div className='copy mt-2.5 text-[var(--ink-2)]'>{item.body}</div>
-					{/* Held off the paragraph above it — the citation belongs to the
-				    point but is not part of reading it. */}
-					<p className='meta-sm mt-4'>{item.cite}</p>
-				</div>
+				<Point key={item.title} title={item.title} cite={item.cite}>
+					{item.body}
+				</Point>
 			))}
 		</Block>
 

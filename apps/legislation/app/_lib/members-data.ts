@@ -376,13 +376,18 @@ const toSlug = (rosterName: string) =>
  * drop that member's credits. Accents are folded and spacing collapsed so
  * both spellings land on one entry.
  */
-const matchKey = (name: string) =>
-	name
+/** Names Parliament writes two ways: the acts index shortened the Chief Minister's middle name in November 2026. */
+const NAME_ALIASES: Record<string, string> = { 'EBRAHIM, AHOD B.': 'EBRAHIM, AHOD BALAWAG' }
+
+const matchKey = (name: string) => {
+	const key = name
 		.normalize('NFD')
 		.replace(/[\u0300-\u036f]/g, '')
 		.replace(/\s+/g, ' ')
 		.trim()
 		.toUpperCase()
+	return NAME_ALIASES[key] ?? key
+}
 
 const toStringValue = (value: unknown) =>
 	typeof value === 'string' && value.trim().length > 0 ? value.trim() : ''
@@ -562,7 +567,10 @@ const allMembers: Member[] = (rosterFile?.members ?? [])
 				.filter((part) => part && part.toLowerCase() !== 'bta member')
 				.join(' / ') || undefined
 
-		const termOfOffice = toStringValue(raw.term_of_office) || 'Term not recorded'
+		// Parliament's roster was captured while the Transition Authority sat, so its terms run to "Present". The
+		// Authority ended when the First Parliament convened on 30 October 2026: that is where every BTA term ends now.
+		// A Member elected to the First Parliament is marked as serving below, where the two records are joined.
+		const termOfOffice = (toStringValue(raw.term_of_office) || 'Term not recorded').replace(/\bPresent\b/i, 'October 2026')
 		const phases = toStringArray(raw.phases_served)
 
 		// The latest sitting served in decides where this member is listed.

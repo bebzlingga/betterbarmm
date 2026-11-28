@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import type { Metadata } from 'next'
 import { MemberBrowser } from '../_components/member-browser'
 import { RegistryBand } from '../_components/registry-band'
@@ -18,7 +17,7 @@ export default function MembersPage() {
 	return (
 		<>
 			<RegistryBand
-				label='Bangsamoro Transition Authority, 2019 to 2025'
+				label='Bangsamoro Transition Authority, 2019 to 2026'
 				title='Bangsamoro Transition Authority'
 				lead={
 					<>
@@ -27,13 +26,7 @@ export default function MembersPage() {
 						they held, and the measures they are credited on.
 					</>
 				}
-			>
-				<div className='mt-8'>
-					<Link href='/attendance' className='bb-btn bb-btn-solid !px-5 !py-3 !text-[0.65625rem]'>
-						Attendance, Member by Member
-					</Link>
-				</div>
-			</RegistryBand>
+			/>
 
 			<MemberBrowser dataset={dataset} />
 
@@ -41,20 +34,21 @@ export default function MembersPage() {
 			    on the left, the caveats enumerated on the right — so the gaps read
 			    as a numbered list of specific limits rather than a wall of small
 			    grey text at the foot of the page. */}
-			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='tv-wash'>
+				<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<Reveal>
-					<div className='grid gap-8 border-t border-[var(--rule)] pt-12 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12'>
+					<div className='grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12'>
 						{/* Two fifths of the measure, and the text stops short of even that —
 						    the room on the right holds the note apart from the list. */}
 						<div className='lg:pr-12 xl:pr-24'>
-							<p className='eyebrow'>Coverage</p>
+							<p className='pg-hero-kicker !text-[var(--accent)]'>Coverage</p>
 							{/* The estate's section heading rather than a one-off size: this
 							    is an h2 opening a block, the same job the heading over every
 							    other section does, and it was the only one set in the body
 							    face at body weight. `section-title-sm` is that primitive at
 							    the step a two-fifths column can hold — the full cut runs to
 							    3rem and would break this line four ways. */}
-							<h2 className='section-title section-title-sm mt-3 text-[var(--ink)]'>
+							<h2 className='dv-title mt-4'>
 								Known gaps in this dataset
 							</h2>
 							<p className='mt-4 bb-body text-[var(--ink-2)]'>{dataset.coverageNote}</p>
@@ -64,11 +58,11 @@ export default function MembersPage() {
 							</p>
 						</div>
 
-						<ol className='grid content-start'>
+						<ol className='grid content-start rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-6 py-2 sm:px-8'>
 							{dataset.knownGaps.map((gap, index) => (
 								<li
 									key={index}
-									className='flex gap-4 border-b border-[var(--rule-soft)] py-4 first:pt-0 last:border-0 last:pb-0 sm:gap-6'
+									className='flex gap-4 border-b border-[var(--rule-soft)] py-5 last:border-0 sm:gap-6'
 								>
 									{/* Zero-padded so the numerals hold one column width. */}
 									<span className='num shrink-0 bb-body text-[var(--ink-mute)]'>
@@ -80,6 +74,7 @@ export default function MembersPage() {
 						</ol>
 					</div>
 				</Reveal>
+				</div>
 			</section>
 		</>
 	)

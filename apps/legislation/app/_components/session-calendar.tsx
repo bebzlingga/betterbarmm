@@ -87,7 +87,7 @@ function NextUp({ data, today }: { data: CalendarData; today: string | null }) {
 	const longest = data.sittings.slice(1).reduce((m, s, i) => Math.max(m, between(data.sittings[i]!.end, s.start) - 1), 0)
 
 	return (
-		<div className='relative z-10 -mt-14 grid border border-[var(--rule)] bg-[var(--paper)] shadow-[0_30px_60px_-40px_rgba(0,0,0,0.45)] lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]'>
+		<div className='relative z-10 -mt-14 grid overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_30px_60px_-40px_rgba(0,0,0,0.45)] lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]'>
 			<div className='p-6 sm:p-8'>
 				<p className='bb-label'>{now ? 'Sitting now' : next || !today ? 'Next sitting' : 'The session has closed'}</p>
 				<p className='mt-4 min-h-[1.1em] text-[clamp(2rem,5vw,3.25rem)] font-extrabold leading-[1.05] tracking-[-0.03em]'>
@@ -108,24 +108,24 @@ function NextUp({ data, today }: { data: CalendarData; today: string | null }) {
 					) : null}
 				</div>
 				<div className='mt-7 flex flex-wrap gap-3'>
-					<button type='button' onClick={() => download(data)} className='bb-btn bb-btn-solid !px-5 !py-3 !text-[0.65625rem]'>
+					<button type='button' onClick={() => download(data)} className='dv-btn dv-btn-accent'>
 						<CalendarPlusIcon size={15} weight='bold' aria-hidden='true' />
 						Add to my calendar
 					</button>
-					<a href={data.meta.source.file} target='_blank' rel='noreferrer' className='bb-btn bb-btn-ghost !px-5 !py-3 !text-[0.65625rem]'>
+					<a href={data.meta.source.file} target='_blank' rel='noreferrer' className='dv-btn dv-btn-line'>
 						The resolution
 						<ArrowUpRightIcon size={13} weight='bold' aria-hidden='true' />
 					</a>
 				</div>
 			</div>
 
-			<div className='grid grid-cols-3 border-t border-[var(--rule)] lg:grid-cols-1 lg:border-l lg:border-t-0'>
+			<div className='tv-wash grid grid-cols-3 lg:grid-cols-1'>
 				{[
 					[String(days.length), 'sitting days', `in ${data.sittings.length} sittings`],
 					[today ? String(sat) : '–', 'sat so far', `${today ? Math.round((sat / days.length) * 100) : 0}% of the session`],
 					[gap(longest), 'longest break', 'between two sittings'],
 				].map(([n, a, b], i) => (
-					<p key={a} className={`p-5 sm:p-6 ${i ? 'border-l border-[var(--rule)] lg:border-l-0 lg:border-t' : ''}`}>
+					<p key={a} className={`p-5 sm:p-6 ${i ? 'border-l border-[var(--rule-soft)] lg:border-l-0 lg:border-t' : ''}`}>
 						<span className='num block text-[clamp(1.375rem,3vw,1.875rem)] font-black leading-none tracking-[-0.03em]'>{n}</span>
 						<span className='mt-2 block text-[0.75rem] font-semibold text-[var(--ink-2)]'>{a}</span>
 						<span className='block text-[0.6875rem] text-[var(--ink-mute)]'>{b}</span>
@@ -151,7 +151,7 @@ function YearStrip({ data, today }: { data: CalendarData; today: string | null }
 	const weeks = Array.from({ length: Math.ceil((between(first, end) + 1) / 7) }, (_, w) => Array.from({ length: 7 }, (_, d) => shift(first, w * 7 + d)))
 
 	return (
-		<div className='mt-8 border border-[var(--rule)] bg-[var(--paper)] p-4 sm:p-6'>
+		<div className='mt-8 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-7'>
 			<div className='-mx-4 overflow-x-auto px-4 pb-1 [scrollbar-width:thin] sm:mx-0 sm:px-0'>
 			<div className='flex min-w-[38rem] gap-[3px] sm:min-w-0 sm:gap-1'>
 				{weeks.map((week, w) => {
@@ -208,10 +208,10 @@ function Sittings({ data, today }: { data: CalendarData; today: string | null })
 	let prev: Sitting | undefined
 
 	return (
-		<div className='mt-8 border-t border-[var(--rule)]'>
+		<div className='mt-8 grid gap-3'>
 			{[...months].map(([ym, list]) => (
-				<section key={ym} className='grid gap-x-8 border-b border-[var(--rule)] py-5 md:grid-cols-[11rem_minmax(0,1fr)]'>
-					<h3 className='pb-3 text-[1.0625rem] font-extrabold tracking-[-0.015em] md:sticky md:top-24 md:self-start md:pb-0 md:pt-3'>
+				<section key={ym} className='grid gap-x-8 rounded-[var(--dv-r)] border border-[var(--rule)] p-5 sm:p-6 md:grid-cols-[11rem_minmax(0,1fr)]'>
+					<h3 className='pb-3 text-[1.0625rem] font-extrabold tracking-[-0.015em] md:sticky md:top-8 md:self-start md:pb-0 md:pt-3'>
 						{fmt(`${ym}-01`, { month: 'long' })} <span className='text-[var(--ink-mute)]'>{ym.slice(0, 4)}</span>
 					</h3>
 					<ol className='grid'>
@@ -230,7 +230,7 @@ function Sittings({ data, today }: { data: CalendarData; today: string | null })
 										</li>
 									) : null}
 									<li
-										className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 rounded-[var(--radius-sm)] px-3 py-3 ${isNext ? 'bg-[var(--accent-soft)] shadow-[inset_3px_0_0_var(--accent)]' : ''}`}
+										className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 rounded-xl px-3 py-3 ${isNext ? 'bg-[var(--accent-soft)] shadow-[inset_3px_0_0_var(--accent)]' : ''}`}
 									>
 										<div className='min-w-0'>
 											<p className={`text-[0.9375rem] font-bold ${done ? 'text-[var(--ink-3)]' : 'text-[var(--ink)]'}`}>
@@ -286,7 +286,7 @@ export function SessionCalendar({ data }: { data: CalendarData }) {
 				<Sittings data={data} today={today} />
 			</div>
 
-			<div className='mt-12 grid gap-8 border-t border-[var(--rule)] pt-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12'>
+			<div className='mt-12 grid gap-8 rounded-[var(--dv-r)] bg-[var(--paper-2)] p-6 sm:p-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-12'>
 				<div>
 					<p className='eyebrow'>Source</p>
 					<a href={meta.source.file} target='_blank' rel='noreferrer' className='rule-link mt-3 inline-flex items-start gap-1 text-[0.9375rem] font-semibold leading-snug text-[var(--ink)]'>

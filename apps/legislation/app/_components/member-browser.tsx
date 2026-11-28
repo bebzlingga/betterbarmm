@@ -55,7 +55,7 @@ function FilterGroup({
 						type='button'
 						aria-pressed={selected.has(option.value)}
 						onClick={() => onToggle(option.value)}
-						className='chip'
+						className='chip !rounded-full !px-3.5 aria-pressed:!border-[var(--accent)] aria-pressed:!bg-[var(--accent)] aria-pressed:!text-white'
 					>
 						{option.label}
 						<span className='chip-count'>{option.count}</span>
@@ -63,7 +63,7 @@ function FilterGroup({
 				))}
 
 				{hiddenCount > 0 ? (
-					<button type='button' onClick={() => setExpanded(true)} className='chip border-dashed'>
+					<button type='button' onClick={() => setExpanded(true)} className='chip !rounded-full border-dashed'>
 						+{hiddenCount} more
 					</button>
 				) : null}
@@ -217,7 +217,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 							onClick={() => setFiltersOpen((current) => !current)}
 							aria-expanded={filtersOpen}
 							aria-controls='member-filters'
-							className='bb-btn bb-btn-ghost btn-field order-2 h-11 shrink-0 sm:order-none'
+							className='bb-btn bb-btn-ghost btn-field order-2 h-12 shrink-0 !rounded-full sm:order-none'
 						>
 							{/* The icon says what the button will do next: a funnel to
 							    open the facets, a cross to put them away. */}
@@ -241,7 +241,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 						<label className='relative order-1 col-span-2 block sm:order-none sm:col-span-1'>
 							<span className='sr-only'>Search members</span>
 							<svg
-								className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
+								className='pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
 								viewBox='0 0 24 24'
 								fill='none'
 								stroke='currentColor'
@@ -259,7 +259,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 									if (event.key === 'Escape') setQuery('')
 								}}
 								placeholder='Search members by name, role, or province'
-								className='field field-search'
+								className='field field-search !h-12 !rounded-full !pl-10 shadow-[0_10px_24px_-20px_rgba(0,0,0,0.45)]'
 							/>
 						</label>
 
@@ -270,7 +270,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 							<select
 								value={sort}
 								onChange={(event) => setSort(event.target.value as SortKey)}
-								className='field field-select cursor-pointer appearance-none'
+								className='field field-select !h-12 cursor-pointer appearance-none !rounded-full !pl-5 shadow-[0_10px_24px_-20px_rgba(0,0,0,0.45)]'
 							>
 								{SORT_OPTIONS.map((option) => (
 									<option key={option.value} value={option.value}>
@@ -279,7 +279,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 								))}
 							</select>
 							<svg
-								className='pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]'
+								className='pointer-events-none absolute right-4 top-1/2 size-3.5 -translate-y-1/2 text-[var(--accent)]'
 								viewBox='0 0 24 24'
 								fill='none'
 								stroke='currentColor'
@@ -351,7 +351,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 										type='button'
 										aria-pressed={creditedOnly}
 										onClick={() => setCreditedOnly((current) => !current)}
-										className='chip'
+										className='chip !rounded-full !px-3.5 aria-pressed:!border-[var(--accent)] aria-pressed:!bg-[var(--accent)] aria-pressed:!text-white'
 									>
 										Credited on a measure
 										<span className='chip-count'>{dataset.stats.withMeasures}</span>
@@ -402,15 +402,15 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 					{/* ---- Grouped grid ---- */}
 					<div>
 						{groups.map((group) => (
-							<section key={group.parliament.key} className='mt-16 first:mt-8'>
+							<section key={group.parliament.key} className='mt-20 first:mt-12'>
 								<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1'>
-									<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
+									<h2 className='dv-title'>
 										{group.parliament.label} <span className='text-[var(--ink-mute)]'>· {group.members.length.toLocaleString()}</span>
 									</h2>
-									<p className='text-[0.84375rem] text-[var(--ink-3)]'>{group.parliament.description}</p>
+									<p className='text-[0.9375rem] text-[var(--ink-3)]'>{group.parliament.description}</p>
 								</div>
 
-								<div className={`mt-6 grid gap-4 ${cellGrid}`}>
+								<div className={`mt-8 grid gap-5 ${cellGrid}`}>
 									{group.members.map((member, index) => (
 										<Link
 											key={member.slug}
@@ -421,9 +421,9 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 											{/* The face, the name and what sets them apart, centred, as the landing site draws a Member; where they
 											    sit and for how long in the bar at the foot. The sitting is the section heading, so it isn't
 											    repeated here. */}
-											<div className='flex flex-1 flex-col items-center px-5 pb-5 pt-6'>
+											<div className='flex flex-1 flex-col items-center px-5 pb-6 pt-7'>
 												<MemberPortrait name={member.displayName} src={member.photoUrl} />
-												<h2 className='mt-4 text-[1rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+												<h2 className='mt-4 font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 													{member.displayName}
 												</h2>
 												{/* Office first, then the authorship split. "as principal" because the number counts measures, not
@@ -469,7 +469,7 @@ export function MemberBrowser({ dataset }: { dataset: RosterDataset }) {
 								<p className='mx-auto mt-2 max-w-md bb-body text-[var(--ink-3)]'>
 									Try a broader search term, or clear a filter or two.
 								</p>
-								<button type='button' onClick={clearAll} className='bb-btn bb-btn-ghost mt-6'>
+								<button type='button' onClick={clearAll} className='bb-btn bb-btn-ghost mt-6 !rounded-full'>
 									Clear everything
 								</button>
 							</div>

@@ -23,7 +23,7 @@ function MeasureRow({ measure, index }: { measure: MemberMeasure; index: number 
 			// Stacked on a phone: the date is a fixed column against a title that
 			// has to wrap, and it was taking a third of the row. See the same note
 			// on the registry's rows in `record-browser`.
-			className='row row-in grid grid-cols-1 items-start gap-1.5 py-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-16 sm:py-8 lg:gap-24'
+			className='row row-in grid grid-cols-1 items-start gap-1.5 px-5 py-6 last:border-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-12 sm:px-7 sm:py-7'
 		>
 			<div className='min-w-0'>
 				{/* Number, then what they were to it, then where it stands — the
@@ -89,7 +89,7 @@ function NoMeasures({
 	// sat yet — not because the registry is missing their record.
 	if (member.elected && member.phases.length === 1) {
 		return (
-			<div className='card p-6 sm:p-10'>
+			<div className='tv-wash rounded-[var(--dv-r)] p-7 sm:p-10'>
 				<span className='badge badge-plain badge-idle'>Takes office 30 October 2026</span>
 				<h3 className='mt-4 max-w-2xl text-xl font-semibold leading-snug sm:text-2xl'>
 					Nothing filed yet — this Parliament has not sat.
@@ -104,7 +104,7 @@ function NoMeasures({
 	}
 
 	return (
-		<div className='card p-6 sm:p-10'>
+		<div className='tv-wash rounded-[var(--dv-r)] p-7 sm:p-10'>
 			<span className='badge badge-plain badge-idle'>No measures linked yet</span>
 			<h3 className='mt-4 max-w-2xl text-xl font-semibold leading-snug sm:text-2xl'>
 				This is missing data, not a record of inactivity.
@@ -125,11 +125,11 @@ function NoMeasures({
 					href='https://parliament.bangsamoro.gov.ph/bills/'
 					target='_blank'
 					rel='noreferrer'
-					className='bb-btn bb-btn-solid'
+					className='dv-btn dv-btn-accent'
 				>
 					Check the official source
 				</a>
-				<Link href='/about' className='bb-btn bb-btn-ghost'>
+				<Link href='/about' className='dv-btn dv-btn-line'>
 					How this registry is built
 				</Link>
 			</div>
@@ -153,7 +153,7 @@ function CommitteeRow({ committee, index }: { committee: MemberCommittee; index:
 		<Link
 			href={`/committees/${committee.slug}`}
 			style={{ '--row-index': index } as React.CSSProperties}
-			className='row row-in grid grid-cols-1 items-start gap-1.5 py-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-16 sm:py-8 lg:gap-24'
+			className='row row-in grid grid-cols-1 items-start gap-1.5 px-5 py-6 last:border-0 sm:grid-cols-[minmax(0,1fr)_auto] sm:gap-12 sm:px-7 sm:py-7'
 		>
 			<div className='min-w-0'>
 				{/* The seat they hold sits beside the committee's name — it qualifies
@@ -316,12 +316,12 @@ export function MemberRecord({
 			    when there are no tabs beneath it. */}
 			<div
 				className={`flex flex-col justify-between gap-3 pb-4 sm:flex-row sm:items-end ${
-					hasRecord ? '' : 'border-b border-[var(--rule)]'
+					''
 				}`}
 			>
 				<div>
-					<p className='eyebrow'>Legislative record</p>
-					<h2 className='section-title mt-3'>
+					<p className='pg-hero-kicker !text-[var(--accent)]'>Legislative record</p>
+					<h2 className='dv-title mt-3'>
 						{member.measures.length > 0
 							? `Credited on ${member.measures.length} measure${member.measures.length === 1 ? '' : 's'}.`
 							: 'Measures they contributed to.'}
@@ -349,7 +349,7 @@ export function MemberRecord({
 						role='tablist'
 						aria-label='Legislative record'
 						onKeyDown={handleKeyDown}
-						className='tab-list mt-7'
+						className='mt-7 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]'
 					>
 						{tabs.map((tab) => {
 							const selected = tab.key === activeKey
@@ -366,7 +366,7 @@ export function MemberRecord({
 									// move between them from there.
 									tabIndex={selected ? 0 : -1}
 									onClick={() => setChosen(tab.key)}
-									className='tab'
+									className='dv-pill aria-selected:!border-[var(--accent)] aria-selected:!bg-[var(--accent)] aria-selected:!text-white'
 								>
 									{tab.label}
 									<span className='tab-count'>{tab.count}</span>
@@ -382,6 +382,8 @@ export function MemberRecord({
 						tabIndex={0}
 						className='mt-6'
 					>
+						{active.count > 0 ? (
+						<div className='overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)]'>
 						{active.key === 'committees'
 							? committees
 									.slice(0, shown)
@@ -393,6 +395,8 @@ export function MemberRecord({
 									.map((measure, index) => (
 										<MeasureRow key={measure.id} measure={measure} index={index} />
 									))}
+						</div>
+						) : null}
 
 						{remaining > 0 ? (
 							<div className='flex flex-col items-center gap-2 pt-8'>
@@ -404,7 +408,7 @@ export function MemberRecord({
 											[activeKey]: shown + PAGE_SIZE,
 										}))
 									}
-									className='bb-btn bb-btn-ghost'
+									className='dv-btn dv-btn-line'
 								>
 									Show {Math.min(PAGE_SIZE, remaining)} more
 									<svg
@@ -435,7 +439,7 @@ export function MemberRecord({
 					    its place when there is a list. On an empty tab the panel has
 					    just said the same thing in one line. */}
 					{active.count > 0 && active.key !== 'committees' ? (
-						<p className='mt-8 max-w-2xl bb-body text-[var(--ink-3)]'>
+						<p className='mt-8 bb-body text-[var(--ink-3)]'>
 							This list covers measures whose authorship the registry has captured. It is not a
 							complete legislative record — most measure pages have not been scraped, so a member
 							may have filed far more than appears here.

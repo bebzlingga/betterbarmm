@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { BillPath } from '../_components/bill-path'
 import type { BillStep } from '../_components/bill-path-steps'
-import { Block, Duty, Point, Source } from '../_components/explainer'
+import { Block, Duty, Head, Point, Source, SourcePill } from '../_components/explainer'
 import { PageHeader } from '../_components/page-header'
 import { SittingCalendar, VoteComparison, type SittingMonth } from '../_components/parliament-diagrams'
 import { ParliamentSwitch } from '../_components/parliament-switch'
@@ -254,8 +254,8 @@ const STEPS: BillStep[] = [
 
 function Term({ term, children }: { term: string; children: React.ReactNode }) {
 	return (
-		<div className='border-t border-[var(--rule-soft)] py-5 first:border-t-0 first:pt-0'>
-			<dt className='item-title text-[var(--ink)]'>{term}</dt>
+		<div className='rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+			<dt className='font-[family-name:var(--font-display)] text-[1.0625rem] font-bold tracking-[-0.01em] text-[var(--ink)]'>{term}</dt>
 			<dd className='copy mt-1.5 text-[var(--ink-2)]'>{children}</dd>
 		</div>
 	)
@@ -316,18 +316,18 @@ export default function HowParliamentWorksPage() {
 					title='What is different from the Transition Authority'
 					lead='The differences you would notice from outside, side by side. Everything else on this page builds on these.'
 				>
-					<div className='overflow-x-auto'>
+					<div className='overflow-x-auto rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-5 py-2 sm:px-7'>
 						<table className='w-full min-w-[34rem] border-collapse text-left'>
 							<thead>
 								<tr className='border-b border-[var(--rule)]'>
-									<th className='label py-3 pr-4 font-normal'>&nbsp;</th>
-									<th className='label py-3 pr-4 font-normal'>Transition Authority</th>
-									<th className='label py-3 font-normal'>Standing Orders</th>
+									<th className='label py-4 pr-4 font-normal'>&nbsp;</th>
+									<th className='label py-4 pr-4 font-normal'>Transition Authority</th>
+									<th className='label py-4 font-normal text-[var(--accent)]'>Standing Orders</th>
 								</tr>
 							</thead>
 							<tbody>
 								{CHANGES.map((row) => (
-									<tr key={row.topic} className='border-b border-[var(--rule-soft)] align-top'>
+									<tr key={row.topic} className='border-b border-[var(--rule-soft)] align-top last:border-b-0'>
 										<th scope='row' className='item-title py-4 pr-4 text-[var(--ink)]'>
 											{row.topic}
 										</th>
@@ -499,7 +499,6 @@ export default function HowParliamentWorksPage() {
 				>
 					<SittingCalendar month={MONTH} legend={LEGEND} />
 
-					<div className='mt-12'>
 						<Point title='Six afternoons a month' cite='Order 32, Section 1'>
 							Plenary sittings start at 1 pm on Tuesday, Wednesday and Thursday of the first and second
 							weeks of each month, unless Parliament decides otherwise. Committee hearings and
@@ -522,7 +521,6 @@ export default function HowParliamentWorksPage() {
 							</a>
 							.
 						</Point>
-					</div>
 				</Block>
 
 				<Block
@@ -795,7 +793,7 @@ export default function HowParliamentWorksPage() {
 						<Duty letter='k'>Set policy, legislate, and elect a Chief Minister to exercise executive authority on their behalf.</Duty>
 						<Duty letter='l'>Perform any other lawful function needed to pass legislation.</Duty>
 					</ol>
-					<p className='meta-sm mt-4'>Order 9, Section 1</p>
+					<p className='meta-sm'>Order 9, Section 1</p>
 				</Block>
 
 				<Block
@@ -833,15 +831,14 @@ export default function HowParliamentWorksPage() {
 				</Block>
 
 				<Reveal>
-					<section id='glossary' className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
-						<p className='eyebrow'>The words they use</p>
-						<h2 className='section-title mt-4 max-w-3xl'>What the words mean</h2>
-						<p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>
-							The Standing Orders brought in a new vocabulary from Westminster. These are the terms you
-							will meet in the Journal, the Order of Business and a committee report.
-						</p>
+					<section id='glossary' className='scroll-mt-24 font-sans'>
+						<Head
+							label='The words they use'
+							title='What the words mean'
+							lead='The Standing Orders brought in a new vocabulary from Westminster. These are the terms you will meet in the Journal, the Order of Business and a committee report.'
+						/>
 
-						<dl className='mt-10 max-w-4xl'>
+						<dl className='mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2'>
 							<Term term='Standing Orders'>
 								Parliament&rsquo;s rulebook. &ldquo;Standing&rdquo; because they stay in force from one
 								session to the next until Parliament changes them.
@@ -902,18 +899,16 @@ export default function HowParliamentWorksPage() {
 				</Reveal>
 
 				<Reveal>
-					<section id='sources' className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)]'>
-						<p className='label label-strong'>Read the originals</p>
-						<div className='mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm'>
-							<Source href={SOURCES.gazette}>Resolution No. 01, Bangsamoro Gazette</Source>
-							<Source href={SOURCES.pdf}>Standing Orders (PDF, 49 pages)</Source>
-							<Source href={SOURCES.organicLaw}>Organic Law (RA 11054)</Source>
-							<Source href={SOURCES.schedules}>Sitting schedules</Source>
-							<Link href={BTA} className='rule-link'>
-								The Transition Authority&rsquo;s rules
-							</Link>
+					<section id='sources' className='scroll-mt-24'>
+						<Head label='Read the originals' title='The documents behind this page' />
+						<div className='mt-8 flex flex-wrap gap-2.5'>
+							<SourcePill href={SOURCES.gazette}>Resolution No. 01, Bangsamoro Gazette</SourcePill>
+							<SourcePill href={SOURCES.pdf}>Standing Orders (PDF, 49 pages)</SourcePill>
+							<SourcePill href={SOURCES.organicLaw}>Organic Law (RA 11054)</SourcePill>
+							<SourcePill href={SOURCES.schedules}>Sitting schedules</SourcePill>
+							<SourcePill href={BTA}>The Transition Authority&rsquo;s rules</SourcePill>
 						</div>
-						<p className='mt-5 max-w-3xl bb-body text-[var(--ink-3)]'>
+						<p className='mt-8 bb-body text-[var(--ink-3)]'>
 							This page puts the Standing Orders into ordinary words. It is not a replacement for them,
 							and it leaves out the machinery of motions, points of order and the gavel that matters
 							only to a member mid-debate. Parliament published them as a scanned document; every

@@ -38,6 +38,8 @@ import actIndex from '../../../datasets/bills/bangsamoro_registry/baa/official_i
 import billIndex from '../../../datasets/bills/bangsamoro_registry/bills/official_index.json'
 import adoptedIndex from '../../../datasets/bills/bangsamoro_registry/resolutions/adopted_official_index.json'
 import proposedIndex from '../../../datasets/bills/bangsamoro_registry/resolutions/proposed_official_index.json'
+import firstBillIndex from '../../../datasets/bills/bangsamoro_registry/bills/first_parliament_index.json'
+import firstProposedIndex from '../../../datasets/bills/bangsamoro_registry/resolutions/proposed_first_parliament_index.json'
 import trends from '../../../datasets/budget/trends.json'
 import { joinRenames, type Line } from '@betterbarmm/budget-data/trends'
 import blgcFile from '../../../datasets/bills/blgc.json'
@@ -176,6 +178,7 @@ type Measure = {
 	date_ratified?: string
 	as_of?: string
 	principal_authors?: string[]
+	url?: string
 }
 
 /** One operative section of the Bangsamoro Local Governance Code. */
@@ -229,14 +232,17 @@ function measures(): Entry[] {
 		read.set(`${one.category}-${one.number}`, one)
 	}
 
-	const source: { rows: Measure[]; category: string; kind: string; path: string; label: string }[] = [
+	const source: { rows: Measure[]; category: string; kind: string; path: string; label: string; official?: boolean }[] = [
 		{ rows: (actIndex as { acts: Measure[] }).acts, category: 'acts', kind: 'Act', path: '/acts', label: 'Bangsamoro Autonomy Act' },
 		{ rows: (billIndex as { bills: Measure[] }).bills, category: 'bills', kind: 'Bill', path: '/bills', label: 'Parliament Bill' },
 		{ rows: (adoptedIndex as { measures: Measure[] }).measures, category: 'adopted-resolutions', kind: 'Resolution', path: '/resolutions/adopted', label: 'Resolution' },
 		{ rows: (proposedIndex as { measures: Measure[] }).measures, category: 'proposed-resolutions', kind: 'Proposed resolution', path: '/resolutions/proposed', label: 'Proposed Resolution' },
+		// The First Parliament's own (from 24 November 2026), numbered from 1 again: no registry page yet, so Parliament's.
+		{ rows: (firstBillIndex as { bills: Measure[] }).bills, category: 'first-bills', kind: 'Bill', path: '', label: 'First Parliament Bill', official: true },
+		{ rows: (firstProposedIndex as { measures: Measure[] }).measures, category: 'first-resolutions', kind: 'Resolution', path: '', label: 'First Parliament Resolution', official: true },
 	]
 
-	return source.flatMap(({ rows, category, kind, path, label }) =>
+	return source.flatMap(({ rows, category, kind, path, label, official }) =>
 		(rows ?? []).map((row) => {
 			const reading = read.get(`${category}-${row.number}`)
 			const when = row.date_ratified ?? row.as_of ?? ''
@@ -245,7 +251,7 @@ function measures(): Entry[] {
 				kind,
 				title: `${label} ${row.number}`,
 				note: trim(sentence(row.title ?? 'Title not recorded'), 200),
-				href: `${SITE.legislation}${path}/${row.number}`,
+				href: official && row.url ? row.url : `${SITE.legislation}${path}/${row.number}`,
 				text: [
 					`${label} ${row.number}`,
 					row.title,

@@ -65,7 +65,7 @@ function FilterGroup({
 
 	return (
 		<div className='grid gap-3'>
-			<p className='label label-strong'>{label}</p>
+			<p className='font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{label}</p>
 			<div className='flex flex-wrap gap-2'>
 				{visible.map((option) => (
 					<button
@@ -73,7 +73,7 @@ function FilterGroup({
 						type='button'
 						aria-pressed={selected.has(option.value)}
 						onClick={() => onToggle(option.value)}
-						className='chip'
+						className='chip !rounded-full !whitespace-normal !px-3.5 !py-1.5 text-left'
 					>
 						{option.label}
 						<span className='chip-count'>{option.count}</span>
@@ -81,7 +81,7 @@ function FilterGroup({
 				))}
 
 				{hiddenCount > 0 ? (
-					<button type='button' onClick={() => setExpanded(true)} className='chip border-dashed'>
+					<button type='button' onClick={() => setExpanded(true)} className='chip !rounded-full !px-3.5 !py-1.5 border-dashed'>
 						+{hiddenCount} more
 					</button>
 				) : null}
@@ -343,20 +343,21 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 						    The search field takes 60% of that row rather than all of it —
 						    a full-width box over a list of short rows reads heavier than
 						    the thing it searches. */}
-						<div className='grid grid-cols-2 gap-2.5 sm:grid-cols-[auto_60%_1fr] sm:items-center'>
+						<div className='grid grid-cols-2 gap-3 sm:grid-cols-[auto_minmax(0,1fr)_auto] sm:items-center'>
 							<button
 								type='button'
 								onClick={() => setFiltersOpen((current) => !current)}
 								aria-expanded={filtersOpen}
 								aria-controls='record-filters'
-								className='bb-btn bb-btn-ghost btn-field order-2 h-11 shrink-0 sm:order-none'
+								className='dv-pill order-2 !h-12 shrink-0 cursor-pointer justify-center !px-5 font-semibold sm:order-none'
 							>
 								{/* The icon says what the button will do next: a funnel to
 								    open the facets, a cross to put them away. */}
 								{filtersOpen ? (
-									<XIcon size={15} weight='bold' aria-hidden='true' />
+									<XIcon size={16} weight='bold' aria-hidden='true' className='text-[var(--accent)]' />
 								) : (
 									<FunnelIcon
+										className='text-[var(--accent)]'
 										size={15}
 										weight={activeCount > 0 ? 'fill' : 'regular'}
 										aria-hidden='true'
@@ -373,7 +374,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 							<label className='relative order-1 col-span-2 block sm:order-none sm:col-span-1'>
 								<span className='sr-only'>Search {category.label}</span>
 								<svg
-									className='pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
+									className='pointer-events-none absolute left-4.5 top-1/2 size-4 -translate-y-1/2 text-[var(--ink-mute)]'
 									viewBox='0 0 24 24'
 									fill='none'
 									stroke='currentColor'
@@ -391,18 +392,18 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 										if (event.key === 'Escape') setQuery('')
 									}}
 									placeholder={`Search ${category.label.toLowerCase()} by number, title, sector, or author`}
-									className='field field-search'
+									className='field field-search !h-12 !rounded-full !bg-[var(--paper)] shadow-[0_10px_24px_-20px_rgba(0,0,0,0.45)] !pl-11'
 								/>
 							</label>
 
 							{/* Pushed to the far edge of the row, away from the search — it
 							    orders the list rather than narrowing it. */}
-							<label className='relative order-3 block sm:order-none sm:w-52 sm:justify-self-end'>
+							<label className='relative order-3 block sm:order-none sm:w-56 sm:justify-self-end'>
 								<span className='sr-only'>Sort</span>
 								<select
 									value={sort}
 									onChange={(event) => setSort(event.target.value as SortKey)}
-									className='field field-select cursor-pointer appearance-none'
+									className='field field-select cursor-pointer appearance-none !h-12 !rounded-full !bg-[var(--paper)] shadow-[0_10px_24px_-20px_rgba(0,0,0,0.45)] !pl-5 !pr-10'
 								>
 									{SORT_OPTIONS.map((option) => (
 										<option key={option.value} value={option.value}>
@@ -411,7 +412,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									))}
 								</select>
 								<svg
-									className='pointer-events-none absolute right-3 top-1/2 size-3.5 -translate-y-1/2 text-[var(--ink-mute)]'
+									className='pointer-events-none absolute right-4.5 top-1/2 size-3.5 -translate-y-1/2 text-[var(--accent)]'
 									viewBox='0 0 24 24'
 									fill='none'
 									stroke='currentColor'
@@ -458,7 +459,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 							    chip into a zero-width column while it was still fading out. Given a
 							    width of its own it is simply clipped by the row above it. */}
 							<div
-								className={`grid min-h-0 gap-6 pt-7 lg:max-h-[calc(100vh-8rem)] lg:w-80 lg:pr-1 lg:pt-0 xl:w-96 ${
+								className={`grid min-h-0 pt-7 lg:max-h-[calc(100vh-8rem)] lg:w-80 lg:pr-1 lg:pt-0 xl:w-96 ${
 									filtersOpen
 										? 'max-h-[60vh] overflow-y-auto overscroll-contain lg:max-h-[calc(100vh-8rem)]'
 										: 'overflow-hidden'
@@ -468,6 +469,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 							    where it is the first question a reader has: adopted, or still
 							    pending. Empty everywhere else, and an empty group renders
 							    nothing. */}
+								<div className='grid min-w-0 content-start gap-7 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
 								<FilterGroup
 									label='Adopted or proposed'
 									options={dataset.kinds}
@@ -504,6 +506,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									selected={filters.years}
 									onToggle={(value) => toggleFilter('years', value)}
 								/>
+								</div>
 							</div>
 						</div>
 					</aside>
@@ -515,7 +518,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 					<div className='order-3 min-w-0 lg:order-none lg:col-start-2 lg:row-start-2'>
 
 						{/* ---- Result summary ---- */}
-						<div className='mt-8 flex flex-col justify-between gap-2 border-b border-[var(--rule)] pb-3 sm:flex-row sm:items-center'>
+						<div className='mt-9 flex flex-col justify-between gap-3 sm:flex-row sm:items-center'>
 							<p className={`meta ${isStale ? 'opacity-50' : ''} transition-opacity`}>
 								<span className='num font-medium text-[var(--ink)]'>
 									{visibleRecords.length.toLocaleString()}
@@ -534,9 +537,9 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 								type='button'
 								onClick={() => downloadList(visibleRecords, category.slug)}
 								disabled={visibleRecords.length === 0}
-								className='inline-flex w-fit cursor-pointer items-center gap-1.5 text-[0.8125rem] font-medium text-[var(--ink)] transition hover:text-[var(--accent)] disabled:cursor-default disabled:opacity-40'
+								className='dv-pill w-fit cursor-pointer !px-3.5 !py-1.5 !text-[0.8125rem] disabled:cursor-default disabled:opacity-40'
 							>
-								<DownloadSimpleIcon size={14} weight='bold' aria-hidden='true' />
+								<DownloadSimpleIcon size={15} weight='duotone' aria-hidden='true' className='text-[var(--accent)]' />
 								Download {activeCount > 0 || query ? 'this list' : 'all'} (CSV)
 							</button>
 							{activeCount > 0 || query ? (
@@ -562,7 +565,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 							{/* Cards, as the landing site's Directory and Programs & services draw them (user decision): the number and
 							    where it stands at the head, the full official name, what it is about, and the date and the way in at
 							    the foot. Two to a row once there is the width. */}
-							<div className='mt-6 grid gap-4 md:grid-cols-2'>
+							<div className='mt-6 grid gap-5 md:grid-cols-2'>
 							{pageRecords.map((record, index) => (
 								<Link
 									key={record.id}
@@ -573,9 +576,9 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									// has to wrap, and on a phone it took a third of the row and
 									// left the measure's name in a four-word gutter. Stacked, the
 									// title gets the width and the date follows it as a caption.
-									className='row-in group flex min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] text-left transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+									className='row-in group flex min-w-0 flex-col overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] text-left transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 								>
-									<div className='flex min-w-0 flex-1 flex-col p-5'>
+									<div className='flex min-w-0 flex-1 flex-col p-6'>
 										<div className='flex flex-wrap items-center gap-x-2 gap-y-1.5'>
 											<span className='num text-[0.8125rem] font-semibold text-[var(--ink-2)]'>
 												{record.numberLabel}
@@ -618,13 +621,13 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 
 										{/* The full official name is what identifies a measure, so the card carries that alone. The
 										    registry's short name for it is on the measure's own page. */}
-										<h2 className='mt-3 line-clamp-4 text-[1rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+										<h2 className='mt-3.5 line-clamp-4 font-[family-name:var(--font-display)] text-[1.0625rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 											{record.title}
 										</h2>
 
 										{/* What it is about, under its name. */}
 										{record.sectors.length ? (
-											<div className='mt-auto flex flex-wrap gap-1.5 pt-4'>
+											<div className='mt-auto flex flex-wrap gap-1.5 pt-5'>
 												{record.sectors.map((tag) => (
 													<span key={tag.value} className='badge badge-plain badge-idle'>
 														{tag.label}
@@ -635,7 +638,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 									</div>
 
 									{/* The date and the way in, filling crimson with the card's hover. */}
-									<div className='flex items-center justify-between gap-3 border-t border-[var(--rule)] px-5 py-3 text-[0.8125rem] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'>
+									<div className='flex items-center justify-between gap-3 border-t border-[var(--rule-soft)] px-6 py-3.5 text-[0.8125rem] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'>
 										<span className='text-[var(--ink-3)] group-hover:text-white/85'>{record.dateDisplay}</span>
 										<span className='inline-flex items-center gap-1.5 font-semibold'>
 											Read it
@@ -660,7 +663,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 							) : null}
 
 							{visibleRecords.length === 0 ? (
-								<div className='py-20 text-center'>
+								<div className='tv-wash mt-6 rounded-[var(--dv-r)] px-6 py-20 text-center'>
 									<p className='font-title text-base font-medium text-[var(--ink)]'>
 										Nothing matches this view.
 									</p>
@@ -669,7 +672,7 @@ export function RecordBrowser({ dataset }: { dataset: LegislationDataset }) {
 										yet cover {category.label.toLowerCase()} outside{' '}
 										{dataset.metadata.coverage.toLowerCase()}.
 									</p>
-									<button type='button' onClick={clearAll} className='bb-btn bb-btn-ghost mt-6'>
+									<button type='button' onClick={clearAll} className='dv-btn dv-btn-line mt-6'>
 										Clear everything
 									</button>
 								</div>
@@ -720,7 +723,7 @@ function Pagination({
 				event.preventDefault()
 				onGo(n)
 			}}
-			className={`num inline-flex h-9 min-w-9 items-center justify-center border px-2.5 text-[0.8125rem] transition ${
+			className={`num inline-flex size-10 items-center justify-center rounded-full border text-[0.8125rem] transition ${
 				n === current && !aria
 					? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]'
 					: 'border-[var(--rule)] text-[var(--ink-2)] hover:border-[var(--ink)] hover:text-[var(--ink)]'
@@ -741,7 +744,7 @@ function Pagination({
 				<span className='num'>{from.toLocaleString()}</span>–<span className='num'>{to.toLocaleString()}</span> of{' '}
 				<span className='num'>{count.toLocaleString()}</span>
 			</p>
-			<div className='flex flex-wrap items-center gap-1.5'>
+			<div className='flex flex-wrap items-center gap-2'>
 				{current > 1 ? link(current - 1, '←', 'Previous page') : null}
 				{pages.map((n, index) =>
 					n === 'gap' ? (

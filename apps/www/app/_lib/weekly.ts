@@ -4,6 +4,8 @@ import acts from '../../../../datasets/bills/bangsamoro_registry/baa/official_in
 import bills from '../../../../datasets/bills/bangsamoro_registry/bills/official_index.json'
 import adopted from '../../../../datasets/bills/bangsamoro_registry/resolutions/adopted_official_index.json'
 import proposed from '../../../../datasets/bills/bangsamoro_registry/resolutions/proposed_official_index.json'
+import firstBills from '../../../../datasets/bills/bangsamoro_registry/bills/first_parliament_index.json'
+import firstProposed from '../../../../datasets/bills/bangsamoro_registry/resolutions/proposed_first_parliament_index.json'
 
 /* ============================================================
    What changed this week
@@ -57,6 +59,13 @@ const measureEvents: MeasureEvent[] = (() => {
 	}
 	add('Bill', bills.bills as Raw[], '/bills')
 	add('Resolution', proposed.measures as Raw[], '/resolutions/proposed')
+	// The First Parliament's own (from 24 November 2026), numbered from 1 again: each links to Parliament's own page.
+	for (const [kind, list] of [['Bill', firstBills.bills], ['Resolution', firstProposed.measures]] as const)
+		for (const m of list as (Raw & { url?: string })[])
+			for (const h of m.history ?? []) {
+				const l = line(h)
+				if (l && m.url) out.push({ kind, number: m.number, title: sentence(m.title), stage: l.stage, date: l.date, href: m.url })
+			}
 	// Acts and adopted resolutions carry one date: the day they became law or were adopted.
 	for (const a of acts.acts as Raw[]) {
 		const d = a.date_ratified || (a.as_of && line(`x – ${a.as_of}`)?.date)

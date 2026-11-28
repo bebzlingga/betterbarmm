@@ -58,10 +58,10 @@ export function SectorBars({ items }: { items: FilterOption[] }) {
 							aria-hidden='true'
 							// The full track in a very light ink, so the unfilled part of each
 							// bar still reads as the scale the filled part is measured against.
-							className='order-last col-span-2 self-center bg-[color-mix(in_srgb,var(--ink)_5%,transparent)] sm:order-none sm:col-span-1'
+							className='order-last col-span-2 self-center overflow-hidden rounded-full bg-[color-mix(in_srgb,var(--ink)_6%,transparent)] sm:order-none sm:col-span-1'
 						>
 							<span
-								className='block h-1.5 bg-[var(--funnel-3)]'
+								className='block h-2 rounded-full bg-[var(--funnel-3)]'
 								style={{ width: `${width}%` }}
 							/>
 						</dd>

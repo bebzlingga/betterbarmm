@@ -313,3 +313,326 @@
 .finder-hit:last-child {
   border-bottom: 0;
 }
+
+/* ============================================================
+   The travel workspace's look, across the registry (user decision)
+
+   As the landing site's (apps/www/app/globals.css, which has it from
+   travel): every page opens on the brand crimson and its lattice, up
+   under both bars, which run clear over it; rounded cards and pill
+   controls; warm washed bands; the travel footer. The bars go clear on
+   their own over any page that opens on a `.dv-hero` (`:has`).
+   ============================================================ */
+
+:root {
+  --dv-r: 1.25rem;
+  --dv-gutter: max(1.5rem, calc((100vw - var(--bb-page-width)) / 2 + 2rem));
+  --tv-nav-h: calc(var(--site-header-h) + 2.25rem);
+}
+/* The masthead scrolls away with the page, as travel's does, so nothing sticking to the top offsets itself by it. */
+:root,
+:root[data-header-hidden="true"] {
+  --sticky-top: 0px;
+}
+
+/* ---- The header: the crimson, up under both bars. Its tokens are the brand band's own (ui's .brand-bg), restated
+   because this comes later. ---- */
+.dv-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: calc(-1 * var(--tv-nav-h) - 1px);
+  min-height: clamp(24rem, 58svh, 36rem);
+  color: #fff;
+  --ink: #fff;
+  --paper: #8a2418;
+  --paper-2: #7c2015;
+  --paper-3: #6b1a11;
+  --ink-2: rgba(255, 255, 255, 0.82);
+  --ink-3: rgba(255, 255, 255, 0.72);
+  --ink-mute: rgba(255, 255, 255, 0.62);
+  --rule: rgba(255, 255, 255, 0.28);
+  --rule-soft: rgba(255, 255, 255, 0.16);
+  --brass: #f0c98a;
+  --brass-line: rgba(240, 201, 138, 0.42);
+  background: var(--paper);
+}
+.dv-hero-tall { min-height: clamp(36rem, 86svh, 54rem); }
+.dv-hero-auto { min-height: 0; }
+/* The same space above the words as below them (user decision): a header is as tall as what it holds, the bars' own
+   height added on top. Only the front page's tall header keeps a height of its own. */
+.dv-hero:not(.dv-hero-tall) { min-height: 0; }
+.dv-hero > .bb-container { --hero-pad: clamp(4.5rem, 7vw, 6.5rem); padding-top: calc(var(--tv-nav-h) + var(--hero-pad)); padding-bottom: var(--hero-pad); }
+.pg-hero-title {
+  max-width: 20ch;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6.2vw, 5.25rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: #fff;
+  text-wrap: balance;
+}
+/* A measure's official title, a sentence of forty words: a step smaller and wider. */
+.pg-hero-title-sm { max-width: 46rem; font-size: clamp(1.875rem, 3.4vw, 2.875rem); line-height: 1.08; letter-spacing: -0.03em; }
+@media (min-width: 1024px) { .pg-hero-title-sm { max-width: 62rem; } }
+.pg-hero-kicker {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #f1c453;
+}
+.dv-hero .bb-btn { border-radius: 999px; }
+
+.dv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.4rem;
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: transform 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-btn:hover { transform: translateY(-1px); }
+.dv-btn-light { background: #fff; color: #8a2418; }
+.dv-btn-glass {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  backdrop-filter: blur(12px);
+}
+.dv-btn-glass:hover { background: rgba(255, 255, 255, 0.22); }
+.dv-btn-accent { background: var(--accent); color: #fff; }
+.dv-btn-accent:hover { filter: brightness(1.1); }
+.dv-btn-line { border: 1px solid var(--rule); background: var(--paper); color: var(--ink); }
+.dv-btn-line:hover { border-color: var(--ink); }
+
+.dv-pill {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-pill:hover { border-color: var(--ink); background: var(--paper-2); }
+.dv-pill[aria-current], .dv-pill[aria-pressed='true'] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+
+.dv-section { padding-block: clamp(5rem, 10vw, 9rem); }
+.dv-section[id] { scroll-margin-top: 4rem; }
+.dv-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.dv-lede {
+  margin-top: 0.5rem;
+  max-width: 48rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--ink-3);
+}
+.dv-round {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+.dv-round:hover { border-color: var(--ink); background: var(--paper-2); }
+
+/* ---- The bars over the header: clear, on a hairline, whenever the page opens on one ---- */
+body:has(.dv-hero) .site-strip {
+  position: relative;
+  z-index: 31;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+}
+body:has(.dv-hero) .site-strip :is(.utility-bar-link, summary, nav > button) { color: rgba(255, 255, 255, 0.78); }
+body:has(.dv-hero) .site-strip :is(.utility-bar-link, summary):hover,
+body:has(.dv-hero) .site-strip summary span { color: #fff; }
+body:has(.dv-hero) .site-strip button:not(.bb-btn) { color: rgba(255, 255, 255, 0.78); }
+body:has(.dv-hero) .site-strip button:not(.bb-btn):hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: transparent;
+  backdrop-filter: none;
+  color: #fff;
+}
+body:has(.dv-hero) .site-head:not([data-menu='true']) .nav-item:not(.nav-menu *) { color: rgba(255, 255, 255, 0.8); }
+body:has(.dv-hero) .site-head:not([data-menu='true']) :is(.nav-item:hover, .nav-item[data-open='true'], .nav-item[data-active='true']):not(.nav-menu *) { color: #fff; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) .nav-item::after { background: #fff; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) .nav-item span,
+body:has(.dv-hero) .site-head:not([data-menu='true']) .nav-item svg { color: inherit; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) .text-\[var\(--ink\)\]:not(.nav-menu *) { color: #fff; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) .site-workspace { color: #f1c453; }
+body:has(.dv-hero) .site-head:not([data-menu='true']) :is(button[aria-controls], .site-find) { border-color: rgba(255, 255, 255, 0.6); color: #fff; }
+/* An open dropdown is its own paper panel: it keeps the page's ink. */
+body:has(.dv-hero) .site-head .nav-menu { color: var(--ink); }
+/* The wordmark over the crimson (user decision: logo on crimson takes the white box). */
+body:has(.dv-hero) .site-head:not([data-menu='true']) span.bg-\[\#8a2418\] { background: #fff; color: #8a2418; }
+/* The strip's Contribute over the crimson: the inverse, as the wordmark; boxed, the strip's full height, no border. */
+body:has(.dv-hero) .site-strip .bb-btn-accent { background: #fff; color: #8a2418; }
+body:has(.dv-hero) .site-strip .bb-btn-accent:hover { color: #fff; }
+.site-strip .bb-btn-accent { border: 0; }
+
+
+/* ---- The estate's buttons as pills (user decision); the strip's small Contribute stays square, flush in its bar ---- */
+.bb-btn:not(.bb-strip .bb-btn) { border-radius: 999px; padding-inline: 1.35rem; }
+
+/* ---- Dropdowns and the search field (@betterbarmm/editorial, shared, so restyled here for this app only) as pills ---- */
+div:has(> button[role='combobox'].w-full) { gap: 0.4rem; }
+div:has(> button[role='combobox'].w-full) > span[id$='-label'] {
+  padding-left: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+button[role='combobox'].w-full {
+  height: 3rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  padding-left: 1.25rem;
+  padding-right: 2.75rem;
+  font-weight: 500;
+  box-shadow: 0 10px 24px -20px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+button[role='combobox'].w-full:hover,
+button[role='combobox'].w-full[aria-expanded='true'] {
+  border-color: color-mix(in srgb, var(--ink) 45%, var(--rule));
+  box-shadow: 0 14px 30px -20px rgba(0, 0, 0, 0.5);
+}
+button[role='combobox'].w-full > svg { right: 1.1rem; color: var(--accent); }
+ul[role='listbox'][popover] {
+  margin-top: 0.25rem;
+  border-radius: 1rem;
+  padding: 0.375rem;
+  box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.4);
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--ink) 22%, transparent) transparent;
+  scrollbar-gutter: stable;
+}
+ul[role='listbox'][popover] > li { border-radius: 0.65rem; }
+ul[role='listbox'][popover] > li[aria-selected='true'] { color: var(--accent); }
+ul[role='listbox'][popover]::-webkit-scrollbar { width: 8px; }
+ul[role='listbox'][popover]::-webkit-scrollbar-track { background: transparent; margin-block: 0.75rem; }
+ul[role='listbox'][popover]::-webkit-scrollbar-thumb { border-radius: 999px; border: 2px solid transparent; background: color-mix(in srgb, var(--ink) 22%, transparent) padding-box; }
+label:has(> span.h-10.border > input[type='search']) { gap: 0.4rem; }
+label:has(> span.h-10.border > input[type='search']) > span:first-child {
+  padding-left: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+label > span.h-10.border:has(> input[type='search']) {
+  height: 3rem;
+  border-radius: 999px;
+  background: var(--paper);
+  padding-inline: 1.25rem;
+  box-shadow: 0 10px 24px -20px rgba(0, 0, 0, 0.45);
+}
+
+/* ---- Rounded cards, and warm bands ---- */
+.tv-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  border-radius: var(--dv-r);
+  background: var(--paper);
+  padding: 1.5rem 1.6rem;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+}
+a.tv-card:hover,
+.tv-card:has(a.tv-card-link:hover) {
+  border-color: color-mix(in srgb, var(--ink) 30%, var(--rule));
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.45);
+  transform: translateY(-2px);
+}
+.tv-ask,
+.tv-wash {
+  background:
+    radial-gradient(40rem 22rem at 0% 0%, color-mix(in srgb, #d4a72c 14%, transparent), transparent 70%),
+    radial-gradient(44rem 24rem at 100% 100%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--accent) 5%, var(--paper));
+}
+.tv-wash-flip {
+  background:
+    radial-gradient(40rem 22rem at 100% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%),
+    radial-gradient(44rem 24rem at 0% 100%, color-mix(in srgb, #d4a72c 12%, transparent), transparent 70%),
+    color-mix(in srgb, var(--accent) 4%, var(--paper));
+}
+
+/* ---- The footer: a deep ground lit from one corner, the region's name large across the foot ---- */
+.tv-footer {
+  --tv-footer-ground: #0d1216;
+  background:
+    radial-gradient(60rem 30rem at 85% 0%, rgba(212, 167, 44, 0.14), transparent 60%),
+    radial-gradient(50rem 30rem at 0% 0%, rgba(91, 42, 110, 0.3), transparent 60%),
+    var(--tv-footer-ground);
+}
+.tv-footer-word {
+  font-family: var(--font-display);
+  font-size: 17vw;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  background-image: linear-gradient(100deg, #ffd34d 0%, #ff6b5e 36%, #c98bff 70%, #7fe07a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 8px transparent;
+  -webkit-text-fill-color: var(--tv-footer-ground);
+  paint-order: stroke fill;
+  white-space: nowrap;
+}
+.tv-footer-lattice { background: none; -webkit-text-stroke: 0; }
+.tv-footer-lattice > span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---- Motion, as travel's: opacity only, large screens only, filled backwards; nothing page-sized kept on a phone ---- */
+.page-enter { animation: none; }
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) and (hover: hover) {
+  .page-enter { animation: tv-page-fade 0.38s ease-out backwards; }
+  @supports (animation-timeline: view()) {
+    .dv-section, .tv-ask {
+      animation: tv-rise linear backwards;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}
+@keyframes tv-page-fade { from { opacity: 0; } }
+@keyframes tv-rise { from { opacity: 0; transform: translateY(28px); } }
+footer.tv-footer { content-visibility: auto; contain-intrinsic-size: auto 900px; }
+@media (prefers-reduced-motion: reduce) {
+  .dv-btn, .tv-card { transition: none; }
+}
+/* A phone's memory (travel's Safari crash): no blur behind glass buttons. */
+@media (max-width: 1023px) {
+  .dv-btn-glass { backdrop-filter: none; background: rgba(10, 14, 18, 0.25); }
+}

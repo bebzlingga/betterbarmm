@@ -347,3 +347,36 @@ export function getOfficialMeasuresMeta(): {
 		).length,
 	}
 }
+
+/* ---- The First Parliament's own measures ----
+   Since 30 October 2026 Parliament's bills and proposed-resolutions listings hold the First Parliament's measures
+   only, numbered from 1 again. They are captured into files of their own (datasets/bills/scripts/
+   fetch_measure_authors.py, `bills-first` and `proposed-resolutions-first`) so they never collide with the
+   Transition Authority's of the same number. The registry has no record pages for them yet; each links to
+   Parliament's own page. */
+export type FirstParliamentMeasure = {
+	kind: 'Bill' | 'Resolution'
+	number: number
+	title: string
+	url: string
+	status: string
+	history: string[]
+	principalAuthors: string[]
+}
+
+export function getFirstParliamentMeasures(): FirstParliamentMeasure[] {
+	const read = (file: string, key: 'bills' | 'measures', kind: FirstParliamentMeasure['kind']) =>
+		(readJson<Record<string, RawMeasure[]>>(path.join(DATASET_ROOT, file))?.[key] ?? []).map((raw) => ({
+			kind,
+			number: Number(raw.number),
+			title: toStringValue(raw.title),
+			url: toStringValue(raw.url),
+			status: toStringValue(raw.status),
+			history: toStringArray(raw.history),
+			principalAuthors: toStringArray(raw.principal_authors),
+		}))
+	return [
+		...read('bangsamoro_registry/bills/first_parliament_index.json', 'bills', 'Bill'),
+		...read('bangsamoro_registry/resolutions/proposed_first_parliament_index.json', 'measures', 'Resolution'),
+	].filter((m) => Number.isFinite(m.number) && m.title)
+}

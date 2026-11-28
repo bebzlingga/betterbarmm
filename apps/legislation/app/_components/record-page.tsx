@@ -1,3 +1,4 @@
+import { RssIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import type { CategorySlug } from '../_lib/categories'
@@ -50,11 +51,14 @@ export function recordMetadata(category: CategorySlug, raw: string): Metadata {
 /** A feed link, for a reader who wants to hear when this moves. */
 export function FollowFeed({ href, what }: { href: string; what: string }) {
 	return (
-		<div className='bb-container pb-16 text-[0.8125rem] text-[var(--ink-3)]'>
-			<a href={href} className='rule-link font-semibold text-[var(--ink)]'>
-				Follow {what} by RSS
-			</a>{' '}
-			· each time Parliament records a new stage. Paste the link into a feed reader, or an RSS-to-email service for alerts by email.
+		<div className='bb-container pb-20'>
+			<p className='flex flex-wrap items-center gap-x-4 gap-y-2 rounded-[var(--dv-r)] bg-[var(--paper-2)] px-5 py-4 text-[0.875rem] text-[var(--ink-3)] sm:px-6'>
+				<a href={href} className='dv-pill !bg-[var(--paper)] !text-[0.8125rem] font-semibold'>
+					<RssIcon size={15} weight='bold' aria-hidden='true' className='text-[var(--accent)]' />
+					Follow {what} by RSS
+				</a>
+				<span>Each time Parliament records a new stage. Paste the link into a feed reader, or an RSS-to-email service for alerts by email.</span>
+			</p>
 		</div>
 	)
 }

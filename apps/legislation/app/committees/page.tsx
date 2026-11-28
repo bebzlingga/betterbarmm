@@ -12,6 +12,7 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { CommitteeIcon } from '../_components/committee-icon'
 import { BandSectionTitle, RegistryBand } from '../_components/registry-band'
 import { Reveal } from '../_components/reveal'
 import { getCommitteesDataset, type Committee } from '../_lib/committees-data'
@@ -124,10 +125,11 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 			   from the edge and the line got shorter on the screen with the least room
 			   for it. From `sm`, where two cards share a row and a card needs its own
 			   edges, the padding comes back. */
-			className='row-in group relative flex h-full flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
+			className='row-in group relative flex h-full flex-col overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
 		>
-			<div className='flex flex-1 flex-col p-6'>
-			<h3 className='text-[1.1875rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
+			<div className='flex flex-1 flex-col p-6 sm:p-7'>
+			<CommitteeIcon name={committee.name} className='mb-5 size-12 transition duration-300 group-hover:bg-[var(--accent)] group-hover:text-white' />
+			<h3 className='font-[family-name:var(--font-display)] text-[1.1875rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)] group-hover:text-[var(--accent)]'>
 				<Link href={`/committees/${committee.slug}`} className='after:absolute after:inset-0 after:content-[""]'>
 					{committee.name}
 				</Link>
@@ -178,7 +180,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 						<span className='group-open:hidden'>In the Rules’ words</span>
 						<span className='hidden group-open:inline'>Hide the Rules’ words</span>
 					</summary>
-					<p className='mt-2 bg-[var(--paper-2)] px-3 py-2 meta'>{committee.jurisdiction}</p>
+					<p className='mt-2 rounded-xl bg-[var(--paper-2)] px-4 py-3 meta'>{committee.jurisdiction}</p>
 				</details>
 			) : null}
 
@@ -199,7 +201,7 @@ function CommitteeCard({ committee, index }: { committee: Committee; index: numb
 			</div>
 			</div>
 			{/* The way in, filling crimson with the card's hover. */}
-			<span className='flex items-center justify-between gap-3 border-t border-[var(--rule)] px-6 py-3 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'>
+			<span className='flex items-center justify-between gap-3 border-t border-[var(--rule-soft)] px-6 py-3.5 text-[0.8125rem] font-semibold text-[var(--ink-2)] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white sm:px-7'>
 				Open the committee
 				<svg className='size-3.5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
 					<path d='M5 12h14M13 6l6 6-6 6' />
@@ -299,13 +301,15 @@ export default function CommitteesPage() {
 				<section
 					key={group.key}
 					aria-labelledby={`group-${group.key}`}
-					className={`bb-container ${groupIndex ? 'pb-[clamp(3.75rem,7vw,6.5rem)]' : 'py-[clamp(3.75rem,7vw,6.5rem)]'}`}
+					className={groupIndex ? 'tv-wash' : ''}
 				>
-					<BandSectionTitle title={group.title} count={group.committees.length} lead={group.note} />
-					<div className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-						{group.committees.map((committee, index) => (
-							<CommitteeCard key={committee.slug} committee={committee} index={index} />
-						))}
+					<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
+						<BandSectionTitle title={group.title} count={group.committees.length} lead={group.note} />
+						<div className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
+							{group.committees.map((committee, index) => (
+								<CommitteeCard key={committee.slug} committee={committee} index={index} />
+							))}
+						</div>
 					</div>
 				</section>
 			))}
@@ -316,13 +320,13 @@ export default function CommitteesPage() {
 			    rather than another one. The six verbs are what a committee is for and
 			    fit on one screen; the steps further down are what it does to one
 			    measure and take longer to read. */}
-			<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
-				<div className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section>
+				<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 					<Reveal>
 						<div className='grid items-center gap-10 lg:grid-cols-[1fr_auto]'>
 							<div>
-								<p className='eyebrow'>What a committee does</p>
-								<h2 className='section-title mt-4 max-w-3xl'>Six jobs, on one subject each.</h2>
+								<p className='pg-hero-kicker !text-[var(--accent)]'>What a committee does</p>
+								<h2 className='dv-title mt-4 max-w-3xl'>Six jobs, on one subject each.</h2>
 								<p className='mt-5 max-w-2xl bb-body text-[var(--ink-2)]'>
 									A committee is a group of Members of the Parliament organised around one area of
 									concern, sitting around one table with whoever it has called to be heard. Every
@@ -335,11 +339,11 @@ export default function CommitteesPage() {
 						</div>
 					</Reveal>
 
-					<div className='mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+					<div className='mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 						{functions.map(({ verb, detail, Icon }, index) => (
 							<Reveal key={verb} delay={index * 50}>
-								<div className='flex h-full gap-4 bg-[var(--paper)] p-5 sm:p-6'>
-									<span className='grid size-11 shrink-0 place-items-center bg-[var(--accent-soft)] text-[var(--accent)]'>
+								<div className='tv-card h-full !flex-row gap-5 sm:!p-7'>
+									<span className='grid size-12 shrink-0 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
 										<Icon size={22} weight='duotone' aria-hidden='true' />
 									</span>
 									<div>
@@ -354,48 +358,50 @@ export default function CommitteesPage() {
 			</section>
 
 			{/* ---- Who sits on a committee ---- */}
-			<section className='bb-container border-t border-[var(--rule)] py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='tv-wash-flip'>
+				<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<Reveal>
 					<div>
-						<p className='eyebrow'>Who sits on a committee</p>
-						<h2 className='section-title mt-4 max-w-3xl'>A chair, vice-chairs, members, and the leadership.</h2>
+						<p className='pg-hero-kicker !text-[var(--accent)]'>Who sits on a committee</p>
+						<h2 className='dv-title mt-4 max-w-3xl'>A chair, vice-chairs, members, and the leadership.</h2>
 					</div>
 				</Reveal>
 
-				<div className='mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4'>
+				<div className='mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
 					{roles.map(({ title, Icon, detail, figure }, index) => (
 						<Reveal key={title} delay={index * 60}>
-							<div className='border-t border-[var(--rule-soft)] pt-5'>
-								<Icon size={26} weight='duotone' className='text-[var(--accent)]' aria-hidden='true' />
-								<p className='item-title mt-3 font-title'>{title}</p>
+							<div className='tv-card h-full sm:!p-7'>
+								<span className='grid size-12 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
+									<Icon size={24} weight='duotone' aria-hidden='true' />
+								</span>
+								<p className='item-title mt-5 font-title'>{title}</p>
 								<p className='mt-2 bb-body text-[var(--ink-2)]'>{detail}</p>
-								{figure ? <p className='mt-3 meta'>{figure}</p> : null}
+								{figure ? <p className='mt-auto pt-4 meta'>{figure}</p> : null}
 							</div>
 						</Reveal>
 					))}
 				</div>
+				</div>
 			</section>
 
 			{/* ---- What happens to a measure ---- */}
-			<section className='bb-container border-t border-[var(--rule)] py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<Reveal>
 					<div>
-						<p className='eyebrow'>What happens to a measure</p>
-						<h2 className='section-title mt-4 max-w-3xl'>From referral to the report, and after it.</h2>
+						<p className='pg-hero-kicker !text-[var(--accent)]'>What happens to a measure</p>
+						<h2 className='dv-title mt-4 max-w-3xl'>From referral to the report, and after it.</h2>
 					</div>
 				</Reveal>
 
-				<div className='mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3'>
+				<div className='mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 					{stages.map((stage, index) => (
 						<Reveal key={stage.label} delay={index * 60}>
-							<div className='border-t border-[var(--rule-soft)] pt-5'>
+							<div className='tv-card h-full sm:!p-7'>
 								{/* The numeral leads the label on one line — it counts the
 								    step, so it belongs to the heading rather than sitting
 								    above it as a label of its own. */}
-								<p className='item-title font-title'>
-									<span className='num text-[var(--ink-mute)]'>{String(index + 1).padStart(2, '0')}.</span>{' '}
-									{stage.label}
-								</p>
+								<span className='num font-[family-name:var(--font-display)] text-[2rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{String(index + 1).padStart(2, '0')}</span>
+								<p className='item-title mt-4 font-title'>{stage.label}</p>
 								<p className='mt-2.5 bb-body text-[var(--ink-2)]'>{stage.detail}</p>
 							</div>
 						</Reveal>
@@ -405,8 +411,8 @@ export default function CommitteesPage() {
 				{/* The one thing on this page a reader can act on, so it is set apart
 				    from the steps rather than being the sixth of them. */}
 				<Reveal>
-					<div className='mt-12 border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-6 py-5 sm:px-8 sm:py-6'>
-						<p className='eyebrow'>You can go</p>
+					<div className='mt-12 rounded-[var(--dv-r)] bg-[var(--accent)] px-7 py-7 text-white sm:px-10 sm:py-9 [&_.bb-body]:!text-white/85'>
+						<p className='pg-hero-kicker'>You can go</p>
 						<p className='mt-3 bb-body text-[var(--ink-2)]'>
 							Committee hearings and consultations are open to the general public. A committee holds
 							them to gather facts and hear views on a measure before it reports back, which makes this

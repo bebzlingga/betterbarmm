@@ -11,7 +11,7 @@ export type Stat = {
 }
 
 /** How many a year, as a small line beside the figure: the latest year dashed while it is not over. */
-function Spark({ series }: { series: { year: number; value: number }[] }) {
+function Spark({ series, stroke = '#f1c453' }: { series: { year: number; value: number }[]; stroke?: string }) {
 	const top = Math.max(...series.map((s) => s.value), 1)
 	const current = new Date().getFullYear()
 	const W = 100
@@ -24,9 +24,9 @@ function Spark({ series }: { series: { year: number; value: number }[] }) {
 	return (
 		<svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio='none' className='h-7 w-16 shrink-0 overflow-visible' aria-hidden='true'>
 			<title>{`${series[0]?.year}–${series.at(-1)?.year}`}</title>
-			<polyline points={solid.join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeLinejoin='round' strokeLinecap='round' vectorEffect='non-scaling-stroke' />
+			<polyline points={solid.join(' ')} fill='none' stroke={stroke} strokeWidth='2' strokeLinejoin='round' strokeLinecap='round' vectorEffect='non-scaling-stroke' />
 			{open ? (
-				<polyline points={pts.slice(-2).join(' ')} fill='none' stroke='var(--accent)' strokeWidth='2' strokeDasharray='3 3' strokeLinecap='round' vectorEffect='non-scaling-stroke' opacity='0.6' />
+				<polyline points={pts.slice(-2).join(' ')} fill='none' stroke={stroke} strokeWidth='2' strokeDasharray='3 3' strokeLinecap='round' vectorEffect='non-scaling-stroke' opacity='0.6' />
 			) : null}
 		</svg>
 	)
@@ -69,31 +69,26 @@ function Figure({ value }: { value: string | number }) {
 /** Every figure on one row at `lg`, however many there are. Literal, so Tailwind sees each class. */
 const LG_COLUMNS: Record<number, string> = { 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5: 'lg:grid-cols-5', 6: 'lg:grid-cols-6' }
 
-export function StatFigures({ stats }: { stats: Stat[] }) {
-	// One strip (user decision: the three-across grid took a screen of its own): every figure in a row on a wide
-	// screen, a hairline between them, the trend drawn small beside the number and the caption held to a line.
-	//
-	// Each cell draws its own right and bottom rule, and the grid runs a pixel past a clipping frame on both
-	// sides, so the last column's right rule and the last row's bottom rule fall outside it. That holds at every
-	// column count, where per-breakpoint `nth-child` resets left a rule hanging off the end of a row.
+export function StatFigures({ stats, onPaper = false }: { stats: Stat[]; /** Under the header, on the page's paper, rather than over the crimson. */ onPaper?: boolean }) {
+	// Each figure on a rounded tile of its own over the crimson header (user decision: the travel look), every one in a
+	// row on a wide screen, the trend drawn small beside the number and the caption held to two lines. A faint white
+	// ground and ring, no blur behind them (a phone's memory: no backdrop blur on repeated cards).
 	return (
-		<div className='overflow-hidden border-y border-[color-mix(in_oklab,var(--rule)_45%,transparent)]'>
-			<Stagger gap={0.06} className={`-mb-px -mr-px grid grid-cols-2 sm:grid-cols-3 ${LG_COLUMNS[stats.length] ?? 'lg:grid-cols-5'}`}>
-				{stats.map((stat) => (
-					<StaggerItem key={stat.label} className='border-b border-r border-[color-mix(in_oklab,var(--rule)_45%,transparent)] px-4 py-5 lg:px-6'>
-						<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--brass)]'>{stat.label}</p>
-						<div className='mt-2 flex items-end justify-between gap-3'>
-							<p className='text-[1.875rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>
-								<Figure value={stat.value} />
-							</p>
-							{stat.series?.length ? <Spark series={stat.series} /> : null}
-						</div>
-						<p className='mt-2 line-clamp-2 text-[0.75rem] leading-[1.45] text-[var(--ink-3)]' title={stat.marks?.join(', ')}>
-							{stat.detail}
+		<Stagger gap={0.06} className={`grid grid-cols-2 gap-3 sm:grid-cols-3 max-sm:[&>:last-child:nth-child(odd)]:col-span-2 ${LG_COLUMNS[stats.length] ?? 'lg:grid-cols-5'}`}>
+			{stats.map((stat) => (
+				<StaggerItem key={stat.label} className={`flex flex-col rounded-[var(--dv-r)] p-5 lg:p-6 ${onPaper ? 'border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)]' : 'bg-white/[0.08] ring-1 ring-inset ring-white/15'}`}>
+					<p className={`text-[0.65625rem] font-semibold uppercase tracking-[0.12em] ${onPaper ? 'text-[var(--accent)]' : 'text-[var(--brass)]'}`}>{stat.label}</p>
+					<div className='mt-3 flex items-end justify-between gap-3'>
+						<p className={`num font-[family-name:var(--font-display)] text-[2.125rem] font-extrabold leading-none tracking-[-0.035em] ${onPaper ? 'text-[var(--ink)]' : 'text-white'}`}>
+							<Figure value={stat.value} />
 						</p>
-					</StaggerItem>
-				))}
-			</Stagger>
-		</div>
+						{stat.series?.length ? <Spark series={stat.series} stroke={onPaper ? 'var(--accent)' : undefined} /> : null}
+					</div>
+					<p className={`mt-3 line-clamp-2 text-[0.78125rem] leading-[1.5] ${onPaper ? 'text-[var(--ink-3)]' : 'text-white/70'}`} title={stat.marks?.join(', ')}>
+						{stat.detail}
+					</p>
+				</StaggerItem>
+			))}
+		</Stagger>
 	)
 }

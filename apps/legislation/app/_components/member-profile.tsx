@@ -254,22 +254,22 @@ function Biography({ member }: { member: Member }) {
 }
 
 /** Column one: who this person is. */
-export function MemberIdentity({ member, titleId }: { member: Member; titleId?: string }) {
+export function MemberIdentity({ member, titleId, inHeader = false }: { member: Member; titleId?: string; /** The face and name are on the page's header already. */ inHeader?: boolean }) {
 	return (
-		<div>
-			<MemberAvatar name={member.displayName} src={member.photoUrl} size='lg' />
-
-			<h1
-				id={titleId}
-				className='mt-6 text-[1.75rem] font-bold leading-[1.1] text-[var(--ink)] sm:text-[2rem]'
-			>
-				{member.displayName}
-			</h1>
+		<div className={inHeader ? 'rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-8' : ''}>
+			{inHeader ? null : (
+				<>
+					<MemberAvatar name={member.displayName} src={member.photoUrl} size='lg' />
+					<h1 id={titleId} className='mt-6 text-[1.75rem] font-bold leading-[1.1] text-[var(--ink)] sm:text-[2rem]'>
+						{member.displayName}
+					</h1>
+				</>
+			)}
 
 			{/* Standing, office, and authorship in one row. The roster form of the
 			    name used to sit here, which only restated the heading above it in
 			    capitals — these say something the name doesn't. */}
-			<div className='mt-4 flex flex-wrap gap-1.5'>
+			<div className={`${inHeader ? '' : 'mt-4 '}flex flex-wrap gap-1.5`}>
 				<span
 					className={`badge badge-plain ${
 						member.isInstitution ? 'badge-early' : member.isIncumbent ? 'badge-done' : 'badge-idle'
@@ -338,7 +338,7 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 			{/* No rule under the name — the badges already close that block, and a
 			    separator here only cuts the person in half. Space does the work. */}
 			{member.isInstitution ? null : (
-				<div className='mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-1'>
+				<div className='mt-8 grid gap-6 border-t border-[var(--rule-soft)] pt-8 sm:grid-cols-2 lg:grid-cols-1'>
 					{member.elected ? (
 						<Fact
 							label='Elected 14 September 2026'
@@ -384,14 +384,14 @@ export function MemberIdentity({ member, titleId }: { member: Member; titleId?: 
 			)}
 
 			{member.profileUrl || member.socialMediaUrl ? (
-				<div className='mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm'>
+				<div className='mt-8 flex flex-wrap gap-2'>
 					{member.profileUrl ? (
-						<a href={member.profileUrl} target='_blank' rel='noreferrer' className='rule-link'>
+						<a href={member.profileUrl} target='_blank' rel='noreferrer' className='dv-pill'>
 							Official profile
 						</a>
 					) : null}
 					{member.socialMediaUrl ? (
-						<a href={member.socialMediaUrl} target='_blank' rel='noreferrer' className='rule-link'>
+						<a href={member.socialMediaUrl} target='_blank' rel='noreferrer' className='dv-pill'>
 							Social media
 						</a>
 					) : null}

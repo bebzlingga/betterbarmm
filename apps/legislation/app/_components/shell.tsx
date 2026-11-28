@@ -1,5 +1,4 @@
-import { CtaPanel } from '@betterbarmm/editorial'
-import { SiteFooter } from './site-footer'
+import { LegislationFooter } from './legislation-footer'
 import { RegistryFinder } from './registry-finder'
 import { SiteNav } from './site-nav'
 
@@ -26,18 +25,8 @@ export function Shell({ children }: { children: React.ReactNode }) {
 			    reason as the panel below — the shared rules are unlayered. */}
 			<main className='[&_.bb-body]:text-[0.9375rem]! [&_.section-lead]:text-[0.9375rem]!'>{children}</main>
 
-			{/* The project's ask, not the registry's. Same panel, same words, at the
-			    foot of every page of every app — one project, said once. */}
-			{/* "Get involved" on the same rhythm as every section above it, and as the
-			    budget workspace's panel. CtaPanel pads itself with the estate's
-			    larger `.bb-section` and takes no className, so it is reached
-			    through a wrapper — marked important, because `.bb-section` is
-			    unlayered CSS and beats any Tailwind utility otherwise. */}
-			<div className='[&_.bb-section]:py-[clamp(3.75rem,7vw,6.5rem)]!'>
-				<CtaPanel />
-			</div>
-
-			<SiteFooter />
+			{/* The ask on a warm band, then the registry's footer, as travel's pages close (user decision: the travel look). */}
+			<LegislationFooter />
 		</div>
 		</RegistryFinder>
 	)

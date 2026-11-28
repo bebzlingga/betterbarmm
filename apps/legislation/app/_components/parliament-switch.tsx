@@ -1,3 +1,4 @@
+import { BankIcon, ClockCounterClockwiseIcon } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
 
 /* ============================================================
@@ -24,7 +25,8 @@ const PAGES = [
 export function ParliamentSwitch({ current }: { current: (typeof PAGES)[number]['href'] }) {
 	return (
 		<nav aria-label='Which Parliament' className='bb-container pt-10'>
-			<div className='flex gap-6 overflow-x-auto sm:gap-8 border-b border-[var(--rule)] [scrollbar-width:none]'>
+			{/* Two rounded tabs (user decision: the travel look), the rulebook on show filled. */}
+			<div className='flex flex-wrap gap-3'>
 				{PAGES.map((page) => {
 					const on = page.href === current
 					return (
@@ -32,12 +34,15 @@ export function ParliamentSwitch({ current }: { current: (typeof PAGES)[number][
 							key={page.href}
 							href={page.href}
 							aria-current={on ? 'page' : undefined}
-							className={`-mb-px shrink-0 border-b-2 pb-4 transition-colors ${on ? 'border-[var(--accent)]' : 'border-transparent hover:border-[var(--rule)]'}`}
+							className={`flex shrink-0 items-center gap-3 rounded-full border py-2.5 pl-2.5 pr-6 transition ${on ? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]' : 'border-[var(--rule)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--ink)]'}`}
 						>
-							<span className={`block text-[1.0625rem] font-extrabold tracking-[-0.015em] ${on ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}>
-								{page.label}
+							<span className={`grid size-10 place-items-center rounded-full ${on ? 'bg-white/15' : 'bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'}`}>
+								{page.href === '/how-parliament-works' ? <BankIcon size={20} weight='duotone' aria-hidden='true' /> : <ClockCounterClockwiseIcon size={20} weight='duotone' aria-hidden='true' />}
 							</span>
-							<span className='mt-0.5 block text-[0.75rem] text-[var(--ink-mute)]'>{page.note}</span>
+							<span>
+								<span className='block font-[family-name:var(--font-display)] text-[1rem] font-bold tracking-[-0.01em]'>{page.label}</span>
+								<span className={`block text-[0.75rem] ${on ? 'opacity-70' : 'text-[var(--ink-3)]'}`}>{page.note}</span>
+							</span>
 						</Link>
 					)
 				})}

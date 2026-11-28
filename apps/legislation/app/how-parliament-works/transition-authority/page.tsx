@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { PageHeader } from '../../_components/page-header'
 import { SittingCalendar, VoteComparison } from '../../_components/parliament-diagrams'
-import { Block, Point, Source } from '../../_components/explainer'
+import { Block, Head, Point, Source, SourcePill } from '../../_components/explainer'
 import { MemberSections } from '../../_components/member-sections'
 import { ProcessSections } from '../../_components/process-sections'
 import { ParliamentSwitch } from '../../_components/parliament-switch'
@@ -67,8 +67,8 @@ const SOURCES = {
 
 function Term({ term, children }: { term: string; children: React.ReactNode }) {
 	return (
-		<div className='border-t border-[var(--rule-soft)] py-5 first:border-t-0 first:pt-0'>
-			<dt className='item-title text-[var(--ink)]'>{term}</dt>
+		<div className='rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+			<dt className='font-[family-name:var(--font-display)] text-[1.0625rem] font-bold tracking-[-0.01em] text-[var(--ink)]'>{term}</dt>
 			<dd className='copy mt-1.5 text-[var(--ink-2)]'>{children}</dd>
 		</div>
 	)
@@ -221,7 +221,6 @@ export default function TransitionAuthorityRulesPage() {
 				>
 					<SittingCalendar />
 
-					<div className='mt-12'>
 						<Point title='Eight afternoons a month' cite='Rules, Rule VI, Section 4'>
 							Plenary sittings run Monday to Thursday of the third and fourth week only, starting at
 							one in the afternoon, unless Parliament decides otherwise. Committee hearings and
@@ -257,7 +256,6 @@ export default function TransitionAuthorityRulesPage() {
 				&mdash; or on the Speaker&rsquo;s own initiative, even while the Parliament is in
 				recess.
 			</Point>
-					</div>
 				</Block>
 
 				<Block
@@ -415,15 +413,14 @@ export default function TransitionAuthorityRulesPage() {
 					{/* The vocabulary a reader has to carry through the page. Every term
 					    here is also explained where it first appears — this is the place
 					    to look it up again, not the place it is first met. */}
-					<section id='glossary' className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
-						<p className='eyebrow'>The words they use</p>
-						<h2 className='section-title mt-4 max-w-3xl'>What the words mean</h2>
-						<p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>
-							Parliament&rsquo;s own words, in ordinary ones. These are the terms you will run into
-							in the rulebook, in the Journal, and in a committee report.
-						</p>
+					<section id='glossary' className='scroll-mt-24 font-sans'>
+						<Head
+							label='The words they use'
+							title='What the words mean'
+							lead='Parliament’s own words, in ordinary ones. These are the terms you will run into in the rulebook, in the Journal, and in a committee report.'
+						/>
 
-						<dl className='mt-10 max-w-4xl'>
+						<dl className='mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2'>
 							<Term term='Measure'>
 								The catch-all word for anything Parliament takes up &mdash; a bill or a resolution.
 							</Term>
@@ -489,21 +486,17 @@ export default function TransitionAuthorityRulesPage() {
 				<Reveal>
 					{/* The last entry in the index, so the sources are reachable from the
 					    top of the page rather than only by scrolling to the end. */}
-					<section id='sources' className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)]'>
-						<p className='label label-strong'>Read the originals</p>
-						<div className='mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm'>
-							<Source href={SOURCES.rules}>
-								Rules, Procedures, and Practices of the BTA Parliament
-							</Source>
-							<Source href={SOURCES.rulesPdf}>Full rulebook (PDF)</Source>
-							<Source href={SOURCES.process}>Legislative process</Source>
-							<Source href={SOURCES.organicLaw}>Organic Law (RA 11054)</Source>
-							<Source href={SOURCES.schedules}>Sitting schedules</Source>
-							<Link href='/acts/85' className='rule-link'>
-								FY 2026 budget (BAA 85)
-							</Link>
+					<section id='sources' className='scroll-mt-24'>
+						<Head label='Read the originals' title='The documents behind this page' />
+						<div className='mt-8 flex flex-wrap gap-2.5'>
+							<SourcePill href={SOURCES.rules}>Rules, Procedures, and Practices of the BTA Parliament</SourcePill>
+							<SourcePill href={SOURCES.rulesPdf}>Full rulebook (PDF)</SourcePill>
+							<SourcePill href={SOURCES.process}>Legislative process</SourcePill>
+							<SourcePill href={SOURCES.organicLaw}>Organic Law (RA 11054)</SourcePill>
+							<SourcePill href={SOURCES.schedules}>Sitting schedules</SourcePill>
+							<SourcePill href='/acts/85'>FY 2026 budget (BAA 85)</SourcePill>
 						</div>
-						<p className='mt-5 max-w-3xl bb-body text-[var(--ink-3)]'>
+						<p className='mt-8 bb-body text-[var(--ink-3)]'>
 							This page puts those documents into ordinary words. It is not a replacement for them.
 							It leaves out the procedural machinery &mdash; motions, points of order, how to get
 							the floor &mdash; which matters to a member mid-debate and to nobody else. Where this

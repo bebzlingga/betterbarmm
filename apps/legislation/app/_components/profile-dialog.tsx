@@ -29,7 +29,7 @@ function Face({ photo, name }: { photo?: string; name: string }) {
 			src={photo ?? '/images/members/BTA-logo.png'}
 			alt=''
 			aria-hidden='true'
-			className={`size-11 shrink-0 border border-[var(--rule)] ${photo ? 'object-cover' : 'bg-[var(--paper-2)] object-contain p-1.5 opacity-70'}`}
+			className={`size-11 shrink-0 rounded-full ${photo ? 'object-cover object-top' : 'bg-[var(--paper-2)] object-contain p-1.5 opacity-70'}`}
 			title={name}
 		/>
 	)
@@ -86,25 +86,25 @@ export function ProfileDialog({
 				onClose={syncScroll}
 				// A click on the backdrop lands on the dialog itself.
 				onClick={(e) => e.target === e.currentTarget && dialog.current?.close()}
-				className='m-auto h-[min(92vh,60rem)] max-h-none w-[min(76rem,calc(100vw-2rem))] max-w-none flex-col overflow-hidden border border-[var(--ink)] bg-[var(--paper)] p-0 text-[var(--ink)] shadow-[0_24px_60px_-20px_rgba(0,0,0,0.5)] backdrop:bg-black/50 open:flex'
+				className='m-auto h-[min(92vh,60rem)] max-h-none w-[min(76rem,calc(100vw-2rem))] max-w-none flex-col overflow-hidden rounded-[1.75rem] bg-[var(--paper)] p-0 text-[var(--ink)] shadow-[0_30px_80px_-24px_rgba(0,0,0,0.55)] backdrop:bg-black/55 open:flex'
 			>
 				<button
 					type='button'
 					onClick={() => dialog.current?.close()}
 					aria-label='Close'
-					className='absolute right-3 top-3 z-10 grid size-9 cursor-pointer place-items-center bg-[var(--paper)] text-[var(--ink-3)] transition hover:text-[var(--ink)]'
+					className='absolute right-4 top-4 z-10 grid size-10 cursor-pointer place-items-center rounded-full bg-[var(--paper)] text-[var(--ink-2)] shadow-[0_8px_20px_-10px_rgba(0,0,0,0.4)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)]'
 				>
 					<XIcon size={18} weight='bold' aria-hidden='true' />
 				</button>
 
 				<div className='min-h-0 flex-1'>{children}</div>
 
-				<nav aria-label='Other Members' className='grid shrink-0 grid-cols-2 border-t border-[var(--rule)]'>
+				<nav aria-label='Other Members' className='grid shrink-0 grid-cols-2 gap-2 border-t border-[var(--rule-soft)] p-2'>
 					{prev ? (
 						<button
 							type='button'
 							onClick={() => go(dialog.current, prev.id)}
-							className='group flex min-w-0 cursor-pointer items-center gap-3 border-r border-[var(--rule)] px-5 py-3.5 text-left transition hover:bg-[var(--paper-2)]'
+							className='group flex min-w-0 cursor-pointer items-center gap-3 rounded-2xl px-4 py-3 text-left transition hover:bg-[var(--paper-2)]'
 						>
 							<ArrowLeftIcon size={16} className='shrink-0 text-[var(--ink-3)] group-hover:text-[var(--accent)]' aria-hidden='true' />
 							<Face photo={prev.photo} name={prev.name} />
@@ -114,13 +114,13 @@ export function ProfileDialog({
 							</span>
 						</button>
 					) : (
-						<span className='border-r border-[var(--rule)]' />
+						<span />
 					)}
 					{next ? (
 						<button
 							type='button'
 							onClick={() => go(dialog.current, next.id)}
-							className='group flex min-w-0 cursor-pointer items-center justify-end gap-3 px-5 py-3.5 text-right transition hover:bg-[var(--paper-2)]'
+							className='group flex min-w-0 cursor-pointer items-center justify-end gap-3 rounded-2xl px-4 py-3 text-right transition hover:bg-[var(--paper-2)]'
 						>
 							<span className='min-w-0'>
 								<span className='block text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-mute)]'>Next</span>

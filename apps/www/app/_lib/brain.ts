@@ -55,6 +55,10 @@ export function brain() {
 	const bills = read<{ bills: unknown[] }>('bills/bangsamoro_registry/bills/official_index.json').bills.length
 	const adopted = read<{ measures: unknown[] }>('bills/bangsamoro_registry/resolutions/adopted_official_index.json').measures.length
 	const proposed = read<{ measures: unknown[] }>('bills/bangsamoro_registry/resolutions/proposed_official_index.json').measures.length
+	// The First Parliament's own measures (from 24 November 2026), captured apart from the Transition Authority's.
+	const first =
+		read<{ bills: unknown[] }>('bills/bangsamoro_registry/bills/first_parliament_index.json').bills.length +
+		read<{ measures: unknown[] }>('bills/bangsamoro_registry/resolutions/proposed_first_parliament_index.json').measures.length
 	const code = read<{ sections: unknown[] }>('bills/blgc.json').sections.length + read<{ articles: unknown[] }>('bills/blgc-irr.json').articles.length
 	const journals = read<{ journals: unknown[] }>('bills/bangsamoro_registry/journal/sessions.json').journals.length
 	const calendar = read<{ sittings: unknown[] }>('bills/session-calendar.json').sittings.length
@@ -118,7 +122,7 @@ export function brain() {
 		{ id: 'p-plan', project: true, label: 'Plan scorecard', kind: 'workspace', note: 'The regional development plan’s targets beside the latest published figures, area by area.', href: '/development-plan' },
 		{ id: 'p-data', project: true, label: 'Open data', kind: 'workspace', note: 'The records behind every workspace as tables anyone can download, CSV and JSON, each with its source.', href: '/data' },
 
-		{ id: 'd-measures', label: 'Acts, bills & resolutions', kind: 'dataset', count: acts + bills + adopted + proposed, unit: 'measures', note: `${acts} acts, ${bills} bills, ${adopted} adopted and ${proposed} proposed resolutions, with authors and status.` },
+		{ id: 'd-measures', label: 'Acts, bills & resolutions', kind: 'dataset', count: acts + bills + adopted + proposed + first, unit: 'measures', note: `${acts} acts, ${bills} bills, ${adopted} adopted and ${proposed} proposed resolutions of the Transition Authority, and ${first} of the First Parliament's own, with authors and status.` },
 		{ id: 'd-sittings', label: 'Sittings & attendance', kind: 'dataset', count: journals + calendar, unit: 'sittings', note: `${journals} published plenary journals, with who was absent or on leave at each roll call, and the First Parliament’s calendar of ${calendar} sittings for its first regular session.` },
 		{ id: 'd-code', label: 'Local Governance Code', kind: 'dataset', count: code, unit: 'rules', note: 'The 2023 Bangsamoro Local Governance Code section by section, and its 2025 implementing rules article by article.' },
 		{ id: 'd-appropriations', label: 'Appropriations acts', kind: 'dataset', count: appropriations, unit: 'budget years', note: 'Each year’s General Appropriations Act from FY 2020, transcribed line by line.' },

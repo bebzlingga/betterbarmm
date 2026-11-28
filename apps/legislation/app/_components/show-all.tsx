@@ -32,7 +32,7 @@ export function ShowAll({ children, initial = 8, noun, as: Wrapper = 'div' }: Sh
 			<details className='group flex flex-col'>
 				{/* `.btn` alone, without `btn-quiet`: its border is already
 				    transparent, so the control reads as text with a hit area. */}
-				<summary className='btn mt-4 list-none self-center text-[var(--ink-2)] hover:text-[var(--ink)] group-open:hidden [&::-webkit-details-marker]:hidden'>
+				<summary className='btn mt-4 list-none self-center !rounded-full !border-[var(--rule)] !px-5 text-[var(--ink-2)] hover:text-[var(--ink)] group-open:hidden [&::-webkit-details-marker]:hidden'>
 					Show all {rows.length} {noun}
 					<svg
 						className='size-3.5'

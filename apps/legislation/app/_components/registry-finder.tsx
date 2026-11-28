@@ -130,12 +130,11 @@ export function RegistryFinder({ children }: { children: React.ReactNode }) {
 							animate={{ opacity: 1, y: 0, scale: 1 }}
 							exit={{ opacity: 0, y: -8, scale: 0.99 }}
 							transition={{ duration: 0.24, ease: EASE }}
-							className='mx-auto mt-[12vh] w-[min(38rem,calc(100vw-2rem))] border border-[var(--ink)] bg-[var(--paper)] shadow-[0_40px_90px_-40px_rgba(0,0,0,0.6)]'
+							className='mx-auto mt-[12vh] w-[min(40rem,calc(100vw-2rem))] overflow-hidden rounded-[1.5rem] bg-[var(--paper)] shadow-[0_40px_90px_-30px_rgba(0,0,0,0.6)]'
 						>
-							<span aria-hidden='true' className='block h-px bg-[var(--brass)]' />
-
-							<div className='flex items-center gap-3 border-b border-[var(--rule)] px-5 py-4'>
-								<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
+							
+							<div className='m-3 flex items-center gap-3 rounded-full bg-[var(--paper-2)] px-5 py-3.5'>
+								<MagnifyingGlassIcon className='size-[1.125rem] shrink-0 text-[var(--accent)]' aria-hidden='true' />
 								<input
 									ref={inputRef}
 									value={query}
@@ -150,12 +149,12 @@ export function RegistryFinder({ children }: { children: React.ReactNode }) {
 									placeholder='Bill, act, resolution or member…'
 									className='min-w-0 flex-1 bg-transparent text-[1rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 								/>
-								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+								<kbd className='hidden shrink-0 rounded-md border border-[var(--rule)] bg-[var(--paper)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 									Esc
 								</kbd>
 							</div>
 
-							<div id='finder-results' role='listbox' className='max-h-[52vh] overflow-y-auto'>
+							<div id='finder-results' role='listbox' className='max-h-[52vh] overflow-y-auto px-3 pb-2'>
 								{typed
 									? hits.map((hit, index) => (
 											<button
@@ -166,7 +165,7 @@ export function RegistryFinder({ children }: { children: React.ReactNode }) {
 												data-active={index === cursor}
 												onClick={() => go(hit)}
 												onMouseMove={() => setCursor(index)}
-												className='finder-hit'
+												className='finder-hit rounded-xl !border-b-0'
 											>
 												<span className='min-w-0 flex-1 text-left'>
 													<span className='block truncate text-[0.9375rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
@@ -207,7 +206,7 @@ export function RegistryFinder({ children }: { children: React.ReactNode }) {
 								) : null}
 							</div>
 
-							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule)] px-5 py-3 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
+							<div className='flex items-center justify-between gap-4 border-t border-[var(--rule-soft)] px-6 py-3.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>
 								<span>Bills, acts, resolutions and members</span>
 								<span className='hidden sm:block'>↑↓ to move · ↵ to open</span>
 							</div>

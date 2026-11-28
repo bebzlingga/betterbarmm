@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getFirstParliament, type FirstParliamentPerson } from '../../_lib/members-data'
 import { MemberAvatar } from '../../_components/member-avatar'
+import { CommitteeIcon } from '../../_components/committee-icon'
+import { Hero } from '../../_components/hero'
 import { toDisplayTitle } from '../../_lib/labels'
 import { Reveal } from '../../_components/reveal'
 import { ShowAll } from '../../_components/show-all'
@@ -52,11 +54,11 @@ function Seat({ seat }: { seat: CommitteeSeat }) {
 	)
 
 	return seat.slug ? (
-		<Link href={`/members/${seat.slug}`} className='cell flex items-center gap-3 p-3'>
+		<Link href={`/members/${seat.slug}`} className='flex items-center gap-3 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-2.5 pr-4 transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'>
 			{body}
 		</Link>
 	) : (
-		<div className='flex items-center gap-3 p-3'>{body}</div>
+		<div className='flex items-center gap-3 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] p-2.5 pr-4'>{body}</div>
 	)
 }
 
@@ -85,22 +87,61 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 	const members = committee.seats.filter((seat) => seat.role === 'Member')
 	const exOfficio = committee.seats.filter((seat) => seat.role === 'Ex-officio')
 
+	const chair = current?.chair
+	const seated = current && current.members.length > 0 ? current.members.length + current.viceChairs.length + 1 : 0
+	const referred = committee.referredBills.length + committee.referredResolutions.length
+
 	return (
-		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+		<>
+		{/* The committee on the crimson header (user decision: the travel look); its chair and its record so far on a
+		    cream card at the right. */}
+		<Hero
+			small
+			auto
+			kicker={committee.statutory ? 'Bangsamoro Parliament · statutory committee' : 'Bangsamoro Parliament · committee'}
+			title={committee.name}
+			lede={committee.inShort || undefined}
+			side={
+				<div className='rounded-[var(--dv-r)] bg-[#f6f1ea] p-6 text-[#1d1a16] shadow-[0_30px_60px_-30px_rgba(0,0,0,0.5)] sm:p-7'>
+					<div className='flex items-start gap-4'>
+						<CommitteeIcon name={committee.name} className='size-14 !bg-[#8a2418]/10 !text-[#8a2418]' />
+						{chair ? (
+							<div className='min-w-0'>
+								<p className='text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[#8a2418]'>Chair, First Parliament</p>
+								{chair.member ? (
+									<Link href={`/members/${chair.member.slug}`} className='mt-1 block font-[family-name:var(--font-display)] text-[1.25rem] font-extrabold leading-tight hover:text-[#8a2418]'>
+										{chair.member.displayName}
+									</Link>
+								) : (
+									<p className='mt-1 font-[family-name:var(--font-display)] text-[1.25rem] font-extrabold leading-tight'>{chair.name}</p>
+								)}
+							</div>
+						) : null}
+					</div>
+					<dl className='mt-6 grid grid-cols-3 gap-2 text-center'>
+						{[
+							{ value: seated || '–', label: 'seated now' },
+							{ value: referred, label: 'referred before' },
+							{ value: committee.reports.length, label: committee.reports.length === 1 ? 'report' : 'reports' },
+						].map((f) => (
+							<div key={f.label} className='rounded-2xl bg-white px-2 py-4'>
+								<dd className='num font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[#8a2418]'>{f.value}</dd>
+								<dt className='mt-1.5 text-[0.75rem] leading-tight text-[#5c564d]'>{f.label}</dt>
+							</div>
+						))}
+					</dl>
+				</div>
+			}
+		/>
+		<section className='bb-container py-[clamp(4rem,8vw,7rem)]'>
 			{/* Two columns: what it is on the left, what it holds on the right. */}
 			{/* The single column is stated, not implicit — an implicit `auto` track
 			    sizes to its contents' min-content and cannot shrink to a phone. See
 			    the note on the same grid in `members/[slug]`. */}
-			<div className='grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] xl:gap-32'>
+			<div className='grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-16 xl:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] xl:gap-20'>
 				<Reveal>
-					<div>
-						<p className='eyebrow'>Bangsamoro Parliament</p>
-
-						<h1 className='mt-3 text-[1.75rem] font-bold leading-[1.1] text-[var(--ink)] sm:text-[2rem]'>
-							{committee.name}
-						</h1>
-
-						<div className='mt-5 flex flex-wrap gap-1.5'>
+					<div className='tv-wash rounded-[var(--dv-r)] p-6 sm:p-8'>
+						<div className='mb-8 flex flex-wrap gap-1.5 empty:hidden'>
 							{/* Same mark the index carries, so the two pages agree about what
 							    kind of committee this is. */}
 							{committee.statutory ? (
@@ -114,7 +155,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 						{/* Parliament's own words. Quoted rather than paraphrased — the
 						    scope of a committee is a legal question, not a summary. */}
 						{committee.jurisdiction ? (
-							<div className='mt-8'>
+							<div>
 								<p className='label label-strong'>Duties, powers, and jurisdiction</p>
 								<p className='mt-3 bb-body text-[var(--ink-2)]'>
 									{committee.jurisdiction}
@@ -133,7 +174,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 						) : null}
 
 						{committee.subcommittees ? (
-							<div className='mt-8 border-t border-[var(--rule)] pt-6'>
+							<div className='mt-8 border-t border-[var(--rule-soft)] pt-6'>
 								<p className='label label-strong'>Subcommittees</p>
 								<p className='mt-3 bb-body text-[var(--ink-2)]'>
 									{committee.subcommittees}
@@ -141,7 +182,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 							</div>
 						) : null}
 
-						<p className='mt-8 border-t border-[var(--rule)] pt-6 text-xs leading-5 text-[var(--ink-mute)]'>
+						<p className='mt-8 border-t border-[var(--rule-soft)] pt-6 text-xs leading-5 text-[var(--ink-mute)]'>
 							Membership, jurisdiction, and referrals as published on{' '}
 							<a href={committee.url} target='_blank' rel='noreferrer' className='rule-link'>
 								the committee&rsquo;s official page
@@ -155,10 +196,11 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 					<div>
 						{/* ---- Who sits on it now ---- */}
 						{current ? (
-							<div className='mb-14'>
-								<p className='eyebrow'>First Parliament · from 30 October 2026</p>
+							<div className='mb-10'>
+								<p className='pg-hero-kicker !text-[var(--accent)]'>First Parliament · from 30 October 2026</p>
+								<h2 className='dv-title mt-3'>Who sits on it now</h2>
 								{current.chair ? (
-									<div className='mt-4 flex items-center gap-4'>
+									<div className='mt-6 flex items-center gap-4 rounded-2xl border border-[var(--rule)] p-3 pr-6 sm:w-fit'>
 										<MemberAvatar name={current.chair.member?.displayName ?? current.chair.name} src={current.chair.member?.photoUrl} />
 										<div>
 											<p className='label label-strong'>Chair</p>
@@ -173,21 +215,25 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 									</div>
 								) : null}
 								{current.viceChairs.length > 0 || current.members.length > 0 ? (
-									<div className='mt-6 grid gap-4'>
+									<div className='mt-8 grid gap-6'>
 										{([['Vice-chairs', current.viceChairs], ['Members', current.members]] as const)
 											.filter(([, people]) => people.length)
 											.map(([label, people]) => (
 												<div key={label}>
 													<p className='label label-strong'>{label} ({people.length})</p>
-													<ul className='mt-2 grid gap-1 sm:grid-cols-2 xl:grid-cols-3'>
+													<ul className='mt-3 flex flex-wrap gap-2'>
 														{people.map((p: FirstParliamentPerson) => (
-															<li key={p.name} className='text-[0.875rem] text-[var(--ink-2)]'>
+															<li key={p.name}>
 																{p.member ? (
-																	<Link href={`/members/${p.member.slug}`} className='hover:text-[var(--accent)]'>
+																	<Link href={`/members/${p.member.slug}`} className='dv-pill !py-1.5 !pl-1.5'>
+																		{p.member.photoUrl ? (
+																			// eslint-disable-next-line @next/next/no-img-element -- a local portrait, sized here
+																			<img src={p.member.photoUrl} alt='' className='size-7 rounded-full object-cover object-top' />
+																		) : null}
 																		{p.member.displayName}
 																	</Link>
 																) : (
-																	p.name
+																	<span className='dv-pill !py-2'>{p.name}</span>
 																)}
 															</li>
 														))}
@@ -208,7 +254,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 
 						{/* ---- The Transition Authority: its roster, reports and referrals, folded away so the current
 						    committee leads ---- */}
-						<details className='group border-y border-[var(--rule)]'>
+						<details className='group rounded-[var(--dv-r)] border border-[var(--rule)] px-6 sm:px-8'>
 							<summary className='flex cursor-pointer list-none items-center justify-between gap-4 py-5 [&::-webkit-details-marker]:hidden'>
 								<span>
 									<span className='eyebrow block'>In the Transition Authority · 2019 to 2025</span>
@@ -268,7 +314,7 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 												What the committee reported back to the plenary. Numbers and dates are as filed;
 												the text of each report sits on Parliament&rsquo;s site.
 											</p>
-											<div className='mt-4'>
+											<div className='mt-4 overflow-hidden rounded-2xl border border-[var(--rule)] [&_.row]:px-5 [&_.row:last-child]:border-0'>
 												<ShowAll noun='reports'>
 													{committee.reports.map((report) => (
 														<a
@@ -314,5 +360,6 @@ export default async function CommitteePage({ params }: { params: Promise<{ slug
 				</Reveal>
 			</div>
 		</section>
+		</>
 	)
 }

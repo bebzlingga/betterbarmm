@@ -43,7 +43,7 @@ export function ReferralList({
 				{label} <span className='num'>({items.length})</span>
 			</p>
 
-			<div className='mt-4'>
+			<div className='mt-4 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] px-5 pb-3 sm:px-6 [&_li:last-child]:border-0'>
 				<ShowAll as='ul' noun={noun}>
 					{items.map((item, index) => (
 						<li key={`${item.title}-${index}`} className='border-b border-[var(--rule-soft)]'>

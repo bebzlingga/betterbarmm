@@ -105,7 +105,7 @@ function Menu({
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className={`absolute right-0 top-full z-40 mt-2 overflow-hidden p-1 border border-[var(--rule)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
+						className={`nav-menu absolute right-0 top-full z-40 mt-2 overflow-hidden p-1 border border-[var(--rule)] bg-[var(--paper)] shadow-[0_28px_60px_-28px_rgba(0,0,0,0.5)] ${width}`}
 					>
 						{children(() => setOpen(false))}
 					</motion.div>

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { QuestionIcon } from '@phosphor-icons/react/dist/ssr'
+import { Head, SourcePill } from '../_components/explainer'
 import { PageHeader } from '../_components/page-header'
 import { ReadingColumn } from '../_components/reading-column'
 import { Reveal } from '../_components/reveal'
@@ -37,9 +39,14 @@ const SCHEDULES = 'https://parliament.bangsamoro.gov.ph/schedules/'
 /** A question and its short answer. */
 function Question({ ask, children }: { ask: string; children: React.ReactNode }) {
 	return (
-		<div className='border-t border-[var(--rule-soft)] py-6 first:border-t-0 first:pt-0'>
-			<h3 className='item-title text-[var(--ink)]'>{ask}</h3>
-			<div className='copy mt-2.5 text-[var(--ink-2)]'>{children}</div>
+		<div className='flex gap-4 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-7'>
+			<span className='grid size-9 shrink-0 place-items-center rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
+				<QuestionIcon size={19} weight='duotone' aria-hidden='true' />
+			</span>
+			<div className='min-w-0'>
+				<h3 className='font-[family-name:var(--font-display)] text-[1.0625rem] font-bold leading-snug tracking-[-0.01em] text-[var(--ink)]'>{ask}</h3>
+				<div className='copy mt-2 text-[var(--ink-2)]'>{children}</div>
+			</div>
 		</div>
 	)
 }
@@ -97,12 +104,9 @@ function Block({
 		<Reveal>
 			{/* DM Sans below the masthead, and `scroll-mt` to clear the sticky
 			    header — see the notes on the same section in `how-parliament-works`. */}
-			<section id={id} className='scroll-mt-32 py-[clamp(3.75rem,7vw,6.5rem)] font-sans'>
-				<p className='eyebrow'>{label}</p>
-				<h2 className='section-title mt-4 max-w-3xl'>{title}</h2>
-				{lead ? <p className='section-lead mt-4 max-w-2xl text-[var(--ink-3)]'>{lead}</p> : null}
-
-				<div className='mt-10 max-w-4xl'>{children}</div>
+			<section id={id} className='scroll-mt-24 font-sans'>
+				<Head label={label} title={title} lead={lead} />
+				<div className='mt-10 grid grid-cols-1 gap-4 lg:grid-cols-2 [&>*]:min-w-0'>{children}</div>
 			</section>
 		</Reveal>
 	)
@@ -313,17 +317,13 @@ export default function QuestionsPage() {
 				</Block>
 
 				<Reveal>
-					<section className='py-[clamp(3.75rem,7vw,6.5rem)]'>
-						<p className='label label-strong'>Where the full answers are</p>
-						<div className='mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm'>
-							<Link href='/how-parliament-works' className='rule-link'>
-								Powers, limits, and the rulebook
-							</Link>
-							<Link href='/how-parliament-works/transition-authority#the-bill-path' className='rule-link'>
-								How a measure becomes law
-							</Link>
+<section>
+						<Head label='Where the full answers are' title='The pages behind these answers' />
+						<div className='mt-8 flex flex-wrap gap-2.5'>
+							<SourcePill href='/how-parliament-works'>Powers, limits, and the rulebook</SourcePill>
+							<SourcePill href='/how-parliament-works/transition-authority#the-bill-path'>How a measure becomes law</SourcePill>
 						</div>
-						<p className='mt-5 max-w-3xl bb-body text-[var(--ink-3)]'>
+						<p className='mt-8 bb-body text-[var(--ink-3)]'>
 							Every answer above is short on purpose. The two pages behind it carry the same ground
 							in full, and name the rule each point rests on — where they and this page differ, they
 							are right.

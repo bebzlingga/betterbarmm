@@ -1,4 +1,4 @@
-import { LineReveal, Rise } from '@betterbarmm/editorial'
+import { Hero } from './hero'
 import { StatFigures, type Stat } from './stat-band'
 
 type PageHeaderProps = {
@@ -66,149 +66,29 @@ type PageHeaderProps = {
  * measured — at these sizes a wrap decided by the container puts a two-letter
  * word alone on a line, and the shape falls apart.
  */
-export function PageHeader({
-	eyebrow,
-	title,
-	titleMuted,
-	description,
-	figures,
-	meta,
-	emphasis = 'default',
-	align = 'left',
-	size = 'display',
-}: PageHeaderProps) {
-	const isBrand = emphasis === 'brand'
-
-	if (isBrand) {
-		const centerd = align === 'center'
-		const column = centerd ? 'mx-auto ' : ''
-		// A centerd header needs a measure, or the lines run too long to track
-		// back to. Ranged left it shares the page's edges with the content under
-		// it, so it takes the full width.
-		const titleWidth = centerd ? 'max-w-5xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : ''
-		const proseWidth = centerd ? 'max-w-3xl ' : size === 'compact' ? 'lg:max-w-[75%] ' : 'max-w-2xl '
-		const titleClass =
-			// Each cut one step up from where it started, to sit with the landing
-			// site's mastheads: `hero` on the largest display cut, `compact` — the
-			// label over a register — at the size the main site opens a section.
-			//
-			// The hero cut takes a leading of its own with it. The shared 0.84 is
-			// tuned for the landing site's mastheads, where every given line is a
-			// short phrase that never wraps; this registry's opening line is a
-			// whole sentence and wraps at most widths, and two rows of 100px type
-			// at 0.84 put the descenders of one through the capitals of the next.
-			size === 'compact'
-				? 'bb-display-md'
-				: size === 'hero'
-					? 'bb-display reg-hero-title'
-					: 'bb-display'
-
-		return (
-			/* The landing site's masthead, to the point: same lattice, same medallion
-			   off the top-right corner, same proportions. `hero` fills four fifths of
-			   the screen the way betterbarmm.com's mastheads do — a reader crossing
-			   from there to the registry should not feel they have changed sites. The
-			   other cuts stay in the flow: a masthead that size over a page of four
-			   hundred rows is furniture in the way of what they came for. */
-			// A column rather than a centerd row on the hero cut. `items-center`
-			// made every child a flex item on one line, and the seam at the foot of
-			// this section is a child: a 7px strip with no width of its own, it was
-			// laid beside the masthead instead of under it and measured zero. The
-			// column stacks them again, and the content takes `my-auto` below to
-			// hold the middle of the screen the way the row was holding it.
-			<section
-				className={`brand-bg bb-lattice relative isolate overflow-hidden${
-					size === 'hero' ? ' flex flex-col' : ''
-				}`}
-			>
-				<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]' />
-
-				{/* More air than the panel used to give it. At 16/24 the masthead was
-				    a block of type with the lattice edge close above and below it,
-				    which reads as a banner; the room around it is what makes it an
-				    opening. It matters more now that the figures sit inside the panel
-				    on the pages that carry them — the block is taller, and a taller
-				    block in the same margins is tighter, not roomier. */}
-				<div
-					className={`bb-container relative w-full py-[clamp(3.75rem,7vw,6.5rem)]${
-						size === 'hero' ? ' my-auto' : ''
-					}${centerd ? ' text-center' : ''}`}
-				>
-					<Rise distance={14}>
-						{/* The kicker states the size or the subject of the thing rather
-						    than naming the page — the headline already says what it is. */}
-						<p className={`bb-label${centerd ? ' justify-center' : ''}`}>{eyebrow}</p>
-					</Rise>
-
-					<LineReveal
-						lines={titleMuted ? [title, titleMuted] : [title]}
-						delay={0.08}
-						className={`${column}${titleWidth}${titleClass} mt-8 text-[var(--ink)]`}
-						lineClassName={[undefined, 'bb-mute']}
-					/>
-
-					{description ? (
-						<Rise delay={0.32} distance={16}>
-							<p
-								className={`${column}${proseWidth}mt-8 text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]`}
-							>
-								{description}
-							</p>
-						</Rise>
-					) : null}
-
-					{/* On the brass rule the masthead already ends on, rather than in
-					    a band under the panel. The figures are the page's opening claim
-					    here — they are what it is about — and set outside the lattice
-					    they read as a summary of something that has already finished. */}
-					{figures?.length ? (
-						<Rise delay={0.4} distance={14}>
-							<div className='mt-12'>
-								<StatFigures stats={figures} />
-							</div>
-						</Rise>
-					) : null}
-
-					{meta ? (
-						<Rise delay={0.42} distance={12}>
-							<p className='meta-sm mt-8'>{meta}</p>
-						</Rise>
-					) : null}
-				</div>
-
-				{/* The seam into the page proper. A malong's warp, not a 1px rule. */}
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
-		)
-	}
-
-	// The list-page cut: a label over a register, so the type steps well down and
-	// the medallion goes. A masthead this size on a page of four hundred rows is
-	// furniture in the way of the thing the reader came for.
+export function PageHeader({ eyebrow, title, titleMuted, description, figures, meta, size = 'display', side }: PageHeaderProps & { side?: React.ReactNode }) {
+	// The crimson header every page opens on (user decision: the travel look). `emphasis` and `align` are kept for the
+	// callers; every cut is ranged left now, as the landing site's are.
 	return (
-		<section className='brand-bg bb-lattice relative isolate overflow-hidden'>
-			<div className='bb-container relative py-[clamp(3.75rem,7vw,6.5rem)]'>
-				<Rise distance={12}>
-					<p className='bb-label'>{eyebrow}</p>
-				</Rise>
-
-				<LineReveal
-					lines={[title]}
-					delay={0.06}
-					className='bb-display-md mt-8 max-w-3xl text-[var(--ink)]'
-				/>
-
-				<Rise delay={0.25} distance={14}>
-					{description ? (
-						<p className='mt-6 max-w-2xl text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
-							{description}
-						</p>
-					) : null}
-					{meta ? <p className='meta-sm mt-6'>{meta}</p> : null}
-				</Rise>
-			</div>
-
-			<div className='bb-weave' aria-hidden='true' />
-		</section>
+		<Hero
+			kicker={eyebrow}
+			tall={size === 'hero'}
+			auto={!!figures?.length}
+			side={side}
+			title={
+				<>
+					{title}
+					{titleMuted ? <span className='block text-white/55'>{titleMuted}</span> : null}
+				</>
+			}
+			lede={description}
+		>
+			{figures?.length ? (
+				<div className='mt-12'>
+					<StatFigures stats={figures} />
+				</div>
+			) : null}
+			{meta ? <p className='meta-sm mt-8'>{meta}</p> : null}
+		</Hero>
 	)
 }

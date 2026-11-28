@@ -16,15 +16,16 @@ export function ReadingColumn({
 	children: React.ReactNode
 }) {
 	return (
-		<div className='bb-container'>
-			<div className='gap-x-16 lg:grid lg:grid-cols-[minmax(0,1fr)_13rem] xl:gap-x-24'>
-				{/* Hairlines between the sections. Ranged left the headings no longer
-				    have space either side to separate them, so the rules do it. */}
-				<div className='min-w-0 divide-y divide-[var(--rule-soft)]'>{children}</div>
+		<div className='bb-container pb-[clamp(3rem,6vw,5rem)] pt-[clamp(2rem,4vw,3rem)]'>
+			<div className='gap-x-14 lg:grid lg:grid-cols-[minmax(0,1fr)_13rem] xl:gap-x-20'>
+				{/* The sections in turn (each a Reveal wrapping one section), every other one on a warm rounded panel, as the
+				    travel look alternates its bands. */}
+				<div className='grid min-w-0 grid-cols-1 gap-6 [&>*]:min-w-0 [&>*>section]:py-[clamp(3rem,5vw,4.5rem)] [&>:nth-child(even)>section]:rounded-[2rem] [&>:nth-child(even)>section]:bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] [&>:nth-child(even)>section]:bg-[image:radial-gradient(40rem_22rem_at_0%_0%,color-mix(in_srgb,#d4a72c_14%,transparent),transparent_70%),radial-gradient(44rem_24rem_at_100%_100%,color-mix(in_srgb,var(--accent)_12%,transparent),transparent_70%)] [&>:nth-child(even)>section]:px-[clamp(1.25rem,3.5vw,3rem)]'>
+					{children}
+				</div>
 
-				{/* The same top padding a section carries, so the index label sits on
-				    the first kicker's line. */}
-				<aside className='hidden lg:block lg:pt-[clamp(3.75rem,7vw,6.5rem)]'>
+				{/* The same top padding a section carries, so the index label sits on the first kicker's line. */}
+				<aside className='hidden lg:block lg:pt-[clamp(3rem,5vw,4.5rem)]'>
 					<TableOfContents items={sections} />
 				</aside>
 			</div>

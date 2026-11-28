@@ -22,14 +22,14 @@ export function YearColumns({ items, unit }: { items: { label: string; count: nu
 					<span className='relative block w-full flex-1'>
 						<span
 							aria-hidden='true'
-							className='absolute inset-x-0 bottom-0 mx-auto block w-full max-w-14 rounded-t-[4px] bg-[var(--funnel-3)] transition-opacity group-hover:opacity-80'
+							className='absolute inset-x-0 bottom-0 mx-auto block w-full max-w-14 rounded-t-lg bg-[var(--funnel-3)] transition-opacity group-hover:opacity-80'
 							style={{ height: `${Math.max(1.5, (item.count / max) * 86)}%` }}
 						/>
 						<span className='num absolute inset-x-0 text-center text-[0.8125rem] font-semibold text-[var(--ink)]' style={{ bottom: `calc(${Math.max(1.5, (item.count / max) * 86)}% + 0.375rem)` }}>
 							{item.count}
 						</span>
 					</span>
-					<span className='num mt-2 w-full border-t border-[var(--rule)] pt-1.5 text-center text-[0.75rem] text-[var(--ink-3)]'>{item.label}</span>
+					<span className='num mt-2 w-full border-t border-[var(--rule-soft)] pt-1.5 text-center text-[0.75rem] text-[var(--ink-3)]'>{item.label}</span>
 				</li>
 			))}
 		</ol>

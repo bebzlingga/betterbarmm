@@ -71,7 +71,7 @@ function Marker({ tone, children }: { tone: Tone; children: React.ReactNode }) {
  */
 export function SittingCalendar({ month = BTA_MONTH, legend = BTA_LEGEND }: { month?: SittingMonth; legend?: typeof BTA_LEGEND }) {
 	return (
-		<figure className='mt-2'>
+		<figure className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-7'>
 			<div className='overflow-x-auto'>
 				<div className='min-w-[30rem]'>
 					{/* Day names, over a spacer the width of the week column. */}
@@ -94,7 +94,7 @@ export function SittingCalendar({ month = BTA_MONTH, legend = BTA_LEGEND }: { mo
 							{week.map((day, d) => (
 								<div
 									key={DAYS[d]}
-									className={`flex min-h-[3.75rem] flex-col items-center justify-center rounded-[var(--radius-sm)] px-1 py-2 text-center ${
+									className={`flex min-h-[3.75rem] flex-col items-center justify-center rounded-xl px-1 py-2 text-center ${
 										day.sits
 											? 'bg-[var(--accent-soft)] text-[var(--ink)]'
 											: 'border border-dashed border-[var(--rule)] text-[var(--ink-mute)]'
@@ -117,7 +117,7 @@ export function SittingCalendar({ month = BTA_MONTH, legend = BTA_LEGEND }: { mo
 				</div>
 			</div>
 
-			<figcaption className='mt-5 flex flex-wrap gap-x-6 gap-y-2 bb-body text-[var(--ink-3)]'>
+			<figcaption className='mt-6 flex flex-wrap gap-x-6 gap-y-2 border-t border-[var(--rule-soft)] pt-5 bb-body text-[var(--ink-3)]'>
 				{legend.map((item) => (
 					<span key={item.label} className='flex items-center gap-2'>
 						<span
@@ -162,7 +162,7 @@ type VotePanel = { kind: string; when: string; note: string; rows?: { named: boo
 /** Each rulebook names its two kinds of vote differently; the picture is the same. */
 export function VoteComparison({ shouted, named }: { shouted?: Partial<VotePanel>; named?: Partial<VotePanel> } = {}) {
 	return (
-		<figure className='mt-2 grid gap-5 sm:grid-cols-2'>
+		<figure className='grid gap-4 sm:grid-cols-2'>
 			{[
 				{
 					kind: 'Shouted vote',
@@ -193,7 +193,7 @@ export function VoteComparison({ shouted, named }: { shouted?: Partial<VotePanel
 			].map((panel) => (
 				<div
 					key={panel.kind}
-					className='rounded-[var(--radius-lg)] border border-[var(--rule)] p-5'
+					className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-7'
 				>
 					<p className='item-title text-[var(--ink)]'>{panel.kind}</p>
 					<p className='meta-sm mt-1'>{panel.when}</p>

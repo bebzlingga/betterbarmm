@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { InfoIcon } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
 import { BandSectionTitle, RegistryBand } from '../_components/registry-band'
 import { Reveal } from '../_components/reveal'
@@ -96,16 +97,14 @@ export default function DataPage() {
 
 	return (
 		<>
+			{/* The headline figures as glass cards on the header's right (user decision: the travel look). */}
 			<RegistryBand
 				label='The registry, counted'
 				title='Stats'
 				lead={`Parliament publishes its measures one at a time, never in aggregate. These are the registry’s own records counted: when bills were filed and laws passed, where the bills stand, who files them, and what they are about, across the ${billsCounted} bills and ${actsCounted} acts read in full.`}
-			/>
-
-			{/* The headline figures, as cards under the band. */}
-			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
-				<dl className='grid grid-cols-2 gap-4 lg:grid-cols-4'>
-					{[
+				side={
+					<dl className='grid grid-cols-2 gap-3'>
+						{[
 						{
 							label: 'Bills counted',
 							value: billsCounted.toLocaleString(),
@@ -119,17 +118,18 @@ export default function DataPage() {
 							detail: topBillSubject ? `${topBillSubject.label}: more bills than any other area.` : 'No subject tags in the read set yet.',
 						},
 					].map((figure) => (
-						<div key={figure.label} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
-							<dt className='order-2 mt-3 font-mono text-[0.625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)]'>{figure.label}</dt>
-							<dd className='num order-1 text-[2.25rem] font-extrabold leading-none tracking-[-0.04em] text-[var(--accent)]'>{figure.value}</dd>
-							<dd className='order-3 mt-1.5 text-[0.78125rem] leading-snug text-[var(--ink-3)]'>{figure.detail}</dd>
-						</div>
-					))}
-				</dl>
-			</section>
+							<div key={figure.label} className='flex flex-col rounded-2xl border border-white/15 bg-white/[0.08] p-4 sm:p-5'>
+								<dt className='order-2 mt-2.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[#f1c453]'>{figure.label}</dt>
+								<dd className='num order-1 font-[family-name:var(--font-display)] text-[2.25rem] font-extrabold leading-none tracking-[-0.04em] text-white'>{figure.value}</dd>
+								<dd className='order-3 mt-1.5 text-[0.75rem] leading-snug text-white/70'>{figure.detail}</dd>
+							</div>
+						))}
+					</dl>
+				}
+			/>
 
 			{/* ---- Over time: two charts, each on its own scale, never one axis for two measures. ---- */}
-			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<BandSectionTitle title='Year by year' lead='Bills by the year they were filed; acts by the year they were ratified. Two counts, each on its own scale.' />
 				<div className='mt-8 grid gap-4 lg:grid-cols-2'>
 					<ChartCard title='Bills filed' note={`${filedDated.toLocaleString()} with a filing date`}>
@@ -142,7 +142,8 @@ export default function DataPage() {
 			</section>
 
 			{/* ---- Where they stand, and who files them ---- */}
-			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='tv-wash'>
+			<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<BandSectionTitle title='Where the bills stand' lead='Every bill in the index by its latest step, in the order a bill moves; and how many the Government of the Day filed itself.' />
 				<div className='mt-8 grid gap-4 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]'>
 					<ChartCard title='By stage' note={`${bills.records.length.toLocaleString()} bills`}>
@@ -152,10 +153,11 @@ export default function DataPage() {
 						<SectorBars items={filers} />
 					</ChartCard>
 				</div>
+			</div>
 			</section>
 
 			{/* ---- Who files the most ---- */}
-			<section className='bb-container pt-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<BandSectionTitle title='The Members who file the most' lead='Bills each Member filed as a principal author. A bill can have several, so the counts overlap.' />
 				<div className='mt-8'>
 					<ChartCard title='Top 10, as principal author' note='bills'>
@@ -165,7 +167,8 @@ export default function DataPage() {
 			</section>
 
 			{/* ---- What they are about: the two lists side by side, each on its own scale. ---- */}
-			<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='tv-wash'>
+			<div className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<BandSectionTitle
 					title='What gets filed, and what gets passed'
 					lead={
@@ -193,6 +196,7 @@ export default function DataPage() {
 						</ChartCard>
 					</div>
 				</Reveal>
+			</div>
 			</section>
 
 			{/* ---- How to read the two columns ----
@@ -208,16 +212,16 @@ export default function DataPage() {
 			     Two columns at width, because they are two separate cautions and
 			     stacking them makes the second read as a continuation of the
 			     first. */}
-			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
+			<section className='bb-container py-[clamp(4.5rem,9vw,8rem)]'>
 				<Reveal delay={80}>
-					<div className='relative border border-[var(--rule)] p-7 lg:p-10'>
-						<span
-							aria-hidden='true'
-							className='absolute inset-x-0 top-0 h-px bg-[var(--brass)]'
-						/>
-
-						<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2'>
-							<p className='bb-label'>How to read this</p>
+					<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-7 shadow-[0_24px_50px_-40px_rgba(0,0,0,0.45)] lg:p-10'>
+						<div className='flex flex-wrap items-center justify-between gap-x-6 gap-y-3'>
+							<p className='flex items-center gap-3'>
+								<span className='grid size-11 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--brass)_16%,transparent)] text-[var(--brass-deep)]'>
+									<InfoIcon size={22} weight='duotone' aria-hidden='true' />
+								</span>
+								<span className='font-[family-name:var(--font-display)] text-[1.375rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>How to read this</span>
+							</p>
 							<p className='meta-sm'>Registry generated {registryGeneratedAt}</p>
 						</div>
 
@@ -252,7 +256,7 @@ export default function DataPage() {
 						    charts are counting, the other to how the counting was done —
 						    and ranged together they read as one row of four equal
 						    choices. Apart, the page ends on what it is for. */}
-						<div className='mt-9 flex flex-wrap items-center justify-between gap-4 border-t border-[var(--rule)] pt-6'>
+						<div className='mt-9 flex flex-wrap items-center justify-between gap-4 border-t border-[var(--rule-soft)] pt-6'>
 							<div className='flex flex-wrap gap-3'>
 								<Link href='/bills' className='bb-btn bb-btn-solid'>
 									Browse all {bills.records.length.toLocaleString()} bills
@@ -276,10 +280,10 @@ export default function DataPage() {
 /** A chart in a card, as the landing site sets its panels: the title and what it counts on one line, the chart under. */
 function ChartCard({ title, note, children }: { title: string; note: string; children: React.ReactNode }) {
 	return (
-		<figure className='border border-[var(--rule)] bg-[var(--paper)] p-6'>
-			<figcaption className='flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-[var(--rule-soft)] pb-3'>
-				<span className='text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>{title}</span>
-				<span className='text-[0.78125rem] text-[var(--ink-3)]'>{note}</span>
+		<figure className='h-full rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-7'>
+			<figcaption className='flex flex-wrap items-center justify-between gap-x-4 gap-y-2'>
+				<span className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>{title}</span>
+				<span className='rounded-full bg-[var(--paper-2)] px-3 py-1 text-[0.75rem] text-[var(--ink-3)]'>{note}</span>
 			</figcaption>
 			<div className='mt-6'>{children}</div>
 		</figure>

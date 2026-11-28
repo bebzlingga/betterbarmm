@@ -1,4 +1,6 @@
+import { ArrowSquareOutIcon, FileTextIcon, InfoIcon, LinkSimpleIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
+import { Hero } from './hero'
 import { statusToneClass, toPersonName } from '../_lib/labels'
 import type { LegislationRecord, MeasureReading } from '../_lib/legislation-data'
 import { JourneyList } from './journey'
@@ -32,19 +34,23 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 		// Set as the landing site sets a Member's particulars (user decision): a small mono label, the value under it
 		// at the sidebar's own size.
 		<div>
-			<p className='font-mono text-[0.65625rem] font-bold uppercase tracking-[0.14em] text-[var(--brass)]'>{label}</p>
-			<div className='mt-1 text-[0.875rem] leading-[1.5] text-[var(--ink)]'>{children}</div>
+			<p className='font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>{label}</p>
+			<div className='mt-1.5 text-[0.9375rem] leading-[1.5] text-[var(--ink)]'>{children}</div>
 		</div>
 	)
 }
 
-function Section({ label, children }: { label: string; children: React.ReactNode }) {
+function Section({ label, small = false, children }: { label: string; small?: boolean; children: React.ReactNode }) {
 	return (
-		// Headed as the landing site heads its sections (user decision): a bold title, with no tick beside it and no
-		// rule between sections; the space alone sets each off from the last.
+		// Headed as the travel look heads its sections (user decision): the display face, no rule between sections; the
+		// space alone sets each off from the last. A step smaller in the side column.
 		<section>
-			<h2 className='text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>{label}</h2>
-			<div className='mt-4'>{children}</div>
+			<h2
+				className={`font-[family-name:var(--font-display)] font-extrabold tracking-[-0.025em] text-[var(--ink)] ${small ? 'text-[1.125rem]' : 'text-[clamp(1.25rem,1.8vw,1.5rem)]'}`}
+			>
+				{label}
+			</h2>
+			<div className={small ? 'mt-4' : 'mt-5'}>{children}</div>
 		</section>
 	)
 }
@@ -78,7 +84,7 @@ function ReadingList({ label, items }: { label: string; items: string[] }) {
 					<li key={index} className='flex gap-3 copy text-[var(--ink-2)]'>
 						<span
 							aria-hidden='true'
-							className='mt-[0.5rem] size-1 shrink-0 rounded-full bg-[var(--ink-mute)]'
+							className='mt-[0.6rem] size-1.5 shrink-0 rounded-full bg-[var(--accent)]'
 						/>
 						{item}
 					</li>
@@ -99,9 +105,9 @@ function ReadingList({ label, items }: { label: string; items: string[] }) {
 /** Dated journal entries, each linked to its journal page. */
 function FloorList({ entries }: { entries: FloorEntry[] }) {
 	return (
-		<ol className='grid gap-4'>
+		<ol className='grid gap-3'>
 			{entries.map((entry, index) => (
-				<li key={index} className='grid gap-1 sm:grid-cols-[9.5rem_minmax(0,1fr)] sm:gap-4'>
+				<li key={index} className='grid gap-1.5 rounded-2xl bg-[var(--paper-2)] p-4 sm:grid-cols-[9.5rem_minmax(0,1fr)] sm:gap-5 sm:p-5'>
 					<Link href={`/journal/${entry.journalKey}`} className='text-[0.78125rem] font-semibold leading-5 text-[var(--ink-3)] hover:text-[var(--accent)]'>
 						{entry.dates}
 						<span className='block font-normal'>{entry.journalTitle}</span>
@@ -119,7 +125,7 @@ function Reading({ reading, floor = [], named = [], reports = [] }: { reading: M
 	const actions = floor.filter((entry) => entry.kind === 'action')
 	const tallies = floor.filter((entry) => entry.kind === 'tally')
 	return (
-		<div className='space-y-9'>
+		<div className='space-y-12'>
 			<Section label='What this measure does'>
 				<Prose text={reading.whatItDoes} />
 			</Section>
@@ -165,7 +171,7 @@ function Reading({ reading, floor = [], named = [], reports = [] }: { reading: M
 									<ul className='mt-2 grid gap-1.5'>
 										{report.points.map((point, index) => (
 											<li key={index} className='flex gap-3 copy text-[var(--ink-2)]'>
-												<span aria-hidden='true' className='mt-[0.5rem] size-1 shrink-0 rounded-full bg-[var(--ink-mute)]' />
+												<span aria-hidden='true' className='mt-[0.6rem] size-1.5 shrink-0 rounded-full bg-[var(--accent)]' />
 												{point}
 											</li>
 										))}
@@ -186,7 +192,7 @@ function Reading({ reading, floor = [], named = [], reports = [] }: { reading: M
 							<li key={index} className='flex gap-3 copy text-[var(--ink-2)]'>
 								<span
 									aria-hidden='true'
-									className='mt-[0.5rem] size-1 shrink-0 rounded-full bg-[var(--ink-mute)]'
+									className='mt-[0.6rem] size-1.5 shrink-0 rounded-full bg-[var(--accent)]'
 								/>
 								{point}
 							</li>
@@ -260,7 +266,7 @@ function Reading({ reading, floor = [], named = [], reports = [] }: { reading: M
 			) : null}
 
 			{reading.readFrom.length > 0 ? (
-				<p className='meta-sm border-t border-[var(--rule-soft)] pt-4'>
+				<p className='meta-sm border-t border-[var(--rule-soft)] pt-5'>
 					{reading.basis === 'title' ? 'Drawn from' : 'Read from'}{' '}
 					{reading.readFrom.map((doc, index) => (
 						<span key={doc.label}>
@@ -360,72 +366,47 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 
 	return (
 		<article>
-			{/* The head on the brand ground: badges, the official title and the
-			    summary. `.brand-bg` re-points the ink tokens, so the parts below
-			    invert without restyling. */}
-			<div className='brand-bg bb-lattice relative overflow-hidden'>
-				{/* The landing site's band (user decision): its lattice, and the warm glow off the top. */}
-				<span
-					aria-hidden='true'
-					className='bb-glow absolute -top-[22rem] left-1/2 h-[40rem] w-[64rem] max-w-[160vw] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
-				/>
-				<div className='bb-container relative py-16 lg:py-24'>
-					{/* Badges never break, so on a phone the row wraps rather than running
-					    off the edge — a measure can carry a status and a Cabinet mark at
-					    once. */}
+			{/* The head on the crimson header (user decision: the travel look): the number and status, the official title
+			    and the summary. Badges never break, so on a phone the row wraps; a measure can carry a status and a
+			    Cabinet mark at once (filed by the Government of the Day: the office tone, as it says who filed it). */}
+			<Hero
+				small
+				auto
+				top={
 					<div className='flex flex-wrap items-center gap-x-3 gap-y-1.5'>
-						<p className='num shrink-0 text-[0.8125rem] font-medium text-[var(--ink-3)]'>
-							{record.display}
-						</p>
-						{/* The one place the status is stated — it rides above the title
-						    rather than repeating under it. */}
+						<p className='num pg-hero-kicker shrink-0'>{record.display}</p>
 						<span className={statusToneClass[record.statusTone]}>{record.statusShort}</span>
-
-						{/* Filed by the Government of the Day rather than by a member: a
-						    cabinet measure arrives with the executive behind it, which is
-						    worth knowing before reading a word of it. It takes the office
-						    tone, because it says who filed this rather than where it
-						    stands. */}
-						{record.isCabinetMeasure ? (
-							<span className='badge badge-plain badge-role shrink-0'>Cabinet measure</span>
-						) : null}
-				</div>
-
-				{/* The full official name alone. The registry's condensed name for a
-				    measure is a fragment cut out of that same sentence, so standing it
-				    above the title read as a false start. Held to a measure rather than
-				    run across the page column: an official title is a sentence, and a
-				    sentence forty words long is unreadable at 88rem. */}
-				<h1 className='mt-4 text-[1.7rem] font-bold leading-[1.2] tracking-[-0.02em] text-[var(--ink)] sm:text-[2.25rem] lg:text-[2.4rem]'>
-					{record.title}
-				</h1>
-
-				{lead ? (
-					<p className='mt-5 max-w-4xl copy text-[var(--ink-2)]'>{lead}</p>
-				) : null}
-
-				</div>
-			</div>
+						{record.isCabinetMeasure ? <span className='badge badge-plain badge-role shrink-0'>Cabinet measure</span> : null}
+					</div>
+				}
+				title={record.title}
+				lede={lead ? <p className='copy max-w-4xl text-white/85'>{lead}</p> : null}
+			/>
 
 			{/* Where it stands, under the head on the paper ground. The rail
 			    scrolls horizontally on narrow screens inside `JourneyList`. */}
 			{record.journey.length > 0 ? (
-				<div className='border-b border-[var(--rule)] bg-[var(--paper)]'>
-					<div className='bb-container pb-8 pt-10'>
-						<JourneyList stages={record.journey} />
+				<div className='tv-wash'>
+					<div className='bb-container py-10 lg:py-12'>
+						<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-3 py-7 shadow-[0_18px_40px_-34px_rgba(0,0,0,0.45)] sm:px-6'>
+							<JourneyList stages={record.journey} />
+						</div>
 					</div>
 				</div>
 			) : null}
 
-			<div className='bb-container pb-24 pt-12 lg:pb-32'>
-				<div className='grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(14.5rem,18.7rem)] lg:gap-32 xl:gap-40'>
+			<div className='bb-container pb-24 pt-16 lg:pb-32 lg:pt-20'>
+				<div className='grid gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,20rem)] lg:gap-24 xl:gap-32'>
 					{/* Main column. The prose fills its track (user decision): the sidebar gap
 					    is margin enough, and a narrower measure left a third of the page empty. */}
-					<div className='space-y-9'>
+					<div className='space-y-12'>
 						{/* What the stage on the rail above actually means for the
 						    measure — the first thing to read once you know where it
-						    stands, so it leads the column. */}
-						<p className='copy text-[var(--ink-3)]'>{record.statusMeaning}</p>
+						    stands, so it leads the column, on a rounded panel of its own. */}
+						<p className='flex items-start gap-3.5 rounded-[var(--dv-r)] bg-[var(--paper-2)] px-5 py-4 copy text-[var(--ink-2)] sm:px-6'>
+							<InfoIcon size={22} weight='duotone' aria-hidden='true' className='mt-0.5 shrink-0 text-[var(--accent)]' />
+							{record.statusMeaning}
+						</p>
 
 						{record.reading ? (
 							<Reading
@@ -456,7 +437,7 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 										>
 											<span
 												aria-hidden='true'
-												className='mt-[0.5rem] size-1 shrink-0 rounded-full bg-[var(--ink-mute)]'
+												className='mt-[0.6rem] size-1.5 shrink-0 rounded-full bg-[var(--accent)]'
 											/>
 											{effect}
 										</li>
@@ -526,17 +507,15 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 						    the way to the original heads the column that carries the record's particulars (user decision: not
 						    in the head). */}
 						{sourceHref ? (
-							<a href={sourceHref} target='_blank' rel='noreferrer' className='bb-btn bb-btn-solid w-full'>
+							<a href={sourceHref} target='_blank' rel='noreferrer' className='dv-btn dv-btn-accent w-full justify-center'>
 								Official page
-								<svg className='size-3.5' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' aria-hidden='true'>
-									<path d='M7 17 17 7M9 7h8v8' />
-								</svg>
+								<ArrowSquareOutIcon size={17} weight='bold' aria-hidden='true' />
 							</a>
 						) : null}
 
 						{hasRelations ? (
-							<Section label='Connected measures'>
-								<div className='grid gap-2.5 text-sm text-[var(--ink-2)]'>
+							<Section small label='Connected measures'>
+								<div className='grid gap-2.5 rounded-[var(--dv-r)] border border-[var(--rule)] p-5 text-sm text-[var(--ink-2)]'>
 									{record.becameActNumber !== undefined ? (
 										<Link
 											href={`/acts/${record.becameActNumber}`}
@@ -591,7 +570,7 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 						{/* The record's own particulars — what it is, when, and under
 						    which sitting. They head the column: they answer the shortest
 						    questions, and the list of names below can run long. */}
-						<div className='grid gap-4 border border-[var(--rule)] bg-[var(--paper-2)] p-5'>
+						<div className='tv-wash grid gap-5 rounded-[var(--dv-r)] p-6'>
 							<Field label={record.dateLabel}>{record.dateDisplay}</Field>
 
 							{record.session ? <Field label='Session'>{record.session}</Field> : null}
@@ -622,11 +601,11 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 						</div>
 
 						{authors.length > 0 ? (
-							<Section label={`Authors · ${authors.length}`}>
+							<Section small label={`Authors · ${authors.length}`}>
 								{/* Principal authors first, then co-authors, each block A–Z by
 								    surname. A name the roster knows opens that member's
 								    profile; one it doesn't is still shown, just not linked. */}
-								<ul className='divide-y divide-[var(--rule-soft)]'>
+								<ul className='grid gap-0.5 rounded-[var(--dv-r)] border border-[var(--rule)] p-2'>
 									{authors.map(({ name, displayName, isPrincipal }) => {
 										const slug = memberSlugs[name.toUpperCase()]
 										const photo = memberPhotos[name.toUpperCase()]
@@ -650,7 +629,7 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 														{initials}
 													</span>
 												)}
-												<span className='min-w-0'>
+												<span className='min-w-0 pt-0.5'>
 													<span className='block truncate text-[0.875rem] font-semibold text-[var(--ink)] group-hover:text-[var(--accent)]'>{displayName}</span>
 													{both ? <span className='block text-[0.71875rem] text-[var(--ink-3)]'>{isPrincipal ? 'Principal author' : 'Co-author'}</span> : null}
 												</span>
@@ -661,11 +640,11 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 											<li key={name}>
 												{/* A name the roster knows opens that member's profile; one it doesn't is still shown. */}
 												{slug ? (
-													<Link href={`/members/${slug}`} className='group flex items-center gap-3 py-2.5'>
+													<Link href={`/members/${slug}`} className='group flex items-start gap-3 rounded-xl px-3 py-2.5 transition hover:bg-[var(--paper-2)]'>
 														{inner}
 													</Link>
 												) : (
-													<span className='flex items-center gap-3 py-2.5'>{inner}</span>
+													<span className='flex items-start gap-3 px-3 py-2.5'>{inner}</span>
 												)}
 											</li>
 										)
@@ -678,16 +657,17 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 
 				{/* Sources */}
 				{record.sourceUrl || record.sourceLinks.length > 0 ? (
-					<div className='mt-12 border-t border-[var(--rule)] pt-5'>
-						<p className='label label-section'>Sources</p>
-						<div className='mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm'>
+					<div className='mt-16 border-t border-[var(--rule-soft)] pt-8'>
+						<p className='font-[family-name:var(--font-display)] text-[1.125rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>Sources</p>
+						<div className='mt-4 flex flex-wrap gap-2.5'>
 							{record.sourceUrl ? (
 								<a
 									href={record.sourceUrl}
 									target='_blank'
 									rel='noreferrer'
-									className='rule-link'
+									className='dv-pill !text-[0.8125rem]'
 								>
+									<LinkSimpleIcon size={15} weight='bold' aria-hidden='true' className='text-[var(--accent)]' />
 									Official page
 								</a>
 							) : null}
@@ -698,12 +678,13 @@ export function RecordArticle({ record, memberSlugs = {}, memberPhotos = {} }: R
 										href={source.url}
 										target='_blank'
 										rel='noreferrer'
-										className='rule-link'
+										className='dv-pill !text-[0.8125rem] capitalize'
 									>
+										<FileTextIcon size={15} weight='duotone' aria-hidden='true' className='text-[var(--accent)]' />
 										{source.type.replace(/_/g, ' ')}
 									</a>
 								) : (
-									<span key={`${record.id}-source-${index}`} className='text-[var(--ink-3)]'>
+									<span key={`${record.id}-source-${index}`} className='dv-pill !text-[0.8125rem] text-[var(--ink-3)]'>
 										{source.fileName ?? source.type.replace(/_/g, ' ')}
 									</span>
 								),

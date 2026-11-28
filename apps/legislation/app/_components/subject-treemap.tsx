@@ -165,7 +165,7 @@ export function SubjectTreemap({ items }: { items: FilterOption[] }) {
 							    from their shared edge, which separates them in the page's own
 							    ground rather than by drawing a border — a stroke would add ink
 							    that is not data. */}
-							<div className={`tm-tile tm-${tile.step} absolute inset-px flex flex-col p-2.5`}>
+							<div className={`tm-tile tm-${tile.step} absolute inset-[2px] flex flex-col rounded-lg p-2.5`}>
 								<dt className={labeled ? 'tm-label' : 'sr-only'}>{tile.label}</dt>
 								<dd className={labeled ? 'tm-value num mt-auto' : 'sr-only'}>{tile.value}</dd>
 							</div>

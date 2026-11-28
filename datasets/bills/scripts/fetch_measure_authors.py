@@ -20,6 +20,14 @@ registry already holds:
   resolutions/proposed_official_index.json
   resolutions/adopted_official_index.json
 
+Since 30 October 2026 the bills and proposed-resolutions listings show the
+First Parliament's measures only, numbered from 1 again. They are captured into
+files of their own, so they never collide with the Transition Authority's:
+
+  bills/first_parliament_index.json
+  resolutions/proposed_first_parliament_index.json
+
+    python3 datasets/bills/scripts/fetch_measure_authors.py proposed-resolutions-first
     python3 datasets/bills/scripts/fetch_measure_authors.py bills
     python3 datasets/bills/scripts/fetch_measure_authors.py adopted-resolutions
     python3 datasets/bills/scripts/fetch_measure_authors.py --all
@@ -85,6 +93,30 @@ COLLECTIONS = {
     "proposed-resolutions": {
         "index": f"{BASE}/proposed-resolutions/",
         "out": REGISTRY / "resolutions" / "proposed_official_index.json",
+        "status_label": "Status",
+        "history_label": "Legislative history",
+        "principal_field": "principal_author_proposed_resolution",
+        "co_field": "co_authors_proposed_resolution",
+        "extra_labels": {"committee_referrals": "Committee Referral(s)"},
+    },
+    # The First Parliament's own measures: the same listings, now holding nothing else (since 30 October 2026).
+    "bills-first": {
+        "index": f"{BASE}/bills/",
+        "out": REGISTRY / "bills" / "first_parliament_index.json",
+        "first": True,
+        "status_label": "Bill Status",
+        "history_label": "Legislative History",
+        "principal_field": "principal_author_bill",
+        "co_field": "co_authors_bill",
+        "extra_labels": {
+            "committee_referrals": "Committee Referral(s)",
+            "became_act": "Bangsamoro Autonomy Act",
+        },
+    },
+    "proposed-resolutions-first": {
+        "index": f"{BASE}/proposed-resolutions/",
+        "out": REGISTRY / "resolutions" / "proposed_first_parliament_index.json",
+        "first": True,
         "status_label": "Status",
         "history_label": "Legislative history",
         "principal_field": "principal_author_proposed_resolution",
@@ -203,7 +235,23 @@ def history(page: str, label: str) -> list[str]:
         return []
 
     parts = re.split(r"(?is)<br\s*/?>|</p>", match.group(1))
-    return [line for line in (text_of(part) for part in parts) if line]
+    lines: list[str] = []
+    for line in (text_of(part) for part in parts):
+        # The First Parliament's pages run their stages together with the month spelt out ("Adopted as … – November
+        # 24, 2026 Filed – November 24, 2026"): one stage per line, dated as the older pages are (M/D/YYYY).
+        spelt = list(LONG_STAGE.finditer(line))
+        if spelt:
+            for m in spelt:
+                when = dt.datetime.strptime(m.group(2), "%B %d, %Y")
+                lines.append(f"{m.group(1).strip()} – {when.month}/{when.day}/{when.year}")
+        elif line:
+            lines.append(line)
+    return lines
+
+
+LONG_STAGE = re.compile(
+    r"(.+?)\s+[–-]\s+((?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4})"
+)
 
 
 def parse_measure(row: dict, page: str, config: dict) -> dict:
@@ -231,6 +279,9 @@ def capture(name: str, limit: int = 0) -> None:
 
     print(f"index {config['index']}")
     rows = listing_rows(fetch(config["index"]))
+    # The First Parliament's files hold its own measures only; the Transition Authority's never leave theirs.
+    is_first = [r for r in rows if "first-parliament" in r["session"]]
+    rows = is_first if config.get("first") else [r for r in rows if r not in is_first]
     # Since 30 October 2026 Parliament's listings show the First Parliament only, so the Transition Authority's
     # measures are gone from them. Never trade an index already held for a shorter one.
     held_file: Path = config["out"]
@@ -238,7 +289,9 @@ def capture(name: str, limit: int = 0) -> None:
         held = json.loads(held_file.read_text())
         held_rows = next((v for v in held.values() if isinstance(v, list)), [])
         if len(rows) < len(held_rows):
-            raise SystemExit(f"{name}: the listing has {len(rows)} and the index holds {len(held_rows)}; not overwriting it")
+            # Skipped, not stopped, so `--all` still reaches the collections after it.
+            print(f"{name}: the listing has {len(rows)} and the index holds {len(held_rows)}; not overwriting it")
+            return
     if limit:
         rows = rows[:limit]
     print(f"      {len(rows)} {name}")
@@ -270,7 +323,7 @@ def capture(name: str, limit: int = 0) -> None:
         # Bills and acts have always been read under their own key — `bills`
         # by the www map, the AI corpus and fetch_measure_pdfs.py; `acts` by
         # every workspace — so they keep it. Resolutions use `measures`.
-        (name if name in ("bills", "acts") else "measures"): measures,
+        ("bills" if name.startswith("bills") else "acts" if name == "acts" else "measures"): measures,
     }
 
     out: Path = config["out"]

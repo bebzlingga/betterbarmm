@@ -1200,6 +1200,26 @@
   color: var(--accent);
 }
 
+/* The bar's dropdown panels, in every workspace (user decision: the travel look): a rounded panel with no border, lifted
+   on a soft shadow, its rows rounded and spaced. Each workspace's panel carries `.nav-menu`. Unlayered, so it beats the
+   border and padding utilities the panels were written with. */
+.nav-menu {
+  border: 0;
+  border-radius: 1.25rem;
+  padding: 0.5rem;
+  box-shadow:
+    0 28px 60px -26px rgba(0, 0, 0, 0.4),
+    0 0 0 1px color-mix(in srgb, var(--ink) 6%, transparent);
+}
+.nav-menu .nav-menu-item {
+  border-radius: 0.8rem;
+  padding: 0.8rem 1rem;
+  color: var(--ink);
+}
+.nav-menu .nav-menu-item[aria-current='page'] {
+  color: var(--accent);
+}
+
 /* The reading-progress hairline under the bar. Width is a scaleX driven by
    the library from the document's own scroll, so it needs no width here. */
 .bb-progress {

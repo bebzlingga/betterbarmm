@@ -117,6 +117,9 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
     >
       <ol
         className="timeline"
+        // As wide as its stages need, not the shared rule's fixed 66.5rem: a bill on its second stage was two dots a
+        // screen apart on a phone, the second off the edge.
+        style={{ minWidth: `max(100%, ${stages.length * 9.5}rem)` }}
         aria-label={`${reached} of ${stages.length} stages reached${currentLabel ? `, currently at ${currentLabel}` : ""}`}
       >
         {stages.map((stage, index) => {
@@ -143,7 +146,7 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
 						    and the current one is picked out by a halo. */}
               <div className="flex items-center" aria-hidden="true">
                 <span
-                  className={`h-px flex-1 ${
+                  className={`h-[3px] flex-1 ${
                     index === 0
                       ? "bg-transparent"
                       : stage.reached
@@ -152,14 +155,14 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
                   }`}
                 />
                 <span
-                  className={`size-2.5 shrink-0 rounded-full ${
+                  className={`size-3.5 shrink-0 rounded-full ${
                     stage.reached
                       ? `${TONE_FILL[tone]} ${stage.current ? `ring-4 ${TONE_HALO[tone]}` : ""}`
                       : "border border-[var(--rule)] bg-[var(--tone-idle-bg)]"
                   }`}
                 />
                 <span
-                  className={`h-px flex-1 ${
+                  className={`h-[3px] flex-1 ${
                     isLast || !next
                       ? "bg-transparent"
                       : next.reached
@@ -172,13 +175,13 @@ export function JourneyList({ stages }: { stages: JourneyStage[] }) {
               {/* Each name sits centred under its own dot and is allowed to
 						    break mid-word, so a long stage never pushes into the one
 						    beside it. */}
-              <div className="mt-3 min-w-0 px-2 pb-0 text-center">
+              <div className="mt-3.5 min-w-0 px-2 pb-0 text-center">
                 {/* "Now" rides at the end of the stage name, so it reads as part
 							    of the line rather than as a second row over the rail. */}
                 <p
                   className={`hyphens-auto break-words text-[0.8125rem] leading-snug ${
                     stage.reached
-                      ? "font-medium text-[var(--ink)]"
+                      ? "font-[family-name:var(--font-display)] font-semibold text-[var(--ink)]"
                       : "text-[var(--ink-display)]"
                   }`}
                 >

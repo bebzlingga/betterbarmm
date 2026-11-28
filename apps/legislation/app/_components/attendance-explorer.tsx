@@ -110,7 +110,7 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 	return (
 		<section className='bb-container py-[clamp(3.5rem,6vw,5.5rem)]'>
 			{/* Which Authority, as tabs over the figures they change: everything under them follows the choice. */}
-			<div role='tablist' aria-label='Transition Authority' className='flex gap-8 overflow-x-auto border-b border-[var(--rule)] [scrollbar-width:none]'>
+			<div role='tablist' aria-label='Transition Authority' className='flex gap-3 overflow-x-auto pb-1 [scrollbar-width:none]'>
 				{data.map((d) => (
 					<button
 						key={d.key}
@@ -121,10 +121,10 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 							setWhich(d.key)
 							setYear('all')
 						}}
-						className={`-mb-px shrink-0 cursor-pointer border-b-2 pb-4 text-left outline-none transition-colors focus-visible:[&>span:first-child]:underline focus-visible:[&>span:first-child]:decoration-[var(--accent)] focus-visible:[&>span:first-child]:underline-offset-4 ${d.key === which ? 'border-[var(--accent)]' : 'border-transparent hover:border-[var(--rule)]'}`}
+						className={`shrink-0 cursor-pointer rounded-2xl border px-5 py-3.5 text-left outline-none transition focus-visible:ring-2 focus-visible:ring-[var(--accent)] ${d.key === which ? 'border-[var(--accent)] bg-[var(--accent)] text-white' : 'border-[var(--rule)] bg-[var(--paper)] hover:border-[color-mix(in_srgb,var(--ink)_35%,var(--rule))]'}`}
 					>
-						<span className={`block text-[1.0625rem] font-extrabold tracking-[-0.015em] ${d.key === which ? 'text-[var(--ink)]' : 'text-[var(--ink-3)]'}`}>{d.label}</span>
-						<span className='mt-0.5 block text-[0.75rem] text-[var(--ink-mute)]'>
+						<span className={`block font-[family-name:var(--font-display)] text-[1.0625rem] font-extrabold tracking-[-0.015em] ${d.key === which ? 'text-white' : 'text-[var(--ink)]'}`}>{d.label}</span>
+						<span className={`mt-0.5 block text-[0.75rem] ${d.key === which ? 'text-white/75' : 'text-[var(--ink-mute)]'}`}>
 							{d.years} · {d.attendance.sittings.length} sittings
 						</span>
 					</button>
@@ -132,7 +132,7 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 			</div>
 
 
-			<div className='mt-[clamp(3rem,5vw,4.5rem)]'>
+			<div className='mt-[clamp(3rem,5vw,4.5rem)] rounded-[var(--dv-r)] border border-[var(--rule)] p-6 sm:p-8'>
 				<BandSectionTitle title='Sitting by sitting' lead='Everyone holding a seat at each sitting with a published journal, the whole chamber: present, on leave, absent.' />
 				<p className='mt-5 flex flex-wrap gap-x-4 gap-y-1.5 text-[0.6875rem] text-[var(--ink-3)]'>
 					{(['present', 'excused', 'absent'] as const).map((m) => (
@@ -202,8 +202,8 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 				</div>
 
 				{rows.length ? (
-					<div className='mt-5 border-t border-[var(--ink)]'>
-						<p className='hidden grid-cols-[minmax(0,22rem)_4.5rem_minmax(0,1fr)] gap-x-4 lg:gap-x-8 border-b border-[var(--rule)] py-2 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:grid'>
+					<div className='mt-6 overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)]'>
+						<p className='hidden grid-cols-[minmax(0,22rem)_4.5rem_minmax(0,1fr)] gap-x-4 lg:gap-x-8 border-b border-[var(--rule)] bg-[var(--paper-2)] px-6 py-3 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-mute)] lg:grid'>
 							<span className='flex gap-3'>
 								<span className='w-5'>#</span>
 								<span>Member</span>
@@ -217,7 +217,7 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 						</p>
 						<ol>
 							{rows.map((m, i) => (
-								<li key={m.slug} className='grid grid-cols-[minmax(0,1fr)_4.5rem] items-center gap-x-4 gap-y-2 border-b border-[var(--rule-soft)] py-3.5 transition-colors hover:bg-[var(--paper-2)] lg:grid-cols-[minmax(0,22rem)_4.5rem_minmax(0,1fr)] lg:gap-x-8'>
+								<li key={m.slug} className='grid grid-cols-[minmax(0,1fr)_4.5rem] items-center gap-x-4 gap-y-2 border-b border-[var(--rule-soft)] px-4 py-3.5 transition-colors last:border-0 hover:bg-[var(--paper-2)] sm:px-6 lg:grid-cols-[minmax(0,22rem)_4.5rem_minmax(0,1fr)] lg:gap-x-8'>
 									<span className='flex min-w-0 items-center gap-3 leading-tight'>
 										<span className='num w-5 shrink-0 text-[0.6875rem] text-[var(--ink-mute)]'>{String(i + 1).padStart(2, '0')}</span>
 										<MemberAvatar name={m.name} src={m.photoUrl} size='xs' />
@@ -244,7 +244,7 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 						</ol>
 					</div>
 				) : (
-					<p className='mt-4 border border-dashed border-[var(--rule)] px-5 py-10 text-center text-[0.875rem] text-[var(--ink-3)]'>
+					<p className='mt-6 rounded-[var(--dv-r)] border border-dashed border-[var(--rule)] px-5 py-12 text-center text-[0.875rem] text-[var(--ink-3)]'>
 						No Member matches those filters.{' '}
 						<button type='button' onClick={reset} className='cursor-pointer font-semibold text-[var(--accent)]'>
 							Clear them
@@ -253,7 +253,7 @@ export function AttendanceExplorer({ data }: { data: Data }) {
 				)}
 			</div>
 
-			<div className='mt-12 grid gap-3 border-t border-[var(--rule)] pt-8 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
+			<div className='mt-12 grid gap-3 border-t border-[var(--rule-soft)] pt-8 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
 				<p>
 					Each journal’s roll call names every Member: present in the hall or virtually, appeared after the roll call, absent, or
 					on leave or official business. Someone who arrived after the roll call is counted present, so a sitting’s count here can

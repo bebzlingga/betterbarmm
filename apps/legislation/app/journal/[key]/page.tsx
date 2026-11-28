@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { FilePdfIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { RegistryBand } from '../../_components/registry-band'
@@ -73,40 +74,40 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 				}
 			/>
 
-			<section className='bb-container grid gap-12 pt-[clamp(3.75rem,7vw,6.5rem)] pb-[clamp(3.75rem,7vw,6.5rem)] lg:grid-cols-[minmax(0,1fr)_18rem]'>
+			<section className='bb-container grid gap-14 py-[clamp(4.5rem,8vw,7rem)] lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-20'>
 				<div className='min-w-0'>
-					<h2 className='text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+					<h2 className='font-[family-name:var(--font-display)] text-[clamp(1.25rem,1.8vw,1.5rem)] font-extrabold tracking-[-0.025em] text-[var(--ink)]'>
 						The order of business <span className='text-[var(--ink-mute)]'>· {journal.items.length}</span>
 					</h2>
-					<ol className='mt-4'>
+					<ol className='mt-6 grid gap-3'>
 						{journal.items.map((item, index) => {
 							const id = JSON.stringify(item.measure ?? null)
 							const points = item.measure && !shown.has(id) ? pointsFor(item.measure) : []
 							if (points.length) shown.add(id)
 							const href = measureHref(item.measure, journal.parliament)
 							return (
-								<li key={index} className='border-b border-[var(--rule-soft)] py-5 last:border-b-0'>
+								<li key={index} className='rounded-[var(--dv-r)] border border-[var(--rule)] p-5 sm:p-6'>
 									{/* What was done, and to which measure, as badges, as a bill's card heads itself. */}
 									<p className='flex flex-wrap items-center gap-1.5'>
-										<span className='inline-block rounded-full bg-[var(--accent-soft)] px-2.5 py-0.5 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em] text-[var(--accent)]'>
+										<span className='inline-block rounded-full bg-[var(--accent-soft)] px-3 py-1 font-[family-name:var(--font-display)] text-[0.625rem] font-bold uppercase tracking-[0.12em] text-[var(--accent)]'>
 											{KIND_LABEL[item.kind] ?? item.kind}
 										</span>
 										{item.measure ? (
 											href ? (
-												<Link href={href} className='inline-block rounded-full border border-[var(--rule)] px-2.5 py-0.5 text-[0.75rem] font-semibold text-[var(--ink)] transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'>
+												<Link href={href} className='inline-block rounded-full border border-[var(--rule)] px-3 py-1 text-[0.75rem] font-semibold text-[var(--ink)] transition hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white'>
 													{measureLabel(item.measure)}
 												</Link>
 											) : (
-												<span className='inline-block rounded-full border border-[var(--rule)] px-2.5 py-0.5 text-[0.75rem] font-semibold text-[var(--ink-2)]'>{measureLabel(item.measure)}</span>
+												<span className='inline-block rounded-full border border-[var(--rule)] px-3 py-1 text-[0.75rem] font-semibold text-[var(--ink-2)]'>{measureLabel(item.measure)}</span>
 											)
 										) : null}
 									</p>
 									{item.measure?.titleAsRead ? (
 										<p className='mt-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>{item.measure.titleAsRead}</p>
 									) : null}
-									<p className='mt-1 text-[0.875rem] leading-6 text-[var(--ink)]'>{item.text}</p>
+									<p className='mt-2 text-[0.9375rem] leading-[1.65] text-[var(--ink)]'>{item.text}</p>
 									{points.length ? (
-										<ul className='mt-3 grid gap-1 bg-[var(--paper-2)] px-4 py-3'>
+										<ul className='tv-wash mt-4 grid gap-1 rounded-2xl px-5 py-4'>
 											{points.map((point, i) => (
 												<li key={i} className='py-1 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
 													{point.point}
@@ -122,7 +123,7 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 					<Unplaced journal={journal} shown={shown} />
 				</div>
 
-				<aside className='space-y-8 lg:sticky lg:top-24 lg:self-start'>
+				<aside className='space-y-8 lg:sticky lg:top-8 lg:self-start'>
 					<Facts
 						rows={[
 							['Present', journal.attendance?.present != null ? String(journal.attendance.present) : '—'],
@@ -139,12 +140,12 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 
 					{journal.rollCalls.length ? (
 						<div>
-							<h2 className='text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+							<h2 className='font-[family-name:var(--font-display)] text-[clamp(1.25rem,1.8vw,1.5rem)] font-extrabold tracking-[-0.025em] text-[var(--ink)]'>
 								Votes counted
 							</h2>
-							<ul className='mt-3 grid gap-2'>
+							<ul className='mt-4 grid gap-2.5'>
 								{journal.rollCalls.map((roll, index) => (
-									<li key={index} className='border border-[var(--rule)] p-4 text-[0.8125rem] leading-6'>
+									<li key={index} className='rounded-2xl border border-[var(--rule)] p-4 text-[0.8125rem] leading-6'>
 										<p className='font-semibold'>{measureLabel(roll.measure)}</p>
 										<p className='num text-[var(--ink-2)]'>
 											{roll.yes} for · {roll.no} against · {roll.abstain} abstained
@@ -169,10 +170,11 @@ export default async function Page({ params }: { params: Promise<{ key: string }
 					{journal.dateNote ? <p className='text-[0.78125rem] leading-6 text-[var(--ink-3)]'>{journal.dateNote}</p> : null}
 
 					<div className='grid gap-2'>
-						<a href={journal.pdf_url} target='_blank' rel='noreferrer' className='bb-btn bb-btn-solid w-full'>
+						<a href={journal.pdf_url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-accent w-full justify-center'>
+							<FilePdfIcon size={18} weight='duotone' aria-hidden='true' />
 							The journal as published (PDF)
 						</a>
-						<a href={journal.url} target='_blank' rel='noreferrer' className='bb-btn bb-btn-ghost w-full'>
+						<a href={journal.url} target='_blank' rel='noreferrer' className='dv-btn dv-btn-line w-full justify-center'>
 							Its page on Parliament’s site
 						</a>
 						<Link href='/journal' className='mt-1 text-center text-[0.8125rem] font-semibold text-[var(--ink-3)] hover:text-[var(--accent)]'>
@@ -191,12 +193,12 @@ function Unplaced({ journal, shown }: { journal: Journal; shown: Set<string> }) 
 	if (!rest.length) return null
 	return (
 		<div className='mt-12'>
-			<h2 className='text-[1.0625rem] font-extrabold tracking-[-0.015em] text-[var(--ink)]'>
+			<h2 className='font-[family-name:var(--font-display)] text-[clamp(1.25rem,1.8vw,1.5rem)] font-extrabold tracking-[-0.025em] text-[var(--ink)]'>
 				Also on the floor
 			</h2>
-			<ul className='mt-3'>
+			<ul className='mt-5 grid gap-2.5'>
 				{rest.map((point, index) => (
-					<li key={index} className='border-b border-[var(--rule-soft)] py-3 text-[0.84375rem] leading-6 text-[var(--ink-2)]'>
+					<li key={index} className='rounded-2xl bg-[var(--paper-2)] px-5 py-3.5 text-[0.875rem] leading-6 text-[var(--ink-2)]'>
 						{point.measure ? <span className='font-semibold text-[var(--ink)]'>{measureLabel(point.measure)}: </span> : null}
 						{point.point}
 					</li>
@@ -208,11 +210,11 @@ function Unplaced({ journal, shown }: { journal: Journal; shown: Set<string> }) 
 
 function Facts({ rows }: { rows: [string, string][] }) {
 	return (
-		<dl className='grid grid-cols-3 divide-x divide-[var(--rule)] border border-[var(--rule)] bg-[var(--paper-2)]'>
+		<dl className='tv-wash grid grid-cols-3 divide-x divide-[var(--rule-soft)] rounded-[var(--dv-r)] py-2'>
 			{rows.map(([label, value]) => (
 				<div key={label} className='flex flex-col-reverse px-3 py-4 text-center'>
-					<dt className='mt-1.5 font-mono text-[0.5625rem] font-bold uppercase tracking-[0.12em] text-[var(--brass)]'>{label}</dt>
-					<dd className='num text-[1.5rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{value}</dd>
+					<dt className='mt-2 font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>{label}</dt>
+					<dd className='num font-[family-name:var(--font-display)] text-[1.75rem] font-extrabold leading-none tracking-[-0.03em] text-[var(--ink)]'>{value}</dd>
 				</div>
 			))}
 		</dl>

@@ -1,3 +1,4 @@
+import { DownloadSimpleIcon } from '@phosphor-icons/react/ssr'
 import type { CategorySlug } from '../_lib/categories'
 import { getDataset } from '../_lib/legislation-data'
 import { AwaitingData } from './awaiting-data'
@@ -30,11 +31,14 @@ export function CategoryPage({ slug }: { slug: CategorySlug }) {
 				<>
 					<RecordBrowser dataset={dataset} />
 					{DOWNLOADABLE.has(slug) ? (
-						<div className='bb-container pb-16 text-[0.8125rem]'>
-							<a href={`/csv/${slug}`} className='rule-link font-semibold text-[var(--ink)]' download>
-								Download Parliament&rsquo;s full list as CSV
-							</a>
-							<span className='text-[var(--ink-3)]'> · number, title, status, authors and history of each</span>
+						<div className='bb-container pb-20'>
+							<p className='flex flex-wrap items-center gap-x-4 gap-y-2 rounded-[var(--dv-r)] bg-[var(--paper-2)] px-5 py-4 text-[0.875rem] text-[var(--ink-3)] sm:px-6'>
+								<a href={`/csv/${slug}`} className='dv-pill !bg-[var(--paper)] !text-[0.8125rem] font-semibold' download>
+									<DownloadSimpleIcon size={15} weight='duotone' aria-hidden='true' className='text-[var(--accent)]' />
+									Download Parliament&rsquo;s full list as CSV
+								</a>
+								<span>Number, title, status, authors and history of each.</span>
+							</p>
 						</div>
 					) : null}
 				</>

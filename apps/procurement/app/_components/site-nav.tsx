@@ -88,7 +88,7 @@ function Menu({ label, active, children }: { label: string; active: boolean; chi
 						exit={{ opacity: 0, y: -6, scaleY: 0.96 }}
 						transition={{ duration: 0.24, ease: EASE }}
 						style={{ originY: 0 }}
-						className='absolute right-0 top-full z-40 mt-1 w-[17rem] border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'
+						className='nav-menu absolute right-0 top-full z-40 mt-1 w-[17rem] border border-[var(--rule)] bg-[var(--paper)] p-1 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.45)]'
 					>
 						{children(() => setOpen(false))}
 					</motion.div>

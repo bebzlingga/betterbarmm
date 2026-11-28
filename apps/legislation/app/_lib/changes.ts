@@ -1,7 +1,7 @@
 import { recordHref } from './categories'
-import { describeStatus, type StatusTone } from './labels'
+import { describeStatus, toDisplayTitle, type StatusTone } from './labels'
 import { getAllRecords, type LegislationRecord } from './legislation-data'
-import { getOfficialMeasuresByCategory } from './official-measures'
+import { getFirstParliamentMeasures, getOfficialMeasuresByCategory } from './official-measures'
 
 /* ============================================================
    What changed, and when
@@ -49,6 +49,23 @@ export function getChanges(): Change[] {
 					title: record?.shortTitle ?? record?.title ?? measure.title,
 					href: record ? recordHref(record) : undefined,
 				})
+			})
+		}
+	}
+	// The First Parliament's measures (from 24 November 2026), numbered from 1 again and linked to Parliament's own page.
+	for (const measure of getFirstParliamentMeasures()) {
+		for (const line of measure.history) {
+			const m = LINE.exec(line.trim())
+			if (!m) continue
+			const [, stage, month, day, year, note] = m
+			out.push({
+				date: `${year}-${month!.padStart(2, '0')}-${day!.padStart(2, '0')}`,
+				// "Adopted as Bangsamoro Parliament Resolution No. 1" says the Parliament twice on a card already headed by it.
+				stage: stage!.trim().replace(/Bangsamoro Parliament Resolution/i, 'Resolution'),
+				note: note || undefined,
+				label: `First Parliament ${measure.kind} ${measure.number}`,
+				title: toDisplayTitle(measure.title),
+				href: measure.url || undefined,
 			})
 		}
 	}

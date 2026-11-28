@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { Hero } from '../../_components/hero'
+import { MemberAvatar } from '../../_components/member-avatar'
 import { MemberIdentity } from '../../_components/member-profile'
 import { MemberRecord } from '../../_components/member-record'
 import { getCommitteesForMember } from '../../_lib/committees-data'
@@ -53,8 +55,32 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 
 	const chamber = chamberRecord(member)
 
+	// Who they are, in a line, over the name on the header.
+	const kicker = member.isInstitution
+		? 'Institutional author'
+		: member.elected
+			? `Member of the First Parliament · ${member.elected.party ?? member.elected.seat}`
+			: `Bangsamoro Transition Authority · ${member.termOfOffice}`
+
 	return (
-		<section className='bb-container py-[clamp(3.75rem,7vw,6.5rem)]'>
+		<>
+		{/* The person on the crimson header (user decision: the travel look), their portrait on its right. */}
+		<Hero
+			kicker={kicker}
+			title={member.displayName}
+			auto
+			lede={member.roleTitle ?? member.position ?? undefined}
+			side={
+				member.isInstitution ? undefined : (
+					<div className='flex lg:justify-end'>
+						<span className='rounded-[2rem] bg-white/10 p-2 shadow-[0_30px_60px_-30px_rgba(0,0,0,0.6)]'>
+							<MemberAvatar name={member.displayName} src={member.photoUrl} size='lg' />
+						</span>
+					</div>
+				)
+			}
+		/>
+		<section className='bb-container py-[clamp(4rem,8vw,7rem)]'>
 			{/* Two columns: the person, then the record. Held well apart — the
 			    left column runs biography and the right runs a list of measures,
 			    and at a narrow gutter the two read as one column of text.
@@ -68,9 +94,9 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 			    itself to 470 and ran off the side of a phone. `grid-cols-1` is
 			    `minmax(0,1fr)`, which lets the track be the width it is given and
 			    leaves the tab row to scroll, which is what it was built to do. */}
-			<div className='grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-24 xl:grid-cols-[minmax(0,28rem)_minmax(0,1fr)] xl:gap-32'>
+			<div className='grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-16 xl:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] xl:gap-20'>
 				<Reveal>
-					<MemberIdentity member={member} />
+					<MemberIdentity member={member} inHeader />
 				</Reveal>
 
 				<Reveal delay={80}>
@@ -83,12 +109,13 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
 				</Reveal>
 			</div>
 			{chamber ? <MemberChamber record={chamber} name={member.displayName} /> : null}
-			<div className='mt-12 text-[0.8125rem] text-[var(--ink-3)]'>
-				<a href={`/members/${slug}/feed.xml`} className='rule-link font-semibold text-[var(--ink)]'>
+			<div className='mt-14 flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.8125rem] text-[var(--ink-3)]'>
+				<a href={`/members/${slug}/feed.xml`} className='dv-pill'>
 					Follow {member.displayName}&rsquo;s measures by RSS
-				</a>{' '}
-				· each time a bill or resolution they filed moves.
+				</a>
+				Each time a bill or resolution they filed moves.
 			</div>
 		</section>
+		</>
 	)
 }

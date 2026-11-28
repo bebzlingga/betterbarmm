@@ -31,7 +31,7 @@ export function MemberAvatar({
 			<img
 				src={src}
 				alt={name}
-				className={`${dimensions} shrink-0 rounded-[var(--radius)] border border-[var(--rule)] object-cover`}
+				className={`${dimensions} shrink-0 ${size === 'lg' ? 'rounded-[1.75rem]' : 'rounded-2xl'} bg-[var(--paper-2)] object-cover object-top`}
 			/>
 		)
 	}
@@ -40,7 +40,7 @@ export function MemberAvatar({
 	// to a portrait frame reads as a badly cropped photograph.
 	return (
 		<span
-			className={`${dimensions} inline-flex shrink-0 select-none items-center justify-center rounded-[var(--radius)] border border-[var(--rule)] bg-[var(--paper-2)] ${size === 'xs' ? 'p-1.5' : 'p-2.5'}`}
+			className={`${dimensions} inline-flex shrink-0 select-none items-center justify-center ${size === 'lg' ? 'rounded-[1.75rem]' : 'rounded-2xl'} bg-[var(--paper-2)] ${size === 'xs' ? 'p-1.5' : 'p-2.5'}`}
 			title={`No photograph published for ${name}`}
 		>
 			{/* eslint-disable-next-line @next/next/no-img-element -- sized by its frame */}
@@ -60,7 +60,7 @@ export function MemberAvatar({
 export function MemberPortrait({ name, src }: { name: string; src?: string }) {
 	if (src && isSeal(src)) src = undefined
 	return (
-		<span className='grid size-24 shrink-0 place-items-center overflow-hidden rounded-full border border-[var(--rule)] bg-[var(--paper-2)] transition duration-500 group-hover:scale-105'>
+		<span className='grid size-24 shrink-0 place-items-center overflow-hidden rounded-full bg-[var(--paper-2)] ring-4 ring-[color-mix(in_srgb,var(--accent)_8%,var(--paper))] transition duration-500 group-hover:scale-105'>
 			{/* eslint-disable-next-line @next/next/no-img-element -- portraits are local files of mixed sizes */}
 			<img
 				src={src ?? '/images/members/BTA-logo.png'}
@@ -72,9 +72,9 @@ export function MemberPortrait({ name, src }: { name: string; src?: string }) {
 	)
 }
 
-/** The landing site's card (user decision): a hairline, lifting and turning crimson at the edge on hover. */
+/** The card in the travel look (user decision): rounded, a hairline, lifting with a soft shadow on hover. */
 export const MEMBER_CARD =
-	'group flex h-full min-w-0 flex-col overflow-hidden border border-[var(--rule)] bg-[var(--paper)] text-center transition duration-300 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:shadow-[0_20px_40px_-26px_rgba(0,0,0,0.35)]'
-/** The bar at a card's foot, filling crimson with the card's hover. */
+	'group flex h-full min-w-0 flex-col overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] text-center transition duration-300 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'
+/** The bar at a card's foot on a warm tint, filling crimson with the card's hover. */
 export const MEMBER_CARD_FOOT =
-	'mt-auto flex items-center justify-between gap-3 border-t border-[var(--rule)] px-5 py-3 text-left text-[0.78125rem] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'
+	'mt-auto flex items-center justify-between gap-3 bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] px-5 py-3.5 text-left text-[0.78125rem] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white'
