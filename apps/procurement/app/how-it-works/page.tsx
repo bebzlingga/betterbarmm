@@ -18,8 +18,8 @@ export const metadata: Metadata = {
    section it comes from.
    ============================================================ */
 
-const H2 = 'text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
-const H3 = 'mt-10 text-[1.1rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'
+const H2 = 'dv-title'
+const H3 = 'mt-10 font-[family-name:var(--font-display)] text-[1.1875rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'
 const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 const CITE = 'mt-3 text-[0.78125rem] leading-5 text-[var(--ink-3)]'
 
@@ -175,10 +175,10 @@ const sources = [
 
 function Table({ head, rows }: { head: string[]; rows: string[][] }) {
 	return (
-		<div className='mt-6 overflow-x-auto'>
+		<div className='mt-6 overflow-x-auto rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-5 pb-1 sm:px-7'>
 			<table className='w-full min-w-[30rem] border-collapse text-left text-[0.875rem] leading-6'>
 				<thead>
-					<tr className='border-b border-[var(--rule-strong,var(--rule))]'>
+					<tr className='border-b border-[var(--rule)]'>
 						{head.map((h) => (
 							<th key={h} className='py-2.5 pr-6 text-[0.75rem] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'>
 								{h}
@@ -188,7 +188,7 @@ function Table({ head, rows }: { head: string[]; rows: string[][] }) {
 				</thead>
 				<tbody>
 					{rows.map((r) => (
-						<tr key={r.join()} className='border-b border-[var(--rule)]'>
+						<tr key={r.join()} className='border-b border-[var(--rule-soft)] last:border-b-0'>
 							{r.map((c, i) => (
 								<td key={i} className={`py-3 pr-6 align-top last:pr-0 ${i ? 'num whitespace-nowrap font-semibold text-[var(--ink)]' : 'text-[var(--ink-2)]'}`}>
 									{c}
@@ -306,12 +306,12 @@ export default function HowItWorksPage() {
 							Competitive bidding is the rule; every other way to buy is an exception that must be justified. Days are calendar
 							days.
 						</p>
-						<ol className='mt-8'>
+						<ol className='mt-8 grid gap-3'>
 							{steps.map((s, i) => (
-								<li key={s.name} className='grid grid-cols-[2.5rem_minmax(0,1fr)] gap-x-4 border-t border-[var(--rule)] py-6'>
-									<span className='num text-[0.8125rem] font-semibold text-[var(--brass)]'>{String(i + 1).padStart(2, '0')}</span>
+								<li key={s.name} className='grid grid-cols-[2.75rem_minmax(0,1fr)] gap-x-5 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-6'>
+									<span className='num grid size-11 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] font-[family-name:var(--font-display)] text-[0.875rem] font-bold text-[var(--accent)]'>{String(i + 1).padStart(2, '0')}</span>
 									<div>
-										<h3 className='text-[1.05rem] font-extrabold tracking-[-0.01em] text-[var(--ink)]'>{s.name}</h3>
+										<h3 className='font-[family-name:var(--font-display)] text-[1.0625rem] font-bold tracking-[-0.015em] text-[var(--ink)]'>{s.name}</h3>
 										<p className='mt-2 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{s.body}</p>
 										<p className='mt-1.5 text-[0.78125rem] text-[var(--ink-3)]'>{s.cite}</p>
 									</div>
@@ -336,9 +336,9 @@ export default function HowItWorksPage() {
 						{modes.map((g) => (
 							<div key={g.group}>
 								<h3 className={H3}>{g.group}</h3>
-								<dl className='mt-4'>
+								<dl className='mt-4 grid gap-3'>
 									{g.items.map((m) => (
-										<div key={m.name} className='grid gap-x-8 gap-y-1 border-t border-[var(--rule)] py-4 sm:grid-cols-[minmax(0,1fr)_11rem]'>
+										<div key={m.name} className='grid gap-x-8 gap-y-1 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] px-5 py-4 sm:grid-cols-[minmax(0,1fr)_11rem]'>
 											<dt className='text-[0.9375rem] font-semibold text-[var(--ink)]'>{m.name}</dt>
 											<dd className='num text-[0.8125rem] text-[var(--ink-3)] sm:row-span-2 sm:text-right'>
 												{m.limit}

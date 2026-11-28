@@ -61,20 +61,20 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 				]}
 			/>
 
-			<div className='bb-container bb-section grid gap-16 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-24'>
+			<div className='bb-container grid gap-14 py-[clamp(3.5rem,7vw,5.5rem)] lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-16'>
 				<section className='min-w-0'>
-					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Bid notices</h2>
+					<h2 className='dv-title'>Bid notices</h2>
 					<div className='mt-6'>
 						<NoticesExplorer entity={entity.slug} years={span.length ? span : years} groups={groups} modes={modeGroups} funds={funds} />
 					</div>
 				</section>
 
-				<aside className='order-first lg:order-none'>
-					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Top suppliers</h2>
+				<aside className='order-first self-start rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-7 lg:order-none'>
+					<h2 className='font-[family-name:var(--font-display)] text-[1.375rem] font-extrabold tracking-[-0.025em] text-[var(--ink)]'>Top suppliers</h2>
 					{top.length ? (
 						<ol className='mt-4'>
 							{top.map(([name, s]) => (
-								<li key={name} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule)] py-3'>
+								<li key={name} className='flex items-baseline justify-between gap-4 border-b border-[var(--rule-soft)] py-3 last:border-b-0'>
 									<a href={supplierHref(name)} className='min-w-0 text-[0.84375rem] font-semibold leading-5 text-[var(--ink)] hover:text-[var(--accent)]'>
 										{name}
 									</a>
@@ -89,7 +89,7 @@ export default async function EntityPage({ params }: { params: Promise<{ entity:
 						<p className='mt-3 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>PhilGEPS records no award on this office&rsquo;s notices.</p>
 					)}
 					{entity.unit ? (
-						<a href={`https://lgu.betterbarmm.com/${entity.unit}`} className='rule-link mt-8 inline-block text-[0.8125rem]'>
+						<a href={`https://lgu.betterbarmm.com/${entity.unit}`} className='dv-pill mt-6 !text-[0.8125rem]'>
 							Its profile in the Local Government workspace
 						</a>
 					) : null}

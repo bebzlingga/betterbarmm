@@ -1,6 +1,7 @@
 import { EntityExplorer, type EntityRow } from './_components/entity-explorer'
 import Link from 'next/link'
-import { Figures, Masthead, YearBars, longDate, peso } from './_components/parts'
+import { ArrowRightIcon, TimerIcon } from '@phosphor-icons/react/ssr'
+import { CARD, Figures, Masthead, SectionHead, YearBars, longDate, peso } from './_components/parts'
 import { TopChart } from './_components/top-chart'
 import { entities, entityTotals, openNotices, supplierHref, regionByYear, regionTotals, suppliers, topCategories, years } from './_lib/philgeps'
 
@@ -45,43 +46,47 @@ export default function ProcurementHome() {
 			/>
 
 			{openNotices.length ? (
-				<section className='bg-[var(--paper-2)]'>
-					<div className='bb-container bb-section'>
-					<div className='flex flex-wrap items-end justify-between gap-x-10 gap-y-3'>
-						<div>
-							<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Open for bids</h2>
-							<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-3)]'>
-								{openNotices.length} notices still taking bids, closing soonest first.
-							</p>
-						</div>
-						<Link href='/notices?stage=Open+for+bids' className='rule-link text-[0.875rem] font-semibold text-[var(--ink)]'>
-							See all {openNotices.length}
-						</Link>
-					</div>
-					<ul className='mt-8 grid gap-x-12 border-t border-[var(--rule)] lg:grid-cols-2'>
-						{openNotices.slice(0, 6).map((n) => (
-							<li key={n.ref} className='grid grid-cols-[minmax(0,1fr)_auto] gap-x-8 border-b border-[var(--rule)] py-4'>
-								<div className='min-w-0'>
-									<p className='line-clamp-2 text-[0.90625rem] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category}</p>
-									<p className='mt-1 truncate text-[0.75rem] text-[var(--ink-3)]'>
-										<Link href={`/${entities[n.entity]!.slug}`} className='rule-link'>
-											{entities[n.entity]!.name}
-										</Link>
-										{n.mode ? ` · ${n.mode}` : null}
-									</p>
-								</div>
-								<div className='text-right'>
-									<p className='num text-[0.9375rem] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
-									{n.closing ? <p className='mt-1 text-[0.71875rem] font-semibold text-[var(--accent)]'>Closes {longDate(n.closing)}</p> : null}
-								</div>
-							</li>
-						))}
-					</ul>
+				<section className='tv-wash'>
+					<div className='bb-container py-[clamp(4rem,8vw,6.5rem)]'>
+						<SectionHead title='Open for bids' note={`${openNotices.length} notices still taking bids, closing soonest first.`}>
+							<Link href='/notices?stage=Open+for+bids' className='dv-pill'>
+								See all {openNotices.length}
+								<ArrowRightIcon size={14} weight='bold' aria-hidden='true' />
+							</Link>
+						</SectionHead>
+						<ul className='mt-10 grid gap-4 lg:grid-cols-2'>
+							{openNotices.slice(0, 6).map((n) => (
+								<li key={n.ref} className={`${CARD} flex gap-4 p-5 sm:p-6`}>
+									<span className='hidden size-11 shrink-0 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)] sm:grid'>
+										<TimerIcon size={22} weight='duotone' aria-hidden='true' />
+									</span>
+									<div className='grid min-w-0 flex-1 gap-x-6 sm:grid-cols-[minmax(0,1fr)_auto]'>
+										<div className='min-w-0'>
+											<p className='line-clamp-2 font-[family-name:var(--font-display)] text-[0.96875rem] font-bold leading-6 text-[var(--ink)]'>{n.title ?? n.category}</p>
+											<p className='mt-1 truncate text-[0.78125rem] text-[var(--ink-3)]'>
+												<Link href={`/${entities[n.entity]!.slug}`} className='rule-link'>
+													{entities[n.entity]!.name}
+												</Link>
+												{n.mode ? ` · ${n.mode}` : null}
+											</p>
+										</div>
+										<div className='mt-3 flex items-center justify-between gap-3 sm:mt-0 sm:block sm:text-right'>
+											<p className='num text-[1rem] font-bold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
+											{n.closing ? (
+												<p className='mt-1.5 inline-block whitespace-nowrap rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] px-2.5 py-0.5 text-[0.6875rem] font-semibold text-[var(--accent)]'>
+													Closes {longDate(n.closing)}
+												</p>
+											) : null}
+										</div>
+									</div>
+								</li>
+							))}
+						</ul>
 					</div>
 				</section>
 			) : null}
 
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(4rem,8vw,6.5rem)]'>
 				<TopChart
 					title='Top 15'
 					rankings={[
@@ -117,14 +122,18 @@ export default function ProcurementHome() {
 				/>
 			</section>
 
-			<section className='bb-container pb-[clamp(3.75rem,7vw,6.5rem)]'>
-				<h2 className='mb-8 border-t border-[var(--rule)] pt-12 text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Every office</h2>
-				<EntityExplorer rows={rows} years={years} />
-				<p className='mt-10 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
-					An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
-					records on the legacy system; the modernized system&rsquo;s awards are not published by agency. Open notices,
-					sources of funds and closing dates are read from the modernized system&rsquo;s own notice pages.
-				</p>
+			<section className='tv-wash-flip'>
+				<div className='bb-container py-[clamp(4rem,8vw,6.5rem)]'>
+					<SectionHead title='Every office' note='Every BARMM procuring entity on PhilGEPS, ranked by the approved budget of the notices it posted.' />
+					<div className='mt-10'>
+						<EntityExplorer rows={rows} years={years} />
+					</div>
+					<p className='mt-10 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>
+						An approved budget is what an office set aside for a purchase, not what it paid. Awards are only those PhilGEPS
+						records on the legacy system; the modernized system&rsquo;s awards are not published by agency. Open notices,
+						sources of funds and closing dates are read from the modernized system&rsquo;s own notice pages.
+					</p>
+				</div>
 			</section>
 		</>
 	)

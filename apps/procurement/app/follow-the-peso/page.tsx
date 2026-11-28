@@ -20,14 +20,14 @@ export default function FollowThePesoPage() {
 				name='Follow the peso'
 				note='Each regional office three ways: what the Bangsamoro budget gave it to buy goods, services and works with, what it then put out to bid, and what PhilGEPS records it awarded.'
 			/>
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.5rem,7vw,5.5rem)]'>
 				<PesoTable rows={pesoRows} years={pesoYears} />
 			</section>
 
 			{/* The notes on a light band of their own, under the table. */}
-			<section className='bg-[var(--paper-2)]'>
-				<div className='bb-container bb-section'>
-					<h2 className='text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>Reading it</h2>
+			<section className='tv-wash'>
+				<div className='bb-container py-[clamp(4rem,8vw,6.5rem)]'>
+					<h2 className='dv-title'>Reading it</h2>
 					<p className={P}>
 						<strong>Budget to buy with</strong>{' '}is the office&rsquo;s maintenance and other operating expenses plus its
 						capital outlay in that year&rsquo;s General Appropriations Act. Salaries are left out: they are not bought

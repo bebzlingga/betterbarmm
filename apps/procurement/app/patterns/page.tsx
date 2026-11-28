@@ -148,7 +148,7 @@ function Soon() {
 						['/follow-the-peso', 'Follow the peso', 'Budget, bid out, awarded'],
 					].map(([href, label, note]) => (
 						<li key={href}>
-							<Link href={href} className='group block h-full border border-[var(--rule)] p-5 transition hover:border-[var(--ink)]'>
+							<Link href={href} className='group block h-full rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 transition hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)]'>
 								<span className='block text-[1.0625rem] font-extrabold tracking-[-0.01em] group-hover:text-[var(--accent)]'>{label} →</span>
 								<span className='mt-1 block text-[0.84375rem] text-[var(--ink-3)]'>{note}</span>
 							</Link>

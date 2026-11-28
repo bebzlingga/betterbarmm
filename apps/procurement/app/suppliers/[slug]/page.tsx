@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 	}
 }
 
-const H2 = 'text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'dv-title'
 const TH = 'py-2.5 pr-6 text-[0.71875rem] font-semibold uppercase tracking-[0.06em] text-[var(--ink-3)] last:pr-0'
 const TD = 'py-3 pr-6 align-top last:pr-0'
 
@@ -34,9 +34,9 @@ export default async function SupplierPage({ params }: { params: Promise<{ slug:
 				note={`${s.awards.toLocaleString('en-PH')} contract${s.awards === 1 ? '' : 's'} won from ${offices.length} BARMM office${offices.length === 1 ? '' : 's'}, worth ${peso(s.amount)}${first ? `, from ${longDate(first)}` : ''}${s.last ? ` to ${longDate(s.last)}` : ''}.`}
 			/>
 
-			<div className='bb-container bb-section [&>section+section]:mt-16'>
+			<div className='bb-container py-[clamp(3.5rem,7vw,5.5rem)] [&>section+section]:mt-20'>
 				{entry ? (
-					<section className='border border-[var(--accent)] bg-[color-mix(in_srgb,var(--accent)_6%,var(--paper))] p-6'>
+					<section className='rounded-[var(--dv-r)] border border-[var(--accent)] bg-[color-mix(in_srgb,var(--accent)_6%,var(--paper))] p-7 sm:p-9'>
 						<p className='flex items-center gap-2 font-semibold text-[var(--accent)]'>
 							<WarningIcon size={18} weight='fill' aria-hidden='true' /> The same name is on the government&rsquo;s procurement blacklist
 						</p>
@@ -65,11 +65,12 @@ export default async function SupplierPage({ params }: { params: Promise<{ slug:
 				{byYear.length > 1 ? (
 					<section>
 						<h2 className={H2}>By year</h2>
-						<div className='mt-6 flex h-40 items-end gap-3 border-b border-[var(--rule)]'>
+						<div className='mt-8 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-8'>
+						<div className='flex h-40 items-end gap-3 border-b border-[var(--rule)]'>
 							{byYear.map(([y, v]) => (
 								<div key={y} className='flex h-full flex-1 flex-col items-center justify-end gap-1.5'>
 									<span className='num text-[0.6875rem] text-[var(--ink-2)]'>{peso(v)}</span>
-									<span className='w-full max-w-16 bg-[var(--accent)]' style={{ height: `${Math.max((v / top) * 80, 1)}%` }} title={`${y}: ${peso(v)}`} />
+									<span className='w-full max-w-16 rounded-t-md bg-[var(--accent)]' style={{ height: `${Math.max((v / top) * 80, 1)}%` }} title={`${y}: ${peso(v)}`} />
 								</div>
 							))}
 						</div>
@@ -80,13 +81,14 @@ export default async function SupplierPage({ params }: { params: Promise<{ slug:
 								</span>
 							))}
 						</div>
+						</div>
 					</section>
 				) : null}
 
 				<section>
 					<h2 className={H2}>Who it won from</h2>
 					<p className='mt-2 text-[0.875rem] text-[var(--ink-3)]'>Share is of all the contracts PhilGEPS records that office awarding.</p>
-					<div className='mt-6 overflow-x-auto'>
+					<div className='mt-8 overflow-x-auto rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-5 pb-1 sm:px-7'>
 						<table className='w-full min-w-[36rem] border-collapse text-left text-[0.875rem]'>
 							<thead>
 								<tr className='border-b border-[var(--rule)]'>
@@ -98,7 +100,7 @@ export default async function SupplierPage({ params }: { params: Promise<{ slug:
 							</thead>
 							<tbody>
 								{offices.map((o) => (
-									<tr key={o.entity.slug} className='border-b border-[var(--rule)]'>
+									<tr key={o.entity.slug} className='border-b border-[var(--rule-soft)] last:border-b-0'>
 										<td className={TD}>
 											<Link href={`/${o.entity.slug}`} className='rule-link font-semibold text-[var(--ink)]'>
 												{o.entity.name}
@@ -116,11 +118,11 @@ export default async function SupplierPage({ params }: { params: Promise<{ slug:
 
 				<section>
 					<h2 className={H2}>Every contract</h2>
-					<ul className='mt-6'>
+					<ul className='mt-8 grid gap-3'>
 						{contracts.map((c, i) => {
 							const flagged = duringBlacklist.includes(c)
 							return (
-								<li key={i} className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-6 border-t border-[var(--rule)] py-4'>
+								<li key={i} className={`grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-6 rounded-[var(--dv-r)] border bg-[var(--paper)] px-5 py-4 sm:px-7 ${flagged ? 'border-[var(--accent)]' : 'border-[var(--rule)]'}`}>
 									<div className='min-w-0'>
 										<p className='text-[0.90625rem] font-semibold leading-6'>{c.notice.title ?? c.notice.category ?? 'Untitled notice'}</p>
 										<p className='mt-1 text-[0.75rem] text-[var(--ink-3)]'>
@@ -141,9 +143,9 @@ export default async function SupplierPage({ params }: { params: Promise<{ slug:
 						<p className='mt-2 max-w-[46rem] text-[0.875rem] leading-6 text-[var(--ink-3)]'>
 							Suppliers whose names begin the same way. They may be related businesses, or have nothing in common but a word.
 						</p>
-						<ul className='mt-5 grid gap-x-10 sm:grid-cols-2'>
+						<ul className='mt-8 grid gap-3 sm:grid-cols-2'>
 							{similar.map((o) => (
-								<li key={o.name} className='flex items-baseline justify-between gap-4 border-t border-[var(--rule)] py-2.5'>
+								<li key={o.name} className='flex items-baseline justify-between gap-4 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] px-5 py-3.5'>
 									<Link href={supplierHref(o.name)} className='rule-link text-[0.875rem] font-semibold text-[var(--ink)]'>
 										{o.name}
 									</Link>

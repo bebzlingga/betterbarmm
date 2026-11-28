@@ -7,15 +7,15 @@ export const metadata: Metadata = {
 	description: 'Where the procurement figures come from, how they were read, and what they cannot tell you.',
 }
 
-const H2 = 'text-[1.5rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'
+const H2 = 'font-[family-name:var(--font-display)] text-[1.375rem] font-extrabold leading-tight tracking-[-0.025em] text-[var(--ink)]'
 const P = 'mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
 export default function SourcesPage() {
 	return (
 		<>
 			<Masthead kicker='Procurement · Bangsamoro' name='Sources' note={`Read from PhilGEPS on ${meta.generatedAt}: ${notices.length.toLocaleString('en-PH')} notices from ${entities.length} procuring entities.`} />
-			<div className='bb-container bb-section max-w-[52rem] [&>section+section]:mt-14'>
-				<section>
+			<div className='bb-container grid items-start gap-5 py-[clamp(3.5rem,7vw,5.5rem)] lg:grid-cols-2'>
+				<section className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-7 sm:p-9 [&>p:first-of-type]:mt-3'>
 					<h2 className={H2}>Where it comes from</h2>
 					<p className={P}>
 						Every figure here is the government&rsquo;s own, from the{' '}
@@ -28,7 +28,7 @@ export default function SourcesPage() {
 						BARMM.
 					</p>
 				</section>
-				<section>
+				<section className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-7 sm:p-9 [&>p:first-of-type]:mt-3'>
 					<h2 className={H2}>What the words mean</h2>
 					<p className={P}>
 						A <strong>bid notice</strong> is an office announcing what it means to buy. Its <strong>approved budget</strong>{' '}
@@ -37,7 +37,7 @@ export default function SourcesPage() {
 						office&rsquo;s books, not on PhilGEPS.
 					</p>
 				</section>
-				<section>
+				<section className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-7 sm:p-9 [&>p:first-of-type]:mt-3'>
 					<h2 className={H2}>How notices are grouped</h2>
 					<p className={P}>
 						PhilGEPS files each notice under one of about 200 business categories. To make them searchable we gather
@@ -45,7 +45,7 @@ export default function SourcesPage() {
 						catering. The grouping is ours, not PhilGEPS&rsquo;s; each notice still shows its own category.
 					</p>
 				</section>
-				<section>
+				<section className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-7 sm:p-9 [&>p:first-of-type]:mt-3'>
 					<h2 className={H2}>How it was checked</h2>
 					<p className={P}>
 						Every notice appears once, every date falls between 2019 and today, and no amount is negative. A supplier
@@ -62,7 +62,7 @@ export default function SourcesPage() {
 						the older system records when a notice was last updated rather than first posted.
 					</p>
 				</section>
-				<section>
+				<section className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-7 sm:p-9 [&>p:first-of-type]:mt-3'>
 					<h2 className={H2}>What it cannot tell you</h2>
 					<p className={P}>
 						PhilGEPS holds only what an office posts; a purchase never posted is not here. Titles and procurement

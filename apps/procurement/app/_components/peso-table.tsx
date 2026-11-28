@@ -25,13 +25,13 @@ export function PesoTable({ rows, years }: { rows: PesoRow[]; years: number[] })
 			<div className='flex flex-wrap items-end justify-between gap-4 pb-16'>
 				<div className='flex min-h-10 flex-wrap items-center gap-x-6 gap-y-2 text-[0.78125rem] text-[var(--ink-2)]'>
 					<span className='inline-flex items-center gap-2'>
-						<span className='h-2.5 w-4 bg-[var(--ink-mute)] opacity-50' aria-hidden='true' /> Budget to buy with
+						<span className='h-2.5 w-4 rounded-full bg-[#b9b3a8]' aria-hidden='true' /> Budget to buy with
 					</span>
 					<span className='inline-flex items-center gap-2'>
-						<span className='h-2.5 w-4 bg-[var(--accent)]' aria-hidden='true' /> Put out to bid
+						<span className='h-2.5 w-4 rounded-full bg-[var(--accent)]' aria-hidden='true' /> Put out to bid
 					</span>
 					<span className='inline-flex items-center gap-2'>
-						<span className='h-2.5 w-4 bg-[var(--ink)]' aria-hidden='true' /> Awarded on PhilGEPS
+						<span className='h-2.5 w-4 rounded-full bg-[#d4a72c]' aria-hidden='true' /> Awarded on PhilGEPS
 					</span>
 				</div>
 				<div className='w-40'>
@@ -39,48 +39,66 @@ export function PesoTable({ rows, years }: { rows: PesoRow[]; years: number[] })
 				</div>
 			</div>
 
-			<ol className='border-t border-[var(--rule)]'>
-				{data.map((r) => (
-					<li key={r.key} className='grid gap-x-10 gap-y-3 border-b border-[var(--rule)] py-5 lg:grid-cols-[minmax(0,20rem)_minmax(0,1fr)_14rem]'>
-						<div className='min-w-0'>
-							<p className='text-[0.90625rem] font-semibold leading-6 text-[var(--ink)]'>{r.name}</p>
-							<p className='mt-1 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
-								{r.offices.length === 1 ? (
-									<Link href={`/${r.offices[0]!.slug}`} className='rule-link'>
-										Its notices
-									</Link>
-								) : (
-									<>
-										{r.offices.length} offices on PhilGEPS ·{' '}
-										<Link href={`/${r.offices[0]!.slug}`} className='rule-link'>
-											the largest
-										</Link>
-									</>
-								)}
-							</p>
-						</div>
-						<div className='grid content-center gap-1.5' aria-hidden='true'>
-							<span className='h-2.5 bg-[var(--ink-mute)] opacity-50' style={{ width: `${(r.b / max) * 100}%` }} />
-							<span className='h-2.5 bg-[var(--accent)]' style={{ width: `${(r.d / max) * 100}%` }} />
-							<span className='h-2.5 bg-[var(--ink)]' style={{ width: `${(r.a / max) * 100}%` }} />
-						</div>
-						<dl className='grid grid-cols-3 gap-3 text-[0.75rem] lg:grid-cols-1 lg:gap-1 lg:text-right'>
-							<div className='lg:flex lg:justify-end lg:gap-2'>
-								<dt className='text-[var(--ink-3)]'>Budget</dt>
-								<dd className='num font-semibold text-[var(--ink)]'>{peso(r.b)}</dd>
-							</div>
-							<div className='lg:flex lg:justify-end lg:gap-2'>
-								<dt className='text-[var(--ink-3)]'>Bid out</dt>
-								<dd className='num font-semibold text-[var(--ink)]'>{peso(r.d)}</dd>
-							</div>
-							<div className='lg:flex lg:justify-end lg:gap-2'>
-								<dt className='text-[var(--ink-3)]'>Awarded</dt>
-								<dd className='num font-semibold text-[var(--ink)]'>{peso(r.a)}</dd>
-							</div>
-						</dl>
-					</li>
-				))}
-			</ol>
+			{/* A table (user decision): one row an office, the three amounts as bars across it and as figures in their own
+			    columns, on a rounded card with its head on a warm tint. */}
+			<div className='overflow-x-auto rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-34px_rgba(0,0,0,0.4)]'>
+				<table className='w-full min-w-[40rem] border-collapse text-left'>
+					<thead>
+						<tr className='border-b border-[var(--rule)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))]'>
+							<th scope='col' className='py-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] pl-6 pr-6'>Office</th>
+							<th scope='col' className='py-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] hidden w-[34%] pr-8 lg:table-cell'>
+								<span className='sr-only'>Budget, bid out and awarded, drawn</span>
+							</th>
+							<th scope='col' className='py-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] whitespace-nowrap pr-6 text-right'>Budget</th>
+							<th scope='col' className='py-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] whitespace-nowrap pr-6 text-right'>Bid out</th>
+							<th scope='col' className='py-4 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] whitespace-nowrap pr-6 text-right'>Awarded</th>
+						</tr>
+					</thead>
+					<tbody>
+						{data.map((r) => (
+							<tr key={r.key} className='border-b border-[var(--rule-soft)] align-middle transition-colors last:border-b-0 hover:bg-[var(--paper-2)]'>
+								<th scope='row' className='py-4 pl-6 pr-6 font-normal'>
+									<span className='block text-[0.9375rem] font-semibold leading-6 text-[var(--ink)]'>{r.name}</span>
+									<span className='mt-0.5 block text-[0.8125rem] leading-5 text-[var(--ink-3)]'>
+										{r.offices.length === 1 ? (
+											<Link href={`/${r.offices[0]!.slug}`} className='rule-link'>
+												Its notices
+											</Link>
+										) : (
+											<>
+												{r.offices.length} offices on PhilGEPS ·{' '}
+												<Link href={`/${r.offices[0]!.slug}`} className='rule-link'>
+													the largest
+												</Link>
+											</>
+										)}
+									</span>
+								</th>
+								{/* Each amount on a track of its own across the column, so the three read against one scale; a
+								    small amount shows as a dot, not a sliver; each names its amount under the pointer. */}
+								<td className='hidden py-4 pr-8 lg:table-cell'>
+									<span className='grid gap-[5px]' aria-hidden='true'>
+										{(
+											[
+												[r.b, 'bg-[#b9b3a8]', 'Budget'],
+												[r.d, 'bg-[var(--accent)]', 'Bid out'],
+												[r.a, 'bg-[#d4a72c]', 'Awarded'],
+											] as const
+										).map(([v, fill, what]) => (
+											<span key={what} title={`${what}: ${peso(v)}`} className='relative block h-2.5 rounded-full bg-[color-mix(in_srgb,var(--ink)_6%,transparent)]'>
+												{v > 0 ? <span className={`absolute inset-y-0 left-0 min-w-2.5 rounded-full ${fill}`} style={{ width: `${(v / max) * 100}%` }} /> : null}
+											</span>
+										))}
+									</span>
+								</td>
+								<td className='num whitespace-nowrap py-4 pr-6 text-right text-[0.9375rem] font-bold text-[var(--ink)]'>{peso(r.b)}</td>
+								<td className='num whitespace-nowrap py-4 pr-6 text-right text-[0.9375rem] font-bold text-[var(--ink)]'>{peso(r.d)}</td>
+								<td className='num whitespace-nowrap py-4 pr-6 text-right text-[0.9375rem] font-bold text-[var(--ink)]'>{peso(r.a)}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
 		</div>
 	)
 }

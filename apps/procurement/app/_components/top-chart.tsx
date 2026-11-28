@@ -24,12 +24,12 @@ export function TopChart({ title, rankings }: { title: string; rankings: TopRank
 
 	return (
 		<figure className='m-0'>
-			<div className='flex flex-wrap items-center justify-between gap-x-10 gap-y-4'>
+			<div className='flex flex-wrap items-end justify-between gap-x-10 gap-y-5'>
 				<div>
-					<h2 className='text-[1.75rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)]'>{title}</h2>
-					<p className='mt-2 text-[0.875rem] leading-6 text-[var(--ink-3)]'>{r.note}</p>
+					<h2 className='dv-title'>{title}</h2>
+					<p className='dv-lede'>{r.note}</p>
 				</div>
-				<div role='tablist' aria-label='Ranking' className='-mx-4 flex max-w-[calc(100%+2rem)] gap-1 overflow-x-auto px-4 sm:mx-0 sm:max-w-full sm:px-0'>
+				<div role='tablist' aria-label='Ranking' className='seg'>
 					{rankings.map((x) => (
 						<button
 							key={x.key}
@@ -37,9 +37,7 @@ export function TopChart({ title, rankings }: { title: string; rankings: TopRank
 							role='tab'
 							aria-selected={x.key === key}
 							onClick={() => setKey(x.key)}
-							className={`shrink-0 cursor-pointer px-3.5 py-2 text-[0.84375rem] font-semibold transition ${
-								x.key === key ? 'bg-[var(--accent)] text-white' : 'bg-[var(--paper-2)] text-[var(--ink-2)] hover:text-[var(--ink)]'
-							}`}
+							className='seg-tab'
 						>
 							{x.tab}
 						</button>
@@ -47,7 +45,8 @@ export function TopChart({ title, rankings }: { title: string; rankings: TopRank
 				</div>
 			</div>
 
-			<div className='-mx-4 mt-10 overflow-x-auto px-4 sm:mx-0 sm:px-0'>
+			{/* On a rounded panel (user decision: the travel look). */}
+			<div className='mt-10 overflow-x-auto rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 sm:p-8'>
 				<ol className='grid min-w-[80rem] grid-cols-15 gap-x-1.5 lg:min-w-0'>
 					{r.items.map((item, i) => {
 						const label = item.href ? (
@@ -63,7 +62,7 @@ export function TopChart({ title, rankings }: { title: string; rankings: TopRank
 									<span className='num mb-1.5 text-center text-[0.6875rem] font-semibold text-[var(--ink-2)]'>{show(item.value)}</span>
 									<span
 										title={`${item.label}: ${show(item.value)}`}
-										className='bg-[var(--accent)] transition-opacity group-hover:opacity-80'
+										className='rounded-t-md bg-[var(--accent)] transition-opacity group-hover:opacity-80'
 										style={{ height: `${Math.max((item.value / max) * 85, 1)}%` }}
 									/>
 								</div>

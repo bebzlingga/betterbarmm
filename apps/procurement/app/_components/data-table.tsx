@@ -144,7 +144,7 @@ export function DataTable({
 	return (
 		<div>
 			{filterLabel && outsideQuery === undefined ? (
-				<label className='mb-1 flex max-w-md items-center gap-3 border-b border-[var(--rule)] py-3'>
+				<label className='mb-5 flex max-w-md items-center gap-3 rounded-full border border-[var(--rule)] bg-[var(--paper)] px-5 py-3 shadow-[0_10px_24px_-20px_rgba(0,0,0,0.45)]'>
 					<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 					<span className='sr-only'>Filter {filterLabel}</span>
 					<input
@@ -164,10 +164,12 @@ export function DataTable({
 				</label>
 			) : null}
 
+			{/* In a rounded panel (user decision: the travel look). */}
+			<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-4 pb-2 sm:px-6'>
 			<table className='w-full border-collapse'>
 				<caption className='sr-only'>{caption}</caption>
 				<thead>
-					<tr className='border-b border-[var(--ink)]'>
+					<tr className='border-b border-[var(--rule)]'>
 						{ranked ? (
 							<th scope='col' className='w-10 py-3 pr-3 text-left text-[0.65625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 								#
@@ -181,7 +183,7 @@ export function DataTable({
 				</thead>
 				<tbody>
 					{shown.map((row, index) => (
-						<tr key={row.key} className='border-b border-[var(--rule-soft)] align-middle transition-colors hover:bg-[var(--paper-2)]'>
+						<tr key={row.key} className='border-b border-[var(--rule-soft)] align-middle transition-colors last:border-b-0 hover:bg-[var(--paper-2)]'>
 							{ranked ? (
 								<td className='num w-10 py-3.5 pr-3 text-[0.8125rem] text-[var(--ink-3)]'>{index + 1}</td>
 							) : null}
@@ -220,6 +222,7 @@ export function DataTable({
 					))}
 				</tbody>
 			</table>
+			</div>
 
 			{shown.length === 0 ? (
 				<p className='py-10 text-center text-[0.84375rem] text-[var(--ink-3)]'>

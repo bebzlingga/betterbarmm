@@ -1,3 +1,4 @@
+import { DownloadSimpleIcon } from '@phosphor-icons/react/ssr'
 import type { Metadata } from 'next'
 import { SupplierExplorer, type SupplierRow } from '../_components/supplier-explorer'
 import { Masthead } from '../_components/parts'
@@ -25,10 +26,11 @@ export default function SuppliersPage() {
 				name='Suppliers'
 				note='Who wins the contracts. Each supplier PhilGEPS records as awarded a contract by a BARMM office, by the total awarded. Open one to see every contract it won.'
 			/>
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.5rem,7vw,5.5rem)]'>
 				<SupplierExplorer rows={rows} groups={groups} />
-				<p className='mt-8 text-[0.8125rem] leading-6'>
-					<a href='/api/suppliers/csv' className='rule-link font-semibold text-[var(--ink)]' download>
+				<p className='mt-8 flex justify-end'>
+					<a href='/api/suppliers/csv' className='dv-pill' download>
+						<DownloadSimpleIcon size={16} weight='bold' aria-hidden='true' />
 						Download every supplier as CSV
 					</a>
 				</p>

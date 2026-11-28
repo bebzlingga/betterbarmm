@@ -117,15 +117,15 @@ export function NoticesExplorer({
 				<button
 					type='button'
 					onClick={() => reset(() => setSupplier(''))}
-					className='mb-4 inline-flex cursor-pointer items-center gap-2 bg-[var(--paper-2)] px-3 py-1.5 text-[0.8125rem] text-[var(--ink)]'
+					className='mb-4 inline-flex cursor-pointer items-center gap-2 rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,var(--paper))] px-4 py-2 text-[0.8125rem] font-semibold text-[var(--accent)]'
 				>
 					Won by {supplier}
 					<XIcon size={12} weight='bold' aria-label='Clear' />
 				</button>
 			) : null}
 
-			<div className='mb-2 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-y border-[var(--rule-soft)] py-3 text-[0.8125rem] text-[var(--ink-3)]'>
-				<a href={`/api/notices/csv?${csvParams}`} className='rule-link font-semibold text-[var(--ink)]' download>
+			<div className='mb-5 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 rounded-[var(--dv-r)] bg-[var(--paper-2)] px-5 py-3.5 text-[0.8125rem] text-[var(--ink-3)]'>
+				<a href={`/api/notices/csv?${csvParams}`} className='dv-pill !bg-[var(--paper)] !py-1.5 !text-[0.8125rem] font-semibold' download>
 					Download CSV
 				</a>
 			<p className='text-right'>
@@ -144,78 +144,83 @@ export function NoticesExplorer({
 
 			{/* While the newest query is out, the list's shape in grey (user decision: skeletons). */}
 			{data && !pending ? null : (
-				<div role='status'>
+				<div role='status' className='rounded-[var(--dv-r)] border border-[var(--rule)] px-6'>
 					<span className='sr-only'>Loading…</span>
 					{/* Each row as the real one is built: its grid, padding and rule, the label, name and detail lines, the amount. */}
 					<RowsSkeleton
 						rows={10}
-						row='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-28'
+						row='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule-soft)] py-4 last:border-b-0 sm:gap-x-28'
 						lines={[{ className: 'font-[family-name:var(--font-display)] text-[0.59375rem] uppercase tracking-[0.14em]', scale: 0.25 }, 'mt-1 text-[0.90625rem] leading-6', { className: 'mt-1 text-[0.75rem] leading-5', scale: 0.55 }]}
 						figure={['text-[1rem]', { className: 'mt-1 text-[0.71875rem]', width: '4.5rem' }]}
 					/>
 				</div>
 			)}
-			<ul className={data && !pending ? '' : 'hidden'}>
-				{data?.rows.map((n) => (
-					<li key={`${n.ref}-${n.date}`} className='grid grid-cols-[minmax(0,1fr)_auto] items-start gap-x-5 border-b border-[var(--rule)] py-4 sm:gap-x-28'>
-						<div className='min-w-0'>
-							<p className='font-[family-name:var(--font-display)] text-[0.59375rem] font-semibold uppercase tracking-[0.14em] text-[var(--brass)]'>{n.group}</p>
-							<p className='mt-1 text-[0.90625rem] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
-							<p className='mt-1 text-[0.75rem] leading-5 text-[var(--ink-3)]'>
-								{[n.date && longDate(n.date), `Ref. ${n.ref}`, n.title && n.category, n.mode, n.fund !== 'Not published' && n.fund].filter(Boolean).join(' · ')}
-								{entity ? null : (
-									<>
-										{' · '}
-										<Link href={`/${n.entitySlug}`} className='rule-link'>
-											{n.entityName}
-										</Link>
-									</>
-								)}
-							</p>
-							{n.awards.map((a, i) => (
-								<p key={i} className='mt-2 text-[0.8125rem] leading-5 text-[var(--ink-2)]'>
-									Awarded to{' '}
-									<button type='button' onClick={() => reset(() => setSupplier(a.awardee))} className='rule-link cursor-pointer font-semibold'>
-										{a.awardee}
-									</button>
-									{a.amount != null ? <span className='num font-semibold text-[var(--ink)]'> · {peso(a.amount)}</span> : null}
-									{a.date ? <span className='text-[var(--ink-3)]'> · {longDate(a.date)}</span> : null}
-									{/* The older PhilGEPS dates a notice by its last update, which can fall after the award. */}
-									{a.date && n.date && a.date < n.date ? (
-										<span className='text-[var(--ink-mute)]' title='The older PhilGEPS dates a notice by when it was last updated, not first posted, so the award can appear to come first.'>
-											{' '}
-											· before the notice&rsquo;s date (last updated)
-										</span>
-									) : null}
-								</p>
-							))}
-						</div>
-						<div className='text-right sm:self-center'>
-							<p className='num text-[1rem] font-semibold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</p>
-							<p className={`mt-1 text-[0.71875rem] ${n.stage === 'Open for bids' ? 'font-semibold text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}>
-								{n.stage === 'Open for bids' && n.closing ? (
-									<>
-										Closes <br className='sm:hidden' />
-										{longDate(n.closing)}
-									</>
-								) : (
-									n.stage
-								)}
-							</p>
-						</div>
-					</li>
-				))}
-			</ul>
+			{/* A table (user decision): one row a notice, on a rounded card with its head on a warm tint. */}
+			<div className={data && !pending ? 'overflow-x-auto rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-34px_rgba(0,0,0,0.4)]' : 'hidden'}>
+				<table className='w-full min-w-[46rem] border-collapse text-left'>
+					<thead>
+						<tr className='border-b border-[var(--rule)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))]'>
+							<th scope='col' className='py-4 pr-6 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] w-[8.5rem] pl-6'>Posted</th>
+							<th scope='col' className='py-4 pr-6 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>Notice</th>
+							<th scope='col' className='py-4 pr-6 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] whitespace-nowrap text-right'>Approved budget</th>
+							<th scope='col' className='py-4 pr-6 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)] w-[9.5rem] text-right'>Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						{data?.rows.map((n) => (
+							<tr key={`${n.ref}-${n.date}`} className='border-b border-[var(--rule-soft)] align-middle transition-colors last:border-b-0 hover:bg-[var(--paper-2)]'>
+								<td className='num whitespace-nowrap py-4 pl-6 pr-6 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>{n.date ? longDate(n.date) : '—'}</td>
+								<td className='min-w-0 py-4 pr-6'>
+									<p className='font-[family-name:var(--font-display)] text-[0.625rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>{n.group}</p>
+									<p className='mt-1 text-[0.9375rem] font-semibold leading-6 text-[var(--ink)]'>{n.title ?? n.category ?? 'Untitled notice'}</p>
+									<p className='mt-1 text-[0.8125rem] leading-5 text-[var(--ink-3)]'>
+										{[`Ref. ${n.ref}`, n.title && n.category, n.mode, n.fund !== 'Not published' && n.fund].filter(Boolean).join(' · ')}
+										{entity ? null : (
+											<>
+												{' · '}
+												<Link href={`/${n.entitySlug}`} className='rule-link'>
+													{n.entityName}
+												</Link>
+											</>
+										)}
+									</p>
+									{n.awards.map((a, i) => (
+										<p key={i} className='mt-2 text-[0.8125rem] leading-5 text-[var(--ink-2)]'>
+											Awarded to{' '}
+											<button type='button' onClick={() => reset(() => setSupplier(a.awardee))} className='rule-link cursor-pointer font-semibold'>
+												{a.awardee}
+											</button>
+											{a.amount != null ? <span className='num font-semibold text-[var(--ink)]'> · {peso(a.amount)}</span> : null}
+											{a.date ? <span className='text-[var(--ink-3)]'> · {longDate(a.date)}</span> : null}
+											{/* The older PhilGEPS dates a notice by its last update, which can fall after the award. */}
+											{a.date && n.date && a.date < n.date ? (
+												<span className='text-[var(--ink-mute)]' title='The older PhilGEPS dates a notice by when it was last updated, not first posted, so the award can appear to come first.'>
+													{' '}
+													· before the notice&rsquo;s date (last updated)
+												</span>
+											) : null}
+										</p>
+									))}
+								</td>
+								<td className='num whitespace-nowrap py-4 pr-6 text-right text-[0.9375rem] font-bold text-[var(--ink)]'>{n.abc == null ? '—' : peso(n.abc)}</td>
+								<td className={`py-4 pr-6 text-right text-[0.8125rem] leading-5 ${n.stage === 'Open for bids' ? 'font-semibold text-[var(--accent)]' : 'text-[var(--ink-3)]'}`}>
+									{n.stage === 'Open for bids' && n.closing ? <>Closes {longDate(n.closing)}</> : n.stage}
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
 
 			{data && data.pages > 1 ? (
 				<div className='mt-6 flex items-center justify-end gap-3 text-[0.8125rem] text-[var(--ink-3)]'>
-					<button type='button' disabled={page <= 1} onClick={() => setPage((p) => p - 1)} className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40' aria-label='Previous page'>
+					<button type='button' disabled={page <= 1} onClick={() => setPage((p) => p - 1)} className='inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] transition hover:border-[var(--ink)] disabled:cursor-default disabled:opacity-40' aria-label='Previous page'>
 						<CaretLeftIcon size={14} />
 					</button>
 					<span className='num'>
 						Page {data.page.toLocaleString('en-PH')} of {data.pages.toLocaleString('en-PH')}
 					</span>
-					<button type='button' disabled={page >= data.pages} onClick={() => setPage((p) => p + 1)} className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--rule)] disabled:cursor-default disabled:opacity-40' aria-label='Next page'>
+					<button type='button' disabled={page >= data.pages} onClick={() => setPage((p) => p + 1)} className='inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--rule)] transition hover:border-[var(--ink)] disabled:cursor-default disabled:opacity-40' aria-label='Next page'>
 						<CaretRightIcon size={14} />
 					</button>
 				</div>

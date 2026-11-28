@@ -17,7 +17,7 @@ export default async function NoticesPage({ searchParams }: { searchParams: Prom
 				name='Bid notices'
 				note={`Every notice, newest first, ${openNotices.length} of them still open for bids. A notice is an office saying what it means to buy and how much it has set aside; where PhilGEPS records the contract, the winner and the amount are under it.`}
 			/>
-			<section className='bb-container bb-section'>
+			<section className='bb-container py-[clamp(3.5rem,7vw,5.5rem)]'>
 				<NoticesExplorer key={`${supplier ?? ''}-${stage ?? ''}`} supplier={supplier} stage={stage} years={years} groups={groups} modes={modeGroups} funds={funds} />
 			</section>
 		</>
