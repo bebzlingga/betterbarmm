@@ -1,3 +1,4 @@
+import { CoinsIcon, TrendDownIcon, TrendUpIcon } from '@phosphor-icons/react/ssr'
 import { formatNumber } from '@betterbarmm/lgu-data'
 
 /* ============================================================
@@ -33,7 +34,7 @@ export function ChartCard({
 	children: React.ReactNode
 }) {
 	return (
-		<figure className={`m-0 flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-7 ${wide ? 'lg:col-span-2' : ''}`}>
+		<figure className={`m-0 flex flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-7 ${wide ? 'lg:col-span-2' : ''}`}>
 			<figcaption>
 				<h3 className='text-[1.125rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)]'>{title}</h3>
 				{note ? <p className='mt-1 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>{note}</p> : null}
@@ -69,12 +70,17 @@ export function CensusChart({ before, now }: { before: number; now: number }) {
 					</li>
 				))}
 			</ul>
-			<p className='mt-6 border-l-2 border-[var(--accent)] pl-4 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
-				<span className='font-semibold text-[var(--ink)]'>
-					{change > 0 ? '+' : ''}
-					{change}%
-				</span>{' '}
-				between the two counts, {change >= 0 ? 'a gain' : 'a fall'} of {formatNumber(Math.abs(now - before))} people.
+			<p className='mt-6 flex items-center gap-3.5 rounded-2xl bg-[color-mix(in_srgb,var(--accent)_6%,var(--paper))] px-4 py-3.5 text-[0.875rem] leading-6 text-[var(--ink-2)]'>
+				<span className='grid size-9 shrink-0 place-items-center rounded-xl bg-[color-mix(in_srgb,var(--accent)_12%,transparent)] text-[var(--accent)]'>
+					{change >= 0 ? <TrendUpIcon size={18} weight='bold' aria-hidden='true' /> : <TrendDownIcon size={18} weight='bold' aria-hidden='true' />}
+				</span>
+				<span>
+					<span className='font-semibold text-[var(--ink)]'>
+						{change > 0 ? '+' : ''}
+						{change}%
+					</span>{' '}
+					between the two counts, {change >= 0 ? 'a gain' : 'a fall'} of {formatNumber(Math.abs(now - before))} people.
+				</span>
 			</p>
 		</>
 	)
@@ -161,9 +167,14 @@ export function NtaSplit({ own, barangays, isCity }: { own: number; barangays: n
 					</li>
 				))}
 			</ul>
-			<p className='mt-5 border-l-2 border-[var(--brass)] pl-4 text-[0.8125rem] leading-6 text-[var(--ink-2)]'>
-				At least 20% of the {isCity ? 'city' : 'town'}&rsquo;s own share, <span className='num font-semibold text-[var(--ink)]'>{peso(own * 0.2)}</span>, is
-				set aside by law for development projects (Local Government Code, Section 287).
+			<p className='mt-5 flex items-center gap-3.5 rounded-2xl bg-[color-mix(in_srgb,#d4a72c_12%,var(--paper))] px-4 py-3.5 text-[0.875rem] leading-6 text-[var(--ink-2)]'>
+				<span className='grid size-9 shrink-0 place-items-center rounded-xl bg-[color-mix(in_srgb,#d4a72c_24%,transparent)] text-[#8a6410]'>
+					<CoinsIcon size={18} weight='duotone' aria-hidden='true' />
+				</span>
+				<span>
+					At least 20% of the {isCity ? 'city' : 'municipality'}&rsquo;s own share, <span className='num font-semibold text-[var(--ink)]'>{peso(own * 0.2)}</span>,
+					is set aside by law for development projects (Local Government Code, Section 287).
+				</span>
 			</p>
 		</>
 	)
@@ -186,7 +197,7 @@ export function BarangayCards({
 	return (
 		<ol className='grid gap-3 sm:grid-cols-2 xl:grid-cols-3'>
 			{[...counted, ...rest].map((row, i) => (
-				<li key={row.key} className='border border-[var(--rule)] bg-[var(--paper)] px-4 py-3.5'>
+				<li key={row.key} className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] px-4 py-3.5'>
 					<div className='flex items-baseline justify-between gap-3'>
 						<span className='min-w-0 text-[0.875rem] font-semibold leading-snug text-[var(--ink)]'>
 							{row.population != null ? <span className='num mr-1 font-normal text-[var(--ink-mute)]'>{i + 1}.</span> : null}

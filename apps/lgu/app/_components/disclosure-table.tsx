@@ -43,18 +43,14 @@ export function DisclosureTable({
 					<span className='num font-semibold text-[var(--ink)]'>{posted}</span> of {documents.length} documents
 					posted for {year}
 				</p>
-				<div role='group' aria-label='Year' className='flex flex-wrap gap-1'>
+				<div role='group' aria-label='Year' className='seg'>
 					{years.map((y) => (
 						<button
 							key={y}
 							type='button'
 							aria-pressed={y === year}
 							onClick={() => setYear(y)}
-							className={`num cursor-pointer px-3 py-1.5 font-mono text-[0.6875rem] font-semibold tracking-[0.1em] transition ${
-								y === year
-									? 'bg-[var(--accent)] text-white'
-									: 'text-[var(--ink-3)] hover:text-[var(--ink)]'
-							}`}
+							className='seg-tab num'
 						>
 							{y}
 						</button>

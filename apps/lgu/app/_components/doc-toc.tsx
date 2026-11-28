@@ -41,7 +41,7 @@ export function DocToc({ items }: { items: TocItem[] }) {
 				<TextAlignLeftIcon size={16} className='text-[var(--ink-3)]' aria-hidden='true' />
 				On this page
 			</p>
-			<ol className='mt-4 border-l border-[var(--rule)]'>
+			<ol className='mt-4 grid gap-0.5'>
 				{items.map((item) => {
 					const on = item.id === active
 					return (
@@ -49,12 +49,12 @@ export function DocToc({ items }: { items: TocItem[] }) {
 							<a
 								href={`#${item.id}`}
 								aria-current={on ? 'location' : undefined}
-								className={`-ml-px block border-l-2 py-1.5 text-[0.84375rem] leading-5 transition ${
-									item.depth === 1 ? 'pl-4' : 'pl-7'
+								className={`block rounded-xl py-1.5 pr-3 text-[0.84375rem] leading-5 transition ${
+									item.depth === 1 ? 'pl-3.5' : 'pl-7'
 								} ${
 									on
-										? 'border-[var(--accent)] font-semibold text-[var(--ink)]'
-										: 'border-transparent text-[var(--ink-3)] hover:text-[var(--ink)]'
+										? 'bg-[color-mix(in_srgb,var(--accent)_9%,var(--paper))] font-semibold text-[var(--accent)]'
+										: 'text-[var(--ink-3)] hover:bg-[var(--paper-2)] hover:text-[var(--ink)]'
 								}`}
 							>
 								{item.label}

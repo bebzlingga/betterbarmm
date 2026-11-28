@@ -4,7 +4,6 @@ import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
 import { notFound, redirect } from 'next/navigation'
 import {
 	CARD,
-	LguFigures,
 	LguMasthead,
 	LguSourceNote,
 } from '../_components/lgu-parts'
@@ -57,7 +56,7 @@ export async function generateMetadata({
 	}
 }
 
-const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 dv-title'
 
 export default async function ProvincePage({ params }: { params: Promise<{ province: string }> }) {
 	const { province: slug } = await params
@@ -123,9 +122,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 				kicker={[province.kind, capital ? `capital ${capital.name}` : null, area?.seats ? `${area.seats} seats in Parliament` : null].filter(Boolean).join(' · ')}
 				name={province.name}
 				note={history ? (history.summary ?? history.paragraphs.join(' ')) : lead}
-			>
-				<LguFigures
-					figures={[
+				figures={[
 						{
 							label: 'Population (2024)',
 							value: formatNumber(province.population),
@@ -146,9 +143,7 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 						...(regionShare != null
 							? [{ label: 'Share of BARMM’s people', value: `${regionShare}%`, detail: `Of the region’s ${formatNumber(lguData.totals.population)}` }]
 							: []),
-					]}
-				/>
-			</LguMasthead>
+					]} />
 
 			<div className='bb-container bb-section grid gap-14 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-28'>
 				{/* ---- The province, read down: its towns, then its own records ---- */}
@@ -217,12 +212,12 @@ export default async function ProvincePage({ params }: { params: Promise<{ provi
 
 				{/* ---- Beside it: the province in figures, then who governs it ---- */}
 				<aside className='order-first lg:order-none'>
-					<div className='mb-4 border border-[var(--rule)]'>
+					<div className='mb-4 overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)]'>
 						<LocatorMap areaSlug={province.slug} label={province.name} />
 					</div>
 
 					{officials.length > 0 ? (
-						<div className='border border-[var(--rule)] p-5'>
+						<div className='rounded-[var(--dv-r)] border border-[var(--rule)] p-5'>
 							<h2 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Current officials</h2>
 							<p className='mt-1 text-[0.78125rem] text-[var(--ink-3)]'>{termLabel}</p>
 							<ul className='mt-4'>

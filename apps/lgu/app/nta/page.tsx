@@ -50,7 +50,7 @@ function Split({ parts, whole, percent = false }: { parts: { label: string; valu
 	)
 }
 
-const H2 = 'font-[family-name:var(--font-display)] text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
+const H2 = 'dv-title'
 
 export default function NtaPage() {
 	return (
@@ -81,7 +81,7 @@ export default function NtaPage() {
 				<div className='mt-6 overflow-x-auto'>
 					<table className='w-full min-w-[56rem] border-collapse text-[0.875rem]'>
 						<thead>
-							<tr className='border-b-2 border-[var(--ink)] text-left font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+							<tr className='border-b border-[var(--rule)] text-left font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 								<th className='py-2 pr-4 font-semibold'>Area</th>
 								<th className='py-2 pr-4 text-right font-semibold'>FY {PREV}</th>
 								<th className='py-2 pr-4 text-right font-semibold'>FY {YEAR}</th>
@@ -152,7 +152,7 @@ export default function NtaPage() {
 												<span className='flex min-w-0 items-center gap-2'>
 													<span
 														className='h-3 shrink-0'
-														style={{ width: `${(share / top[0]!.share) * 55}%`, background: i === 0 ? 'var(--accent)' : 'var(--ink)' }}
+														style={{ width: `${(share / top[0]!.share) * 55}%`, background: i === 0 ? 'var(--accent)' : 'color-mix(in srgb, var(--accent) 45%, var(--paper))' }}
 													/>
 													<span className='num whitespace-nowrap text-[0.75rem] text-[var(--ink-2)]'>{peso(share)}</span>
 												</span>
@@ -191,7 +191,7 @@ export default function NtaPage() {
 							parts={[
 								{ label: 'Provinces', value: 23, color: 'var(--accent)' },
 								{ label: 'Cities', value: 23, color: '#2f6b4a' },
-								{ label: 'Municipalities', value: 34, color: 'var(--ink)' },
+								{ label: 'Municipalities', value: 34, color: '#5e7c9a' },
 								{ label: 'Barangays', value: 20, color: '#c98a2b' },
 							]}
 							whole={100}

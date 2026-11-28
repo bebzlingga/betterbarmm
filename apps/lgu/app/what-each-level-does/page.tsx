@@ -27,13 +27,13 @@ export const metadata: Metadata = {
 
 /* One plain table style for the whole page. */
 const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[0.875rem]'
-const HEAD = 'border-b border-[var(--ink)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+const HEAD = 'border-b border-[var(--rule)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 const TH = 'py-3 pr-4 font-semibold'
 const ROW = 'border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'
 /* Rows under a merged Level cell take no hover: the shade would cover one row and the merged cell. */
 const ROW_GROUPED = 'border-b border-[var(--rule-soft)] align-top'
 const TD = 'py-3.5 pr-4 leading-6 text-[var(--ink-2)]'
-const H3 = 'mt-12 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
+const H3 = 'mt-12 font-[family-name:var(--font-display)] text-[1.1875rem] font-bold tracking-[-0.015em] text-[var(--ink)]'
 
 const ELECTED = [
 	{ level: 'Province', posts: ELECTED_POSTS.province },
@@ -57,7 +57,7 @@ const TOC: TocItem[] = [
 	{ id: 'charges', label: 'What you pay', depth: 1 },
 ]
 
-const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 dv-title'
 
 function Section({ id, lead, children }: { id: string; lead: string; children: React.ReactNode }) {
 	return (

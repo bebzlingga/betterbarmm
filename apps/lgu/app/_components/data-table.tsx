@@ -164,7 +164,7 @@ export function DataTable({
 			<table className='w-full border-collapse'>
 				<caption className='sr-only'>{caption}</caption>
 				<thead>
-					<tr className='border-b border-[var(--ink)]'>
+					<tr className='border-b border-[var(--rule)]'>
 						{ranked ? (
 							<th scope='col' className='w-10 py-3 pr-3 text-left text-[0.65625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 								#

@@ -77,7 +77,7 @@ export default function OrdinancesPage() {
 
 					<div className='mt-10 grid gap-4 md:grid-cols-3'>
 						{BASICS.map(({ Icon, ...b }) => (
-							<article key={b.label} className='flex flex-col border border-[var(--rule)] bg-[var(--paper)] p-6 lg:p-7'>
+							<article key={b.label} className='flex flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 lg:p-7'>
 								<span className='grid size-11 place-items-center bg-[var(--accent)] text-white'>
 									<Icon size={22} aria-hidden='true' />
 								</span>
@@ -90,7 +90,7 @@ export default function OrdinancesPage() {
 					</div>
 
 					{/* ---- From vote to law: one panel, four steps joined by arrows, each with its clock ---- */}
-					<div className='mt-12 border border-[var(--rule)] bg-[var(--paper)]'>
+					<div className='mt-12 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)]'>
 						<div className='flex flex-col gap-1 border-b border-[var(--rule)] px-6 py-5 sm:flex-row sm:items-baseline sm:justify-between lg:px-7'>
 							<h3 className={H2}>From vote to law</h3>
 							<p className='text-[0.8125rem] text-[var(--ink-3)]'>For a municipal ordinance. A governor has 15 days to sign.</p>
@@ -117,7 +117,7 @@ export default function OrdinancesPage() {
 					</div>
 
 					{/* ---- Asking for the region's own ---- */}
-					<div className='mt-16 grid gap-6 border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-12'>
+					<div className='mt-16 grid gap-6 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 sm:p-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-12'>
 						<div className='max-w-[46rem]'>
 							<p className={LABEL}>Wanted</p>
 							<h3 className={`mt-2 ${H2}`}>Have one of BARMM&rsquo;s own ordinances?</h3>

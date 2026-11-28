@@ -73,7 +73,7 @@ export function OrdinanceLibrary({ items, categories }: { items: LibraryItem[]; 
 	return (
 		<div className='grid gap-10 lg:grid-cols-[18rem_minmax(0,1fr)] lg:gap-24'>
 			{/* ---- Finding one ---- */}
-			<aside className='lg:sticky lg:top-[calc(var(--sticky-top)+1.5rem)] lg:max-h-[calc(100vh-var(--sticky-top)-3rem)] lg:self-start lg:overflow-y-auto'>
+			<aside className='lg:sticky lg:top-[calc(var(--sticky-top)+1.5rem)] lg:max-h-[calc(100vh-var(--sticky-top)-3rem)] lg:self-start lg:overflow-y-auto lg:overscroll-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'>
 				<label className='relative block'>
 					<span className='sr-only'>Search the ordinances</span>
 					<MagnifyingGlassIcon size={16} aria-hidden='true' className='pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--ink-mute)]' />
@@ -82,7 +82,7 @@ export function OrdinanceLibrary({ items, categories }: { items: LibraryItem[]; 
 						value={query}
 						onChange={(event) => setQuery(event.target.value)}
 						placeholder='Search: fisheries, market, halal…'
-						className='w-full border border-[var(--rule)] bg-[var(--paper)] py-2.5 pl-10 pr-3 text-[0.9375rem] text-[var(--ink)] placeholder:text-[var(--ink-mute)] focus:border-[var(--accent)] focus:outline-none'
+						className='w-full rounded-full border border-[var(--rule)] bg-[var(--paper)] py-3 pl-11 pr-4 text-[0.9375rem] text-[var(--ink)] placeholder:text-[var(--ink-mute)] focus:border-[var(--accent)] focus:outline-none'
 					/>
 				</label>
 
@@ -120,7 +120,7 @@ export function OrdinanceLibrary({ items, categories }: { items: LibraryItem[]; 
 					<select
 						value={topic ?? ''}
 						onChange={(event) => setTopic(event.target.value || null)}
-						className='mt-1.5 w-full border border-[var(--rule)] bg-[var(--paper)] px-3 py-2.5 text-[0.9375rem] text-[var(--ink)]'
+						className='mt-1.5 w-full rounded-full border border-[var(--rule)] bg-[var(--paper)] px-4 py-3 text-[0.9375rem] text-[var(--ink)]'
 					>
 						<option value=''>All topics ({counted.length})</option>
 						{categories.map((c) => (
@@ -133,7 +133,7 @@ export function OrdinanceLibrary({ items, categories }: { items: LibraryItem[]; 
 
 				<nav aria-label='Topics' className='mt-7 hidden lg:block'>
 					<p className={KICKER}>Topics</p>
-					<ul className='mt-3 border-l border-[var(--rule)]'>
+					<ul className='mt-3 grid gap-0.5'>
 						{[{ name: null as string | null, label: 'All topics' }, ...categories.map((c) => ({ name: c.name as string | null, label: c.name }))].map((c) => {
 							const n = c.name ? counted.filter((i) => i.category === c.name).length : counted.length
 							const on = topic === c.name
@@ -144,8 +144,8 @@ export function OrdinanceLibrary({ items, categories }: { items: LibraryItem[]; 
 										onClick={() => setTopic(c.name)}
 										aria-pressed={on}
 										disabled={n === 0 && !on}
-										className={`-ml-px flex w-full items-baseline justify-between gap-3 border-l-2 py-1 pl-4 text-left text-[0.8125rem] leading-5 transition disabled:opacity-40 ${
-											on ? 'border-[var(--accent)] font-semibold text-[var(--ink)]' : 'border-transparent text-[var(--ink-2)] hover:text-[var(--accent)]'
+										className={`flex w-full cursor-pointer items-baseline justify-between gap-3 rounded-xl px-3.5 py-1.5 text-left text-[0.8125rem] leading-5 transition disabled:opacity-40 ${
+											on ? 'bg-[color-mix(in_srgb,var(--accent)_9%,var(--paper))] font-semibold text-[var(--accent)]' : 'text-[var(--ink-2)] hover:bg-[var(--paper-2)] hover:text-[var(--accent)]'
 										}`}
 									>
 										<span>{c.label}</span>
@@ -168,19 +168,21 @@ export function OrdinanceLibrary({ items, categories }: { items: LibraryItem[]; 
 						{topic ? <> in {topic.toLowerCase()}</> : null}
 					</p>
 					<div className='ml-auto flex items-center gap-3'>
-						<div className='flex items-center gap-1 text-[0.8125rem]' role='group' aria-label='Group the list by'>
-							<span className='mr-1 text-[var(--ink-3)]'>Group by</span>
+						<div className='flex items-center gap-3' role='group' aria-label='Group the list by'>
+							<span className='text-[0.8125rem] text-[var(--ink-3)]'>Group by</span>
+							<span className='seg'>
 							{(['topic', 'level'] as const).map((g) => (
 								<button
 									key={g}
 									type='button'
 									onClick={() => setBy(g)}
 									aria-pressed={by === g}
-									className={`px-2 py-0.5 font-semibold transition-colors ${by === g ? 'bg-[var(--ink)] text-[var(--paper)]' : 'text-[var(--ink-2)] hover:text-[var(--accent)]'}`}
+									className='seg-tab'
 								>
 									{g === 'topic' ? 'Topic' : 'Level'}
 								</button>
 							))}
+							</span>
 						</div>
 					{filtered ? (
 						<button

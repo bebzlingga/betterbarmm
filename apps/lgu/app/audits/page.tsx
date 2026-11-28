@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { auditMeta, auditReports } from '@betterbarmm/lgu-data/coa'
 import { AuditReportCard, OPINION } from '../_components/audit-findings'
-import { LguFigures, LguMasthead } from '../_components/lgu-parts'
+import { LguMasthead } from '../_components/lgu-parts'
 
 export const metadata: Metadata = {
 	title: 'COA audits — Local government directory',
 	description: 'What the Commission on Audit found in BARMM towns and cities: each audit opinion, the main findings, and how much of the previous year’s advice was acted on.',
 }
 
-const H2 = 'text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
+const H2 = 'dv-title'
 
 export default async function AuditsPage({ searchParams }: { searchParams: Promise<{ area?: string; opinion?: string }> }) {
 	const { area, opinion } = await searchParams
@@ -38,18 +38,14 @@ export default async function AuditsPage({ searchParams }: { searchParams: Promi
 				kicker='The money · Bangsamoro'
 				name='COA audits'
 				note='Every year the Commission on Audit examines each local government’s books and says whether they can be trusted. Here is what it said about BARMM towns and cities, in the reports that could be read.'
-			>
-				<LguFigures
-					figures={[
+				figures={[
 						{ label: 'Reports read', value: String(auditReports.length) },
 						{ label: 'Qualified opinions', value: String(count('qualified')) },
 						{ label: 'Disclaimers', value: String(count('disclaimer')), detail: 'No opinion possible' },
 						{ label: 'Advice acted on', value: total ? `${Math.round((acted / total) * 100)}%` : '—', detail: 'Of last year’s, fully' },
-					]}
-				/>
-			</LguMasthead>
+					]} />
 			<section className='bb-container bb-section'>
-				<div className='border border-[var(--rule)] bg-[var(--paper-2)] p-6 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
+				<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper-2)] p-6 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 					<p>
 						<strong>What is here, and what is not.</strong> coa.gov.ph turns away automated readers, so these are the reports the Internet Archive
 						kept a copy of: {`${auditReports.length} executive summaries, almost all for FY 2020. `}The regional government&rsquo;s and ministries&rsquo;
@@ -74,7 +70,7 @@ export default async function AuditsPage({ searchParams }: { searchParams: Promi
 				</h2>
 				<div className='mt-6 grid gap-4 lg:grid-cols-2'>
 					{shown.map((r) => (
-						<div key={`${r.entity}-${r.year}`} className='border border-[var(--rule)] bg-[var(--paper)] p-6 [&>article]:border-t-0 [&>article]:pt-3'>
+						<div key={`${r.entity}-${r.year}`} className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 [&>article]:border-t-0 [&>article]:pt-3'>
 							{r.unitKey ? (
 								<Link href={`/${r.unitKey}#audits`} className='rule-link mb-1 inline-block text-[0.75rem] font-semibold uppercase tracking-[0.1em] text-[var(--brass)]'>
 									{label(r.area ?? '')}

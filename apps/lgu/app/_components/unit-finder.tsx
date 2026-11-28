@@ -184,11 +184,9 @@ export function UnitFinder({ children }: { children: React.ReactNode }) {
 							animate={{ opacity: 1, y: 0, scale: 1 }}
 							exit={{ opacity: 0, y: -8, scale: 0.99 }}
 							transition={{ duration: 0.24, ease: EASE }}
-							className='mx-auto mt-[12vh] w-[min(38rem,calc(100vw-2rem))] border border-[var(--ink)] bg-[var(--paper)] shadow-[0_40px_90px_-40px_rgba(0,0,0,0.6)]'
+							className='mx-auto mt-[12vh] w-[min(38rem,calc(100vw-2rem))] overflow-hidden rounded-[1.5rem] bg-[var(--paper)] shadow-[0_40px_90px_-40px_rgba(0,0,0,0.6)]'
 						>
-							<span aria-hidden='true' className='block h-px bg-[var(--brass)]' />
-
-							<div className='flex items-center gap-3 border-b border-[var(--rule)] px-5 py-4'>
+							<div className='flex items-center gap-3 border-b border-[var(--rule-soft)] px-6 py-4'>
 								<MagnifyingGlassIcon
 									className='size-4 shrink-0 text-[var(--ink-3)]'
 									aria-hidden='true'
@@ -210,12 +208,12 @@ export function UnitFinder({ children }: { children: React.ReactNode }) {
 									placeholder='Town, city, or barangay…'
 									className='min-w-0 flex-1 bg-transparent text-[1rem] text-[var(--ink)] outline-none placeholder:text-[var(--ink-mute)] [&::-webkit-search-cancel-button]:hidden'
 								/>
-								<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+								<kbd className='hidden shrink-0 rounded-md border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 									Esc
 								</kbd>
 							</div>
 
-							<div id='finder-results' role='listbox' className='max-h-[52vh] overflow-y-auto'>
+							<div id='finder-results' role='listbox' className='max-h-[52vh] overflow-y-auto p-2'>
 								{hits.map((entry, index) => (
 									<Hit
 										key={entry.href}
@@ -278,7 +276,7 @@ export function FinderTrigger({
 				<span className='flex-1 text-left text-[0.90625rem] text-[var(--ink-mute)]'>
 					Find your city, municipality or barangay
 				</span>
-				<kbd className='hidden shrink-0 border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
+				<kbd className='hidden shrink-0 rounded-md border border-[var(--rule)] px-1.5 py-0.5 font-mono text-[0.59375rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)] sm:block'>
 					/
 				</kbd>
 			</button>

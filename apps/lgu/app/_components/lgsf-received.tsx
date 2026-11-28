@@ -33,7 +33,7 @@ export function LgsfReceived({ unitKey, name }: { unitKey: string; name: string 
 						<span className='num font-semibold text-[var(--ink)]'>{peso(allotted)}</span> allotted ·{' '}
 						<span className='num font-semibold text-[var(--ink)]'>{peso(released)}</span> released
 					</p>
-					<ul className='mt-6 border-t border-[var(--ink)]'>
+					<ul className='mt-6 border-t border-[var(--rule)]'>
 						{projects.map((p, i) => (
 							<li key={i} className='flex items-start justify-between gap-6 border-b border-[var(--rule)] py-4'>
 								<div className='min-w-0'>

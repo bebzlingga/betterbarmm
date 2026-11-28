@@ -1,9 +1,31 @@
 import fs from 'node:fs'
+import { Hero } from '../../_components/hero'
 import path from 'node:path'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowLeftIcon, ArrowRightIcon, PencilSimpleIcon, WarningIcon } from '@phosphor-icons/react/ssr'
+import {
+	ArrowLeftIcon,
+	ArrowRightIcon,
+	BankIcon,
+	CalendarBlankIcon,
+	CalendarCheckIcon,
+	CoinsIcon,
+	FilePdfIcon,
+	LightbulbIcon,
+	ListNumbersIcon,
+	MapPinIcon,
+	PencilSimpleIcon,
+	PenNibIcon,
+	PlusCircleIcon,
+	ScrollIcon,
+	SealCheckIcon,
+	ShieldCheckIcon,
+	TagIcon,
+	UsersThreeIcon,
+	WarningIcon,
+} from '@phosphor-icons/react/ssr'
+import type { Icon } from '@phosphor-icons/react'
 import { ordinances, slug, type Ordinance } from '@betterbarmm/lgu-data/ordinances'
 import { LguBreadcrumb } from '../../_components/lgu-parts'
 import { DocToc, type TocItem } from '../../_components/doc-toc'
@@ -74,6 +96,7 @@ export default async function OrdinancePage({ params }: { params: Promise<{ id: 
 
 	const toc: TocItem[] = [
 		{ id: 'in-brief', label: 'In brief', depth: 1 },
+		{ id: 'at-a-glance', label: 'At a glance', depth: 1 },
 		{ id: 'provides', label: 'What it provides', depth: 1 },
 		...(o.barmm
 			? ([
@@ -86,35 +109,29 @@ export default async function OrdinancePage({ params }: { params: Promise<{ id: 
 
 	return (
 		<>
-			{/* ---- The band: the title and what to do with it on the left, the ordinance as a document on the right ---- */}
-			<section className='bb-lattice brand-bg relative overflow-hidden'>
-				<span
-					aria-hidden='true'
-					className='bb-glow absolute -left-[16rem] -top-[22rem] h-[40rem] w-[64rem] max-w-[160vw] bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
-				/>
-				<div className={`bb-container relative pt-14 lg:pt-20 ${o.highlights?.length ? 'pb-28 lg:pb-32' : 'pb-16 lg:pb-20'}`}>
-					<LguBreadcrumb trail={[{ label: 'Ordinances', href: '/ordinances' }]}>{o.category}</LguBreadcrumb>
-					<div className='mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_17rem] lg:items-center lg:gap-28'>
-						<div className='min-w-0'>
-							<span className='bb-label'>{`${LEVEL[o.level] ?? 'LGU'} · ${where} · ${o.year}`}</span>
-							<h1 className='mt-4 text-[clamp(2rem,3.6vw,3.25rem)] font-extrabold leading-[1.05] tracking-[-0.035em] text-[var(--ink)] [font-family:var(--font-display)]'>{o.shortTitle}</h1>
-							<p className='mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{o.number}</p>
-							<div className='mt-8'>
-								<OrdinanceActions {...actions} />
-							</div>
-						</div>
+			{/* ---- The crimson header (user decision: the travel look): the title and what to do with it on the left, the
+			     ordinance as a document on the right ---- */}
+			<Hero
+				above={<LguBreadcrumb trail={[{ label: 'Ordinances', href: '/ordinances' }]}>{o.category}</LguBreadcrumb>}
+				kicker={`${LEVEL[o.level] ?? 'LGU'} · ${where} · ${o.year}`}
+				title={o.shortTitle}
+				small
+				lede={o.number}
+				side={
+					<div className='mx-auto w-full max-w-[17rem] lg:mr-0'>
 						<Sheet o={o} where={where} />
 					</div>
+				}
+			>
+				<div className='mt-8'>
+					<OrdinanceActions {...actions} />
 				</div>
-			</section>
+			</Hero>
 			{o.highlights?.length ? <Highlights items={o.highlights} /> : null}
 
 			<div className='bb-container bb-section grid gap-10 !pt-10 lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16 lg:!pt-12'>
-				{/* The particulars, one row across the page above the brief. */}
-				<Facts o={o} className='lg:col-span-2' />
-
 				{/* On a phone: the facts and the contents fold above the text. */}
-				<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
+				<details className='rounded-[var(--dv-r)] bg-[color-mix(in_srgb,var(--accent)_6%,var(--paper))] px-6 py-4 lg:hidden'>
 					<summary className='cursor-pointer text-[0.875rem] font-semibold text-[var(--ink)]'>On this page</summary>
 					<ol className='mt-3'>
 						{toc.map((item) => (
@@ -132,14 +149,19 @@ export default async function OrdinancePage({ params }: { params: Promise<{ id: 
 						<h2 className={H2}>In brief</h2>
 						<p className='mt-4 text-[1rem] leading-[1.8] text-[var(--ink)]'>{o.summary}</p>
 						{o.caveat ? (
-							<p className='mt-5 flex gap-3 border-l-2 border-[var(--brass)] bg-[var(--paper-2)] px-4 py-3 text-[0.875rem] leading-6 text-[var(--ink-2)]'>
-								<WarningIcon size={18} aria-hidden='true' className='mt-0.5 shrink-0 text-[var(--brass)]' />
-								<span>
+							<div className='mt-6 flex gap-3.5 border-t border-[var(--rule-soft)] pt-5'>
+								<WarningIcon size={22} weight='duotone' aria-hidden='true' className='mt-0.5 shrink-0 text-[#b0841c]' />
+								<p className='text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>
 									<span className='font-semibold text-[var(--ink)]'>Read with care. </span>
 									{o.caveat}
-								</span>
-							</p>
+								</p>
+							</div>
 						) : null}
+					</section>
+
+					<section id='at-a-glance' className='mt-16 scroll-mt-28'>
+						<h2 className={H2}>At a glance</h2>
+						<Facts o={o} className='mt-5' />
 					</section>
 
 					<section id='provides' className='mt-16 scroll-mt-28'>
@@ -200,15 +222,15 @@ export default async function OrdinancePage({ params }: { params: Promise<{ id: 
 				</article>
 
 				<aside className='hidden lg:block'>
-					<div className='sticky top-[calc(var(--sticky-top)+2rem)] grid max-h-[calc(100vh-var(--sticky-top)-4rem)] gap-8 overflow-y-auto transition-[top] duration-300'>
+					<div className='sticky top-[calc(var(--sticky-top)+2rem)] grid max-h-[calc(100vh-var(--sticky-top)-4rem)] gap-8 overflow-y-auto overscroll-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden transition-[top] duration-300'>
 						<DocToc items={toc} />
 					</div>
 				</aside>
 			</div>
 
 			{/* ---- On through the topic: its own section, one row, the previous on the left and the next on the right ---- */}
-			<section className='border-t border-[var(--rule)] bg-[var(--paper-2)]'>
-				<nav aria-label={`More on ${o.category.toLowerCase()}`} className='bb-container grid sm:grid-cols-2'>
+			<section className='bb-container pb-[clamp(4rem,7vw,6rem)]'>
+				<nav aria-label={`More on ${o.category.toLowerCase()}`} className='grid gap-4 sm:grid-cols-2'>
 					{prev ? <Step o={prev} dir='prev' /> : <Edge dir='prev' topic={o.category} />}
 					{next ? <Step o={next} dir='next' /> : <Edge dir='next' topic={o.category} />}
 				</nav>
@@ -222,14 +244,14 @@ export default async function OrdinancePage({ params }: { params: Promise<{ id: 
 function Highlights({ items }: { items: NonNullable<Ordinance['highlights']> }) {
 	const cols = ['', 'lg:grid-cols-1', 'lg:grid-cols-2', 'lg:grid-cols-3', 'lg:grid-cols-4'][Math.min(items.length, 4)]
 	return (
-		<div className='bb-container relative z-10 -mt-16 lg:-mt-20'>
-			<ul aria-label='Highlights' className={`grid border border-[var(--rule)] bg-[var(--paper)] sm:grid-cols-2 ${cols}`}>
+		<div className='bb-container pt-12 lg:pt-16'>
+			<ul aria-label='Highlights' className={`grid gap-3 sm:grid-cols-2 ${cols}`}>
 				{items.map((h, i) => (
 					<li
 						key={h.label}
-						className={`flex min-w-0 flex-col px-6 py-6 lg:px-7 ${i ? 'border-t border-[var(--rule)] sm:border-t-0' : ''} ${i % 2 ? 'sm:border-l sm:border-[var(--rule)]' : ''} ${i >= 2 ? 'sm:border-t lg:border-t-0' : ''} ${i ? 'lg:border-l lg:border-[var(--rule)]' : ''}`}
+						className='flex min-w-0 flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] lg:p-7'
 					>
-						<span className='font-mono text-[0.5625rem] font-bold uppercase tracking-[0.16em] text-[var(--brass)]'>Highlight {String(i + 1).padStart(2, '0')}</span>
+						<span className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>Highlight {String(i + 1).padStart(2, '0')}</span>
 						<span className='num mt-3 text-[clamp(1.75rem,2.6vw,2.375rem)] font-extrabold leading-none tracking-[-0.045em] text-[var(--accent)] [font-family:var(--font-display)]'>{h.value}</span>
 						<span className='mt-3 text-[0.875rem] leading-snug text-[var(--ink-2)]'>{h.label}</span>
 					</li>
@@ -273,52 +295,89 @@ function Sheet({ o, where }: { o: Ordinance; where: string }) {
 /** The ordinance's particulars as one row across the page: its number, who passed it, where, when, how long, the
     topic and the verdict, each label over value with a hairline between. The button that opens it is in the band. */
 function Facts({ o, className = '' }: { o: Ordinance; className?: string }) {
-	const cells: [string, React.ReactNode][] = [
-		['The ordinance', <span key='n' className='font-bold text-[var(--ink)]'>{o.number}</span>],
+	// The particulars as a list in the reading column (user decision: a list, not a card): each fact a row, its icon and
+	// label on the left, the value on the right, a soft rule between rows. Names and the bodies it creates are lists,
+	// so they read as chips; the rest are sentences, each shown only where the text says it.
+	const d = o.details
+	const cap = (v: string) => v.charAt(0).toUpperCase() + v.slice(1)
+	const rows: [string, React.ReactNode | string[] | null][] = [
+		['The ordinance', <span key='n' className='font-semibold text-[var(--ink)]'>{o.number}</span>],
 		['Passed by', `${LEVEL[o.level] ?? 'LGU'} of ${[o.lgu, o.province && o.province !== o.lgu ? o.province : null].filter(Boolean).join(', ')}`],
 		['Region', o.region],
 		['Enacted', o.enacted ? dated(o.enacted, o.year) : `${o.year}, day not legible`],
 		['The PDF', `${o.pages} pages, ${o.read === 'ocr' ? 'a scan' : 'typed'}`],
 		['Topic', <Link key='t' href={`/ordinances#${slug(o.category)}`} className='rule-link'>{o.category}</Link>],
-		...(o.barmm ? ([['For your LGU', <VerdictTag key='v' verdict={o.barmm.verdict} />]] as [string, React.ReactNode][]) : []),
+		['For your LGU', o.barmm ? <VerdictTag key='v' verdict={o.barmm.verdict} /> : null],
+		...((d
+			? [
+					['Authored by', d.sponsors.length ? d.sponsors : null],
+					['Approved by', d.approvedBy ? `${d.approvedBy}${d.approved ? `, ${dated(d.approved, o.year)}` : ''}` : null],
+					['Takes effect', d.effect ? cap(d.effect) : null],
+					['Length', d.structure ? cap(d.structure) : null],
+					['Covers', d.covers ? cap(d.covers) : null],
+					['Enforced by', d.enforcers ? cap(d.enforcers) : null],
+					['Paid for by', d.funding ? cap(d.funding) : null],
+					['Creates', d.creates.length ? d.creates : null],
+				]
+			: []) as [string, React.ReactNode | string[] | null][]),
 	]
-	// The second row: what the text says about itself, each shown only where it says it.
-	const d = o.details
-	const rows: [string, string | null][] = d
-		? [
-				['Authored by', d.sponsors.length ? d.sponsors.join(', ') : null],
-				['Approved by', d.approvedBy ? `${d.approvedBy}${d.approved ? `, ${dated(d.approved, o.year)}` : ''}` : null],
-				['Takes effect', d.effect],
-				['Length', d.structure],
-				['Covers', d.covers],
-				['Enforced by', d.enforcers],
-				['Paid for by', d.funding],
-				['Creates', d.creates.length ? d.creates.join('; ') : null],
-			]
-		: []
-	const more = rows.flatMap(([k, v]) => (v ? [[k, v.charAt(0).toUpperCase() + v.slice(1)] as const] : []))
-	return (
-		<div className={`border border-[var(--rule)] bg-[var(--paper)] ${className}`}>
-			<dl className='grid grid-cols-2 sm:grid-cols-4 xl:flex'>
-				{cells.map(([label, value]) => (
-					<div key={label} className='min-w-0 border-b border-r border-[var(--rule-soft)] px-5 py-4 xl:flex-auto xl:border-b-0 xl:last:border-r-0'>
-						<dt className={LABEL}>{label}</dt>
-						<dd className='mt-1.5 text-[0.84375rem] leading-5 text-[var(--ink-2)]'>{value}</dd>
-					</div>
-				))}
-			</dl>
-			{more.length ? (
-				<dl className='grid border-t border-[var(--rule)] bg-[var(--paper-2)] sm:grid-cols-2 xl:grid-cols-4'>
-					{more.map(([label, value]) => (
-						<div key={label} className='min-w-0 border-b border-r border-[var(--rule-soft)] px-5 py-4'>
-							<dt className={LABEL}>{label}</dt>
-							<dd className='mt-1.5 text-[0.84375rem] leading-5 text-[var(--ink-2)]'>{value}</dd>
-						</div>
-					))}
-				</dl>
+	const CHIP = 'rounded-full px-3 py-1 text-[0.8125rem] leading-5 text-[var(--ink-2)] ring-1 ring-inset ring-[var(--rule)]'
+	const chips = (list: string[]) => (
+		<ul className='flex flex-wrap gap-1.5'>
+			{list.slice(0, 6).map((v) => (
+				<li key={v} className={CHIP}>{v}</li>
+			))}
+			{list.length > 6 ? (
+				<li>
+					<details className='group'>
+						<summary className={`${CHIP} cursor-pointer list-none font-semibold text-[var(--accent)] group-open:hidden [&::-webkit-details-marker]:hidden`}>+{list.length - 6} more</summary>
+						<ul className='flex flex-wrap gap-1.5'>
+							{list.slice(6).map((v) => (
+								<li key={v} className={CHIP}>{v}</li>
+							))}
+						</ul>
+					</details>
+				</li>
 			) : null}
-		</div>
+		</ul>
 	)
+	return (
+		<dl className={`border-t border-[var(--rule)] ${className}`}>
+			{rows
+				.filter(([, value]) => value != null)
+				.map(([label, value]) => {
+					const Glyph = FACT_ICON[label]
+					return (
+						<div key={label} className='grid gap-x-8 gap-y-1.5 border-b border-[var(--rule-soft)] py-4 sm:grid-cols-[13rem_minmax(0,1fr)]'>
+							<dt className='flex items-center gap-2.5 text-[0.875rem] font-semibold text-[var(--ink-3)]'>
+								{Glyph ? <Glyph size={18} weight='duotone' aria-hidden='true' className='shrink-0 text-[var(--accent)]' /> : null}
+								{label}
+							</dt>
+							<dd className='text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{Array.isArray(value) ? chips(value as string[]) : value}</dd>
+						</div>
+					)
+				})}
+		</dl>
+	)
+}
+
+/** A small picture for each fact's label. */
+const FACT_ICON: Record<string, Icon> = {
+	'The ordinance': ScrollIcon,
+	'Passed by': BankIcon,
+	Region: MapPinIcon,
+	Enacted: CalendarBlankIcon,
+	'The PDF': FilePdfIcon,
+	Topic: TagIcon,
+	'For your LGU': LightbulbIcon,
+	'Authored by': PenNibIcon,
+	'Approved by': SealCheckIcon,
+	'Takes effect': CalendarCheckIcon,
+	Length: ListNumbersIcon,
+	Covers: UsersThreeIcon,
+	'Enforced by': ShieldCheckIcon,
+	'Paid for by': CoinsIcon,
+	Creates: PlusCircleIcon,
 }
 
 function Step({ o, dir }: { o: Ordinance; dir: 'prev' | 'next' }) {
@@ -326,11 +385,13 @@ function Step({ o, dir }: { o: Ordinance; dir: 'prev' | 'next' }) {
 	return (
 		<Link
 			href={`/ordinances/${o.id}`}
-			className={`group flex min-w-0 items-center gap-5 py-10 transition-colors hover:text-[var(--accent)] ${dir === 'next' ? 'flex-row-reverse border-t border-[var(--rule)] text-right sm:border-l sm:border-t-0 sm:pl-10' : 'sm:pr-10'}`}
+			className={`group flex min-w-0 items-center gap-5 rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 transition duration-200 hover:-translate-y-0.5 hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] hover:shadow-[0_18px_40px_-28px_rgba(0,0,0,0.45)] sm:p-7 ${dir === 'next' ? 'flex-row-reverse text-right' : ''}`}
 		>
-			<Arrow size={22} weight='bold' aria-hidden='true' className={`shrink-0 text-[var(--ink-3)] transition group-hover:text-[var(--accent)] ${dir === 'next' ? 'group-hover:translate-x-1' : 'group-hover:-translate-x-1'}`} />
+			<span className='grid size-11 shrink-0 place-items-center rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)] transition group-hover:bg-[var(--accent)] group-hover:text-white'>
+				<Arrow size={18} weight='bold' aria-hidden='true' />
+			</span>
 			<span className='min-w-0'>
-				<span className={`${LABEL} block`}>{dir === 'prev' ? 'Previous' : 'Next'} in {o.category.toLowerCase()}</span>
+				<span className='block font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>{dir === 'prev' ? 'Previous' : 'Next'} in {o.category.toLowerCase()}</span>
 				<span className='mt-1.5 line-clamp-2 block text-[1.125rem] font-extrabold leading-snug tracking-[-0.015em] text-[var(--ink)] group-hover:text-[var(--accent)]'>{o.shortTitle}</span>
 				<span className='mt-1 block text-[0.8125rem] text-[var(--ink-3)]'>
 					{o.lgu} · {o.year}
@@ -345,7 +406,7 @@ function Edge({ dir, topic }: { dir: 'prev' | 'next'; topic: string }) {
 	return (
 		<Link
 			href={`/ordinances#${slug(topic)}`}
-			className={`flex min-w-0 items-center py-10 text-[0.875rem] text-[var(--ink-3)] transition-colors hover:text-[var(--accent)] ${dir === 'next' ? 'justify-end border-t border-[var(--rule)] text-right sm:border-l sm:border-t-0 sm:pl-10' : 'sm:pr-10'}`}
+			className={`flex min-w-0 items-center rounded-[var(--dv-r)] border border-dashed border-[var(--rule)] p-6 text-[0.875rem] text-[var(--ink-3)] transition-colors hover:text-[var(--accent)] sm:p-7 ${dir === 'next' ? 'justify-end text-right' : ''}`}
 		>
 			{dir === 'prev' ? 'The first' : 'The last'} in {topic.toLowerCase()}. See them all
 		</Link>
@@ -361,13 +422,16 @@ function YourLgu({ a, lgu }: { a: NonNullable<Ordinance['barmm']>; lgu: string }
 				<h2 className={H2}>Using it in your LGU</h2>
 				<p className={LEAD}>Whether it fits depends on what your LGU already has. Check each condition against your own.</p>
 
-				<div className='mt-6 grid gap-5 border border-[var(--rule)] bg-[var(--paper-2)] p-5 sm:p-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-8'>
+				<div className='mt-6 grid gap-5 rounded-[var(--dv-r)] bg-[color-mix(in_srgb,var(--accent)_6%,var(--paper))] p-5 sm:p-7 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-8'>
 					<div>
 						<VerdictTag verdict={a.verdict} />
 						<p className='mt-3 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{VERDICT_MEANS[a.verdict]}</p>
 					</div>
-					<div className='border-t border-[var(--rule)] pt-5 md:border-l md:border-t-0 md:pl-8 md:pt-0'>
-						<p className={LABEL}>May suit</p>
+					<div className='rounded-2xl bg-[var(--paper)] p-5 shadow-[0_12px_30px_-24px_rgba(0,0,0,0.4)]'>
+						<p className='flex items-center gap-1.5 font-[family-name:var(--font-display)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>
+							<UsersThreeIcon size={14} weight='duotone' aria-hidden='true' />
+							May suit
+						</p>
 						<p className='mt-2 text-[0.9375rem] leading-7 text-[var(--ink-2)]'>{a.fits}</p>
 					</div>
 				</div>
@@ -376,12 +440,12 @@ function YourLgu({ a, lgu }: { a: NonNullable<Ordinance['barmm']>; lgu: string }
 				{a.apply?.length ? (
 					<div className='mt-10'>
 						{/* A table in all but markup: the condition to check against your LGU, then what to do if it holds. */}
-						<div className={`${STEP_COLS} hidden border-b border-[var(--ink)] pb-2 md:grid`} aria-hidden='true'>
+						<div className={`${STEP_COLS} hidden border-b border-[var(--rule)] pb-2 md:grid`} aria-hidden='true'>
 							<span />
 							<span className={LABEL}>If this is your LGU</span>
 							<span className={LABEL}>What to do</span>
 						</div>
-						<ol className='border-t border-[var(--ink)] md:border-t-0'>
+						<ol className='border-t border-[var(--rule)] md:border-t-0'>
 							{a.apply.map((step, i) => (
 								<li key={step.if} className={`${STEP_COLS} grid gap-y-2 border-b border-[var(--rule)] py-5`}>
 									<span className='num pt-0.5 font-mono text-[0.75rem] font-bold text-[var(--accent)]'>{String(i + 1).padStart(2, '0')}</span>

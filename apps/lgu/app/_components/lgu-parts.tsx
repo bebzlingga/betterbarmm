@@ -1,6 +1,8 @@
+import type { Icon } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { lguData } from '@betterbarmm/lgu-data'
-import { BarSegment, Counter, LineReveal, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { BarSegment, Counter, Rise, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { Hero } from './hero'
 
 /** The trail back up the hierarchy, printed as a line rather than a widget. */
 export function LguBreadcrumb({
@@ -13,7 +15,7 @@ export function LguBreadcrumb({
 	return (
 		<nav
 			aria-label='Breadcrumb'
-			className='flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'
+			className='flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 		>
 			<Link href='/' className='transition hover:text-[var(--brass)]'>
 				Local government
@@ -86,27 +88,34 @@ export type LguFigure = {
 	/** Set before a counted value, e.g. ₱. */
 	prefix?: string
 	detail?: React.ReactNode
+	/** A picture of what is counted, on a tile beside the label. */
+	icon?: Icon
 }
 
 /**
- * A masthead's headline figures, as the budget workspace sets them inside the band (user decision): one ruled strip,
- * the figures divided by hairlines, each label over its number and a line on what it means. Fixed colours: the band
- * re-points --paper and --ink to its own ground.
+ * A page's headline figures, each on a rounded card of its own under the crimson header (user decision: the travel look,
+ * the figures below the header as the registry's front page sets them): the label, the number, a line on what it means.
  */
-export function LguFigures({ figures, className = 'mt-10' }: { figures: LguFigure[]; className?: string }) {
-	// Columns on a wide screen: one row up to six, two even rows past that. The rules are set per item, by its place in
-	// its row, so a second row starts flush left like the first.
+export function LguFigures({ figures, className = '' }: { figures: LguFigure[]; className?: string }) {
+	// Columns on a wide screen: one row up to six, two even rows past that.
 	const per = figures.length <= 6 ? figures.length : Math.ceil(figures.length / 2)
 	const cols = ['', 'lg:grid-cols-1', 'lg:grid-cols-2', 'lg:grid-cols-3', 'lg:grid-cols-4', 'lg:grid-cols-5', 'lg:grid-cols-6'][per]
 	return (
-		<Stagger gap={0.06} className={`grid grid-cols-2 border-b border-white/25 ${cols} ${className}`}>
-			{figures.map((figure, index) => (
+		<Stagger gap={0.06} className={`grid grid-cols-2 gap-3 sm:grid-cols-3 max-sm:[&>:last-child:nth-child(odd)]:col-span-2 ${cols} ${className}`}>
+			{figures.map((figure) => (
 				<StaggerItem
 					key={figure.label}
-					className={`flex min-w-0 flex-col border-t border-white/25 py-6 pr-4 ${index % 2 ? 'border-l border-l-white/20 pl-5' : 'border-l-0 pl-0'} ${index % per ? 'lg:border-l lg:border-l-white/20 lg:pl-6' : 'lg:border-l-0 lg:pl-0'}`}
+					className='flex min-w-0 flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] lg:p-6'
 				>
-					<p className='font-mono text-[0.625rem] font-bold uppercase leading-4 tracking-[0.16em] text-[#f6cf7a]'>{figure.label}</p>
-					<p className='num mt-3 truncate text-[clamp(1.75rem,2.6vw,2.5rem)] font-extrabold leading-none tracking-[-0.045em] text-white'>
+					<div className='flex items-start justify-between gap-3'>
+						<p className='text-[0.65625rem] font-semibold uppercase leading-4 tracking-[0.12em] text-[var(--accent)]'>{figure.label}</p>
+						{figure.icon ? (
+							<span className='-mr-1 -mt-1 grid size-9 shrink-0 place-items-center rounded-xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
+								<figure.icon size={18} weight='duotone' aria-hidden='true' />
+							</span>
+						) : null}
+					</div>
+					<p className='num mt-3 truncate font-[family-name:var(--font-display)] text-[clamp(1.75rem,2.4vw,2.25rem)] font-extrabold leading-none tracking-[-0.035em] text-[var(--ink)]'>
 						{figure.count == null ? (
 							figure.value
 						) : (
@@ -116,7 +125,7 @@ export function LguFigures({ figures, className = 'mt-10' }: { figures: LguFigur
 							</>
 						)}
 					</p>
-					{figure.detail ? <p className='mt-3 text-[0.8125rem] leading-snug text-white/80'>{figure.detail}</p> : null}
+					{figure.detail ? <p className='mt-3 text-[0.8125rem] leading-snug text-[var(--ink-3)]'>{figure.detail}</p> : null}
 				</StaggerItem>
 			))}
 		</Stagger>
@@ -126,11 +135,12 @@ export function LguFigures({ figures, className = 'mt-10' }: { figures: LguFigur
 /** A section's heading as the landing site sets it: the title on the left, a line on what it holds on the right. */
 export function SectionTitle({ title, count, lead, className = '' }: { title: React.ReactNode; count?: number; lead?: React.ReactNode; className?: string }) {
 	return (
-		<div className={`flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 ${className}`}>
-			<h2 className='text-[1.625rem] font-extrabold tracking-[-0.02em] text-[var(--ink)]'>
-				{title} {count != null ? <span className='text-[var(--ink-mute)]'>· {count.toLocaleString('en-PH')}</span> : null}
+		<div className={`flex flex-wrap items-end justify-between gap-x-6 gap-y-2 ${className}`}>
+			<h2 className='dv-title'>
+				{title}{' '}
+				{count != null ? <span className='ml-1 align-middle text-[0.55em] font-semibold tracking-normal text-[var(--ink-mute)]'>{count.toLocaleString('en-PH')}</span> : null}
 			</h2>
-			{lead ? <p className='max-w-xl text-[0.84375rem] leading-[1.6] text-[var(--ink-3)]'>{lead}</p> : null}
+			{lead ? <p className='max-w-xl text-[0.9375rem] leading-[1.7] text-[var(--ink-3)]'>{lead}</p> : null}
 		</div>
 	)
 }
@@ -138,9 +148,9 @@ export function SectionTitle({ title, count, lead, className = '' }: { title: Re
 export { CARD, CARD_FOOT } from './card'
 
 /**
- * The masthead of a directory page: the band the landing site's Directory and Programs & services open on (user
- * decision), ranged left — the trail, the label, the name, and what the page holds under it, the figures or a chart
- * closing it. `.brand-bg` re-points the tokens, so everything inside inverts together.
+ * The top of a directory page on the crimson header every page opens on, under the clear bars (user decision: the
+ * travel look): the trail, the badges and label, the name and what the page holds; a chart closes it where a page has
+ * one (`children`). The headline figures sit on cards under the header (`figures`).
  */
 export function LguMasthead({
 	breadcrumb,
@@ -148,7 +158,8 @@ export function LguMasthead({
 	kicker,
 	name,
 	note,
-	chart = false,
+	figures,
+	side,
 	children,
 }: {
 	breadcrumb?: React.ReactNode
@@ -157,38 +168,39 @@ export function LguMasthead({
 	kicker: string
 	name: string
 	note?: React.ReactNode
-	/** A chart closes the masthead: less room under it. */
+	/** Kept for the callers; a chart in the header needs nothing different now. */
 	chart?: boolean
-	/** The figures row, and anything else that belongs above the fold. */
+	/** The headline figures, on cards under the header. */
+	figures?: LguFigure[]
+	/** A column on the right of the words from a wide screen. */
+	side?: React.ReactNode
+	/** A chart or a note that belongs in the header. */
 	children?: React.ReactNode
 }) {
 	return (
-		<section className='bb-lattice brand-bg relative overflow-hidden'>
-			<span
-				aria-hidden='true'
-				className='bb-glow absolute -left-[16rem] -top-[22rem] h-[40rem] w-[64rem] max-w-[160vw] bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
-			/>
-			<div className={`bb-container relative pt-16 lg:pt-24 ${chart ? 'pb-10 lg:pb-12' : 'pb-16 lg:pb-24'}`}>
-				{breadcrumb ? <div className='mb-8'>{breadcrumb}</div> : null}
-
-				<Rise distance={12}>
+		<>
+			<Hero
+				above={breadcrumb}
+				top={
 					<div className='flex flex-wrap items-center gap-2.5'>
 						{badges}
-						<span className='bb-label'>{kicker}</span>
+						<span className='pg-hero-kicker'>{kicker}</span>
 					</div>
-				</Rise>
-
-				<LineReveal lines={[name]} delay={0.06} className='bb-display-md mt-4 text-[var(--ink)]' />
-
-				{note ? (
-					<Rise delay={0.25} distance={14}>
-						<p className='mt-4 text-[0.9375rem] leading-7 text-[var(--ink-2)] lg:max-w-[80%]'>{note}</p>
-					</Rise>
-				) : null}
-
+				}
+				title={name}
+				small={name.length > 48}
+				lede={note}
+				auto={Boolean(children)}
+				side={side}
+			>
 				{children}
-			</div>
-		</section>
+			</Hero>
+			{figures?.length ? (
+				<section className='lgu-under bb-container'>
+					<LguFigures figures={figures} />
+				</section>
+			) : null}
+		</>
 	)
 }
 
@@ -263,8 +275,8 @@ export function ShareBar({
 export function LguSourceNote({ className = '' }: { className?: string }) {
 	return (
 		<Rise className={className} distance={12}>
-			<div className='border-t border-[var(--brass-line)] pt-5'>
-				<p className='bb-label'>About these figures</p>
+			<div className='rounded-[var(--dv-r)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] p-6 sm:p-8'>
+				<p className='font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.14em] text-[var(--accent)]'>About these figures</p>
 				<div className='mt-4 space-y-3 text-[0.78125rem] leading-6 text-[var(--ink-3)]'>
 					<p>
 						Structure from the{' '}

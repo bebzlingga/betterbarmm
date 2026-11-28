@@ -65,14 +65,14 @@ export function LguTabs({
 			    above it). The inner one scrolls and fades, so the fade thins the
 			    tabs, not the ground under them. */}
 			<div
-				className={`border-b border-[var(--ink)] bg-[var(--paper)] ${
+				className={`border-b border-[var(--rule-soft)] bg-[var(--paper)] ${
 					sticky ? 'sticky top-[var(--sticky-top)] z-20 transition-[top] duration-300' : ''
 				}`}
 			>
 			<div
 				role='tablist'
 				aria-label='Sections'
-				className='flex gap-1 overflow-x-auto [mask-image:linear-gradient(to_right,#000_82%,transparent)] [scrollbar-width:none] md:[mask-image:none] [&::-webkit-scrollbar]:hidden'
+				className='seg my-3.5'
 			>
 				{tabs.map((tab) => (
 					<button
@@ -83,10 +83,10 @@ export function LguTabs({
 						aria-selected={active === tab.id}
 						aria-controls={`panel-${tab.id}`}
 						onClick={() => select(tab.id)}
-						className='lgu-tab'
+						className='seg-tab'
 					>
 						{tab.label}
-						{tab.badge != null ? <span className='lgu-tab-badge'>{tab.badge}</span> : null}
+						{tab.badge != null ? <span className='seg-count'>{tab.badge}</span> : null}
 					</button>
 				))}
 			</div>

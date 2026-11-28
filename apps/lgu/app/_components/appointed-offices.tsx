@@ -44,7 +44,7 @@ export function AppointedOffices() {
 		<div className='mt-6 overflow-x-auto'>
 			<table className='w-full min-w-[34rem] border-collapse text-left text-[0.875rem]'>
 				<thead>
-					<tr className='border-b border-[var(--ink)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
+					<tr className='border-b border-[var(--rule)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'>
 						<th className='py-3 pr-4 font-semibold'>Office</th>
 						<th className='px-3 py-3 text-right font-semibold'>Province</th>
 						<th className='px-3 py-3 text-right font-semibold'>City</th>

@@ -320,8 +320,8 @@ const TOC: TocItem[] = OUTLINE.flatMap((section) => [
 	...section.topics.map((topic) => ({ id: slug(topic), label: topic, depth: 2 as const })),
 ])
 
-const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
-const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 dv-title'
+const H3 = 'scroll-mt-32 font-[family-name:var(--font-display)] text-[1.1875rem] font-bold tracking-[-0.015em] text-[var(--ink)]'
 const P = 'text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 
 function Topic({ title, cite, children }: { title: string; cite?: string; children: React.ReactNode }) {
@@ -443,7 +443,7 @@ export default function GovernanceCodePage() {
 						<Topic title='Amounts brought up to date'>
 							<table className='w-full border-collapse text-[0.9375rem]'>
 								<thead>
-									<tr className='border-b border-[var(--ink)] text-left text-[0.65625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
+									<tr className='border-b border-[var(--rule)] text-left text-[0.65625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-3)]'>
 										<th className='py-2.5 pr-4 font-semibold'>Tax</th>
 										<th className='py-2.5 pr-4 text-right font-semibold'>MMAA 25 / RA 7160</th>
 										<th className='py-2.5 text-right font-semibold'>BAA 49</th>
@@ -513,7 +513,7 @@ export default function GovernanceCodePage() {
 										<span className='text-[0.8125rem]'>RA 7160 · </span>
 										{row.national}
 									</p>
-									<p className='mt-3 border-l-2 border-[var(--accent)] bg-[var(--paper-2)] px-5 py-4'>
+									<p className='mt-3 rounded-2xl bg-[color-mix(in_srgb,var(--accent)_6%,var(--paper))] px-5 py-4'>
 										<span className='text-[0.8125rem] text-[var(--accent)]'>BAA 49 · </span>
 										{row.bangsamoro}
 										<span className='mt-1 block text-[0.8125rem] text-[var(--ink-3)]'>{row.basis}</span>

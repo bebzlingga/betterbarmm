@@ -1,5 +1,4 @@
-import { LineReveal, Rise } from '@betterbarmm/editorial'
-import { ArrowRightIcon } from '@phosphor-icons/react/ssr'
+import { ArrowRightIcon, BuildingsIcon, CoinsIcon, HouseLineIcon, IdentificationBadgeIcon, MapTrifoldIcon, UsersThreeIcon } from '@phosphor-icons/react/ssr'
 import {
 	lguAreas,
 	lguCounts,
@@ -12,6 +11,7 @@ import Link from 'next/link'
 import { rosterCoverage } from '@betterbarmm/lgu-data/barangay-officials'
 import { ntaShares } from '@betterbarmm/lgu-data/nta'
 import { CARD, CARD_FOOT, LguFigures, SectionTitle } from './_components/lgu-parts'
+import { Hero } from './_components/hero'
 import { RegionMap } from './_components/region-map'
 
 /** District seats in the Bangsamoro Parliament, joined on by slug. */
@@ -40,7 +40,7 @@ const ABOUT: Record<string, string> = {
  */
 function Areas() {
 	return (
-		<ul className='mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+		<ul className='mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 			{lguProvinces.map((province) => {
 				const capital = capitalOf(province)
 				const figures = [
@@ -53,18 +53,18 @@ function Areas() {
 				return (
 					<li key={province.slug} className='flex'>
 						<Link href={areaHref(province)} className={`${CARD} w-full`}>
-							<div className='flex flex-1 flex-col p-6'>
-								<p className='bb-label'>
+							<div className='flex flex-1 flex-col p-6 sm:p-7'>
+								<p className='text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>
 									{[province.kind, capital && capital !== province.name ? `capital ${capital}` : null].filter(Boolean).join(' · ')}
 								</p>
 								<h3 className='mt-3 text-[1.375rem] font-extrabold leading-tight tracking-[-0.03em] text-[var(--ink)] transition-colors group-hover:text-[var(--accent)]'>
 									{province.name}
 								</h3>
 								<p className='mt-2 text-[0.8125rem] leading-6 text-[var(--ink-3)]'>{ABOUT[province.slug] ?? province.note}</p>
-								<dl className='mt-auto grid grid-cols-2 gap-px bg-[var(--rule-soft)] pt-px'>
+								<dl className='mt-6 grid grid-cols-2 gap-2'>
 									{figures.map(([label, value]) => (
-										<div key={label} className='bg-[var(--paper)] pb-1 pt-4 [&:nth-child(even)]:pl-4'>
-											<dt className='font-mono text-[0.5625rem] font-bold uppercase tracking-[0.14em] text-[var(--ink-mute)]'>{label}</dt>
+										<div key={label} className='rounded-xl bg-[var(--paper-2)] px-3.5 py-3'>
+											<dt className='text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[var(--ink-mute)]'>{label}</dt>
 											<dd className='num mt-1.5 text-[1.25rem] font-extrabold tracking-[-0.03em] text-[var(--ink)]'>
 												{value != null ? value.toLocaleString('en-PH') : '—'}
 											</dd>
@@ -94,50 +94,50 @@ export default function LguHomePage() {
 
 	return (
 		<>
-			{/* ---- Masthead ---- */}
-			<section className='bb-lattice brand-bg relative overflow-hidden'>
-				<span
-					aria-hidden='true'
-					className='bb-glow absolute -left-[16rem] -top-[22rem] h-[40rem] w-[64rem] max-w-[160vw] bg-[radial-gradient(ellipse_at_center,rgba(255,206,84,0.7)_0%,rgba(255,170,40,0.3)_38%,transparent_70%)]! opacity-80!'
-				/>
-
-				<div className='bb-container relative grid items-center gap-10 py-16 lg:py-24 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]'>
-					<div>
-					<Rise distance={14}>
-						<p className='bb-label'>Local government in the Bangsamoro</p>
-					</Rise>
-
-					<LineReveal
-						lines={['Every province,', 'every town,', 'and who runs it.']}
-						delay={0.08}
-						className='bb-display mt-7 text-[var(--ink)]'
-					/>
+			{/* ---- Masthead: the crimson header under the clear bars, the region's map on its right (user decision: the
+			     travel look) ---- */}
+			<Hero
+				kicker='Local government in the Bangsamoro'
+				title='Every province, every municipality, and who runs it.'
+				lede='Every province, city, municipality and barangay in the region, with its people, its land, its money and the officials elected to run it, each traced back to the record it came from.'
+				side={
+					// The region on the crimson itself, no card (user decision), each drawn area a link to its page: the areas in
+					// gold, white under the pointer; the land around them a faint white; the lines between areas the crimson.
+					<div
+						className='relative hidden text-white lg:block'
+						style={{ '--paper': '#8a2418', '--paper-3': 'rgba(255, 255, 255, 0.16)', '--accent': '#f1c453', '--ink': '#ffffff' } as React.CSSProperties}
+					>
+						<span className='flex items-center justify-between gap-3'>
+							<span className='inline-flex items-center gap-1.5 rounded-full bg-white/[0.12] px-3 py-1.5 text-[0.75rem] font-semibold ring-1 ring-inset ring-white/20'>
+								<MapTrifoldIcon size={13} weight='bold' aria-hidden='true' />
+								Open an area
+							</span>
+							<span className='text-[0.75rem] text-white/60'>The Special Geographic Area has no published outline</span>
+						</span>
+						<RegionMap className='mt-4 max-h-[19rem]' />
 					</div>
+				}
+			/>
 
-					{/* Every drawn area is a link to its page. */}
-					<Rise delay={0.3} distance={14} className='hidden lg:block lg:pt-12'>
-						<RegionMap />
-					</Rise>
-
-					{/* Every figure here is the directory's own, summed from the units it can actually open. PSA's regional
-					    totals are larger and count different things; the note under the areas says how much and why. */}
-					<LguFigures
-						className='mt-2 lg:col-span-2'
-						figures={[
-							// Cotabato City is counted with the cities, not here.
-							{ label: 'Provinces and special area', value: '', count: lguProvinces.filter((area) => area.kind !== 'City').length, group: false },
-							{ label: 'Cities and municipalities', value: '', count: lguData.totals.lgus, group: false },
-							{ label: 'Barangays', value: '', count: lguData.totals.barangays },
-							{ label: 'Captains on record', value: '', count: regionRoster.listed },
-							{ label: 'People, 2024 census', value: '', count: lguData.totals.population },
-							{ label: `NTA to its LGUs, FY ${ntaYear}`, value: `₱${(ntaTotal / 1e9).toFixed(1)}B` },
-						]}
-					/>
-				</div>
+			{/* Every figure here is the directory's own, summed from the units it can actually open. PSA's regional totals
+			    are larger and count different things; the note under the areas says how much and why. On cards under the
+			    header (user decision). */}
+			<section className='lgu-under bb-container'>
+				<LguFigures
+					figures={[
+						// Cotabato City is counted with the cities, not here.
+						{ label: 'Provinces and special area', value: '', count: lguProvinces.filter((area) => area.kind !== 'City').length, group: false, icon: MapTrifoldIcon },
+						{ label: 'Cities and municipalities', value: '', count: lguData.totals.lgus, group: false, icon: BuildingsIcon },
+						{ label: 'Barangays', value: '', count: lguData.totals.barangays, icon: HouseLineIcon },
+						{ label: 'Captains on record', value: '', count: regionRoster.listed, icon: IdentificationBadgeIcon },
+						{ label: 'People, 2024 census', value: '', count: lguData.totals.population, icon: UsersThreeIcon },
+						{ label: `NTA to its LGUs, FY ${ntaYear}`, value: `₱${(ntaTotal / 1e9).toFixed(1)}B`, icon: CoinsIcon },
+					]}
+				/>
 			</section>
 
 			{/* ---- The areas ---- */}
-			<section className='bb-container bb-section'>
+			<section className='bb-container dv-section'>
 				<SectionTitle
 					title={`${lguData.totals.provinces} provinces, a city and a special area`}
 					lead='Open an area to see its cities, municipalities, barangays and officials.'
@@ -147,8 +147,8 @@ export default function LguHomePage() {
 
 				{/* The numbers here and PSA's do not agree, and saying which is which
 				    is the whole job — so it is shown, not folded away (user decision). */}
-				<aside className='mt-12 border border-[var(--rule)] bg-[var(--paper-2)] px-6 py-6 sm:px-8'>
-					<h3 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Why this total is smaller than PSA&rsquo;s</h3>
+				<aside className='mt-12 rounded-[var(--dv-r)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] px-6 py-7 sm:px-9 sm:py-8'>
+					<h3 className='font-[family-name:var(--font-display)] text-[1.0625rem] font-bold text-[var(--ink)]'>Why this total is smaller than PSA&rsquo;s</h3>
 					<div className='mt-3 space-y-3 text-[0.875rem] leading-7 text-[var(--ink-2)]'>
 						<p>{lguCounts.sulnote}</p>
 						<p>{lguCounts.reconcileNote}</p>

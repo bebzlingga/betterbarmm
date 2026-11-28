@@ -18,13 +18,13 @@ export function DocLayout({
 	return (
 		<div className={`bb-container bb-section grid gap-12 ${toc ? 'lg:grid-cols-[minmax(0,1fr)_17rem] lg:gap-16' : ''}`}>
 			{summary ? (
-				<p className={`border border-[var(--rule)] bg-[var(--paper-2)] px-6 py-5 text-[0.9375rem] leading-7 text-[var(--ink-2)] sm:px-8 sm:py-6 ${toc ? 'lg:col-span-2' : ''}`}>
+				<p className={`rounded-[var(--dv-r)] bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] px-6 py-6 text-[0.9375rem] leading-7 text-[var(--ink-2)] sm:px-9 sm:py-7 ${toc ? 'lg:col-span-2' : ''}`}>
 					{summary}
 				</p>
 			) : null}
 
 			{toc ? (
-			<details className='border border-[var(--rule)] bg-[var(--paper-2)] px-5 py-4 lg:hidden'>
+			<details className='rounded-[var(--dv-r)] bg-[var(--paper-2)] px-6 py-4 lg:hidden'>
 				<summary className='cursor-pointer text-[0.875rem] font-semibold text-[var(--ink)]'>On this page</summary>
 				<ol className='mt-3'>
 					{toc.map((item) => (
@@ -43,7 +43,7 @@ export function DocLayout({
 
 			{toc ? (
 			<aside className='hidden lg:block'>
-				<div className='sticky top-[calc(var(--sticky-top)+2rem)] max-h-[calc(100vh-var(--sticky-top)-4rem)] overflow-y-auto transition-[top] duration-300'>
+				<div className='sticky top-[calc(var(--sticky-top)+2rem)] max-h-[calc(100vh-var(--sticky-top)-4rem)] overflow-y-auto overscroll-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden transition-[top] duration-300'>
 					<DocToc items={toc} />
 				</div>
 			</aside>

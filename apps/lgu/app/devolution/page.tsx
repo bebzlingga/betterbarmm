@@ -109,8 +109,8 @@ const TOC: TocItem[] = [
 	{ id: 'appointed-offices', label: 'In a province, city or municipality', depth: 2 },
 ]
 
-const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
-const H3 = 'scroll-mt-32 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 dv-title'
+const H3 = 'scroll-mt-32 font-[family-name:var(--font-display)] text-[1.1875rem] font-bold tracking-[-0.015em] text-[var(--ink)]'
 const P = 'text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 const CITE = 'ml-3 text-[0.8125rem] font-normal text-[var(--ink-3)]'
 

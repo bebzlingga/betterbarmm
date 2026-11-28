@@ -59,7 +59,7 @@ export function Select({
 				<select
 					value={value}
 					onChange={(event) => onChange(event.target.value)}
-					className='h-10 w-full min-w-0 cursor-pointer appearance-none truncate border border-[var(--rule)] bg-[var(--paper-2)] pl-3 pr-9 text-[0.875rem] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
+					className='h-12 w-full min-w-0 cursor-pointer appearance-none truncate rounded-full border border-[var(--rule)] bg-[var(--paper)] pl-5 pr-10 text-[0.875rem] text-[var(--ink)] outline-none transition hover:border-[var(--ink)] focus:border-[var(--ink)]'
 				>
 					{options.map(([key, text]) => (
 						<option key={key} value={key}>
@@ -130,7 +130,7 @@ export function StatsExplorer({
 			<div className='pb-6 lg:pb-10 grid grid-cols-2 gap-3 lg:grid-cols-[minmax(0,1fr)_15rem_9rem_9rem_11rem] lg:items-end lg:gap-4'>
 				<label className='col-span-2 flex w-full min-w-0 max-w-[26rem] flex-col gap-1 lg:col-span-1'>
 					<span className='text-[0.75rem] text-[var(--ink-3)]'>Search</span>
-					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
+					<span className='flex h-12 items-center gap-3 rounded-full border border-[var(--rule)] bg-[var(--paper)] px-5 shadow-[0_10px_24px_-20px_rgba(0,0,0,0.45)] focus-within:border-[var(--ink)]'>
 						<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 						<input
 							value={query}

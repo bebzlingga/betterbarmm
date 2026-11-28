@@ -17,7 +17,6 @@ import {
 } from '@betterbarmm/lgu-data'
 import {
 	LguBreadcrumb,
-	LguFigures,
 	LguMasthead,
 	LguSourceNote,
 } from '../../_components/lgu-parts'
@@ -85,7 +84,7 @@ function opening(unit: LguUnit, province: LguProvince): string {
 
 const peso = (value: number) => (value >= 1e9 ? `₱${(value / 1e9).toFixed(2)}B` : `₱${(value / 1e6).toFixed(1)}M`)
 
-const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 dv-title'
 
 export default async function UnitPage({
 	params,
@@ -191,7 +190,8 @@ export default async function UnitPage({
 					.join(' · ')}
 				name={unit.name}
 				note={history ? (history.summary ?? history.paragraphs.join(' ')) : lead}
-			>
+				// The headline figures on cards under the header; the PSGC code rides in the kicker.
+				figures={cards.filter((card) => card.label !== 'PSGC code').map((card) => ({ label: card.label, value: card.value, detail: card.detail ?? undefined }))}>
 				{!history && (unit.nameNote || unit.populationNote || unit.formedFrom) ? (
 					<div className='mt-3 space-y-3 text-[0.875rem] leading-7 text-[var(--ink-2)] lg:max-w-[80%]'>
 						{[unit.nameNote, unit.populationNote].filter(Boolean).map((note) => (
@@ -205,8 +205,6 @@ export default async function UnitPage({
 						) : null}
 					</div>
 				) : null}
-				{/* The headline figures in the band, as the province pages set them; the PSGC code rides in the kicker. */}
-				<LguFigures figures={cards.filter((card) => card.label !== 'PSGC code').map((card) => ({ label: card.label, value: card.value, detail: card.detail ?? undefined }))} />
 			</LguMasthead>
 
 			{/* ---- The town in figures: the headline numbers, then a card per question ---- */}
@@ -261,7 +259,7 @@ export default async function UnitPage({
 						</ChartCard>
 					) : null}
 					{/* The allotment year by year, in a card of its own. */}
-					<div className='border border-[var(--rule)] p-6 empty:hidden sm:p-7 lg:col-span-2 [&_figure]:mt-0 [&_h2]:text-[1.125rem] [&_h2]:tracking-[-0.015em]'>
+					<div className='rounded-[var(--dv-r)] border border-[var(--rule)] p-6 empty:hidden sm:p-7 lg:col-span-2 [&_figure]:mt-0 [&_h2]:text-[1.125rem] [&_h2]:tracking-[-0.015em]'>
 						<NtaChart unitKey={key} />
 					</div>
 				</div>
@@ -329,12 +327,12 @@ export default async function UnitPage({
 
 				{/* ---- Beside it: where it is, then who governs it ---- */}
 				<aside className='order-first lg:order-none'>
-					<div className='mb-4 border border-[var(--rule)]'>
+					<div className='mb-4 overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)]'>
 						<LocatorMap areaSlug={province.slug} unit={{ psgc: unit.psgc ?? null, name: unit.name }} label={unit.name} />
 					</div>
 
 					{officials.length > 0 || council.length > 0 ? (
-						<div className='border border-[var(--rule)] p-5'>
+						<div className='rounded-[var(--dv-r)] border border-[var(--rule)] p-5'>
 							<h2 className='text-[0.9375rem] font-semibold text-[var(--ink)]'>Current officials</h2>
 							<p className='mt-1 text-[0.78125rem] text-[var(--ink-3)]'>{termLabel}</p>
 							<ul className='mt-4'>

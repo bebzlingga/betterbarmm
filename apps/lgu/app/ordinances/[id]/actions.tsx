@@ -68,7 +68,7 @@ export function OrdinanceActions({
 						onClose={() => setOpen(false)}
 						onClick={(event) => event.target === event.currentTarget && setOpen(false)}
 						aria-label={title}
-						className='m-auto h-[calc(100dvh-2rem)] max-h-none w-[calc(100vw-2rem)] max-w-[72rem] border border-[var(--rule)] bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/60 sm:h-[calc(100dvh-4rem)]'
+						className='m-auto h-[calc(100dvh-2rem)] max-h-none w-[calc(100vw-2rem)] max-w-[72rem] overflow-hidden rounded-[1.5rem] border-0 bg-[var(--paper)] p-0 text-[var(--ink)] backdrop:bg-black/60 sm:h-[calc(100dvh-4rem)]'
 					>
 						<div className='flex h-full flex-col'>
 							<div className='flex items-center gap-3 border-b border-[var(--rule)] px-4 py-3 sm:px-5'>

@@ -73,7 +73,7 @@ export function LgsfExplorer({
 			<div className='grid grid-cols-2 gap-3 pb-6 lg:grid-cols-[minmax(0,1fr)_9rem_15rem_14rem] lg:items-end lg:gap-4 lg:pb-10'>
 				<label className='col-span-2 flex w-full min-w-0 max-w-[26rem] flex-col gap-1 lg:col-span-1'>
 					<span className='text-[0.75rem] text-[var(--ink-3)]'>Search</span>
-					<span className='flex h-10 items-center gap-3 border border-[var(--rule)] bg-[var(--paper-2)] px-3 focus-within:border-[var(--ink)]'>
+					<span className='flex h-12 items-center gap-3 rounded-full border border-[var(--rule)] bg-[var(--paper)] px-5 shadow-[0_10px_24px_-20px_rgba(0,0,0,0.45)] focus-within:border-[var(--ink)]'>
 						<MagnifyingGlassIcon className='size-4 shrink-0 text-[var(--ink-3)]' aria-hidden='true' />
 						<input
 							value={query}

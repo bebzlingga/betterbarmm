@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { lguReferences } from '@betterbarmm/lgu-data'
 import { DocLayout } from '../_components/doc-layout'
 import type { TocItem } from '../_components/doc-toc'
-import { LguFigures, LguMasthead } from '../_components/lgu-parts'
+import { LguMasthead } from '../_components/lgu-parts'
 
 export const metadata: Metadata = {
 	title: 'Salaries and benefits',
@@ -164,11 +164,11 @@ const TOC: TocItem[] = [
 	{ id: 'sk-benefits', label: 'Sangguniang Kabataan officials', depth: 2 },
 ]
 
-const H2 = 'scroll-mt-32 text-[1.625rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'
-const H3 = 'scroll-mt-32 mt-10 text-[1.1rem] font-semibold tracking-[-0.01em] text-[var(--ink)]'
+const H2 = 'scroll-mt-32 dv-title'
+const H3 = 'scroll-mt-32 mt-10 font-[family-name:var(--font-display)] text-[1.1875rem] font-bold tracking-[-0.015em] text-[var(--ink)]'
 const P = 'mt-5 text-[0.9375rem] leading-7 text-[var(--ink-2)]'
 const TABLE = 'w-full min-w-[34rem] border-collapse text-left text-[0.875rem]'
-const HEAD = 'border-b border-[var(--ink)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
+const HEAD = 'border-b border-[var(--rule)] text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-[var(--ink-3)]'
 const TH = 'py-3 pr-4 font-semibold'
 const ROW = 'border-b border-[var(--rule-soft)] align-top transition-colors hover:bg-[var(--paper-2)]'
 const TD = 'py-3.5 pr-4 leading-6 text-[var(--ink-2)]'
@@ -201,9 +201,8 @@ function List({ items }: { items: string[] }) {
 export default function SalariesPage() {
 	return (
 		<>
-			<LguMasthead kicker='The guide · Bangsamoro' name='Salaries and benefits'>
-				<LguFigures
-					figures={HEADLINE.map(([position, label]) => {
+			<LguMasthead kicker='The guide · Bangsamoro' name='Salaries and benefits'
+				figures={HEADLINE.map(([position, label]) => {
 						const row = ELECTED.find((one) => one.position === position)!
 						return {
 							label,
@@ -218,8 +217,7 @@ export default function SalariesPage() {
 								</>
 							),
 						}
-					})}
-				/>
+					})}>
 			</LguMasthead>
 
 			<DocLayout

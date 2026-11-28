@@ -51,7 +51,7 @@ export default function SpendingPage() {
 							fiscal year
 						</caption>
 						<thead>
-							<tr className='border-b border-[var(--ink)]'>
+							<tr className='border-b border-[var(--rule)]'>
 								<th scope='col' className='bb-label sticky left-0 z-[1] bg-[var(--paper)] py-4 pr-4 text-left align-bottom'>
 									Area
 								</th>
@@ -158,7 +158,7 @@ export default function SpendingPage() {
 						<div>
 							<SectionTitle title='Two things to read the table with' />
 							<ul className='mt-6 grid gap-4 md:grid-cols-2'>
-								<li className='border border-[var(--rule)] bg-[var(--paper)] p-6'>
+								<li className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6'>
 									<p className='text-[1rem] font-bold tracking-[-0.01em] text-[var(--ink)]'>
 										FY {thin.join(' and FY ')} barely tagged anything
 									</p>
@@ -169,7 +169,7 @@ export default function SpendingPage() {
 										not because of what was built.
 									</p>
 								</li>
-								<li className='border border-[var(--rule)] bg-[var(--paper)] p-6'>
+								<li className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6'>
 									<p className='text-[1rem] font-bold tracking-[-0.01em] text-[var(--ink)]'>
 										The region was redrawn inside the span
 									</p>
