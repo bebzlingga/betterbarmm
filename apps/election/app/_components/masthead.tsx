@@ -1,4 +1,31 @@
-import { Counter, LineReveal, Rise } from '@betterbarmm/editorial'
+import { Counter, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import {
+	ArmchairIcon,
+	ChartBarIcon,
+	CheckSquareOffsetIcon,
+	FlagBannerIcon,
+	FlagIcon,
+	IdentificationCardIcon,
+	MapPinIcon,
+	ScalesIcon,
+	UsersThreeIcon,
+} from '@phosphor-icons/react/ssr'
+import type { Icon } from '@phosphor-icons/react'
+import { Hero } from './hero'
+
+/** A small picture for each figure, by what it counts (user decision: icons on the figures). */
+const FACT_ICON: Record<string, Icon> = {
+	'Seats in Parliament': ArmchairIcon,
+	'Seats for a majority': ScalesIcon,
+	'Parties on the ballot': FlagIcon,
+	Parties: FlagIcon,
+	'Names on record': IdentificationCardIcon,
+	'Sectoral nominees': UsersThreeIcon,
+	'District filers': MapPinIcon,
+	Turnout: CheckSquareOffsetIcon,
+	'Largest bloc': ChartBarIcon,
+	'Parties with a seat': FlagBannerIcon,
+}
 
 export type MastheadFact = {
 	value: number | string
@@ -20,7 +47,7 @@ export type MastheadFact = {
 type MastheadProps = {
 	/** The small brass line above the headline — which workspace, or which page of it. */
 	label: string
-	/** The headline, one entry per line. Where it breaks is a decision, not arithmetic. */
+	/** The headline in parts, run on as one line; a part can be muted. */
 	lines: string[]
 	/** Indices of `lines` set in the muted grey — the qualifier, not the claim. */
 	muted?: number[]
@@ -35,164 +62,64 @@ type MastheadProps = {
 	size?: 'page' | 'home'
 	/** The figures on the brass rule under the standfirst. Three at most; six is a table. */
 	facts?: MastheadFact[]
-	/** Ranged right on the same rule as the facts — the page's actions, or a note on the record. */
+	/** In the header's right-hand column: the page's actions, or a note on the record. */
 	children?: React.ReactNode
 }
 
 /**
- * The head of every page in this workspace.
- *
- * It used to be a brand band with a hand-set type scale that ran to 8rem,
- * which is a size the rest of the estate does not have and a color it spends
- * once, at the foot of the page, on the one ask. This is the same masthead the
- * landing site and the other workspaces open with: paper ground, the headline
- * on the shared display scale, and the figures on a brass rule rather than in
- * six bordered boxes.
+ * The head of every page in this workspace, in the travel workspace's look (user decision: as the legislation
+ * workspace's): the crimson and its lattice under the clear bars, the headline with its qualifier muted, the
+ * standfirst and the page's actions; the figures on cards of their own under the header, on the page's paper.
  */
-export function Masthead({
-	label,
-	lines,
-	muted = [],
-	standfirst,
-	size = 'page',
-	facts,
-	children,
-}: MastheadProps) {
+export function Masthead({ label, lines, muted = [], standfirst, facts, children }: MastheadProps) {
 	return (
-		/* Every page in the workspace opens on the brand crimson (user decision).
-		   `bb-crimson` re-points every token this component reads — ink, brass,
-		   rules, the accent — so the label, the display lines, the standfirst and
-		   the figures on their rule all restyle themselves without one inverted
-		   variant written here. */
-		<section className='bb-crimson bb-lattice relative overflow-hidden'>
-			<span aria-hidden='true' className='bb-glow absolute -right-[10%] -top-[20%] size-[34rem]' />
+		<>
+			<Hero
+				kicker={label}
+				// One line (user decision): the parts run on as a sentence and wrap where the width ends, the qualifier
+				// still muted.
+				title={lines.map((line, index) => (
+					<span key={line} className={muted.includes(index) ? 'text-white/55' : undefined}>
+						{index ? ' ' : ''}
+						{line}
+					</span>
+				))}
+				lede={standfirst}
+				// The page's actions in the header's right-hand column (user decision: not under the text), as equal rows
+				// beside the headline on a wide screen; under it on a phone.
+				side={children ? <div className='grid w-full max-w-[26rem] gap-3 lg:ml-auto'>{children}</div> : undefined}
+			/>
 
-			<div className='bb-container masthead-band relative'>
-				<Rise distance={14}>
-					<p className='bb-label'>{label}</p>
-				</Rise>
-
-				<LineReveal
-					lines={lines}
-					delay={0.08}
-					className={`${size === 'home' ? 'bb-display' : 'bb-display-md'} mt-7 text-[var(--ink)]`}
-					lineClassName={lines.map((_, index) => (muted.includes(index) ? 'bb-mute' : undefined))}
-				/>
-
-				{standfirst ? (
-					<Rise delay={0.35} distance={16}>
-						{/* Wider than the estate's reading measure. `bb-measure` caps at 34em,
-						    which is right for a column of prose a reader settles into; a
-						    standfirst is one sentence read once, under a headline that runs
-						    the page, and at 34em it stacked into five short lines and left
-						    the masthead looking like a narrow column pushed to the left.
-
-						    Tighter than the reading leading too: set at the body's own 1.88
-						    it stacked into loose, widely separated lines that read as four
-						    short paragraphs. */}
-						<p className='mt-7 text-[0.9375rem] leading-8 text-[var(--ink-2)] lg:max-w-[75%]'>
-							{standfirst}
-						</p>
-					</Rise>
-				) : null}
-
-				{/* The figures and the actions share one rule. Stacked, the buttons sat
-				    a third block down from a headline that had already said its piece,
-				    and the rule under the figures read as the end of the masthead with
-				    something stranded below it. Ranged right of the same line, the
-				    reader takes in what there is and what to do with it together.
-
-				    Centerd against the figures rather than sat on their baseline. A
-				    figure is a tall block — a label, a numeral and a caption — and a
-				    button aligned to the bottom of one hangs off the end of the row
-				    instead of belonging to it.
-
-				    Held well off the standfirst above, and off its own rule. The
-				    masthead is a claim and then the size of the thing claimed; run
-				    close together they read as one paragraph with numbers in it. */}
-				{facts?.length || children ? (
-					<Rise delay={0.5} distance={14}>
-						<div
-							className={`mt-20 flex flex-wrap justify-between gap-x-12 gap-y-8 border-t border-[var(--brass-line)] pt-9 ${
-								// Figures with captions are tall blocks of uneven height, so the
-								// row aligns them at the top; a plain run of three numerals has
-								// nothing to rag and centers against the actions beside it.
-								facts?.some((fact) => fact.detail) ? 'items-start' : 'items-center'
-							}`}
-						>
-							{facts?.length ? (
-								<dl
-									className={
-										facts.some((fact) => fact.detail)
-											? `grid flex-1 gap-x-10 gap-y-8 min-[380px]:grid-cols-2 ${
-													facts.length > 3 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
-												}`
-											: 'flex flex-wrap gap-x-10 gap-y-6'
-									}
-								>
-									{/* The term above its figure in the source and under it on the
-									    page. A list has to name a thing before it describes it, and
-									    the figure is the description — so `dt` leads and the column
-									    is reversed to put it back underneath.
-
-									    It used to carry the label twice: once hidden for a screen
-									    reader and once printed in a paragraph that belonged to
-									    neither the term nor the figure. Anyone listening heard
-									    "Seats in Parliament, 80, Seats in Parliament". */}
-									{facts.map((fact) => (
-										// `justify-end` is the top of a reversed column: main-start is
-										// the bottom, so the default packs the pair down and the
-										// numerals end up at whatever height the longest caption in the
-										// row leaves them. Packed to the top instead, every figure sits
-										// on one line and the captions run on beneath, ragged, which is
-										// the right way round.
-										<div key={fact.label} className='flex flex-col-reverse justify-end'>
-											{/* The caption belongs to the figure, so it rides inside the
-											    same `dt` rather than as a third element the list does not
-											    account for. */}
-											<dt className='mt-2 font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-												{fact.label}
-												{/* Wider than it was. At 16rem a caption like "Of the 13 on
-												    the regional ballot…" broke into six short lines under a
-												    two-word label, which reads as a column of fragments
-												    rather than a sentence — and the row has the width to
-												    spare now that a three-fact head takes three columns
-												    rather than three of four. */}
-												{fact.detail ? (
-													<span className='mt-2 block max-w-[22rem] font-sans text-[0.8125rem] font-normal normal-case leading-[1.5] tracking-normal text-[var(--ink-3)]'>
-														{fact.detail}
-													</span>
-												) : null}
-											</dt>
-											<dd className='bb-figure-sm text-[var(--ink)]'>
-												{fact.count && typeof fact.value === 'number' ? (
-													<Counter value={fact.value} group={fact.group} />
-												) : (
-													fact.value
-												)}
-											</dd>
-										</div>
-									))}
-								</dl>
-							) : null}
-
-							{/* Not on a phone. The actions repeat what the bar above already
-							    offers — the workspace's own pages are one tap away in the menu,
-							    and the data link is a file download nobody starts on a handset.
-							    On a narrow column they wrapped under the figures as a third
-							    block, which pushed the first section of the page a screen
-							    further down. */}
-							{children ? (
-								<div className='hidden flex-wrap items-center gap-3 sm:flex lg:justify-end'>
-									{children}
+			{facts?.length ? (
+				<section className='el-under bb-container'>
+					<Stagger gap={0.06} className={`grid gap-4 sm:grid-cols-2 ${facts.length > 3 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'}`}>
+						{facts.map((fact) => (
+							<StaggerItem
+								key={fact.label}
+								className='flex flex-col rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] lg:p-7'
+							>
+								<div className='flex items-start justify-between gap-3'>
+									<p className='text-[0.65625rem] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]'>{fact.label}</p>
+									{FACT_ICON[fact.label] ? (
+										(() => {
+											const Glyph = FACT_ICON[fact.label]!
+											return (
+												<span className='-mr-1 -mt-1 grid size-10 shrink-0 place-items-center rounded-xl bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] text-[var(--accent)]'>
+													<Glyph size={20} weight='duotone' aria-hidden='true' />
+												</span>
+											)
+										})()
+									) : null}
 								</div>
-							) : null}
-						</div>
-					</Rise>
-				) : null}
-			</div>
-
-			<div className='bb-weave' aria-hidden='true' />
-		</section>
+								<p className='num mt-3 font-[family-name:var(--font-display)] text-[2.375rem] font-extrabold leading-none tracking-[-0.035em] text-[var(--ink)]'>
+									{fact.count && typeof fact.value === 'number' ? <Counter value={fact.value} group={fact.group} /> : fact.value}
+								</p>
+								{fact.detail ? <p className='mt-3 text-[0.84375rem] leading-[1.55] text-[var(--ink-3)]'>{fact.detail}</p> : null}
+							</StaggerItem>
+						))}
+					</Stagger>
+				</section>
+			) : null}
+		</>
 	)
 }

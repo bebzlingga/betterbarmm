@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { Hero } from '../../_components/hero'
 import { Rise, SectionHead } from '@betterbarmm/editorial'
 import { ConfidenceBadge } from '../../_components/confidence-badge'
 import { PartyMark, PersonAvatar } from '../../_components/marks'
@@ -52,69 +53,35 @@ export default async function PartyDetailPage({
 	return (
 		<ElectionShell>
 			{/* ---- The entry ---- */}
-			{/* The party's own head, hand-set rather than the workspace `Masthead`
-			    — it opens on a mark and a name at display size rather than on a
-			    label and a standfirst. It takes the same brand ground, so every
-			    page in the workspace opens the same way. */}
-			<section className='bb-crimson bb-lattice relative overflow-hidden'>
-
-				<div className='bb-container relative pb-16 pt-14 lg:pb-24 lg:pt-20'>
-					<Rise distance={12}>
-						<Link
-							href='/candidates#parties'
-							className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink-3)] transition hover:text-[var(--accent)]'
-						>
+			{/* The party's own head on the crimson every page opens on (user decision: the travel look): the way back, its
+			    code, bloc and standing as chips, the name, and its mark on a white card on the right. */}
+			<Hero
+				top={
+					<div className='flex flex-wrap items-center gap-2'>
+						<Link href='/candidates#parties' className='dv-chip-light'>
 							← All parties
 						</Link>
-					</Rise>
-
-					<Rise delay={0.06} distance={14}>
-						<div className='mt-8 flex flex-wrap items-center gap-3'>
-							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--brass)]'>
-								{party.party_id}
-							</p>
-							<span aria-hidden='true' className='h-px w-8 bg-[var(--brass-line)]' />
-							<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
-								{party.bloc}
-							</p>
-							{party.dominantStatus ? (
-								<span className='border border-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--accent)]'>
-									{dominantStatusLabel[party.dominantStatus]}
-								</span>
-							) : null}
-							<ConfidenceBadge confidence={party.confidence} />
-						</div>
-					</Rise>
-
-					<Rise delay={0.12} distance={16}>
-						<div className='mt-7 flex flex-wrap items-center gap-5'>
+						<span className='pg-hero-kicker ml-2'>{party.party_id}</span>
+						<span className='dv-chip-light !bg-transparent ring-1 ring-inset ring-white/30 !text-white'>{party.bloc}</span>
+						{party.dominantStatus ? <span className='dv-chip-light'>{dominantStatusLabel[party.dominantStatus]}</span> : null}
+						<ConfidenceBadge confidence={party.confidence} />
+					</div>
+				}
+				title={party.ballot_name}
+				lede={
+					<>
+						<p className='font-semibold text-white'>{party.full_name}</p>
+						{party.description ? <p className='mt-3'>{party.description}</p> : null}
+					</>
+				}
+				side={
+					<div className='flex lg:justify-end'>
+						<span className='grid place-items-center rounded-[1.75rem] bg-white p-5 shadow-[0_24px_50px_-28px_rgba(0,0,0,0.55)] lg:p-7'>
 							<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={144} />
-							<h1 className='bb-display-md text-[var(--ink)]'>{party.ballot_name}</h1>
-						</div>
-					</Rise>
-
-					<Rise delay={0.2} distance={14}>
-						<p className='mt-6 max-w-[52rem] text-[1rem] font-semibold leading-8 text-[var(--ink)]'>
-							{party.full_name}
-						</p>
-					</Rise>
-
-					{party.description ? (
-						<Rise delay={0.26} distance={14}>
-							{/* Wider than the estate's reading measure, like the mastheads.
-						    This is a sentence read once under a name at display size, not a
-						    column somebody settles into; at 34em it stacked into a narrow
-						    stripe beside a very large heading. */}
-						<p className='mt-5 max-w-[52rem] text-[1rem] leading-8 text-[var(--ink-2)]'>
-							{party.description}
-						</p>
-						</Rise>
-					) : null}
-
-				</div>
-
-				<div className='bb-weave' aria-hidden='true' />
-			</section>
+						</span>
+					</div>
+				}
+			/>
 
 			{/* ---- How it did ---- */}
 			{/* First thing under the name, because it is the first thing anyone
@@ -123,7 +90,7 @@ export default async function PartyDetailPage({
 			    with the one figure that matters printed on the pointer. */}
 			<section className='bb-container section-band'>
 				<Rise distance={14}>
-					<div className='border-t border-[var(--brass-line)] pt-7'>
+					<div className='tv-wash rounded-[var(--dv-r)] p-7 sm:p-10'>
 						<div className='flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between'>
 							<div>
 								<p className='bb-label'>In the count</p>
@@ -177,7 +144,7 @@ export default async function PartyDetailPage({
 						    of them is on the result page with what they polled beside it —
 						    which is a better answer to "who" than a list with no numbers. */}
 						{result.seatsByTrack.length ? (
-							<div className='mt-8 border-t border-[var(--rule)] pt-5'>
+							<div className='mt-8 rounded-2xl bg-[var(--paper)] px-5 py-4'>
 								<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 									Where the seats came from
 								</p>
@@ -191,9 +158,9 @@ export default async function PartyDetailPage({
 
 						<Link
 							href='/results'
-							className='mt-7 inline-block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
+							className='dv-pill mt-7 bg-[var(--paper)]'
 						>
-							The full result →
+							The full result
 						</Link>
 					</div>
 				</Rise>
@@ -287,11 +254,11 @@ export default async function PartyDetailPage({
 									</p>
 								</div>
 
-								<div className='mt-6 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3'>
+								<div className='mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 									{party.sectoral.map((candidate) => (
 										<div
 											key={`${candidate.sector}-${candidate.rank_or_number}-${candidate.full_name}`}
-											className='flex items-start gap-4'
+											className='tv-card !flex-row items-start gap-4 !p-5'
 										>
 											<PersonAvatar name={candidate.full_name} partyId={party.party_id} size={44} />
 											<div className='min-w-0'>
@@ -313,7 +280,7 @@ export default async function PartyDetailPage({
 
 						{party.district.length > 0 ? (
 							<div className='mt-14'>
-								<div className='flex flex-wrap items-baseline justify-between gap-3 border-t border-[var(--brass-line)] pt-6'>
+								<div className='flex flex-wrap items-baseline justify-between gap-3'>
 									<div className='flex flex-wrap items-center gap-3'>
 										<h3 className='section-title section-title-sm text-[var(--ink)]'>
 											District filers
@@ -330,9 +297,9 @@ export default async function PartyDetailPage({
 								    then cancelled at `lg` — so in two columns the provinces ran
 								    into each other, one roster's last filer sitting directly on the
 								    next province's rule. */}
-								<div className='mt-6 grid gap-x-12 gap-y-12 lg:grid-cols-2'>
+								<div className='mt-6 grid gap-5 lg:grid-cols-2'>
 									{districtGroups.map((group) => (
-										<div key={group.area}>
+										<div key={group.area} className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 shadow-[0_18px_40px_-34px_rgba(0,0,0,0.45)] sm:p-6'>
 											{/* The label needs room under it, like every other small header
 											    on the estate. At `pb-2` the province sat on its own rule and
 											    the first filer sat on the other side of it, so the three read
@@ -348,7 +315,7 @@ export default async function PartyDetailPage({
 											{group.candidates.map((candidate) => (
 												<div
 													key={candidate.candidate_id}
-													className='flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-[var(--rule-soft)] py-3'
+													className='flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-[var(--rule-soft)] py-3 last:border-b-0'
 												>
 													<p className='flex min-w-0 items-center gap-3'>
 														<PersonAvatar name={candidate.name_as_reported} partyId={party.party_id} size={36} />

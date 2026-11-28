@@ -3,7 +3,7 @@ import { type Confidence, confidenceMeta } from '../_lib/confidence'
 /**
  * How far a record is to be trusted, said in one mark.
  *
- * A dot in the tone, the word beside it, and a hairline around both. The
+ * A dot in the tone, the word beside it, and a rounded hairline around both (user decision: the travel look's pills). The
  * badges used to be solid blocks of color — four of them in a row read as a
  * chart of something, and on a card they shouted over the name they were
  * qualifying. The record is the loud thing here; this is a footnote to it.
@@ -27,11 +27,11 @@ export function ConfidenceBadge({
 	return (
 		<span
 			title={meta.note}
-			className={`inline-flex items-center gap-1.5 border border-[var(--rule)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--ink-3)] ${className}`}
+			className={`inline-flex items-center gap-1.5 rounded-full border border-[var(--rule)] px-2.5 py-1.5 text-[0.6875rem] font-semibold leading-none text-[var(--ink-3)] ${className}`}
 		>
 			<span
 				aria-hidden='true'
-				className='size-1.5 shrink-0 rotate-45'
+				className='size-1.5 shrink-0 rounded-full'
 				style={{ background: confidenceTone[confidence] }}
 			/>
 			{meta.label}

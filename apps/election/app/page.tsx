@@ -1,4 +1,5 @@
 import { Rise, SectionHead, Stagger, StaggerItem } from '@betterbarmm/editorial'
+import { ArrowRightIcon, ChartBarIcon, CheckSquareOffsetIcon, UsersThreeIcon } from '@phosphor-icons/react/ssr'
 import Link from 'next/link'
 import { BallotDiagram } from './_components/ballot-diagram'
 import { ElectionShell } from './_components/election-shell'
@@ -49,7 +50,7 @@ function Track({
 			 *
 			 * The bar over each column is the one from the legend, so a column and
 			 * its cell above are visibly the same track. */}
-			<article className='flex h-full flex-col border-t border-[var(--rule)] pt-7'>
+			<article className='tv-card h-full !p-7 lg:!p-8'>
 				<span
 					aria-hidden='true'
 					className='block h-1.5 w-10'
@@ -122,19 +123,33 @@ export default function Page() {
 				lines={['The first regular', 'parliamentary election.']}
 				muted={[1]}
 				size='home'
-				standfirst={`On ${metadata.electionDay} the Bangsamoro elected its own Parliament for the first time — ${stats.totalSeats} members, filled three different ways, after seven years of transition and three postponed dates. No party won the ${stats.majorityThreshold} seats a government needs. This page is how those seats are filled and who was on the ballot; the count itself is on the result page.`}
 				facts={[
 					{ value: stats.totalSeats, label: 'Seats in Parliament', count: true },
 					{ value: stats.majorityThreshold, label: 'Seats for a majority', count: true },
 					{ value: stats.regionalParties, label: 'Parties on the ballot', count: true },
 				]}
 			>
-				{/* Brass, not the solid ink button. On the crimson band `bb-btn-solid`
-				    is cream with crimson type and fills gold on hover, which puts
-				    white type on gold; brass is the cut the estate already uses for
-				    the one action on a brand band. */}
-				<Link href='/results' className='bb-btn bb-btn-brass'>
-					See the result
+				{/* The two ways on, as equal rows in the header's right-hand column (user decision): the result solid white,
+				    the ballot on glass, each with what it opens. */}
+				<Link href='/results' className='group flex w-full items-center gap-4 rounded-2xl bg-white p-4 pr-5 text-[#8a2418] shadow-[0_18px_40px_-24px_rgba(0,0,0,0.5)] transition hover:-translate-y-0.5'>
+					<span className='grid size-11 shrink-0 place-items-center rounded-xl bg-[#8a2418]/10'>
+						<ChartBarIcon size={22} weight='duotone' aria-hidden='true' />
+					</span>
+					<span className='min-w-0 flex-1'>
+						<span className='block font-[family-name:var(--font-display)] text-[1rem] font-bold'>See the result</span>
+						<span className='block text-[0.8125rem] text-[#8a2418]/70'>How the {stats.totalSeats} seats were filled</span>
+					</span>
+					<ArrowRightIcon size={18} weight='bold' aria-hidden='true' className='shrink-0 transition group-hover:translate-x-1' />
+				</Link>
+				<Link href='/candidates' className='group flex w-full items-center gap-4 rounded-2xl bg-white/[0.08] p-4 pr-5 text-white ring-1 ring-inset ring-white/20 transition hover:bg-white/[0.14]'>
+					<span className='grid size-11 shrink-0 place-items-center rounded-xl bg-white/10'>
+						<UsersThreeIcon size={22} weight='duotone' aria-hidden='true' />
+					</span>
+					<span className='min-w-0 flex-1'>
+						<span className='block font-[family-name:var(--font-display)] text-[1rem] font-bold'>Who was on the ballot</span>
+						<span className='block text-[0.8125rem] text-white/70'>Every party, nominee and district filer</span>
+					</span>
+					<ArrowRightIcon size={18} weight='bold' aria-hidden='true' className='shrink-0 transition group-hover:translate-x-1' />
 				</Link>
 			</Masthead>
 
@@ -148,8 +163,13 @@ export default function Page() {
 			    from the first the moment either is edited. */}
 			<section className='bb-container section-band'>
 				<Rise distance={14}>
-					<div>
-						<p className='bb-label'>The count · {resultDay}</p>
+					<div className='tv-wash rounded-[var(--dv-r)] p-7 sm:p-10 lg:p-12'>
+						<p className='flex items-center gap-2.5 font-[family-name:var(--font-display)] text-[0.75rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)]'>
+							<span className='grid size-9 place-items-center rounded-xl bg-[color-mix(in_srgb,var(--accent)_12%,transparent)]'>
+								<CheckSquareOffsetIcon size={18} weight='duotone' aria-hidden='true' />
+							</span>
+							The count · {resultDay}
+						</p>
 
 						<div className='mt-7 grid gap-x-10 gap-y-8 lg:grid-cols-[1.1fr_1fr] lg:items-end'>
 							{/* A step under `bb-lede`. The band sits directly beneath a display
@@ -160,14 +180,14 @@ export default function Page() {
 								{outcome.summary}
 							</p>
 
-							<dl className='grid grid-cols-3 gap-6'>
+							<dl className='grid grid-cols-3 gap-3'>
 								{[
 									{ value: `${turnout.turnout_percent}%`, label: 'Turnout' },
 									{ value: outcome.largest_party_seats, label: 'BFP, largest bloc' },
 									{ value: shortfall, label: 'Short of a majority' },
 								].map((fact) => (
-									<div key={fact.label} className='flex flex-col-reverse'>
-										<dt className='mt-2.5 font-mono text-[0.5625rem] font-semibold uppercase leading-tight tracking-[0.14em] text-[var(--ink-3)]'>
+									<div key={fact.label} className='flex flex-col-reverse rounded-2xl bg-[var(--paper)] p-4 shadow-[0_14px_30px_-24px_rgba(0,0,0,0.45)] sm:p-5'>
+										<dt className='mt-2.5 text-[0.65625rem] font-semibold uppercase leading-tight tracking-[0.1em] text-[var(--ink-3)]'>
 											{fact.label}
 										</dt>
 										<dd className='bb-figure-sm leading-none text-[var(--ink)]'>{fact.value}</dd>
@@ -176,12 +196,12 @@ export default function Page() {
 							</dl>
 						</div>
 
-						<Link
-							href='/results'
-							className='mt-8 inline-block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
-						>
-							Every seat, district and reserved seat →
-						</Link>
+						<p className='mt-9 flex justify-end'>
+							<Link href='/results' className='dv-pill bg-[var(--paper)]'>
+								Every seat, district and reserved seat
+								<ArrowRightIcon size={14} weight='bold' aria-hidden='true' />
+							</Link>
+						</p>
 					</div>
 				</Rise>
 			</section>
@@ -219,11 +239,9 @@ export default function Page() {
 							for the party rather than a person: each one takes a share of these seats in
 							proportion to its share of the vote, then fills them from its own nominee list.
 						</p>
-						<Link
-							href='/candidates#parties'
-							className='mt-5 inline-block font-mono text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-[var(--accent)] transition hover:text-[var(--accent-deep)]'
-						>
-							Meet the {stats.regionalParties} parties →
+						<Link href='/candidates#parties' className='dv-pill mt-6'>
+							Meet the {stats.regionalParties} parties
+							<ArrowRightIcon size={14} weight='bold' aria-hidden='true' />
 						</Link>
 					</Track>
 
@@ -300,7 +318,8 @@ export default function Page() {
 			</section>
 
 			{/* ---- Government formation ---- */}
-			<section className='bb-container section-band'>
+			<section className='tv-wash-flip'>
+			<div className='bb-container section-band'>
 				<SectionHead
 					index='02'
 					eyebrow='After the count'
@@ -342,9 +361,12 @@ export default function Page() {
 					</Rise>
 
 					<Rise delay={0.12} distance={14}>
-						<MajorityBar total={stats.totalSeats} majority={stats.majorityThreshold} />
+						<div className='rounded-[var(--dv-r)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-8'>
+							<MajorityBar total={stats.totalSeats} majority={stats.majorityThreshold} />
+						</div>
 					</Rise>
 				</div>
+			</div>
 			</section>
 
 			{/* ---- The timeline ---- */}
@@ -355,7 +377,7 @@ export default function Page() {
 			    above it carries a band too. Held one level in, it never matches
 			    that rule — and the timeline below still runs full-bleed, because
 			    the wrapper pads rather than measures. */}
-			<section className='bb-lattice-soft relative isolate overflow-hidden bg-[var(--paper-2)]'>
+			<section className='relative isolate overflow-hidden'>
 				<div className='section-band'>
 					<div className='bb-container'>
 						<SectionHead

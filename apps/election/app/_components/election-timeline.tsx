@@ -188,7 +188,7 @@ export function ElectionTimeline({ phases }: { phases: TimelinePhase[] }) {
 						    line drawn in pieces shows every join at a fractional width. */}
 						<span
 							aria-hidden='true'
-							className='absolute inset-x-0 top-1/2 h-px bg-[var(--ink)]'
+							className='absolute inset-x-0 top-1/2 h-px bg-[color-mix(in_srgb,var(--ink)_22%,transparent)]'
 						/>
 
 						{items.map((item, index) => {

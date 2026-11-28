@@ -37,7 +37,7 @@ function Column({
 	footnote: string
 }) {
 	return (
-		<div className='bg-[var(--paper)] p-6 sm:p-7'>
+		<div className='bg-[var(--paper)] p-6 sm:p-8'>
 			<div className='flex items-baseline gap-3'>
 				<p className='num text-[0.8125rem] font-bold leading-none text-[var(--accent)]'>{step}</p>
 				<h3 className='text-[1rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
@@ -98,8 +98,8 @@ export function BallotDiagram({
 	const remaining = partyCount - shown.length
 
 	return (
-		<figure className='border border-[var(--ink)]'>
-			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[var(--ink)] bg-[var(--paper-2)] px-6 py-4'>
+		<figure className='overflow-hidden rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)]'>
+			<div className='flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[var(--rule)] bg-[var(--paper-2)] px-6 py-4 sm:px-8'>
 				<p className='font-mono text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-[var(--ink)]'>
 					One ballot, two marks
 				</p>
@@ -127,7 +127,7 @@ export function BallotDiagram({
 				/>
 			</div>
 
-			<figcaption className='border-t border-[var(--ink)] bg-[var(--paper-2)] px-6 py-5'>
+			<figcaption className='border-t border-[var(--rule)] bg-[var(--paper-2)] px-6 py-5 sm:px-8'>
 				{/* The full width of the ballot rather than a reading measure. This
 				    note is the third track — the eight seats that never appear on the
 				    paper above it — and held to 34em under a figure that runs the page

@@ -59,7 +59,7 @@ export function PersonAvatar({
 	if (photo) {
 		return (
 			<span
-				className={`relative block shrink-0 overflow-hidden bg-[var(--paper-3)] ${className}`}
+				className={`relative block shrink-0 overflow-hidden rounded-full bg-[var(--paper-3)] ${className}`}
 				style={{ width: size, height: size }}
 				title={`${name} — portrait: ${photo.credit}, public domain`}
 			>
@@ -87,7 +87,7 @@ export function PersonAvatar({
 	return (
 		<span
 			aria-hidden='true'
-			className={`flex shrink-0 items-center justify-center font-extrabold leading-none tracking-[-0.02em] ${className}`}
+			className={`flex shrink-0 items-center justify-center rounded-full font-extrabold leading-none tracking-[-0.02em] ${className}`}
 			style={{
 				width: size,
 				height: size,
@@ -134,7 +134,7 @@ export function PartyMark({
 	if (mark) {
 		return (
 			<span
-				className={`relative block shrink-0 overflow-hidden bg-[var(--paper)] ${className}`}
+				className={`relative block shrink-0 overflow-hidden rounded-[22%] bg-[var(--paper)] ${className}`}
 				style={{ width: size, height: size }}
 			>
 				<Image
@@ -159,7 +159,7 @@ export function PartyMark({
 	return (
 		<span
 			aria-hidden='true'
-			className={`flex shrink-0 items-center justify-center text-center font-extrabold leading-none tracking-[-0.02em] ${className}`}
+			className={`flex shrink-0 items-center justify-center rounded-[22%] text-center font-extrabold leading-none tracking-[-0.02em] ${className}`}
 			style={{
 				width: size,
 				height: size,

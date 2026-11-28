@@ -64,20 +64,20 @@ function Point({
 }) {
 	return (
 		<Rise distance={14}>
-			<div className='flex h-full flex-col border-t border-[var(--rule)] pt-6'>
+			<div className='tv-card h-full !p-8 sm:!p-10'>
 				<h3 className='text-[1.125rem] font-extrabold leading-tight tracking-[-0.02em] text-[var(--ink)]'>
 					{title}
 				</h3>
-				<p className='mt-3 text-[0.9375rem] leading-[1.6] text-[var(--ink-2)]'>{children}</p>
+				<p className='mt-4 text-[0.9375rem] leading-[1.7] text-[var(--ink-2)]'>{children}</p>
 
 				{means ? (
-					<p className='mt-4 border-l-2 border-[var(--brass-line)] pl-3.5 text-[0.875rem] leading-[1.55] text-[var(--ink-3)]'>
+					<p className='mt-6 rounded-2xl bg-[color-mix(in_srgb,var(--accent)_5%,var(--paper))] px-6 py-5 text-[0.875rem] leading-[1.65] text-[var(--ink-3)]'>
 						<span className='font-semibold text-[var(--ink-2)]'>What that gives you: </span>
 						{means}
 					</p>
 				) : null}
 
-				<p className='mt-auto pt-5 font-mono text-[0.625rem] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='mt-auto pt-7 font-mono text-[0.625rem] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
 					{href ? (
 						<a href={href} target='_blank' rel='noreferrer' className='rule-link'>
 							{cite}
@@ -120,7 +120,7 @@ export default function TheJobPage() {
 					size='sm'
 				/>
 
-				<div className='grid gap-x-10 gap-y-10 lg:grid-cols-3'>
+				<div className='grid gap-5 lg:grid-cols-3'>
 					<Point
 						title='They legislate for the region'
 						cite='RA 11054, the Organic Law, Article VII'
@@ -171,7 +171,7 @@ export default function TheJobPage() {
 					size='sm'
 				/>
 
-				<div className='grid gap-x-10 gap-y-10 lg:grid-cols-3'>
+				<div className='grid gap-5 lg:grid-cols-3'>
 					<Point
 						title='The floor sits two weeks in four'
 						cite='Rules, Rule VI, Section 4'
@@ -219,7 +219,7 @@ export default function TheJobPage() {
 					size='sm'
 				/>
 
-				<div className='grid gap-x-10 gap-y-10 lg:grid-cols-3'>
+				<div className='grid gap-5 lg:grid-cols-3'>
 					<Point
 						title='They must carry your demands into the chamber'
 						cite='Rules, Rule II, Section 2(e)'
@@ -269,7 +269,7 @@ export default function TheJobPage() {
 					size='sm'
 				/>
 
-				<div className='grid gap-x-10 gap-y-10 lg:grid-cols-3'>
+				<div className='grid gap-5 lg:grid-cols-3'>
 					<Point
 						title='A member with money at stake stays out of it'
 						cite='Rules, Rule II, Section 1(f)'
@@ -310,7 +310,7 @@ export default function TheJobPage() {
 					    answer different questions — where this came from, and where to go
 					    next — and stacked they read as one block ending in two buttons.
 					    Set opposite each other the page closes on both at once. */}
-					<div className='mt-12 flex flex-col gap-8 border-t border-[var(--brass-line)] pt-7 lg:flex-row lg:items-start lg:justify-between lg:gap-16'>
+					<div className='tv-wash mt-12 flex flex-col gap-8 rounded-[var(--dv-r)] p-7 sm:p-10 lg:flex-row lg:items-center lg:justify-between lg:gap-16'>
 						<p className='max-w-[42rem] text-[1rem] leading-[1.6] text-[var(--ink-3)]'>
 							Every point on this page is drawn from Parliament&rsquo;s own rulebook and the
 							Organic Law, under the citation printed beneath it. The registry goes through all

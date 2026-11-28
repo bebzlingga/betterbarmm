@@ -23,7 +23,7 @@ export function PartyCard({
 			// Stacked on a phone, the card has the page's margin either side of it
 			// already, so its own horizontal padding only shortened the line. It
 			// comes back at `sm`, where two cards share a row.
-			className='group flex min-h-full flex-col bg-[var(--paper)] py-6 transition-colors duration-300 hover:bg-[var(--paper-2)] sm:p-6'
+			className='tv-card group min-h-full !p-6 sm:!p-7'
 		>
 			{/* The plate and the mark on the record, and nothing between them. The
 			    party's id sat beside the plate in brass capitals — the same string
@@ -33,7 +33,7 @@ export function PartyCard({
 			<div className='flex items-start justify-between gap-3'>
 				<PartyMark partyId={party.party_id} ballotName={party.ballot_name} size={96} />
 				{party.dominantStatus ? (
-					<span className='border border-[var(--accent)] px-2 py-1 font-mono text-[0.5625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--accent)]'>
+					<span className='rounded-full bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] px-3 py-1.5 text-[0.6875rem] font-semibold leading-none text-[var(--accent)]'>
 						{dominantStatusLabel[party.dominantStatus]}
 					</span>
 				) : (
@@ -66,7 +66,7 @@ export function PartyCard({
 			    line sitting on the rule. The padding is on the wrapper, so it holds
 			    at any length; `mt-auto` still does the pushing. */}
 			<div className='mt-auto pt-7'>
-				<dl className='flex gap-8 border-t border-[var(--brass-line)] pt-5'>
+				<dl className='grid grid-cols-2 gap-3'>
 					{[
 						{ value: party.computedStats.sectoralCandidates, label: 'Sectoral links' },
 						{ value: party.computedStats.districtCocFilers, label: 'District filers' },
@@ -74,7 +74,7 @@ export function PartyCard({
 						// Term first in the source, figure first on the page — a list names
 						// what it is describing before it describes it, and `dd` before
 						// `dt` is not a description list at all.
-						<div key={stat.label} className='flex flex-col-reverse'>
+						<div key={stat.label} className='flex flex-col-reverse rounded-2xl bg-[var(--paper-2)] px-4 py-3.5'>
 							<dt className='mt-2 font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.14em] text-[var(--ink-3)]'>
 								{stat.label}
 							</dt>

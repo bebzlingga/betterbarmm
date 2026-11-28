@@ -1,7 +1,7 @@
 'use client'
 
 import { HandHeartIcon, SquaresFourIcon } from '@phosphor-icons/react'
-import { EASE, ScrollProgress, UtilityBar, useHeaderScroll, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
+import { EASE, ScrollProgress, UtilityBar, BrandLogo, UtilityMenuLinks } from '@betterbarmm/editorial'
 import { AnimatePresence, motion } from 'motion/react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -34,7 +34,6 @@ const pages = [
 export function SiteNav() {
 	const pathname = usePathname()
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	const { past, hidden } = useHeaderScroll(isMenuOpen)
 	const closeMenu = () => setIsMenuOpen(false)
 
 	const isActive = (href: string) =>
@@ -48,7 +47,7 @@ export function SiteNav() {
 			<UtilityBar
 				base='https://betterbarmm.com'
 				current='election'
-				className='bb-strip bg-[var(--paper-2)]'
+				className='bb-strip site-strip bg-[var(--paper-2)]'
 				switchIcon={<SquaresFourIcon size={13} weight='bold' aria-hidden='true' />}
 				end={
 					<>
@@ -69,17 +68,11 @@ export function SiteNav() {
 				}
 			/>
 
-			{/* The estate's masthead behaviour, the same on every workspace: it
-			    takes a ground once the reader has left the top, and ducks out of the
-			    way when they are reading down. `useHeaderScroll` also publishes the
-			    flag the shared stylesheet reads to drop `--sticky-top`, so anything
-			    sticking under this bar follows it up instead of leaving a band of
-			    empty page. */}
-		<motion.header
-			animate={{ y: hidden ? '-100%' : '0%' }}
-			transition={{ duration: 0.42, ease: EASE }}
-			data-solid={past}
-			className='sticky top-0 z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
+			{/* As travel's (user decision: the travel look): the masthead stays at the top of the page and scrolls away
+			    with it, clear over the crimson header. `--sticky-top` is 0 here (globals.css) to match. */}
+		<header
+			data-menu={isMenuOpen}
+			className='site-head relative z-30 border-b border-[var(--brass-line)] bg-[var(--paper)]/86 backdrop-blur-xl'
 		>
 			<div className='mx-auto max-w-[var(--bb-page-width)] px-6 lg:px-8'>
 				{/* Two tracks on a phone, three from `md` up.
@@ -102,7 +95,7 @@ export function SiteNav() {
 						<Link
 							href='/'
 							onClick={closeMenu}
-							className='hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
+							className='site-workspace hidden whitespace-nowrap font-[family-name:var(--font-display)] text-[0.65625rem] font-semibold uppercase leading-none tracking-[0.14em] text-[var(--brass)] transition hover:text-[var(--ink)] sm:block'
 						>
 							Election
 						</Link>
@@ -128,7 +121,7 @@ export function SiteNav() {
 							aria-expanded={isMenuOpen}
 							aria-controls='election-mobile-menu'
 							onClick={() => setIsMenuOpen((current) => !current)}
-							className='inline-flex size-9 cursor-pointer items-center justify-center border border-[var(--ink)] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)] md:hidden'
+							className='inline-flex size-10 cursor-pointer items-center justify-center rounded-full border border-[var(--ink)] text-[var(--ink)] transition hover:bg-[var(--ink)] hover:text-[var(--paper)] md:hidden'
 						>
 							<span className='sr-only'>{isMenuOpen ? 'Close menu' : 'Open menu'}</span>
 							<span aria-hidden='true' className='flex h-2.5 w-4 flex-col justify-between'>
@@ -198,7 +191,7 @@ export function SiteNav() {
 			</AnimatePresence>
 
 			<ScrollProgress />
-		</motion.header>
+		</header>
 		</>
 	)
 }

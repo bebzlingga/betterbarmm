@@ -143,7 +143,7 @@ function Race({
 		winners.length === 1 && runnerUp ? (winners[0].votes ?? 0) - (runnerUp.votes ?? 0) : null
 
 	return (
-		<details className='group border-t border-[var(--rule)] py-5'>
+		<details className='group mt-3 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] px-5 py-5 transition hover:border-[color-mix(in_srgb,var(--ink)_30%,var(--rule))] sm:px-6'>
 			<summary className='flex cursor-pointer list-none flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between'>
 				<div className='min-w-0'>
 					<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
@@ -185,7 +185,7 @@ function Race({
 				</div>
 			</summary>
 
-			<div className='mt-5 border-t border-[var(--brass-line)] pt-3'>
+			<div className='mt-5 border-t border-[var(--rule-soft)] pt-3'>
 				{candidates.map((candidate) => (
 					<CandidateRow key={candidate.name} candidate={candidate} total={total} />
 				))}
@@ -284,7 +284,7 @@ export default function ResultsPage() {
 				    out — which is the only place a reader can see that UBJP took
 				    every reserved seat and still finished second. */}
 				<Rise delay={0.16} distance={14}>
-					<div className='mt-16 overflow-x-auto'>
+					<div className='mt-16 overflow-x-auto rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-8 !pb-3'>
 						<table className='w-full min-w-[42rem] border-collapse text-left'>
 							<thead>
 								<tr className='border-b border-[var(--brass-line)]'>
@@ -364,15 +364,17 @@ export default function ResultsPage() {
 
 				<div className='mt-12 grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:gap-16'>
 					<Rise distance={14}>
+						<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-8'>
 						<OutcomeBar
 							blocs={tracks}
 							total={totalSeats}
 							majority={outcome.majority_threshold}
 						/>
+						</div>
 					</Rise>
 
 					<Rise delay={0.12} distance={14}>
-						<dl className='border-t border-[var(--brass-line)]'>
+						<dl className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-8 !py-2'>
 							{[
 								{
 									term: 'Chief Minister',
@@ -408,7 +410,7 @@ export default function ResultsPage() {
 			    of ground wants the full rhythm on both edges, and the collapse rule
 			    would take the head off this one because the section above carries a
 			    band too. */}
-			<section className='bb-lattice-soft relative isolate overflow-hidden bg-[var(--paper-2)]'>
+			<section className='tv-wash relative isolate overflow-hidden'>
 				<div className='bb-container section-band'>
 					<SectionHead
 						index='03'
@@ -424,7 +426,7 @@ export default function ResultsPage() {
 					    against the thirty-six per cent that won them. */}
 					<div className='mt-12 grid gap-x-12 gap-y-14 lg:grid-cols-[1fr_1fr]'>
 						<Rise distance={14}>
-							<div>
+							<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-8'>
 								<p className='bb-label'>How the region voted</p>
 								<div className='mt-6'>
 									{proportional.parties.map((party) => (
@@ -465,7 +467,7 @@ export default function ResultsPage() {
 						</Rise>
 
 						<Rise delay={0.12} distance={14}>
-							<div>
+							<div className='rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-6 shadow-[0_18px_40px_-32px_rgba(0,0,0,0.45)] sm:p-8'>
 								<p className='bb-label'>Who takes the seats</p>
 								{/* The names the party vote actually sends. A proportional
 								    result is a share until somebody's name is on it, and this
@@ -560,7 +562,7 @@ export default function ResultsPage() {
 					))}
 				</div>
 
-				<p className='mt-12 border-t border-[var(--brass-line)] pt-5 font-mono text-[0.625rem] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
+				<p className='mt-12 rounded-2xl bg-[var(--paper-2)] px-6 py-5 font-mono text-[0.625rem] font-semibold uppercase leading-5 tracking-[0.14em] text-[var(--ink-3)]'>
 					{district.seats} district seats · {decimal.format(district.invalid_votes)} invalid or
 					unattributed ballots
 				</p>
@@ -594,7 +596,7 @@ export default function ResultsPage() {
 					    beside it, this would read as a race nobody turned out for; it
 					    is not a race at all, and the method is the fact. */}
 					<Rise distance={14}>
-						<div className='border-t border-[var(--rule)] py-5'>
+						<div className='mt-3 rounded-2xl border border-[var(--rule)] bg-[var(--paper)] px-5 py-5 sm:px-6'>
 							<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 								Non-Moro Indigenous Peoples · {sectoral.non_moro_indigenous_peoples.seats} seats
 							</p>
@@ -622,7 +624,7 @@ export default function ResultsPage() {
 			    of ground wants the full rhythm on both edges, and the collapse rule
 			    would take the head off this one because the section above carries a
 			    band too. */}
-			<section className='bb-lattice-soft relative isolate overflow-hidden bg-[var(--paper-2)]'>
+			<section className='tv-wash relative isolate overflow-hidden'>
 				<div className='bb-container section-band'>
 					<SectionHead
 						index='06'
@@ -634,7 +636,7 @@ export default function ResultsPage() {
 					<div className='mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3'>
 						{sources.map((source) => (
 							<Rise key={source.id} distance={12}>
-								<article className='border-t border-[var(--rule)] pt-5'>
+								<article className='tv-card h-full'>
 									<p className='font-mono text-[0.5625rem] font-semibold uppercase tracking-[0.16em] text-[var(--ink-3)]'>
 										{source.publisher} · {formatDate(source.date)}
 									</p>

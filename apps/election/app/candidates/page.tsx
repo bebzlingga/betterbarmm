@@ -129,7 +129,8 @@ export default function CandidatesPage() {
 			/>
 
 			{/* ---- The parties ---- */}
-			<section id='parties' className='bb-container section-band scroll-mt-24'>
+			<section id='parties' className='tv-wash scroll-mt-24'>
+			<div className='bb-container section-band'>
 				<SectionHead
 					index='01'
 					eyebrow={`The party vote · ${stats.regionalParties} entries`}
@@ -165,7 +166,7 @@ export default function CandidatesPage() {
 							    only read as hairlines while every cell was filled: thirteen
 							    parties in three tracks leave two cells empty, and those showed
 							    the tinted ground itself as a panel where two cards should be. */}
-							<div className='mt-8 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3'>
+							<div className='mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3'>
 								{group.parties.map((party) => (
 									<PartyCard key={party.party_id} party={party} showDescription />
 								))}
@@ -173,6 +174,7 @@ export default function CandidatesPage() {
 						</div>
 					))}
 				</div>
+			</div>
 			</section>
 
 			{/* ---- Everyone running ---- */}

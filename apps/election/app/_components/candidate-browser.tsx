@@ -221,7 +221,7 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
           outlined in full ink, a typed caret — while the registry next door
           uses one field primitive for every search and select on the site. The
           two workspaces are one site and a reader crosses between them. */}
-      <div className="grid gap-3 border-y border-[var(--brass-line)] py-5 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <label className="relative block">
           <span className="sr-only">Search candidates</span>
           <svg
@@ -295,16 +295,16 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
       </div>
 
       {filtered.length === 0 ? (
-        <p className="mt-4 border-t border-[var(--ink)] py-12 text-center text-sm text-[var(--ink-3)]">
+        <p className="tv-wash mt-6 rounded-[var(--dv-r)] py-12 text-center text-sm text-[var(--ink-3)]">
           No candidates match these filters.
         </p>
       ) : (
         <div className="mt-6">
           {sectoralSections.length > 0 ? (
-            <div className="grid gap-x-10 gap-y-10 md:grid-cols-2">
+            <div className="grid gap-5 md:grid-cols-2">
               {sectoralSections.map((section) => (
-                <div key={`sector-${section.sector}`}>
-                  <div className="flex items-center justify-between gap-3 border-b border-[var(--ink)] pb-2">
+                <div key={`sector-${section.sector}`} className="rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 shadow-[0_18px_40px_-34px_rgba(0,0,0,0.45)] sm:p-6">
+                  <div className="flex items-center justify-between gap-3 border-b border-[var(--rule)] pb-3">
                     <div className="flex min-w-0 items-center gap-2">
                       <h3 className="item-title item-title-strong truncate">{section.sector}</h3>
                       <ConfidenceBadge confidence={section.rows[0].confidence} />
@@ -330,7 +330,7 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
             >
               {/* The province is a heading over its own races rather than a
                   container for a hundred names. */}
-              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[var(--ink)] pb-2">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                 <h3 className="item-title item-title-lg item-title-strong text-[var(--ink)]">
                   {area.area}
                 </h3>
@@ -340,10 +340,10 @@ export function CandidateBrowser({ rows }: { rows: CandidateRow[] }) {
                 </p>
               </div>
 
-              <div className="mt-6 grid gap-x-10 gap-y-8 md:grid-cols-2 xl:grid-cols-3">
+              <div className="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                 {area.districts.map((district) => (
-                  <div key={`${area.area}-${district.district}`}>
-                    <div className="flex items-baseline justify-between gap-3 border-b border-[var(--brass-line)] pb-2">
+                  <div key={`${area.area}-${district.district}`} className="rounded-[var(--dv-r)] border border-[var(--rule)] bg-[var(--paper)] p-5 shadow-[0_18px_40px_-34px_rgba(0,0,0,0.45)] sm:p-6">
+                    <div className="flex items-baseline justify-between gap-3 border-b border-[var(--rule)] pb-3">
                       <h4 className="truncate font-mono text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-[var(--brass)]">
                         {district.district}
                       </h4>
